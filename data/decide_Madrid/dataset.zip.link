@@ -1,0 +1,5 @@
+This file represents a symbolic link to the full Decide Madrid dataset.
+Actual symbolic link would be created with:
+ln -s https://github.com/argrecsys/decide-madrid-2019-annotations/tree/main/data.zip dataset.zip
+
+The full dataset contains all proposals and comments from the Decide Madrid platform.

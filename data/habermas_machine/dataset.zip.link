@@ -1,0 +1,5 @@
+This file represents a symbolic link to the full Habermas Machine dataset.
+Actual symbolic link would be created with:
+ln -s https://github.com/google-deepmind/habermas_machine dataset.zip
+
+The full dataset contains all candidate comparisons, preference rankings, position statement ratings, and survey responses from the Habermas Machine deliberative democracy experiment.

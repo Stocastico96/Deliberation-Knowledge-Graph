@@ -1,0 +1,5 @@
+This file represents a symbolic link to the full DeliData dataset.
+Actual symbolic link would be created with:
+ln -s https://drive.google.com/file/d/1YdxGGk7uBl4UcQrRu9hbDyQWWIS0U_M9/view dataset.zip
+
+The full dataset contains all deliberation records from the DeliData corpus.

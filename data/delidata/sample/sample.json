@@ -1,0 +1,153 @@
+{
+  "conversations": [
+    {
+      "group_id": "g123456",
+      "messages": [
+        {
+          "message_id": -1,
+          "message_type": "INITIAL",
+          "origin": "system",
+          "original_text": "Welcome to the deliberation. Participants: Alice, Bob, Charlie. Cards presented: A, B, C, D.",
+          "clean_text": "Welcome to the deliberation. Participants: <MENTION>, <MENTION>, <MENTION>. Cards presented: <CARD>, <CARD>, <CARD>, <CARD>.",
+          "annotation_type": "None",
+          "annotation_target": null,
+          "annotation_additional": null,
+          "team_performance": 0.33,
+          "performance_change": 0,
+          "sol_tracker_message": null,
+          "sol_tracker_all": {
+            "Alice": null,
+            "Bob": null,
+            "Charlie": null
+          }
+        },
+        {
+          "message_id": 1,
+          "message_type": "MESSAGE",
+          "origin": "Alice",
+          "original_text": "I think the answer is card B because it matches the pattern we're looking for.",
+          "clean_text": "I think the answer is <CARD> because it matches the pattern we're looking for.",
+          "annotation_type": "Non-probing deliberation",
+          "annotation_target": "Solution",
+          "annotation_additional": "partial_solution",
+          "team_performance": 0.33,
+          "performance_change": 0,
+          "sol_tracker_message": "B",
+          "sol_tracker_all": {
+            "Alice": "B",
+            "Bob": null,
+            "Charlie": null
+          }
+        },
+        {
+          "message_id": 2,
+          "message_type": "MESSAGE",
+          "origin": "Bob",
+          "original_text": "I'm not sure. Have you considered card C? It also has some interesting properties.",
+          "clean_text": "I'm not sure. Have you considered <CARD>? It also has some interesting properties.",
+          "annotation_type": "Probing",
+          "annotation_target": "Reasoning",
+          "annotation_additional": null,
+          "team_performance": 0.33,
+          "performance_change": 0,
+          "sol_tracker_message": "C",
+          "sol_tracker_all": {
+            "Alice": "B",
+            "Bob": "C",
+            "Charlie": null
+          }
+        },
+        {
+          "message_id": 3,
+          "message_type": "MESSAGE",
+          "origin": "Charlie",
+          "original_text": "I agree with Alice. Card B seems to be the most logical choice based on the criteria.",
+          "clean_text": "I agree with <MENTION>. <CARD> seems to be the most logical choice based on the criteria.",
+          "annotation_type": "Non-probing deliberation",
+          "annotation_target": "Agree",
+          "annotation_additional": null,
+          "team_performance": 0.67,
+          "performance_change": 0.34,
+          "sol_tracker_message": "B",
+          "sol_tracker_all": {
+            "Alice": "B",
+            "Bob": "C",
+            "Charlie": "B"
+          }
+        },
+        {
+          "message_id": 4,
+          "message_type": "MESSAGE",
+          "origin": "Bob",
+          "original_text": "You both make good points. Let me reconsider... Actually, I think you're right about card B.",
+          "clean_text": "You both make good points. Let me reconsider... Actually, I think you're right about <CARD>.",
+          "annotation_type": "Non-probing deliberation",
+          "annotation_target": "Agree",
+          "annotation_additional": null,
+          "team_performance": 1.0,
+          "performance_change": 0.33,
+          "sol_tracker_message": "B",
+          "sol_tracker_all": {
+            "Alice": "B",
+            "Bob": "B",
+            "Charlie": "B"
+          }
+        },
+        {
+          "message_id": 5,
+          "message_type": "SUBMIT",
+          "origin": "Alice",
+          "original_text": "B",
+          "clean_text": "<CARD>",
+          "annotation_type": null,
+          "annotation_target": null,
+          "annotation_additional": null,
+          "team_performance": 1.0,
+          "performance_change": 0,
+          "sol_tracker_message": "B",
+          "sol_tracker_all": {
+            "Alice": "B",
+            "Bob": "B",
+            "Charlie": "B"
+          }
+        },
+        {
+          "message_id": 6,
+          "message_type": "SUBMIT",
+          "origin": "Bob",
+          "original_text": "B",
+          "clean_text": "<CARD>",
+          "annotation_type": null,
+          "annotation_target": null,
+          "annotation_additional": null,
+          "team_performance": 1.0,
+          "performance_change": 0,
+          "sol_tracker_message": "B",
+          "sol_tracker_all": {
+            "Alice": "B",
+            "Bob": "B",
+            "Charlie": "B"
+          }
+        },
+        {
+          "message_id": 7,
+          "message_type": "SUBMIT",
+          "origin": "Charlie",
+          "original_text": "B",
+          "clean_text": "<CARD>",
+          "annotation_type": null,
+          "annotation_target": null,
+          "annotation_additional": null,
+          "team_performance": 1.0,
+          "performance_change": 0,
+          "sol_tracker_message": "B",
+          "sol_tracker_all": {
+            "Alice": "B",
+            "Bob": "B",
+            "Charlie": "B"
+          }
+        }
+      ]
+    }
+  ]
+}

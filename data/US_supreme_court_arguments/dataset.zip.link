@@ -1,0 +1,5 @@
+This file represents a symbolic link to the full US Supreme Court Arguments dataset.
+Actual symbolic link would be created with:
+ln -s https://www.kaggle.com/datasets/jameslabadorf/us-supreme-court-arguments-20172021 dataset.zip
+
+The full dataset contains all transcripts of oral arguments before the United States Supreme Court from the 2017-2021 terms.

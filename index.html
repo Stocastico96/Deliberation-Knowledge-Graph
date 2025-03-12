@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliberation Knowledge Graph</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Deliberation Knowledge Graph</h1>
+            <p class="subtitle">Connecting Deliberative Process Datasets and Ontologies</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#datasets">Datasets</a></li>
+                    <li><a href="#ontologies">Ontologies</a></li>
+                    <li><a href="#model">Knowledge Graph Model</a></li>
+                    <li><a href="#visualizations">Visualizations</a></li>
+                    <li><a href="#documentation">Documentation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About the Project</h2>
+            <p>The Deliberation Knowledge Graph project aims to connect various deliberative process datasets and ontologies into a comprehensive knowledge graph. This project provides a unified framework for analyzing deliberative processes across different platforms and contexts, from formal parliamentary debates to citizen participation initiatives.</p>
+            
+            <div class="authors">
+                <h3>Authors</h3>
+                <p>
+                    <strong>Simone Vagnoni</strong><br>
+                    CIRSFID, University of Bologna - OEG, Universidad Politecnica de Madrid<br>
+                    <a href="https://www.unibo.it/sitoweb/simone.vagnoni3/" target="_blank">https://www.unibo.it/sitoweb/simone.vagnoni3/</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="datasets" class="section">
+        <div class="container">
+            <h2>Datasets</h2>
+            <p>The project integrates several datasets related to deliberative processes:</p>
+            
+            <div class="dataset-grid">
+                <div class="dataset-card">
+                    <h3>Decide Madrid</h3>
+                    <p>Citizen proposals and comments from Madrid's participatory democracy platform.</p>
+                    <a href="data/decide_Madrid/readme.txt" class="btn">Learn More</a>
+                </div>
+                
+                <div class="dataset-card">
+                    <h3>DeliData</h3>
+                    <p>A dataset for deliberation in multi-party problem solving.</p>
+                    <a href="data/delidata/readme.txt" class="btn">Learn More</a>
+                </div>
+                
+                <div class="dataset-card">
+                    <h3>EU Have Your Say</h3>
+                    <p>Feedback and initiatives from the European Commission's public consultation platform.</p>
+                    <a href="data/EU_have_your_say/readme.txt" class="btn">Learn More</a>
+                </div>
+                
+                <div class="dataset-card">
+                    <h3>Habermas Machine</h3>
+                    <p>Data from a deliberative democracy experiment inspired by Jürgen Habermas's theories.</p>
+                    <a href="data/habermas_machine/readme.txt" class="btn">Learn More</a>
+                </div>
+                
+                <div class="dataset-card">
+                    <h3>Decidim Barcelona</h3>
+                    <p>Data from Barcelona's implementation of the Decidim participatory democracy platform.</p>
+                    <a href="data/nightly_decidim/readme.txt" class="btn">Learn More</a>
+                </div>
+                
+                <div class="dataset-card">
+                    <h3>US Supreme Court Arguments</h3>
+                    <p>Transcripts of oral arguments before the United States Supreme Court (2017-2021).</p>
+                    <a href="data/US_supreme_court_arguments/readme.txt" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ontologies" class="section">
+        <div class="container">
+            <h2>Ontologies</h2>
+            <p>The Deliberation Knowledge Graph integrates and extends several existing ontologies:</p>
+            
+            <div class="ontology-categories">
+                <div class="ontology-category">
+                    <h3>Argumentation Ontologies</h3>
+                    <ul>
+                        <li>Argument Interchange Format (AIF)</li>
+                        <li>Argument Ontology</li>
+                        <li>SIOC Argumentation</li>
+                        <li>IBIS (Issue-Based Information System)</li>
+                    </ul>
+                </div>
+                
+                <div class="ontology-category">
+                    <h3>Deliberation Ontologies</h3>
+                    <ul>
+                        <li>DELIB Ontology</li>
+                        <li>Deliberation Ontology</li>
+                        <li>Participation Ontology</li>
+                        <li>Consensus Ontology</li>
+                    </ul>
+                </div>
+                
+                <div class="ontology-category">
+                    <h3>Legal Ontologies</h3>
+                    <ul>
+                        <li>LKIF-Core</li>
+                        <li>Open Government Data Ontology</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p>For a detailed overview of these ontologies and their relationships, see the <a href="documentation/data_models_overview.md">Data Models Overview</a>.</p>
+            
+            <div class="ontology-download">
+                <h3>Deliberation Knowledge Graph Ontology</h3>
+                <p>The core ontology of this project, which integrates concepts from the above ontologies:</p>
+                <a href="ontologies/deliberation_kg.owl" class="btn">Download OWL File</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="model" class="section">
+        <div class="container">
+            <h2>Knowledge Graph Model</h2>
+            <p>The Deliberation Knowledge Graph model connects different argumentation ontologies, deliberation ontologies, and the actual datasets in this repository.</p>
+            
+            <div class="mermaid-container">
+                <div class="mermaid">
+                    graph TD
+                        %% Main Knowledge Graph Node
+                        DKG[Deliberation Knowledge Graph]
+                        
+                        %% Ontology Categories
+                        AO[Argumentation Ontologies]
+                        DO[Deliberation Ontologies]
+                        LO[Legal Ontologies]
+                        
+                        %% Core Concepts
+                        CC1[Deliberation Process]
+                        CC2[Participants]
+                        CC3[Arguments & Contributions]
+                        CC4[Information Resources]
+                        CC5[Fallacy Detection]
+                        CC6[Cross-Dataset Integration]
+                        
+                        %% Connections between DKG and Ontology Categories
+                        DKG -->|integrates| AO
+                        DKG -->|integrates| DO
+                        DKG -->|integrates| LO
+                        
+                        %% Connections between DKG and Core Concepts
+                        DKG -->|models| CC1
+                        DKG -->|models| CC2
+                        DKG -->|models| CC3
+                        DKG -->|models| CC4
+                        DKG -->|models| CC5
+                        DKG -->|models| CC6
+                        
+                        %% Style
+                        classDef ontologyCategory fill:#f9f,stroke:#333,stroke-width:2px
+                        classDef concept fill:#fbb,stroke:#333,stroke-width:1px
+                        classDef mainNode fill:#ff9,stroke:#333,stroke-width:4px
+                        
+                        class DKG mainNode
+                        class AO,DO,LO ontologyCategory
+                        class CC1,CC2,CC3,CC4,CC5,CC6 concept
+                </div>
+            </div>
+            
+            <p>For a more detailed visualization and explanation of the model, see the <a href="visualizations/knowledge_graph_model.md">Knowledge Graph Model</a> documentation.</p>
+        </div>
+    </section>
+
+    <section id="visualizations" class="section">
+        <div class="container">
+            <h2>Visualizations</h2>
+            <p>Interactive visualizations of the Deliberation Knowledge Graph will be available here. These visualizations will help users explore the connections between different datasets, ontologies, and concepts.</p>
+            
+            <div id="visualization-placeholder">
+                <p>Visualizations are under development. Check back soon!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="documentation" class="section">
+        <div class="container">
+            <h2>Documentation</h2>
+            <p>Comprehensive documentation for the Deliberation Knowledge Graph project:</p>
+            
+            <ul class="documentation-list">
+                <li><a href="documentation/data_models_overview.md">Data Models Overview</a> - Detailed information about the ontologies and data models used in this project</li>
+                <li><a href="visualizations/knowledge_graph_model.md">Knowledge Graph Model</a> - Explanation of the knowledge graph model and its components</li>
+                <li><a href="ontologies/deliberation_kg.owl">Deliberation Knowledge Graph Ontology</a> - The core ontology file in OWL format</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Simone Vagnoni, CIRSFID, University of Bologna - OEG, Universidad Politecnica de Madrid</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true
+            }
+        });
+    </script>
+</body>
+</html>

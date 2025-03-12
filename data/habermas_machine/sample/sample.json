@@ -1,0 +1,148 @@
+{
+  "candidate_comparisons": [
+    {
+      "session_id": "s123",
+      "participant_id": "p456",
+      "round": 1,
+      "comparison_id": "c789",
+      "candidate_a": "Candidate X",
+      "candidate_b": "Candidate Y",
+      "preference": "a",
+      "strength": 3,
+      "timestamp": "2022-05-10T14:30:22Z",
+      "reasoning": "I prefer Candidate X because their policy on environmental protection is more comprehensive and actionable."
+    },
+    {
+      "session_id": "s123",
+      "participant_id": "p457",
+      "round": 1,
+      "comparison_id": "c790",
+      "candidate_a": "Candidate X",
+      "candidate_b": "Candidate Z",
+      "preference": "b",
+      "strength": 2,
+      "timestamp": "2022-05-10T14:32:45Z",
+      "reasoning": "Candidate Z has a better track record on economic policy, which I believe is the most pressing issue."
+    }
+  ],
+  "final_preference_rankings": [
+    {
+      "session_id": "s123",
+      "participant_id": "p456",
+      "round": 3,
+      "rankings": [
+        {
+          "candidate": "Candidate X",
+          "rank": 1,
+          "score": 0.85
+        },
+        {
+          "candidate": "Candidate Z",
+          "rank": 2,
+          "score": 0.65
+        },
+        {
+          "candidate": "Candidate Y",
+          "rank": 3,
+          "score": 0.40
+        }
+      ],
+      "timestamp": "2022-05-10T16:45:10Z"
+    },
+    {
+      "session_id": "s123",
+      "participant_id": "p457",
+      "round": 3,
+      "rankings": [
+        {
+          "candidate": "Candidate Z",
+          "rank": 1,
+          "score": 0.90
+        },
+        {
+          "candidate": "Candidate X",
+          "rank": 2,
+          "score": 0.70
+        },
+        {
+          "candidate": "Candidate Y",
+          "rank": 3,
+          "score": 0.35
+        }
+      ],
+      "timestamp": "2022-05-10T16:46:22Z"
+    }
+  ],
+  "position_statement_ratings": [
+    {
+      "session_id": "s123",
+      "participant_id": "p456",
+      "round": 2,
+      "statement_id": "st123",
+      "candidate": "Candidate X",
+      "topic": "Climate Change",
+      "statement": "We must implement a carbon tax and invest heavily in renewable energy to combat climate change.",
+      "agreement_rating": 4,
+      "importance_rating": 5,
+      "timestamp": "2022-05-10T15:20:15Z",
+      "comment": "This is exactly the kind of bold policy we need to address the climate crisis."
+    },
+    {
+      "session_id": "s123",
+      "participant_id": "p457",
+      "round": 2,
+      "statement_id": "st124",
+      "candidate": "Candidate Z",
+      "topic": "Economic Policy",
+      "statement": "We need to reduce corporate taxes to stimulate economic growth and create jobs.",
+      "agreement_rating": 5,
+      "importance_rating": 4,
+      "timestamp": "2022-05-10T15:22:30Z",
+      "comment": "Economic growth should be our top priority, and this approach has proven effective."
+    }
+  ],
+  "round_survey_responses": [
+    {
+      "session_id": "s123",
+      "participant_id": "p456",
+      "round": 1,
+      "survey_id": "sur123",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "How satisfied are you with the deliberation process so far?",
+          "response": 4,
+          "response_text": "Quite satisfied"
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Do you feel your views are being heard?",
+          "response": 5,
+          "response_text": "Definitely"
+        }
+      ],
+      "timestamp": "2022-05-10T15:00:00Z"
+    },
+    {
+      "session_id": "s123",
+      "participant_id": "p457",
+      "round": 1,
+      "survey_id": "sur123",
+      "questions": [
+        {
+          "question_id": "q1",
+          "question_text": "How satisfied are you with the deliberation process so far?",
+          "response": 3,
+          "response_text": "Somewhat satisfied"
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Do you feel your views are being heard?",
+          "response": 4,
+          "response_text": "Mostly"
+        }
+      ],
+      "timestamp": "2022-05-10T15:01:30Z"
+    }
+  ]
+}

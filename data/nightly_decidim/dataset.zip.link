@@ -1,0 +1,5 @@
+This file represents a symbolic link to the full Barcelona Decidim dataset.
+Actual symbolic link would be created with:
+ln -s https://www.decidim.barcelona/open-data/download?locale=es dataset.zip
+
+The full dataset contains development and testing data from the Decidim participatory democracy platform.
