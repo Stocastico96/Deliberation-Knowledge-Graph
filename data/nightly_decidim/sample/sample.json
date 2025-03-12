@@ -1,0 +1,214 @@
+{
+  "participatory_processes": [
+    {
+      "id": "pp-2022-01",
+      "title": {
+        "en": "Participatory Budget 2022",
+        "es": "Presupuesto Participativo 2022",
+        "ca": "Pressupost Participatiu 2022"
+      },
+      "description": {
+        "en": "Decide how to allocate €5 million of the city budget for community projects.",
+        "es": "Decide cómo asignar 5 millones de euros del presupuesto de la ciudad para proyectos comunitarios.",
+        "ca": "Decideix com assignar 5 milions d'euros del pressupost de la ciutat per a projectes comunitaris."
+      },
+      "start_date": "2022-01-15",
+      "end_date": "2022-06-30",
+      "steps": [
+        {
+          "id": "step-1",
+          "title": {
+            "en": "Proposal Submission",
+            "es": "Presentación de Propuestas",
+            "ca": "Presentació de Propostes"
+          },
+          "start_date": "2022-01-15",
+          "end_date": "2022-02-28"
+        },
+        {
+          "id": "step-2",
+          "title": {
+            "en": "Technical Evaluation",
+            "es": "Evaluación Técnica",
+            "ca": "Avaluació Tècnica"
+          },
+          "start_date": "2022-03-01",
+          "end_date": "2022-04-15"
+        },
+        {
+          "id": "step-3",
+          "title": {
+            "en": "Voting",
+            "es": "Votación",
+            "ca": "Votació"
+          },
+          "start_date": "2022-04-16",
+          "end_date": "2022-05-31"
+        },
+        {
+          "id": "step-4",
+          "title": {
+            "en": "Results and Implementation",
+            "es": "Resultados e Implementación",
+            "ca": "Resultats i Implementació"
+          },
+          "start_date": "2022-06-01",
+          "end_date": "2022-06-30"
+        }
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "id": "prop-101",
+      "process_id": "pp-2022-01",
+      "title": {
+        "en": "Community Garden in Central District",
+        "es": "Jardín Comunitario en el Distrito Central",
+        "ca": "Jardí Comunitari al Districte Central"
+      },
+      "body": {
+        "en": "Create a community garden in the vacant lot at 123 Main Street. The garden would provide fresh produce for local residents and serve as an educational space for schools.",
+        "es": "Crear un jardín comunitario en el terreno vacío en Calle Principal 123. El jardín proporcionaría productos frescos para los residentes locales y serviría como espacio educativo para las escuelas.",
+        "ca": "Crear un jardí comunitari al terreny buit al Carrer Principal 123. El jardí proporcionaria productes frescos per als residents locals i serviria com a espai educatiu per a les escoles."
+      },
+      "category": "Environment",
+      "scope": "District",
+      "author": {
+        "id": "user-456",
+        "name": "Maria García",
+        "type": "individual"
+      },
+      "created_at": "2022-01-20T14:30:22Z",
+      "updated_at": "2022-01-22T09:15:45Z",
+      "supports_count": 156,
+      "comments_count": 23,
+      "state": "accepted",
+      "cost": 75000,
+      "location": {
+        "latitude": 40.4168,
+        "longitude": -3.7038,
+        "address": "123 Main Street"
+      },
+      "attachments": [
+        {
+          "id": "att-101-1",
+          "title": "Garden Design",
+          "url": "https://example.org/files/garden_design.pdf",
+          "content_type": "application/pdf"
+        },
+        {
+          "id": "att-101-2",
+          "title": "Site Photo",
+          "url": "https://example.org/files/site_photo.jpg",
+          "content_type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "prop-102",
+      "process_id": "pp-2022-01",
+      "title": {
+        "en": "Bike Lane Extension",
+        "es": "Extensión de Carril Bici",
+        "ca": "Extensió de Carril Bici"
+      },
+      "body": {
+        "en": "Extend the existing bike lane on Oak Avenue to connect with the riverside path, creating a continuous 5km cycling route through the city.",
+        "es": "Extender el carril bici existente en Avenida Roble para conectar con el camino junto al río, creando una ruta ciclista continua de 5 km a través de la ciudad.",
+        "ca": "Estendre el carril bici existent a l'Avinguda Roure per connectar amb el camí al costat del riu, creant una ruta ciclista contínua de 5 km a través de la ciutat."
+      },
+      "category": "Mobility",
+      "scope": "City",
+      "author": {
+        "id": "user-789",
+        "name": "Cycling Association",
+        "type": "organization"
+      },
+      "created_at": "2022-01-25T10:45:33Z",
+      "updated_at": "2022-02-10T16:20:12Z",
+      "supports_count": 342,
+      "comments_count": 47,
+      "state": "evaluating",
+      "cost": 120000,
+      "location": {
+        "latitude": 40.4200,
+        "longitude": -3.7100,
+        "address": "Oak Avenue"
+      },
+      "attachments": [
+        {
+          "id": "att-102-1",
+          "title": "Route Map",
+          "url": "https://example.org/files/bike_route_map.pdf",
+          "content_type": "application/pdf"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "com-201",
+      "proposal_id": "prop-101",
+      "author": {
+        "id": "user-555",
+        "name": "Juan Pérez",
+        "type": "individual"
+      },
+      "body": {
+        "en": "This is a great idea! I live nearby and would love to participate in maintaining the garden.",
+        "es": "¡Esta es una gran idea! Vivo cerca y me encantaría participar en el mantenimiento del jardín.",
+        "ca": "Aquesta és una gran idea! Visc a prop i m'encantaria participar en el manteniment del jardí."
+      },
+      "created_at": "2022-01-21T18:30:45Z",
+      "updated_at": "2022-01-21T18:30:45Z",
+      "votes": {
+        "up": 12,
+        "down": 0
+      },
+      "alignment": 1
+    },
+    {
+      "id": "com-202",
+      "proposal_id": "prop-101",
+      "author": {
+        "id": "user-678",
+        "name": "Elena Martínez",
+        "type": "individual"
+      },
+      "body": {
+        "en": "I'm concerned about the maintenance costs. Who will be responsible for the upkeep after the initial installation?",
+        "es": "Me preocupan los costos de mantenimiento. ¿Quién será responsable del mantenimiento después de la instalación inicial?",
+        "ca": "Em preocupen els costos de manteniment. Qui serà responsable del manteniment després de la instal·lació inicial?"
+      },
+      "created_at": "2022-01-22T09:15:20Z",
+      "updated_at": "2022-01-22T09:15:20Z",
+      "votes": {
+        "up": 8,
+        "down": 2
+      },
+      "alignment": 0
+    },
+    {
+      "id": "com-203",
+      "proposal_id": "prop-102",
+      "author": {
+        "id": "user-901",
+        "name": "Carlos Rodríguez",
+        "type": "individual"
+      },
+      "body": {
+        "en": "As a daily bike commuter, this extension would make my journey to work much safer. Fully support this!",
+        "es": "Como ciclista diario, esta extensión haría mi viaje al trabajo mucho más seguro. ¡Apoyo totalmente esto!",
+        "ca": "Com a ciclista diari, aquesta extensió faria el meu viatge a la feina molt més segur. Dono suport totalment a això!"
+      },
+      "created_at": "2022-01-26T12:40:33Z",
+      "updated_at": "2022-01-26T12:40:33Z",
+      "votes": {
+        "up": 24,
+        "down": 1
+      },
+      "alignment": 1
+    }
+  ]
+}

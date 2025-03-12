@@ -1,0 +1,93 @@
+{
+  "case_metadata": {
+    "docket_number": "19-1392",
+    "case_name": "Trump v. New York",
+    "argument_date": "2020-11-30",
+    "decision_date": "2020-12-18",
+    "term": "2020",
+    "issue_area": "Census, Apportionment, Immigration",
+    "question_presented": "Whether the President can lawfully exclude persons who are not in a lawful immigration status from the apportionment base."
+  },
+  "participants": {
+    "justices": [
+      "Roberts, C.J.",
+      "Thomas, J.",
+      "Breyer, J.",
+      "Alito, J.",
+      "Sotomayor, J.",
+      "Kagan, J.",
+      "Gorsuch, J.",
+      "Kavanaugh, J.",
+      "Barrett, J."
+    ],
+    "advocates": [
+      {
+        "name": "Jeffrey B. Wall",
+        "title": "Acting Solicitor General",
+        "representing": "Petitioners"
+      },
+      {
+        "name": "Barbara D. Underwood",
+        "title": "Solicitor General of New York",
+        "representing": "Respondents"
+      },
+      {
+        "name": "Dale E. Ho",
+        "title": "Director, ACLU Voting Rights Project",
+        "representing": "Respondents"
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "speaker": "Chief Justice Roberts",
+      "text": "We'll hear argument this morning in Case 19-1392, Trump versus New York.",
+      "timestamp": "10:00:00"
+    },
+    {
+      "speaker": "Chief Justice Roberts",
+      "text": "General Wall.",
+      "timestamp": "10:00:05"
+    },
+    {
+      "speaker": "Jeffrey B. Wall",
+      "text": "Mr. Chief Justice, and may it please the Court: The Constitution requires the enumeration of the population, but it then vests Congress with authority over the actual apportionment of representatives. Congress has in turn directed the Secretary to report a tabulation of total population by States under the decennial census, as well as a statement of the population counts for congressional apportionment. And the President, to whom Congress has delegated its authority, is then to transmit to Congress a statement showing the whole number of persons in each State and the number of representatives to which each State would be entitled.",
+      "timestamp": "10:00:10"
+    },
+    {
+      "speaker": "Justice Sotomayor",
+      "text": "General, I'm not sure exactly what your position is with respect to the statutory question. Is it your position that the statute requires the President to exclude illegal aliens?",
+      "timestamp": "10:01:30"
+    },
+    {
+      "speaker": "Jeffrey B. Wall",
+      "text": "No, Justice Sotomayor. Our position is that the statute gives the Secretary and the President discretion to determine of the illegal aliens for whom the government has reliable information, which ones have a settled tie to the State that makes them usual residents. And the President has exercised that judgment to exclude illegal aliens who are in ICE detention at the end of the enumeration period.",
+      "timestamp": "10:01:45"
+    },
+    {
+      "speaker": "Justice Kagan",
+      "text": "General Wall, I think a lot of this just depends on what you think the word \"inhabitant\" means. And to me, the key point is that edict has never been understood to turn on formal legal status, and yet that seems to be exactly what the government is saying.",
+      "timestamp": "10:03:15"
+    },
+    {
+      "speaker": "Jeffrey B. Wall",
+      "text": "Justice Kagan, I don't think that's right. I think our position is that illegal aliens lack enduring ties to this country by definition because Congress has provided that they cannot be here, and so the question is which ones nonetheless have a settled relationship to a State that makes them usual residents.",
+      "timestamp": "10:03:40"
+    },
+    {
+      "speaker": "Barbara D. Underwood",
+      "text": "Mr. Chief Justice, and may it please the Court: For 230 years, our constitutional practice has been to count all persons in each State for purposes of apportionment, except for those with no enduring tie to a State, such as foreign tourists, diplomats, and overseas federal employees. The Presidential memorandum departs from that practice by excluding undocumented immigrants who live here, simply because they lack legal status.",
+      "timestamp": "10:30:00"
+    },
+    {
+      "speaker": "Justice Alito",
+      "text": "General Underwood, is it your position that the Constitution requires counting all illegal aliens who are in the country on census day?",
+      "timestamp": "10:31:20"
+    },
+    {
+      "speaker": "Barbara D. Underwood",
+      "text": "Our position is that the Constitution requires counting all persons who have established their residence in the United States. And we know from more than two centuries of history that that includes people regardless of their immigration status.",
+      "timestamp": "10:31:35"
+    }
+  ]
+}

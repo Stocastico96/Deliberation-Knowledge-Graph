@@ -1,0 +1,48 @@
+{
+  "proposals": [
+    {
+      "id": 7,
+      "url": "/proposals/7-limpiar-las-calles",
+      "code": "MAD-2015-09-7",
+      "title": "Limpiar las calles",
+      "userId": 9884,
+      "date": "2015-09-15",
+      "summary": "Algo tan básico como limpiar.",
+      "text": "",
+      "numComments": 188,
+      "status": "archived",
+      "numSupports": 6560,
+      "isAssociation": 0
+    },
+    {
+      "id": 19,
+      "url": "/proposals/19-unir-el-centro-con-madrid-rio-de-forma-peatonal",
+      "code": "MAD-2015-09-19",
+      "title": "Unir el centro con Madrid Río de forma peatonal",
+      "userId": 2780,
+      "date": "2015-09-15",
+      "summary": "El centro turístico y comercial de Madrid está sólo a 700 metros de la Casa de Campo y de Madrid Rio, pero las conexiones a él son terribles. Propongo unirlo con calles peatonales y arboladas.",
+      "text": "En Madrid tenemos la suerte de tener la Casa de Campo muy cerca del centro de la ciudad. Sólo 700 metros separan el pulmón verde de la capital con Plaza de España y la Gran Vía a través de la cuesta de San Vicente, pero curiosamente, los Madrileños y turistas no usan esta vía para disfrutar de Madrid Rio o la Casa de Campo, ya que la calle Cuesta de San Vicente u otras que conectan el centro con la casa de campo están tremendamente contaminadas y son peligrosas para circular con bicicleta. Peligrosas en dos sentidos: 1 El peligro físico, ya que los coches van a una velocidad tremenda y en el túnel de Ferraz hay tráfico e incidentes y 2 el peligro al que nos expone la contaminación de los coches. Subir la cuesta con la bicicleta o andando, genera una sensación de malestar  producido por la contaminación. Me imagino que para la gente que corre en Madrid Río será peor aún, ya que después de hacer ejercicio la contaminación afecta más.   Esta calle es especialmente peligrosa en este sentido porque se unen dos factores: La entrada de la Nacional 5 con el tráfico que eso conlleva y que la cuesta es muy pronunciada, haciendo que los coches consuman más gasolina y generen más emisiones.   Con mi propuesta pido que se estudie una solución para esta vía y otras paralelas. No sé si la solución es el soterramiento, ya que es muy costoso, o si es la de priorizar el servicio público y peatonal, y desviar el tráfico por otras entradas a la capital.",
+      "numComments": 20,
+      "status": "archived",
+      "numSupports": 906,
+      "isAssociation": 0
+    }
+  ],
+  "comments": [
+    {
+      "id": 101,
+      "proposalId": 7,
+      "userId": 1234,
+      "date": "2015-09-16",
+      "text": "Estoy totalmente de acuerdo. Las calles de Madrid necesitan una limpieza más frecuente y efectiva."
+    },
+    {
+      "id": 102,
+      "proposalId": 19,
+      "userId": 5678,
+      "date": "2015-09-17",
+      "text": "Gran idea. Conectar el centro con Madrid Río mejoraría mucho la movilidad sostenible en la ciudad."
+    }
+  ]
+}
