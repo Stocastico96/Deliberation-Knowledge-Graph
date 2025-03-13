@@ -139,103 +139,400 @@
 
     <section id="ontologies" class="section">
         <div class="container">
-            <h2>Ontologies</h2>
-            <p>The Deliberation Knowledge Graph integrates and extends several existing ontologies. Below is a table of relevant ontologies, inspired by the approach used in the Lynx Project. These ontologies help model the structures, roles, and relationships involved in deliberative processes, argumentation, participation, and legal contexts.</p>
-            
-            <table class="ontologies-table">
-                <thead>
-                    <tr>
-                        <th>Ontology</th>
-                        <th>Available (rdf | doc)</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Language</th>
-                        <th>Jurisdiction</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>aif</td>
-                        <td>rdf<br>doc</td>
-                        <td>Argument Interchange Format</td>
-                        <td>A core ontology designed to represent and exchange argument structures, enabling interoperability between argumentation tools. Developed to capture premises, conclusions, and relations in structured debate.</td>
-                        <td>en</td>
-                        <td>all</td>
-                    </tr>
-                    <tr>
-                        <td>arg-ont</td>
-                        <td>rdf<br>doc</td>
-                        <td>Argument Ontology</td>
-                        <td>Provides common concepts and relationships to model argumentation entities (claims, reasons, evidence) and how they interrelate, supporting structured debate and reasoning.</td>
-                        <td>en</td>
-                        <td>all</td>
-                    </tr>
-                    <tr>
-                        <td>sioc-arg</td>
-                        <td>rdf<br>doc</td>
-                        <td>SIOC Argumentation</td>
-                        <td>An extension of the SIOC initiative that represents argumentation structures in online community discussions, enabling semantic linking of posts, replies, and arguments.</td>
-                        <td>en</td>
-                        <td>all</td>
-                    </tr>
-                    <tr>
-                        <td>ibis</td>
-                        <td>rdf<br>doc</td>
-                        <td>IBIS (Issue-Based Information System)</td>
-                        <td>A method for modeling issues, ideas, and arguments in a structured format, widely used for deliberative problem-solving and debate mapping.</td>
-                        <td>en</td>
-                        <td>all</td>
-                    </tr>
-                    <tr>
-                        <td>delib</td>
-                        <td>rdf<br>doc</td>
-                        <td>DELIB Ontology</td>
-                        <td>Geared to capture essential elements of deliberative processes and participant interactions, emphasizing how contributions, interventions, and outcomes connect within a deliberation.</td>
-                        <td>en</td>
-                        <td>all</td>
-                    </tr>
-                    <tr>
-                        <td>deliberation-ont</td>
-                        <td>rdf<br>doc</td>
-                        <td>Deliberation Ontology</td>
-                        <td>Focuses on dialogues for collaborative decision-making. Represents claims, proposals, and reasoning steps to support structured deliberative processes and track outcomes.</td>
-                        <td>en</td>
-                        <td>all</td>
-                    </tr>
-                    <tr>
-                        <td>participation</td>
-                        <td>rdf<br>doc</td>
-                        <td>Participation Ontology</td>
-                        <td>Models citizen and stakeholder involvement in decision-making, from contributions and arguments to roles, events, and procedures in e-participation contexts.</td>
-                        <td>en</td>
-                        <td>all</td>
-                    </tr>
-                    <tr>
-                        <td>consensus</td>
-                        <td>rdf<br>doc</td>
-                        <td>Consensus Ontology</td>
-                        <td>Represents how participants converge on agreements or decisions through deliberative processes, emphasizing consensus-building mechanisms.</td>
-                        <td>en</td>
-                        <td>all</td>
-                    </tr>
-                    <tr>
-                        <td>lkif-core</td>
-                        <td>rdf<br>doc</td>
-                        <td>LKIF-Core</td>
-                        <td>A legal ontology consisting of modules that describe concepts from the legal and commonsense domains (e.g., legal roles, norms, and procedures), aiding in structured representation of legal knowledge.</td>
-                        <td>en</td>
-                        <td>eu</td>
-                    </tr>
-                    <tr>
-                        <td>ogd-ont</td>
-                        <td>rdf<br>doc</td>
-                        <td>Open Government Data Ontology</td>
-                        <td>General ontology to represent open government data, linking legislative and executive information to public participation, facilitating transparency and accountability.</td>
-                        <td>en</td>
-                        <td>all</td>
-                    </tr>
-                </tbody>
-            </table>
+           <!--
+  ONTOLOGIES TABLE
+  Here is a refined table of relevant ontologies, each with direct links to resources.
+  Below this table, you will find separate Mermaid graphs for each ontology,
+  showing how the Deliberation Knowledge Graph (DKG) classes align with the respective ontology.
+-->
+
+<h2>Relevant Ontologies</h2>
+<table class="ontologies-table">
+  <thead>
+    <tr>
+      <th>Ontology</th>
+      <th>Available (rdf | doc)</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Language</th>
+      <th>Jurisdiction/Scope</th>
+      <th>Reference / Links</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DELIB</td>
+      <td>rdf | doc</td>
+      <td>DELIB Ontology</td>
+      <td>
+        Geared to capture essential elements of deliberative processes and participant interactions,
+        emphasizing how contributions, interventions, and outcomes connect within a deliberation.
+      </td>
+      <td>en</td>
+      <td>all</td>
+      <td>
+        <a href="http://www.example.org/delib.owl" target="_blank">DELIB (OWL)</a><br>
+        <a href="http://www.example.org/delib-doc" target="_blank">Documentation</a>
+      </td>
+    </tr>
+    <tr>
+      <td>AIF</td>
+      <td>rdf | doc</td>
+      <td>Argument Interchange Format</td>
+      <td>
+        A core ontology designed to represent and exchange argument structures, enabling interoperability
+        between argumentation tools. Developed to capture premises, conclusions, and relations in structured debate.
+      </td>
+      <td>en</td>
+      <td>all</td>
+      <td>
+        <a href="http://www.arg.dundee.ac.uk/aif.owl" target="_blank">AIF (OWL)</a><br>
+        <a href="https://en.wikipedia.org/wiki/Argument_Interchange_Format" target="_blank">Documentation</a>
+      </td>
+    </tr>
+    <tr>
+      <td>SIOC</td>
+      <td>rdf | doc</td>
+      <td>SIOC Ontology</td>
+      <td>
+        The Semantically-Interlinked Online Communities (SIOC) Ontology provides concepts for describing
+        online community activities, including posts, forums, and user accounts. Extended with argumentation
+        structures to support semantic linking of discussion threads and arguments.
+      </td>
+      <td>en</td>
+      <td>all</td>
+      <td>
+        <a href="http://rdfs.org/sioc/spec" target="_blank">SIOC (RDF)</a><br>
+        <a href="http://sioc-project.org/" target="_blank">Documentation</a>
+      </td>
+    </tr>
+    <tr>
+      <td>FOAF</td>
+      <td>rdf | doc</td>
+      <td>FOAF Ontology</td>
+      <td>
+        Friend of a Friend (FOAF) describes persons, their activities, and their relations to other people
+        and objects. Often used to model participant identities, organizations, and groups in social web contexts.
+      </td>
+      <td>en</td>
+      <td>all</td>
+      <td>
+        <a href="http://xmlns.com/foaf/spec" target="_blank">FOAF (RDF)</a><br>
+        <a href="http://foaf.me/" target="_blank">Documentation</a>
+      </td>
+    </tr>
+    <tr>
+      <td>DC</td>
+      <td>rdf | doc</td>
+      <td>Dublin Core</td>
+      <td>
+        A set of vocabulary terms used to describe web resources (title, creator, subject, date, etc.).
+        Widely used for metadata, providing consistent description properties (e.g., dc:title, dc:creator).
+      </td>
+      <td>en</td>
+      <td>all</td>
+      <td>
+        <a href="http://purl.org/dc/elements/1.1/" target="_blank">DC (RDF)</a><br>
+        <a href="http://dublincore.org/" target="_blank">Documentation</a>
+      </td>
+    </tr>
+    <tr>
+      <td>LKIF</td>
+      <td>rdf | doc</td>
+      <td>LKIF Ontology</td>
+      <td>
+        The Legal Knowledge Interchange Format (LKIF) covers concepts for norms, rules, and legal reasoning.
+        Often used to integrate legal arguments with broader domain ontologies in e-government and e-participation.
+      </td>
+      <td>en</td>
+      <td>eu</td>
+      <td>
+        <a href="http://www.estrellaproject.org/lkif-core/" target="_blank">LKIF (OWL)</a><br>
+        <a href="http://www.estrellaproject.org/lkif-core/documentation" target="_blank">Documentation</a>
+      </td>
+    </tr>
+    <tr>
+      <td>IBIS</td>
+      <td>rdf | doc</td>
+      <td>Issue-Based Information System</td>
+      <td>
+        A classic method for modeling and visualizing issues, ideas, and arguments in a structured format.
+        Widely used for deliberative problem-solving and mapping various positions and solutions.
+      </td>
+      <td>en</td>
+      <td>all</td>
+      <td>
+        <a href="http://www.semanticweb.org/ontologies/ibis.owl" target="_blank">IBIS (OWL)</a><br>
+        <a href="https://en.wikipedia.org/wiki/IBIS_(Issue-Based_Information_System)" target="_blank">Documentation</a>
+      </td>
+    </tr>
+    <tr>
+      <td>SKOS</td>
+      <td>rdf | doc</td>
+      <td>SKOS Ontology</td>
+      <td>
+        Simple Knowledge Organization System (SKOS) provides a model for expressing the basic structure
+        and content of concept schemes such as thesauri, classification schemes, subject heading systems,
+        and taxonomies.
+      </td>
+      <td>en</td>
+      <td>all</td>
+      <td>
+        <a href="http://www.w3.org/2004/02/skos/core#" target="_blank">SKOS (RDF)</a><br>
+        <a href="https://www.w3.org/TR/skos-reference/" target="_blank">Documentation</a>
+      </td>
+    </tr>
+    <tr>
+      <td>OMV</td>
+      <td>rdf | doc</td>
+      <td>OMV Ontology</td>
+      <td>
+        The Ontology Metadata Vocabulary (OMV) specifies standard metadata for ontologies,
+        covering elements like version, creation date, contributors, or relations to other ontologies.
+      </td>
+      <td>en</td>
+      <td>all</td>
+      <td>
+        <a href="https://omv2.sourceforge.net/" target="_blank">OMV (RDF)</a><br>
+        <a href="https://omv2.sourceforge.net/spec" target="_blank">Documentation</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Separate Ontology-Specific Graphs</h2>
+<p>
+  Below are separate Mermaid.js graphs showing how each ontology's core classes and properties map
+  to the Deliberation Knowledge Graph (DKG). We have extracted only the relevant portion of the
+  large integrated diagram, so you can view them in smaller chunks, per ontology.
+</p>
+
+<!-- 1) DELIB SUBGRAPH -->
+<h3>1) DELIB Ontology Alignment</h3>
+<div class="mermaid">
+graph TD
+    DKG[Deliberation Knowledge Graph]:::mainNode
+    DELIB[DELIB Ontology]:::ontNode
+
+    DP[DeliberationProcess]
+    S[Stage]
+    ACTIVITY[Activity]
+    P[Participant]
+    ORG[Organization]
+    ROLE[Role]
+    IR[InformationResource]
+    A[Argument]
+    OPINION[Opinion]
+    VOTE[Vote]
+    LS[LegalSource]
+    LD[LegalDecomposition]
+    LF[LegalFramework]
+    LI[LegalInterpretation]
+
+    DP -->|skos:closeMatch| DELIB_P[delib:Process]
+    S -->|skos:closeMatch| DELIB_S[delib:Stage]
+    ACTIVITY -->|skos:closeMatch| DELIB_A[delib:Activity]
+    P -->|skos:closeMatch| DELIB_ST[delib:Stakeholder]
+    ORG -->|skos:narrowMatch| DELIB_FP[delib:FormalParticipant]
+    ROLE -->|skos:relatedMatch| DELIB_R[delib:Role]
+    IR -->|skos:broadMatch| DELIB_I[delib:Information]
+    A -->|skos:exactMatch| DELIB_AR[delib:Argument]
+    OPINION -->|skos:exactMatch| DELIB_O[delib:Opinion]
+    VOTE -->|skos:exactMatch| DELIB_V[delib:Vote]
+    LS -->|skos:exactMatch| DELIB_LS[delib:LegalSource]
+    LD -->|skos:exactMatch| DELIB_LD[delib:LegalDecomposition]
+    LF -->|skos:exactMatch| DELIB_LF[delib:Framework]
+    LI -->|skos:exactMatch| DELIB_LI[delib:LegalInterpretation]
+
+    DKG -->|extends| DELIB
+    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
+    classDef ontNode fill:#ddf,stroke:#333,stroke-width:2px
+</div>
+
+<!-- 2) AIF SUBGRAPH -->
+<h3>2) Argument Interchange Format (AIF) Alignment</h3>
+<div class="mermaid">
+graph TD
+    DKG[Deliberation Knowledge Graph]:::mainNode
+    AIF[AIF Ontology]:::ontNode
+
+    A[Argument]
+    C[Contribution]
+    POSITION[Position]
+    THREAD[Thread]
+
+    A -->|skos:closeMatch| AIF_A[aif:Argument]
+    C -->|skos:closeMatch| AIF_S[aif:Statement]
+    POSITION -->|skos:closeMatch| AIF_C[aif:Claim]
+    A -->|skos:relatedMatch| AIF_SS[aif:SupportScheme]
+    A -->|skos:relatedMatch| AIF_AS[aif:AttackScheme]
+    THREAD -->|skos:relatedMatch| AIF_N[aif:ArgumentNetwork]
+
+    DKG -->|extends| AIF
+    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
+    classDef ontNode fill:#dfd,stroke:#333,stroke-width:2px
+</div>
+
+<!-- 3) SIOC SUBGRAPH -->
+<h3>3) SIOC Ontology Alignment</h3>
+<div class="mermaid">
+graph TD
+    DKG[Deliberation Knowledge Graph]:::mainNode
+    SIOC[SIOC Ontology]:::ontNode
+
+    C[Contribution]
+    DP[DeliberationProcess]
+    P[Participant]
+    THREAD[Thread]
+    T[Topic]
+    ORG[Organization]
+    GROUP[Group]
+
+    C -->|skos:broadMatch| SIOC_P[sioc:Post]
+    DP -->|skos:relatedMatch| SIOC_F[sioc:Forum]
+    P -->|skos:relatedMatch| SIOC_U[sioc:UserAccount]
+    THREAD -->|skos:closeMatch| SIOC_T[sioc:Thread]
+    T -->|skos:relatedMatch| SIOC_TO[sioc:Topic]
+    ORG -->|skos:relatedMatch| SIOC_CO[sioc:Community]
+    GROUP -->|skos:relatedMatch| SIOC_G[sioc:Usergroup]
+
+    DKG -->|extends| SIOC
+    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
+    classDef ontNode fill:#fdf,stroke:#333,stroke-width:2px
+</div>
+
+<!-- 4) FOAF SUBGRAPH -->
+<h3>4) FOAF Ontology Alignment</h3>
+<div class="mermaid">
+graph TD
+    DKG[Deliberation Knowledge Graph]:::mainNode
+    FOAF[FOAF Ontology]:::ontNode
+
+    P[Participant]
+    ORG[Organization]
+    GROUP[Group]
+
+    P -->|skos:narrowMatch| FOAF_P[foaf:Person]
+    ORG -->|skos:exactMatch| FOAF_O[foaf:Organization]
+    GROUP -->|skos:closeMatch| FOAF_G[foaf:Group]
+    P -->|skos:relatedMatch| FOAF_A[foaf:Agent]
+
+    DKG -->|extends| FOAF
+    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
+    classDef ontNode fill:#dff,stroke:#333,stroke-width:2px
+</div>
+
+<!-- 5) DUBLIN CORE SUBGRAPH -->
+<h3>5) Dublin Core (DC) Alignment</h3>
+<div class="mermaid">
+graph TD
+    DKG[Deliberation Knowledge Graph]:::mainNode
+    DC[DC Ontology]:::ontNode
+
+    IR[InformationResource]
+    TIMELINE[Timeline]
+    T[Topic]
+
+    IR -->|skos:broadMatch| DC_R[dc:Resource]
+    IR -->|title property: skos:exactMatch| DC_T[dc:title]
+    IR -->|description property: skos:exactMatch| DC_D[dc:description]
+    TIMELINE -->|date properties: skos:relatedMatch| DC_DA[dc:date]
+    IR -->|creator property: skos:exactMatch| DC_C[dc:creator]
+    T -->|skos:relatedMatch| DC_S[dc:subject]
+
+    DKG -->|extends| DC
+    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
+    classDef ontNode fill:#ffd,stroke:#333,stroke-width:2px
+</div>
+
+<!-- 6) LKIF SUBGRAPH -->
+<h3>6) LKIF Ontology Alignment</h3>
+<div class="mermaid">
+graph TD
+    DKG[Deliberation Knowledge Graph]:::mainNode
+    LKIF[LKIF Ontology]:::ontNode
+
+    LS[LegalSource]
+    LD[LegalDecomposition]
+    LI[LegalInterpretation]
+    LF[LegalFramework]
+    POSITION[Position]
+
+    LS -->|skos:closeMatch| LKIF_LS[lkif:LegalSource]
+    LD -->|skos:relatedMatch| LKIF_D[lkif:LegalDocument]
+    LI -->|skos:relatedMatch| LKIF_N[lkif:Norm]
+    POSITION -->|when normative: skos:relatedMatch| LKIF_S[lkif:Statement]
+    LF -->|skos:relatedMatch| LKIF_LT[lkif:LegalTheory]
+
+    DKG -->|extends| LKIF
+    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
+    classDef ontNode fill:#fdd,stroke:#333,stroke-width:2px
+</div>
+
+<!-- 7) IBIS SUBGRAPH -->
+<h3>7) IBIS Model Alignment</h3>
+<div class="mermaid">
+graph TD
+    DKG[Deliberation Knowledge Graph]:::mainNode
+    IBIS[IBIS Model]:::ontNode
+
+    T[Topic]
+    POSITION[Position]
+    A[Argument]
+    DECISION[Decision]
+    DP[DeliberationProcess]
+
+    T -->|skos:closeMatch| IBIS_I[ibis:Issue]
+    POSITION -->|skos:exactMatch| IBIS_P[ibis:Position]
+    A -->|skos:closeMatch| IBIS_A[ibis:Argument]
+    DECISION -->|skos:relatedMatch| IBIS_R[ibis:Resolution]
+    DP -->|skos:broadMatch| IBIS_D[ibis:Deliberation]
+
+    DKG -->|extends| IBIS
+    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
+    classDef ontNode fill:#ddf,stroke:#333,stroke-width:2px
+</div>
+
+<!-- 8) SKOS SUBGRAPH -->
+<h3>8) SKOS Ontology Alignment</h3>
+<div class="mermaid">
+graph TD
+    DKG[Deliberation Knowledge Graph]:::mainNode
+    SKOS[SKOS Ontology]:::ontNode
+
+    T[Topic]
+
+    T -->|skos:exactMatch| SKOS_C[skos:Concept]
+    T -->|broader property: skos:exactMatch| SKOS_B[skos:broader]
+    T -->|narrower property: skos:exactMatch| SKOS_N[skos:narrower]
+    T -->|related property: skos:exactMatch| SKOS_R[skos:related]
+
+    DKG -->|extends| SKOS
+    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
+    classDef ontNode fill:#ddd,stroke:#333,stroke-width:2px
+</div>
+
+<!-- 9) OMV SUBGRAPH -->
+<h3>9) OMV Ontology Alignment</h3>
+<div class="mermaid">
+graph TD
+    DKG[Deliberation Knowledge Graph]:::mainNode
+    OMV[OMV Ontology]:::ontNode
+
+    DKG -->|metadata: skos:relatedMatch| OMV_O[omv:Ontology]
+
+    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
+    classDef ontNode fill:#ddd,stroke:#333,stroke-width:2px
+</div>
+
+<p>
+  Each subgraph above focuses on how the Deliberation Knowledge Graph maps to or extends
+  the respective ontology’s classes and properties. By splitting the overall mapping into smaller
+  diagrams, we ensure that each relationship set is easier to inspect, maintain, and update.
+</p>
+
 
             <div class="ontology-download">
                 <h3>Deliberation Knowledge Graph Ontology</h3>
