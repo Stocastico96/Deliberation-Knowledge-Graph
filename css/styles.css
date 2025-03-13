@@ -2,21 +2,30 @@
 
 /* Base Styles */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2c3e50;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-    --dark-color: #2c3e50;
-    --text-color: #333;
-    --link-color: #3498db;
-    --link-hover-color: #2980b9;
-    --success-color: #2ecc71;
-    --warning-color: #f39c12;
-    --error-color: #e74c3c;
-    --border-radius: 4px;
-    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --primary-color: #6366f1;
+    --primary-light: #818cf8;
+    --primary-dark: #4f46e5;
+    --secondary-color: #0f172a;
+    --secondary-light: #1e293b;
+    --accent-color: #f97316;
+    --accent-light: #fb923c;
+    --light-color: #f8fafc;
+    --dark-color: #0f172a;
+    --text-color: #334155;
+    --text-light: #64748b;
+    --link-color: #6366f1;
+    --link-hover-color: #4f46e5;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --error-color: #ef4444;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -25,23 +34,24 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: var(--font-body);
+    line-height: 1.7;
     color: var(--text-color);
-    background-color: #f8f9fa;
+    background-color: var(--light-color);
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 a {
     color: var(--link-color);
     text-decoration: none;
     transition: var(--transition);
+    font-weight: 500;
 }
 
 a:hover {
@@ -50,10 +60,12 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+    margin-bottom: 1.2rem;
     color: var(--secondary-color);
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
 }
 
 p {
@@ -72,21 +84,54 @@ img {
 
 /* Header */
 header {
-    background-color: var(--secondary-color);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: white;
-    padding: 2rem 0;
+    padding: 3rem 0;
     box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="%23ffffff" fill-opacity="0.05" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"%3E%3C/path%3E%3C/svg%3E');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+header .container {
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {
     color: white;
     margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .subtitle {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
+    backdrop-filter: blur(5px);
+    display: inline-block;
 }
 
 nav ul {
@@ -98,31 +143,32 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
+    margin: 0.25rem;
 }
 
 nav ul li a {
     color: white;
     font-weight: 500;
-    padding: 0.5rem 0;
-    border-bottom: 2px solid transparent;
+    padding: 0.6rem 1rem;
+    border-radius: var(--border-radius);
     transition: var(--transition);
+    display: block;
 }
 
 nav ul li a:hover {
     text-decoration: none;
-    border-bottom: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Sections */
 .section {
-    padding: 4rem 0;
-    border-bottom: 1px solid #e9ecef;
+    padding: 5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.section:nth-child(even) {
+    background-color: #f1f5f9;
 }
 
 .section:last-of-type {
@@ -131,9 +177,11 @@ nav ul li a:hover {
 
 .section h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     position: relative;
-    padding-bottom: 1rem;
+    padding-bottom: 1.2rem;
+    font-size: 2.2rem;
+    color: var(--secondary-color);
 }
 
 .section h2::after {
@@ -142,99 +190,185 @@ nav ul li a:hover {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 50px;
-    height: 3px;
-    background-color: var(--primary-color);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+    border-radius: 2px;
 }
 
 /* Dataset Grid */
 .dataset-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2.5rem;
 }
 
 .dataset-card {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding: 1.5rem;
+    padding: 2rem;
     transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .dataset-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
 .dataset-card h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-size: 1.4rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.dataset-card h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
 }
 
 .dataset-card p {
     margin-bottom: 1.5rem;
-    color: #666;
+    color: var(--text-light);
+    flex-grow: 1;
+}
+
+.dataset-card .source {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.dataset-card .source svg {
+    margin-right: 0.5rem;
+    width: 16px;
+    height: 16px;
 }
 
 .btn {
     display: inline-block;
     background-color: var(--primary-color);
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.5rem;
     border-radius: var(--border-radius);
     transition: var(--transition);
     text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    box-shadow: 0 2px 4px rgba(99, 102, 241, 0.3);
 }
 
 .btn:hover {
-    background-color: var(--link-hover-color);
+    background-color: var(--primary-dark);
     color: white;
     text-decoration: none;
+    box-shadow: 0 4px 8px rgba(99, 102, 241, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    box-shadow: none;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 /* Ontology Categories */
 .ontology-categories {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin: 2.5rem 0;
 }
 
 .ontology-category {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding: 1.5rem;
+    padding: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.ontology-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
 }
 
 .ontology-category h3 {
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
+    font-size: 1.4rem;
 }
 
 .ontology-category ul {
-    list-style-type: disc;
+    list-style-type: none;
 }
 
 .ontology-category li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.ontology-category li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 .ontology-download {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding: 1.5rem;
+    padding: 2.5rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="%236366f1" fill-opacity="0.05" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"%3E%3C/path%3E%3C/svg%3E');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .ontology-download h3 {
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.ontology-download p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
 }
 
 .ontology-download .btn {
@@ -246,34 +380,87 @@ nav ul li a:hover {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding: 2rem;
-    margin: 2rem 0;
+    padding: 2.5rem;
+    margin: 2.5rem 0;
     overflow-x: auto;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* Visualization Placeholder */
+/* Visualization Section */
+.visualization-container {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2.5rem;
+    margin: 2.5rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
 #visualization-placeholder {
-    background-color: white;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    padding: 3rem;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 2rem 0;
 }
 
-/* Documentation List */
-.documentation-list {
+#visualization-placeholder p {
+    max-width: 600px;
+    margin: 0 auto 1rem;
+}
+
+#knowledge-graph-visualization {
+    width: 100%;
+    height: 500px;
+    margin-top: 1.5rem;
+}
+
+.visualization-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.visualization-controls button {
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.visualization-controls button:hover,
+.visualization-controls button.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Documentation Section */
+.documentation-container {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding: 1.5rem;
+    padding: 2.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.documentation-list {
     list-style-type: none;
+    padding: 0;
 }
 
 .documentation-list li {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: flex-start;
 }
 
 .documentation-list li:last-child {
@@ -282,30 +469,186 @@ nav ul li a:hover {
     border-bottom: none;
 }
 
+.documentation-list li .doc-icon {
+    margin-right: 1rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.documentation-list li .doc-content {
+    flex-grow: 1;
+}
+
+.documentation-list li h4 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.documentation-list li p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
 /* Authors Section */
 .authors {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding: 1.5rem;
-    margin-top: 2rem;
+    padding: 2.5rem;
+    margin-top: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.authors::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary-color), var(--primary-light));
 }
 
 .authors h3 {
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.author-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.author-card:last-child {
+    margin-bottom: 0;
+}
+
+.author-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-light);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.author-info {
+    flex-grow: 1;
+}
+
+.author-info h4 {
+    margin-bottom: 0.3rem;
+}
+
+.author-info p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
 }
 
 /* Footer */
 footer {
     background-color: var(--secondary-color);
     color: white;
-    padding: 2rem 0;
+    padding: 3rem 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+}
+
+footer .container {
+    position: relative;
+    z-index: 1;
+}
+
+footer p {
+    margin-bottom: 0;
+    opacity: 0.8;
+}
+
+.footer-links {
+    margin-bottom: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 1rem;
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
 }
 
 /* Responsive Adjustments */
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .section h2 {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
+    header {
+        padding: 2.5rem 0;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .section {
+        padding: 4rem 0;
+    }
+    
+    .section h2 {
+        font-size: 1.8rem;
+    }
+    
     .dataset-grid {
         grid-template-columns: 1fr;
     }
@@ -321,5 +664,27 @@ footer {
     nav ul li {
         margin-right: 0;
         margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .dataset-card,
+    .ontology-category,
+    .documentation-container,
+    .visualization-container,
+    .authors {
+        padding: 1.5rem;
     }
 }
