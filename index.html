@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Deliberation Knowledge Graph</h1>
-            <p class="subtitle">Connecting Deliberative Process Datasets and Ontologies</p>
+            <p class="subtitle">Connecting Deliberative Process Datasets and Ontologies for Enhanced Analysis and Understanding</p>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#datasets">Datasets</a></li>
-                    <li><a href="#ontologies">Ontologies</a></li>
-                    <li><a href="#model">Knowledge Graph Model</a></li>
-                    <li><a href="#visualizations">Visualizations</a></li>
-                    <li><a href="#documentation">Documentation</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#datasets"><i class="fas fa-database"></i> Datasets</a></li>
+                    <li><a href="#ontologies"><i class="fas fa-project-diagram"></i> Ontologies</a></li>
+                    <li><a href="#model"><i class="fas fa-sitemap"></i> Knowledge Graph Model</a></li>
+                    <li><a href="#visualizations"><i class="fas fa-chart-network"></i> Visualizations</a></li>
+                    <li><a href="#documentation"><i class="fas fa-file-alt"></i> Documentation</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,13 +34,18 @@
             <h2>About the Project</h2>
             <p>The Deliberation Knowledge Graph project aims to connect various deliberative process datasets and ontologies into a comprehensive knowledge graph. This project provides a unified framework for analyzing deliberative processes across different platforms and contexts, from formal parliamentary debates to citizen participation initiatives.</p>
             
+            <p>By integrating diverse datasets and ontologies, the Deliberation Knowledge Graph enables researchers, policymakers, and citizens to explore the connections between different deliberative processes, identify patterns, and gain insights into how deliberation works across various contexts.</p>
+            
             <div class="authors">
                 <h3>Authors</h3>
-                <p>
-                    <strong>Simone Vagnoni</strong><br>
-                    CIRSFID, University of Bologna - OEG, Universidad Politecnica de Madrid<br>
-                    <a href="https://www.unibo.it/sitoweb/simone.vagnoni3/" target="_blank">https://www.unibo.it/sitoweb/simone.vagnoni3/</a>
-                </p>
+                <div class="author-card">
+                    <div class="author-avatar">SV</div>
+                    <div class="author-info">
+                        <h4>Simone Vagnoni</h4>
+                        <p>CIRSFID, University of Bologna - OEG, Universidad Politecnica de Madrid</p>
+                        <a href="https://www.unibo.it/sitoweb/simone.vagnoni3/" target="_blank"><i class="fas fa-external-link-alt"></i> University Profile</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -45,43 +53,85 @@
     <section id="datasets" class="section">
         <div class="container">
             <h2>Datasets</h2>
-            <p>The project integrates several datasets related to deliberative processes:</p>
+            <p>The project integrates several datasets related to deliberative processes from various sources:</p>
             
             <div class="dataset-grid">
-                <div class="dataset-card">
+                <div class="dataset-card" data-category="participatory">
                     <h3>Decide Madrid</h3>
-                    <p>Citizen proposals and comments from Madrid's participatory democracy platform.</p>
-                    <a href="data/decide_Madrid/readme.txt" class="btn">Learn More</a>
+                    <p>Citizen proposals and comments from Madrid's participatory democracy platform, enabling citizens to propose, debate, and vote on city initiatives.</p>
+                    <div class="source">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="16" height="16"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                        <a href="https://github.com/argrecsys/decide-madrid-2019-annotations/tree/main/data" target="_blank">Source Repository</a>
+                    </div>
+                    <div class="btn-group">
+                        <a href="data/decide_Madrid/sample/sample.json" class="btn">View Sample</a>
+                        <a href="data/decide_Madrid/readme.txt" class="btn btn-secondary">Documentation</a>
+                    </div>
                 </div>
                 
-                <div class="dataset-card">
+                <div class="dataset-card" data-category="deliberation">
                     <h3>DeliData</h3>
-                    <p>A dataset for deliberation in multi-party problem solving.</p>
-                    <a href="data/delidata/readme.txt" class="btn">Learn More</a>
+                    <p>A dataset for deliberation in multi-party problem solving, containing structured conversations aimed at reaching consensus on complex issues.</p>
+                    <div class="source">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="16" height="16"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                        <a href="https://paperswithcode.com/dataset/delidata" target="_blank">Source Repository</a>
+                    </div>
+                    <div class="btn-group">
+                        <a href="data/delidata/sample/sample.json" class="btn">View Sample</a>
+                        <a href="data/delidata/readme.txt" class="btn btn-secondary">Documentation</a>
+                    </div>
                 </div>
                 
-                <div class="dataset-card">
+                <div class="dataset-card" data-category="consultation">
                     <h3>EU Have Your Say</h3>
-                    <p>Feedback and initiatives from the European Commission's public consultation platform.</p>
-                    <a href="data/EU_have_your_say/readme.txt" class="btn">Learn More</a>
+                    <p>Feedback and initiatives from the European Commission's public consultation platform, where citizens and stakeholders can provide input on EU policies.</p>
+                    <div class="source">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"><path fill="currentColor" d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/></svg>
+                        <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en" target="_blank">Source Website</a>
+                    </div>
+                    <div class="btn-group">
+                        <a href="data/EU_have_your_say/sample/sample.csv" class="btn">View Sample</a>
+                        <a href="data/EU_have_your_say/readme.txt" class="btn btn-secondary">Documentation</a>
+                    </div>
                 </div>
                 
-                <div class="dataset-card">
+                <div class="dataset-card" data-category="experiment">
                     <h3>Habermas Machine</h3>
-                    <p>Data from a deliberative democracy experiment inspired by Jürgen Habermas's theories.</p>
-                    <a href="data/habermas_machine/readme.txt" class="btn">Learn More</a>
+                    <p>Data from a deliberative democracy experiment inspired by Jürgen Habermas's theories of communicative rationality and deliberative democracy.</p>
+                    <div class="source">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="16" height="16"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                        <a href="https://github.com/google-deepmind/habermas_machine" target="_blank">Source Repository</a>
+                    </div>
+                    <div class="btn-group">
+                        <a href="data/habermas_machine/sample/sample.json" class="btn">View Sample</a>
+                        <a href="data/habermas_machine/readme.txt" class="btn btn-secondary">Documentation</a>
+                    </div>
                 </div>
                 
-                <div class="dataset-card">
+                <div class="dataset-card" data-category="participatory">
                     <h3>Decidim Barcelona</h3>
-                    <p>Data from Barcelona's implementation of the Decidim participatory democracy platform.</p>
-                    <a href="data/nightly_decidim/readme.txt" class="btn">Learn More</a>
+                    <p>Data from Barcelona's implementation of the Decidim participatory democracy platform, showcasing citizen engagement in urban planning and policy development.</p>
+                    <div class="source">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"><path fill="currentColor" d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/></svg>
+                        <a href="https://www.decidim.barcelona/open-data/download?locale=es" target="_blank">Source Website</a>
+                    </div>
+                    <div class="btn-group">
+                        <a href="data/nightly_decidim/sample/sample.json" class="btn">View Sample</a>
+                        <a href="data/nightly_decidim/readme.txt" class="btn btn-secondary">Documentation</a>
+                    </div>
                 </div>
                 
-                <div class="dataset-card">
+                <div class="dataset-card" data-category="legal">
                     <h3>US Supreme Court Arguments</h3>
-                    <p>Transcripts of oral arguments before the United States Supreme Court (2017-2021).</p>
-                    <a href="data/US_supreme_court_arguments/readme.txt" class="btn">Learn More</a>
+                    <p>Transcripts of oral arguments before the United States Supreme Court (2017-2021), providing insights into legal deliberation at the highest judicial level.</p>
+                    <div class="source">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"><path fill="currentColor" d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg>
+                        <a href="https://www.kaggle.com/datasets/jameslabadorf/us-supreme-court-arguments-20172021" target="_blank">Source Dataset</a>
+                    </div>
+                    <div class="btn-group">
+                        <a href="data/US_supreme_court_arguments/sample/sample.json" class="btn">View Sample</a>
+                        <a href="data/US_supreme_court_arguments/readme.txt" class="btn btn-secondary">Documentation</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,8 +171,6 @@
                     </ul>
                 </div>
             </div>
-            
-            <p>For a detailed overview of these ontologies and their relationships, see the <a href="documentation/data_models_overview.md">Data Models Overview</a>.</p>
             
             <div class="ontology-download">
                 <h3>Deliberation Knowledge Graph Ontology</h3>
