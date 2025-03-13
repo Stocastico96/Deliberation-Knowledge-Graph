@@ -253,43 +253,195 @@
             <div class="mermaid-container">
                 <div class="mermaid">
                     graph TD
-                        %% Main Knowledge Graph Node
-                        DKG[Deliberation Knowledge Graph]
-                        
-                        %% Ontology Categories
-                        AO[Argumentation Ontologies]
-                        DO[Deliberation Ontologies]
-                        LO[Legal Ontologies]
-                        
-                        %% Core Concepts
-                        CC1[Deliberation Process]
-                        CC2[Participants]
-                        CC3[Arguments & Contributions]
-                        CC4[Information Resources]
-                        CC5[Fallacy Detection]
-                        CC6[Cross-Dataset Integration]
-                        
-                        %% Connections between DKG and Ontology Categories
-                        DKG -->|integrates| AO
-                        DKG -->|integrates| DO
-                        DKG -->|integrates| LO
-                        
-                        %% Connections between DKG and Core Concepts
-                        DKG -->|models| CC1
-                        DKG -->|models| CC2
-                        DKG -->|models| CC3
-                        DKG -->|models| CC4
-                        DKG -->|models| CC5
-                        DKG -->|models| CC6
-                        
-                        %% Style
-                        classDef ontologyCategory fill:#f9f,stroke:#333,stroke-width:2px
-                        classDef concept fill:#fbb,stroke:#333,stroke-width:1px
-                        classDef mainNode fill:#ff9,stroke:#333,stroke-width:4px
-                        
-                        class DKG mainNode
-                        class AO,DO,LO ontologyCategory
-                        class CC1,CC2,CC3,CC4,CC5,CC6 concept
+    %% Core Classes of Deliberation Knowledge Graph
+    DKG[Deliberation Knowledge Graph]
+    
+    %% Main class categories
+    PROCESS[Process Classes]
+    PARTICIPANT[Participant Classes]
+    CONTENT[Content Classes]
+    INFO[Information Classes]
+    
+    %% Process related classes
+    DP[DeliberationProcess]
+    S[Stage]
+    TIMELINE[Timeline]
+    ACTIVITY[Activity]
+    DECISION[Decision]
+    IMPLEMENTATION[Implementation]
+    
+    %% Participant related classes
+    P[Participant]
+    ROLE[Role]
+    ORG[Organization]
+    GROUP[Group]
+    
+    %% Content related classes
+    C[Contribution]
+    A[Argument]
+    POSITION[Position]
+    VOTE[Vote]
+    OPINION[Opinion]
+    THREAD[Thread]
+    T[Topic]
+    
+    %% Information related classes
+    IR[InformationResource]
+    LS[LegalSource]
+    LD[LegalDecomposition]
+    LF[LegalFramework]
+    LI[LegalInterpretation]
+    
+    %% Existing ontologies
+    DELIB[DELIB Ontology]
+    AIF[Argument Interchange Format]
+    SIOC[SIOC Ontology]
+    FOAF[FOAF Ontology]
+    DC[Dublin Core]
+    LKIF[LKIF Ontology]
+    IBIS[IBIS Model]
+    SKOS[SKOS Ontology]
+    OMV[OMV Ontology]
+    
+    %% High-level structure
+    DKG -->|defines| PROCESS
+    DKG -->|defines| PARTICIPANT
+    DKG -->|defines| CONTENT
+    DKG -->|defines| INFO
+    
+    %% Process class breakdown
+    PROCESS -->|includes| DP
+    PROCESS -->|includes| S
+    PROCESS -->|includes| TIMELINE
+    PROCESS -->|includes| ACTIVITY
+    PROCESS -->|includes| DECISION
+    PROCESS -->|includes| IMPLEMENTATION
+    
+    %% Participant class breakdown
+    PARTICIPANT -->|includes| P
+    PARTICIPANT -->|includes| ROLE
+    PARTICIPANT -->|includes| ORG
+    PARTICIPANT -->|includes| GROUP
+    
+    %% Content class breakdown
+    CONTENT -->|includes| C
+    CONTENT -->|includes| A
+    CONTENT -->|includes| POSITION
+    CONTENT -->|includes| VOTE
+    CONTENT -->|includes| OPINION
+    CONTENT -->|includes| THREAD
+    CONTENT -->|includes| T
+    
+    %% Information class breakdown
+    INFO -->|includes| IR
+    INFO -->|includes| LS
+    INFO -->|includes| LD
+    INFO -->|includes| LF
+    INFO -->|includes| LI
+    
+    %% DELIB mappings
+    DP -->|skos:closeMatch| DELIB_P[delib:Process]
+    S -->|skos:closeMatch| DELIB_S[delib:Stage]
+    ACTIVITY -->|skos:closeMatch| DELIB_A[delib:Activity]
+    P -->|skos:closeMatch| DELIB_ST[delib:Stakeholder]
+    ORG -->|skos:narrowMatch| DELIB_FP[delib:FormalParticipant]
+    ROLE -->|skos:relatedMatch| DELIB_R[delib:Role]
+    IR -->|skos:broadMatch| DELIB_I[delib:Information]
+    A -->|skos:exactMatch| DELIB_AR[delib:Argument]
+    OPINION -->|skos:exactMatch| DELIB_O[delib:Opinion]
+    VOTE -->|skos:exactMatch| DELIB_V[delib:Vote]
+    LS -->|skos:exactMatch| DELIB_LS[delib:LegalSource]
+    LD -->|skos:exactMatch| DELIB_LD[delib:LegalDecomposition]
+    LF -->|skos:exactMatch| DELIB_LF[delib:Framework]
+    LI -->|skos:exactMatch| DELIB_LI[delib:LegalInterpretation]
+    
+    %% AIF mappings
+    A -->|skos:closeMatch| AIF_A[aif:Argument]
+    C -->|skos:closeMatch| AIF_S[aif:Statement]
+    POSITION -->|skos:closeMatch| AIF_C[aif:Claim]
+    A -->|supports relation: skos:relatedMatch| AIF_SS[aif:SupportScheme]
+    A -->|opposes relation: skos:relatedMatch| AIF_AS[aif:AttackScheme]
+    THREAD -->|skos:relatedMatch| AIF_N[aif:ArgumentNetwork]
+    
+    %% SIOC mappings
+    C -->|skos:broadMatch| SIOC_P[sioc:Post]
+    DP -->|skos:relatedMatch| SIOC_F[sioc:Forum]
+    P -->|skos:relatedMatch| SIOC_U[sioc:UserAccount]
+    THREAD -->|skos:closeMatch| SIOC_T[sioc:Thread]
+    T -->|skos:relatedMatch| SIOC_TO[sioc:Topic]
+    ORG -->|skos:relatedMatch| SIOC_CO[sioc:Community]
+    GROUP -->|skos:relatedMatch| SIOC_G[sioc:Usergroup]
+    
+    %% FOAF mappings
+    P -->|when type=individual: skos:narrowMatch| FOAF_P[foaf:Person]
+    ORG -->|skos:exactMatch| FOAF_O[foaf:Organization]
+    GROUP -->|skos:closeMatch| FOAF_G[foaf:Group]
+    P -->|skos:relatedMatch| FOAF_A[foaf:Agent]
+    
+    %% Dublin Core mappings
+    IR -->|skos:broadMatch| DC_R[dc:Resource]
+    IR -->|title property: skos:exactMatch| DC_T[dc:title]
+    IR -->|description property: skos:exactMatch| DC_D[dc:description]
+    TIMELINE -->|date properties: skos:relatedMatch| DC_DA[dc:date]
+    IR -->|creator property: skos:exactMatch| DC_C[dc:creator]
+    T -->|skos:relatedMatch| DC_S[dc:subject]
+    
+    %% LKIF mappings
+    LS -->|skos:closeMatch| LKIF_LS[lkif:LegalSource]
+    LD -->|skos:relatedMatch| LKIF_D[lkif:LegalDocument]
+    LI -->|skos:relatedMatch| LKIF_N[lkif:Norm]
+    POSITION -->|when normative: skos:relatedMatch| LKIF_S[lkif:Statement]
+    LF -->|skos:relatedMatch| LKIF_LT[lkif:LegalTheory]
+    
+    %% IBIS mappings
+    T -->|skos:closeMatch| IBIS_I[ibis:Issue]
+    POSITION -->|skos:exactMatch| IBIS_P[ibis:Position]
+    A -->|skos:closeMatch| IBIS_A[ibis:Argument]
+    DECISION -->|skos:relatedMatch| IBIS_R[ibis:Resolution]
+    DP -->|skos:broadMatch| IBIS_D[ibis:Deliberation]
+    
+    %% SKOS mappings for topics and taxonomies
+    T -->|skos:exactMatch| SKOS_C[skos:Concept]
+    T -->|broader property: skos:exactMatch| SKOS_B[skos:broader]
+    T -->|narrower property: skos:exactMatch| SKOS_N[skos:narrower]
+    T -->|related property: skos:exactMatch| SKOS_R[skos:related]
+    
+    %% OMV for ontology metadata
+    DKG -->|metadata: skos:relatedMatch| OMV_O[omv:Ontology]
+    
+    %% Additional relations between classes
+    DP -->|hasStage| S
+    S -->|hasActivity| ACTIVITY
+    ACTIVITY -->|produces| DECISION
+    DECISION -->|leads to| IMPLEMENTATION
+    DP -->|involves| P
+    P -->|hasRole| ROLE
+    P -->|makes| C
+    C -->|expresses| A
+    C -->|part of| THREAD
+    C -->|addresses| T
+    A -->|supports/opposes| POSITION
+    LS -->|decomposedInto| LD
+    LS -->|partOf| LF
+    LS -->|interpreted as| LI
+    C -->|references| IR
+    
+    %% Styling
+    style DKG fill:#f9f,stroke:#333,stroke-width:4px
+    style PROCESS fill:#bbf,stroke:#333,stroke-width:2px
+    style PARTICIPANT fill:#bfb,stroke:#333,stroke-width:2px
+    style CONTENT fill:#fbf,stroke:#333,stroke-width:2px
+    style INFO fill:#ffb,stroke:#333,stroke-width:2px
+    
+    style DELIB fill:#ddf,stroke:#333
+    style AIF fill:#dfd,stroke:#333
+    style SIOC fill:#fdf,stroke:#333
+    style FOAF fill:#dff,stroke:#333
+    style DC fill:#ffd,stroke:#333
+    style LKIF fill:#fdd,stroke:#333
+    style IBIS fill:#ddf,stroke:#333
+    style SKOS fill:#ddd,stroke:#333
+    style OMV fill:#ddd,stroke:#333
                 </div>
             </div>
             
