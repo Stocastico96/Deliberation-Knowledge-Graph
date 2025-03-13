@@ -140,38 +140,103 @@
     <section id="ontologies" class="section">
         <div class="container">
             <h2>Ontologies</h2>
-            <p>The Deliberation Knowledge Graph integrates and extends several existing ontologies:</p>
+            <p>The Deliberation Knowledge Graph integrates and extends several existing ontologies. Below is a table of relevant ontologies, inspired by the approach used in the Lynx Project. These ontologies help model the structures, roles, and relationships involved in deliberative processes, argumentation, participation, and legal contexts.</p>
             
-            <div class="ontology-categories">
-                <div class="ontology-category">
-                    <h3>Argumentation Ontologies</h3>
-                    <ul>
-                        <li>Argument Interchange Format (AIF)</li>
-                        <li>Argument Ontology</li>
-                        <li>SIOC Argumentation</li>
-                        <li>IBIS (Issue-Based Information System)</li>
-                    </ul>
-                </div>
-                
-                <div class="ontology-category">
-                    <h3>Deliberation Ontologies</h3>
-                    <ul>
-                        <li>DELIB Ontology</li>
-                        <li>Deliberation Ontology</li>
-                        <li>Participation Ontology</li>
-                        <li>Consensus Ontology</li>
-                    </ul>
-                </div>
-                
-                <div class="ontology-category">
-                    <h3>Legal Ontologies</h3>
-                    <ul>
-                        <li>LKIF-Core</li>
-                        <li>Open Government Data Ontology</li>
-                    </ul>
-                </div>
-            </div>
-            
+            <table class="ontologies-table">
+                <thead>
+                    <tr>
+                        <th>Ontology</th>
+                        <th>Available (rdf | doc)</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Language</th>
+                        <th>Jurisdiction</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>aif</td>
+                        <td>rdf<br>doc</td>
+                        <td>Argument Interchange Format</td>
+                        <td>A core ontology designed to represent and exchange argument structures, enabling interoperability between argumentation tools. Developed to capture premises, conclusions, and relations in structured debate.</td>
+                        <td>en</td>
+                        <td>all</td>
+                    </tr>
+                    <tr>
+                        <td>arg-ont</td>
+                        <td>rdf<br>doc</td>
+                        <td>Argument Ontology</td>
+                        <td>Provides common concepts and relationships to model argumentation entities (claims, reasons, evidence) and how they interrelate, supporting structured debate and reasoning.</td>
+                        <td>en</td>
+                        <td>all</td>
+                    </tr>
+                    <tr>
+                        <td>sioc-arg</td>
+                        <td>rdf<br>doc</td>
+                        <td>SIOC Argumentation</td>
+                        <td>An extension of the SIOC initiative that represents argumentation structures in online community discussions, enabling semantic linking of posts, replies, and arguments.</td>
+                        <td>en</td>
+                        <td>all</td>
+                    </tr>
+                    <tr>
+                        <td>ibis</td>
+                        <td>rdf<br>doc</td>
+                        <td>IBIS (Issue-Based Information System)</td>
+                        <td>A method for modeling issues, ideas, and arguments in a structured format, widely used for deliberative problem-solving and debate mapping.</td>
+                        <td>en</td>
+                        <td>all</td>
+                    </tr>
+                    <tr>
+                        <td>delib</td>
+                        <td>rdf<br>doc</td>
+                        <td>DELIB Ontology</td>
+                        <td>Geared to capture essential elements of deliberative processes and participant interactions, emphasizing how contributions, interventions, and outcomes connect within a deliberation.</td>
+                        <td>en</td>
+                        <td>all</td>
+                    </tr>
+                    <tr>
+                        <td>deliberation-ont</td>
+                        <td>rdf<br>doc</td>
+                        <td>Deliberation Ontology</td>
+                        <td>Focuses on dialogues for collaborative decision-making. Represents claims, proposals, and reasoning steps to support structured deliberative processes and track outcomes.</td>
+                        <td>en</td>
+                        <td>all</td>
+                    </tr>
+                    <tr>
+                        <td>participation</td>
+                        <td>rdf<br>doc</td>
+                        <td>Participation Ontology</td>
+                        <td>Models citizen and stakeholder involvement in decision-making, from contributions and arguments to roles, events, and procedures in e-participation contexts.</td>
+                        <td>en</td>
+                        <td>all</td>
+                    </tr>
+                    <tr>
+                        <td>consensus</td>
+                        <td>rdf<br>doc</td>
+                        <td>Consensus Ontology</td>
+                        <td>Represents how participants converge on agreements or decisions through deliberative processes, emphasizing consensus-building mechanisms.</td>
+                        <td>en</td>
+                        <td>all</td>
+                    </tr>
+                    <tr>
+                        <td>lkif-core</td>
+                        <td>rdf<br>doc</td>
+                        <td>LKIF-Core</td>
+                        <td>A legal ontology consisting of modules that describe concepts from the legal and commonsense domains (e.g., legal roles, norms, and procedures), aiding in structured representation of legal knowledge.</td>
+                        <td>en</td>
+                        <td>eu</td>
+                    </tr>
+                    <tr>
+                        <td>ogd-ont</td>
+                        <td>rdf<br>doc</td>
+                        <td>Open Government Data Ontology</td>
+                        <td>General ontology to represent open government data, linking legislative and executive information to public participation, facilitating transparency and accountability.</td>
+                        <td>en</td>
+                        <td>all</td>
+                    </tr>
+                </tbody>
+            </table>
+
             <div class="ontology-download">
                 <h3>Deliberation Knowledge Graph Ontology</h3>
                 <p>The core ontology of this project, which integrates concepts from the above ontologies:</p>
