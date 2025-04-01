@@ -1,0 +1,4 @@
+This file represents a symbolic link to the full dataset.
+In a production environment, this would link to the complete European Parliament debates dataset.
+For the actual data, please refer to the European Parliament Open Data API:
+https://data.europarl.europa.eu/api/v2/speeches

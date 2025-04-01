@@ -1,0 +1,278 @@
+{
+  "@context": {
+    "dkg": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "dkg:DeliberationProcess",
+  "dkg:identifier": "ep_debate_20250310",
+  "dkg:name": "European Parliament Debate - 2025-03-10 (Sample)",
+  "dkg:startDate": "2025-03-10T00:00:00Z",
+  "dkg:endDate": "2025-03-10T23:59:59Z",
+  "dkg:hasTopic": [
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem1",
+      "dkg:name": "Resumption of the session"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem2",
+      "dkg:name": "Opening of the sitting"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem3",
+      "dkg:name": "Statements by the President"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem4",
+      "dkg:name": "Approval of the minutes of the previous sitting"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem5",
+      "dkg:name": "Composition of committees and delegations"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem6",
+      "dkg:name": "Corrigenda (Rule 251)"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem7",
+      "dkg:name": "Proposals for Union acts"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem8",
+      "dkg:name": "Parliament’s calendar of part-sessions - 2026"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem9",
+      "dkg:name": "Order of business"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem10",
+      "dkg:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem11",
+      "dkg:name": "Supporting the EU’s most vulnerable regions against devastating effects of climate change, such as the recent cyclone hitting La Réunion (debate)"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem12",
+      "dkg:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem13",
+      "dkg:name": "Requests for the waiver of immunity"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem14",
+      "dkg:name": "Request for the defence of immunity"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem15",
+      "dkg:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem16",
+      "dkg:name": "Cutting red tape and simplifying business in the EU: the first Omnibus proposals (debate)"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem17",
+      "dkg:name": "Establishing the Reform and Growth Facility for the Republic of Moldova (debate)"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem18",
+      "dkg:name": "European Social Fund Plus post-2027 (short presentation)"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem19",
+      "dkg:name": "One-minute speeches on matters of political importance"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem20",
+      "dkg:name": "Agenda of the next sitting"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem21",
+      "dkg:name": "Approval of the minutes of the sitting"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem22",
+      "dkg:name": "Closure of the sitting"
+    },
+    {
+      "@type": "dkg:Topic",
+      "dkg:identifier": "creitem23",
+      "dkg:name": "Closure of the session"
+    }
+  ],
+  "dkg:hasParticipant": [
+    {
+      "@type": "dkg:Participant",
+      "dkg:identifier": "participant_1",
+      "dkg:name": "President.",
+      "dkg:hasRole": {
+        "@type": "dkg:Role",
+        "dkg:name": "President"
+      }
+    },
+    {
+      "@type": "dkg:Participant",
+      "dkg:identifier": "participant_2",
+      "dkg:name": "Iratxe García Pérez",
+      "dkg:isAffiliatedWith": {
+        "@type": "dkg:Organization",
+        "dkg:name": "S&D"
+      }
+    },
+    {
+      "@type": "dkg:Participant",
+      "dkg:identifier": "participant_3",
+      "dkg:name": "Željana Zovko",
+      "dkg:isAffiliatedWith": {
+        "@type": "dkg:Organization",
+        "dkg:name": "PPE"
+      }
+    },
+    {
+      "@type": "dkg:Participant",
+      "dkg:identifier": "participant_4",
+      "dkg:name": "Αφροδίτη Λατινοπούλου",
+      "dkg:isAffiliatedWith": {
+        "@type": "dkg:Organization",
+        "dkg:name": "PfE"
+      }
+    },
+    {
+      "@type": "dkg:Participant",
+      "dkg:identifier": "participant_5",
+      "dkg:name": "Alice Kuhnke",
+      "dkg:isAffiliatedWith": {
+        "@type": "dkg:Organization",
+        "dkg:name": "Verts/ALE"
+      }
+    }
+  ],
+  "dkg:hasContribution": [
+    {
+      "@type": "dkg:Contribution",
+      "dkg:identifier": "contribution_1",
+      "dkg:text": "",
+      "dkg:madeBy": {
+        "@id": "participant_1"
+      },
+      "dkg:timestamp": "2025-03-10T17:02:06"
+    },
+    {
+      "@type": "dkg:Contribution",
+      "dkg:identifier": "contribution_2",
+      "dkg:text": "First of all, dear colleagues, two years ago, on 28 February 2023, in Tempi, Greece, a tragic railway accident cost 57 people their lives and injured even more. We mark a sad anniversary today as our hearts go out to the victims, to those who lost their loved ones and to the injured who still bear the scars of that day. This House remembers them and honours them.\nOver the coming months, we will celebrate also the 35th anniversary of the assertion of state continuity of Estonia, Latvia and Lithuania, enshrining their independence de jure under international law throughout different illegal occupations and annexations of the 20th century.\nThese anniversaries remind us again of the sacrifice of so many for the liberty that we enjoy today, and underscore our determination never to allow another generation of Europeans to be lost behind an Iron Curtain.\nTomorrow at noon, we will once again welcome national leader of Belarus, Sviatlana Tsikhanouskaya, to this plenary, along with other brave women from Ukraine and Belarus, who are standing up for liberty in order to mark International Women's Day. May I ask that you are present. I count on you and your colleagues to be here then, because this week will also serve to reaffirm this House's steadfast support for the people of Belarus and their struggle for freedom, including political prisoners.\nAnd to express this solidarity and to mark the International Day of Solidarity with Belarus, the European Parliament is once again offering you, as Members of this Parliament, the opportunity to sign postcards addressed to the 1 250 political prisoners who are unfairly imprisoned by Lukashenka's regime. I urge you to join in this action to show them that their sacrifice will not remain unanswered.\nLast year, this initiative was extremely successful – in the previous mandate, in the previous Parliament. I ask that we make this year's even more so. We know their names, we see their struggle and we stand with them. So this message and this initiative will send the strongest of messages that they are not alone.\n(Applause)",
+      "dkg:madeBy": {
+        "@id": "participant_1"
+      },
+      "dkg:timestamp": "2025-03-10T17:02:43"
+    },
+    {
+      "@type": "dkg:Contribution",
+      "dkg:identifier": "contribution_3",
+      "dkg:text": "Are there any comments? If not, the minutes will be deemed approved.",
+      "dkg:madeBy": {
+        "@id": "participant_1"
+      },
+      "dkg:timestamp": "2025-03-10T17:05:33"
+    },
+    {
+      "@type": "dkg:Contribution",
+      "dkg:identifier": "contribution_4",
+      "dkg:text": "These decisions will be set out in the minutes of today's sitting and take effect on the date of this announcement.",
+      "dkg:madeBy": {
+        "@id": "participant_1"
+      },
+      "dkg:timestamp": "2025-03-10T17:05:53"
+    },
+    {
+      "@type": "dkg:Contribution",
+      "dkg:identifier": "contribution_5",
+      "dkg:text": "The corrigenda are available on the plenary webpage. Their titles will be published in the minutes of this sitting.",
+      "dkg:madeBy": {
+        "@id": "participant_1"
+      },
+      "dkg:timestamp": "2025-03-10T17:06:09"
+    },
+    {
+      "@type": "dkg:Contribution",
+      "dkg:identifier": "contribution_6",
+      "dkg:text": "The first is on employment protection for the activities of police officers, military personnel, prison officers, and customs and border officials, classifying them as high-risk occupations in the EU. The proposal is referred to the Committee on Employment and Social Affairs.\nThe second is on the need to extend the period for implementation of the Recovery and Resilience Facility. This proposal is referred to the Committee on Budgets and the Committee on Economic and Monetary Affairs, as committees responsible, and to the Committee on Employment, the Committee on the Environment, the Committee on Industry, Research and Energy and the Committee on Transport and Tourism, for opinion.",
+      "dkg:madeBy": {
+        "@id": "participant_1"
+      },
+      "dkg:timestamp": "2025-03-10T17:06:33"
+    },
+    {
+      "@type": "dkg:Contribution",
+      "dkg:identifier": "contribution_7",
+      "dkg:text": "The dates are available on the plenary webpage and the deadlines are as follows: amendments, today at 7 p.m.; roll-call votes, Tuesday, 11 March at 4 p.m. The vote will then take place on Wednesday, 12 March at noon.\n⁂\nI would like to inform the House that I have received multiple requests for points of order. I will go through them one by one.\nFirst, I give the floor to Ms Iratxe García Pérez.",
+      "dkg:madeBy": {
+        "@id": "participant_1"
+      },
+      "dkg:timestamp": "2025-03-10T17:07:20"
+    },
+    {
+      "@type": "dkg:Contribution",
+      "dkg:identifier": "contribution_8",
+      "dkg:text": "Now we face new challenges, like the threat of war. Let us not forget how we handled COVID-19. We need to be bold and stay united. By learning from that time we can build a more resilient and cohesive Europe. This will help us face any future crisis with determination and unity.",
+      "dkg:madeBy": {
+        "@id": "participant_2"
+      },
+      "dkg:timestamp": "2025-03-10T17:07:50"
+    },
+    {
+      "@type": "dkg:Contribution",
+      "dkg:identifier": "contribution_9",
+      "dkg:text": "Extremist factions associated with militant groups have reportedly executed civilians, including women and children. Christian families have endured brutal killings and violent raids at the hands of armed militants who have stormed homes, seized belongings and claimed innocent lives.\nThe European Union must take decisive action in support of stability and humanitarian relief efforts to alleviate the suffering of the Syrian people, including Christians and other affected communities.\nChristianity in Syria and in some other parts of the Middle East-North Africa region is at a critical crossroads. It will either endure or it will vanish, leaving behind a profound religious, ethnic and cultural void.\nEurope must not remain indifferent to this existential threat. An External Action Service with its press release - it is shameful that they did not take this into account.",
+      "dkg:madeBy": {
+        "@id": "participant_3"
+      },
+      "dkg:timestamp": "2025-03-10T17:09:07"
+    },
+    {
+      "@type": "dkg:Contribution",
+      "dkg:identifier": "contribution_10",
+      "dkg:text": "Όλοι γνωρίζουμε, αγαπητοί συνάδελφοι, πως αυτό είναι μία χυδαία συκοφαντία κατά όλων μας. Είμαι σίγουρη πως το ECR θα καταδικάσει τα ψέματα του κ. Φράγκου, ο οποίος όχι μόνο προσπάθησε να εξαπατήσει τους Έλληνες, με μόνο σκοπό να διασύρει την πατρίδα του αλλά και να πατήσει πάνω σε νεκρούς, πηγαίνοντας χέρι χέρι με τους αριστερούς. Κύριε Φράγκο, να χαίρεστε τον πατριωτισμό σας. Εσκεμμένα συκοφάντησατε τους θεσμούς που υποτίθεται πως υπηρετείτε. Και, αγαπητό ECR, να χαίρεστε το μέλος σας που ακόμα κρύβεται αντί να ζητήσει συγνώμη. Σε αυτήν την Ολομέλεια οι σοβαροί πατριώτες έχουμε ιερό χρέος να προστατεύουμε τόσο τους θεσμούς όσο και τις πατρίδες μας. Ευρωβουλευτές και συμπεριφορές τύπου Φράγκου δεν είναι ανεκτές.",
+      "dkg:madeBy": {
+        "@id": "participant_4"
+      },
+      "dkg:timestamp": "2025-03-10T17:10:36"
+    },
+    {
+      "@type": "dkg:Contribution",
+      "dkg:identifier": "contribution_11",
+      "dkg:text": "The right to be who you are, to love who you want and to live your life free from discrimination is a fundamental European right. That right is clearly under attack.\nAt this critical moment, the decision by the European Commission to announce the withdrawal of the horizontal anti-discrimination directive came as a shock. It also represents a betrayal of all the EU citizens who are currently lacking protection against discrimination.\nIt is time for the EU to show global leadership against discrimination, not to back down. As the European Parliament's rapporteur for this directive, I strongly condemn this decision and I urge the European Commission to immediately reconsider it.",
+      "dkg:madeBy": {
+        "@id": "participant_5"
+      },
+      "dkg:timestamp": "2025-03-10T17:12:01"
+    }
+  ]
+}
