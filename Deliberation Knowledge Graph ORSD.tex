@@ -1,66 +1,130 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Copyright 2015 Idafen Santana, Mar�a Poveda
-%
-%Licensed under the Apache License, Version 2.0 (the "License");
-%you may not use this file except in compliance with the License.
-%You may obtain a copy of the License at
-%
-%    http://www.apache.org/licenses/LICENSE-2.0
-%
-%Unless required by applicable law or agreed to in writing, software
-%distributed under the License is distributed on an "AS IS" BASIS,
-%WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-%See the License for the specific language governing permissions and
-%limitations under the License.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,a4paper]{article}
 
-\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{graphicx}
-\usepackage[table]{xcolor}
-\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
 
+\geometry{
+  left=2.5cm,
+  right=2.5cm,
+  top=3cm,
+  bottom=3cm
+}
+
+\title{\textbf{ORSD for Deliberation Knowledge Graph: Papers, Ontologies, and Frameworks}}
+\author{Simone Vagnoni\thanks{CIRSFID, University of Bologna; OEG, Universidad Politecnica de Madrid}}
+\date{\today}
 
 \begin{document}
-
-\title{ORSD for Deliberation Knowledge Graph}
-\author{Simone Vagnoni & Victor Rodriguez-Doncel}
 \maketitle
 
-\section{Related Ontologies for Deliberation}
 
-\subsection{Existing Ontologies and Their Limitations}
+\tableofcontents
 
-\subsubsection{DELIB Ontology (Porwol et al., 2014)}
-\textbf{Purpose:} Models e-participation deliberation process with social media integration.\\
-\textbf{Pros:} Explicitly supports dual e-participation (government and citizen-led); connects deliberation with social media content; comprehensive conceptualization of topic, claim, argument structure.\\
-\textbf{Cons:} Focused primarily on electronic participation; lacks detailed representation of legal frameworks; limited implementation examples.
+\section{Introduction}
+This report addresses a collection of references relevant to e-Participation, deliberation, legal frameworks, and argumentation modeling. Certain references point to actual \emph{ontologies} expressed in RDF/OWL, while others are \emph{standards, formats}, or \emph{frameworks} that are not strictly ontological but are often essential to the modeling of deliberative or legal processes. 
 
-\subsubsection{Deliberation Ontology (Panagiotopoulos et al., 2011)}
-\textbf{Purpose:} Supports public decision making in policy deliberations.\\
-\textbf{Pros:} Strong focus on legal information integration; connects arguments with legal sources; emphasizes bureaucratic process modeling.\\
-\textbf{Cons:} Government-centric approach; limited participant modeling; does not account for informal deliberation spaces.
+In Section~\ref{sec:whichOntologies}, we briefly classify which references represent actual ontologies and which do not. Section~\ref{sec:orsdRefined} then proposes a refined ORSD with separate subsections for (i) ontologies, (ii) standard formats, and (iii) frameworks or conceptual methods. Pros and cons of each are summarized to inform the usage in future projects.
 
-\subsubsection{SIOC (Semantically Interlinked Online Communities)}
-\textbf{Purpose:} Describes online discussion information structure.\\
-\textbf{Pros:} Well-established standard; robust representation of online discussions; widely used in social media applications.\\
-\textbf{Cons:} Not specifically designed for deliberation; lacks political and legal conceptualization; no deliberation-specific reasoning capabilities.
 
-\subsubsection{AIF (Argument Interchange Format)}
-\textbf{Purpose:} Represents argument structure and relations.\\
-\textbf{Pros:} Sophisticated argument modeling; captures support/attack relationships; strong theoretical foundation.\\
-\textbf{Cons:} Complex for non-expert users; focused only on argumentation, not broader deliberation processes; limited integration with other aspects of deliberation.
+\section{ORSD Draft}\label{sec:orsdRefined}
 
-\subsubsection{LKIF (Legal Knowledge Interchange Format)}
-\textbf{Purpose:} Facilitates communication between legal knowledge systems.\\
-\textbf{Pros:} Comprehensive legal information modeling; supports complex legal reasoning; structured legal source representation.\\
-\textbf{Cons:} Highly specialized for legal domain; overly complex for general deliberation needs; lacks direct connection to civic participation concepts.
+Below is a proposed reorganization of the ORSD (Ontology Requirements Specification Document) for the Deliberation Knowledge Graph. We separate actual \emph{ontologies} from other \emph{standards} and \emph{frameworks} to clarify their different nature in the domain.
 
-\subsubsection{IBIS (Issue-Based Information System)}
-\textbf{Purpose:} Models issues, positions, and arguments.\\
-\textbf{Pros:} Simple, intuitive structure; explicitly separates issues, positions, and arguments; widely used in design rationale.\\
-\textbf{Cons:} Limited expressivity for complex deliberations; no participant or process modeling; lacks temporal dimension.
+\subsection{Ontologies}
 
-\subsection{Why a New Deliberation Knowledge Graph is Needed}
+\subsubsection{DELIB Ontology \cite{PanagiotopoulosGionis2011}}
+\textbf{Purpose:} Captures core elements of deliberative processes, participant interactions, and outcomes.\\
+\textbf{Pros:} Offers explicit classes for contributions, arguments, and deliberation stages; fosters integration of diverse data.\\
+\textbf{Cons:} Less detail on advanced legal aspects; fewer real-world adoption scenarios are documented.
+
+\subsubsection{Deliberation Ontology (Panagiotopoulos et al.) \cite{PanagiotopoulosSamsElliman2011}}
+\textbf{Purpose:} Focused on supporting public decision-making in policy contexts, bridging arguments and legal references.\\
+\textbf{Pros:} Integrates legal info strongly and models bureaucratic elements clearly.\\
+\textbf{Cons:} Mostly government-centric, with limited modeling of informal spaces and grassroots deliberation.
+
+\subsubsection{SIOC (Semantically Interlinked Online Communities) \cite{SIOC2006}}
+\textbf{Purpose:} Well-known ontology for describing online discussions, user roles, threads, etc.\\
+\textbf{Pros:} Standard widely used in social media and community platforms, straightforward to adopt.\\
+\textbf{Cons:} Not originally designed for a “political/legal” angle; must be extended for advanced deliberation or argumentation uses.
+
+\subsubsection{AIF (Argument Interchange Format) \cite{Chesnevar2006}}
+\textbf{Purpose:} RDF-based structure for modeling arguments (premises, conclusions), plus relationships like support and attack.\\
+\textbf{Pros:} Deep theoretical foundation in argumentation; facilitates tool interoperability.\\
+\textbf{Cons:} Arg-focused only; does not cover participant roles, timelines, or broader deliberation processes.
+
+\subsubsection{LKIF (Legal Knowledge Interchange Format) \cite{Hoekstra2007}}
+\textbf{Purpose:} Models legal norms, rules, concepts for advanced legal knowledge representation.\\
+\textbf{Pros:} Comprehensive coverage of legal reasoning and representation.\\
+\textbf{Cons:} Overkill for non-legal contexts; can be quite specialized and complex to deploy.
+
+\subsubsection{IBIS (Issue-Based Information System) \cite{Kunz1970}}
+\textbf{Purpose:} Simple approach to capturing issues, positions, and arguments (design rationale approach).\\
+\textbf{Pros:} Clear, intuitive structure widely recognized in decision support contexts.\\
+\textbf{Cons:} Less expressive for large-scale or multi-actor deliberation; lacks participant or institutional modeling.
+
+\subsubsection{Ontology for Next Generation e-Participation (Porwol et al.) \cite{Porwol2016}}
+\textbf{Purpose:} Integrates e-Participation domain aspects (process, project, platform) with special attention to citizen-led + government-led synergy.\\
+\textbf{Pros:} Broad conceptual coverage, includes dynamic social media interplay.\\
+\textbf{Cons:} Lacks robust examples of large multi-platform usage or deeply integrated legal frameworks.
+
+\subsubsection{Social Participation Ontology (Fabbri et al.) \cite{Fabbri2015}}
+\textbf{Purpose:} Defines concepts for bridging formal and informal participation, linking multi-level civic engagement data.\\
+\textbf{Pros:} Facilitates synergy between top-down and grassroots contexts; interoperable with FOAF, etc.\\
+\textbf{Cons:} Very broad scope can complicate adoption for narrower or specialized deliberation tasks.
+
+\subsubsection{Core Ontology on Decision Making (Guizzardi et al.) \cite{GuizzardiDecision2020}}
+\textbf{Purpose:} A UFO-based conceptualization of decisions, intentions, preferences, and values.\\
+\textbf{Pros:} Highly rigorous; clarifies the micro-level intentions and commitments underlying decisions.\\
+\textbf{Cons:} Additional layers needed for socio-political processes, large-scale e-Participation data integration.
+
+
+\subsection{Standards or Formats (Non-Ontological)}
+
+\subsubsection{Akoma Ntoso \cite{AkomaNtoso}}
+\textbf{Form:} XML/LegalDocML standard.\\
+\textbf{Purpose:} Interoperable representations of parliamentary, legislative, and judiciary documents.\\
+\textbf{Pros:} Widely recognized for legislative publishing, strong in structuring legal texts.\\
+\textbf{Cons:} Not an RDF/OWL ontology, lacking direct semantic relations for advanced knowledge modeling.
+
+\subsubsection{Metalex \cite{Metalex}}
+\textbf{Form:} XML-based standard.\\
+\textbf{Purpose:} Aims to ensure consistent legislative text interchange, referencing norms.\\
+\textbf{Pros:} Facilitates cross-jurisdiction standardization of normative documents.\\
+\textbf{Cons:} Focused on textual structure rather than conceptual modeling for arguments or deliberation.
+
+\subsubsection{LegalRuleML \cite{Athan2015}}
+\textbf{Form:} Formalism for expressing legal rules and reasoning structures.\\
+\textbf{Purpose:} Captures normative logic, conditions, and advanced legal arguments.\\
+\textbf{Pros:} Powerful for complex rule-based legal reasoning, machine-processable.\\
+\textbf{Cons:} Not an OWL ontology per se; advanced knowledge needed for integration with e-Participation ontologies.
+
+\subsection{Frameworks or Conceptual Models}
+
+\subsubsection{Ontological Models of Legal Contents and Users’ Activities (Schmitz et al.) \cite{Schmitz2017}}
+\textbf{Type:} Model-based approach with modular knowledge organization for EU e-Participation.\\
+\textbf{Pros:} Tightly integrates legal documents (FRBR, EuroVoc) with user feedback in multiple languages.\\
+\textbf{Cons:} Early pilot stage, heavily EU-centric.
+
+\subsubsection{PAKT (Perspectivized Argumentation Knowledge Graph) (Plenz et al.) \cite{Plenz2024}}
+\textbf{Type:} Knowledge Graph + analytics tool, not purely an ontology.\\
+\textbf{Pros:} Multi-layered approach capturing argument structure, frames, underlying values.\\
+\textbf{Cons:} Implementation can be complex, reliant on robust NLP pipelines.
+
+\subsubsection{Modelling e-Participation Implementation: A Network-Based Approach (Rossello et al.) \cite{Rossello2023}}
+\textbf{Type:} Method/Analytical approach using Social Network Analysis.\\
+\textbf{Pros:} Clarifies hybrid offline-online workflows and stakeholder interactions.\\
+\textbf{Cons:} Lacks direct semantic standardization; bridging with e-Participation ontologies would be manual.
+
+
+
+
+\section{Why a New Deliberation Knowledge Graph is Needed}
 
 Despite the availability of multiple ontologies in related domains, a unified Deliberation Knowledge Graph is necessary for several reasons:
 
@@ -83,16 +147,20 @@ Despite the availability of multiple ontologies in related domains, a unified De
 \end{enumerate}
 
 The Deliberation Knowledge Graph addresses these limitations by providing a unifying semantic layer that leverages the strengths of existing ontologies while filling their gaps through a comprehensive approach to deliberation modeling. Specifically, it adds crucial support for fallacy detection and cross-dataset integration that has been missing from previous ontological approaches.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
 % FIRST TABLE
 \begin{table}
 \centering
 \scriptsize
 \begin{tabular}{| l | l | l | l  | l | l | l |l| }
 \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{A0A0A0}\textbf{Deliberation Knowledge Graph Ontology Requirements Specification Document (Part 1)}}                                                                                                                                                                                                                                                         \\ \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{1. Purpose}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{|c|}{\textbf{Deliberation Knowledge Graph Ontology Requirements Specification Document (Part 1)}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{|c|}{\textbf{1. Purpose}}                                                                                                                                                                                                                                                         \\ \hline
 \multicolumn{8}{| p{14.0cm} |}{The purpose of the Deliberation Knowledge Graph is to create a comprehensive, interoperable data model that represents deliberative processes across different platforms and contexts. This knowledge graph aims to structure and connect the various elements of deliberations (participants, arguments, processes, and information) in a way that enables analysis, visualization, and comparison of deliberative activities across platforms, from formal parliamentary debates to citizen participation initiatives. The ontology specifically addresses requirements for logical fallacy detection in deliberative discourse and provides a unified representation of common elements across diverse deliberation datasets.}                                                                                                                                                                                                                                                      \\ \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{2. Scope}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{|c|}{\textbf{2. Scope}}                                                                                                                                                                                                                                                         \\ \hline
 \multicolumn{8}{| p{14.0cm} |}{The ontology covers the domain of deliberative processes in both institutional and civic contexts. It encompasses:
 
 \begin{itemize}
@@ -113,9 +181,9 @@ The ontology explicitly excludes:
 \item Internal platform-specific technical details not related to deliberative processes
 \item Implementation details of fallacy detection algorithms (focusing instead on required data structures)
 \end{itemize}}                                                                                                                                                                                                                                                      \\ \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{3. Implementation Language}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{|c|}{\textbf{3. Implementation Language}}                                                                                                                                                                                                                                                         \\ \hline
 \multicolumn{8}{| p{14.0cm} |}{The ontology will be implemented in OWL 2 (Web Ontology Language) using RDF/XML syntax to ensure maximum compatibility with existing semantic web technologies. The ontology will follow W3C standards and best practices for linked data. SPARQL will be used for query specifications for fallacy detection patterns.}                                                                                                                                                                                                                                                      \\ \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{4. Intended End-Users}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{|c|}{\textbf{4. Intended End-Users}}                                                                                                                                                                                                                                                         \\ \hline
 \multicolumn{8}{| p{14.0cm} |}{User 1. Government officials and policy makers who need to analyze and understand deliberative processes.\newline
 User 2. Civic participation platform administrators who want to integrate deliberative content across platforms.\newline
 User 3. Researchers studying deliberative democracy and analyzing deliberative data.\newline
@@ -123,7 +191,7 @@ User 4. Developers creating applications that connect or visualize deliberative 
 User 5. Citizens and civic organizations seeking to understand and participate in deliberative processes.\newline
 User 6. Fallacy detection system developers who require structured argument data.\newline
 User 7. Cross-platform data analysts who need to work with multiple deliberation datasets.}                                                                                                                                                                                                                                                      \\ \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{5. Intended Uses}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{|c|}{\textbf{5. Intended Uses}}                                                                                                                                                                                                                                                         \\ \hline
 \multicolumn{8}{| p{14.0cm} |}{Use 1. Integration of deliberative content from multiple platforms and sources to create unified views of participation.\newline
 Use 2. Analysis of deliberative processes to understand participation patterns, argument flows, and information usage.\newline
 Use 3. Visualization of deliberation structures and their evolution over time.\newline
@@ -133,8 +201,8 @@ Use 6. Enabling the development of tools to support more effective deliberation 
 Use 7. Automated detection and flagging of logical fallacies in arguments.\newline
 Use 8. Standardized representation of deliberation data from heterogeneous sources.\newline
 Use 9. Training and validation of AI models for argument analysis.}                                                                                                                                                                                                                                                      \\ \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{6. Ontology Requirements}}                                                                                                                                                                                                                                                         \\ \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{a. Non-Functional Requirements}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{|c|}{\textbf{6. Ontology Requirements}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{|c|}{\textbf{a. Non-Functional Requirements}}                                                                                                                                                                                                                                                         \\ \hline
 \multicolumn{8}{| p{14.0cm} |}{NFR 1. The ontology should be compatible with existing deliberation platforms' data models (Decidim, parliamentary data, etc.).\newline
 NFR 2. The ontology should be extensible to accommodate new deliberation platforms and formats.\newline
 NFR 3. The ontology should reuse existing ontologies where appropriate (SIOC, FOAF, SKOS, etc.).\newline
@@ -149,97 +217,103 @@ NFR 8. The ontology should maintain consistency across data from different sourc
 \vspace{-0.1in}
 \end{table}
 
-% SECOND TABLE
-\begin{table}
+\begin{table}[ht]
 \centering
 \scriptsize
-\begin{tabular}{| l | l | l | l  | l | l | l |l| }
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
 \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{A0A0A0}\textbf{Deliberation Knowledge Graph Ontology Requirements Specification Document (Part 2)}}                                                                                                                                                                                                                                                         \\ \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{6. Ontology Requirements (continued)}}                                                                                                                                                                                                                                                         \\ \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{b. Functional Requirements: Groups of Competency Questions}}                                                                                                                                                                                                                                                         \\ \hline
-\multicolumn{4}{|c|}{\cellcolor[HTML]{EFEFEF}CQG1. Deliberation Process Structure}                    & \multicolumn{4}{c|}{\cellcolor[HTML]{EFEFEF}CQG2. Participant Information}   \\ \hline 
-
-\multicolumn{4}{ | m{6.8cm} |}{
-CQ1. What are the stages of a specific deliberation process?\newline 
-CQ2. When did a particular deliberation start and end?\newline 
-CQ3. What deliberation processes exist on a particular topic?\newline 
-CQ4. What are the participation rules for a deliberation process?\newline 
-CQ5. Which organization or entity is responsible for a specific deliberation process?}	    & 
-
-\multicolumn{4}{ m{6.8cm} |}{
-CQ6. Who are the participants in a specific deliberation?\newline 
-CQ7. What is the role of a participant in a deliberation process?\newline 
-CQ8. In which deliberations has a particular participant contributed?\newline 
+\multicolumn{8}{|c|}{\textbf{Deliberation Knowledge Graph Ontology Requirements Specification Document (Part 2)}} \\
+\hline
+\multicolumn{8}{|c|}{\textbf{6. Ontology Requirements (continued)}} \\
+\hline
+\multicolumn{8}{|c|}{\textbf{b. Functional Requirements: Groups of Competency Questions}} \\
+\hline
+\multicolumn{4}{|c|}{CQG1. Deliberation Process Structure} & \multicolumn{4}{c|}{CQG2. Participant Information} \\
+\hline
+\multicolumn{4}{|p{6.8cm}|}{
+CQ1. What are the stages of a specific deliberation process?\newline
+CQ2. When did a particular deliberation start and end?\newline
+CQ3. What deliberation processes exist on a particular topic?\newline
+CQ4. What are the participation rules for a deliberation process?\newline
+CQ5. Which organization or entity is responsible for a specific deliberation process?
+} &
+\multicolumn{4}{p{6.8cm}|}{
+CQ6. Who are the participants in a specific deliberation?\newline
+CQ7. What is the role of a participant in a deliberation process?\newline
+CQ8. In which deliberations has a particular participant contributed?\newline
 CQ9. Which organizations are represented in a deliberation?\newline
-CQ10. How many participants were involved in a deliberation process?}			\\ \hline
-
-\multicolumn{4}{|c|}{\cellcolor[HTML]{EFEFEF}CQG3. Contributions and Arguments}                    & \multicolumn{4}{c|}{\cellcolor[HTML]{EFEFEF}CQG4. Information Resources}  \\ \hline
-
-\multicolumn{4}{ | m{6.8cm} |}{
+CQ10. How many participants were involved in a deliberation process?
+} \\
+\hline
+\multicolumn{4}{|c|}{CQG3. Contributions and Arguments} & \multicolumn{4}{c|}{CQG4. Information Resources} \\
+\hline
+\multicolumn{4}{|p{6.8cm}|}{
 CQ11. What contributions were made in a specific deliberation?\newline
 CQ12. Who made a specific contribution or argument?\newline
 CQ13. Which arguments support or oppose a specific position?\newline
 CQ14. What is the thread structure of a deliberative conversation?\newline
 CQ15. Which contributions received the most responses or engagement?\newline
-CQ16. What information sources are referenced in contributions?}	    & 
-
-\multicolumn{4}{ m{6.8cm} |}{
-CQ17. What legal documents are referenced in a deliberation? \newline
-CQ18. What information frameworks are relevant to a specific deliberation? \newline
-CQ19. What documents were produced as a result of a deliberation? \newline
-CQ20. How is legal information structured and referenced in deliberations?}	
-
-\\ \hline
-
-\multicolumn{4}{|c|}{\cellcolor[HTML]{EFEFEF}CQG5. Fallacy Detection}                    & \multicolumn{4}{c|}{\cellcolor[HTML]{EFEFEF}CQG6. Cross-Dataset Integration}  \\ \hline
-
-\multicolumn{4}{ | m{6.8cm} |}{
+CQ16. What information sources are referenced in contributions?
+} &
+\multicolumn{4}{p{6.8cm}|}{
+CQ17. What legal documents are referenced in a deliberation?\newline
+CQ18. What information frameworks are relevant to a specific deliberation?\newline
+CQ19. What documents were produced as a result of a deliberation?\newline
+CQ20. How is legal information structured and referenced in deliberations?
+} \\
+\hline
+\multicolumn{4}{|c|}{CQG5. Fallacy Detection} & \multicolumn{4}{c|}{CQG6. Cross-Dataset Integration} \\
+\hline
+\multicolumn{4}{|p{6.8cm}|}{
 CQ21. What logical fallacies can be identified in a specific argument?\newline
 CQ22. What are the premise-conclusion relationships in an argument?\newline
 CQ23. Which arguments contain ad hominem attacks?\newline
 CQ24. What patterns of circular reasoning exist in a deliberation?\newline
 CQ25. How can arguments be classified by fallacy type?\newline
-CQ26. What evidence is provided to support a claim?}	    & 
-
-\multicolumn{4}{ m{6.8cm} |}{
-CQ27. What common fields exist across different deliberation platforms? \newline
-CQ28. How can participant identities be reconciled across platforms? \newline
-CQ29. What standard argument elements can be mapped across datasets? \newline
-CQ30. How are temporal aspects of deliberation represented consistently? \newline
-CQ31. What minimal data structure is required for cross-platform analysis?}	
-
-\\ \hline
-
-\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{7. Pre-Glossary of Terms}}                                                                                                                                                                                                                                                     \\ \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{a. Terms from Competency Questions + Frequency}}                                                                                                                                                                                                                                                     \\ \hline
-\multicolumn{1}{ | m{3.15cm} | }{
-Deliberation (15) \newline 
-Argument (9) \newline
+CQ26. What evidence is provided to support a claim?
+} &
+\multicolumn{4}{p{6.8cm}|}{
+CQ27. What common fields exist across different deliberation platforms?\newline
+CQ28. How can participant identities be reconciled across platforms?\newline
+CQ29. What standard argument elements can be mapped across datasets?\newline
+CQ30. How are temporal aspects of deliberation represented consistently?\newline
+CQ31. What minimal data structure is required for cross-platform analysis?
+} \\
+\hline
+\multicolumn{8}{|c|}{\textbf{7. Pre-Glossary of Terms}} \\
+\hline
+\multicolumn{8}{|c|}{\textbf{a. Terms from Competency Questions + Frequency}} \\
+\hline
+\multicolumn{1}{|p{3.15cm}|}{
+Deliberation (15)\newline
+Argument (9)\newline
 Process (8)
-}	& 
-\multicolumn{1}{ m{3.15cm} | }{
-Participant (7) \newline 
-Contribution (6) \newline
+} &
+\multicolumn{1}{p{3.15cm}|}{
+Participant (7)\newline
+Contribution (6)\newline
 Information (5)
-}      &
-\multicolumn{1}{ m{3.15cm} | }{
-Fallacy (5) \newline 
-Platform (4) \newline
-Dataset (4) } & 
-\multicolumn{5}{ m{3.15cm} | }{
-Legal (4) \newline 
-Document (3) \newline
+} &
+\multicolumn{1}{p{3.15cm}|}{
+Fallacy (5)\newline
+Platform (4)\newline
+Dataset (4)
+} &
+\multicolumn{5}{p{3.15cm}|}{
+Legal (4)\newline
+Document (3)\newline
 Structure (3)
-}        
-\\ \hline
-\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{b. Objects}}                                                                                                                                                                                                                                                     \\ \hline
-\multicolumn{8}{| p{14.0cm} |}{DeliberationProcess, Stage, Activity, Timeline, Decision, Implementation, Participant, Role, Organization, Group, Contribution, Argument, Position, Vote, Opinion, Thread, Topic, InformationResource, LegalSource, LegalDecomposition, LegalFramework, LegalInterpretation, FallacyType, ArgumentStructure, Premise, Conclusion, Evidence, CrossPlatformIdentifier, CommonField, StandardStructure}                                                                                                                                                                                                                                                      \\ \hline
-
+} \\
+\hline
+\multicolumn{8}{|c|}{\textbf{b. Objects}} \\
+\hline
+\multicolumn{8}{|p{14cm}|}{
+DeliberationProcess, Stage, Activity, Timeline, Decision, Implementation, Participant, Role, Organization, Group, Contribution, Argument, Position, Vote, Opinion, Thread, Topic, InformationResource, LegalSource, LegalDecomposition, LegalFramework, LegalInterpretation, FallacyType, ArgumentStructure, Premise, Conclusion, Evidence, CrossPlatformIdentifier, CommonField, StandardStructure
+} \\
+\hline
 \end{tabular}
 \caption{Ontology Requirements Specification Document for Deliberation Knowledge Graph (Part 2)}
 \label{tab:ORSD-2}
-\vspace{-0.1in}
 \end{table}
 
 
