@@ -1,0 +1,488 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/deliberation/ontology#endDate
+<https://w3id.org/deliberation/ontology#endDate> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/deliberation/ontology#hasContribution
+<https://w3id.org/deliberation/ontology#hasContribution> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/deliberation/ontology#hasParticipant
+<https://w3id.org/deliberation/ontology#hasParticipant> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/deliberation/ontology#hasRole
+<https://w3id.org/deliberation/ontology#hasRole> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/deliberation/ontology#hasTopic
+<https://w3id.org/deliberation/ontology#hasTopic> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/deliberation/ontology#identifier
+<https://w3id.org/deliberation/ontology#identifier> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/deliberation/ontology#isAffiliatedWith
+<https://w3id.org/deliberation/ontology#isAffiliatedWith> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/deliberation/ontology#madeBy
+<https://w3id.org/deliberation/ontology#madeBy> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/deliberation/ontology#name
+<https://w3id.org/deliberation/ontology#name> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/deliberation/ontology#startDate
+<https://w3id.org/deliberation/ontology#startDate> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/deliberation/ontology#text
+<https://w3id.org/deliberation/ontology#text> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/deliberation/ontology#timestamp
+<https://w3id.org/deliberation/ontology#timestamp> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/deliberation/ontology#Contribution
+<https://w3id.org/deliberation/ontology#Contribution> rdf:type owl:Class .
+
+
+###  https://w3id.org/deliberation/ontology#DeliberationProcess
+<https://w3id.org/deliberation/ontology#DeliberationProcess> rdf:type owl:Class .
+
+
+###  https://w3id.org/deliberation/ontology#Organization
+<https://w3id.org/deliberation/ontology#Organization> rdf:type owl:Class .
+
+
+###  https://w3id.org/deliberation/ontology#Participant
+<https://w3id.org/deliberation/ontology#Participant> rdf:type owl:Class .
+
+
+###  https://w3id.org/deliberation/ontology#Role
+<https://w3id.org/deliberation/ontology#Role> rdf:type owl:Class .
+
+
+###  https://w3id.org/deliberation/ontology#Topic
+<https://w3id.org/deliberation/ontology#Topic> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/deliberation/resource/contribution_1
+<https://w3id.org/deliberation/resource/contribution_1> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/deliberation/ontology#Contribution> ;
+                                                        <https://w3id.org/deliberation/ontology#identifier> "contribution_1" ;
+                                                        <https://w3id.org/deliberation/ontology#madeBy> <https://w3id.org/deliberation/resource/participant_1> ;
+                                                        <https://w3id.org/deliberation/ontology#text> "" ;
+                                                        <https://w3id.org/deliberation/ontology#timestamp> "2025-03-10T17:02:06"^^xsd:dateTime .
+
+
+###  https://w3id.org/deliberation/resource/contribution_10
+<https://w3id.org/deliberation/resource/contribution_10> rdf:type owl:NamedIndividual ,
+                                                                  <https://w3id.org/deliberation/ontology#Contribution> ;
+                                                         <https://w3id.org/deliberation/ontology#identifier> "contribution_10" ;
+                                                         <https://w3id.org/deliberation/ontology#madeBy> <https://w3id.org/deliberation/resource/participant_4> ;
+                                                         <https://w3id.org/deliberation/ontology#text> "Όλοι γνωρίζουμε, αγαπητοί συνάδελφοι, πως αυτό είναι μία χυδαία συκοφαντία κατά όλων μας. Είμαι σίγουρη πως το ECR θα καταδικάσει τα ψέματα του κ. Φράγκου, ο οποίος όχι μόνο προσπάθησε να εξαπατήσει τους Έλληνες, με μόνο σκοπό να διασύρει την πατρίδα του αλλά και να πατήσει πάνω σε νεκρούς, πηγαίνοντας χέρι χέρι με τους αριστερούς. Κύριε Φράγκο, να χαίρεστε τον πατριωτισμό σας. Εσκεμμένα συκοφάντησατε τους θεσμούς που υποτίθεται πως υπηρετείτε. Και, αγαπητό ECR, να χαίρεστε το μέλος σας που ακόμα κρύβεται αντί να ζητήσει συγνώμη. Σε αυτήν την Ολομέλεια οι σοβαροί πατριώτες έχουμε ιερό χρέος να προστατεύουμε τόσο τους θεσμούς όσο και τις πατρίδες μας. Ευρωβουλευτές και συμπεριφορές τύπου Φράγκου δεν είναι ανεκτές." ;
+                                                         <https://w3id.org/deliberation/ontology#timestamp> "2025-03-10T17:10:36"^^xsd:dateTime .
+
+
+###  https://w3id.org/deliberation/resource/contribution_11
+<https://w3id.org/deliberation/resource/contribution_11> rdf:type owl:NamedIndividual ,
+                                                                  <https://w3id.org/deliberation/ontology#Contribution> ;
+                                                         <https://w3id.org/deliberation/ontology#identifier> "contribution_11" ;
+                                                         <https://w3id.org/deliberation/ontology#madeBy> <https://w3id.org/deliberation/resource/participant_5> ;
+                                                         <https://w3id.org/deliberation/ontology#text> """The right to be who you are, to love who you want and to live your life free from discrimination is a fundamental European right. That right is clearly under attack.
+At this critical moment, the decision by the European Commission to announce the withdrawal of the horizontal anti-discrimination directive came as a shock. It also represents a betrayal of all the EU citizens who are currently lacking protection against discrimination.
+It is time for the EU to show global leadership against discrimination, not to back down. As the European Parliament's rapporteur for this directive, I strongly condemn this decision and I urge the European Commission to immediately reconsider it.""" ;
+                                                         <https://w3id.org/deliberation/ontology#timestamp> "2025-03-10T17:12:01"^^xsd:dateTime .
+
+
+###  https://w3id.org/deliberation/resource/contribution_2
+<https://w3id.org/deliberation/resource/contribution_2> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/deliberation/ontology#Contribution> ;
+                                                        <https://w3id.org/deliberation/ontology#identifier> "contribution_2" ;
+                                                        <https://w3id.org/deliberation/ontology#madeBy> <https://w3id.org/deliberation/resource/participant_1> ;
+                                                        <https://w3id.org/deliberation/ontology#text> """First of all, dear colleagues, two years ago, on 28 February 2023, in Tempi, Greece, a tragic railway accident cost 57 people their lives and injured even more. We mark a sad anniversary today as our hearts go out to the victims, to those who lost their loved ones and to the injured who still bear the scars of that day. This House remembers them and honours them.
+Over the coming months, we will celebrate also the 35th anniversary of the assertion of state continuity of Estonia, Latvia and Lithuania, enshrining their independence de jure under international law throughout different illegal occupations and annexations of the 20th century.
+These anniversaries remind us again of the sacrifice of so many for the liberty that we enjoy today, and underscore our determination never to allow another generation of Europeans to be lost behind an Iron Curtain.
+Tomorrow at noon, we will once again welcome national leader of Belarus, Sviatlana Tsikhanouskaya, to this plenary, along with other brave women from Ukraine and Belarus, who are standing up for liberty in order to mark International Women's Day. May I ask that you are present. I count on you and your colleagues to be here then, because this week will also serve to reaffirm this House's steadfast support for the people of Belarus and their struggle for freedom, including political prisoners.
+And to express this solidarity and to mark the International Day of Solidarity with Belarus, the European Parliament is once again offering you, as Members of this Parliament, the opportunity to sign postcards addressed to the 1 250 political prisoners who are unfairly imprisoned by Lukashenka's regime. I urge you to join in this action to show them that their sacrifice will not remain unanswered.
+Last year, this initiative was extremely successful – in the previous mandate, in the previous Parliament. I ask that we make this year's even more so. We know their names, we see their struggle and we stand with them. So this message and this initiative will send the strongest of messages that they are not alone.
+(Applause)""" ;
+                                                        <https://w3id.org/deliberation/ontology#timestamp> "2025-03-10T17:02:43"^^xsd:dateTime .
+
+
+###  https://w3id.org/deliberation/resource/contribution_3
+<https://w3id.org/deliberation/resource/contribution_3> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/deliberation/ontology#Contribution> ;
+                                                        <https://w3id.org/deliberation/ontology#identifier> "contribution_3" ;
+                                                        <https://w3id.org/deliberation/ontology#madeBy> <https://w3id.org/deliberation/resource/participant_1> ;
+                                                        <https://w3id.org/deliberation/ontology#text> "Are there any comments? If not, the minutes will be deemed approved." ;
+                                                        <https://w3id.org/deliberation/ontology#timestamp> "2025-03-10T17:05:33"^^xsd:dateTime .
+
+
+###  https://w3id.org/deliberation/resource/contribution_4
+<https://w3id.org/deliberation/resource/contribution_4> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/deliberation/ontology#Contribution> ;
+                                                        <https://w3id.org/deliberation/ontology#identifier> "contribution_4" ;
+                                                        <https://w3id.org/deliberation/ontology#madeBy> <https://w3id.org/deliberation/resource/participant_1> ;
+                                                        <https://w3id.org/deliberation/ontology#text> "These decisions will be set out in the minutes of today's sitting and take effect on the date of this announcement." ;
+                                                        <https://w3id.org/deliberation/ontology#timestamp> "2025-03-10T17:05:53"^^xsd:dateTime .
+
+
+###  https://w3id.org/deliberation/resource/contribution_5
+<https://w3id.org/deliberation/resource/contribution_5> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/deliberation/ontology#Contribution> ;
+                                                        <https://w3id.org/deliberation/ontology#identifier> "contribution_5" ;
+                                                        <https://w3id.org/deliberation/ontology#madeBy> <https://w3id.org/deliberation/resource/participant_1> ;
+                                                        <https://w3id.org/deliberation/ontology#text> "The corrigenda are available on the plenary webpage. Their titles will be published in the minutes of this sitting." ;
+                                                        <https://w3id.org/deliberation/ontology#timestamp> "2025-03-10T17:06:09"^^xsd:dateTime .
+
+
+###  https://w3id.org/deliberation/resource/contribution_6
+<https://w3id.org/deliberation/resource/contribution_6> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/deliberation/ontology#Contribution> ;
+                                                        <https://w3id.org/deliberation/ontology#identifier> "contribution_6" ;
+                                                        <https://w3id.org/deliberation/ontology#madeBy> <https://w3id.org/deliberation/resource/participant_1> ;
+                                                        <https://w3id.org/deliberation/ontology#text> """The first is on employment protection for the activities of police officers, military personnel, prison officers, and customs and border officials, classifying them as high-risk occupations in the EU. The proposal is referred to the Committee on Employment and Social Affairs.
+The second is on the need to extend the period for implementation of the Recovery and Resilience Facility. This proposal is referred to the Committee on Budgets and the Committee on Economic and Monetary Affairs, as committees responsible, and to the Committee on Employment, the Committee on the Environment, the Committee on Industry, Research and Energy and the Committee on Transport and Tourism, for opinion.""" ;
+                                                        <https://w3id.org/deliberation/ontology#timestamp> "2025-03-10T17:06:33"^^xsd:dateTime .
+
+
+###  https://w3id.org/deliberation/resource/contribution_7
+<https://w3id.org/deliberation/resource/contribution_7> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/deliberation/ontology#Contribution> ;
+                                                        <https://w3id.org/deliberation/ontology#identifier> "contribution_7" ;
+                                                        <https://w3id.org/deliberation/ontology#madeBy> <https://w3id.org/deliberation/resource/participant_1> ;
+                                                        <https://w3id.org/deliberation/ontology#text> """The dates are available on the plenary webpage and the deadlines are as follows: amendments, today at 7 p.m.; roll-call votes, Tuesday, 11 March at 4 p.m. The vote will then take place on Wednesday, 12 March at noon.
+⁂
+I would like to inform the House that I have received multiple requests for points of order. I will go through them one by one.
+First, I give the floor to Ms Iratxe García Pérez.""" ;
+                                                        <https://w3id.org/deliberation/ontology#timestamp> "2025-03-10T17:07:20"^^xsd:dateTime .
+
+
+###  https://w3id.org/deliberation/resource/contribution_8
+<https://w3id.org/deliberation/resource/contribution_8> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/deliberation/ontology#Contribution> ;
+                                                        <https://w3id.org/deliberation/ontology#identifier> "contribution_8" ;
+                                                        <https://w3id.org/deliberation/ontology#madeBy> <https://w3id.org/deliberation/resource/participant_2> ;
+                                                        <https://w3id.org/deliberation/ontology#text> "Now we face new challenges, like the threat of war. Let us not forget how we handled COVID-19. We need to be bold and stay united. By learning from that time we can build a more resilient and cohesive Europe. This will help us face any future crisis with determination and unity." ;
+                                                        <https://w3id.org/deliberation/ontology#timestamp> "2025-03-10T17:07:50"^^xsd:dateTime .
+
+
+###  https://w3id.org/deliberation/resource/contribution_9
+<https://w3id.org/deliberation/resource/contribution_9> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/deliberation/ontology#Contribution> ;
+                                                        <https://w3id.org/deliberation/ontology#identifier> "contribution_9" ;
+                                                        <https://w3id.org/deliberation/ontology#madeBy> <https://w3id.org/deliberation/resource/participant_3> ;
+                                                        <https://w3id.org/deliberation/ontology#text> """Extremist factions associated with militant groups have reportedly executed civilians, including women and children. Christian families have endured brutal killings and violent raids at the hands of armed militants who have stormed homes, seized belongings and claimed innocent lives.
+The European Union must take decisive action in support of stability and humanitarian relief efforts to alleviate the suffering of the Syrian people, including Christians and other affected communities.
+Christianity in Syria and in some other parts of the Middle East-North Africa region is at a critical crossroads. It will either endure or it will vanish, leaving behind a profound religious, ethnic and cultural void.
+Europe must not remain indifferent to this existential threat. An External Action Service with its press release - it is shameful that they did not take this into account.""" ;
+                                                        <https://w3id.org/deliberation/ontology#timestamp> "2025-03-10T17:09:07"^^xsd:dateTime .
+
+
+###  https://w3id.org/deliberation/resource/creitem1
+<https://w3id.org/deliberation/resource/creitem1> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/deliberation/ontology#Topic> ;
+                                                  <https://w3id.org/deliberation/ontology#identifier> "creitem1" ;
+                                                  <https://w3id.org/deliberation/ontology#name> "Resumption of the session" .
+
+
+###  https://w3id.org/deliberation/resource/creitem10
+<https://w3id.org/deliberation/resource/creitem10> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem10" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "Resumption of the sitting" .
+
+
+###  https://w3id.org/deliberation/resource/creitem11
+<https://w3id.org/deliberation/resource/creitem11> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem11" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "Supporting the EU’s most vulnerable regions against devastating effects of climate change, such as the recent cyclone hitting La Réunion (debate)" .
+
+
+###  https://w3id.org/deliberation/resource/creitem12
+<https://w3id.org/deliberation/resource/creitem12> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem12" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "Resumption of the sitting" .
+
+
+###  https://w3id.org/deliberation/resource/creitem13
+<https://w3id.org/deliberation/resource/creitem13> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem13" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "Requests for the waiver of immunity" .
+
+
+###  https://w3id.org/deliberation/resource/creitem14
+<https://w3id.org/deliberation/resource/creitem14> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem14" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "Request for the defence of immunity" .
+
+
+###  https://w3id.org/deliberation/resource/creitem15
+<https://w3id.org/deliberation/resource/creitem15> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem15" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "Resumption of the sitting" .
+
+
+###  https://w3id.org/deliberation/resource/creitem16
+<https://w3id.org/deliberation/resource/creitem16> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem16" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "Cutting red tape and simplifying business in the EU: the first Omnibus proposals (debate)" .
+
+
+###  https://w3id.org/deliberation/resource/creitem17
+<https://w3id.org/deliberation/resource/creitem17> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem17" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "Establishing the Reform and Growth Facility for the Republic of Moldova (debate)" .
+
+
+###  https://w3id.org/deliberation/resource/creitem18
+<https://w3id.org/deliberation/resource/creitem18> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem18" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "European Social Fund Plus post-2027 (short presentation)" .
+
+
+###  https://w3id.org/deliberation/resource/creitem19
+<https://w3id.org/deliberation/resource/creitem19> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem19" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "One-minute speeches on matters of political importance" .
+
+
+###  https://w3id.org/deliberation/resource/creitem2
+<https://w3id.org/deliberation/resource/creitem2> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/deliberation/ontology#Topic> ;
+                                                  <https://w3id.org/deliberation/ontology#identifier> "creitem2" ;
+                                                  <https://w3id.org/deliberation/ontology#name> "Opening of the sitting" .
+
+
+###  https://w3id.org/deliberation/resource/creitem20
+<https://w3id.org/deliberation/resource/creitem20> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem20" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "Agenda of the next sitting" .
+
+
+###  https://w3id.org/deliberation/resource/creitem21
+<https://w3id.org/deliberation/resource/creitem21> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem21" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "Approval of the minutes of the sitting" .
+
+
+###  https://w3id.org/deliberation/resource/creitem22
+<https://w3id.org/deliberation/resource/creitem22> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem22" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "Closure of the sitting" .
+
+
+###  https://w3id.org/deliberation/resource/creitem23
+<https://w3id.org/deliberation/resource/creitem23> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/deliberation/ontology#Topic> ;
+                                                   <https://w3id.org/deliberation/ontology#identifier> "creitem23" ;
+                                                   <https://w3id.org/deliberation/ontology#name> "Closure of the session" .
+
+
+###  https://w3id.org/deliberation/resource/creitem3
+<https://w3id.org/deliberation/resource/creitem3> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/deliberation/ontology#Topic> ;
+                                                  <https://w3id.org/deliberation/ontology#identifier> "creitem3" ;
+                                                  <https://w3id.org/deliberation/ontology#name> "Statements by the President" .
+
+
+###  https://w3id.org/deliberation/resource/creitem4
+<https://w3id.org/deliberation/resource/creitem4> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/deliberation/ontology#Topic> ;
+                                                  <https://w3id.org/deliberation/ontology#identifier> "creitem4" ;
+                                                  <https://w3id.org/deliberation/ontology#name> "Approval of the minutes of the previous sitting" .
+
+
+###  https://w3id.org/deliberation/resource/creitem5
+<https://w3id.org/deliberation/resource/creitem5> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/deliberation/ontology#Topic> ;
+                                                  <https://w3id.org/deliberation/ontology#identifier> "creitem5" ;
+                                                  <https://w3id.org/deliberation/ontology#name> "Composition of committees and delegations" .
+
+
+###  https://w3id.org/deliberation/resource/creitem6
+<https://w3id.org/deliberation/resource/creitem6> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/deliberation/ontology#Topic> ;
+                                                  <https://w3id.org/deliberation/ontology#identifier> "creitem6" ;
+                                                  <https://w3id.org/deliberation/ontology#name> "Corrigenda (Rule 251)" .
+
+
+###  https://w3id.org/deliberation/resource/creitem7
+<https://w3id.org/deliberation/resource/creitem7> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/deliberation/ontology#Topic> ;
+                                                  <https://w3id.org/deliberation/ontology#identifier> "creitem7" ;
+                                                  <https://w3id.org/deliberation/ontology#name> "Proposals for Union acts" .
+
+
+###  https://w3id.org/deliberation/resource/creitem8
+<https://w3id.org/deliberation/resource/creitem8> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/deliberation/ontology#Topic> ;
+                                                  <https://w3id.org/deliberation/ontology#identifier> "creitem8" ;
+                                                  <https://w3id.org/deliberation/ontology#name> "Parliament’s calendar of part-sessions - 2026" .
+
+
+###  https://w3id.org/deliberation/resource/creitem9
+<https://w3id.org/deliberation/resource/creitem9> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/deliberation/ontology#Topic> ;
+                                                  <https://w3id.org/deliberation/ontology#identifier> "creitem9" ;
+                                                  <https://w3id.org/deliberation/ontology#name> "Order of business" .
+
+
+###  https://w3id.org/deliberation/resource/ep_debate_20250310
+<https://w3id.org/deliberation/resource/ep_debate_20250310> rdf:type owl:NamedIndividual ,
+                                                                     <https://w3id.org/deliberation/ontology#DeliberationProcess> ;
+                                                            <https://w3id.org/deliberation/ontology#endDate> "2025-03-10T23:59:59+00:00"^^xsd:dateTime ;
+                                                            <https://w3id.org/deliberation/ontology#hasContribution> <https://w3id.org/deliberation/resource/contribution_1> ,
+                                                                                                                     <https://w3id.org/deliberation/resource/contribution_10> ,
+                                                                                                                     <https://w3id.org/deliberation/resource/contribution_11> ,
+                                                                                                                     <https://w3id.org/deliberation/resource/contribution_2> ,
+                                                                                                                     <https://w3id.org/deliberation/resource/contribution_3> ,
+                                                                                                                     <https://w3id.org/deliberation/resource/contribution_4> ,
+                                                                                                                     <https://w3id.org/deliberation/resource/contribution_5> ,
+                                                                                                                     <https://w3id.org/deliberation/resource/contribution_6> ,
+                                                                                                                     <https://w3id.org/deliberation/resource/contribution_7> ,
+                                                                                                                     <https://w3id.org/deliberation/resource/contribution_8> ,
+                                                                                                                     <https://w3id.org/deliberation/resource/contribution_9> ;
+                                                            <https://w3id.org/deliberation/ontology#hasParticipant> <https://w3id.org/deliberation/resource/participant_1> ,
+                                                                                                                    <https://w3id.org/deliberation/resource/participant_2> ,
+                                                                                                                    <https://w3id.org/deliberation/resource/participant_3> ,
+                                                                                                                    <https://w3id.org/deliberation/resource/participant_4> ,
+                                                                                                                    <https://w3id.org/deliberation/resource/participant_5> ;
+                                                            <https://w3id.org/deliberation/ontology#hasTopic> <https://w3id.org/deliberation/resource/creitem1> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem10> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem11> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem12> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem13> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem14> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem15> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem16> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem17> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem18> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem19> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem2> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem20> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem21> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem22> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem23> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem3> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem4> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem5> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem6> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem7> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem8> ,
+                                                                                                              <https://w3id.org/deliberation/resource/creitem9> ;
+                                                            <https://w3id.org/deliberation/ontology#identifier> "ep_debate_20250310" ;
+                                                            <https://w3id.org/deliberation/ontology#name> "European Parliament Debate - 2025-03-10 (Sample)" ;
+                                                            <https://w3id.org/deliberation/ontology#startDate> "2025-03-10T00:00:00+00:00"^^xsd:dateTime .
+
+
+###  https://w3id.org/deliberation/resource/org_PPE
+<https://w3id.org/deliberation/resource/org_PPE> rdf:type owl:NamedIndividual ,
+                                                          <https://w3id.org/deliberation/ontology#Organization> ;
+                                                 <https://w3id.org/deliberation/ontology#name> "PPE" .
+
+
+###  https://w3id.org/deliberation/resource/org_PfE
+<https://w3id.org/deliberation/resource/org_PfE> rdf:type owl:NamedIndividual ,
+                                                          <https://w3id.org/deliberation/ontology#Organization> ;
+                                                 <https://w3id.org/deliberation/ontology#name> "PfE" .
+
+
+###  https://w3id.org/deliberation/resource/org_Verts_ALE
+<https://w3id.org/deliberation/resource/org_Verts_ALE> rdf:type owl:NamedIndividual ,
+                                                                <https://w3id.org/deliberation/ontology#Organization> ;
+                                                       <https://w3id.org/deliberation/ontology#name> "Verts/ALE" .
+
+
+###  https://w3id.org/deliberation/resource/participant_1
+<https://w3id.org/deliberation/resource/participant_1> rdf:type owl:NamedIndividual ,
+                                                                <https://w3id.org/deliberation/ontology#Participant> ;
+                                                       <https://w3id.org/deliberation/ontology#hasRole> <https://w3id.org/deliberation/resource/role_participant_1> ;
+                                                       <https://w3id.org/deliberation/ontology#identifier> "participant_1" ;
+                                                       <https://w3id.org/deliberation/ontology#name> "President." .
+
+
+###  https://w3id.org/deliberation/resource/participant_2
+<https://w3id.org/deliberation/resource/participant_2> rdf:type owl:NamedIndividual ,
+                                                                <https://w3id.org/deliberation/ontology#Participant> ;
+                                                       <https://w3id.org/deliberation/ontology#identifier> "participant_2" ;
+                                                       <https://w3id.org/deliberation/ontology#isAffiliatedWith> <https://w3id.org/deliberation/resource/org_S&D> ;
+                                                       <https://w3id.org/deliberation/ontology#name> "Iratxe García Pérez" .
+
+
+###  https://w3id.org/deliberation/resource/participant_3
+<https://w3id.org/deliberation/resource/participant_3> rdf:type owl:NamedIndividual ,
+                                                                <https://w3id.org/deliberation/ontology#Participant> ;
+                                                       <https://w3id.org/deliberation/ontology#identifier> "participant_3" ;
+                                                       <https://w3id.org/deliberation/ontology#isAffiliatedWith> <https://w3id.org/deliberation/resource/org_PPE> ;
+                                                       <https://w3id.org/deliberation/ontology#name> "Željana Zovko" .
+
+
+###  https://w3id.org/deliberation/resource/participant_4
+<https://w3id.org/deliberation/resource/participant_4> rdf:type owl:NamedIndividual ,
+                                                                <https://w3id.org/deliberation/ontology#Participant> ;
+                                                       <https://w3id.org/deliberation/ontology#identifier> "participant_4" ;
+                                                       <https://w3id.org/deliberation/ontology#isAffiliatedWith> <https://w3id.org/deliberation/resource/org_PfE> ;
+                                                       <https://w3id.org/deliberation/ontology#name> "Αφροδίτη Λατινοπούλου" .
+
+
+###  https://w3id.org/deliberation/resource/participant_5
+<https://w3id.org/deliberation/resource/participant_5> rdf:type owl:NamedIndividual ,
+                                                                <https://w3id.org/deliberation/ontology#Participant> ;
+                                                       <https://w3id.org/deliberation/ontology#identifier> "participant_5" ;
+                                                       <https://w3id.org/deliberation/ontology#isAffiliatedWith> <https://w3id.org/deliberation/resource/org_Verts_ALE> ;
+                                                       <https://w3id.org/deliberation/ontology#name> "Alice Kuhnke" .
+
+
+###  https://w3id.org/deliberation/resource/role_participant_1
+<https://w3id.org/deliberation/resource/role_participant_1> rdf:type owl:NamedIndividual ,
+                                                                     <https://w3id.org/deliberation/ontology#Role> ;
+                                                            <https://w3id.org/deliberation/ontology#name> "President" .
+
+
+###  https://w3id.org/deliberation/resource/org_S&D
+<https://w3id.org/deliberation/resource/org_S&D> rdf:type owl:NamedIndividual ,
+                                                          <https://w3id.org/deliberation/ontology#Organization> ;
+                                                 <https://w3id.org/deliberation/ontology#name> "S&D" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
