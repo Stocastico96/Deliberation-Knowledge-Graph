@@ -1,0 +1,412 @@
+@prefix : <https://w3id.org/deliberation/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/deliberation/ontology#> .
+
+<https://w3id.org/deliberation/ontology> rdf:type owl:Ontology ;
+                                          <http://purl.org/dc/terms/created> "2025-03-03"^^xsd:date ;
+                                          <http://purl.org/dc/terms/creator> "Simone Vagnoni" ;
+                                          <http://purl.org/dc/terms/description> "An ontology for representing and analyzing deliberative processes, arguments, and discourse."@en ;
+                                          <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
+                                          <http://purl.org/dc/terms/modified> "2025-03-20"^^xsd:date ;
+                                          <http://purl.org/dc/terms/title> "Deliberation Ontology"@en ;
+                                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "deliberation" ;
+                                          <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/deliberation/ontology#" ;
+                                          rdfs:comment "A comprehensive model for representing deliberative processes across different platforms and contexts."@en ;
+                                          rdfs:label "Deliberation Ontology"@en ;
+                                          owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/deliberation/ontology#attacks
+:attacks rdf:type owl:ObjectProperty ;
+         rdfs:domain :Argument ;
+         rdfs:range [ rdf:type owl:Class ;
+                      owl:unionOf ( :Argument
+                                    :Position
+                                  )
+                    ] ;
+         rdfs:comment "Indicates that an argument attacks another argument or position." ;
+         rdfs:label "attacks" .
+
+
+###  https://w3id.org/deliberation/ontology#containsFallacy
+:containsFallacy rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Argument ;
+                 rdfs:range :FallacyType ;
+                 rdfs:comment "Indicates that an argument contains a specific type of logical fallacy." ;
+                 rdfs:label "contains fallacy" .
+
+
+###  https://w3id.org/deliberation/ontology#hasArgument
+:hasArgument rdf:type owl:ObjectProperty ;
+             rdfs:domain :DeliberationProcess ;
+             rdfs:range :Argument ;
+             rdfs:comment "Relates a deliberation process to arguments made within it." ;
+             rdfs:label "has argument" .
+
+
+###  https://w3id.org/deliberation/ontology#hasConclusion
+:hasConclusion rdf:type owl:ObjectProperty ;
+               rdfs:domain :Argument ;
+               rdfs:range :Conclusion ;
+               rdfs:comment "Relates an argument to its conclusion." ;
+               rdfs:label "has conclusion" .
+
+
+###  https://w3id.org/deliberation/ontology#hasContribution
+:hasContribution rdf:type owl:ObjectProperty ;
+                 rdfs:domain :DeliberationProcess ;
+                 rdfs:range :Contribution ;
+                 rdfs:comment "Relates a deliberation process to contributions made within it." ;
+                 rdfs:label "has contribution" .
+
+
+###  https://w3id.org/deliberation/ontology#hasEvidence
+:hasEvidence rdf:type owl:ObjectProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :Argument
+                                         :Premise
+                                       )
+                         ] ;
+             rdfs:range :Evidence ;
+             rdfs:comment "Relates an argument or premise to supporting evidence." ;
+             rdfs:label "has evidence" .
+
+
+###  https://w3id.org/deliberation/ontology#hasParticipant
+:hasParticipant rdf:type owl:ObjectProperty ;
+                rdfs:domain :DeliberationProcess ;
+                rdfs:range :Participant ;
+                rdfs:comment "Relates a deliberation process to its participants." ;
+                rdfs:label "has participant" .
+
+
+###  https://w3id.org/deliberation/ontology#hasPremise
+:hasPremise rdf:type owl:ObjectProperty ;
+            rdfs:domain :Argument ;
+            rdfs:range :Premise ;
+            rdfs:comment "Relates an argument to its premises." ;
+            rdfs:label "has premise" .
+
+
+###  https://w3id.org/deliberation/ontology#hasRole
+:hasRole rdf:type owl:ObjectProperty ;
+         rdfs:domain :Participant ;
+         rdfs:range :Role ;
+         rdfs:comment "Relates a participant to their role in a deliberation." ;
+         rdfs:label "has role" .
+
+
+###  https://w3id.org/deliberation/ontology#hasStage
+:hasStage rdf:type owl:ObjectProperty ;
+          rdfs:domain :DeliberationProcess ;
+          rdfs:range :Stage ;
+          rdfs:comment "Relates a deliberation process to its stages." ;
+          rdfs:label "has stage" .
+
+
+###  https://w3id.org/deliberation/ontology#hasTopic
+:hasTopic rdf:type owl:ObjectProperty ;
+          rdfs:domain :DeliberationProcess ;
+          rdfs:range :Topic ;
+          rdfs:comment "Relates a deliberation process to its topic." ;
+          rdfs:label "has topic" .
+
+
+###  https://w3id.org/deliberation/ontology#isAffiliatedWith
+:isAffiliatedWith rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Participant ;
+                  rdfs:range :Organization ;
+                  rdfs:comment "Relates a participant to organizations they are affiliated with." ;
+                  rdfs:label "is affiliated with" .
+
+
+###  https://w3id.org/deliberation/ontology#madeBy
+:madeBy rdf:type owl:ObjectProperty ;
+        rdfs:domain :Contribution ;
+        rdfs:range :Participant ;
+        rdfs:comment "Relates a contribution to the participant who made it." ;
+        rdfs:label "made by" .
+
+
+###  https://w3id.org/deliberation/ontology#references
+:references rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Argument
+                                        :Contribution
+                                      )
+                        ] ;
+            rdfs:range :InformationResource ;
+            rdfs:comment "Relates a contribution or argument to information resources it references." ;
+            rdfs:label "references" .
+
+
+###  https://w3id.org/deliberation/ontology#responseTo
+:responseTo rdf:type owl:ObjectProperty ;
+            rdfs:domain :Contribution ;
+            rdfs:range :Contribution ;
+            rdfs:comment "Relates a contribution to another contribution it responds to." ;
+            rdfs:label "response to" .
+
+
+###  https://w3id.org/deliberation/ontology#supports
+:supports rdf:type owl:ObjectProperty ;
+          rdfs:domain :Argument ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Argument
+                                     :Position
+                                   )
+                     ] ;
+          rdfs:comment "Indicates that an argument supports another argument or position." ;
+          rdfs:label "supports" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/deliberation/ontology#endDate
+:endDate rdf:type owl:DatatypeProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :DeliberationProcess
+                                     :Stage
+                                   )
+                     ] ;
+         rdfs:range xsd:dateTime ;
+         rdfs:comment "The end date and time of a deliberation process or stage." ;
+         rdfs:label "end date" .
+
+
+###  https://w3id.org/deliberation/ontology#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:comment "A unique identifier for an entity." ;
+            rdfs:label "identifier" .
+
+
+###  https://w3id.org/deliberation/ontology#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:comment "The name of an entity." ;
+      rdfs:label "name" .
+
+
+###  https://w3id.org/deliberation/ontology#platformIdentifier
+:platformIdentifier rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :identifier ;
+                    rdfs:domain :CrossPlatformIdentifier ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "An identifier specific to a particular platform." ;
+                    rdfs:label "platform identifier" .
+
+
+###  https://w3id.org/deliberation/ontology#startDate
+:startDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :DeliberationProcess
+                                       :Stage
+                                     )
+                       ] ;
+           rdfs:range xsd:dateTime ;
+           rdfs:comment "The start date and time of a deliberation process or stage." ;
+           rdfs:label "start date" .
+
+
+###  https://w3id.org/deliberation/ontology#text
+:text rdf:type owl:DatatypeProperty ;
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( :Argument
+                                  :Conclusion
+                                  :Contribution
+                                  :Position
+                                  :Premise
+                                )
+                  ] ;
+      rdfs:range xsd:string ;
+      rdfs:comment "The textual content of a contribution, argument, position, premise, or conclusion." ;
+      rdfs:label "text" .
+
+
+###  https://w3id.org/deliberation/ontology#timestamp
+:timestamp rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Contribution ;
+           rdfs:range xsd:dateTime ;
+           rdfs:comment "The date and time when a contribution was made." ;
+           rdfs:label "timestamp" .
+
+
+###  https://w3id.org/deliberation/ontology#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain :InformationResource ;
+     rdfs:range xsd:anyURI ;
+     rdfs:comment "The URL of an information resource." ;
+     rdfs:label "url" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/deliberation/ontology#Argument
+:Argument rdf:type owl:Class ;
+          rdfs:subClassOf :Contribution ;
+          rdfs:comment "A structured form of contribution with premises and conclusions." ;
+          rdfs:label "Argument" .
+
+
+###  https://w3id.org/deliberation/ontology#ArgumentStructure
+:ArgumentStructure rdf:type owl:Class ;
+                   rdfs:comment "The formal structure of an argument, including premises and conclusions." ;
+                   rdfs:label "Argument Structure" .
+
+
+###  https://w3id.org/deliberation/ontology#Conclusion
+:Conclusion rdf:type owl:Class ;
+            rdfs:subClassOf :ArgumentStructure ;
+            rdfs:comment "The claim that an argument aims to establish." ;
+            rdfs:label "Conclusion" .
+
+
+###  https://w3id.org/deliberation/ontology#Consensus
+:Consensus rdf:type owl:Class ;
+           rdfs:comment "Agreement reached through deliberation." ;
+           rdfs:label "Consensus" .
+
+
+###  https://w3id.org/deliberation/ontology#Contribution
+:Contribution rdf:type owl:Class ;
+              rdfs:comment "Any input provided by a participant in a deliberation." ;
+              rdfs:label "Contribution" .
+
+
+###  https://w3id.org/deliberation/ontology#CrossPlatformIdentifier
+:CrossPlatformIdentifier rdf:type owl:Class ;
+                         rdfs:comment "Mechanisms to link entities across different deliberation platforms." ;
+                         rdfs:label "Cross Platform Identifier" .
+
+
+###  https://w3id.org/deliberation/ontology#DeliberationProcess
+:DeliberationProcess rdf:type owl:Class ;
+                     rdfs:comment "The overall deliberative activity, including its stages, timeline, and outcomes." ;
+                     rdfs:label "Deliberation Process" .
+
+
+###  https://w3id.org/deliberation/ontology#Evidence
+:Evidence rdf:type owl:Class ;
+          rdfs:comment "Supporting information for claims made in arguments." ;
+          rdfs:label "Evidence" .
+
+
+###  https://w3id.org/deliberation/ontology#FallacyType
+:FallacyType rdf:type owl:Class ;
+             rdfs:comment "Classification of logical fallacies that can occur in arguments." ;
+             rdfs:label "Fallacy Type" .
+
+
+###  https://w3id.org/deliberation/ontology#InformationResource
+:InformationResource rdf:type owl:Class ;
+                     rdfs:comment "External sources of information referenced in deliberations." ;
+                     rdfs:label "Information Resource" .
+
+
+###  https://w3id.org/deliberation/ontology#LegalSource
+:LegalSource rdf:type owl:Class ;
+             rdfs:subClassOf :InformationResource ;
+             rdfs:comment "Legal documents, frameworks, or interpretations relevant to deliberations." ;
+             rdfs:label "Legal Source" .
+
+
+###  https://w3id.org/deliberation/ontology#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:comment "Formal entities represented in or responsible for deliberations." ;
+              rdfs:label "Organization" .
+
+
+###  https://w3id.org/deliberation/ontology#Participant
+:Participant rdf:type owl:Class ;
+             rdfs:comment "Individuals or entities taking part in a deliberation process." ;
+             rdfs:label "Participant" .
+
+
+###  https://w3id.org/deliberation/ontology#Position
+:Position rdf:type owl:Class ;
+          rdfs:comment "A stance or viewpoint on an issue under deliberation." ;
+          rdfs:label "Position" .
+
+
+###  https://w3id.org/deliberation/ontology#Premise
+:Premise rdf:type owl:Class ;
+         rdfs:subClassOf :ArgumentStructure ;
+         rdfs:comment "A statement that provides support for a conclusion in an argument." ;
+         rdfs:label "Premise" .
+
+
+###  https://w3id.org/deliberation/ontology#Role
+:Role rdf:type owl:Class ;
+      rdfs:comment "The function or position a participant holds in a deliberation." ;
+      rdfs:label "Role" .
+
+
+###  https://w3id.org/deliberation/ontology#Stage
+:Stage rdf:type owl:Class ;
+       rdfs:comment "A distinct phase in a deliberation process with specific activities and goals." ;
+       rdfs:label "Stage" .
+
+
+###  https://w3id.org/deliberation/ontology#Topic
+:Topic rdf:type owl:Class ;
+       rdfs:comment "The subject matter of a deliberation." ;
+       rdfs:label "Topic" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,411 @@
+<https://w3id.org/deliberation/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/created> "2025-03-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/creator> "Simone Vagnoni" .
+<https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/description> "An ontology for representing and analyzing deliberative processes, arguments, and discourse."@en .
+<https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/modified> "2025-03-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/title> "Deliberation Ontology"@en .
+<https://w3id.org/deliberation/ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "deliberation" .
+<https://w3id.org/deliberation/ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/deliberation/ontology#" .
+<https://w3id.org/deliberation/ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "A comprehensive model for representing deliberative processes across different platforms and contexts."@en .
+<https://w3id.org/deliberation/ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Deliberation Ontology"@en .
+<https://w3id.org/deliberation/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/deliberation/ontology#attacks
+<https://w3id.org/deliberation/ontology#attacks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#attacks> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#attacks> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Position> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Argument> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#attacks> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an argument attacks another argument or position." .
+<https://w3id.org/deliberation/ontology#attacks> <http://www.w3.org/2000/01/rdf-schema#label> "attacks" .
+# 
+# https://w3id.org/deliberation/ontology#containsFallacy
+<https://w3id.org/deliberation/ontology#containsFallacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#containsFallacy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#containsFallacy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#FallacyType> .
+<https://w3id.org/deliberation/ontology#containsFallacy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an argument contains a specific type of logical fallacy." .
+<https://w3id.org/deliberation/ontology#containsFallacy> <http://www.w3.org/2000/01/rdf-schema#label> "contains fallacy" .
+# 
+# https://w3id.org/deliberation/ontology#hasArgument
+<https://w3id.org/deliberation/ontology#hasArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#hasArgument> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+<https://w3id.org/deliberation/ontology#hasArgument> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#hasArgument> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a deliberation process to arguments made within it." .
+<https://w3id.org/deliberation/ontology#hasArgument> <http://www.w3.org/2000/01/rdf-schema#label> "has argument" .
+# 
+# https://w3id.org/deliberation/ontology#hasConclusion
+<https://w3id.org/deliberation/ontology#hasConclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#hasConclusion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#hasConclusion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Conclusion> .
+<https://w3id.org/deliberation/ontology#hasConclusion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an argument to its conclusion." .
+<https://w3id.org/deliberation/ontology#hasConclusion> <http://www.w3.org/2000/01/rdf-schema#label> "has conclusion" .
+# 
+# https://w3id.org/deliberation/ontology#hasContribution
+<https://w3id.org/deliberation/ontology#hasContribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#hasContribution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+<https://w3id.org/deliberation/ontology#hasContribution> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#hasContribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a deliberation process to contributions made within it." .
+<https://w3id.org/deliberation/ontology#hasContribution> <http://www.w3.org/2000/01/rdf-schema#label> "has contribution" .
+# 
+# https://w3id.org/deliberation/ontology#hasEvidence
+<https://w3id.org/deliberation/ontology#hasEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#hasEvidence> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Premise> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Argument> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#hasEvidence> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Evidence> .
+<https://w3id.org/deliberation/ontology#hasEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an argument or premise to supporting evidence." .
+<https://w3id.org/deliberation/ontology#hasEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "has evidence" .
+# 
+# https://w3id.org/deliberation/ontology#hasParticipant
+<https://w3id.org/deliberation/ontology#hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+<https://w3id.org/deliberation/ontology#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Participant> .
+<https://w3id.org/deliberation/ontology#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a deliberation process to its participants." .
+<https://w3id.org/deliberation/ontology#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "has participant" .
+# 
+# https://w3id.org/deliberation/ontology#hasPremise
+<https://w3id.org/deliberation/ontology#hasPremise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#hasPremise> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#hasPremise> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Premise> .
+<https://w3id.org/deliberation/ontology#hasPremise> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an argument to its premises." .
+<https://w3id.org/deliberation/ontology#hasPremise> <http://www.w3.org/2000/01/rdf-schema#label> "has premise" .
+# 
+# https://w3id.org/deliberation/ontology#hasRole
+<https://w3id.org/deliberation/ontology#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#hasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Participant> .
+<https://w3id.org/deliberation/ontology#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Role> .
+<https://w3id.org/deliberation/ontology#hasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a participant to their role in a deliberation." .
+<https://w3id.org/deliberation/ontology#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "has role" .
+# 
+# https://w3id.org/deliberation/ontology#hasStage
+<https://w3id.org/deliberation/ontology#hasStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#hasStage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+<https://w3id.org/deliberation/ontology#hasStage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Stage> .
+<https://w3id.org/deliberation/ontology#hasStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a deliberation process to its stages." .
+<https://w3id.org/deliberation/ontology#hasStage> <http://www.w3.org/2000/01/rdf-schema#label> "has stage" .
+# 
+# https://w3id.org/deliberation/ontology#hasTopic
+<https://w3id.org/deliberation/ontology#hasTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#hasTopic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+<https://w3id.org/deliberation/ontology#hasTopic> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Topic> .
+<https://w3id.org/deliberation/ontology#hasTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a deliberation process to its topic." .
+<https://w3id.org/deliberation/ontology#hasTopic> <http://www.w3.org/2000/01/rdf-schema#label> "has topic" .
+# 
+# https://w3id.org/deliberation/ontology#isAffiliatedWith
+<https://w3id.org/deliberation/ontology#isAffiliatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#isAffiliatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Participant> .
+<https://w3id.org/deliberation/ontology#isAffiliatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Organization> .
+<https://w3id.org/deliberation/ontology#isAffiliatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a participant to organizations they are affiliated with." .
+<https://w3id.org/deliberation/ontology#isAffiliatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "is affiliated with" .
+# 
+# https://w3id.org/deliberation/ontology#madeBy
+<https://w3id.org/deliberation/ontology#madeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#madeBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#madeBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Participant> .
+<https://w3id.org/deliberation/ontology#madeBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a contribution to the participant who made it." .
+<https://w3id.org/deliberation/ontology#madeBy> <http://www.w3.org/2000/01/rdf-schema#label> "made by" .
+# 
+# https://w3id.org/deliberation/ontology#references
+<https://w3id.org/deliberation/ontology#references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Contribution> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Argument> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#references> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#InformationResource> .
+<https://w3id.org/deliberation/ontology#references> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a contribution or argument to information resources it references." .
+<https://w3id.org/deliberation/ontology#references> <http://www.w3.org/2000/01/rdf-schema#label> "references" .
+# 
+# https://w3id.org/deliberation/ontology#responseTo
+<https://w3id.org/deliberation/ontology#responseTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#responseTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#responseTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#responseTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a contribution to another contribution it responds to." .
+<https://w3id.org/deliberation/ontology#responseTo> <http://www.w3.org/2000/01/rdf-schema#label> "response to" .
+# 
+# https://w3id.org/deliberation/ontology#supports
+<https://w3id.org/deliberation/ontology#supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#supports> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#supports> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Position> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Argument> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#supports> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an argument supports another argument or position." .
+<https://w3id.org/deliberation/ontology#supports> <http://www.w3.org/2000/01/rdf-schema#label> "supports" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/deliberation/ontology#endDate
+<https://w3id.org/deliberation/ontology#endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#endDate> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Stage> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#endDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/deliberation/ontology#endDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The end date and time of a deliberation process or stage." .
+<https://w3id.org/deliberation/ontology#endDate> <http://www.w3.org/2000/01/rdf-schema#label> "end date" .
+# 
+# https://w3id.org/deliberation/ontology#identifier
+<https://w3id.org/deliberation/ontology#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/deliberation/ontology#identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier for an entity." .
+<https://w3id.org/deliberation/ontology#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
+# 
+# https://w3id.org/deliberation/ontology#name
+<https://w3id.org/deliberation/ontology#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/deliberation/ontology#name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of an entity." .
+<https://w3id.org/deliberation/ontology#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# https://w3id.org/deliberation/ontology#platformIdentifier
+<https://w3id.org/deliberation/ontology#platformIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#platformIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/deliberation/ontology#identifier> .
+<https://w3id.org/deliberation/ontology#platformIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#CrossPlatformIdentifier> .
+<https://w3id.org/deliberation/ontology#platformIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/deliberation/ontology#platformIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier specific to a particular platform." .
+<https://w3id.org/deliberation/ontology#platformIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "platform identifier" .
+# 
+# https://w3id.org/deliberation/ontology#startDate
+<https://w3id.org/deliberation/ontology#startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#startDate> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Stage> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#startDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/deliberation/ontology#startDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The start date and time of a deliberation process or stage." .
+<https://w3id.org/deliberation/ontology#startDate> <http://www.w3.org/2000/01/rdf-schema#label> "start date" .
+# 
+# https://w3id.org/deliberation/ontology#text
+<https://w3id.org/deliberation/ontology#text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#text> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Premise> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Position> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Contribution> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Conclusion> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Argument> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#text> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/deliberation/ontology#text> <http://www.w3.org/2000/01/rdf-schema#comment> "The textual content of a contribution, argument, position, premise, or conclusion." .
+<https://w3id.org/deliberation/ontology#text> <http://www.w3.org/2000/01/rdf-schema#label> "text" .
+# 
+# https://w3id.org/deliberation/ontology#timestamp
+<https://w3id.org/deliberation/ontology#timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#timestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/deliberation/ontology#timestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "The date and time when a contribution was made." .
+<https://w3id.org/deliberation/ontology#timestamp> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp" .
+# 
+# https://w3id.org/deliberation/ontology#url
+<https://w3id.org/deliberation/ontology#url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#url> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#InformationResource> .
+<https://w3id.org/deliberation/ontology#url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/deliberation/ontology#url> <http://www.w3.org/2000/01/rdf-schema#comment> "The URL of an information resource." .
+<https://w3id.org/deliberation/ontology#url> <http://www.w3.org/2000/01/rdf-schema#label> "url" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/deliberation/ontology#Argument
+<https://w3id.org/deliberation/ontology#Argument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#Argument> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured form of contribution with premises and conclusions." .
+<https://w3id.org/deliberation/ontology#Argument> <http://www.w3.org/2000/01/rdf-schema#label> "Argument" .
+# 
+# https://w3id.org/deliberation/ontology#ArgumentStructure
+<https://w3id.org/deliberation/ontology#ArgumentStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#ArgumentStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "The formal structure of an argument, including premises and conclusions." .
+<https://w3id.org/deliberation/ontology#ArgumentStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Argument Structure" .
+# 
+# https://w3id.org/deliberation/ontology#Conclusion
+<https://w3id.org/deliberation/ontology#Conclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Conclusion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/deliberation/ontology#ArgumentStructure> .
+<https://w3id.org/deliberation/ontology#Conclusion> <http://www.w3.org/2000/01/rdf-schema#comment> "The claim that an argument aims to establish." .
+<https://w3id.org/deliberation/ontology#Conclusion> <http://www.w3.org/2000/01/rdf-schema#label> "Conclusion" .
+# 
+# https://w3id.org/deliberation/ontology#Consensus
+<https://w3id.org/deliberation/ontology#Consensus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Consensus> <http://www.w3.org/2000/01/rdf-schema#comment> "Agreement reached through deliberation." .
+<https://w3id.org/deliberation/ontology#Consensus> <http://www.w3.org/2000/01/rdf-schema#label> "Consensus" .
+# 
+# https://w3id.org/deliberation/ontology#Contribution
+<https://w3id.org/deliberation/ontology#Contribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Contribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Any input provided by a participant in a deliberation." .
+<https://w3id.org/deliberation/ontology#Contribution> <http://www.w3.org/2000/01/rdf-schema#label> "Contribution" .
+# 
+# https://w3id.org/deliberation/ontology#CrossPlatformIdentifier
+<https://w3id.org/deliberation/ontology#CrossPlatformIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#CrossPlatformIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Mechanisms to link entities across different deliberation platforms." .
+<https://w3id.org/deliberation/ontology#CrossPlatformIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "Cross Platform Identifier" .
+# 
+# https://w3id.org/deliberation/ontology#DeliberationProcess
+<https://w3id.org/deliberation/ontology#DeliberationProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#DeliberationProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "The overall deliberative activity, including its stages, timeline, and outcomes." .
+<https://w3id.org/deliberation/ontology#DeliberationProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Deliberation Process" .
+# 
+# https://w3id.org/deliberation/ontology#Evidence
+<https://w3id.org/deliberation/ontology#Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Supporting information for claims made in arguments." .
+<https://w3id.org/deliberation/ontology#Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence" .
+# 
+# https://w3id.org/deliberation/ontology#FallacyType
+<https://w3id.org/deliberation/ontology#FallacyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#FallacyType> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of logical fallacies that can occur in arguments." .
+<https://w3id.org/deliberation/ontology#FallacyType> <http://www.w3.org/2000/01/rdf-schema#label> "Fallacy Type" .
+# 
+# https://w3id.org/deliberation/ontology#InformationResource
+<https://w3id.org/deliberation/ontology#InformationResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#InformationResource> <http://www.w3.org/2000/01/rdf-schema#comment> "External sources of information referenced in deliberations." .
+<https://w3id.org/deliberation/ontology#InformationResource> <http://www.w3.org/2000/01/rdf-schema#label> "Information Resource" .
+# 
+# https://w3id.org/deliberation/ontology#LegalSource
+<https://w3id.org/deliberation/ontology#LegalSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#LegalSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/deliberation/ontology#InformationResource> .
+<https://w3id.org/deliberation/ontology#LegalSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal documents, frameworks, or interpretations relevant to deliberations." .
+<https://w3id.org/deliberation/ontology#LegalSource> <http://www.w3.org/2000/01/rdf-schema#label> "Legal Source" .
+# 
+# https://w3id.org/deliberation/ontology#Organization
+<https://w3id.org/deliberation/ontology#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Formal entities represented in or responsible for deliberations." .
+<https://w3id.org/deliberation/ontology#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+# 
+# https://w3id.org/deliberation/ontology#Participant
+<https://w3id.org/deliberation/ontology#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#comment> "Individuals or entities taking part in a deliberation process." .
+<https://w3id.org/deliberation/ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#label> "Participant" .
+# 
+# https://w3id.org/deliberation/ontology#Position
+<https://w3id.org/deliberation/ontology#Position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Position> <http://www.w3.org/2000/01/rdf-schema#comment> "A stance or viewpoint on an issue under deliberation." .
+<https://w3id.org/deliberation/ontology#Position> <http://www.w3.org/2000/01/rdf-schema#label> "Position" .
+# 
+# https://w3id.org/deliberation/ontology#Premise
+<https://w3id.org/deliberation/ontology#Premise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Premise> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/deliberation/ontology#ArgumentStructure> .
+<https://w3id.org/deliberation/ontology#Premise> <http://www.w3.org/2000/01/rdf-schema#comment> "A statement that provides support for a conclusion in an argument." .
+<https://w3id.org/deliberation/ontology#Premise> <http://www.w3.org/2000/01/rdf-schema#label> "Premise" .
+# 
+# https://w3id.org/deliberation/ontology#Role
+<https://w3id.org/deliberation/ontology#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "The function or position a participant holds in a deliberation." .
+<https://w3id.org/deliberation/ontology#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role" .
+# 
+# https://w3id.org/deliberation/ontology#Stage
+<https://w3id.org/deliberation/ontology#Stage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Stage> <http://www.w3.org/2000/01/rdf-schema#comment> "A distinct phase in a deliberation process with specific activities and goals." .
+<https://w3id.org/deliberation/ontology#Stage> <http://www.w3.org/2000/01/rdf-schema#label> "Stage" .
+# 
+# https://w3id.org/deliberation/ontology#Topic
+<https://w3id.org/deliberation/ontology#Topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Topic> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject matter of a deliberation." .
+<https://w3id.org/deliberation/ontology#Topic> <http://www.w3.org/2000/01/rdf-schema#label> "Topic" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
