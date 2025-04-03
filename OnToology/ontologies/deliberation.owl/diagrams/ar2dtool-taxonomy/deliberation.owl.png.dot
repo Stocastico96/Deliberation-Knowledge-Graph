@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "dkg:Conclusion" "dkg:LegalSource" "dkg:Argument" "dkg:InformationResource" "dkg:Contribution" "dkg:ArgumentStructure" "dkg:Premise" ; /*classes style*/
+	"dkg:Premise" -> "dkg:ArgumentStructure" [ label = "rdfs:subClassOf" ];
+	"dkg:Argument" -> "dkg:Contribution" [ label = "rdfs:subClassOf" ];
+	"dkg:LegalSource" -> "dkg:InformationResource" [ label = "rdfs:subClassOf" ];
+	"dkg:Conclusion" -> "dkg:ArgumentStructure" [ label = "rdfs:subClassOf" ];
+
+}

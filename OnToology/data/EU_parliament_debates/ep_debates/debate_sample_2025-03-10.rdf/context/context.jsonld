@@ -1,0 +1,58 @@
+{
+  "@context" : {
+    "startDate" : {
+      "@id" : "https://w3id.org/deliberation/ontology#startDate"
+    },
+    "Organization" : {
+      "@id" : "https://w3id.org/deliberation/ontology#Organization"
+    },
+    "hasRole" : {
+      "@id" : "https://w3id.org/deliberation/ontology#hasRole"
+    },
+    "timestamp" : {
+      "@id" : "https://w3id.org/deliberation/ontology#timestamp"
+    },
+    "Topic" : {
+      "@id" : "https://w3id.org/deliberation/ontology#Topic"
+    },
+    "Participant" : {
+      "@id" : "https://w3id.org/deliberation/ontology#Participant"
+    },
+    "name" : {
+      "@id" : "https://w3id.org/deliberation/ontology#name"
+    },
+    "Role" : {
+      "@id" : "https://w3id.org/deliberation/ontology#Role"
+    },
+    "text" : {
+      "@id" : "https://w3id.org/deliberation/ontology#text"
+    },
+    "hasTopic" : {
+      "@id" : "https://w3id.org/deliberation/ontology#hasTopic"
+    },
+    "identifier" : {
+      "@id" : "https://w3id.org/deliberation/ontology#identifier"
+    },
+    "hasParticipant" : {
+      "@id" : "https://w3id.org/deliberation/ontology#hasParticipant"
+    },
+    "DeliberationProcess" : {
+      "@id" : "https://w3id.org/deliberation/ontology#DeliberationProcess"
+    },
+    "isAffiliatedWith" : {
+      "@id" : "https://w3id.org/deliberation/ontology#isAffiliatedWith"
+    },
+    "Contribution" : {
+      "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+    },
+    "endDate" : {
+      "@id" : "https://w3id.org/deliberation/ontology#endDate"
+    },
+    "madeBy" : {
+      "@id" : "https://w3id.org/deliberation/ontology#madeBy"
+    },
+    "hasContribution" : {
+      "@id" : "https://w3id.org/deliberation/ontology#hasContribution"
+    }
+  }
+}
