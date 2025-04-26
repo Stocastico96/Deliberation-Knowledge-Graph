@@ -11,6 +11,25 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    /* Custom color scheme based on DKG daft.png (green vines, Donkey Kong, Daft Punk) */
+    :root {
+      --primary-color: #4a9d3c; /* Green for vines */
+      --primary-light: #6abe5c;
+      --primary-dark: #3a7d2c;
+      --secondary-color: #8b5a2b; /* Brown for Donkey Kong */
+      --secondary-light: #a67c4e;
+      --secondary-dark: #6b4521;
+      --accent-color: #ffd700; /* Gold for Daft Punk helmets */
+      --accent-light: #ffe44d;
+      --accent-dark: #ccac00;
+      --light-color: #f8fafc;
+      --dark-color: #0f172a;
+      --text-color: #334155;
+      --text-light: #64748b;
+      --link-color: #4a9d3c;
+      --link-hover-color: #3a7d2c;
+    }
+    
     /* Custom styles for the hero section with background image */
     .hero-section {
       position: relative;
@@ -142,6 +161,47 @@
       gap: 1rem;
       flex-wrap: wrap;
     }
+
+    /* Override header background */
+    header {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    }
+    
+    /* Table styles */
+    .table-responsive {
+      overflow-x: auto;
+      margin-bottom: 2rem;
+    }
+    
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+      background-color: white;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+    }
+    
+    .table th, .table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .table th {
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: 600;
+    }
+    
+    .table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .table tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
   </style>
 </head>
 <body>
@@ -211,6 +271,13 @@
               <p>The European Parliament Debates dataset contains structured representations of plenary session debates, converted from verbatim HTML reports into both JSON and RDF formats aligned with the Deliberation Knowledge Graph ontology.</p>
               <p>This dataset captures the rich deliberative processes of the European Parliament, including speeches, topics, participants, and their political affiliations.</p>
               
+              <div class="source">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16">
+                  <path fill="currentColor" d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/>
+                </svg>
+                <a href="https://data.europarl.europa.eu/en/datasets?dataThemeFamily=dataset.theme.EP_PLEN_DOC&language=it&order=RELEVANCE" target="_blank">European Parliament Open Data Portal</a>
+              </div>
+              
               <div class="btn-group">
                 <a href="data/EU_parliament_debates/ep_debates/debate_sample_2025-03-10.json" class="btn">View Sample JSON</a>
                 <a href="data/EU_parliament_debates/ep_debates/debate_sample_2025-03-10.rdf" class="btn btn-secondary">View Sample RDF</a>
@@ -220,12 +287,12 @@
               <div class="api-info">
                 <h4>Data Structure</h4>
                 <pre><code>{
-  "@type": "dkg:DeliberationProcess",
-  "dkg:identifier": "ep_debate_YYYYMMDD",
-  "dkg:name": "European Parliament Debate",
-  "dkg:hasTopic": [...],
-  "dkg:hasParticipant": [...],
-  "dkg:hasContribution": [...]
+  "@type": "deliberation:DeliberationProcess",
+  "deliberation:identifier": "ep_debate_YYYYMMDD",
+  "deliberation:name": "European Parliament Debate",
+  "deliberation:hasTopic": [...],
+  "deliberation:hasParticipant": [...],
+  "deliberation:hasContribution": [...]
 }</code></pre>
               </div>
             </div>
@@ -287,478 +354,4 @@
           <p>Data from a deliberative democracy experiment inspired by Jürgen Habermas's theories of communicative rationality and deliberative democracy.</p>
           <div class="source">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="16" height="16">
-              <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-            </svg>
-            <a href="https://github.com/google-deepmind/habermas_machine" target="_blank">Source Repository</a>
-          </div>
-          <div class="btn-group">
-            <a href="data/habermas_machine/sample/sample.json" class="btn">View Sample</a>
-            <a href="data/habermas_machine/readme.txt" class="btn btn-secondary">Documentation</a>
-          </div>
-        </div>
-        
-        <div class="dataset-card" data-category="participatory">
-          <h3>Decidim Barcelona</h3>
-          <p>Data from Barcelona's implementation of the Decidim participatory democracy platform, showcasing citizen engagement in urban planning and policy development.</p>
-          <div class="source">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16">
-              <path fill="currentColor" d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/>
-            </svg>
-            <a href="https://www.decidim.barcelona/open-data/download?locale=es" target="_blank">Source Website</a>
-          </div>
-          <div class="btn-group">
-            <a href="data/nightly_decidim/sample/sample.json" class="btn">View Sample</a>
-            <a href="data/nightly_decidim/readme.txt" class="btn btn-secondary">Documentation</a>
-          </div>
-        </div>
-        
-        <div class="dataset-card" data-category="legal">
-          <h3>US Supreme Court Arguments</h3>
-          <p>Transcripts of oral arguments before the United States Supreme Court (2017-2021), providing insights into legal deliberation at the highest judicial level.</p>
-          <div class="source">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16">
-              <path fill="currentColor" d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/>
-            </svg>
-            <a href="https://www.kaggle.com/datasets/jameslabadorf/us-supreme-court-arguments-20172021" target="_blank">Source Dataset</a>
-          </div>
-          <div class="btn-group">
-            <a href="data/US_supreme_court_arguments/sample/sample.json" class="btn">View Sample</a>
-            <a href="data/US_supreme_court_arguments/readme.txt" class="btn btn-secondary">Documentation</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="ontologies" class="section">
-    <div class="container">
-      <h2>Relevant Ontologies</h2>
-      <table class="ontologies-table">
-        <thead>
-          <tr>
-            <th>Ontology</th>
-            <th>Available (rdf | xml | doc)</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Language</th>
-            <th>Jurisdiction/Scope</th>
-            <th>Reference / Links</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>DELIB</td>
-            <td>rdf | doc</td>
-            <td>DELIB Ontology</td>
-            <td>
-              Geared to capture essential elements of deliberative processes and participant interactions,
-              emphasizing how contributions, interventions, and outcomes connect within a deliberation.
-            </td>
-            <td>en</td>
-            <td>all</td>
-            <td>
-              <a hrefDELIB (="http://www.example.org/delib.owl" target="_blank">OWL)</a><br>
-              <a href="https://mural.maynoothuniversity.ie/id/eprint/15833/1/AO_a%20semantic%20deliberation.pdf" target="_blank">Documentation</a>
-            </td>
-          </tr>
-          <tr>
-            <td>AIF</td>
-            <td>rdf | doc</td>
-            <td>Argument Interchange Format</td>
-            <td>
-              A core ontology designed to represent and exchange argument structures, enabling interoperability
-              between argumentation tools. Developed to capture premises, conclusions, and relations in structured debate.
-            </td>
-            <td>en</td>
-            <td>all</td>
-            <td>
-              <a href="http://www.arg.dundee.ac.uk/aif.owl" target="_blank">AIF (OWL)</a><br>
-              <a href="https://en.wikipedia.org/wiki/Argument_Interchange_Format" target="_blank">Documentation</a>
-            </td>
-          </tr>
-          <tr>
-            <td>SIOC</td>
-            <td>rdf | doc</td>
-            <td>SIOC Ontology</td>
-            <td>
-              The Semantically-Interlinked Online Communities (SIOC) Ontology provides concepts for describing
-              online community activities, including posts, forums, and user accounts. Extended with argumentation
-              structures to support semantic linking of discussion threads and arguments.
-            </td>
-            <td>en</td>
-            <td>all</td>
-            <td>
-              <a href="http://rdfs.org/sioc/spec" target="_blank">SIOC (RDF)</a><br>
-              <a href="http://sioc-project.org/" target="_blank">Documentation</a>
-            </td>
-          </tr>
-          <tr>
-            <td>FOAF</td>
-            <td>rdf | doc</td>
-            <td>FOAF Ontology</td>
-            <td>
-              Friend of a Friend (FOAF) describes persons, their activities, and their relations to other people
-              and objects. Often used to model participant identities, organizations, and groups in social web contexts.
-            </td>
-            <td>en</td>
-            <td>all</td>
-            <td>
-              <a href="http://xmlns.com/foaf/spec" target="_blank">FOAF (RDF)</a><br>
-              <a href="http://foaf.me/" target="_blank">Documentation</a>
-            </td>
-          </tr>
-          <tr>
-            <td>DC</td>
-            <td>rdf | doc</td>
-            <td>Dublin Core</td>
-            <td>
-              A set of vocabulary terms used to describe web resources (title, creator, subject, date, etc.).
-              Widely used for metadata, providing consistent description properties (e.g., dc:title, dc:creator).
-            </td>
-            <td>en</td>
-            <td>all</td>
-            <td>
-              <a href="http://purl.org/dc/elements/1.1/" target="_blank">DC (RDF)</a><br>
-              <a href="http://dublincore.org/" target="_blank">Documentation</a>
-            </td>
-          </tr>
-          <tr>
-            <td>LKIF</td>
-            <td>rdf | doc</td>
-            <td>LKIF Ontology</td>
-            <td>
-              The Legal Knowledge Interchange Format (LKIF) covers concepts for norms, rules, and legal reasoning.
-              Often used to integrate legal arguments with broader domain ontologies in e-government and e-participation.
-            </td>
-            <td>en</td>
-            <td>eu</td>
-            <td>
-              <a href="https://github.com/RinkeHoekstra/lkif-core" target="_blank">LKIF (OWL)</a><br>
-              <a href="http://www.estrellaproject.org/lkif-core/documentation" target="_blank">Documentation</a>
-            </td>
-          </tr>
-          <tr>
-            <td>IBIS</td>
-            <td>rdf | doc</td>
-            <td>Issue-Based Information System</td>
-            <td>
-              A classic method for modeling and visualizing issues, ideas, and arguments in a structured format.
-              Widely used for deliberative problem-solving and mapping various positions and solutions.
-            </td>
-            <td>en</td>
-            <td>all</td>
-            <td>
-              <a href="http://www.semanticweb.org/ontologies/ibis.owl" target="_blank">IBIS (OWL)</a><br>
-              <a href="https://en.wikipedia.org/wiki/IBIS_(Issue-Based_Information_System)" target="_blank">Documentation</a>
-            </td>
-          </tr>
-          <!-- Akoma Ntoso -->
-          <tr>
-            <td>AKN</td>
-            <td>xml | doc</td>
-            <td>Akoma Ntoso</td>
-            <td>
-              A structured XML schema defining representations of parliamentary, legislative, and judiciary documents
-              (also known as LegalDocML). Facilitates interoperability for legal and legislative texts across jurisdictions.
-            </td>
-            <td>en</td>
-            <td>all</td>
-            <td>
-              <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=legaldocml" target="_blank">Akoma Ntoso (OASIS)</a><br>
-              <a href="https://docs.oasis-open.org/legaldocml/akn-core/v1.0/cos01/akn-core-v1.0-cos01.html" target="_blank">Documentation</a>
-            </td>
-          </tr>
-          <!-- Additional examples: Metalex, LegalRuleML, etc. If relevant, can be included -->
-          <tr>
-            <td>Metalex</td>
-            <td>xml | doc</td>
-            <td>Metalex</td>
-            <td>
-              An open XML interchange format for legal and legislative resources, enabling consistent
-              structuring and referencing of sources of law, often used alongside Akoma Ntoso.
-            </td>
-            <td>en</td>
-            <td>eu</td>
-            <td>
-              <a href="http://www.metalex.eu/" target="_blank">Metalex Homepage</a><br>
-              <a href="https://www.cen.eu/" target="_blank">CEN Standards</a>
-            </td>
-          </tr>
-          <tr>
-            <td>LegalRuleML</td>
-            <td>xml | doc</td>
-            <td>LegalRuleML</td>
-            <td>
-              A framework extending RuleML with legal rule modeling capabilities, enabling interoperable
-              exchange of legal arguments, norms, and complex reasoning structures in a machine-readable format.
-            </td>
-            <td>en</td>
-            <td>all</td>
-            <td>
-              <a href="https://www.oasis-open.org/committees/legalruleml/" target="_blank">LegalRuleML (OASIS)</a><br>
-              <a href="https://docs.oasis-open.org/legalruleml/" target="_blank">Documentation</a>
-            </td>
-          </tr>
-          <!-- End additional new ontologies -->
-        </tbody>
-      </table>
-
-      <hr>
-
-      <div class="ontology-download">
-        <h3>Deliberation Knowledge Graph Ontology</h3>
-        <p>The core ontology of this project, which integrates concepts from the above ontologies:</p>
-        <div class="mappings-download">
-          <a href="ontologies/deliberation.owl" class="btn">Download Deliberation Ontology</a>
-          <a href="ontologies/mappings.owl" class="btn btn-secondary">Download Ontology Mappings</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="model" class="section">
-    <div class="container">
-      <h2>Ontology-Specific Graphs</h2>
-      <p>
-        Below are separate Mermaid.js graphs showing how each ontology's core classes and properties map
-        to the Deliberation Knowledge Graph (DKG). We have extracted only the relevant portion of the
-        large integrated diagram, so you can view them in smaller chunks, per ontology.
-      </p>
-
-      <!-- 1) DELIB SUBGRAPH -->
-      <h3>1) DELIB Ontology Alignment</h3>
-      <div class="mermaid">
-graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
-    DELIB[DELIB Ontology]:::ontNode
-
-    DP[DeliberationProcess]
-    S[Stage]
-    ACTIVITY[Activity]
-    P[Participant]
-    ORG[Organization]
-    ROLE[Role]
-    IR[InformationResource]
-    A[Argument]
-    OPINION[Opinion]
-    VOTE[Vote]
-    LS[LegalSource]
-    LD[LegalDecomposition]
-    LF[LegalFramework]
-    LI[LegalInterpretation]
-
-    DP -->|skos:closeMatch| DELIB_P[delib:Process]
-    S -->|skos:closeMatch| DELIB_S[delib:Stage]
-    ACTIVITY -->|skos:closeMatch| DELIB_A[delib:Activity]
-    P -->|skos:closeMatch| DELIB_ST[delib:Stakeholder]
-    ORG -->|skos:narrowMatch| DELIB_FP[delib:FormalParticipant]
-    ROLE -->|skos:relatedMatch| DELIB_R[delib:Role]
-    IR -->|skos:broadMatch| DELIB_I[delib:Information]
-    A -->|skos:exactMatch| DELIB_AR[delib:Argument]
-    OPINION -->|skos:exactMatch| DELIB_O[delib:Opinion]
-    VOTE -->|skos:exactMatch| DELIB_V[delib:Vote]
-    LS -->|skos:exactMatch| DELIB_LS[delib:LegalSource]
-    LD -->|skos:exactMatch| DELIB_LD[delib:LegalDecomposition]
-    LF -->|skos:exactMatch| DELIB_LF[delib:Framework]
-    LI -->|skos:exactMatch| DELIB_LI[delib:LegalInterpretation]
-
-    DKG -->|extends| DELIB
-    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
-    classDef ontNode fill:#ddf,stroke:#333,stroke-width:2px
-      </div>
-
-      <!-- 2) AIF SUBGRAPH -->
-      <h3>2) Argument Interchange Format (AIF) Alignment</h3>
-      <div class="mermaid">
-graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
-    AIF[AIF Ontology]:::ontNode
-
-    A[Argument]
-    C[Contribution]
-    POSITION[Position]
-    THREAD[Thread]
-
-    A -->|skos:closeMatch| AIF_A[aif:Argument]
-    C -->|skos:closeMatch| AIF_S[aif:Statement]
-    POSITION -->|skos:closeMatch| AIF_C[aif:Claim]
-    A -->|skos:relatedMatch| AIF_SS[aif:SupportScheme]
-    A -->|skos:relatedMatch| AIF_AS[aif:AttackScheme]
-    THREAD -->|skos:relatedMatch| AIF_N[aif:ArgumentNetwork]
-
-    DKG -->|extends| AIF
-    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
-    classDef ontNode fill:#dfd,stroke:#333,stroke-width:2px
-      </div>
-
-      <!-- 3) SIOC SUBGRAPH -->
-      <h3>3) SIOC Ontology Alignment</h3>
-      <div class="mermaid">
-graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
-    SIOC[SIOC Ontology]:::ontNode
-
-    C[Contribution]
-    DP[DeliberationProcess]
-    P[Participant]
-    THREAD[Thread]
-    T[Topic]
-    ORG[Organization]
-    GROUP[Group]
-
-    C -->|skos:broadMatch| SIOC_P[sioc:Post]
-    DP -->|skos:relatedMatch| SIOC_F[sioc:Forum]
-    P -->|skos:relatedMatch| SIOC_U[sioc:UserAccount]
-    THREAD -->|skos:closeMatch| SIOC_T[sioc:Thread]
-    T -->|skos:relatedMatch| SIOC_TO[sioc:Topic]
-    ORG -->|skos:relatedMatch| SIOC_CO[sioc:Community]
-    GROUP -->|skos:relatedMatch| SIOC_G[sioc:Usergroup]
-
-    DKG -->|extends| SIOC
-    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
-    classDef ontNode fill:#fdf,stroke:#333,stroke-width:2px
-      </div>
-
-      <!-- 4) FOAF SUBGRAPH -->
-      <h3>4) FOAF Ontology Alignment</h3>
-      <div class="mermaid">
-graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
-    FOAF[FOAF Ontology]:::ontNode
-
-    P[Participant]
-    ORG[Organization]
-    GROUP[Group]
-
-    P -->|skos:narrowMatch| FOAF_P[foaf:Person]
-    ORG -->|skos:exactMatch| FOAF_O[foaf:Organization]
-    GROUP -->|skos:closeMatch| FOAF_G[foaf:Group]
-    P -->|skos:relatedMatch| FOAF_A[foaf:Agent]
-
-    DKG -->|extends| FOAF
-    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
-    classDef ontNode fill:#dff,stroke:#333,stroke-width:2px
-      </div>
-
-      <!-- 5) DUBLIN CORE SUBGRAPH -->
-      <h3>5) Dublin Core (DC) Alignment</h3>
-      <div class="mermaid">
-graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
-    DC[DC Ontology]:::ontNode
-
-    IR[InformationResource]
-    TIMELINE[Timeline]
-    T[Topic]
-
-    IR -->|skos:broadMatch| DC_R[dc:Resource]
-    IR -->|title property: skos:exactMatch| DC_T[dc:title]
-    IR -->|description property: skos:exactMatch| DC_D[dc:description]
-    TIMELINE -->|date properties: skos:relatedMatch| DC_DA[dc:date]
-    IR -->|creator property: skos:exactMatch| DC_C[dc:creator]
-    T -->|skos:relatedMatch| DC_S[dc:subject]
-
-    DKG -->|extends| DC
-    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
-    classDef ontNode fill:#ffd,stroke:#333,stroke-width:2px
-      </div>
-
-      <!-- 6) LKIF SUBGRAPH -->
-      <h3>6) LKIF Ontology Alignment</h3>
-      <div class="mermaid">
-graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
-    LKIF[LKIF Ontology]:::ontNode
-
-    LS[LegalSource]
-    LD[LegalDecomposition]
-    LI[LegalInterpretation]
-    LF[LegalFramework]
-    POSITION[Position]
-
-    LS -->|skos:closeMatch| LKIF_LS[lkif:LegalSource]
-    LD -->|skos:relatedMatch| LKIF_D[lkif:LegalDocument]
-    LI -->|skos:relatedMatch| LKIF_N[lkif:Norm]
-    POSITION -->|when normative: skos:relatedMatch| LKIF_S[lkif:Statement]
-    LF -->|skos:relatedMatch| LKIF_LT[lkif:LegalTheory]
-
-    DKG -->|extends| LKIF
-    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
-    classDef ontNode fill:#fdd,stroke:#333,stroke-width:2px
-      </div>
-
-      <!-- 7) IBIS SUBGRAPH -->
-      <h3>7) IBIS Model Alignment</h3>
-      <div class="mermaid">
-graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
-    IBIS[IBIS Model]:::ontNode
-
-    T[Topic]
-    POSITION[Position]
-    A[Argument]
-    DECISION[Decision]
-    DP[DeliberationProcess]
-
-    T -->|skos:closeMatch| IBIS_I[ibis:Issue]
-    POSITION -->|skos:exactMatch| IBIS_P[ibis:Position]
-    A -->|skos:closeMatch| IBIS_A[ibis:Argument]
-    DECISION -->|skos:relatedMatch| IBIS_R[ibis:Resolution]
-    DP -->|skos:broadMatch| IBIS_D[ibis:Deliberation]
-
-    DKG -->|extends| IBIS
-    classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
-    classDef ontNode fill:#ddf,stroke:#333,stroke-width:2px
-      </div>
-
-      <p>
-        Each subgraph above focuses on how the Deliberation Knowledge Graph maps to or extends
-        the respective ontology's classes and properties. By splitting the overall mapping into smaller
-        diagrams, we ensure that each relationship set is easier to inspect, maintain, and update.
-      </p>
-    </div>
-  </section>
-
-  <section id="visualizations" class="section">
-    <div class="container">
-      <h2>Visualizations</h2>
-      <p>Interactive visualizations of the Deliberation Knowledge Graph will be available here. These visualizations will help users explore the connections between different datasets, ontologies, and concepts.</p>
-      <div id="visualization-placeholder">
-        <p>Visualizations are under development. Check back soon!</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="documentation" class="section">
-    <div class="container">
-      <h2>Documentation</h2>
-      <p>Comprehensive documentation for the Deliberation Knowledge Graph project:</p>
-      <ul class="documentation-list">
-        <li><a href="documentation/data_models_overview.md">Data Models Overview</a> - Detailed information about the ontologies and data models used in this project</li>
-        <li><a href="visualizations/knowledge_graph_model.md">Knowledge Graph Model</a> - Explanation of the knowledge graph model and its components</li>
-        <li><a href="ontologies/deliberation.owl">Deliberation Ontology</a> - The core ontology file in OWL format</li>
-        <li><a href="ontologies/mappings.owl">Ontology Mappings</a> - Mappings between the Deliberation Ontology and other standard ontologies</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Simone Vagnoni, CIRSFID, University of Bologna - OEG, Universidad Politecnica de Madrid</p>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: 'default',
-      securityLevel: 'loose',
-      flowchart: {
-        useMaxWidth: true,
-        htmlLabels: true
-      }
-    });
-  </script>
-</body>
-</html>
+              <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4
