@@ -1,4 +1,5 @@
 <https://w3id.org/deliberation/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/deliberation/ontology> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/deliberation/mappings> .
 <https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/created> "2025-03-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/creator> "Simone Vagnoni" .
 <https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/description> "An ontology for representing and analyzing deliberative processes, arguments, and discourse."@en .
