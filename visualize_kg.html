@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deliberation Knowledge Graph Visualization</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    /* Custom color scheme based on del daft.png (green vines, Donkey Kong, Daft Punk) */
+    :root {
+      --primary-color: #4a9d3c; /* Green for vines */
+      --primary-light: #6abe5c;
+      --primary-dark: #3a7d2c;
+      --secondary-color: #8b5a2b; /* Brown for Donkey Kong */
+      --secondary-light: #a67c4e;
+      --secondary-dark: #6b4521;
+      --accent-color: #ffd700; /* Gold for Daft Punk helmets */
+      --accent-light: #ffe44d;
+      --accent-dark: #ccac00;
+      --light-color: #f8fafc;
+      --dark-color: #0f172a;
+      --text-color: #334155;
+      --text-light: #64748b;
+      --link-color: #4a9d3c;
+      --link-hover-color: #3a7d2c;
+    }
+    
+    /* Custom styles for the hero section with background image */
+    .hero-section {
+      position: relative;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('DKG daft.png');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.7);
+      z-index: -1;
+    }
+    
+    .hero-content {
+      background-color: rgba(15, 23, 42, 0.7);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      backdrop-filter: blur(5px);
+      max-width: 800px;
+      margin: 0 1rem;
+    }
+    
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .hero-buttons .btn {
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+    }
+    
+    /* Override header background */
+    header {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    }
+    
+    /* Graph visualization styles */
+    #graph-container {
+      width: 100%;
+      height: 800px;
+      border: 1px solid #ccc;
+      border-radius: var(--border-radius);
+      margin-top: 2rem;
+      background-color: #f8f9fa;
+    }
+    
+    .node {
+      cursor: pointer;
+    }
+    
+    .node circle {
+      stroke: #fff;
+      stroke-width: 2px;
+    }
+    
+    .node text {
+      font-size: 12px;
+      font-family: sans-serif;
+    }
+    
+    .link {
+      fill: none;
+      stroke: #999;
+      stroke-opacity: 0.6;
+      stroke-width: 1.5px;
+    }
+    
+    .tooltip {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 12px;
+      pointer-events: none;
+      z-index: 10;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .controls {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .controls select, .controls input {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: var(--border-radius);
+    }
+    
+    .legend {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .legend-color {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section with Background Image -->
+  <section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>Deliberation Knowledge Graph</h1>
+      <p>Interactive Visualization</p>
+      <div class="hero-buttons">
+        <a href="index.html" class="btn">Back to Home</a>
+        <a href="sparql.html" class="btn btn-secondary">SPARQL Endpoint</a>
+      </div>
+    </div>
+  </section>
+
+  <header>
+    <div class="container">
+      <h1>Deliberation Knowledge Graph</h1>
+      <p class="subtitle">Interactive Visualization</p>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="sparql.html"><i class="fas fa-search"></i> SPARQL Endpoint</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>Knowledge Graph Visualization</h2>
+      <p>This interactive visualization shows the connections between different entities in the Deliberation Knowledge Graph. You can zoom, pan, and click on nodes to explore the graph.</p>
+      
+      <div class="controls">
+        <select id="dataset-filter">
+          <option value="all">All Datasets</option>
+          <option value="ep_debate">European Parliament Debates</option>
+          <option value="decide_madrid">Decide Madrid</option>
+          <option value="delidata">DeliData</option>
+          <option value="eu_have_your_say">EU Have Your Say</option>
+          <option value="habermas">Habermas Machine</option>
+          <option value="scotus">US Supreme Court Arguments</option>
+        </select>
+        
+        <select id="node-type-filter">
+          <option value="all">All Node Types</option>
+          <option value="DeliberationProcess">Deliberation Process</option>
+          <option value="Participant">Participant</option>
+          <option value="Organization">Organization</option>
+          <option value="Topic">Topic</option>
+          <option value="Contribution">Contribution</option>
+          <option value="Argument">Argument</option>
+        </select>
+        
+        <input type="range" id="link-distance" min="50" max="300" value="150">
+        <label for="link-distance">Link Distance</label>
+        
+        <button id="reset-zoom" class="btn btn-secondary">Reset Zoom</button>
+      </div>
+      
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: var(--primary-color);"></div>
+          <span>Deliberation Process</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: var(--secondary-color);"></div>
+          <span>Participant</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: var(--accent-color);"></div>
+          <span>Organization</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: #e74c3c;"></div>
+          <span>Topic</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: #3498db;"></div>
+          <span>Contribution</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: #9b59b6;"></div>
+          <span>Argument</span>
+        </div>
+      </div>
+      
+      <div id="graph-container"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Simone Vagnoni, CIRSFID, University of Bologna - OEG, Universidad Politecnica de Madrid</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load the knowledge graph data
+      d3.json('knowledge_graph/deliberation_kg.jsonld').then(function(data) {
+        // Process the data to create a graph structure
+        const graph = processGraphData(data);
+        
+        // Create the visualization
+        createForceDirectedGraph(graph);
+      }).catch(function(error) {
+        console.error('Error loading the knowledge graph data:', error);
+        document.getElementById('graph-container').innerHTML = `
+          <div style="padding: 2rem; text-align: center;">
+            <h3>Error Loading Knowledge Graph Data</h3>
+            <p>Make sure you have generated the knowledge graph by running:</p>
+            <pre>python3 create_knowledge_graph.py</pre>
+            <p>Error details: ${error.message}</p>
+          </div>
+        `;
+      });
+      
+      function processGraphData(data) {
+        // Extract nodes and links from the JSON-LD data
+        const nodes = [];
+        const links = [];
+        const nodeMap = new Map();
+        
+        // Process the JSON-LD data to extract nodes and links
+        // This is a simplified version that works with our specific knowledge graph structure
+        if (data && data['@graph']) {
+          data['@graph'].forEach(item => {
+            // Extract node information
+            if (item['@id']) {
+              const id = item['@id'];
+              const type = item['@type'] ? item['@type'].split(':').pop() : 'Unknown';
+              const name = item['del:name'] || item['dkg:name'] || extractNameFromUri(id);
+              
+              // Add node if it doesn't exist
+              if (!nodeMap.has(id)) {
+                const node = {
+                  id,
+                  type,
+                  name,
+                  dataset: extractDatasetFromUri(id)
+                };
+                nodes.push(node);
+                nodeMap.set(id, node);
+              }
+              
+              // Extract links
+              Object.keys(item).forEach(key => {
+                if (key !== '@id' && key !== '@type' && key !== 'del:name' && key !== 'dkg:name') {
+                  const value = item[key];
+                  if (value && value['@id']) {
+                    const targetId = value['@id'];
+                    
+                    // Add target node if it doesn't exist
+                    if (!nodeMap.has(targetId)) {
+                      const targetNode = {
+                        id: targetId,
+                        type: 'Unknown',
+                        name: extractNameFromUri(targetId),
+                        dataset: extractDatasetFromUri(targetId)
+                      };
+                      nodes.push(targetNode);
+                      nodeMap.set(targetId, targetNode);
+                    }
+                    
+                    // Add link
+                    links.push({
+                      source: id,
+                      target: targetId,
+                      type: key.split(':').pop()
+                    });
+                  }
+                }
+              });
+            }
+          });
+        }
+        
+        return { nodes, links };
+      }
+      
+      function extractNameFromUri(uri) {
+        const parts = uri.split('/');
+        return parts[parts.length - 1];
+      }
+      
+      function extractDatasetFromUri(uri) {
+        if (uri.includes('ep_debate')) return 'ep_debate';
+        if (uri.includes('madrid')) return 'decide_madrid';
+        if (uri.includes('delidata')) return 'delidata';
+        if (uri.includes('euhys')) return 'eu_have_your_say';
+        if (uri.includes('habermas')) return 'habermas';
+        if (uri.includes('scotus')) return 'scotus';
+        return 'unknown';
+      }
+      
+      function createForceDirectedGraph(graph) {
+        const width = document.getElementById('graph-container').clientWidth;
+        const height = document.getElementById('graph-container').clientHeight;
+        
+        // Create SVG element
+        const svg = d3.select('#graph-container')
+          .append('svg')
+          .attr('width', width)
+          .attr('height', height);
+        
+        // Add zoom behavior
+        const g = svg.append('g');
+        svg.call(d3.zoom()
+          .extent([[0, 0], [width, height]])
+          .scaleExtent([0.1, 8])
+          .on('zoom', (event) => {
+            g.attr('transform', event.transform);
+          }));
+        
+        // Create tooltip
+        const tooltip = d3.select('body')
+          .append('div')
+          .attr('class', 'tooltip')
+          .style('opacity', 0);
+        
+        // Create force simulation
+        const simulation = d3.forceSimulation(graph.nodes)
+          .force('link', d3.forceLink(graph.links).id(d => d.id).distance(150))
+          .force('charge', d3.forceManyBody().strength(-300))
+          .force('center', d3.forceCenter(width / 2, height / 2))
+          .force('collision', d3.forceCollide().radius(30));
+        
+        // Create links
+        const link = g.append('g')
+          .attr('class', 'links')
+          .selectAll('line')
+          .data(graph.links)
+          .enter().append('line')
+          .attr('class', 'link')
+          .attr('stroke-width', 1);
+        
+        // Create nodes
+        const node = g.append('g')
+          .attr('class', 'nodes')
+          .selectAll('.node')
+          .data(graph.nodes)
+          .enter().append('g')
+          .attr('class', 'node')
+          .call(d3.drag()
+            .on('start', dragstarted)
+            .on('drag', dragged)
+            .on('end', dragended));
+        
+        // Add circles to nodes
+        node.append('circle')
+          .attr('r', 10)
+          .attr('fill', d => getNodeColor(d.type))
+          .on('mouseover', function(event, d) {
+            tooltip.transition()
+              .duration(200)
+              .style('opacity', .9);
+            tooltip.html(`
+              <strong>${d.name}</strong><br/>
+              Type: ${d.type}<br/>
+              Dataset: ${d.dataset}
+            `)
+              .style('left', (event.pageX + 10) + 'px')
+              .style('top', (event.pageY - 28) + 'px');
+          })
+          .on('mouseout', function() {
+            tooltip.transition()
+              .duration(500)
+              .style('opacity', 0);
+          });
+        
+        // Add labels to nodes
+        node.append('text')
+          .attr('dx', 12)
+          .attr('dy', '.35em')
+          .text(d => truncateText(d.name, 20));
+        
+        // Update positions on each tick
+        simulation.on('tick', () => {
+          link
+            .attr('x1', d => d.source.x)
+            .attr('y1', d => d.source.y)
+            .attr('x2', d => d.target.x)
+            .attr('y2', d => d.target.y);
+          
+          node
+            .attr('transform', d => `translate(${d.x},${d.y})`);
+        });
+        
+        // Drag functions
+        function dragstarted(event, d) {
+          if (!event.active) simulation.alphaTarget(0.3).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        }
+        
+        function dragged(event, d) {
+          d.fx = event.x;
+          d.fy = event.y;
+        }
+        
+        function dragended(event, d) {
+          if (!event.active) simulation.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+        }
+        
+        // Filter functions
+        document.getElementById('dataset-filter').addEventListener('change', filterGraph);
+        document.getElementById('node-type-filter').addEventListener('change', filterGraph);
+        document.getElementById('link-distance').addEventListener('input', updateLinkDistance);
+        document.getElementById('reset-zoom').addEventListener('click', resetZoom);
+        
+        function filterGraph() {
+          const datasetFilter = document.getElementById('dataset-filter').value;
+          const nodeTypeFilter = document.getElementById('node-type-filter').value;
+          
+          // Filter nodes
+          const filteredNodes = graph.nodes.filter(node => {
+            const datasetMatch = datasetFilter === 'all' || node.dataset === datasetFilter;
+            const typeMatch = nodeTypeFilter === 'all' || node.type === nodeTypeFilter;
+            return datasetMatch && typeMatch;
+          });
+          
+          // Get IDs of filtered nodes
+          const filteredNodeIds = new Set(filteredNodes.map(node => node.id));
+          
+          // Filter links
+          const filteredLinks = graph.links.filter(link => {
+            return filteredNodeIds.has(link.source.id || link.source) && 
+                   filteredNodeIds.has(link.target.id || link.target);
+          });
+          
+          // Update simulation
+          simulation.nodes(filteredNodes);
+          simulation.force('link').links(filteredLinks);
+          simulation.alpha(1).restart();
+          
+          // Update visualization
+          link = link.data(filteredLinks, d => d.source.id + '-' + d.target.id);
+          link.exit().remove();
+          
+          node = node.data(filteredNodes, d => d.id);
+          node.exit().remove();
+        }
+        
+        function updateLinkDistance() {
+          const distance = parseInt(document.getElementById('link-distance').value);
+          simulation.force('link').distance(distance);
+          simulation.alpha(1).restart();
+        }
+        
+        function resetZoom() {
+          svg.transition().duration(750).call(
+            d3.zoom().transform,
+            d3.zoomIdentity,
+            d3.zoomTransform(svg.node()).invert([width / 2, height / 2])
+          );
+        }
+      }
+      
+      function getNodeColor(type) {
+        switch (type) {
+          case 'DeliberationProcess':
+            return getComputedStyle(document.documentElement).getPropertyValue('--primary-color');
+          case 'Participant':
+            return getComputedStyle(document.documentElement).getPropertyValue('--secondary-color');
+          case 'Organization':
+            return getComputedStyle(document.documentElement).getPropertyValue('--accent-color');
+          case 'Topic':
+            return '#e74c3c'; // Red
+          case 'Contribution':
+            return '#3498db'; // Blue
+          case 'Argument':
+            return '#9b59b6'; // Purple
+          default:
+            return '#95a5a6'; // Gray
+        }
+      }
+      
+      function truncateText(text, maxLength) {
+        if (text.length > maxLength) {
+          return text.substring(0, maxLength) + '...';
+        }
+        return text;
+      }
+    });
+  </script>
+</body>
+</html>
