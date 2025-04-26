@@ -10,8 +10,154 @@
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Custom styles for the hero section with background image */
+    .hero-section {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('DKG daft.png');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.7);
+      z-index: -1;
+    }
+    
+    .hero-content {
+      background-color: rgba(15, 23, 42, 0.7);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      backdrop-filter: blur(5px);
+      max-width: 800px;
+      margin: 0 1rem;
+    }
+    
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .hero-buttons .btn {
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+    }
+    
+    /* EU Parliament Debates section */
+    .eu-parliament-section {
+      background-color: #f8f9fa;
+      padding: 3rem 0;
+      border-radius: var(--border-radius);
+      margin: 2rem 0;
+    }
+    
+    .eu-parliament-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    
+    @media (max-width: 768px) {
+      .eu-parliament-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .eu-parliament-image {
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+    }
+    
+    .eu-parliament-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .eu-parliament-content h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    
+    .eu-parliament-content p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .api-info {
+      background-color: white;
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      margin-top: 2rem;
+      box-shadow: var(--box-shadow);
+    }
+    
+    .api-info h4 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+    
+    .api-info pre {
+      background-color: #f1f5f9;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      overflow-x: auto;
+      margin-bottom: 1rem;
+    }
+    
+    .api-info code {
+      font-family: monospace;
+    }
+    
+    /* Ontology mappings section */
+    .mappings-download {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  </style>
 </head>
 <body>
+  <!-- Hero Section with Background Image -->
+  <section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>Deliberation Knowledge Graph</h1>
+      <p>Connecting Deliberative Process Datasets and Ontologies for Enhanced Analysis and Understanding</p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn">Learn More</a>
+        <a href="#datasets" class="btn btn-secondary">Explore Datasets</a>
+      </div>
+    </div>
+  </section>
+
   <header>
     <div class="container">
       <h1>Deliberation Knowledge Graph</h1>
@@ -55,6 +201,40 @@
     <div class="container">
       <h2>Datasets</h2>
       <p>The project integrates several datasets related to deliberative processes from various sources:</p>
+      
+      <!-- EU Parliament Debates Feature Section -->
+      <div class="eu-parliament-section">
+        <div class="container">
+          <h3>Featured Dataset: European Parliament Debates</h3>
+          <div class="eu-parliament-container">
+            <div class="eu-parliament-content">
+              <p>The European Parliament Debates dataset contains structured representations of plenary session debates, converted from verbatim HTML reports into both JSON and RDF formats aligned with the Deliberation Knowledge Graph ontology.</p>
+              <p>This dataset captures the rich deliberative processes of the European Parliament, including speeches, topics, participants, and their political affiliations.</p>
+              
+              <div class="btn-group">
+                <a href="data/EU_parliament_debates/ep_debates/debate_sample_2025-03-10.json" class="btn">View Sample JSON</a>
+                <a href="data/EU_parliament_debates/ep_debates/debate_sample_2025-03-10.rdf" class="btn btn-secondary">View Sample RDF</a>
+                <a href="data/EU_parliament_debates/README.md" class="btn btn-secondary">Documentation</a>
+              </div>
+              
+              <div class="api-info">
+                <h4>Data Structure</h4>
+                <pre><code>{
+  "@type": "dkg:DeliberationProcess",
+  "dkg:identifier": "ep_debate_YYYYMMDD",
+  "dkg:name": "European Parliament Debate",
+  "dkg:hasTopic": [...],
+  "dkg:hasParticipant": [...],
+  "dkg:hasContribution": [...]
+}</code></pre>
+              </div>
+            </div>
+            <div class="eu-parliament-image">
+              <img src="https://www.europarl.europa.eu/resources/library/images/20180904PHT14914/20180904PHT14914-cl.jpg" alt="European Parliament in session">
+            </div>
+          </div>
+        </div>
+      </div>
       
       <div class="dataset-grid">
         <div class="dataset-card" data-category="participatory">
@@ -328,7 +508,10 @@
       <div class="ontology-download">
         <h3>Deliberation Knowledge Graph Ontology</h3>
         <p>The core ontology of this project, which integrates concepts from the above ontologies:</p>
-        <a href="ontologies/deliberation.owl" class="btn">Download OWL File</a>
+        <div class="mappings-download">
+          <a href="ontologies/deliberation.owl" class="btn">Download Deliberation Ontology</a>
+          <a href="ontologies/mappings.owl" class="btn btn-secondary">Download Ontology Mappings</a>
+        </div>
       </div>
     </div>
   </section>
@@ -530,7 +713,7 @@ graph TD
 
       <p>
         Each subgraph above focuses on how the Deliberation Knowledge Graph maps to or extends
-        the respective ontology’s classes and properties. By splitting the overall mapping into smaller
+        the respective ontology's classes and properties. By splitting the overall mapping into smaller
         diagrams, we ensure that each relationship set is easier to inspect, maintain, and update.
       </p>
     </div>
@@ -554,6 +737,7 @@ graph TD
         <li><a href="documentation/data_models_overview.md">Data Models Overview</a> - Detailed information about the ontologies and data models used in this project</li>
         <li><a href="visualizations/knowledge_graph_model.md">Knowledge Graph Model</a> - Explanation of the knowledge graph model and its components</li>
         <li><a href="ontologies/deliberation.owl">Deliberation Ontology</a> - The core ontology file in OWL format</li>
+        <li><a href="ontologies/mappings.owl">Ontology Mappings</a> - Mappings between the Deliberation Ontology and other standard ontologies</li>
       </ul>
     </div>
   </section>

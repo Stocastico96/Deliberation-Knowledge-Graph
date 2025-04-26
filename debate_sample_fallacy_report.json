@@ -1,0 +1,132 @@
+{
+  "process_id": "ep_debate_20250310",
+  "process_name": "European Parliament Debate - 2025-03-10 (Sample)",
+  "date": "2025-03-10",
+  "statistics": {
+    "total_contributions": 11,
+    "contributions_with_fallacies": 3,
+    "percentage_with_fallacies": 27.27272727272727,
+    "fallacy_types": [
+      {
+        "type": "Appeal to Emotion",
+        "count": 3
+      },
+      {
+        "type": "Straw Man",
+        "count": 2
+      },
+      {
+        "type": "Ad Hominem",
+        "count": 2
+      },
+      {
+        "type": "Slippery Slope",
+        "count": 1
+      },
+      {
+        "type": "False Dichotomy",
+        "count": 1
+      }
+    ],
+    "participants_with_most_fallacies": [
+      {
+        "name": "\u0391\u03c6\u03c1\u03bf\u03b4\u03af\u03c4\u03b7 \u039b\u03b1\u03c4\u03b9\u03bd\u03bf\u03c0\u03bf\u03cd\u03bb\u03bf\u03c5",
+        "fallacy_count": 3
+      },
+      {
+        "name": "President.",
+        "fallacy_count": 3
+      },
+      {
+        "name": "\u017deljana Zovko",
+        "fallacy_count": 2
+      },
+      {
+        "name": "Iratxe Garc\u00eda P\u00e9rez",
+        "fallacy_count": 1
+      }
+    ]
+  },
+  "fallacies_by_contribution": [
+    {
+      "contribution_id": "contribution_1",
+      "participant": "President.",
+      "text": "",
+      "fallacies": [
+        {
+          "type": "Straw Man",
+          "segment": "anyone who disagrees is simply ignoring the evidence",
+          "confidence": 0.8
+        },
+        {
+          "type": "Ad Hominem",
+          "segment": "Our opponents are funded by fossil fuel companies and don't care about future generations.",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "contribution_id": "contribution_2",
+      "participant": "President.",
+      "text": "First of all, dear colleagues, two years ago, on 28 February 2023, in Tempi, Greece, a tragic railway accident cost 57 people their lives and injured even more. We mark a sad anniversary today as our hearts go out to the victims, to those who lost their loved ones and to the injured who still bear the scars of that day. This House remembers them and honours them.\nOver the coming months, we will celebrate also the 35th\u00a0anniversary of the assertion of state continuity of Estonia, Latvia and Lithuania, enshrining their independence de jure under international law throughout different illegal occupations and annexations of the 20th\u00a0century.\nThese anniversaries remind us again of the sacrifice of so many for the liberty that we enjoy today, and underscore our determination never to allow another generation of Europeans to be lost behind an Iron Curtain.\nTomorrow at noon, we will once again welcome national leader of Belarus, Sviatlana Tsikhanouskaya, to this plenary, along with other brave women from Ukraine and Belarus, who are standing up for liberty in order to mark International Women's Day. May I ask that you are present. I count on you and your colleagues to be here then, because this week will also serve to reaffirm this House's steadfast support for the people of Belarus and their struggle for freedom, including political prisoners.\nAnd to express this solidarity and to mark the International Day of Solidarity with Belarus, the European Parliament is once again offering you, as Members of this Parliament, the opportunity to sign postcards addressed to the 1\u00a0250 political prisoners who are unfairly imprisoned by Lukashenka's regime. I urge you to join in this action to show them that their sacrifice will not remain unanswered.\nLast year, this initiative was extremely successful \u2013 in the previous mandate, in the previous Parliament. I ask that we make this year's even more so. We know their names, we see their struggle and we stand with them. So this message and this initiative will send the strongest of messages that they are not alone.\n(Applause)",
+      "fallacies": [
+        {
+          "type": "False Dichotomy",
+          "segment": "Either we implement these policies immediately, or we face complete environmental collapse. There is no middle ground.",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "contribution_id": "contribution_8",
+      "participant": "Iratxe Garc\u00eda P\u00e9rez",
+      "text": "Now we face new challenges, like the threat of war. Let us not forget how we handled COVID-19. We need to be bold and stay united. By learning from that time we can build a more resilient and cohesive Europe. This will help us face any future crisis with determination and unity.",
+      "fallacies": [
+        {
+          "type": "Appeal to Emotion",
+          "segment": "We need to be bold and stay united. By learning from that time we can build a more resilient and cohesive Europe. This will help us face any future crisis with determination and unity.",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "contribution_id": "contribution_9",
+      "participant": "\u017deljana Zovko",
+      "text": "Extremist factions associated with militant groups have reportedly executed civilians, including women and children. Christian families have endured brutal killings and violent raids at the hands of armed militants who have stormed homes, seized belongings and claimed innocent lives.\nThe European Union must take decisive action in support of stability and humanitarian relief efforts to alleviate the suffering of the Syrian people, including Christians and other affected communities.\nChristianity in Syria and in some other parts of the Middle East-North Africa region is at a critical crossroads. It will either endure or it will vanish, leaving behind a profound religious, ethnic and cultural void.\nEurope must not remain indifferent to this existential threat. An External Action Service with its press release - it is shameful that they did not take this into account.",
+      "fallacies": [
+        {
+          "type": "Appeal to Emotion",
+          "segment": "Christian families have endured brutal killings and violent raids at the hands of armed militants who have stormed homes, seized belongings and claimed innocent lives.",
+          "confidence": 0.8
+        },
+        {
+          "type": "Slippery Slope",
+          "segment": "Christianity in Syria and in some other parts of the Middle East-North Africa region is at a critical crossroads. It will either endure or it will vanish, leaving behind a profound religious, ethnic and cultural void.",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "contribution_id": "contribution_10",
+      "participant": "\u0391\u03c6\u03c1\u03bf\u03b4\u03af\u03c4\u03b7 \u039b\u03b1\u03c4\u03b9\u03bd\u03bf\u03c0\u03bf\u03cd\u03bb\u03bf\u03c5",
+      "text": "\u038c\u03bb\u03bf\u03b9 \u03b3\u03bd\u03c9\u03c1\u03af\u03b6\u03bf\u03c5\u03bc\u03b5, \u03b1\u03b3\u03b1\u03c0\u03b7\u03c4\u03bf\u03af \u03c3\u03c5\u03bd\u03ac\u03b4\u03b5\u03bb\u03c6\u03bf\u03b9, \u03c0\u03c9\u03c2 \u03b1\u03c5\u03c4\u03cc \u03b5\u03af\u03bd\u03b1\u03b9 \u03bc\u03af\u03b1 \u03c7\u03c5\u03b4\u03b1\u03af\u03b1 \u03c3\u03c5\u03ba\u03bf\u03c6\u03b1\u03bd\u03c4\u03af\u03b1 \u03ba\u03b1\u03c4\u03ac \u03cc\u03bb\u03c9\u03bd \u03bc\u03b1\u03c2. \u0395\u03af\u03bc\u03b1\u03b9 \u03c3\u03af\u03b3\u03bf\u03c5\u03c1\u03b7 \u03c0\u03c9\u03c2 \u03c4\u03bf ECR \u03b8\u03b1 \u03ba\u03b1\u03c4\u03b1\u03b4\u03b9\u03ba\u03ac\u03c3\u03b5\u03b9 \u03c4\u03b1 \u03c8\u03ad\u03bc\u03b1\u03c4\u03b1 \u03c4\u03bf\u03c5 \u03ba. \u03a6\u03c1\u03ac\u03b3\u03ba\u03bf\u03c5, \u03bf \u03bf\u03c0\u03bf\u03af\u03bf\u03c2 \u03cc\u03c7\u03b9 \u03bc\u03cc\u03bd\u03bf \u03c0\u03c1\u03bf\u03c3\u03c0\u03ac\u03b8\u03b7\u03c3\u03b5 \u03bd\u03b1 \u03b5\u03be\u03b1\u03c0\u03b1\u03c4\u03ae\u03c3\u03b5\u03b9 \u03c4\u03bf\u03c5\u03c2 \u0388\u03bb\u03bb\u03b7\u03bd\u03b5\u03c2, \u03bc\u03b5 \u03bc\u03cc\u03bd\u03bf \u03c3\u03ba\u03bf\u03c0\u03cc \u03bd\u03b1 \u03b4\u03b9\u03b1\u03c3\u03cd\u03c1\u03b5\u03b9 \u03c4\u03b7\u03bd \u03c0\u03b1\u03c4\u03c1\u03af\u03b4\u03b1 \u03c4\u03bf\u03c5 \u03b1\u03bb\u03bb\u03ac \u03ba\u03b1\u03b9 \u03bd\u03b1 \u03c0\u03b1\u03c4\u03ae\u03c3\u03b5\u03b9 \u03c0\u03ac\u03bd\u03c9 \u03c3\u03b5 \u03bd\u03b5\u03ba\u03c1\u03bf\u03cd\u03c2, \u03c0\u03b7\u03b3\u03b1\u03af\u03bd\u03bf\u03bd\u03c4\u03b1\u03c2 \u03c7\u03ad\u03c1\u03b9 \u03c7\u03ad\u03c1\u03b9 \u03bc\u03b5 \u03c4\u03bf\u03c5\u03c2 \u03b1\u03c1\u03b9\u03c3\u03c4\u03b5\u03c1\u03bf\u03cd\u03c2. \u039a\u03cd\u03c1\u03b9\u03b5 \u03a6\u03c1\u03ac\u03b3\u03ba\u03bf, \u03bd\u03b1 \u03c7\u03b1\u03af\u03c1\u03b5\u03c3\u03c4\u03b5 \u03c4\u03bf\u03bd \u03c0\u03b1\u03c4\u03c1\u03b9\u03c9\u03c4\u03b9\u03c3\u03bc\u03cc \u03c3\u03b1\u03c2. \u0395\u03c3\u03ba\u03b5\u03bc\u03bc\u03ad\u03bd\u03b1 \u03c3\u03c5\u03ba\u03bf\u03c6\u03ac\u03bd\u03c4\u03b7\u03c3\u03b1\u03c4\u03b5 \u03c4\u03bf\u03c5\u03c2 \u03b8\u03b5\u03c3\u03bc\u03bf\u03cd\u03c2 \u03c0\u03bf\u03c5 \u03c5\u03c0\u03bf\u03c4\u03af\u03b8\u03b5\u03c4\u03b1\u03b9 \u03c0\u03c9\u03c2 \u03c5\u03c0\u03b7\u03c1\u03b5\u03c4\u03b5\u03af\u03c4\u03b5. \u039a\u03b1\u03b9, \u03b1\u03b3\u03b1\u03c0\u03b7\u03c4\u03cc ECR, \u03bd\u03b1 \u03c7\u03b1\u03af\u03c1\u03b5\u03c3\u03c4\u03b5 \u03c4\u03bf \u03bc\u03ad\u03bb\u03bf\u03c2 \u03c3\u03b1\u03c2 \u03c0\u03bf\u03c5 \u03b1\u03ba\u03cc\u03bc\u03b1 \u03ba\u03c1\u03cd\u03b2\u03b5\u03c4\u03b1\u03b9 \u03b1\u03bd\u03c4\u03af \u03bd\u03b1 \u03b6\u03b7\u03c4\u03ae\u03c3\u03b5\u03b9 \u03c3\u03c5\u03b3\u03bd\u03ce\u03bc\u03b7. \u03a3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7\u03bd \u039f\u03bb\u03bf\u03bc\u03ad\u03bb\u03b5\u03b9\u03b1 \u03bf\u03b9 \u03c3\u03bf\u03b2\u03b1\u03c1\u03bf\u03af \u03c0\u03b1\u03c4\u03c1\u03b9\u03ce\u03c4\u03b5\u03c2 \u03ad\u03c7\u03bf\u03c5\u03bc\u03b5 \u03b9\u03b5\u03c1\u03cc \u03c7\u03c1\u03ad\u03bf\u03c2 \u03bd\u03b1 \u03c0\u03c1\u03bf\u03c3\u03c4\u03b1\u03c4\u03b5\u03cd\u03bf\u03c5\u03bc\u03b5 \u03c4\u03cc\u03c3\u03bf \u03c4\u03bf\u03c5\u03c2 \u03b8\u03b5\u03c3\u03bc\u03bf\u03cd\u03c2 \u03cc\u03c3\u03bf \u03ba\u03b1\u03b9 \u03c4\u03b9\u03c2 \u03c0\u03b1\u03c4\u03c1\u03af\u03b4\u03b5\u03c2 \u03bc\u03b1\u03c2. \u0395\u03c5\u03c1\u03c9\u03b2\u03bf\u03c5\u03bb\u03b5\u03c5\u03c4\u03ad\u03c2 \u03ba\u03b1\u03b9 \u03c3\u03c5\u03bc\u03c0\u03b5\u03c1\u03b9\u03c6\u03bf\u03c1\u03ad\u03c2 \u03c4\u03cd\u03c0\u03bf\u03c5 \u03a6\u03c1\u03ac\u03b3\u03ba\u03bf\u03c5 \u03b4\u03b5\u03bd \u03b5\u03af\u03bd\u03b1\u03b9 \u03b1\u03bd\u03b5\u03ba\u03c4\u03ad\u03c2.",
+      "fallacies": [
+        {
+          "type": "Ad Hominem",
+          "segment": "\u0395\u03af\u03bc\u03b1\u03b9 \u03c3\u03af\u03b3\u03bf\u03c5\u03c1\u03b7 \u03c0\u03c9\u03c2 \u03c4\u03bf ECR \u03b8\u03b1 \u03ba\u03b1\u03c4\u03b1\u03b4\u03b9\u03ba\u03ac\u03c3\u03b5\u03b9 \u03c4\u03b1 \u03c8\u03ad\u03bc\u03b1\u03c4\u03b1 \u03c4\u03bf\u03c5 \u03ba. \u03a6\u03c1\u03ac\u03b3\u03ba\u03bf\u03c5, \u03bf \u03bf\u03c0\u03bf\u03af\u03bf\u03c2 \u03cc\u03c7\u03b9 \u03bc\u03cc\u03bd\u03bf \u03c0\u03c1\u03bf\u03c3\u03c0\u03ac\u03b8\u03b7\u03c3\u03b5 \u03bd\u03b1 \u03b5\u03be\u03b1\u03c0\u03b1\u03c4\u03ae\u03c3\u03b5\u03b9 \u03c4\u03bf\u03c5\u03c2 \u0388\u03bb\u03bb\u03b7\u03bd\u03b5\u03c2, \u03bc\u03b5 \u03bc\u03cc\u03bd\u03bf \u03c3\u03ba\u03bf\u03c0\u03cc \u03bd\u03b1 \u03b4\u03b9\u03b1\u03c3\u03cd\u03c1\u03b5\u03b9 \u03c4\u03b7\u03bd \u03c0\u03b1\u03c4\u03c1\u03af\u03b4\u03b1 \u03c4\u03bf\u03c5 \u03b1\u03bb\u03bb\u03ac \u03ba\u03b1\u03b9 \u03bd\u03b1 \u03c0\u03b1\u03c4\u03ae\u03c3\u03b5\u03b9 \u03c0\u03ac\u03bd\u03c9 \u03c3\u03b5 \u03bd\u03b5\u03ba\u03c1\u03bf\u03cd\u03c2, \u03c0\u03b7\u03b3\u03b1\u03af\u03bd\u03bf\u03bd\u03c4\u03b1\u03c2 \u03c7\u03ad\u03c1\u03b9 \u03c7\u03ad\u03c1\u03b9 \u03bc\u03b5 \u03c4\u03bf\u03c5\u03c2 \u03b1\u03c1\u03b9\u03c3\u03c4\u03b5\u03c1\u03bf\u03cd\u03c2. \u039a\u03cd\u03c1\u03b9\u03b5 \u03a6\u03c1\u03ac\u03b3\u03ba\u03bf, \u03bd\u03b1 \u03c7\u03b1\u03af\u03c1\u03b5\u03c3\u03c4\u03b5 \u03c4\u03bf\u03bd \u03c0\u03b1\u03c4\u03c1\u03b9\u03c9\u03c4\u03b9\u03c3\u03bc\u03cc \u03c3\u03b1\u03c2. \u0395\u03c3\u03ba\u03b5\u03bc\u03bc\u03ad\u03bd\u03b1 \u03c3\u03c5\u03ba\u03bf\u03c6\u03ac\u03bd\u03c4\u03b7\u03c3\u03b1\u03c4\u03b5 \u03c4\u03bf\u03c5\u03c2 \u03b8\u03b5\u03c3\u03bc\u03bf\u03cd\u03c2 \u03c0\u03bf\u03c5 \u03c5\u03c0\u03bf\u03c4\u03af\u03b8\u03b5\u03c4\u03b1\u03b9 \u03c0\u03c9\u03c2 \u03c5\u03c0\u03b7\u03c1\u03b5\u03c4\u03b5\u03af\u03c4\u03b5.",
+          "confidence": 0.9
+        },
+        {
+          "type": "Appeal to Emotion",
+          "segment": "\u03a3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7\u03bd \u039f\u03bb\u03bf\u03bc\u03ad\u03bb\u03b5\u03b9\u03b1 \u03bf\u03b9 \u03c3\u03bf\u03b2\u03b1\u03c1\u03bf\u03af \u03c0\u03b1\u03c4\u03c1\u03b9\u03ce\u03c4\u03b5\u03c2 \u03ad\u03c7\u03bf\u03c5\u03bc\u03b5 \u03b9\u03b5\u03c1\u03cc \u03c7\u03c1\u03ad\u03bf\u03c2 \u03bd\u03b1 \u03c0\u03c1\u03bf\u03c3\u03c4\u03b1\u03c4\u03b5\u03cd\u03bf\u03c5\u03bc\u03b5 \u03c4\u03cc\u03c3\u03bf \u03c4\u03bf\u03c5\u03c2 \u03b8\u03b5\u03c3\u03bc\u03bf\u03cd\u03c2 \u03cc\u03c3\u03bf \u03ba\u03b1\u03b9 \u03c4\u03b9\u03c2 \u03c0\u03b1\u03c4\u03c1\u03af\u03b4\u03b5\u03c2 \u03bc\u03b1\u03c2. \u0395\u03c5\u03c1\u03c9\u03b2\u03bf\u03c5\u03bb\u03b5\u03c5\u03c4\u03ad\u03c2 \u03ba\u03b1\u03b9 \u03c3\u03c5\u03bc\u03c0\u03b5\u03c1\u03b9\u03c6\u03bf\u03c1\u03ad\u03c2 \u03c4\u03cd\u03c0\u03bf\u03c5 \u03a6\u03c1\u03ac\u03b3\u03ba\u03bf\u03c5 \u03b4\u03b5\u03bd \u03b5\u03af\u03bd\u03b1\u03b9 \u03b1\u03bd\u03b5\u03ba\u03c4\u03ad\u03c2.",
+          "confidence": 0.85
+        },
+        {
+          "type": "Straw Man",
+          "segment": "\u03bf \u03bf\u03c0\u03bf\u03af\u03bf\u03c2 \u03cc\u03c7\u03b9 \u03bc\u03cc\u03bd\u03bf \u03c0\u03c1\u03bf\u03c3\u03c0\u03ac\u03b8\u03b7\u03c3\u03b5 \u03bd\u03b1 \u03b5\u03be\u03b1\u03c0\u03b1\u03c4\u03ae\u03c3\u03b5\u03b9 \u03c4\u03bf\u03c5\u03c2 \u0388\u03bb\u03bb\u03b7\u03bd\u03b5\u03c2, \u03bc\u03b5 \u03bc\u03cc\u03bd\u03bf \u03c3\u03ba\u03bf\u03c0\u03cc \u03bd\u03b1 \u03b4\u03b9\u03b1\u03c3\u03cd\u03c1\u03b5\u03b9 \u03c4\u03b7\u03bd \u03c0\u03b1\u03c4\u03c1\u03af\u03b4\u03b1 \u03c4\u03bf\u03c5 \u03b1\u03bb\u03bb\u03ac \u03ba\u03b1\u03b9 \u03bd\u03b1 \u03c0\u03b1\u03c4\u03ae\u03c3\u03b5\u03b9 \u03c0\u03ac\u03bd\u03c9 \u03c3\u03b5 \u03bd\u03b5\u03ba\u03c1\u03bf\u03cd\u03c2, \u03c0\u03b7\u03b3\u03b1\u03af\u03bd\u03bf\u03bd\u03c4\u03b1\u03c2 \u03c7\u03ad\u03c1\u03b9 \u03c7\u03ad\u03c1\u03b9 \u03bc\u03b5 \u03c4\u03bf\u03c5\u03c2 \u03b1\u03c1\u03b9\u03c3\u03c4\u03b5\u03c1\u03bf\u03cd\u03c2.",
+          "confidence": 0.75
+        }
+      ]
+    }
+  ]
+}
