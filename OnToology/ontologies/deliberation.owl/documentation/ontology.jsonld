@@ -140,6 +140,9 @@
     "@language" : "en",
     "@value" : "Deliberation Ontology"
   } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/deliberation/mappings"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "1.0.0"
   } ]
