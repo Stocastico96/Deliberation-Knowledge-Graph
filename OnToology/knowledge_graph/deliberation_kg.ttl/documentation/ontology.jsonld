@@ -1,0 +1,1232 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#Contribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#DeliberationProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#Participant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#Topic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#endDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#hasContribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#hasParticipant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#hasRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#hasTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#isAffiliatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#madeBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#startDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#text",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#timestamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/contribution_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "contribution_1"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/participant_1"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ],
+  "https://w3id.org/deliberation/ontology#timestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T17:02:06"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/contribution_10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "contribution_10"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/participant_4"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : "Όλοι γνωρίζουμε, αγαπητοί συνάδελφοι, πως αυτό είναι μία χυδαία συκοφαντία κατά όλων μας. Είμαι σίγουρη πως το ECR θα καταδικάσει τα ψέματα του κ. Φράγκου, ο οποίος όχι μόνο προσπάθησε να εξαπατήσει τους Έλληνες, με μόνο σκοπό να διασύρει την πατρίδα του αλλά και να πατήσει πάνω σε νεκρούς, πηγαίνοντας χέρι χέρι με τους αριστερούς. Κύριε Φράγκο, να χαίρεστε τον πατριωτισμό σας. Εσκεμμένα συκοφάντησατε τους θεσμούς που υποτίθεται πως υπηρετείτε. Και, αγαπητό ECR, να χαίρεστε το μέλος σας που ακόμα κρύβεται αντί να ζητήσει συγνώμη. Σε αυτήν την Ολομέλεια οι σοβαροί πατριώτες έχουμε ιερό χρέος να προστατεύουμε τόσο τους θεσμούς όσο και τις πατρίδες μας. Ευρωβουλευτές και συμπεριφορές τύπου Φράγκου δεν είναι ανεκτές."
+  } ],
+  "https://w3id.org/deliberation/ontology#timestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T17:10:36"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/contribution_11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "contribution_11"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/participant_5"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : "The right to be who you are, to love who you want and to live your life free from discrimination is a fundamental European right. That right is clearly under attack.\nAt this critical moment, the decision by the European Commission to announce the withdrawal of the horizontal anti-discrimination directive came as a shock. It also represents a betrayal of all the EU citizens who are currently lacking protection against discrimination.\nIt is time for the EU to show global leadership against discrimination, not to back down. As the European Parliament's rapporteur for this directive, I strongly condemn this decision and I urge the European Commission to immediately reconsider it."
+  } ],
+  "https://w3id.org/deliberation/ontology#timestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T17:12:01"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/contribution_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "contribution_2"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/participant_1"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : "First of all, dear colleagues, two years ago, on 28 February 2023, in Tempi, Greece, a tragic railway accident cost 57 people their lives and injured even more. We mark a sad anniversary today as our hearts go out to the victims, to those who lost their loved ones and to the injured who still bear the scars of that day. This House remembers them and honours them.\nOver the coming months, we will celebrate also the 35th anniversary of the assertion of state continuity of Estonia, Latvia and Lithuania, enshrining their independence de jure under international law throughout different illegal occupations and annexations of the 20th century.\nThese anniversaries remind us again of the sacrifice of so many for the liberty that we enjoy today, and underscore our determination never to allow another generation of Europeans to be lost behind an Iron Curtain.\nTomorrow at noon, we will once again welcome national leader of Belarus, Sviatlana Tsikhanouskaya, to this plenary, along with other brave women from Ukraine and Belarus, who are standing up for liberty in order to mark International Women's Day. May I ask that you are present. I count on you and your colleagues to be here then, because this week will also serve to reaffirm this House's steadfast support for the people of Belarus and their struggle for freedom, including political prisoners.\nAnd to express this solidarity and to mark the International Day of Solidarity with Belarus, the European Parliament is once again offering you, as Members of this Parliament, the opportunity to sign postcards addressed to the 1 250 political prisoners who are unfairly imprisoned by Lukashenka's regime. I urge you to join in this action to show them that their sacrifice will not remain unanswered.\nLast year, this initiative was extremely successful – in the previous mandate, in the previous Parliament. I ask that we make this year's even more so. We know their names, we see their struggle and we stand with them. So this message and this initiative will send the strongest of messages that they are not alone.\n(Applause)"
+  } ],
+  "https://w3id.org/deliberation/ontology#timestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T17:02:43"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/contribution_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "contribution_3"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/participant_1"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : "Are there any comments? If not, the minutes will be deemed approved."
+  } ],
+  "https://w3id.org/deliberation/ontology#timestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T17:05:33"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/contribution_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "contribution_4"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/participant_1"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : "These decisions will be set out in the minutes of today's sitting and take effect on the date of this announcement."
+  } ],
+  "https://w3id.org/deliberation/ontology#timestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T17:05:53"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/contribution_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "contribution_5"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/participant_1"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : "The corrigenda are available on the plenary webpage. Their titles will be published in the minutes of this sitting."
+  } ],
+  "https://w3id.org/deliberation/ontology#timestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T17:06:09"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/contribution_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "contribution_6"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/participant_1"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : "The first is on employment protection for the activities of police officers, military personnel, prison officers, and customs and border officials, classifying them as high-risk occupations in the EU. The proposal is referred to the Committee on Employment and Social Affairs.\nThe second is on the need to extend the period for implementation of the Recovery and Resilience Facility. This proposal is referred to the Committee on Budgets and the Committee on Economic and Monetary Affairs, as committees responsible, and to the Committee on Employment, the Committee on the Environment, the Committee on Industry, Research and Energy and the Committee on Transport and Tourism, for opinion."
+  } ],
+  "https://w3id.org/deliberation/ontology#timestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T17:06:33"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/contribution_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "contribution_7"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/participant_1"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : "The dates are available on the plenary webpage and the deadlines are as follows: amendments, today at 7 p.m.; roll-call votes, Tuesday, 11 March at 4 p.m. The vote will then take place on Wednesday, 12 March at noon.\n⁂\nI would like to inform the House that I have received multiple requests for points of order. I will go through them one by one.\nFirst, I give the floor to Ms Iratxe García Pérez."
+  } ],
+  "https://w3id.org/deliberation/ontology#timestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T17:07:20"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/contribution_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "contribution_8"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/participant_2"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : "Now we face new challenges, like the threat of war. Let us not forget how we handled COVID-19. We need to be bold and stay united. By learning from that time we can build a more resilient and cohesive Europe. This will help us face any future crisis with determination and unity."
+  } ],
+  "https://w3id.org/deliberation/ontology#timestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T17:07:50"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/contribution_9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "contribution_9"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/participant_3"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : "Extremist factions associated with militant groups have reportedly executed civilians, including women and children. Christian families have endured brutal killings and violent raids at the hands of armed militants who have stormed homes, seized belongings and claimed innocent lives.\nThe European Union must take decisive action in support of stability and humanitarian relief efforts to alleviate the suffering of the Syrian people, including Christians and other affected communities.\nChristianity in Syria and in some other parts of the Middle East-North Africa region is at a critical crossroads. It will either endure or it will vanish, leaving behind a profound religious, ethnic and cultural void.\nEurope must not remain indifferent to this existential threat. An External Action Service with its press release - it is shameful that they did not take this into account."
+  } ],
+  "https://w3id.org/deliberation/ontology#timestamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T17:09:07"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem1"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Resumption of the session"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem10"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Resumption of the sitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem11"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Supporting the EU’s most vulnerable regions against devastating effects of climate change, such as the recent cyclone hitting La Réunion (debate)"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem12"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Resumption of the sitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem13"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Requests for the waiver of immunity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem14"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Request for the defence of immunity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem15"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Resumption of the sitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem16"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Cutting red tape and simplifying business in the EU: the first Omnibus proposals (debate)"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem17"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Establishing the Reform and Growth Facility for the Republic of Moldova (debate)"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem18"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "European Social Fund Plus post-2027 (short presentation)"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem19"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "One-minute speeches on matters of political importance"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem2"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Opening of the sitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem20"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Agenda of the next sitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem21"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Approval of the minutes of the sitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem22"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Closure of the sitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem23"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Closure of the session"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem3"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Statements by the President"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem4"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Approval of the minutes of the previous sitting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem5"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Composition of committees and delegations"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem6"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Corrigenda (Rule 251)"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem7"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Proposals for Union acts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem8"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Parliament’s calendar of part-sessions - 2026"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/creitem9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "creitem9"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Order of business"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/decide_madrid_process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#DeliberationProcess"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasContribution" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/madrid_proposal_19"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/madrid_proposal_7"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasTopic" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/madrid_topic_19"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/madrid_topic_7"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "decide_madrid_process"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Decide Madrid Participatory Democracy Platform"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/delidata_message_10b712d7-f171-466d-9792-156e8fa0b6a6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "delidata_message_10b712d7-f171-466d-9792-156e8fa0b6a6"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/delidata_message_17f528f5-3640-4b55-a868-cc0443563246",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "delidata_message_17f528f5-3640-4b55-a868-cc0443563246"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/delidata_message_26612508-e337-4372-be2a-a70fa2d4e309",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "delidata_message_26612508-e337-4372-be2a-a70fa2d4e309"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/delidata_message_37e66aed-0221-4f40-8f6b-5d95c570ef5a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "delidata_message_37e66aed-0221-4f40-8f6b-5d95c570ef5a"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/delidata_message_6fb0a435-8645-4e71-bd4b-18322bb22395",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "delidata_message_6fb0a435-8645-4e71-bd4b-18322bb22395"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/delidata_message_7b8b01b9-a2d7-4c06-adad-821f63d64d09",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "delidata_message_7b8b01b9-a2d7-4c06-adad-821f63d64d09"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/delidata_message_960365c7-53c3-4650-ae39-2f2202be8750",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "delidata_message_960365c7-53c3-4650-ae39-2f2202be8750"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/delidata_message_ede56834-39fb-4b8a-b5f4-6543322c3967",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "delidata_message_ede56834-39fb-4b8a-b5f4-6543322c3967"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/delidata_process_1808ff70-68eb-4b48-8ad8-4e846ff7409d",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#DeliberationProcess"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasContribution" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/delidata_message_10b712d7-f171-466d-9792-156e8fa0b6a6"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/delidata_message_17f528f5-3640-4b55-a868-cc0443563246"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/delidata_message_26612508-e337-4372-be2a-a70fa2d4e309"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/delidata_message_37e66aed-0221-4f40-8f6b-5d95c570ef5a"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/delidata_message_6fb0a435-8645-4e71-bd4b-18322bb22395"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/delidata_message_7b8b01b9-a2d7-4c06-adad-821f63d64d09"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/delidata_message_960365c7-53c3-4650-ae39-2f2202be8750"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/delidata_message_ede56834-39fb-4b8a-b5f4-6543322c3967"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "delidata_process_1808ff70-68eb-4b48-8ad8-4e846ff7409d"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "DeliData Conversation 1808ff70-68eb-4b48-8ad8-4e846ff7409d"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/ep_debate_20250310",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#DeliberationProcess"
+  } ],
+  "https://w3id.org/deliberation/ontology#endDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T23:59:59+00:00"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasContribution" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/contribution_1"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/contribution_10"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/contribution_11"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/contribution_2"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/contribution_3"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/contribution_4"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/contribution_5"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/contribution_6"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/contribution_7"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/contribution_8"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/contribution_9"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasParticipant" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/participant_1"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/participant_2"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/participant_3"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/participant_4"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/participant_5"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasTopic" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/creitem1"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem10"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem11"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem12"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem13"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem14"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem15"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem16"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem17"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem18"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem19"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem2"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem20"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem21"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem22"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem23"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem3"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem4"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem5"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem6"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem7"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem8"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/creitem9"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "ep_debate_20250310"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "European Parliament Debate - 2025-03-10 (Sample)"
+  } ],
+  "https://w3id.org/deliberation/ontology#startDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-03-10T00:00:00+00:00"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/eu_have_your_say_process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#DeliberationProcess"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasContribution" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_feedback_44afb833-b7bc-4d00-8931-3b1464e1575d"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_feedback_94bbcdb2-866f-4b06-ba7b-9f6c17f16b92"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_feedback_a9c58f72-79d8-4eae-8a7a-9c12db897e00"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_feedback_b5de5ff7-0daa-486d-8872-ef5c976fc3bc"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_feedback_ed7c37ea-3ff0-4bf2-b14f-bf75a2dd8c5f"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasParticipant" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_participant_455c330e-8bbc-403f-97a4-5cef5bc7f1f3"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_participant_710b4b84-e51a-4cc2-8591-c4d7dcbf4819"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_participant_722185df-16b3-423e-8717-dee280acf6a5"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_participant_85eb62ad-0f88-49a7-a3e9-852a1231568f"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_participant_ae927f63-37e7-43b4-9d70-ffdae8094ad5"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasTopic" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_topic_4cb08a2f-3f51-417e-84e9-32cfa969a393"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_topic_5a72067b-0f2a-4da6-af99-2aa17296dc1a"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_topic_8ec054aa-ff4d-4f79-8295-dfa028bf1f40"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_topic_abdc1ec2-54f0-4aa5-83b1-d90baaa3473e"
+  }, {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_topic_ff43033d-80fa-42e3-84c9-856153ed32aa"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "eu_have_your_say_process"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "EU Have Your Say Public Consultation Platform"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_feedback_44afb833-b7bc-4d00-8931-3b1464e1575d",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasTopic" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_topic_8ec054aa-ff4d-4f79-8295-dfa028bf1f40"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_feedback_44afb833-b7bc-4d00-8931-3b1464e1575d"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_participant_ae927f63-37e7-43b4-9d70-ffdae8094ad5"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_feedback_94bbcdb2-866f-4b06-ba7b-9f6c17f16b92",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasTopic" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_topic_abdc1ec2-54f0-4aa5-83b1-d90baaa3473e"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_feedback_94bbcdb2-866f-4b06-ba7b-9f6c17f16b92"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_participant_722185df-16b3-423e-8717-dee280acf6a5"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_feedback_a9c58f72-79d8-4eae-8a7a-9c12db897e00",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasTopic" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_topic_5a72067b-0f2a-4da6-af99-2aa17296dc1a"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_feedback_a9c58f72-79d8-4eae-8a7a-9c12db897e00"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_participant_710b4b84-e51a-4cc2-8591-c4d7dcbf4819"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_feedback_b5de5ff7-0daa-486d-8872-ef5c976fc3bc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasTopic" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_topic_ff43033d-80fa-42e3-84c9-856153ed32aa"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_feedback_b5de5ff7-0daa-486d-8872-ef5c976fc3bc"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_participant_455c330e-8bbc-403f-97a4-5cef5bc7f1f3"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_feedback_ed7c37ea-3ff0-4bf2-b14f-bf75a2dd8c5f",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasTopic" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_topic_4cb08a2f-3f51-417e-84e9-32cfa969a393"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_feedback_ed7c37ea-3ff0-4bf2-b14f-bf75a2dd8c5f"
+  } ],
+  "https://w3id.org/deliberation/ontology#madeBy" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/euhys_participant_85eb62ad-0f88-49a7-a3e9-852a1231568f"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_participant_455c330e-8bbc-403f-97a4-5cef5bc7f1f3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Participant"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_participant_455c330e-8bbc-403f-97a4-5cef5bc7f1f3"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Contributor 455c330e-8bbc-403f-97a4-5cef5bc7f1f3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_participant_710b4b84-e51a-4cc2-8591-c4d7dcbf4819",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Participant"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_participant_710b4b84-e51a-4cc2-8591-c4d7dcbf4819"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Contributor 710b4b84-e51a-4cc2-8591-c4d7dcbf4819"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_participant_722185df-16b3-423e-8717-dee280acf6a5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Participant"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_participant_722185df-16b3-423e-8717-dee280acf6a5"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Contributor 722185df-16b3-423e-8717-dee280acf6a5"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_participant_85eb62ad-0f88-49a7-a3e9-852a1231568f",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Participant"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_participant_85eb62ad-0f88-49a7-a3e9-852a1231568f"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Contributor 85eb62ad-0f88-49a7-a3e9-852a1231568f"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_participant_ae927f63-37e7-43b4-9d70-ffdae8094ad5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Participant"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_participant_ae927f63-37e7-43b4-9d70-ffdae8094ad5"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Contributor ae927f63-37e7-43b4-9d70-ffdae8094ad5"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_topic_4cb08a2f-3f51-417e-84e9-32cfa969a393",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_topic_4cb08a2f-3f51-417e-84e9-32cfa969a393"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Initiative 4cb08a2f-3f51-417e-84e9-32cfa969a393"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_topic_5a72067b-0f2a-4da6-af99-2aa17296dc1a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_topic_5a72067b-0f2a-4da6-af99-2aa17296dc1a"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Initiative 5a72067b-0f2a-4da6-af99-2aa17296dc1a"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_topic_8ec054aa-ff4d-4f79-8295-dfa028bf1f40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_topic_8ec054aa-ff4d-4f79-8295-dfa028bf1f40"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Initiative 8ec054aa-ff4d-4f79-8295-dfa028bf1f40"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_topic_abdc1ec2-54f0-4aa5-83b1-d90baaa3473e",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_topic_abdc1ec2-54f0-4aa5-83b1-d90baaa3473e"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Initiative abdc1ec2-54f0-4aa5-83b1-d90baaa3473e"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/euhys_topic_ff43033d-80fa-42e3-84c9-856153ed32aa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "euhys_topic_ff43033d-80fa-42e3-84c9-856153ed32aa"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Initiative ff43033d-80fa-42e3-84c9-856153ed32aa"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/habermas_machine_process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#DeliberationProcess"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "habermas_machine_process"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Habermas Machine Deliberative Democracy Experiment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/madrid_proposal_19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasTopic" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/madrid_topic_19"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "madrid_proposal_19"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : "El centro turístico y comercial de Madrid está sólo a 700 metros de la Casa de Campo y de Madrid Rio, pero las conexiones a él son terribles. Propongo unirlo con calles peatonales y arboladas."
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/madrid_proposal_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Contribution"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasTopic" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/madrid_topic_7"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "madrid_proposal_7"
+  } ],
+  "https://w3id.org/deliberation/ontology#text" : [ {
+    "@value" : "Algo tan básico como limpiar."
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/madrid_topic_19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "madrid_topic_19"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Unir el centro con Madrid Río de forma peatonal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/madrid_topic_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Topic"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "madrid_topic_7"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Limpiar las calles"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/org_PPE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Organization"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "PPE"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/org_PfE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Organization"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "PfE"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/org_S&D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Organization"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "S&D"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/org_Verts_ALE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Organization"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Verts/ALE"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/participant_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Participant"
+  } ],
+  "https://w3id.org/deliberation/ontology#hasRole" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/role_participant_1"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "participant_1"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "President."
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/participant_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Participant"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "participant_2"
+  } ],
+  "https://w3id.org/deliberation/ontology#isAffiliatedWith" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/org_S&D"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Iratxe García Pérez"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/participant_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Participant"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "participant_3"
+  } ],
+  "https://w3id.org/deliberation/ontology#isAffiliatedWith" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/org_PPE"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Željana Zovko"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/participant_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Participant"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "participant_4"
+  } ],
+  "https://w3id.org/deliberation/ontology#isAffiliatedWith" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/org_PfE"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Αφροδίτη Λατινοπούλου"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/participant_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Participant"
+  } ],
+  "https://w3id.org/deliberation/ontology#identifier" : [ {
+    "@value" : "participant_5"
+  } ],
+  "https://w3id.org/deliberation/ontology#isAffiliatedWith" : [ {
+    "@id" : "https://w3id.org/deliberation/resource/org_Verts_ALE"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "Alice Kuhnke"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/resource/role_participant_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/deliberation/ontology#Role"
+  } ],
+  "https://w3id.org/deliberation/ontology#name" : [ {
+    "@value" : "President"
+  } ]
+} ]

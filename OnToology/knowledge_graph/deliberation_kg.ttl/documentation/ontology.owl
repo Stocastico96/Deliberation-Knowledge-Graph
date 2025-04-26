@@ -1,0 +1,1132 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology="https://w3id.org/deliberation/ontology#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#endDate -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/deliberation/ontology#endDate"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#hasContribution -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/deliberation/ontology#hasContribution"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#hasParticipant -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/deliberation/ontology#hasParticipant"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#hasRole -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/deliberation/ontology#hasRole"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#hasTopic -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/deliberation/ontology#hasTopic"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#identifier -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/deliberation/ontology#identifier"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#isAffiliatedWith -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/deliberation/ontology#isAffiliatedWith"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#madeBy -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/deliberation/ontology#madeBy"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#name -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/deliberation/ontology#name"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#startDate -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/deliberation/ontology#startDate"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#text -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/deliberation/ontology#text"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#timestamp -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/deliberation/ontology#timestamp"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#Contribution -->
+
+
+    <Class rdf:about="https://w3id.org/deliberation/ontology#Contribution"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#DeliberationProcess -->
+
+
+    <Class rdf:about="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#Organization -->
+
+
+    <Class rdf:about="https://w3id.org/deliberation/ontology#Organization"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#Participant -->
+
+
+    <Class rdf:about="https://w3id.org/deliberation/ontology#Participant"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#Role -->
+
+
+    <Class rdf:about="https://w3id.org/deliberation/ontology#Role"/>
+    
+
+
+    <!-- https://w3id.org/deliberation/ontology#Topic -->
+
+
+    <Class rdf:about="https://w3id.org/deliberation/ontology#Topic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/contribution_1 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/contribution_1">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>contribution_1</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+        <ontology:text></ontology:text>
+        <ontology:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:02:06</ontology:timestamp>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/contribution_10 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/contribution_10">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>contribution_10</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_4"/>
+        <ontology:text>Όλοι γνωρίζουμε, αγαπητοί συνάδελφοι, πως αυτό είναι μία χυδαία συκοφαντία κατά όλων μας. Είμαι σίγουρη πως το ECR θα καταδικάσει τα ψέματα του κ. Φράγκου, ο οποίος όχι μόνο προσπάθησε να εξαπατήσει τους Έλληνες, με μόνο σκοπό να διασύρει την πατρίδα του αλλά και να πατήσει πάνω σε νεκρούς, πηγαίνοντας χέρι χέρι με τους αριστερούς. Κύριε Φράγκο, να χαίρεστε τον πατριωτισμό σας. Εσκεμμένα συκοφάντησατε τους θεσμούς που υποτίθεται πως υπηρετείτε. Και, αγαπητό ECR, να χαίρεστε το μέλος σας που ακόμα κρύβεται αντί να ζητήσει συγνώμη. Σε αυτήν την Ολομέλεια οι σοβαροί πατριώτες έχουμε ιερό χρέος να προστατεύουμε τόσο τους θεσμούς όσο και τις πατρίδες μας. Ευρωβουλευτές και συμπεριφορές τύπου Φράγκου δεν είναι ανεκτές.</ontology:text>
+        <ontology:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:10:36</ontology:timestamp>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/contribution_11 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/contribution_11">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>contribution_11</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_5"/>
+        <ontology:text>The right to be who you are, to love who you want and to live your life free from discrimination is a fundamental European right. That right is clearly under attack.
+At this critical moment, the decision by the European Commission to announce the withdrawal of the horizontal anti-discrimination directive came as a shock. It also represents a betrayal of all the EU citizens who are currently lacking protection against discrimination.
+It is time for the EU to show global leadership against discrimination, not to back down. As the European Parliament&apos;s rapporteur for this directive, I strongly condemn this decision and I urge the European Commission to immediately reconsider it.</ontology:text>
+        <ontology:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:12:01</ontology:timestamp>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/contribution_2 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/contribution_2">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>contribution_2</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+        <ontology:text>First of all, dear colleagues, two years ago, on 28 February 2023, in Tempi, Greece, a tragic railway accident cost 57 people their lives and injured even more. We mark a sad anniversary today as our hearts go out to the victims, to those who lost their loved ones and to the injured who still bear the scars of that day. This House remembers them and honours them.
+Over the coming months, we will celebrate also the 35th anniversary of the assertion of state continuity of Estonia, Latvia and Lithuania, enshrining their independence de jure under international law throughout different illegal occupations and annexations of the 20th century.
+These anniversaries remind us again of the sacrifice of so many for the liberty that we enjoy today, and underscore our determination never to allow another generation of Europeans to be lost behind an Iron Curtain.
+Tomorrow at noon, we will once again welcome national leader of Belarus, Sviatlana Tsikhanouskaya, to this plenary, along with other brave women from Ukraine and Belarus, who are standing up for liberty in order to mark International Women&apos;s Day. May I ask that you are present. I count on you and your colleagues to be here then, because this week will also serve to reaffirm this House&apos;s steadfast support for the people of Belarus and their struggle for freedom, including political prisoners.
+And to express this solidarity and to mark the International Day of Solidarity with Belarus, the European Parliament is once again offering you, as Members of this Parliament, the opportunity to sign postcards addressed to the 1 250 political prisoners who are unfairly imprisoned by Lukashenka&apos;s regime. I urge you to join in this action to show them that their sacrifice will not remain unanswered.
+Last year, this initiative was extremely successful – in the previous mandate, in the previous Parliament. I ask that we make this year&apos;s even more so. We know their names, we see their struggle and we stand with them. So this message and this initiative will send the strongest of messages that they are not alone.
+(Applause)</ontology:text>
+        <ontology:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:02:43</ontology:timestamp>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/contribution_3 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/contribution_3">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>contribution_3</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+        <ontology:text>Are there any comments? If not, the minutes will be deemed approved.</ontology:text>
+        <ontology:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:05:33</ontology:timestamp>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/contribution_4 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/contribution_4">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>contribution_4</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+        <ontology:text>These decisions will be set out in the minutes of today&apos;s sitting and take effect on the date of this announcement.</ontology:text>
+        <ontology:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:05:53</ontology:timestamp>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/contribution_5 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/contribution_5">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>contribution_5</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+        <ontology:text>The corrigenda are available on the plenary webpage. Their titles will be published in the minutes of this sitting.</ontology:text>
+        <ontology:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:06:09</ontology:timestamp>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/contribution_6 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/contribution_6">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>contribution_6</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+        <ontology:text>The first is on employment protection for the activities of police officers, military personnel, prison officers, and customs and border officials, classifying them as high-risk occupations in the EU. The proposal is referred to the Committee on Employment and Social Affairs.
+The second is on the need to extend the period for implementation of the Recovery and Resilience Facility. This proposal is referred to the Committee on Budgets and the Committee on Economic and Monetary Affairs, as committees responsible, and to the Committee on Employment, the Committee on the Environment, the Committee on Industry, Research and Energy and the Committee on Transport and Tourism, for opinion.</ontology:text>
+        <ontology:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:06:33</ontology:timestamp>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/contribution_7 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/contribution_7">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>contribution_7</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+        <ontology:text>The dates are available on the plenary webpage and the deadlines are as follows: amendments, today at 7 p.m.; roll-call votes, Tuesday, 11 March at 4 p.m. The vote will then take place on Wednesday, 12 March at noon.
+⁂
+I would like to inform the House that I have received multiple requests for points of order. I will go through them one by one.
+First, I give the floor to Ms Iratxe García Pérez.</ontology:text>
+        <ontology:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:07:20</ontology:timestamp>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/contribution_8 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/contribution_8">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>contribution_8</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_2"/>
+        <ontology:text>Now we face new challenges, like the threat of war. Let us not forget how we handled COVID-19. We need to be bold and stay united. By learning from that time we can build a more resilient and cohesive Europe. This will help us face any future crisis with determination and unity.</ontology:text>
+        <ontology:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:07:50</ontology:timestamp>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/contribution_9 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/contribution_9">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>contribution_9</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_3"/>
+        <ontology:text>Extremist factions associated with militant groups have reportedly executed civilians, including women and children. Christian families have endured brutal killings and violent raids at the hands of armed militants who have stormed homes, seized belongings and claimed innocent lives.
+The European Union must take decisive action in support of stability and humanitarian relief efforts to alleviate the suffering of the Syrian people, including Christians and other affected communities.
+Christianity in Syria and in some other parts of the Middle East-North Africa region is at a critical crossroads. It will either endure or it will vanish, leaving behind a profound religious, ethnic and cultural void.
+Europe must not remain indifferent to this existential threat. An External Action Service with its press release - it is shameful that they did not take this into account.</ontology:text>
+        <ontology:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:09:07</ontology:timestamp>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem1 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem1">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem1</ontology:identifier>
+        <ontology:name>Resumption of the session</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem10 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem10">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem10</ontology:identifier>
+        <ontology:name>Resumption of the sitting</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem11 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem11">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem11</ontology:identifier>
+        <ontology:name>Supporting the EU’s most vulnerable regions against devastating effects of climate change, such as the recent cyclone hitting La Réunion (debate)</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem12 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem12">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem12</ontology:identifier>
+        <ontology:name>Resumption of the sitting</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem13 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem13">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem13</ontology:identifier>
+        <ontology:name>Requests for the waiver of immunity</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem14 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem14">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem14</ontology:identifier>
+        <ontology:name>Request for the defence of immunity</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem15 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem15">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem15</ontology:identifier>
+        <ontology:name>Resumption of the sitting</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem16 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem16">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem16</ontology:identifier>
+        <ontology:name>Cutting red tape and simplifying business in the EU: the first Omnibus proposals (debate)</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem17 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem17">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem17</ontology:identifier>
+        <ontology:name>Establishing the Reform and Growth Facility for the Republic of Moldova (debate)</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem18 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem18">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem18</ontology:identifier>
+        <ontology:name>European Social Fund Plus post-2027 (short presentation)</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem19 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem19">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem19</ontology:identifier>
+        <ontology:name>One-minute speeches on matters of political importance</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem2 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem2">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem2</ontology:identifier>
+        <ontology:name>Opening of the sitting</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem20 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem20">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem20</ontology:identifier>
+        <ontology:name>Agenda of the next sitting</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem21 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem21">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem21</ontology:identifier>
+        <ontology:name>Approval of the minutes of the sitting</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem22 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem22">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem22</ontology:identifier>
+        <ontology:name>Closure of the sitting</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem23 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem23">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem23</ontology:identifier>
+        <ontology:name>Closure of the session</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem3 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem3">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem3</ontology:identifier>
+        <ontology:name>Statements by the President</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem4 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem4">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem4</ontology:identifier>
+        <ontology:name>Approval of the minutes of the previous sitting</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem5 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem5">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem5</ontology:identifier>
+        <ontology:name>Composition of committees and delegations</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem6 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem6">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem6</ontology:identifier>
+        <ontology:name>Corrigenda (Rule 251)</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem7 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem7">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem7</ontology:identifier>
+        <ontology:name>Proposals for Union acts</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem8 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem8">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem8</ontology:identifier>
+        <ontology:name>Parliament’s calendar of part-sessions - 2026</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/creitem9 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/creitem9">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>creitem9</ontology:identifier>
+        <ontology:name>Order of business</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/decide_madrid_process -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/decide_madrid_process">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/madrid_proposal_19"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/madrid_proposal_7"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/madrid_topic_19"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/madrid_topic_7"/>
+        <ontology:identifier>decide_madrid_process</ontology:identifier>
+        <ontology:name>Decide Madrid Participatory Democracy Platform</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/delidata_message_10b712d7-f171-466d-9792-156e8fa0b6a6 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/delidata_message_10b712d7-f171-466d-9792-156e8fa0b6a6">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>delidata_message_10b712d7-f171-466d-9792-156e8fa0b6a6</ontology:identifier>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/delidata_message_17f528f5-3640-4b55-a868-cc0443563246 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/delidata_message_17f528f5-3640-4b55-a868-cc0443563246">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>delidata_message_17f528f5-3640-4b55-a868-cc0443563246</ontology:identifier>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/delidata_message_26612508-e337-4372-be2a-a70fa2d4e309 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/delidata_message_26612508-e337-4372-be2a-a70fa2d4e309">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>delidata_message_26612508-e337-4372-be2a-a70fa2d4e309</ontology:identifier>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/delidata_message_37e66aed-0221-4f40-8f6b-5d95c570ef5a -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/delidata_message_37e66aed-0221-4f40-8f6b-5d95c570ef5a">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>delidata_message_37e66aed-0221-4f40-8f6b-5d95c570ef5a</ontology:identifier>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/delidata_message_6fb0a435-8645-4e71-bd4b-18322bb22395 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/delidata_message_6fb0a435-8645-4e71-bd4b-18322bb22395">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>delidata_message_6fb0a435-8645-4e71-bd4b-18322bb22395</ontology:identifier>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/delidata_message_7b8b01b9-a2d7-4c06-adad-821f63d64d09 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/delidata_message_7b8b01b9-a2d7-4c06-adad-821f63d64d09">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>delidata_message_7b8b01b9-a2d7-4c06-adad-821f63d64d09</ontology:identifier>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/delidata_message_960365c7-53c3-4650-ae39-2f2202be8750 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/delidata_message_960365c7-53c3-4650-ae39-2f2202be8750">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>delidata_message_960365c7-53c3-4650-ae39-2f2202be8750</ontology:identifier>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/delidata_message_ede56834-39fb-4b8a-b5f4-6543322c3967 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/delidata_message_ede56834-39fb-4b8a-b5f4-6543322c3967">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:identifier>delidata_message_ede56834-39fb-4b8a-b5f4-6543322c3967</ontology:identifier>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/delidata_process_1808ff70-68eb-4b48-8ad8-4e846ff7409d -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/delidata_process_1808ff70-68eb-4b48-8ad8-4e846ff7409d">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/delidata_message_10b712d7-f171-466d-9792-156e8fa0b6a6"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/delidata_message_17f528f5-3640-4b55-a868-cc0443563246"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/delidata_message_26612508-e337-4372-be2a-a70fa2d4e309"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/delidata_message_37e66aed-0221-4f40-8f6b-5d95c570ef5a"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/delidata_message_6fb0a435-8645-4e71-bd4b-18322bb22395"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/delidata_message_7b8b01b9-a2d7-4c06-adad-821f63d64d09"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/delidata_message_960365c7-53c3-4650-ae39-2f2202be8750"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/delidata_message_ede56834-39fb-4b8a-b5f4-6543322c3967"/>
+        <ontology:identifier>delidata_process_1808ff70-68eb-4b48-8ad8-4e846ff7409d</ontology:identifier>
+        <ontology:name>DeliData Conversation 1808ff70-68eb-4b48-8ad8-4e846ff7409d</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/ep_debate_20250310 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/ep_debate_20250310">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+        <ontology:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T23:59:59+00:00</ontology:endDate>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_1"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_10"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_11"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_2"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_3"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_4"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_5"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_6"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_7"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_8"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_9"/>
+        <ontology:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+        <ontology:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_2"/>
+        <ontology:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_3"/>
+        <ontology:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_4"/>
+        <ontology:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_5"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem1"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem10"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem11"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem12"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem13"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem14"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem15"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem16"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem17"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem18"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem19"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem2"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem20"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem21"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem22"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem23"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem3"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem4"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem5"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem6"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem7"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem8"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem9"/>
+        <ontology:identifier>ep_debate_20250310</ontology:identifier>
+        <ontology:name>European Parliament Debate - 2025-03-10 (Sample)</ontology:name>
+        <ontology:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T00:00:00+00:00</ontology:startDate>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/eu_have_your_say_process -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/eu_have_your_say_process">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/euhys_feedback_44afb833-b7bc-4d00-8931-3b1464e1575d"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/euhys_feedback_94bbcdb2-866f-4b06-ba7b-9f6c17f16b92"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/euhys_feedback_a9c58f72-79d8-4eae-8a7a-9c12db897e00"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/euhys_feedback_b5de5ff7-0daa-486d-8872-ef5c976fc3bc"/>
+        <ontology:hasContribution rdf:resource="https://w3id.org/deliberation/resource/euhys_feedback_ed7c37ea-3ff0-4bf2-b14f-bf75a2dd8c5f"/>
+        <ontology:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/euhys_participant_455c330e-8bbc-403f-97a4-5cef5bc7f1f3"/>
+        <ontology:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/euhys_participant_710b4b84-e51a-4cc2-8591-c4d7dcbf4819"/>
+        <ontology:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/euhys_participant_722185df-16b3-423e-8717-dee280acf6a5"/>
+        <ontology:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/euhys_participant_85eb62ad-0f88-49a7-a3e9-852a1231568f"/>
+        <ontology:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/euhys_participant_ae927f63-37e7-43b4-9d70-ffdae8094ad5"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/euhys_topic_4cb08a2f-3f51-417e-84e9-32cfa969a393"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/euhys_topic_5a72067b-0f2a-4da6-af99-2aa17296dc1a"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/euhys_topic_8ec054aa-ff4d-4f79-8295-dfa028bf1f40"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/euhys_topic_abdc1ec2-54f0-4aa5-83b1-d90baaa3473e"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/euhys_topic_ff43033d-80fa-42e3-84c9-856153ed32aa"/>
+        <ontology:identifier>eu_have_your_say_process</ontology:identifier>
+        <ontology:name>EU Have Your Say Public Consultation Platform</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_feedback_44afb833-b7bc-4d00-8931-3b1464e1575d -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_feedback_44afb833-b7bc-4d00-8931-3b1464e1575d">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/euhys_topic_8ec054aa-ff4d-4f79-8295-dfa028bf1f40"/>
+        <ontology:identifier>euhys_feedback_44afb833-b7bc-4d00-8931-3b1464e1575d</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/euhys_participant_ae927f63-37e7-43b4-9d70-ffdae8094ad5"/>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_feedback_94bbcdb2-866f-4b06-ba7b-9f6c17f16b92 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_feedback_94bbcdb2-866f-4b06-ba7b-9f6c17f16b92">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/euhys_topic_abdc1ec2-54f0-4aa5-83b1-d90baaa3473e"/>
+        <ontology:identifier>euhys_feedback_94bbcdb2-866f-4b06-ba7b-9f6c17f16b92</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/euhys_participant_722185df-16b3-423e-8717-dee280acf6a5"/>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_feedback_a9c58f72-79d8-4eae-8a7a-9c12db897e00 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_feedback_a9c58f72-79d8-4eae-8a7a-9c12db897e00">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/euhys_topic_5a72067b-0f2a-4da6-af99-2aa17296dc1a"/>
+        <ontology:identifier>euhys_feedback_a9c58f72-79d8-4eae-8a7a-9c12db897e00</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/euhys_participant_710b4b84-e51a-4cc2-8591-c4d7dcbf4819"/>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_feedback_b5de5ff7-0daa-486d-8872-ef5c976fc3bc -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_feedback_b5de5ff7-0daa-486d-8872-ef5c976fc3bc">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/euhys_topic_ff43033d-80fa-42e3-84c9-856153ed32aa"/>
+        <ontology:identifier>euhys_feedback_b5de5ff7-0daa-486d-8872-ef5c976fc3bc</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/euhys_participant_455c330e-8bbc-403f-97a4-5cef5bc7f1f3"/>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_feedback_ed7c37ea-3ff0-4bf2-b14f-bf75a2dd8c5f -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_feedback_ed7c37ea-3ff0-4bf2-b14f-bf75a2dd8c5f">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/euhys_topic_4cb08a2f-3f51-417e-84e9-32cfa969a393"/>
+        <ontology:identifier>euhys_feedback_ed7c37ea-3ff0-4bf2-b14f-bf75a2dd8c5f</ontology:identifier>
+        <ontology:madeBy rdf:resource="https://w3id.org/deliberation/resource/euhys_participant_85eb62ad-0f88-49a7-a3e9-852a1231568f"/>
+        <ontology:text></ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_participant_455c330e-8bbc-403f-97a4-5cef5bc7f1f3 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_participant_455c330e-8bbc-403f-97a4-5cef5bc7f1f3">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <ontology:identifier>euhys_participant_455c330e-8bbc-403f-97a4-5cef5bc7f1f3</ontology:identifier>
+        <ontology:name>Contributor 455c330e-8bbc-403f-97a4-5cef5bc7f1f3</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_participant_710b4b84-e51a-4cc2-8591-c4d7dcbf4819 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_participant_710b4b84-e51a-4cc2-8591-c4d7dcbf4819">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <ontology:identifier>euhys_participant_710b4b84-e51a-4cc2-8591-c4d7dcbf4819</ontology:identifier>
+        <ontology:name>Contributor 710b4b84-e51a-4cc2-8591-c4d7dcbf4819</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_participant_722185df-16b3-423e-8717-dee280acf6a5 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_participant_722185df-16b3-423e-8717-dee280acf6a5">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <ontology:identifier>euhys_participant_722185df-16b3-423e-8717-dee280acf6a5</ontology:identifier>
+        <ontology:name>Contributor 722185df-16b3-423e-8717-dee280acf6a5</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_participant_85eb62ad-0f88-49a7-a3e9-852a1231568f -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_participant_85eb62ad-0f88-49a7-a3e9-852a1231568f">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <ontology:identifier>euhys_participant_85eb62ad-0f88-49a7-a3e9-852a1231568f</ontology:identifier>
+        <ontology:name>Contributor 85eb62ad-0f88-49a7-a3e9-852a1231568f</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_participant_ae927f63-37e7-43b4-9d70-ffdae8094ad5 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_participant_ae927f63-37e7-43b4-9d70-ffdae8094ad5">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <ontology:identifier>euhys_participant_ae927f63-37e7-43b4-9d70-ffdae8094ad5</ontology:identifier>
+        <ontology:name>Contributor ae927f63-37e7-43b4-9d70-ffdae8094ad5</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_topic_4cb08a2f-3f51-417e-84e9-32cfa969a393 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_topic_4cb08a2f-3f51-417e-84e9-32cfa969a393">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>euhys_topic_4cb08a2f-3f51-417e-84e9-32cfa969a393</ontology:identifier>
+        <ontology:name>Initiative 4cb08a2f-3f51-417e-84e9-32cfa969a393</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_topic_5a72067b-0f2a-4da6-af99-2aa17296dc1a -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_topic_5a72067b-0f2a-4da6-af99-2aa17296dc1a">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>euhys_topic_5a72067b-0f2a-4da6-af99-2aa17296dc1a</ontology:identifier>
+        <ontology:name>Initiative 5a72067b-0f2a-4da6-af99-2aa17296dc1a</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_topic_8ec054aa-ff4d-4f79-8295-dfa028bf1f40 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_topic_8ec054aa-ff4d-4f79-8295-dfa028bf1f40">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>euhys_topic_8ec054aa-ff4d-4f79-8295-dfa028bf1f40</ontology:identifier>
+        <ontology:name>Initiative 8ec054aa-ff4d-4f79-8295-dfa028bf1f40</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_topic_abdc1ec2-54f0-4aa5-83b1-d90baaa3473e -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_topic_abdc1ec2-54f0-4aa5-83b1-d90baaa3473e">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>euhys_topic_abdc1ec2-54f0-4aa5-83b1-d90baaa3473e</ontology:identifier>
+        <ontology:name>Initiative abdc1ec2-54f0-4aa5-83b1-d90baaa3473e</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/euhys_topic_ff43033d-80fa-42e3-84c9-856153ed32aa -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/euhys_topic_ff43033d-80fa-42e3-84c9-856153ed32aa">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>euhys_topic_ff43033d-80fa-42e3-84c9-856153ed32aa</ontology:identifier>
+        <ontology:name>Initiative ff43033d-80fa-42e3-84c9-856153ed32aa</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/habermas_machine_process -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/habermas_machine_process">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+        <ontology:identifier>habermas_machine_process</ontology:identifier>
+        <ontology:name>Habermas Machine Deliberative Democracy Experiment</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/madrid_proposal_19 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/madrid_proposal_19">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/madrid_topic_19"/>
+        <ontology:identifier>madrid_proposal_19</ontology:identifier>
+        <ontology:text>El centro turístico y comercial de Madrid está sólo a 700 metros de la Casa de Campo y de Madrid Rio, pero las conexiones a él son terribles. Propongo unirlo con calles peatonales y arboladas.</ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/madrid_proposal_7 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/madrid_proposal_7">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <ontology:hasTopic rdf:resource="https://w3id.org/deliberation/resource/madrid_topic_7"/>
+        <ontology:identifier>madrid_proposal_7</ontology:identifier>
+        <ontology:text>Algo tan básico como limpiar.</ontology:text>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/madrid_topic_19 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/madrid_topic_19">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>madrid_topic_19</ontology:identifier>
+        <ontology:name>Unir el centro con Madrid Río de forma peatonal</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/madrid_topic_7 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/madrid_topic_7">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+        <ontology:identifier>madrid_topic_7</ontology:identifier>
+        <ontology:name>Limpiar las calles</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/org_PPE -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/org_PPE">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
+        <ontology:name>PPE</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/org_PfE -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/org_PfE">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
+        <ontology:name>PfE</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/org_Verts_ALE -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/org_Verts_ALE">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
+        <ontology:name>Verts/ALE</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/participant_1 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/participant_1">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <ontology:hasRole rdf:resource="https://w3id.org/deliberation/resource/role_participant_1"/>
+        <ontology:identifier>participant_1</ontology:identifier>
+        <ontology:name>President.</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/participant_2 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/participant_2">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <ontology:identifier>participant_2</ontology:identifier>
+        <ontology:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_S&amp;D"/>
+        <ontology:name>Iratxe García Pérez</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/participant_3 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/participant_3">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <ontology:identifier>participant_3</ontology:identifier>
+        <ontology:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_PPE"/>
+        <ontology:name>Željana Zovko</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/participant_4 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/participant_4">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <ontology:identifier>participant_4</ontology:identifier>
+        <ontology:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_PfE"/>
+        <ontology:name>Αφροδίτη Λατινοπούλου</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/participant_5 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/participant_5">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <ontology:identifier>participant_5</ontology:identifier>
+        <ontology:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_Verts_ALE"/>
+        <ontology:name>Alice Kuhnke</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/role_participant_1 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/role_participant_1">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Role"/>
+        <ontology:name>President</ontology:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/deliberation/resource/org_S&amp;D -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/deliberation/resource/org_S&amp;D">
+        <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
+        <ontology:name>S&amp;D</ontology:name>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
