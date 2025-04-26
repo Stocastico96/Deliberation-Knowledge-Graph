@@ -1,0 +1,225 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://rdfs.org/sioc/argue#Argument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://rdfs.org/sioc/argue#Position",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://rdfs.org/sioc/ns#Forum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://rdfs.org/sioc/ns#Post",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://rdfs.org/sioc/ns#UserAccount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.arg.dundee.ac.uk/aif#Argument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.arg.dundee.ac.uk/aif#CA-Node",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.arg.dundee.ac.uk/aif#I-Node",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.arg.dundee.ac.uk/aif#RA-Node",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.estrellaproject.org/lkif-core/expression.owl#Qualified_Expression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.estrellaproject.org/lkif-core/legal-source.owl#Legal_Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/deliberation/mappings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mappings between the Deliberation Ontology and existing standard ontologies"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/"
+  }, {
+    "@id" : "http://rdfs.org/sioc/argue#"
+  }, {
+    "@id" : "http://rdfs.org/sioc/ns#"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/"
+  }, {
+    "@id" : "https://w3id.org/deliberation/ontology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/mappings#aifMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/mappings#dcMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/mappings#foafMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/mappings#lkifMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/mappings#siocMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#Argument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://rdfs.org/sioc/argue#Argument"
+  }, {
+    "@id" : "http://www.arg.dundee.ac.uk/aif#Argument"
+  } ],
+  "https://w3id.org/deliberation/mappings#aifMapping" : [ {
+    "@value" : "Closely aligned with aif:Argument structure"
+  } ],
+  "https://w3id.org/deliberation/mappings#siocMapping" : [ {
+    "@value" : "Closely aligned with sioca:Argument but with deliberation-specific features"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#Contribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#Post"
+  } ],
+  "https://w3id.org/deliberation/mappings#siocMapping" : [ {
+    "@value" : "More general than sioc:Post as contributions may include non-textual input"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#DeliberationProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#relatedMatch" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#Forum"
+  } ],
+  "https://w3id.org/deliberation/mappings#siocMapping" : [ {
+    "@value" : "Conceptually related to sioc:Forum but with specific deliberative purpose"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#InformationResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/Resource"
+  } ],
+  "https://w3id.org/deliberation/mappings#dcMapping" : [ {
+    "@value" : "More specific than the general dc:Resource concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#LegalSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://www.estrellaproject.org/lkif-core/legal-source.owl#Legal_Document"
+  } ],
+  "https://w3id.org/deliberation/mappings#lkifMapping" : [ {
+    "@value" : "Closely aligned with LKIF legal document concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "https://w3id.org/deliberation/mappings#foafMapping" : [ {
+    "@value" : "Direct conceptual equivalent to foaf:Organization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#Participant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#narrowMatch" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#relatedMatch" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#UserAccount"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "https://w3id.org/deliberation/mappings#foafMapping" : [ {
+    "@value" : "Maps to a more specific concept than foaf:Person, as participants may include non-human agents"
+  } ],
+  "https://w3id.org/deliberation/mappings#siocMapping" : [ {
+    "@value" : "Related to sioc:UserAccount but more focused on the deliberative role"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#Position",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://rdfs.org/sioc/argue#Position"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#relatedMatch" : [ {
+    "@id" : "http://www.estrellaproject.org/lkif-core/expression.owl#Qualified_Expression"
+  } ],
+  "https://w3id.org/deliberation/mappings#lkifMapping" : [ {
+    "@value" : "When normative, related to qualified expressions in LKIF"
+  } ],
+  "https://w3id.org/deliberation/mappings#siocMapping" : [ {
+    "@value" : "Closely aligned with sioca:Position in the argumentation context"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#Premise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#relatedMatch" : [ {
+    "@id" : "http://www.arg.dundee.ac.uk/aif#I-Node"
+  } ],
+  "https://w3id.org/deliberation/mappings#aifMapping" : [ {
+    "@value" : "Related to information nodes in AIF that can serve as premises"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#Topic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#relatedMatch" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/subject"
+  } ],
+  "https://w3id.org/deliberation/mappings#dcMapping" : [ {
+    "@value" : "Conceptually related to dc:subject but not equivalent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#attacks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#relatedMatch" : [ {
+    "@id" : "http://www.arg.dundee.ac.uk/aif#CA-Node"
+  } ],
+  "https://w3id.org/deliberation/mappings#aifMapping" : [ {
+    "@value" : "Related to conflict application nodes in AIF"
+  } ]
+}, {
+  "@id" : "https://w3id.org/deliberation/ontology#supports",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#relatedMatch" : [ {
+    "@id" : "http://www.arg.dundee.ac.uk/aif#RA-Node"
+  } ],
+  "https://w3id.org/deliberation/mappings#aifMapping" : [ {
+    "@value" : "Related to rule of inference application nodes in AIF"
+  } ]
+} ]

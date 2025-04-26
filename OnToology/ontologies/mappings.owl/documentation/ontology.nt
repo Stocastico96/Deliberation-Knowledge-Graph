@@ -1,0 +1,162 @@
+<https://w3id.org/deliberation/mappings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/deliberation/mappings> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/dc/elements/1.1/> .
+<https://w3id.org/deliberation/mappings> <http://www.w3.org/2002/07/owl#imports> <http://rdfs.org/sioc/argue#> .
+<https://w3id.org/deliberation/mappings> <http://www.w3.org/2002/07/owl#imports> <http://rdfs.org/sioc/ns#> .
+<https://w3id.org/deliberation/mappings> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+<https://w3id.org/deliberation/mappings> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/deliberation/mappings> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/deliberation/ontology> .
+<https://w3id.org/deliberation/mappings> <http://www.w3.org/2000/01/rdf-schema#comment> "Mappings between the Deliberation Ontology and existing standard ontologies" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/deliberation/mappings#aifMapping
+<https://w3id.org/deliberation/mappings#aifMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/deliberation/mappings#aifMapping> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> .
+# 
+# https://w3id.org/deliberation/mappings#dcMapping
+<https://w3id.org/deliberation/mappings#dcMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/deliberation/mappings#dcMapping> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> .
+# 
+# https://w3id.org/deliberation/mappings#foafMapping
+<https://w3id.org/deliberation/mappings#foafMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/deliberation/mappings#foafMapping> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> .
+# 
+# https://w3id.org/deliberation/mappings#lkifMapping
+<https://w3id.org/deliberation/mappings#lkifMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/deliberation/mappings#lkifMapping> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> .
+# 
+# https://w3id.org/deliberation/mappings#siocMapping
+<https://w3id.org/deliberation/mappings#siocMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/deliberation/mappings#siocMapping> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/Resource
+<http://purl.org/dc/elements/1.1/Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://purl.org/dc/elements/1.1/subject
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://rdfs.org/sioc/argue#Argument
+<http://rdfs.org/sioc/argue#Argument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://rdfs.org/sioc/argue#Position
+<http://rdfs.org/sioc/argue#Position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://rdfs.org/sioc/ns#Forum
+<http://rdfs.org/sioc/ns#Forum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://rdfs.org/sioc/ns#Post
+<http://rdfs.org/sioc/ns#Post> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://rdfs.org/sioc/ns#UserAccount
+<http://rdfs.org/sioc/ns#UserAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.arg.dundee.ac.uk/aif#Argument
+<http://www.arg.dundee.ac.uk/aif#Argument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.arg.dundee.ac.uk/aif#CA-Node
+<http://www.arg.dundee.ac.uk/aif#CA-Node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.arg.dundee.ac.uk/aif#I-Node
+<http://www.arg.dundee.ac.uk/aif#I-Node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.arg.dundee.ac.uk/aif#RA-Node
+<http://www.arg.dundee.ac.uk/aif#RA-Node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.estrellaproject.org/lkif-core/expression.owl#Qualified_Expression
+<http://www.estrellaproject.org/lkif-core/expression.owl#Qualified_Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.estrellaproject.org/lkif-core/legal-source.owl#Legal_Document
+<http://www.estrellaproject.org/lkif-core/legal-source.owl#Legal_Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/deliberation/ontology#Argument
+<https://w3id.org/deliberation/ontology#Argument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/deliberation/ontology#Argument> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://rdfs.org/sioc/argue#Argument> .
+<https://w3id.org/deliberation/ontology#Argument> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.arg.dundee.ac.uk/aif#Argument> .
+<https://w3id.org/deliberation/ontology#Argument> <https://w3id.org/deliberation/mappings#aifMapping> "Closely aligned with aif:Argument structure" .
+<https://w3id.org/deliberation/ontology#Argument> <https://w3id.org/deliberation/mappings#siocMapping> "Closely aligned with sioca:Argument but with deliberation-specific features" .
+# 
+# https://w3id.org/deliberation/ontology#Contribution
+<https://w3id.org/deliberation/ontology#Contribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/deliberation/ontology#Contribution> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://rdfs.org/sioc/ns#Post> .
+<https://w3id.org/deliberation/ontology#Contribution> <https://w3id.org/deliberation/mappings#siocMapping> "More general than sioc:Post as contributions may include non-textual input" .
+# 
+# https://w3id.org/deliberation/ontology#DeliberationProcess
+<https://w3id.org/deliberation/ontology#DeliberationProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/deliberation/ontology#DeliberationProcess> <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://rdfs.org/sioc/ns#Forum> .
+<https://w3id.org/deliberation/ontology#DeliberationProcess> <https://w3id.org/deliberation/mappings#siocMapping> "Conceptually related to sioc:Forum but with specific deliberative purpose" .
+# 
+# https://w3id.org/deliberation/ontology#InformationResource
+<https://w3id.org/deliberation/ontology#InformationResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/deliberation/ontology#InformationResource> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/dc/elements/1.1/Resource> .
+<https://w3id.org/deliberation/ontology#InformationResource> <https://w3id.org/deliberation/mappings#dcMapping> "More specific than the general dc:Resource concept" .
+# 
+# https://w3id.org/deliberation/ontology#LegalSource
+<https://w3id.org/deliberation/ontology#LegalSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/deliberation/ontology#LegalSource> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.estrellaproject.org/lkif-core/legal-source.owl#Legal_Document> .
+<https://w3id.org/deliberation/ontology#LegalSource> <https://w3id.org/deliberation/mappings#lkifMapping> "Closely aligned with LKIF legal document concept" .
+# 
+# https://w3id.org/deliberation/ontology#Organization
+<https://w3id.org/deliberation/ontology#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/deliberation/ontology#Organization> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://xmlns.com/foaf/0.1/Organization> .
+<https://w3id.org/deliberation/ontology#Organization> <https://w3id.org/deliberation/mappings#foafMapping> "Direct conceptual equivalent to foaf:Organization" .
+# 
+# https://w3id.org/deliberation/ontology#Participant
+<https://w3id.org/deliberation/ontology#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/deliberation/ontology#Participant> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/deliberation/ontology#Participant> <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://rdfs.org/sioc/ns#UserAccount> .
+<https://w3id.org/deliberation/ontology#Participant> <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/deliberation/ontology#Participant> <https://w3id.org/deliberation/mappings#foafMapping> "Maps to a more specific concept than foaf:Person, as participants may include non-human agents" .
+<https://w3id.org/deliberation/ontology#Participant> <https://w3id.org/deliberation/mappings#siocMapping> "Related to sioc:UserAccount but more focused on the deliberative role" .
+# 
+# https://w3id.org/deliberation/ontology#Position
+<https://w3id.org/deliberation/ontology#Position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/deliberation/ontology#Position> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://rdfs.org/sioc/argue#Position> .
+<https://w3id.org/deliberation/ontology#Position> <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.estrellaproject.org/lkif-core/expression.owl#Qualified_Expression> .
+<https://w3id.org/deliberation/ontology#Position> <https://w3id.org/deliberation/mappings#lkifMapping> "When normative, related to qualified expressions in LKIF" .
+<https://w3id.org/deliberation/ontology#Position> <https://w3id.org/deliberation/mappings#siocMapping> "Closely aligned with sioca:Position in the argumentation context" .
+# 
+# https://w3id.org/deliberation/ontology#Premise
+<https://w3id.org/deliberation/ontology#Premise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/deliberation/ontology#Premise> <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.arg.dundee.ac.uk/aif#I-Node> .
+<https://w3id.org/deliberation/ontology#Premise> <https://w3id.org/deliberation/mappings#aifMapping> "Related to information nodes in AIF that can serve as premises" .
+# 
+# https://w3id.org/deliberation/ontology#Topic
+<https://w3id.org/deliberation/ontology#Topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/deliberation/ontology#Topic> <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.org/dc/elements/1.1/subject> .
+<https://w3id.org/deliberation/ontology#Topic> <https://w3id.org/deliberation/mappings#dcMapping> "Conceptually related to dc:subject but not equivalent" .
+# 
+# https://w3id.org/deliberation/ontology#attacks
+<https://w3id.org/deliberation/ontology#attacks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/deliberation/ontology#attacks> <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.arg.dundee.ac.uk/aif#CA-Node> .
+<https://w3id.org/deliberation/ontology#attacks> <https://w3id.org/deliberation/mappings#aifMapping> "Related to conflict application nodes in AIF" .
+# 
+# https://w3id.org/deliberation/ontology#supports
+<https://w3id.org/deliberation/ontology#supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/deliberation/ontology#supports> <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.arg.dundee.ac.uk/aif#RA-Node> .
+<https://w3id.org/deliberation/ontology#supports> <https://w3id.org/deliberation/mappings#aifMapping> "Related to rule of inference application nodes in AIF" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
