@@ -1,0 +1,213 @@
+<section id="ontologies" class="section">
+    <div class="container">
+      <h2>Relevant Ontologies</h2>
+      <p>The Deliberation Knowledge Graph integrates several existing ontologies to provide a comprehensive framework for representing deliberative processes:</p>
+      
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Ontology</th>
+              <th>Available (rdf | xml | doc)</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Language</th>
+              <th>Jurisdiction/Scope</th>
+              <th>Reference / Links</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DELIB</td>
+              <td>rdf | doc</td>
+              <td>DELIB Ontology</td>
+              <td>Geared to capture essential elements of deliberative processes and participant interactions, emphasizing how contributions, interventions, and outcomes connect within a deliberation.</td>
+              <td>en</td>
+              <td>all</td>
+              <td><a href="ontologies/deliberation.owl">OWL</a><br><a href="ontologies/index.html">Documentation</a></td>
+            </tr>
+            <tr>
+              <td>AIF</td>
+              <td>rdf | doc</td>
+              <td>Argument Interchange Format</td>
+              <td>A core ontology designed to represent and exchange argument structures, enabling interoperability between argumentation tools. Developed to capture premises, conclusions, and relations in structured debate.</td>
+              <td>en</td>
+              <td>all</td>
+              <td><a href="http://www.arg.dundee.ac.uk/aif">AIF (OWL)</a><br><a href="http://www.arg.dundee.ac.uk/aif-documentation">Documentation</a></td>
+            </tr>
+            <tr>
+              <td>SIOC</td>
+              <td>rdf | doc</td>
+              <td>SIOC Ontology</td>
+              <td>The Semantically-Interlinked Online Communities (SIOC) Ontology provides concepts for describing online community activities, including posts, forums, and user accounts. Extended with argumentation structures to support semantic linking of discussion threads and arguments.</td>
+              <td>en</td>
+              <td>all</td>
+              <td><a href="http://rdfs.org/sioc/spec/">SIOC (RDF)</a><br><a href="http://sioc-project.org/ontology">Documentation</a></td>
+            </tr>
+            <tr>
+              <td>FOAF</td>
+              <td>rdf | doc</td>
+              <td>FOAF Ontology</td>
+              <td>Friend of a Friend (FOAF) describes persons, their activities, and their relations to other people and objects. Often used to model participant identities, organizations, and groups in social web contexts.</td>
+              <td>en</td>
+              <td>all</td>
+              <td><a href="http://xmlns.com/foaf/spec/">FOAF (RDF)</a><br><a href="http://xmlns.com/foaf/spec/">Documentation</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="ontology-download">
+        <h3>Deliberation Knowledge Graph Ontology</h3>
+        <p>The core ontology of this project, which integrates concepts from the above ontologies:</p>
+        
+        <div class="mappings-download">
+          <a href="ontologies/deliberation.owl" class="btn">Download Deliberation Ontology</a>
+          <a href="ontologies/mappings.owl" class="btn btn-secondary">Download Ontology Mappings</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="model" class="section">
+    <div class="container">
+      <h2>Ontology-Specific Graphs</h2>
+      <p>Below are separate Mermaid.js graphs showing how each ontology's core classes and properties map to the Deliberation Knowledge Graph (DKG). We have extracted only the relevant portion of the large integrated diagram, so you can view them in smaller chunks, per ontology.</p>
+      
+      <h3>1) DELIB Ontology Alignment</h3>
+      <div class="mermaid-container">
+        <pre class="mermaid">
+          graph TD
+            classDef delib fill:#4a9d3c,color:white,stroke:#3a7d2c,stroke-width:2px
+            classDef external fill:#8b5a2b,color:white,stroke:#6b4521,stroke-width:1px
+            
+            DelibProcess[deliberation:DeliberationProcess] --> |deliberation:hasParticipant| Participant[deliberation:Participant]
+            DelibProcess --> |deliberation:hasTopic| Topic[deliberation:Topic]
+            DelibProcess --> |deliberation:hasContribution| Contribution[deliberation:Contribution]
+            DelibProcess --> |deliberation:hasStage| Stage[deliberation:Stage]
+            
+            Contribution --> |deliberation:madeBy| Participant
+            Contribution --> |deliberation:responseTo| Contribution
+            
+            Argument[deliberation:Argument] --> |deliberation:hasPremise| Premise[deliberation:Premise]
+            Argument --> |deliberation:hasConclusion| Conclusion[deliberation:Conclusion]
+            
+            Participant --> |deliberation:hasRole| Role[deliberation:Role]
+            Participant --> |deliberation:isAffiliatedWith| Organization[deliberation:Organization]
+            
+            class DelibProcess,Participant,Topic,Contribution,Stage,Argument,Premise,Conclusion,Role,Organization delib
+        </pre>
+      </div>
+      
+      <h3>2) AIF Ontology Alignment</h3>
+      <div class="mermaid-container">
+        <pre class="mermaid">
+          graph TD
+            classDef delib fill:#4a9d3c,color:white,stroke:#3a7d2c,stroke-width:2px
+            classDef external fill:#8b5a2b,color:white,stroke:#6b4521,stroke-width:1px
+            
+            Argument[deliberation:Argument] --> |deliberation:supports| Argument2[deliberation:Argument]
+            Argument --> |deliberation:attacks| Argument3[deliberation:Argument]
+            Argument --> |deliberation:hasEvidence| Evidence[deliberation:Evidence]
+            
+            Argument --> |owl:equivalentClass| AIFArgument[aif:Argument]
+            Premise[deliberation:Premise] --> |owl:equivalentClass| AIFPremise[aif:Premise]
+            Conclusion[deliberation:Conclusion] --> |owl:equivalentClass| AIFConclusion[aif:Conclusion]
+            
+            class Argument,Premise,Conclusion,Evidence delib
+            class AIFArgument,AIFPremise,AIFConclusion external
+        </pre>
+      </div>
+      
+      <h3>3) SIOC & FOAF Ontology Alignment</h3>
+      <div class="mermaid-container">
+        <pre class="mermaid">
+          graph TD
+            classDef delib fill:#4a9d3c,color:white,stroke:#3a7d2c,stroke-width:2px
+            classDef external fill:#8b5a2b,color:white,stroke:#6b4521,stroke-width:1px
+            
+            Contribution[deliberation:Contribution] --> |owl:equivalentClass| SIOCPost[sioc:Post]
+            Participant[deliberation:Participant] --> |owl:equivalentClass| FOAFPerson[foaf:Person]
+            Organization[deliberation:Organization] --> |owl:equivalentClass| FOAFOrganization[foaf:Organization]
+            
+            DelibProcess[deliberation:DeliberationProcess] --> |owl:equivalentClass| SIOCForum[sioc:Forum]
+            
+            class Contribution,Participant,Organization,DelibProcess delib
+            class SIOCPost,FOAFPerson,FOAFOrganization,SIOCForum external
+        </pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="visualizations" class="section">
+    <div class="container">
+      <h2>Knowledge Graph Visualizations</h2>
+      <p>Interactive visualizations of the Deliberation Knowledge Graph are available to explore the connections between different deliberative processes, participants, and arguments.</p>
+      
+      <div class="visualization-container">
+        <div id="visualization-placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64" style="color: var(--primary-color);">
+            <path fill="currentColor" d="M384 96V320H64L64 96H384zM64 32C28.7 32 0 60.7 0 96V320c0 35.3 28.7 64 64 64H181.3l-10.7 32H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H352c17.7 0 32-14.3 32-32s-14.3-32-32-32H277.3l-10.7-32H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm464 384c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448c0-17.7-14.3-32-32-32zm-80 32c0-44.2 35.8-80 80-80s80 35.8 80 80v32c0 44.2-35.8 80-80 80s-80-35.8-80-80V448z"/>
+          </svg>
+          <h3>Interactive Visualization</h3>
+          <p>The interactive knowledge graph visualization will be loaded here. You can explore connections between deliberative processes, participants, arguments, and other entities in the graph.</p>
+          <button class="btn" onclick="alert('Visualization loading is in development.')">Load Visualization</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="documentation" class="section">
+    <div class="container">
+      <h2>Documentation</h2>
+      <p>Comprehensive documentation is available to help you understand and use the Deliberation Knowledge Graph:</p>
+      
+      <div class="documentation-container">
+        <ul class="documentation-list">
+          <li>
+            <div class="doc-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                <path fill="currentColor" d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H176c-35.3 0-64 28.7-64 64V512H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56H192v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H192v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H304c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H320v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368z"/>
+              </svg>
+            </div>
+            <div class="doc-content">
+              <h4>Data Models Overview</h4>
+              <p>Detailed explanation of the data models used in the Deliberation Knowledge Graph, including entity relationships and property definitions.</p>
+              <a href="documentation/data_models_overview.md" class="btn btn-secondary">View Documentation</a>
+            </div>
+          </li>
+          <li>
+            <div class="doc-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                <path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM96 96H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/>
+              </svg>
+            </div>
+            <div class="doc-content">
+              <h4>Knowledge Graph Model</h4>
+              <p>Visualization and explanation of the knowledge graph model, showing how different ontologies are integrated.</p>
+              <a href="visualizations/knowledge_graph_model.md" class="btn btn-secondary">View Documentation</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#datasets">Datasets</a>
+        <a href="#ontologies">Ontologies</a>
+        <a href="#model">Knowledge Graph Model</a>
+        <a href="#visualizations">Visualizations</a>
+        <a href="#documentation">Documentation</a>
+      </div>
+      <p>&copy; 2025 Deliberation Knowledge Graph Project. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Mermaid diagrams
+    mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+  </script>
