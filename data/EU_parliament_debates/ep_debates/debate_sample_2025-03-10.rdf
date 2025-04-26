@@ -1,309 +1,309 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:dkg="https://w3id.org/deliberation/ontology#"
+   xmlns:del="https://w3id.org/deliberation/ontology#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem9">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem9</dkg:identifier>
-    <dkg:name>Order of business</dkg:name>
+    <del:identifier>creitem9</del:identifier>
+    <del:name>Order of business</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_11">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
-    <dkg:identifier>contribution_11</dkg:identifier>
-    <dkg:text>The right to be who you are, to love who you want and to live your life free from discrimination is a fundamental European right. That right is clearly under attack.
+    <del:identifier>contribution_11</del:identifier>
+    <del:text>The right to be who you are, to love who you want and to live your life free from discrimination is a fundamental European right. That right is clearly under attack.
 At this critical moment, the decision by the European Commission to announce the withdrawal of the horizontal anti-discrimination directive came as a shock. It also represents a betrayal of all the EU citizens who are currently lacking protection against discrimination.
-It is time for the EU to show global leadership against discrimination, not to back down. As the European Parliament's rapporteur for this directive, I strongly condemn this decision and I urge the European Commission to immediately reconsider it.</dkg:text>
-    <dkg:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:12:01</dkg:timestamp>
-    <dkg:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_5"/>
+It is time for the EU to show global leadership against discrimination, not to back down. As the European Parliament's rapporteur for this directive, I strongly condemn this decision and I urge the European Commission to immediately reconsider it.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:12:01</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_5"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem10">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem10</dkg:identifier>
-    <dkg:name>Resumption of the sitting</dkg:name>
+    <del:identifier>creitem10</del:identifier>
+    <del:name>Resumption of the sitting</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/ep_debate_20250310">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
-    <dkg:identifier>ep_debate_20250310</dkg:identifier>
-    <dkg:name>European Parliament Debate - 2025-03-10 (Sample)</dkg:name>
-    <dkg:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T00:00:00+00:00</dkg:startDate>
-    <dkg:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T23:59:59+00:00</dkg:endDate>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem1"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem2"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem3"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem4"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem5"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem6"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem7"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem8"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem9"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem10"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem11"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem12"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem13"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem14"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem15"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem16"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem17"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem18"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem19"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem20"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem21"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem22"/>
-    <dkg:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem23"/>
-    <dkg:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
-    <dkg:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_2"/>
-    <dkg:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_3"/>
-    <dkg:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_4"/>
-    <dkg:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_5"/>
-    <dkg:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_1"/>
-    <dkg:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_2"/>
-    <dkg:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_3"/>
-    <dkg:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_4"/>
-    <dkg:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_5"/>
-    <dkg:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_6"/>
-    <dkg:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_7"/>
-    <dkg:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_8"/>
-    <dkg:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_9"/>
-    <dkg:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_10"/>
-    <dkg:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_11"/>
+    <del:identifier>ep_debate_20250310</del:identifier>
+    <del:name>European Parliament Debate - 2025-03-10 (Sample)</del:name>
+    <del:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T00:00:00+00:00</del:startDate>
+    <del:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T23:59:59+00:00</del:endDate>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem1"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem2"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem3"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem4"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem5"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem6"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem7"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem8"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem9"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem10"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem11"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem12"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem13"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem14"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem15"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem16"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem17"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem18"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem19"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem20"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem21"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem22"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem23"/>
+    <del:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+    <del:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_2"/>
+    <del:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_3"/>
+    <del:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_4"/>
+    <del:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_5"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_1"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_2"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_3"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_4"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_5"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_6"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_7"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_8"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_9"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_10"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_11"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_3">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
-    <dkg:identifier>contribution_3</dkg:identifier>
-    <dkg:text>Are there any comments? If not, the minutes will be deemed approved.</dkg:text>
-    <dkg:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:05:33</dkg:timestamp>
-    <dkg:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+    <del:identifier>contribution_3</del:identifier>
+    <del:text>Are there any comments? If not, the minutes will be deemed approved.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:05:33</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_9">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
-    <dkg:identifier>contribution_9</dkg:identifier>
-    <dkg:text>Extremist factions associated with militant groups have reportedly executed civilians, including women and children. Christian families have endured brutal killings and violent raids at the hands of armed militants who have stormed homes, seized belongings and claimed innocent lives.
+    <del:identifier>contribution_9</del:identifier>
+    <del:text>Extremist factions associated with militant groups have reportedly executed civilians, including women and children. Christian families have endured brutal killings and violent raids at the hands of armed militants who have stormed homes, seized belongings and claimed innocent lives.
 The European Union must take decisive action in support of stability and humanitarian relief efforts to alleviate the suffering of the Syrian people, including Christians and other affected communities.
 Christianity in Syria and in some other parts of the Middle East-North Africa region is at a critical crossroads. It will either endure or it will vanish, leaving behind a profound religious, ethnic and cultural void.
-Europe must not remain indifferent to this existential threat. An External Action Service with its press release - it is shameful that they did not take this into account.</dkg:text>
-    <dkg:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:09:07</dkg:timestamp>
-    <dkg:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_3"/>
+Europe must not remain indifferent to this existential threat. An External Action Service with its press release - it is shameful that they did not take this into account.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:09:07</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_3"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_10">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
-    <dkg:identifier>contribution_10</dkg:identifier>
-    <dkg:text>Όλοι γνωρίζουμε, αγαπητοί συνάδελφοι, πως αυτό είναι μία χυδαία συκοφαντία κατά όλων μας. Είμαι σίγουρη πως το ECR θα καταδικάσει τα ψέματα του κ. Φράγκου, ο οποίος όχι μόνο προσπάθησε να εξαπατήσει τους Έλληνες, με μόνο σκοπό να διασύρει την πατρίδα του αλλά και να πατήσει πάνω σε νεκρούς, πηγαίνοντας χέρι χέρι με τους αριστερούς. Κύριε Φράγκο, να χαίρεστε τον πατριωτισμό σας. Εσκεμμένα συκοφάντησατε τους θεσμούς που υποτίθεται πως υπηρετείτε. Και, αγαπητό ECR, να χαίρεστε το μέλος σας που ακόμα κρύβεται αντί να ζητήσει συγνώμη. Σε αυτήν την Ολομέλεια οι σοβαροί πατριώτες έχουμε ιερό χρέος να προστατεύουμε τόσο τους θεσμούς όσο και τις πατρίδες μας. Ευρωβουλευτές και συμπεριφορές τύπου Φράγκου δεν είναι ανεκτές.</dkg:text>
-    <dkg:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:10:36</dkg:timestamp>
-    <dkg:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_4"/>
+    <del:identifier>contribution_10</del:identifier>
+    <del:text>Όλοι γνωρίζουμε, αγαπητοί συνάδελφοι, πως αυτό είναι μία χυδαία συκοφαντία κατά όλων μας. Είμαι σίγουρη πως το ECR θα καταδικάσει τα ψέματα του κ. Φράγκου, ο οποίος όχι μόνο προσπάθησε να εξαπατήσει τους Έλληνες, με μόνο σκοπό να διασύρει την πατρίδα του αλλά και να πατήσει πάνω σε νεκρούς, πηγαίνοντας χέρι χέρι με τους αριστερούς. Κύριε Φράγκο, να χαίρεστε τον πατριωτισμό σας. Εσκεμμένα συκοφάντησατε τους θεσμούς που υποτίθεται πως υπηρετείτε. Και, αγαπητό ECR, να χαίρεστε το μέλος σας που ακόμα κρύβεται αντί να ζητήσει συγνώμη. Σε αυτήν την Ολομέλεια οι σοβαροί πατριώτες έχουμε ιερό χρέος να προστατεύουμε τόσο τους θεσμούς όσο και τις πατρίδες μας. Ευρωβουλευτές και συμπεριφορές τύπου Φράγκου δεν είναι ανεκτές.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:10:36</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_4"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem16">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem16</dkg:identifier>
-    <dkg:name>Cutting red tape and simplifying business in the EU: the first Omnibus proposals (debate)</dkg:name>
+    <del:identifier>creitem16</del:identifier>
+    <del:name>Cutting red tape and simplifying business in the EU: the first Omnibus proposals (debate)</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/participant_3">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
-    <dkg:identifier>participant_3</dkg:identifier>
-    <dkg:name>Željana Zovko</dkg:name>
-    <dkg:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_PPE"/>
+    <del:identifier>participant_3</del:identifier>
+    <del:name>Željana Zovko</del:name>
+    <del:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_PPE"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/participant_5">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
-    <dkg:identifier>participant_5</dkg:identifier>
-    <dkg:name>Alice Kuhnke</dkg:name>
-    <dkg:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_Verts_ALE"/>
+    <del:identifier>participant_5</del:identifier>
+    <del:name>Alice Kuhnke</del:name>
+    <del:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_Verts_ALE"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_7">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
-    <dkg:identifier>contribution_7</dkg:identifier>
-    <dkg:text>The dates are available on the plenary webpage and the deadlines are as follows: amendments, today at 7 p.m.; roll-call votes, Tuesday, 11 March at 4 p.m. The vote will then take place on Wednesday, 12 March at noon.
+    <del:identifier>contribution_7</del:identifier>
+    <del:text>The dates are available on the plenary webpage and the deadlines are as follows: amendments, today at 7 p.m.; roll-call votes, Tuesday, 11 March at 4 p.m. The vote will then take place on Wednesday, 12 March at noon.
 ⁂
 I would like to inform the House that I have received multiple requests for points of order. I will go through them one by one.
-First, I give the floor to Ms Iratxe García Pérez.</dkg:text>
-    <dkg:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:07:20</dkg:timestamp>
-    <dkg:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+First, I give the floor to Ms Iratxe García Pérez.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:07:20</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem11">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem11</dkg:identifier>
-    <dkg:name>Supporting the EU’s most vulnerable regions against devastating effects of climate change, such as the recent cyclone hitting La Réunion (debate)</dkg:name>
+    <del:identifier>creitem11</del:identifier>
+    <del:name>Supporting the EU’s most vulnerable regions against devastating effects of climate change, such as the recent cyclone hitting La Réunion (debate)</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_1">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
-    <dkg:identifier>contribution_1</dkg:identifier>
-    <dkg:text></dkg:text>
-    <dkg:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:02:06</dkg:timestamp>
-    <dkg:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+    <del:identifier>contribution_1</del:identifier>
+    <del:text></del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:02:06</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem4">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem4</dkg:identifier>
-    <dkg:name>Approval of the minutes of the previous sitting</dkg:name>
+    <del:identifier>creitem4</del:identifier>
+    <del:name>Approval of the minutes of the previous sitting</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem19">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem19</dkg:identifier>
-    <dkg:name>One-minute speeches on matters of political importance</dkg:name>
+    <del:identifier>creitem19</del:identifier>
+    <del:name>One-minute speeches on matters of political importance</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/participant_2">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
-    <dkg:identifier>participant_2</dkg:identifier>
-    <dkg:name>Iratxe García Pérez</dkg:name>
-    <dkg:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_S&amp;D"/>
+    <del:identifier>participant_2</del:identifier>
+    <del:name>Iratxe García Pérez</del:name>
+    <del:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_S&amp;D"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem15">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem15</dkg:identifier>
-    <dkg:name>Resumption of the sitting</dkg:name>
+    <del:identifier>creitem15</del:identifier>
+    <del:name>Resumption of the sitting</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem23">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem23</dkg:identifier>
-    <dkg:name>Closure of the session</dkg:name>
+    <del:identifier>creitem23</del:identifier>
+    <del:name>Closure of the session</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem12">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem12</dkg:identifier>
-    <dkg:name>Resumption of the sitting</dkg:name>
+    <del:identifier>creitem12</del:identifier>
+    <del:name>Resumption of the sitting</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem1">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem1</dkg:identifier>
-    <dkg:name>Resumption of the session</dkg:name>
+    <del:identifier>creitem1</del:identifier>
+    <del:name>Resumption of the session</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem14">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem14</dkg:identifier>
-    <dkg:name>Request for the defence of immunity</dkg:name>
+    <del:identifier>creitem14</del:identifier>
+    <del:name>Request for the defence of immunity</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem3">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem3</dkg:identifier>
-    <dkg:name>Statements by the President</dkg:name>
+    <del:identifier>creitem3</del:identifier>
+    <del:name>Statements by the President</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem17">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem17</dkg:identifier>
-    <dkg:name>Establishing the Reform and Growth Facility for the Republic of Moldova (debate)</dkg:name>
+    <del:identifier>creitem17</del:identifier>
+    <del:name>Establishing the Reform and Growth Facility for the Republic of Moldova (debate)</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/participant_4">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
-    <dkg:identifier>participant_4</dkg:identifier>
-    <dkg:name>Αφροδίτη Λατινοπούλου</dkg:name>
-    <dkg:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_PfE"/>
+    <del:identifier>participant_4</del:identifier>
+    <del:name>Αφροδίτη Λατινοπούλου</del:name>
+    <del:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_PfE"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem7">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem7</dkg:identifier>
-    <dkg:name>Proposals for Union acts</dkg:name>
+    <del:identifier>creitem7</del:identifier>
+    <del:name>Proposals for Union acts</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem20">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem20</dkg:identifier>
-    <dkg:name>Agenda of the next sitting</dkg:name>
+    <del:identifier>creitem20</del:identifier>
+    <del:name>Agenda of the next sitting</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/org_PPE">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
-    <dkg:name>PPE</dkg:name>
+    <del:name>PPE</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/org_PfE">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
-    <dkg:name>PfE</dkg:name>
+    <del:name>PfE</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_2">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
-    <dkg:identifier>contribution_2</dkg:identifier>
-    <dkg:text>First of all, dear colleagues, two years ago, on 28 February 2023, in Tempi, Greece, a tragic railway accident cost 57 people their lives and injured even more. We mark a sad anniversary today as our hearts go out to the victims, to those who lost their loved ones and to the injured who still bear the scars of that day. This House remembers them and honours them.
+    <del:identifier>contribution_2</del:identifier>
+    <del:text>First of all, dear colleagues, two years ago, on 28 February 2023, in Tempi, Greece, a tragic railway accident cost 57 people their lives and injured even more. We mark a sad anniversary today as our hearts go out to the victims, to those who lost their loved ones and to the injured who still bear the scars of that day. This House remembers them and honours them.
 Over the coming months, we will celebrate also the 35th anniversary of the assertion of state continuity of Estonia, Latvia and Lithuania, enshrining their independence de jure under international law throughout different illegal occupations and annexations of the 20th century.
 These anniversaries remind us again of the sacrifice of so many for the liberty that we enjoy today, and underscore our determination never to allow another generation of Europeans to be lost behind an Iron Curtain.
 Tomorrow at noon, we will once again welcome national leader of Belarus, Sviatlana Tsikhanouskaya, to this plenary, along with other brave women from Ukraine and Belarus, who are standing up for liberty in order to mark International Women's Day. May I ask that you are present. I count on you and your colleagues to be here then, because this week will also serve to reaffirm this House's steadfast support for the people of Belarus and their struggle for freedom, including political prisoners.
 And to express this solidarity and to mark the International Day of Solidarity with Belarus, the European Parliament is once again offering you, as Members of this Parliament, the opportunity to sign postcards addressed to the 1 250 political prisoners who are unfairly imprisoned by Lukashenka's regime. I urge you to join in this action to show them that their sacrifice will not remain unanswered.
 Last year, this initiative was extremely successful – in the previous mandate, in the previous Parliament. I ask that we make this year's even more so. We know their names, we see their struggle and we stand with them. So this message and this initiative will send the strongest of messages that they are not alone.
-(Applause)</dkg:text>
-    <dkg:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:02:43</dkg:timestamp>
-    <dkg:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+(Applause)</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:02:43</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem5">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem5</dkg:identifier>
-    <dkg:name>Composition of committees and delegations</dkg:name>
+    <del:identifier>creitem5</del:identifier>
+    <del:name>Composition of committees and delegations</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_8">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
-    <dkg:identifier>contribution_8</dkg:identifier>
-    <dkg:text>Now we face new challenges, like the threat of war. Let us not forget how we handled COVID-19. We need to be bold and stay united. By learning from that time we can build a more resilient and cohesive Europe. This will help us face any future crisis with determination and unity.</dkg:text>
-    <dkg:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:07:50</dkg:timestamp>
-    <dkg:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_2"/>
+    <del:identifier>contribution_8</del:identifier>
+    <del:text>Now we face new challenges, like the threat of war. Let us not forget how we handled COVID-19. We need to be bold and stay united. By learning from that time we can build a more resilient and cohesive Europe. This will help us face any future crisis with determination and unity.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:07:50</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem21">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem21</dkg:identifier>
-    <dkg:name>Approval of the minutes of the sitting</dkg:name>
+    <del:identifier>creitem21</del:identifier>
+    <del:name>Approval of the minutes of the sitting</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_4">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
-    <dkg:identifier>contribution_4</dkg:identifier>
-    <dkg:text>These decisions will be set out in the minutes of today's sitting and take effect on the date of this announcement.</dkg:text>
-    <dkg:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:05:53</dkg:timestamp>
-    <dkg:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+    <del:identifier>contribution_4</del:identifier>
+    <del:text>These decisions will be set out in the minutes of today's sitting and take effect on the date of this announcement.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:05:53</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem22">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem22</dkg:identifier>
-    <dkg:name>Closure of the sitting</dkg:name>
+    <del:identifier>creitem22</del:identifier>
+    <del:name>Closure of the sitting</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_5">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
-    <dkg:identifier>contribution_5</dkg:identifier>
-    <dkg:text>The corrigenda are available on the plenary webpage. Their titles will be published in the minutes of this sitting.</dkg:text>
-    <dkg:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:06:09</dkg:timestamp>
-    <dkg:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+    <del:identifier>contribution_5</del:identifier>
+    <del:text>The corrigenda are available on the plenary webpage. Their titles will be published in the minutes of this sitting.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:06:09</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem2">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem2</dkg:identifier>
-    <dkg:name>Opening of the sitting</dkg:name>
+    <del:identifier>creitem2</del:identifier>
+    <del:name>Opening of the sitting</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/org_Verts_ALE">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
-    <dkg:name>Verts/ALE</dkg:name>
+    <del:name>Verts/ALE</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/role_participant_1">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Role"/>
-    <dkg:name>President</dkg:name>
+    <del:name>President</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/participant_1">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
-    <dkg:identifier>participant_1</dkg:identifier>
-    <dkg:name>President.</dkg:name>
-    <dkg:hasRole rdf:resource="https://w3id.org/deliberation/resource/role_participant_1"/>
+    <del:identifier>participant_1</del:identifier>
+    <del:name>President.</del:name>
+    <del:hasRole rdf:resource="https://w3id.org/deliberation/resource/role_participant_1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem13">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem13</dkg:identifier>
-    <dkg:name>Requests for the waiver of immunity</dkg:name>
+    <del:identifier>creitem13</del:identifier>
+    <del:name>Requests for the waiver of immunity</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem8">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem8</dkg:identifier>
-    <dkg:name>Parliament’s calendar of part-sessions - 2026</dkg:name>
+    <del:identifier>creitem8</del:identifier>
+    <del:name>Parliament’s calendar of part-sessions - 2026</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/org_S&amp;D">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
-    <dkg:name>S&amp;D</dkg:name>
+    <del:name>S&amp;D</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem18">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem18</dkg:identifier>
-    <dkg:name>European Social Fund Plus post-2027 (short presentation)</dkg:name>
+    <del:identifier>creitem18</del:identifier>
+    <del:name>European Social Fund Plus post-2027 (short presentation)</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem6">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
-    <dkg:identifier>creitem6</dkg:identifier>
-    <dkg:name>Corrigenda (Rule 251)</dkg:name>
+    <del:identifier>creitem6</del:identifier>
+    <del:name>Corrigenda (Rule 251)</del:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_6">
     <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
-    <dkg:identifier>contribution_6</dkg:identifier>
-    <dkg:text>The first is on employment protection for the activities of police officers, military personnel, prison officers, and customs and border officials, classifying them as high-risk occupations in the EU. The proposal is referred to the Committee on Employment and Social Affairs.
-The second is on the need to extend the period for implementation of the Recovery and Resilience Facility. This proposal is referred to the Committee on Budgets and the Committee on Economic and Monetary Affairs, as committees responsible, and to the Committee on Employment, the Committee on the Environment, the Committee on Industry, Research and Energy and the Committee on Transport and Tourism, for opinion.</dkg:text>
-    <dkg:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:06:33</dkg:timestamp>
-    <dkg:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+    <del:identifier>contribution_6</del:identifier>
+    <del:text>The first is on employment protection for the activities of police officers, military personnel, prison officers, and customs and border officials, classifying them as high-risk occupations in the EU. The proposal is referred to the Committee on Employment and Social Affairs.
+The second is on the need to extend the period for implementation of the Recovery and Resilience Facility. This proposal is referred to the Committee on Budgets and the Committee on Economic and Monetary Affairs, as committees responsible, and to the Committee on Employment, the Committee on the Environment, the Committee on Industry, Research and Energy and the Committee on Transport and Tourism, for opinion.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:06:33</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
   </rdf:Description>
 </rdf:RDF>

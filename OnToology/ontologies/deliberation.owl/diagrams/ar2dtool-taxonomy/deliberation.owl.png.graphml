@@ -6,31 +6,31 @@
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
    <graph edgedefault="directed" id="G" parse.edges="4" parse.nodes="7" parse.order="free">
-      <node id="nid_dkg:Premise">
+      <node id="nid_del:Premise">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">dkg:Premise</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">del:Premise</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_dkg:ArgumentStructure">
+      <node id="nid_del:ArgumentStructure">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="210.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">dkg:ArgumentStructure</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">del:ArgumentStructure</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf0" source="nid_dkg:Premise" target="nid_dkg:ArgumentStructure">
+    <edge id="eid_rdfs:subClassOf0" source="nid_del:Premise" target="nid_del:ArgumentStructure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -41,31 +41,31 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_dkg:Argument">
+      <node id="nid_del:Argument">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="120.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">dkg:Argument</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">del:Argument</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_dkg:Contribution">
+      <node id="nid_del:Contribution">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">dkg:Contribution</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">del:Contribution</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf1" source="nid_dkg:Argument" target="nid_dkg:Contribution">
+    <edge id="eid_rdfs:subClassOf1" source="nid_del:Argument" target="nid_del:Contribution">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -76,31 +76,31 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_dkg:LegalSource">
+      <node id="nid_del:LegalSource">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="150.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">dkg:LegalSource</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">del:LegalSource</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_dkg:InformationResource">
+      <node id="nid_del:InformationResource">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="230.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">dkg:InformationResource</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">del:InformationResource</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf2" source="nid_dkg:LegalSource" target="nid_dkg:InformationResource">
+    <edge id="eid_rdfs:subClassOf2" source="nid_del:LegalSource" target="nid_del:InformationResource">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -111,19 +111,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_dkg:Conclusion">
+      <node id="nid_del:Conclusion">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="140.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">dkg:Conclusion</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">del:Conclusion</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf3" source="nid_dkg:Conclusion" target="nid_dkg:ArgumentStructure">
+    <edge id="eid_rdfs:subClassOf3" source="nid_del:Conclusion" target="nid_del:ArgumentStructure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

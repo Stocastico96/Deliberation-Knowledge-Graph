@@ -40,14 +40,14 @@ def query_all_topics(graph):
     print("\n=== All Topics in the Debate ===\n")
     
     query = """
-    PREFIX dkg: <https://w3id.org/deliberation/ontology#>
+    PREFIX del: <https://w3id.org/deliberation/ontology#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     
     SELECT ?topic_id ?topic_name
     WHERE {
-        ?topic rdf:type dkg:Topic ;
-               dkg:identifier ?topic_id ;
-               dkg:name ?topic_name .
+        ?topic rdf:type del:Topic ;
+               del:identifier ?topic_id ;
+               del:name ?topic_name .
     }
     ORDER BY ?topic_id
     """
@@ -62,20 +62,20 @@ def query_all_participants(graph):
     print("\n=== All Participants in the Debate ===\n")
     
     query = """
-    PREFIX dkg: <https://w3id.org/deliberation/ontology#>
+    PREFIX del: <https://w3id.org/deliberation/ontology#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     
     SELECT ?name ?role ?organization
     WHERE {
-        ?participant rdf:type dkg:Participant ;
-                    dkg:name ?name .
+        ?participant rdf:type del:Participant ;
+                    del:name ?name .
         OPTIONAL {
-            ?participant dkg:hasRole ?role_uri .
-            ?role_uri dkg:name ?role .
+            ?participant del:hasRole ?role_uri .
+            ?role_uri del:name ?role .
         }
         OPTIONAL {
-            ?participant dkg:isAffiliatedWith ?org_uri .
-            ?org_uri dkg:name ?organization .
+            ?participant del:isAffiliatedWith ?org_uri .
+            ?org_uri del:name ?organization .
         }
     }
     ORDER BY ?name
@@ -91,16 +91,16 @@ def query_contributions_by_participant(graph, participant_name):
     print(f"\n=== Contributions by {participant_name} ===\n")
     
     query = """
-    PREFIX dkg: <https://w3id.org/deliberation/ontology#>
+    PREFIX del: <https://w3id.org/deliberation/ontology#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     
     SELECT ?timestamp ?text
     WHERE {
-        ?participant rdf:type dkg:Participant ;
-                    dkg:name ?name ;
-                    ^dkg:madeBy ?contribution .
-        ?contribution dkg:timestamp ?timestamp ;
-                     dkg:text ?text .
+        ?participant rdf:type del:Participant ;
+                    del:name ?name ;
+                    ^del:madeBy ?contribution .
+        ?contribution del:timestamp ?timestamp ;
+                     del:text ?text .
         FILTER(REGEX(?name, ?participant_name, "i"))
     }
     ORDER BY ?timestamp
@@ -123,19 +123,19 @@ def query_contributions_by_topic(graph, topic_keyword):
     print(f"\n=== Contributions related to '{topic_keyword}' ===\n")
     
     query = """
-    PREFIX dkg: <https://w3id.org/deliberation/ontology#>
+    PREFIX del: <https://w3id.org/deliberation/ontology#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     
     SELECT ?topic_name ?participant_name ?timestamp ?text
     WHERE {
-        ?topic rdf:type dkg:Topic ;
-              dkg:name ?topic_name .
-        ?process dkg:hasTopic ?topic ;
-                dkg:hasContribution ?contribution .
-        ?contribution dkg:timestamp ?timestamp ;
-                     dkg:text ?text ;
-                     dkg:madeBy ?participant .
-        ?participant dkg:name ?participant_name .
+        ?topic rdf:type del:Topic ;
+              del:name ?topic_name .
+        ?process del:hasTopic ?topic ;
+                del:hasContribution ?contribution .
+        ?contribution del:timestamp ?timestamp ;
+                     del:text ?text ;
+                     del:madeBy ?participant .
+        ?participant del:name ?participant_name .
         FILTER(REGEX(?topic_name, ?keyword, "i") || REGEX(?text, ?keyword, "i"))
     }
     ORDER BY ?timestamp

@@ -132,25 +132,25 @@ def parse_verbatim_html(html_file):
     
     debate_json = {
         "@context": {
-            "dkg": "https://w3id.org/deliberation/ontology#",
+            "del": "https://w3id.org/deliberation/ontology#",
             "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
             "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
             "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
-        "@type": "dkg:DeliberationProcess",
-        "dkg:identifier": debate_id,
-        "dkg:name": f"European Parliament Debate - {debate_date}",
-        "dkg:startDate": f"{debate_date}T00:00:00Z" if debate_date else None,
-        "dkg:endDate": f"{debate_date}T23:59:59Z" if debate_date else None,
-        "dkg:hasTopic": [
+        "@type": "del:DeliberationProcess",
+        "del:identifier": debate_id,
+        "del:name": f"European Parliament Debate - {debate_date}",
+        "del:startDate": f"{debate_date}T00:00:00Z" if debate_date else None,
+        "del:endDate": f"{debate_date}T23:59:59Z" if debate_date else None,
+        "del:hasTopic": [
             {
-                "@type": "dkg:Topic",
-                "dkg:identifier": topic["id"],
-                "dkg:name": topic["title"]
+                "@type": "del:Topic",
+                "del:identifier": topic["id"],
+                "del:name": topic["title"]
             } for topic in topics
         ],
-        "dkg:hasParticipant": [],
-        "dkg:hasContribution": []
+        "del:hasParticipant": [],
+        "del:hasContribution": []
     }
     
     # Add unique participants
@@ -160,51 +160,51 @@ def parse_verbatim_html(html_file):
         if speaker_name not in participants:
             participant_id = f"participant_{len(participants) + 1}"
             participant = {
-                "@type": "dkg:Participant",
-                "dkg:identifier": participant_id,
-                "dkg:name": speaker_name
+                "@type": "del:Participant",
+                "del:identifier": participant_id,
+                "del:name": speaker_name
             }
             
             # Add role if available
             if speech["speaker"]["role"]:
-                participant["dkg:hasRole"] = {
-                    "@type": "dkg:Role",
-                    "dkg:name": speech["speaker"]["role"]
+                participant["del:hasRole"] = {
+                    "@type": "del:Role",
+                    "del:name": speech["speaker"]["role"]
                 }
             
             # Add political group if available
             if speech["speaker"]["politicalGroup"]:
-                participant["dkg:isAffiliatedWith"] = {
-                    "@type": "dkg:Organization",
-                    "dkg:name": speech["speaker"]["politicalGroup"]
+                participant["del:isAffiliatedWith"] = {
+                    "@type": "del:Organization",
+                    "del:name": speech["speaker"]["politicalGroup"]
                 }
             
             participants[speaker_name] = participant_id
-            debate_json["dkg:hasParticipant"].append(participant)
+            debate_json["del:hasParticipant"].append(participant)
     
     # Add contributions (speeches)
     for i, speech in enumerate(speeches):
         contribution_id = f"contribution_{i + 1}"
         contribution = {
-            "@type": "dkg:Contribution",
-            "dkg:identifier": contribution_id,
-            "dkg:text": speech["text"],
-            "dkg:madeBy": {"@id": participants[speech["speaker"]["name"]]}
+            "@type": "del:Contribution",
+            "del:identifier": contribution_id,
+            "del:text": speech["text"],
+            "del:madeBy": {"@id": participants[speech["speaker"]["name"]]}
         }
         
         # Add timestamp if available
         if speech["timestamp"]:
-            contribution["dkg:timestamp"] = speech["timestamp"]
+            contribution["del:timestamp"] = speech["timestamp"]
         
         # Add topic reference
         if speech["topic"]:
             # Find matching topic
-            for topic in debate_json["dkg:hasTopic"]:
-                if topic["dkg:name"] == speech["topic"]:
-                    contribution["dkg:hasTopic"] = {"@id": topic["dkg:identifier"]}
+            for topic in debate_json["del:hasTopic"]:
+                if topic["del:name"] == speech["topic"]:
+                    contribution["del:hasTopic"] = {"@id": topic["del:identifier"]}
                     break
         
-        debate_json["dkg:hasContribution"].append(contribution)
+        debate_json["del:hasContribution"].append(contribution)
     
     return debate_json
 

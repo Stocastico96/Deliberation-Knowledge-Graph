@@ -520,83 +520,83 @@ class EPDebateParser:
 # ---------- 5) JSON-LD Converter ----------
 class JsonLdConverter:
     def __init__(self):
-        self.dkg = Namespace("https://w3id.org/deliberation/ontology#")
+        self.del = Namespace("https://w3id.org/deliberation/ontology#")
         self.base_uri = "https://w3id.org/deliberation/resource/"
     
     def process_to_jsonld(self, process: DeliberationProcess) -> Dict[str, Any]:
         """Convert a DeliberationProcess to JSON-LD format."""
         jsonld = {
             "@context": {
-                "dkg": "https://w3id.org/deliberation/ontology#",
+                "del": "https://w3id.org/deliberation/ontology#",
                 "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
                 "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
                 "xsd": "http://www.w3.org/2001/XMLSchema#"
             },
-            "@type": "dkg:DeliberationProcess",
-            "dkg:identifier": process.id,
-            "dkg:name": process.name,
-            "dkg:startDate": process.start_date.isoformat(),
-            "dkg:endDate": process.end_date.isoformat(),
-            "dkg:hasTopic": [],
-            "dkg:hasParticipant": [],
-            "dkg:hasContribution": []
+            "@type": "del:DeliberationProcess",
+            "del:identifier": process.id,
+            "del:name": process.name,
+            "del:startDate": process.start_date.isoformat(),
+            "del:endDate": process.end_date.isoformat(),
+            "del:hasTopic": [],
+            "del:hasParticipant": [],
+            "del:hasContribution": []
         }
         
         # Add topics
         for topic in process.topics:
-            jsonld["dkg:hasTopic"].append({
-                "@type": "dkg:Topic",
-                "dkg:identifier": topic.id,
-                "dkg:name": topic.name
+            jsonld["del:hasTopic"].append({
+                "@type": "del:Topic",
+                "del:identifier": topic.id,
+                "del:name": topic.name
             })
         
         # Add participants
         for participant in process.participants:
             p_json = {
-                "@type": "dkg:Participant",
-                "dkg:identifier": participant.id,
-                "dkg:name": participant.name
+                "@type": "del:Participant",
+                "del:identifier": participant.id,
+                "del:name": participant.name
             }
             
             if participant.role:
-                p_json["dkg:hasRole"] = {
-                    "@type": "dkg:Role",
-                    "dkg:name": participant.role
+                p_json["del:hasRole"] = {
+                    "@type": "del:Role",
+                    "del:name": participant.role
                 }
             
             if participant.affiliation:
-                p_json["dkg:isAffiliatedWith"] = {
-                    "@type": "dkg:Organization",
-                    "dkg:name": participant.affiliation
+                p_json["del:isAffiliatedWith"] = {
+                    "@type": "del:Organization",
+                    "del:name": participant.affiliation
                 }
             
-            jsonld["dkg:hasParticipant"].append(p_json)
+            jsonld["del:hasParticipant"].append(p_json)
         
         # Add contributions
         for contribution in process.contributions:
             c_json = {
-                "@type": "dkg:Contribution",
-                "dkg:identifier": contribution.id,
-                "dkg:text": contribution.text,
-                "dkg:timestamp": contribution.timestamp.isoformat(),
-                "dkg:madeBy": {"@id": contribution.participant_id}
+                "@type": "del:Contribution",
+                "del:identifier": contribution.id,
+                "del:text": contribution.text,
+                "del:timestamp": contribution.timestamp.isoformat(),
+                "del:madeBy": {"@id": contribution.participant_id}
             }
             
             if contribution.topic_id:
-                c_json["dkg:hasTopic"] = {"@id": contribution.topic_id}
+                c_json["del:hasTopic"] = {"@id": contribution.topic_id}
             
             # Add fallacies if any
             if contribution.fallacies:
-                c_json["dkg:hasFallacies"] = []
+                c_json["del:hasFallacies"] = []
                 for fallacy in contribution.fallacies:
-                    c_json["dkg:hasFallacies"].append({
-                        "@type": "dkg:Fallacy",
-                        "dkg:type": fallacy.type,
-                        "dkg:segment": fallacy.segment,
-                        "dkg:confidence": fallacy.confidence
+                    c_json["del:hasFallacies"].append({
+                        "@type": "del:Fallacy",
+                        "del:type": fallacy.type,
+                        "del:segment": fallacy.segment,
+                        "del:confidence": fallacy.confidence
                     })
             
-            jsonld["dkg:hasContribution"].append(c_json)
+            jsonld["del:hasContribution"].append(c_json)
         
         return jsonld
     
@@ -605,92 +605,92 @@ class JsonLdConverter:
         g = Graph()
         
         # Define namespaces
-        g.bind("dkg", self.dkg)
+        g.bind("del", self.del)
         g.bind("rdf", RDF)
         g.bind("rdfs", RDFS)
         g.bind("xsd", XSD)
         
         # Add deliberation process
-        process_uri = URIRef(self.base_uri + jsonld["dkg:identifier"])
-        g.add((process_uri, RDF.type, self.dkg.DeliberationProcess))
-        g.add((process_uri, self.dkg.identifier, Literal(jsonld["dkg:identifier"])))
-        g.add((process_uri, self.dkg.name, Literal(jsonld["dkg:name"])))
+        process_uri = URIRef(self.base_uri + jsonld["del:identifier"])
+        g.add((process_uri, RDF.type, self.del.DeliberationProcess))
+        g.add((process_uri, self.del.identifier, Literal(jsonld["del:identifier"])))
+        g.add((process_uri, self.del.name, Literal(jsonld["del:name"])))
         
-        if "dkg:startDate" in jsonld:
-            g.add((process_uri, self.dkg.startDate, Literal(jsonld["dkg:startDate"], datatype=XSD.dateTime)))
+        if "del:startDate" in jsonld:
+            g.add((process_uri, self.del.startDate, Literal(jsonld["del:startDate"], datatype=XSD.dateTime)))
         
-        if "dkg:endDate" in jsonld:
-            g.add((process_uri, self.dkg.endDate, Literal(jsonld["dkg:endDate"], datatype=XSD.dateTime)))
+        if "del:endDate" in jsonld:
+            g.add((process_uri, self.del.endDate, Literal(jsonld["del:endDate"], datatype=XSD.dateTime)))
         
         # Add topics
-        for topic in jsonld.get("dkg:hasTopic", []):
-            topic_uri = URIRef(self.base_uri + topic["dkg:identifier"])
-            g.add((topic_uri, RDF.type, self.dkg.Topic))
-            g.add((topic_uri, self.dkg.identifier, Literal(topic["dkg:identifier"])))
-            g.add((topic_uri, self.dkg.name, Literal(topic["dkg:name"])))
+        for topic in jsonld.get("del:hasTopic", []):
+            topic_uri = URIRef(self.base_uri + topic["del:identifier"])
+            g.add((topic_uri, RDF.type, self.del.Topic))
+            g.add((topic_uri, self.del.identifier, Literal(topic["del:identifier"])))
+            g.add((topic_uri, self.del.name, Literal(topic["del:name"])))
             
             # Link topic to process
-            g.add((process_uri, self.dkg.hasTopic, topic_uri))
+            g.add((process_uri, self.del.hasTopic, topic_uri))
         
         # Add participants
-        for participant in jsonld.get("dkg:hasParticipant", []):
-            participant_uri = URIRef(self.base_uri + participant["dkg:identifier"])
-            g.add((participant_uri, RDF.type, self.dkg.Participant))
-            g.add((participant_uri, self.dkg.identifier, Literal(participant["dkg:identifier"])))
-            g.add((participant_uri, self.dkg.name, Literal(participant["dkg:name"])))
+        for participant in jsonld.get("del:hasParticipant", []):
+            participant_uri = URIRef(self.base_uri + participant["del:identifier"])
+            g.add((participant_uri, RDF.type, self.del.Participant))
+            g.add((participant_uri, self.del.identifier, Literal(participant["del:identifier"])))
+            g.add((participant_uri, self.del.name, Literal(participant["del:name"])))
             
             # Add role if available
-            if "dkg:hasRole" in participant:
-                role_uri = URIRef(self.base_uri + "role_" + participant["dkg:identifier"])
-                g.add((role_uri, RDF.type, self.dkg.Role))
-                g.add((role_uri, self.dkg.name, Literal(participant["dkg:hasRole"]["dkg:name"])))
-                g.add((participant_uri, self.dkg.hasRole, role_uri))
+            if "del:hasRole" in participant:
+                role_uri = URIRef(self.base_uri + "role_" + participant["del:identifier"])
+                g.add((role_uri, RDF.type, self.del.Role))
+                g.add((role_uri, self.del.name, Literal(participant["del:hasRole"]["del:name"])))
+                g.add((participant_uri, self.del.hasRole, role_uri))
             
             # Add affiliation if available
-            if "dkg:isAffiliatedWith" in participant:
-                org_name = participant["dkg:isAffiliatedWith"]["dkg:name"]
+            if "del:isAffiliatedWith" in participant:
+                org_name = participant["del:isAffiliatedWith"]["del:name"]
                 org_uri = URIRef(self.base_uri + "org_" + org_name.replace("/", "_").replace(" ", "_"))
-                g.add((org_uri, RDF.type, self.dkg.Organization))
-                g.add((org_uri, self.dkg.name, Literal(org_name)))
-                g.add((participant_uri, self.dkg.isAffiliatedWith, org_uri))
+                g.add((org_uri, RDF.type, self.del.Organization))
+                g.add((org_uri, self.del.name, Literal(org_name)))
+                g.add((participant_uri, self.del.isAffiliatedWith, org_uri))
             
             # Link participant to process
-            g.add((process_uri, self.dkg.hasParticipant, participant_uri))
+            g.add((process_uri, self.del.hasParticipant, participant_uri))
         
         # Add contributions
-        for contribution in jsonld.get("dkg:hasContribution", []):
-            contribution_uri = URIRef(self.base_uri + contribution["dkg:identifier"])
-            g.add((contribution_uri, RDF.type, self.dkg.Contribution))
-            g.add((contribution_uri, self.dkg.identifier, Literal(contribution["dkg:identifier"])))
-            g.add((contribution_uri, self.dkg.text, Literal(contribution["dkg:text"])))
+        for contribution in jsonld.get("del:hasContribution", []):
+            contribution_uri = URIRef(self.base_uri + contribution["del:identifier"])
+            g.add((contribution_uri, RDF.type, self.del.Contribution))
+            g.add((contribution_uri, self.del.identifier, Literal(contribution["del:identifier"])))
+            g.add((contribution_uri, self.del.text, Literal(contribution["del:text"])))
             
             # Add timestamp if available
-            if "dkg:timestamp" in contribution:
-                g.add((contribution_uri, self.dkg.timestamp, Literal(contribution["dkg:timestamp"], datatype=XSD.dateTime)))
+            if "del:timestamp" in contribution:
+                g.add((contribution_uri, self.del.timestamp, Literal(contribution["del:timestamp"], datatype=XSD.dateTime)))
             
             # Link to participant
-            if "dkg:madeBy" in contribution and "@id" in contribution["dkg:madeBy"]:
-                participant_id = contribution["dkg:madeBy"]["@id"]
+            if "del:madeBy" in contribution and "@id" in contribution["del:madeBy"]:
+                participant_id = contribution["del:madeBy"]["@id"]
                 participant_uri = URIRef(self.base_uri + participant_id)
-                g.add((contribution_uri, self.dkg.madeBy, participant_uri))
+                g.add((contribution_uri, self.del.madeBy, participant_uri))
             
             # Link to topic if available
-            if "dkg:hasTopic" in contribution and "@id" in contribution["dkg:hasTopic"]:
-                topic_id = contribution["dkg:hasTopic"]["@id"]
+            if "del:hasTopic" in contribution and "@id" in contribution["del:hasTopic"]:
+                topic_id = contribution["del:hasTopic"]["@id"]
                 topic_uri = URIRef(self.base_uri + topic_id)
-                g.add((contribution_uri, self.dkg.hasTopic, topic_uri))
+                g.add((contribution_uri, self.del.hasTopic, topic_uri))
             
             # Add fallacies if any
-            for fallacy in contribution.get("dkg:hasFallacies", []):
-                fallacy_uri = URIRef(self.base_uri + "fallacy_" + contribution["dkg:identifier"] + "_" + fallacy["dkg:type"].replace(" ", "_"))
-                g.add((fallacy_uri, RDF.type, self.dkg.Fallacy))
-                g.add((fallacy_uri, self.dkg.type, Literal(fallacy["dkg:type"])))
-                g.add((fallacy_uri, self.dkg.segment, Literal(fallacy["dkg:segment"])))
-                g.add((fallacy_uri, self.dkg.confidence, Literal(fallacy["dkg:confidence"], datatype=XSD.float)))
-                g.add((contribution_uri, self.dkg.hasFallacy, fallacy_uri))
+            for fallacy in contribution.get("del:hasFallacies", []):
+                fallacy_uri = URIRef(self.base_uri + "fallacy_" + contribution["del:identifier"] + "_" + fallacy["del:type"].replace(" ", "_"))
+                g.add((fallacy_uri, RDF.type, self.del.Fallacy))
+                g.add((fallacy_uri, self.del.type, Literal(fallacy["del:type"])))
+                g.add((fallacy_uri, self.del.segment, Literal(fallacy["del:segment"])))
+                g.add((fallacy_uri, self.del.confidence, Literal(fallacy["del:confidence"], datatype=XSD.float)))
+                g.add((contribution_uri, self.del.hasFallacy, fallacy_uri))
             
             # Link contribution to process
-            g.add((process_uri, self.dkg.hasContribution, contribution_uri))
+            g.add((process_uri, self.del.hasContribution, contribution_uri))
         
         return g
 

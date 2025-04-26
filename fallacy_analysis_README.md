@@ -63,7 +63,7 @@ Options:
 
 ### Analyzing Existing JSON Debates
 
-If you already have debate data in JSON-LD format (compatible with the DKG ontology), you can run:
+If you already have debate data in JSON-LD format (compatible with the Deliberation ontology), you can run:
 
 ```bash
 python run_ep_fallacy_analysis.py path/to/debate.json [output_report.json]
@@ -128,7 +128,7 @@ The system stores data in a SQLite database with the following tables:
 
 The system generates several output files:
 
-- `.jsonld`: JSON-LD representation of the debate aligned with the DKG ontology
+- `.jsonld`: JSON-LD representation of the debate aligned with the Deliberation ontology
 - `.rdf`: RDF/XML representation for semantic web applications
 - `_fallacy_report.json`: Detailed report of detected fallacies
 
@@ -147,7 +147,7 @@ python run_ep_fallacy_analysis.py data/EU_parliament_debates/ep_debates/debate_2
 
 ## Integration with Deliberation Knowledge Graph
 
-The output of this system is fully compatible with the Deliberation Knowledge Graph ontology, allowing for:
+The output of this system is fully compatible with the Deliberation ontology, allowing for:
 
 - Cross-dataset analysis of deliberative processes
 - Semantic querying of debates, participants, and arguments

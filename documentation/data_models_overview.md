@@ -17,21 +17,21 @@ This document provides an overview of relevant data models and ontologies in the
 
 Despite the availability of multiple ontologies in related domains, a unified Deliberation Knowledge Graph is necessary for several reasons:
 
-1. **Integration Gap**: None of the existing ontologies adequately bridges formal institutional deliberation with civic participation platforms. The DKG addresses this by creating mappings between these domains.
+1. **Integration Gap**: None of the existing ontologies adequately bridges formal institutional deliberation with civic participation platforms. The del addresses this by creating mappings between these domains.
 
-2. **Fallacy Detection Support**: Existing ontologies lack the specific structures required for computational identification of logical fallacies in deliberative discourse. The DKG explicitly models argument patterns needed for automated fallacy detection.
+2. **Fallacy Detection Support**: Existing ontologies lack the specific structures required for computational identification of logical fallacies in deliberative discourse. The del explicitly models argument patterns needed for automated fallacy detection.
 
-3. **Cross-Dataset Standardization**: Current deliberation data exists in heterogeneous formats across platforms. The DKG provides a common semantic framework to normalize and integrate these diverse datasets.
+3. **Cross-Dataset Standardization**: Current deliberation data exists in heterogeneous formats across platforms. The del provides a common semantic framework to normalize and integrate these diverse datasets.
 
-4. **Fragmentation**: Each existing ontology covers only part of the deliberation ecosystem. The DKG provides a comprehensive framework that connects process, participants, content, and information in a coherent structure.
+4. **Fragmentation**: Each existing ontology covers only part of the deliberation ecosystem. The del provides a comprehensive framework that connects process, participants, content, and information in a coherent structure.
 
-5. **Interoperability Challenges**: Current solutions operate in silos, making cross-platform analysis difficult. The DKG establishes common semantics to enable data sharing across different deliberation environments.
+5. **Interoperability Challenges**: Current solutions operate in silos, making cross-platform analysis difficult. The del establishes common semantics to enable data sharing across different deliberation environments.
 
-6. **Multi-perspective Integration**: Existing approaches typically adopt either a government-centric or citizen-centric perspective. The DKG supports multiple viewpoints simultaneously.
+6. **Multi-perspective Integration**: Existing approaches typically adopt either a government-centric or citizen-centric perspective. The del supports multiple viewpoints simultaneously.
 
-7. **Technical Evolution**: New deliberation platforms and technologies emerge regularly. The DKG's modular approach allows extension to incorporate new deliberation forms while maintaining backward compatibility.
+7. **Technical Evolution**: New deliberation platforms and technologies emerge regularly. The del's modular approach allows extension to incorporate new deliberation forms while maintaining backward compatibility.
 
-8. **Research-Practice Gap**: Current ontologies are either too theoretical or too implementation-specific. The DKG balances conceptual rigor with practical applicability.
+8. **Research-Practice Gap**: Current ontologies are either too theoretical or too implementation-specific. The del balances conceptual rigor with practical applicability.
 
 ## Purpose and Scope of the Deliberation Knowledge Graph
 

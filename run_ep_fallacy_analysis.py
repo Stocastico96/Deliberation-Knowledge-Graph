@@ -15,19 +15,19 @@ from datetime import datetime
 from ep_debates_fallacy_analysis import DebateProcessingPipeline, DeliberationProcess, Topic, Participant, Contribution
 
 def load_json_debate(json_file_path):
-    """Load a debate from a JSON file in the DKG format."""
+    """Load a debate from a JSON file in the del format."""
     print(f"Loading debate from JSON file: {json_file_path}")
     
     with open(json_file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     # Extract basic process info
-    process_id = data.get("dkg:identifier", "unknown_process")
-    process_name = data.get("dkg:name", "Unknown Debate")
+    process_id = data.get("del:identifier", "unknown_process")
+    process_name = data.get("del:name", "Unknown Debate")
     
     # Parse dates
-    start_date_str = data.get("dkg:startDate", datetime.now().isoformat())
-    end_date_str = data.get("dkg:endDate", datetime.now().isoformat())
+    start_date_str = data.get("del:startDate", datetime.now().isoformat())
+    end_date_str = data.get("del:endDate", datetime.now().isoformat())
     
     try:
         start_date = datetime.fromisoformat(start_date_str.replace('Z', '+00:00'))
@@ -51,37 +51,37 @@ def load_json_debate(json_file_path):
     )
     
     # Extract topics
-    for topic_data in data.get("dkg:hasTopic", []):
+    for topic_data in data.get("del:hasTopic", []):
         topic = Topic(
-            id=topic_data.get("dkg:identifier", f"topic_{len(process.topics) + 1}"),
-            name=topic_data.get("dkg:name", "Unknown Topic")
+            id=topic_data.get("del:identifier", f"topic_{len(process.topics) + 1}"),
+            name=topic_data.get("del:name", "Unknown Topic")
         )
         process.topics.append(topic)
     
     # Extract participants
-    for participant_data in data.get("dkg:hasParticipant", []):
+    for participant_data in data.get("del:hasParticipant", []):
         # Get role if available
         role = None
-        if "dkg:hasRole" in participant_data:
-            role = participant_data["dkg:hasRole"].get("dkg:name")
+        if "del:hasRole" in participant_data:
+            role = participant_data["del:hasRole"].get("del:name")
         
         # Get affiliation if available
         affiliation = None
-        if "dkg:isAffiliatedWith" in participant_data:
-            affiliation = participant_data["dkg:isAffiliatedWith"].get("dkg:name")
+        if "del:isAffiliatedWith" in participant_data:
+            affiliation = participant_data["del:isAffiliatedWith"].get("del:name")
         
         participant = Participant(
-            id=participant_data.get("dkg:identifier", f"participant_{len(process.participants) + 1}"),
-            name=participant_data.get("dkg:name", "Unknown Participant"),
+            id=participant_data.get("del:identifier", f"participant_{len(process.participants) + 1}"),
+            name=participant_data.get("del:name", "Unknown Participant"),
             role=role,
             affiliation=affiliation
         )
         process.participants.append(participant)
     
     # Extract contributions
-    for contribution_data in data.get("dkg:hasContribution", []):
+    for contribution_data in data.get("del:hasContribution", []):
         # Parse timestamp
-        timestamp_str = contribution_data.get("dkg:timestamp", datetime.now().isoformat())
+        timestamp_str = contribution_data.get("del:timestamp", datetime.now().isoformat())
         try:
             timestamp = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
         except ValueError:
@@ -89,17 +89,17 @@ def load_json_debate(json_file_path):
         
         # Get participant ID
         participant_id = None
-        if "dkg:madeBy" in contribution_data and "@id" in contribution_data["dkg:madeBy"]:
-            participant_id = contribution_data["dkg:madeBy"]["@id"]
+        if "del:madeBy" in contribution_data and "@id" in contribution_data["del:madeBy"]:
+            participant_id = contribution_data["del:madeBy"]["@id"]
         
         # Get topic ID
         topic_id = None
-        if "dkg:hasTopic" in contribution_data and "@id" in contribution_data["dkg:hasTopic"]:
-            topic_id = contribution_data["dkg:hasTopic"]["@id"]
+        if "del:hasTopic" in contribution_data and "@id" in contribution_data["del:hasTopic"]:
+            topic_id = contribution_data["del:hasTopic"]["@id"]
         
         contribution = Contribution(
-            id=contribution_data.get("dkg:identifier", f"contribution_{len(process.contributions) + 1}"),
-            text=contribution_data.get("dkg:text", ""),
+            id=contribution_data.get("del:identifier", f"contribution_{len(process.contributions) + 1}"),
+            text=contribution_data.get("del:text", ""),
             timestamp=timestamp,
             participant_id=participant_id or "unknown_participant",
             topic_id=topic_id

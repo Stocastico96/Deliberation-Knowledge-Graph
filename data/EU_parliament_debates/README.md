@@ -52,45 +52,45 @@ The JSON format follows this structure:
 ```json
 {
   "@context": {
-    "dkg": "https://w3id.org/deliberation/ontology#",
+    "del": "https://w3id.org/deliberation/ontology#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@type": "dkg:DeliberationProcess",
-  "dkg:identifier": "ep_debate_YYYYMMDD",
-  "dkg:name": "European Parliament Debate - YYYY-MM-DD",
-  "dkg:startDate": "YYYY-MM-DDT00:00:00Z",
-  "dkg:endDate": "YYYY-MM-DDT23:59:59Z",
-  "dkg:hasTopic": [
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "ep_debate_YYYYMMDD",
+  "del:name": "European Parliament Debate - YYYY-MM-DD",
+  "del:startDate": "YYYY-MM-DDT00:00:00Z",
+  "del:endDate": "YYYY-MM-DDT23:59:59Z",
+  "del:hasTopic": [
     {
-      "@type": "dkg:Topic",
-      "dkg:identifier": "topic_id",
-      "dkg:name": "Topic Name"
+      "@type": "del:Topic",
+      "del:identifier": "topic_id",
+      "del:name": "Topic Name"
     }
   ],
-  "dkg:hasParticipant": [
+  "del:hasParticipant": [
     {
-      "@type": "dkg:Participant",
-      "dkg:identifier": "participant_id",
-      "dkg:name": "Participant Name",
-      "dkg:hasRole": {
-        "@type": "dkg:Role",
-        "dkg:name": "Role Name"
+      "@type": "del:Participant",
+      "del:identifier": "participant_id",
+      "del:name": "Participant Name",
+      "del:hasRole": {
+        "@type": "del:Role",
+        "del:name": "Role Name"
       },
-      "dkg:isAffiliatedWith": {
-        "@type": "dkg:Organization",
-        "dkg:name": "Organization Name"
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Organization Name"
       }
     }
   ],
-  "dkg:hasContribution": [
+  "del:hasContribution": [
     {
-      "@type": "dkg:Contribution",
-      "dkg:identifier": "contribution_id",
-      "dkg:text": "Contribution text",
-      "dkg:timestamp": "YYYY-MM-DDThh:mm:ss",
-      "dkg:madeBy": {"@id": "participant_id"}
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_id",
+      "del:text": "Contribution text",
+      "del:timestamp": "YYYY-MM-DDThh:mm:ss",
+      "del:madeBy": {"@id": "participant_id"}
     }
   ]
 }
@@ -100,22 +100,22 @@ The JSON format follows this structure:
 
 The RDF/OWL format uses the following structure:
 
-- `dkg:DeliberationProcess` for the debate
-- `dkg:Topic` for debate topics
-- `dkg:Participant` for speakers
-- `dkg:Role` for participant roles
-- `dkg:Organization` for political groups
-- `dkg:Contribution` for speeches
+- `del:DeliberationProcess` for the debate
+- `del:Topic` for debate topics
+- `del:Participant` for speakers
+- `del:Role` for participant roles
+- `del:Organization` for political groups
+- `del:Contribution` for speeches
 
 ## Ontology Alignment
 
 The conversion process maps the verbatim HTML structure to the deliberation ontology:
 
-- Debate → `dkg:DeliberationProcess`
-- Topics → `dkg:Topic`
-- Speakers → `dkg:Participant`
-- Political Groups → `dkg:Organization`
-- Speeches → `dkg:Contribution`
+- Debate → `del:DeliberationProcess`
+- Topics → `del:Topic`
+- Speakers → `del:Participant`
+- Political Groups → `del:Organization`
+- Speeches → `del:Contribution`
 
 ## Dependencies
 
