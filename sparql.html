@@ -2,129 +2,222 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deliberation Knowledge Graph - SPARQL Endpoint</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Deliberation Knowledge Graph</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* Additional styles for SPARQL interface */
-    .sparql-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
+    /* Custom color scheme based on del daft.png (green vines, Donkey Kong, Daft Punk) */
+    :root {
+      --primary-color: #4a9d3c; /* Green for vines */
+      --primary-light: #6abe5c;
+      --primary-dark: #3a7d2c;
+      --secondary-color: #8b5a2b; /* Brown for Donkey Kong */
+      --secondary-light: #a67c4e;
+      --secondary-dark: #6b4521;
+      --accent-color: #ffd700; /* Gold for Daft Punk helmets */
+      --accent-light: #ffe44d;
+      --accent-dark: #ccac00;
+      --light-color: #f8fafc;
+      --dark-color: #0f172a;
+      --text-color: #334155;
+      --text-light: #64748b;
+      --link-color: #4a9d3c;
+      --link-hover-color: #3a7d2c;
     }
     
-    .query-editor {
-      width: 100%;
-      height: 200px;
-      font-family: monospace;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: var(--border-radius);
-      background-color: #f8f9fa;
-      resize: vertical;
-    }
-    
-    .query-controls {
+    /* Custom styles for the hero section with background image */
+    .hero-section {
+      position: relative;
+      min-height: 100vh;
       display: flex;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    
-    .results-container {
-      margin-top: 2rem;
-      overflow-x: auto;
-    }
-    
-    .results-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    
-    .results-table th, .results-table td {
-      padding: 0.75rem;
-      text-align: left;
-      border-bottom: 1px solid #eee;
-    }
-    
-    .results-table th {
-      background-color: var(--primary-color);
+      align-items: center;
+      justify-content: center;
       color: white;
-    }
-    
-    .results-table tr:nth-child(even) {
-      background-color: #f8f9fa;
-    }
-    
-    .results-table tr:hover {
-      background-color: #f1f5f9;
-    }
-    
-    .uri {
-      color: var(--primary-color);
-      word-break: break-all;
-    }
-    
-    .literal {
-      color: var(--secondary-color);
-    }
-    
-    .example-queries {
-      margin-top: 3rem;
-    }
-    
-    .example-query {
-      background-color: #f8f9fa;
-      padding: 1rem;
-      border-radius: var(--border-radius);
-      margin-bottom: 1rem;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
-    
-    .example-query:hover {
-      background-color: #f1f5f9;
-    }
-    
-    .example-query pre {
-      margin: 0;
-      white-space: pre-wrap;
-      font-family: monospace;
-    }
-    
-    .loading {
-      display: none;
       text-align: center;
-      margin: 2rem 0;
-    }
-    
-    .loading-spinner {
-      border: 4px solid rgba(0, 0, 0, 0.1);
-      border-left-color: var(--primary-color);
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      animation: spin 1s linear infinite;
-      margin: 0 auto;
-    }
-    
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-    
-    .error-message {
-      background-color: #fee2e2;
-      color: #b91c1c;
-      padding: 1rem;
-      border-radius: var(--border-radius);
-      margin-bottom: 1rem;
-      display: none;
+      overflow: hidden;
     }
     
     .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background-image: url('DKG daft.png');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.7);
+      z-index: -1;
+    }
+    
+    .hero-content {
+      background-color: rgba(15, 23, 42, 0.7);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      backdrop-filter: blur(5px);
+      max-width: 800px;
+      margin: 0 1rem;
+    }
+    
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .hero-buttons .btn {
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+    }
+    
+    /* EU Parliament Debates section */
+    .eu-parliament-section {
+      background-color: #f8f9fa;
+      padding: 3rem 0;
+      border-radius: var(--border-radius);
+      margin: 2rem 0;
+    }
+    
+    .eu-parliament-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    
+    @media (max-width: 768px) {
+      .eu-parliament-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .eu-parliament-image {
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+    }
+    
+    .eu-parliament-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .eu-parliament-content h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    
+    .eu-parliament-content p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .api-info {
+      background-color: white;
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      margin-top: 2rem;
+      box-shadow: var(--box-shadow);
+    }
+    
+    .api-info h4 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+    
+    .api-info pre {
+      background-color: #f1f5f9;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      overflow-x: auto;
+      margin-bottom: 1rem;
+    }
+    
+    .api-info code {
+      font-family: monospace;
+    }
+    
+    /* Ontology mappings section */
+    .mappings-download {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Override header background */
+    header {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    }
+    
+    /* Table styles */
+    .table-responsive {
+      overflow-x: auto;
+      margin-bottom: 2rem;
+    }
+    
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+      background-color: white;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+    }
+    
+    .table th, .table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .table th {
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: 600;
+    }
+    
+    .table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .table tr:nth-child(even) {
+      background-color: #f8f9fa;
     }
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Mermaid
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'neutral',
+        securityLevel: 'loose',
+        themeCSS: `
+          .node rect { fill: #4a9d3c; stroke: #3a7d2c; }
+          .node.external rect { fill: #8b5a2b; stroke: #6b4521; }
+          .edgeLabel { background-color: white; }
+        `
+      });
+    });
+  </script>
 </head>
 <body>
   <!-- Hero Section with Background Image -->
