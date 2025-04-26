@@ -1,0 +1,57 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "6b65b3c7:195fdd50703:-7ff0" "dkg:CrossPlatformIdentifier" "dkg:Role" "dkg:Conclusion" "6b65b3c7:195fdd50703:-7ffc" "dkg:Topic" "dkg:Evidence" "dkg:DeliberationProcess" "6b65b3c7:195fdd50703:-7ff9" "dkg:Participant" "dkg:Argument" "6b65b3c7:195fdd50703:-7ff3" "dkg:Organization" "dkg:InformationResource" "dkg:Stage" "dkg:FallacyType" "6b65b3c7:195fdd50703:-7fea" "dkg:Position" "dkg:Contribution" "6b65b3c7:195fdd50703:-7ff6" "dkg:Premise" "6b65b3c7:195fdd50703:-7fed" ; /*classes style*/
+	"NULL" -> "6b65b3c7:195fdd50703:-7ff5" [ label = "owl:unionOf" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7fec" [ label = "owl:unionOf" ];
+	"NULL" -> "dkg:Conclusion" [ label = "rdf:first" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7ff8" [ label = "owl:unionOf" ];
+	"NULL" -> "dkg:Argument" [ label = "rdf:first" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7fef" [ label = "owl:unionOf" ];
+	"NULL" -> "dkg:Premise" [ label = "rdf:first" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7fe6" [ label = "rdf:rest" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7ff2" [ label = "owl:unionOf" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7fe8" [ label = "rdf:rest" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> "dkg:Position" [ label = "rdf:first" ];
+	"NULL" -> "dkg:DeliberationProcess" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7fe5" [ label = "rdf:rest" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7feb" [ label = "rdf:rest" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7fee" [ label = "rdf:rest" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7ff1" [ label = "rdf:rest" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7fe9" [ label = "owl:unionOf" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "dkg:Stage" [ label = "rdf:first" ];
+	"NULL" -> "6b65b3c7:195fdd50703:-7fe7" [ label = "rdf:rest" ];
+	"NULL" -> "dkg:Contribution" [ label = "rdf:first" ];
+	"dkg:platformIdentifier" -> "dkg:identifier" [ label = "rdfs:subPropertyOf" ];
+	"https://w3id.org/deliberation/ontology" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "dct:license" ];
+	"dkg:CrossPlatformIdentifier" -> "xsd:string" [ label = "dkg:platformIdentifier" ];
+	"dkg:Participant" -> "dkg:Role" [ label = "dkg:hasRole" ];
+	"dkg:Argument" -> "6b65b3c7:195fdd50703:-7ffc" [ label = "dkg:attacks" ];
+	"owl:Thing" -> "xsd:string" [ label = "dkg:identifier" ];
+	"dkg:DeliberationProcess" -> "dkg:Argument" [ label = "dkg:hasArgument" ];
+	"6b65b3c7:195fdd50703:-7ff9" -> "dkg:Evidence" [ label = "dkg:hasEvidence" ];
+	"dkg:Participant" -> "dkg:Organization" [ label = "dkg:isAffiliatedWith" ];
+	"dkg:DeliberationProcess" -> "dkg:Contribution" [ label = "dkg:hasContribution" ];
+	"6b65b3c7:195fdd50703:-7fed" -> "xsd:dateTime" [ label = "dkg:startDate" ];
+	"dkg:InformationResource" -> "xsd:anyURI" [ label = "dkg:url" ];
+	"dkg:Contribution" -> "dkg:Participant" [ label = "dkg:madeBy" ];
+	"dkg:Argument" -> "dkg:Conclusion" [ label = "dkg:hasConclusion" ];
+	"dkg:Contribution" -> "xsd:dateTime" [ label = "dkg:timestamp" ];
+	"6b65b3c7:195fdd50703:-7ff6" -> "dkg:InformationResource" [ label = "dkg:references" ];
+	"dkg:Argument" -> "dkg:FallacyType" [ label = "dkg:containsFallacy" ];
+	"6b65b3c7:195fdd50703:-7ff0" -> "xsd:dateTime" [ label = "dkg:endDate" ];
+	"dkg:Argument" -> "dkg:Premise" [ label = "dkg:hasPremise" ];
+	"dkg:DeliberationProcess" -> "dkg:Topic" [ label = "dkg:hasTopic" ];
+	"6b65b3c7:195fdd50703:-7fea" -> "xsd:string" [ label = "dkg:text" ];
+	"dkg:Contribution" -> "dkg:Contribution" [ label = "dkg:responseTo" ];
+	"dkg:DeliberationProcess" -> "dkg:Stage" [ label = "dkg:hasStage" ];
+	"dkg:Argument" -> "6b65b3c7:195fdd50703:-7ff3" [ label = "dkg:supports" ];
+	"owl:Thing" -> "xsd:string" [ label = "dkg:name" ];
+	"dkg:DeliberationProcess" -> "dkg:Participant" [ label = "dkg:hasParticipant" ];
+
+}
