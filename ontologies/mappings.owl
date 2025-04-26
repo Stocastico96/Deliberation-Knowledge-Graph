@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/deliberation/mappings#"
+     xml:base="https://w3id.org/deliberation/mappings"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:sioc="http://rdfs.org/sioc/ns#"
+     xmlns:sioca="http://rdfs.org/sioc/argue#"
+     xmlns:aif="http://www.arg.dundee.ac.uk/aif#"
+     xmlns:lkif="http://www.estrellaproject.org/lkif-core/"
+     xmlns:del="https://w3id.org/deliberation/ontology#">
+
+    <owl:Ontology rdf:about="https://w3id.org/deliberation/mappings">
+        <owl:imports rdf:resource="https://w3id.org/deliberation/ontology"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <owl:imports rdf:resource="http://rdfs.org/sioc/ns#"/>
+        <owl:imports rdf:resource="http://rdfs.org/sioc/argue#"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:comment>Mappings between the Deliberation Ontology and existing standard ontologies</rdfs:comment>
+    </owl:Ontology>
+    
+    <!-- FOAF Mappings -->
+    
+    <owl:AnnotationProperty rdf:about="https://w3id.org/deliberation/mappings#foafMapping">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Participant">
+        <skos:narrowMatch rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <skos:relatedMatch rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <foafMapping>Maps to a more specific concept than foaf:Person, as participants may include non-human agents</foafMapping>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Organization">
+        <skos:exactMatch rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foafMapping>Direct conceptual equivalent to foaf:Organization</foafMapping>
+    </rdf:Description>
+    
+    <!-- Dublin Core Mappings -->
+    
+    <owl:AnnotationProperty rdf:about="https://w3id.org/deliberation/mappings#dcMapping">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#InformationResource">
+        <skos:broadMatch rdf:resource="http://purl.org/dc/elements/1.1/Resource"/>
+        <dcMapping>More specific than the general dc:Resource concept</dcMapping>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Topic">
+        <skos:relatedMatch rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
+        <dcMapping>Conceptually related to dc:subject but not equivalent</dcMapping>
+    </rdf:Description>
+    
+    <!-- SIOC Mappings -->
+    
+    <owl:AnnotationProperty rdf:about="https://w3id.org/deliberation/mappings#siocMapping">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Contribution">
+        <skos:broadMatch rdf:resource="http://rdfs.org/sioc/ns#Post"/>
+        <siocMapping>More general than sioc:Post as contributions may include non-textual input</siocMapping>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#DeliberationProcess">
+        <skos:relatedMatch rdf:resource="http://rdfs.org/sioc/ns#Forum"/>
+        <siocMapping>Conceptually related to sioc:Forum but with specific deliberative purpose</siocMapping>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Participant">
+        <skos:relatedMatch rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+        <siocMapping>Related to sioc:UserAccount but more focused on the deliberative role</siocMapping>
+    </rdf:Description>
+    
+    <!-- SIOC Argumentation Module Mappings -->
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Argument">
+        <skos:closeMatch rdf:resource="http://rdfs.org/sioc/argue#Argument"/>
+        <siocMapping>Closely aligned with sioca:Argument but with deliberation-specific features</siocMapping>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Position">
+        <skos:closeMatch rdf:resource="http://rdfs.org/sioc/argue#Position"/>
+        <siocMapping>Closely aligned with sioca:Position in the argumentation context</siocMapping>
+    </rdf:Description>
+    
+    <!-- AIF Mappings -->
+    
+    <owl:AnnotationProperty rdf:about="https://w3id.org/deliberation/mappings#aifMapping">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Argument">
+        <skos:closeMatch rdf:resource="http://www.arg.dundee.ac.uk/aif#Argument"/>
+        <aifMapping>Closely aligned with aif:Argument structure</aifMapping>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Premise">
+        <skos:relatedMatch rdf:resource="http://www.arg.dundee.ac.uk/aif#I-Node"/>
+        <aifMapping>Related to information nodes in AIF that can serve as premises</aifMapping>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#supports">
+        <skos:relatedMatch rdf:resource="http://www.arg.dundee.ac.uk/aif#RA-Node"/>
+        <aifMapping>Related to rule of inference application nodes in AIF</aifMapping>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#attacks">
+        <skos:relatedMatch rdf:resource="http://www.arg.dundee.ac.uk/aif#CA-Node"/>
+        <aifMapping>Related to conflict application nodes in AIF</aifMapping>
+    </rdf:Description>
+    
+    <!-- LKIF Mappings -->
+    
+    <owl:AnnotationProperty rdf:about="https://w3id.org/deliberation/mappings#lkifMapping">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#LegalSource">
+        <skos:closeMatch rdf:resource="http://www.estrellaproject.org/lkif-core/legal-source.owl#Legal_Document"/>
+        <lkifMapping>Closely aligned with LKIF legal document concept</lkifMapping>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Position">
+        <skos:relatedMatch rdf:resource="http://www.estrellaproject.org/lkif-core/expression.owl#Qualified_Expression"/>
+        <lkifMapping>When normative, related to qualified expressions in LKIF</lkifMapping>
+    </rdf:Description>
+</rdf:RDF>

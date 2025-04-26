@@ -1,0 +1,569 @@
+\documentclass[runningheads]{llncs}  % LNCS format
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{comment}
+\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhead[L]{Deliberation Knowledge Graph}
+%\fancyhead[C]{}
+%\fancyhead[R]{}
+
+\begin{document}
+
+
+%\title{The Deliberation Knowledge Graph: Connecting Deliberative Process Datasets through Semantic Integration} technical
+%VICTOR: I have change "the" DKG to "a" --just to be modest. others can do other deliberation knowledge graphs....
+\title {A Deliberation Knowledge Graph: Bridging Institutional and Civic Democratic Discourse} %political
+
+
+\author{Simone Vagnoni\inst{1,2} \and
+Victor Rodriguez-Doncel\inst{2}
+}
+
+\institute{LAST-JD, University of Bologna\\
+\email{simone.vagnoni3@unibo.it}
+\and
+OEG, Universidad Politécnica de Madrid\\
+\email{vrodriguez@fi.upm.es}
+}
+
+
+\maketitle
+
+\begin{abstract}
+%This paper presents the Deliberation Knowledge Graph (DKG), a comprehensive semantic framework for representing, connecting, and analyzing deliberative processes across different platforms and contexts. The DKG addresses the fragmentation of deliberation data by providing a unified ontological model that bridges formal institutional deliberation with civic participation platforms. We describe the ontology development process, guided by an Ontology Requirements Specification Document (ORSD), and demonstrate its application through the integration of diverse deliberation datasets, including European Parliament debates, civic participation platforms, and other deliberative forums. The paper details the technical implementation of data conversion pipelines, ontology mappings, and semantic querying capabilities. Our evaluation shows that the DKG successfully enables cross-dataset analysis, supports fallacy detection in deliberative discourse, and provides a standardized representation for heterogeneous deliberation data. The framework contributes to the field of deliberative democracy by facilitating more comprehensive analysis of deliberative processes and enabling new applications in democratic participation.
+
+%technical
+
+%political
+Democratic deliberation is taking place nowadays in the digital sphere. Discussions in the social media, in the new eDemocracy platforms and in the official parliament sessions create digital data. These deliberation data hold immense potential for analysis and insight, and the interest grows when data from diverse sources are interconnected. This paper introduces the Deliberation Knowledge Graph (DKG), a technological solution to integrate debates, persons and topics across different institutional and civic spheres. By integrating the currently fragmented deliberative information and by bridging the divide between institutional deliberations and the diverse forms of civic participation, a whole new range of applications is possible. The paper describes the technical solution and discusses its benefits and problems. First, a joint data model id described. Then, the systematic integration of deliberation data from European Parliament proceedings, civic participation platforms, and public forums is described. 
+As an example of application that can have this new technology, the paper describes how this DKG particularly enhances the capacity to examine argument quality, identify reasoning patterns, and trace the evolution of policy positions across different deliberative spaces. Potential applications and problems and discussed.
+%Our evaluation reveals significant implications for democratic governance, including improved transparency of decision-making processes, enhanced ability to detect problematic discourse patterns, and new opportunities for meaningful civic engagement with institutional deliberation. The framework contributes to deliberative democratic theory by providing empirical mechanisms to assess the quality and inclusivity of public discourse across traditional boundaries. This research advances our understanding of how integrated knowledge representation can strengthen democratic participation by creating more permeable boundaries between formal governance structures and civic deliberative spaces.
+\keywords{
+knowledge graph, deliberation, semantic web, ontology, parliamentary debates, civic participation}
+\end{abstract}
+
+\section{Introduction}
+%Victor: our first sentence is correct but it does not rock. It fails to catch the readers' attention. Victor might try to improve it. 
+%I am not pleased to cite Obama in his book "The audacity of hope": [...] "a "deliberative democracy" in which all citizens are required to engage in a process of testing their ideas against an external reality, persuading others of their point of view, and building shifting alliances of consent.". Yet, I would not enter into this political mess from the very beginning... 
+Deliberation has been defined as the `dialogue that bridges differences among participants’ diverse ways of speaking and knowing'\cite{deliberation}. Deliberative democracy emphasizes the role of open discussion, debate, and the exchange of reasons in democratic decision-making \cite{habermas1996between}. 
+
+In recent years, civic participation platforms such as Decidim, Consul, and other digital democracy tools have proliferated, offering fully digital spaces for engagement. At the same time, institutional deliberative forums, such as parliaments, have also begun leaving digital traces of their discussions. Together, these diverse deliberative spaces generate rich datasets that capture arguments, positions, and decision-making processes. This data can be used to analyze public discourse, track policy evolution, identify key arguments, and assess the impact of deliberation on decision-making. It also enables the development of AI-driven tools for summarization, sentiment analysis, and trend detection, enhancing transparency and civic engagement.
+
+The immense potential of these datasets could be even greater if they were analyzed together. However, their heterogeneous formats pose a challenge, making integration technically complex and hindering joint analysis. This paper presents a technical solution and discusses the possibilities it unleashes. 
+
+To unlock the full potential of deliberative data, we propose the Deliberation Knowledge Graph (DKG). A Knowledge Graph is a structured way of connecting information, much like a digital map that links key concepts, arguments, and discussions across different sources. Knowledge Graphs have been published in the last few years in many domains --see for example the concept of Legal Knowledge Graph\cite{lynx}. Instead of treating deliberation data as isolated records, the DKG organizes them into meaningful relationships, making it easier to analyze connections, track debates over time, and uncover insights. In particular, the DKG enables:
+
+%VICTOR: If we add one example per item, this is going to bee too lengthy. Nice, but not in the introduction. Should we move it then?
+\begin{itemize}
+    \item Integration of deliberative content from multiple platforms and sources. %Deliberation  taking place at the European Parliament sessions\footnote{\url{https://data.europarl.europa.eu/}} can be connected with the public discussion in internet forums, social networks, and other eParticipation platforms such as Have Your Say \footnote{\url{https://ec.europa.eu/info/law/better-regulation/have-your-say_en}} or Decidim. \footnote{\url{https://decidim.org}}.
+    \item Analysis of deliberative processes across different contexts
+    \footnote{\url{https://participedia.net}}
+    \item Standardized representation of argument structures for fallacy detection
+    \item Cross-dataset queries and comparative studies
+    \item Semantic enrichment of deliberation data, connecting them with context and participant names \footnote{\url{https://www.wikidata.org/}}
+\end{itemize}
+
+%VICTOR: Perhaps simplify this and include a mention to the impact of this work instead.
+
+\begin{comment}
+This paper describes the development of the DKG, guided by an Ontology Requirements Specification Document (ORSD) that defines its purpose, scope, and requirements. We demonstrate the application of the DKG through the integration of diverse deliberation datasets, with a particular focus on European Parliament debates as a case study. We also present the technical implementation of data conversion pipelines, ontology mappings, and semantic querying capabilities.
+
+The remainder of this paper is organized as follows: Section II reviews related work on deliberation ontologies and their limitations. Section III presents the DKG ontology, including its conceptual model and key components. Section IV describes the data integration process for connecting diverse deliberation datasets. Section V details the technical implementation of the DKG. Section VI presents a case study on European Parliament debates. Section VII evaluates the DKG against its requirements. Finally, Section VIII concludes the paper and discusses future work.
+\end{comment}
+
+
+\section{A Formal Conceptualisation of `Deliberation'}
+\subsection{Scope}
+In the domain of computer science, an ontology serves as a formalised data model that structures and represents knowledge in a manner intelligible to both machines and humans. Ontologies were born to formalise domain-expert consensus on a certain matter, but with the years, they have proved to be excellent data models in computer applications --in particular in knowledge graphs. 
+
+Parliaments, civic participation platforms and social networks host, in a way, different sorts of democratic deliberation. If they are to publish data, they will speak about 'members the parliament', 'citizens' or 'users' respectively to those participating in the debates. These debates will be called, perhaps, 'sessions', 'issues' and 'threads'. Yet, they refer essentially to the same ideas, at least in relation to the deliberation that is taking place. A computer ontology can define core concepts, and concepts from each of the data sources can be linked to it. 
+Ontologies provide a standardized vocabulary and a hierarchical framework, specifying, for instance, that "MPs" belong to "political parties," which in turn are types of "organizations." This structured representation enhances the interoperability of data across systems, supports advanced querying, and facilitates semantic reasoning. 
+
+Ontologies have been defined for all the conceivable domains. Here and there ontologies have flourished, big and small, complex and simple, with a computing purpose or even without it. Because the mere formalization of a consensus is of great interest. 
+
+In the design of computer ontologies, a joint effort is made by ontologists and domain experts. Creating ontologies in some technical domains is relatively straightforward. For instance, in the domain of transportation, experts may define concepts like `vehicle', `road', `traffic light', and `driver', along with their relationships—such as `a vehicle travels on a road' or `a driver operates a vehicle'. These relationships are clear, and consensus is often easy to reach. However, the domain of democratic deliberation is much more sensitive. It involves complex, subjective concepts like `argument', `consensus', `disagreement', and `public opinion', which may have different interpretations depending on cultural, political, or legal contexts. Reaching a consensus on these terms is a challenging task, as it requires aligning diverse perspectives on how deliberative processes should be represented and understood. Therefore, in order to build the ontology to serve as the basis for the DKG, a minimal commitment has been ambitioned. Moreover, its design has been led by the technical operations intended to be made on the data.
+
+\subsection{The Deliberation Knowledge Graph Ontology}
+The most formal representation of a conceptualisation in informatics is the computer ontology. 
+
+The Deliberation Knowledge Graph ontology was developed following the LOT methodology \cite{poveda-villalon2022lot}, guided by an Ontology Requirements Specification Document (ORSD) that defines its purpose, scope, and requirements.
+The ORSD for the DKG specifies both functional and non-functional requirements. The functional requirements are expressed as competency questions grouped into six categories:
+
+\begin{enumerate}
+    \item \textbf{Deliberation Process Structure:} Questions about the stages, timeline, and organization of deliberation processes.
+    \item \textbf{Participant Information:} Questions about the individuals and organizations involved in deliberations.
+    \item \textbf{Contributions and Arguments:} Questions about the content, structure, and relationships of deliberative contributions.
+    \item \textbf{Information Resources:} Questions about the documents, legal sources, and other information referenced in deliberations.
+    \item \textbf{Fallacy Detection:} Questions about the identification and classification of logical fallacies in arguments.
+    \item \textbf{Cross-Dataset Integration:} Questions about the standardization and mapping of deliberation data across different platforms.
+\end{enumerate}
+
+The non-functional requirements include compatibility with existing platforms, extensibility, reuse of existing ontologies, multilingual support, and consistency across data sources.
+
+\subsection{Conceptual Model}
+%VICTOR: THIS SUBSECTION NEEDS A DIAGRAM!!
+The DKG ontology is organized around five core modules:
+\begin{enumerate}
+    \item \textbf{Process Module:} Represents deliberation processes, their stages, timelines, and organizational context.
+    \item \textbf{Participant Module:} Represents individuals, groups, and organizations involved in deliberations, along with their roles and relationships.
+    \item \textbf{Contribution Module:} Represents arguments, positions, and other contributions made during deliberations, including their structure and relationships.
+    \item \textbf{Information Module:} Represents documents, legal sources, and other information resources referenced in deliberations.
+    \item \textbf{Integration Module:} Provides mechanisms for cross-platform identification, standardization, and mapping of deliberation data.
+\end{enumerate}
+
+\subsection{Key Classes and Properties}
+%VICTOR: THIS SUBSECTION NEEDS A DIAGRAM TOO. It is uninformative. With the help of diagrams it will improve, but we need to be sure we are not being boring. 
+
+
+The DKG ontology defines the following key classes:
+\begin{itemize}
+    \item \texttt{dkg:DeliberationProcess}: Represents a deliberative activity, including its stages, timeline, and outcomes.
+    \item \texttt{dkg:Participant}: Represents individuals or entities taking part in a deliberation process.
+    \item \texttt{dkg:Contribution}: Represents any input provided by a participant in a deliberation.
+    \item \texttt{dkg:Argument}: A structured form of contribution with premises and conclusions.
+    \item \texttt{dkg:Topic}: Represents the subject matter of a deliberation.
+    \item \texttt{dkg:Stage}: Represents a distinct phase in a deliberation process.
+    \item \texttt{dkg:Role}: Represents the function or position a participant holds in a deliberation.
+    \item \texttt{dkg:Organization}: Represents formal entities involved in deliberations.
+    \item \texttt{dkg:InformationResource}: Represents external sources of information referenced in deliberations.
+    \item \texttt{dkg:ArgumentStructure}: Represents the formal structure of an argument, including premises and conclusions.
+    \item \texttt{dkg:FallacyType}: Represents classifications of logical fallacies that can occur in arguments.
+    \item \texttt{dkg:CrossPlatformIdentifier}: Represents mechanisms to link entities across different deliberation platforms.
+\end{itemize}
+
+Key object properties include:
+
+\begin{itemize}
+    \item \texttt{dkg:hasParticipant}: Links a deliberation process to its participants.
+    \item \texttt{dkg:hasContribution}: Links a deliberation process to contributions made within it.
+    \item \texttt{dkg:madeBy}: Links a contribution to the participant who made it.
+    \item \texttt{dkg:responseTo}: Links a contribution to another contribution it responds to.
+    \item \texttt{dkg:hasTopic}: Links a deliberation process to its topic.
+    \item \texttt{dkg:hasStage}: Links a deliberation process to its stages.
+    \item \texttt{dkg:hasRole}: Links a participant to their role in a deliberation.
+    \item \texttt{dkg:isAffiliatedWith}: Links a participant to organizations they are affiliated with.
+    \item \texttt{dkg:hasPremise}: Links an argument to its premises.
+    \item \texttt{dkg:hasConclusion}: Links an argument to its conclusion.
+    \item \texttt{dkg:hasEvidence}: Links an argument or premise to supporting evidence.
+    \item \texttt{dkg:references}: Links a contribution to information resources it references.
+    \item \texttt{dkg:supports}: Indicates that an argument supports another argument or position.
+    \item \texttt{dkg:attacks}: Indicates that an argument attacks another argument or position.
+    \item \texttt{dkg:containsFallacy}: Links an argument to a specific type of logical fallacy it contains.
+\end{itemize}
+
+Key data properties include:
+
+\begin{itemize}
+    \item \texttt{dkg:identifier}: A unique identifier for an entity.
+    \item \texttt{dkg:name}: The name of an entity.
+    \item \texttt{dkg:text}: The textual content of a contribution, argument, position, premise, or conclusion.
+    \item \texttt{dkg:timestamp}: The date and time when a contribution was made.
+    \item \texttt{dkg:startDate}: The start date and time of a deliberation process or stage.
+    \item \texttt{dkg:endDate}: The end date and time of a deliberation process or stage.
+    \item \texttt{dkg:url}: The URL of an information resource.
+    \item \texttt{dkg:platformIdentifier}: An identifier specific to a particular platform.
+\end{itemize}
+
+
+\subsection{Ontology Reuse and Alignment}
+%VICTOR: This section is perhaps best in narrative form
+The DKG ontology reuses and aligns with several existing ontologies:
+
+\begin{itemize}
+    \item \textbf{FOAF (Friend of a Friend):} For representing people and their relationships.
+    \item \textbf{Dublin Core:} For metadata about resources.
+    \item \textbf{SIOC (Semantically Interlinked Online Communities):} For online discussion structures.
+    \item \textbf{AIF (Argument Interchange Format):} For argument structures.
+    \item \textbf{SKOS (Simple Knowledge Organization System):} For concept schemes and taxonomies.
+    \item \textbf{Time Ontology:} For temporal aspects of deliberation processes.
+    \item \textbf{Organization Ontology:} For organizational structures and roles.
+\end{itemize}
+
+\section{Data Integration Process}
+The DKG enables the integration of diverse deliberation datasets through a process of data conversion, ontology mapping, and semantic enrichment.
+
+\subsection{Dataset Selection and Analysis}
+We selected several deliberation datasets representing different types of deliberative processes:
+
+\begin{itemize}
+    \item \textbf{European Parliament Debates:} Verbatim reports of plenary sessions, representing formal institutional deliberation.
+    \item \textbf{Decide Madrid:} A civic participation platform used by the Madrid city government, representing local-level deliberation.
+    \item \textbf{EU Have Your Say:} The European Commission's public consultation platform, representing supranational-level deliberation.
+    \item \textbf{DeliData:} A research dataset of deliberative mini-publics, representing structured citizen deliberation.
+    \item \textbf{Habermas Machine:} A dataset of structured deliberative discussions, representing experimental deliberation.
+    \item \textbf{US Supreme Court Arguments:} Transcripts of oral arguments, representing legal deliberation.
+    \item \textbf{Decidim Barcelona:} Data from the Decidim participation platform, representing digital deliberation.
+\end{itemize}
+
+For each dataset, we analyzed its structure, content, and format to identify key entities and relationships that could be mapped to the DKG ontology.
+
+\subsection{Data Conversion Pipelines}
+We developed data conversion pipelines for each dataset to transform the original data into RDF format aligned with the DKG ontology. The general process includes:
+
+\begin{enumerate}
+    \item \textbf{Data Extraction:} Extracting data from the original source (HTML, CSV, JSON, etc.).
+    \item \textbf{Data Cleaning:} Cleaning and normalizing the data to ensure consistency.
+    \item \textbf{Entity Identification:} Identifying key entities (participants, contributions, topics, etc.).
+    \item \textbf{Relationship Extraction:} Identifying relationships between entities.
+    \item \textbf{RDF Conversion:} Converting the data to RDF format aligned with the DKG ontology.
+\end{enumerate}
+
+For each dataset, we created specific conversion scripts tailored to its structure and content. For example, for European Parliament debates, we developed a pipeline that:
+
+\begin{enumerate}
+    \item Extracts debate information from HTML verbatim reports
+    \item Identifies speakers, their roles, and political affiliations
+    \item Extracts speech content and metadata
+    \item Identifies topics and subtopics
+    \item Converts the data to JSON-LD format aligned with the DKG ontology
+    \item Transforms the JSON-LD to RDF/XML for integration with other datasets
+\end{enumerate}
+
+\subsection{Ontology Mapping}
+For each dataset, we created mappings between its original schema and the DKG ontology. These mappings define how entities and relationships in the original data correspond to classes and properties in the DKG ontology. For example:
+
+\begin{itemize}
+    \item European Parliament debates: Speaker → dkg:Participant, Speech → dkg:Contribution, Debate → dkg:DeliberationProcess
+    \item Decide Madrid: User → dkg:Participant, Proposal → dkg:Contribution, Comment → dkg:Contribution, Debate → dkg:DeliberationProcess
+    \item EU Have Your Say: Feedback → dkg:Contribution, Initiative → dkg:DeliberationProcess, Contributor → dkg:Participant
+\end{itemize}
+
+These mappings enable the transformation of heterogeneous data into a unified representation based on the DKG ontology.
+
+\subsection{Semantic Enrichment}
+Beyond basic data conversion, we enriched the integrated data with additional semantic information:
+
+\begin{itemize}
+    \item \textbf{Entity Linking:} Linking participants to external knowledge bases (e.g., Wikidata, DBpedia).
+    \item \textbf{Topic Classification:} Classifying contributions by topic using controlled vocabularies.
+    \item \textbf{Argument Structure Analysis:} Identifying premises, conclusions, and argument structures.
+    \item \textbf{Temporal Alignment:} Aligning temporal information across datasets.
+    \item \textbf{Cross-Platform Identity Resolution:} Identifying the same participants across different platforms.
+\end{itemize}
+
+This semantic enrichment enhances the value of the integrated data by providing additional context and enabling more sophisticated analysis.
+
+\section{Technical Implementation}
+%VICTOR: this section should be made a simple subsection of the previous section and with far less detail.
+The technical implementation of the DKG includes the ontology implementation, data conversion tools, and a query interface.
+
+\subsection{Ontology Implementation}
+The DKG ontology is implemented in OWL 2 (Web Ontology Language) using RDF/XML syntax. The ontology is modular, with separate files for each core module (Process, Participant, Contribution, Information, and Integration). The ontology is published at a persistent URI with content negotiation, following best practices for linked data.
+
+\subsection{Data Conversion Tools}
+We developed a suite of data conversion tools to transform deliberation data from various formats into RDF aligned with the DKG ontology:
+
+\begin{itemize}
+    \item \texttt{convert\_verbatim\_to\_json.py}: Converts European Parliament verbatim HTML to JSON-LD.
+    \item \texttt{convert\_json\_to\_rdf.py}: Converts JSON-LD to RDF/XML.
+    \item \texttt{query\_rdf\_data.py}: Provides SPARQL query capabilities for the RDF data.
+\end{itemize}
+
+These tools are implemented in Python using libraries such as BeautifulSoup for HTML parsing and RDFLib for RDF manipulation. The tools are designed to be modular and extensible, allowing for the addition of new data sources and formats.
+
+\subsection{Data Storage and Access}
+The integrated RDF data is stored in a triple store (Virtuoso Open Source) that provides SPARQL query capabilities. The triple store is exposed through a SPARQL endpoint that allows for complex queries across the integrated datasets. The data is also available as downloadable RDF dumps for offline analysis.
+
+\subsection{Query Interface}
+We developed a web-based query interface that allows users to explore the integrated deliberation data through predefined queries and visualizations. The interface provides:
+
+\begin{itemize}
+    \item Basic search functionality for finding deliberation processes, participants, and contributions.
+    \item Advanced query capabilities using SPARQL for complex analysis.
+    \item Visualizations of deliberation structures, participant networks, and argument flows.
+    \item Export options for query results in various formats (CSV, JSON, RDF).
+\end{itemize}
+
+The query interface is implemented as a web application using modern JavaScript frameworks and libraries for data visualization.
+
+\section{Case Study: European Parliament Debates}
+To demonstrate the application of the DKG, we present a case study on the integration and analysis of European Parliament debates.
+
+\subsection{Data Source and Characteristics}
+The European Parliament publishes verbatim reports of its plenary sessions in HTML format. These reports contain:
+
+\begin{itemize}
+    \item Structured information about the debate (date, location, session)
+    \item Speeches by Members of the European Parliament (MEPs) and other participants
+    \item Metadata about speakers (name, political group, role)
+    \item Topic information and agenda items
+    \item Procedural information (voting, points of order, etc.)
+\end{itemize}
+
+The verbatim reports are available in multiple languages and cover all plenary sessions of the European Parliament.
+
+\subsection{Conversion Process}
+We developed a conversion pipeline for European Parliament debates that includes:
+
+\begin{enumerate}
+    \item \textbf{HTML Parsing:} Extracting structured information from the verbatim HTML using BeautifulSoup.
+    \item \textbf{Entity Extraction:} Identifying speakers, their roles, and political affiliations.
+    \item \textbf{Speech Extraction:} Extracting speech content and metadata (timestamp, topic).
+    \item \textbf{JSON-LD Conversion:} Converting the extracted data to JSON-LD format aligned with the DKG ontology.
+    \item \textbf{RDF Conversion:} Transforming the JSON-LD to RDF/XML for integration with other datasets.
+\end{enumerate}
+
+The conversion process is implemented in Python and can be run on any verbatim report from the European Parliament website.
+
+\subsection{Data Model Mapping}
+We mapped the European Parliament debate data to the DKG ontology as follows:
+
+\begin{itemize}
+    \item Debate → dkg:DeliberationProcess
+    \item Speaker → dkg:Participant
+    \item Political Group → dkg:Organization
+    \item Role (e.g., President) → dkg:Role
+    \item Speech → dkg:Contribution
+    \item Topic → dkg:Topic
+    \item Session → dkg:Stage
+\end{itemize}
+
+This mapping enables the integration of European Parliament debates with other deliberation datasets in the DKG.
+
+\begin{comment}
+    
+\subsection{Sample Conversion}
+Here is a sample of the conversion process for a speech in the European Parliament:
+
+\begin{lstlisting}[language=json,caption=JSON-LD representation of a speech]
+{
+  "@context": {
+    "dkg": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "dkg:Contribution",
+  "dkg:identifier": "contribution_1",
+  "dkg:text": "First of all, dear colleagues, two years ago, on 28 February 2023, in Tempi, Greece, a tragic railway accident cost 57 people their lives and injured even more. We mark a sad anniversary today as our hearts go out to the victims, to those who lost their loved ones and to the injured who still bear the scars of that day. This House remembers them and honours them.",
+  "dkg:timestamp": "2025-03-10T17:02:43",
+  "dkg:madeBy": {
+    "@id": "participant_1"
+  }
+}
+\end{lstlisting}
+
+And the corresponding RDF/XML representation:
+
+\begin{lstlisting}[language=xml,caption=RDF/XML representation of a speech]
+<rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_1">
+  <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+  <dkg:identifier>contribution_1</dkg:identifier>
+  <dkg:text>First of all, dear colleagues, two years ago, on 28 February 2023, in Tempi, Greece, a tragic railway accident cost 57 people their lives and injured even more. We mark a sad anniversary today as our hearts go out to the victims, to those who lost their loved ones and to the injured who still bear the scars of that day. This House remembers them and honours them.</dkg:text>
+  <dkg:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:02:43</dkg:timestamp>
+  <dkg:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+</rdf:Description>
+\end{lstlisting}
+
+\subsection{Query Examples}
+The integrated European Parliament debate data can be queried using SPARQL. Here are some example queries:
+
+\begin{lstlisting}[language=sql,caption=SPARQL query for contributions by a participant]
+PREFIX dkg: <https://w3id.org/deliberation/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?timestamp ?text
+WHERE {
+  ?participant rdf:type dkg:Participant ;
+              dkg:name ?name ;
+              ^dkg:madeBy ?contribution .
+  ?contribution dkg:timestamp ?timestamp ;
+               dkg:text ?text .
+  FILTER(REGEX(?name, "President", "i"))
+}
+ORDER BY ?timestamp
+\end{lstlisting}
+
+\begin{lstlisting}[language=sql,caption=SPARQL query for contributions on a specific topic]
+PREFIX dkg: <https://w3id.org/deliberation/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?topic_name ?participant_name ?timestamp ?text
+WHERE {
+  ?topic rdf:type dkg:Topic ;
+        dkg:name ?topic_name .
+  ?process dkg:hasTopic ?topic ;
+          dkg:hasContribution ?contribution .
+  ?contribution dkg:timestamp ?timestamp ;
+               dkg:text ?text ;
+               dkg:madeBy ?participant .
+  ?participant dkg:name ?participant_name .
+  FILTER(REGEX(?text, "Belarus", "i"))
+}
+ORDER BY ?timestamp
+\end{lstlisting}
+
+These queries demonstrate the analytical capabilities enabled by the DKG integration of European Parliament debates.
+\end{comment}
+
+\section{Evaluation}
+We evaluated the DKG against its requirements specified in the ORSD, focusing on its ability to answer competency questions, fulfill non-functional requirements, and enable cross-dataset analysis.
+
+\subsection{Competency Question Coverage}
+We assessed the DKG's ability to answer the competency questions defined in the ORSD. For each question, we formulated a SPARQL query and tested it against the integrated data. The results show that the DKG can answer all competency questions, with varying levels of completeness depending on the available data.
+
+For example, for the competency question "What are the participants in a specific deliberation?", we can use the following SPARQL query:
+
+\begin{lstlisting}[language=sql]
+PREFIX dkg: <https://w3id.org/deliberation/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?participant_name ?role ?organization
+WHERE {
+  ?process rdf:type dkg:DeliberationProcess ;
+           dkg:identifier "ep_debate_20250310" ;
+           dkg:hasParticipant ?participant .
+  ?participant dkg:name ?participant_name .
+  OPTIONAL {
+    ?participant dkg:hasRole ?role_uri .
+    ?role_uri dkg:name ?role .
+  }
+  OPTIONAL {
+    ?participant dkg:isAffiliatedWith ?org_uri .
+    ?org_uri dkg:name ?organization .
+  }
+}
+ORDER BY ?participant_name
+\end{lstlisting}
+
+This query returns all participants in the European Parliament debate from March 10, 2025, along with their roles and organizational affiliations.
+
+\subsection{Non-Functional Requirements}
+We also evaluated the DKG against its non-functional requirements:
+
+\begin{itemize}
+    \item \textbf{Compatibility:} The DKG is compatible with existing deliberation platforms' data models, as demonstrated by the successful integration of diverse datasets.
+    \item \textbf{Extensibility:} The modular design of the DKG ontology allows for extension to accommodate new deliberation platforms and formats.
+    \item \textbf{Reuse:} The DKG reuses existing ontologies where appropriate, including FOAF, Dublin Core, SIOC, and AIF.
+    \item \textbf{Documentation:} The DKG is documented with clear examples of usage, including this paper and accompanying technical documentation.
+    \item \textbf{Multilingual Support:} The DKG supports multilingual content, as demonstrated by the integration of European Parliament debates in multiple languages.
+    \item \textbf{Mappings:} The DKG provides mappings to previous deliberation ontologies, enabling interoperability with existing systems.
+    \item \textbf{Reasoning:} The DKG supports reasoning for automated fallacy detection through its explicit modeling of argument structures.
+    \item \textbf{Consistency:} The DKG maintains consistency across data from different sources through its unified ontological model.
+\end{itemize}
+
+\subsection{Cross-Dataset Analysis}
+To evaluate the DKG's ability to enable cross-dataset analysis, we performed several case studies comparing deliberative processes across different platforms. For example, we compared:
+
+\begin{itemize}
+    \item The structure and content of arguments in European Parliament debates versus civic participation platforms.
+    \item The role of participants in formal versus informal deliberative settings.
+    \item The use of information resources across different types of deliberation.
+    \item The temporal patterns of deliberative activities across platforms.
+\end{itemize}
+
+These case studies demonstrate the DKG's ability to support comparative analysis of deliberative processes across different contexts, which was not possible with previous approaches.
+
+\subsection{Discussion} 
+%MAYBE THIS WILL BE A FULL SECTION? (VICTOR)
+Brainstorming
+
++ Democracia epistémica
+
++ Transparencia etc.
+
+- Privacidad
+
+- Manipulación (hypersuassion, floridi)
+
+- Consecuencias de que el debate se digitalice
+
+- Dificultades técnicas
+
+-
+%VICTOR Uncommon, but I have moved the "Related Work" into the last section because our readers will have lost the flow right here...
+\section{Related Work}
+%VICTOR: We need a first paragraph defining what an ontology is, and what a legal ontology is. 
+Several ontologies have been developed to represent aspects of deliberation and argumentation. However, each has limitations that the DKG aims to address.
+
+\subsection{Existing Deliberation Ontologies}
+\subsubsection{DELIB Ontology}
+The DELIB Ontology \cite{porwol2014delib} models e-participation deliberation processes with social media integration. It explicitly supports dual e-participation (government and citizen-led) and connects deliberation with social media content. However, it focuses primarily on electronic participation and lacks detailed representation of legal frameworks.
+
+\subsubsection{Deliberation Ontology}
+The Deliberation Ontology by Panagiotopoulos et al. \cite{panagiotopoulos2011deliberation} supports public decision-making in policy deliberations with a strong focus on legal information integration. However, it adopts a government-centric approach with limited participant modeling and does not account for informal deliberation spaces.
+
+\subsubsection{Argument Representation Ontologies}
+The Argument Interchange Format (AIF) \cite{chesnevar2006aif} provides a sophisticated model for argument structure and relations, capturing support/attack relationships with a strong theoretical foundation. However, it focuses only on argumentation, not broader deliberation processes, and has limited integration with other aspects of deliberation.
+
+The Issue-Based Information System (IBIS) \cite{kunz1970ibis} models issues, positions, and arguments with a simple, intuitive structure. However, it has limited expressivity for complex deliberations and lacks participant or process modeling.
+
+\subsubsection{Related Domain Ontologies}
+The Semantically Interlinked Online Communities (SIOC) ontology \cite{breslin2006sioc} describes online discussion information structure and is widely used in social media applications. However, it is not specifically designed for deliberation and lacks political and legal conceptualization.
+
+The Legal Knowledge Interchange Format (LKIF) \cite{hoekstra2007lkif} facilitates communication between legal knowledge systems with comprehensive legal information modeling. However, it is highly specialized for the legal domain and lacks direct connection to civic participation concepts.
+
+\subsection{Limitations of Existing Approaches}
+Despite the availability of multiple ontologies in related domains, a unified Deliberation Knowledge Graph is necessary for several reasons:
+
+\begin{enumerate}
+    \item \textbf{Integration Gap:} None of the existing ontologies adequately bridges formal institutional deliberation with civic participation platforms.
+    
+    \item \textbf{Fallacy Detection Support:} Existing ontologies lack the specific structures required for computational identification of logical fallacies in deliberative discourse.
+    
+    \item \textbf{Cross-Dataset Standardization:} Current deliberation data exists in heterogeneous formats across platforms, requiring a common semantic framework.
+    
+    \item \textbf{Fragmentation:} Each existing ontology covers only part of the deliberation ecosystem, lacking a comprehensive framework.
+    
+    \item \textbf{Interoperability Challenges:} Current solutions operate in silos, making cross-platform analysis difficult.
+    
+    \item \textbf{Multi-perspective Integration:} Existing approaches typically adopt either a government-centric or citizen-centric perspective, not both.
+    
+    \item \textbf{Technical Evolution:} New deliberation platforms and technologies emerge regularly, requiring a modular and extensible approach.
+    
+    \item \textbf{Research-Practice Gap:} Current ontologies are either too theoretical or too implementation-specific.
+\end{enumerate}
+
+The DKG addresses these limitations by providing a unifying semantic layer that leverages the strengths of existing ontologies while filling their gaps through a comprehensive approach to deliberation modeling.
+
+\section{Conclusion and Future Work}
+This paper has presented the Deliberation Knowledge Graph (DKG), a comprehensive semantic framework for representing, connecting, and analyzing deliberative processes across different platforms and contexts. The DKG addresses the fragmentation of deliberation data by providing a unified ontological model that bridges formal institutional deliberation with civic participation platforms.
+
+The main contributions of this work include:
+
+\begin{itemize}
+    \item A comprehensive ontology for deliberative processes that covers institutional and civic contexts.
+    \item Data conversion pipelines for integrating diverse deliberation datasets.
+    \item Semantic querying capabilities for cross-dataset analysis.
+    \item A case study on European Parliament debates demonstrating the application of the DKG.
+\end{itemize}
+
+The DKG enables new applications in deliberative democracy, including:
+
+\begin{itemize}
+    \item Comparative analysis of deliberative processes across different platforms and contexts.
+    \item Tracking the flow of arguments and information across deliberative spaces.
+    \item Identifying patterns of participation and influence in deliberative processes.
+    \item Detecting logical fallacies and other issues in deliberative discourse.
+    \item Supporting more effective deliberation through data-driven insights.
+\end{itemize}
+
+Future work will focus on:
+
+\begin{itemize}
+    \item Expanding the range of integrated datasets to include more deliberative platforms and contexts.
+    \item Developing more sophisticated analysis tools for deliberative processes, including argument mining and network analysis.
+    \item Implementing automated fallacy detection based on the DKG's argument structure modeling.
+    \item Creating user-friendly interfaces for non-technical users to explore and analyze deliberation data.
+    \item Developing real-time integration capabilities for live deliberation processes.
+\end{itemize}
+
+The Deliberation Knowledge Graph represents a significant step forward in the semantic representation and analysis of deliberative processes. By bridging the gap between formal institutional deliberation and civic participation platforms, it enables new forms of analysis and understanding that can contribute to more effective and inclusive democratic processes.
+
+\section*{Acknowledgment}
+This work has been partially funded by the project HARNESS, which has received funding from the EU’s Horizon 2020 research and innovation programme under grant agreement no. 101169409, see https://www.harness-network.eu, and in the framework of the research training projects “Territorio: Transizione tecnologica, culturale, economica e sociale verso la sostenibilità” (PR. FSE + 2021/2027– DGR n. 509 of 03/04/2023) - CUP J33C23000610006
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
