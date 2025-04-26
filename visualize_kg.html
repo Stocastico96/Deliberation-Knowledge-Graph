@@ -289,13 +289,34 @@
         
         // Process the JSON-LD data to extract nodes and links
         // This is a simplified version that works with our specific knowledge graph structure
-        if (data && data['@graph']) {
-          data['@graph'].forEach(item => {
+        if (data) {
+          // If data is an array, use it directly, otherwise check for @graph property
+          const items = Array.isArray(data) ? data : (data['@graph'] || []);
+          
+          items.forEach(item => {
             // Extract node information
             if (item['@id']) {
               const id = item['@id'];
-              const type = item['@type'] ? item['@type'].split(':').pop() : 'Unknown';
-              const name = item['del:name'] || item['dkg:name'] || extractNameFromUri(id);
+              // Handle type which can be a string or an array
+              let type = 'Unknown';
+              if (item['@type']) {
+                if (Array.isArray(item['@type'])) {
+                  // Get the last part of the URI for the type
+                  const typeUri = item['@type'][0];
+                  type = typeUri.split('#').pop() || typeUri.split('/').pop();
+                } else {
+                  type = item['@type'].split('#').pop() || item['@type'].split('/').pop();
+                }
+              }
+              
+              // Handle name which can be in different formats
+              let name = extractNameFromUri(id);
+              if (item['https://w3id.org/deliberation/ontology#name']) {
+                if (Array.isArray(item['https://w3id.org/deliberation/ontology#name']) && 
+                    item['https://w3id.org/deliberation/ontology#name'][0]['@value']) {
+                  name = item['https://w3id.org/deliberation/ontology#name'][0]['@value'];
+                }
+              }
               
               // Add node if it doesn't exist
               if (!nodeMap.has(id)) {
@@ -311,30 +332,45 @@
               
               // Extract links
               Object.keys(item).forEach(key => {
-                if (key !== '@id' && key !== '@type' && key !== 'del:name' && key !== 'dkg:name') {
-                  const value = item[key];
-                  if (value && value['@id']) {
-                    const targetId = value['@id'];
-                    
-                    // Add target node if it doesn't exist
-                    if (!nodeMap.has(targetId)) {
-                      const targetNode = {
-                        id: targetId,
-                        type: 'Unknown',
-                        name: extractNameFromUri(targetId),
-                        dataset: extractDatasetFromUri(targetId)
-                      };
-                      nodes.push(targetNode);
-                      nodeMap.set(targetId, targetNode);
+                if (key !== '@id' && key !== '@type') {
+                  const values = item[key];
+                  
+                  // Handle both single values and arrays of values
+                  const valueArray = Array.isArray(values) ? values : [values];
+                  
+                  valueArray.forEach(value => {
+                    if (value && value['@id']) {
+                      const targetId = value['@id'];
+                      
+                      // Add target node if it doesn't exist
+                      if (!nodeMap.has(targetId)) {
+                        const targetNode = {
+                          id: targetId,
+                          type: 'Unknown',
+                          name: extractNameFromUri(targetId),
+                          dataset: extractDatasetFromUri(targetId)
+                        };
+                        nodes.push(targetNode);
+                        nodeMap.set(targetId, targetNode);
+                      }
+                      
+                      // Extract predicate name from URI
+                      let predicate = key;
+                      if (key.includes('#')) {
+                        predicate = key.split('#').pop();
+                      } else if (key.includes('/')) {
+                        const parts = key.split('/');
+                        predicate = parts[parts.length - 1];
+                      }
+                      
+                      // Add link
+                      links.push({
+                        source: id,
+                        target: targetId,
+                        type: predicate
+                      });
                     }
-                    
-                    // Add link
-                    links.push({
-                      source: id,
-                      target: targetId,
-                      type: key.split(':').pop()
-                    });
-                  }
+                  });
                 }
               });
             }
