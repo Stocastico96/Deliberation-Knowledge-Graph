@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deliberation Knowledge Graph - SPARQL Endpoint</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Additional styles for SPARQL interface */
+    .sparql-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .query-editor {
+      width: 100%;
+      height: 200px;
+      font-family: monospace;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: var(--border-radius);
+      background-color: #f8f9fa;
+      resize: vertical;
+    }
+    
+    .query-controls {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .results-container {
+      margin-top: 2rem;
+      overflow-x: auto;
+    }
+    
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .results-table th, .results-table td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .results-table th {
+      background-color: var(--primary-color);
+      color: white;
+    }
+    
+    .results-table tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+    
+    .results-table tr:hover {
+      background-color: #f1f5f9;
+    }
+    
+    .uri {
+      color: var(--primary-color);
+      word-break: break-all;
+    }
+    
+    .literal {
+      color: var(--secondary-color);
+    }
+    
+    .example-queries {
+      margin-top: 3rem;
+    }
+    
+    .example-query {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    
+    .example-query:hover {
+      background-color: #f1f5f9;
+    }
+    
+    .example-query pre {
+      margin: 0;
+      white-space: pre-wrap;
+      font-family: monospace;
+    }
+    
+    .loading {
+      display: none;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    
+    .loading-spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-left-color: var(--primary-color);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .error-message {
+      background-color: #fee2e2;
+      color: #b91c1c;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      margin-bottom: 1rem;
+      display: none;
+    }
+    
+    .hero-bg {
+      background-image: url('DKG daft.png');
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section with Background Image -->
+  <section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>Deliberation Knowledge Graph</h1>
+      <p>SPARQL Endpoint for Querying the Knowledge Graph</p>
+      <div class="hero-buttons">
+        <a href="index.html" class="btn">Back to Home</a>
+        <a href="#sparql-interface" class="btn btn-secondary">Start Querying</a>
+      </div>
+    </div>
+  </section>
+
+  <header>
+    <div class="container">
+      <h1>Deliberation Knowledge Graph</h1>
+      <p class="subtitle">SPARQL Endpoint</p>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#sparql-interface"><i class="fas fa-search"></i> Query Interface</a></li>
+          <li><a href="#example-queries"><i class="fas fa-list"></i> Example Queries</a></li>
+          <li><a href="#about-sparql"><i class="fas fa-info-circle"></i> About SPARQL</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="sparql-interface" class="section">
+    <div class="sparql-container">
+      <h2>SPARQL Query Interface</h2>
+      <p>Use this interface to query the Deliberation Knowledge Graph using SPARQL. Enter your query in the text area below and click "Execute Query" to see the results.</p>
+      
+      <div class="error-message" id="error-message"></div>
+      
+      <textarea id="query-editor" class="query-editor" placeholder="Enter your SPARQL query here...">PREFIX del: <https://w3id.org/deliberation/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?process ?name
+WHERE {
+  ?process rdf:type del:DeliberationProcess ;
+           del:name ?name .
+}
+LIMIT 10</textarea>
+      
+      <div class="query-controls">
+        <button id="execute-query" class="btn">Execute Query</button>
+        <button id="clear-results" class="btn btn-secondary">Clear Results</button>
+        <select id="endpoint-select" class="form-select">
+          <option value="http://localhost:3030/deliberation/sparql">Local Endpoint (http://localhost:3030/deliberation/sparql)</option>
+          <option value="https://example.org/sparql">Remote Endpoint (Example)</option>
+        </select>
+      </div>
+      
+      <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+        <p>Executing query...</p>
+      </div>
+      
+      <div class="results-container">
+        <h3>Query Results</h3>
+        <div id="results">
+          <p>Results will appear here after executing a query.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="example-queries" class="section">
+    <div class="container">
+      <h2>Example Queries</h2>
+      <p>Click on any of the example queries below to load it into the query editor.</p>
+      
+      <div class="example-queries">
+        <div class="example-query" data-query="PREFIX del: <https://w3id.org/deliberation/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?process ?name
+WHERE {
+  ?process rdf:type del:DeliberationProcess ;
+           del:name ?name .
+}
+LIMIT 10">
+          <h4>List all deliberation processes</h4>
+          <pre>PREFIX del: &lt;https://w3id.org/deliberation/ontology#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+
+SELECT ?process ?name
+WHERE {
+  ?process rdf:type del:DeliberationProcess ;
+           del:name ?name .
+}
+LIMIT 10</pre>
+        </div>
+        
+        <div class="example-query" data-query="PREFIX del: <https://w3id.org/deliberation/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?contribution ?text
+WHERE {
+  ?contribution rdf:type del:Contribution ;
+               del:text ?text ;
+               del:madeBy ?participant .
+  ?participant del:name &quot;Iratxe García Pérez&quot; .
+}
+LIMIT 10">
+          <h4>Find all contributions by a specific participant</h4>
+          <pre>PREFIX del: &lt;https://w3id.org/deliberation/ontology#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+
+SELECT ?contribution ?text
+WHERE {
+  ?contribution rdf:type del:Contribution ;
+               del:text ?text ;
+               del:madeBy ?participant .
+  ?participant del:name "Iratxe García Pérez" .
+}
+LIMIT 10</pre>
+        </div>
+        
+        <div class="example-query" data-query="PREFIX del: <https://w3id.org/deliberation/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?topic ?name
+WHERE {
+  ?process rdf:type del:DeliberationProcess ;
+           del:name ?processName ;
+           del:hasTopic ?topic .
+  ?topic del:name ?name .
+  FILTER(CONTAINS(?processName, &quot;European Parliament&quot;))
+}
+LIMIT 20">
+          <h4>Find all topics discussed in European Parliament debates</h4>
+          <pre>PREFIX del: &lt;https://w3id.org/deliberation/ontology#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+
+SELECT ?topic ?name
+WHERE {
+  ?process rdf:type del:DeliberationProcess ;
+           del:name ?processName ;
+           del:hasTopic ?topic .
+  ?topic del:name ?name .
+  FILTER(CONTAINS(?processName, "European Parliament"))
+}
+LIMIT 20</pre>
+        </div>
+        
+        <div class="example-query" data-query="PREFIX del: <https://w3id.org/deliberation/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?participant ?name ?orgName
+WHERE {
+  ?participant rdf:type del:Participant ;
+               del:name ?name ;
+               del:isAffiliatedWith ?org .
+  ?org del:name ?orgName .
+}
+LIMIT 20">
+          <h4>List participants and their organizations</h4>
+          <pre>PREFIX del: &lt;https://w3id.org/deliberation/ontology#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+
+SELECT ?participant ?name ?orgName
+WHERE {
+  ?participant rdf:type del:Participant ;
+               del:name ?name ;
+               del:isAffiliatedWith ?org .
+  ?org del:name ?orgName .
+}
+LIMIT 20</pre>
+        </div>
+        
+        <div class="example-query" data-query="PREFIX del: <https://w3id.org/deliberation/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?contribution ?text ?responseTo
+WHERE {
+  ?contribution rdf:type del:Contribution ;
+               del:text ?text ;
+               del:responseTo ?responseTo .
+}
+LIMIT 10">
+          <h4>Find responses to contributions</h4>
+          <pre>PREFIX del: &lt;https://w3id.org/deliberation/ontology#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+
+SELECT ?contribution ?text ?responseTo
+WHERE {
+  ?contribution rdf:type del:Contribution ;
+               del:text ?text ;
+               del:responseTo ?responseTo .
+}
+LIMIT 10</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-sparql" class="section">
+    <div class="container">
+      <h2>About SPARQL</h2>
+      <p>SPARQL (SPARQL Protocol and RDF Query Language) is a semantic query language for databases, able to retrieve and manipulate data stored in Resource Description Framework (RDF) format. It was made a standard by the W3C in 2008.</p>
+      
+      <h3>Basic SPARQL Query Structure</h3>
+      <pre class="code-block">
+PREFIX prefix_name: &lt;URI&gt;
+
+SELECT ?variable1 ?variable2 ...
+WHERE {
+  ?subject predicate ?object .
+  ...
+}
+      </pre>
+      
+      <h3>Common Prefixes for the Deliberation Knowledge Graph</h3>
+      <ul>
+        <li><code>PREFIX del: &lt;https://w3id.org/deliberation/ontology#&gt;</code> - Deliberation Ontology</li>
+        <li><code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code> - RDF</li>
+        <li><code>PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;</code> - RDF Schema</li>
+        <li><code>PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;</code> - Friend of a Friend</li>
+        <li><code>PREFIX sioc: &lt;http://rdfs.org/sioc/ns#&gt;</code> - Semantically-Interlinked Online Communities</li>
+      </ul>
+      
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="https://www.w3.org/TR/sparql11-query/" target="_blank">SPARQL 1.1 Query Language - W3C Recommendation</a></li>
+        <li><a href="https://www.w3.org/TR/sparql11-overview/" target="_blank">SPARQL 1.1 Overview - W3C Recommendation</a></li>
+        <li><a href="https://jena.apache.org/tutorials/sparql.html" target="_blank">Apache Jena - SPARQL Tutorial</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Simone Vagnoni, CIRSFID, University of Bologna - OEG, Universidad Politecnica de Madrid</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const queryEditor = document.getElementById('query-editor');
+      const executeButton = document.getElementById('execute-query');
+      const clearButton = document.getElementById('clear-results');
+      const endpointSelect = document.getElementById('endpoint-select');
+      const resultsDiv = document.getElementById('results');
+      const loadingDiv = document.getElementById('loading');
+      const errorMessageDiv = document.getElementById('error-message');
+      const exampleQueries = document.querySelectorAll('.example-query');
+      
+      // Load example query when clicked
+      exampleQueries.forEach(example => {
+        example.addEventListener('click', function() {
+          queryEditor.value = this.getAttribute('data-query');
+          queryEditor.focus();
+          // Scroll to query editor
+          document.getElementById('sparql-interface').scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+      
+      // Execute query
+      executeButton.addEventListener('click', function() {
+        const query = queryEditor.value.trim();
+        if (!query) {
+          showError('Please enter a SPARQL query.');
+          return;
+        }
+        
+        const endpoint = endpointSelect.value;
+        executeQuery(endpoint, query);
+      });
+      
+      // Clear results
+      clearButton.addEventListener('click', function() {
+        resultsDiv.innerHTML = '<p>Results will appear here after executing a query.</p>';
+        hideError();
+      });
+      
+      function executeQuery(endpoint, query) {
+        showLoading();
+        hideError();
+        
+        // Encode the query for URL
+        const encodedQuery = encodeURIComponent(query);
+        
+        // Create the URL for the SPARQL endpoint
+        const url = `${endpoint}?query=${encodedQuery}&format=json`;
+        
+        fetch(url, {
+          method: 'GET',
+          headers: {
+            'Accept': 'application/sparql-results+json'
+          }
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          hideLoading();
+          displayResults(data);
+        })
+        .catch(error => {
+          hideLoading();
+          showError(`Error executing query: ${error.message}. Make sure the SPARQL endpoint is running and accessible.`);
+          console.error('Error:', error);
+        });
+      }
+      
+      function displayResults(data) {
+        if (!data.results || !data.results.bindings || data.results.bindings.length === 0) {
+          resultsDiv.innerHTML = '<p>No results found.</p>';
+          return;
+        }
+        
+        // Get the variable names from the head
+        const variables = data.head.vars;
+        
+        // Create the table
+        let tableHtml = '<table class="results-table">';
+        
+        // Add the header row
+        tableHtml += '<thead><tr>';
+        variables.forEach(variable => {
+          tableHtml += `<th>${variable}</th>`;
+        });
+        tableHtml += '</tr></thead>';
+        
+        // Add the data rows
+        tableHtml += '<tbody>';
+        data.results.bindings.forEach(binding => {
+          tableHtml += '<tr>';
+          variables.forEach(variable => {
+            if (binding[variable]) {
+              const value = binding[variable].value;
+              const type = binding[variable].type;
+              
+              if (type === 'uri') {
+                tableHtml += `<td><span class="uri">${value}</span></td>`;
+              } else {
+                tableHtml += `<td><span class="literal">${value}</span></td>`;
+              }
+            } else {
+              tableHtml += '<td></td>';
+            }
+          });
+          tableHtml += '</tr>';
+        });
+        tableHtml += '</tbody></table>';
+        
+        resultsDiv.innerHTML = tableHtml;
+      }
+      
+      function showLoading() {
+        loadingDiv.style.display = 'block';
+      }
+      
+      function hideLoading() {
+        loadingDiv.style.display = 'none';
+      }
+      
+      function showError(message) {
+        errorMessageDiv.textContent = message;
+        errorMessageDiv.style.display = 'block';
+      }
+      
+      function hideError() {
+        errorMessageDiv.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
