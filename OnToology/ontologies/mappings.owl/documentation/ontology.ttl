@@ -1,0 +1,194 @@
+@prefix : <https://w3id.org/deliberation/mappings#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/deliberation/mappings#> .
+
+<https://w3id.org/deliberation/mappings> rdf:type owl:Ontology ;
+                                          owl:imports <http://purl.org/dc/elements/1.1/> ,
+                                                      <http://rdfs.org/sioc/argue#> ,
+                                                      <http://rdfs.org/sioc/ns#> ,
+                                                      <http://www.w3.org/2004/02/skos/core> ,
+                                                      <http://xmlns.com/foaf/0.1/> ,
+                                                      <https://w3id.org/deliberation/ontology> ;
+                                          rdfs:comment "Mappings between the Deliberation Ontology and existing standard ontologies" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/deliberation/mappings#aifMapping
+:aifMapping rdf:type owl:AnnotationProperty ;
+            rdfs:subPropertyOf rdfs:comment .
+
+
+###  https://w3id.org/deliberation/mappings#dcMapping
+:dcMapping rdf:type owl:AnnotationProperty ;
+           rdfs:subPropertyOf rdfs:comment .
+
+
+###  https://w3id.org/deliberation/mappings#foafMapping
+:foafMapping rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf rdfs:comment .
+
+
+###  https://w3id.org/deliberation/mappings#lkifMapping
+:lkifMapping rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf rdfs:comment .
+
+
+###  https://w3id.org/deliberation/mappings#siocMapping
+:siocMapping rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf rdfs:comment .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/Resource
+<http://purl.org/dc/elements/1.1/Resource> rdf:type owl:NamedIndividual .
+
+
+###  http://purl.org/dc/elements/1.1/subject
+<http://purl.org/dc/elements/1.1/subject> rdf:type owl:NamedIndividual .
+
+
+###  http://rdfs.org/sioc/argue#Argument
+<http://rdfs.org/sioc/argue#Argument> rdf:type owl:NamedIndividual .
+
+
+###  http://rdfs.org/sioc/argue#Position
+<http://rdfs.org/sioc/argue#Position> rdf:type owl:NamedIndividual .
+
+
+###  http://rdfs.org/sioc/ns#Forum
+<http://rdfs.org/sioc/ns#Forum> rdf:type owl:NamedIndividual .
+
+
+###  http://rdfs.org/sioc/ns#Post
+<http://rdfs.org/sioc/ns#Post> rdf:type owl:NamedIndividual .
+
+
+###  http://rdfs.org/sioc/ns#UserAccount
+<http://rdfs.org/sioc/ns#UserAccount> rdf:type owl:NamedIndividual .
+
+
+###  http://www.arg.dundee.ac.uk/aif#Argument
+<http://www.arg.dundee.ac.uk/aif#Argument> rdf:type owl:NamedIndividual .
+
+
+###  http://www.arg.dundee.ac.uk/aif#CA-Node
+<http://www.arg.dundee.ac.uk/aif#CA-Node> rdf:type owl:NamedIndividual .
+
+
+###  http://www.arg.dundee.ac.uk/aif#I-Node
+<http://www.arg.dundee.ac.uk/aif#I-Node> rdf:type owl:NamedIndividual .
+
+
+###  http://www.arg.dundee.ac.uk/aif#RA-Node
+<http://www.arg.dundee.ac.uk/aif#RA-Node> rdf:type owl:NamedIndividual .
+
+
+###  http://www.estrellaproject.org/lkif-core/expression.owl#Qualified_Expression
+<http://www.estrellaproject.org/lkif-core/expression.owl#Qualified_Expression> rdf:type owl:NamedIndividual .
+
+
+###  http://www.estrellaproject.org/lkif-core/legal-source.owl#Legal_Document
+<http://www.estrellaproject.org/lkif-core/legal-source.owl#Legal_Document> rdf:type owl:NamedIndividual .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:NamedIndividual .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:NamedIndividual .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/deliberation/ontology#Argument
+<https://w3id.org/deliberation/ontology#Argument> rdf:type owl:NamedIndividual ;
+                                                  <http://www.w3.org/2004/02/skos/core#closeMatch> <http://rdfs.org/sioc/argue#Argument> ,
+                                                                                                   <http://www.arg.dundee.ac.uk/aif#Argument> ;
+                                                  :aifMapping "Closely aligned with aif:Argument structure" ;
+                                                  :siocMapping "Closely aligned with sioca:Argument but with deliberation-specific features" .
+
+
+###  https://w3id.org/deliberation/ontology#Contribution
+<https://w3id.org/deliberation/ontology#Contribution> rdf:type owl:NamedIndividual ;
+                                                      <http://www.w3.org/2004/02/skos/core#broadMatch> <http://rdfs.org/sioc/ns#Post> ;
+                                                      :siocMapping "More general than sioc:Post as contributions may include non-textual input" .
+
+
+###  https://w3id.org/deliberation/ontology#DeliberationProcess
+<https://w3id.org/deliberation/ontology#DeliberationProcess> rdf:type owl:NamedIndividual ;
+                                                             <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://rdfs.org/sioc/ns#Forum> ;
+                                                             :siocMapping "Conceptually related to sioc:Forum but with specific deliberative purpose" .
+
+
+###  https://w3id.org/deliberation/ontology#InformationResource
+<https://w3id.org/deliberation/ontology#InformationResource> rdf:type owl:NamedIndividual ;
+                                                             <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/dc/elements/1.1/Resource> ;
+                                                             :dcMapping "More specific than the general dc:Resource concept" .
+
+
+###  https://w3id.org/deliberation/ontology#LegalSource
+<https://w3id.org/deliberation/ontology#LegalSource> rdf:type owl:NamedIndividual ;
+                                                     <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.estrellaproject.org/lkif-core/legal-source.owl#Legal_Document> ;
+                                                     :lkifMapping "Closely aligned with LKIF legal document concept" .
+
+
+###  https://w3id.org/deliberation/ontology#Organization
+<https://w3id.org/deliberation/ontology#Organization> rdf:type owl:NamedIndividual ;
+                                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <http://xmlns.com/foaf/0.1/Organization> ;
+                                                      :foafMapping "Direct conceptual equivalent to foaf:Organization" .
+
+
+###  https://w3id.org/deliberation/ontology#Participant
+<https://w3id.org/deliberation/ontology#Participant> rdf:type owl:NamedIndividual ;
+                                                     <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://xmlns.com/foaf/0.1/Person> ;
+                                                     <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://rdfs.org/sioc/ns#UserAccount> ,
+                                                                                                        <http://xmlns.com/foaf/0.1/Agent> ;
+                                                     :foafMapping "Maps to a more specific concept than foaf:Person, as participants may include non-human agents" ;
+                                                     :siocMapping "Related to sioc:UserAccount but more focused on the deliberative role" .
+
+
+###  https://w3id.org/deliberation/ontology#Position
+<https://w3id.org/deliberation/ontology#Position> rdf:type owl:NamedIndividual ;
+                                                  <http://www.w3.org/2004/02/skos/core#closeMatch> <http://rdfs.org/sioc/argue#Position> ;
+                                                  <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.estrellaproject.org/lkif-core/expression.owl#Qualified_Expression> ;
+                                                  :lkifMapping "When normative, related to qualified expressions in LKIF" ;
+                                                  :siocMapping "Closely aligned with sioca:Position in the argumentation context" .
+
+
+###  https://w3id.org/deliberation/ontology#Premise
+<https://w3id.org/deliberation/ontology#Premise> rdf:type owl:NamedIndividual ;
+                                                 <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.arg.dundee.ac.uk/aif#I-Node> ;
+                                                 :aifMapping "Related to information nodes in AIF that can serve as premises" .
+
+
+###  https://w3id.org/deliberation/ontology#Topic
+<https://w3id.org/deliberation/ontology#Topic> rdf:type owl:NamedIndividual ;
+                                               <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.org/dc/elements/1.1/subject> ;
+                                               :dcMapping "Conceptually related to dc:subject but not equivalent" .
+
+
+###  https://w3id.org/deliberation/ontology#attacks
+<https://w3id.org/deliberation/ontology#attacks> rdf:type owl:NamedIndividual ;
+                                                 <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.arg.dundee.ac.uk/aif#CA-Node> ;
+                                                 :aifMapping "Related to conflict application nodes in AIF" .
+
+
+###  https://w3id.org/deliberation/ontology#supports
+<https://w3id.org/deliberation/ontology#supports> rdf:type owl:NamedIndividual ;
+                                                  <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.arg.dundee.ac.uk/aif#RA-Node> ;
+                                                  :aifMapping "Related to rule of inference application nodes in AIF" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
