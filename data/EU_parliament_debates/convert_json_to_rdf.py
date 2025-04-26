@@ -20,8 +20,8 @@ def convert_json_to_rdf(json_file, output_file):
     g = Graph()
     
     # Define namespaces
-    DKG = Namespace("https://w3id.org/deliberation/ontology#")
-    g.bind("dkg", DKG)
+    DEL = Namespace("https://w3id.org/deliberation/ontology#")
+    g.bind("del", DEL)
     g.bind("rdf", RDF)
     g.bind("rdfs", RDFS)
     g.bind("xsd", XSD)
@@ -30,76 +30,76 @@ def convert_json_to_rdf(json_file, output_file):
     base_uri = "https://w3id.org/deliberation/resource/"
     
     # Add deliberation process
-    process_uri = URIRef(base_uri + data["dkg:identifier"])
-    g.add((process_uri, RDF.type, DKG.DeliberationProcess))
-    g.add((process_uri, DKG.identifier, Literal(data["dkg:identifier"])))
-    g.add((process_uri, DKG.name, Literal(data["dkg:name"])))
+    process_uri = URIRef(base_uri + data["del:identifier"])
+    g.add((process_uri, RDF.type, DEL.DeliberationProcess))
+    g.add((process_uri, DEL.identifier, Literal(data["del:identifier"])))
+    g.add((process_uri, DEL.name, Literal(data["del:name"])))
     
-    if data["dkg:startDate"]:
-        g.add((process_uri, DKG.startDate, Literal(data["dkg:startDate"], datatype=XSD.dateTime)))
+    if data["del:startDate"]:
+        g.add((process_uri, DEL.startDate, Literal(data["del:startDate"], datatype=XSD.dateTime)))
     
-    if data["dkg:endDate"]:
-        g.add((process_uri, DKG.endDate, Literal(data["dkg:endDate"], datatype=XSD.dateTime)))
+    if data["del:endDate"]:
+        g.add((process_uri, DEL.endDate, Literal(data["del:endDate"], datatype=XSD.dateTime)))
     
     # Add topics
-    for topic in data["dkg:hasTopic"]:
-        topic_uri = URIRef(base_uri + topic["dkg:identifier"])
-        g.add((topic_uri, RDF.type, DKG.Topic))
-        g.add((topic_uri, DKG.identifier, Literal(topic["dkg:identifier"])))
-        g.add((topic_uri, DKG.name, Literal(topic["dkg:name"])))
+    for topic in data["del:hasTopic"]:
+        topic_uri = URIRef(base_uri + topic["del:identifier"])
+        g.add((topic_uri, RDF.type, DEL.Topic))
+        g.add((topic_uri, DEL.identifier, Literal(topic["del:identifier"])))
+        g.add((topic_uri, DEL.name, Literal(topic["del:name"])))
         
         # Link topic to process
-        g.add((process_uri, DKG.hasTopic, topic_uri))
+        g.add((process_uri, DEL.hasTopic, topic_uri))
     
     # Add participants
-    for participant in data["dkg:hasParticipant"]:
-        participant_uri = URIRef(base_uri + participant["dkg:identifier"])
-        g.add((participant_uri, RDF.type, DKG.Participant))
-        g.add((participant_uri, DKG.identifier, Literal(participant["dkg:identifier"])))
-        g.add((participant_uri, DKG.name, Literal(participant["dkg:name"])))
+    for participant in data["del:hasParticipant"]:
+        participant_uri = URIRef(base_uri + participant["del:identifier"])
+        g.add((participant_uri, RDF.type, DEL.Participant))
+        g.add((participant_uri, DEL.identifier, Literal(participant["del:identifier"])))
+        g.add((participant_uri, DEL.name, Literal(participant["del:name"])))
         
         # Add role if available
-        if "dkg:hasRole" in participant:
-            role_uri = URIRef(base_uri + "role_" + participant["dkg:identifier"])
-            g.add((role_uri, RDF.type, DKG.Role))
-            g.add((role_uri, DKG.name, Literal(participant["dkg:hasRole"]["dkg:name"])))
-            g.add((participant_uri, DKG.hasRole, role_uri))
+        if "del:hasRole" in participant:
+            role_uri = URIRef(base_uri + "role_" + participant["del:identifier"])
+            g.add((role_uri, RDF.type, DEL.Role))
+            g.add((role_uri, DEL.name, Literal(participant["del:hasRole"]["del:name"])))
+            g.add((participant_uri, DEL.hasRole, role_uri))
         
         # Add affiliation if available
-        if "dkg:isAffiliatedWith" in participant:
-            org_uri = URIRef(base_uri + "org_" + participant["dkg:isAffiliatedWith"]["dkg:name"].replace("/", "_"))
-            g.add((org_uri, RDF.type, DKG.Organization))
-            g.add((org_uri, DKG.name, Literal(participant["dkg:isAffiliatedWith"]["dkg:name"])))
-            g.add((participant_uri, DKG.isAffiliatedWith, org_uri))
+        if "del:isAffiliatedWith" in participant:
+            org_uri = URIRef(base_uri + "org_" + participant["del:isAffiliatedWith"]["del:name"].replace("/", "_"))
+            g.add((org_uri, RDF.type, DEL.Organization))
+            g.add((org_uri, DEL.name, Literal(participant["del:isAffiliatedWith"]["del:name"])))
+            g.add((participant_uri, DEL.isAffiliatedWith, org_uri))
         
         # Link participant to process
-        g.add((process_uri, DKG.hasParticipant, participant_uri))
+        g.add((process_uri, DEL.hasParticipant, participant_uri))
     
     # Add contributions
-    for contribution in data["dkg:hasContribution"]:
-        contribution_uri = URIRef(base_uri + contribution["dkg:identifier"])
-        g.add((contribution_uri, RDF.type, DKG.Contribution))
-        g.add((contribution_uri, DKG.identifier, Literal(contribution["dkg:identifier"])))
-        g.add((contribution_uri, DKG.text, Literal(contribution["dkg:text"])))
+    for contribution in data["del:hasContribution"]:
+        contribution_uri = URIRef(base_uri + contribution["del:identifier"])
+        g.add((contribution_uri, RDF.type, DEL.Contribution))
+        g.add((contribution_uri, DEL.identifier, Literal(contribution["del:identifier"])))
+        g.add((contribution_uri, DEL.text, Literal(contribution["del:text"])))
         
         # Add timestamp if available
-        if "dkg:timestamp" in contribution:
-            g.add((contribution_uri, DKG.timestamp, Literal(contribution["dkg:timestamp"], datatype=XSD.dateTime)))
+        if "del:timestamp" in contribution:
+            g.add((contribution_uri, DEL.timestamp, Literal(contribution["del:timestamp"], datatype=XSD.dateTime)))
         
         # Link to participant
-        if "dkg:madeBy" in contribution and "@id" in contribution["dkg:madeBy"]:
-            participant_id = contribution["dkg:madeBy"]["@id"]
+        if "del:madeBy" in contribution and "@id" in contribution["del:madeBy"]:
+            participant_id = contribution["del:madeBy"]["@id"]
             participant_uri = URIRef(base_uri + participant_id)
-            g.add((contribution_uri, DKG.madeBy, participant_uri))
+            g.add((contribution_uri, DEL.madeBy, participant_uri))
         
         # Link to topic if available
-        if "dkg:hasTopic" in contribution and "@id" in contribution["dkg:hasTopic"]:
-            topic_id = contribution["dkg:hasTopic"]["@id"]
+        if "del:hasTopic" in contribution and "@id" in contribution["del:hasTopic"]:
+            topic_id = contribution["del:hasTopic"]["@id"]
             topic_uri = URIRef(base_uri + topic_id)
-            g.add((contribution_uri, DKG.hasTopic, topic_uri))
+            g.add((contribution_uri, DEL.hasTopic, topic_uri))
         
         # Link contribution to process
-        g.add((process_uri, DKG.hasContribution, contribution_uri))
+        g.add((process_uri, DEL.hasContribution, contribution_uri))
     
     # Serialize to RDF/XML
     g.serialize(destination=output_file, format="xml")

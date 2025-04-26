@@ -30,12 +30,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:madeBy0" source="nid_https://w3id.org/deliberation/resource/contribution_8" target="nid_https://w3id.org/deliberation/resource/participant_2">
+    <edge id="eid_del:madeBy0" source="nid_https://w3id.org/deliberation/resource/contribution_8" target="nid_https://w3id.org/deliberation/resource/participant_2">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:madeBy</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:madeBy</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -65,12 +65,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:isAffiliatedWith1" source="nid_https://w3id.org/deliberation/resource/participant_3" target="nid_https://w3id.org/deliberation/resource/org_PPE">
+    <edge id="eid_del:isAffiliatedWith1" source="nid_https://w3id.org/deliberation/resource/participant_3" target="nid_https://w3id.org/deliberation/resource/org_PPE">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:isAffiliatedWith</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:isAffiliatedWith</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -100,12 +100,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:madeBy2" source="nid_https://w3id.org/deliberation/resource/contribution_1" target="nid_https://w3id.org/deliberation/resource/participant_1">
+    <edge id="eid_del:madeBy2" source="nid_https://w3id.org/deliberation/resource/contribution_1" target="nid_https://w3id.org/deliberation/resource/participant_1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:madeBy</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:madeBy</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -123,12 +123,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:madeBy3" source="nid_https://w3id.org/deliberation/resource/contribution_6" target="nid_https://w3id.org/deliberation/resource/participant_1">
+    <edge id="eid_del:madeBy3" source="nid_https://w3id.org/deliberation/resource/contribution_6" target="nid_https://w3id.org/deliberation/resource/participant_1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:madeBy</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:madeBy</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -158,12 +158,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:madeBy4" source="nid_https://w3id.org/deliberation/resource/contribution_11" target="nid_https://w3id.org/deliberation/resource/participant_5">
+    <edge id="eid_del:madeBy4" source="nid_https://w3id.org/deliberation/resource/contribution_11" target="nid_https://w3id.org/deliberation/resource/participant_5">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:madeBy</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:madeBy</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -181,12 +181,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasRole5" source="nid_https://w3id.org/deliberation/resource/participant_1" target="nid_https://w3id.org/deliberation/resource/role_participant_1">
+    <edge id="eid_del:hasRole5" source="nid_https://w3id.org/deliberation/resource/participant_1" target="nid_https://w3id.org/deliberation/resource/role_participant_1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasRole</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasRole</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -204,12 +204,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:madeBy6" source="nid_https://w3id.org/deliberation/resource/contribution_4" target="nid_https://w3id.org/deliberation/resource/participant_1">
+    <edge id="eid_del:madeBy6" source="nid_https://w3id.org/deliberation/resource/contribution_4" target="nid_https://w3id.org/deliberation/resource/participant_1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:madeBy</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:madeBy</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -227,12 +227,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:madeBy7" source="nid_https://w3id.org/deliberation/resource/contribution_9" target="nid_https://w3id.org/deliberation/resource/participant_3">
+    <edge id="eid_del:madeBy7" source="nid_https://w3id.org/deliberation/resource/contribution_9" target="nid_https://w3id.org/deliberation/resource/participant_3">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:madeBy</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:madeBy</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -262,12 +262,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic8" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem20">
+    <edge id="eid_del:hasTopic8" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem20">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -285,12 +285,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic9" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem12">
+    <edge id="eid_del:hasTopic9" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem12">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -308,12 +308,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasContribution10" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_2">
+    <edge id="eid_del:hasContribution10" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_2">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasContribution</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasContribution</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -331,12 +331,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic11" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem5">
+    <edge id="eid_del:hasTopic11" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem5">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -354,12 +354,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic12" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem8">
+    <edge id="eid_del:hasTopic12" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -377,12 +377,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic13" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem16">
+    <edge id="eid_del:hasTopic13" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem16">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -400,12 +400,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasContribution14" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_3">
+    <edge id="eid_del:hasContribution14" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_3">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasContribution</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasContribution</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -423,12 +423,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic15" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem23">
+    <edge id="eid_del:hasTopic15" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem23">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -446,45 +446,45 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic16" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem3">
+    <edge id="eid_del:hasTopic16" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem3">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:hasParticipant17" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/participant_1">
+    <edge id="eid_del:hasParticipant17" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/participant_1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasParticipant</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasParticipant</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:hasParticipant18" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/participant_3">
+    <edge id="eid_del:hasParticipant18" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/participant_3">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasParticipant</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasParticipant</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:hasContribution19" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_4">
+    <edge id="eid_del:hasContribution19" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasContribution</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasContribution</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -502,12 +502,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic20" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem19">
+    <edge id="eid_del:hasTopic20" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem19">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -525,12 +525,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasContribution21" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_5">
+    <edge id="eid_del:hasContribution21" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_5">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasContribution</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasContribution</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -548,12 +548,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic22" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem13">
+    <edge id="eid_del:hasTopic22" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem13">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -571,12 +571,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic23" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem1">
+    <edge id="eid_del:hasTopic23" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -594,23 +594,23 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic24" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem6">
+    <edge id="eid_del:hasTopic24" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem6">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:hasContribution25" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_6">
+    <edge id="eid_del:hasContribution25" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_6">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasContribution</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasContribution</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -628,12 +628,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic26" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem17">
+    <edge id="eid_del:hasTopic26" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem17">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -651,12 +651,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic27" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem10">
+    <edge id="eid_del:hasTopic27" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem10">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -674,12 +674,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasContribution28" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_10">
+    <edge id="eid_del:hasContribution28" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_10">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasContribution</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasContribution</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -697,12 +697,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic29" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem21">
+    <edge id="eid_del:hasTopic29" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem21">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -720,23 +720,23 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasParticipant30" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/participant_4">
+    <edge id="eid_del:hasParticipant30" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/participant_4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasParticipant</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasParticipant</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:hasContribution31" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_11">
+    <edge id="eid_del:hasContribution31" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_11">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasContribution</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasContribution</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -754,12 +754,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic32" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem9">
+    <edge id="eid_del:hasTopic32" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem9">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -777,12 +777,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic33" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem4">
+    <edge id="eid_del:hasTopic33" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -800,12 +800,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic34" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem15">
+    <edge id="eid_del:hasTopic34" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem15">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -823,12 +823,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasContribution35" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_7">
+    <edge id="eid_del:hasContribution35" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_7">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasContribution</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasContribution</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -846,34 +846,34 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic36" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem2">
+    <edge id="eid_del:hasTopic36" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem2">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:hasContribution37" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_8">
+    <edge id="eid_del:hasContribution37" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasContribution</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasContribution</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:hasParticipant38" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/participant_2">
+    <edge id="eid_del:hasParticipant38" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/participant_2">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasParticipant</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasParticipant</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -891,12 +891,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic39" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem11">
+    <edge id="eid_del:hasTopic39" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem11">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -914,12 +914,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic40" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem14">
+    <edge id="eid_del:hasTopic40" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem14">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -937,34 +937,34 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic41" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem7">
+    <edge id="eid_del:hasTopic41" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem7">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:hasParticipant42" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/participant_5">
+    <edge id="eid_del:hasParticipant42" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/participant_5">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasParticipant</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasParticipant</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:hasContribution43" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_9">
+    <edge id="eid_del:hasContribution43" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_9">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasContribution</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasContribution</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -982,12 +982,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic44" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem22">
+    <edge id="eid_del:hasTopic44" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem22">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1005,23 +1005,23 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:hasTopic45" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem18">
+    <edge id="eid_del:hasTopic45" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/creitem18">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasTopic</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasTopic</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:hasContribution46" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_1">
+    <edge id="eid_del:hasContribution46" source="nid_https://w3id.org/deliberation/resource/ep_debate_20250310" target="nid_https://w3id.org/deliberation/resource/contribution_1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:hasContribution</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:hasContribution</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1039,34 +1039,34 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:isAffiliatedWith47" source="nid_https://w3id.org/deliberation/resource/participant_4" target="nid_https://w3id.org/deliberation/resource/org_PfE">
+    <edge id="eid_del:isAffiliatedWith47" source="nid_https://w3id.org/deliberation/resource/participant_4" target="nid_https://w3id.org/deliberation/resource/org_PfE">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:isAffiliatedWith</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:isAffiliatedWith</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:madeBy48" source="nid_https://w3id.org/deliberation/resource/contribution_2" target="nid_https://w3id.org/deliberation/resource/participant_1">
+    <edge id="eid_del:madeBy48" source="nid_https://w3id.org/deliberation/resource/contribution_2" target="nid_https://w3id.org/deliberation/resource/participant_1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:madeBy</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:madeBy</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:madeBy49" source="nid_https://w3id.org/deliberation/resource/contribution_7" target="nid_https://w3id.org/deliberation/resource/participant_1">
+    <edge id="eid_del:madeBy49" source="nid_https://w3id.org/deliberation/resource/contribution_7" target="nid_https://w3id.org/deliberation/resource/participant_1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:madeBy</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:madeBy</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1084,34 +1084,34 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:isAffiliatedWith50" source="nid_https://w3id.org/deliberation/resource/participant_2" target="nid_https://w3id.org/deliberation/resource/org_S&D">
+    <edge id="eid_del:isAffiliatedWith50" source="nid_https://w3id.org/deliberation/resource/participant_2" target="nid_https://w3id.org/deliberation/resource/org_S&D">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:isAffiliatedWith</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:isAffiliatedWith</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:madeBy51" source="nid_https://w3id.org/deliberation/resource/contribution_5" target="nid_https://w3id.org/deliberation/resource/participant_1">
+    <edge id="eid_del:madeBy51" source="nid_https://w3id.org/deliberation/resource/contribution_5" target="nid_https://w3id.org/deliberation/resource/participant_1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:madeBy</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:madeBy</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:madeBy52" source="nid_https://w3id.org/deliberation/resource/contribution_10" target="nid_https://w3id.org/deliberation/resource/participant_4">
+    <edge id="eid_del:madeBy52" source="nid_https://w3id.org/deliberation/resource/contribution_10" target="nid_https://w3id.org/deliberation/resource/participant_4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:madeBy</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:madeBy</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1129,23 +1129,23 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dkg:isAffiliatedWith53" source="nid_https://w3id.org/deliberation/resource/participant_5" target="nid_https://w3id.org/deliberation/resource/org_Verts_ALE">
+    <edge id="eid_del:isAffiliatedWith53" source="nid_https://w3id.org/deliberation/resource/participant_5" target="nid_https://w3id.org/deliberation/resource/org_Verts_ALE">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:isAffiliatedWith</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:isAffiliatedWith</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dkg:madeBy54" source="nid_https://w3id.org/deliberation/resource/contribution_3" target="nid_https://w3id.org/deliberation/resource/participant_1">
+    <edge id="eid_del:madeBy54" source="nid_https://w3id.org/deliberation/resource/contribution_3" target="nid_https://w3id.org/deliberation/resource/participant_1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dkg:madeBy</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">del:madeBy</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>

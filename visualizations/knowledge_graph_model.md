@@ -7,7 +7,7 @@ This document presents the knowledge graph model that shows connections between 
 ```mermaid
 graph TD
     %% Main Knowledge Graph Node
-    DKG[Deliberation Knowledge Graph]
+    del[Deliberation Knowledge Graph]
     
     %% Ontology Categories
     AO[Argumentation Ontologies]
@@ -44,10 +44,10 @@ graph TD
     CC5[Fallacy Detection]
     CC6[Cross-Dataset Integration]
     
-    %% Connections between DKG and Ontology Categories
-    DKG -->|integrates| AO
-    DKG -->|integrates| DO
-    DKG -->|integrates| LO
+    %% Connections between del and Ontology Categories
+    del -->|integrates| AO
+    del -->|integrates| DO
+    del -->|integrates| LO
     
     %% Connections between Ontology Categories and Specific Ontologies
     AO -->|includes| AIF
@@ -63,21 +63,21 @@ graph TD
     LO -->|includes| LKIF
     LO -->|includes| OGD
     
-    %% Connections between DKG and Core Concepts
-    DKG -->|models| CC1
-    DKG -->|models| CC2
-    DKG -->|models| CC3
-    DKG -->|models| CC4
-    DKG -->|models| CC5
-    DKG -->|models| CC6
+    %% Connections between del and Core Concepts
+    del -->|models| CC1
+    del -->|models| CC2
+    del -->|models| CC3
+    del -->|models| CC4
+    del -->|models| CC5
+    del -->|models| CC6
     
-    %% Connections between Datasets and DKG
-    DS1 -->|mapped to| DKG
-    DS2 -->|mapped to| DKG
-    DS3 -->|mapped to| DKG
-    DS4 -->|mapped to| DKG
-    DS5 -->|mapped to| DKG
-    DS6 -->|mapped to| DKG
+    %% Connections between Datasets and del
+    DS1 -->|mapped to| del
+    DS2 -->|mapped to| del
+    DS3 -->|mapped to| del
+    DS4 -->|mapped to| del
+    DS5 -->|mapped to| del
+    DS6 -->|mapped to| del
     
     %% Connections between Datasets and Specific Ontologies
     DS1 -->|uses concepts from| DELIB
@@ -125,7 +125,7 @@ graph TD
     classDef concept fill:#fbb,stroke:#333,stroke-width:1px
     classDef mainNode fill:#ff9,stroke:#333,stroke-width:4px
     
-    class DKG mainNode
+    class del mainNode
     class AO,DO,LO ontologyCategory
     class AIF,AMO,SIOC,IBIS,DELIB,DelibO,PartO,ConsO,LKIF,OGD ontology
     class DS1,DS2,DS3,DS4,DS5,DS6 dataset

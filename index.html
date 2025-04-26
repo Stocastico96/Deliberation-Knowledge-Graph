@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* Custom color scheme based on DKG daft.png (green vines, Donkey Kong, Daft Punk) */
+    /* Custom color scheme based on del daft.png (green vines, Donkey Kong, Daft Punk) */
     :root {
       --primary-color: #4a9d3c; /* Green for vines */
       --primary-light: #6abe5c;
@@ -48,7 +48,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('DKG daft.png');
+      background-image: url('del daft.png');
       background-size: cover;
       background-position: center;
       filter: brightness(0.7);
@@ -277,34 +277,41 @@
       <h2>Datasets</h2>
       <p>The project integrates several datasets related to deliberative processes from various sources:</p>
       
-      <!-- EU Parliament Debates Feature Section -->
-      <div class="eu-parliament-section">
-        <div class="container">
-          <h3>Featured Dataset: European Parliament Debates</h3>
-          <div class="eu-parliament-container">
-            <div class="eu-parliament-content">
-              <p>The European Parliament Debates dataset contains structured representations of plenary session debates, converted from verbatim HTML reports into both JSON and RDF formats aligned with the Deliberation Knowledge Graph ontology.</p>
-              <p>This dataset captures the rich deliberative processes of the European Parliament, including speeches, topics, participants, and their political affiliations.</p>
-              
-              <div class="btn-group">
-                <a href="data/EU_parliament_debates/ep_debates/debate_sample_2025-03-10.json" class="btn">View Sample JSON</a>
-                <a href="data/EU_parliament_debates/ep_debates/debate_sample_2025-03-10.rdf" class="btn btn-secondary">View Sample RDF</a>
-                <a href="data/EU_parliament_debates/README.md" class="btn btn-secondary">Documentation</a>
-              </div>
-              
-              <div class="api-info">
-                <h4>Data Structure</h4>
-                <pre><code>{
-  "@type": "dkg:DeliberationProcess",
-  "dkg:identifier": "ep_debate_YYYYMMDD",
-  "dkg:name": "European Parliament Debate",
-  "dkg:hasTopic": [...],
-  "dkg:hasParticipant": [...],
-  "dkg:hasContribution": [...]
+<!-- EU Parliament Debates Feature Section -->
+<div class="eu-parliament-section">
+  <div class="container">
+    <h3>Featured Dataset: European Parliament Debates</h3>
+    <div class="eu-parliament-container">
+      <div class="eu-parliament-content">
+        <p>The European Parliament Debates dataset contains structured representations of plenary session debates, converted from verbatim HTML reports into both JSON and RDF formats aligned with the Deliberation Knowledge Graph ontology.</p>
+        <p>This dataset captures the rich deliberative processes of the European Parliament, including speeches, topics, participants, and their political affiliations.</p>
+        
+        <div class="source">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16">
+            <path fill="currentColor" d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/>
+          </svg>
+          <a href="https://data.europarl.europa.eu/en/datasets?dataThemeFamily=dataset.theme.EP_PLEN_DOC&language=it&order=RELEVANCE" target="_blank">European Parliament Open Data Portal</a>
+        </div>
+        
+        <div class="btn-group">
+          <a href="data/EU_parliament_debates/ep_debates/debate_sample_2025-03-10.json" class="btn">View Sample JSON</a>
+          <a href="data/EU_parliament_debates/ep_debates/debate_sample_2025-03-10.rdf" class="btn btn-secondary">View Sample RDF</a>
+          <a href="data/EU_parliament_debates/README.md" class="btn btn-secondary">Documentation</a>
+        </div>
+        
+        <div class="api-info">
+          <h4>Data Structure</h4>
+          <pre><code>{
+  "@type": "deliberation:DeliberationProcess",
+  "deliberation:identifier": "ep_debate_YYYYMMDD",
+  "deliberation:name": "European Parliament Debate",
+  "deliberation:hasTopic": [...],
+  "deliberation:hasParticipant": [...],
+  "deliberation:hasContribution": [...]
 }</code></pre>
-              </div>
-            </div>
-            <div class="eu-parliament-image">
+        </div>
+      </div>
+      <div class="eu-parliament-image">
               <img src="what-is-the-european-parliament.png" alt="European Parliament in session">
             </div>
           </div>
@@ -596,7 +603,7 @@
       <h2>Ontology-Specific Graphs</h2>
       <p>
         Below are separate Mermaid.js graphs showing how each ontology's core classes and properties map
-        to the Deliberation Knowledge Graph (DKG). We have extracted only the relevant portion of the
+        to the Deliberation Knowledge Graph (del). We have extracted only the relevant portion of the
         large integrated diagram, so you can view them in smaller chunks, per ontology.
       </p>
 
@@ -604,7 +611,7 @@
       <h3>1) DELIB Ontology Alignment</h3>
       <div class="mermaid">
 graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
+    del[Deliberation Knowledge Graph]:::mainNode
     DELIB[DELIB Ontology]:::ontNode
 
     DP[DeliberationProcess]
@@ -637,7 +644,7 @@ graph TD
     LF -->|skos:exactMatch| DELIB_LF[delib:Framework]
     LI -->|skos:exactMatch| DELIB_LI[delib:LegalInterpretation]
 
-    DKG -->|extends| DELIB
+    del -->|extends| DELIB
     classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
     classDef ontNode fill:#ddf,stroke:#333,stroke-width:2px
       </div>
@@ -646,7 +653,7 @@ graph TD
       <h3>2) Argument Interchange Format (AIF) Alignment</h3>
       <div class="mermaid">
 graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
+    del[Deliberation Knowledge Graph]:::mainNode
     AIF[AIF Ontology]:::ontNode
 
     A[Argument]
@@ -661,7 +668,7 @@ graph TD
     A -->|skos:relatedMatch| AIF_AS[aif:AttackScheme]
     THREAD -->|skos:relatedMatch| AIF_N[aif:ArgumentNetwork]
 
-    DKG -->|extends| AIF
+    del -->|extends| AIF
     classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
     classDef ontNode fill:#dfd,stroke:#333,stroke-width:2px
       </div>
@@ -670,7 +677,7 @@ graph TD
       <h3>3) SIOC Ontology Alignment</h3>
       <div class="mermaid">
 graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
+    del[Deliberation Knowledge Graph]:::mainNode
     SIOC[SIOC Ontology]:::ontNode
 
     C[Contribution]
@@ -689,7 +696,7 @@ graph TD
     ORG -->|skos:relatedMatch| SIOC_CO[sioc:Community]
     GROUP -->|skos:relatedMatch| SIOC_G[sioc:Usergroup]
 
-    DKG -->|extends| SIOC
+    del -->|extends| SIOC
     classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
     classDef ontNode fill:#fdf,stroke:#333,stroke-width:2px
       </div>
@@ -698,7 +705,7 @@ graph TD
       <h3>4) FOAF Ontology Alignment</h3>
       <div class="mermaid">
 graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
+    del[Deliberation Knowledge Graph]:::mainNode
     FOAF[FOAF Ontology]:::ontNode
 
     P[Participant]
@@ -710,7 +717,7 @@ graph TD
     GROUP -->|skos:closeMatch| FOAF_G[foaf:Group]
     P -->|skos:relatedMatch| FOAF_A[foaf:Agent]
 
-    DKG -->|extends| FOAF
+    del -->|extends| FOAF
     classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
     classDef ontNode fill:#dff,stroke:#333,stroke-width:2px
       </div>
@@ -719,7 +726,7 @@ graph TD
       <h3>5) Dublin Core (DC) Alignment</h3>
       <div class="mermaid">
 graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
+    del[Deliberation Knowledge Graph]:::mainNode
     DC[DC Ontology]:::ontNode
 
     IR[InformationResource]
@@ -733,7 +740,7 @@ graph TD
     IR -->|creator property: skos:exactMatch| DC_C[dc:creator]
     T -->|skos:relatedMatch| DC_S[dc:subject]
 
-    DKG -->|extends| DC
+    del -->|extends| DC
     classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
     classDef ontNode fill:#ffd,stroke:#333,stroke-width:2px
       </div>
@@ -742,7 +749,7 @@ graph TD
       <h3>6) LKIF Ontology Alignment</h3>
       <div class="mermaid">
 graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
+    del[Deliberation Knowledge Graph]:::mainNode
     LKIF[LKIF Ontology]:::ontNode
 
     LS[LegalSource]
@@ -757,7 +764,7 @@ graph TD
     POSITION -->|when normative: skos:relatedMatch| LKIF_S[lkif:Statement]
     LF -->|skos:relatedMatch| LKIF_LT[lkif:LegalTheory]
 
-    DKG -->|extends| LKIF
+    del -->|extends| LKIF
     classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
     classDef ontNode fill:#fdd,stroke:#333,stroke-width:2px
       </div>
@@ -766,7 +773,7 @@ graph TD
       <h3>7) IBIS Model Alignment</h3>
       <div class="mermaid">
 graph TD
-    DKG[Deliberation Knowledge Graph]:::mainNode
+    del[Deliberation Knowledge Graph]:::mainNode
     IBIS[IBIS Model]:::ontNode
 
     T[Topic]
@@ -781,7 +788,7 @@ graph TD
     DECISION -->|skos:relatedMatch| IBIS_R[ibis:Resolution]
     DP -->|skos:broadMatch| IBIS_D[ibis:Deliberation]
 
-    DKG -->|extends| IBIS
+    del -->|extends| IBIS
     classDef mainNode fill:#ff9,stroke:#333,stroke-width:3px
     classDef ontNode fill:#ddf,stroke:#333,stroke-width:2px
       </div>

@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Sample data for the knowledge graph visualization
         const graphData = {
             nodes: [
-                { id: "DKG", label: "Deliberation Knowledge Graph", group: "main" },
+                { id: "del", label: "Deliberation Knowledge Graph", group: "main" },
                 
                 { id: "AO", label: "Argumentation Ontologies", group: "category" },
                 { id: "DO", label: "Deliberation Ontologies", group: "category" },
@@ -87,9 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 { id: "DS6", label: "US Supreme Court", group: "dataset" }
             ],
             links: [
-                { source: "DKG", target: "AO", value: 3 },
-                { source: "DKG", target: "DO", value: 3 },
-                { source: "DKG", target: "LO", value: 3 },
+                { source: "del", target: "AO", value: 3 },
+                { source: "del", target: "DO", value: 3 },
+                { source: "del", target: "LO", value: 3 },
                 
                 { source: "AO", target: "AIF", value: 2 },
                 { source: "AO", target: "AMO", value: 2 },
@@ -104,12 +104,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 { source: "LO", target: "LKIF", value: 2 },
                 { source: "LO", target: "OGD", value: 2 },
                 
-                { source: "DS1", target: "DKG", value: 2 },
-                { source: "DS2", target: "DKG", value: 2 },
-                { source: "DS3", target: "DKG", value: 2 },
-                { source: "DS4", target: "DKG", value: 2 },
-                { source: "DS5", target: "DKG", value: 2 },
-                { source: "DS6", target: "DKG", value: 2 },
+                { source: "DS1", target: "del", value: 2 },
+                { source: "DS2", target: "del", value: 2 },
+                { source: "DS3", target: "del", value: 2 },
+                { source: "DS4", target: "del", value: 2 },
+                { source: "DS5", target: "del", value: 2 },
+                { source: "DS6", target: "del", value: 2 },
                 
                 { source: "DS1", target: "DELIB", value: 1 },
                 { source: "DS1", target: "SIOC", value: 1 },
