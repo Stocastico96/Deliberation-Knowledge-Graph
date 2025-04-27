@@ -244,6 +244,7 @@
           <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
           <li><a href="#datasets"><i class="fas fa-database"></i> Datasets</a></li>
           <li><a href="#ontologies"><i class="fas fa-project-diagram"></i> Ontologies</a></li>
+          <li><a href="#conversion"><i class="fas fa-exchange-alt"></i> Data Conversion Tools</a></li>
           <li><a href="#model"><i class="fas fa-sitemap"></i> Knowledge Graph Model</a></li>
           <li><a href="#documentation"><i class="fas fa-file-alt"></i> Documentation</a></li>
           <li><a href="sparql.html"><i class="fas fa-search"></i> SPARQL Endpoint</a></li>
@@ -286,7 +287,7 @@
     <h3>Featured Dataset: European Parliament Debates</h3>
     <div class="eu-parliament-container">
       <div class="eu-parliament-content">
-        <p>The European Parliament Debates dataset contains structured representations of plenary session debates, converted from verbatim HTML reports into both JSON and RDF formats aligned with the Deliberation Knowledge Graph ontology.</p>
+        <p>The European Parliament Debates dataset contains structured representations of plenary session debates, converted from verbatim HTML reports into both JSON and RDF formats aligned with the Deliberation Ontology.</p>
         <p>This dataset captures the rich deliberative processes of the European Parliament, including speeches, topics, participants, and their political affiliations.</p>
         
         <div class="source">
@@ -591,13 +592,106 @@
       <hr>
 
       <div class="ontology-download">
-        <h3>Deliberation Knowledge Graph Ontology</h3>
+        <h3>Deliberation Ontology</h3>
         <p>The core ontology of this project, which integrates concepts from the above ontologies:</p>
         <div class="mappings-download">
           <a href="ontologies/deliberation.owl" class="btn">Download Deliberation Ontology</a>
           <a href="ontologies/mappings.owl" class="btn btn-secondary">Download Ontology Mappings</a>
         </div>
+        
+        <div class="ontology-mappings-info">
+          <h4>Ontology Mappings</h4>
+          <p>The mappings.owl file contains explicit mappings between the Deliberation Ontology and other standard ontologies like FOAF, Dublin Core, SIOC, AIF, and LKIF. These mappings enable interoperability and integration with existing semantic web resources.</p>
+          <p>Key mapping relationships include:</p>
+          <ul>
+            <li><strong>skos:exactMatch</strong> - Concepts that are exactly equivalent</li>
+            <li><strong>skos:closeMatch</strong> - Concepts that are very similar but not identical</li>
+            <li><strong>skos:relatedMatch</strong> - Concepts that are related but not equivalent</li>
+            <li><strong>skos:broadMatch</strong> - The source concept is broader than the target</li>
+            <li><strong>skos:narrowMatch</strong> - The source concept is narrower than the target</li>
+          </ul>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <section id="conversion" class="section">
+    <div class="container">
+      <h2>Data Conversion Tools</h2>
+      <p>The Deliberation Knowledge Graph project provides conversion tools to transform various deliberation datasets into RDF format compatible with the deliberation ontology:</p>
+      
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Dataset</th>
+              <th>Conversion Script</th>
+              <th>Input Format</th>
+              <th>Output Format</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>EU Parliament Debates</td>
+              <td><code>data/EU_parliament_debates/convert_json_to_rdf.py</code></td>
+              <td>JSON</td>
+              <td>RDF/XML</td>
+              <td>Converts structured JSON representations of EU Parliament debates to RDF format</td>
+            </tr>
+            <tr>
+              <td>US Supreme Court Arguments</td>
+              <td><code>data/US_supreme_court_arguments/convert_to_rdf.py</code></td>
+              <td>CSV</td>
+              <td>RDF/XML</td>
+              <td>Converts US Supreme Court oral argument transcripts to RDF format</td>
+            </tr>
+            <tr>
+              <td>Decide Madrid</td>
+              <td><code>data/decide_Madrid/convert_to_rdf.py</code></td>
+              <td>CSV</td>
+              <td>RDF/XML</td>
+              <td>Converts Decide Madrid proposals and comments to RDF format</td>
+            </tr>
+            <tr>
+              <td>DeliData</td>
+              <td><code>data/delidata/convert_to_rdf.py</code></td>
+              <td>TSV</td>
+              <td>RDF/XML</td>
+              <td>Converts DeliData deliberation conversations to RDF format</td>
+            </tr>
+            <tr>
+              <td>Habermas Machine</td>
+              <td><code>data/habermas_machine/convert_to_rdf.py</code></td>
+              <td>Parquet</td>
+              <td>RDF/XML</td>
+              <td>Converts Habermas Machine deliberation experiment data to RDF format</td>
+            </tr>
+            <tr>
+              <td>EU Have Your Say</td>
+              <td><code>data/EU_have_your_say/convert_to_rdf.py</code></td>
+              <td>CSV</td>
+              <td>RDF/XML</td>
+              <td>Converts EU Have Your Say feedback and initiatives to RDF format</td>
+            </tr>
+            <tr>
+              <td>Decidim Barcelona</td>
+              <td><code>data/decidim_barcelona/convert_to_rdf.py</code></td>
+              <td>CSV</td>
+              <td>RDF/XML</td>
+              <td>Converts Decidim Barcelona proposals, meetings, and comments to RDF format</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <p>All conversion scripts follow a two-step process:</p>
+      <ol>
+        <li>Convert the source data to a JSON format aligned with the deliberation ontology</li>
+        <li>Convert the JSON to RDF/XML format using the common <code>convert_json_to_rdf.py</code> script</li>
+      </ol>
+      
+      <p>This approach ensures consistency across all datasets and makes it easy to add new datasets in the future.</p>
     </div>
   </section>
 
@@ -606,7 +700,7 @@
       <h2>Ontology-Specific Graphs</h2>
       <p>
         Below are separate Mermaid.js graphs showing how each ontology's core classes and properties map
-        to the Deliberation Knowledge Graph (del). We have extracted only the relevant portion of the
+        to the Deliberation Ontology (Del). We have extracted only the relevant portion of the
         large integrated diagram, so you can view them in smaller chunks, per ontology.
       </p>
 
@@ -614,7 +708,7 @@
       <h3>1) DELIB Ontology Alignment</h3>
       <div class="mermaid">
 graph TD
-    del[Deliberation Knowledge Graph]:::mainNode
+    DEL[Deliberation Ontology]:::mainNode
     DELIB[DELIB Ontology]:::ontNode
 
     DP[DeliberationProcess]
@@ -656,7 +750,7 @@ graph TD
       <h3>2) Argument Interchange Format (AIF) Alignment</h3>
       <div class="mermaid">
 graph TD
-    del[Deliberation Knowledge Graph]:::mainNode
+    DEL[Deliberation Ontology]:::mainNode
     AIF[AIF Ontology]:::ontNode
 
     A[Argument]
@@ -680,7 +774,7 @@ graph TD
       <h3>3) SIOC Ontology Alignment</h3>
       <div class="mermaid">
 graph TD
-    del[Deliberation Knowledge Graph]:::mainNode
+    DEL[Deliberation Ontology]:::mainNode
     SIOC[SIOC Ontology]:::ontNode
 
     C[Contribution]
@@ -708,7 +802,7 @@ graph TD
       <h3>4) FOAF Ontology Alignment</h3>
       <div class="mermaid">
 graph TD
-    del[Deliberation Knowledge Graph]:::mainNode
+    DEL[Deliberation Ontology]:::mainNode
     FOAF[FOAF Ontology]:::ontNode
 
     P[Participant]
@@ -729,7 +823,7 @@ graph TD
       <h3>5) Dublin Core (DC) Alignment</h3>
       <div class="mermaid">
 graph TD
-    del[Deliberation Knowledge Graph]:::mainNode
+    DEL[Deliberation Ontology]:::mainNode
     DC[DC Ontology]:::ontNode
 
     IR[InformationResource]
@@ -752,7 +846,7 @@ graph TD
       <h3>6) LKIF Ontology Alignment</h3>
       <div class="mermaid">
 graph TD
-    del[Deliberation Knowledge Graph]:::mainNode
+    DEL[Deliberation Ontology]:::mainNode    
     LKIF[LKIF Ontology]:::ontNode
 
     LS[LegalSource]
@@ -776,7 +870,7 @@ graph TD
       <h3>7) IBIS Model Alignment</h3>
       <div class="mermaid">
 graph TD
-    del[Deliberation Knowledge Graph]:::mainNode
+    DEL[Deliberation Ontology]:::mainNode    
     IBIS[IBIS Model]:::ontNode
 
     T[Topic]
@@ -797,7 +891,7 @@ graph TD
       </div>
 
       <p>
-        Each subgraph above focuses on how the Deliberation Knowledge Graph maps to or extends
+        Each subgraph above focuses on how the Deliberation Ontology maps to or extends
         the respective ontology's classes and properties. By splitting the overall mapping into smaller
         diagrams, we ensure that each relationship set is easier to inspect, maintain, and update.
       </p>
