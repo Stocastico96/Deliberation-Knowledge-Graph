@@ -553,7 +553,17 @@ def main():
         {
             "name": "European Parliament Debates",
             "function": process_ep_debates,
-            "file_path": "data/EU_parliament_debates/ep_debates/debate_sample_2025-03-10.json"
+            "file_path": "data/EU_parliament_debates/ep_debates/debate_2025-03-10.json"
+        },
+        {
+            "name": "European Parliament Debates 2025-03-11",
+            "function": process_ep_debates,
+            "file_path": "data/EU_parliament_debates/ep_debates/debate_2025-03-11.json"
+        },
+        {
+            "name": "European Parliament Debates 2025-03-12",
+            "function": process_ep_debates,
+            "file_path": "data/EU_parliament_debates/ep_debates/debate_2025-03-12.json"
         },
         {
             "name": "Decide Madrid",

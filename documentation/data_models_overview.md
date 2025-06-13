@@ -1,146 +1,275 @@
-# Data Models and Ontologies in the Deliberation/Argumentation Domain
+# Deliberation Knowledge Graph - Data Models Overview
 
-This document provides an overview of relevant data models and ontologies in the deliberation and argumentation domain, based on the Ontology Requirements Specification Document (ORSD) for the Deliberation Knowledge Graph.
+This document provides an overview of the data models used in the Deliberation Knowledge Graph project, focusing on the core ontology classes and their relationships.
 
-## Existing Ontologies and Their Limitations
+## Core Ontology Classes
 
-| Name | Description | Format | Application Area | Strengths | Limitations |
-|------|-------------|--------|-----------------|-----------|-------------|
-| DELIB Ontology | Models e-participation deliberation process with social media integration | OWL | E-participation, deliberative democracy | Explicitly supports dual e-participation (government and citizen-led); connects deliberation with social media content; comprehensive conceptualization of topic, claim, argument structure | Focused primarily on electronic participation; lacks detailed representation of legal frameworks; limited implementation examples |
-| Deliberation Ontology | Supports public decision making in policy deliberations | OWL | Policy deliberation, legal information integration | Strong focus on legal information integration; connects arguments with legal sources; emphasizes bureaucratic process modeling | Government-centric approach; limited participant modeling; does not account for informal deliberation spaces |
-| SIOC (Semantically Interlinked Online Communities) | Describes online discussion information structure | OWL/RDF | Online discussions, social media | Well-established standard; robust representation of online discussions; widely used in social media applications | Not specifically designed for deliberation; lacks political and legal conceptualization; no deliberation-specific reasoning capabilities |
-| AIF (Argument Interchange Format) | Represents argument structure and relations | OWL/RDF | Computational argumentation, argument mining | Sophisticated argument modeling; captures support/attack relationships; strong theoretical foundation | Complex for non-expert users; focused only on argumentation, not broader deliberation processes; limited integration with other aspects of deliberation |
-| LKIF (Legal Knowledge Interchange Format) | Facilitates communication between legal knowledge systems | OWL | Legal reasoning, legal knowledge representation | Comprehensive legal information modeling; supports complex legal reasoning; structured legal source representation | Highly specialized for legal domain; overly complex for general deliberation needs; lacks direct connection to civic participation concepts |
-| IBIS (Issue-Based Information System) | Models issues, positions, and arguments | Various | Design rationale, collaborative problem-solving | Simple, intuitive structure; explicitly separates issues, positions, and arguments; widely used in design rationale | Limited expressivity for complex deliberations; no participant or process modeling; lacks temporal dimension |
+The Deliberation Knowledge Graph is built around the following core classes:
 
-## Why a New Deliberation Knowledge Graph is Needed
+### DeliberationProcess
 
-Despite the availability of multiple ontologies in related domains, a unified Deliberation Knowledge Graph is necessary for several reasons:
+Represents a deliberative process, such as a debate, consultation, or participatory decision-making process.
 
-1. **Integration Gap**: None of the existing ontologies adequately bridges formal institutional deliberation with civic participation platforms. The del addresses this by creating mappings between these domains.
+**Properties:**
+- `del:identifier` - Unique identifier for the process
+- `del:name` - Name of the process
+- `del:startDate` - Start date of the process
+- `del:endDate` - End date of the process
+- `del:hasTopic` - Topics discussed in the process
+- `del:hasParticipant` - Participants in the process
+- `del:hasContribution` - Contributions made during the process
+- `del:hasStage` - Stages of the process
 
-2. **Fallacy Detection Support**: Existing ontologies lack the specific structures required for computational identification of logical fallacies in deliberative discourse. The del explicitly models argument patterns needed for automated fallacy detection.
+### Participant
 
-3. **Cross-Dataset Standardization**: Current deliberation data exists in heterogeneous formats across platforms. The del provides a common semantic framework to normalize and integrate these diverse datasets.
+Represents a person or organization participating in a deliberative process.
 
-4. **Fragmentation**: Each existing ontology covers only part of the deliberation ecosystem. The del provides a comprehensive framework that connects process, participants, content, and information in a coherent structure.
+**Properties:**
+- `del:identifier` - Unique identifier for the participant
+- `del:name` - Name of the participant
+- `del:hasRole` - Role of the participant in the process
+- `del:isAffiliatedWith` - Organization the participant is affiliated with
 
-5. **Interoperability Challenges**: Current solutions operate in silos, making cross-platform analysis difficult. The del establishes common semantics to enable data sharing across different deliberation environments.
+### Contribution
 
-6. **Multi-perspective Integration**: Existing approaches typically adopt either a government-centric or citizen-centric perspective. The del supports multiple viewpoints simultaneously.
+Represents a contribution made by a participant during a deliberative process, such as a speech, comment, or proposal.
 
-7. **Technical Evolution**: New deliberation platforms and technologies emerge regularly. The del's modular approach allows extension to incorporate new deliberation forms while maintaining backward compatibility.
+**Properties:**
+- `del:identifier` - Unique identifier for the contribution
+- `del:text` - Text of the contribution
+- `del:timestamp` - Time when the contribution was made
+- `del:madeBy` - Participant who made the contribution
+- `del:responseTo` - Another contribution this contribution responds to
+- `del:hasArgument` - Arguments contained in the contribution
+- `del:containsFallacy` - Fallacies detected in the contribution
 
-8. **Research-Practice Gap**: Current ontologies are either too theoretical or too implementation-specific. The del balances conceptual rigor with practical applicability.
+### Topic
 
-## Purpose and Scope of the Deliberation Knowledge Graph
+Represents a topic discussed in a deliberative process.
 
-### Purpose
-The purpose of the Deliberation Knowledge Graph is to create a comprehensive, interoperable data model that represents deliberative processes across different platforms and contexts. This knowledge graph aims to structure and connect the various elements of deliberations (participants, arguments, processes, and information) in a way that enables analysis, visualization, and comparison of deliberative activities across platforms, from formal parliamentary debates to citizen participation initiatives. The ontology specifically addresses requirements for logical fallacy detection in deliberative discourse and provides a unified representation of common elements across diverse deliberation datasets.
+**Properties:**
+- `del:identifier` - Unique identifier for the topic
+- `del:name` - Name of the topic
 
-### Scope
-The ontology covers the domain of deliberative processes in both institutional and civic contexts. It encompasses:
+### Argument
 
-- Formal deliberation processes (e.g., parliamentary debates, legislative procedures)
-- Participatory deliberation platforms (e.g., Decidim, civic consultation tools)
-- Arguments and contributions exchanged during deliberations
-- Participants and their roles in deliberative processes
-- Information resources that inform or result from deliberations
-- Temporal and thematic organization of deliberative content
-- Logical fallacy patterns and classifications
-- Common structures and fields across different deliberation platforms and datasets
-- Standard argument components required for fallacy detection
+Represents an argument made in a contribution.
 
-The ontology explicitly excludes:
-- Detailed representation of document content beyond what's relevant to deliberation
-- Internal platform-specific technical details not related to deliberative processes
-- Implementation details of fallacy detection algorithms (focusing instead on required data structures)
+**Properties:**
+- `del:identifier` - Unique identifier for the argument
+- `del:text` - Text of the argument
+- `del:hasPremise` - Premises of the argument
+- `del:hasConclusion` - Conclusion of the argument
+- `del:supports` - Another argument this argument supports
+- `del:attacks` - Another argument this argument attacks
 
-## Intended End-Users and Uses
+### FallacyType
 
-### End-Users
-1. Government officials and policy makers who need to analyze and understand deliberative processes
-2. Civic participation platform administrators who want to integrate deliberative content across platforms
-3. Researchers studying deliberative democracy and analyzing deliberative data
-4. Developers creating applications that connect or visualize deliberative content from multiple sources
-5. Citizens and civic organizations seeking to understand and participate in deliberative processes
-6. Fallacy detection system developers who require structured argument data
-7. Cross-platform data analysts who need to work with multiple deliberation datasets
+Represents a type of logical fallacy that may be detected in a contribution.
 
-### Intended Uses
-1. Integration of deliberative content from multiple platforms and sources to create unified views of participation
-2. Analysis of deliberative processes to understand participation patterns, argument flows, and information usage
-3. Visualization of deliberation structures and their evolution over time
-4. Importing/exporting deliberative content between different systems (e.g., from Decidim to parliamentary systems)
-5. Creation of searchable repositories of deliberative content with rich semantic relationships
-6. Enabling the development of tools to support more effective deliberation processes
-7. Automated detection and flagging of logical fallacies in arguments
-8. Standardized representation of deliberation data from heterogeneous sources
-9. Training and validation of AI models for argument analysis
+**Properties:**
+- `del:identifier` - Unique identifier for the fallacy type
+- `del:name` - Name of the fallacy type
+- `del:confidence` - Confidence score of the fallacy detection
 
-## Key Competency Questions
+## Class Relationships
 
-The Deliberation Knowledge Graph is designed to answer the following groups of competency questions:
+The following diagram illustrates the relationships between the core classes:
 
-### Deliberation Process Structure
-- What are the stages of a specific deliberation process?
-- When did a particular deliberation start and end?
-- What deliberation processes exist on a particular topic?
-- What are the participation rules for a deliberation process?
-- Which organization or entity is responsible for a specific deliberation process?
+```
+DeliberationProcess
+  |
+  |-- hasTopic --> Topic
+  |
+  |-- hasParticipant --> Participant
+  |     |
+  |     |-- hasRole --> Role
+  |     |
+  |     |-- isAffiliatedWith --> Organization
+  |
+  |-- hasContribution --> Contribution
+  |     |
+  |     |-- madeBy --> Participant
+  |     |
+  |     |-- responseTo --> Contribution
+  |     |
+  |     |-- hasArgument --> Argument
+  |     |     |
+  |     |     |-- hasPremise --> Premise
+  |     |     |
+  |     |     |-- hasConclusion --> Conclusion
+  |     |     |
+  |     |     |-- supports --> Argument
+  |     |     |
+  |     |     |-- attacks --> Argument
+  |     |
+  |     |-- containsFallacy --> FallacyType
+  |
+  |-- hasStage --> Stage
+```
 
-### Participant Information
-- Who are the participants in a specific deliberation?
-- What is the role of a participant in a deliberation process?
-- In which deliberations has a particular participant contributed?
-- Which organizations are represented in a deliberation?
-- How many participants were involved in a deliberation process?
+## Dataset-Specific Models
 
-### Contributions and Arguments
-- What contributions were made in a specific deliberation?
-- Who made a specific contribution or argument?
-- Which arguments support or oppose a specific position?
-- What is the thread structure of a deliberative conversation?
-- Which contributions received the most responses or engagement?
+Each dataset in the Deliberation Knowledge Graph project has its own specific data model, which is mapped to the core ontology. Here's an overview of the dataset-specific models:
 
-### Information Resources
-- What information sources are referenced in contributions?
-- What legal documents are referenced in a deliberation?
-- What information frameworks are relevant to a specific deliberation?
-- What documents were produced as a result of a deliberation?
-- How is legal information structured and referenced in deliberations?
+### EU Parliament Debates
 
-### Fallacy Detection
-- What logical fallacies can be identified in a specific argument?
-- What are the premise-conclusion relationships in an argument?
-- Which arguments contain ad hominem attacks?
-- What patterns of circular reasoning exist in a deliberation?
-- How can arguments be classified by fallacy type?
-- What evidence is provided to support a claim?
+The EU Parliament debates dataset represents plenary session debates with the following structure:
 
-### Cross-Dataset Integration
-- What common fields exist across different deliberation platforms?
-- How can participant identities be reconciled across platforms?
-- What standard argument elements can be mapped across datasets?
-- How are temporal aspects of deliberation represented consistently?
-- What minimal data structure is required for cross-platform analysis?
+- Each debate is a `DeliberationProcess`
+- Speakers are `Participant` instances with roles (e.g., MEP, President)
+- Political groups are `Organization` instances
+- Speeches are `Contribution` instances
+- Debate topics are `Topic` instances
 
-## Core Concepts in the Deliberation Knowledge Graph
+### Decide Madrid
 
-Based on the competency questions and the pre-glossary of terms, the Deliberation Knowledge Graph will model the following core concepts:
+The Decide Madrid dataset represents citizen proposals and comments with the following structure:
 
-- **DeliberationProcess**: The overall deliberative activity, including its stages, timeline, and outcomes
-- **Stage**: A distinct phase in a deliberation process with specific activities and goals
-- **Participant**: Individuals or entities taking part in a deliberation process
-- **Role**: The function or position a participant holds in a deliberation
-- **Organization**: Formal entities represented in or responsible for deliberations
-- **Contribution**: Any input provided by a participant in a deliberation
-- **Argument**: A structured form of contribution with premises and conclusions
-- **Position**: A stance or viewpoint on an issue under deliberation
-- **Topic**: The subject matter of a deliberation
-- **InformationResource**: External sources of information referenced in deliberations
-- **LegalSource**: Legal documents, frameworks, or interpretations relevant to deliberations
-- **FallacyType**: Classification of logical fallacies that can occur in arguments
-- **ArgumentStructure**: The formal structure of an argument, including premises and conclusions
-- **Evidence**: Supporting information for claims made in arguments
-- **CrossPlatformIdentifier**: Mechanisms to link entities across different deliberation platforms
+- Each proposal is a `DeliberationProcess`
+- Citizens are `Participant` instances
+- Proposals are `Contribution` instances
+- Comments are `Contribution` instances with `responseTo` relationships
+- Categories are `Topic` instances
+
+### DeliData
+
+The DeliData dataset represents multi-party problem-solving conversations with the following structure:
+
+- Each conversation is a `DeliberationProcess`
+- Participants are `Participant` instances
+- Messages are `Contribution` instances
+- Issues are `Topic` instances
+
+### EU Have Your Say
+
+The EU Have Your Say dataset represents public consultations with the following structure:
+
+- Each consultation is a `DeliberationProcess`
+- Citizens and organizations are `Participant` instances
+- Feedback items are `Contribution` instances
+- Policy areas are `Topic` instances
+
+### Habermas Machine
+
+The Habermas Machine dataset represents deliberative democracy experiments with the following structure:
+
+- Each experiment is a `DeliberationProcess`
+- Participants are `Participant` instances
+- Messages are `Contribution` instances
+- Discussion topics are `Topic` instances
+
+### Decidim Barcelona
+
+The Decidim Barcelona dataset represents participatory democracy processes with the following structure:
+
+- Each process is a `DeliberationProcess`
+- Citizens are `Participant` instances
+- Proposals and comments are `Contribution` instances
+- Categories are `Topic` instances
+
+### US Supreme Court Arguments
+
+The US Supreme Court arguments dataset represents oral arguments with the following structure:
+
+- Each case is a `DeliberationProcess`
+- Justices and attorneys are `Participant` instances with roles
+- Utterances are `Contribution` instances
+- Legal issues are `Topic` instances
+
+## Ontology Mappings
+
+The Deliberation Knowledge Graph ontology is mapped to several standard ontologies:
+
+### FOAF Mappings
+
+- `del:Participant` ↔ `foaf:Person`
+- `del:Organization` ↔ `foaf:Organization`
+- `del:Group` ↔ `foaf:Group`
+
+### SIOC Mappings
+
+- `del:Contribution` ↔ `sioc:Post`
+- `del:DeliberationProcess` ↔ `sioc:Forum`
+- `del:Participant` ↔ `sioc:UserAccount`
+- `del:Topic` ↔ `sioc:Topic`
+
+### Dublin Core Mappings
+
+- `del:title` ↔ `dc:title`
+- `del:description` ↔ `dc:description`
+- `del:creator` ↔ `dc:creator`
+- `del:date` ↔ `dc:date`
+
+### AIF Mappings
+
+- `del:Argument` ↔ `aif:Argument`
+- `del:Premise` ↔ `aif:Premise`
+- `del:Conclusion` ↔ `aif:Conclusion`
+- `del:supports` ↔ `aif:supports`
+- `del:attacks` ↔ `aif:attacks`
+
+## Data Conversion Process
+
+The data conversion process for each dataset follows these steps:
+
+1. **Data Extraction**: Extract data from the source format (CSV, JSON, XML, etc.)
+2. **Data Cleaning**: Clean and normalize the data
+3. **Data Mapping**: Map the data to the deliberation ontology structure
+4. **RDF Generation**: Generate RDF/XML output compatible with the knowledge graph
+5. **Validation**: Validate the RDF output against the ontology
+
+## Example Data Instance
+
+Here's an example of a data instance in JSON-LD format:
+
+```json
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "ep_debate_20250310",
+  "del:name": "European Parliament Debate - 2025-03-10",
+  "del:startDate": "2025-03-10T09:00:00Z",
+  "del:endDate": "2025-03-10T18:00:00Z",
+  "del:hasTopic": [
+    {
+      "@type": "del:Topic",
+      "del:identifier": "topic_1",
+      "del:name": "Climate Change"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Iratxe García Pérez",
+      "del:hasRole": {
+        "@type": "del:Role",
+        "del:name": "Member of European Parliament"
+      },
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_1",
+      "del:text": "We must take immediate action on climate change.",
+      "del:timestamp": "2025-03-10T09:15:00Z",
+      "del:madeBy": {"@id": "participant_1"}
+    }
+  ]
+}
+```
+
+## Conclusion
+
+The Deliberation Knowledge Graph data models provide a flexible and extensible framework for representing deliberative processes across different platforms and contexts. By mapping diverse datasets to a common ontology, the project enables cross-dataset analysis and insights into deliberative processes.
