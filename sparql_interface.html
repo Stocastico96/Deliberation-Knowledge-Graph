@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaccia SPARQL - Deliberation Knowledge Graph</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/monokai.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/sparql/sparql.min.js"></script>
+    <style>
+        .sparql-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .query-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .query-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .example-query {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .example-query:hover {
+            background: #e9ecef;
+            border-color: #4a9d3c;
+        }
+        
+        .example-query h4 {
+            margin: 0 0 0.5rem 0;
+            color: #4a9d3c;
+        }
+        
+        .example-query p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .CodeMirror {
+            height: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .results-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        .results-table th,
+        .results-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .results-table th {
+            background-color: #4a9d3c;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .results-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background-color: #4a9d3c;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #3a7d2c;
+        }
+        
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+        
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+        
+        .endpoint-config {
+            background: #e9ecef;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+        
+        .endpoint-config input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Interfaccia SPARQL</h1>
+            <p class="subtitle">Interroga il Deliberation Knowledge Graph</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">← Torna alla Home</a></li>
+                    <li><a href="#examples">Query di Esempio</a></li>
+                    <li><a href="#editor">Editor SPARQL</a></li>
+                    <li><a href="#results">Risultati</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="sparql-container">
+        <!-- Configurazione Endpoint -->
+        <div class="endpoint-config">
+            <h3>Configurazione Endpoint SPARQL</h3>
+            <label for="sparql-endpoint">URL Endpoint:</label>
+            <input type="text" id="sparql-endpoint" value="http://localhost:3030/deliberation/sparql" 
+                   placeholder="Inserisci l'URL del tuo endpoint SPARQL">
+            <p><small>Assicurati che il server SPARQL sia in esecuzione e accessibile.</small></p>
+        </div>
+
+        <!-- Query di Esempio -->
+        <div class="query-section" id="examples">
+            <h2>Query di Esempio</h2>
+            <p>Clicca su una query per caricarla nell'editor:</p>
+            
+            <div class="query-examples">
+                <div class="example-query" data-query="processes">
+                    <h4>Processi Deliberativi</h4>
+                    <p>Lista tutti i processi deliberativi con date di inizio e fine</p>
+                </div>
+                
+                <div class="example-query" data-query="participants">
+                    <h4>Partecipanti per Organizzazione</h4>
+                    <p>Raggruppa i partecipanti per organizzazione di appartenenza</p>
+                </div>
+                
+                <div class="example-query" data-query="contributions">
+                    <h4>Contributi per Partecipante</h4>
+                    <p>Trova tutti i contributi di un partecipante specifico</p>
+                </div>
+                
+                <div class="example-query" data-query="topics">
+                    <h4>Topic per Processo</h4>
+                    <p>Mostra tutti i topic discussi in ogni processo</p>
+                </div>
+                
+                <div class="example-query" data-query="arguments">
+                    <h4>Analisi Argomenti</h4>
+                    <p>Analizza la struttura degli argomenti con premesse e conclusioni</p>
+                </div>
+                
+                <div class="example-query" data-query="statistics">
+                    <h4>Statistiche Generali</h4>
+                    <p>Conta processi, partecipanti e contributi nel knowledge graph</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Editor SPARQL -->
+        <div class="query-section" id="editor">
+            <h2>Editor SPARQL</h2>
+            <textarea id="sparql-query" placeholder="Inserisci la tua query SPARQL qui..."></textarea>
+            
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="executeQuery()">Esegui Query</button>
+                <button class="btn btn-secondary" onclick="clearEditor()">Pulisci Editor</button>
+                <button class="btn btn-secondary" onclick="formatQuery()">Formatta Query</button>
+            </div>
+        </div>
+
+        <!-- Risultati -->
+        <div class="results-section" id="results">
+            <h2>Risultati</h2>
+            <div id="loading" class="loading">
+                <p>Esecuzione query in corso...</p>
+            </div>
+            <div id="results-content">
+                <p>I risultati della query appariranno qui.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Inizializza CodeMirror
+        const editor = CodeMirror.fromTextArea(document.getElementById('sparql-query'), {
+            mode: 'application/sparql-query',
+            theme: 'monokai',
+            lineNumbers: true,
+            autoCloseBrackets: true,
+            matchBrackets: true,
+            indentWithTabs: false,
+            indentUnit: 2
+        });
+
+        // Query di esempio
+        const exampleQueries = {
+            processes: `# Lista tutti i processi deliberativi
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+
+SELECT ?process ?name ?startDate ?endDate
+WHERE {
+    ?process a del:DeliberationProcess ;
+             del:name ?name .
+    OPTIONAL { ?process del:startDate ?startDate }
+    OPTIONAL { ?process del:endDate ?endDate }
+}
+ORDER BY ?startDate`,
+
+            participants: `# Partecipanti raggruppati per organizzazione
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+
+SELECT ?org ?orgName ?participant ?participantName
+WHERE {
+    ?participant a del:Participant ;
+                del:name ?participantName ;
+                del:isAffiliatedWith ?org .
+    ?org del:name ?orgName .
+}
+ORDER BY ?orgName ?participantName`,
+
+            contributions: `# Contributi di un partecipante specifico
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+
+SELECT ?contribution ?text ?timestamp
+WHERE {
+    ?contribution a del:Contribution ;
+                 del:text ?text ;
+                 del:madeBy ?participant .
+    ?participant del:name "Iratxe García Pérez" .
+    OPTIONAL { ?contribution del:timestamp ?timestamp }
+}
+ORDER BY ?timestamp`,
+
+            topics: `# Topic discussi per processo
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+
+SELECT ?process ?processName ?topic ?topicName
+WHERE {
+    ?process a del:DeliberationProcess ;
+             del:name ?processName ;
+             del:hasTopic ?topic .
+    ?topic del:name ?topicName .
+}
+ORDER BY ?processName ?topicName`,
+
+            arguments: `# Analisi degli argomenti
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+
+SELECT ?argument ?premise ?conclusion ?fallacy
+WHERE {
+    ?argument a del:Argument .
+    OPTIONAL { ?argument del:hasPremise ?premise }
+    OPTIONAL { ?argument del:hasConclusion ?conclusion }
+    OPTIONAL { ?argument del:containsFallacy ?fallacy }
+}`,
+
+            statistics: `# Statistiche generali del knowledge graph
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+
+SELECT 
+    (COUNT(DISTINCT ?process) AS ?totalProcesses)
+    (COUNT(DISTINCT ?participant) AS ?totalParticipants)
+    (COUNT(DISTINCT ?contribution) AS ?totalContributions)
+    (COUNT(DISTINCT ?topic) AS ?totalTopics)
+WHERE {
+    OPTIONAL { ?process a del:DeliberationProcess }
+    OPTIONAL { ?participant a del:Participant }
+    OPTIONAL { ?contribution a del:Contribution }
+    OPTIONAL { ?topic a del:Topic }
+}`
+        };
+
+        // Event listeners per le query di esempio
+        document.querySelectorAll('.example-query').forEach(element => {
+            element.addEventListener('click', function() {
+                const queryType = this.getAttribute('data-query');
+                if (exampleQueries[queryType]) {
+                    editor.setValue(exampleQueries[queryType]);
+                    editor.focus();
+                }
+            });
+        });
+
+        // Funzione per eseguire la query
+        async function executeQuery() {
+            const query = editor.getValue().trim();
+            const endpoint = document.getElementById('sparql-endpoint').value;
+            
+            if (!query) {
+                showMessage('Inserisci una query SPARQL prima di eseguire.', 'error');
+                return;
+            }
+
+            if (!endpoint) {
+                showMessage('Inserisci l\'URL dell\'endpoint SPARQL.', 'error');
+                return;
+            }
+
+            showLoading(true);
+            clearResults();
+
+            try {
+                const response = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/sparql-query',
+                        'Accept': 'application/sparql-results+json'
+                    },
+                    body: query
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                displayResults(data);
+                showMessage('Query eseguita con successo!', 'success');
+
+            } catch (error) {
+                showMessage(`Errore nell'esecuzione della query: ${error.message}`, 'error');
+                console.error('Errore SPARQL:', error);
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // Funzione per mostrare i risultati
+        function displayResults(data) {
+            const resultsContent = document.getElementById('results-content');
+            
+            if (!data.results || !data.results.bindings || data.results.bindings.length === 0) {
+                resultsContent.innerHTML = '<p>Nessun risultato trovato.</p>';
+                return;
+            }
+
+            const bindings = data.results.bindings;
+            const variables = data.head.vars;
+
+            let html = `<table class="results-table">
+                <thead>
+                    <tr>`;
+            
+            variables.forEach(variable => {
+                html += `<th>${variable}</th>`;
+            });
+            
+            html += `</tr>
+                </thead>
+                <tbody>`;
+
+            bindings.forEach(binding => {
+                html += '<tr>';
+                variables.forEach(variable => {
+                    const value = binding[variable];
+                    if (value) {
+                        if (value.type === 'uri') {
+                            html += `<td><a href="${value.value}" target="_blank">${value.value}</a></td>`;
+                        } else {
+                            html += `<td>${value.value}</td>`;
+                        }
+                    } else {
+                        html += '<td>-</td>';
+                    }
+                });
+                html += '</tr>';
+            });
+
+            html += `</tbody>
+            </table>
+            <p><strong>Risultati trovati:</strong> ${bindings.length}</p>`;
+
+            resultsContent.innerHTML = html;
+        }
+
+        // Funzioni di utilità
+        function clearEditor() {
+            editor.setValue('');
+            editor.focus();
+        }
+
+        function formatQuery() {
+            const query = editor.getValue();
+            // Semplice formattazione (può essere migliorata)
+            const formatted = query
+                .replace(/\s+/g, ' ')
+                .replace(/\s*{\s*/g, ' {\n  ')
+                .replace(/\s*}\s*/g, '\n}\n')
+                .replace(/\s*\.\s*/g, ' .\n  ')
+                .replace(/\s*;\s*/g, ' ;\n  ')
+                .trim();
+            editor.setValue(formatted);
+        }
+
+        function showLoading(show) {
+            document.getElementById('loading').style.display = show ? 'block' : 'none';
+        }
+
+        function clearResults() {
+            document.getElementById('results-content').innerHTML = '';
+        }
+
+        function showMessage(message, type) {
+            const resultsContent = document.getElementById('results-content');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = type;
+            messageDiv.textContent = message;
+            resultsContent.insertBefore(messageDiv, resultsContent.firstChild);
+            
+            // Rimuovi il messaggio dopo 5 secondi
+            setTimeout(() => {
+                if (messageDiv.parentNode) {
+                    messageDiv.parentNode.removeChild(messageDiv);
+                }
+            }, 5000);
+        }
+
+        // Carica una query di esempio all'avvio
+        window.addEventListener('load', function() {
+            editor.setValue(exampleQueries.processes);
+        });
+    </script>
+</body>
+</html>

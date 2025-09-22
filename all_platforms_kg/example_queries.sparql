@@ -1,0 +1,80 @@
+# ALL_PROCESSES
+
+# Query 1: Lista tutti i processi deliberativi
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+
+SELECT ?process ?name ?startDate ?endDate
+WHERE {
+    ?process a del:DeliberationProcess ;
+             del:name ?name .
+    OPTIONAL { ?process del:startDate ?startDate }
+    OPTIONAL { ?process del:endDate ?endDate }
+}
+ORDER BY ?startDate
+
+==================================================
+
+# CONTRIBUTIONS_BY_PARTICIPANT
+
+# Query 2: Trova tutti i contributi di un partecipante specifico
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+
+SELECT ?contribution ?text ?timestamp
+WHERE {
+    ?contribution a del:Contribution ;
+                 del:text ?text ;
+                 del:madeBy ?participant .
+    ?participant del:name "Iratxe García Pérez" .
+    OPTIONAL { ?contribution del:timestamp ?timestamp }
+}
+ORDER BY ?timestamp
+
+==================================================
+
+# TOPICS_BY_PROCESS
+
+# Query 3: Trova tutti i topic discussi per processo
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+
+SELECT ?process ?processName ?topic ?topicName
+WHERE {
+    ?process a del:DeliberationProcess ;
+             del:name ?processName ;
+             del:hasTopic ?topic .
+    ?topic del:name ?topicName .
+}
+ORDER BY ?processName ?topicName
+
+==================================================
+
+# PARTICIPANTS_BY_ORGANIZATION
+
+# Query 4: Partecipanti raggruppati per organizzazione
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+
+SELECT ?org ?orgName ?participant ?participantName
+WHERE {
+    ?participant a del:Participant ;
+                del:name ?participantName ;
+                del:isAffiliatedWith ?org .
+    ?org del:name ?orgName .
+}
+ORDER BY ?orgName ?participantName
+
+==================================================
+
+# ARGUMENT_ANALYSIS
+
+# Query 5: Analisi degli argomenti
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+
+SELECT ?argument ?premise ?conclusion ?fallacy
+WHERE {
+    ?argument a del:Argument .
+    OPTIONAL { ?argument del:hasPremise ?premise }
+    OPTIONAL { ?argument del:hasConclusion ?conclusion }
+    OPTIONAL { ?argument del:containsFallacy ?fallacy }
+}
+
+==================================================
+

@@ -1,0 +1,56 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+23f446a4-50d0-441c-9d13-a35a6a566616	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""6"", ""checked"": false}, {""value"": ""X"", ""checked"": false}, {""value"": ""5"", ""checked"": false}, {""value"": ""E"", ""checked"": false}]"	UKN	2020-07-06 17:54:00.642675+00:00	
+53ec6a21-8a76-47a5-8a19-7418dcf39fab	Cat	0ec77b0f4012400d8c4e168168396529	JOIN_ROOM		USR_ONBOARDING	2020-07-06 17:54:01.140079+00:00	
+bb6abb5c-ae60-4711-99d1-e7e18b6bb1cd	Cat	0ec77b0f4012400d8c4e168168396529	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'X', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2020-07-06 17:55:41.467813+00:00	
+2f50ddc3-bdda-48a2-bca7-11aa0a864150	Lobster	afb97e5fd01948eb9e078e961bf10b49	JOIN_ROOM		USR_ONBOARDING	2020-07-06 17:55:43.994312+00:00	
+7a4e9a62-30d7-4988-8eea-384f3f1dd047	Cat	0ec77b0f4012400d8c4e168168396529	WASON_SUBMIT	[{'value': '6', 'checked': False}, {'value': 'X', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2020-07-06 17:56:06.597310+00:00	
+c556d9a9-8f5b-4f95-b089-e4dd2cee8cbb	Leopard	339998eae2b84c38a551673b2da9bdb1	JOIN_ROOM		USR_ONBOARDING	2020-07-06 17:56:44.692707+00:00	
+bd55a2ab-bfa0-4918-b013-80b91c7abdbc	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-07-06 17:56:44.920074+00:00	
+fb0f5443-2504-4309-8a0a-a0823bf9a89e	Guinea pig	98483039f3f74f8c823845996632469c	JOIN_ROOM		USR_ONBOARDING	2020-07-06 17:57:05.533773+00:00	
+f954d075-df4f-4912-9c8c-12fc6e018e77	Lobster	afb97e5fd01948eb9e078e961bf10b49	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'X', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': False}]	USR_ONBOARDING	2020-07-06 17:57:05.617846+00:00	
+48d63417-8c4b-4ee6-8161-1ab1bac4d3f5	Lobster	afb97e5fd01948eb9e078e961bf10b49	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'X', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2020-07-06 17:57:07.413813+00:00	
+213e60a6-894a-4463-b53e-ff71fcf7f85e	Lobster	afb97e5fd01948eb9e078e961bf10b49	WASON_SUBMIT	[{'value': '6', 'checked': False}, {'value': 'X', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2020-07-06 17:57:16.166170+00:00	
+26901341-2464-448a-9181-c1a34dbdc6b4	Cat	0ec77b0f4012400d8c4e168168396529	ROUTING_TIMER_ELAPSED	[{'value': '6', 'checked': False}, {'value': 'X', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2020-07-06 17:57:45.160916+00:00	
+0bf3b35b-e786-4354-94fd-0b1ac2f8dcfe	Lobster	afb97e5fd01948eb9e078e961bf10b49	ROUTING_TIMER_ELAPSED	[{'value': '6', 'checked': False}, {'value': 'X', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': False}]	USR_ONBOARDING	2020-07-06 17:57:45.168319+00:00	
+d3811c20-aa68-4cc3-bf02-36682b7c4f5c	Leopard	339998eae2b84c38a551673b2da9bdb1	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-07-06 17:57:46.096303+00:00	
+f7870ef3-707f-4dcb-84d7-db5124af8439	Leopard	339998eae2b84c38a551673b2da9bdb1	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'X', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': False}]	USR_ONBOARDING	2020-07-06 17:58:24.771204+00:00	
+540a57d2-5b24-44f4-b150-d85ea15c2804	Leopard	339998eae2b84c38a551673b2da9bdb1	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'X', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2020-07-06 17:58:29.052817+00:00	
+ef640eae-3990-4542-8961-ff47cb19c823	Leopard	339998eae2b84c38a551673b2da9bdb1	WASON_SUBMIT	[{'value': '6', 'checked': True}, {'value': 'X', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2020-07-06 17:58:30.007416+00:00	
+874c03cb-ce71-41ac-ac93-164272d0c2cf	Moderating Owl	e0d0234e9ecc498ab002b0d8869687c0	JOIN_ROOM		USR_MODERATING	2020-07-06 17:59:21.239989+00:00	
+147d36dc-a656-4948-9a65-544d2bd826b6	Guinea pig	98483039f3f74f8c823845996632469c	LEAVE_ROOM		KICKED	2020-07-06 17:59:30.272419+00:00	
+15c32bf0-9bd0-4f38-84af-1bec1bf2cf04	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-07-06 17:59:30.493489+00:00	
+254361ab-2d61-46a5-a576-e332f62d05ec	Moderating Owl	e0d0234e9ecc498ab002b0d8869687c0	LEAVE_ROOM		USR_MODERATING	2020-07-06 17:59:54.395141+00:00	
+6b6156bd-2e69-486e-9767-f2ba5b09c9f2	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	Hello	USR_PLAYING	2020-07-06 17:59:54.699502+00:00	
+223a3fbc-b5f0-4a25-baca-e9b388c1792a	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	Hi there.  I clicked both letters to test the rule.	USR_PLAYING	2020-07-06 17:59:57.494722+00:00	
+0e01445c-6559-45cb-afea-23524d03e73a	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	"I only clicked the E to verify the rule as the ""X"" isn't a vowel"	USR_PLAYING	2020-07-06 18:00:25.446577+00:00	
+5041bffc-04c9-46ae-8363-4e080f6023ec	Lobster	afb97e5fd01948eb9e078e961bf10b49	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'X', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': True}]	USR_PLAYING	2020-07-06 18:00:30.455444+00:00	
+1dda3c48-9dc4-4947-8d7c-be3ff95aa53c	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	Good call.  Did we all get the same series of numbers?	USR_PLAYING	2020-07-06 18:00:38.219758+00:00	
+b8fa7827-1601-4f0f-8036-8fa7071b7475	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	I have 6X5E	USR_PLAYING	2020-07-06 18:00:52.170804+00:00	
+272972a1-ec49-45c2-b4c9-89b76c641fa1	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	So do I, and in the same order.	USR_PLAYING	2020-07-06 18:00:59.476538+00:00	
+01cec89a-961c-4b65-8c82-8d7cd47dfb62	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	Perfect, I am not sure if I did it right...	USR_PLAYING	2020-07-06 18:01:10.202122+00:00	
+ebb27f24-962d-4a36-8cb9-c7c1cc43d9f5	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	What do you think?	USR_PLAYING	2020-07-06 18:01:13.708664+00:00	
+6de08814-ff27-4a19-af91-ed75dc24fea4	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	I think you did.  I appreciate you clearing it up for me.	USR_PLAYING	2020-07-06 18:01:29.445185+00:00	
+be98ec8a-c446-4fda-9175-f0580bb504e9	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	Do we need to find out if Leopard has missing information?	USR_PLAYING	2020-07-06 18:01:47.977134+00:00	
+28b495e2-71ec-46fd-a2f2-753e3cb0df7a	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	@Leopard What do you think?	USR_PLAYING	2020-07-06 18:01:58.749905+00:00	
+0e066693-d38d-4c32-b594-b79b8683f505	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	@Leopard Dd you get the same series of information?	USR_PLAYING	2020-07-06 18:01:59.126722+00:00	
+7734fb22-13a9-4376-987f-e29480517d09	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	So if we all click E we are in agreement, but we have a bit of a quandry with our silent team member.	USR_PLAYING	2020-07-06 18:02:28.218378+00:00	
+5d81d211-a110-4638-ad9f-a48977b1ff29	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	I think my solution is correct but I would like @Leopard  to verify what he thinks	USR_PLAYING	2020-07-06 18:02:37.881004+00:00	
+4f49fe63-bae1-411a-880e-8c824e4211f8	AUTO_KICKED	339998eae2b84c38a551673b2da9bdb1	LEAVE_ROOM		AUTO_KICKED	2020-07-06 18:02:38.223900+00:00	
+bcf99988-0ca2-4695-8171-24fef54284d4	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	If @Leopard doesn't reply we will go with my solution	USR_PLAYING	2020-07-06 18:03:10.200285+00:00	
+bdd8039a-f0c1-4d71-af4b-964556f4bbc8	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	I think that's a great plan.  How long do we want to give them?	USR_PLAYING	2020-07-06 18:03:28.707882+00:00	
+f9147b97-d5b2-4736-801a-c4ed826eeafa	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	We have to complete the task in in 2 minutes	USR_PLAYING	2020-07-06 18:03:45.147351+00:00	
+a431d0ee-87e6-45df-b235-d9e0c2569bca	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	look at the timer	USR_PLAYING	2020-07-06 18:03:48.550174+00:00	
+4a72638e-10b6-44dc-8701-56ab676f4196	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	We will give him another minute and see	USR_PLAYING	2020-07-06 18:03:54.690309+00:00	
+64d947d7-41bc-4876-a6fd-54745367c137	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	Oof.  Sounds good.  	USR_PLAYING	2020-07-06 18:04:02.664733+00:00	
+79897723-1245-4d08-b951-10f63e3ed3a1	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	Does my logic make sense to you? with my answer?	USR_PLAYING	2020-07-06 18:04:17.035536+00:00	
+cd00c65d-d210-4e5e-baa8-46a1a008f55f	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	It totally does.  I feel silly not having caught it.  I'm usually on my game.	USR_PLAYING	2020-07-06 18:04:29.533724+00:00	
+1a140765-c1f3-4dcc-8964-7eb8905fbb2c	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	Don't worry I had to think about it too	USR_PLAYING	2020-07-06 18:04:43.604307+00:00	
+27b4620c-4a9f-45ae-b86a-fe8ef68bcaa1	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	So, I think with your logic, we're golden.  And I'm really glad we were on the same team!  Wish Leopard had come out to play though.	USR_PLAYING	2020-07-06 18:04:55.298267+00:00	
+46e07830-75ec-412b-bc07-f8ea80bac237	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	Yeah I agree, it would have been nice to have more confirmation	USR_PLAYING	2020-07-06 18:05:15.462195+00:00	
+cca0754f-c5ae-4dfc-b192-e9a9ac468838	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	I think we better submit it, my feline friend.  Thanks for the chat and explaining what I missed initially.	USR_PLAYING	2020-07-06 18:05:42.105395+00:00	
+427b4c1d-4698-4b6c-b6b7-09fd8aefaa72	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	No problem, a pleasure working with you	USR_PLAYING	2020-07-06 18:05:54.058249+00:00	
+3bf9f8f7-e56d-412d-a596-c41cbb1974a8	Cat	0ec77b0f4012400d8c4e168168396529	CHAT_MESSAGE	have a good day!	USR_PLAYING	2020-07-06 18:05:58.754371+00:00	
+08d1da32-4b2d-4522-b361-4d86c8484f60	Lobster	afb97e5fd01948eb9e078e961bf10b49	CHAT_MESSAGE	Have an awesome day!	USR_PLAYING	2020-07-06 18:06:00.020914+00:00	
+bf00a31a-aea3-40ba-ae0f-6e88d9957c41	Cat	0ec77b0f4012400d8c4e168168396529	WASON_SUBMIT	[{'value': '6', 'checked': False}, {'value': 'X', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': True}]	USR_PLAYING	2020-07-06 18:06:03.008608+00:00	
+6be25836-a16f-435c-a7c0-d44d42ea6679	Lobster	afb97e5fd01948eb9e078e961bf10b49	WASON_SUBMIT	[{'value': '6', 'checked': False}, {'value': 'X', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'E', 'checked': True}]	USR_PLAYING	2020-07-06 18:06:04.297932+00:00	
+34d8d15a-2637-4d54-9395-4a876a33eaa1	SYSTEM	-1	WASON_FINISHED		UKN	2020-07-06 18:06:04.671885+00:00	

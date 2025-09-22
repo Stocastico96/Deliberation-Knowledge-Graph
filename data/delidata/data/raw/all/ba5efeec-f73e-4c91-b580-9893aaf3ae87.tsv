@@ -1,0 +1,56 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+284649d1-0377-45f2-a5ae-828e194b5f88	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""5"", ""checked"": false}, {""value"": ""4"", ""checked"": false}, {""value"": ""X"", ""checked"": false}, {""value"": ""A"", ""checked"": false}]"	UKN	2020-08-19 17:44:45.424359+00:00	
+7fbd51d4-ca81-4c13-a5cc-d105b76842e9	Tiger	1a24763913fe48448ffc90e46b2fde99	JOIN_ROOM		USR_ONBOARDING	2020-08-19 17:44:45.858463+00:00	
+5a0f5773-c25a-4a4d-891e-ec339e827f34	Chipmunk	0283c6be08d94bd886d095efded63a26	JOIN_ROOM		USR_ONBOARDING	2020-08-19 17:44:46.504075+00:00	
+e2ab675a-1db1-4380-b00d-9bf9017a4839	Tiger	1a24763913fe48448ffc90e46b2fde99	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-08-19 17:45:06.742618+00:00	
+c5a2b6f1-3686-41ea-a4e7-8fce0bd597b4	Tiger	1a24763913fe48448ffc90e46b2fde99	WASON_GAME	[{'value': '5', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-08-19 17:45:08.665077+00:00	
+cbf4249f-4a9b-4713-9c07-abfc9110552b	Tiger	1a24763913fe48448ffc90e46b2fde99	WASON_SUBMIT	[{'value': '5', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-08-19 17:45:17.511162+00:00	
+35ac845a-2e1e-4d51-b46d-ef575b9326f9	Cat	7303828adaca4f2a822df72fe1d3dbd1	JOIN_ROOM		USR_ONBOARDING	2020-08-19 17:45:58.870561+00:00	
+776f30a4-2797-4588-8dea-86e0e1c86320	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-08-19 17:45:59.088209+00:00	
+517f317b-a95e-43b8-a751-253e06a6ffb5	Cat	7303828adaca4f2a822df72fe1d3dbd1	LEAVE_ROOM		USR_ONBOARDING	2020-08-19 17:46:06.589962+00:00	
+5915999c-0396-4423-8c3e-02144eabc5b0	Tiger	1a24763913fe48448ffc90e46b2fde99	ROUTING_TIMER_ELAPSED	[{'value': '5', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-08-19 17:46:59.228172+00:00	
+a3c0424f-1cfa-4201-a06f-ae13d7be38b0	Chipmunk	0283c6be08d94bd886d095efded63a26	ROUTING_TIMER_ELAPSED	[{'value': '5', 'checked': False}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-08-19 17:47:01.394000+00:00	
+a85de4c1-b7e7-4088-b97d-800e74947017	Chipmunk	0283c6be08d94bd886d095efded63a26	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': True}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-08-19 17:47:20.507065+00:00	
+cdf85591-0600-4ebe-816d-13faf1712d90	Chipmunk	0283c6be08d94bd886d095efded63a26	WASON_SUBMIT	[{'value': '5', 'checked': False}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': True}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-08-19 17:47:46.572572+00:00	
+05c8962a-cb53-4f8f-a45d-d73407398a20	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-08-19 17:47:46.939527+00:00	
+06f33311-621a-4f09-91b1-bcf786b16ddd	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	So it looks like only two of us	USR_PLAYING	2020-08-19 17:48:16.568041+00:00	
+69f1b9b6-28cc-4eff-83c1-27f3be7b5427	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	I'm fine carrying on this conversation by myself I suppose	USR_PLAYING	2020-08-19 17:48:57.346721+00:00	
+1f853343-95b8-4969-b528-9aef2b681d2e	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	It'd be helpful to have collaboration though	USR_PLAYING	2020-08-19 17:49:20.495691+00:00	
+d099cebc-fa4d-426f-a255-7383db8dee1b	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	My thinking with this is that we	USR_PLAYING	2020-08-19 17:49:34.942383+00:00	
+e52fc281-cc23-496b-bb51-d746499e6cf7	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	We would need to flip two cards	USR_PLAYING	2020-08-19 17:49:40.739085+00:00	
+6ce4b88a-cb3a-45e5-8c88-03c1e3d86382	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	We need to see if the A card has an even number on the other side	USR_PLAYING	2020-08-19 17:49:57.183640+00:00	
+bac4bf9a-8b51-4d03-9bb4-41889e80d73a	Chipmunk	0283c6be08d94bd886d095efded63a26	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-08-19 17:49:59.852119+00:00	
+d035ce3f-1c57-42e6-b036-b283230a7a44	Chipmunk	0283c6be08d94bd886d095efded63a26	WASON_SUBMIT	[{'value': '5', 'checked': False}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-08-19 17:50:02.292888+00:00	
+087413b5-447f-4d25-924e-59d3b40ae89e	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	And we need to see if the odd number card has a vowel on the other side	USR_PLAYING	2020-08-19 17:50:07.267890+00:00	
+b1fb58c0-aa97-4ed4-bd4e-dd3337f74193	Chipmunk	0283c6be08d94bd886d095efded63a26	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-08-19 17:50:36.003595+00:00	
+062571bf-16a0-4254-9a75-d27c827d0b90	Chipmunk	0283c6be08d94bd886d095efded63a26	WASON_SUBMIT	[{'value': '5', 'checked': False}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-08-19 17:50:37.163707+00:00	
+f2406786-2b8d-4bc1-8a49-030906ee56bd	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	If the A has an even number behind it then the condition is true	USR_PLAYING	2020-08-19 17:50:45.225812+00:00	
+0b4a0285-e4ee-4632-8f6e-6753de4ca53e	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	If the 5 has a vowel behind it then the condition is false	USR_PLAYING	2020-08-19 17:51:01.360259+00:00	
+bca7ca9c-6e20-455a-a970-cbb4ee60d5eb	Chipmunk	0283c6be08d94bd886d095efded63a26	CHAT_MESSAGE	Yes, you are right	USR_PLAYING	2020-08-19 17:51:53.984606+00:00	
+01526aaf-fbfc-46d4-8a69-4a660416ab76	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	There you are!	USR_PLAYING	2020-08-19 17:52:01.892897+00:00	
+84f80ab0-84bf-4604-b47f-0dec034b41d2	Chipmunk	0283c6be08d94bd886d095efded63a26	CHAT_MESSAGE	Lol	USR_PLAYING	2020-08-19 17:52:10.421197+00:00	
+fe1a9040-cc9c-4d98-965a-8c8484273b50	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	I'm working from home these days, I need some human contact	USR_PLAYING	2020-08-19 17:52:25.335419+00:00	
+cb60cec4-4439-405a-be29-013c606e91b0	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	I'm willing to hear arguments though, I just don't know that we can do it with less than two flips	USR_PLAYING	2020-08-19 17:52:44.527793+00:00	
+e67a3458-155f-4824-bb18-000829b348f1	Chipmunk	0283c6be08d94bd886d095efded63a26	CHAT_MESSAGE	Me too	USR_PLAYING	2020-08-19 17:52:44.663060+00:00	
+8ccf10b5-fb3c-4783-be77-9cc44d35591c	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	They do want us to talk about it for a few minutes though	USR_PLAYING	2020-08-19 17:53:32.423443+00:00	
+62728c1a-b0bb-4b7c-97b4-df968d55c7c1	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	I feel like my answer is too easy though	USR_PLAYING	2020-08-19 17:54:30.691998+00:00	
+f4052d80-690d-418e-8d78-f8769c46d713	Tiger	1a24763913fe48448ffc90e46b2fde99	OUT_OF_TIME	[{'value': '5', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-08-19 17:54:47.081266+00:00	
+9b13baa8-12e7-4739-9045-b917c740d5c1	Chipmunk	0283c6be08d94bd886d095efded63a26	OUT_OF_TIME	[{'value': '5', 'checked': False}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-08-19 17:54:47.381053+00:00	
+8ccb421e-4d4f-41e9-816f-ec9756e51218	Chipmunk	0283c6be08d94bd886d095efded63a26	CHAT_MESSAGE	Working from home is the best thing to do now because of the COVID19 spreading everyday.	USR_PLAYING	2020-08-19 17:54:47.984284+00:00	
+82da1915-ee16-44a6-adb4-77d2362d7295	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	I'm half and half	USR_PLAYING	2020-08-19 17:55:10.222106+00:00	
+efc7c284-c868-4f0f-bf83-c88af0415c88	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	Oddly enough, just got home but I still have a virtual meeting going on that's basically pointless	USR_PLAYING	2020-08-19 17:55:31.077801+00:00	
+2a2684af-edd4-48c8-8bc4-28021f324f5d	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	I mean, we're on lunch break but still	USR_PLAYING	2020-08-19 17:55:46.609060+00:00	
+1d3d4902-5192-4abe-93e8-31201e6ffcdd	Chipmunk	0283c6be08d94bd886d095efded63a26	CHAT_MESSAGE	I work 70% from home.	USR_PLAYING	2020-08-19 17:56:05.317585+00:00	
+3826e2b6-fe19-4c9d-88e6-f0b7824ffa83	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	I do miss the 3 months or so that I was 100% remote, that was lovely but I went a little feral	USR_PLAYING	2020-08-19 17:56:26.645326+00:00	
+0cb7ce3d-4acb-462c-b5bc-48b354149978	Chipmunk	0283c6be08d94bd886d095efded63a26	CHAT_MESSAGE	lunch break?	USR_PLAYING	2020-08-19 17:56:32.204184+00:00	
+29315d23-b6dd-429b-bdb0-f2d863f345fa	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	Yeah, it's training stuff, all day meetings with various scheduled breaks for hourly staff	USR_PLAYING	2020-08-19 17:56:56.751387+00:00	
+2a7f92f0-c695-4184-bba0-8b21977cb47d	Chipmunk	0283c6be08d94bd886d095efded63a26	CHAT_MESSAGE	you said, you just got home from work earlier.	USR_PLAYING	2020-08-19 17:57:06.796189+00:00	
+d461773b-ae24-497b-9eaa-052391ca64c1	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	Yeah, the meeting was all remote	USR_PLAYING	2020-08-19 17:57:14.799515+00:00	
+321e49c0-b574-456a-afa6-e0c57233c235	Chipmunk	0283c6be08d94bd886d095efded63a26	CHAT_MESSAGE	okay	USR_PLAYING	2020-08-19 17:57:26.456636+00:00	
+2c4a52d8-a586-4d83-85b4-6dfea7db8356	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	I only do a half day in the office on Wednesdays	USR_PLAYING	2020-08-19 17:57:27.608500+00:00	
+5df0511c-2ea4-43f8-9088-fb138b069053	Tiger	1a24763913fe48448ffc90e46b2fde99	WASON_SUBMIT	[{'value': '5', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'X', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-08-19 17:57:36.903350+00:00	
+e1899355-cd03-429c-ac2d-704624fa6641	SYSTEM	-1	WASON_FINISHED		UKN	2020-08-19 17:57:37.295557+00:00	
+4aa23de8-9844-472a-b735-09c2451a459a	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	Guess we're done	USR_PLAYING	2020-08-19 17:57:46.438633+00:00	
+c70b70ff-ec2b-4b16-b92f-e8a4e8090d2e	SYSTEM	-1	WASON_FINISHED		UKN	2020-08-19 17:57:46.836649+00:00	
+e03a6014-068c-4d9d-9d76-a020d93c51b3	Tiger	1a24763913fe48448ffc90e46b2fde99	CHAT_MESSAGE	Hope your day is amazing!	USR_PLAYING	2020-08-19 17:57:51.326601+00:00	
+cf00b7f9-b2af-42b4-af01-80659a80076e	SYSTEM	-1	WASON_FINISHED		UKN	2020-08-19 17:57:51.724406+00:00	

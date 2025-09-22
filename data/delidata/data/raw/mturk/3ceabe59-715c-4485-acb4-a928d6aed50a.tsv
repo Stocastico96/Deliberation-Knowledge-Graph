@@ -1,0 +1,118 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+55ae3b3b-b7d3-4e1e-ab8b-464a69de3314	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""K"", ""checked"": false}, {""value"": ""E"", ""checked"": false}, {""value"": ""8"", ""checked"": false}, {""value"": ""3"", ""checked"": false}]"	UKN	2020-06-08 19:03:16.299912+00:00	
+fb404bba-249f-4c93-8e8a-cda89f632a71	Lion	70696eda17e3496e8720d9b566ecc322	JOIN_ROOM		USR_ONBOARDING	2020-06-08 19:03:16.736476+00:00	
+4a5a34d7-e5a8-48f4-9444-aa57100fe534	Dolphin	30994faba2e44bec899b9857d2ade678	JOIN_ROOM		USR_ONBOARDING	2020-06-08 19:03:17.174988+00:00	
+0739b61c-bec1-4086-aa60-a5eb94e34d77	Beaver	65920b5f48dc4697adff302efa53c8bc	JOIN_ROOM		USR_ONBOARDING	2020-06-08 19:03:17.633276+00:00	
+9d2109f9-0184-4951-a9a9-68a62cd06d51	Lobster	a2b50b9593654471bf9a206326a53b21	JOIN_ROOM		USR_ONBOARDING	2020-06-08 19:03:17.719934+00:00	
+1a762191-e419-4568-9943-df0895fb8b94	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-06-08 19:03:17.862177+00:00	
+458d95fe-6f20-421c-b5e7-736c126f939f	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-06-08 19:03:17.936980+00:00	
+6ecfe734-0fc7-4998-add6-e80205dcc90c	Duck	d01a75de442d48f4ac106df9bd5e1223	JOIN_ROOM		USR_ONBOARDING	2020-06-08 19:03:25.808167+00:00	
+bd618a60-16eb-4094-8f2f-d06c32e6f6e4	Alpaca	900a85e0a933406faa86df0d19c6c798	JOIN_ROOM		USR_ONBOARDING	2020-06-08 19:03:40.006985+00:00	
+7d9a4334-8df3-4c05-ad14-2588d907039f	Duck	d01a75de442d48f4ac106df9bd5e1223	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': False}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:03:50.132004+00:00	
+1a3c2ee9-7f30-4e99-8445-3518eca8e493	Kiwi	f37188304f8b4f75ac01a4d7a1547683	JOIN_ROOM		USR_ONBOARDING	2020-06-08 19:03:50.404400+00:00	
+151abfac-ad46-46a3-a72f-957ba52f6512	Duck	d01a75de442d48f4ac106df9bd5e1223	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': False}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:03:52.354995+00:00	
+70c363fa-c9dd-4260-a0df-1e1f23323e2a	Duck	d01a75de442d48f4ac106df9bd5e1223	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:03:54.125716+00:00	
+f8401ee3-7da2-4760-b829-69bfc06353e3	Duck	d01a75de442d48f4ac106df9bd5e1223	WASON_SUBMIT	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:03:55.540690+00:00	
+dbd24bba-9136-4797-ba71-cf71e4c1ffbb	Alpaca	900a85e0a933406faa86df0d19c6c798	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': True}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:04:03.012924+00:00	
+407b8d2b-a09f-4adc-98f2-1e49c0469334	Lion	70696eda17e3496e8720d9b566ecc322	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': True}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:04:06.037121+00:00	
+b4e4d303-ff53-4341-b35a-bb7ac58d5d21	Lion	70696eda17e3496e8720d9b566ecc322	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:04:09.955243+00:00	
+78410996-7740-4c9c-a855-b6c895ad538f	Lion	70696eda17e3496e8720d9b566ecc322	WASON_SUBMIT	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:04:10.864807+00:00	
+9503f9a1-e3d3-4383-b5df-dec6ce531243	Lion	70696eda17e3496e8720d9b566ecc322	ROUTING_TIMER_ELAPSED	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': False}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:04:18.159727+00:00	
+72415746-0e00-440b-9695-8ef393486f25	Lion	70696eda17e3496e8720d9b566ecc322	ROUTING_TIMER_ELAPSED	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': False}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:04:18.160877+00:00	
+ca8f06de-1e9d-4107-bf30-2bf82a57385f	Lobster	a2b50b9593654471bf9a206326a53b21	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-06-08 19:04:18.973517+00:00	
+faa508ac-f546-41f2-be37-2955a64b0cb3	Duck	d01a75de442d48f4ac106df9bd5e1223	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-06-08 19:04:27.399443+00:00	
+30baa37a-d0c6-42f2-b0c7-e3e9cea47050	Alpaca	900a85e0a933406faa86df0d19c6c798	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-06-08 19:04:40.664215+00:00	
+85257300-c1c3-4ade-8855-59f5b736d025	Alpaca	900a85e0a933406faa86df0d19c6c798	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': False}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:04:52.993351+00:00	
+d2b9f29e-7bc0-439c-967c-b663e15ee54b	Alpaca	900a85e0a933406faa86df0d19c6c798	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': False}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:05:12.501656+00:00	
+ef92f2e5-ee55-4359-a0f2-680c44cca967	Alpaca	900a85e0a933406faa86df0d19c6c798	WASON_SUBMIT	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': False}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:05:14.403271+00:00	
+d51c1013-a79c-4a11-97d3-97baaa477a63	Lobster	a2b50b9593654471bf9a206326a53b21	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': False}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:06:13.648252+00:00	
+928bb689-5792-434c-9e86-135ba2dc7760	Moderating Owl	b8a11a5d9161419ea36cad8b8e85fcb6	JOIN_ROOM		USR_MODERATING	2020-06-08 19:06:14.753478+00:00	
+17b27ad3-348b-4415-99ca-79aa1200bffc	Lobster	a2b50b9593654471bf9a206326a53b21	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': False}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:06:22.283871+00:00	
+533f7a66-3335-4bbc-bfde-2a846ec9bfa6	Lobster	a2b50b9593654471bf9a206326a53b21	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': True}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:06:27.796712+00:00	
+651f214b-1177-4d61-9371-3bb18ba28443	Lobster	a2b50b9593654471bf9a206326a53b21	WASON_SUBMIT	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': True}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:06:30.340393+00:00	
+0cf286e9-026f-4c4f-93d6-e40bfd181b9e	Kiwi	f37188304f8b4f75ac01a4d7a1547683	LEAVE_ROOM		KICKED	2020-06-08 19:06:53.998149+00:00	
+37962b19-14f9-47a0-9d1c-0a9c963920c9	Alpaca	900a85e0a933406faa86df0d19c6c798	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:07:02.875274+00:00	
+86cf440d-13bd-41a5-91c9-7145a99bbb77	Alpaca	900a85e0a933406faa86df0d19c6c798	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': False}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:07:05.073888+00:00	
+e1e6ec8b-97f9-4ec6-b738-588b4d820a24	Alpaca	900a85e0a933406faa86df0d19c6c798	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:07:06.406624+00:00	
+2e8fb592-2b6f-44f0-a62e-a4acdb84251a	Alpaca	900a85e0a933406faa86df0d19c6c798	WASON_GAME	[{'value': 'K', 'checked': True}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:07:08.596897+00:00	
+f9ec1865-a4bb-4f51-99c0-bfc6611e478b	Alpaca	900a85e0a933406faa86df0d19c6c798	WASON_SUBMIT	[{'value': 'K', 'checked': True}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:07:09.722216+00:00	
+1657027f-b027-4a75-a90f-142ca382aefe	Dolphin	30994faba2e44bec899b9857d2ade678	LEAVE_ROOM		KICKED	2020-06-08 19:07:13.808224+00:00	
+8b8e8bcd-4b60-4680-8d28-74a650704e39	Beaver	65920b5f48dc4697adff302efa53c8bc	LEAVE_ROOM		KICKED	2020-06-08 19:07:28.739724+00:00	
+99936a3e-066b-4119-a5e5-ea13a9c96845	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-06-08 19:07:28.983960+00:00	
+5c920e08-e13e-42b6-a7ea-d342afc420cd	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	Hello!	USR_PLAYING	2020-06-08 19:07:38.642955+00:00	
+1f68b493-2f6e-4dcb-a3c3-56b496674ed2	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	Hi	USR_PLAYING	2020-06-08 19:07:42.203688+00:00	
+aae09a00-7a9a-4b7f-a22c-fd1a15ddb84f	Lobster	a2b50b9593654471bf9a206326a53b21	CHAT_MESSAGE	hi	USR_PLAYING	2020-06-08 19:07:45.426262+00:00	
+cf396a9f-c734-4781-966f-b5df1cd903b2	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	Heyo	USR_PLAYING	2020-06-08 19:07:45.854796+00:00	
+0ca47ab3-7708-441f-af41-1224cace2cb0	Moderating Owl	b8a11a5d9161419ea36cad8b8e85fcb6	LEAVE_ROOM		USR_MODERATING	2020-06-08 19:07:49.578972+00:00	
+b9d19d0a-6d7c-48c9-a641-ac2458d17649	Lobster	a2b50b9593654471bf9a206326a53b21	CHAT_MESSAGE	so i think we definitely need the 8 since its an even number	USR_PLAYING	2020-06-08 19:08:10.438909+00:00	
+e48cea9a-8b41-476d-875f-2a35f7c6accc	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	So, what are we solving? The question about the cards?	USR_PLAYING	2020-06-08 19:08:10.994145+00:00	
+e634d3a7-325d-4354-bf21-0552afe7365a	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	I think E and * are correct	USR_PLAYING	2020-06-08 19:08:16.289958+00:00	
+ede27948-1a8a-48d3-bf07-1c94f75c487c	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	8*	USR_PLAYING	2020-06-08 19:08:22.301407+00:00	
+710a1aa9-ca77-4411-9803-dfefb0f25a22	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	I said the only one you can be sure of is E	USR_PLAYING	2020-06-08 19:08:42.241805+00:00	
+89f90576-91b0-43c2-b398-5be64789e747	Lobster	a2b50b9593654471bf9a206326a53b21	CHAT_MESSAGE	is there any reason we might need the 3 or the K?	USR_PLAYING	2020-06-08 19:08:49.447699+00:00	
+1661bb81-f92a-4d15-86ce-264f13d633eb	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	but what about 3? If it has a vowel, it disproves the rule	USR_PLAYING	2020-06-08 19:08:50.409488+00:00	
+87e8f5aa-f1c5-4c04-a283-01b626e540b1	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	Do we just need to select 8 or both 8 and E?	USR_PLAYING	2020-06-08 19:08:52.016894+00:00	
+bb84a660-42d6-4c63-9d1c-0aee98c32942	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	ah yea true	USR_PLAYING	2020-06-08 19:08:57.543682+00:00	
+6986192e-eb03-444b-983e-19ea81dc8293	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	I don't think we need to fli[p the K though	USR_PLAYING	2020-06-08 19:09:08.219843+00:00	
+ca35ac33-296b-4ab5-bb9f-667ce5fb80c0	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	One to prove and one to disprove than?	USR_PLAYING	2020-06-08 19:09:25.858413+00:00	
+8dd076ae-9c4f-42de-9f82-62a89192595f	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	oh wait maybe you have to turn all of them	USR_PLAYING	2020-06-08 19:09:31.153085+00:00	
+625154ab-023b-4161-b62a-9ab8f51a6cdf	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	how can we be sure about any of them?	USR_PLAYING	2020-06-08 19:09:50.901282+00:00	
+1589f26f-d84b-4e60-8060-dc689d38a7c5	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	why the k, tho?	USR_PLAYING	2020-06-08 19:09:52.334511+00:00	
+a3bccc25-553b-4a76-bed0-1ed1042c5900	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	if there is an even number behind K	USR_PLAYING	2020-06-08 19:10:07.946939+00:00	
+157e723f-aaaa-4309-8f65-8f9ee0e4ac51	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	it disprove the rule	USR_PLAYING	2020-06-08 19:10:12.981929+00:00	
+54e6717a-38d0-4f66-b2dc-fd5284986421	Lobster	a2b50b9593654471bf9a206326a53b21	CHAT_MESSAGE	because the k isnt a vowel or a number	USR_PLAYING	2020-06-08 19:10:13.457930+00:00	
+fc235354-671a-4312-8dbf-4bda9929eb05	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	k is not a vowel, so who cares what's on the other side?	USR_PLAYING	2020-06-08 19:10:29.418991+00:00	
+e9f4df99-6151-4597-92be-63e2095d9bf7	Lobster	a2b50b9593654471bf9a206326a53b21	CHAT_MESSAGE	oh no wait	USR_PLAYING	2020-06-08 19:10:50.890706+00:00	
+eaacafed-6c53-4acb-9cfa-3f6ff778058d	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	if there is an even number behind K, it disproves the rule	USR_PLAYING	2020-06-08 19:10:53.237169+00:00	
+ac68b2cf-4c6b-4aee-8087-f866d655dc52	Lobster	a2b50b9593654471bf9a206326a53b21	CHAT_MESSAGE	yea i think we need all the cards	USR_PLAYING	2020-06-08 19:11:03.736077+00:00	
+9538c61a-8e89-46d8-a7b1-fa00c2c5617e	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	no it doesn't	USR_PLAYING	2020-06-08 19:11:04.754409+00:00	
+6fc947d8-dbf9-46ad-921f-c04c91d9f25b	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	that is true	USR_PLAYING	2020-06-08 19:11:05.911741+00:00	
+2f3a71f8-ec1d-476c-8240-5c36a61dbde1	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	the rule is about cards with vowels	USR_PLAYING	2020-06-08 19:11:17.721428+00:00	
+7946e831-35c7-4c17-af8d-4884d0b1e1fa	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	it doesn't say only cards with vowels have an even number	USR_PLAYING	2020-06-08 19:11:31.732198+00:00	
+cb498cac-8791-4a9e-b6cc-dc0b5e62a805	Lobster	a2b50b9593654471bf9a206326a53b21	CHAT_MESSAGE	because you could potentially have a vowel on its side in any random configuration	USR_PLAYING	2020-06-08 19:11:33.311816+00:00	
+6301c5fb-4148-4ebd-9ed7-537e3c3e77b6	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	we have to check E, 8, 3	USR_PLAYING	2020-06-08 19:11:34.463781+00:00	
+861f5bb6-5750-45dd-a8dc-7783a5e145e7	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	I agree	USR_PLAYING	2020-06-08 19:11:39.854587+00:00	
+557c8a6a-e1f1-4e40-bb14-3c5b1bb1afc4	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	ah	USR_PLAYING	2020-06-08 19:11:41.224084+00:00	
+cecfcff0-9000-4309-8695-b7164b060c48	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	E, 8, 3. Sound good peeps?	USR_PLAYING	2020-06-08 19:11:51.521147+00:00	
+5a0c9dec-1a15-45e6-9e52-b67a2539382c	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	if the k's other side is an a or something	USR_PLAYING	2020-06-08 19:11:52.757162+00:00	
+50d81520-a9f8-4fa6-93fa-6fbaef51bccc	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	good thinking	USR_PLAYING	2020-06-08 19:11:55.392413+00:00	
+a59a3819-a693-4638-945e-aab97f6b1112	Lion	70696eda17e3496e8720d9b566ecc322	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-06-08 19:12:06.106886+00:00	
+035bb81a-bfee-464f-a041-d9c818923d01	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	@lobster convinced me to flip the k	USR_PLAYING	2020-06-08 19:12:25.879512+00:00	
+ae6ceaa9-5c5b-40e1-b5ea-ee7392636de5	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	yes agree	USR_PLAYING	2020-06-08 19:12:26.568622+00:00	
+d840e30b-274a-4e1e-871b-91e43f983476	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	no k	USR_PLAYING	2020-06-08 19:12:33.176847+00:00	
+c7f09537-5e3e-43a2-b9df-067a8a4b3ebd	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	i think i disagree	USR_PLAYING	2020-06-08 19:13:02.387168+00:00	
+8889e877-0a3f-4e36-b4ce-4cf4d2023e10	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	Do you think we should turn them all?	USR_PLAYING	2020-06-08 19:13:16.096972+00:00	
+8c2b478d-4d79-4411-82e9-7e2a438d4bfc	Lobster	a2b50b9593654471bf9a206326a53b21	CHAT_MESSAGE	i think its all	USR_PLAYING	2020-06-08 19:13:24.641251+00:00	
+516340e4-9b35-44fc-a2da-fc045fb15f4e	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	I do @all 	USR_PLAYING	2020-06-08 19:13:26.332981+00:00	
+defb4234-a1fc-411c-ba93-15a195285557	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	it says all cards have a letter on one side and a number on the other	USR_PLAYING	2020-06-08 19:13:30.462745+00:00	
+ea738835-cf9a-4625-b137-c8842fa5e42e	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	@Lion i mean	USR_PLAYING	2020-06-08 19:13:35.897346+00:00	
+ab6de715-b54e-458c-9a31-abbd6cfdc6dc	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	i missed that @Alpaca 	USR_PLAYING	2020-06-08 19:13:52.054851+00:00	
+9913b037-0075-4311-9bc2-34dbdabe8b4d	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	Aplaca is right	USR_PLAYING	2020-06-08 19:13:54.471828+00:00	
+448bcda9-0eb9-4482-9dc0-5d2c8ed2fcab	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	so, 3, 3, 8	USR_PLAYING	2020-06-08 19:14:04.629107+00:00	
+d8641603-c2f0-4766-bb3a-b1eb593d3fb0	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	e 3 and 8	USR_PLAYING	2020-06-08 19:14:10.408915+00:00	
+4cbc2d17-1566-4754-a5e1-8a69fb5f32d0	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	yea	USR_PLAYING	2020-06-08 19:14:14.284972+00:00	
+f3c299ea-4b8a-481a-9fa3-059b065102d2	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	good	USR_PLAYING	2020-06-08 19:14:18.440730+00:00	
+2209e3e7-d233-42a8-b87e-6c99d9479f87	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	are we unanimous?	USR_PLAYING	2020-06-08 19:14:21.230984+00:00	
+bff55089-36b7-49a9-92a0-a123735ffed7	Alpaca	900a85e0a933406faa86df0d19c6c798	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-06-08 19:14:23.189274+00:00	
+ae0938af-418e-4432-9de2-624d0948b24f	Alpaca	900a85e0a933406faa86df0d19c6c798	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-06-08 19:14:24.005751+00:00	
+749712ee-7435-40f7-b6c4-295c51b89929	Alpaca	900a85e0a933406faa86df0d19c6c798	WASON_SUBMIT	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-06-08 19:14:24.774353+00:00	
+5fa5aeeb-593f-4eb2-8132-ce5b84c55b9f	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	yes	USR_PLAYING	2020-06-08 19:14:28.319875+00:00	
+bd9e01c6-ecee-4bb9-85fc-466cea4d8500	Duck	d01a75de442d48f4ac106df9bd5e1223	OUT_OF_TIME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-06-08 19:14:29.116166+00:00	
+6e2898c6-8843-4607-b73e-f90141f13af2	Lion	70696eda17e3496e8720d9b566ecc322	OUT_OF_TIME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-06-08 19:14:29.130877+00:00	
+63de1479-ec72-4a5f-82b1-df52d31bd27f	Lobster	a2b50b9593654471bf9a206326a53b21	OUT_OF_TIME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': False}, {'value': '8', 'checked': True}, {'value': '3', 'checked': False}]	USR_PLAYING	2020-06-08 19:14:29.150309+00:00	
+a7e5b74f-d025-4fb4-9228-9c3060cb76fd	Alpaca	900a85e0a933406faa86df0d19c6c798	OUT_OF_TIME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-06-08 19:14:30.090645+00:00	
+b6b2119f-f045-4163-8379-7f946bf0b95c	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	hooray	USR_PLAYING	2020-06-08 19:14:34.699269+00:00	
+2093c415-8cc3-4fc8-bfe6-31510f4aea12	Lobster	a2b50b9593654471bf9a206326a53b21	CHAT_MESSAGE	no 	USR_PLAYING	2020-06-08 19:14:39.652113+00:00	
+7f95d0e1-4dd2-4d09-9b92-3efdfc41acee	Lobster	a2b50b9593654471bf9a206326a53b21	CHAT_MESSAGE	but thats okay	USR_PLAYING	2020-06-08 19:14:42.780479+00:00	
+7d0c6574-27d2-4a72-8b23-f76884604f0a	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	wait why	USR_PLAYING	2020-06-08 19:14:46.397954+00:00	
+0b4c4fa5-e8eb-405e-ac48-d50b50678178	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	no? 	USR_PLAYING	2020-06-08 19:14:48.375538+00:00	
+aca35c43-68d0-4287-bce4-f510118a273d	Alpaca	900a85e0a933406faa86df0d19c6c798	CHAT_MESSAGE	tell us	USR_PLAYING	2020-06-08 19:14:51.446002+00:00	
+deab372e-4460-4a33-b3c8-8cd30c7ee985	Lobster	a2b50b9593654471bf9a206326a53b21	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': False}]	USR_PLAYING	2020-06-08 19:14:54.115978+00:00	
+c1970087-8bd0-42b4-8976-a1fc1af41082	Lobster	a2b50b9593654471bf9a206326a53b21	WASON_GAME	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-06-08 19:14:54.931960+00:00	
+088e1912-f163-4302-93e3-d42873dc5848	Lobster	a2b50b9593654471bf9a206326a53b21	WASON_SUBMIT	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-06-08 19:14:56.227144+00:00	
+5b6b9a65-b93a-4bd6-92fa-dfcd1a41b669	Lion	70696eda17e3496e8720d9b566ecc322	WASON_SUBMIT	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-06-08 19:14:58.231125+00:00	
+b5db4507-e745-4473-a168-5bf0cc23ff8a	Lion	70696eda17e3496e8720d9b566ecc322	CHAT_MESSAGE	We all submitted	USR_PLAYING	2020-06-08 19:15:05.304957+00:00	
+06825b74-b714-4ea0-8c90-69f5024fa4bc	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	what's the reason, @Lobster 	USR_PLAYING	2020-06-08 19:16:13.786157+00:00	
+ded5c368-0e81-4230-86fb-1e5fa40c5b1d	Duck	d01a75de442d48f4ac106df9bd5e1223	CHAT_MESSAGE	submitting	USR_PLAYING	2020-06-08 19:17:58.950529+00:00	
+a2c22e6d-970e-44a7-9974-87aca500d67a	Duck	d01a75de442d48f4ac106df9bd5e1223	WASON_SUBMIT	[{'value': 'K', 'checked': False}, {'value': 'E', 'checked': True}, {'value': '8', 'checked': True}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-06-08 19:18:02.692024+00:00	
+b2c92ec6-679e-49cd-ab74-e60c57e2f7c0	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-08 19:18:03.153652+00:00	

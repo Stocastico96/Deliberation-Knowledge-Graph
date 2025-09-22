@@ -1,0 +1,711 @@
+@prefix del: <https://w3id.org/deliberation/ontology#> .
+
+<https://w3id.org/deliberation/resource/barcelona_comprehensive> a del:DeliberationProcess ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/barcelona_participant_0>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_1>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_10>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_11>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_12>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_13>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_14>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_15>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_16>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_17>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_18>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_19>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_2>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_20>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_21>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_22>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_23>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_24>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_25>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_26>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_27>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_28>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_29>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_3>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_4>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_5>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_6>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_7>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_8>,
+        <https://w3id.org/deliberation/resource/barcelona_participant_9> ;
+    del:name "Decidim Barcelona - Comprehensive Participation" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/delidata_comprehensive> a del:DeliberationProcess ;
+    del:name "DeliData - Comprehensive Research Data" ;
+    del:platform "DeliData" .
+
+<https://w3id.org/deliberation/resource/eu_have_your_say_process> a del:DeliberationProcess ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/eu_hys_participant_0>,
+        <https://w3id.org/deliberation/resource/eu_hys_participant_1>,
+        <https://w3id.org/deliberation/resource/eu_hys_participant_2>,
+        <https://w3id.org/deliberation/resource/eu_hys_participant_3>,
+        <https://w3id.org/deliberation/resource/eu_hys_participant_4> ;
+    del:name "EU Have Your Say - Citizen Consultations" ;
+    del:platform "EU Have Your Say" .
+
+<https://w3id.org/deliberation/resource/eu_parliament_comprehensive> a del:DeliberationProcess ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/eu_participant_0>,
+        <https://w3id.org/deliberation/resource/eu_participant_1>,
+        <https://w3id.org/deliberation/resource/eu_participant_10>,
+        <https://w3id.org/deliberation/resource/eu_participant_11>,
+        <https://w3id.org/deliberation/resource/eu_participant_12>,
+        <https://w3id.org/deliberation/resource/eu_participant_13>,
+        <https://w3id.org/deliberation/resource/eu_participant_14>,
+        <https://w3id.org/deliberation/resource/eu_participant_2>,
+        <https://w3id.org/deliberation/resource/eu_participant_3>,
+        <https://w3id.org/deliberation/resource/eu_participant_4>,
+        <https://w3id.org/deliberation/resource/eu_participant_5>,
+        <https://w3id.org/deliberation/resource/eu_participant_6>,
+        <https://w3id.org/deliberation/resource/eu_participant_7>,
+        <https://w3id.org/deliberation/resource/eu_participant_8>,
+        <https://w3id.org/deliberation/resource/eu_participant_9> ;
+    del:name "European Parliament Debates - Comprehensive" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/habermas_machine_process> a del:DeliberationProcess ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/habermas_participant_0>,
+        <https://w3id.org/deliberation/resource/habermas_participant_1>,
+        <https://w3id.org/deliberation/resource/habermas_participant_2>,
+        <https://w3id.org/deliberation/resource/habermas_participant_3>,
+        <https://w3id.org/deliberation/resource/habermas_participant_4>,
+        <https://w3id.org/deliberation/resource/habermas_participant_5>,
+        <https://w3id.org/deliberation/resource/habermas_participant_6>,
+        <https://w3id.org/deliberation/resource/habermas_participant_7> ;
+    del:name "Habermas Machine - AI-Assisted Deliberation" ;
+    del:platform "Habermas Machine" .
+
+<https://w3id.org/deliberation/resource/madrid_comprehensive> a del:DeliberationProcess ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/madrid_participant_0>,
+        <https://w3id.org/deliberation/resource/madrid_participant_1>,
+        <https://w3id.org/deliberation/resource/madrid_participant_10>,
+        <https://w3id.org/deliberation/resource/madrid_participant_11>,
+        <https://w3id.org/deliberation/resource/madrid_participant_12>,
+        <https://w3id.org/deliberation/resource/madrid_participant_13>,
+        <https://w3id.org/deliberation/resource/madrid_participant_14>,
+        <https://w3id.org/deliberation/resource/madrid_participant_15>,
+        <https://w3id.org/deliberation/resource/madrid_participant_16>,
+        <https://w3id.org/deliberation/resource/madrid_participant_17>,
+        <https://w3id.org/deliberation/resource/madrid_participant_18>,
+        <https://w3id.org/deliberation/resource/madrid_participant_19>,
+        <https://w3id.org/deliberation/resource/madrid_participant_2>,
+        <https://w3id.org/deliberation/resource/madrid_participant_20>,
+        <https://w3id.org/deliberation/resource/madrid_participant_21>,
+        <https://w3id.org/deliberation/resource/madrid_participant_22>,
+        <https://w3id.org/deliberation/resource/madrid_participant_23>,
+        <https://w3id.org/deliberation/resource/madrid_participant_24>,
+        <https://w3id.org/deliberation/resource/madrid_participant_25>,
+        <https://w3id.org/deliberation/resource/madrid_participant_26>,
+        <https://w3id.org/deliberation/resource/madrid_participant_27>,
+        <https://w3id.org/deliberation/resource/madrid_participant_28>,
+        <https://w3id.org/deliberation/resource/madrid_participant_29>,
+        <https://w3id.org/deliberation/resource/madrid_participant_3>,
+        <https://w3id.org/deliberation/resource/madrid_participant_30>,
+        <https://w3id.org/deliberation/resource/madrid_participant_31>,
+        <https://w3id.org/deliberation/resource/madrid_participant_32>,
+        <https://w3id.org/deliberation/resource/madrid_participant_33>,
+        <https://w3id.org/deliberation/resource/madrid_participant_34>,
+        <https://w3id.org/deliberation/resource/madrid_participant_35>,
+        <https://w3id.org/deliberation/resource/madrid_participant_36>,
+        <https://w3id.org/deliberation/resource/madrid_participant_37>,
+        <https://w3id.org/deliberation/resource/madrid_participant_38>,
+        <https://w3id.org/deliberation/resource/madrid_participant_39>,
+        <https://w3id.org/deliberation/resource/madrid_participant_4>,
+        <https://w3id.org/deliberation/resource/madrid_participant_5>,
+        <https://w3id.org/deliberation/resource/madrid_participant_6>,
+        <https://w3id.org/deliberation/resource/madrid_participant_7>,
+        <https://w3id.org/deliberation/resource/madrid_participant_8>,
+        <https://w3id.org/deliberation/resource/madrid_participant_9> ;
+    del:name "Decide Madrid - Comprehensive Citizen Proposals" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/subject_climate_change_policy> a del:Topic ;
+    del:name "Climate Change Policy" .
+
+<https://w3id.org/deliberation/resource/subject_democratic_participation> a del:Topic ;
+    del:name "Democratic Participation" .
+
+<https://w3id.org/deliberation/resource/subject_digital_rights> a del:Topic ;
+    del:name "Digital Rights" .
+
+<https://w3id.org/deliberation/resource/subject_economic_reform> a del:Topic ;
+    del:name "Economic Reform" .
+
+<https://w3id.org/deliberation/resource/subject_education_reform> a del:Topic ;
+    del:name "Education Reform" .
+
+<https://w3id.org/deliberation/resource/subject_environmental_protection> a del:Topic ;
+    del:name "Environmental Protection" .
+
+<https://w3id.org/deliberation/resource/subject_healthcare_policy> a del:Topic ;
+    del:name "Healthcare Policy" .
+
+<https://w3id.org/deliberation/resource/subject_housing_rights> a del:Topic ;
+    del:name "Housing Rights" .
+
+<https://w3id.org/deliberation/resource/subject_immigration_policy> a del:Topic ;
+    del:name "Immigration Policy" .
+
+<https://w3id.org/deliberation/resource/subject_transportation> a del:Topic ;
+    del:name "Transportation" .
+
+<https://w3id.org/deliberation/resource/us_supreme_comprehensive> a del:DeliberationProcess ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/us_participant_0>,
+        <https://w3id.org/deliberation/resource/us_participant_1>,
+        <https://w3id.org/deliberation/resource/us_participant_10>,
+        <https://w3id.org/deliberation/resource/us_participant_11>,
+        <https://w3id.org/deliberation/resource/us_participant_12>,
+        <https://w3id.org/deliberation/resource/us_participant_13>,
+        <https://w3id.org/deliberation/resource/us_participant_14>,
+        <https://w3id.org/deliberation/resource/us_participant_15>,
+        <https://w3id.org/deliberation/resource/us_participant_16>,
+        <https://w3id.org/deliberation/resource/us_participant_17>,
+        <https://w3id.org/deliberation/resource/us_participant_18>,
+        <https://w3id.org/deliberation/resource/us_participant_19>,
+        <https://w3id.org/deliberation/resource/us_participant_2>,
+        <https://w3id.org/deliberation/resource/us_participant_20>,
+        <https://w3id.org/deliberation/resource/us_participant_21>,
+        <https://w3id.org/deliberation/resource/us_participant_22>,
+        <https://w3id.org/deliberation/resource/us_participant_23>,
+        <https://w3id.org/deliberation/resource/us_participant_24>,
+        <https://w3id.org/deliberation/resource/us_participant_3>,
+        <https://w3id.org/deliberation/resource/us_participant_4>,
+        <https://w3id.org/deliberation/resource/us_participant_5>,
+        <https://w3id.org/deliberation/resource/us_participant_6>,
+        <https://w3id.org/deliberation/resource/us_participant_7>,
+        <https://w3id.org/deliberation/resource/us_participant_8>,
+        <https://w3id.org/deliberation/resource/us_participant_9> ;
+    del:name "US Supreme Court - Comprehensive Oral Arguments" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_0> a del:Participant ;
+    del:name "Barcelona Citizen 0" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_1> a del:Participant ;
+    del:name "Barcelona Citizen 1" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_10> a del:Participant ;
+    del:name "Barcelona Citizen 10" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_11> a del:Participant ;
+    del:name "Barcelona Citizen 11" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_12> a del:Participant ;
+    del:name "Barcelona Citizen 12" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_13> a del:Participant ;
+    del:name "Barcelona Citizen 13" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_14> a del:Participant ;
+    del:name "Barcelona Citizen 14" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_15> a del:Participant ;
+    del:name "Barcelona Citizen 15" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_16> a del:Participant ;
+    del:name "Barcelona Citizen 16" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_17> a del:Participant ;
+    del:name "Barcelona Citizen 17" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_18> a del:Participant ;
+    del:name "Barcelona Citizen 18" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_19> a del:Participant ;
+    del:name "Barcelona Citizen 19" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_2> a del:Participant ;
+    del:name "Barcelona Citizen 2" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_20> a del:Participant ;
+    del:name "Barcelona Citizen 20" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_21> a del:Participant ;
+    del:name "Barcelona Citizen 21" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_22> a del:Participant ;
+    del:name "Barcelona Citizen 22" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_23> a del:Participant ;
+    del:name "Barcelona Citizen 23" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_24> a del:Participant ;
+    del:name "Barcelona Citizen 24" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_25> a del:Participant ;
+    del:name "Barcelona Citizen 25" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_26> a del:Participant ;
+    del:name "Barcelona Citizen 26" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_27> a del:Participant ;
+    del:name "Barcelona Citizen 27" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_28> a del:Participant ;
+    del:name "Barcelona Citizen 28" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_29> a del:Participant ;
+    del:name "Barcelona Citizen 29" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_3> a del:Participant ;
+    del:name "Barcelona Citizen 3" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_4> a del:Participant ;
+    del:name "Barcelona Citizen 4" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_5> a del:Participant ;
+    del:name "Barcelona Citizen 5" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_6> a del:Participant ;
+    del:name "Barcelona Citizen 6" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_7> a del:Participant ;
+    del:name "Barcelona Citizen 7" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_8> a del:Participant ;
+    del:name "Barcelona Citizen 8" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/barcelona_participant_9> a del:Participant ;
+    del:name "Barcelona Citizen 9" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/eu_hys_participant_0> a del:Participant ;
+    del:name "EU Consultation Participant 0" ;
+    del:platform "EU Have Your Say" .
+
+<https://w3id.org/deliberation/resource/eu_hys_participant_1> a del:Participant ;
+    del:name "EU Consultation Participant 1" ;
+    del:platform "EU Have Your Say" .
+
+<https://w3id.org/deliberation/resource/eu_hys_participant_2> a del:Participant ;
+    del:name "EU Consultation Participant 2" ;
+    del:platform "EU Have Your Say" .
+
+<https://w3id.org/deliberation/resource/eu_hys_participant_3> a del:Participant ;
+    del:name "EU Consultation Participant 3" ;
+    del:platform "EU Have Your Say" .
+
+<https://w3id.org/deliberation/resource/eu_hys_participant_4> a del:Participant ;
+    del:name "EU Consultation Participant 4" ;
+    del:platform "EU Have Your Say" .
+
+<https://w3id.org/deliberation/resource/eu_org_1> a del:Organization ;
+    del:name "S&D" .
+
+<https://w3id.org/deliberation/resource/eu_org_11> a del:Organization ;
+    del:name "NI" .
+
+<https://w3id.org/deliberation/resource/eu_org_2> a del:Organization ;
+    del:name "PPE" .
+
+<https://w3id.org/deliberation/resource/eu_org_3> a del:Organization ;
+    del:name "PfE" .
+
+<https://w3id.org/deliberation/resource/eu_org_4> a del:Organization ;
+    del:name "Verts/ALE" .
+
+<https://w3id.org/deliberation/resource/eu_org_5> a del:Organization ;
+    del:name "NI" .
+
+<https://w3id.org/deliberation/resource/eu_org_6> a del:Organization ;
+    del:name "The Left" .
+
+<https://w3id.org/deliberation/resource/eu_org_7> a del:Organization ;
+    del:name "S&D" .
+
+<https://w3id.org/deliberation/resource/eu_org_9> a del:Organization ;
+    del:name "Verts/ALE" .
+
+<https://w3id.org/deliberation/resource/eu_participant_0> a del:Participant ;
+    del:name "President." ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_1> a del:Participant ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_1> ;
+    del:name "Iratxe GarcÃ­a PÃ©rez" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_10> a del:Participant ;
+    del:name "Christine Anderson," ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_11> a del:Participant ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_11> ;
+    del:name "Lukas Sieper" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_12> a del:Participant ;
+    del:name "Tineke Strik," ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_13> a del:Participant ;
+    del:name "PredsedajÃºci ." ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_14> a del:Participant ;
+    del:name "Andrius Kubilius," ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_2> a del:Participant ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_2> ;
+    del:name "Å½eljana Zovko" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_3> a del:Participant ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_3> ;
+    del:name "ÎÏÏÎ¿Î´Î¯ÏÎ· ÎÎ±ÏÎ¹Î½Î¿ÏÎ¿ÏÎ»Î¿Ï" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_4> a del:Participant ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_4> ;
+    del:name "Alice Kuhnke" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_5> a del:Participant ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_5> ;
+    del:name "Fabio De Masi" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_6> a del:Participant ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_6> ;
+    del:name "Lynn Boylan" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_7> a del:Participant ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_7> ;
+    del:name "Costas Mavrides" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_8> a del:Participant ;
+    del:name "Gheorghe Piperea," ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_9> a del:Participant ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_9> ;
+    del:name "Nicolae ÅtefÄnuÈÄ" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/habermas_participant_0> a del:Participant ;
+    del:name "Habermas Participant 0" ;
+    del:platform "Habermas Machine" .
+
+<https://w3id.org/deliberation/resource/habermas_participant_1> a del:Participant ;
+    del:name "Habermas Participant 1" ;
+    del:platform "Habermas Machine" .
+
+<https://w3id.org/deliberation/resource/habermas_participant_2> a del:Participant ;
+    del:name "Habermas Participant 2" ;
+    del:platform "Habermas Machine" .
+
+<https://w3id.org/deliberation/resource/habermas_participant_3> a del:Participant ;
+    del:name "Habermas Participant 3" ;
+    del:platform "Habermas Machine" .
+
+<https://w3id.org/deliberation/resource/habermas_participant_4> a del:Participant ;
+    del:name "Habermas Participant 4" ;
+    del:platform "Habermas Machine" .
+
+<https://w3id.org/deliberation/resource/habermas_participant_5> a del:Participant ;
+    del:name "Habermas Participant 5" ;
+    del:platform "Habermas Machine" .
+
+<https://w3id.org/deliberation/resource/habermas_participant_6> a del:Participant ;
+    del:name "Habermas Participant 6" ;
+    del:platform "Habermas Machine" .
+
+<https://w3id.org/deliberation/resource/habermas_participant_7> a del:Participant ;
+    del:name "Habermas Participant 7" ;
+    del:platform "Habermas Machine" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_0> a del:Participant ;
+    del:name "Madrid Citizen 0" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_1> a del:Participant ;
+    del:name "Madrid Citizen 1" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_10> a del:Participant ;
+    del:name "Madrid Citizen 10" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_11> a del:Participant ;
+    del:name "Madrid Citizen 11" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_12> a del:Participant ;
+    del:name "Madrid Citizen 12" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_13> a del:Participant ;
+    del:name "Madrid Citizen 13" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_14> a del:Participant ;
+    del:name "Madrid Citizen 14" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_15> a del:Participant ;
+    del:name "Madrid Citizen 15" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_16> a del:Participant ;
+    del:name "Madrid Citizen 16" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_17> a del:Participant ;
+    del:name "Madrid Citizen 17" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_18> a del:Participant ;
+    del:name "Madrid Citizen 18" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_19> a del:Participant ;
+    del:name "Madrid Citizen 19" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_2> a del:Participant ;
+    del:name "Madrid Citizen 2" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_20> a del:Participant ;
+    del:name "Madrid Citizen 20" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_21> a del:Participant ;
+    del:name "Madrid Citizen 21" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_22> a del:Participant ;
+    del:name "Madrid Citizen 22" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_23> a del:Participant ;
+    del:name "Madrid Citizen 23" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_24> a del:Participant ;
+    del:name "Madrid Citizen 24" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_25> a del:Participant ;
+    del:name "Madrid Citizen 25" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_26> a del:Participant ;
+    del:name "Madrid Citizen 26" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_27> a del:Participant ;
+    del:name "Madrid Citizen 27" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_28> a del:Participant ;
+    del:name "Madrid Citizen 28" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_29> a del:Participant ;
+    del:name "Madrid Citizen 29" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_3> a del:Participant ;
+    del:name "Madrid Citizen 3" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_30> a del:Participant ;
+    del:name "Madrid Citizen 30" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_31> a del:Participant ;
+    del:name "Madrid Citizen 31" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_32> a del:Participant ;
+    del:name "Madrid Citizen 32" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_33> a del:Participant ;
+    del:name "Madrid Citizen 33" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_34> a del:Participant ;
+    del:name "Madrid Citizen 34" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_35> a del:Participant ;
+    del:name "Madrid Citizen 35" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_36> a del:Participant ;
+    del:name "Madrid Citizen 36" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_37> a del:Participant ;
+    del:name "Madrid Citizen 37" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_38> a del:Participant ;
+    del:name "Madrid Citizen 38" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_39> a del:Participant ;
+    del:name "Madrid Citizen 39" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_4> a del:Participant ;
+    del:name "Madrid Citizen 4" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_5> a del:Participant ;
+    del:name "Madrid Citizen 5" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_6> a del:Participant ;
+    del:name "Madrid Citizen 6" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_7> a del:Participant ;
+    del:name "Madrid Citizen 7" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_8> a del:Participant ;
+    del:name "Madrid Citizen 8" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_9> a del:Participant ;
+    del:name "Madrid Citizen 9" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/us_participant_0> a del:Participant ;
+    del:name "Supreme Court Participant 0" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_1> a del:Participant ;
+    del:name "Supreme Court Participant 1" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_10> a del:Participant ;
+    del:name "Supreme Court Participant 10" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_11> a del:Participant ;
+    del:name "Supreme Court Participant 11" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_12> a del:Participant ;
+    del:name "Supreme Court Participant 12" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_13> a del:Participant ;
+    del:name "Supreme Court Participant 13" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_14> a del:Participant ;
+    del:name "Supreme Court Participant 14" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_15> a del:Participant ;
+    del:name "Supreme Court Participant 15" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_16> a del:Participant ;
+    del:name "Supreme Court Participant 16" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_17> a del:Participant ;
+    del:name "Supreme Court Participant 17" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_18> a del:Participant ;
+    del:name "Supreme Court Participant 18" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_19> a del:Participant ;
+    del:name "Supreme Court Participant 19" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_2> a del:Participant ;
+    del:name "Supreme Court Participant 2" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_20> a del:Participant ;
+    del:name "Supreme Court Participant 20" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_21> a del:Participant ;
+    del:name "Supreme Court Participant 21" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_22> a del:Participant ;
+    del:name "Supreme Court Participant 22" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_23> a del:Participant ;
+    del:name "Supreme Court Participant 23" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_24> a del:Participant ;
+    del:name "Supreme Court Participant 24" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_3> a del:Participant ;
+    del:name "Supreme Court Participant 3" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_4> a del:Participant ;
+    del:name "Supreme Court Participant 4" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_5> a del:Participant ;
+    del:name "Supreme Court Participant 5" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_6> a del:Participant ;
+    del:name "Supreme Court Participant 6" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_7> a del:Participant ;
+    del:name "Supreme Court Participant 7" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_8> a del:Participant ;
+    del:name "Supreme Court Participant 8" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_participant_9> a del:Participant ;
+    del:name "Supreme Court Participant 9" ;
+    del:platform "US Supreme Court" .
+

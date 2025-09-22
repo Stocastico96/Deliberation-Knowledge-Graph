@@ -1,0 +1,93 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+1431b221-23be-4d9a-b566-7904d82d7186	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""4"", ""checked"": false}, {""value"": ""5"", ""checked"": false}, {""value"": ""I"", ""checked"": false}, {""value"": ""D"", ""checked"": false}]"	UKN	2019-11-25 13:50:35.215760+00:00	
+ffe915da-f6a3-485e-a91f-80e7bfef9c4f	Moderating Owl	959d9191d7f44c419481e514f839b350	JOIN_ROOM		USR_MODERATING	2019-12-03 15:36:57.182409+00:00	
+fd4ce03e-0ca7-4b48-a1a2-f86df3d1a33c	Lion	2915091d068f420f8ba65133b680b226	JOIN_ROOM		USR_ONBOARDING	2019-12-03 16:48:37.966254+00:00	
+8527f294-ce70-4c52-9809-05755b44fbdf	Lion	2915091d068f420f8ba65133b680b226	LEAVE_ROOM		UKN	2019-12-03 16:48:43.478708+00:00	
+a76d2984-f27c-46ea-aa3e-630cf29cb7c1	Giraffe	edf7beaa1b01486b91c70873076bf9dd	JOIN_ROOM		USR_ONBOARDING	2019-12-03 16:48:46.366115+00:00	
+c8669783-1e98-4e0b-b8db-b800c058d257	Moderating Owl	5554083724994ccebda8a8073bcc4024	JOIN_ROOM		USR_MODERATING	2019-12-03 16:48:49.802735+00:00	
+65aa2787-a84a-4ae1-8afa-4c237280f03c	Moderating Owl	5554083724994ccebda8a8073bcc4024	LEAVE_ROOM		UKN	2019-12-03 16:49:16.478791+00:00	
+327c100e-ef58-45b8-a2b2-d4f493abe025	Moderating Owl	f48e57700f3f4051ba20f72686396d2f	JOIN_ROOM		USR_MODERATING	2019-12-03 16:49:23.483957+00:00	
+7a3dd078-6701-4067-bd8b-daa2022f76e2	Moderating Owl	959d9191d7f44c419481e514f839b350	LEAVE_ROOM		UKN	2019-12-03 16:49:27.430775+00:00	
+2ebe64c0-0805-4fdc-8585-c265021cd9ea	Giraffe	edf7beaa1b01486b91c70873076bf9dd	LEAVE_ROOM		UKN	2019-12-03 16:49:29.345103+00:00	
+7633fec4-993c-4aa5-bd25-88ab2df40dbd	Moderating Owl	f48e57700f3f4051ba20f72686396d2f	LEAVE_ROOM		UKN	2019-12-03 16:49:57.913515+00:00	
+b5caca61-53d5-4eb9-953f-f0c2747d9960	Moderating Owl	45050bdad0384a0982f3ea428d62818d	JOIN_ROOM		USR_MODERATING	2019-12-03 16:51:28.840947+00:00	
+b5606733-41f1-4ed9-9b4b-c0bbcde4f9f9	Moderating Owl	583bf47af7584e18862d1bcfc53835c3	JOIN_ROOM		USR_MODERATING	2019-12-03 16:54:41.439754+00:00	
+13bf33a9-5217-4bcf-b774-820d84c35427	Moderating Owl	583bf47af7584e18862d1bcfc53835c3	LEAVE_ROOM		UKN	2019-12-03 16:54:45.942431+00:00	
+ed750bf1-f3b3-48aa-add3-359a4e0a4099	Moderating Owl	45050bdad0384a0982f3ea428d62818d	LEAVE_ROOM		UKN	2019-12-03 16:57:32.843437+00:00	
+acb2ca2b-0b57-42be-861d-d14f4fad0798	Moderating Owl	f2e5662eaad84b36970b955db87851b6	JOIN_ROOM		USR_MODERATING	2019-12-03 16:57:55.395095+00:00	
+5538113d-4e79-4876-8043-dd8d0f80ddc5	Moderating Owl	f2e5662eaad84b36970b955db87851b6	LEAVE_ROOM		UKN	2019-12-03 16:58:52.964863+00:00	
+76db666c-c5fc-430e-9375-fc5c554cc559	Moderating Owl	bb1b173fbff34260b241d5249043ea5e	JOIN_ROOM		USR_MODERATING	2019-12-03 16:58:53.131585+00:00	
+18ad841d-e205-459d-b7cf-f4ac3cafe1c8	Moderating Owl	bb1b173fbff34260b241d5249043ea5e	LEAVE_ROOM		UKN	2019-12-03 16:59:59.565396+00:00	
+a2794256-3e27-4a4a-a9f5-3b1047394d16	Moderating Owl	f9a7b057a6544b25ac8cbca486df389e	JOIN_ROOM		USR_MODERATING	2019-12-03 17:00:00.024846+00:00	
+d1245545-539f-4d5c-8734-e4d9e61574df	Lion	7e00fb046d0c45f2a1a80675a47564a5	JOIN_ROOM		USR_ONBOARDING	2019-12-03 17:00:12.436260+00:00	
+fdf3481d-11c5-493f-861d-ec3f0ff7886b	Lion	7e00fb046d0c45f2a1a80675a47564a5	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'I', 'checked': False}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2019-12-03 17:02:02.688268+00:00	
+3523052a-6c6f-4172-a89c-00d2e7b50074	Lion	7e00fb046d0c45f2a1a80675a47564a5	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2019-12-03 17:02:28.110272+00:00	
+5ea3a5e4-a80b-452e-bc2b-4f5f43419f72	Lion	7e00fb046d0c45f2a1a80675a47564a5	WASON_SUBMIT	[{'value': '4', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2019-12-03 17:02:31.436542+00:00	
+79a6de38-b805-4d63-8773-09bc329d1faf	SYSTEM	-1	FINISHED_ONBOARDING	2019-12-03T17:09:31.616279	UKN	2019-12-03 17:02:31.616314+00:00	
+50f3de5e-9230-43e7-b80e-d8b326fbe14d	Moderating Owl	f9a7b057a6544b25ac8cbca486df389e	OUT_OF_TIME	[{'value': '4', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'I', 'checked': False}, {'value': 'D', 'checked': False}]	USR_MODERATING	2019-12-03 17:09:31.913447+00:00	
+7aa8313b-04df-4983-9172-6c40247f0ef4	Lion	7e00fb046d0c45f2a1a80675a47564a5	OUT_OF_TIME	[{'value': '4', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2019-12-03 17:09:32.227478+00:00	
+792539e5-c4a1-4816-8007-4d3a41da5fb3	Moderating Owl	f9a7b057a6544b25ac8cbca486df389e	LEAVE_ROOM		UKN	2019-12-03 17:10:39.530202+00:00	
+26922a42-1059-4c3b-b265-d6e20e8b3643	Moderating Owl	b993699bbd4d48d9963179cf998f3751	JOIN_ROOM		USR_MODERATING	2019-12-03 17:10:43.665654+00:00	
+0e3e62a5-b372-46d8-9114-ed3edaaccd7f	Zebra	52779a24a379470fba9339f1da2ccf28	JOIN_ROOM		USR_ONBOARDING	2019-12-03 17:12:21.470153+00:00	
+1ff02a2b-a313-4757-a015-656845a1b700	Zebra	52779a24a379470fba9339f1da2ccf28	WASON_GAME	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': False}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2019-12-03 17:12:26.819932+00:00	
+c5912d20-ed07-4e6c-9cb8-c4a86ea029a7	Zebra	52779a24a379470fba9339f1da2ccf28	WASON_GAME	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2019-12-03 17:12:27.926638+00:00	
+2bcdb240-570a-4748-a36d-63bc3b256bda	Zebra	52779a24a379470fba9339f1da2ccf28	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2019-12-03 17:12:30.035330+00:00	
+9d7ba7ed-ce39-4c90-b080-699fe6badfaf	Zebra	52779a24a379470fba9339f1da2ccf28	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2019-12-03 17:12:30.745583+00:00	
+0038a820-c480-4d16-8eea-78d4080a40de	Zebra	52779a24a379470fba9339f1da2ccf28	WASON_SUBMIT	[{'value': '4', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2019-12-03 17:12:31.667146+00:00	
+cd09180f-6fea-4ae4-bb1c-9b339df7c80b	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	JOIN_ROOM		USR_ONBOARDING	2019-12-03 17:14:35.470096+00:00	
+4f9093c4-046e-4e40-b8df-a9c803867a0a	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	WASON_GAME	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': False}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2019-12-03 17:14:39.153202+00:00	
+8b88b9cc-bb03-4af4-bf3d-caf7487ce1c1	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	WASON_GAME	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2019-12-03 17:14:41.962604+00:00	
+d4ec7ae3-b9cf-4bc4-8bb4-e1ec967a343f	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	WASON_SUBMIT	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2019-12-03 17:14:44.098264+00:00	
+5af41ce2-bf53-441e-a017-5dbbac4bf39f	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	WASON_SUBMIT	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2019-12-03 17:15:14.277140+00:00	
+13d31559-e428-4505-9365-97c42da8671b	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	CHAT_MESSAGE	i would use the off number to make sure there is no vowel on the other side and then turn over the vowel	USR_PLAYING	2019-12-03 17:15:49.502793+00:00	
+8163e6e7-8100-4354-a38b-fbbc6b224bf8	Zebra	52779a24a379470fba9339f1da2ccf28	CHAT_MESSAGE	Do you mean you would turn the odd number?	USR_PLAYING	2019-12-03 17:16:14.483972+00:00	
+fae6fdf6-b6af-4d7f-b59d-536f297477db	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	CHAT_MESSAGE	yeah	USR_PLAYING	2019-12-03 17:16:24.980134+00:00	
+87bd2756-0dc6-4635-966c-691bb7efb59b	Lion	7e00fb046d0c45f2a1a80675a47564a5	CHAT_MESSAGE	Okay, I put that I would turn over the even number and the vowel to see if they had a vowel and even number on the other side	USR_PLAYING	2019-12-03 17:16:38.614747+00:00	
+b92588ec-20e7-4819-a098-4daa23275bf3	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	CHAT_MESSAGE	okayyy	USR_PLAYING	2019-12-03 17:16:50.416861+00:00	
+a6795b31-3ffa-4657-b984-a89198532c52	Lion	7e00fb046d0c45f2a1a80675a47564a5	CHAT_MESSAGE	I understand why it's good to turn over the odd number though to check there isn't a vowel on the other side	USR_PLAYING	2019-12-03 17:17:28.254348+00:00	
+ef411240-2dfb-4873-8c6c-cf502e6419f0	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	CHAT_MESSAGE	i think it would work to try disprove the theory though if there was a non vowel the other side 	USR_PLAYING	2019-12-03 17:17:36.190733+00:00	
+59a6c402-edd3-40bc-9032-a1c8a9de906e	Lion	7e00fb046d0c45f2a1a80675a47564a5	CHAT_MESSAGE	Yes I think that's good	USR_PLAYING	2019-12-03 17:17:47.269178+00:00	
+6e3bfa72-fd09-4d2b-b822-2aff9b708ebf	Zebra	52779a24a379470fba9339f1da2ccf28	CHAT_MESSAGE	Yeah I agree with @Lobster 	USR_PLAYING	2019-12-03 17:17:49.791917+00:00	
+db076c0f-f9ac-4a6a-9026-b4f9aa9fe9ab	Lion	7e00fb046d0c45f2a1a80675a47564a5	CHAT_MESSAGE	I do too	USR_PLAYING	2019-12-03 17:18:10.879690+00:00	
+22307d01-374f-4fb8-a7d1-284c9c04ef8b	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	CHAT_MESSAGE	i think its called something bias where the two cards you turn over prove the theory then its like you fall into believeing it without falsifying it 	USR_PLAYING	2019-12-03 17:18:19.588817+00:00	
+544db0e8-38fd-41ee-8a3d-0cf259f25406	Lion	7e00fb046d0c45f2a1a80675a47564a5	CHAT_MESSAGE	Yes that makes sense	USR_PLAYING	2019-12-03 17:18:38.781924+00:00	
+d8402a06-d538-43fc-a1af-dcce22456d01	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	CHAT_MESSAGE	sorry i cant remeber the name of the bias	USR_PLAYING	2019-12-03 17:18:43.421294+00:00	
+bdfd533a-c5e7-4c15-b582-56ead81b5ffa	Lion	7e00fb046d0c45f2a1a80675a47564a5	CHAT_MESSAGE	It's alright!	USR_PLAYING	2019-12-03 17:18:50.608570+00:00	
+3e04527c-4120-45ed-b678-78c1e3b7173d	Moderating Owl	b993699bbd4d48d9963179cf998f3751	CHAT_MESSAGE	Okay if you think you have come up with a group solution for the task, please do the task on the left side panel again by entering your group solution this time. 	USR_MODERATING	2019-12-03 17:19:37.854440+00:00	
+29a0895e-d97a-4455-973c-56a3dfa0d553	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	WASON_GAME	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': False}, {'value': 'D', 'checked': False}]	USR_PLAYING	2019-12-03 17:19:47.202559+00:00	
+da393938-ad7c-44e6-9cb0-7dc82f9d9512	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	WASON_GAME	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2019-12-03 17:19:47.912999+00:00	
+1479a65c-05a7-4858-9b2e-dc8df1673e25	Moderating Owl	b993699bbd4d48d9963179cf998f3751	CHAT_MESSAGE	Let me know when you have all done it 	USR_MODERATING	2019-12-03 17:19:48.085604+00:00	
+6cc1e6ce-fe2a-41d5-af86-fd16429c646f	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	WASON_SUBMIT	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2019-12-03 17:19:48.774401+00:00	
+9ede8d58-1eb3-48b4-a4e1-3b217e14ff25	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	CHAT_MESSAGE	done	USR_PLAYING	2019-12-03 17:19:53.264562+00:00	
+19a095c1-3fe4-4fc1-85c2-feddb7ef555d	Lion	7e00fb046d0c45f2a1a80675a47564a5	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2019-12-03 17:19:59.444782+00:00	
+61915fe9-8ec9-4ff2-943f-40206ef6ebd3	Lion	7e00fb046d0c45f2a1a80675a47564a5	WASON_GAME	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2019-12-03 17:20:01.411674+00:00	
+8cee34bb-5eb1-4911-8acb-f465dde63c02	Lion	7e00fb046d0c45f2a1a80675a47564a5	WASON_SUBMIT	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2019-12-03 17:20:04.169055+00:00	
+89e10833-e995-44c9-a958-e04341c49a04	Lion	7e00fb046d0c45f2a1a80675a47564a5	CHAT_MESSAGE	I've done that	USR_PLAYING	2019-12-03 17:20:14.105885+00:00	
+9b5bc290-13a5-4289-8d0a-0d033115f173	Zebra	52779a24a379470fba9339f1da2ccf28	WASON_GAME	[{'value': '4', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2019-12-03 17:20:33.666891+00:00	
+2ab57849-0373-41c0-a704-02915d8af12c	Zebra	52779a24a379470fba9339f1da2ccf28	WASON_GAME	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2019-12-03 17:20:34.405420+00:00	
+ede19154-fc3b-4e1b-9b09-d5105e51c453	Zebra	52779a24a379470fba9339f1da2ccf28	WASON_SUBMIT	[{'value': '4', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'I', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2019-12-03 17:20:35.661772+00:00	
+da6a2587-61b4-4f4c-a9c4-397ca8d515de	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:20:35.937702+00:00	
+b44f6211-1cf1-4047-9631-268323ec8a15	Zebra	52779a24a379470fba9339f1da2ccf28	CHAT_MESSAGE	Done 	USR_PLAYING	2019-12-03 17:20:37.538256+00:00	
+1a742501-296b-4f94-88a7-7081e2a0f7a7	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:20:37.840957+00:00	
+dcc24b92-e9d2-4928-9ea0-6d5aae513629	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:20:39.308680+00:00	
+7931b956-4ce3-476e-ad44-dfb19190b9fb	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:20:55.595287+00:00	
+2aadffa4-eeb2-4ccc-ae64-8b73340d188a	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:21:15.712370+00:00	
+04be03a2-8952-4fde-8ebe-4240d905ad44	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:21:23.426830+00:00	
+042dfbe2-70f8-4962-8119-c649d979cb03	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:21:24.511869+00:00	
+77a6ef0d-c54a-4a8c-a71b-fd1b80de4283	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:21:45.536506+00:00	
+b78195a9-1947-481f-b81c-1d5aba8de476	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:21:47.976712+00:00	
+953ab3e4-d358-40be-a23b-cc829e3161a3	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:21:49.242945+00:00	
+f63a0f97-2bb3-4376-bf85-24f2a6b5236a	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:21:52.636774+00:00	
+554d0268-1a2d-4ca5-90b3-0afbc00fe7e7	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:21:58.671004+00:00	
+4e9a8a89-be34-45e1-8fa7-df03492d7325	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:22:00.037308+00:00	
+dd638387-1d67-47d9-b007-ac5016f6f90d	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:23:42.287230+00:00	
+41fc4d8b-5f02-4914-9419-32a6e28e79fc	Lobster	0b8b37045d8b4e6ba068c2fd04c7a3e2	LEAVE_ROOM		UKN	2019-12-03 17:23:44.233560+00:00	
+4ea101ef-406c-41c3-950a-4d62b977dc26	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:23:46.796549+00:00	
+72f17beb-2d10-4ac0-87e3-c7f67f546420	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:25:03.648221+00:00	
+ad9ef60e-37b4-4c70-80d6-e81a03b90645	Zebra	52779a24a379470fba9339f1da2ccf28	LEAVE_ROOM		UKN	2019-12-03 17:25:05.881912+00:00	
+a70b4754-cce8-4c66-a1d0-e7199783ccaa	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-03 17:27:22.436655+00:00	
+f02becca-d7c0-48f0-a02a-e3ab750f9f0f	Lion	7e00fb046d0c45f2a1a80675a47564a5	LEAVE_ROOM		UKN	2019-12-03 17:28:04.292672+00:00	
+d48400d1-91df-4282-ad75-2864b5d65d1d	Lion	7e00fb046d0c45f2a1a80675a47564a5	LEAVE_ROOM		UKN	2019-12-03 17:28:04.332024+00:00	
+73ae401e-4f54-48e7-a1c6-ef720214417f	Lion	7e00fb046d0c45f2a1a80675a47564a5	LEAVE_ROOM		UKN	2019-12-03 17:28:04.334633+00:00	
+1973edff-fe0c-4a7a-94c0-e24f544de425	Lion	7e00fb046d0c45f2a1a80675a47564a5	LEAVE_ROOM		UKN	2019-12-03 17:28:04.570693+00:00	
+19c332bb-31f5-441e-85a3-47fd6ddadd44	Moderating Owl	b993699bbd4d48d9963179cf998f3751	LEAVE_ROOM		UKN	2019-12-03 17:29:40.994009+00:00	

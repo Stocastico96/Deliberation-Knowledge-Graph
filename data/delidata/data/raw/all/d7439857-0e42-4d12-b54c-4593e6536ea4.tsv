@@ -1,0 +1,103 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+2afed549-6756-489e-908b-bc959840eb26	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""B"", ""checked"": false}, {""value"": ""7"", ""checked"": false}, {""value"": ""U"", ""checked"": false}, {""value"": ""2"", ""checked"": false}]"	UKN	2019-12-09 17:03:12.376560+00:00	
+24316751-7310-46cc-b877-d95130d5ba29	Chipmunk	c2da7539f0974d6784f4e416349b17a8	JOIN_ROOM		USR_ONBOARDING	2019-12-09 17:03:16.966942+00:00	
+e5762454-601b-4f79-b554-c97dbb3b96f0	Moderating Owl	60764e9decd44bc38427e062d3d80212	JOIN_ROOM		USR_MODERATING	2019-12-09 17:03:27.662197+00:00	
+67ab65d4-ba9d-409d-9da8-ae7fb6b53f38	Duck	bda8f851f96f492e8efacb8fbddbfa17	JOIN_ROOM		USR_ONBOARDING	2019-12-09 17:03:47.329756+00:00	
+1b1c589b-29f6-4b6a-9e90-ecc89e6b7be3	Chipmunk	c2da7539f0974d6784f4e416349b17a8	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': False}]	USR_ONBOARDING	2019-12-09 17:04:41.569623+00:00	
+6ce5a73d-364e-41f1-84a5-9698bef01cb4	Chipmunk	c2da7539f0974d6784f4e416349b17a8	WASON_SUBMIT	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': False}]	USR_ONBOARDING	2019-12-09 17:04:47.089264+00:00	
+19ef4a87-5a32-4bd2-9d2e-39a1fad178a3	Chipmunk	c2da7539f0974d6784f4e416349b17a8	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_PLAYING	2019-12-09 17:05:36.862458+00:00	
+d290ec30-cc77-4080-b0c6-cb5dc8585f52	Chipmunk	c2da7539f0974d6784f4e416349b17a8	WASON_SUBMIT	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_PLAYING	2019-12-09 17:05:38.225994+00:00	
+b8a8146f-b410-40ad-840a-299af3608aef	Duck	bda8f851f96f492e8efacb8fbddbfa17	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': False}]	USR_ONBOARDING	2019-12-09 17:05:53.503297+00:00	
+7bae21be-3c5e-45c1-a871-ae2bc48558fb	Duck	bda8f851f96f492e8efacb8fbddbfa17	WASON_SUBMIT	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': False}]	USR_ONBOARDING	2019-12-09 17:05:54.796392+00:00	
+b96ce43e-9dba-45d6-a6d4-0cfe06ca932e	Zebra	49ceaa73f0734969b5bb20192be60bcf	JOIN_ROOM		USR_ONBOARDING	2019-12-09 17:06:16.799832+00:00	
+5418bfc6-123a-43fd-9d09-9846ec97d7cc	Duck	bda8f851f96f492e8efacb8fbddbfa17	WASON_SUBMIT	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': False}]	USR_PLAYING	2019-12-09 17:06:27.525302+00:00	
+47c14037-f760-4468-bb48-e68b0883e8e9	Zebra	49ceaa73f0734969b5bb20192be60bcf	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': False}]	USR_ONBOARDING	2019-12-09 17:07:35.710850+00:00	
+e5225e6d-dfda-4b2d-91f6-8c766c3123e4	Zebra	49ceaa73f0734969b5bb20192be60bcf	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': False}]	USR_ONBOARDING	2019-12-09 17:07:36.842307+00:00	
+d9c34922-1484-4ae4-b097-183829ec9b77	Beaver	31a478c81aea41a79e52d65a3d9e0262	JOIN_ROOM		USR_ONBOARDING	2019-12-09 17:07:37.777130+00:00	
+7893bbb8-e848-434d-9f0a-89f2affee38c	Zebra	49ceaa73f0734969b5bb20192be60bcf	WASON_SUBMIT	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': False}]	USR_ONBOARDING	2019-12-09 17:07:37.871382+00:00	
+80609f49-995f-4c08-a916-4fab2507abd2	Beaver	31a478c81aea41a79e52d65a3d9e0262	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': False}, {'value': '2', 'checked': True}]	USR_ONBOARDING	2019-12-09 17:07:58.236032+00:00	
+3832ac10-5a51-4ee7-8ce9-4846f29c6353	Beaver	31a478c81aea41a79e52d65a3d9e0262	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_ONBOARDING	2019-12-09 17:08:01.252771+00:00	
+39738595-db24-41e7-a5a2-d97b92da41f6	Beaver	31a478c81aea41a79e52d65a3d9e0262	WASON_SUBMIT	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_ONBOARDING	2019-12-09 17:08:05.621468+00:00	
+b1dd133f-60b2-47ab-81bf-d78716752f53	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	What answers did everyone put?	USR_PLAYING	2019-12-09 17:08:51.457578+00:00	
+066c3c91-d36d-4122-b4ab-a49b5ce65bbb	Duck	bda8f851f96f492e8efacb8fbddbfa17	CHAT_MESSAGE	Okay so what answer did everyone put to see if we all put the same answer?	USR_PLAYING	2019-12-09 17:08:57.518271+00:00	
+071b2515-d390-491e-9950-34e691143ce5	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	I put 7 and U	USR_PLAYING	2019-12-09 17:08:58.697302+00:00	
+8a4fc251-8a2d-429e-b08f-9841e578b0b8	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	I put U and 2	USR_PLAYING	2019-12-09 17:09:01.739347+00:00	
+63a73768-079b-469b-993a-c80785b767f2	Duck	bda8f851f96f492e8efacb8fbddbfa17	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': False}]	USR_PLAYING	2019-12-09 17:09:04.386253+00:00	
+42a5d37a-0ce9-4824-ba95-11874ed059fd	Duck	bda8f851f96f492e8efacb8fbddbfa17	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_PLAYING	2019-12-09 17:09:09.932323+00:00	
+beefd968-3abe-496c-af43-e258f7f9e66c	Duck	bda8f851f96f492e8efacb8fbddbfa17	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_PLAYING	2019-12-09 17:09:10.797659+00:00	
+c918440b-b46f-44c4-8883-9f724141cd09	Chipmunk	c2da7539f0974d6784f4e416349b17a8	CHAT_MESSAGE	I selected U and 2 as they are vowels and even number	USR_PLAYING	2019-12-09 17:09:10.898842+00:00	
+e9e9c963-9f71-4999-b935-6ee274ed4e38	Duck	bda8f851f96f492e8efacb8fbddbfa17	WASON_SUBMIT	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_PLAYING	2019-12-09 17:09:11.334188+00:00	
+9fd7bd60-b4df-4865-9106-a7016254ba21	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	I think it would be 7 to test if it would be incorrect 	USR_PLAYING	2019-12-09 17:09:41.563565+00:00	
+0ac0642b-29e9-43fd-a23a-edb6c21fb9d9	Chipmunk	c2da7539f0974d6784f4e416349b17a8	CHAT_MESSAGE	Duck - give your answer	USR_PLAYING	2019-12-09 17:09:51.258649+00:00	
+8cd62487-cb18-4ef8-9ee0-4fa9d3842c59	Duck	bda8f851f96f492e8efacb8fbddbfa17	CHAT_MESSAGE	I put U and 2 (forgot to put a number forint so was just deciding which to put)	USR_PLAYING	2019-12-09 17:10:11.292080+00:00	
+6544137d-b6f2-4da5-bb03-9c9e06a9f161	Chipmunk	c2da7539f0974d6784f4e416349b17a8	CHAT_MESSAGE	So shall we say U and 2??	USR_PLAYING	2019-12-09 17:10:45.033230+00:00	
+64d1375a-3edb-40d2-ac4f-7b71c3c1445c	Duck	bda8f851f96f492e8efacb8fbddbfa17	CHAT_MESSAGE	but it says it might be as simple as we think and it seems pretty simple to put U and 2 as that is the vowel and the even number	USR_PLAYING	2019-12-09 17:10:45.176351+00:00	
+39494b8e-0b87-4d17-8711-25d8c57b7ff7	Duck	bda8f851f96f492e8efacb8fbddbfa17	CHAT_MESSAGE	*might not	USR_PLAYING	2019-12-09 17:11:02.138251+00:00	
+1f7af8d3-876c-4ca3-b2a1-416699899448	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	yes i agreee	USR_PLAYING	2019-12-09 17:11:04.090184+00:00	
+b827731e-05b4-4f81-9ab2-2d838ee6636b	Chipmunk	c2da7539f0974d6784f4e416349b17a8	CHAT_MESSAGE	So is it 7 ?	USR_PLAYING	2019-12-09 17:11:36.060670+00:00	
+7586c978-6c9f-4321-9387-b6c16cf84847	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	I think if it was U and 2 then you wouldn't be able to see if the theory was incorrect so i reckon its U and 7	USR_PLAYING	2019-12-09 17:11:45.647530+00:00	
+f3bdaad1-8285-4ddf-a50a-8d8f3fdfc5f7	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	i vote U and 7	USR_PLAYING	2019-12-09 17:11:50.717113+00:00	
+3c3902b3-000f-4fa0-b28c-41717f4f20d7	Duck	bda8f851f96f492e8efacb8fbddbfa17	CHAT_MESSAGE	yeah so you need one of each to see if its right	USR_PLAYING	2019-12-09 17:12:05.515485+00:00	
+756f86ff-e9a4-4eaf-8857-67fbd88e2426	Chipmunk	c2da7539f0974d6784f4e416349b17a8	CHAT_MESSAGE	is it 2 cards or one that should be flipped	USR_PLAYING	2019-12-09 17:12:09.499395+00:00	
+ecd7555f-59ee-4090-9ffd-c5d608641913	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	2	USR_PLAYING	2019-12-09 17:12:15.861358+00:00	
+fac9b9a3-af34-4564-bd2c-ad7518d14418	Chipmunk	c2da7539f0974d6784f4e416349b17a8	CHAT_MESSAGE	Ok U & 7	USR_PLAYING	2019-12-09 17:12:27.578988+00:00	
+e9eb3161-336a-41e5-b9c2-62961ac3d2c4	Duck	bda8f851f96f492e8efacb8fbddbfa17	CHAT_MESSAGE	yeah I got confused at that first I thought it was just one aha	USR_PLAYING	2019-12-09 17:12:31.507412+00:00	
+aff809be-1b62-46b5-a24c-c6dac86cd468	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	so we are agreeing to the fact that we need a letter and a number card?	USR_PLAYING	2019-12-09 17:12:32.774316+00:00	
+194f7948-5313-4170-bda5-d45acd331266	Chipmunk	c2da7539f0974d6784f4e416349b17a8	CHAT_MESSAGE	yes	USR_PLAYING	2019-12-09 17:12:56.620242+00:00	
+3d55e8a5-886e-42ec-a2a4-8cd97a3b2372	Duck	bda8f851f96f492e8efacb8fbddbfa17	CHAT_MESSAGE	yeah think so bc we need to test the vowel one and the even number one so have too do both to see if its right	USR_PLAYING	2019-12-09 17:13:06.555719+00:00	
+ffc04f97-cdad-48fd-8b20-385d792b2bc5	Duck	bda8f851f96f492e8efacb8fbddbfa17	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_PLAYING	2019-12-09 17:13:17.051370+00:00	
+24f82c98-cb0f-4bcb-aa3f-1f492f13989e	Duck	bda8f851f96f492e8efacb8fbddbfa17	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': False}]	USR_PLAYING	2019-12-09 17:13:18.620417+00:00	
+aa28fca6-f12f-4bde-8f8f-cfce837f2415	SYSTEM_MODERATOR	-1	MODERATION	GROUP_PHASE_STARTED	USR_MODERATING	2019-12-09 17:13:22.524678+00:00	
+ed76ed03-3cde-4fce-9bc4-31ecded69421	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	if we picked both letter cards we could find the rule out though	USR_PLAYING	2019-12-09 17:13:40.885817+00:00	
+0bd7da9d-c357-41f3-8b54-cc48b5ff151f	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	one vowel, one consonant	USR_PLAYING	2019-12-09 17:13:49.515885+00:00	
+61703838-18c4-4016-80fb-a47d2bfa0a8d	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	im starting to think you need all the cards to test the rule	USR_PLAYING	2019-12-09 17:14:08.868420+00:00	
+248d91d5-6702-4c2d-93f4-5deb0173d7f5	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	not just 2	USR_PLAYING	2019-12-09 17:14:20.520921+00:00	
+742081cb-b829-4588-8a15-31737c84b5ec	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	I don't think it matters 	USR_PLAYING	2019-12-09 17:14:36.997954+00:00	
+2497dfeb-8efb-42ea-9f96-4e3388fc5e34	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	I reckon it works with just the U and 7 	USR_PLAYING	2019-12-09 17:14:52.285322+00:00	
+c591e706-840e-4419-88f6-3a5671876bd9	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	if we turn the U over and there is an even number we test its true	USR_PLAYING	2019-12-09 17:15:13.614500+00:00	
+8fa95e0f-cfe2-4ef6-b805-ad75773c0717	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	because the logic we've applied to selecting 2 of the cards works just as well for any other combination of cards	USR_PLAYING	2019-12-09 17:15:14.724999+00:00	
+ef4b125e-9d06-4213-a2bd-5d00a144b26b	Duck	bda8f851f96f492e8efacb8fbddbfa17	CHAT_MESSAGE	there is no where that says we can't click them all I guess	USR_PLAYING	2019-12-09 17:15:16.126868+00:00	
+f7f285c8-55ca-4924-a665-55b1f4bcae60	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	if we turn the 7 over and their isnt a vowel we test its true 	USR_PLAYING	2019-12-09 17:15:26.506676+00:00	
+8914ebce-e77c-48f7-932e-38cda1c7d44e	Moderating Owl	60764e9decd44bc38427e062d3d80212	CHAT_MESSAGE	You have one minute remaning please come to a group conclusion.	USR_MODERATING	2019-12-09 17:15:27.710412+00:00	
+477d4696-d927-4f2b-a25a-0b6f3ded25e0	Duck	bda8f851f96f492e8efacb8fbddbfa17	CHAT_MESSAGE	okay guys vote which one you want to do	USR_PLAYING	2019-12-09 17:15:38.796494+00:00	
+1fb875c0-0f88-4374-a06a-045736168890	Duck	bda8f851f96f492e8efacb8fbddbfa17	CHAT_MESSAGE	I think 7 and U	USR_PLAYING	2019-12-09 17:15:47.082364+00:00	
+70627355-2194-4029-ac76-35f7e1d8fdb7	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	im gonna vote all	USR_PLAYING	2019-12-09 17:15:47.525459+00:00	
+6b575ee3-7b58-4edd-920f-e7370f3cceeb	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	rogue but oh well hahah	USR_PLAYING	2019-12-09 17:15:55.463872+00:00	
+8910f888-fcbc-4258-b225-98bc08f0b993	Chipmunk	c2da7539f0974d6784f4e416349b17a8	CHAT_MESSAGE	All	USR_PLAYING	2019-12-09 17:15:59.092450+00:00	
+5e731d92-06ad-4d70-927b-95d4ce016903	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	i think U and 7 too	USR_PLAYING	2019-12-09 17:16:07.382727+00:00	
+f2851f76-1a03-422b-a765-fa6e7c432255	Chipmunk	c2da7539f0974d6784f4e416349b17a8	CHAT_MESSAGE	Shall we go for all ?	USR_PLAYING	2019-12-09 17:16:14.250450+00:00	
+382c54e5-185d-4a9b-aa00-a46b2d98d4d4	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	no i dont think we need to turn over all the cards	USR_PLAYING	2019-12-09 17:16:31.567921+00:00	
+91faf7c9-5093-4730-b8cf-b9e62bd9a3b0	Duck	bda8f851f96f492e8efacb8fbddbfa17	CHAT_MESSAGE	shall we just put them all bc then that way we are still putting 7 and U but are putting the other ideas in too?	USR_PLAYING	2019-12-09 17:16:35.039051+00:00	
+a2574755-55e7-495a-9a2e-f35d26613d71	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	i think it works with just turning over two cards	USR_PLAYING	2019-12-09 17:16:38.491285+00:00	
+988becdb-9b47-4f26-8902-24551c4ad846	Duck	bda8f851f96f492e8efacb8fbddbfa17	WASON_GAME	[{'value': 'B', 'checked': True}, {'value': '7', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': False}]	USR_PLAYING	2019-12-09 17:16:43.313158+00:00	
+1c4b3f90-bd72-40cd-9a40-c49771f257fb	Duck	bda8f851f96f492e8efacb8fbddbfa17	WASON_GAME	[{'value': 'B', 'checked': True}, {'value': '7', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_PLAYING	2019-12-09 17:16:44.297906+00:00	
+d0abb5d0-503c-4dd5-9202-6cab1c73fcf9	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	but which 2 cards	USR_PLAYING	2019-12-09 17:16:46.670347+00:00	
+be03f9c8-a07c-476e-bd8b-8ec7d71a88b7	Duck	bda8f851f96f492e8efacb8fbddbfa17	CHAT_MESSAGE	7 and U I think 	USR_PLAYING	2019-12-09 17:16:53.110359+00:00	
+0a661923-ba6a-441d-811b-31bc4264c0a5	Chipmunk	c2da7539f0974d6784f4e416349b17a8	CHAT_MESSAGE	U & 7	USR_PLAYING	2019-12-09 17:16:53.168315+00:00	
+df5b5cb4-85ef-451d-adae-81f49f5ce0e4	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	coz you can turn over B and 7 and the rule can be proved right or wrong	USR_PLAYING	2019-12-09 17:17:04.317948+00:00	
+257cd2ba-b3ec-45b3-bb67-61001fb77900	Duck	bda8f851f96f492e8efacb8fbddbfa17	WASON_SUBMIT	[{'value': 'B', 'checked': True}, {'value': '7', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_PLAYING	2019-12-09 17:17:07.910235+00:00	
+5a5bd404-19f0-4c5c-bd28-d43802493197	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	All	USR_PLAYING	2019-12-09 17:17:15.148391+00:00	
+fd049d97-c3c9-4d3b-84df-1736476e7d20	Zebra	49ceaa73f0734969b5bb20192be60bcf	CHAT_MESSAGE	but you dont prove its right with B and 7	USR_PLAYING	2019-12-09 17:17:19.146439+00:00	
+a9d62fdf-dba9-4efc-b2ce-4819437fd325	Beaver	31a478c81aea41a79e52d65a3d9e0262	CHAT_MESSAGE	is my answer	USR_PLAYING	2019-12-09 17:17:20.170115+00:00	
+0a1dc1d0-f4f7-4662-a798-57925a730e75	Chipmunk	c2da7539f0974d6784f4e416349b17a8	CHAT_MESSAGE	U & 7	USR_PLAYING	2019-12-09 17:17:20.798611+00:00	
+5f949607-17c3-4f08-8f33-12309aa9c337	Beaver	31a478c81aea41a79e52d65a3d9e0262	WASON_GAME	[{'value': 'B', 'checked': False}, {'value': '7', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_PLAYING	2019-12-09 17:17:58.745053+00:00	
+ba4072ad-d146-4f0d-af06-9fcba73c7aa6	Beaver	31a478c81aea41a79e52d65a3d9e0262	WASON_GAME	[{'value': 'B', 'checked': True}, {'value': '7', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_PLAYING	2019-12-09 17:17:59.641646+00:00	
+25c3bf0c-08fe-4be7-b6dd-0b33e399b36a	Beaver	31a478c81aea41a79e52d65a3d9e0262	WASON_SUBMIT	[{'value': 'B', 'checked': True}, {'value': '7', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '2', 'checked': True}]	USR_PLAYING	2019-12-09 17:18:00.883589+00:00	
+5c9755c1-26cc-4965-8a21-c64dcb0cc86f	Beaver	31a478c81aea41a79e52d65a3d9e0262	LEAVE_ROOM		UKN	2019-12-09 17:21:16.309684+00:00	
+987a01b8-f16c-494f-a8c0-e003a6fcbff7	Duck	bda8f851f96f492e8efacb8fbddbfa17	LEAVE_ROOM		UKN	2019-12-09 17:21:54.259339+00:00	
+4d184679-a817-44c0-abf2-55484afaed68	Zebra	49ceaa73f0734969b5bb20192be60bcf	LEAVE_ROOM		UKN	2019-12-09 17:26:45.724833+00:00	
+7a81ad62-29f8-4048-a840-e96b9075851e	Zebra	49ceaa73f0734969b5bb20192be60bcf	LEAVE_ROOM		UKN	2019-12-09 17:26:45.727194+00:00	
+f24a5da4-d995-4f9f-b253-6a75bfe3bc29	Zebra	49ceaa73f0734969b5bb20192be60bcf	LEAVE_ROOM		UKN	2019-12-09 17:26:46.050871+00:00	
+4aca489b-34f7-4116-a9f1-d046f7ef1a21	Zebra	49ceaa73f0734969b5bb20192be60bcf	LEAVE_ROOM		UKN	2019-12-09 17:26:46.680923+00:00	
+07987af5-80ac-4c38-8aea-6cf667648120	Chipmunk	c2da7539f0974d6784f4e416349b17a8	LEAVE_ROOM		UKN	2019-12-09 17:26:49.274902+00:00	
+426c430f-e44d-413c-bfb3-c9886fe5edde	Chipmunk	c2da7539f0974d6784f4e416349b17a8	LEAVE_ROOM		UKN	2019-12-09 17:26:52.703569+00:00	
+81913ccf-bf85-4090-b146-a54dc6c2209e	Chipmunk	c2da7539f0974d6784f4e416349b17a8	LEAVE_ROOM		UKN	2019-12-09 17:26:52.705040+00:00	
+9eb90bb4-2d2c-416f-98bb-ed10e09ed409	Chipmunk	c2da7539f0974d6784f4e416349b17a8	LEAVE_ROOM		UKN	2019-12-09 17:26:52.706161+00:00	
+18c01256-2fbe-4f7f-ab83-2c020135d113	Chipmunk	c2da7539f0974d6784f4e416349b17a8	LEAVE_ROOM		UKN	2019-12-09 17:26:52.707134+00:00	
+52184a10-f818-4e31-97e8-1f1b603397fb	Moderating Owl	60764e9decd44bc38427e062d3d80212	LEAVE_ROOM		UKN	2019-12-09 17:26:57.009906+00:00	
+dde29e84-03b6-4dd2-b253-ceb6b7c5b452	Lobster	adadfc51a53b48d593cb13cb09516b8b	JOIN_ROOM		USR_ONBOARDING	2019-12-09 18:14:54.678420+00:00	
+0eb9999a-c457-4498-aafd-6de63d292b2f	Moderating Owl	fea3d2934f9f4f34922eea27351663c2	JOIN_ROOM		USR_MODERATING	2019-12-09 18:14:58.228184+00:00	
+9d732ad3-7488-4a36-961b-72aa35f6a1bd	Lobster	adadfc51a53b48d593cb13cb09516b8b	LEAVE_ROOM		UKN	2019-12-09 18:16:55.658696+00:00	
+7f15643b-ec30-4df6-9014-b4995e14ce34	Moderating Owl	fea3d2934f9f4f34922eea27351663c2	LEAVE_ROOM		UKN	2019-12-09 18:44:24.630753+00:00	
+c0748237-6058-4a14-a231-2f4b1083114e	Moderating Owl	9c962656685b45559923d940ddde16f7	JOIN_ROOM		USR_MODERATING	2019-12-12 17:12:19.340187+00:00	
+d44828ab-fee7-4db9-a6be-0290bdd192db	Moderating Owl	9c962656685b45559923d940ddde16f7	LEAVE_ROOM		UKN	2019-12-12 17:12:22.920774+00:00	

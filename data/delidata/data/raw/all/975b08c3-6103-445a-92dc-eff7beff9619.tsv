@@ -1,0 +1,83 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+c92a7509-6d39-4110-8814-733146860e29	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""R"", ""checked"": false}, {""value"": ""I"", ""checked"": false}, {""value"": ""4"", ""checked"": false}, {""value"": ""5"", ""checked"": false}]"	UKN	2020-05-12 13:37:23.009708+00:00	
+d130da09-61cc-44f0-a987-547af5e3e81f	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	JOIN_ROOM		USR_ONBOARDING	2020-05-12 13:37:23.729900+00:00	
+0ab49b87-8b66-4f1d-af96-b651723b3617	Alpaca	93785e1d66b2412691536bd104610a5e	JOIN_ROOM		USR_ONBOARDING	2020-05-12 13:37:41.313057+00:00	
+9f597bde-d274-4bb4-b4fa-e4585fd42125	Cat	5898ee1147aa412f80c31b7878ce6730	JOIN_ROOM		USR_ONBOARDING	2020-05-12 13:37:53.862115+00:00	
+070b37e8-5865-4f05-9c1b-538c504dd444	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-05-12 13:37:54.069908+00:00	
+17e80eeb-a422-449a-8c3c-800cdb2fd6ac	Cat	5898ee1147aa412f80c31b7878ce6730	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:38:20.840359+00:00	
+5ea6e3c9-0f8d-472b-9813-90bccc151986	Cat	5898ee1147aa412f80c31b7878ce6730	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:38:38.253250+00:00	
+543cfd80-9a17-4e4c-87bc-02d0e37927a2	Cat	5898ee1147aa412f80c31b7878ce6730	WASON_GAME	[{'value': 'R', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:38:39.051151+00:00	
+40bae100-98a2-4276-9833-926545b8dedc	Cat	5898ee1147aa412f80c31b7878ce6730	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:38:48.669087+00:00	
+0787eda4-873c-46b6-a089-b26d656322fe	Cat	5898ee1147aa412f80c31b7878ce6730	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:38:49.412384+00:00	
+fc323b22-2fac-4861-aa15-c3f2ca3880dd	Alpaca	93785e1d66b2412691536bd104610a5e	ROUTING_TIMER_ELAPSED	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:38:54.172362+00:00	
+57a0d419-219f-44d7-9675-22609db32bde	Cat	5898ee1147aa412f80c31b7878ce6730	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-05-12 13:38:54.827699+00:00	
+2ce3f0ab-3aef-4f8c-b2ac-03c3b44dc4b9	Alpaca	93785e1d66b2412691536bd104610a5e	WASON_GAME	[{'value': 'R', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:38:55.014432+00:00	
+b625c3bd-39cb-48ca-8f4c-f7aab3b1dde7	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	ROUTING_TIMER_ELAPSED	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:38:55.058839+00:00	
+c511b6b4-d1b9-4ad5-aa1e-21ae6616b1d2	Alpaca	93785e1d66b2412691536bd104610a5e	WASON_SUBMIT	[{'value': 'R', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:38:56.277883+00:00	
+c3f500ba-8da5-486d-8422-591f733ad106	Cat	5898ee1147aa412f80c31b7878ce6730	WASON_SUBMIT	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:39:05.810776+00:00	
+0665412a-9c71-4455-9180-c25d84b40806	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:39:38.508507+00:00	
+e35bd611-64ce-4b9d-af60-e20cacd091b2	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	WASON_SUBMIT	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:39:57.958679+00:00	
+c27982d4-9961-4517-8921-bbaa8506b0f8	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-05-12 13:39:58.351875+00:00	
+089122d7-606f-49b7-82ab-977807794d52	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	anyone here?	USR_PLAYING	2020-05-12 13:40:16.796368+00:00	
+435349f8-f0c2-4552-8a4c-54d2c4ba0807	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	hello	USR_PLAYING	2020-05-12 13:40:27.460232+00:00	
+48167625-816c-4425-ad19-1584247786e1	Cat	5898ee1147aa412f80c31b7878ce6730	CHAT_MESSAGE	Hi	USR_PLAYING	2020-05-12 13:40:30.783290+00:00	
+d94657f8-2dcd-48ab-9392-2463337708c3	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	hi sorry, chat box is obscured by the notes at the top	USR_PLAYING	2020-05-12 13:40:46.420903+00:00	
+4226acb9-6236-4294-9509-dca41c3744e4	Cat	5898ee1147aa412f80c31b7878ce6730	CHAT_MESSAGE	If you click on them they will go away	USR_PLAYING	2020-05-12 13:40:56.363416+00:00	
+da207fbb-1948-4ef6-b27a-ca7806668a9d	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	so any idea which card is best?	USR_PLAYING	2020-05-12 13:41:02.542341+00:00	
+2e731693-83e2-4aef-91c3-84f72474d67a	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	click on it to clear them	USR_PLAYING	2020-05-12 13:41:06.392547+00:00	
+6d54926b-c42b-42b5-92d2-e888e4db152c	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	ok thanks...	USR_PLAYING	2020-05-12 13:41:18.226777+00:00	
+1d5e74a5-87a5-4240-99df-9814a695af81	Cat	5898ee1147aa412f80c31b7878ce6730	CHAT_MESSAGE	"I think you need to click on ""I"" to confirm the other side is an even number"	USR_PLAYING	2020-05-12 13:41:19.856509+00:00	
+d23397ca-2a78-4dcc-b023-e9800622e619	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	sheesh	USR_PLAYING	2020-05-12 13:41:21.145620+00:00	
+bbbc08d9-a706-46ea-8389-e1edbc8909d7	Cat	5898ee1147aa412f80c31b7878ce6730	CHAT_MESSAGE	"and maybe ""5"" to confirm it is not a vowel on the other side"	USR_PLAYING	2020-05-12 13:41:42.557837+00:00	
+7634732b-6e74-4c31-8605-e0ec7dee7259	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	i agree it isn't R	USR_PLAYING	2020-05-12 13:41:46.478391+00:00	
+60a8a8e2-4873-4b77-9d47-1c1619389bd1	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	"I think 'I"" could be the possible solution"	USR_PLAYING	2020-05-12 13:41:49.047909+00:00	
+a6257bd7-b1eb-476d-99ca-803bbbbe4e58	Cat	5898ee1147aa412f80c31b7878ce6730	CHAT_MESSAGE	"I think it is ""I"" and ""5"""	USR_PLAYING	2020-05-12 13:42:07.193043+00:00	
+9a659c2c-5a93-4941-b7a7-fc0e09e63c5a	Cat	5898ee1147aa412f80c31b7878ce6730	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': True}]	USR_PLAYING	2020-05-12 13:42:14.171834+00:00	
+5a7c4e51-1186-4024-9fc5-2f0f8b0332a5	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	if you click on 4 and it is a vowel it isn't proof	USR_PLAYING	2020-05-12 13:42:23.967296+00:00	
+3d80aa08-4575-41b9-9cbd-b5474c0de062	Cat	5898ee1147aa412f80c31b7878ce6730	CHAT_MESSAGE	Correct, R and 4 won't tell us anything by flipping them over	USR_PLAYING	2020-05-12 13:42:46.098514+00:00	
+f86751c3-a09e-4cd4-8780-cba6237c906f	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	if you click on I and it is even it isn't proof	USR_PLAYING	2020-05-12 13:42:49.752920+00:00	
+4d6f73da-e720-4d0e-9096-2825145ef8d7	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	"i already clicked on ""I"" though "	USR_PLAYING	2020-05-12 13:42:51.577966+00:00	
+e55da703-9293-44d5-be11-87b3cd76b0bc	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_PLAYING	2020-05-12 13:42:58.699093+00:00	
+9662094a-0a33-45f1-b44a-13a7c318159d	Alpaca	93785e1d66b2412691536bd104610a5e	WASON_GAME	[{'value': 'R', 'checked': True}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_PLAYING	2020-05-12 13:43:11.768233+00:00	
+d4da4835-53da-42c7-953b-a68d5f49364b	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	but i am yet to submit 	USR_PLAYING	2020-05-12 13:43:12.516547+00:00	
+219b414d-c082-44f9-8d0b-eec0a5227263	Alpaca	93785e1d66b2412691536bd104610a5e	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_PLAYING	2020-05-12 13:43:12.936557+00:00	
+d5e7bf3a-0535-49dd-80d7-c979d2a8f082	Alpaca	93785e1d66b2412691536bd104610a5e	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': True}]	USR_PLAYING	2020-05-12 13:43:17.315455+00:00	
+a5fb45cd-9acf-4bc6-bed1-b217fa862921	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	you can change if you want	USR_PLAYING	2020-05-12 13:43:23.956523+00:00	
+f3f0128d-d744-4ba9-878c-ecfef62c4ec2	Cat	5898ee1147aa412f80c31b7878ce6730	CHAT_MESSAGE	If you click on I and it is odd then it disproves the rule	USR_PLAYING	2020-05-12 13:43:25.783806+00:00	
+0cacc9b9-bb3b-4703-b1cb-c0950ca22feb	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	true	USR_PLAYING	2020-05-12 13:43:41.944141+00:00	
+6c9b7f80-a3e3-44b9-b3b9-104e7c371a28	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	Select ONLY the card(s) that you need to verify the rule. To successfully finish the game you have to submit your final answer by pressing the Submit button.	USR_PLAYING	2020-05-12 13:43:54.728880+00:00	
+6838c134-4ea6-4957-a33f-a152eaccbe03	Alpaca	93785e1d66b2412691536bd104610a5e	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_PLAYING	2020-05-12 13:44:16.793193+00:00	
+b36ea5d8-9e5a-4f4c-b5bf-7060303a85e5	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	I think if we follow the rule, we could get it right	USR_PLAYING	2020-05-12 13:44:18.237843+00:00	
+cf262aac-ba6c-45b5-8b48-965d3ae4d6d2	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	maybe only I then	USR_PLAYING	2020-05-12 13:44:22.066179+00:00	
+d3e2a52f-a565-4cb1-90d7-9cf92484b092	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	Yes @Alpaca 	USR_PLAYING	2020-05-12 13:44:35.718903+00:00	
+dd6c48fc-ee01-4c4e-b76a-a69290ea65c3	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	it doesn't say even have to have a vowel, tight?	USR_PLAYING	2020-05-12 13:44:38.152939+00:00	
+4a949237-dc8c-4164-a894-4311aef05da5	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	yes	USR_PLAYING	2020-05-12 13:44:47.633071+00:00	
+39e00518-4070-4e10-951c-510cedaaab58	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	sry typo	USR_PLAYING	2020-05-12 13:44:48.188851+00:00	
+4ff377d0-30d7-46a3-91ae-1f880c11533f	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	i understand 	USR_PLAYING	2020-05-12 13:44:57.967077+00:00	
+79ef9090-18e7-4209-b11a-72487dc61e4e	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	do we think it is I?	USR_PLAYING	2020-05-12 13:44:59.793419+00:00	
+b1b140be-2fb6-4bc4-8c89-5fbd045c362a	Cat	5898ee1147aa412f80c31b7878ce6730	CHAT_MESSAGE	Right, I think we can safely eliminate R and 4.	USR_PLAYING	2020-05-12 13:45:07.544304+00:00	
+c5562cb5-9885-436e-aac0-251785edde0a	Cat	5898ee1147aa412f80c31b7878ce6730	CHAT_MESSAGE	I think I needs to be included.	USR_PLAYING	2020-05-12 13:45:11.499686+00:00	
+b7a6499d-57ad-44eb-a8f3-1f7b456847e4	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	if 5 is a vowel it also disproves	USR_PLAYING	2020-05-12 13:45:21.101596+00:00	
+274d335d-1706-4ebe-8210-0bd4c286050b	Cat	5898ee1147aa412f80c31b7878ce6730	CHAT_MESSAGE	And I think 5 also.  If you turn 5 over and it is a vowel is disproves the rule.	USR_PLAYING	2020-05-12 13:45:27.164348+00:00	
+3d2f8884-103c-437a-8a44-d604f7dbe19e	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	so I and 5?	USR_PLAYING	2020-05-12 13:45:30.951525+00:00	
+23f1939d-5dff-4948-9b39-c77614a7efb4	Alpaca	93785e1d66b2412691536bd104610a5e	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': True}]	USR_PLAYING	2020-05-12 13:45:36.036805+00:00	
+1f90e636-680d-44db-b698-85135f3a36fc	Cat	5898ee1147aa412f80c31b7878ce6730	CHAT_MESSAGE	Yes, I think so.	USR_PLAYING	2020-05-12 13:45:36.881960+00:00	
+61b55c7e-1b16-4df9-8717-58a0baaa05a2	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	agree	USR_PLAYING	2020-05-12 13:45:39.660486+00:00	
+1ca9c965-dc38-47f8-907f-23cebf39cc7a	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	Duck?	USR_PLAYING	2020-05-12 13:45:42.804748+00:00	
+e75b1274-0314-4a8f-9633-d84e7fba1377	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	R to 4 and I to 5	USR_PLAYING	2020-05-12 13:45:47.909048+00:00	
+11659723-8e8b-450b-b0fd-e8e8a3f23bb6	Cat	5898ee1147aa412f80c31b7878ce6730	CHAT_MESSAGE	I am going to submit I & 5.	USR_PLAYING	2020-05-12 13:46:09.899242+00:00	
+b92f2427-c56a-4885-827b-1b351415d333	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	the rule doesn't say anything about R	USR_PLAYING	2020-05-12 13:46:12.010039+00:00	
+32160814-2e55-46de-896e-e55504c26b5a	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	same Cat	USR_PLAYING	2020-05-12 13:46:16.751749+00:00	
+83755951-002c-4663-b76e-ebb4a3d2d7c1	Cat	5898ee1147aa412f80c31b7878ce6730	WASON_SUBMIT	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': True}]	USR_PLAYING	2020-05-12 13:46:19.382996+00:00	
+8fa9b2a4-4046-44ab-acd6-130a3b265bf2	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	very confusing 	USR_PLAYING	2020-05-12 13:46:34.459789+00:00	
+39289ce4-00af-437c-9084-5535e6d88dcc	Alpaca	93785e1d66b2412691536bd104610a5e	CHAT_MESSAGE	time is up	USR_PLAYING	2020-05-12 13:46:46.014532+00:00	
+751c9828-cd91-46c3-90e9-c51ae36de047	Alpaca	93785e1d66b2412691536bd104610a5e	WASON_SUBMIT	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': True}]	USR_PLAYING	2020-05-12 13:46:47.545385+00:00	
+75000bfe-d398-4fa0-9b3b-a1c505bcfef2	Cat	5898ee1147aa412f80c31b7878ce6730	OUT_OF_TIME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': True}]	USR_PLAYING	2020-05-12 13:46:58.502109+00:00	
+2d2f0b7c-5f3c-43db-8d27-0a43a8f36868	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	OUT_OF_TIME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_PLAYING	2020-05-12 13:46:58.799178+00:00	
+01119b24-1941-48a9-8cb1-ec7198123e93	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	but i will choose, I and 5 because, there are 5 vowel letters 	USR_PLAYING	2020-05-12 13:47:07.222702+00:00	
+91f05652-cbea-4725-bdd6-ee71a70f454d	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': False}]	USR_PLAYING	2020-05-12 13:47:14.754709+00:00	
+aac64773-8b3c-499a-ba9b-425eacbf2849	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	WASON_GAME	[{'value': 'R', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '4', 'checked': False}, {'value': '5', 'checked': True}]	USR_PLAYING	2020-05-12 13:47:16.236629+00:00	
+b1dd612a-4237-4b67-bd66-cdab1bde28b2	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	Ok guys	USR_PLAYING	2020-05-12 13:47:35.416102+00:00	
+6564c851-9d20-403c-b953-21c1012ff5d3	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	CHAT_MESSAGE	nice chatting with you all	USR_PLAYING	2020-05-12 13:47:47.704160+00:00	
+bb131b2b-44ef-4980-8496-9ff9acea430d	Duck	b1bd2defd9fe443c8e6ef5575b1af34a	LEAVE_ROOM		USR_PLAYING	2020-05-12 13:48:03.439860+00:00	
+0935604d-f74e-468b-8140-32d7c3d559a5	SYSTEM	-1	WASON_FINISHED		UKN	2020-05-12 13:48:03.786738+00:00	

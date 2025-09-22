@@ -1,0 +1,46 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+a8a0d958-3980-432c-8ce0-b57feced803f	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""U"", ""checked"": false}, {""value"": ""6"", ""checked"": false}, {""value"": ""5"", ""checked"": false}, {""value"": ""D"", ""checked"": false}]"	UKN	2020-06-09 20:36:15.657912+00:00	
+7c1e94d6-055e-4bb5-917d-454d8f4f2be1	Beaver	a0a31a6db0724c80a9a5965f0f4cd52d	JOIN_ROOM		USR_ONBOARDING	2020-06-09 20:36:16.319452+00:00	
+3f7f5bbe-5dcf-4e47-8651-2cc994a7dc14	Beaver	a0a31a6db0724c80a9a5965f0f4cd52d	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '6', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2020-06-09 20:36:30.222479+00:00	
+db16addf-ad66-452c-99f9-15f3dfa7f235	Beaver	a0a31a6db0724c80a9a5965f0f4cd52d	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': '6', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2020-06-09 20:36:32.063001+00:00	
+f5feee57-0044-4326-b57e-a0ee1a44d18d	Duck	90412fe0828e46d0969f12e6463e8a76	JOIN_ROOM		USR_ONBOARDING	2020-06-09 20:41:25.602540+00:00	
+b77a4935-a382-4af7-96c6-5a79af591ce2	Narwhal	4be00c74cb8941618a96b18d4558a404	JOIN_ROOM		USR_ONBOARDING	2020-06-09 20:42:18.704262+00:00	
+e39800e9-b7a2-48fc-a6e2-91aa1edbc046	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-06-09 20:42:18.910869+00:00	
+fab4395d-06d9-4ba4-bca5-d7bc86a03645	Duck	90412fe0828e46d0969f12e6463e8a76	WASON_GAME	[{'value': 'U', 'checked': False}, {'value': '6', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'D', 'checked': True}]	USR_ONBOARDING	2020-06-09 20:42:49.701433+00:00	
+af78c6d5-51ca-4e51-8b87-9806ecf3d0e5	Duck	90412fe0828e46d0969f12e6463e8a76	WASON_GAME	[{'value': 'U', 'checked': False}, {'value': '6', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2020-06-09 20:42:51.823326+00:00	
+17fa356b-f18b-4fb5-854b-e16576ad7463	Duck	90412fe0828e46d0969f12e6463e8a76	WASON_GAME	[{'value': 'U', 'checked': False}, {'value': '6', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2020-06-09 20:42:53.892343+00:00	
+677e6511-5d26-4c4a-8a97-1d979cfaa36c	Duck	90412fe0828e46d0969f12e6463e8a76	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '6', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2020-06-09 20:42:54.829664+00:00	
+333089d2-6c9b-4434-bcc0-4ac9d7f1ad1a	Duck	90412fe0828e46d0969f12e6463e8a76	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': '6', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2020-06-09 20:42:55.752590+00:00	
+b6b5ae03-4e4d-4a2b-ae8b-61fecde8bde3	Duck	90412fe0828e46d0969f12e6463e8a76	ROUTING_TIMER_ELAPSED	[{'value': 'U', 'checked': False}, {'value': '6', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2020-06-09 20:43:19.002821+00:00	
+488481a2-d0db-49bc-943d-6d7803cac601	Beaver	a0a31a6db0724c80a9a5965f0f4cd52d	ROUTING_TIMER_ELAPSED	[{'value': 'U', 'checked': True}, {'value': '6', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2020-06-09 20:43:19.218706+00:00	
+9b0ad895-6fb4-4f62-a23b-6c0cc4222d16	Narwhal	4be00c74cb8941618a96b18d4558a404	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-06-09 20:43:20.538183+00:00	
+ba0e5420-3d60-4060-9111-729618d865a2	Narwhal	4be00c74cb8941618a96b18d4558a404	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '6', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2020-06-09 20:43:28.418345+00:00	
+2f187b0e-6ec4-4540-82ca-2c2bb7a01b5e	Narwhal	4be00c74cb8941618a96b18d4558a404	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '6', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2020-06-09 20:43:47.439990+00:00	
+f6316e04-8961-42cc-b332-e927a87b8e89	Narwhal	4be00c74cb8941618a96b18d4558a404	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': '6', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'D', 'checked': False}]	USR_ONBOARDING	2020-06-09 20:44:29.392151+00:00	
+670d9e9a-270c-42d4-be79-0e2d58bf2326	AUTO_KICKED	a0a31a6db0724c80a9a5965f0f4cd52d	LEAVE_ROOM		AUTO_KICKED	2020-06-09 20:44:29.684642+00:00	
+1a120466-6e8a-4a3d-aa49-31b7a9031d69	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-06-09 20:44:29.909409+00:00	
+b9b65322-b6a7-4667-8e64-f76c0137ac93	Duck	90412fe0828e46d0969f12e6463e8a76	CHAT_MESSAGE	hello	USR_PLAYING	2020-06-09 20:44:44.200392+00:00	
+ac0c682e-65f8-4e4e-b5bf-85feb6b0ae34	Duck	90412fe0828e46d0969f12e6463e8a76	CHAT_MESSAGE	I selected U and 6 but I am pretty sure that is not the correct answer	USR_PLAYING	2020-06-09 20:45:04.410809+00:00	
+4d6aba3d-bb3f-4e69-aaa8-9b03371695b4	Narwhal	4be00c74cb8941618a96b18d4558a404	CHAT_MESSAGE	hi there	USR_PLAYING	2020-06-09 20:45:47.566007+00:00	
+e4885b30-9ff1-40ef-9e5d-949f19cfda4d	Narwhal	4be00c74cb8941618a96b18d4558a404	CHAT_MESSAGE	Hi, Duck. I submitted U and 6.	USR_PLAYING	2020-06-09 20:46:24.800510+00:00	
+daad63b4-702b-4188-8e72-c11f781877ba	Narwhal	4be00c74cb8941618a96b18d4558a404	CHAT_MESSAGE	U and 5, I meant.	USR_PLAYING	2020-06-09 20:46:33.177545+00:00	
+2c02d7a4-6f77-4727-9b94-f7b863a937c6	Duck	90412fe0828e46d0969f12e6463e8a76	CHAT_MESSAGE	what is the reasoning for 5?	USR_PLAYING	2020-06-09 20:46:47.512136+00:00	
+ee119608-a919-4b95-8dc2-c03810b32c46	Narwhal	4be00c74cb8941618a96b18d4558a404	CHAT_MESSAGE	are we waiting for one more person or this is it?	USR_PLAYING	2020-06-09 20:46:57.589069+00:00	
+897260e6-c61d-4c83-949f-df2c87b64fc2	Duck	90412fe0828e46d0969f12e6463e8a76	CHAT_MESSAGE	i think our 3rd left	USR_PLAYING	2020-06-09 20:47:05.256540+00:00	
+fdd1d8c1-d651-4fae-aaab-0071f275183e	Narwhal	4be00c74cb8941618a96b18d4558a404	CHAT_MESSAGE	oh. anyways here is my reasoning, give me a sec to type it up.	USR_PLAYING	2020-06-09 20:47:21.911091+00:00	
+818c6b24-78a7-447f-a306-b06f82eea59d	Narwhal	4be00c74cb8941618a96b18d4558a404	CHAT_MESSAGE	if 5 has a vowel on the other side, it would go against the rule that all vowels have an even number on the other side.	USR_PLAYING	2020-06-09 20:48:01.026961+00:00	
+da523f73-d57a-4944-8ce5-7823dce3d4d6	Narwhal	4be00c74cb8941618a96b18d4558a404	CHAT_MESSAGE	we don't care about turning 6, because any card can have an even number, not just vowels.	USR_PLAYING	2020-06-09 20:48:27.501374+00:00	
+d55ee192-29f3-4154-9bbd-6ee93e2c06a8	Narwhal	4be00c74cb8941618a96b18d4558a404	CHAT_MESSAGE	"It doesn't say ""only vowels"""	USR_PLAYING	2020-06-09 20:48:50.122254+00:00	
+095b2fc0-97c5-472a-bce2-9c5befeaa1b0	Duck	90412fe0828e46d0969f12e6463e8a76	CHAT_MESSAGE	ahh i see thank you for explaining it to me	USR_PLAYING	2020-06-09 20:49:20.828586+00:00	
+c5b7402b-f75f-4e7e-9e2a-8675f3d1d4bf	Duck	90412fe0828e46d0969f12e6463e8a76	CHAT_MESSAGE	that makes sense	USR_PLAYING	2020-06-09 20:49:25.910745+00:00	
+19cee3a9-8b7a-4050-85a4-ef08892f5265	Narwhal	4be00c74cb8941618a96b18d4558a404	CHAT_MESSAGE	same reason, we don't have to turn D.  D can have anything it wants: odds or zeros.	USR_PLAYING	2020-06-09 20:49:48.706458+00:00	
+38ab0052-a70c-432d-a4e7-8d7d6a8092cb	Narwhal	4be00c74cb8941618a96b18d4558a404	CHAT_MESSAGE	or evens. D has the best life.	USR_PLAYING	2020-06-09 20:50:01.355321+00:00	
+90f251ab-4e27-4fef-a37f-24a08f296b41	Duck	90412fe0828e46d0969f12e6463e8a76	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '6', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'D', 'checked': False}]	USR_PLAYING	2020-06-09 20:50:14.125408+00:00	
+d2bec894-771c-4903-ac91-cb6935fc7826	Duck	90412fe0828e46d0969f12e6463e8a76	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '6', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2020-06-09 20:50:15.484543+00:00	
+2da304d9-6b9f-4234-807f-72ef17f1fa77	Narwhal	4be00c74cb8941618a96b18d4558a404	CHAT_MESSAGE	So we are submitting U-5 and be done with this, right?	USR_PLAYING	2020-06-09 20:50:56.863287+00:00	
+f5edb4bb-c31a-4203-82b5-acf5991eb295	Duck	90412fe0828e46d0969f12e6463e8a76	CHAT_MESSAGE	Yep	USR_PLAYING	2020-06-09 20:51:01.108778+00:00	
+4db7df3f-d7fa-499d-ab86-de473c13c26c	Duck	90412fe0828e46d0969f12e6463e8a76	CHAT_MESSAGE	have a good day	USR_PLAYING	2020-06-09 20:51:05.799148+00:00	
+22b85d5d-31d1-4f9f-8e6c-4fba2999e178	Narwhal	4be00c74cb8941618a96b18d4558a404	CHAT_MESSAGE	You to, @Duck.	USR_PLAYING	2020-06-09 20:51:14.117717+00:00	
+775e3911-1eaf-4ed3-aed0-91788767eb6c	Duck	90412fe0828e46d0969f12e6463e8a76	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': '6', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2020-06-09 20:51:16.806324+00:00	
+9189bfb7-e441-4da6-9b1b-a626c06981ae	Narwhal	4be00c74cb8941618a96b18d4558a404	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': '6', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'D', 'checked': False}]	USR_PLAYING	2020-06-09 20:51:21.354861+00:00	
+95f5bb0b-1b20-4f42-859f-87f786b9c328	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-09 20:51:21.724441+00:00	

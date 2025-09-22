@@ -1,0 +1,48 @@
+INFO:__main__:Caricamento knowledge graph da: comprehensive_real_kg.ttl
+INFO:__main__:Knowledge graph caricato: 12295 triple da comprehensive_real_kg.ttl
+=== DELIBERATION KNOWLEDGE GRAPH SERVER - PRODUCTION ===
+Server avviato su http://0.0.0.0:8085
+Interfaccia principale: http://0.0.0.0:8085/
+Endpoint SPARQL: http://0.0.0.0:8085/sparql
+API Contributions: http://0.0.0.0:8085/api/contributions
+API Statistiche: http://0.0.0.0:8085/api/stats
+ * Serving Flask app 'sparql_server_production'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8085
+ * Running on http://192.168.122.214:8085
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 08:57:21] "GET /api/stats HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:03:53] "GET /api/stats HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:04:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:04:01] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:04:01] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:04:01] "[33mGET /what-is-the-european-parliament.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:04:02] "[33mGET /DKG%20daft.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:04:11] "GET /api/export/ttl HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:04:14] "GET /visualize HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:04:15] "POST /sparql HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:04:21] "POST /sparql HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:05:48] "GET /api/stats HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:10:46] "GET /api/stats HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:27:08] "GET /api/stats HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:27:08] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:27:08] "GET /api/stats HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:27:08] "POST /sparql HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:27:17] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:27:31] "[33mGET /404.html HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:27:35] "[33mGET /404.html HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:27:47] "[33mGET /404.html HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:27:52] "[33mGET /404.html HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:28:08] "[31m[1mGET /sparql HTTP/1.0[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:28:16] "[33mGET /404.html HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:28:20] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:36:51] "HEAD / HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:36:51] "[31m[1mHEAD /sparql HTTP/1.0[0m" 415 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:36:56] "[33mGET /404.html HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:36:56] "[33mGET /404.html HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:37:06] "GET /api/stats HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:37:07] "HEAD /api/export/ttl HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:38:33] "[33mHEAD /404.html HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:38:34] "[33mHEAD /404.html HTTP/1.0[0m" 404 -

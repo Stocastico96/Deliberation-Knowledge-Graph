@@ -1,0 +1,101 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+47187e16-a310-44ef-b77a-c5c687862651	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""9"", ""checked"": false}, {""value"": ""E"", ""checked"": false}, {""value"": ""D"", ""checked"": false}, {""value"": ""8"", ""checked"": false}]"	UKN	2020-07-20 18:50:15.143302+00:00	
+76973865-f90a-401d-8120-a0e1229dcab7	Dolphin	5a61a10c901847aba370414220e8fef0	JOIN_ROOM		USR_ONBOARDING	2020-07-20 18:50:15.531282+00:00	
+51c70223-ed46-4339-a578-d1579714987b	Duck	f6ae3409608a49bfa851d72f3ee821b8	JOIN_ROOM		USR_ONBOARDING	2020-07-20 18:50:19.081537+00:00	
+1dba1b88-3892-43d7-a8e6-304a5a0d6076	Chipmunk	8da020709f064f7b8836263e1eac6d07	JOIN_ROOM		USR_ONBOARDING	2020-07-20 18:50:26.616466+00:00	
+8c22e769-0c15-44a9-bcdf-f1db2188a6a7	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-07-20 18:50:26.824921+00:00	
+8a2076a0-d50a-4f97-8df1-17540257d067	Llama	a4e5d6c702f44f78a173548015d92044	JOIN_ROOM		USR_ONBOARDING	2020-07-20 18:50:34.614754+00:00	
+618d3114-c1cd-4e76-80f0-35388ab0ccb3	Dolphin	5a61a10c901847aba370414220e8fef0	WASON_GAME	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': False}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-07-20 18:51:08.141638+00:00	
+d6cdf061-94f9-49f3-a236-171eaacfff90	Dolphin	5a61a10c901847aba370414220e8fef0	WASON_GAME	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-07-20 18:51:09.546790+00:00	
+53132d2a-f575-4ffb-b8be-b8f6353f9dfe	Dolphin	5a61a10c901847aba370414220e8fef0	WASON_GAME	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': True}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-07-20 18:51:10.219924+00:00	
+ff13e109-b3a1-4036-972f-54904e1898f3	Dolphin	5a61a10c901847aba370414220e8fef0	WASON_GAME	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': True}, {'value': '8', 'checked': True}]	USR_ONBOARDING	2020-07-20 18:51:11.056130+00:00	
+21f2dbe7-60f4-4430-9eed-1bdbff2a35d2	Dolphin	5a61a10c901847aba370414220e8fef0	WASON_SUBMIT	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': True}, {'value': '8', 'checked': True}]	USR_ONBOARDING	2020-07-20 18:51:12.195002+00:00	
+7e9e33be-32bb-4528-ac79-18237276bba5	Dolphin	5a61a10c901847aba370414220e8fef0	ROUTING_TIMER_ELAPSED	[{'value': '9', 'checked': False}, {'value': 'E', 'checked': False}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-07-20 18:51:26.943920+00:00	
+cf533a00-687c-4a9e-8977-cd77fdf90a82	Duck	f6ae3409608a49bfa851d72f3ee821b8	ROUTING_TIMER_ELAPSED	[{'value': '9', 'checked': False}, {'value': 'E', 'checked': False}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-07-20 18:51:27.033237+00:00	
+39819fe0-9b17-4a4d-b010-d70f387878c4	Duck	f6ae3409608a49bfa851d72f3ee821b8	WASON_GAME	[{'value': '9', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-07-20 18:52:02.337688+00:00	
+a8952af7-0e90-46d5-b061-026b17b20256	Duck	f6ae3409608a49bfa851d72f3ee821b8	WASON_GAME	[{'value': '9', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': True}]	USR_ONBOARDING	2020-07-20 18:52:04.401392+00:00	
+f703bfe9-bdcb-4f96-a77f-9c122987cb44	Duck	f6ae3409608a49bfa851d72f3ee821b8	WASON_SUBMIT	[{'value': '9', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': True}]	USR_ONBOARDING	2020-07-20 18:52:20.693640+00:00	
+87af4d75-1d0f-44aa-8d90-a3c7c5650b20	Llama	a4e5d6c702f44f78a173548015d92044	WASON_GAME	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': False}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-07-20 18:52:31.156353+00:00	
+a56e842b-5ac5-4a69-a8bc-fb872b2795f7	Llama	a4e5d6c702f44f78a173548015d92044	WASON_GAME	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-07-20 18:52:49.081649+00:00	
+3b100730-a1bb-4f8a-a888-919f6372ef95	Llama	a4e5d6c702f44f78a173548015d92044	WASON_SUBMIT	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-07-20 18:52:59.061768+00:00	
+eac238e6-a95e-46a5-bb49-3e3faef49d97	Moderating Owl	6f9a3d6b6f324e3c9be3091c095c1c0f	JOIN_ROOM		USR_MODERATING	2020-07-20 18:55:25.856552+00:00	
+19494f9f-af38-4e4b-8cd0-6ad177ae4092	Chipmunk	8da020709f064f7b8836263e1eac6d07	LEAVE_ROOM		KICKED	2020-07-20 18:55:41.277623+00:00	
+13afeeba-7008-470f-9825-d95cecc93582	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-07-20 18:55:41.532635+00:00	
+5d2726d7-0856-4f85-bcae-94bacd8008a8	Moderating Owl	6f9a3d6b6f324e3c9be3091c095c1c0f	LEAVE_ROOM		USR_MODERATING	2020-07-20 18:55:44.106807+00:00	
+183b80b8-d0fa-4500-973e-1c631c801f13	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	Anyone have any ideas?	USR_PLAYING	2020-07-20 18:56:04.496439+00:00	
+07de9972-4e3d-4d34-af87-3ef81ff663ab	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	I chose 9 and e	USR_PLAYING	2020-07-20 18:56:16.257040+00:00	
+be5ab242-40b3-4a45-9d01-3ab214841756	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	"I chose ""E"" and ""8"""	USR_PLAYING	2020-07-20 18:56:19.804855+00:00	
+c12ed7df-08cc-4685-b250-23869d04ca96	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	I just chose all of them because I couldn't find the rule :/	USR_PLAYING	2020-07-20 18:56:44.143710+00:00	
+dcb3c980-c0f6-4e58-971b-c9bfbf9aacf3	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	Why did you choose 9 @Llama? 	USR_PLAYING	2020-07-20 18:56:49.416949+00:00	
+2d28254a-8576-4580-96cd-9cc3cffe05b8	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	I like 9 and e	USR_PLAYING	2020-07-20 18:57:04.877827+00:00	
+632bf0f3-b149-4590-87b0-1706e152a622	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	Why do you guys think we should choose 9?	USR_PLAYING	2020-07-20 18:57:20.194449+00:00	
+657b8440-900b-4041-8519-7293610f24dc	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	To see if it had a vowel but now I'm realizing that it didn't say that it couldn't	USR_PLAYING	2020-07-20 18:57:34.283897+00:00	
+65afb7fe-3f61-4451-b1a0-ad94a3cac190	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	The rule states: all cards with vowels on one side have an even number on the other	USR_PLAYING	2020-07-20 18:57:40.180826+00:00	
+ff38fb30-d7c8-4c36-8a16-e7abd3ebae5e	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	I guess e and 8 is probably right	USR_PLAYING	2020-07-20 18:57:52.579159+00:00	
+34ce57d3-3dca-4edd-8a90-317548cb3361	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	because those are the only two that are dependent on the rule	USR_PLAYING	2020-07-20 18:58:03.500829+00:00	
+ffb82550-23f4-435a-bc95-e6c36aec28a8	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	But what if 9 has a vowel?	USR_PLAYING	2020-07-20 18:58:12.190560+00:00	
+bb7d0f42-05da-4bed-8581-4cfbdd1eaf18	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	I chose 8 and E because those are the only two cards that is a vowel or an even number	USR_PLAYING	2020-07-20 18:58:21.792796+00:00	
+33c686f2-87c0-4bb1-9c27-e7be841f4fc3	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	But we don't care about odd numbers right?	USR_PLAYING	2020-07-20 18:58:42.379932+00:00	
+8391c35f-c17b-45b5-9137-95fde34ffdd8	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	Yea and we're testing the rule by flipping the E	USR_PLAYING	2020-07-20 18:58:44.895671+00:00	
+7be2d3a7-9e7f-46e4-bb6a-614cb3cee2c8	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	I thought we don't care about odd numbers or consonants	USR_PLAYING	2020-07-20 18:58:59.706422+00:00	
+329dc910-cabd-4ad5-b62d-540646f819ce	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	I think e and 8. final answer	USR_PLAYING	2020-07-20 18:59:01.492742+00:00	
+f0aea8d6-1cda-49b9-82ae-17e4383b2b29	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	WE care about vowels which may be under the 9	USR_PLAYING	2020-07-20 18:59:09.197074+00:00	
+d3ca27fc-7aee-4e1d-b0a4-2bd7f24ff04f	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	my bad caps	USR_PLAYING	2020-07-20 18:59:16.291294+00:00	
+ec86fc6d-bb78-462f-aa37-3f096a3e4a8b	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	But 9 is an odd number and we don't care about odd numbers right?	USR_PLAYING	2020-07-20 18:59:30.582149+00:00	
+29de482b-e69b-4284-badc-244f0de943e1	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	but it doesn't say anthing in the rule about odd numbers so I don't think it matters	USR_PLAYING	2020-07-20 18:59:32.402808+00:00	
+1077ccd6-e8f7-4d4d-b9c2-5d938f12b0aa	Dolphin	5a61a10c901847aba370414220e8fef0	WASON_GAME	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': True}]	USR_PLAYING	2020-07-20 18:59:33.021479+00:00	
+1657b96f-8352-44f8-924b-32176b23ce02	Dolphin	5a61a10c901847aba370414220e8fef0	WASON_GAME	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-07-20 18:59:36.326771+00:00	
+c2e5118d-7d39-489e-8c82-54ade56cabe5	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	Yeah I don't think odd numbers matter	USR_PLAYING	2020-07-20 18:59:43.708574+00:00	
+7bb61fca-859a-4197-80a5-667cfd87b474	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	I've had too much coffee today...	USR_PLAYING	2020-07-20 18:59:55.769711+00:00	
+596efe71-bcf0-4dad-a5ab-bc710d00d201	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	Because we only want to see if cards with vowels have an even number on the other side and vice versa	USR_PLAYING	2020-07-20 19:00:10.484743+00:00	
+dcc3690d-00b3-4b8d-a66b-57c4b283a618	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	I agree	USR_PLAYING	2020-07-20 19:00:20.267527+00:00	
+c3bebb01-9405-442e-aa43-8d3fef6cb61e	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	but what if behind the odd number, there's a vowel?	USR_PLAYING	2020-07-20 19:00:21.439676+00:00	
+72f921f6-ebfe-4b7c-a3c2-8657d5b2b752	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	But we don't care about odd numbers right?	USR_PLAYING	2020-07-20 19:00:35.348162+00:00	
+7e51e270-aa69-46ff-b8d3-1ece16735a74	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	the rule doesn't seem to care about odd numbers	USR_PLAYING	2020-07-20 19:00:36.170241+00:00	
+18d259d7-c8d7-4911-978e-71234a84696a	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	The rule only cares about vowels	USR_PLAYING	2020-07-20 19:00:48.560016+00:00	
+6946030f-e964-49f2-a956-8e9ae2e55263	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	"Otherwise it would say ""all cards with vowels have an odd number on the other"""	USR_PLAYING	2020-07-20 19:00:58.982302+00:00	
+ddc98374-be83-411a-84bd-fba225642537	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	"""Select ONLY the card(s) required to verify the rule."""	USR_PLAYING	2020-07-20 19:00:59.819677+00:00	
+d8f2bab9-9dc6-40d4-80bf-6afd179bfc84	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	the numbers can honestly be irrelveant	USR_PLAYING	2020-07-20 19:01:04.645306+00:00	
+119639e8-1bea-4b01-bdb7-e2459064ae78	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	so it would be e and 8	USR_PLAYING	2020-07-20 19:01:09.734284+00:00	
+0cdc5c50-7b9d-4400-8644-f9038d745138	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	Which card(s) do you need to turn to test the rule: All cards with vowels on one side have an even number on the other. NB: Select ONLY the card(s) required to verify the rule.	USR_PLAYING	2020-07-20 19:01:30.551157+00:00	
+fd2986dd-5f8a-4c69-80ee-098328b3d09d	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	Do we have to come to a consensus or?	USR_PLAYING	2020-07-20 19:01:36.555583+00:00	
+3c039587-369c-4bc0-b6a8-7314aa33e74b	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	So...do we all agree it's E and 8?	USR_PLAYING	2020-07-20 19:01:40.108505+00:00	
+7ef9bc36-0a7e-47a3-a759-4b5002dd2605	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	yes	USR_PLAYING	2020-07-20 19:01:45.198207+00:00	
+f3ac853b-bb92-4c3b-acc2-57b9ca9070eb	Llama	a4e5d6c702f44f78a173548015d92044	WASON_GAME	[{'value': '9', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-07-20 19:01:50.010290+00:00	
+19accefe-100d-45e9-92b7-65f546e78cf9	Llama	a4e5d6c702f44f78a173548015d92044	WASON_GAME	[{'value': '9', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': True}]	USR_PLAYING	2020-07-20 19:01:51.291932+00:00	
+3336fc34-23e8-429c-82a9-2e913b21e777	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	It doesn't say we have to come to a consensus 	USR_PLAYING	2020-07-20 19:02:04.473940+00:00	
+b798b13b-3028-4305-bb0d-6b5c737f99b0	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	yeah, but I want the extra $1	USR_PLAYING	2020-07-20 19:02:17.389680+00:00	
+a7210818-0e76-451b-85a6-0a0bb46a081c	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	We just have to participate in the conversation for at least 5 minutes	USR_PLAYING	2020-07-20 19:02:17.774902+00:00	
+88dcc8c3-280e-4262-89c3-debfd07ba81a	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	has it been 5 minutes?	USR_PLAYING	2020-07-20 19:02:39.516467+00:00	
+1bdf6d26-6074-4e99-b925-31c0710b75ad	Dolphin	5a61a10c901847aba370414220e8fef0	OUT_OF_TIME	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-07-20 19:02:41.642496+00:00	
+2554e521-dc6a-4ed1-a728-e48809e1d217	Duck	f6ae3409608a49bfa851d72f3ee821b8	OUT_OF_TIME	[{'value': '9', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': True}]	USR_PLAYING	2020-07-20 19:02:42.019626+00:00	
+42861463-1430-4048-a87d-e86b1c13643c	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	I'm going with E and 8 because I think that's correct	USR_PLAYING	2020-07-20 19:02:43.969212+00:00	
+0c44f478-904b-4c5d-9dff-ef045b8e7e63	Llama	a4e5d6c702f44f78a173548015d92044	OUT_OF_TIME	[{'value': '9', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': True}]	USR_PLAYING	2020-07-20 19:02:45.320325+00:00	
+1ed297ab-3cc8-4947-89da-33d2a14a0e78	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	What is time anymore	USR_PLAYING	2020-07-20 19:02:46.606220+00:00	
+6c771a00-7918-48d7-b536-538debc96b82	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	lmao	USR_PLAYING	2020-07-20 19:02:52.240601+00:00	
+f4fb4241-13cb-4cbf-9905-ab53f9ed6460	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	I'm pretty sure it's been 5 minutes	USR_PLAYING	2020-07-20 19:03:20.561922+00:00	
+f20f6c40-1399-4a35-849c-1360279bd080	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	I have a strong feeling* its 9 and E is all Im saying	USR_PLAYING	2020-07-20 19:03:22.283295+00:00	
+dc1ee849-16fe-419a-ba3c-f006af9b99da	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	@Dolphin why don't you think it's 8?	USR_PLAYING	2020-07-20 19:03:40.071711+00:00	
+2230c9d1-18e1-4955-ade2-851e9b25da65	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	don't you have to test to see if 8 has a vowel on the other side?	USR_PLAYING	2020-07-20 19:04:11.144901+00:00	
+7bf758c8-706f-460f-b781-5177d37d4efd	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	e and 8 are the only two that you need to check because it says that e should have an even number and 8 should have a vowel	USR_PLAYING	2020-07-20 19:04:27.360063+00:00	
+d3a8cec8-1217-4e10-a63f-fb81240ee5a9	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	Okay I'm submitting my answers guys!	USR_PLAYING	2020-07-20 19:04:44.554673+00:00	
+d11ae2ed-de41-4be7-8897-54a82c2dd2eb	Llama	a4e5d6c702f44f78a173548015d92044	CHAT_MESSAGE	same. good luck!	USR_PLAYING	2020-07-20 19:04:53.666288+00:00	
+d651d194-61c8-4a76-8e25-31db8fe7a5a0	Llama	a4e5d6c702f44f78a173548015d92044	WASON_SUBMIT	[{'value': '9', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': True}]	USR_PLAYING	2020-07-20 19:04:55.250876+00:00	
+e7b0d35f-ffe2-4f09-9451-073ef39b76d3	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	But we don't care if 8 should have a vowel	USR_PLAYING	2020-07-20 19:04:55.406289+00:00	
+87d76f5b-054d-4c1d-bfa8-54e53c07f0b2	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	according to the rule	USR_PLAYING	2020-07-20 19:04:59.293478+00:00	
+77aee83d-a811-491b-b4a9-712c4dcb0e1f	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	8 could not have a vowel and it would fit the rule	USR_PLAYING	2020-07-20 19:05:19.556269+00:00	
+c8ee7294-6955-4eae-860d-b3d57794f0fd	Llama	a4e5d6c702f44f78a173548015d92044	LEAVE_ROOM		USR_PLAYING	2020-07-20 19:05:22.071043+00:00	
+21bc4406-0429-4425-9ce3-3c79184d1ada	Dolphin	5a61a10c901847aba370414220e8fef0	CHAT_MESSAGE	if 9 had a vowel, it  would break the rule	USR_PLAYING	2020-07-20 19:05:34.604279+00:00	
+cc2bebc5-b460-4174-8e28-9ead606ebd00	Dolphin	5a61a10c901847aba370414220e8fef0	WASON_SUBMIT	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-07-20 19:05:43.125994+00:00	
+60e4a5f5-af34-4a15-9b4b-2bc83ec5d70f	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	ohhh!	USR_PLAYING	2020-07-20 19:06:01.813358+00:00	
+ce19c9eb-1c62-43a5-9e6b-0bdbec71a3fc	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	I think you're right!	USR_PLAYING	2020-07-20 19:06:05.485089+00:00	
+4f345b53-32bd-442f-833c-0b7ce094af04	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	I get it now!	USR_PLAYING	2020-07-20 19:06:11.043039+00:00	
+9fd36f11-55a0-4a8c-96cc-82900a82355f	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	lol	USR_PLAYING	2020-07-20 19:06:13.934206+00:00	
+f3957bf1-0b66-4f12-a4b5-839bd091e55f	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	Thank you @Dolphin!	USR_PLAYING	2020-07-20 19:06:23.268656+00:00	
+402ae6ee-5e11-4ccd-9814-1d9acc235026	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	I'm going with 9 and E	USR_PLAYING	2020-07-20 19:06:34.519540+00:00	
+69152c31-fb7f-4c3b-9fce-816e1ed2ea37	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	You're smart haha	USR_PLAYING	2020-07-20 19:06:39.457213+00:00	
+313711cf-8a2d-4c21-9427-0caca5515f7e	Duck	f6ae3409608a49bfa851d72f3ee821b8	CHAT_MESSAGE	It took me awhile to figure that out	USR_PLAYING	2020-07-20 19:06:45.575000+00:00	
+fe2ed89b-da00-45e0-a27f-1c15efd8966a	Duck	f6ae3409608a49bfa851d72f3ee821b8	WASON_GAME	[{'value': '9', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-07-20 19:06:51.703231+00:00	
+1908d437-3cee-43fc-bf67-5519aa1cdda4	Duck	f6ae3409608a49bfa851d72f3ee821b8	WASON_GAME	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-07-20 19:06:53.426815+00:00	
+9b8d4da7-dfab-4c88-a8f9-45e153212b08	Duck	f6ae3409608a49bfa851d72f3ee821b8	WASON_SUBMIT	[{'value': '9', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'D', 'checked': False}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-07-20 19:07:47.893846+00:00	
+4266df30-0fdb-4b29-936a-19dac45a16e7	SYSTEM	-1	WASON_FINISHED		UKN	2020-07-20 19:07:48.376645+00:00	

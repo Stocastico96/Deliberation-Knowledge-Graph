@@ -1,0 +1,44 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+78f75e44-18fc-4a80-8877-19705c9980ef	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""U"", ""checked"": false}, {""value"": ""4"", ""checked"": false}, {""value"": ""K"", ""checked"": false}, {""value"": ""9"", ""checked"": false}]"	UKN	2020-05-12 13:29:47.861496+00:00	
+92c311ee-6aa2-4c66-bf0d-7d8980e83159	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	JOIN_ROOM		USR_ONBOARDING	2020-05-12 13:29:48.645331+00:00	
+b0c4b1f4-599a-4669-9353-e3625bbcb494	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:31:14.258860+00:00	
+665b7da4-75c9-4475-8f96-df019a93feb1	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': True}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:31:15.122145+00:00	
+13ebd6aa-2939-49dd-bd12-67b5bfe711d7	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': True}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:31:36.005582+00:00	
+75b3f032-5dcd-4f0d-aa86-d9c35b47ca79	Alpaca	611c80071f054793b7509e76b9e712f9	JOIN_ROOM		USR_ONBOARDING	2020-05-12 13:33:19.774756+00:00	
+60a50563-821f-48eb-9dff-234cc9cdd14e	Alpaca	611c80071f054793b7509e76b9e712f9	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:34:49.854044+00:00	
+9393f6b7-398a-4bb1-bd5a-1cb6ca5a0bee	Alpaca	611c80071f054793b7509e76b9e712f9	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': True}]	USR_ONBOARDING	2020-05-12 13:34:52.150800+00:00	
+52c8a397-126b-4c4e-a3c6-8afbd6684152	Tiger	a1379bd367f84d7290901734157384fe	JOIN_ROOM		USR_ONBOARDING	2020-05-12 13:35:10.272490+00:00	
+2035fe56-bc97-4f36-af2d-3cbc0ae26a64	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-05-12 13:35:10.501397+00:00	
+d9a19a1d-d45a-466d-a6eb-be3ca65ba669	Alpaca	611c80071f054793b7509e76b9e712f9	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': True}]	USR_ONBOARDING	2020-05-12 13:35:21.062866+00:00	
+c822919a-5065-4faa-adb5-d9ef3f0214a6	Tiger	a1379bd367f84d7290901734157384fe	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:35:51.880628+00:00	
+e8964c93-2393-41ca-9727-a0e0c73f7e42	Tiger	a1379bd367f84d7290901734157384fe	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': True}]	USR_ONBOARDING	2020-05-12 13:35:59.930198+00:00	
+96b1843f-8c27-4765-b9f9-6c5bbf4036a2	Tiger	a1379bd367f84d7290901734157384fe	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': True}]	USR_ONBOARDING	2020-05-12 13:36:04.966231+00:00	
+3e6b4aab-1e17-41ec-b5c7-0c646afa09c3	Alpaca	611c80071f054793b7509e76b9e712f9	ROUTING_TIMER_ELAPSED	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': True}]	USR_ONBOARDING	2020-05-12 13:36:10.903886+00:00	
+bc40e4ee-77f5-4504-8e87-dbbcc2917562	Tiger	a1379bd367f84d7290901734157384fe	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-05-12 13:36:11.260017+00:00	
+d06e3f73-e14b-4c78-831e-5aa7a54dc75f	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-05-12 13:36:11.365930+00:00	
+6220cc7b-4e7f-412b-b6ad-c0cd246b72af	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	ROUTING_TIMER_ELAPSED	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': True}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-05-12 13:36:11.416502+00:00	
+514cf6d6-0f35-4ae0-81bd-30bd5b8ec85b	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-05-12 13:36:11.714885+00:00	
+8674cc63-a986-433d-9f84-f41fe0509655	Tiger	a1379bd367f84d7290901734157384fe	CHAT_MESSAGE	Hello	USR_PLAYING	2020-05-12 13:36:22.688004+00:00	
+88f1422b-482f-4d61-be1b-fb2d0fd2236d	Alpaca	611c80071f054793b7509e76b9e712f9	CHAT_MESSAGE	Hello	USR_PLAYING	2020-05-12 13:36:32.852465+00:00	
+c2c62661-0678-48d2-924a-e6e1c93f3c37	Tiger	a1379bd367f84d7290901734157384fe	CHAT_MESSAGE	So what did everyone pick?	USR_PLAYING	2020-05-12 13:36:47.468286+00:00	
+77477036-797b-42ea-8ce3-f4a078fc5933	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	CHAT_MESSAGE	Hi people	USR_PLAYING	2020-05-12 13:36:49.632226+00:00	
+6a63f67c-fa1e-43d1-af62-905254135ae4	Alpaca	611c80071f054793b7509e76b9e712f9	CHAT_MESSAGE	I picked the two outer cards.	USR_PLAYING	2020-05-12 13:37:08.050301+00:00	
+5d0bc121-fa59-4218-b24a-51a648702eb8	Tiger	a1379bd367f84d7290901734157384fe	CHAT_MESSAGE	Me aswell	USR_PLAYING	2020-05-12 13:37:23.896133+00:00	
+4cbe2404-8073-4cbe-8ab4-1dbe588caf60	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	CHAT_MESSAGE	I picked 'U' and '4'	USR_PLAYING	2020-05-12 13:37:24.417692+00:00	
+085d31fb-fd70-496d-88a2-018d419d9011	Tiger	a1379bd367f84d7290901734157384fe	CHAT_MESSAGE	So we agree U is correct.	USR_PLAYING	2020-05-12 13:37:42.495508+00:00	
+e85e353e-5f48-498d-9689-18b46ffbbac6	Tiger	a1379bd367f84d7290901734157384fe	CHAT_MESSAGE	Why did you pick 4?	USR_PLAYING	2020-05-12 13:37:51.814405+00:00	
+e22c873f-3703-40ad-a3ea-c10bd35b4cad	Alpaca	611c80071f054793b7509e76b9e712f9	CHAT_MESSAGE	I think 9 is a better pick because it should not be a vowel on the other side	USR_PLAYING	2020-05-12 13:38:36.561164+00:00	
+53880b2d-9600-41b4-9670-0d43f3602908	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	CHAT_MESSAGE	I turned the rule around	USR_PLAYING	2020-05-12 13:38:53.759051+00:00	
+5d3eed03-4cae-47d6-ba6b-6e4f535878a1	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	CHAT_MESSAGE	Oh, my bad. You're right, should be 9	USR_PLAYING	2020-05-12 13:39:14.015090+00:00	
+66415703-72fc-4ddd-9107-86a2717a441c	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': True}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-05-12 13:39:18.241549+00:00	
+2a251de5-325b-404b-b3d2-8c2980a66f9b	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-05-12 13:39:19.993643+00:00	
+a190008f-331a-4853-b293-50811346d496	Alpaca	611c80071f054793b7509e76b9e712f9	CHAT_MESSAGE	so we all agree U and 9?	USR_PLAYING	2020-05-12 13:39:53.382294+00:00	
+98ecbb34-f034-47c6-809d-ddb505bc2a45	Tiger	a1379bd367f84d7290901734157384fe	CHAT_MESSAGE	I do	USR_PLAYING	2020-05-12 13:40:03.427763+00:00	
+b2b52aa2-0a1e-413b-835f-7e0964d624f8	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	CHAT_MESSAGE	Correct :)	USR_PLAYING	2020-05-12 13:40:07.836655+00:00	
+745de00f-8b88-4758-b641-5f62b8fc2db5	Alpaca	611c80071f054793b7509e76b9e712f9	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-05-12 13:40:22.778403+00:00	
+4b30decc-50d3-4d1a-b857-08e53e5f04b5	Alpaca	611c80071f054793b7509e76b9e712f9	LEAVE_ROOM		USR_PLAYING	2020-05-12 13:40:39.380098+00:00	
+02e8ac99-0348-4aa0-b2a7-f16678d8594d	Tiger	a1379bd367f84d7290901734157384fe	CHAT_MESSAGE	Thank you for your participation I am going to submit my answer now 	USR_PLAYING	2020-05-12 13:41:01.146803+00:00	
+10843361-5403-434f-a8f4-1afd70f7fa41	Tiger	a1379bd367f84d7290901734157384fe	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-05-12 13:41:03.351912+00:00	
+4568deb2-46e8-49ff-8684-c95c724a2d42	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	CHAT_MESSAGE	So am I. Thanks all	USR_PLAYING	2020-05-12 13:41:16.792111+00:00	
+6a4104ec-72c3-49c5-a66b-9f25d84858b2	Bee	39f6c6f0f1cb4c9bb0a43bbde62b6c0d	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'K', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-05-12 13:41:22.774462+00:00	
+1244973d-5a82-4b44-997f-6b2956ac9f85	SYSTEM	-1	WASON_FINISHED		UKN	2020-05-12 13:41:23.167137+00:00	

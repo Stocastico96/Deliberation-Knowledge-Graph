@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+		
+		<rdf:RDF
+			 xmlns:foaf="http://xmlns.com/foaf/0.1/"
+			 xmlns:skos="http://datos.gob.es/kos/sector-publico/sector/"
+			 xmlns:dcat="http://www.w3.org/ns/dcat#"
+			 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+			 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			 xmlns:dct="http://purl.org/dc/terms/"
+			 xmlns:dc="http://purl.org/dc/elements/1.1/"
+			 xmlns:time="http://www.w3.org/2006/time#"
+			 xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+			 xmlns:j.0="http://www.w3.org/1999/xhtml/vocab#"
+			 xmlns:j.1="http://a9.com/-/spec/opensearch/1.1/"
+			 xmlns:api="http://purl.org/linked-data/api/vocab#">
+			<dcat:Catalog rdf:about="https://datos.madrid.es/egob/catalogo">
+			
+				
+					<dct:title xml:lang="es">Catálogo de datos abiertos del Ayuntamiento de Madrid</dct:title>
+					<dct:description xml:lang="es">
+						Catálogo de datos abiertos del Ayuntamiento de Madrid
+					</dct:description>
+					<dc:language>es</dc:language>
+					<foaf:homepage rdf:resource="https://datos.madrid.es"/>
+					<dct:license rdf:resource="https://datos.madrid.es/egob/catalogo/aviso-legal"/>
+					<dct:identifier>https://datos.madrid.es/egob/catalogo</dct:identifier>
+					<dcat:themeTaxonomy rdf:resource="http://datos.gob.es/kos/sector-publico/sector/" />
+					<dct:publisher rdf:resource="http://datos.gob.es/recurso/sector-publico/org/Organismo/L01280796"/>
+					<dct:extent>
+						<dct:SizeOrDuration>
+							<rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</rdf:value>
+							<rdfs:label xml:lang="es">1</rdfs:label>
+						</dct:SizeOrDuration>
+					</dct:extent>
+					
+					
+					
+				
+				
+				
+					<dcat:dataset>
+						<dcat:Dataset rdf:about="https://datos.madrid.es/egob/catalogo/300312-0-presupuestos-participativos">
+							<dct:identifier>https://datos.madrid.es/egob/catalogo/300312-0-presupuestos-participativos</dct:identifier>
+							<dct:title xml:lang="es">Participación ciudadana. Presupuestos participativos</dct:title>
+							<dct:description xml:lang="es"><![CDATA[Los presupuestos participativos son unos procesos democráticos en los que la ciudadanía decide de manera directa a qué se destina una parte del presupuesto municipal. Las personas que participan a través de Decide Madrid plantean proyectos de gasto e inversión, éstos se valoran técnica y económicamente por personal técnico municipal y finalmente llegan a una votación final. Los proyectos seleccionados en la votación final se llevarán a cabo, a partir del 1 de enero del año siguiente, por el Ayuntamiento de Madrid.   Este conjunto de datos ofrece los proyectos que han salido elegidos en la votación final de cada año, con el detalle del año del proceso participativo, ámbito de actuación, número identificativo y título del proyecto, coste, unidad municipal que asume la inversión requerida y estado de ejecución del proyecto.    Para más información sobre presupuestos participativos se puede consultar la información publicada en la web Decide Madrid (  https://decide.madrid.es/presupuestos  )  .]]></dct:description>
+							<dcat:theme rdf:resource="http://datos.gob.es/kos/sector-publico/sector/sociedad-bienestar" />
+							<dcat:keyword xml:lang="es">Decidemadrid, participativos, participación ciudadana, prepar</dcat:keyword>					
+							<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-02-14T12:42:29</dct:issued>
+							<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-04T08:43:40</dct:modified>
+							
+							
+							<dc:language>es</dc:language>
+							<dct:publisher rdf:resource="http://datos.gob.es/recurso/sector-publico/org/Organismo/L01280796"/>
+							<dct:license rdf:resource="https://datos.madrid.es/egob/catalogo/aviso-legal"/>
+							
+							
+							
+							<dcat:distribution>
+  <dcat:Distribution>
+    <dct:title xml:lang="es">Presupuestos participativos a partir de 2016</dct:title>
+    <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://datos.madrid.es/egob/catalogo/300312-0-presupuestos-participativos.csv</dcat:accessURL>
+    <dcat:mediaType>text/csv</dcat:mediaType>
+    <dcat:byteSize>156672</dcat:byteSize>
+  </dcat:Distribution>
+</dcat:distribution>
+<dcat:distribution>
+  <dcat:Distribution>
+    <dct:title xml:lang="es">Presupuestos participativos a partir de 2016</dct:title>
+    <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://datos.madrid.es/egob/catalogo/300312-1-presupuestos-participativos.xlsx</dcat:accessURL>
+    <dcat:mediaType>application/vnd.ms-excel</dcat:mediaType>
+    <dcat:byteSize>100352</dcat:byteSize>
+  </dcat:Distribution>
+</dcat:distribution>
+
+						</dcat:Dataset>
+					</dcat:dataset>
+				
+				
+				
+					<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-03-12T09:00:00</dct:issued>
+					
+								
+				
+			</dcat:Catalog>			 
+		</rdf:RDF>
+		
+		

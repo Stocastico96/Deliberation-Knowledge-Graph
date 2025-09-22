@@ -1,0 +1,87 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+5f69327d-8f42-4eea-989d-e429682004bb	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""D"", ""checked"": false}, {""value"": ""I"", ""checked"": false}, {""value"": ""2"", ""checked"": false}, {""value"": ""9"", ""checked"": false}]"	UKN	2020-06-01 19:36:10.213215+00:00	
+5b714aab-f9b9-44bf-8a4d-f491e53cb64d	Leopard	8b3293d58d61420a80bc32ded2f178b7	JOIN_ROOM		USR_ONBOARDING	2020-06-01 19:36:10.616688+00:00	
+be3dfe17-b81a-464f-87b4-fde3bdd80ace	Guinea pig	4260f33c80e143239d0ed27bc5b38829	JOIN_ROOM		USR_ONBOARDING	2020-06-01 19:36:37.248462+00:00	
+57f439e8-ca5b-4ae0-b63f-3b9849bf250a	Leopard	8b3293d58d61420a80bc32ded2f178b7	WASON_GAME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': False}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-06-01 19:36:56.878910+00:00	
+333e8d7b-5a54-43f1-b51e-8d8579b9bc02	Leopard	8b3293d58d61420a80bc32ded2f178b7	WASON_GAME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': True}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-06-01 19:36:57.596053+00:00	
+450a6d52-c3bc-42cd-9c5f-5c3db8e7e08e	Leopard	8b3293d58d61420a80bc32ded2f178b7	WASON_SUBMIT	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': True}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-06-01 19:37:00.464157+00:00	
+c20086fe-420c-4b7f-9a26-a02222a8de33	Guinea pig	4260f33c80e143239d0ed27bc5b38829	WASON_GAME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '2', 'checked': False}, {'value': '9', 'checked': True}]	USR_ONBOARDING	2020-06-01 19:37:21.723954+00:00	
+a70313ce-f2cd-4b6c-9ead-31797edcc12b	Guinea pig	4260f33c80e143239d0ed27bc5b38829	WASON_SUBMIT	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '2', 'checked': False}, {'value': '9', 'checked': True}]	USR_ONBOARDING	2020-06-01 19:37:23.048045+00:00	
+bdfe9d06-3268-4435-a95a-5197cfee777a	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	JOIN_ROOM		USR_ONBOARDING	2020-06-01 19:43:10.767803+00:00	
+e2730c96-10d9-4305-a898-6911de4130ce	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-06-01 19:43:10.986774+00:00	
+6de37bad-98dc-499b-9b29-82ed7b5684e7	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	WASON_GAME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '2', 'checked': True}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-06-01 19:43:51.424326+00:00	
+d34779a0-70fc-4346-abfe-75e47d4193f1	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	WASON_GAME	[{'value': 'D', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '2', 'checked': True}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-06-01 19:43:56.267148+00:00	
+98ed3f31-5bca-46c1-a24c-74c278fb958a	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	WASON_SUBMIT	[{'value': 'D', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '2', 'checked': True}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-06-01 19:44:04.550250+00:00	
+525d897a-fcf0-4873-9989-82cb13e75074	Leopard	8b3293d58d61420a80bc32ded2f178b7	ROUTING_TIMER_ELAPSED	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': True}, {'value': '9', 'checked': False}]	USR_ONBOARDING	2020-06-01 19:44:11.093358+00:00	
+d6fa86ff-c95d-4e53-8243-d01a6ed1e2de	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-06-01 19:44:11.405747+00:00	
+e30666c4-edc0-4c83-ac9e-8609d61d42ff	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-06-01 19:44:11.547718+00:00	
+a100cd14-3c06-4258-a3da-e0f430c85f8d	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-06-01 19:44:11.849985+00:00	
+ff1211ff-550d-4887-b98d-6b924b7a81f2	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	Hello there.	USR_PLAYING	2020-06-01 19:44:16.514781+00:00	
+c9b83c64-2fef-43b2-a4aa-55e3138c84b8	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	hello	USR_PLAYING	2020-06-01 19:44:32.547096+00:00	
+8ca9567e-4c5d-46ee-958a-d057c4608fd2	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	So I'm guessing we probably want to flip the letter, and the even number.  Possibly also an odd one?	USR_PLAYING	2020-06-01 19:44:35.434860+00:00	
+9013444f-4ed8-4f55-a7d7-abf26a129685	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	i sgree	USR_PLAYING	2020-06-01 19:44:44.955558+00:00	
+ab6ddf3c-1a76-4e47-886a-89187bf86d3a	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	probably even with a vowel?	USR_PLAYING	2020-06-01 19:45:05.482030+00:00	
+eda55821-d445-4409-9a78-86c0713bbb70	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	How many cards do you think at minimum we need to flip to confirm the rule?	USR_PLAYING	2020-06-01 19:45:09.614720+00:00	
+2fa33dda-5823-4e6d-94f9-57cb2fe2f97a	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	maybe 2	USR_PLAYING	2020-06-01 19:45:17.724523+00:00	
+c2868ccc-b7f0-4326-978b-60580e5d4bc7	AUTO_KICKED	4260f33c80e143239d0ed27bc5b38829	LEAVE_ROOM		AUTO_KICKED	2020-06-01 19:45:18.027171+00:00	
+2a4e7079-2322-4afb-94c2-b194e337486e	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	I only have a D, 1, 2, and 9.  So I don't have a vowel one.	USR_PLAYING	2020-06-01 19:45:19.710801+00:00	
+b8fc5110-cb9a-4a96-aba9-ac936ee8aa36	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	or maybe im stupid and the 1 is an I lol	USR_PLAYING	2020-06-01 19:45:27.269129+00:00	
+e5620d0d-c25a-4632-b2d8-277cbfcd6bf6	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	lol	USR_PLAYING	2020-06-01 19:45:30.882164+00:00	
+1b7daf84-fa81-4e11-9d47-6951f0915f6c	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	I picked I and 2	USR_PLAYING	2020-06-01 19:45:40.146532+00:00	
+2b7a0263-bdae-40e7-9150-16b500bbdd32	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	I picked D and 2	USR_PLAYING	2020-06-01 19:45:45.509726+00:00	
+e6d8ff36-b0c1-4abf-9eeb-9e7ca0244947	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	but I am just guessing	USR_PLAYING	2020-06-01 19:45:47.101904+00:00	
+5c9aa280-1038-4cdc-b376-0d0b152a56b1	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	we can try D and 2	USR_PLAYING	2020-06-01 19:45:59.722864+00:00	
+7a834b71-e4ad-44ae-b9e2-894cd70a8ae4	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	So, we probably don't need the 9, I think we both agree there.  I don't think the 9 determines really anything	USR_PLAYING	2020-06-01 19:46:01.815343+00:00	
+e7caa82b-0c4e-4199-a71c-7fbe73d0c6f1	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	We need to talk for 5 minutes though, so lets try to reason this out a bit more I suppose	USR_PLAYING	2020-06-01 19:46:08.509675+00:00	
+1fbaabaf-3e76-4e7d-b58f-434ab535672d	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	sure 	USR_PLAYING	2020-06-01 19:46:18.490685+00:00	
+c794a5dd-6b20-4133-8d1e-fca74e74d3c8	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	So, lets go one by one I think is the simplest way to reason this out	USR_PLAYING	2020-06-01 19:46:28.980181+00:00	
+d09c4acb-8fbd-4873-bf01-66e9ba9d8eaa	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	So, maybe we don't need to test D.  Since it's not a vowel.	USR_PLAYING	2020-06-01 19:47:15.093459+00:00	
+58a475e9-574c-4d59-8d48-8cd4a33d469c	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	I am trying to relate numbers to the ltters	USR_PLAYING	2020-06-01 19:47:17.091459+00:00	
+898e23b5-d552-4d8f-8077-0778e43f70f9	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	I think it's hard to know if that's an I or a 1, and that's making this hard.	USR_PLAYING	2020-06-01 19:47:39.189821+00:00	
+896e93ed-d534-46a7-a3cc-1c5ff92242dd	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	I is 9	USR_PLAYING	2020-06-01 19:47:42.041875+00:00	
+6a7751d8-175f-4743-93e8-7c22c3b988f1	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	because it is the 9th letter	USR_PLAYING	2020-06-01 19:47:51.700901+00:00	
+72c69ff5-473e-4f91-91c0-52e6699cbf67	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	if it's an I, I think we'd want to flip it, but if it's a 1 we don't need to.	USR_PLAYING	2020-06-01 19:47:51.816170+00:00	
+cf239212-44b9-4265-ac71-28fa0eeeccaa	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	But do we know the cards have the number of the alphabet they relate to on the other side, or is it a random?	USR_PLAYING	2020-06-01 19:48:15.862375+00:00	
+651f26d9-29cc-475d-90fd-c70e792a9719	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	i have no idea that is the only thing I can piece togther and that makes sense in my mind	USR_PLAYING	2020-06-01 19:48:41.364052+00:00	
+3e89888d-6691-4422-9137-c3dc1bb02740	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	I think we hsould probably assume the thing between D, and 2, is an I.  I feel like they'd probably do something to differentiate.	USR_PLAYING	2020-06-01 19:48:45.006621+00:00	
+4f51156d-e2c5-4bf6-9da2-d7cb42cc85b0	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	WASON_GAME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '2', 'checked': True}, {'value': '9', 'checked': False}]	USR_PLAYING	2020-06-01 19:48:59.118352+00:00	
+2bac39d7-52d2-4a29-bd9f-c6ab2c33cb05	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	WASON_GAME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': True}, {'value': '9', 'checked': False}]	USR_PLAYING	2020-06-01 19:48:59.781075+00:00	
+54b0ff51-7dd3-4dc8-81d0-6895dcd70fa9	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	so what is your thinking	USR_PLAYING	2020-06-01 19:49:13.253603+00:00	
+f9061813-d6d2-4527-b0e2-4b8f0c93e744	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	So I think we should flip that one to test the vowel rule.	USR_PLAYING	2020-06-01 19:49:15.340924+00:00	
+b33eb613-3411-4b25-9f23-987cf57177a8	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	ok	USR_PLAYING	2020-06-01 19:49:21.498154+00:00	
+7f44928f-5709-4f80-a63c-aca7e4910bb9	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	and probably the two, as well, to see if it's an even number?	USR_PLAYING	2020-06-01 19:49:22.774084+00:00	
+6dd794cc-a786-48b1-9f3f-de84637890dd	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	So D and 2?	USR_PLAYING	2020-06-01 19:49:35.796647+00:00	
+f1277e2c-1f44-4266-a998-1daf4ec3df05	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	I think those make the most sense, I could be way off base though.	USR_PLAYING	2020-06-01 19:49:42.194529+00:00	
+be8c18bf-c026-478e-9a3e-3c7a3bc83061	Leopard	8b3293d58d61420a80bc32ded2f178b7	WASON_GAME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '2', 'checked': True}, {'value': '9', 'checked': False}]	USR_PLAYING	2020-06-01 19:49:47.588941+00:00	
+320db5eb-f9f0-4baa-b808-e9d78a3150d1	Leopard	8b3293d58d61420a80bc32ded2f178b7	WASON_GAME	[{'value': 'D', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '2', 'checked': True}, {'value': '9', 'checked': False}]	USR_PLAYING	2020-06-01 19:49:48.305548+00:00	
+8782db8d-f0ef-436e-9512-ceec7b65ba37	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	ok i am going to hit submit with the D and the 2	USR_PLAYING	2020-06-01 19:50:10.060790+00:00	
+69c6e5d3-d9e9-4cd1-88dc-968779f86676	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	What do you think?	USR_PLAYING	2020-06-01 19:50:10.368946+00:00	
+e6ef5a88-d058-4844-b6ba-a45b64bb34b4	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	alright.  I think it's been about 5, I'll agree there and do the same.	USR_PLAYING	2020-06-01 19:50:17.062255+00:00	
+7f4a9e1b-befd-41ad-b6c3-754452ec6acb	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	I think its I an 9	USR_PLAYING	2020-06-01 19:50:19.584466+00:00	
+47396766-a46e-404e-a46f-cd18a3231b2b	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	We can do that too	USR_PLAYING	2020-06-01 19:50:26.975636+00:00	
+b10bdb7f-08c1-4fef-8bf8-f8a2fa28f206	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	Do we want to do the I and 9 instead?	USR_PLAYING	2020-06-01 19:50:36.213313+00:00	
+b9868941-bd43-4569-857c-1d63e84c2b80	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	if you want to I will	USR_PLAYING	2020-06-01 19:50:43.591138+00:00	
+94436fc9-c4c2-41e8-b8f3-d41b1b56eca1	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	I dont mind	USR_PLAYING	2020-06-01 19:50:47.139576+00:00	
+52348a50-e2cb-4559-95dc-a2df2a9c151f	Leopard	8b3293d58d61420a80bc32ded2f178b7	WASON_GAME	[{'value': 'D', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '2', 'checked': False}, {'value': '9', 'checked': False}]	USR_PLAYING	2020-06-01 19:50:49.378137+00:00	
+5f0dd6b4-679a-44f3-b317-959a6e2d634c	Leopard	8b3293d58d61420a80bc32ded2f178b7	WASON_GAME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '2', 'checked': False}, {'value': '9', 'checked': False}]	USR_PLAYING	2020-06-01 19:50:50.269923+00:00	
+4b248b52-19d6-4f50-bced-cab47c3a671e	Leopard	8b3293d58d61420a80bc32ded2f178b7	WASON_GAME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': False}, {'value': '9', 'checked': False}]	USR_PLAYING	2020-06-01 19:50:51.076793+00:00	
+015704fe-2fc4-4464-bd76-8ee222c0ab53	Leopard	8b3293d58d61420a80bc32ded2f178b7	WASON_GAME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-06-01 19:50:51.807529+00:00	
+db118706-159e-4067-9c18-38e9ed421968	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	Alright, let's go with the I and 9 then.	USR_PLAYING	2020-06-01 19:50:53.914066+00:00	
+ce450740-c0b8-496f-9ce3-536287135ff3	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	WASON_GAME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': False}, {'value': '9', 'checked': False}]	USR_PLAYING	2020-06-01 19:50:56.657159+00:00	
+72740baf-3f3c-4dc8-b896-f9fcd3e6bbb6	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	WASON_GAME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-06-01 19:50:57.422330+00:00	
+61026f40-f346-43a2-a3db-8a1759753002	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	ok	USR_PLAYING	2020-06-01 19:50:57.642059+00:00	
+dba3782c-a35c-4cd0-9813-5d14a499cb5b	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	i am going to submit it now then	USR_PLAYING	2020-06-01 19:51:04.559551+00:00	
+51e4f079-d37c-42f9-b7e8-3f39558229c0	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	Was a pleasure chatting with you, stay safe!	USR_PLAYING	2020-06-01 19:51:04.626114+00:00	
+07e0f629-7b2d-4a18-97d4-b58d21d18b50	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	CHAT_MESSAGE	Ditto	USR_PLAYING	2020-06-01 19:51:07.046592+00:00	
+6c047f75-be09-48ab-b625-709ba9126ebc	Leopard	8b3293d58d61420a80bc32ded2f178b7	CHAT_MESSAGE	you too	USR_PLAYING	2020-06-01 19:51:07.695602+00:00	
+f09b5126-5854-4b25-bd39-645bd450fcfd	Leopard	8b3293d58d61420a80bc32ded2f178b7	WASON_SUBMIT	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-06-01 19:51:09.686977+00:00	
+43b1682e-5d30-4a15-811b-c463429bd8e2	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	WASON_SUBMIT	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-06-01 19:51:09.801079+00:00	
+a135ed6c-928d-4722-b3cb-088ea4e1c0f7	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-01 19:51:10.310654+00:00	
+62a93218-3c32-42c4-a74c-bf82810e04fa	Leopard	8b3293d58d61420a80bc32ded2f178b7	OUT_OF_TIME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-06-01 19:51:11.657653+00:00	
+446ca9e4-b550-4b46-8bd4-eaf90787db2e	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	OUT_OF_TIME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-06-01 19:51:11.680765+00:00	
+80d0972e-696f-46ea-aab3-ba74e73c7e8c	Leopard	8b3293d58d61420a80bc32ded2f178b7	OUT_OF_TIME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-06-01 19:51:11.949808+00:00	
+cc2232b7-91a8-46ba-9d38-2f3fd3535c1a	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-01 19:51:12.112801+00:00	
+4d1b3f63-ec7a-49b8-be56-8e459015e4c5	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-01 19:51:12.152976+00:00	
+bc663e2f-84f2-4234-9f85-e8a8351dbf69	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-01 19:51:12.406294+00:00	
+6b936a00-5ad9-4d1d-b949-caff73fc3cdc	Hedgehog	e8905626a3034338b9c91d6e37f3a9f3	OUT_OF_TIME	[{'value': 'D', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '2', 'checked': False}, {'value': '9', 'checked': True}]	USR_PLAYING	2020-06-01 19:51:12.976651+00:00	
+65c1b711-e4b7-4061-b78f-a6b10db51953	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-01 19:51:13.436587+00:00	

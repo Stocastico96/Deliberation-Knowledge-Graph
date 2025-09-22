@@ -1,0 +1,532 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix del: <https://w3id.org/deliberation/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/deliberation/ontology> a owl:Ontology ;
+    rdfs:label "Deliberation Ontology"@en ;
+    dcterms:created "2025-03-03"^^xsd:date ;
+    dcterms:creator "Simone Vagnoni" ;
+    dcterms:description "An ontology for representing and analyzing deliberative processes, arguments, and discourse."@en ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-03-20"^^xsd:date ;
+    dcterms:title "Deliberation Ontology"@en ;
+    vann:preferredNamespacePrefix "deliberation" ;
+    vann:preferredNamespaceUri "https://w3id.org/deliberation/ontology#" ;
+    rdfs:comment "A comprehensive model for representing deliberative processes across different platforms and contexts."@en ;
+    owl:imports <https://w3id.org/deliberation/mappings> ;
+    owl:versionInfo "1.0.0" .
+
+del:Consensus a owl:Class ;
+    rdfs:label "Consensus" ;
+    rdfs:comment "Agreement reached through deliberation." .
+
+del:LegalSource a owl:Class ;
+    rdfs:label "Legal Source" ;
+    rdfs:comment "Legal documents, frameworks, or interpretations relevant to deliberations." ;
+    rdfs:subClassOf del:InformationResource .
+
+del:attacks a owl:ObjectProperty ;
+    rdfs:label "attacks" ;
+    rdfs:comment "Indicates that an argument attacks another argument or position." ;
+    rdfs:domain del:Argument ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( del:Argument del:Position ) ] .
+
+del:containsFallacy a owl:ObjectProperty ;
+    rdfs:label "contains fallacy" ;
+    rdfs:comment "Indicates that an argument contains a specific type of logical fallacy." ;
+    rdfs:domain del:Argument ;
+    rdfs:range del:FallacyType .
+
+del:endDate a owl:DatatypeProperty ;
+    rdfs:label "end date" ;
+    rdfs:comment "The end date and time of a deliberation process or stage." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( del:DeliberationProcess del:Stage ) ] ;
+    rdfs:range xsd:dateTime .
+
+del:hasArgument a owl:ObjectProperty ;
+    rdfs:label "has argument" ;
+    rdfs:comment "Relates a deliberation process to arguments made within it." ;
+    rdfs:domain del:DeliberationProcess ;
+    rdfs:range del:Argument .
+
+del:hasConclusion a owl:ObjectProperty ;
+    rdfs:label "has conclusion" ;
+    rdfs:comment "Relates an argument to its conclusion." ;
+    rdfs:domain del:Argument ;
+    rdfs:range del:Conclusion .
+
+del:hasContribution a owl:ObjectProperty ;
+    rdfs:label "has contribution" ;
+    rdfs:comment "Relates a deliberation process to contributions made within it." ;
+    rdfs:domain del:DeliberationProcess ;
+    rdfs:range del:Contribution .
+
+del:hasEvidence a owl:ObjectProperty ;
+    rdfs:label "has evidence" ;
+    rdfs:comment "Relates an argument or premise to supporting evidence." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( del:Argument del:Premise ) ] ;
+    rdfs:range del:Evidence .
+
+del:hasParticipant a owl:ObjectProperty ;
+    rdfs:label "has participant" ;
+    rdfs:comment "Relates a deliberation process to its participants." ;
+    rdfs:domain del:DeliberationProcess ;
+    rdfs:range del:Participant .
+
+del:hasPremise a owl:ObjectProperty ;
+    rdfs:label "has premise" ;
+    rdfs:comment "Relates an argument to its premises." ;
+    rdfs:domain del:Argument ;
+    rdfs:range del:Premise .
+
+del:hasRole a owl:ObjectProperty ;
+    rdfs:label "has role" ;
+    rdfs:comment "Relates a participant to their role in a deliberation." ;
+    rdfs:domain del:Participant ;
+    rdfs:range del:Role .
+
+del:hasStage a owl:ObjectProperty ;
+    rdfs:label "has stage" ;
+    rdfs:comment "Relates a deliberation process to its stages." ;
+    rdfs:domain del:DeliberationProcess ;
+    rdfs:range del:Stage .
+
+del:hasTopic a owl:ObjectProperty ;
+    rdfs:label "has topic" ;
+    rdfs:comment "Relates a deliberation process to its topic." ;
+    rdfs:domain del:DeliberationProcess ;
+    rdfs:range del:Topic .
+
+del:isAffiliatedWith a owl:ObjectProperty ;
+    rdfs:label "is affiliated with" ;
+    rdfs:comment "Relates a participant to organizations they are affiliated with." ;
+    rdfs:domain del:Participant ;
+    rdfs:range del:Organization .
+
+del:madeBy a owl:ObjectProperty ;
+    rdfs:label "made by" ;
+    rdfs:comment "Relates a contribution to the participant who made it." ;
+    rdfs:domain del:Contribution ;
+    rdfs:range del:Participant .
+
+del:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:comment "The name of an entity." ;
+    rdfs:range xsd:string .
+
+del:platformIdentifier a owl:DatatypeProperty ;
+    rdfs:label "platform identifier" ;
+    rdfs:comment "An identifier specific to a particular platform." ;
+    rdfs:domain del:CrossPlatformIdentifier ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf del:identifier .
+
+del:references a owl:ObjectProperty ;
+    rdfs:label "references" ;
+    rdfs:comment "Relates a contribution or argument to information resources it references." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( del:Argument del:Contribution ) ] ;
+    rdfs:range del:InformationResource .
+
+del:responseTo a owl:ObjectProperty ;
+    rdfs:label "response to" ;
+    rdfs:comment "Relates a contribution to another contribution it responds to." ;
+    rdfs:domain del:Contribution ;
+    rdfs:range del:Contribution .
+
+del:startDate a owl:DatatypeProperty ;
+    rdfs:label "start date" ;
+    rdfs:comment "The start date and time of a deliberation process or stage." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( del:DeliberationProcess del:Stage ) ] ;
+    rdfs:range xsd:dateTime .
+
+del:supports a owl:ObjectProperty ;
+    rdfs:label "supports" ;
+    rdfs:comment "Indicates that an argument supports another argument or position." ;
+    rdfs:domain del:Argument ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( del:Argument del:Position ) ] .
+
+del:text a owl:DatatypeProperty ;
+    rdfs:label "text" ;
+    rdfs:comment "The textual content of a contribution, argument, position, premise, or conclusion." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( del:Argument del:Contribution del:Position del:Premise del:Conclusion ) ] ;
+    rdfs:range xsd:string .
+
+del:timestamp a owl:DatatypeProperty ;
+    rdfs:label "timestamp" ;
+    rdfs:comment "The date and time when a contribution was made." ;
+    rdfs:domain del:Contribution ;
+    rdfs:range xsd:dateTime .
+
+del:url a owl:DatatypeProperty ;
+    rdfs:label "url" ;
+    rdfs:comment "The URL of an information resource." ;
+    rdfs:domain del:InformationResource ;
+    rdfs:range xsd:anyURI .
+
+<https://w3id.org/deliberation/resource/decide_madrid_process> a del:DeliberationProcess ;
+    del:hasContribution <https://w3id.org/deliberation/resource/madrid_proposal_19>,
+        <https://w3id.org/deliberation/resource/madrid_proposal_7> ;
+    del:hasTopic <https://w3id.org/deliberation/resource/madrid_topic_19>,
+        <https://w3id.org/deliberation/resource/madrid_topic_7> ;
+    del:identifier "decide_madrid_process" ;
+    del:name "Decide Madrid Participatory Democracy Platform" .
+
+<https://w3id.org/deliberation/resource/ep_debate_20250310> a del:DeliberationProcess ;
+    del:endDate "2025-03-10T23:59:59+00:00"^^xsd:dateTime ;
+    del:hasContribution <https://w3id.org/deliberation/resource/contribution_1>,
+        <https://w3id.org/deliberation/resource/contribution_10>,
+        <https://w3id.org/deliberation/resource/contribution_11>,
+        <https://w3id.org/deliberation/resource/contribution_2>,
+        <https://w3id.org/deliberation/resource/contribution_3>,
+        <https://w3id.org/deliberation/resource/contribution_4>,
+        <https://w3id.org/deliberation/resource/contribution_5>,
+        <https://w3id.org/deliberation/resource/contribution_6>,
+        <https://w3id.org/deliberation/resource/contribution_7>,
+        <https://w3id.org/deliberation/resource/contribution_8>,
+        <https://w3id.org/deliberation/resource/contribution_9> ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/participant_1>,
+        <https://w3id.org/deliberation/resource/participant_2>,
+        <https://w3id.org/deliberation/resource/participant_3>,
+        <https://w3id.org/deliberation/resource/participant_4>,
+        <https://w3id.org/deliberation/resource/participant_5> ;
+    del:hasTopic <https://w3id.org/deliberation/resource/creitem1>,
+        <https://w3id.org/deliberation/resource/creitem10>,
+        <https://w3id.org/deliberation/resource/creitem11>,
+        <https://w3id.org/deliberation/resource/creitem12>,
+        <https://w3id.org/deliberation/resource/creitem13>,
+        <https://w3id.org/deliberation/resource/creitem14>,
+        <https://w3id.org/deliberation/resource/creitem15>,
+        <https://w3id.org/deliberation/resource/creitem16>,
+        <https://w3id.org/deliberation/resource/creitem17>,
+        <https://w3id.org/deliberation/resource/creitem18>,
+        <https://w3id.org/deliberation/resource/creitem19>,
+        <https://w3id.org/deliberation/resource/creitem2>,
+        <https://w3id.org/deliberation/resource/creitem20>,
+        <https://w3id.org/deliberation/resource/creitem21>,
+        <https://w3id.org/deliberation/resource/creitem22>,
+        <https://w3id.org/deliberation/resource/creitem23>,
+        <https://w3id.org/deliberation/resource/creitem3>,
+        <https://w3id.org/deliberation/resource/creitem4>,
+        <https://w3id.org/deliberation/resource/creitem5>,
+        <https://w3id.org/deliberation/resource/creitem6>,
+        <https://w3id.org/deliberation/resource/creitem7>,
+        <https://w3id.org/deliberation/resource/creitem8>,
+        <https://w3id.org/deliberation/resource/creitem9> ;
+    del:identifier "ep_debate_20250310" ;
+    del:name "European Parliament Debate - 2025-03-10 (Sample)" ;
+    del:startDate "2025-03-10T00:00:00+00:00"^^xsd:dateTime .
+
+del:CrossPlatformIdentifier a owl:Class ;
+    rdfs:label "Cross Platform Identifier" ;
+    rdfs:comment "Mechanisms to link entities across different deliberation platforms." .
+
+del:Evidence a owl:Class ;
+    rdfs:label "Evidence" ;
+    rdfs:comment "Supporting information for claims made in arguments." .
+
+del:FallacyType a owl:Class ;
+    rdfs:label "Fallacy Type" ;
+    rdfs:comment "Classification of logical fallacies that can occur in arguments." .
+
+del:identifier a owl:DatatypeProperty ;
+    rdfs:label "identifier" ;
+    rdfs:comment "A unique identifier for an entity." ;
+    rdfs:range xsd:string .
+
+<https://w3id.org/deliberation/resource/contribution_1> a del:Contribution ;
+    del:identifier "contribution_1" ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_1> ;
+    del:text "" ;
+    del:timestamp "2025-03-10T17:02:06"^^xsd:dateTime .
+
+<https://w3id.org/deliberation/resource/contribution_10> a del:Contribution ;
+    del:identifier "contribution_10" ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_4> ;
+    del:text "Όλοι γνωρίζουμε, αγαπητοί συνάδελφοι, πως αυτό είναι μία χυδαία συκοφαντία κατά όλων μας. Είμαι σίγουρη πως το ECR θα καταδικάσει τα ψέματα του κ. Φράγκου, ο οποίος όχι μόνο προσπάθησε να εξαπατήσει τους Έλληνες, με μόνο σκοπό να διασύρει την πατρίδα του αλλά και να πατήσει πάνω σε νεκρούς, πηγαίνοντας χέρι χέρι με τους αριστερούς. Κύριε Φράγκο, να χαίρεστε τον πατριωτισμό σας. Εσκεμμένα συκοφάντησατε τους θεσμούς που υποτίθεται πως υπηρετείτε. Και, αγαπητό ECR, να χαίρεστε το μέλος σας που ακόμα κρύβεται αντί να ζητήσει συγνώμη. Σε αυτήν την Ολομέλεια οι σοβαροί πατριώτες έχουμε ιερό χρέος να προστατεύουμε τόσο τους θεσμούς όσο και τις πατρίδες μας. Ευρωβουλευτές και συμπεριφορές τύπου Φράγκου δεν είναι ανεκτές." ;
+    del:timestamp "2025-03-10T17:10:36"^^xsd:dateTime .
+
+<https://w3id.org/deliberation/resource/contribution_11> a del:Contribution ;
+    del:identifier "contribution_11" ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_5> ;
+    del:text """The right to be who you are, to love who you want and to live your life free from discrimination is a fundamental European right. That right is clearly under attack.
+At this critical moment, the decision by the European Commission to announce the withdrawal of the horizontal anti-discrimination directive came as a shock. It also represents a betrayal of all the EU citizens who are currently lacking protection against discrimination.
+It is time for the EU to show global leadership against discrimination, not to back down. As the European Parliament's rapporteur for this directive, I strongly condemn this decision and I urge the European Commission to immediately reconsider it.""" ;
+    del:timestamp "2025-03-10T17:12:01"^^xsd:dateTime .
+
+<https://w3id.org/deliberation/resource/contribution_2> a del:Contribution ;
+    del:identifier "contribution_2" ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_1> ;
+    del:text """First of all, dear colleagues, two years ago, on 28 February 2023, in Tempi, Greece, a tragic railway accident cost 57 people their lives and injured even more. We mark a sad anniversary today as our hearts go out to the victims, to those who lost their loved ones and to the injured who still bear the scars of that day. This House remembers them and honours them.
+Over the coming months, we will celebrate also the 35th anniversary of the assertion of state continuity of Estonia, Latvia and Lithuania, enshrining their independence de jure under international law throughout different illegal occupations and annexations of the 20th century.
+These anniversaries remind us again of the sacrifice of so many for the liberty that we enjoy today, and underscore our determination never to allow another generation of Europeans to be lost behind an Iron Curtain.
+Tomorrow at noon, we will once again welcome national leader of Belarus, Sviatlana Tsikhanouskaya, to this plenary, along with other brave women from Ukraine and Belarus, who are standing up for liberty in order to mark International Women's Day. May I ask that you are present. I count on you and your colleagues to be here then, because this week will also serve to reaffirm this House's steadfast support for the people of Belarus and their struggle for freedom, including political prisoners.
+And to express this solidarity and to mark the International Day of Solidarity with Belarus, the European Parliament is once again offering you, as Members of this Parliament, the opportunity to sign postcards addressed to the 1 250 political prisoners who are unfairly imprisoned by Lukashenka's regime. I urge you to join in this action to show them that their sacrifice will not remain unanswered.
+Last year, this initiative was extremely successful – in the previous mandate, in the previous Parliament. I ask that we make this year's even more so. We know their names, we see their struggle and we stand with them. So this message and this initiative will send the strongest of messages that they are not alone.
+(Applause)""" ;
+    del:timestamp "2025-03-10T17:02:43"^^xsd:dateTime .
+
+<https://w3id.org/deliberation/resource/contribution_3> a del:Contribution ;
+    del:identifier "contribution_3" ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_1> ;
+    del:text "Are there any comments? If not, the minutes will be deemed approved." ;
+    del:timestamp "2025-03-10T17:05:33"^^xsd:dateTime .
+
+<https://w3id.org/deliberation/resource/contribution_4> a del:Contribution ;
+    del:identifier "contribution_4" ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_1> ;
+    del:text "These decisions will be set out in the minutes of today's sitting and take effect on the date of this announcement." ;
+    del:timestamp "2025-03-10T17:05:53"^^xsd:dateTime .
+
+<https://w3id.org/deliberation/resource/contribution_5> a del:Contribution ;
+    del:identifier "contribution_5" ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_1> ;
+    del:text "The corrigenda are available on the plenary webpage. Their titles will be published in the minutes of this sitting." ;
+    del:timestamp "2025-03-10T17:06:09"^^xsd:dateTime .
+
+<https://w3id.org/deliberation/resource/contribution_6> a del:Contribution ;
+    del:identifier "contribution_6" ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_1> ;
+    del:text """The first is on employment protection for the activities of police officers, military personnel, prison officers, and customs and border officials, classifying them as high-risk occupations in the EU. The proposal is referred to the Committee on Employment and Social Affairs.
+The second is on the need to extend the period for implementation of the Recovery and Resilience Facility. This proposal is referred to the Committee on Budgets and the Committee on Economic and Monetary Affairs, as committees responsible, and to the Committee on Employment, the Committee on the Environment, the Committee on Industry, Research and Energy and the Committee on Transport and Tourism, for opinion.""" ;
+    del:timestamp "2025-03-10T17:06:33"^^xsd:dateTime .
+
+<https://w3id.org/deliberation/resource/contribution_7> a del:Contribution ;
+    del:identifier "contribution_7" ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_1> ;
+    del:text """The dates are available on the plenary webpage and the deadlines are as follows: amendments, today at 7 p.m.; roll-call votes, Tuesday, 11 March at 4 p.m. The vote will then take place on Wednesday, 12 March at noon.
+⁂
+I would like to inform the House that I have received multiple requests for points of order. I will go through them one by one.
+First, I give the floor to Ms Iratxe García Pérez.""" ;
+    del:timestamp "2025-03-10T17:07:20"^^xsd:dateTime .
+
+<https://w3id.org/deliberation/resource/contribution_8> a del:Contribution ;
+    del:identifier "contribution_8" ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_2> ;
+    del:text "Now we face new challenges, like the threat of war. Let us not forget how we handled COVID-19. We need to be bold and stay united. By learning from that time we can build a more resilient and cohesive Europe. This will help us face any future crisis with determination and unity." ;
+    del:timestamp "2025-03-10T17:07:50"^^xsd:dateTime .
+
+<https://w3id.org/deliberation/resource/contribution_9> a del:Contribution ;
+    del:identifier "contribution_9" ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_3> ;
+    del:text """Extremist factions associated with militant groups have reportedly executed civilians, including women and children. Christian families have endured brutal killings and violent raids at the hands of armed militants who have stormed homes, seized belongings and claimed innocent lives.
+The European Union must take decisive action in support of stability and humanitarian relief efforts to alleviate the suffering of the Syrian people, including Christians and other affected communities.
+Christianity in Syria and in some other parts of the Middle East-North Africa region is at a critical crossroads. It will either endure or it will vanish, leaving behind a profound religious, ethnic and cultural void.
+Europe must not remain indifferent to this existential threat. An External Action Service with its press release - it is shameful that they did not take this into account.""" ;
+    del:timestamp "2025-03-10T17:09:07"^^xsd:dateTime .
+
+<https://w3id.org/deliberation/resource/creitem1> a del:Topic ;
+    del:identifier "creitem1" ;
+    del:name "Resumption of the session" .
+
+<https://w3id.org/deliberation/resource/creitem10> a del:Topic ;
+    del:identifier "creitem10" ;
+    del:name "Resumption of the sitting" .
+
+<https://w3id.org/deliberation/resource/creitem11> a del:Topic ;
+    del:identifier "creitem11" ;
+    del:name "Supporting the EU’s most vulnerable regions against devastating effects of climate change, such as the recent cyclone hitting La Réunion (debate)" .
+
+<https://w3id.org/deliberation/resource/creitem12> a del:Topic ;
+    del:identifier "creitem12" ;
+    del:name "Resumption of the sitting" .
+
+<https://w3id.org/deliberation/resource/creitem13> a del:Topic ;
+    del:identifier "creitem13" ;
+    del:name "Requests for the waiver of immunity" .
+
+<https://w3id.org/deliberation/resource/creitem14> a del:Topic ;
+    del:identifier "creitem14" ;
+    del:name "Request for the defence of immunity" .
+
+<https://w3id.org/deliberation/resource/creitem15> a del:Topic ;
+    del:identifier "creitem15" ;
+    del:name "Resumption of the sitting" .
+
+<https://w3id.org/deliberation/resource/creitem16> a del:Topic ;
+    del:identifier "creitem16" ;
+    del:name "Cutting red tape and simplifying business in the EU: the first Omnibus proposals (debate)" .
+
+<https://w3id.org/deliberation/resource/creitem17> a del:Topic ;
+    del:identifier "creitem17" ;
+    del:name "Establishing the Reform and Growth Facility for the Republic of Moldova (debate)" .
+
+<https://w3id.org/deliberation/resource/creitem18> a del:Topic ;
+    del:identifier "creitem18" ;
+    del:name "European Social Fund Plus post-2027 (short presentation)" .
+
+<https://w3id.org/deliberation/resource/creitem19> a del:Topic ;
+    del:identifier "creitem19" ;
+    del:name "One-minute speeches on matters of political importance" .
+
+<https://w3id.org/deliberation/resource/creitem2> a del:Topic ;
+    del:identifier "creitem2" ;
+    del:name "Opening of the sitting" .
+
+<https://w3id.org/deliberation/resource/creitem20> a del:Topic ;
+    del:identifier "creitem20" ;
+    del:name "Agenda of the next sitting" .
+
+<https://w3id.org/deliberation/resource/creitem21> a del:Topic ;
+    del:identifier "creitem21" ;
+    del:name "Approval of the minutes of the sitting" .
+
+<https://w3id.org/deliberation/resource/creitem22> a del:Topic ;
+    del:identifier "creitem22" ;
+    del:name "Closure of the sitting" .
+
+<https://w3id.org/deliberation/resource/creitem23> a del:Topic ;
+    del:identifier "creitem23" ;
+    del:name "Closure of the session" .
+
+<https://w3id.org/deliberation/resource/creitem3> a del:Topic ;
+    del:identifier "creitem3" ;
+    del:name "Statements by the President" .
+
+<https://w3id.org/deliberation/resource/creitem4> a del:Topic ;
+    del:identifier "creitem4" ;
+    del:name "Approval of the minutes of the previous sitting" .
+
+<https://w3id.org/deliberation/resource/creitem5> a del:Topic ;
+    del:identifier "creitem5" ;
+    del:name "Composition of committees and delegations" .
+
+<https://w3id.org/deliberation/resource/creitem6> a del:Topic ;
+    del:identifier "creitem6" ;
+    del:name "Corrigenda (Rule 251)" .
+
+<https://w3id.org/deliberation/resource/creitem7> a del:Topic ;
+    del:identifier "creitem7" ;
+    del:name "Proposals for Union acts" .
+
+<https://w3id.org/deliberation/resource/creitem8> a del:Topic ;
+    del:identifier "creitem8" ;
+    del:name "Parliament’s calendar of part-sessions - 2026" .
+
+<https://w3id.org/deliberation/resource/creitem9> a del:Topic ;
+    del:identifier "creitem9" ;
+    del:name "Order of business" .
+
+<https://w3id.org/deliberation/resource/madrid_proposal_19> a del:Contribution ;
+    del:hasTopic <https://w3id.org/deliberation/resource/madrid_topic_19> ;
+    del:identifier "madrid_proposal_19" ;
+    del:text "El centro turístico y comercial de Madrid está sólo a 700 metros de la Casa de Campo y de Madrid Rio, pero las conexiones a él son terribles. Propongo unirlo con calles peatonales y arboladas." .
+
+<https://w3id.org/deliberation/resource/madrid_proposal_7> a del:Contribution ;
+    del:hasTopic <https://w3id.org/deliberation/resource/madrid_topic_7> ;
+    del:identifier "madrid_proposal_7" ;
+    del:text "Algo tan básico como limpiar." .
+
+<https://w3id.org/deliberation/resource/org_PPE> a del:Organization ;
+    del:name "PPE" .
+
+<https://w3id.org/deliberation/resource/org_PfE> a del:Organization ;
+    del:name "PfE" .
+
+<https://w3id.org/deliberation/resource/org_S&D> a del:Organization ;
+    del:name "S&D" .
+
+<https://w3id.org/deliberation/resource/org_Verts_ALE> a del:Organization ;
+    del:name "Verts/ALE" .
+
+<https://w3id.org/deliberation/resource/role_participant_1> a del:Role ;
+    del:name "President" .
+
+del:ArgumentStructure a owl:Class ;
+    rdfs:label "Argument Structure" ;
+    rdfs:comment "The formal structure of an argument, including premises and conclusions." .
+
+del:Conclusion a owl:Class ;
+    rdfs:label "Conclusion" ;
+    rdfs:comment "The claim that an argument aims to establish." ;
+    rdfs:subClassOf del:ArgumentStructure .
+
+del:Role a owl:Class ;
+    rdfs:label "Role" ;
+    rdfs:comment "The function or position a participant holds in a deliberation." .
+
+<https://w3id.org/deliberation/resource/madrid_topic_19> a del:Topic ;
+    del:identifier "madrid_topic_19" ;
+    del:name "Unir el centro con Madrid Río de forma peatonal" .
+
+<https://w3id.org/deliberation/resource/madrid_topic_7> a del:Topic ;
+    del:identifier "madrid_topic_7" ;
+    del:name "Limpiar las calles" .
+
+<https://w3id.org/deliberation/resource/participant_2> a del:Participant ;
+    del:identifier "participant_2" ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/org_S&D> ;
+    del:name "Iratxe García Pérez" .
+
+<https://w3id.org/deliberation/resource/participant_3> a del:Participant ;
+    del:identifier "participant_3" ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/org_PPE> ;
+    del:name "Željana Zovko" .
+
+<https://w3id.org/deliberation/resource/participant_4> a del:Participant ;
+    del:identifier "participant_4" ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/org_PfE> ;
+    del:name "Αφροδίτη Λατινοπούλου" .
+
+<https://w3id.org/deliberation/resource/participant_5> a del:Participant ;
+    del:identifier "participant_5" ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/org_Verts_ALE> ;
+    del:name "Alice Kuhnke" .
+
+del:InformationResource a owl:Class ;
+    rdfs:label "Information Resource" ;
+    rdfs:comment "External sources of information referenced in deliberations." .
+
+del:Position a owl:Class ;
+    rdfs:label "Position" ;
+    rdfs:comment "A stance or viewpoint on an issue under deliberation." .
+
+del:Premise a owl:Class ;
+    rdfs:label "Premise" ;
+    rdfs:comment "A statement that provides support for a conclusion in an argument." ;
+    rdfs:subClassOf del:ArgumentStructure .
+
+del:Stage a owl:Class ;
+    rdfs:label "Stage" ;
+    rdfs:comment "A distinct phase in a deliberation process with specific activities and goals." .
+
+del:Organization a owl:Class ;
+    rdfs:label "Organization" ;
+    rdfs:comment "Formal entities represented in or responsible for deliberations." .
+
+<https://w3id.org/deliberation/resource/participant_1> a del:Participant ;
+    del:hasRole <https://w3id.org/deliberation/resource/role_participant_1> ;
+    del:identifier "participant_1" ;
+    del:name "President." .
+
+del:DeliberationProcess a owl:Class ;
+    rdfs:label "Deliberation Process" ;
+    rdfs:comment "The overall deliberative activity, including its stages, timeline, and outcomes." .
+
+del:Participant a owl:Class ;
+    rdfs:label "Participant" ;
+    rdfs:comment "Individuals or entities taking part in a deliberation process." .
+
+del:Argument a owl:Class ;
+    rdfs:label "Argument" ;
+    rdfs:comment "A structured form of contribution with premises and conclusions." ;
+    rdfs:subClassOf del:Contribution .
+
+del:Contribution a owl:Class ;
+    rdfs:label "Contribution" ;
+    rdfs:comment "Any input provided by a participant in a deliberation." .
+
+del:Topic a owl:Class ;
+    rdfs:label "Topic" ;
+    rdfs:comment "The subject matter of a deliberation." .
+

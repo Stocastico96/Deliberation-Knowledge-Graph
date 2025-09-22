@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:del="https://w3id.org/deliberation/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/eu_parliament_debate_unknown">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    <del:identifier>eu_parliament_debate_unknown</del:identifier>
+    <del:name>EU Parliament Debate unknown</del:name>
+    <del:platform>EU Parliament</del:platform>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_1"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_2"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_3"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_4"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-17-OTH-2017001186612"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-17-OTH-2017001186617"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-17-OTH-2017001186613"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-17-OTH-2017001190637"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-17-OTH-2017001186613">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>speech_eli/dl/event/MTG-PL-2024-09-17-OTH-2017001186613</del:identifier>
+    <del:text>Global measures towards social media platforms - Strengthening the role of DSA and protecting democracy and freedom in the online sphere (debate)</del:text>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-17-OTH-2017001186617">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>speech_eli/dl/event/MTG-PL-2024-09-17-OTH-2017001186617</del:identifier>
+    <del:text>Address by Mario Draghi - Presentation of the report on the Future of European competitiveness</del:text>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/topic_3">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>topic_3</del:identifier>
+    <del:name>Global measures towards social media platforms - Strengthening the role of DSA and protecting democr...</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/topic_4">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>topic_4</del:identifier>
+    <del:name>The future of European competitiveness (debate)</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/topic_2">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>topic_2</del:identifier>
+    <del:name>Address by Mario Draghi - Presentation of the report on the Future of European competitiveness</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/topic_1">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>topic_1</del:identifier>
+    <del:name>Resumption of the sitting</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-17-OTH-2017001190637">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>speech_eli/dl/event/MTG-PL-2024-09-17-OTH-2017001190637</del:identifier>
+    <del:text>The future of European competitiveness (debate)</del:text>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-17-OTH-2017001186612">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>speech_eli/dl/event/MTG-PL-2024-09-17-OTH-2017001186612</del:identifier>
+    <del:text>Resumption of the sitting</del:text>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_1"/>
+  </rdf:Description>
+</rdf:RDF>

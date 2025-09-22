@@ -1,0 +1,52 @@
+@prefix del: <https://w3id.org/deliberation/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/deliberation/resource/decidim_barcelona_process> a del:DeliberationProcess ;
+    del:hasContribution <https://w3id.org/deliberation/resource/contribution_bcn_maria_1> ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/participant_bcn_maria_garcia> ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_bcn_climate_action> ;
+    del:name "Barcelona Climate Assembly" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/eu_parliament_process> a del:DeliberationProcess ;
+    del:hasContribution <https://w3id.org/deliberation/resource/contribution_eu_maria_1> ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/participant_eu_maria_garcia> ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_eu_climate_change> ;
+    del:name "European Parliament Debate - Climate Policy" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/contribution_bcn_maria_1> a del:Contribution ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_bcn_climate_action> ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_bcn_maria_garcia> ;
+    del:text "Barcelona should lead by example in climate action" .
+
+<https://w3id.org/deliberation/resource/contribution_eu_maria_1> a del:Contribution ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_eu_climate_change> ;
+    del:madeBy <https://w3id.org/deliberation/resource/participant_eu_maria_garcia> ;
+    del:text "We need stronger climate policies across Europe" .
+
+<https://w3id.org/deliberation/resource/org_barcelona_city> a del:Organization ;
+    del:name "Barcelona City Council" .
+
+<https://w3id.org/deliberation/resource/org_european_parliament> a del:Organization ;
+    del:name "European Parliament" .
+
+<https://w3id.org/deliberation/resource/participant_eu_maria_garcia> a del:Participant ;
+    owl:sameAs <https://w3id.org/deliberation/resource/participant_bcn_maria_garcia> ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/org_european_parliament> ;
+    del:name "Maria Garcia" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/topic_eu_climate_change> a del:Topic ;
+    skos:related <https://w3id.org/deliberation/resource/topic_bcn_climate_action> ;
+    del:name "Climate Change and Environmental Policy" .
+
+<https://w3id.org/deliberation/resource/participant_bcn_maria_garcia> a del:Participant ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/org_barcelona_city> ;
+    del:name "Maria Garcia" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/topic_bcn_climate_action> a del:Topic ;
+    del:name "Climate Action and Sustainability" .
+

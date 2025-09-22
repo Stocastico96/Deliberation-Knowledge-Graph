@@ -1,0 +1,217 @@
+@prefix del: <https://w3id.org/deliberation/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/deliberation/resource/decide_madrid_process> a del:DeliberationProcess ;
+    del:hasContribution <https://w3id.org/deliberation/resource/contribution_2>,
+        <https://w3id.org/deliberation/resource/contribution_3> ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/madrid_participant_0>,
+        <https://w3id.org/deliberation/resource/madrid_participant_1>,
+        <https://w3id.org/deliberation/resource/madrid_participant_2>,
+        <https://w3id.org/deliberation/resource/madrid_participant_3> ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_1>,
+        <https://w3id.org/deliberation/resource/topic_4> ;
+    del:name "Decide Madrid - Climate Action Platform" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/decidim_barcelona_process> a del:DeliberationProcess ;
+    del:hasContribution <https://w3id.org/deliberation/resource/contribution_4>,
+        <https://w3id.org/deliberation/resource/contribution_5> ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/bcn_participant_0>,
+        <https://w3id.org/deliberation/resource/bcn_participant_1>,
+        <https://w3id.org/deliberation/resource/bcn_participant_2> ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_2>,
+        <https://w3id.org/deliberation/resource/topic_4> ;
+    del:name "Decidim Barcelona - Sustainability Assembly" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/eu_parliament_process> a del:DeliberationProcess ;
+    del:hasContribution <https://w3id.org/deliberation/resource/contribution_0>,
+        <https://w3id.org/deliberation/resource/contribution_1> ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/eu_participant_0>,
+        <https://w3id.org/deliberation/resource/eu_participant_1>,
+        <https://w3id.org/deliberation/resource/eu_participant_2>,
+        <https://w3id.org/deliberation/resource/eu_participant_3>,
+        <https://w3id.org/deliberation/resource/eu_participant_4> ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_0>,
+        <https://w3id.org/deliberation/resource/topic_3> ;
+    del:name "European Parliament Debate - Climate Policy" ;
+    del:platform "EU Parliament" ;
+    del:startDate "2025-03-10"^^xsd:date .
+
+<https://w3id.org/deliberation/resource/bcn_participant_2> a del:Participant ;
+    del:hasRole <https://w3id.org/deliberation/resource/bcn_role_2> ;
+    del:name "Elena Rodríguez Mora" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/bcn_role_0> a del:Role ;
+    del:name "Climate Justice Activist" .
+
+<https://w3id.org/deliberation/resource/bcn_role_1> a del:Role ;
+    del:name "Sustainability Researcher" .
+
+<https://w3id.org/deliberation/resource/bcn_role_2> a del:Role ;
+    del:name "Green Transport Advocate" .
+
+<https://w3id.org/deliberation/resource/contribution_0> a del:Contribution ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_0> ;
+    del:madeBy <https://w3id.org/deliberation/resource/eu_participant_0> ;
+    del:text "We need ambitious climate targets that are achievable for all member states while ensuring a just transition for workers and communities." .
+
+<https://w3id.org/deliberation/resource/contribution_1> a del:Contribution ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_3> ;
+    del:madeBy <https://w3id.org/deliberation/resource/eu_participant_1> ;
+    del:text "The European Green Deal represents our generation's moonshot moment for climate action and economic transformation." .
+
+<https://w3id.org/deliberation/resource/contribution_2> a del:Contribution ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_1> ;
+    del:madeBy <https://w3id.org/deliberation/resource/madrid_participant_0> ;
+    del:text "Madrid citizens demand immediate action on air quality and public transportation electrification." .
+
+<https://w3id.org/deliberation/resource/contribution_3> a del:Contribution ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_1> ;
+    del:madeBy <https://w3id.org/deliberation/resource/madrid_participant_1> ;
+    del:text "We propose a comprehensive plan for renewable energy installations on all public buildings." .
+
+<https://w3id.org/deliberation/resource/contribution_4> a del:Contribution ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_2> ;
+    del:madeBy <https://w3id.org/deliberation/resource/bcn_participant_0> ;
+    del:text "Barcelona must lead by example in implementing circular economy principles in our neighborhoods." .
+
+<https://w3id.org/deliberation/resource/contribution_5> a del:Contribution ;
+    del:hasTopic <https://w3id.org/deliberation/resource/topic_2> ;
+    del:madeBy <https://w3id.org/deliberation/resource/bcn_participant_1> ;
+    del:text "Green corridors and urban forests are essential for climate adaptation in Mediterranean cities." .
+
+<https://w3id.org/deliberation/resource/eu_org_0> a del:Organization ;
+    del:name "Group of the Progressive Alliance of Socialists and Democrats" .
+
+<https://w3id.org/deliberation/resource/eu_org_1> a del:Organization ;
+    del:name "European People's Party" .
+
+<https://w3id.org/deliberation/resource/eu_org_2> a del:Organization ;
+    del:name "European People's Party" .
+
+<https://w3id.org/deliberation/resource/eu_org_3> a del:Organization ;
+    del:name "Group of the Greens/European Free Alliance" .
+
+<https://w3id.org/deliberation/resource/eu_org_4> a del:Organization ;
+    del:name "Renew Europe Group" .
+
+<https://w3id.org/deliberation/resource/eu_participant_2> a del:Participant ;
+    del:hasRole <https://w3id.org/deliberation/resource/eu_role_2> ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_2> ;
+    del:name "Manfred Weber" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_3> a del:Participant ;
+    skos:related <https://w3id.org/deliberation/resource/bcn_participant_0> ;
+    del:hasRole <https://w3id.org/deliberation/resource/eu_role_3> ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_3> ;
+    del:name "Alice Kuhnke" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_4> a del:Participant ;
+    skos:related <https://w3id.org/deliberation/resource/madrid_participant_1> ;
+    del:hasRole <https://w3id.org/deliberation/resource/eu_role_4> ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_4> ;
+    del:name "Pascal Canfin" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_role_0> a del:Role ;
+    del:name "MEP" .
+
+<https://w3id.org/deliberation/resource/eu_role_1> a del:Role ;
+    del:name "President of the European Commission" .
+
+<https://w3id.org/deliberation/resource/eu_role_2> a del:Role ;
+    del:name "MEP" .
+
+<https://w3id.org/deliberation/resource/eu_role_3> a del:Role ;
+    del:name "MEP" .
+
+<https://w3id.org/deliberation/resource/eu_role_4> a del:Role ;
+    del:name "MEP" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_2> a del:Participant ;
+    del:hasRole <https://w3id.org/deliberation/resource/madrid_role_2> ;
+    del:name "Ana Fernández García" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_3> a del:Participant ;
+    del:hasRole <https://w3id.org/deliberation/resource/madrid_role_3> ;
+    del:name "David Santos Pérez" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_role_0> a del:Role ;
+    del:name "Climate Action Advocate" .
+
+<https://w3id.org/deliberation/resource/madrid_role_1> a del:Role ;
+    del:name "Environmental Scientist" .
+
+<https://w3id.org/deliberation/resource/madrid_role_2> a del:Role ;
+    del:name "Urban Planning Expert" .
+
+<https://w3id.org/deliberation/resource/madrid_role_3> a del:Role ;
+    del:name "Renewable Energy Consultant" .
+
+<https://w3id.org/deliberation/resource/eu_participant_0> a del:Participant ;
+    owl:sameAs <https://w3id.org/deliberation/resource/madrid_participant_0> ;
+    del:hasRole <https://w3id.org/deliberation/resource/eu_role_0> ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_0> ;
+    del:name "Iratxe García Pérez" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/eu_participant_1> a del:Participant ;
+    skos:related <https://w3id.org/deliberation/resource/bcn_participant_1> ;
+    del:hasRole <https://w3id.org/deliberation/resource/eu_role_1> ;
+    del:isAffiliatedWith <https://w3id.org/deliberation/resource/eu_org_1> ;
+    del:name "Ursula von der Leyen" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/topic_0> a del:Topic ;
+    skos:related <https://w3id.org/deliberation/resource/topic_1>,
+        <https://w3id.org/deliberation/resource/topic_2> ;
+    del:description "European Union climate legislation and Green Deal" ;
+    del:name "EU Climate Policy" .
+
+<https://w3id.org/deliberation/resource/topic_3> a del:Topic ;
+    skos:broader <https://w3id.org/deliberation/resource/topic_1>,
+        <https://w3id.org/deliberation/resource/topic_2> ;
+    del:description "Comprehensive climate and environmental policies" ;
+    del:name "European Green Deal" .
+
+<https://w3id.org/deliberation/resource/topic_4> a del:Topic ;
+    del:description "Grassroots environmental activism and participation" ;
+    del:name "Citizen Climate Action" .
+
+<https://w3id.org/deliberation/resource/bcn_participant_0> a del:Participant ;
+    del:hasRole <https://w3id.org/deliberation/resource/bcn_role_0> ;
+    del:name "Laura Martínez Vidal" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/bcn_participant_1> a del:Participant ;
+    del:hasRole <https://w3id.org/deliberation/resource/bcn_role_1> ;
+    del:name "Josep Puig Solé" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_0> a del:Participant ;
+    del:hasRole <https://w3id.org/deliberation/resource/madrid_role_0> ;
+    del:name "María González López" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_1> a del:Participant ;
+    del:hasRole <https://w3id.org/deliberation/resource/madrid_role_1> ;
+    del:name "Carlos Ruiz Martinez" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/topic_1> a del:Topic ;
+    skos:related <https://w3id.org/deliberation/resource/topic_2> ;
+    del:description "Local climate action plans for Madrid metropolitan area" ;
+    del:name "Madrid Green Initiative" .
+
+<https://w3id.org/deliberation/resource/topic_2> a del:Topic ;
+    del:description "Urban sustainability and climate adaptation measures" ;
+    del:name "Barcelona Sustainability" .
+

@@ -1,0 +1,43 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+efde1c51-df38-4e8e-969b-8290f73fb058	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""4"", ""checked"": false}, {""value"": ""U"", ""checked"": false}, {""value"": ""7"", ""checked"": false}, {""value"": ""B"", ""checked"": false}]"	UKN	2020-09-07 19:01:26.688590+00:00	
+7dc1ad30-d246-44a5-a773-6e0bbe15cd8a	Leopard	051b68b8df594ec7a7556c38ab6e215b	JOIN_ROOM		USR_ONBOARDING	2020-09-07 19:01:27.219451+00:00	
+a4abb52f-a084-4f40-9463-fcfb9a89bab7	Giraffe	d728ce63df9a4227a567f5ed231442d8	JOIN_ROOM		USR_ONBOARDING	2020-09-07 19:04:12.984262+00:00	
+26b73755-1daf-4b9a-99ef-834864c8a3b2	Bee	61a27679acde402e8e1567f9dc2ebce5	JOIN_ROOM		USR_ONBOARDING	2020-09-07 19:04:19.527797+00:00	
+a90b1f7a-acd3-4d7d-bb40-c8fe7c915207	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-09-07 19:04:19.746050+00:00	
+23f8b879-d0b9-4107-8b10-29afeecd545b	Bee	61a27679acde402e8e1567f9dc2ebce5	WASON_GAME	[{'value': '4', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_ONBOARDING	2020-09-07 19:04:40.192140+00:00	
+53b31706-f01f-4c50-9190-d98b51dbc7f0	Bee	61a27679acde402e8e1567f9dc2ebce5	WASON_SUBMIT	[{'value': '4', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_ONBOARDING	2020-09-07 19:04:40.836624+00:00	
+fb91c007-c704-441d-a499-48e54ebe2232	Giraffe	d728ce63df9a4227a567f5ed231442d8	ROUTING_TIMER_ELAPSED	[{'value': '4', 'checked': False}, {'value': 'U', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_ONBOARDING	2020-09-07 19:05:19.850105+00:00	
+b18665e7-5dca-441d-9b84-6be8c3129e7f	Bee	61a27679acde402e8e1567f9dc2ebce5	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-09-07 19:05:20.921558+00:00	
+8ae393b4-2b83-4dac-9e27-95b3b635bfcc	Giraffe	d728ce63df9a4227a567f5ed231442d8	WASON_GAME	[{'value': '4', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_ONBOARDING	2020-09-07 19:06:05.713550+00:00	
+054ff960-ab7e-47e7-846e-e1048de40da3	Giraffe	d728ce63df9a4227a567f5ed231442d8	WASON_SUBMIT	[{'value': '4', 'checked': False}, {'value': 'U', 'checked': True}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_ONBOARDING	2020-09-07 19:06:25.781064+00:00	
+1cbe4018-a280-4c4e-bb75-a6acdf3bf34c	Bee	61a27679acde402e8e1567f9dc2ebce5	WASON_GAME	[{'value': '4', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_ONBOARDING	2020-09-07 19:06:25.795819+00:00	
+9505c86e-95ca-4d38-a47a-6e11eaa03bbf	AUTO_KICKED	051b68b8df594ec7a7556c38ab6e215b	LEAVE_ROOM		AUTO_KICKED	2020-09-07 19:06:26.095618+00:00	
+414d5670-762a-4d78-9f65-d107e0fb3448	AUTO_KICKED	051b68b8df594ec7a7556c38ab6e215b	LEAVE_ROOM		AUTO_KICKED	2020-09-07 19:06:26.097200+00:00	
+723fdb86-d1d0-4b6e-a6de-643419fe451f	Bee	61a27679acde402e8e1567f9dc2ebce5	WASON_GAME	[{'value': '4', 'checked': True}, {'value': 'U', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_ONBOARDING	2020-09-07 19:06:26.770704+00:00	
+a7114a08-81c3-4a0b-ae8d-9a3d58028447	Bee	61a27679acde402e8e1567f9dc2ebce5	WASON_SUBMIT	[{'value': '4', 'checked': True}, {'value': 'U', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_ONBOARDING	2020-09-07 19:06:28.068278+00:00	
+018f1a69-51e5-4cd0-9d91-bf06b082b48a	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-09-07 19:06:28.454669+00:00	
+32169ba9-3fcb-4b04-8e5a-f69601415766	Bee	61a27679acde402e8e1567f9dc2ebce5	CHAT_MESSAGE	so Giraffe which of the latter or number are uchososing	USR_PLAYING	2020-09-07 19:07:12.494776+00:00	
+7f1bb853-b39d-4ed4-bf7e-13b1448b7d23	Giraffe	d728ce63df9a4227a567f5ed231442d8	CHAT_MESSAGE	i chose card U 	USR_PLAYING	2020-09-07 19:07:23.696196+00:00	
+7e3637ab-717e-4378-868e-e85fa8912129	Bee	61a27679acde402e8e1567f9dc2ebce5	CHAT_MESSAGE	ohh	USR_PLAYING	2020-09-07 19:07:31.636505+00:00	
+bb5eac25-f466-4c7a-b8f3-caa11a8edb82	Bee	61a27679acde402e8e1567f9dc2ebce5	CHAT_MESSAGE	i  did choose 4	USR_PLAYING	2020-09-07 19:07:37.965794+00:00	
+d793e199-fa49-49b4-9944-17540ae4bbfa	Bee	61a27679acde402e8e1567f9dc2ebce5	CHAT_MESSAGE	how do you see it	USR_PLAYING	2020-09-07 19:07:44.162044+00:00	
+8624c996-5c5a-4d17-ad35-a9ff763bdcf1	Giraffe	d728ce63df9a4227a567f5ed231442d8	CHAT_MESSAGE	i have no idea	USR_PLAYING	2020-09-07 19:08:12.136929+00:00	
+c56d6f36-1cb1-4437-8537-042e60db010f	Giraffe	d728ce63df9a4227a567f5ed231442d8	CHAT_MESSAGE	card 4 will have a vowel 	USR_PLAYING	2020-09-07 19:08:42.202071+00:00	
+f5a12fad-cfe0-476b-a07a-d8a9641ca921	Giraffe	d728ce63df9a4227a567f5ed231442d8	CHAT_MESSAGE	so we should chose card 4?	USR_PLAYING	2020-09-07 19:08:52.618239+00:00	
+8506eb66-f623-428e-bd23-6872ee2edd28	Giraffe	d728ce63df9a4227a567f5ed231442d8	WASON_GAME	[{'value': '4', 'checked': True}, {'value': 'U', 'checked': True}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_PLAYING	2020-09-07 19:09:05.948286+00:00	
+59c36978-a1e4-4253-b8dd-456e9f0cc848	Giraffe	d728ce63df9a4227a567f5ed231442d8	WASON_GAME	[{'value': '4', 'checked': True}, {'value': 'U', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_PLAYING	2020-09-07 19:09:07.658072+00:00	
+9706969a-fdd8-4c11-9c1d-c4d5bc87e032	Bee	61a27679acde402e8e1567f9dc2ebce5	CHAT_MESSAGE	ok we should go with 4	USR_PLAYING	2020-09-07 19:09:15.156831+00:00	
+64148bbb-cc17-42ef-8c0a-5b00d0f7ada9	Giraffe	d728ce63df9a4227a567f5ed231442d8	CHAT_MESSAGE	ok! 	USR_PLAYING	2020-09-07 19:09:18.996797+00:00	
+368a1e02-027c-401b-9461-6933e66433fa	Giraffe	d728ce63df9a4227a567f5ed231442d8	WASON_SUBMIT	[{'value': '4', 'checked': True}, {'value': 'U', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_PLAYING	2020-09-07 19:09:31.554821+00:00	
+4d99141c-5816-4e70-8669-9e4ddfbdb78c	Bee	61a27679acde402e8e1567f9dc2ebce5	CHAT_MESSAGE	but there must have been something that made you choose u	USR_PLAYING	2020-09-07 19:09:36.202710+00:00	
+9b19d55b-b87c-45e1-8032-2824127a8915	Giraffe	d728ce63df9a4227a567f5ed231442d8	CHAT_MESSAGE	that an even number would be behind it 	USR_PLAYING	2020-09-07 19:09:49.531702+00:00	
+9d309cc7-3011-4888-b88c-1fa260eb3eaa	Bee	61a27679acde402e8e1567f9dc2ebce5	CHAT_MESSAGE	somewhat compatible i guess	USR_PLAYING	2020-09-07 19:10:30.721436+00:00	
+bbbf9135-d96c-4194-b3d0-e2a84f4b601d	Bee	61a27679acde402e8e1567f9dc2ebce5	WASON_GAME	[{'value': '4', 'checked': False}, {'value': 'U', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_PLAYING	2020-09-07 19:10:54.271809+00:00	
+0ede65ea-d1d1-41e7-88fc-4dd0ed0fc048	Giraffe	d728ce63df9a4227a567f5ed231442d8	CHAT_MESSAGE	yeah	USR_PLAYING	2020-09-07 19:11:03.127076+00:00	
+e3cede0e-6d26-448f-8248-c7315ae349e8	Giraffe	d728ce63df9a4227a567f5ed231442d8	CHAT_MESSAGE	well i am chosing 4 and submitting	USR_PLAYING	2020-09-07 19:11:12.172315+00:00	
+ffcc9326-c064-43aa-89a5-e88405c0a058	Bee	61a27679acde402e8e1567f9dc2ebce5	CHAT_MESSAGE	ok i so agree with you then	USR_PLAYING	2020-09-07 19:11:35.665583+00:00	
+fd6b2fb6-5928-44ab-9e3b-02b8a21c96d0	Bee	61a27679acde402e8e1567f9dc2ebce5	CHAT_MESSAGE	so i agree with you and we are choosing 4	USR_PLAYING	2020-09-07 19:12:23.498430+00:00	
+7cf575c2-c67f-44f7-9193-ebfa29b2ef7b	Bee	61a27679acde402e8e1567f9dc2ebce5	CHAT_MESSAGE	right?	USR_PLAYING	2020-09-07 19:12:23.500059+00:00	
+8e4fd09b-04d6-4947-8f08-e59e88bd9841	Bee	61a27679acde402e8e1567f9dc2ebce5	WASON_GAME	[{'value': '4', 'checked': True}, {'value': 'U', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_PLAYING	2020-09-07 19:12:26.065443+00:00	
+7f94293a-05e9-4ed2-aabf-4e5e2c393c08	Bee	61a27679acde402e8e1567f9dc2ebce5	WASON_SUBMIT	[{'value': '4', 'checked': True}, {'value': 'U', 'checked': False}, {'value': '7', 'checked': False}, {'value': 'B', 'checked': False}]	USR_PLAYING	2020-09-07 19:12:48.237065+00:00	
+3d4854a1-9963-4ea2-95da-702789321608	SYSTEM	-1	WASON_FINISHED		UKN	2020-09-07 19:12:48.633832+00:00	

@@ -1,0 +1,83 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+9b92544a-01bf-4c05-bf24-a88e54d839af	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""U"", ""checked"": false}, {""value"": ""C"", ""checked"": false}, {""value"": ""2"", ""checked"": false}, {""value"": ""3"", ""checked"": false}]"	UKN	2020-09-02 18:08:58.632136+00:00	
+6f581d57-b406-4582-ad29-f7b392e9af5f	Llama	bfed0d417b3e4a3bb577299f2fed3450	JOIN_ROOM		USR_ONBOARDING	2020-09-02 18:08:59.053989+00:00	
+33f81837-5a19-41b9-a54a-0216c1994d8c	Beaver	c752a382efb340cf8289b39c81c45a2a	JOIN_ROOM		USR_ONBOARDING	2020-09-02 18:09:03.998838+00:00	
+5aa1b667-a9a5-4272-a0af-074e6230f534	Narwhal	09ad5004cfb24b52ad814237e7838b83	JOIN_ROOM		USR_ONBOARDING	2020-09-02 18:09:17.138655+00:00	
+2283e09a-3208-4f79-9007-6f8319be962b	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-09-02 18:09:17.364700+00:00	
+bcbf96a1-afec-4a2a-9c07-282a7a912ae5	Narwhal	09ad5004cfb24b52ad814237e7838b83	WASON_GAME	[{'value': 'U', 'checked': False}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': True}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-09-02 18:09:43.102751+00:00	
+a4490beb-3d8f-413e-8eb8-b30e93b57f1e	Narwhal	09ad5004cfb24b52ad814237e7838b83	WASON_GAME	[{'value': 'U', 'checked': False}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-09-02 18:09:46.540168+00:00	
+9f0ad682-280e-47b7-b9a9-1d276a4fffd7	Narwhal	09ad5004cfb24b52ad814237e7838b83	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-09-02 18:09:47.784124+00:00	
+f1548999-4e3b-47c1-8fc3-0981cad5152d	Beaver	c752a382efb340cf8289b39c81c45a2a	WASON_GAME	[{'value': 'U', 'checked': False}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-09-02 18:09:48.570276+00:00	
+0665cb8b-c981-468a-a851-f435885900e3	Ox	a6c5caafd92c477096a6ba8431751939	JOIN_ROOM		USR_ONBOARDING	2020-09-02 18:09:52.623719+00:00	
+d1584c9e-b343-4f85-a595-2f6db756b9e8	Narwhal	09ad5004cfb24b52ad814237e7838b83	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-09-02 18:09:54.007298+00:00	
+88a2561f-608a-4483-aca8-658e7e17b7b1	Narwhal	09ad5004cfb24b52ad814237e7838b83	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-09-02 18:09:54.637028+00:00	
+d0d62b70-ba0b-4ddc-9133-c1f2c171cddb	Beaver	c752a382efb340cf8289b39c81c45a2a	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-09-02 18:09:54.918438+00:00	
+33809ec6-56bd-42bc-8714-9319aebc0e49	Beaver	c752a382efb340cf8289b39c81c45a2a	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': True}]	USR_ONBOARDING	2020-09-02 18:09:56.933989+00:00	
+155fb4c0-bc55-40fb-ae29-c64dd450eae4	Beaver	c752a382efb340cf8289b39c81c45a2a	ROUTING_TIMER_ELAPSED	[{'value': 'U', 'checked': False}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-09-02 18:10:17.462493+00:00	
+58517a5b-c64d-4061-bcf9-cabd3aae6eea	Llama	bfed0d417b3e4a3bb577299f2fed3450	ROUTING_TIMER_ELAPSED	[{'value': 'U', 'checked': False}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-09-02 18:10:17.482138+00:00	
+d3bf1db8-ce6d-4a77-b7ab-176926930974	Narwhal	09ad5004cfb24b52ad814237e7838b83	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-09-02 18:10:17.784455+00:00	
+f6fe3984-fdf9-43b3-b3d7-3f8aab149a44	Llama	bfed0d417b3e4a3bb577299f2fed3450	WASON_GAME	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-09-02 18:11:23.692132+00:00	
+049e6279-4594-459f-8c5e-1f92d3e4b2cc	Llama	bfed0d417b3e4a3bb577299f2fed3450	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': False}]	USR_ONBOARDING	2020-09-02 18:11:52.383908+00:00	
+d5c5834f-aa7c-4e9c-b666-0130211a47e2	Moderating Owl	f8c0b6a580254d4ca04face494cc4693	JOIN_ROOM		USR_MODERATING	2020-09-02 18:12:57.955344+00:00	
+739af76b-1bbe-4a50-8c35-49b94ff091bd	Ox	a6c5caafd92c477096a6ba8431751939	LEAVE_ROOM		KICKED	2020-09-02 18:13:11.868050+00:00	
+427607ba-5d9f-4a74-b087-c200b3d885f2	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-09-02 18:13:12.100542+00:00	
+577428d4-bd5b-427b-b917-1d71b199a606	Moderating Owl	f8c0b6a580254d4ca04face494cc4693	LEAVE_ROOM		USR_MODERATING	2020-09-02 18:13:15.424070+00:00	
+75468e07-1dcc-469c-b4a3-9823e6ef9502	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	Hello	USR_PLAYING	2020-09-02 18:13:26.296607+00:00	
+c6ac37ce-403a-4eb0-9fa8-091396129630	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	hey all!	USR_PLAYING	2020-09-02 18:13:27.988103+00:00	
+2745ec35-9d52-49b5-b6c0-85a326016d8d	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	How's it going folks?	USR_PLAYING	2020-09-02 18:13:40.213735+00:00	
+fc94bd09-e098-4f20-baa6-408d1fd229ca	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	I'm good!	USR_PLAYING	2020-09-02 18:14:05.466012+00:00	
+b16c6a41-8c1d-4d3e-8e64-af0bb577e5fb	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	I think for this game we have to flip two cards.	USR_PLAYING	2020-09-02 18:14:16.631574+00:00	
+b19fd713-8cd4-4da3-9c5c-e0d7d3e232d1	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	Did we all get the same set of cards?	USR_PLAYING	2020-09-02 18:14:19.636860+00:00	
+240a5504-9b7b-4b3d-bfc1-e61bed31b54c	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	U   C   2   3	USR_PLAYING	2020-09-02 18:14:21.432210+00:00	
+5ca42138-fb2f-4e55-af7a-a2a244ecfa5d	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	That's what I'm working with. 	USR_PLAYING	2020-09-02 18:14:28.041332+00:00	
+a99d6ef7-aa00-42a5-bdf3-4340643aefcc	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	UC 23	USR_PLAYING	2020-09-02 18:14:49.555249+00:00	
+f3f58af1-c970-4049-94b3-75d8fee863ca	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	I think U and 3	USR_PLAYING	2020-09-02 18:14:53.891281+00:00	
+c35f835d-7d4f-48c2-89e9-664fde1c97f1	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	I think you only have to flip the U	USR_PLAYING	2020-09-02 18:15:06.401329+00:00	
+14988593-05b2-4fd6-9afd-ad6ca1ad8e09	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	so if U is flipped and it is an odd number, we broke the rule, so it is definitely U	USR_PLAYING	2020-09-02 18:15:29.319552+00:00	
+b29fab93-8fe0-4f51-bc60-84b5fb05483a	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	Yes, U, C, 2 and 3 	USR_PLAYING	2020-09-02 18:15:30.758468+00:00	
+8623f6ba-166b-41de-acd7-dd8aabeb8f4d	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	I agree you have to check U to confirm part of the rule.	USR_PLAYING	2020-09-02 18:15:38.686387+00:00	
+b3a0143f-0d2e-40a8-85bd-b3b1560a2578	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	if you flip 3 and it is a vowel, we know the rule is broken	USR_PLAYING	2020-09-02 18:15:44.863095+00:00	
+b3ee55e4-e1cd-49af-93c2-532ad45eeb10	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	They state that each card has a letter on one side and a number on the other.  	USR_PLAYING	2020-09-02 18:15:49.496431+00:00	
+0a45adb1-822f-404d-a424-0922a323bc4d	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	so I think 3 needs to be flipped as well	USR_PLAYING	2020-09-02 18:15:57.917442+00:00	
+4ae17183-c42c-4aa5-a59f-52f7746ef1d6	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	That's right, because if 3 has a vowel, we know the rule is wrong.	USR_PLAYING	2020-09-02 18:15:59.606128+00:00	
+b1a5340e-5be5-46da-9812-14239bbe06f9	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	I agree. You are correct. 	USR_PLAYING	2020-09-02 18:16:05.500470+00:00	
+a5d3610e-1ec3-4cc1-ae7c-e83284ea4e13	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	So the cards needed to flip are are U and 3, right?	USR_PLAYING	2020-09-02 18:16:14.435995+00:00	
+47692462-75c0-462b-bf6c-ab6424a5bcaa	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	But the rule they want you to test is if the the cards with vowels have even numbers on the other side. 	USR_PLAYING	2020-09-02 18:16:16.270395+00:00	
+6dcb1b29-e478-431e-bf0e-60e75961145a	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	correct, so we know if the opposite side of 3 is a vowel	USR_PLAYING	2020-09-02 18:16:35.876119+00:00	
+bb8c4047-9167-4531-b01f-1044b21f1a17	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	then that card has a vowel and odd number	USR_PLAYING	2020-09-02 18:16:43.242825+00:00	
+28a8b55d-8568-4dd9-aad7-108ad24710b4	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	and the rule is broken	USR_PLAYING	2020-09-02 18:16:46.718030+00:00	
+a92319fa-7b4a-45f4-98e2-858f09a90263	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	It doesn't matter if it's a vowel or not.  We only know that of one card that has a vowel.  	USR_PLAYING	2020-09-02 18:17:00.883906+00:00	
+7cc5bc53-7d77-41df-91b5-d8ef47146de7	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	That's the only card we have to worry about. 	USR_PLAYING	2020-09-02 18:17:08.320387+00:00	
+dfbdad49-b34c-4efe-b54a-01cee4e22438	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	no no no	USR_PLAYING	2020-09-02 18:17:29.598308+00:00	
+ff705333-8929-47c0-899b-f3581dcbe21e	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	It doesn't even say that all cards with even number have a vowel on the other side.  	USR_PLAYING	2020-09-02 18:17:36.559985+00:00	
+bb06cd31-72ca-4f80-a1cf-cc4d8f5c8590	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	"the rule we are testing is ""All cards with vowels on one side have an even number on the other."""	USR_PLAYING	2020-09-02 18:17:45.865273+00:00	
+e8ed5d97-f4e5-4ec7-b5b4-f249b72487c8	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	Just that the ones with a vowel have an even number 	USR_PLAYING	2020-09-02 18:17:53.424744+00:00	
+f6799804-8afe-4cd9-8e68-65594112a2e9	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	If vowel = even number 	USR_PLAYING	2020-09-02 18:17:57.632682+00:00	
+ce9c4622-a5f2-46f0-9e57-24031f1bd9c0	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	on the other side. 	USR_PLAYING	2020-09-02 18:18:00.193944+00:00	
+3bc0952b-c3f5-4eee-84bc-447d4d73e908	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	Yep. Only vowel is a U	USR_PLAYING	2020-09-02 18:18:05.233934+00:00	
+10690952-d45a-4364-ae8d-8868a07ae4a7	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	If vowel = odd number, the rule is broken 	USR_PLAYING	2020-09-02 18:18:05.509607+00:00	
+1708c41a-0347-4fe4-abe2-24eb859fb976	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	so we need to check an odd number, which is 3	USR_PLAYING	2020-09-02 18:18:13.096033+00:00	
+9471595b-b802-4f42-b58b-fafe4a32aabd	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	That's the only one we need to flip.  	USR_PLAYING	2020-09-02 18:18:20.706408+00:00	
+a31e655d-2748-45dc-a3e6-5e70281acc1c	Llama	bfed0d417b3e4a3bb577299f2fed3450	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': False}]	USR_PLAYING	2020-09-02 18:18:29.070669+00:00	
+e5b7c38d-2246-4630-bf9f-cba4abec17e8	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	No, because we also need to confirm that vowels do lead to even numbers.	USR_PLAYING	2020-09-02 18:18:45.348081+00:00	
+33f86943-08f4-4aa2-b3be-c9d09a9f205b	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	we cannot know that without checking U	USR_PLAYING	2020-09-02 18:18:55.630516+00:00	
+ada3401b-6827-438b-8e55-73c32bf80a99	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	I think we all agree U needs to be flipped	USR_PLAYING	2020-09-02 18:19:10.147744+00:00	
+c9559931-a939-4b30-a5be-e67b114d0a83	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	Looks like it.  	USR_PLAYING	2020-09-02 18:19:15.348494+00:00	
+9ae16b87-bff6-45c3-aabc-c8481375b1d6	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	Yeah	USR_PLAYING	2020-09-02 18:19:20.168751+00:00	
+adad4df2-2f29-4d9d-bf9f-fb451dbddbf9	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	I flipped the U and called it done.  	USR_PLAYING	2020-09-02 18:19:23.107468+00:00	
+e995acc6-3a51-4a80-9a45-8a53a380ae55	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	but we also need to flip 3	USR_PLAYING	2020-09-02 18:19:23.189237+00:00	
+03b3c227-2d07-4472-8887-09167e516552	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	Yeah	USR_PLAYING	2020-09-02 18:19:26.325776+00:00	
+53bf2a4e-b4d8-4993-b885-c9084bda7d7f	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	No you don't.  	USR_PLAYING	2020-09-02 18:19:36.078243+00:00	
+9e5c0593-d8c9-4def-8abe-d048292ce46d	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	What if behind the 3 is a U? 	USR_PLAYING	2020-09-02 18:19:49.536113+00:00	
+c253ea2a-e54c-4a82-b42c-98104d409970	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	The one card with the vowel is the only card that the rule applies to.	USR_PLAYING	2020-09-02 18:19:53.958713+00:00	
+59b507e4-6d89-44be-98f4-f9c7108396d4	Beaver	c752a382efb340cf8289b39c81c45a2a	OUT_OF_TIME	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-09-02 18:20:12.212155+00:00	
+8b844256-fd9e-4e61-9969-93b372c2fa51	Llama	bfed0d417b3e4a3bb577299f2fed3450	OUT_OF_TIME	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': False}]	USR_PLAYING	2020-09-02 18:20:12.220761+00:00	
+03292c03-4faf-4b04-b73a-c477e656941a	Narwhal	09ad5004cfb24b52ad814237e7838b83	OUT_OF_TIME	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-09-02 18:20:12.223582+00:00	
+0eadfae4-06df-4513-b8b9-039fd5e32fb2	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	Imagine flipping over 3, and finding U. 	USR_PLAYING	2020-09-02 18:20:17.098029+00:00	
+2138965b-174c-406c-b04b-041c46e95482	Narwhal	09ad5004cfb24b52ad814237e7838b83	CHAT_MESSAGE	what does that mean	USR_PLAYING	2020-09-02 18:20:19.235418+00:00	
+eaadcbc8-2049-4c07-8a72-7bd2aa4affe9	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	ok we are out of time on this chat. I am just going to do U and 3 haha.	USR_PLAYING	2020-09-02 18:20:32.461426+00:00	
+24045c34-5806-4d11-a95a-2a77b618230f	Beaver	c752a382efb340cf8289b39c81c45a2a	CHAT_MESSAGE	Nice chatting with you all!	USR_PLAYING	2020-09-02 18:20:38.603180+00:00	
+14ed0aee-d23b-4dc1-b1f0-b9368f64de04	Llama	bfed0d417b3e4a3bb577299f2fed3450	CHAT_MESSAGE	Take it easy	USR_PLAYING	2020-09-02 18:20:43.450112+00:00	
+410ab408-1bab-4e28-96a4-9c014e37c3bf	Beaver	c752a382efb340cf8289b39c81c45a2a	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-09-02 18:20:44.645875+00:00	
+0413b2cf-0730-46da-bd5c-aacf7e02ea86	Narwhal	09ad5004cfb24b52ad814237e7838b83	WASON_SUBMIT	[{'value': 'U', 'checked': True}, {'value': 'C', 'checked': False}, {'value': '2', 'checked': False}, {'value': '3', 'checked': True}]	USR_PLAYING	2020-09-02 18:20:47.685674+00:00	
+e7cea3ad-4623-46f1-b9cc-a91aaa2b5161	SYSTEM	-1	WASON_FINISHED		UKN	2020-09-02 18:20:48.228224+00:00	

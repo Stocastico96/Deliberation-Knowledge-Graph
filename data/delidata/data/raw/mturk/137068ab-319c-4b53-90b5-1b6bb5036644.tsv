@@ -1,0 +1,66 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+7e1a3b89-be53-435d-80e0-d88f2a3dd403	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""W"", ""checked"": false}, {""value"": ""6"", ""checked"": false}, {""value"": ""3"", ""checked"": false}, {""value"": ""A"", ""checked"": false}]"	UKN	2020-05-26 18:48:16.351882+00:00	
+e38657db-2110-4fc1-a274-1ddcaa4ceb53	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	JOIN_ROOM		USR_ONBOARDING	2020-05-26 18:48:16.779279+00:00	
+f2697454-fe67-4e56-8958-1b17fe2d5c9b	Chipmunk	5a1638aea9a44067997004a71625980b	JOIN_ROOM		USR_ONBOARDING	2020-05-26 18:48:53.186675+00:00	
+eb0afc8f-f1c2-4fb0-87bc-20d2687e4a7a	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-05-26 18:48:55.801607+00:00	
+85ac6244-30f2-4ca7-839c-4d404ca56468	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-05-26 18:48:58.534571+00:00	
+47160470-561a-4157-acb3-466b47895053	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	WASON_GAME	[{'value': 'W', 'checked': True}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-05-26 18:49:09.109935+00:00	
+70c5dbd4-d95c-4512-b6c2-0de39c23f942	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	WASON_SUBMIT	[{'value': 'W', 'checked': True}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-05-26 18:49:11.367807+00:00	
+fe29682b-3dcd-478a-95d4-4fd49417478e	Chipmunk	5a1638aea9a44067997004a71625980b	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-05-26 18:49:25.322035+00:00	
+dcc68994-73b8-4c25-909f-6c1e06d36d24	Chipmunk	5a1638aea9a44067997004a71625980b	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-05-26 18:49:26.948164+00:00	
+dc20c1d9-d081-4baf-9edf-ca995c227eeb	Chipmunk	5a1638aea9a44067997004a71625980b	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-05-26 18:49:28.277041+00:00	
+28a4a543-f35b-4d7e-85a8-a9a5f8d8dde3	Bee	8cabea2839294bb3a3ed38020e9309d6	JOIN_ROOM		USR_ONBOARDING	2020-05-26 18:49:39.405110+00:00	
+831e476b-8811-40fa-beb1-8867a83fa513	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-05-26 18:49:39.622591+00:00	
+9d4e2f8d-6c8a-410b-82bc-b4f96929e9a3	Bee	8cabea2839294bb3a3ed38020e9309d6	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': False}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-05-26 18:50:31.263001+00:00	
+8e4a7fca-bf24-42aa-ba8a-2267cc14574c	Bee	8cabea2839294bb3a3ed38020e9309d6	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-05-26 18:50:33.863064+00:00	
+331825ea-73da-49ee-8b33-5e790d7d4fae	Bee	8cabea2839294bb3a3ed38020e9309d6	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-05-26 18:50:36.038847+00:00	
+d239bd63-0e71-4622-b53f-9ba3f63044d9	Chipmunk	5a1638aea9a44067997004a71625980b	ROUTING_TIMER_ELAPSED	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-05-26 18:50:39.736286+00:00	
+66bacb96-d917-4b4d-90ed-e85aa83f638e	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-05-26 18:50:40.214867+00:00	
+de4ac59b-62f3-41c3-b952-6ddab3274db5	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	ROUTING_TIMER_ELAPSED	[{'value': 'W', 'checked': True}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-05-26 18:50:40.565663+00:00	
+5bdfe336-632e-4b44-8336-51be01bd5b19	Bee	8cabea2839294bb3a3ed38020e9309d6	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-05-26 18:50:42.939233+00:00	
+67db00f6-9881-4298-94b2-618f21a71938	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	CHAT_MESSAGE	hello	USR_PLAYING	2020-05-26 18:50:58.939699+00:00	
+7c64896f-3092-4dd2-be80-1104fa492be7	Chipmunk	5a1638aea9a44067997004a71625980b	CHAT_MESSAGE	Hello. So to test the rule, I flipped 6 (even number) and A (vowel). Did you both do that same?	USR_PLAYING	2020-05-26 18:51:53.391099+00:00	
+087b7dab-57ce-41d3-bbb3-c99ea8c56c96	Bee	8cabea2839294bb3a3ed38020e9309d6	CHAT_MESSAGE	hi all, yes 6 and A	USR_PLAYING	2020-05-26 18:52:10.952049+00:00	
+7c466beb-0ae4-460a-8e6c-795aac36ff9d	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	CHAT_MESSAGE	You also have to test either W or 3 to make sure	USR_PLAYING	2020-05-26 18:52:11.844787+00:00	
+f63bf518-2798-40cb-9331-f532a4f2b3af	Bee	8cabea2839294bb3a3ed38020e9309d6	WASON_GAME	[{'value': 'W', 'checked': True}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:52:29.301578+00:00	
+c43a19df-8901-422e-926b-c07baeab5aba	Bee	8cabea2839294bb3a3ed38020e9309d6	CHAT_MESSAGE	does the game tell u if u are worng?	USR_PLAYING	2020-05-26 18:52:39.880419+00:00	
+bc7f6cd0-1524-4447-bc27-c391f356e007	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	CHAT_MESSAGE	I don't know actually	USR_PLAYING	2020-05-26 18:52:47.101456+00:00	
+c92385d9-7ca2-4d33-a844-914c4147c428	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:53:01.162167+00:00	
+8400d83b-a367-458c-8c30-e6f469eb4246	Bee	8cabea2839294bb3a3ed38020e9309d6	CHAT_MESSAGE	do we all have to have the same answers?	USR_PLAYING	2020-05-26 18:53:04.027290+00:00	
+9d746e47-c523-4918-89c9-a74f9eab4791	Bee	8cabea2839294bb3a3ed38020e9309d6	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:53:17.011654+00:00	
+d6aec931-4254-41c2-ad5c-1f11ac737882	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	CHAT_MESSAGE	W might have a vowel on the other side	USR_PLAYING	2020-05-26 18:53:17.584476+00:00	
+17e63f43-e4dc-4398-8990-a6d9b01dd13e	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	WASON_GAME	[{'value': 'W', 'checked': True}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:53:20.522851+00:00	
+9e42ac17-e673-4a15-8acb-07b8f5d56d6d	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	CHAT_MESSAGE	3 too	USR_PLAYING	2020-05-26 18:53:28.478759+00:00	
+ae85990a-d39b-4f24-91c0-7d8840403422	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	CHAT_MESSAGE	I'm picking all 4	USR_PLAYING	2020-05-26 18:53:56.876131+00:00	
+9b520e5f-5609-4f96-9ebd-451911ed4fe4	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	WASON_GAME	[{'value': 'W', 'checked': True}, {'value': '6', 'checked': True}, {'value': '3', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:53:59.129365+00:00	
+5904e3d2-ff3e-4877-bf73-e2d566ccaf03	Bee	8cabea2839294bb3a3ed38020e9309d6	CHAT_MESSAGE	well the rules say that all  cards below has a letter on one side and a number on the other so W cannot have a vowel	USR_PLAYING	2020-05-26 18:54:00.086924+00:00	
+69bda3c7-0006-40e8-81b9-b9500aae6224	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:54:16.750734+00:00	
+1da94d6c-d4ea-4fd9-856b-d179316faaf3	Chipmunk	5a1638aea9a44067997004a71625980b	CHAT_MESSAGE	I rereading the instructions.	USR_PLAYING	2020-05-26 18:54:20.212799+00:00	
+64c83453-07e5-40df-9e6b-044faad7fe74	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	CHAT_MESSAGE	so 6, 3, and A	USR_PLAYING	2020-05-26 18:54:31.584478+00:00	
+f4969df7-abb0-4908-b592-a96c0ca1bb62	Bee	8cabea2839294bb3a3ed38020e9309d6	CHAT_MESSAGE	3 cannot satisty one rule	USR_PLAYING	2020-05-26 18:55:03.500402+00:00	
+dc0826f0-2bdf-4ef4-b481-08f60a1d3de8	Bee	8cabea2839294bb3a3ed38020e9309d6	CHAT_MESSAGE	vowels on one side have an even number	USR_PLAYING	2020-05-26 18:55:14.489823+00:00	
+0b4a5240-6f2d-4649-8d15-58c87511864d	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	CHAT_MESSAGE	But we have to see if there's a vowel on the other side...	USR_PLAYING	2020-05-26 18:55:17.162802+00:00	
+0d20cb92-8614-4016-bc66-663986c3e425	Chipmunk	5a1638aea9a44067997004a71625980b	CHAT_MESSAGE	@bee, correct	USR_PLAYING	2020-05-26 18:55:24.640859+00:00	
+89b8d629-5ba9-41d2-9c72-790bdadd045b	Bee	8cabea2839294bb3a3ed38020e9309d6	CHAT_MESSAGE	so 3 is an odd	USR_PLAYING	2020-05-26 18:55:26.483269+00:00	
+6ae5e6f6-a90c-477a-bfbf-b18e81acf136	Bee	8cabea2839294bb3a3ed38020e9309d6	CHAT_MESSAGE	so 6/A right?	USR_PLAYING	2020-05-26 18:55:38.220260+00:00	
+be84f434-848f-4e54-8d6e-757cf1dc0219	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	CHAT_MESSAGE	Dude. You don't know what's on the other side. We have to see if the rule is correct	USR_PLAYING	2020-05-26 18:55:44.102991+00:00	
+b56c4a76-0068-4f65-bd39-af4e813a92d0	Bee	8cabea2839294bb3a3ed38020e9309d6	CHAT_MESSAGE	do we all have to agree on the same?	USR_PLAYING	2020-05-26 18:55:59.367862+00:00	
+cc47ce03-7c31-400d-8e5e-94d07d4b89a5	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	CHAT_MESSAGE	If there's a vowel on the other side of the 3, then the rule isn't correct	USR_PLAYING	2020-05-26 18:56:07.590262+00:00	
+9d77683e-269a-4c08-97fa-9bdd51f0aa76	Chipmunk	5a1638aea9a44067997004a71625980b	CHAT_MESSAGE	No need to select 3, it's an odd number.	USR_PLAYING	2020-05-26 18:56:09.457738+00:00	
+bbf91b99-848e-41ed-a887-205c4266691f	Bee	8cabea2839294bb3a3ed38020e9309d6	CHAT_MESSAGE	OK :)	USR_PLAYING	2020-05-26 18:56:30.218214+00:00	
+6175bda6-9a78-464c-a175-2bfec0474900	Bee	8cabea2839294bb3a3ed38020e9309d6	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:56:35.155610+00:00	
+03d0daa3-266f-4852-8760-268229cf6fe9	Chipmunk	5a1638aea9a44067997004a71625980b	CHAT_MESSAGE	@zebra, I understand what you are saying now.	USR_PLAYING	2020-05-26 18:56:36.719401+00:00	
+af92117f-23eb-41d9-875d-47228803f497	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	CHAT_MESSAGE	50 seconds left. I'm picking 6 3 and A	USR_PLAYING	2020-05-26 18:56:59.905956+00:00	
+c34bccc9-b432-464f-a6e8-a7904f26d584	Chipmunk	5a1638aea9a44067997004a71625980b	CHAT_MESSAGE	So, we need to select all four to see if the rule is correct or not.	USR_PLAYING	2020-05-26 18:57:03.325299+00:00	
+76483c75-abf5-46f0-b1e4-4330ae406d3b	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	CHAT_MESSAGE	not W.	USR_PLAYING	2020-05-26 18:57:12.552373+00:00	
+bc84c08d-f159-4485-97fb-0c5b9833395f	Chipmunk	5a1638aea9a44067997004a71625980b	CHAT_MESSAGE	Got it! 	USR_PLAYING	2020-05-26 18:57:20.641575+00:00	
+0b21b8b2-30e4-4a2c-b2cd-b939cf4085dc	Chipmunk	5a1638aea9a44067997004a71625980b	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:57:24.035625+00:00	
+cb094a5b-cbdc-4b11-ab55-245e58737cfd	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:57:27.815369+00:00	
+d783ad8d-251e-41c1-86f2-c348a42d8eef	Chipmunk	5a1638aea9a44067997004a71625980b	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:57:33.266962+00:00	
+003d017c-1797-4f2b-bc13-f78403f42a97	SYSTEM	-1	WASON_FINISHED		UKN	2020-05-26 18:57:33.722986+00:00	
+7ef6effd-085d-4609-90ee-a2b389d9881c	Chipmunk	5a1638aea9a44067997004a71625980b	OUT_OF_TIME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:57:40.369327+00:00	
+30bd4625-8f17-4250-9f4a-474c2df68b93	Zebra	08e7bbbadd4b472fbea2ab1c76d26f16	OUT_OF_TIME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:57:40.439386+00:00	
+e34dc97c-576f-4608-b5f0-a3c5a30685a9	SYSTEM	-1	WASON_FINISHED		UKN	2020-05-26 18:57:40.814696+00:00	
+7eaf0d04-1712-4f0f-a452-cee26d44fd6f	SYSTEM	-1	WASON_FINISHED		UKN	2020-05-26 18:57:40.914929+00:00	
+3dafe596-044c-42da-956d-f98957d3c13b	Bee	8cabea2839294bb3a3ed38020e9309d6	OUT_OF_TIME	[{'value': 'W', 'checked': False}, {'value': '6', 'checked': True}, {'value': '3', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-05-26 18:57:41.386408+00:00	
+f8f6ccda-2a10-4df5-9262-f0cb193b82ef	SYSTEM	-1	WASON_FINISHED		UKN	2020-05-26 18:57:41.857052+00:00	

@@ -1,0 +1,75 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+520ee271-65b0-47c1-b484-9ed53fa725c9	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""7"", ""checked"": false}, {""value"": ""G"", ""checked"": false}, {""value"": ""I"", ""checked"": false}, {""value"": ""8"", ""checked"": false}]"	UKN	2020-02-28 09:04:10.817052+00:00	
+a4ce9ab9-7347-498d-921c-a681b55f6627	Bat	8ab2defbb48641cbb53a480ce5c0f8f1	JOIN_ROOM		USR_ONBOARDING	2020-02-28 10:09:04.828686+00:00	
+32115d50-aa03-4a4e-8ee3-32579105ff11	Bat	8ab2defbb48641cbb53a480ce5c0f8f1	LEAVE_ROOM		USR_ONBOARDING	2020-02-28 10:09:10.547138+00:00	
+e2fe598b-5210-4883-9e2b-36eac0c11ae3	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-28 10:09:10.775305+00:00	
+f1c42255-f7fb-4976-907a-18a069e78abe	Bat	02016107ffa94c368ebe44ff8ba4328f	JOIN_ROOM		USR_ONBOARDING	2020-02-28 11:00:02.340955+00:00	
+a0d8894c-31b9-4463-8cbf-a5cd27fc7909	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	JOIN_ROOM		USR_ONBOARDING	2020-02-28 11:00:33.942041+00:00	
+c68aebba-dc92-48dd-908c-4e207d632cd6	Llama	16739bcfd32f4c69bc3aac144f2ed6fd	JOIN_ROOM		USR_ONBOARDING	2020-02-28 11:01:44.882351+00:00	
+80b4b342-4b94-4847-b4f4-469b794388fa	SYSTEM	-1	ROUTING_TIMER_STARTED	2020-02-28T11:02:45.125581	UKN	2020-02-28 11:01:45.125620+00:00	
+6312e48a-7741-4e56-8aa8-0f34d0c1e486	Bat	02016107ffa94c368ebe44ff8ba4328f	WASON_GAME	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-02-28 11:02:03.865801+00:00	
+3703bb36-4c2c-4d16-9f94-d1665f9506f1	Bat	02016107ffa94c368ebe44ff8ba4328f	WASON_GAME	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-02-28 11:02:04.848606+00:00	
+bf5c93a6-5251-4e52-b6d4-f002cfea5e5c	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	WASON_GAME	[{'value': '7', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-02-28 11:02:05.520293+00:00	
+c7bff7c7-8054-4253-9033-529d818a2d2a	Bat	02016107ffa94c368ebe44ff8ba4328f	WASON_GAME	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': True}]	USR_ONBOARDING	2020-02-28 11:02:05.828481+00:00	
+35cf9f86-92eb-430a-b2b0-45e18cd14305	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	WASON_GAME	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-02-28 11:02:13.591443+00:00	
+6426516d-5952-48f6-a809-9c4cad49a778	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	WASON_SUBMIT	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-02-28 11:02:14.983923+00:00	
+81d9af6b-f905-4f02-942d-b304db9c906a	Llama	16739bcfd32f4c69bc3aac144f2ed6fd	WASON_GAME	[{'value': '7', 'checked': False}, {'value': 'G', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-02-28 11:02:16.875234+00:00	
+89228c2a-6441-46a9-bb9b-92bffc0e2a12	Llama	16739bcfd32f4c69bc3aac144f2ed6fd	WASON_GAME	[{'value': '7', 'checked': False}, {'value': 'G', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': True}]	USR_ONBOARDING	2020-02-28 11:02:22.007448+00:00	
+e22e366c-3e7e-4034-8bcb-e464e917d94b	Llama	16739bcfd32f4c69bc3aac144f2ed6fd	WASON_SUBMIT	[{'value': '7', 'checked': False}, {'value': 'G', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': True}]	USR_ONBOARDING	2020-02-28 11:02:22.570357+00:00	
+663ddc52-a835-4d74-81b8-d34df346df45	Bat	02016107ffa94c368ebe44ff8ba4328f	WASON_GAME	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-02-28 11:02:33.083641+00:00	
+d4ff1562-bec6-4f55-be30-dfcb1bd442bc	Bat	02016107ffa94c368ebe44ff8ba4328f	WASON_SUBMIT	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-02-28 11:02:34.162557+00:00	
+36c235cd-2f8b-471c-a026-ddc9ca96e30e	Falcon	f37d380d61d64ac9a2f472be1d4df546	JOIN_ROOM		USR_ONBOARDING	2020-02-28 11:02:43.655685+00:00	
+7bdd850f-3781-4673-ab38-7f54bc56d770	Bat	02016107ffa94c368ebe44ff8ba4328f	ROUTING_TIMER_ELAPSED	[{'value': '7', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-02-28 11:02:45.314941+00:00	
+abb5372e-715c-4b1d-9ee3-ebbc334d13e4	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	ROUTING_TIMER_ELAPSED	[{'value': '7', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': False}]	USR_ONBOARDING	2020-02-28 11:02:46.297545+00:00	
+1c935f4e-d456-4848-9742-679dcd35aae1	Falcon	f37d380d61d64ac9a2f472be1d4df546	WASON_GAME	[{'value': '7', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': True}]	USR_ONBOARDING	2020-02-28 11:03:26.849934+00:00	
+5485e256-2535-4075-be84-6e8a8e0f93f2	Falcon	f37d380d61d64ac9a2f472be1d4df546	WASON_GAME	[{'value': '7', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '8', 'checked': True}]	USR_ONBOARDING	2020-02-28 11:03:29.229704+00:00	
+fda5b1b1-d5dc-46f0-9786-36087f10af70	Falcon	f37d380d61d64ac9a2f472be1d4df546	WASON_SUBMIT	[{'value': '7', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '8', 'checked': True}]	USR_ONBOARDING	2020-02-28 11:03:50.396207+00:00	
+db8a1985-8cc1-45ff-84d7-1027aa5ac440	SYSTEM	-1	FINISHED_ONBOARDING	2020-02-28T11:10:50.763239	UKN	2020-02-28 11:03:50.763270+00:00	
+6cd692ff-d38b-4658-9265-d6fd7455326c	Falcon	f37d380d61d64ac9a2f472be1d4df546	WASON_SUBMIT	[{'value': '7', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '8', 'checked': True}]	USR_PLAYING	2020-02-28 11:04:06.392549+00:00	
+b6cf3667-ef58-49ef-a52f-25b5d0bf999d	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	Hi guys!	USR_PLAYING	2020-02-28 11:04:09.444697+00:00	
+57859fdf-b506-4191-99ef-a3c5d2d8af2d	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	hello	USR_PLAYING	2020-02-28 11:04:18.748525+00:00	
+0d41df86-ef40-4ac7-943d-b8bbbc9a34e7	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	So I picked card with number 7 and card with letter G	USR_PLAYING	2020-02-28 11:05:07.738549+00:00	
+634f47b7-a106-4acc-ae71-6bf10cae9cd0	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	I basically thought that you have to prove the rule is right by turning over a vowel to see if it had an even number, and an odd number to see if it had a vowel (because id it does the rule is wrong)	USR_PLAYING	2020-02-28 11:05:10.471503+00:00	
+33c3b873-803b-4926-800e-5080eb48ec33	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	I picked 7 and I	USR_PLAYING	2020-02-28 11:05:20.820846+00:00	
+e08ed97d-7de5-42f9-9c79-64f587d91532	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	"But the rule that we need to check is that: ""Each of the 4 cards below has a letter on one side and a number on the other."""	USR_PLAYING	2020-02-28 11:06:24.133732+00:00	
+1516cce3-98e7-4645-a7f8-1c676ea98135	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	My rule was 'Each letter with a vowel on one side has a even number on the other'	USR_PLAYING	2020-02-28 11:06:56.961259+00:00	
+4a7c136e-1f1a-403c-a9ec-5ff525cca461	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	Ohh wait so this is the rule... haha	USR_PLAYING	2020-02-28 11:07:28.751291+00:00	
+b246cd52-3a5e-4bce-afc4-465c01b50a28	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	so we had different rules? 	USR_PLAYING	2020-02-28 11:07:40.588922+00:00	
+7834c08a-0667-44e1-b6b6-1104ceaedd08	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	No we have the same thing	USR_PLAYING	2020-02-28 11:08:01.974889+00:00	
+2a284e9d-265f-45b9-8395-4c229a055eea	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	oh okay aha 	USR_PLAYING	2020-02-28 11:08:14.649052+00:00	
+fec7dc1b-79ef-4b95-bd7f-7fe039a46772	AUTO_KICKED	f37d380d61d64ac9a2f472be1d4df546	LEAVE_ROOM		AUTO_KICKED	2020-02-28 11:08:14.810886+00:00	
+402d05e9-8d2b-4659-a147-87d732bdbeaa	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	So which card we are selecting?	USR_PLAYING	2020-02-28 11:08:49.943355+00:00	
+54b26a27-70d0-4d4f-a1f9-e02878b745e6	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	I think 7 and I but I'm not certain 	USR_PLAYING	2020-02-28 11:09:06.778250+00:00	
+d81dde53-f60d-48aa-a36f-27d5abdd32e2	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	just because they'd be no point turning over the G as it's not a vowel, and same with the 8 coz if you yurn it over and it's not a vowel that doesn't prove the rule 	USR_PLAYING	2020-02-28 11:09:51.633576+00:00	
+7667a8a5-39c0-48a8-9981-6a04eb4ea3ad	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	coz the rule doesn't say that constinants cant have even numbers either 	USR_PLAYING	2020-02-28 11:10:22.543695+00:00	
+14e125fc-15e9-43d2-94d7-161d64150c0c	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	I don't know if I'm making any sense aha	USR_PLAYING	2020-02-28 11:10:30.793441+00:00	
+5fdebcbd-80d2-49a7-98a3-8ec7f7423a2a	Bat	02016107ffa94c368ebe44ff8ba4328f	OUT_OF_TIME	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-02-28 11:10:50.937281+00:00	
+cbf84de8-3694-455d-b8f5-b13bc93168df	Llama	16739bcfd32f4c69bc3aac144f2ed6fd	OUT_OF_TIME	[{'value': '7', 'checked': False}, {'value': 'G', 'checked': True}, {'value': 'I', 'checked': False}, {'value': '8', 'checked': True}]	USR_PLAYING	2020-02-28 11:10:51.023758+00:00	
+9c93e70c-08b0-4fed-b076-f8d41eb93022	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	OUT_OF_TIME	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-02-28 11:10:51.932050+00:00	
+7897a72a-0ffe-47e7-9fa3-7b1c31522e44	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	I think turning 8 or I is the same think...	USR_PLAYING	2020-02-28 11:11:19.776920+00:00	
+76d6bdd3-0b99-488c-acbb-460393c90cd7	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	Because I is vowel and 8 is even number	USR_PLAYING	2020-02-28 11:11:44.335726+00:00	
+0ce63c19-01dc-4eca-b06d-67b76aac641a	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	but the rule only says vowels have to have an even number, not that even numbers have to have vowels	USR_PLAYING	2020-02-28 11:11:48.925778+00:00	
+5c94354e-ef77-46b7-9d5e-0a0d79605e15	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	so the 8 could have a letter F on the other side and that doesn't disprove the rule	USR_PLAYING	2020-02-28 11:12:07.510086+00:00	
+1b576de3-ab09-4d17-aa47-0da3ca25d38d	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	You smart ass... ahah	USR_PLAYING	2020-02-28 11:12:12.639516+00:00	
+be56d8bc-1855-402c-bada-a038054171f0	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	yes u are right	USR_PLAYING	2020-02-28 11:12:21.743671+00:00	
+d972d28b-0bc1-400a-beba-af58e6387c12	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	So lets go for 7 and I	USR_PLAYING	2020-02-28 11:12:46.152447+00:00	
+6e656ceb-09c8-4e8e-9f1f-54e8dbf84704	Bat	02016107ffa94c368ebe44ff8ba4328f	WASON_GAME	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': True}, {'value': 'I', 'checked': True}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-02-28 11:12:50.139909+00:00	
+8ad79ecf-f3e0-47f2-b1ed-67933fa5d5de	Bat	02016107ffa94c368ebe44ff8ba4328f	WASON_GAME	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-02-28 11:12:50.901423+00:00	
+714372b3-4d80-4dd7-a630-b6cd9dfd018c	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	ahaha thanks 	USR_PLAYING	2020-02-28 11:12:51.222659+00:00	
+432c46f0-bcc2-4a1d-9aec-775ee67e2ef0	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	okie dokie	USR_PLAYING	2020-02-28 11:12:53.366345+00:00	
+b29796ee-d974-4f23-9404-7caabc44503b	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	yes I think so	USR_PLAYING	2020-02-28 11:13:02.008168+00:00	
+d1e78e29-04de-4968-9ad2-412051f8799a	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	Yes	USR_PLAYING	2020-02-28 11:13:04.776357+00:00	
+dfa54a3e-aee3-4036-b7b1-39ec12bc7501	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	can we submit it?	USR_PLAYING	2020-02-28 11:13:21.822185+00:00	
+767887f9-b247-40d9-96a1-cc4bc7149480	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	CHAT_MESSAGE	FINAL ANSWER 7 and I	USR_PLAYING	2020-02-28 11:13:33.569528+00:00	
+68206fdf-e4dc-4638-81a6-43c5383c5691	Bat	02016107ffa94c368ebe44ff8ba4328f	CHAT_MESSAGE	FINAL ANSWER 7 and I	USR_PLAYING	2020-02-28 11:13:53.838582+00:00	
+b5299768-1500-4f53-bccb-0f5bcaa2a4f8	Bat	02016107ffa94c368ebe44ff8ba4328f	WASON_SUBMIT	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-02-28 11:14:00.259959+00:00	
+71dab82f-332d-452e-abf5-93099c4b9068	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	WASON_SUBMIT	[{'value': '7', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'I', 'checked': True}, {'value': '8', 'checked': False}]	USR_PLAYING	2020-02-28 11:14:21.749298+00:00	
+43c7362d-e871-4a02-9301-fa827e5339fc	Llama	16739bcfd32f4c69bc3aac144f2ed6fd	LEAVE_ROOM		USR_PLAYING	2020-02-28 11:17:08.207999+00:00	
+9ecbd516-91bc-4f54-a97a-e5526e00073b	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-28 11:17:08.521729+00:00	
+a740daa7-53c5-4887-bd5d-f50f2276f0f3	Narwhal	444cc5ebb81b45b2a3dc5257c51f0f08	LEAVE_ROOM		USR_PLAYING	2020-02-28 11:17:21.231706+00:00	
+6b93c386-5320-4fc4-a6c0-e40337dc531a	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-28 11:17:21.553394+00:00	
+7aabe388-d108-4059-af7e-43fe35edfb70	Bat	02016107ffa94c368ebe44ff8ba4328f	LEAVE_ROOM		USR_PLAYING	2020-02-28 11:17:32.872805+00:00	
+bcf6a6e2-f748-4da3-b5bd-1d7d6474ea35	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-28 11:17:33.223829+00:00	
+7a1cbc45-590e-4cec-9f20-001b9205c683	Ox	6794ee7ca6ca4aef98a16c779ca930b9	JOIN_ROOM		USR_ONBOARDING	2020-02-28 11:19:29.765931+00:00	
+bfd730a5-558b-4991-8052-d7668a97027b	Ox	6794ee7ca6ca4aef98a16c779ca930b9	LEAVE_ROOM		USR_ONBOARDING	2020-02-28 11:19:35.958572+00:00	
+794187a8-7038-414c-81a4-d157634ab503	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-28 11:19:36.263533+00:00	

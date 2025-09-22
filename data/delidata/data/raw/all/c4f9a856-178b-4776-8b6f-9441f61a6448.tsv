@@ -1,0 +1,107 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+a32999f4-3f8e-4472-8bc9-ae5d6bc396eb	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""6"", ""checked"": false}, {""value"": ""E"", ""checked"": false}, {""value"": ""R"", ""checked"": false}, {""value"": ""1"", ""checked"": false}]"	UKN	2020-05-23 08:42:14.411003+00:00	
+89d214db-167e-4205-95b6-3d06cf5cda4e	Beaver	ba243611a22e40979c3e4e72a5e22889	JOIN_ROOM		USR_ONBOARDING	2020-06-05 08:01:35.223766+00:00	
+f94db2d1-8b6d-43d6-8638-2ec168642be4	Tiger	b9dbe658ecda4f2a96e9f51890973842	JOIN_ROOM		USR_ONBOARDING	2020-06-05 08:01:45.166976+00:00	
+d01f3885-4525-4ece-ac81-5d953d30c50a	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-06-05 08:01:45.386962+00:00	
+695302a1-cba5-4341-86b8-da18a89eca7b	Leopard	e2338479a9b347b5b9cf3282104019ad	JOIN_ROOM		USR_ONBOARDING	2020-06-05 08:01:50.545652+00:00	
+d7bd1a68-a3c5-4b99-8210-afcdcf6f2b21	Kiwi	124c97a7edcf49679a5a175196b0a6fb	JOIN_ROOM		USR_ONBOARDING	2020-06-05 08:01:57.508938+00:00	
+02e889e1-9697-4560-9ff4-83b0356b9018	Beaver	ba243611a22e40979c3e4e72a5e22889	ROUTING_TIMER_ELAPSED	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': False}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:02:45.593933+00:00	
+23f34639-951a-4e2f-8cf5-e82847739b04	Kiwi	124c97a7edcf49679a5a175196b0a6fb	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': False}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:04:50.920582+00:00	
+f1660968-afcb-440a-b28c-23f7ee2740f4	Kiwi	124c97a7edcf49679a5a175196b0a6fb	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:04:51.702647+00:00	
+26932832-fb42-4b1c-b3ab-6458c41427c6	Kiwi	124c97a7edcf49679a5a175196b0a6fb	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:04:52.520117+00:00	
+749a0a6c-7224-40a2-82cd-48e3b5b19aeb	Beaver	ba243611a22e40979c3e4e72a5e22889	LEAVE_ROOM		USR_ONBOARDING	2020-06-05 08:04:52.708197+00:00	
+c1f2c3af-4fee-421a-b363-1d3c91cf55dc	Kiwi	124c97a7edcf49679a5a175196b0a6fb	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': True}]	USR_ONBOARDING	2020-06-05 08:04:53.501785+00:00	
+ce87a519-544a-4cf8-abb5-1104da5b3294	Leopard	e2338479a9b347b5b9cf3282104019ad	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:04:54.200931+00:00	
+170b4ff6-594c-4c21-a94d-41fa5a8be8e0	Leopard	e2338479a9b347b5b9cf3282104019ad	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:04:55.975881+00:00	
+996fe750-d5e8-4a5e-b5b2-8bb3655735f1	Kiwi	124c97a7edcf49679a5a175196b0a6fb	WASON_SUBMIT	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': True}]	USR_ONBOARDING	2020-06-05 08:05:09.144166+00:00	
+44d7eb3c-8b59-4634-9741-2bd36993bbde	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': False}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:05:14.070752+00:00	
+234b5310-e5df-4b5f-a89c-bd07874ebc09	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:05:14.681259+00:00	
+15009e4d-9aaf-468b-bd7a-6b9dfd6548a4	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:05:15.574268+00:00	
+09dd6140-b9be-404b-94c4-1db9c9a473eb	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': True}]	USR_ONBOARDING	2020-06-05 08:05:16.657599+00:00	
+b6fe2e4b-5671-4d52-bb5b-3c12f22579d2	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': True}]	USR_ONBOARDING	2020-06-05 08:05:37.946159+00:00	
+2dcf23fe-8690-412e-8572-8895740e0ed9	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': True}]	USR_ONBOARDING	2020-06-05 08:05:38.288489+00:00	
+65d8699f-5fe6-4e44-a445-23ac7fb1ef94	Leopard	e2338479a9b347b5b9cf3282104019ad	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_ONBOARDING	2020-06-05 08:05:39.387425+00:00	
+1eacca25-186c-4697-88c1-6899ca2bf209	Leopard	e2338479a9b347b5b9cf3282104019ad	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:05:53.656101+00:00	
+3adc8c0d-33a9-442c-9ae4-12ec0ce86db3	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:06:43.681262+00:00	
+b77625e5-afee-4db6-bc32-8d8e6f334314	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:06:58.065944+00:00	
+17bf0bfe-6de6-490b-b246-4fcfed673b46	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:07:00.266423+00:00	
+740ee271-3a25-4980-a6db-bb016219642a	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_SUBMIT	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': False}]	USR_ONBOARDING	2020-06-05 08:07:08.192258+00:00	
+b019ff1b-38c5-4ec0-ab45-bf3ea15c5730	Leopard	e2338479a9b347b5b9cf3282104019ad	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_ONBOARDING	2020-06-05 08:07:12.542774+00:00	
+6f331c3a-437f-4253-abed-3d568f91a558	Leopard	e2338479a9b347b5b9cf3282104019ad	WASON_SUBMIT	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_ONBOARDING	2020-06-05 08:08:04.155602+00:00	
+f3a8db5d-a331-4b8b-922f-3e5fb665384d	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-06-05 08:08:04.522390+00:00	
+977710aa-b295-4951-a992-e2595b03d92c	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	hello	USR_PLAYING	2020-06-05 08:08:14.138024+00:00	
+c02d025e-a607-45ab-9134-ec8b2e5dd374	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	is the chat working?	USR_PLAYING	2020-06-05 08:08:29.776928+00:00	
+372dda23-be95-42ff-9ddb-3689a6ffab90	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	yes	USR_PLAYING	2020-06-05 08:08:33.760282+00:00	
+59de13ef-f6cb-47d6-9e3b-14a6961094ce	Leopard	e2338479a9b347b5b9cf3282104019ad	CHAT_MESSAGE	seems its working	USR_PLAYING	2020-06-05 08:08:40.711704+00:00	
+2c474432-0c06-4851-b0e9-80fc7e0ebfd2	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	So first things first 	USR_PLAYING	2020-06-05 08:08:43.048839+00:00	
+25839cfd-3945-45be-ab13-3ab1f3de54c3	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	dose every one knows whats a vowel and what are even numbers? :D	USR_PLAYING	2020-06-05 08:09:02.032701+00:00	
+1d2d7f1e-b4a2-4b96-9070-965d48ebf001	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	yes, and i think i marked too many	USR_PLAYING	2020-06-05 08:09:24.834159+00:00	
+39a3623d-6817-47fe-9515-d9873c9c7018	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	Well I see that we see one vowel.	USR_PLAYING	2020-06-05 08:09:51.601554+00:00	
+57732563-38c8-4d90-adbc-93af103983d7	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	`E`	USR_PLAYING	2020-06-05 08:09:58.241814+00:00	
+7d563f38-3173-4444-bacc-2208f1a0ae0a	Leopard	e2338479a9b347b5b9cf3282104019ad	CHAT_MESSAGE	i think that vowels are a,e,i,o,u, even numbers are those devided by two without reminder. 	USR_PLAYING	2020-06-05 08:10:09.825943+00:00	
+1afdc1d0-0eb8-4ab0-837a-d105d75ecb6f	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	So that one we definetly need to check	USR_PLAYING	2020-06-05 08:10:16.202499+00:00	
+66d9d515-07c5-43aa-854b-de8333946590	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	:)	USR_PLAYING	2020-06-05 08:10:16.919833+00:00	
+0375113c-23fd-412b-80e5-542aaa1c57ef	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	yes	USR_PLAYING	2020-06-05 08:10:35.136129+00:00	
+5c2b1edc-4964-4a43-bb64-88fbb7fc854e	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	IMO we do not need to turn 1.	USR_PLAYING	2020-06-05 08:10:40.211387+00:00	
+be3dd1a4-392c-4408-a988-7e960a913325	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	as we do not care whats on the other side of Odd numbers	USR_PLAYING	2020-06-05 08:10:55.696313+00:00	
+32483321-fa89-4098-88db-5ab8c5d01ec5	Leopard	e2338479a9b347b5b9cf3282104019ad	CHAT_MESSAGE	why? if 1 will have vowel on the other side it will break the rule, as 1 is not considered an even number	USR_PLAYING	2020-06-05 08:11:11.138503+00:00	
+41abc0a1-b45c-44e4-9108-ccfa84c9e03b	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	rulw does not say anything about odd 	USR_PLAYING	2020-06-05 08:11:15.928110+00:00	
+c1894252-ea25-4bf4-bebf-9e17277cf15d	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	so we dont need to turn 1	USR_PLAYING	2020-06-05 08:11:34.898186+00:00	
+177f0ab4-fc14-4b14-b78c-71bd0929ca1b	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	we dont care about whats on the other side	USR_PLAYING	2020-06-05 08:11:36.769922+00:00	
+3b6b2f48-ec83-4a62-9f11-949868a29768	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	of an odd number	USR_PLAYING	2020-06-05 08:11:41.640907+00:00	
+3f540334-2d8c-4f5b-9dd6-776d7dc2d749	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	it says that all vowels has a even number 	USR_PLAYING	2020-06-05 08:11:53.251838+00:00	
+636e86c4-d82e-4b32-b976-028141335036	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	but a odd number can have whatever	USR_PLAYING	2020-06-05 08:11:58.720984+00:00	
+804025a9-ad4d-466c-bd76-d61a5134927a	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	But we need to check `6` as it is direct check	USR_PLAYING	2020-06-05 08:12:30.234293+00:00	
+89307d33-17a9-44ce-97c4-b0453d2fca39	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	and we need to turn `R` as it might brake the rule	USR_PLAYING	2020-06-05 08:12:42.793398+00:00	
+cb4b22b0-9236-4b80-aac1-e96c48ee5d11	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	all card with vowels - we need to check if the is a vowel on car '1'	USR_PLAYING	2020-06-05 08:12:56.649623+00:00	
+944773e4-4222-449b-9637-8e63c4b76867	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	card 1	USR_PLAYING	2020-06-05 08:13:08.760242+00:00	
+9b1352e3-9477-41b6-b683-4991749b7e6f	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	we dont care about 6, it could be any letter	USR_PLAYING	2020-06-05 08:13:34.680438+00:00	
+8053dd77-e998-4775-8520-a337c0bcb33a	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	we dont care about r	USR_PLAYING	2020-06-05 08:14:02.414620+00:00	
+12965054-b247-417d-865c-28e5e7be3e93	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	Oh damn. I think Kiwi is right. I understood it the other way around	USR_PLAYING	2020-06-05 08:14:28.089828+00:00	
+5231fdfe-8ec1-4a1a-bf7b-44bfd081a2b0	Tiger	b9dbe658ecda4f2a96e9f51890973842	OUT_OF_TIME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': False}]	USR_PLAYING	2020-06-05 08:15:04.741797+00:00	
+734b6eed-65c1-4fd9-b3b3-31db8b6f5ba8	Kiwi	124c97a7edcf49679a5a175196b0a6fb	OUT_OF_TIME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': True}]	USR_PLAYING	2020-06-05 08:15:04.743128+00:00	
+820c6f6e-e7c3-4de4-b4bf-ff903ccd2b8f	Leopard	e2338479a9b347b5b9cf3282104019ad	OUT_OF_TIME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_PLAYING	2020-06-05 08:15:05.731767+00:00	
+b1f454bc-5a65-4c27-9681-11e023ce8162	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	we need to check E if there is a even number, we dont care about R	USR_PLAYING	2020-06-05 08:15:08.906287+00:00	
+3010c3e7-77b0-43ed-9152-d1ed93965802	Kiwi	124c97a7edcf49679a5a175196b0a6fb	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_PLAYING	2020-06-05 08:15:27.851717+00:00	
+c9f9ed62-a49c-4f69-847a-a201b72cc84c	Kiwi	124c97a7edcf49679a5a175196b0a6fb	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_PLAYING	2020-06-05 08:15:29.389526+00:00	
+29e0e797-b124-429f-bd14-2861973d9c3d	Kiwi	124c97a7edcf49679a5a175196b0a6fb	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': False}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_PLAYING	2020-06-05 08:15:36.652676+00:00	
+a4744c9e-bd92-4756-b75c-eb39633a65e4	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	So we need to check `6`, `E` and `1`	USR_PLAYING	2020-06-05 08:15:42.449310+00:00	
+824b150c-4b55-4b65-81d3-e978ed559740	Leopard	e2338479a9b347b5b9cf3282104019ad	CHAT_MESSAGE	I understood it as that there is no 'primary' side of the card. So if one side is 1 and another is A it will break the rule. Because it reads both directions 1->A, A->1	USR_PLAYING	2020-06-05 08:15:43.482024+00:00	
+adf66a78-4eb2-4d72-bd03-99fd60fd6596	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	6 is ok	USR_PLAYING	2020-06-05 08:15:58.234967+00:00	
+3a607d83-cf24-4c9c-bc57-482dd04ec9b4	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	dont ceck it	USR_PLAYING	2020-06-05 08:16:02.088025+00:00	
+e1207a4d-bb10-4283-a927-a7f4ff27050c	Kiwi	124c97a7edcf49679a5a175196b0a6fb	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_PLAYING	2020-06-05 08:16:05.688964+00:00	
+ab9f36cd-3ad0-4776-8ea1-bb60123c9e6c	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': False}]	USR_PLAYING	2020-06-05 08:16:17.362507+00:00	
+3df69899-4466-483b-9c5e-83a62ca0c888	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': True}, {'value': '1', 'checked': False}]	USR_PLAYING	2020-06-05 08:16:18.319247+00:00	
+8519ff41-f19c-47e7-b04e-6e805e4c4e7a	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	i am ready to submit	USR_PLAYING	2020-06-05 08:17:27.948066+00:00	
+9fe0a348-d2cd-42a1-bafe-089d7db3861b	Leopard	e2338479a9b347b5b9cf3282104019ad	CHAT_MESSAGE	I'm also thinking that it's 6,e,1. Could there be a trick somewhere that we missed	USR_PLAYING	2020-06-05 08:17:32.996771+00:00	
+89e88896-b67e-436e-a985-3f2d084d647a	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	e and 1	USR_PLAYING	2020-06-05 08:17:45.008419+00:00	
+e048f43c-d573-4c06-8177-8635209aeccd	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': True}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_PLAYING	2020-06-05 08:18:02.800124+00:00	
+83ada910-6db1-4a38-8054-9efdb222a53e	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_PLAYING	2020-06-05 08:18:03.907716+00:00	
+e709a648-98ee-4b80-a561-8a44d03a3cd0	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': False}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_PLAYING	2020-06-05 08:18:04.835539+00:00	
+97efd8ee-5e1e-44b6-abc7-3926b3bc4a70	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	6- could have any thing, it will not break the rule	USR_PLAYING	2020-06-05 08:18:08.039658+00:00	
+f68da300-3fa0-4ee4-8823-4121a8c81291	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': False}]	USR_PLAYING	2020-06-05 08:18:12.018068+00:00	
+2964f123-cfcc-4c24-a813-d34c65b48c00	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_PLAYING	2020-06-05 08:18:13.770834+00:00	
+d8c3c136-689d-4351-8d5a-d72b62c66c9e	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	i think	USR_PLAYING	2020-06-05 08:18:14.681146+00:00	
+83451f46-13bb-4602-9e11-df0d39419e26	Leopard	e2338479a9b347b5b9cf3282104019ad	CHAT_MESSAGE	ahh, damn, your right!	USR_PLAYING	2020-06-05 08:18:25.692602+00:00	
+58c23a35-3458-410b-b0f3-f842f79618cd	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	Ye.	USR_PLAYING	2020-06-05 08:18:36.902351+00:00	
+07791b20-d448-46b3-9e86-a8c2db250fb9	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	Lets go with E and 1	USR_PLAYING	2020-06-05 08:18:42.226380+00:00	
+7e61b73c-9373-4300-9d78-160162ca2a14	Leopard	e2338479a9b347b5b9cf3282104019ad	WASON_GAME	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_PLAYING	2020-06-05 08:18:46.433233+00:00	
+5f854e6c-1b7c-42d6-97fa-3ef1433dd7fa	Kiwi	124c97a7edcf49679a5a175196b0a6fb	CHAT_MESSAGE	yes	USR_PLAYING	2020-06-05 08:18:51.938554+00:00	
+8f249807-1059-4faa-b40f-14b0f6ba4230	Tiger	b9dbe658ecda4f2a96e9f51890973842	WASON_SUBMIT	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_PLAYING	2020-06-05 08:18:56.680253+00:00	
+c72932ac-e624-4025-951f-a427cfa37e22	Kiwi	124c97a7edcf49679a5a175196b0a6fb	WASON_SUBMIT	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_PLAYING	2020-06-05 08:18:57.677289+00:00	
+c4b737f4-630a-4a50-9e2a-daeac3785982	Leopard	e2338479a9b347b5b9cf3282104019ad	CHAT_MESSAGE	agree	USR_PLAYING	2020-06-05 08:18:58.445607+00:00	
+f96d7dd8-9c6c-4f4b-848f-e2c6fd18e69e	Tiger	b9dbe658ecda4f2a96e9f51890973842	CHAT_MESSAGE	I submited game	USR_PLAYING	2020-06-05 08:19:01.722254+00:00	
+d38a6fa7-a6eb-4e59-ac3a-53ca86968028	Leopard	e2338479a9b347b5b9cf3282104019ad	WASON_SUBMIT	[{'value': '6', 'checked': False}, {'value': 'E', 'checked': True}, {'value': 'R', 'checked': False}, {'value': '1', 'checked': True}]	USR_PLAYING	2020-06-05 08:19:04.762023+00:00	
+dfa1cab2-8571-4270-bce8-2cad686b9fae	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-05 08:19:05.209779+00:00	
+913dfea1-153f-4750-adaf-12ad595729e1	Kiwi	124c97a7edcf49679a5a175196b0a6fb	LEAVE_ROOM		USR_PLAYING	2020-06-05 08:19:53.030284+00:00	
+a629007a-3a0d-4026-bbe4-834103d4bf84	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-05 08:19:53.344932+00:00	
+4ac9f158-7e5f-4afa-b969-d645aeda9139	Tiger	b9dbe658ecda4f2a96e9f51890973842	LEAVE_ROOM		USR_PLAYING	2020-06-05 08:20:01.115430+00:00	
+4bc9b8be-3506-4ddb-bc57-0bf3dcc125c6	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-05 08:20:01.422087+00:00	
+1a20dc4b-db00-4a4a-9a54-cc081f4d0c31	Leopard	e2338479a9b347b5b9cf3282104019ad	LEAVE_ROOM		USR_PLAYING	2020-06-05 08:20:04.370649+00:00	
+52045be9-b468-4031-89b7-16ea667c9ee3	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-05 08:20:04.677924+00:00	
+037fe5da-996d-42f0-adc8-d53a0b3268ce	Chipmunk	66f5adf478004a328dcf3b8dfbd6b504	JOIN_ROOM		USR_ONBOARDING	2020-06-05 08:23:12.117489+00:00	
+44296709-12ce-4539-b4de-4ce83a6f74cd	Leopard	37e4310ae26843ed94ad4526f549ac2d	JOIN_ROOM		USR_ONBOARDING	2020-06-05 08:28:17.790200+00:00	
+85df6092-045a-486b-a57e-5ff96c33391c	Giraffe	80d1ba83468945a6841ee3e225337cc0	JOIN_ROOM		USR_ONBOARDING	2020-06-05 08:28:19.153915+00:00	
+3009cdf9-8399-4ffe-b1d7-ecebf868ac15	Lion	b0ebffa7ef644778be7f4814585c1091	JOIN_ROOM		USR_ONBOARDING	2020-06-05 08:28:26.584713+00:00	
+2ac1cef4-e5dd-46ab-838e-d2e31093c3e5	Dolphin	fde851a475f644119d46c53d4cb82af4	JOIN_ROOM		USR_ONBOARDING	2020-06-06 20:28:51.570701+00:00	
+6761887c-f5f0-4d65-b78e-108362250abf	Cat	e2aab3a20e804ffe8ac83ad40c60f85e	JOIN_ROOM		USR_ONBOARDING	2020-06-07 21:32:12.053049+00:00	

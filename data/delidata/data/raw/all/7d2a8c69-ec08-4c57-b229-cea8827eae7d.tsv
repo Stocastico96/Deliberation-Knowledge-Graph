@@ -1,0 +1,73 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+e0ab3fde-283d-4637-8447-053888c8b375	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""5"", ""checked"": false}, {""value"": ""2"", ""checked"": false}, {""value"": ""C"", ""checked"": false}, {""value"": ""A"", ""checked"": false}]"	UKN	2020-02-28 20:56:14.785983+00:00	
+297eed3a-5ff7-421b-811f-0e756196e877	Ox	12dc88cc9ea64ddfa330531e6adffd4e	JOIN_ROOM		USR_ONBOARDING	2020-02-28 20:57:10.433777+00:00	
+42853ffe-338d-4389-a09e-c79e79edfb48	Duck	78c0841037a34391bc3ed6ef3095d3b6	JOIN_ROOM		USR_ONBOARDING	2020-02-28 21:11:31.235195+00:00	
+071b2d92-53ed-4537-9e1a-0c3dd3ef7ada	Cat	186bdd42dde1462ab221421c28b4634d	JOIN_ROOM		USR_ONBOARDING	2020-02-28 21:11:32.429652+00:00	
+9df7ac25-06e0-4ac7-971d-d16a6ccbebf0	SYSTEM	-1	ROUTING_TIMER_STARTED	2020-02-28T21:12:32.660435	UKN	2020-02-28 21:11:32.660472+00:00	
+8fa9edc8-9872-44c3-a5d9-02b29f32096e	Zebra	a551f2764a44479eac21079911cd5436	JOIN_ROOM		USR_ONBOARDING	2020-02-28 21:11:32.974580+00:00	
+bdb57fe1-b923-4c30-afc4-8bca2074b423	Moderating Owl	c6f9f8db2fa2436e828ee9aee2f3b2dc	JOIN_ROOM		USR_MODERATING	2020-02-28 21:11:58.714947+00:00	
+12606b2d-b434-48bb-a1cb-03c3d58e5a51	Zebra	a551f2764a44479eac21079911cd5436	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-02-28 21:13:27.724552+00:00	
+6be5fd8d-67f1-4c1f-8f90-0421136b0b44	AUTO_KICKED	12dc88cc9ea64ddfa330531e6adffd4e	LEAVE_ROOM		AUTO_KICKED	2020-02-28 21:13:27.864721+00:00	
+bc9b25dc-139c-4bc5-a4ce-f9456393918f	Zebra	a551f2764a44479eac21079911cd5436	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-02-28 21:13:28.521171+00:00	
+80006f91-2bb7-4f12-ad75-a933b20b43f2	Zebra	a551f2764a44479eac21079911cd5436	WASON_SUBMIT	[{'value': '5', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-02-28 21:13:29.903705+00:00	
+78ea9813-1037-4932-8f84-a153c4e0a064	Duck	78c0841037a34391bc3ed6ef3095d3b6	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-02-28 21:13:46.677863+00:00	
+2c49bb8d-02af-447a-b00a-ede794cef166	Duck	78c0841037a34391bc3ed6ef3095d3b6	WASON_GAME	[{'value': '5', 'checked': True}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-02-28 21:13:51.895794+00:00	
+b75d7d12-af42-47bc-873d-583653fe9ead	Duck	78c0841037a34391bc3ed6ef3095d3b6	WASON_GAME	[{'value': '5', 'checked': True}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': True}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-02-28 21:13:52.510360+00:00	
+489ca8e5-c641-4710-83ae-0e48f0b15f1c	Duck	78c0841037a34391bc3ed6ef3095d3b6	WASON_GAME	[{'value': '5', 'checked': True}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': True}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-02-28 21:13:54.571458+00:00	
+03f0c04d-d793-480e-bfb0-dbb8d832722d	Duck	78c0841037a34391bc3ed6ef3095d3b6	WASON_SUBMIT	[{'value': '5', 'checked': True}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': True}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-02-28 21:13:55.223971+00:00	
+1669b995-64b1-426e-9830-5972a5426493	Cat	186bdd42dde1462ab221421c28b4634d	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-02-28 21:14:53.203481+00:00	
+3ff25be1-dbd7-43a1-a39f-7e497d073655	Cat	186bdd42dde1462ab221421c28b4634d	WASON_SUBMIT	[{'value': '5', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-02-28 21:15:00.396089+00:00	
+88b9af89-10f3-406b-ab2d-b778a30959d6	SYSTEM	-1	FINISHED_ONBOARDING	2020-02-28T21:22:00.744549	UKN	2020-02-28 21:15:00.744582+00:00	
+60645426-daa6-4c1a-8324-a9052c2438f4	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	Hi 	USR_PLAYING	2020-02-28 21:15:29.151843+00:00	
+83a6dd68-3bd6-4be3-a7b0-2db865902078	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	Hi Zebra	USR_PLAYING	2020-02-28 21:15:46.801000+00:00	
+eb2a7650-c980-4cb9-9ad3-bc77385c92cd	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	What did you press 	USR_PLAYING	2020-02-28 21:15:48.296998+00:00	
+8244265f-f30c-4083-9122-5fcbd91995ca	Cat	186bdd42dde1462ab221421c28b4634d	CHAT_MESSAGE	Hi	USR_PLAYING	2020-02-28 21:15:50.798592+00:00	
+cd2251f9-9b12-474a-84e6-e585fa5f3b3f	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	Cat looks foxy	USR_PLAYING	2020-02-28 21:16:04.892577+00:00	
+3be4223f-e43b-47f6-983f-f080e4f0bfa0	Cat	186bdd42dde1462ab221421c28b4634d	CHAT_MESSAGE	I pressed 2	USR_PLAYING	2020-02-28 21:16:38.964064+00:00	
+7adcca31-7612-4bde-bbfc-0381a7aa3e58	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	I clicked all of the cards	USR_PLAYING	2020-02-28 21:16:49.707723+00:00	
+ccc088bf-cf72-44a3-8048-8bc55df3b95b	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	I did 2 and A	USR_PLAYING	2020-02-28 21:16:51.496902+00:00	
+01bca59a-963d-4a41-a2f5-ed3339d97553	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	Why 2 & a	USR_PLAYING	2020-02-28 21:17:11.418303+00:00	
+501f2a73-2d10-48f3-82d3-b0737835e1be	Cat	186bdd42dde1462ab221421c28b4634d	CHAT_MESSAGE	Why did you press A	USR_PLAYING	2020-02-28 21:17:12.060900+00:00	
+40747df7-67ce-4a1f-89cd-feb71fc16ea0	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	Because it’s a vowel so if it had an even number it would apply to the rule 	USR_PLAYING	2020-02-28 21:17:38.687490+00:00	
+48bac91e-88ad-43a3-b111-ba7e4536042a	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	If it had 	USR_PLAYING	2020-02-28 21:17:45.485136+00:00	
+ddf09eaa-c59c-40cf-ac20-4678ac6fdbfd	Cat	186bdd42dde1462ab221421c28b4634d	CHAT_MESSAGE	Duck , why did you press them all?	USR_PLAYING	2020-02-28 21:18:34.136475+00:00	
+73c902d5-261c-4180-a29f-3ccb53c0f12e	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	The 5 and the C don’t meet either criteria? 	USR_PLAYING	2020-02-28 21:18:36.493875+00:00	
+06f4057a-e640-4899-a5a7-988c6bd7787a	Cat	186bdd42dde1462ab221421c28b4634d	CHAT_MESSAGE	I think 2 and 5 thinking about it	USR_PLAYING	2020-02-28 21:19:34.759713+00:00	
+1fb3d7fc-d9d1-483b-b486-7c9ec6b3a1fe	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	It’s A 	USR_PLAYING	2020-02-28 21:20:02.221393+00:00	
+30ca20eb-ac89-4e87-bf59-d0e5f9a70093	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	That’s the only vowel 	USR_PLAYING	2020-02-28 21:20:15.697851+00:00	
+e280897b-dab2-421b-bafb-40eaeb5585e6	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	The rule was vowel = 5 but I’d want to check that against the odds and non vowels to check the rule. 	USR_PLAYING	2020-02-28 21:20:16.926599+00:00	
+2527f26f-a0e1-4477-a583-12b6b925d023	Cat	186bdd42dde1462ab221421c28b4634d	CHAT_MESSAGE	Sorry I meant 2 and a!	USR_PLAYING	2020-02-28 21:20:24.155529+00:00	
+00d36707-890f-42c7-baee-51cd882cc6bb	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	I think it’s just A 	USR_PLAYING	2020-02-28 21:20:36.831324+00:00	
+e8c4681f-5177-4eca-be22-9fb0aebd45c0	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	Sorry that should be vowel = even	USR_PLAYING	2020-02-28 21:21:07.721066+00:00	
+a0eabb47-d382-4d5b-9064-0afb4fc86368	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	So a and c? 	USR_PLAYING	2020-02-28 21:21:33.523960+00:00	
+ab7615f3-2c99-4ca8-b428-c25c08d663d9	AUTO_KICKED	c6f9f8db2fa2436e828ee9aee2f3b2dc	LEAVE_ROOM		AUTO_KICKED	2020-02-28 21:21:33.668581+00:00	
+46afd2f9-22eb-4641-808a-4f4246abeb91	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	How would we disprove the rule though?	USR_PLAYING	2020-02-28 21:21:44.437438+00:00	
+adc22aec-0740-4a8e-8918-fabd60f227e7	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	If the C was an even number 	USR_PLAYING	2020-02-28 21:21:56.181059+00:00	
+dff6e8b5-631c-4cff-9a61-b727168a8004	Zebra	a551f2764a44479eac21079911cd5436	OUT_OF_TIME	[{'value': '5', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-02-28 21:22:01.189517+00:00	
+2fd50858-2bab-455e-bf85-a9e09fc982f0	Duck	78c0841037a34391bc3ed6ef3095d3b6	OUT_OF_TIME	[{'value': '5', 'checked': True}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-02-28 21:22:01.520005+00:00	
+84c58d12-3073-4a5f-9cb4-787c074dea41	Cat	186bdd42dde1462ab221421c28b4634d	OUT_OF_TIME	[{'value': '5', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': False}]	USR_PLAYING	2020-02-28 21:22:01.582641+00:00	
+1159afaa-f772-4502-a3fd-0c7c60e76d0c	Moderating Owl	4744608392a24e84a6e343dd1740dc2f	JOIN_ROOM		USR_MODERATING	2020-02-28 21:22:03.393726+00:00	
+5382d519-c4e3-461d-8847-384ff7514907	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	And A was odd 	USR_PLAYING	2020-02-28 21:22:08.779672+00:00	
+fa3b2e27-1bcc-4011-a4ef-fc68aff47081	Cat	186bdd42dde1462ab221421c28b4634d	CHAT_MESSAGE	Turn 2 and see what happens 	USR_PLAYING	2020-02-28 21:22:11.177067+00:00	
+2467d063-1757-48b5-882f-d622fb74c344	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	it Would be the letters?	USR_PLAYING	2020-02-28 21:22:58.306792+00:00	
+8e0e989a-8d53-4312-bc1b-c2c41f854bf1	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	A = vowel so should be even	USR_PLAYING	2020-02-28 21:23:11.370200+00:00	
+b3944201-d37c-42af-a998-3e21258fff47	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	Turn C and A if A is odd or C is even the rule is false. If A is even and C is odd the rule if true	USR_PLAYING	2020-02-28 21:23:18.094351+00:00	
+004e7f53-3451-4766-bf0b-92f2a090ce22	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	C is constenant so should = odd which should confirm	USR_PLAYING	2020-02-28 21:24:01.266458+00:00	
+d291220b-6a4d-4db0-a0d3-6db9dc9d9f24	Cat	186bdd42dde1462ab221421c28b4634d	CHAT_MESSAGE	Would you not turn 5 to prove its false	USR_PLAYING	2020-02-28 21:24:30.065101+00:00	
+f70137b7-a66f-4198-ba0a-58e805725139	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	So 5 and A then 	USR_PLAYING	2020-02-28 21:24:40.836770+00:00	
+f1ea5841-c841-4524-af76-06f6cd876726	Cat	186bdd42dde1462ab221421c28b4634d	CHAT_MESSAGE	Ok let’s go with it	USR_PLAYING	2020-02-28 21:24:55.853928+00:00	
+b7c224ae-af07-450c-b93a-37c5fcd125c1	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	Yes 	USR_PLAYING	2020-02-28 21:24:59.498939+00:00	
+07e1c9ef-74e9-4950-98c3-28688e73aef1	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	A should be even and 5 must be odd that’s how we confirm the rule 	USR_PLAYING	2020-02-28 21:25:02.885537+00:00	
+ad457f96-031c-4a57-ba02-24709ec4a16c	Cat	186bdd42dde1462ab221421c28b4634d	CHAT_MESSAGE	Ok	USR_PLAYING	2020-02-28 21:25:15.536582+00:00	
+9818f8ad-b1a4-42ba-a0d8-9c2940a7551f	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	Agree?	USR_PLAYING	2020-02-28 21:25:17.341535+00:00	
+2f9e82bf-1b26-4aad-9942-8a301a5fb771	Zebra	a551f2764a44479eac21079911cd5436	CHAT_MESSAGE	Yeah	USR_PLAYING	2020-02-28 21:25:22.873522+00:00	
+ca9739c4-3b99-4f2b-a493-7349ef87c5cc	Zebra	a551f2764a44479eac21079911cd5436	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '2', 'checked': False}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-02-28 21:25:27.232875+00:00	
+0991654b-3680-4eb5-8d52-bb07e1242fb7	Zebra	a551f2764a44479eac21079911cd5436	WASON_GAME	[{'value': '5', 'checked': True}, {'value': '2', 'checked': False}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-02-28 21:25:28.611781+00:00	
+de485b48-9c58-4536-816b-416ee0e68b40	Duck	78c0841037a34391bc3ed6ef3095d3b6	CHAT_MESSAGE	Thats our answer them	USR_PLAYING	2020-02-28 21:25:35.602478+00:00	
+827be4c5-2ed1-433f-ae38-b6b0f22f87b1	Zebra	a551f2764a44479eac21079911cd5436	WASON_SUBMIT	[{'value': '5', 'checked': True}, {'value': '2', 'checked': False}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-02-28 21:25:37.003588+00:00	
+4f315c8a-bacb-4843-98cd-d3a201792236	Cat	186bdd42dde1462ab221421c28b4634d	WASON_GAME	[{'value': '5', 'checked': True}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': False}]	USR_PLAYING	2020-02-28 21:26:27.328617+00:00	
+648b16af-1ea5-4b0a-afe9-b3779945ce0d	Cat	186bdd42dde1462ab221421c28b4634d	WASON_GAME	[{'value': '5', 'checked': True}, {'value': '2', 'checked': True}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-02-28 21:26:31.086988+00:00	
+1dae0835-8f39-4990-9fb6-e064f4e6292b	Cat	186bdd42dde1462ab221421c28b4634d	WASON_GAME	[{'value': '5', 'checked': True}, {'value': '2', 'checked': False}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-02-28 21:26:32.374062+00:00	
+67257040-fb34-403d-ba8f-194aa9ec812e	Cat	186bdd42dde1462ab221421c28b4634d	WASON_SUBMIT	[{'value': '5', 'checked': True}, {'value': '2', 'checked': False}, {'value': 'C', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-02-28 21:26:34.329820+00:00	
+781b8bee-dc11-4106-abdf-0d5739a91dc5	SYSTEM_MODERATOR	-1	MODERATION	GROUP_PHASE_ENDED	USR_MODERATING	2020-02-28 21:29:11.660701+00:00	
+3aeafb5f-b003-46a7-8427-9f81b810ec49	Moderating Owl	4744608392a24e84a6e343dd1740dc2f	LEAVE_ROOM		USR_MODERATING	2020-02-28 21:31:43.422172+00:00	

@@ -1,0 +1,103 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+13787b07-0a73-44bb-8325-835dc5dd319c	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""8"", ""checked"": false}, {""value"": ""5"", ""checked"": false}, {""value"": ""G"", ""checked"": false}, {""value"": ""E"", ""checked"": false}]"	UKN	2019-11-29 17:18:34.485644+00:00	
+9b57fcd1-9276-4992-a5cb-299fd78ccbfa	Narwhal	0137fef23b674ca887f8f145c269d622	JOIN_ROOM		USR_ONBOARDING	2019-12-02 16:33:23.471290+00:00	
+74e7c417-3fa1-424b-963c-9ef9ceb18632	Moderating Owl	d39f20e6a20b470082ab47209a38608e	JOIN_ROOM		USR_MODERATING	2019-12-02 16:44:25.444352+00:00	
+2776d34b-975a-440f-8311-2d61d02da528	Narwhal	0137fef23b674ca887f8f145c269d622	LEAVE_ROOM		UKN	2019-12-02 16:46:36.799117+00:00	
+9a654fe6-4fb1-488f-a31d-38bb6f437554	Duck	9fbc944fc96e4c42b07ec730b963fde9	JOIN_ROOM		USR_ONBOARDING	2019-12-02 16:46:37.278169+00:00	
+8c58eb4e-5168-4a36-9aee-3814f1193572	Duck	9fbc944fc96e4c42b07ec730b963fde9	LEAVE_ROOM		UKN	2019-12-02 16:55:13.784724+00:00	
+703ceb7a-436c-482f-b02a-173b45092ebe	Duck	66b27bf5e3ac46bc821ea6deb8199d8f	JOIN_ROOM		USR_ONBOARDING	2019-12-02 16:55:14.239287+00:00	
+e843b268-0f94-47f5-a877-4e19a936821a	Duck	66b27bf5e3ac46bc821ea6deb8199d8f	LEAVE_ROOM		UKN	2019-12-02 16:55:24.498378+00:00	
+14b68d66-173a-4958-9329-2a1ae4b07d39	Llama	b9787745964047cf9abdb048668a88b4	JOIN_ROOM		USR_ONBOARDING	2019-12-02 16:55:24.668103+00:00	
+4140ff71-68d2-4afc-8fc1-ac52a577f520	Cat	663f21ec2d0e4b5b99222d5227986b59	JOIN_ROOM		USR_ONBOARDING	2019-12-02 16:56:02.418529+00:00	
+17c8e4f5-7432-4154-8d2c-a52b5a8e5f2b	Cat	663f21ec2d0e4b5b99222d5227986b59	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2019-12-02 16:57:01.533159+00:00	
+ad91d2b6-12c0-48d1-843c-c748fdf31b06	Llama	b9787745964047cf9abdb048668a88b4	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2019-12-02 16:57:07.936575+00:00	
+008b0922-4c30-492f-8fbc-09d0dcaad760	Llama	b9787745964047cf9abdb048668a88b4	WASON_SUBMIT	[{'value': '8', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2019-12-02 16:57:08.707832+00:00	
+39a650d0-b9f4-429a-929f-beef935da89c	Cat	663f21ec2d0e4b5b99222d5227986b59	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2019-12-02 16:57:09.519508+00:00	
+aab5b311-adc7-48df-8fce-7de2db3b2a5c	Cat	663f21ec2d0e4b5b99222d5227986b59	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2019-12-02 16:57:14.176420+00:00	
+b3e9ae0e-dbab-415d-a89b-c461f427fb9e	Cat	663f21ec2d0e4b5b99222d5227986b59	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2019-12-02 16:57:16.895447+00:00	
+21716134-7e5a-47b5-9dfd-87e94b9d4006	Cat	663f21ec2d0e4b5b99222d5227986b59	WASON_SUBMIT	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2019-12-02 16:57:17.385919+00:00	
+05af7981-ec9c-47c7-ace5-63af50745451	SYSTEM	-1	FINISHED_ONBOARDING	2019-12-02T17:04:17.541939	UKN	2019-12-02 16:57:17.541957+00:00	
+d4036b9a-3f8e-426d-ad50-b984e0939c00	Bee	446291a1cb9c42bd88bfaefe29cdf35f	JOIN_ROOM		USR_ONBOARDING	2019-12-02 16:57:32.275281+00:00	
+d31be18c-9cd9-4ab9-bdec-211a70bd968c	Llama	b9787745964047cf9abdb048668a88b4	LEAVE_ROOM		UKN	2019-12-02 16:57:32.305696+00:00	
+e913fb6f-dd56-4974-8f3b-a89e52ae34ab	Bee	446291a1cb9c42bd88bfaefe29cdf35f	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2019-12-02 16:57:58.314664+00:00	
+fdbe8d81-50d6-44f5-9ebe-f8af2ab3dab0	Bee	446291a1cb9c42bd88bfaefe29cdf35f	WASON_SUBMIT	[{'value': '8', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2019-12-02 17:00:07.020486+00:00	
+7bf7229c-ea99-4730-b911-3df21d1637f9	Kiwi	efe15414ba2e44eaac5188691961b2fe	JOIN_ROOM		USR_ONBOARDING	2019-12-02 17:04:08.493625+00:00	
+120c6d8d-c039-4499-8ae0-d70c05d66531	Moderating Owl	d39f20e6a20b470082ab47209a38608e	OUT_OF_TIME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': False}]	USR_MODERATING	2019-12-02 17:04:17.651356+00:00	
+656f22fe-68f2-4c8b-a4f8-98d1804e1147	Cat	663f21ec2d0e4b5b99222d5227986b59	OUT_OF_TIME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_PLAYING	2019-12-02 17:04:17.654630+00:00	
+e4754313-4c8d-4309-9068-9b9a2e56ae44	Kiwi	efe15414ba2e44eaac5188691961b2fe	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': False}]	USR_ONBOARDING	2019-12-02 17:04:49.124111+00:00	
+1f0ad3a4-3620-42c9-97ac-faf72804b350	Kiwi	efe15414ba2e44eaac5188691961b2fe	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2019-12-02 17:04:51.477055+00:00	
+31ab7d4a-f41b-4177-b3e5-f7d8535d479e	Kiwi	efe15414ba2e44eaac5188691961b2fe	WASON_SUBMIT	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_ONBOARDING	2019-12-02 17:05:02.600690+00:00	
+735c940c-dd9d-4eac-8cd6-b338ceb48eeb	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	i think its 5 and e 	USR_PLAYING	2019-12-02 17:05:39.228310+00:00	
+0ee0550e-7a0d-4471-8053-42d3f0bf8dc6	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	I also think it's 5 and E	USR_PLAYING	2019-12-02 17:05:49.372684+00:00	
+aab4241c-b777-4b3d-beab-0e8ebd08cb95	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	because the E can prove the rule and then the 5 could disprove it 	USR_PLAYING	2019-12-02 17:05:51.641392+00:00	
+385c2332-4705-4be1-b6c5-7fe1639877ea	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	How many cards can you pick?	USR_PLAYING	2019-12-02 17:05:59.523667+00:00	
+2f1d0bc1-893b-4d35-82a9-2b86f4f9398b	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	You can pick 2	USR_PLAYING	2019-12-02 17:06:05.679905+00:00	
+5794f99a-5f0c-4dd4-936a-e73adf55e933	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	Oh	USR_PLAYING	2019-12-02 17:06:13.812582+00:00	
+46ee5598-1067-43de-acec-12f454b3c223	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	i think as many as you like 	USR_PLAYING	2019-12-02 17:06:16.570262+00:00	
+cedcb867-32d3-4fd7-80cd-f93c73a58bb2	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	but it says must 	USR_PLAYING	2019-12-02 17:06:20.946280+00:00	
+1e603107-eff8-4393-91c3-c62002799d7f	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	Actually you could turn them all!	USR_PLAYING	2019-12-02 17:06:21.541040+00:00	
+8406bd89-8d72-4821-bd63-43fe7fb45f7f	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	You could 	USR_PLAYING	2019-12-02 17:06:38.232332+00:00	
+6a285fd3-305c-4447-96a5-4f8a970e7f16	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	so like you could turn g i guess but do you have to	USR_PLAYING	2019-12-02 17:06:38.463435+00:00	
+4f3e3ece-be21-446b-a9db-5f8a82f889c4	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	for the rule	USR_PLAYING	2019-12-02 17:06:45.943947+00:00	
+b5caa829-bf65-45e9-a8a8-5e62e6dc2914	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	Wait it could be 8 and E	USR_PLAYING	2019-12-02 17:06:49.899145+00:00	
+416b5ac0-8dad-4d63-afac-85468226b74e	Bee	446291a1cb9c42bd88bfaefe29cdf35f	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'G', 'checked': True}, {'value': 'E', 'checked': True}]	USR_PLAYING	2019-12-02 17:06:50.471755+00:00	
+93b9062c-0c9a-464f-abba-77942dbd50ae	Bee	446291a1cb9c42bd88bfaefe29cdf35f	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_PLAYING	2019-12-02 17:06:51.031715+00:00	
+fb5a29d3-7b93-4f18-bdb9-903ea2b4bb5b	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	or is that too obvious	USR_PLAYING	2019-12-02 17:07:10.060599+00:00	
+94cf8e19-fd70-4a15-b243-52afdcfa5105	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	8 and E would prove the rule	USR_PLAYING	2019-12-02 17:07:21.943480+00:00	
+0d3cee4f-632b-43c6-ba2f-622fd82b8847	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	i think that's too obvious 	USR_PLAYING	2019-12-02 17:07:23.538183+00:00	
+baa3d2c2-8d43-4a10-b0a8-c4f9e70dd243	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	but not turning the others seems off	USR_PLAYING	2019-12-02 17:07:34.409866+00:00	
+1059745a-d07e-45d6-81dc-1494ac4b85fa	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	Yeah I agree	USR_PLAYING	2019-12-02 17:07:54.516222+00:00	
+ea89414b-32d4-407e-af40-0cf330f1df09	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	We could also turn over 8	USR_PLAYING	2019-12-02 17:08:01.953941+00:00	
+bb871900-70cf-4366-8d66-a7e9f48aef17	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	yeah 	USR_PLAYING	2019-12-02 17:08:09.545753+00:00	
+74be133a-4617-4f4c-81b6-5ea1fab2aa7f	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	to try and also prove the rule again	USR_PLAYING	2019-12-02 17:08:10.771775+00:00	
+bbcbfcf7-146c-4b57-b127-a0f22ce1048e	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	or do you thin it's asking for 2? doing the smallest amount of cards	USR_PLAYING	2019-12-02 17:08:27.926817+00:00	
+951677a3-1c38-41c1-9d8f-72cddc3848b5	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	it doesn't specify	USR_PLAYING	2019-12-02 17:08:43.445491+00:00	
+d8249f00-4cc3-48f7-b222-1438b9ac8c81	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	theoretically it could be however many you want	USR_PLAYING	2019-12-02 17:09:01.239901+00:00	
+7ef5ff8d-7db4-4272-94f4-369d59ba387f	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	im happy with the 3	USR_PLAYING	2019-12-02 17:09:12.970637+00:00	
+f90fb3f1-bfff-4fa7-9581-610089f99157	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	E, 5 and 8?	USR_PLAYING	2019-12-02 17:09:25.066604+00:00	
+98bc4b6a-1044-40fe-9e53-3619b0c6adc3	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	yeah 	USR_PLAYING	2019-12-02 17:09:30.503644+00:00	
+6413d4db-f829-4947-8f56-e84d58636a01	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	yeah	USR_PLAYING	2019-12-02 17:09:33.359786+00:00	
+c7c3eb77-017c-4f8c-af1a-9fead1413510	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	do we all agree?	USR_PLAYING	2019-12-02 17:09:34.197190+00:00	
+219a1455-789d-46fd-afa7-cba98dc2b04f	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	Wait	USR_PLAYING	2019-12-02 17:09:37.748841+00:00	
+81a53323-9a40-4968-ba1e-2809f2b9b1d1	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	that seems like the best guess I think	USR_PLAYING	2019-12-02 17:09:46.863730+00:00	
+e6be1777-2d3e-424c-9586-760a11500f5e	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	oh	USR_PLAYING	2019-12-02 17:09:49.044766+00:00	
+64bbe5a3-d6b0-4451-934f-e6894fb67b7f	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	Do you think it could be pointless?	USR_PLAYING	2019-12-02 17:09:51.776798+00:00	
+e1a9323a-9fc8-4f87-97da-ceea38c0f68c	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	wdym	USR_PLAYING	2019-12-02 17:10:02.281082+00:00	
+ba1059ce-0ce8-417f-bfee-01c60283526c	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	Maybe they're wanting to see in the smallest amount possible 	USR_PLAYING	2019-12-02 17:10:12.654773+00:00	
+a43381a4-6ba6-4100-ad64-072a686a0ce5	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	it says must 	USR_PLAYING	2019-12-02 17:10:32.831783+00:00	
+908df3e0-9686-4ae3-9867-1fc4fc698f0f	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	I actually do think just 5 and E?? I think that might be ideal	USR_PLAYING	2019-12-02 17:10:35.623157+00:00	
+534875ba-a196-4b3d-abaf-30e75276ec4d	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	so is 8 a must then 	USR_PLAYING	2019-12-02 17:10:39.609391+00:00	
+09d0fef3-eb35-40ff-b903-dcd25ba4dc19	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	yeah i'm thinking 5 and E are definite	USR_PLAYING	2019-12-02 17:10:54.712018+00:00	
+00b87f18-7ccd-413c-82b9-4b407f49f638	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	Yeah for sure	USR_PLAYING	2019-12-02 17:10:59.996032+00:00	
+e6fcdd9d-c858-4d70-b2ec-667194f4c527	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	I agree	USR_PLAYING	2019-12-02 17:11:07.900620+00:00	
+f98d54d5-ca5a-4619-ab5a-435ccf8d7f6f	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	i feel like 8 you just could 	USR_PLAYING	2019-12-02 17:11:11.611593+00:00	
+bd08cba7-87e9-46dd-aa77-7a89ffa2d362	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	is that what we're going for?	USR_PLAYING	2019-12-02 17:11:17.126113+00:00	
+4e2fab40-1e8b-455e-8a8a-f61fd8421d63	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	yeah 	USR_PLAYING	2019-12-02 17:11:25.272673+00:00	
+b776832e-83c8-4937-bd6d-91d90f8f78cf	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	Yeah	USR_PLAYING	2019-12-02 17:11:38.131416+00:00	
+7b785d12-58ec-4a32-a7a5-e6ecdf317e74	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	okay 	USR_PLAYING	2019-12-02 17:11:47.314652+00:00	
+136993af-02a3-4472-96ae-d64003249b84	Cat	663f21ec2d0e4b5b99222d5227986b59	WASON_SUBMIT	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_PLAYING	2019-12-02 17:11:48.996712+00:00	
+230fb790-80ff-474a-9a55-d7f379336e6c	Moderating Owl	d39f20e6a20b470082ab47209a38608e	CHAT_MESSAGE	Have you made a decision	USR_MODERATING	2019-12-02 17:11:55.152950+00:00	
+9ee6f2f1-29bb-43e9-a0b1-861ed5de0b3c	Bee	446291a1cb9c42bd88bfaefe29cdf35f	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_PLAYING	2019-12-02 17:12:01.158918+00:00	
+56adeaa3-df27-43de-a2b5-599705ad1999	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	yes	USR_PLAYING	2019-12-02 17:12:07.304446+00:00	
+c6d48ae7-ed06-4c45-af52-e94cb6a25258	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	yeah	USR_PLAYING	2019-12-02 17:12:18.340694+00:00	
+c9c85be9-cfc5-49ea-8b8c-bb895020201d	Bee	446291a1cb9c42bd88bfaefe29cdf35f	WASON_SUBMIT	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_PLAYING	2019-12-02 17:12:22.112541+00:00	
+b92f27e9-300a-4929-b529-8818ba742f2e	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	Are we saying just E and 5?	USR_PLAYING	2019-12-02 17:12:23.743268+00:00	
+a34f25bb-7d18-4df5-af5e-b9698b672075	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	or 8 too?	USR_PLAYING	2019-12-02 17:12:26.488706+00:00	
+78e08789-59bf-4473-9e2c-632392756776	Moderating Owl	d39f20e6a20b470082ab47209a38608e	CHAT_MESSAGE	You have 1 minute remaining.	USR_MODERATING	2019-12-02 17:12:33.151789+00:00	
+e69617fe-66b7-4482-aaf9-ef80c02deaac	Bee	446291a1cb9c42bd88bfaefe29cdf35f	CHAT_MESSAGE	5 and E	USR_PLAYING	2019-12-02 17:12:33.330724+00:00	
+e29d65c7-5008-4101-843e-75a0cfa8409d	Cat	663f21ec2d0e4b5b99222d5227986b59	CHAT_MESSAGE	just the 2	USR_PLAYING	2019-12-02 17:12:33.932144+00:00	
+345fce96-adae-4cbd-b74e-959a5143160a	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	I think that's right	USR_PLAYING	2019-12-02 17:12:43.201618+00:00	
+597ae57e-504d-44eb-af26-feaabbd47ca6	Kiwi	efe15414ba2e44eaac5188691961b2fe	CHAT_MESSAGE	so yeah	USR_PLAYING	2019-12-02 17:12:44.783610+00:00	
+0af6d0fb-2827-4a00-adfc-a62174ac13d0	SYSTEM_MODERATOR	-1	MODERATION	GROUP_PHASE_ENDED	USR_MODERATING	2019-12-02 17:12:48.884993+00:00	
+57841167-2b4e-4764-b8d1-5c99824f35f1	Bee	446291a1cb9c42bd88bfaefe29cdf35f	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_PLAYING	2019-12-02 17:12:57.274733+00:00	
+77065f60-a449-49c6-8620-ea3e72f72d7c	Bee	446291a1cb9c42bd88bfaefe29cdf35f	WASON_GAME	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_PLAYING	2019-12-02 17:12:57.890768+00:00	
+9c7f9a51-2a70-41cf-9ab7-795797011691	Bee	446291a1cb9c42bd88bfaefe29cdf35f	WASON_SUBMIT	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_PLAYING	2019-12-02 17:13:05.638503+00:00	
+af8f8ad4-9eb5-44c2-92c0-9e385f9b178f	Kiwi	efe15414ba2e44eaac5188691961b2fe	WASON_SUBMIT	[{'value': '8', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'G', 'checked': False}, {'value': 'E', 'checked': True}]	USR_PLAYING	2019-12-02 17:13:12.969334+00:00	
+824efe06-39f7-4970-89d2-66c792ba6b74	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-02 17:13:13.233793+00:00	
+4d1661a6-763c-4c8f-aa7a-9c76c0d053b9	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-02 17:13:32.575468+00:00	
+4c8d47c8-7fc3-4d16-ae0f-c017cc7b9e05	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-02 17:13:43.452429+00:00	
+d78b004a-967a-40a0-845a-7d0a6b7bedc5	SYSTEM	-1	WASON_FINISHED		UKN	2019-12-02 17:14:20.691616+00:00	
+6ccdfc35-8244-4cdc-9a40-db4173d97c88	Bee	446291a1cb9c42bd88bfaefe29cdf35f	LEAVE_ROOM		UKN	2019-12-02 17:15:01.833211+00:00	
+75e06e74-fecf-49c9-a836-dd798280ab89	Kiwi	efe15414ba2e44eaac5188691961b2fe	LEAVE_ROOM		UKN	2019-12-02 17:15:19.160782+00:00	
+c280953d-ec2b-45d3-a7c2-62c3b6b96a8c	Cat	663f21ec2d0e4b5b99222d5227986b59	LEAVE_ROOM		UKN	2019-12-02 17:15:28.364094+00:00	
+bb62ee10-8c5f-48ca-99b5-c31c5fe5b85b	Moderating Owl	d39f20e6a20b470082ab47209a38608e	LEAVE_ROOM		UKN	2019-12-02 17:17:32.365301+00:00	

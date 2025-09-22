@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+		
+		<rdf:RDF
+			 xmlns:foaf="http://xmlns.com/foaf/0.1/"
+			 xmlns:skos="http://datos.gob.es/kos/sector-publico/sector/"
+			 xmlns:dcat="http://www.w3.org/ns/dcat#"
+			 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+			 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			 xmlns:dct="http://purl.org/dc/terms/"
+			 xmlns:dc="http://purl.org/dc/elements/1.1/"
+			 xmlns:time="http://www.w3.org/2006/time#"
+			 xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+			 xmlns:j.0="http://www.w3.org/1999/xhtml/vocab#"
+			 xmlns:j.1="http://a9.com/-/spec/opensearch/1.1/"
+			 xmlns:api="http://purl.org/linked-data/api/vocab#">
+			<dcat:Catalog rdf:about="https://datos.madrid.es/egob/catalogo">
+			
+				
+					<dct:title xml:lang="es">Catálogo de datos abiertos del Ayuntamiento de Madrid</dct:title>
+					<dct:description xml:lang="es">
+						Catálogo de datos abiertos del Ayuntamiento de Madrid
+					</dct:description>
+					<dc:language>es</dc:language>
+					<foaf:homepage rdf:resource="https://datos.madrid.es"/>
+					<dct:license rdf:resource="https://datos.madrid.es/egob/catalogo/aviso-legal"/>
+					<dct:identifier>https://datos.madrid.es/egob/catalogo</dct:identifier>
+					<dcat:themeTaxonomy rdf:resource="http://datos.gob.es/kos/sector-publico/sector/" />
+					<dct:publisher rdf:resource="http://datos.gob.es/recurso/sector-publico/org/Organismo/L01280796"/>
+					<dct:extent>
+						<dct:SizeOrDuration>
+							<rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</rdf:value>
+							<rdfs:label xml:lang="es">1</rdfs:label>
+						</dct:SizeOrDuration>
+					</dct:extent>
+					
+					
+					
+				
+				
+				
+					<dcat:dataset>
+						<dcat:Dataset rdf:about="https://datos.madrid.es/egob/catalogo/300114-0-madrid-decide">
+							<dct:identifier>https://datos.madrid.es/egob/catalogo/300114-0-madrid-decide</dct:identifier>
+							<dct:title xml:lang="es">Participación ciudadana. Debates y propuestas</dct:title>
+							<dct:description xml:lang="es"><![CDATA[Decide Madrid  es la plataforma digital de participación ciudadana que el Ayuntamiento de Madrid pone a disposición de la ciudadanía, configurándose como una acción destacada a través de la que, de forma continua, la ciudadanía puede intervenir, entre otras, mediante la generación de debates o la presentación de propuestas.   En los  debates  en  Decide Madrid  se inicia una conversación para compartir puntos de vista con otras personas sobre los temas que te preocupan de la ciudad de Madrid. Los debates no activan ningún mecanismo de actuación concreto por parte del Ayuntamiento de Madrid.   En la sección  propuestas  los ciudadanos pueden presentar sus ideas para poder mejorar la ciudad de Madrid. Las propuestas ciudadanas son un mecanismo de participación que permite a la ciudadanía formar parte de cualquier decisión municipal que crea conveniente. Las propuestas ciudadanas están vigentes en  Decide Madrid  durante 12 meses, donde podrán ser apoyadas por la ciudadanía mayor de 16 años y empadronada en la ciudad de Madrid. Si las propuestas ciudadanas consiguen el apoyo del 1% de las personas mayores de 16 años empadronadas en la ciudad de Madrid, el Ayuntamiento convocará una votación ciudadana. Una vez celebrada, si hay más gente a favor que en contra, el gobierno municipal estudiaría la viabilidad de la misma con el objetivo de su implementación en la ciudad.]]></dct:description>
+							<dcat:theme rdf:resource="http://datos.gob.es/kos/sector-publico/sector/sociedad-bienestar" />
+							<dcat:keyword xml:lang="es">debates , propuestas , participación ciudadana</dcat:keyword>					
+							<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-04T00:00:00</dct:issued>
+							<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-04T00:00:00</dct:modified>
+							
+							
+								<dct:accrualPeriodicity>
+									<dct:Frequency>
+										<rdfs:label>diaria</rdfs:label>
+										<rdf:value>
+											<time:DurationDescription>
+												<rdfs:label>diaria</rdfs:label>
+												<time:days rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</time:days>
+											</time:DurationDescription>
+										</rdf:value>
+									</dct:Frequency>
+								</dct:accrualPeriodicity>
+							
+							<dc:language>es</dc:language>
+							<dct:publisher rdf:resource="http://datos.gob.es/recurso/sector-publico/org/Organismo/L01280796"/>
+							<dct:license rdf:resource="https://datos.madrid.es/egob/catalogo/aviso-legal"/>
+							
+							
+							
+							<dcat:distribution>
+  <dcat:Distribution>
+    <dct:title xml:lang="es">Propuestas</dct:title>
+    <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://datos.madrid.es/egob/catalogo/300114-10434614-madrid-decide.csv</dcat:accessURL>
+    <dcat:mediaType>text/csv</dcat:mediaType>
+  </dcat:Distribution>
+</dcat:distribution>
+<dcat:distribution>
+  <dcat:Distribution>
+    <dct:title xml:lang="es">Debates</dct:title>
+    <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://datos.madrid.es/egob/catalogo/300114-10434708-madrid-decide.csv</dcat:accessURL>
+    <dcat:mediaType>text/csv</dcat:mediaType>
+  </dcat:Distribution>
+</dcat:distribution>
+<dcat:distribution>
+  <dcat:Distribution>
+    <dct:title xml:lang="es">Comentarios a debates y propuestas</dct:title>
+    <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://datos.madrid.es/egob/catalogo/300114-10434711-madrid-decide.csv</dcat:accessURL>
+    <dcat:mediaType>text/csv</dcat:mediaType>
+  </dcat:Distribution>
+</dcat:distribution>
+<dcat:distribution>
+  <dcat:Distribution>
+    <dct:title xml:lang="es">Apoyos a debates, propuestas y comentarios</dct:title>
+    <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://datos.madrid.es/egob/catalogo/300114-10434754-madrid-decide.csv</dcat:accessURL>
+    <dcat:mediaType>text/csv</dcat:mediaType>
+  </dcat:Distribution>
+</dcat:distribution>
+<dcat:distribution>
+  <dcat:Distribution>
+    <dct:title xml:lang="es">Notificaciones de propuestas</dct:title>
+    <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://datos.madrid.es/egob/catalogo/300114-10434713-madrid-decide.csv</dcat:accessURL>
+    <dcat:mediaType>text/csv</dcat:mediaType>
+  </dcat:Distribution>
+</dcat:distribution>
+<dcat:distribution>
+  <dcat:Distribution>
+    <dct:title xml:lang="es">Etiquetas asociadas a debates y propuestas</dct:title>
+    <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://datos.madrid.es/egob/catalogo/300114-10434715-madrid-decide.csv</dcat:accessURL>
+    <dcat:mediaType>text/csv</dcat:mediaType>
+  </dcat:Distribution>
+</dcat:distribution>
+<dcat:distribution>
+  <dcat:Distribution>
+    <dct:title xml:lang="es">Tabla de asociación de etiquetas</dct:title>
+    <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://datos.madrid.es/egob/catalogo/300114-10434745-madrid-decide.csv</dcat:accessURL>
+    <dcat:mediaType>text/csv</dcat:mediaType>
+  </dcat:Distribution>
+</dcat:distribution>
+<dcat:distribution>
+  <dcat:Distribution>
+    <dct:title xml:lang="es">Tabla auxiliar: distritos</dct:title>
+    <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://datos.madrid.es/egob/catalogo/300114-10434712-madrid-decide.csv</dcat:accessURL>
+    <dcat:mediaType>text/csv</dcat:mediaType>
+  </dcat:Distribution>
+</dcat:distribution>
+
+						</dcat:Dataset>
+					</dcat:dataset>
+				
+				
+				
+					<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-03-12T09:00:00</dct:issued>
+					
+								
+				
+			</dcat:Catalog>			 
+		</rdf:RDF>
+		
+		

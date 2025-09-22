@@ -1,0 +1,130 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+80e98425-d05c-4eee-a680-f1bfe26bc6a1	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""W"", ""checked"": false}, {""value"": ""2"", ""checked"": false}, {""value"": ""5"", ""checked"": false}, {""value"": ""U"", ""checked"": false}]"	UKN	2019-11-25 13:35:42.744979+00:00	
+0b8899b0-2eed-4c38-be18-41e712413d64	Kiwi	adadb4a7b3b3462ab5ab885615e28753	JOIN_ROOM		USR_ONBOARDING	2019-11-25 13:35:45.802863+00:00	
+3b0b1829-1540-4667-b204-301550045b93	Kiwi	adadb4a7b3b3462ab5ab885615e28753	LEAVE_ROOM		UKN	2019-11-25 13:35:58.946059+00:00	
+dba82915-f599-4a6a-bdc9-b4dc8c45d071	Ox	a94e0fbf5ed14c3fbb87404e06467433	JOIN_ROOM		USR_ONBOARDING	2019-11-26 15:24:17.508833+00:00	
+bdb8abeb-eba4-4695-83f9-7109965100dc	Guinea pig	9f1e649701b943b693e58f264295f176	JOIN_ROOM		USR_ONBOARDING	2019-11-26 15:59:38.096145+00:00	
+90ace968-230a-4e88-a114-3d953968bc7d	Guinea pig	9f1e649701b943b693e58f264295f176	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': False}]	USR_ONBOARDING	2019-11-26 16:00:39.199719+00:00	
+045c5e69-33ce-4b91-bc90-3341f8ccc131	Guinea pig	9f1e649701b943b693e58f264295f176	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': False}]	USR_ONBOARDING	2019-11-26 16:00:40.955007+00:00	
+77b76097-69f2-4eb9-b3d3-a4d2ec91a260	Guinea pig	9f1e649701b943b693e58f264295f176	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': False}]	USR_ONBOARDING	2019-11-26 20:16:23.489757+00:00	
+b594bfcf-1677-4ce2-8821-46ebb2a4af7a	Guinea pig	9f1e649701b943b693e58f264295f176	LEAVE_ROOM		UKN	2019-11-26 20:20:34.245747+00:00	
+b4021ae6-f2a6-4873-888f-b38bf5522b21	Ox	a94e0fbf5ed14c3fbb87404e06467433	LEAVE_ROOM		UKN	2019-11-26 20:24:34.686251+00:00	
+d190d218-4584-4c03-ad63-ee1cf19fecad	Tiger	a94b0648a4934139bc9866fb0a3ac1d6	JOIN_ROOM		USR_ONBOARDING	2019-11-27 16:26:34.770535+00:00	
+dbe92d51-0f32-4644-bb0a-71313f508bb9	Tiger	a94b0648a4934139bc9866fb0a3ac1d6	LEAVE_ROOM		UKN	2019-11-27 16:26:51.710417+00:00	
+a8be993d-7a22-4e19-bb9e-caeee4a15913	Moderating Owl	a5b816ef196e4c3ba6646e60c3b81b0e	JOIN_ROOM		USR_MODERATING	2019-11-27 16:26:58.125631+00:00	
+00804660-8f7f-4ca3-b871-827fe0e339b6	Moderating Owl	a5b816ef196e4c3ba6646e60c3b81b0e	LEAVE_ROOM		UKN	2019-11-27 16:27:04.969751+00:00	
+e2f982eb-05d7-49b6-a88d-1e5625228375	Bee	50ff4e09c32b482b99422027c9cd1f1d	JOIN_ROOM		USR_ONBOARDING	2019-11-27 16:27:07.134250+00:00	
+dbd36a2d-c095-4950-ac93-2b6cdd484aa8	Bee	50ff4e09c32b482b99422027c9cd1f1d	LEAVE_ROOM		UKN	2019-11-27 16:27:11.705383+00:00	
+2d0f2dcc-c28a-4d95-9e82-8402dac20d2a	Moderating Owl	4eae4022621b49a48d681350662a06fc	JOIN_ROOM		USR_MODERATING	2019-11-27 16:27:13.084234+00:00	
+18afd7bf-7a5d-48a0-ae23-5d70cfb7d5e6	Tiger	14441bd07960477d8313a9378c9c2a30	JOIN_ROOM		USR_ONBOARDING	2019-11-27 16:27:15.705161+00:00	
+d3fbee22-6e9e-41eb-ad3e-719af2d9a107	Tiger	14441bd07960477d8313a9378c9c2a30	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2019-11-27 16:27:34.705898+00:00	
+6a343e08-474b-4e27-a21d-b41b6c0ea20d	Tiger	14441bd07960477d8313a9378c9c2a30	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2019-11-27 16:27:36.016730+00:00	
+0afb2d5f-dbdd-4d90-90f7-a65286c5ed0b	Tiger	14441bd07960477d8313a9378c9c2a30	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2019-11-27 16:27:36.993453+00:00	
+38e44077-0284-49ef-a3cc-176e64e44dfa	SYSTEM	-1	FINISHED_ONBOARDING	2019-11-27T16:32:37.175483	UKN	2019-11-27 16:27:37.175539+00:00	
+335505f8-c839-4740-8ad6-9fffc4fa76f9	Tiger	14441bd07960477d8313a9378c9c2a30	LEAVE_ROOM		UKN	2019-11-27 16:27:46.840304+00:00	
+fd35bdfe-3f43-41da-8d58-679badf1b797	Moderating Owl	4eae4022621b49a48d681350662a06fc	LEAVE_ROOM		UKN	2019-11-27 16:29:35.543782+00:00	
+40501d8a-9b78-4c75-84f7-08998ad0aafe	Moderating Owl	85409a7e87254346b08687f94ace48f7	JOIN_ROOM		USR_MODERATING	2019-11-27 16:33:25.861923+00:00	
+b1f388df-03dc-4ceb-81d6-c67c3e6c1726	Kiwi	03db8d3de00d4a4883ddd2f31f1b888d	JOIN_ROOM		USR_ONBOARDING	2019-11-27 16:40:30.194988+00:00	
+47420275-cfb0-4d2a-98da-5fbbe0396b87	Kiwi	03db8d3de00d4a4883ddd2f31f1b888d	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2019-11-27 16:40:58.561099+00:00	
+4ccc041c-c292-4bfd-a31c-eb5e043aab3f	Kiwi	03db8d3de00d4a4883ddd2f31f1b888d	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2019-11-27 16:40:59.873634+00:00	
+1de38fb5-e3ab-4ab1-8a03-96012f33f37f	Kiwi	03db8d3de00d4a4883ddd2f31f1b888d	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2019-11-27 16:41:00.680986+00:00	
+704e25a5-46da-4a83-add3-8314bf244d9c	Bee	9e3dcea259fb4969a14af083800e01d7	JOIN_ROOM		USR_ONBOARDING	2019-11-27 16:51:38.870306+00:00	
+89c27d78-05d9-4da4-b386-7153c062403f	Guinea pig	da52130b0f6540ad9ca51350e25e0602	JOIN_ROOM		USR_ONBOARDING	2019-11-27 16:52:40.528405+00:00	
+493ea3f9-c1a0-480b-a34f-00f565449c04	Bee	9e3dcea259fb4969a14af083800e01d7	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': False}]	USR_ONBOARDING	2019-11-27 16:52:55.862890+00:00	
+2a2c8276-c4ee-4e3f-800f-530ac5614b8e	Kiwi	03db8d3de00d4a4883ddd2f31f1b888d	LEAVE_ROOM		UKN	2019-11-27 16:53:10.619300+00:00	
+0b99d67c-38fb-4fb8-bc65-494fb57e6df2	Bee	9e3dcea259fb4969a14af083800e01d7	CHAT_MESSAGE	hi	USR_PLAYING	2019-11-27 16:53:11.463881+00:00	
+8d2c3e43-ccad-437d-b7a2-4dcc11c43135	Guinea pig	da52130b0f6540ad9ca51350e25e0602	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2019-11-27 16:54:25.188225+00:00	
+62f4cf85-f462-4b86-a47f-10edc6c0cd76	Guinea pig	da52130b0f6540ad9ca51350e25e0602	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2019-11-27 16:54:29.556283+00:00	
+89aa0d6c-67a3-47d3-a0c6-353c4489a74c	Guinea pig	da52130b0f6540ad9ca51350e25e0602	CHAT_MESSAGE	hi	USR_PLAYING	2019-11-27 16:54:39.146745+00:00	
+d074fef8-c0e0-43e2-aa13-a45527d95d9d	Llama	a462d41b225849cc96620058266b742c	JOIN_ROOM		USR_ONBOARDING	2019-11-27 16:55:38.439310+00:00	
+39eb27c3-980f-4d32-b537-3dd57278b8e7	Bee	9e3dcea259fb4969a14af083800e01d7	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 16:55:52.767065+00:00	
+9f01def9-ce11-468e-b4be-4dc5d660b487	Bee	9e3dcea259fb4969a14af083800e01d7	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 16:55:53.700974+00:00	
+59ac7a1c-0194-475f-a2c3-ae725c712f4f	Llama	a462d41b225849cc96620058266b742c	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': False}]	USR_ONBOARDING	2019-11-27 16:56:07.859216+00:00	
+c132e93b-fe09-4008-861e-b93c2bc31af3	Leopard	d382a33521a34eaf8ae74972f64cc678	JOIN_ROOM		USR_ONBOARDING	2019-11-27 16:56:15.830366+00:00	
+1f04abc7-a023-45ec-8aaf-2f158440cdb0	Hedgehog	a3b5afa0bb8d44bda43b79146e27a6b2	JOIN_ROOM		USR_ONBOARDING	2019-11-27 16:56:18.863137+00:00	
+3c4a255f-80ad-4a28-8ae4-536658f068b9	Hedgehog	a3b5afa0bb8d44bda43b79146e27a6b2	LEAVE_ROOM		UKN	2019-11-27 16:56:22.885121+00:00	
+4a9d30cb-4353-46fe-bfdd-6c9221c57a0f	Llama	a462d41b225849cc96620058266b742c	CHAT_MESSAGE	hi	USR_PLAYING	2019-11-27 16:56:23.101108+00:00	
+1ebcf75f-af24-4276-be5b-74f1903b0220	Guinea pig	da52130b0f6540ad9ca51350e25e0602	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': False}]	USR_PLAYING	2019-11-27 16:57:04.373241+00:00	
+aec09025-d3fa-4351-beb9-bd632ed67b58	Guinea pig	da52130b0f6540ad9ca51350e25e0602	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 16:57:04.800342+00:00	
+787cad65-80ab-450d-889b-ab43d42b7b9d	Guinea pig	da52130b0f6540ad9ca51350e25e0602	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 16:57:05.807480+00:00	
+88a1fe5f-9559-46c9-8571-593f8406340f	Llama	a462d41b225849cc96620058266b742c	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 16:58:16.593323+00:00	
+9ee14aed-2b50-4333-9029-fb624c25428e	Llama	a462d41b225849cc96620058266b742c	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 16:58:17.615390+00:00	
+7805e924-79fc-42a3-a6ba-65a84f9b2417	Alpaca	4c365dec20644d93b75942bcfcd60874	JOIN_ROOM		USR_ONBOARDING	2019-11-27 16:58:33.049140+00:00	
+873bcb37-a762-49f6-a526-f372e722cd7d	Llama	a462d41b225849cc96620058266b742c	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 16:58:33.688691+00:00	
+1130a065-e272-46b2-bb67-87fb2a675cb8	Llama	a462d41b225849cc96620058266b742c	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 16:58:35.876940+00:00	
+8af466d8-e82d-4463-9763-4dfe0df86b0b	Llama	a462d41b225849cc96620058266b742c	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 16:58:37.011244+00:00	
+e6ebd393-8da2-46f3-a381-bfd252c77767	Llama	a462d41b225849cc96620058266b742c	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 16:58:37.594830+00:00	
+da98ff4a-8e7c-4e1e-b3e4-d1e171eb38b4	Alpaca	4c365dec20644d93b75942bcfcd60874	LEAVE_ROOM		UKN	2019-11-27 16:58:38.570296+00:00	
+31f7f72d-b7eb-469c-908e-1b57b0569221	Bee	9e3dcea259fb4969a14af083800e01d7	CHAT_MESSAGE	U is the only vowel there so we must turn it to see whether it has an even number on the other side	USR_PLAYING	2019-11-27 17:00:11.197480+00:00	
+94563b11-fbd8-4a5f-8887-bbd6b624e4f5	Llama	a462d41b225849cc96620058266b742c	CHAT_MESSAGE	yes	USR_PLAYING	2019-11-27 17:01:21.206374+00:00	
+d685785e-ff78-4126-a7b8-dda812c00858	Llama	a462d41b225849cc96620058266b742c	CHAT_MESSAGE	i agree	USR_PLAYING	2019-11-27 17:01:25.812127+00:00	
+0b5dbbdc-9363-4afa-9bd8-0e73d34af2d7	Guinea pig	da52130b0f6540ad9ca51350e25e0602	CHAT_MESSAGE	there are no other vowels on the cards except for the card with the letter U therefore this card would be the one with the even number on the other side	USR_PLAYING	2019-11-27 17:01:42.819561+00:00	
+2bcf15ce-5972-469d-b75d-6ff91e0b1215	Llama	a462d41b225849cc96620058266b742c	CHAT_MESSAGE	but we can also check the using the other cards	USR_PLAYING	2019-11-27 17:01:57.798187+00:00	
+ffff9390-6862-429f-a761-cc07863d002d	Llama	a462d41b225849cc96620058266b742c	CHAT_MESSAGE	to test the claim?	USR_PLAYING	2019-11-27 17:02:17.172430+00:00	
+6fd8e99a-ad6b-4be4-ab10-2c10fa971400	Llama	a462d41b225849cc96620058266b742c	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 17:02:35.908457+00:00	
+61c88b2e-06d6-4d05-9db5-235d102d89da	Moderating Owl	85409a7e87254346b08687f94ace48f7	CHAT_MESSAGE	Which other cards would you turn?	USR_MODERATING	2019-11-27 17:02:38.250729+00:00	
+e638c2c5-a073-41db-bbb7-d0e29226a23f	Llama	a462d41b225849cc96620058266b742c	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 17:02:38.735135+00:00	
+7c06787c-2eb8-40e5-8fd6-e3bb643e56ed	Guinea pig	da52130b0f6540ad9ca51350e25e0602	CHAT_MESSAGE	2	USR_PLAYING	2019-11-27 17:02:50.305628+00:00	
+6c09cbfc-1d9d-4283-8b87-7b8b95771e87	Llama	a462d41b225849cc96620058266b742c	CHAT_MESSAGE	I think I would turn 2	USR_PLAYING	2019-11-27 17:02:53.609112+00:00	
+ce95604a-398f-4a0e-a68a-ed8f40c04995	Guinea pig	da52130b0f6540ad9ca51350e25e0602	CHAT_MESSAGE	because that's an even number 	USR_PLAYING	2019-11-27 17:03:00.983239+00:00	
+d1e872c3-6c84-4485-b1fb-6b7737c9d9b3	Llama	a462d41b225849cc96620058266b742c	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 17:03:11.842083+00:00	
+c54f7b42-a6f0-405c-98c4-79c61ed48675	Bee	9e3dcea259fb4969a14af083800e01d7	CHAT_MESSAGE	yeah so 2 should have an vowel on the other side if the rule is correct	USR_PLAYING	2019-11-27 17:03:21.769497+00:00	
+107c43a0-39e9-48b3-b2e7-bbf1e4e34651	Llama	a462d41b225849cc96620058266b742c	CHAT_MESSAGE	yup	USR_PLAYING	2019-11-27 17:03:30.434302+00:00	
+385f17b8-94fb-4716-8dce-059f1e6dd0db	Guinea pig	da52130b0f6540ad9ca51350e25e0602	CHAT_MESSAGE	5 on the other hand is not an even number and W is not a vowel 	USR_PLAYING	2019-11-27 17:03:36.465297+00:00	
+1be342c0-dd09-41a3-bfb7-84ce46316f07	Llama	a462d41b225849cc96620058266b742c	CHAT_MESSAGE	so 2 and U?	USR_PLAYING	2019-11-27 17:04:20.091490+00:00	
+8a9e5087-b24d-4d75-a53c-f0ff21e567b8	Guinea pig	da52130b0f6540ad9ca51350e25e0602	CHAT_MESSAGE	yes	USR_PLAYING	2019-11-27 17:04:30.211110+00:00	
+174cc7a6-91cb-44e0-a68e-c84003bdc5ff	Llama	a462d41b225849cc96620058266b742c	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 17:04:35.103212+00:00	
+3ae3966b-eb2f-4535-b4b5-5cb800c7e368	Bee	9e3dcea259fb4969a14af083800e01d7	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 17:04:39.401461+00:00	
+e781016e-fb54-4e25-a59f-7573008e2601	Bee	9e3dcea259fb4969a14af083800e01d7	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 17:04:40.636385+00:00	
+db04a0e9-5da6-44c2-8d01-909e5f56fd3e	Guinea pig	da52130b0f6540ad9ca51350e25e0602	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 17:04:43.229243+00:00	
+c52e0573-0f8b-46c0-bd7f-8dee194551be	Guinea pig	da52130b0f6540ad9ca51350e25e0602	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-11-27 17:04:46.177463+00:00	
+3dd8d5be-d5f9-4088-afed-6edd3f8de3a1	Llama	a462d41b225849cc96620058266b742c	LEAVE_ROOM		UKN	2019-11-27 17:10:21.977056+00:00	
+d6e1cd03-58cc-4f8d-aad1-a0566b86118a	Guinea pig	da52130b0f6540ad9ca51350e25e0602	LEAVE_ROOM		UKN	2019-11-27 17:10:28.209204+00:00	
+5413f98b-3b90-491c-8077-63423fae4619	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:29.979680+00:00	
+db86d6d0-ccf6-41ef-aafc-6d02a7ace292	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:31.914797+00:00	
+d579cb69-acc4-4435-8c44-7d3d8643cc32	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:32.337089+00:00	
+ef6f9395-2f48-4ec8-91de-0360db86ceed	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': True}, {'value': '2', 'checked': True}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:42.800905+00:00	
+41e15c85-9822-4418-a934-ba51ec7e10fe	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': True}, {'value': '2', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:43.980966+00:00	
+d2405b5b-74da-497c-a818-fb51bfd39750	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_SUBMIT	[{'value': 'W', 'checked': True}, {'value': '2', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:45.199536+00:00	
+1e686850-34ac-4b98-96d4-b8d44a20bdc0	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': True}, {'value': '2', 'checked': True}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:47.447208+00:00	
+ea9f76bd-dca2-4411-9769-2675ba5475bb	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:48.245737+00:00	
+cf76f4e8-21bc-4ebb-bb5b-3654a12f71d8	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': True}]	USR_MODERATING	2019-11-27 17:10:49.310111+00:00	
+dbfb8e32-4b1e-43d8-b8b9-bd4631456e67	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': True}, {'value': '2', 'checked': True}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': True}]	USR_MODERATING	2019-11-27 17:10:50.431470+00:00	
+abcbb4f7-3fbb-48d8-ba80-2a0bfc7337e6	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': True}, {'value': '2', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_MODERATING	2019-11-27 17:10:51.333711+00:00	
+b958d577-f402-4994-95f0-db83dace7c02	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': True}, {'value': '2', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:52.145411+00:00	
+6fd95bd8-a8dd-4efa-9011-2f515c8e8b63	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': True}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:52.907788+00:00	
+350e2f75-8541-49a4-be1c-61ba09f563e0	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:54.272518+00:00	
+e57405bf-09fc-48b4-b5ca-894059eebd2f	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:54.937188+00:00	
+9ea04098-abb2-4f63-9f76-c9b84125a799	Moderating Owl	85409a7e87254346b08687f94ace48f7	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': True}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': False}]	USR_MODERATING	2019-11-27 17:10:55.655917+00:00	
+7f21c135-6fce-4f5a-92dd-786c4921695d	Bee	9e3dcea259fb4969a14af083800e01d7	LEAVE_ROOM		UKN	2019-11-27 17:13:48.174665+00:00	
+f695c54d-a7ff-4ea3-b3fe-41f8289ce164	Moderating Owl	85409a7e87254346b08687f94ace48f7	LEAVE_ROOM		UKN	2019-11-27 17:32:00.921887+00:00	
+7cdc2854-5d61-450b-8f69-86f95ccc824c	Bee	6aa09fbb0a3b48dc871d1b5706b6436d	JOIN_ROOM		USR_ONBOARDING	2019-11-27 17:32:08.219798+00:00	
+3189b5b2-347c-40b7-9786-29c5ac647b7d	Bee	6aa09fbb0a3b48dc871d1b5706b6436d	LEAVE_ROOM		UKN	2019-11-27 17:32:14.714986+00:00	
+08d5795e-2970-4086-a41b-166f588529c1	Moderating Owl	19b7aeabc6c0408ea0c28be20074e0a3	JOIN_ROOM		USR_MODERATING	2019-11-27 17:32:16.022984+00:00	
+b6b386c4-492c-4f9c-a6ee-6d41e332bfd4	Zebra	51abe69390ea4cf18bc2e6e0feaad75d	JOIN_ROOM		USR_ONBOARDING	2019-11-28 16:26:45.887583+00:00	
+5d1d02cf-ce35-407c-a067-7d89e04b8925	Zebra	51abe69390ea4cf18bc2e6e0feaad75d	LEAVE_ROOM		UKN	2019-11-28 16:27:07.045192+00:00	
+54205879-3fbb-4ef2-b3b4-67c0316b31a6	Moderating Owl	099577af919140ab8fe04d03df024942	JOIN_ROOM		USR_MODERATING	2019-12-02 14:52:32.311376+00:00	
+a956db9d-d6c8-49b7-b379-facfd6140e70	Moderating Owl	099577af919140ab8fe04d03df024942	LEAVE_ROOM		UKN	2019-12-02 14:52:59.745526+00:00	
+18570b40-34ff-4b00-8a21-a7eda3fd2d4a	Tiger	7707bf95e4b54a439187c43cfaf11b2b	JOIN_ROOM		USR_ONBOARDING	2019-12-02 15:32:22.025900+00:00	
+03d3167d-bb07-4769-9e3e-8883495d6661	Tiger	7707bf95e4b54a439187c43cfaf11b2b	LEAVE_ROOM		UKN	2019-12-02 15:32:33.045011+00:00	
+9a683e2a-f9e3-4a29-861b-80b25bcfa8b9	Moderating Owl	e8aec3be9434431a9db57e0e86b20442	JOIN_ROOM		USR_MODERATING	2019-12-02 16:18:28.883156+00:00	
+3b9a370a-b037-44f9-b7a9-02f626d105e5	Moderating Owl	e8aec3be9434431a9db57e0e86b20442	LEAVE_ROOM		UKN	2019-12-02 16:20:18.835469+00:00	
+fe06cffa-62c5-4a79-9ab9-ab9b4f030a12	Ox	09a7b102326f46689971755534669b47	JOIN_ROOM		USR_ONBOARDING	2019-12-03 16:55:31.892924+00:00	
+29cbe9f4-d4b9-4b94-aa76-d453165ed054	Ox	09a7b102326f46689971755534669b47	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': False}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2019-12-03 16:55:50.289701+00:00	
+cc80efd9-7e86-4669-afa3-f20ea8313d56	Ox	09a7b102326f46689971755534669b47	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2019-12-03 16:55:58.508311+00:00	
+c6192c5e-efbe-488f-8195-31cdfe3c13dc	Ox	09a7b102326f46689971755534669b47	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2019-12-03 16:55:59.406834+00:00	
+12486451-b700-40d8-8751-72876b909e73	Ox	09a7b102326f46689971755534669b47	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '2', 'checked': False}, {'value': '5', 'checked': True}, {'value': 'U', 'checked': True}]	USR_PLAYING	2019-12-03 16:56:50.710294+00:00	
+71e39acc-f326-42b0-a066-0f8bae8dda88	Ox	09a7b102326f46689971755534669b47	LEAVE_ROOM		UKN	2019-12-03 16:58:15.958942+00:00	
+753f0f59-069b-4d2e-a646-4a2975161a27	Ox	09a7b102326f46689971755534669b47	LEAVE_ROOM		UKN	2019-12-03 16:58:15.999391+00:00	
+d6f058f9-5979-450e-98e4-0ac87925c259	Moderating Owl	be26588e4d6d4bd4b594376b11ce0c4d	JOIN_ROOM		USR_MODERATING	2019-12-05 17:06:02.580922+00:00	
+6dc4885d-75f4-4ae3-a17d-b70432cb4f16	Moderating Owl	be26588e4d6d4bd4b594376b11ce0c4d	LEAVE_ROOM		UKN	2019-12-05 17:06:17.112423+00:00	
+84022bc3-4635-4201-bdc8-7371adff7951	Moderating Owl	858f6ab4fe1240aaa71e7949c4a31686	JOIN_ROOM		USR_MODERATING	2019-12-06 11:27:03.355543+00:00	
+4c92576c-c8b2-488c-a8f3-e1da7afec299	Moderating Owl	bf84482eca2b4fcea0e67f23d671bf95	JOIN_ROOM		USR_MODERATING	2019-12-06 11:47:11.568068+00:00	
+ee33a04d-ad69-47c7-9a87-aebe5b87b3f2	Moderating Owl	19b7aeabc6c0408ea0c28be20074e0a3	LEAVE_ROOM		UKN	2019-12-06 11:47:32.684577+00:00	
+454096fd-838d-4a49-8af4-c64a5c1c425b	Moderating Owl	858f6ab4fe1240aaa71e7949c4a31686	LEAVE_ROOM		UKN	2019-12-06 11:47:34.997244+00:00	
+bfd30a60-ae4a-4cc7-a3ad-b7b62d99e5ca	Leopard	d382a33521a34eaf8ae74972f64cc678	LEAVE_ROOM		UKN	2019-12-06 11:47:36.913551+00:00	
+271e9c72-a986-4df0-9740-e6f4897c6110	Moderating Owl	bf84482eca2b4fcea0e67f23d671bf95	LEAVE_ROOM		UKN	2019-12-06 11:47:38.924349+00:00	
+1a576ae5-4566-47cd-b4b0-c6f8a3a71791	Bat	b608c90f2f3f431a82643fd0b0c289dc	JOIN_ROOM		USR_ONBOARDING	2019-12-10 19:57:22.653997+00:00	
+f4d0be33-7f4a-4fc8-88b0-b21fe8480f43	Bat	b608c90f2f3f431a82643fd0b0c289dc	LEAVE_ROOM		UKN	2019-12-10 19:57:25.354149+00:00	
+b4695631-f75b-4b7d-96ad-fbd3e50596c0	Moderating Owl	7a2cef5568ad42e78e532cf4f7992060	JOIN_ROOM		USR_MODERATING	2019-12-12 17:12:06.743369+00:00	
+0023f09c-fd2c-4822-809e-7fa90113a7d4	Moderating Owl	7a2cef5568ad42e78e532cf4f7992060	LEAVE_ROOM		UKN	2019-12-12 17:12:09.303049+00:00	

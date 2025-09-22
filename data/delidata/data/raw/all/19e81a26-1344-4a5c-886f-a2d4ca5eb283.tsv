@@ -1,0 +1,30 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+78eed18e-d646-4718-9606-87c0f0fa1c44	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""5"", ""checked"": false}, {""value"": ""6"", ""checked"": false}, {""value"": ""N"", ""checked"": false}, {""value"": ""A"", ""checked"": false}]"	UKN	2020-06-14 20:32:13.860668+00:00	
+3391a5fd-3365-47a1-8dfa-c0242f39d460	Falcon	bfba7a39fa6e4f0891f3403dfd9b81a8	JOIN_ROOM		USR_ONBOARDING	2020-06-14 20:32:17.809988+00:00	
+d8cb1a3d-f627-41a6-a811-e24e63fc739c	Ox	1d257f6d9a3c42ac88c0076518c20506	JOIN_ROOM		USR_ONBOARDING	2020-06-14 20:32:26.743618+00:00	
+3b4d9040-2bff-46ff-9fcc-9b2ef449bd8b	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-06-14 20:32:26.962223+00:00	
+cc89c598-0570-40bc-b2f1-106650b8ba92	Tiger	f6adcff0d1a84f789c83bde680d29022	JOIN_ROOM		USR_ONBOARDING	2020-06-14 20:32:33.772522+00:00	
+bc85202c-e1ef-45e0-b123-b9fb796e6847	Falcon	bfba7a39fa6e4f0891f3403dfd9b81a8	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '6', 'checked': True}, {'value': 'N', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-14 20:32:38.694631+00:00	
+9c88cab1-1c62-4e06-bd44-f883d7752721	Falcon	bfba7a39fa6e4f0891f3403dfd9b81a8	WASON_SUBMIT	[{'value': '5', 'checked': False}, {'value': '6', 'checked': True}, {'value': 'N', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-14 20:32:39.139885+00:00	
+044ef7c8-e308-480c-83a9-67db96328a05	Ox	1d257f6d9a3c42ac88c0076518c20506	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'N', 'checked': True}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-14 20:32:41.722408+00:00	
+091bd1f8-05ff-4dbe-8500-c1b7629cc8e7	Ox	1d257f6d9a3c42ac88c0076518c20506	WASON_SUBMIT	[{'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'N', 'checked': True}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-14 20:32:42.267474+00:00	
+55bd7f47-7b4b-41ec-9d35-eac58acf7851	Tiger	f6adcff0d1a84f789c83bde680d29022	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'N', 'checked': True}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-14 20:32:44.120860+00:00	
+e4646826-d563-477e-9aa4-31ce693f77d1	Tiger	f6adcff0d1a84f789c83bde680d29022	WASON_SUBMIT	[{'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'N', 'checked': True}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-14 20:32:44.455524+00:00	
+33526668-c3e3-4f5b-8d40-8e2db1bf9756	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-06-14 20:32:44.898900+00:00	
+761b8405-3a03-4d1f-b75b-ee19166a7ab3	Tiger	f6adcff0d1a84f789c83bde680d29022	CHAT_MESSAGE	So what do you guys think	USR_PLAYING	2020-06-14 20:32:56.266332+00:00	
+e58ac47c-68be-40b8-8e13-ddbb7fa65209	Ox	1d257f6d9a3c42ac88c0076518c20506	CHAT_MESSAGE	I would turn A and 6, but it can't be that easy	USR_PLAYING	2020-06-14 20:33:17.317479+00:00	
+cdd6d0db-b856-4ee1-a7ea-e1f75d9a838a	Falcon	bfba7a39fa6e4f0891f3403dfd9b81a8	ROUTING_TIMER_ELAPSED	[{'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'N', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-14 20:33:27.166538+00:00	
+23595295-8abb-4a23-8273-f55f252e8dbf	Falcon	bfba7a39fa6e4f0891f3403dfd9b81a8	CHAT_MESSAGE	I was thinking the same too, but we need to discuss	USR_PLAYING	2020-06-14 20:33:36.904296+00:00	
+ab582e1d-6b2a-4fd1-85ce-ba3c0a47ad6d	Falcon	bfba7a39fa6e4f0891f3403dfd9b81a8	CHAT_MESSAGE	I think turning A would be a no-brainer	USR_PLAYING	2020-06-14 20:33:48.731697+00:00	
+9cabf0ec-aafb-42be-ab66-0a0e1764b563	Falcon	bfba7a39fa6e4f0891f3403dfd9b81a8	CHAT_MESSAGE	@Tiger, what is your opinion	USR_PLAYING	2020-06-14 20:34:00.492975+00:00	
+a92d479b-e1ec-4535-a7a1-4e9b5aadfe62	Tiger	f6adcff0d1a84f789c83bde680d29022	CHAT_MESSAGE	I was thinking, maybe we should turn all odd and even numbers	USR_PLAYING	2020-06-14 20:34:18.550799+00:00	
+221737c2-27a7-4fff-a2fe-5f0074072014	Ox	1d257f6d9a3c42ac88c0076518c20506	CHAT_MESSAGE	hm.. why the odd numbers	USR_PLAYING	2020-06-14 20:34:27.210679+00:00	
+5a9aa81e-25e5-4ca0-a13e-b46540b60157	Falcon	bfba7a39fa6e4f0891f3403dfd9b81a8	WASON_GAME	[{'value': '5', 'checked': False}, {'value': '6', 'checked': True}, {'value': 'N', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-06-14 20:36:24.505804+00:00	
+9877b2f9-575b-4489-ba8c-f8f54c9d9c8e	Falcon	bfba7a39fa6e4f0891f3403dfd9b81a8	WASON_GAME	[{'value': '5', 'checked': True}, {'value': '6', 'checked': True}, {'value': 'N', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-06-14 20:36:26.172739+00:00	
+e2c6535c-1c1e-41f7-8cd6-ccb78fd41237	Tiger	f6adcff0d1a84f789c83bde680d29022	LEAVE_ROOM		KICKED	2020-06-14 20:37:21.123196+00:00	
+f1d7afb7-e7db-4cc8-8b3f-1cc0ccd0a916	Tiger	f6adcff0d1a84f789c83bde680d29022	LEAVE_ROOM		USR_PLAYING	2020-06-14 20:37:21.283959+00:00	
+88e337a0-c933-4a08-a9ce-a24985fa1ccd	Tiger	f6adcff0d1a84f789c83bde680d29022	LEAVE_ROOM		KICKED	2020-06-14 20:37:21.500576+00:00	
+165bcf2a-d689-4c50-9843-c4402cc00ede	Tiger	f6adcff0d1a84f789c83bde680d29022	LEAVE_ROOM		USR_PLAYING	2020-06-14 20:37:21.503018+00:00	
+3b77b3bf-581f-4973-92b8-679788c22645	Ox	1d257f6d9a3c42ac88c0076518c20506	LEAVE_ROOM		KICKED	2020-06-14 20:37:29.139604+00:00	
+217b2d27-554d-45e6-843d-4bf650eabd9e	Falcon	bfba7a39fa6e4f0891f3403dfd9b81a8	LEAVE_ROOM		USR_PLAYING	2020-06-14 20:39:42.230581+00:00	
+5ab5e76d-9a6c-4a75-a7ac-ed25ce48e756	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-14 20:39:42.443049+00:00	

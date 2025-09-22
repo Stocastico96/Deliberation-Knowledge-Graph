@@ -1,0 +1,74 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+ce71d69d-1831-4b9e-bb46-ffdaedac9023	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""W"", ""checked"": false}, {""value"": ""3"", ""checked"": false}, {""value"": ""4"", ""checked"": false}, {""value"": ""U"", ""checked"": false}]"	UKN	2020-04-27 13:12:23.812081+00:00	
+5878ab55-aeaf-44e3-aa70-f538732709a1	Alpaca	bd20dc458c6342e1b0d704445b8542f3	JOIN_ROOM		USR_ONBOARDING	2020-04-27 13:12:24.378280+00:00	
+1a2d3429-833d-4c5b-9d60-33c39a928adf	Leopard	80124d6d46f0400aa70ea038990de3ce	JOIN_ROOM		USR_ONBOARDING	2020-04-27 13:12:28.151125+00:00	
+687edf20-367e-49a9-bcf3-ef0ec81b2180	Alpaca	bd20dc458c6342e1b0d704445b8542f3	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': False}]	USR_ONBOARDING	2020-04-27 13:13:14.391197+00:00	
+f26a3b18-2320-4927-9986-34bae50695ea	Alpaca	bd20dc458c6342e1b0d704445b8542f3	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': False}]	USR_ONBOARDING	2020-04-27 13:13:15.105520+00:00	
+3c7d04eb-2fed-474f-ba56-69b6dc50bb0a	Leopard	80124d6d46f0400aa70ea038990de3ce	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': False}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2020-04-27 13:13:24.304719+00:00	
+09ddea8e-4e05-4221-90d0-f2a49ea52db7	Leopard	80124d6d46f0400aa70ea038990de3ce	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': False}, {'value': '4', 'checked': True}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2020-04-27 13:13:29.391163+00:00	
+a525da6a-4d0b-4c66-bb43-f29511e23676	Leopard	80124d6d46f0400aa70ea038990de3ce	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': False}, {'value': '4', 'checked': True}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2020-04-27 13:13:30.563791+00:00	
+cf9a8de5-2806-4b95-b064-db2633f9b063	Chipmunk	9d90df182b3249a1a05933e2249dd147	JOIN_ROOM		USR_ONBOARDING	2020-04-27 13:14:59.823178+00:00	
+2ebc3d09-6f59-4139-a1c0-79c5629a1f3e	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-04-27 13:15:00.115319+00:00	
+83f877a9-d0c5-420c-af1d-9dce779780a9	Alpaca	bd20dc458c6342e1b0d704445b8542f3	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2020-04-27 13:15:37.282901+00:00	
+82ab6024-6078-415d-ae3a-f5d22b84374d	Alpaca	bd20dc458c6342e1b0d704445b8542f3	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2020-04-27 13:15:38.340534+00:00	
+ef622d9a-fa30-459c-be9c-2a628729db7e	Chipmunk	9d90df182b3249a1a05933e2249dd147	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': False}]	USR_ONBOARDING	2020-04-27 13:15:58.343514+00:00	
+51917234-258a-47e8-815c-a3c3ee348b7e	Chipmunk	9d90df182b3249a1a05933e2249dd147	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': False}]	USR_ONBOARDING	2020-04-27 13:15:59.061629+00:00	
+d25d51a7-f17a-4ffe-9ddd-b896b827f1f1	Alpaca	bd20dc458c6342e1b0d704445b8542f3	ROUTING_TIMER_ELAPSED	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': False}]	USR_ONBOARDING	2020-04-27 13:16:00.278743+00:00	
+d526f2f0-5fa2-497b-ad38-b0554e878dbd	Leopard	80124d6d46f0400aa70ea038990de3ce	ROUTING_TIMER_ELAPSED	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': False}, {'value': '4', 'checked': True}, {'value': 'U', 'checked': True}]	USR_ONBOARDING	2020-04-27 13:16:00.299303+00:00	
+5fb1d954-9ce6-480a-941f-672d3c294717	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-04-27 13:16:00.715449+00:00	
+95837289-c196-44cd-b774-d19a27611065	Chipmunk	9d90df182b3249a1a05933e2249dd147	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-04-27 13:16:00.754110+00:00	
+d4c47be7-51ed-4d3f-a300-b3a1100f5eb2	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-04-27 13:16:00.778123+00:00	
+42279c2c-e046-47b9-8947-15ed2dd4620b	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	hi	USR_PLAYING	2020-04-27 13:16:14.061506+00:00	
+f807479c-c17a-4086-bdb1-791895394a01	Chipmunk	9d90df182b3249a1a05933e2249dd147	CHAT_MESSAGE	Hello	USR_PLAYING	2020-04-27 13:16:21.410559+00:00	
+7c50f9af-2f23-462b-8ce0-12a97a04f71a	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	hiya	USR_PLAYING	2020-04-27 13:16:26.422394+00:00	
+819bd7d8-252d-4cd3-a813-e82c01a50ddc	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	is it 4 and u?	USR_PLAYING	2020-04-27 13:16:42.845221+00:00	
+f8e91a85-a7df-446b-af70-bb796668f287	Chipmunk	9d90df182b3249a1a05933e2249dd147	CHAT_MESSAGE	So what do you guys think?	USR_PLAYING	2020-04-27 13:16:49.646078+00:00	
+6faf3082-acb6-46aa-921a-f3753ca9470d	Chipmunk	9d90df182b3249a1a05933e2249dd147	CHAT_MESSAGE	I think we only need to do 2 right?	USR_PLAYING	2020-04-27 13:16:55.393009+00:00	
+8ffe3448-60a7-40ff-b357-23ea769c8f25	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	I believe the answer is 3 and u.	USR_PLAYING	2020-04-27 13:16:58.908468+00:00	
+f11c6a43-8682-490b-88f3-fe935ead3e30	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	I don't have a 2	USR_PLAYING	2020-04-27 13:17:12.539752+00:00	
+1f7a32fb-d12c-48cb-bc39-afbf3d30f6d2	Chipmunk	9d90df182b3249a1a05933e2249dd147	CHAT_MESSAGE	No I meant like two cards	USR_PLAYING	2020-04-27 13:17:23.941404+00:00	
+31b05f8b-a732-4433-bf5a-938411cea1ad	Chipmunk	9d90df182b3249a1a05933e2249dd147	CHAT_MESSAGE	3 and u may be it	USR_PLAYING	2020-04-27 13:17:28.485974+00:00	
+c3592aee-d017-44d3-bc6e-7a2685ec4a18	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	yes two cards	USR_PLAYING	2020-04-27 13:17:31.470196+00:00	
+5545dd4e-c3ae-4fbc-8c60-4573ee8289d4	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	should be even # to show vowel on other side and U, a vowel to show even # on the other side	USR_PLAYING	2020-04-27 13:17:58.840482+00:00	
+25b75458-31e9-4ee9-84d2-8be91821ee15	Chipmunk	9d90df182b3249a1a05933e2249dd147	CHAT_MESSAGE	That does make sense	USR_PLAYING	2020-04-27 13:18:24.943509+00:00	
+aa1d9ef6-b052-4c20-8146-7931b17968a0	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	i think so	USR_PLAYING	2020-04-27 13:18:31.515715+00:00	
+c8574d2c-3757-49ca-aa4a-cf8b04620dd7	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	but, the only way to falsify the statement is to find an instance of its opposite.	USR_PLAYING	2020-04-27 13:18:44.331066+00:00	
+6ec8886d-c88a-4918-8103-b57f98a6743d	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	doesn't showing rule is correct verify it?	USR_PLAYING	2020-04-27 13:19:04.344903+00:00	
+fa8ce611-45da-414e-8551-e46fcdaf4269	Chipmunk	9d90df182b3249a1a05933e2249dd147	CHAT_MESSAGE	Hmmm let me think\	USR_PLAYING	2020-04-27 13:19:54.295144+00:00	
+b297b507-9fac-4ca7-99cb-a69b446bbc59	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	say we choose 4 and u. If four has a vowel on the other side, and u an even number we haven't really proven anything.	USR_PLAYING	2020-04-27 13:20:06.297509+00:00	
+a1bb6e10-2592-496f-9b4a-3f4503f05736	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	we've proven the rule	USR_PLAYING	2020-04-27 13:20:27.423687+00:00	
+90f4a7b4-43c9-4c4f-a420-f25efb902d82	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	But, what if three has a vowel on the other side too?	USR_PLAYING	2020-04-27 13:20:44.399984+00:00	
+3a94aeff-592d-4b71-9c43-d5a62829591f	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	if we turn 3 and it is a odd # and w and it is an odd # then we haven't proven the rule	USR_PLAYING	2020-04-27 13:20:58.445621+00:00	
+1806b27b-6ed1-48d1-8ff2-f6a2e1c1a074	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	But, if we turn 3 and u we will have.	USR_PLAYING	2020-04-27 13:21:26.606610+00:00	
+5254f2f8-c654-4eb9-a9a9-ee568e429add	Chipmunk	9d90df182b3249a1a05933e2249dd147	CHAT_MESSAGE	We need to find an instance of vowel and odd number right?	USR_PLAYING	2020-04-27 13:21:29.286514+00:00	
+2cb5ef6f-7b0f-4075-b3cb-ae21347542fa	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	right	USR_PLAYING	2020-04-27 13:21:47.994222+00:00	
+97371d87-1aaf-4b4e-9f97-f473e0cb229c	Chipmunk	9d90df182b3249a1a05933e2249dd147	CHAT_MESSAGE	So 3 and U?	USR_PLAYING	2020-04-27 13:21:51.656124+00:00	
+c41d1a36-3d22-4732-b6a2-a0c9fba48224	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	no because we haven't proven 4 is a vowel	USR_PLAYING	2020-04-27 13:21:52.497257+00:00	
+e444fc49-9743-4bbc-9036-fb629e3e119d	Chipmunk	9d90df182b3249a1a05933e2249dd147	CHAT_MESSAGE	I think it's 3 and U	USR_PLAYING	2020-04-27 13:22:06.279779+00:00	
+26d9cc3d-f13b-4cc6-a0e6-0faab3915020	Chipmunk	9d90df182b3249a1a05933e2249dd147	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2020-04-27 13:22:08.745426+00:00	
+6ea46a0d-ff39-4678-9208-7463979c6823	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	so the w card is irrelevant	USR_PLAYING	2020-04-27 13:22:16.727951+00:00	
+2ed42775-9341-4eb1-a273-1749667fca44	Chipmunk	9d90df182b3249a1a05933e2249dd147	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2020-04-27 13:22:24.055799+00:00	
+8d1d2ae1-c6bc-4919-976a-eaa719a6a138	Chipmunk	9d90df182b3249a1a05933e2249dd147	CHAT_MESSAGE	Yeah I went with 3 and u. It makes sense to me.	USR_PLAYING	2020-04-27 13:22:42.399487+00:00	
+bcbabe61-590c-4e93-a545-7aa729224642	Chipmunk	9d90df182b3249a1a05933e2249dd147	OUT_OF_TIME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2020-04-27 13:23:00.812543+00:00	
+9000c400-71df-4894-b726-f8d5f85d4564	Chipmunk	9d90df182b3249a1a05933e2249dd147	OUT_OF_TIME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2020-04-27 13:23:00.865956+00:00	
+355ad45c-765b-44c3-8edd-30b0bc5fb623	Alpaca	bd20dc458c6342e1b0d704445b8542f3	OUT_OF_TIME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2020-04-27 13:23:00.891083+00:00	
+e1169bbd-4deb-4b44-878c-82e7f21ee9ea	Leopard	80124d6d46f0400aa70ea038990de3ce	OUT_OF_TIME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': False}, {'value': '4', 'checked': True}, {'value': 'U', 'checked': True}]	USR_PLAYING	2020-04-27 13:23:00.922174+00:00	
+314de981-3941-4499-bb21-726e998213ab	Alpaca	bd20dc458c6342e1b0d704445b8542f3	OUT_OF_TIME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2020-04-27 13:23:00.946532+00:00	
+024b92eb-258c-40db-a370-091ad03eac26	Leopard	80124d6d46f0400aa70ea038990de3ce	OUT_OF_TIME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': False}, {'value': '4', 'checked': True}, {'value': 'U', 'checked': True}]	USR_PLAYING	2020-04-27 13:23:00.990803+00:00	
+7e13fd07-56f4-4b11-9239-35746d9b5497	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	choosing the 4 and U doesn't really test the rule	USR_PLAYING	2020-04-27 13:23:04.433471+00:00	
+cbaf3ee5-bf32-4a38-8484-7aad202addf5	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	so we have to choose 3 and U	USR_PLAYING	2020-04-27 13:23:12.919656+00:00	
+d2e5ae9f-0ea3-46d4-8b17-c3d928a217af	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	disagree	USR_PLAYING	2020-04-27 13:23:14.029065+00:00	
+16188b64-d449-4d65-9a34-015ae18e02c2	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	4 can't combine a vowel and odd number	USR_PLAYING	2020-04-27 13:24:03.315658+00:00	
+ee87ae4e-cdba-483c-9458-ed1e960b26e0	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	only a vowel and an even number or a consonant and an even number	USR_PLAYING	2020-04-27 13:24:21.151181+00:00	
+0705b9b5-2897-4535-9074-15f190dad1c8	Alpaca	bd20dc458c6342e1b0d704445b8542f3	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2020-04-27 13:24:49.549541+00:00	
+1ec029cb-909b-4c1f-addd-6714183d4de8	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	4 is an even number if there is a vowel on the backside it and u (if there is an even number on the backside) proves the rule	USR_PLAYING	2020-04-27 13:25:12.157567+00:00	
+e54c1090-39c2-4132-8055-303138005be4	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	we could to 3,4, u or w, 3, 4, u but I'm going with 4, u	USR_PLAYING	2020-04-27 13:26:06.614958+00:00	
+38d16ea8-738a-479c-bc9c-a9f64104753f	Alpaca	bd20dc458c6342e1b0d704445b8542f3	CHAT_MESSAGE	you're suffering from confirmation bias, we're trying to test the rule by finding the inverse.	USR_PLAYING	2020-04-27 13:27:29.805421+00:00	
+4ed740a4-1a45-4c1c-82b9-36d0326d3b94	AUTO_KICKED	9d90df182b3249a1a05933e2249dd147	LEAVE_ROOM		AUTO_KICKED	2020-04-27 13:27:30.200291+00:00	
+7435b2d8-d259-4f69-b3d2-54552c9003ec	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	4, u	USR_PLAYING	2020-04-27 13:28:28.735121+00:00	
+6fc4f7c0-537a-4dd6-9403-21261d1805be	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	okey 3 u	USR_PLAYING	2020-04-27 13:28:42.067253+00:00	
+ac312aed-36a2-48cc-9a0a-359aaec04005	Leopard	80124d6d46f0400aa70ea038990de3ce	CHAT_MESSAGE	think it is wrong but what the heck	USR_PLAYING	2020-04-27 13:28:54.509785+00:00	
+e8f768c2-7d97-40bf-9259-b0d7a0c9e8c5	Leopard	80124d6d46f0400aa70ea038990de3ce	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': True}, {'value': 'U', 'checked': True}]	USR_PLAYING	2020-04-27 13:30:04.038488+00:00	
+4fa81047-1a03-4cdd-a8c2-480e24dd274b	Leopard	80124d6d46f0400aa70ea038990de3ce	WASON_GAME	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2020-04-27 13:30:06.463544+00:00	
+16396788-f47b-4e52-a427-1bb07d8c8dfd	Leopard	80124d6d46f0400aa70ea038990de3ce	WASON_SUBMIT	[{'value': 'W', 'checked': False}, {'value': '3', 'checked': True}, {'value': '4', 'checked': False}, {'value': 'U', 'checked': True}]	USR_PLAYING	2020-04-27 13:30:07.848636+00:00	
+fca25f17-1ddf-42a8-9657-8d412fc3363d	SYSTEM	-1	WASON_FINISHED		UKN	2020-04-27 13:30:08.320919+00:00	

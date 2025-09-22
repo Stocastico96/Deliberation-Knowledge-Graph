@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:del="https://w3id.org/deliberation/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/eu_parliament_debate_unknown">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    <del:identifier>eu_parliament_debate_unknown</del:identifier>
+    <del:name>EU Parliament Debate unknown</del:name>
+    <del:platform>EU Parliament</del:platform>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_1"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_2"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-16-OTH-2017001140543"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-16-OTH-2017001159682"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-16-OTH-2017001159693"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-16-OTH-2017001140543">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>speech_eli/dl/event/MTG-PL-2024-09-16-OTH-2017001140543</del:identifier>
+    <del:text>Resumption of the sitting</del:text>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-16-OTH-2017001159693">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>speech_eli/dl/event/MTG-PL-2024-09-16-OTH-2017001159693</del:identifier>
+    <del:text>Need to prevent security threats like the Solingen attack through addressing illegal migration and effective return (debate)</del:text>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-09-16-OTH-2017001159682">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>speech_eli/dl/event/MTG-PL-2024-09-16-OTH-2017001159682</del:identifier>
+    <del:text>Need to prevent security threats like the Solingen attack through addressing illegal migration and effective return (debate)</del:text>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/topic_1">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>topic_1</del:identifier>
+    <del:name>Resumption of the sitting</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/topic_2">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>topic_2</del:identifier>
+    <del:name>Need to prevent security threats like the Solingen attack through addressing illegal migration and e...</del:name>
+  </rdf:Description>
+</rdf:RDF>

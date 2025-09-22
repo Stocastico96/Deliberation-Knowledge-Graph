@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:del="https://w3id.org/deliberation/ontology#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/ep_debate_20250310">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    <del:identifier>ep_debate_20250310</del:identifier>
+    <del:name>European Parliament Debate - 2025-03-10 (Sample)</del:name>
+    <del:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T00:00:00+00:00</del:startDate>
+    <del:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T23:59:59+00:00</del:endDate>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem1"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem2"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem3"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem4"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem5"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem6"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem7"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem8"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem9"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem10"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem11"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem12"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem13"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem14"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem15"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem16"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem17"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem18"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem19"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem20"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem21"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem22"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/creitem23"/>
+    <del:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+    <del:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_2"/>
+    <del:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_3"/>
+    <del:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_4"/>
+    <del:hasParticipant rdf:resource="https://w3id.org/deliberation/resource/participant_5"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_1"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_2"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_3"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_4"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_5"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_6"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_7"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_8"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_9"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_10"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/contribution_11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#hasConclusion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Argument"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Conclusion"/>
+    <rdfs:comment>Relates an argument to its conclusion.</rdfs:comment>
+    <rdfs:label>has conclusion</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne27d46cd868f422e83b72c67ad140974">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N4ede616e71074b5a899ddd1e82e00c49"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#references">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="Nd0469a16fdb74103b851173dc6382185"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#InformationResource"/>
+    <rdfs:comment>Relates a contribution or argument to information resources it references.</rdfs:comment>
+    <rdfs:label>references</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1736d5cf5c684874b417d5d66ae6300c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N2e9928e2b51142f09f4f6e1404b30101"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#attacks">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Argument"/>
+    <rdfs:range rdf:nodeID="N3410d2abb218433db96640941821f186"/>
+    <rdfs:comment>Indicates that an argument attacks another argument or position.</rdfs:comment>
+    <rdfs:label>attacks</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#isAffiliatedWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
+    <rdfs:comment>Relates a participant to organizations they are affiliated with.</rdfs:comment>
+    <rdfs:label>is affiliated with</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6bd9a5457f384fc38047ccd84f536c0b">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Position"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc6a840cc41cf48ff92f7b57ce3ab2706">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nf0af24d714d54662a1c61d7b6816e9bf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem10">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem10</del:identifier>
+    <del:name>Resumption of the sitting</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#responseTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <rdfs:comment>Relates a contribution to another contribution it responds to.</rdfs:comment>
+    <rdfs:label>response to</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem12">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem12</del:identifier>
+    <del:name>Resumption of the sitting</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/madrid_proposal_19">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>madrid_proposal_19</del:identifier>
+    <del:text>El centro turístico y comercial de Madrid está sólo a 700 metros de la Casa de Campo y de Madrid Rio, pero las conexiones a él son terribles. Propongo unirlo con calles peatonales y arboladas.</del:text>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/madrid_topic_19"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="Nc6a840cc41cf48ff92f7b57ce3ab2706"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The textual content of a contribution, argument, position, premise, or conclusion.</rdfs:comment>
+    <rdfs:label>text</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem21">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem21</del:identifier>
+    <del:name>Approval of the minutes of the sitting</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_6">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>contribution_6</del:identifier>
+    <del:text>The first is on employment protection for the activities of police officers, military personnel, prison officers, and customs and border officials, classifying them as high-risk occupations in the EU. The proposal is referred to the Committee on Employment and Social Affairs.
+The second is on the need to extend the period for implementation of the Recovery and Resilience Facility. This proposal is referred to the Committee on Budgets and the Committee on Economic and Monetary Affairs, as committees responsible, and to the Committee on Employment, the Committee on the Environment, the Committee on Industry, Research and Energy and the Committee on Transport and Tourism, for opinion.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:06:33</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_8">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>contribution_8</del:identifier>
+    <del:text>Now we face new challenges, like the threat of war. Let us not forget how we handled COVID-19. We need to be bold and stay united. By learning from that time we can build a more resilient and cohesive Europe. This will help us face any future crisis with determination and unity.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:07:50</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#platformIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/deliberation/ontology#identifier"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#CrossPlatformIdentifier"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>An identifier specific to a particular platform.</rdfs:comment>
+    <rdfs:label>platform identifier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/participant_2">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+    <del:identifier>participant_2</del:identifier>
+    <del:name>Iratxe García Pérez</del:name>
+    <del:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_S&amp;D"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="en">Deliberation Ontology</rdfs:label>
+    <rdfs:comment xml:lang="en">A comprehensive model for representing deliberative processes across different platforms and contexts.</rdfs:comment>
+    <owl:versionInfo>1.0.0</owl:versionInfo>
+    <dcterms:title xml:lang="en">Deliberation Ontology</dcterms:title>
+    <dcterms:description xml:lang="en">An ontology for representing and analyzing deliberative processes, arguments, and discourse.</dcterms:description>
+    <dcterms:creator>Simone Vagnoni</dcterms:creator>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-03</dcterms:created>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-20</dcterms:modified>
+    <vann:preferredNamespacePrefix>deliberation</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://w3id.org/deliberation/ontology#</vann:preferredNamespaceUri>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <owl:imports rdf:resource="https://w3id.org/deliberation/mappings"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#madeBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+    <rdfs:comment>Relates a contribution to the participant who made it.</rdfs:comment>
+    <rdfs:label>made by</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#hasArgument">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Argument"/>
+    <rdfs:comment>Relates a deliberation process to arguments made within it.</rdfs:comment>
+    <rdfs:label>has argument</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad5da354be0c42bb9bf05ff2fa376fd6">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Argument"/>
+    <rdf:rest rdf:nodeID="N66039c44083f45f48bc9f22367d6d262"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/madrid_proposal_7">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>madrid_proposal_7</del:identifier>
+    <del:text>Algo tan básico como limpiar.</del:text>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/madrid_topic_7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N66039c44083f45f48bc9f22367d6d262">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_4">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>contribution_4</del:identifier>
+    <del:text>These decisions will be set out in the minutes of today's sitting and take effect on the date of this announcement.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:05:53</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem20">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem20</del:identifier>
+    <del:name>Agenda of the next sitting</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Conclusion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/deliberation/ontology#ArgumentStructure"/>
+    <rdfs:comment>The claim that an argument aims to establish.</rdfs:comment>
+    <rdfs:label>Conclusion</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_5">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>contribution_5</del:identifier>
+    <del:text>The corrigenda are available on the plenary webpage. Their titles will be published in the minutes of this sitting.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:06:09</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#DeliberationProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The overall deliberative activity, including its stages, timeline, and outcomes.</rdfs:comment>
+    <rdfs:label>Deliberation Process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/participant_5">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+    <del:identifier>participant_5</del:identifier>
+    <del:name>Alice Kuhnke</del:name>
+    <del:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_Verts_ALE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Participant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Individuals or entities taking part in a deliberation process.</rdfs:comment>
+    <rdfs:label>Participant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_2">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>contribution_2</del:identifier>
+    <del:text>First of all, dear colleagues, two years ago, on 28 February 2023, in Tempi, Greece, a tragic railway accident cost 57 people their lives and injured even more. We mark a sad anniversary today as our hearts go out to the victims, to those who lost their loved ones and to the injured who still bear the scars of that day. This House remembers them and honours them.
+Over the coming months, we will celebrate also the 35th anniversary of the assertion of state continuity of Estonia, Latvia and Lithuania, enshrining their independence de jure under international law throughout different illegal occupations and annexations of the 20th century.
+These anniversaries remind us again of the sacrifice of so many for the liberty that we enjoy today, and underscore our determination never to allow another generation of Europeans to be lost behind an Iron Curtain.
+Tomorrow at noon, we will once again welcome national leader of Belarus, Sviatlana Tsikhanouskaya, to this plenary, along with other brave women from Ukraine and Belarus, who are standing up for liberty in order to mark International Women's Day. May I ask that you are present. I count on you and your colleagues to be here then, because this week will also serve to reaffirm this House's steadfast support for the people of Belarus and their struggle for freedom, including political prisoners.
+And to express this solidarity and to mark the International Day of Solidarity with Belarus, the European Parliament is once again offering you, as Members of this Parliament, the opportunity to sign postcards addressed to the 1 250 political prisoners who are unfairly imprisoned by Lukashenka's regime. I urge you to join in this action to show them that their sacrifice will not remain unanswered.
+Last year, this initiative was extremely successful – in the previous mandate, in the previous Parliament. I ask that we make this year's even more so. We know their names, we see their struggle and we stand with them. So this message and this initiative will send the strongest of messages that they are not alone.
+(Applause)</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:02:43</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_11">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>contribution_11</del:identifier>
+    <del:text>The right to be who you are, to love who you want and to live your life free from discrimination is a fundamental European right. That right is clearly under attack.
+At this critical moment, the decision by the European Commission to announce the withdrawal of the horizontal anti-discrimination directive came as a shock. It also represents a betrayal of all the EU citizens who are currently lacking protection against discrimination.
+It is time for the EU to show global leadership against discrimination, not to back down. As the European Parliament's rapporteur for this directive, I strongly condemn this decision and I urge the European Commission to immediately reconsider it.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:12:01</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/participant_1">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+    <del:identifier>participant_1</del:identifier>
+    <del:name>President.</del:name>
+    <del:hasRole rdf:resource="https://w3id.org/deliberation/resource/role_participant_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2c90cd2b891046f097b4acfe6efaac03">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N956b67d8d52f42cebc6b2dcda3d33c29"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem15">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem15</del:identifier>
+    <del:name>Resumption of the sitting</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#supports">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Argument"/>
+    <rdfs:range rdf:nodeID="Ne27d46cd868f422e83b72c67ad140974"/>
+    <rdfs:comment>Indicates that an argument supports another argument or position.</rdfs:comment>
+    <rdfs:label>supports</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#hasParticipant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+    <rdfs:comment>Relates a deliberation process to its participants.</rdfs:comment>
+    <rdfs:label>has participant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_7">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>contribution_7</del:identifier>
+    <del:text>The dates are available on the plenary webpage and the deadlines are as follows: amendments, today at 7 p.m.; roll-call votes, Tuesday, 11 March at 4 p.m. The vote will then take place on Wednesday, 12 March at noon.
+⁂
+I would like to inform the House that I have received multiple requests for points of order. I will go through them one by one.
+First, I give the floor to Ms Iratxe García Pérez.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:07:20</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Stage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A distinct phase in a deliberation process with specific activities and goals.</rdfs:comment>
+    <rdfs:label>Stage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Contribution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Any input provided by a participant in a deliberation.</rdfs:comment>
+    <rdfs:label>Contribution</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4b21d2b857804921ad8378b347184e64">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nffa78aa0808441c3828b2ceaac88852b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#FallacyType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Classification of logical fallacies that can occur in arguments.</rdfs:comment>
+    <rdfs:label>Fallacy Type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#hasStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Stage"/>
+    <rdfs:comment>Relates a deliberation process to its stages.</rdfs:comment>
+    <rdfs:label>has stage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The name of an entity.</rdfs:comment>
+    <rdfs:label>name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Position">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A stance or viewpoint on an issue under deliberation.</rdfs:comment>
+    <rdfs:label>Position</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem19">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem19</del:identifier>
+    <del:name>One-minute speeches on matters of political importance</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3f514f7182514f0f94fcf4b58187cc04">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <rdf:rest rdf:nodeID="Nac0ac7487f904974a5b6fb0a40cacf84"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Consensus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Agreement reached through deliberation.</rdfs:comment>
+    <rdfs:label>Consensus</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Topic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The subject matter of a deliberation.</rdfs:comment>
+    <rdfs:label>Topic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem18">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem18</del:identifier>
+    <del:name>European Social Fund Plus post-2027 (short presentation)</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#hasTopic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <rdfs:comment>Relates a deliberation process to its topic.</rdfs:comment>
+    <rdfs:label>has topic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/madrid_topic_7">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>madrid_topic_7</del:identifier>
+    <del:name>Limpiar las calles</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A unique identifier for an entity.</rdfs:comment>
+    <rdfs:label>identifier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_1">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>contribution_1</del:identifier>
+    <del:text></del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:02:06</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_3">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>contribution_3</del:identifier>
+    <del:text>Are there any comments? If not, the minutes will be deemed approved.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:05:33</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem9">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem9</del:identifier>
+    <del:name>Order of business</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Premise">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/deliberation/ontology#ArgumentStructure"/>
+    <rdfs:comment>A statement that provides support for a conclusion in an argument.</rdfs:comment>
+    <rdfs:label>Premise</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4ede616e71074b5a899ddd1e82e00c49">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Argument"/>
+    <rdf:rest rdf:nodeID="N68e03c93b37b45a197aa05b0a4e9d03e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb2cec24ed0ff4c5d96a436d7239026ed">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Stage"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9655054cb0c14a029a4008839166b1d5">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Conclusion"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf0af24d714d54662a1c61d7b6816e9bf">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Argument"/>
+    <rdf:rest rdf:nodeID="N3f514f7182514f0f94fcf4b58187cc04"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#hasContribution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <rdfs:comment>Relates a deliberation process to contributions made within it.</rdfs:comment>
+    <rdfs:label>has contribution</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#hasEvidence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="N4b21d2b857804921ad8378b347184e64"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Evidence"/>
+    <rdfs:comment>Relates an argument or premise to supporting evidence.</rdfs:comment>
+    <rdfs:label>has evidence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem16">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem16</del:identifier>
+    <del:name>Cutting red tape and simplifying business in the EU: the first Omnibus proposals (debate)</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_9">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>contribution_9</del:identifier>
+    <del:text>Extremist factions associated with militant groups have reportedly executed civilians, including women and children. Christian families have endured brutal killings and violent raids at the hands of armed militants who have stormed homes, seized belongings and claimed innocent lives.
+The European Union must take decisive action in support of stability and humanitarian relief efforts to alleviate the suffering of the Syrian people, including Christians and other affected communities.
+Christianity in Syria and in some other parts of the Middle East-North Africa region is at a critical crossroads. It will either endure or it will vanish, leaving behind a profound religious, ethnic and cultural void.
+Europe must not remain indifferent to this existential threat. An External Action Service with its press release - it is shameful that they did not take this into account.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:09:07</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem4">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem4</del:identifier>
+    <del:name>Approval of the minutes of the previous sitting</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#hasPremise">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Argument"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Premise"/>
+    <rdfs:comment>Relates an argument to its premises.</rdfs:comment>
+    <rdfs:label>has premise</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/participant_3">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+    <del:identifier>participant_3</del:identifier>
+    <del:name>Željana Zovko</del:name>
+    <del:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_PPE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#startDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="N2c90cd2b891046f097b4acfe6efaac03"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:comment>The start date and time of a deliberation process or stage.</rdfs:comment>
+    <rdfs:label>start date</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Role">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The function or position a participant holds in a deliberation.</rdfs:comment>
+    <rdfs:label>Role</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#hasRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Role"/>
+    <rdfs:comment>Relates a participant to their role in a deliberation.</rdfs:comment>
+    <rdfs:label>has role</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#CrossPlatformIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Mechanisms to link entities across different deliberation platforms.</rdfs:comment>
+    <rdfs:label>Cross Platform Identifier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem2">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem2</del:identifier>
+    <del:name>Opening of the sitting</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N956b67d8d52f42cebc6b2dcda3d33c29">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    <rdf:rest rdf:nodeID="N3c5ec33e54c24bf29e497c7549347cb3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#url">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#InformationResource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:comment>The URL of an information resource.</rdfs:comment>
+    <rdfs:label>url</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#containsFallacy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Argument"/>
+    <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#FallacyType"/>
+    <rdfs:comment>Indicates that an argument contains a specific type of logical fallacy.</rdfs:comment>
+    <rdfs:label>contains fallacy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/org_PfE">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
+    <del:name>PfE</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8a50277979e3481995094a31eb3c262c">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Premise"/>
+    <rdf:rest rdf:nodeID="N9655054cb0c14a029a4008839166b1d5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#InformationResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>External sources of information referenced in deliberations.</rdfs:comment>
+    <rdfs:label>Information Resource</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem8">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem8</del:identifier>
+    <del:name>Parliament’s calendar of part-sessions - 2026</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c830c2f140e48bd90051239b6bc53ba">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Premise"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#ArgumentStructure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The formal structure of an argument, including premises and conclusions.</rdfs:comment>
+    <rdfs:label>Argument Structure</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2e9928e2b51142f09f4f6e1404b30101">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    <rdf:rest rdf:nodeID="Nb2cec24ed0ff4c5d96a436d7239026ed"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3410d2abb218433db96640941821f186">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N7075d52ee55e4240a600707b41addd77"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem5">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem5</del:identifier>
+    <del:name>Composition of committees and delegations</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Argument">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <rdfs:comment>A structured form of contribution with premises and conclusions.</rdfs:comment>
+    <rdfs:label>Argument</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nac0ac7487f904974a5b6fb0a40cacf84">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Position"/>
+    <rdf:rest rdf:nodeID="N8a50277979e3481995094a31eb3c262c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Formal entities represented in or responsible for deliberations.</rdfs:comment>
+    <rdfs:label>Organization</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem3">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem3</del:identifier>
+    <del:name>Statements by the President</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem7">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem7</del:identifier>
+    <del:name>Proposals for Union acts</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/participant_4">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+    <del:identifier>participant_4</del:identifier>
+    <del:name>Αφροδίτη Λατινοπούλου</del:name>
+    <del:isAffiliatedWith rdf:resource="https://w3id.org/deliberation/resource/org_PfE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem22">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem22</del:identifier>
+    <del:name>Closure of the sitting</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem23">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem23</del:identifier>
+    <del:name>Closure of the session</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/decide_madrid_process">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    <del:identifier>decide_madrid_process</del:identifier>
+    <del:name>Decide Madrid Participatory Democracy Platform</del:name>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/madrid_topic_7"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/madrid_topic_19"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/madrid_proposal_7"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/madrid_proposal_19"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/contribution_10">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>contribution_10</del:identifier>
+    <del:text>Όλοι γνωρίζουμε, αγαπητοί συνάδελφοι, πως αυτό είναι μία χυδαία συκοφαντία κατά όλων μας. Είμαι σίγουρη πως το ECR θα καταδικάσει τα ψέματα του κ. Φράγκου, ο οποίος όχι μόνο προσπάθησε να εξαπατήσει τους Έλληνες, με μόνο σκοπό να διασύρει την πατρίδα του αλλά και να πατήσει πάνω σε νεκρούς, πηγαίνοντας χέρι χέρι με τους αριστερούς. Κύριε Φράγκο, να χαίρεστε τον πατριωτισμό σας. Εσκεμμένα συκοφάντησατε τους θεσμούς που υποτίθεται πως υπηρετείτε. Και, αγαπητό ECR, να χαίρεστε το μέλος σας που ακόμα κρύβεται αντί να ζητήσει συγνώμη. Σε αυτήν την Ολομέλεια οι σοβαροί πατριώτες έχουμε ιερό χρέος να προστατεύουμε τόσο τους θεσμούς όσο και τις πατρίδες μας. Ευρωβουλευτές και συμπεριφορές τύπου Φράγκου δεν είναι ανεκτές.</del:text>
+    <del:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-10T17:10:36</del:timestamp>
+    <del:madeBy rdf:resource="https://w3id.org/deliberation/resource/participant_4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem1">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem1</del:identifier>
+    <del:name>Resumption of the session</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/madrid_topic_19">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>madrid_topic_19</del:identifier>
+    <del:name>Unir el centro con Madrid Río de forma peatonal</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7075d52ee55e4240a600707b41addd77">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Argument"/>
+    <rdf:rest rdf:nodeID="N6bd9a5457f384fc38047ccd84f536c0b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#LegalSource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/deliberation/ontology#InformationResource"/>
+    <rdfs:comment>Legal documents, frameworks, or interpretations relevant to deliberations.</rdfs:comment>
+    <rdfs:label>Legal Source</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/role_participant_1">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Role"/>
+    <del:name>President</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Evidence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Supporting information for claims made in arguments.</rdfs:comment>
+    <rdfs:label>Evidence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem6">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem6</del:identifier>
+    <del:name>Corrigenda (Rule 251)</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem13">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem13</del:identifier>
+    <del:name>Requests for the waiver of immunity</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#endDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="N1736d5cf5c684874b417d5d66ae6300c"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:comment>The end date and time of a deliberation process or stage.</rdfs:comment>
+    <rdfs:label>end date</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/org_S&amp;D">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
+    <del:name>S&amp;D</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N68e03c93b37b45a197aa05b0a4e9d03e">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Position"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd0469a16fdb74103b851173dc6382185">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nad5da354be0c42bb9bf05ff2fa376fd6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem14">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem14</del:identifier>
+    <del:name>Request for the defence of immunity</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem11">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem11</del:identifier>
+    <del:name>Supporting the EU’s most vulnerable regions against devastating effects of climate change, such as the recent cyclone hitting La Réunion (debate)</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/creitem17">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>creitem17</del:identifier>
+    <del:name>Establishing the Reform and Growth Facility for the Republic of Moldova (debate)</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#timestamp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:comment>The date and time when a contribution was made.</rdfs:comment>
+    <rdfs:label>timestamp</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nffa78aa0808441c3828b2ceaac88852b">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Argument"/>
+    <rdf:rest rdf:nodeID="N3c830c2f140e48bd90051239b6bc53ba"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/org_Verts_ALE">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
+    <del:name>Verts/ALE</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c5ec33e54c24bf29e497c7549347cb3">
+    <rdf:first rdf:resource="https://w3id.org/deliberation/ontology#Stage"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/org_PPE">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Organization"/>
+    <del:name>PPE</del:name>
+  </rdf:Description>
+</rdf:RDF>

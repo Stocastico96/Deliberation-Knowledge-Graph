@@ -1,0 +1,34 @@
+@prefix del: <https://w3id.org/deliberation/ontology#> .
+
+<https://w3id.org/deliberation/resource/barcelona_real_process> a del:DeliberationProcess ;
+    del:name "Decidim Barcelona - Real Citizen Participation" ;
+    del:platform "Decidim Barcelona" .
+
+<https://w3id.org/deliberation/resource/delidata_real_process> a del:DeliberationProcess ;
+    del:name "DeliData - Real Deliberation Research" ;
+    del:platform "DeliData" .
+
+<https://w3id.org/deliberation/resource/eu_parliament_real_process> a del:DeliberationProcess ;
+    del:name "European Parliament Debate - Real Session" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/madrid_real_process> a del:DeliberationProcess ;
+    del:name "Decide Madrid - Real Citizen Proposals" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/us_supreme_court_real_process> a del:DeliberationProcess ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/us_supreme_real_participant_0>,
+        <https://w3id.org/deliberation/resource/us_supreme_real_participant_1>,
+        <https://w3id.org/deliberation/resource/us_supreme_real_participant_2> ;
+    del:name "US Supreme Court - Real Oral Arguments" ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_supreme_real_participant_0> a del:Participant ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_supreme_real_participant_1> a del:Participant ;
+    del:platform "US Supreme Court" .
+
+<https://w3id.org/deliberation/resource/us_supreme_real_participant_2> a del:Participant ;
+    del:platform "US Supreme Court" .
+

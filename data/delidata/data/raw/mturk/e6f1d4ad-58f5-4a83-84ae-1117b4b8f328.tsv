@@ -1,0 +1,113 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+de4df628-42e4-4f7d-9148-78cd78dd1a58	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""I"", ""checked"": false}, {""value"": ""5"", ""checked"": false}, {""value"": ""6"", ""checked"": false}, {""value"": ""V"", ""checked"": false}]"	UKN	2020-05-26 19:09:16.900060+00:00	
+99e59885-9817-4b8e-9bb1-1a1cd31d2bd0	Bee	e70865f12a0d49708de06f7b1d8483b9	JOIN_ROOM		USR_ONBOARDING	2020-05-26 19:09:17.366304+00:00	
+33aa0841-d843-4ccc-b109-6ff510c73c4c	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	JOIN_ROOM		USR_ONBOARDING	2020-05-26 19:09:22.146028+00:00	
+638a16fe-ba09-45ac-ab21-67e2710cd6ae	Bee	e70865f12a0d49708de06f7b1d8483b9	LEAVE_ROOM		USR_ONBOARDING	2020-05-26 19:09:31.348978+00:00	
+fc94a8f9-a82f-4658-a588-6376111c0c02	Dolphin	76f6fa6dc4c54811ae18533e3052a856	JOIN_ROOM		USR_ONBOARDING	2020-05-26 19:11:07.594593+00:00	
+0d45a551-1103-4042-90fd-5f232c5940e8	Dolphin	76f6fa6dc4c54811ae18533e3052a856	LEAVE_ROOM		USR_ONBOARDING	2020-05-26 19:11:11.404466+00:00	
+5d7206e4-24b6-422d-9743-40b523cb640c	Beaver	212945ddbd584676ab32bb51a2053e7f	JOIN_ROOM		USR_ONBOARDING	2020-05-26 19:11:29.805747+00:00	
+b50c5693-5055-426a-beb8-86d8c42d991a	Falcon	e71a44a52bc04995bea70851f30f77f6	JOIN_ROOM		USR_ONBOARDING	2020-05-26 19:11:35.515464+00:00	
+d7e7d6b0-e225-42f3-a544-cf46d98b589c	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-05-26 19:11:35.743200+00:00	
+04e140eb-3ae4-4f2f-9f0f-650c57288fb6	Giraffe	da17ebdafe0446a4b263584aac484ac8	JOIN_ROOM		USR_ONBOARDING	2020-05-26 19:11:36.129336+00:00	
+67379368-646e-4b36-a75c-b5d2b28bf087	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_ONBOARDING	2020-05-26 19:11:57.721900+00:00	
+657d10f1-bc7f-48be-b809-b3d8c8dd8a55	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': False}]	USR_ONBOARDING	2020-05-26 19:12:01.175954+00:00	
+6e71c3e7-d7bd-442c-98ab-c1d8b72ad542	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': True}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': False}]	USR_ONBOARDING	2020-05-26 19:12:02.031697+00:00	
+b7d5ece7-58d0-4b75-b532-cf94675d55c6	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': True}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': True}]	USR_ONBOARDING	2020-05-26 19:12:02.825815+00:00	
+507a628f-9e4b-4542-8f1a-6b41e22d0132	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	WASON_SUBMIT	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': True}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': True}]	USR_ONBOARDING	2020-05-26 19:12:03.583834+00:00	
+06a14545-7f39-4093-b921-43b688a03dcc	Beaver	212945ddbd584676ab32bb51a2053e7f	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_ONBOARDING	2020-05-26 19:12:23.194970+00:00	
+f9b25f5a-2ea4-4d95-94fc-5de1671c2d2d	Beaver	212945ddbd584676ab32bb51a2053e7f	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': False}]	USR_ONBOARDING	2020-05-26 19:12:25.468034+00:00	
+7281116a-66f0-4fc2-80ff-bd5868995252	Beaver	212945ddbd584676ab32bb51a2053e7f	WASON_SUBMIT	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': False}]	USR_ONBOARDING	2020-05-26 19:12:26.396938+00:00	
+6ef00cd7-3a61-4460-a46f-70a5ebef0c46	Beaver	212945ddbd584676ab32bb51a2053e7f	ROUTING_TIMER_ELAPSED	[{'value': 'I', 'checked': False}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_ONBOARDING	2020-05-26 19:12:35.874830+00:00	
+94d92661-79a5-4b68-897e-2801c2f09752	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	ROUTING_TIMER_ELAPSED	[{'value': 'I', 'checked': False}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_ONBOARDING	2020-05-26 19:12:35.921959+00:00	
+42384f6f-8bbb-4e67-9a65-5efb75516f48	Falcon	e71a44a52bc04995bea70851f30f77f6	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-05-26 19:12:36.747229+00:00	
+87029a4c-b7f2-4ca7-bb5e-e83e5b66216b	Falcon	e71a44a52bc04995bea70851f30f77f6	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_ONBOARDING	2020-05-26 19:12:39.440293+00:00	
+c53eae80-1d15-4580-ba76-04bb3f4ad6bd	Giraffe	da17ebdafe0446a4b263584aac484ac8	WASON_GAME	[{'value': 'I', 'checked': False}, {'value': '5', 'checked': True}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_ONBOARDING	2020-05-26 19:12:45.690653+00:00	
+234f90d6-d66b-4863-bcbd-0416012eba53	Giraffe	da17ebdafe0446a4b263584aac484ac8	WASON_GAME	[{'value': 'I', 'checked': False}, {'value': '5', 'checked': True}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': True}]	USR_ONBOARDING	2020-05-26 19:12:46.584083+00:00	
+5cac4ef0-afdb-4adf-9e70-aaf550c363c2	Giraffe	da17ebdafe0446a4b263584aac484ac8	WASON_SUBMIT	[{'value': 'I', 'checked': False}, {'value': '5', 'checked': True}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': True}]	USR_ONBOARDING	2020-05-26 19:12:49.485705+00:00	
+61d9d75c-4765-420d-bde5-8cd2f7613747	Falcon	e71a44a52bc04995bea70851f30f77f6	WASON_SUBMIT	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_ONBOARDING	2020-05-26 19:12:59.530505+00:00	
+714ae308-dee1-41d5-a5a2-06ff8b5f4366	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-05-26 19:12:59.932945+00:00	
+f62df7b7-cff7-46a2-9df8-01626ee2eb27	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	hello	USR_PLAYING	2020-05-26 19:13:10.268803+00:00	
+8740915c-65ff-4b68-b5be-25269f93ff82	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	Hi	USR_PLAYING	2020-05-26 19:13:17.716290+00:00	
+922873c5-451d-430c-a741-4c6238f058c0	Falcon	e71a44a52bc04995bea70851f30f77f6	CHAT_MESSAGE	Hi	USR_PLAYING	2020-05-26 19:13:19.817459+00:00	
+e42897e5-ab73-44ca-9d6a-8964fcf21c4f	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	Hey everyone!	USR_PLAYING	2020-05-26 19:13:24.660220+00:00	
+d069212b-8678-4593-a2f4-91d3da1dea9a	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	What did everyone choose?	USR_PLAYING	2020-05-26 19:13:30.554922+00:00	
+ee085ded-7990-4b7d-a84d-2e0637005b7f	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	do we all have i 5 6 and v?	USR_PLAYING	2020-05-26 19:13:43.307191+00:00	
+7733ccb5-71cb-4738-a948-a74f037b03b3	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	I chose the card with 'I' and the card with '6'.	USR_PLAYING	2020-05-26 19:13:50.146846+00:00	
+85584ff2-fd86-48b4-9210-a6fe749b8d03	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	I have that	USR_PLAYING	2020-05-26 19:13:50.177032+00:00	
+7154d5a4-a592-491f-af9c-a7fb36a3a1d7	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	@Alpaca 	USR_PLAYING	2020-05-26 19:14:05.827365+00:00	
+de6861e2-e60f-4868-8fad-7b2d7b547145	Falcon	e71a44a52bc04995bea70851f30f77f6	CHAT_MESSAGE	I have I	USR_PLAYING	2020-05-26 19:14:07.752453+00:00	
+11d01939-3ec0-4d33-99d6-837f1a45c24d	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	yes, i agree	USR_PLAYING	2020-05-26 19:14:15.796859+00:00	
+d4ea1d49-5357-4b7b-9d86-2840bf7b86c3	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	@Alpaca I also have the same set of cards.	USR_PLAYING	2020-05-26 19:14:20.501429+00:00	
+f326702c-cb64-4932-b0fe-6bfc6ebcdfbd	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	But thinking about it again, I think maybe all cards would need to be selected to see if the rule applies.	USR_PLAYING	2020-05-26 19:14:48.810088+00:00	
+9d0f2b31-b4dc-4a40-b640-6ba74208aa5c	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	What do you guys think?	USR_PLAYING	2020-05-26 19:14:52.727255+00:00	
+8e5e3302-b792-4040-bf4f-555d48566463	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	is the 5 is turned over, there could be a vowel	USR_PLAYING	2020-05-26 19:14:58.540305+00:00	
+3ce0e4c9-9bf4-418e-b684-8c0cc5782db7	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	I messed up in my inital guess	USR_PLAYING	2020-05-26 19:15:01.609729+00:00	
+9a1e654a-e4e6-4f13-912d-583d8080c532	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	misread the rules	USR_PLAYING	2020-05-26 19:15:03.896257+00:00	
+982d52c8-8d1f-4d04-9a07-9d44454318c5	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	I think it;s I and 6 now since we don't know the rules for odd numbers	USR_PLAYING	2020-05-26 19:15:16.100543+00:00	
+b98c8bc6-c630-4c08-a538-8d1e01b76bd2	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	and consinents	USR_PLAYING	2020-05-26 19:15:18.864055+00:00	
+cc52dd18-81eb-42e6-bf4a-95c641132ff6	Falcon	e71a44a52bc04995bea70851f30f77f6	CHAT_MESSAGE	It does not say that all even #s need to have vowels on the other side.	USR_PLAYING	2020-05-26 19:15:22.149334+00:00	
+41f44b87-b542-4b68-9ab1-98ba17e92da8	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	do we care what is on the other side of the v?	USR_PLAYING	2020-05-26 19:15:33.000870+00:00	
+7cdd0630-6eea-4980-a9a5-d06a4264e866	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	That's true @Falcon 	USR_PLAYING	2020-05-26 19:15:37.862588+00:00	
+8cd72b2b-3ba0-46f0-bf9e-84a0e42a3ed6	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	I don't think so @Alpaca 	USR_PLAYING	2020-05-26 19:15:45.158625+00:00	
+52c607c2-9e7f-4148-91db-7b32479d9003	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	We don't have enough info for what should be on the other side of 5 and v	USR_PLAYING	2020-05-26 19:16:01.703555+00:00	
+49cf13de-fa89-448d-a1b5-c2fac9bcf5d5	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	imo	USR_PLAYING	2020-05-26 19:16:03.527786+00:00	
+a8f81f00-7671-4011-ba19-44263b08c2a9	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	I know, that's why it's a little confusing.	USR_PLAYING	2020-05-26 19:16:14.338821+00:00	
+1a68694a-2b35-4c60-9d0a-85ca9fa8dca4	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	"and the rules say ""Select ONLY the card(s) required to verify the rule"""	USR_PLAYING	2020-05-26 19:16:22.852047+00:00	
+f2739585-a318-4914-813d-c5770fa691d3	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	v is not a vowel and we dont care what is there	USR_PLAYING	2020-05-26 19:16:24.833797+00:00	
+a861e0bf-7cb5-422a-82a2-69e76eafca71	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	using that criteria wouldn't it have to be I and 6?	USR_PLAYING	2020-05-26 19:16:46.028045+00:00	
+ce457905-f2ae-4ddb-8f2b-a396c5f41667	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	I think we should just go with only 'I' and '6'	USR_PLAYING	2020-05-26 19:16:48.390980+00:00	
+5c5e342b-0d30-43b4-ad85-bbe03c62852f	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	Agreed	USR_PLAYING	2020-05-26 19:16:56.020956+00:00	
+1528c4c4-8684-4500-b0ac-3ad42b6ce22a	Giraffe	da17ebdafe0446a4b263584aac484ac8	WASON_GAME	[{'value': 'I', 'checked': False}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': True}]	USR_PLAYING	2020-05-26 19:16:59.678451+00:00	
+84e5be54-9092-4237-af43-352d4ef5e52c	Giraffe	da17ebdafe0446a4b263584aac484ac8	WASON_GAME	[{'value': 'I', 'checked': False}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:17:00.691675+00:00	
+88cd591c-dffa-4c27-9369-2d4b0042d2ea	Giraffe	da17ebdafe0446a4b263584aac484ac8	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:17:01.518763+00:00	
+69234ec6-8c19-46c3-999f-6ec5ad8be215	Giraffe	da17ebdafe0446a4b263584aac484ac8	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:17:02.269903+00:00	
+d30c56a4-10dd-4104-8f9e-1bdffc9c92cb	Falcon	e71a44a52bc04995bea70851f30f77f6	CHAT_MESSAGE	"I still think it is only ""I"""	USR_PLAYING	2020-05-26 19:17:09.958750+00:00	
+352c0c7a-2f50-425a-9eae-55ce33fbc510	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	Good, hopefully we are right.	USR_PLAYING	2020-05-26 19:17:10.101390+00:00	
+dcb06411-3a11-445b-8741-17ecdab06142	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	we want to know what is on the other side of i and 6, but what about 5.  	USR_PLAYING	2020-05-26 19:17:11.177851+00:00	
+b2a00cea-14f9-4210-8165-f8cde84ff98c	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	No way we can verify that rule	USR_PLAYING	2020-05-26 19:17:23.933969+00:00	
+66c93d48-a79e-46a9-bd6d-018566547d97	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	based on the info we were given	USR_PLAYING	2020-05-26 19:17:31.161117+00:00	
+af84eff3-7a1a-4d4b-afdb-d42c0cc40ab3	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	Yes, I agree @Giraffe 	USR_PLAYING	2020-05-26 19:17:39.792259+00:00	
+db66630b-48bd-4124-9f81-80298e040951	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	if I has a even number it verifies the rule	USR_PLAYING	2020-05-26 19:18:12.156048+00:00	
+3b3a8069-d838-41bc-b634-f6fcade06861	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	So is that what everyone chose initially, 'I' and '6'?	USR_PLAYING	2020-05-26 19:18:17.357010+00:00	
+80d06482-8d30-4909-aca8-30673ff81a35	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	if 5 has a vowel it verifies the rule	USR_PLAYING	2020-05-26 19:18:26.380130+00:00	
+99c6656e-9ad8-4116-a418-2a1db3aeb6d6	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	wait	USR_PLAYING	2020-05-26 19:18:34.099338+00:00	
+b48dc5f8-c348-4610-bc5e-3297d837b997	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	I chose 5 and v initially but it's wrong	USR_PLAYING	2020-05-26 19:18:42.932016+00:00	
+3b9557b4-c48e-454a-8f2e-06ae36fbfdb0	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	@Alpaca we don't know the rules for odd numbers	USR_PLAYING	2020-05-26 19:19:01.349854+00:00	
+24ba8654-d801-4fa4-a80c-98ceab5e0862	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	or vowels	USR_PLAYING	2020-05-26 19:19:04.259877+00:00	
+af6c5bd2-729a-4bb1-9b08-438be0d77bc9	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	if 5 has a vowel it breaks the ruel	USR_PLAYING	2020-05-26 19:19:10.960616+00:00	
+491f8ee2-4cc3-4295-b957-e953895e0695	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	I mean consinenants	USR_PLAYING	2020-05-26 19:19:16.730014+00:00	
+5f7f664f-6819-432c-b097-82c7c3dfadfa	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	No, I don't think it breaks the rule since it doesn't mention anything about odd numbers.	USR_PLAYING	2020-05-26 19:19:25.789286+00:00	
+6272efde-9a83-4d2f-9889-9c50a95bd539	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	Agreed @Beaver 	USR_PLAYING	2020-05-26 19:19:35.428271+00:00	
+f044c5af-49c4-40fd-9459-8aead6eb23ed	Falcon	e71a44a52bc04995bea70851f30f77f6	CHAT_MESSAGE	"""I think it is only ""I"" since it does not say that all even #s have to have vowels. "	USR_PLAYING	2020-05-26 19:19:41.530452+00:00	
+fae61801-80d6-49e2-95d1-003a2df6600f	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	Good point @Falcon 	USR_PLAYING	2020-05-26 19:19:56.308886+00:00	
+bfe4e2f0-bcfe-42fa-81fb-3fdac6c47a5d	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	oh good catch	USR_PLAYING	2020-05-26 19:19:58.945623+00:00	
+e5493d79-d15a-4637-a9ec-fa4cf4ce5f00	Beaver	212945ddbd584676ab32bb51a2053e7f	OUT_OF_TIME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:20:00.076952+00:00	
+0455cdef-b96c-4d76-ab5c-7a0f0a8e0042	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	OUT_OF_TIME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': True}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': True}]	USR_PLAYING	2020-05-26 19:20:00.103591+00:00	
+d4eb449e-f957-43fb-bfae-142433b4077b	Giraffe	da17ebdafe0446a4b263584aac484ac8	OUT_OF_TIME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:20:01.044541+00:00	
+d4b0314b-9694-44e5-be0b-549d7c776773	Falcon	e71a44a52bc04995bea70851f30f77f6	OUT_OF_TIME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:20:01.130683+00:00	
+5c6b74d4-f27c-4875-90cc-e28e2a1610bd	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	I didn't think about that.	USR_PLAYING	2020-05-26 19:20:02.359670+00:00	
+47a39046-8224-4f10-962d-ff020e846637	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	So, let's just go with 'I' only?	USR_PLAYING	2020-05-26 19:20:22.332812+00:00	
+72f54fa6-36a1-41e2-ab6e-b9ba5e68b60a	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	Sounds good to me	USR_PLAYING	2020-05-26 19:20:27.468096+00:00	
+4f17c88a-0126-4ee3-93d0-a9b1f88140cf	Giraffe	da17ebdafe0446a4b263584aac484ac8	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:20:29.130941+00:00	
+45c00cbd-a7d2-45cc-a570-700165f68ba1	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	if I flip 6 over and see a vowel it breaks the rule	USR_PLAYING	2020-05-26 19:20:31.425979+00:00	
+31a0129b-54f0-419f-a9d2-ab3a618d5eb3	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	Cool!	USR_PLAYING	2020-05-26 19:20:31.602544+00:00	
+edd1f02d-f737-4a62-b256-a0b23bfb3d95	Falcon	e71a44a52bc04995bea70851f30f77f6	CHAT_MESSAGE	yea	USR_PLAYING	2020-05-26 19:20:48.530628+00:00	
+b8fda085-2561-4676-b586-472e8a57f2a2	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	Not necessarily	USR_PLAYING	2020-05-26 19:20:49.095521+00:00	
+d29ce7f0-dcbf-4bfd-bf68-7ed1da959d22	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	I'm going with just 'I'	USR_PLAYING	2020-05-26 19:21:05.484437+00:00	
+b65d9887-9888-4ead-89d1-8cdf6ab322c3	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	Same	USR_PLAYING	2020-05-26 19:21:14.074889+00:00	
+e1e7e42e-938a-49b6-a8fc-351fa0e33ecc	Falcon	e71a44a52bc04995bea70851f30f77f6	CHAT_MESSAGE	same	USR_PLAYING	2020-05-26 19:21:19.196476+00:00	
+3bb99756-aaae-414b-beef-0d5c7dda0b54	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	All right, nice chatting with you guys!	USR_PLAYING	2020-05-26 19:21:26.292358+00:00	
+bdedaf8f-e7b7-47ae-bf7a-4b5af59fc676	Giraffe	da17ebdafe0446a4b263584aac484ac8	CHAT_MESSAGE	Same!	USR_PLAYING	2020-05-26 19:21:31.132518+00:00	
+cefee636-927c-413f-8f95-c48bf8f73816	Beaver	212945ddbd584676ab32bb51a2053e7f	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:21:32.439027+00:00	
+04c9749d-7c24-4e00-8d23-c91e099a906e	Giraffe	da17ebdafe0446a4b263584aac484ac8	WASON_SUBMIT	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:21:32.468376+00:00	
+43beb9b3-bd33-45b0-b3d8-7c1c1e7664b4	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	CHAT_MESSAGE	have a good day	USR_PLAYING	2020-05-26 19:21:38.534738+00:00	
+81c7239b-3240-44a8-a3c7-3b6ca9a6552a	Beaver	212945ddbd584676ab32bb51a2053e7f	WASON_SUBMIT	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:21:40.947691+00:00	
+7dd6b215-344c-4ec8-97b2-6ae823d35760	Falcon	e71a44a52bc04995bea70851f30f77f6	CHAT_MESSAGE	bye! 	USR_PLAYING	2020-05-26 19:21:50.620035+00:00	
+7889ee0e-16ee-4ddb-92fb-4142ff08b823	Beaver	212945ddbd584676ab32bb51a2053e7f	CHAT_MESSAGE	You too, bye!	USR_PLAYING	2020-05-26 19:21:52.693134+00:00	
+833c666e-4d8b-4d23-be2b-eb7dba55e65e	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': True}]	USR_PLAYING	2020-05-26 19:22:07.966363+00:00	
+41d2821e-edf2-4389-b7a9-91600f325045	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	WASON_GAME	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:22:10.619874+00:00	
+59d83653-11b3-45cb-80c5-d72cd3b716b5	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	WASON_SUBMIT	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': True}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:22:13.112173+00:00	
+f05523a5-19ec-4af3-940a-e18c93b438cd	Falcon	e71a44a52bc04995bea70851f30f77f6	WASON_SUBMIT	[{'value': 'I', 'checked': True}, {'value': '5', 'checked': False}, {'value': '6', 'checked': False}, {'value': 'V', 'checked': False}]	USR_PLAYING	2020-05-26 19:22:15.361628+00:00	
+c6eaa75c-3d7b-4742-abc4-a7aa2dc513aa	SYSTEM	-1	WASON_FINISHED		UKN	2020-05-26 19:22:15.820847+00:00	
+baab0249-08af-4c90-b567-039b926f7153	Alpaca	e2d2d78a6aa2436e9cc2264b185d93bf	LEAVE_ROOM		USR_PLAYING	2020-05-26 19:22:25.135154+00:00	
+8563e282-4436-40ba-9577-2def928da19b	SYSTEM	-1	WASON_FINISHED		UKN	2020-05-26 19:22:25.466746+00:00	

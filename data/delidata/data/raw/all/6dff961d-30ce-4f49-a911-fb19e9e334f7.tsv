@@ -1,0 +1,84 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+3332e6f7-4175-4434-ae52-5cd5e7d78d23	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""4"", ""checked"": false}, {""value"": ""9"", ""checked"": false}, {""value"": ""Q"", ""checked"": false}, {""value"": ""A"", ""checked"": false}]"	UKN	2020-06-08 19:09:04.533761+00:00	
+815084ff-37a5-4e4c-b7f5-3bee1e2d5f99	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	JOIN_ROOM		USR_ONBOARDING	2020-06-08 19:09:05.040835+00:00	
+c6c46a3f-524d-4615-8b1e-58dd29f8dd1b	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	JOIN_ROOM		USR_ONBOARDING	2020-06-08 19:09:26.810525+00:00	
+eaf24414-d91f-44bd-ad7a-7edcd696125c	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': False}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:10:13.439821+00:00	
+0e8226a4-a1dd-4b8f-be40-7bc3ffb774b9	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:10:19.186633+00:00	
+901ef026-bd5d-4f1f-bd15-155d51069afa	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	WASON_SUBMIT	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:10:19.893969+00:00	
+85d0c3c2-4d92-4af0-80b4-6b5a0f8020db	Bee	ec8a29b55cc34bc7b4ad4580a1010101	JOIN_ROOM		USR_ONBOARDING	2020-06-08 19:10:43.846029+00:00	
+91e16771-1c68-4995-aa13-46ba75d4dc30	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-06-08 19:10:44.073740+00:00	
+4032202a-ce3b-41d4-87fd-2ce683673925	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	WASON_GAME	[{'value': '4', 'checked': False}, {'value': '9', 'checked': False}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:11:04.321476+00:00	
+43a53564-0035-4846-8913-a56795d01a10	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': False}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:11:14.683259+00:00	
+dcc41051-7b07-4917-8925-5171afa252d2	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	WASON_SUBMIT	[{'value': '4', 'checked': True}, {'value': '9', 'checked': False}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:11:20.276558+00:00	
+e960e385-a3ae-4070-a6b9-c959f96253bf	Ox	7ff4e8f08c214916af70ca75d236ebd4	JOIN_ROOM		USR_ONBOARDING	2020-06-08 19:11:21.811036+00:00	
+f81ff7cc-4c9a-4dfb-b286-8971156acb4f	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	ROUTING_TIMER_ELAPSED	[{'value': '4', 'checked': False}, {'value': '9', 'checked': False}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:11:44.217491+00:00	
+659e95fb-3898-4205-b366-8d9605c68717	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	ROUTING_TIMER_ELAPSED	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:11:44.257807+00:00	
+fd7d4d51-6354-4828-84b7-70d0990a2e65	Bee	ec8a29b55cc34bc7b4ad4580a1010101	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-06-08 19:11:49.732352+00:00	
+2063a335-f3a2-4048-9c97-ddfa35b56e66	Bee	ec8a29b55cc34bc7b4ad4580a1010101	WASON_GAME	[{'value': '4', 'checked': False}, {'value': '9', 'checked': False}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:12:03.004580+00:00	
+d75d3509-d72f-47fe-8efe-6349399b9657	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': False}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:12:12.436736+00:00	
+e0739da4-3961-4734-808d-45c592aa1876	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:12:13.687830+00:00	
+2f4c4e44-db4e-4cba-9622-19c797e775f3	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	WASON_SUBMIT	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-06-08 19:12:15.130078+00:00	
+9591b8e7-9d16-4c53-beb0-e4f8b0d265dd	Bee	ec8a29b55cc34bc7b4ad4580a1010101	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': False}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:12:40.289725+00:00	
+13cf8d5d-dcab-4e83-9aa5-eff166505857	Bee	ec8a29b55cc34bc7b4ad4580a1010101	WASON_SUBMIT	[{'value': '4', 'checked': True}, {'value': '9', 'checked': False}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-06-08 19:12:41.698750+00:00	
+38197e24-6f18-4ee3-b290-9120bde1ef9a	Moderating Owl	ea3df3519f8f48e498ec12e5568bfb08	JOIN_ROOM		USR_MODERATING	2020-06-08 19:12:55.687824+00:00	
+6f251061-a7d3-4059-9977-4db3dd81cd90	Ox	7ff4e8f08c214916af70ca75d236ebd4	LEAVE_ROOM		KICKED	2020-06-08 19:13:00.872300+00:00	
+12e04b17-22d4-45a4-b9f4-2123bfac4ae5	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-06-08 19:13:01.105100+00:00	
+b4194d01-689e-434b-891d-2f6478106bb2	Moderating Owl	ea3df3519f8f48e498ec12e5568bfb08	LEAVE_ROOM		USR_MODERATING	2020-06-08 19:13:11.228331+00:00	
+f3fea9f6-348f-4eed-9492-be2cca453b12	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	Hello	USR_PLAYING	2020-06-08 19:13:16.360962+00:00	
+276e9251-c2f0-40f9-b454-16cb059f505f	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	Hi	USR_PLAYING	2020-06-08 19:13:20.653726+00:00	
+02c66837-84c0-4457-90e1-59d58ab5fbc2	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	CHAT_MESSAGE	Hi	USR_PLAYING	2020-06-08 19:13:22.098373+00:00	
+709a2109-818b-4639-8e5f-405ff67b70fb	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	CHAT_MESSAGE	What cards did you all pick?	USR_PLAYING	2020-06-08 19:13:28.588792+00:00	
+8a893064-30f9-4d63-9282-b81be04de14c	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	4A	USR_PLAYING	2020-06-08 19:13:35.710750+00:00	
+392c95f0-c07e-4c75-b1aa-82bd3107ee34	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	4 and A	USR_PLAYING	2020-06-08 19:13:35.848146+00:00	
+30b96b5d-dfe2-4f82-aca4-3db806791c0e	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	How about you?	USR_PLAYING	2020-06-08 19:13:52.313830+00:00	
+5fbdd98b-6c62-42ef-a9ef-6575d9e72407	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	CHAT_MESSAGE	I was thinking that but I went with 4 and 9 in the end	USR_PLAYING	2020-06-08 19:13:54.032324+00:00	
+a5a09ccf-f3c3-476f-9d7b-cab1a307768d	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	All cards with vowels on one side have an even number on the other.	USR_PLAYING	2020-06-08 19:14:04.644608+00:00	
+9afc5af8-7d60-42d2-af20-c1caaa136033	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	so looking at either vowels (A) or even numbers (4)	USR_PLAYING	2020-06-08 19:14:16.922927+00:00	
+47943e27-6ae3-4124-91e6-dead67ede79d	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	CHAT_MESSAGE	Ok, I'm willing to go with that. My thought was that if 9 was a vowel it would tell you it's wrong	USR_PLAYING	2020-06-08 19:14:59.021656+00:00	
+39156767-98c2-44fc-ba42-c4d75751fa5e	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	"Theoretically though, wouldn't someone select ALL the cards to ""test"" the rule? Because if there is a vowel on the other side of 9 then it would void the rule, essentially failing the test"	USR_PLAYING	2020-06-08 19:15:02.218211+00:00	
+7e79b512-fe2b-41c4-80c3-5c7bb8c74cee	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	CHAT_MESSAGE	That's kind of where i was going	USR_PLAYING	2020-06-08 19:15:19.262824+00:00	
+48794c25-3f7a-403c-8baf-9cff0244f782	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	CHAT_MESSAGE	because if you're only looking at vowels or even numbers you're only testing half the rule	USR_PLAYING	2020-06-08 19:15:42.663839+00:00	
+0a118815-d320-4d3b-9916-f5abb9c6cb2b	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	Yeah	USR_PLAYING	2020-06-08 19:15:49.180050+00:00	
+ba1b658c-0319-4770-9d1c-f21767297ad4	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	CHAT_MESSAGE	but I usually stink at logic puzzles, so I can be persuaded otherwise :)	USR_PLAYING	2020-06-08 19:16:05.687089+00:00	
+788a07eb-7cff-46ae-9710-27c86d752135	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	Yes, same here!	USR_PLAYING	2020-06-08 19:16:12.906127+00:00	
+65cd7c98-7719-4552-a689-e263549a8546	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	CHAT_MESSAGE	@Narwhal what do you think?	USR_PLAYING	2020-06-08 19:16:22.264630+00:00	
+4d73e3b0-419f-4aff-b201-bc908dc7d0be	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	wait, this may not be so easy	USR_PLAYING	2020-06-08 19:16:23.768029+00:00	
+1f608b93-0a71-4a8c-9d75-ecddd59b934d	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	Any thoughts Narwhal?	USR_PLAYING	2020-06-08 19:16:27.110447+00:00	
+efd879d1-9247-4b0e-ae7c-c462a06231dd	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	Ok, all ears	USR_PLAYING	2020-06-08 19:16:37.394029+00:00	
+a9d9e820-1822-4f8f-86c3-18e40bf47e15	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	thinking	USR_PLAYING	2020-06-08 19:16:43.723897+00:00	
+6fec46de-b12c-4c33-b352-14ba90ff5caf	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	Most people get this task wrong.	USR_PLAYING	2020-06-08 19:16:54.965744+00:00	
+f24bb119-d96a-4d7c-ba66-bd4fb3f586c3	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	each card has letter on one side and number on the other	USR_PLAYING	2020-06-08 19:17:22.244884+00:00	
+afd3bc3b-c69b-4b6b-a7a6-262c1d7e73fd	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	Which means the fact that we have come up with two solutions so fast means it's probably wrong	USR_PLAYING	2020-06-08 19:17:33.741279+00:00	
+260c3a36-128b-4689-8283-ae7774be579c	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	so 9 has a letter on the other side and Q has a number on the other side	USR_PLAYING	2020-06-08 19:17:51.881703+00:00	
+c4db139e-5aee-43bf-a007-bce743d06ca7	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	Right	USR_PLAYING	2020-06-08 19:17:57.860408+00:00	
+80e5f36c-e1fe-49d5-ba99-3ada04cd5233	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	CHAT_MESSAGE	Do we need to pick them all?	USR_PLAYING	2020-06-08 19:18:03.957796+00:00	
+277847d4-32e4-4a86-95d1-b66ce2545f8b	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	All cards with vowels on one side have an even number on the other.	USR_PLAYING	2020-06-08 19:18:08.461444+00:00	
+5b1112f4-32b7-469b-918b-40fe7f547abd	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	And we need to verify that rule	USR_PLAYING	2020-06-08 19:18:20.298924+00:00	
+18d1ab60-2674-4811-959e-c7b2d7755d66	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	That doesn't mean the other way around either	USR_PLAYING	2020-06-08 19:18:31.593824+00:00	
+74ed07c8-d62d-436b-9a1e-b83124a72956	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	Q might have an even number on back	USR_PLAYING	2020-06-08 19:18:36.461546+00:00	
+4b912ff6-373a-4ae5-b583-9e7843dd5dfd	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	9 might have vowel on back	USR_PLAYING	2020-06-08 19:18:40.014193+00:00	
+6a0fdd94-f935-425e-9743-061890cf34b0	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	CHAT_MESSAGE	Oh, I see where you're going with that	USR_PLAYING	2020-06-08 19:18:44.723525+00:00	
+628abb22-69b5-4aaa-972f-466802e958d7	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': False}, {'value': 'Q', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-06-08 19:18:49.935615+00:00	
+831e7238-59f9-43b2-bedb-7d5bbdefbc74	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-06-08 19:18:50.893910+00:00	
+730f38e6-30d9-46ed-9c10-6ca1fd823f87	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	Oh yeah	USR_PLAYING	2020-06-08 19:18:51.613729+00:00	
+e57d32a0-58a7-43f3-8d78-b20486898260	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	CHAT_MESSAGE	my guess is pick all	USR_PLAYING	2020-06-08 19:18:57.568228+00:00	
+672d4521-5ecf-4d4d-a12d-6ae9fd5cb1e8	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	Unless I'm missing something, I would concur	USR_PLAYING	2020-06-08 19:19:15.904740+00:00	
+584c6293-4a29-463b-affc-9315f14ab317	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	WASON_SUBMIT	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-06-08 19:19:16.300812+00:00	
+3b12e4ca-b0c8-4364-a8d0-2321fe8fb6c5	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	pick all	USR_PLAYING	2020-06-08 19:19:18.785811+00:00	
+f310e8b2-a0f2-4f01-8293-e234c1d5e070	Bee	ec8a29b55cc34bc7b4ad4580a1010101	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-06-08 19:19:37.152132+00:00	
+7b84f539-4189-4d31-9670-37bb00b836be	Bee	ec8a29b55cc34bc7b4ad4580a1010101	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-06-08 19:19:37.756137+00:00	
+c0e581d5-3a2e-447a-a9d5-d4a4823a6c8f	Bee	ec8a29b55cc34bc7b4ad4580a1010101	WASON_SUBMIT	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-06-08 19:19:38.812073+00:00	
+85e5c671-6ff1-4958-b8fe-44c222a245b8	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	CHAT_MESSAGE	I agree - it seems like if 9 has a vowel, the rule is out.	USR_PLAYING	2020-06-08 19:19:46.028353+00:00	
+82e6e7fe-4342-4422-8c06-d5304b0183d1	Narwhal	e0b81ca11fbf431592782ba16d86e3b8	OUT_OF_TIME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-06-08 19:20:01.278733+00:00	
+663b52d1-3dd3-46e7-8145-6c9beda7bfea	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	OUT_OF_TIME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': False}, {'value': 'A', 'checked': False}]	USR_PLAYING	2020-06-08 19:20:01.373676+00:00	
+3fb0f3fe-2291-454f-9d00-dea1f53df8a0	Bee	ec8a29b55cc34bc7b4ad4580a1010101	OUT_OF_TIME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-06-08 19:20:02.234861+00:00	
+b71e72c3-a207-440f-ba02-ff5229803eb4	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	Ok, good. You can go ahead and sumbit game then Guinea	USR_PLAYING	2020-06-08 19:20:19.643807+00:00	
+5b4d1ebc-0704-4205-9c9e-b193177d1d0e	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': True}, {'value': 'A', 'checked': False}]	USR_PLAYING	2020-06-08 19:20:23.908605+00:00	
+35e3d0d1-ee69-45da-bd54-ccd20d93a146	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	submit*	USR_PLAYING	2020-06-08 19:20:24.354977+00:00	
+c102976c-9705-4982-8442-e2ab9d373cd6	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	WASON_GAME	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-06-08 19:20:24.808170+00:00	
+77209fa6-60f4-45a3-a6c9-127c4ad70118	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	with all selected	USR_PLAYING	2020-06-08 19:20:27.858542+00:00	
+315581b9-c1d1-483f-9ca1-ef5a9608bc0b	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	CHAT_MESSAGE	got it - thanks everyone	USR_PLAYING	2020-06-08 19:20:33.320570+00:00	
+49eaee7a-bde7-4084-919b-54f526943bd4	Guinea pig	c3e515c2d0334c87a6c9ca0cd2433780	WASON_SUBMIT	[{'value': '4', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'Q', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-06-08 19:20:38.269175+00:00	
+c7c7218f-e754-4bd4-b9e2-8acb48ed8367	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-08 19:20:38.736629+00:00	
+1ce5a63d-1b9e-4359-86e0-f5438b7e2161	Bee	ec8a29b55cc34bc7b4ad4580a1010101	CHAT_MESSAGE	You too!	USR_PLAYING	2020-06-08 19:20:40.338861+00:00	
+37645565-273d-4953-9a66-491544aabe9e	SYSTEM	-1	WASON_FINISHED		UKN	2020-06-08 19:20:40.799888+00:00	

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deliberative Contributions by Platform - Knowledge Graph</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8fafc;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4a9d3c 0%, #3a7d2c 100%);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .main-content {
+      padding: 2rem 0;
+    }
+
+    .controls {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 300px;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background-color: #4a9d3c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #3a7d2c;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+    }
+
+    .btn-secondary:hover {
+      background-color: #5a6268;
+    }
+
+    .platform-section {
+      margin-bottom: 3rem;
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .platform-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #e2e8f0;
+    }
+
+    .platform-name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin: 0;
+    }
+
+    .platform-stats {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+
+    .process-section {
+      margin-bottom: 2rem;
+    }
+
+    .process-header {
+      background: #f8fafc;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      border-left: 4px solid #4a9d3c;
+    }
+
+    .process-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #4a9d3c;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .process-meta {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+
+    .contributions-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      margin-left: 1rem;
+    }
+
+    .contribution-card {
+      background: #fefefe;
+      border-radius: 8px;
+      padding: 1.2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e2e8f0;
+      border-left: 3px solid #4a9d3c;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .contribution-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .contribution-header {
+      margin-bottom: 1rem;
+    }
+
+    .contributor-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+      gap: 1rem;
+    }
+
+    .context-info {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+    }
+
+    .context-tag {
+      background: #e3f2fd;
+      color: #1565c0;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .organization-tag {
+      background: #f3e5f5;
+      color: #7b1fa2;
+    }
+
+    .topic-tag {
+      background: #fff3e0;
+      color: #ef6c00;
+    }
+
+    .platform-toggle {
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .platform-toggle::before {
+      content: '▼';
+      transition: transform 0.3s ease;
+      font-size: 0.8rem;
+    }
+
+    .platform-section.collapsed .platform-toggle::before {
+      transform: rotate(-90deg);
+    }
+
+    .platform-section.collapsed .process-section {
+      display: none;
+    }
+
+    .summary-bar {
+      background: #f8fafc;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .summary-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 500;
+    }
+
+    .summary-number {
+      background: #4a9d3c;
+      color: white;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+    }
+
+    .participant-name {
+      font-weight: 600;
+      color: #4a9d3c;
+      font-size: 1.1rem;
+    }
+
+    .timestamp {
+      color: #6c757d;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .contribution-text {
+      color: #374151;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      max-height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .contribution-text.expanded {
+      max-height: none;
+    }
+
+    .read-more {
+      color: #4a9d3c;
+      cursor: pointer;
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    .contribution-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e2e8f0;
+      gap: 1rem;
+    }
+
+    .contribution-id {
+      font-family: monospace;
+      background: #f1f5f9;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      color: #475569;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 3rem;
+      color: #6c757d;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #4a9d3c;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-right: 0.5rem;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .export-section {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .export-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .stats {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .stat-item {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      min-width: 120px;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #4a9d3c;
+    }
+
+    .stat-label {
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .contributions-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .controls {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .search-box {
+        min-width: auto;
+      }
+
+      .stats {
+        justify-content: center;
+      }
+
+      .export-buttons {
+        justify-content: center;
+      }
+
+      .contribution-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contribution-meta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Contribution Explorer</h1>
+      <p class="subtitle">Explore deliberative contributions in the Knowledge Graph</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="main-content">
+      <!-- Stats Section -->
+      <div class="stats" id="stats">
+        <div class="stat-item">
+          <div class="stat-number" id="total-contributions">-</div>
+          <div class="stat-label">Contributions</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="total-participants">-</div>
+          <div class="stat-label">Participants</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="total-processes">-</div>
+          <div class="stat-label">Processes</div>
+        </div>
+      </div>
+
+      <!-- Export Section -->
+      <div class="export-section">
+        <h3>Export Knowledge Graph</h3>
+        <p>Download the complete knowledge graph in different formats:</p>
+        <div class="export-buttons">
+          <a href="/api/export/ttl" class="btn" download>Turtle (.ttl)</a>
+          <a href="/api/export/rdf" class="btn" download>RDF/XML (.rdf)</a>
+          <a href="/api/export/json" class="btn" download>JSON-LD (.json)</a>
+          <a href="/api/export/nt" class="btn" download>N-Triples (.nt)</a>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <input type="text" class="search-box" id="search-input" placeholder="Search by content, participant, organization, or topic...">
+        <select class="search-box" id="platform-filter" style="max-width: 200px;">
+          <option value="">All Platforms</option>
+        </select>
+        <button class="btn" onclick="loadContributions()">Refresh</button>
+        <a href="/" class="btn btn-secondary">Back to Home</a>
+        <a href="/visualize" class="btn btn-secondary">Visualization</a>
+      </div>
+
+      <!-- Contributions Grid -->
+      <div id="contributions-container">
+        <div class="loading">
+          <div class="spinner"></div>
+          Loading contributions...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let allContributions = [];
+
+    document.addEventListener('DOMContentLoaded', function() {
+      loadStats();
+      loadContributions();
+
+      // Search functionality
+      document.getElementById('search-input').addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        const platform = document.getElementById('platform-filter').value;
+        filterContributions(query, platform);
+      });
+
+      // Platform filter functionality
+      document.getElementById('platform-filter').addEventListener('change', function() {
+        const platform = this.value;
+        const query = document.getElementById('search-input').value.toLowerCase();
+        filterContributions(query, platform);
+      });
+    });
+
+    async function loadStats() {
+      try {
+        const response = await fetch('/api/stats');
+        const stats = await response.json();
+
+        document.getElementById('total-contributions').textContent = stats.totalContributions || 0;
+        document.getElementById('total-participants').textContent = stats.totalParticipants || 0;
+        document.getElementById('total-processes').textContent = stats.totalProcesses || 0;
+      } catch (error) {
+        console.error('Error loading stats:', error);
+      }
+    }
+
+    async function loadContributions() {
+      const container = document.getElementById('contributions-container');
+      container.innerHTML = '<div class="loading"><div class="spinner"></div>Loading contributions...</div>';
+
+      try {
+        const response = await fetch('/api/contributions');
+        const data = await response.json();
+
+        if (data.platforms) {
+          allContributions = data;
+          displayOrganizedContributions(data);
+        } else {
+          // Fallback to old format
+          allContributions = data;
+          displayContributions(data);
+        }
+      } catch (error) {
+        console.error('Error loading contributions:', error);
+        container.innerHTML = '<div class="loading">Error loading contributions. Please try again.</div>';
+      }
+    }
+
+    function displayOrganizedContributions(data) {
+      const container = document.getElementById('contributions-container');
+
+      if (!data.platforms || Object.keys(data.platforms).length === 0) {
+        container.innerHTML = '<div class="loading">No contributions found.</div>';
+        return;
+      }
+
+      // Update platform filter options
+      updatePlatformFilter(Object.keys(data.platforms));
+
+      let totalContributions = 0;
+      let totalProcesses = 0;
+      const platformsHTML = Object.entries(data.platforms).map(([platformName, platformData]) => {
+        totalProcesses += Object.keys(platformData.processes).length;
+        const processesHTML = Object.entries(platformData.processes).map(([processName, processData]) => {
+          const contributionsHTML = processData.contributions.map(contribution => {
+            totalContributions++;
+            const text = contribution.text || 'No text available';
+            const isLong = text.length > 250;
+            const displayText = isLong ? text.substring(0, 250) + '...' : text;
+            const contributionId = contribution.uri ? contribution.uri.split('/').pop() : `contrib-${totalContributions}`;
+
+            return `
+              <div class="contribution-card">
+                <div class="contribution-header">
+                  <div class="contributor-info">
+                    <div class="participant-name">${escapeHtml(contribution.participantName || 'Anonymous')}</div>
+                    <div class="timestamp">${formatTimestamp(contribution.timestamp)}</div>
+                  </div>
+                  <div class="context-info">
+                    ${contribution.organization ? `<span class="context-tag organization-tag">${escapeHtml(contribution.organization)}</span>` : ''}
+                    ${contribution.topicName ? `<span class="context-tag topic-tag">${escapeHtml(contribution.topicName)}</span>` : ''}
+                  </div>
+                </div>
+                <div class="contribution-text ${isLong ? 'collapsible' : ''}" id="text-${contributionId}">
+                  ${escapeHtml(displayText)}
+                </div>
+                ${isLong ? `<div class="read-more" onclick="toggleText('${contributionId}', ${JSON.stringify(text).replace(/"/g, '&quot;')})">Read more</div>` : ''}
+                <div class="contribution-meta">
+                  <div class="contribution-id">${contributionId}</div>
+                  <button class="btn" onclick="viewDetails('${contributionId}')">View Details</button>
+                </div>
+              </div>
+            `;
+          }).join('');
+
+          return `
+            <div class="process-section">
+              <div class="process-header">
+                <h3 class="process-name">${escapeHtml(processName)}</h3>
+                <div class="process-meta">
+                  <strong>Context:</strong> ${platformName} |
+                  <strong>Contributions:</strong> ${processData.contributions.length}
+                </div>
+              </div>
+              <div class="contributions-grid">
+                ${contributionsHTML}
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        return `
+          <div class="platform-section" id="platform-${platformName.replace(/\s+/g, '-').toLowerCase()}">
+            <div class="platform-header">
+              <div class="platform-toggle" onclick="togglePlatform('${platformName.replace(/\s+/g, '-').toLowerCase()}')">
+                <h2 class="platform-name">${escapeHtml(platformName)}</h2>
+              </div>
+              <div class="platform-stats">
+                <span><strong>Processes:</strong> ${Object.keys(platformData.processes).length}</span>
+                <span><strong>Contributions:</strong> ${Object.values(platformData.processes).reduce((sum, p) => sum + p.contributions.length, 0)}</span>
+              </div>
+            </div>
+            ${processesHTML}
+          </div>
+        `;
+      }).join('');
+
+      const summaryHTML = `
+        <div class="summary-bar">
+          <div class="summary-item">
+            <span>Total:</span>
+            <span class="summary-number">${totalContributions}</span>
+            <span>contributions across</span>
+            <span class="summary-number">${totalProcesses}</span>
+            <span>processes in</span>
+            <span class="summary-number">${Object.keys(data.platforms).length}</span>
+            <span>platforms</span>
+          </div>
+          <div class="summary-item">
+            <button class="btn" onclick="expandAllPlatforms()">Expand All</button>
+            <button class="btn btn-secondary" onclick="collapseAllPlatforms()">Collapse All</button>
+          </div>
+        </div>
+      `;
+
+      container.innerHTML = summaryHTML + platformsHTML;
+    }
+
+    function displayContributions(contributions) {
+      const container = document.getElementById('contributions-container');
+
+      if (contributions.length === 0) {
+        container.innerHTML = '<div class="loading">No contributions found.</div>';
+        return;
+      }
+
+      const contributionsHTML = contributions.map(contribution => {
+        const text = contribution.text || 'No text available';
+        const isLong = text.length > 300;
+        const displayText = isLong ? text.substring(0, 300) + '...' : text;
+        const contributionId = contribution.uri ? contribution.uri.split('/').pop() : 'unknown';
+
+        return `
+          <div class="contribution-card">
+            <div class="contribution-header">
+              <div class="participant-name">${escapeHtml(contribution.participantName)}</div>
+              <div class="timestamp">${formatTimestamp(contribution.timestamp)}</div>
+            </div>
+            <div class="contribution-text ${isLong ? 'collapsible' : ''}" id="text-${contributionId}">
+              ${escapeHtml(displayText)}
+            </div>
+            ${isLong ? `<div class="read-more" onclick="toggleText('${contributionId}', ${JSON.stringify(text).replace(/"/g, '&quot;')})">Read more</div>` : ''}
+            <div class="contribution-meta">
+              <div class="contribution-id">${contributionId}</div>
+              <button class="btn" onclick="viewDetails('${contributionId}')">View Details</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      container.innerHTML = `<div class="contributions-grid">${contributionsHTML}</div>`;
+    }
+
+    function updatePlatformFilter(platforms) {
+      const filter = document.getElementById('platform-filter');
+      const currentValue = filter.value;
+
+      filter.innerHTML = '<option value="">All Platforms</option>';
+      platforms.forEach(platform => {
+        const option = document.createElement('option');
+        option.value = platform;
+        option.textContent = platform;
+        if (platform === currentValue) option.selected = true;
+        filter.appendChild(option);
+      });
+    }
+
+    function filterContributions(query, platformFilter) {
+      if (!query && !platformFilter) {
+        if (allContributions.platforms) {
+          displayOrganizedContributions(allContributions);
+        } else {
+          displayContributions(allContributions);
+        }
+        return;
+      }
+
+      if (allContributions.platforms) {
+        // Filter organized data
+        const filteredData = { platforms: {} };
+
+        Object.entries(allContributions.platforms).forEach(([platformName, platformData]) => {
+          // Skip platform if platform filter is active and doesn't match
+          if (platformFilter && platformName !== platformFilter) {
+            return;
+          }
+
+          const filteredProcesses = {};
+
+          Object.entries(platformData.processes).forEach(([processName, processData]) => {
+            const filteredContributions = processData.contributions.filter(contribution => {
+              if (query) {
+                return (contribution.text && contribution.text.toLowerCase().includes(query)) ||
+                       (contribution.participantName && contribution.participantName.toLowerCase().includes(query)) ||
+                       (contribution.organization && contribution.organization.toLowerCase().includes(query)) ||
+                       (contribution.topicName && contribution.topicName.toLowerCase().includes(query));
+              }
+              return true;
+            });
+
+            if (filteredContributions.length > 0) {
+              filteredProcesses[processName] = {
+                ...processData,
+                contributions: filteredContributions
+              };
+            }
+          });
+
+          if (Object.keys(filteredProcesses).length > 0) {
+            filteredData.platforms[platformName] = {
+              ...platformData,
+              processes: filteredProcesses
+            };
+          }
+        });
+
+        displayOrganizedContributions(filteredData);
+      } else {
+        // Filter simple array
+        const filtered = allContributions.filter(contribution =>
+          (contribution.text && contribution.text.toLowerCase().includes(query)) ||
+          (contribution.participantName && contribution.participantName.toLowerCase().includes(query))
+        );
+
+        displayContributions(filtered);
+      }
+    }
+
+    function toggleText(contributionId, fullText) {
+      const textElement = document.getElementById(`text-${contributionId}`);
+      const readMoreElement = textElement.nextElementSibling;
+
+      if (textElement.classList.contains('expanded')) {
+        const shortText = fullText.substring(0, 300) + '...';
+        textElement.innerHTML = escapeHtml(shortText);
+        textElement.classList.remove('expanded');
+        readMoreElement.textContent = 'Read more';
+      } else {
+        textElement.innerHTML = escapeHtml(fullText);
+        textElement.classList.add('expanded');
+        readMoreElement.textContent = 'Read less';
+      }
+    }
+
+    function viewDetails(contributionId) {
+      // Open a modal or new page with detailed information
+      window.open(`/api/contribution/${contributionId}`, '_blank');
+    }
+
+    function formatTimestamp(timestamp) {
+      if (!timestamp) return 'No date';
+
+      try {
+        const date = new Date(timestamp);
+        return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+      } catch (error) {
+        return timestamp;
+      }
+    }
+
+    function togglePlatform(platformId) {
+      const platformSection = document.getElementById(`platform-${platformId}`);
+      platformSection.classList.toggle('collapsed');
+    }
+
+    function expandAllPlatforms() {
+      document.querySelectorAll('.platform-section').forEach(section => {
+        section.classList.remove('collapsed');
+      });
+    }
+
+    function collapseAllPlatforms() {
+      document.querySelectorAll('.platform-section').forEach(section => {
+        section.classList.add('collapsed');
+      });
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text || '';
+      return div.innerHTML;
+    }
+  </script>
+</body>
+</html>

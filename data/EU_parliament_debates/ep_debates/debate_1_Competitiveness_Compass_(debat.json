@@ -1,0 +1,628 @@
+{
+  "topic": "Competitiveness Compass (debate)",
+  "date": "2025-02-12",
+  "speeches_count": 10,
+  "speeches": [
+    {
+      "id": "eli/dl/event/MTG-PL-2025-02-12-OTH-2017014970840",
+      "type": "Activity",
+      "activity_date": "2025-02-12",
+      "activity_end_date": "2025-02-12T14:44:47+01:00",
+      "activity_id": "MTG-PL-2025-02-12-OTH-2017014970840",
+      "activity_label": {
+        "sl": "Kompas za konkurenčnost (razprava)",
+        "da": "Konkurrenceevnekompas (forhandling)",
+        "et": "Konkurentsivõime kompass (arutelu)",
+        "ga": "Compás Iomaíochais (díospóireacht)",
+        "ro": "Busola pentru competitivitate (dezbatere)",
+        "el": "Πυξίδα ανταγωνιστικότητας (συζήτηση)",
+        "en": "Competitiveness Compass (debate)",
+        "it": "Bussola per la competitività (discussione)",
+        "de": "Kompass für Wettbewerbsfähigkeit (Aussprache)",
+        "lv": "Konkurētspējas kompass (debates)",
+        "es": "Brújula de la Competitividad (debate)",
+        "hu": "Versenyképességi iránytű (vita)",
+        "fr": "Boussole pour la compétitivité (débat)",
+        "pl": "Kompas konkurencyjności (debata)",
+        "bg": "Компас за конкурентоспособността (разискване)",
+        "lt": "Konkurencingumo kelrodis (diskusijos)",
+        "cs": "Kompas konkurenceschopnosti (rozprava)",
+        "hr": "Kompas konkurentnosti (rasprava)",
+        "fi": "Kilpailukykykompassi (keskustelu)",
+        "sv": "En konkurrenskraftskompass (debatt)",
+        "nl": "Kompas voor het concurrentievermogen (debat)",
+        "sk": "Kompas konkurencieschopnosti (rozprava)",
+        "mt": "Boxxla għall-Kompetittività (dibattitu)",
+        "pt": "Bússola para a Competitividade (debate)"
+      },
+      "activity_start_date": "2025-02-12T14:44:06+01:00",
+      "had_activity_type": "def/ep-activities/PLENARY_DEBATE_SPEECH",
+      "had_participation": {
+        "id": "eli/dl/participation/MTG-PL-2025-02-12-OTH-2017014970840_257023",
+        "type": "Participation",
+        "had_participant_person": [
+          "person/257023"
+        ],
+        "participation_role": "def/ep-roles/SPEAKER"
+      },
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2025-02-12-OTH-2017014970840",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2025-02-12-ITM-010",
+          "number": "3-0244-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2025-02-12-OTH-2017014970840",
+          "notation_speechId": "2017014970840",
+          "numbering": 232,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/DAN"
+          ]
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2025-02-12-PVCRE-ITM-10"
+      ],
+      "speech_id": "MTG-PL-2025-02-12-OTH-2017014970840"
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2025-02-12-OTH-2017014974305",
+      "type": "Activity",
+      "activity_date": "2025-02-12",
+      "activity_end_date": "2025-02-12T15:24:40+01:00",
+      "activity_id": "MTG-PL-2025-02-12-OTH-2017014974305",
+      "activity_label": {
+        "et": "Konkurentsivõime kompass (arutelu)",
+        "sl": "Kompas za konkurenčnost (razprava)",
+        "el": "Πυξίδα ανταγωνιστικότητας (συζήτηση)",
+        "lv": "Konkurētspējas kompass (debates)",
+        "hu": "Versenyképességi iránytű (vita)",
+        "cs": "Kompas konkurenceschopnosti (rozprava)",
+        "da": "Konkurrenceevnekompas (forhandling)",
+        "ga": "Compás Iomaíochais (díospóireacht)",
+        "fi": "Kilpailukykykompassi (keskustelu)",
+        "de": "Kompass für Wettbewerbsfähigkeit (Aussprache)",
+        "en": "Competitiveness Compass (debate)",
+        "pl": "Kompas konkurencyjności (debata)",
+        "bg": "Компас за конкурентоспособността (разискване)",
+        "sv": "En konkurrenskraftskompass (debatt)",
+        "fr": "Boussole pour la compétitivité (débat)",
+        "mt": "Boxxla għall-Kompetittività (dibattitu)",
+        "es": "Brújula de la Competitividad (debate)",
+        "pt": "Bússola para a Competitividade (debate)",
+        "nl": "Kompas voor het concurrentievermogen (debat)",
+        "ro": "Busola pentru competitivitate (dezbatere)",
+        "it": "Bussola per la competitività (discussione)",
+        "hr": "Kompas konkurentnosti (rasprava)",
+        "lt": "Konkurencingumo kelrodis (diskusijos)",
+        "sk": "Kompas konkurencieschopnosti (rozprava)"
+      },
+      "activity_start_date": "2025-02-12T15:23:25+01:00",
+      "had_activity_type": "def/ep-activities/PLENARY_DEBATE_SPEECH",
+      "had_participation": {
+        "id": "eli/dl/participation/MTG-PL-2025-02-12-OTH-2017014974305_125046",
+        "type": "Participation",
+        "had_participant_person": [
+          "person/125046"
+        ],
+        "participation_role": "def/ep-roles/SPEAKER"
+      },
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2025-02-12-OTH-2017014974305",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2025-02-12-ITM-010",
+          "number": "3-0278-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2025-02-12-OTH-2017014974305",
+          "notation_speechId": "2017014974305",
+          "numbering": 266,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/SPA"
+          ]
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2025-02-12-PVCRE-ITM-10"
+      ],
+      "speech_id": "MTG-PL-2025-02-12-OTH-2017014974305"
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2025-02-12-OTH-2017014974335",
+      "type": "Activity",
+      "activity_date": "2025-02-12",
+      "activity_end_date": "2025-02-12T15:46:07+01:00",
+      "activity_id": "MTG-PL-2025-02-12-OTH-2017014974335",
+      "activity_label": {
+        "sl": "Kompas za konkurenčnost (razprava)",
+        "mt": "Boxxla għall-Kompetittività (dibattitu)",
+        "sk": "Kompas konkurencieschopnosti (rozprava)",
+        "de": "Kompass für Wettbewerbsfähigkeit (Aussprache)",
+        "es": "Brújula de la Competitividad (debate)",
+        "fi": "Kilpailukykykompassi (keskustelu)",
+        "da": "Konkurrenceevnekompas (forhandling)",
+        "en": "Competitiveness Compass (debate)",
+        "sv": "En konkurrenskraftskompass (debatt)",
+        "ro": "Busola pentru competitivitate (dezbatere)",
+        "fr": "Boussole pour la compétitivité (débat)",
+        "lt": "Konkurencingumo kelrodis (diskusijos)",
+        "nl": "Kompas voor het concurrentievermogen (debat)",
+        "lv": "Konkurētspējas kompass (debates)",
+        "it": "Bussola per la competitività (discussione)",
+        "el": "Πυξίδα ανταγωνιστικότητας (συζήτηση)",
+        "pl": "Kompas konkurencyjności (debata)",
+        "et": "Konkurentsivõime kompass (arutelu)",
+        "pt": "Bússola para a Competitividade (debate)",
+        "bg": "Компас за конкурентоспособността (разискване)",
+        "cs": "Kompas konkurenceschopnosti (rozprava)",
+        "hu": "Versenyképességi iránytű (vita)",
+        "ga": "Compás Iomaíochais (díospóireacht)",
+        "hr": "Kompas konkurentnosti (rasprava)"
+      },
+      "activity_start_date": "2025-02-12T15:44:24+01:00",
+      "had_activity_type": "def/ep-activities/PLENARY_DEBATE_SPEECH",
+      "had_participation": {
+        "id": "eli/dl/participation/MTG-PL-2025-02-12-OTH-2017014974335_257107",
+        "type": "Participation",
+        "had_participant_person": [
+          "person/257107"
+        ],
+        "participation_role": "def/ep-roles/SPEAKER"
+      },
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2025-02-12-OTH-2017014974335",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2025-02-12-ITM-010",
+          "number": "3-0293-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2025-02-12-OTH-2017014974335",
+          "notation_speechId": "2017014974335",
+          "numbering": 281,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/RON"
+          ]
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2025-02-12-PVCRE-ITM-10"
+      ],
+      "speech_id": "MTG-PL-2025-02-12-OTH-2017014974335"
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2025-02-12-OTH-2017014970810",
+      "type": "Activity",
+      "activity_date": "2025-02-12",
+      "activity_end_date": "2025-02-12T14:26:18+01:00",
+      "activity_id": "MTG-PL-2025-02-12-OTH-2017014970810",
+      "activity_label": {
+        "en": "Competitiveness Compass (debate)",
+        "hr": "Kompas konkurentnosti (rasprava)",
+        "lv": "Konkurētspējas kompass (debates)",
+        "cs": "Kompas konkurenceschopnosti (rozprava)",
+        "nl": "Kompas voor het concurrentievermogen (debat)",
+        "fi": "Kilpailukykykompassi (keskustelu)",
+        "ro": "Busola pentru competitivitate (dezbatere)",
+        "sk": "Kompas konkurencieschopnosti (rozprava)",
+        "pt": "Bússola para a Competitividade (debate)",
+        "hu": "Versenyképességi iránytű (vita)",
+        "lt": "Konkurencingumo kelrodis (diskusijos)",
+        "pl": "Kompas konkurencyjności (debata)",
+        "fr": "Boussole pour la compétitivité (débat)",
+        "el": "Πυξίδα ανταγωνιστικότητας (συζήτηση)",
+        "sl": "Kompas za konkurenčnost (razprava)",
+        "es": "Brújula de la Competitividad (debate)",
+        "sv": "En konkurrenskraftskompass (debatt)",
+        "bg": "Компас за конкурентоспособността (разискване)",
+        "et": "Konkurentsivõime kompass (arutelu)",
+        "mt": "Boxxla għall-Kompetittività (dibattitu)",
+        "de": "Kompass für Wettbewerbsfähigkeit (Aussprache)",
+        "it": "Bussola per la competitività (discussione)",
+        "da": "Konkurrenceevnekompas (forhandling)",
+        "ga": "Compás Iomaíochais (díospóireacht)"
+      },
+      "activity_start_date": "2025-02-12T14:25:05+01:00",
+      "had_activity_type": "def/ep-activities/PLENARY_DEBATE_SPEECH",
+      "had_participation": {
+        "id": "eli/dl/participation/MTG-PL-2025-02-12-OTH-2017014970810_257080",
+        "type": "Participation",
+        "had_participant_person": [
+          "person/257080"
+        ],
+        "participation_role": "def/ep-roles/SPEAKER"
+      },
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2025-02-12-OTH-2017014970810",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2025-02-12-ITM-010",
+          "number": "3-0229-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2025-02-12-OTH-2017014970810",
+          "notation_speechId": "2017014970810",
+          "numbering": 217,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/ENG"
+          ]
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2025-02-12-PVCRE-ITM-10"
+      ],
+      "speech_id": "MTG-PL-2025-02-12-OTH-2017014970810"
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2025-02-12-OTH-2017014970834",
+      "type": "Activity",
+      "activity_date": "2025-02-12",
+      "activity_end_date": "2025-02-12T14:41:48+01:00",
+      "activity_id": "MTG-PL-2025-02-12-OTH-2017014970834",
+      "activity_label": {
+        "nl": "Kompas voor het concurrentievermogen (debat)",
+        "hr": "Kompas konkurentnosti (rasprava)",
+        "pt": "Bússola para a Competitividade (debate)",
+        "hu": "Versenyképességi iránytű (vita)",
+        "lv": "Konkurētspējas kompass (debates)",
+        "sk": "Kompas konkurencieschopnosti (rozprava)",
+        "cs": "Kompas konkurenceschopnosti (rozprava)",
+        "el": "Πυξίδα ανταγωνιστικότητας (συζήτηση)",
+        "fr": "Boussole pour la compétitivité (débat)",
+        "pl": "Kompas konkurencyjności (debata)",
+        "fi": "Kilpailukykykompassi (keskustelu)",
+        "es": "Brújula de la Competitividad (debate)",
+        "sl": "Kompas za konkurenčnost (razprava)",
+        "en": "Competitiveness Compass (debate)",
+        "et": "Konkurentsivõime kompass (arutelu)",
+        "sv": "En konkurrenskraftskompass (debatt)",
+        "de": "Kompass für Wettbewerbsfähigkeit (Aussprache)",
+        "bg": "Компас за конкурентоспособността (разискване)",
+        "mt": "Boxxla għall-Kompetittività (dibattitu)",
+        "lt": "Konkurencingumo kelrodis (diskusijos)",
+        "it": "Bussola per la competitività (discussione)",
+        "da": "Konkurrenceevnekompas (forhandling)",
+        "ga": "Compás Iomaíochais (díospóireacht)",
+        "ro": "Busola pentru competitivitate (dezbatere)"
+      },
+      "activity_start_date": "2025-02-12T14:40:28+01:00",
+      "had_activity_type": "def/ep-activities/PLENARY_DEBATE_SPEECH",
+      "had_participation": {
+        "id": "eli/dl/participation/MTG-PL-2025-02-12-OTH-2017014970834_208722",
+        "type": "Participation",
+        "had_participant_person": [
+          "person/208722"
+        ],
+        "participation_role": "def/ep-roles/SPEAKER"
+      },
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2025-02-12-OTH-2017014970834",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2025-02-12-ITM-010",
+          "number": "3-0241-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2025-02-12-OTH-2017014970834",
+          "notation_speechId": "2017014970834",
+          "numbering": 229,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/ENG"
+          ]
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2025-02-12-PVCRE-ITM-10"
+      ],
+      "speech_id": "MTG-PL-2025-02-12-OTH-2017014970834"
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2025-02-12-OTH-2017015128554",
+      "type": "Activity",
+      "activity_date": "2025-02-12",
+      "activity_end_date": "2025-02-12T15:58:34+01:00",
+      "activity_id": "MTG-PL-2025-02-12-OTH-2017015128554",
+      "activity_label": {
+        "cs": "Kompas konkurenceschopnosti (rozprava)",
+        "hr": "Kompas konkurentnosti (rasprava)",
+        "de": "Kompass für Wettbewerbsfähigkeit (Aussprache)",
+        "sv": "En konkurrenskraftskompass (debatt)",
+        "fr": "Boussole pour la compétitivité (débat)",
+        "et": "Konkurentsivõime kompass (arutelu)",
+        "pt": "Bússola para a Competitividade (debate)",
+        "lt": "Konkurencingumo kelrodis (diskusijos)",
+        "nl": "Kompas voor het concurrentievermogen (debat)",
+        "ga": "Compás Iomaíochais (díospóireacht)",
+        "it": "Bussola per la competitività (discussione)",
+        "bg": "Компас за конкурентоспособността (разискване)",
+        "fi": "Kilpailukykykompassi (keskustelu)",
+        "el": "Πυξίδα ανταγωνιστικότητας (συζήτηση)",
+        "sl": "Kompas za konkurenčnost (razprava)",
+        "es": "Brújula de la Competitividad (debate)",
+        "mt": "Boxxla għall-Kompetittività (dibattitu)",
+        "ro": "Busola pentru competitivitate (dezbatere)",
+        "lv": "Konkurētspējas kompass (debates)",
+        "pl": "Kompas konkurencyjności (debata)",
+        "en": "Competitiveness Compass (debate)",
+        "hu": "Versenyképességi iránytű (vita)",
+        "sk": "Kompas konkurencieschopnosti (rozprava)",
+        "da": "Konkurrenceevnekompas (forhandling)"
+      },
+      "activity_start_date": "2025-02-12T15:57:24+01:00",
+      "had_activity_type": "def/ep-activities/PLENARY_DEBATE_SPEECH",
+      "had_participation": {
+        "id": "eli/dl/participation/MTG-PL-2025-02-12-OTH-2017015128554_256955",
+        "type": "Participation",
+        "had_participant_person": [
+          "person/256955"
+        ],
+        "participation_role": "def/ep-roles/SPEAKER"
+      },
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2025-02-12-OTH-2017015128554",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2025-02-12-ITM-010",
+          "number": "3-0303-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2025-02-12-OTH-2017015128554",
+          "notation_speechId": "2017015128554",
+          "numbering": 291,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/ELL"
+          ]
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2025-02-12-PVCRE-ITM-10"
+      ],
+      "speech_id": "MTG-PL-2025-02-12-OTH-2017015128554"
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2025-02-12-OTH-2017014974314",
+      "type": "Activity",
+      "activity_date": "2025-02-12",
+      "activity_end_date": "2025-02-12T15:30:59+01:00",
+      "activity_id": "MTG-PL-2025-02-12-OTH-2017014974314",
+      "activity_label": {
+        "mt": "Boxxla għall-Kompetittività (dibattitu)",
+        "bg": "Компас за конкурентоспособността (разискване)",
+        "cs": "Kompas konkurenceschopnosti (rozprava)",
+        "es": "Brújula de la Competitividad (debate)",
+        "pt": "Bússola para a Competitividade (debate)",
+        "lv": "Konkurētspējas kompass (debates)",
+        "ro": "Busola pentru competitivitate (dezbatere)",
+        "sk": "Kompas konkurencieschopnosti (rozprava)",
+        "nl": "Kompas voor het concurrentievermogen (debat)",
+        "hr": "Kompas konkurentnosti (rasprava)",
+        "en": "Competitiveness Compass (debate)",
+        "it": "Bussola per la competitività (discussione)",
+        "ga": "Compás Iomaíochais (díospóireacht)",
+        "fi": "Kilpailukykykompassi (keskustelu)",
+        "sl": "Kompas za konkurenčnost (razprava)",
+        "de": "Kompass für Wettbewerbsfähigkeit (Aussprache)",
+        "lt": "Konkurencingumo kelrodis (diskusijos)",
+        "sv": "En konkurrenskraftskompass (debatt)",
+        "hu": "Versenyképességi iránytű (vita)",
+        "fr": "Boussole pour la compétitivité (débat)",
+        "da": "Konkurrenceevnekompas (forhandling)",
+        "et": "Konkurentsivõime kompass (arutelu)",
+        "el": "Πυξίδα ανταγωνιστικότητας (συζήτηση)",
+        "pl": "Kompas konkurencyjności (debata)"
+      },
+      "activity_start_date": "2025-02-12T15:29:20+01:00",
+      "had_activity_type": "def/ep-activities/PLENARY_DEBATE_SPEECH",
+      "had_participation": {
+        "id": "eli/dl/participation/MTG-PL-2025-02-12-OTH-2017014974314_197778",
+        "type": "Participation",
+        "had_participant_person": [
+          "person/197778"
+        ],
+        "participation_role": "def/ep-roles/SPEAKER"
+      },
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2025-02-12-OTH-2017014974314",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2025-02-12-ITM-010",
+          "number": "3-0282-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2025-02-12-OTH-2017014974314",
+          "notation_speechId": "2017014974314",
+          "numbering": 270,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/NLD"
+          ]
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2025-02-12-PVCRE-ITM-10"
+      ],
+      "speech_id": "MTG-PL-2025-02-12-OTH-2017014974314"
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2025-02-12-OTH-2017014974245",
+      "type": "Activity",
+      "activity_date": "2025-02-12",
+      "activity_end_date": "2025-02-12T14:48:29+01:00",
+      "activity_id": "MTG-PL-2025-02-12-OTH-2017014974245",
+      "activity_label": {
+        "ro": "Busola pentru competitivitate (dezbatere)",
+        "el": "Πυξίδα ανταγωνιστικότητας (συζήτηση)",
+        "sl": "Kompas za konkurenčnost (razprava)",
+        "bg": "Компас за конкурентоспособността (разискване)",
+        "mt": "Boxxla għall-Kompetittività (dibattitu)",
+        "et": "Konkurentsivõime kompass (arutelu)",
+        "cs": "Kompas konkurenceschopnosti (rozprava)",
+        "en": "Competitiveness Compass (debate)",
+        "hr": "Kompas konkurentnosti (rasprava)",
+        "nl": "Kompas voor het concurrentievermogen (debat)",
+        "fr": "Boussole pour la compétitivité (débat)",
+        "lv": "Konkurētspējas kompass (debates)",
+        "pl": "Kompas konkurencyjności (debata)",
+        "hu": "Versenyképességi iránytű (vita)",
+        "pt": "Bússola para a Competitividade (debate)",
+        "da": "Konkurrenceevnekompas (forhandling)",
+        "sv": "En konkurrenskraftskompass (debatt)",
+        "de": "Kompass für Wettbewerbsfähigkeit (Aussprache)",
+        "es": "Brújula de la Competitividad (debate)",
+        "sk": "Kompas konkurencieschopnosti (rozprava)",
+        "lt": "Konkurencingumo kelrodis (diskusijos)",
+        "fi": "Kilpailukykykompassi (keskustelu)",
+        "it": "Bussola per la competitività (discussione)",
+        "ga": "Compás Iomaíochais (díospóireacht)"
+      },
+      "activity_start_date": "2025-02-12T14:46:41+01:00",
+      "had_activity_type": "def/ep-activities/PLENARY_DEBATE_SPEECH",
+      "had_participation": {
+        "id": "eli/dl/participation/MTG-PL-2025-02-12-OTH-2017014974245_197591",
+        "type": "Participation",
+        "had_participant_person": [
+          "person/197591"
+        ],
+        "participation_role": "def/ep-roles/SPEAKER"
+      },
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2025-02-12-OTH-2017014974245",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2025-02-12-ITM-010",
+          "number": "3-0247-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2025-02-12-OTH-2017014974245",
+          "notation_speechId": "2017014974245",
+          "numbering": 235,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/ENG"
+          ]
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2025-02-12-PVCRE-ITM-10"
+      ],
+      "speech_id": "MTG-PL-2025-02-12-OTH-2017014974245"
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2025-02-12-OTH-2017014970797",
+      "type": "Activity",
+      "activity_date": "2025-02-12",
+      "activity_end_date": "2025-02-12T14:16:33+01:00",
+      "activity_id": "MTG-PL-2025-02-12-OTH-2017014970797",
+      "activity_label": {
+        "pt": "Bússola para a Competitividade (debate)",
+        "sv": "En konkurrenskraftskompass (debatt)",
+        "it": "Bussola per la competitività (discussione)",
+        "sk": "Kompas konkurencieschopnosti (rozprava)",
+        "lv": "Konkurētspējas kompass (debates)",
+        "da": "Konkurrenceevnekompas (forhandling)",
+        "mt": "Boxxla għall-Kompetittività (dibattitu)",
+        "bg": "Компас за конкурентоспособността (разискване)",
+        "sl": "Kompas za konkurenčnost (razprava)",
+        "et": "Konkurentsivõime kompass (arutelu)",
+        "en": "Competitiveness Compass (debate)",
+        "fi": "Kilpailukykykompassi (keskustelu)",
+        "de": "Kompass für Wettbewerbsfähigkeit (Aussprache)",
+        "hu": "Versenyképességi iránytű (vita)",
+        "es": "Brújula de la Competitividad (debate)",
+        "el": "Πυξίδα ανταγωνιστικότητας (συζήτηση)",
+        "ro": "Busola pentru competitivitate (dezbatere)",
+        "hr": "Kompas konkurentnosti (rasprava)",
+        "pl": "Kompas konkurencyjności (debata)",
+        "fr": "Boussole pour la compétitivité (débat)",
+        "lt": "Konkurencingumo kelrodis (diskusijos)",
+        "cs": "Kompas konkurenceschopnosti (rozprava)",
+        "ga": "Compás Iomaíochais (díospóireacht)",
+        "nl": "Kompas voor het concurrentievermogen (debat)"
+      },
+      "activity_start_date": "2025-02-12T14:15:10+01:00",
+      "had_activity_type": "def/ep-activities/PLENARY_DEBATE_SPEECH",
+      "had_participation": {
+        "id": "eli/dl/participation/MTG-PL-2025-02-12-OTH-2017014970797_257092",
+        "type": "Participation",
+        "had_participant_person": [
+          "person/257092"
+        ],
+        "participation_in_name_of": "org/THE_LEFT",
+        "participation_role": "def/ep-roles/SPEAKER"
+      },
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2025-02-12-OTH-2017014970797",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2025-02-12-ITM-010",
+          "number": "3-0222-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2025-02-12-OTH-2017014970797",
+          "notation_speechId": "2017014970797",
+          "numbering": 210,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/SWE"
+          ]
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2025-02-12-PVCRE-ITM-10"
+      ],
+      "speech_id": "MTG-PL-2025-02-12-OTH-2017014970797"
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2025-02-12-OTH-2017014974270",
+      "type": "Activity",
+      "activity_date": "2025-02-12",
+      "activity_end_date": "2025-02-12T15:03:35+01:00",
+      "activity_id": "MTG-PL-2025-02-12-OTH-2017014974270",
+      "activity_label": {
+        "pl": "Kompas konkurencyjności (debata)",
+        "sv": "En konkurrenskraftskompass (debatt)",
+        "fr": "Boussole pour la compétitivité (débat)",
+        "fi": "Kilpailukykykompassi (keskustelu)",
+        "cs": "Kompas konkurenceschopnosti (rozprava)",
+        "es": "Brújula de la Competitividad (debate)",
+        "et": "Konkurentsivõime kompass (arutelu)",
+        "el": "Πυξίδα ανταγωνιστικότητας (συζήτηση)",
+        "hr": "Kompas konkurentnosti (rasprava)",
+        "de": "Kompass für Wettbewerbsfähigkeit (Aussprache)",
+        "it": "Bussola per la competitività (discussione)",
+        "sk": "Kompas konkurencieschopnosti (rozprava)",
+        "lt": "Konkurencingumo kelrodis (diskusijos)",
+        "da": "Konkurrenceevnekompas (forhandling)",
+        "bg": "Компас за конкурентоспособността (разискване)",
+        "en": "Competitiveness Compass (debate)",
+        "ga": "Compás Iomaíochais (díospóireacht)",
+        "hu": "Versenyképességi iránytű (vita)",
+        "pt": "Bússola para a Competitividade (debate)",
+        "ro": "Busola pentru competitivitate (dezbatere)",
+        "nl": "Kompas voor het concurrentievermogen (debat)",
+        "lv": "Konkurētspējas kompass (debates)",
+        "mt": "Boxxla għall-Kompetittività (dibattitu)",
+        "sl": "Kompas za konkurenčnost (razprava)"
+      },
+      "activity_start_date": "2025-02-12T15:02:27+01:00",
+      "had_activity_type": "def/ep-activities/PLENARY_DEBATE_SPEECH",
+      "had_participation": {
+        "id": "eli/dl/participation/MTG-PL-2025-02-12-OTH-2017014974270_256890",
+        "type": "Participation",
+        "had_participant_person": [
+          "person/256890"
+        ],
+        "participation_role": "def/ep-roles/SPEAKER"
+      },
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2025-02-12-OTH-2017014974270",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2025-02-12-ITM-010",
+          "number": "3-0259-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2025-02-12-OTH-2017014974270",
+          "notation_speechId": "2017014974270",
+          "numbering": 247,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/NLD"
+          ]
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2025-02-12-PVCRE-ITM-10"
+      ],
+      "speech_id": "MTG-PL-2025-02-12-OTH-2017014974270"
+    }
+  ]
+}

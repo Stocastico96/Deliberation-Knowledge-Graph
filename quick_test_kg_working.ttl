@@ -1,0 +1,58 @@
+@prefix del: <https://w3id.org/deliberation/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/deliberation/resource/decide_madrid_process> a del:DeliberationProcess ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/madrid_participant_0>,
+        <https://w3id.org/deliberation/resource/madrid_participant_1> ;
+    del:name "Decide Madrid Participatory Democracy" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/eu_parliament_process_20250310> a del:DeliberationProcess ;
+    del:hasParticipant <https://w3id.org/deliberation/resource/participant_1>,
+        <https://w3id.org/deliberation/resource/participant_2>,
+        <https://w3id.org/deliberation/resource/participant_3> ;
+    del:name "European Parliament Debate - 2025-03-10" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/participant_eu_maria_demo> a del:Participant ;
+    owl:sameAs <https://w3id.org/deliberation/resource/participant_madrid_maria_demo> ;
+    del:name "Maria Gonzalez" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/topic_eu_climate> a del:Topic ;
+    skos:related <https://w3id.org/deliberation/resource/topic_madrid_climate> ;
+    del:name "European Climate Policy" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_0> a del:Participant ;
+    del:identifier "madrid_participant_0" ;
+    del:name "Madrid Citizen 1" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/madrid_participant_1> a del:Participant ;
+    del:identifier "madrid_participant_1" ;
+    del:name "Madrid Citizen 2" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/participant_1> a del:Participant ;
+    del:identifier "participant_1" ;
+    del:name "President." ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/participant_2> a del:Participant ;
+    del:identifier "participant_2" ;
+    del:name "Iratxe GarcÃ­a PÃ©rez" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/participant_3> a del:Participant ;
+    del:identifier "participant_3" ;
+    del:name "Å½eljana Zovko" ;
+    del:platform "EU Parliament" .
+
+<https://w3id.org/deliberation/resource/participant_madrid_maria_demo> a del:Participant ;
+    del:name "Maria Gonzalez" ;
+    del:platform "Decide Madrid" .
+
+<https://w3id.org/deliberation/resource/topic_madrid_climate> a del:Topic ;
+    del:name "Madrid Climate Action" .
+

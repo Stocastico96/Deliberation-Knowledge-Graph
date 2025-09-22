@@ -1,0 +1,88 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+50f8ed20-c40c-4f8b-bd23-4f2324b5091a	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""E"", ""checked"": false}, {""value"": ""9"", ""checked"": false}, {""value"": ""L"", ""checked"": false}, {""value"": ""6"", ""checked"": false}]"	UKN	2020-02-19 15:00:27.281702+00:00	
+8a2fc2f1-1137-4b58-92d5-af1d01c3f830	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	JOIN_ROOM		USR_ONBOARDING	2020-02-19 15:00:27.633829+00:00	
+9270f0bf-595a-4dbd-80c3-770bae3a7335	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	JOIN_ROOM		USR_ONBOARDING	2020-02-19 15:00:36.486069+00:00	
+cff58343-5446-4038-8b2b-446b327c2a88	Hedgehog	a85f56045c7849d59aac40247b7fe51f	JOIN_ROOM		USR_ONBOARDING	2020-02-19 15:00:41.932813+00:00	
+e3be43c1-27bf-44d7-a96e-b7b73dac671f	SYSTEM	-1	ROUTING_TIMER_STARTED	2020-02-19T15:03:42.156310	UKN	2020-02-19 15:00:42.156369+00:00	
+c1d13d45-ee21-420c-a5c2-f20a4ca7b752	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': False}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_ONBOARDING	2020-02-19 15:01:35.272615+00:00	
+4c7767be-72af-4d7a-8d03-75c6724af7fe	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_ONBOARDING	2020-02-19 15:01:38.026743+00:00	
+c7406248-34cd-46f3-8a58-833e1c981d28	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': True}]	USR_ONBOARDING	2020-02-19 15:01:40.466016+00:00	
+a77925e2-def4-4fd3-ab18-63e67351309b	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': False}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_ONBOARDING	2020-02-19 15:01:59.716804+00:00	
+23585670-72d4-499a-9eed-b04f8cd9eb3d	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	WASON_SUBMIT	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': True}]	USR_ONBOARDING	2020-02-19 15:02:00.747381+00:00	
+c95ff297-7114-4451-adc1-fadf382c9ac7	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_ONBOARDING	2020-02-19 15:02:35.134475+00:00	
+d72ce7a6-681f-42e9-b77c-6834295d8e23	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': True}, {'value': '6', 'checked': False}]	USR_ONBOARDING	2020-02-19 15:02:37.756606+00:00	
+16749743-ddf5-4ba2-8928-1c9a7a8cc4d3	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': True}, {'value': '6', 'checked': True}]	USR_ONBOARDING	2020-02-19 15:02:39.155687+00:00	
+69a15bc3-79d4-47a5-a252-d914fa2afc9f	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': True}]	USR_ONBOARDING	2020-02-19 15:03:22.585710+00:00	
+133a4abb-fada-44fb-8d43-9e69a496a096	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': False}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': True}]	USR_ONBOARDING	2020-02-19 15:03:25.778624+00:00	
+d986bbda-dad4-4f2f-bd83-9384c0a34fa3	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': True}]	USR_ONBOARDING	2020-02-19 15:03:26.460453+00:00	
+8850ecec-6943-47af-8e5b-186859af83af	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': True}, {'value': '6', 'checked': True}]	USR_ONBOARDING	2020-02-19 15:03:34.661314+00:00	
+385024b6-ee63-4bb0-9725-40047b24f757	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	ROUTING_TIMER_ELAPSED	[{'value': 'E', 'checked': False}, {'value': '9', 'checked': False}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_ONBOARDING	2020-02-19 15:03:42.333374+00:00	
+010ff154-3856-4b31-b21a-4cb730c173ac	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	ROUTING_TIMER_ELAPSED	[{'value': 'E', 'checked': False}, {'value': '9', 'checked': False}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_ONBOARDING	2020-02-19 15:03:43.344730+00:00	
+90972caf-f7dc-4c5f-8561-822f70ab0f63	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': True}, {'value': '6', 'checked': False}]	USR_ONBOARDING	2020-02-19 15:03:55.843551+00:00	
+2928574e-8d0e-49d9-9416-13b8f1272718	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': True}, {'value': '6', 'checked': True}]	USR_ONBOARDING	2020-02-19 15:04:02.260719+00:00	
+2e1815c0-0c3d-4dab-800a-71ab0e8c6847	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_SUBMIT	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': True}, {'value': '6', 'checked': True}]	USR_ONBOARDING	2020-02-19 15:04:08.151938+00:00	
+9b27ad99-6e8d-42cf-9d26-09e9251d1ae9	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': True}, {'value': '6', 'checked': False}]	USR_ONBOARDING	2020-02-19 15:05:30.098817+00:00	
+d4dff2b2-8cdc-4dbc-91d1-5660841c6027	AUTO_KICKED	a85f56045c7849d59aac40247b7fe51f	LEAVE_ROOM		AUTO_KICKED	2020-02-19 15:05:30.250389+00:00	
+0c1be9e9-5f89-4fe4-af20-b2a6a825eaf4	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_SUBMIT	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': True}, {'value': '6', 'checked': False}]	USR_ONBOARDING	2020-02-19 15:05:56.603762+00:00	
+1665d568-6e2d-4bbd-9356-425de4133e45	SYSTEM	-1	FINISHED_ONBOARDING	2020-02-19T15:12:56.978498	UKN	2020-02-19 15:05:56.978535+00:00	
+4240e252-8b7a-418c-9bc2-3fa66d51a5f0	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	Hi	USR_PLAYING	2020-02-19 15:06:05.843342+00:00	
+899e9b3b-34ec-4b02-b1e5-98506a953987	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	Hello	USR_PLAYING	2020-02-19 15:06:08.334288+00:00	
+26f16155-52fd-4269-acb2-51f9e67fc541	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	The pop ups blocked the chat, that's something to note	USR_PLAYING	2020-02-19 15:06:22.124065+00:00	
+c8dc846e-9c3b-4059-aee6-10bfa384d793	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	alright so solutions, I checked E, 9, and L	USR_PLAYING	2020-02-19 15:06:34.860124+00:00	
+1d629673-f686-455e-a686-a39d742a761e	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	I checked E, 9, 6	USR_PLAYING	2020-02-19 15:06:50.079195+00:00	
+0bb38ddf-5343-4600-9e6b-e57ca3a69f8d	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	I might actually scrap L here	USR_PLAYING	2020-02-19 15:07:10.186155+00:00	
+24bd62f0-02e1-43d3-a3ae-1c1a76c47685	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	So give our reasons and go from there?	USR_PLAYING	2020-02-19 15:07:12.918728+00:00	
+10257241-19a1-4f15-b7ac-3ccc71db6302	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	So my thinking was this	USR_PLAYING	2020-02-19 15:07:15.235114+00:00	
+1ed09a45-c830-4f6b-88a0-2b8de59c17eb	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	What are the options - E could have an uneven number, 9 could have a vowel, L could have an even number, 6 could have a consonant. E having an uneven number would invalidate the rule, 9 having a vowel too. L can have an even number, that's fine. 6 can have a consonant, that's fine too	USR_PLAYING	2020-02-19 15:07:58.323202+00:00	
+d269f381-31a3-462f-bbe8-25f4e74662f0	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	Why do you think 6 needs to be turned?	USR_PLAYING	2020-02-19 15:08:19.575280+00:00	
+f963717b-6f87-405b-b2c2-87231235b8e0	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	Surely the rule allows for consonants to have even numbers	USR_PLAYING	2020-02-19 15:08:37.769627+00:00	
+e8d0012f-2623-4ab4-b695-a3d081e7a0f7	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	Sounds reasonable - my Thoughts were as follows: To check the rule that all Vowels have an even number on the other side, we must know both sides of every vowel or potential vowel card. Therefore we turn E (a vowel) 9 (potentially a vowel) and 6 (potentially a vowel)	USR_PLAYING	2020-02-19 15:09:01.307162+00:00	
+67952ebb-65a9-474d-8881-053b17dd11b1	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	L isn't a vowel so wouldn't affect the rule.	USR_PLAYING	2020-02-19 15:09:22.738546+00:00	
+1f5746bc-d34a-47eb-b21d-d82a759d095f	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	That's what I thought first as well. But I don't think the statement is actually exhaustive of even numbers. All vowels have even numbers, but not all even numbers have vowels	USR_PLAYING	2020-02-19 15:09:40.381297+00:00	
+1005e174-a487-4798-bcf6-b42e4b256c28	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	So 6 could have anything, that's fine	USR_PLAYING	2020-02-19 15:09:47.502494+00:00	
+bad75045-c08c-4501-bb25-b45403d0bc85	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	That's a good point.	USR_PLAYING	2020-02-19 15:10:04.130831+00:00	
+749cb8cf-6fc9-4831-8f34-76ac70bea196	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	And of course, we don't even know if all the cards have a number or letter respectively	USR_PLAYING	2020-02-19 15:10:05.116435+00:00	
+5c4d7b40-2cf8-44f6-b684-3038f970fb93	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	6 could have a 7 on the other side	USR_PLAYING	2020-02-19 15:10:09.227335+00:00	
+511d506d-d9a0-48ba-93da-f3f0fb472eb6	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	And indeed, L could have a vowel on the other side.	USR_PLAYING	2020-02-19 15:10:27.086181+00:00	
+bdde9215-76a9-4a07-9c8a-ef142388cd6c	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	Yeah	USR_PLAYING	2020-02-19 15:10:40.147225+00:00	
+478d1d6d-8847-46f4-9e2e-daa3f7a00ce5	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	Which would make it needed to be turned, yea i'd change my mind based on that	USR_PLAYING	2020-02-19 15:10:51.166345+00:00	
+785d5b0b-0b01-459b-9476-68dbe5d11b57	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_PLAYING	2020-02-19 15:10:55.426352+00:00	
+9f79a608-24b1-4fe2-a66d-0332f62f94c7	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': True}, {'value': '6', 'checked': False}]	USR_PLAYING	2020-02-19 15:10:57.128490+00:00	
+7b754f7d-a76d-44bb-a3b8-4acb1d90510f	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	E and 9 then?	USR_PLAYING	2020-02-19 15:10:58.900825+00:00	
+abc602c2-af91-4e4f-a08f-72bc55f15d84	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	Because if E is uneven or 9 has a vowel	USR_PLAYING	2020-02-19 15:11:05.093999+00:00	
+04c7819f-26d5-4e6d-9ddb-5f26f9619dae	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	the rule is broken	USR_PLAYING	2020-02-19 15:11:07.837516+00:00	
+5392e6b1-64e1-4ee8-ab00-996d5c5153ff	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	E, 9 and L	USR_PLAYING	2020-02-19 15:11:21.871323+00:00	
+9fd10259-c511-4db2-9914-c3f28812cd72	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	Why L again	USR_PLAYING	2020-02-19 15:11:32.210072+00:00	
+ef86f8c3-4e5f-4d8b-bbda-d83938b80821	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	If L has an E on the other side, the rule is broken	USR_PLAYING	2020-02-19 15:11:42.730560+00:00	
+011dc311-cd62-49b9-b2ef-e6e61635a758	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	oh im not reading properly.	USR_PLAYING	2020-02-19 15:11:49.321171+00:00	
+690a699c-b10a-4d62-955a-0ad3d295fdf1	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	No, L is a consonant	USR_PLAYING	2020-02-19 15:11:50.142716+00:00	
+e80bc362-a3d4-40dd-9803-e47b602ed971	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	We don't know anything about them	USR_PLAYING	2020-02-19 15:11:54.538241+00:00	
+a19fab93-5b33-4753-abc6-80c1f33df577	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	It rules out two letters on the card at the top.	USR_PLAYING	2020-02-19 15:12:02.094740+00:00	
+1ad2f52e-c866-4b66-bdfd-1511b253f75c	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	Ah true	USR_PLAYING	2020-02-19 15:12:11.677102+00:00	
+c43e72cc-a901-451b-8b4a-bd4ea2b0b064	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	Then E and 9. Sorry.	USR_PLAYING	2020-02-19 15:12:12.444541+00:00	
+d91f2c71-b978-4daf-abb1-2b0d4d752285	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	I didn't see that either. but yeah, same is true	USR_PLAYING	2020-02-19 15:12:22.522419+00:00	
+961af923-e864-4a9c-b492-bd71f3ed6fe6	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	E and 9	USR_PLAYING	2020-02-19 15:12:25.939103+00:00	
+bb4a7124-722d-4a0e-b8f7-edee1082924a	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_PLAYING	2020-02-19 15:12:28.251091+00:00	
+2a193590-4a80-4dc5-82ca-ca1fd6997e1d	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	WASON_SUBMIT	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_PLAYING	2020-02-19 15:12:28.960529+00:00	
+8da415f3-9151-4fba-b7b8-a91c961796ae	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	I resubmitted	USR_PLAYING	2020-02-19 15:12:35.818508+00:00	
+7eb7ad65-d871-448f-a49e-485371314153	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	WASON_GAME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_PLAYING	2020-02-19 15:12:36.223713+00:00	
+24af8b1e-d2fb-4beb-abda-0d62c71ababa	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	WASON_SUBMIT	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_PLAYING	2020-02-19 15:12:37.401826+00:00	
+a4e7b818-4b66-42e6-8e97-3e67195f8114	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-19 15:12:37.849004+00:00	
+b4d99179-9a0d-40cb-9717-f7c8e80c973d	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	Same.	USR_PLAYING	2020-02-19 15:12:40.733419+00:00	
+9cae7e8b-2afa-4fbf-a47f-0f654250c311	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-19 15:12:41.192887+00:00	
+78ca1cd7-0670-48ca-8efa-33e0c98be8ad	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	Shame the third person got kicked	USR_PLAYING	2020-02-19 15:12:42.908917+00:00	
+d3cb9a99-3ca4-45e4-9e02-63697acdbfe7	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-19 15:12:43.393944+00:00	
+c8ec2e01-14ed-43ff-ad7d-6b2165db22ea	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	Alright, cheers	USR_PLAYING	2020-02-19 15:12:46.905814+00:00	
+a5de948d-0fe8-44f1-8c8b-de57e9cd9e73	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-19 15:12:47.388952+00:00	
+c7a6876b-1d8b-4efd-b8ea-38572a2afabd	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	CHAT_MESSAGE	have a nice day	USR_PLAYING	2020-02-19 15:12:49.273627+00:00	
+c0be27ad-7799-4c5f-a15b-1b98a523809e	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-19 15:12:49.746563+00:00	
+e9cc8156-6056-46cc-8c75-06b9d67052d5	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	CHAT_MESSAGE	Indeed. And you	USR_PLAYING	2020-02-19 15:12:52.182678+00:00	
+083618a2-4ac1-482b-b870-9cd0e5e1a561	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-19 15:12:52.698007+00:00	
+7ff32274-b8b4-4f35-b8ac-3a4661217f9f	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	OUT_OF_TIME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_PLAYING	2020-02-19 15:12:57.143427+00:00	
+7fa24e09-052b-490e-8a2c-27910f022472	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-19 15:12:57.647958+00:00	
+5c2cf339-70ea-4898-b542-3a6ad698604b	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	LEAVE_ROOM		USR_PLAYING	2020-02-19 15:12:59.926628+00:00	
+26bd3cd5-eb6a-4e88-b6b2-b1b458d85f5c	Lion	653dc5c910a74ccbb0bd7eec1e2e3a22	OUT_OF_TIME	[{'value': 'E', 'checked': True}, {'value': '9', 'checked': True}, {'value': 'L', 'checked': False}, {'value': '6', 'checked': False}]	USR_PLAYING	2020-02-19 15:12:59.933946+00:00	
+c769d32d-32c8-48d1-8705-62ad6e7db03d	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-19 15:13:00.337298+00:00	
+51056e7b-eb79-4022-bc9a-91c45113d823	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-19 15:13:00.432656+00:00	
+10a9328e-f858-4651-ba08-507d69ff8b4a	Dolphin	8a82af08706d4e4f8781d7d0d1b0fbfb	LEAVE_ROOM		USR_PLAYING	2020-02-19 15:13:19.817991+00:00	
+74e9052e-033a-48f6-8ba0-e1936f0b4497	SYSTEM	-1	WASON_FINISHED		UKN	2020-02-19 15:13:20.122513+00:00	

@@ -1,0 +1,19 @@
+INFO:__main__:Caricamento knowledge graph da: comprehensive_real_kg.ttl
+INFO:__main__:Knowledge graph caricato: 12295 triple da comprehensive_real_kg.ttl
+=== DELIBERATION KNOWLEDGE GRAPH SERVER - PRODUCTION ===
+Server avviato su http://0.0.0.0:8085
+Interfaccia principale: http://0.0.0.0:8085/
+Endpoint SPARQL: http://0.0.0.0:8085/sparql
+API Contributions: http://0.0.0.0:8085/api/contributions
+API Statistiche: http://0.0.0.0:8085/api/stats
+ * Serving Flask app 'sparql_server_production'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8085
+ * Running on http://192.168.122.214:8085
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:40:08] "[33mHEAD /404.html HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:40:09] "[33mHEAD /404.html HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:42:14] "HEAD /contributions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:42:15] "HEAD /visualize HTTP/1.1" 200 -

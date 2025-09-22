@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:del="https://w3id.org/deliberation/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-07-18-OTH-30800000">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>speech_eli/dl/event/MTG-PL-2024-07-18-OTH-30800000</del:identifier>
+    <del:text>Closure of the sitting</del:text>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-07-18-OTH-30040000">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>speech_eli/dl/event/MTG-PL-2024-07-18-OTH-30040000</del:identifier>
+    <del:text>Opening of the sitting</del:text>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/topic_1">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>topic_1</del:identifier>
+    <del:name>Resumption of the sitting</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-07-18-OTH-30750000">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+    <del:identifier>speech_eli/dl/event/MTG-PL-2024-07-18-OTH-30750000</del:identifier>
+    <del:text>Resumption of the sitting</del:text>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/topic_2">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>topic_2</del:identifier>
+    <del:name>Closure of the sitting</del:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/eu_parliament_debate_unknown">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+    <del:identifier>eu_parliament_debate_unknown</del:identifier>
+    <del:name>EU Parliament Debate unknown</del:name>
+    <del:platform>EU Parliament</del:platform>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_1"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_2"/>
+    <del:hasTopic rdf:resource="https://w3id.org/deliberation/resource/topic_3"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-07-18-OTH-30750000"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-07-18-OTH-30800000"/>
+    <del:hasContribution rdf:resource="https://w3id.org/deliberation/resource/speech_eli/dl/event/MTG-PL-2024-07-18-OTH-30040000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/deliberation/resource/topic_3">
+    <rdf:type rdf:resource="https://w3id.org/deliberation/ontology#Topic"/>
+    <del:identifier>topic_3</del:identifier>
+    <del:name>Opening of the sitting</del:name>
+  </rdf:Description>
+</rdf:RDF>

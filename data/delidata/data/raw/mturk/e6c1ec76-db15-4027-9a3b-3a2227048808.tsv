@@ -1,0 +1,56 @@
+MESSAGE_ID	USER_NAME	USER_ID	MESSAGE_TYPE	CONTENT	USER_STATUS	TIMESTAMP	User Type
+9e9e0c5a-9648-438b-bd07-9b1da93b8d8d	SYSTEM	-1	WASON_INITIAL	"[{""value"": ""T"", ""checked"": false}, {""value"": ""7"", ""checked"": false}, {""value"": ""2"", ""checked"": false}, {""value"": ""A"", ""checked"": false}]"	UKN	2020-09-07 18:53:23.519267+00:00	
+22ce95f8-b903-4f34-b9ab-6cdd4a6abfa8	Kiwi	8347b14c760548609bbc9fd5cc9edc16	JOIN_ROOM		USR_ONBOARDING	2020-09-07 18:53:24.271484+00:00	
+18df1171-ac04-4fba-8265-4d82daa63c88	Falcon	18a2384bfc3c48f99fd86cbd96035d31	JOIN_ROOM		USR_ONBOARDING	2020-09-07 18:53:37.171377+00:00	
+1f5d0046-84fc-40be-9fd0-b6b47fe75a89	Duck	30ee6b231df84ee8942d7c96c745930d	JOIN_ROOM		USR_ONBOARDING	2020-09-07 18:54:44.449269+00:00	
+b4ffdb38-483e-491a-b673-4ccdd4edd510	SYSTEM	-1	ROUTING_TIMER_STARTED	1	UKN	2020-09-07 18:54:44.679977+00:00	
+ce0974bf-6d07-439b-8ace-54d33be1b383	Duck	30ee6b231df84ee8942d7c96c745930d	WASON_GAME	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-09-07 18:55:26.675581+00:00	
+9972f8a7-523a-47de-addf-632f5506bc99	Duck	30ee6b231df84ee8942d7c96c745930d	WASON_GAME	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-09-07 18:55:27.517293+00:00	
+f9673db9-df78-4241-b950-6421d963d493	Kiwi	8347b14c760548609bbc9fd5cc9edc16	WASON_GAME	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-09-07 18:55:40.707001+00:00	
+b7e238fb-655f-490f-807a-7b61fcb93bf0	Kiwi	8347b14c760548609bbc9fd5cc9edc16	WASON_SUBMIT	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-09-07 18:55:42.264587+00:00	
+54155d50-3ff2-4c19-b5d6-7e1db9a942a5	Falcon	18a2384bfc3c48f99fd86cbd96035d31	ROUTING_TIMER_ELAPSED	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-09-07 18:55:45.122764+00:00	
+11159685-52ba-4de5-81f1-167e3ad5d89a	Kiwi	8347b14c760548609bbc9fd5cc9edc16	ROUTING_TIMER_ELAPSED	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': False}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-09-07 18:55:45.135261+00:00	
+50ccb0d2-5539-4257-8a88-a883e9021576	Duck	30ee6b231df84ee8942d7c96c745930d	ROUTING_TIMER_ELAPSED		USR_ONBOARDING	2020-09-07 18:55:45.205690+00:00	
+767ade7f-eb9f-4da1-a7d0-bafde700845b	Duck	30ee6b231df84ee8942d7c96c745930d	WASON_SUBMIT	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': True}]	USR_ONBOARDING	2020-09-07 18:55:56.272161+00:00	
+4bd208a3-8431-4b4c-a14b-bef2ca2c7e15	Falcon	18a2384bfc3c48f99fd86cbd96035d31	WASON_GAME	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-09-07 18:57:21.106506+00:00	
+19092982-c812-4c1f-a1d1-ee5572cfd7ce	Moderating Owl	962b8cc539044765af24355a6f539ac4	JOIN_ROOM		USR_MODERATING	2020-09-07 18:57:27.909490+00:00	
+94405969-5c80-488a-982b-dda2519110ba	Falcon	18a2384bfc3c48f99fd86cbd96035d31	WASON_SUBMIT	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': False}]	USR_ONBOARDING	2020-09-07 18:57:50.640926+00:00	
+2fcb6535-733d-4e31-8537-c8c96b04c638	SYSTEM	-1	FINISHED_ONBOARDING	7	UKN	2020-09-07 18:57:51.030680+00:00	
+d2cc555e-aec8-4d6f-bb59-4eb743661dfa	Moderating Owl	962b8cc539044765af24355a6f539ac4	LEAVE_ROOM		USR_PLAYING	2020-09-07 18:58:07.244166+00:00	
+ce45a0b7-38e5-453f-8ab5-b3072b3b0057	Duck	30ee6b231df84ee8942d7c96c745930d	CHAT_MESSAGE	hello	USR_PLAYING	2020-09-07 18:58:11.099114+00:00	
+ddd76047-b538-4b97-88a2-680175bdb72d	Kiwi	8347b14c760548609bbc9fd5cc9edc16	CHAT_MESSAGE	hi	USR_PLAYING	2020-09-07 18:58:14.120900+00:00	
+f57d8615-6d37-43d4-b45e-9249efc76e36	Falcon	18a2384bfc3c48f99fd86cbd96035d31	CHAT_MESSAGE	hi	USR_PLAYING	2020-09-07 18:58:20.779987+00:00	
+83f1faf2-5596-4d2b-b21f-305a10a57ebb	Duck	30ee6b231df84ee8942d7c96c745930d	CHAT_MESSAGE	for this rule, i think the only cards we need to flip are 2 and A 	USR_PLAYING	2020-09-07 18:58:25.950483+00:00	
+eafb30a8-2049-4b40-a111-2cc57a752301	Kiwi	8347b14c760548609bbc9fd5cc9edc16	WASON_GAME	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-09-07 18:58:31.365839+00:00	
+eff41c40-d12a-4dfd-ac44-a40b3c4a01bf	Kiwi	8347b14c760548609bbc9fd5cc9edc16	WASON_SUBMIT	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-09-07 18:58:34.332203+00:00	
+4d82a0cf-e591-4935-9668-21ac2ad91794	Falcon	18a2384bfc3c48f99fd86cbd96035d31	CHAT_MESSAGE	i feel it is only 2	USR_PLAYING	2020-09-07 18:58:54.571425+00:00	
+92b9d253-7812-4cad-8e67-08d85bfe51f6	Kiwi	8347b14c760548609bbc9fd5cc9edc16	CHAT_MESSAGE	yeah, you're right	USR_PLAYING	2020-09-07 18:58:54.678018+00:00	
+7fbc2e76-4138-4758-9cfb-1bba4d7b15f2	Duck	30ee6b231df84ee8942d7c96c745930d	CHAT_MESSAGE	@Falcon I think we need to flip A as well to see if the other side has an even number according to the rule	USR_PLAYING	2020-09-07 18:59:30.787761+00:00	
+0998905d-6238-4c09-ad28-7fc5067783fe	Falcon	18a2384bfc3c48f99fd86cbd96035d31	CHAT_MESSAGE	flipping A means two numbers can't be on the same side	USR_PLAYING	2020-09-07 18:59:36.424153+00:00	
+d6bb7887-8fa2-49d9-92e6-dddea258f3ef	Duck	30ee6b231df84ee8942d7c96c745930d	CHAT_MESSAGE	We don't know what the other side of A has, so we need to flip it to see if there is an even number	USR_PLAYING	2020-09-07 19:00:58.641870+00:00	
+b874be9a-5ef1-4711-909b-38e76c9b9f1e	Duck	30ee6b231df84ee8942d7c96c745930d	CHAT_MESSAGE	all we know is that the other side of A is a number, we need to flip it to see if the number is even to test the rule	USR_PLAYING	2020-09-07 19:01:25.994458+00:00	
+9c1b90b7-1c33-440f-acdc-4f03f1b46164	Kiwi	8347b14c760548609bbc9fd5cc9edc16	WASON_GAME	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': False}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-09-07 19:01:40.485939+00:00	
+b187f5c5-176c-4ea1-85aa-8cc15349ea13	Kiwi	8347b14c760548609bbc9fd5cc9edc16	WASON_GAME	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-09-07 19:01:41.084776+00:00	
+086cdcca-4a4f-4fda-b066-bbba0e915b5d	Falcon	18a2384bfc3c48f99fd86cbd96035d31	CHAT_MESSAGE	is there a possibility to flip twicw?	USR_PLAYING	2020-09-07 19:01:57.481529+00:00	
+e595eebd-0b3d-4f20-8b7f-68cc2454b764	Falcon	18a2384bfc3c48f99fd86cbd96035d31	CHAT_MESSAGE	twice?	USR_PLAYING	2020-09-07 19:02:04.507691+00:00	
+e372e317-7b25-4ab9-a92f-7f9130e5d6b3	Kiwi	8347b14c760548609bbc9fd5cc9edc16	CHAT_MESSAGE	not sure	USR_PLAYING	2020-09-07 19:02:16.688755+00:00	
+a7d96830-94a9-4984-883a-3e8ce5a92c70	Kiwi	8347b14c760548609bbc9fd5cc9edc16	CHAT_MESSAGE	i think we should flip A	USR_PLAYING	2020-09-07 19:03:11.383373+00:00	
+68aae4a0-2615-4047-bcfc-7e6300535997	Duck	30ee6b231df84ee8942d7c96c745930d	CHAT_MESSAGE	We can flip as many card as we need to verify the rule	USR_PLAYING	2020-09-07 19:03:41.479099+00:00	
+277be04b-a474-434a-a86d-63cb8d912cdf	Duck	30ee6b231df84ee8942d7c96c745930d	CHAT_MESSAGE	I am going to flip 2 and A	USR_PLAYING	2020-09-07 19:03:47.966341+00:00	
+f6451738-0dc8-4f1a-bb4c-0db7d248814c	Falcon	18a2384bfc3c48f99fd86cbd96035d31	CHAT_MESSAGE	 So far T and 7 are ruled out, it means the two cards left is 2 and A. We dont need to flip A. It is a gamble game	USR_PLAYING	2020-09-07 19:03:54.759526+00:00	
+a1032c1a-0e43-4a2a-bab9-6aee233f664e	Falcon	18a2384bfc3c48f99fd86cbd96035d31	CHAT_MESSAGE	A will definitely have even number at the back 100%	USR_PLAYING	2020-09-07 19:04:26.363850+00:00	
+ddc110a6-23ff-4e0f-9955-ea5d1e019ea7	Duck	30ee6b231df84ee8942d7c96c745930d	WASON_SUBMIT	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-09-07 19:04:45.647889+00:00	
+9562e535-202f-483a-9001-3f9bddf3c46e	Duck	30ee6b231df84ee8942d7c96c745930d	OUT_OF_TIME	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-09-07 19:04:51.148007+00:00	
+bf5166f9-8864-4bb6-a7ff-bc53d81870f6	Falcon	18a2384bfc3c48f99fd86cbd96035d31	OUT_OF_TIME	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': False}]	USR_PLAYING	2020-09-07 19:04:51.481496+00:00	
+2cf42635-975d-466e-9aa4-07b6fe6ae161	Kiwi	8347b14c760548609bbc9fd5cc9edc16	OUT_OF_TIME	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-09-07 19:04:51.603244+00:00	
+e25bd6e3-3187-448b-9de1-33705f360dcd	Falcon	18a2384bfc3c48f99fd86cbd96035d31	CHAT_MESSAGE	That is why it is a game	USR_PLAYING	2020-09-07 19:04:51.914482+00:00	
+5da5b949-d987-457b-b394-021ab72b47da	Kiwi	8347b14c760548609bbc9fd5cc9edc16	WASON_SUBMIT	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': True}]	USR_PLAYING	2020-09-07 19:05:02.639909+00:00	
+5eb544b6-6350-41c8-94e1-000b19af9742	Kiwi	8347b14c760548609bbc9fd5cc9edc16	CHAT_MESSAGE	okay	USR_PLAYING	2020-09-07 19:05:09.946117+00:00	
+90e88b46-32a6-43b8-b2d6-6ed3b3dc6897	Falcon	18a2384bfc3c48f99fd86cbd96035d31	CHAT_MESSAGE	I am going with 2 only	USR_PLAYING	2020-09-07 19:05:11.672874+00:00	
+69cdb36b-147f-4087-87d7-e327116fb9a0	Kiwi	8347b14c760548609bbc9fd5cc9edc16	CHAT_MESSAGE	countdown just ended	USR_PLAYING	2020-09-07 19:05:31.972617+00:00	
+6d768d41-bd52-4519-9166-9b1cb0510c26	Falcon	18a2384bfc3c48f99fd86cbd96035d31	WASON_SUBMIT	[{'value': 'T', 'checked': False}, {'value': '7', 'checked': False}, {'value': '2', 'checked': True}, {'value': 'A', 'checked': False}]	USR_PLAYING	2020-09-07 19:05:45.222375+00:00	
+83f907d4-59de-4d00-9bd3-926a2a39d78c	SYSTEM	-1	WASON_FINISHED		UKN	2020-09-07 19:05:45.597368+00:00	
+f43b2781-2f11-49c4-bbda-6d11d5c55cd3	Falcon	18a2384bfc3c48f99fd86cbd96035d31	CHAT_MESSAGE	I picked A, tho I dont understand the countdown	USR_PLAYING	2020-09-07 19:06:17.960298+00:00	
+d8f9a6aa-b6cf-4451-8ec4-d938ad513765	SYSTEM	-1	WASON_FINISHED		UKN	2020-09-07 19:06:18.398314+00:00	
+31a1e3eb-a62b-4f88-be95-11637a6bb77e	Falcon	18a2384bfc3c48f99fd86cbd96035d31	CHAT_MESSAGE	2 rather	USR_PLAYING	2020-09-07 19:06:31.422305+00:00	
+dff3fb10-9098-4c70-a16d-6aa676a64c09	SYSTEM	-1	WASON_FINISHED		UKN	2020-09-07 19:06:31.903634+00:00	
