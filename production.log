@@ -1,3 +1,27 @@
+========================================================
+🏛️  DELIBERATION KNOWLEDGE GRAPH - PRODUCTION PLATFORM
+========================================================
+📊  Dataset: comprehensive_real_kg.ttl (12,295 triple)
+🔍  559 contribution reali, 386 partecipanti, 5 processi
+🌍  Piattaforme: Decide Madrid, EU Parliament
+========================================================
+
+🔍 Controllo dipendenze Python...
+✅ Controlli completati
+
+🚀 Avvio server production sulla porta 8085...
+
+🌐 URL principali:
+   Interfaccia principale: http://localhost:8085/
+   Esplora Contributions:  http://localhost:8085/contributions
+   Visualizzazione KG:     http://localhost:8085/visualize
+   API Statistiche:        http://localhost:8085/api/stats
+   Export KG:              http://localhost:8085/api/export/ttl
+   Endpoint SPARQL:        http://localhost:8085/sparql
+
+📝 Per terminare il server: Ctrl+C
+========================================================
+
 INFO:__main__:Caricamento knowledge graph da: comprehensive_real_kg.ttl
 INFO:__main__:Knowledge graph caricato: 12295 triple da comprehensive_real_kg.ttl
 === DELIBERATION KNOWLEDGE GRAPH SERVER - PRODUCTION ===
@@ -13,7 +37,23 @@ INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a
  * Running on http://127.0.0.1:8085
  * Running on http://192.168.122.214:8085
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:40:08] "[33mHEAD /404.html HTTP/1.0[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:40:09] "[33mHEAD /404.html HTTP/1.0[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:42:14] "HEAD /contributions HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 09:42:15] "HEAD /visualize HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:50:56] "HEAD /dkg HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:51:00] "HEAD /dkg/contributions HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:51:04] "HEAD /dkg/visualize HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:51:09] "HEAD /dkg/sparql HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:51:15] "GET /dkg/api/stats HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:51:20] "GET /dkg/sparql?query=SELECT%20*%20WHERE%20{?s%20?p%20?o}%20LIMIT%201&format=json HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:51:33] "GET /sparql?query=SELECT%20*%20WHERE%20{?s%20?p%20?o}%20LIMIT%201&format=json HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:01] "[32mGET / HTTP/1.0[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:01] "GET /dkg HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:01] "GET /dkg HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:02] "GET /dkg/contributions HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:02] "GET /dkg/visualize HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:02] "GET /dkg/sparql HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:02] "GET /dkg/api/stats HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:19] "GET /dkg/api/export/ttl HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:22] "GET /dkg/api/export/json HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:23] "GET /dkg/sparql?query=SELECT%20*%20WHERE%20{?s%20?p%20?o}%20LIMIT%201&format=json HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:23] "GET /api/stats HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:23] "GET /sparql?query=SELECT%20*%20WHERE%20{?s%20?p%20?o}%20LIMIT%201&format=json HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 10:52:27] "GET /dkg/api/contributions HTTP/1.0" 200 -

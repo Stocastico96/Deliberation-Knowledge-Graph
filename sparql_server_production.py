@@ -3,6 +3,7 @@
 import logging
 import argparse
 from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
 from rdflib import Graph
 import time
 import threading
@@ -12,48 +13,97 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
+CORS(app)  # Abilita CORS per tutte le route
 knowledge_graph = None
 
 @app.route('/')
+def redirect_to_dkg():
+    """Redirect root to /dkg"""
+    from flask import redirect
+    return redirect('/dkg')
+
+@app.route('/dkg')
 def index():
-    """Pagina principale"""
+    """Pagina principale DKG"""
     try:
-        with open('index.html', 'r', encoding='utf-8') as f:
+        with open('index_self_contained.html', 'r', encoding='utf-8') as f:
             content = f.read()
         return content
     except FileNotFoundError:
-        return jsonify({'error': 'File index.html non trovato'}), 404
+        # Fallback al file originale
+        try:
+            with open('index.html', 'r', encoding='utf-8') as f:
+                content = f.read()
+            return content
+        except FileNotFoundError:
+            return jsonify({'error': 'File index non trovato'}), 404
     except Exception as e:
         logger.error(f"Errore nel servire l'index: {str(e)}")
         return jsonify({'error': f'Errore nel servire l\'index: {str(e)}'}), 500
 
 @app.route('/contributions')
+@app.route('/dkg/contributions')
 def contributions():
     """Pagina per esplorare le contribution"""
     try:
-        with open('contributions.html', 'r', encoding='utf-8') as f:
+        with open('contributions_self_contained.html', 'r', encoding='utf-8') as f:
             content = f.read()
         return content
     except FileNotFoundError:
-        return jsonify({'error': 'File contributions non trovato'}), 404
+        # Fallback al file originale
+        try:
+            with open('contributions.html', 'r', encoding='utf-8') as f:
+                content = f.read()
+            return content
+        except FileNotFoundError:
+            return jsonify({'error': 'File contributions non trovato'}), 404
     except Exception as e:
         logger.error(f"Errore nel servire contributions: {str(e)}")
         return jsonify({'error': f'Errore nel servire contributions: {str(e)}'}), 500
 
 @app.route('/visualize')
+@app.route('/dkg/visualize')
 def visualize():
     """Pagina di visualizzazione del knowledge graph"""
     try:
-        with open('visualize_kg.html', 'r', encoding='utf-8') as f:
+        with open('visualize_kg_self_contained.html', 'r', encoding='utf-8') as f:
             content = f.read()
         return content
     except FileNotFoundError:
-        return jsonify({'error': 'File di visualizzazione non trovato'}), 404
+        # Fallback al file originale
+        try:
+            with open('visualize_kg.html', 'r', encoding='utf-8') as f:
+                content = f.read()
+            return content
+        except FileNotFoundError:
+            return jsonify({'error': 'File di visualizzazione non trovato'}), 404
     except Exception as e:
         logger.error(f"Errore nel servire la visualizzazione: {str(e)}")
         return jsonify({'error': f'Errore nel servire la visualizzazione: {str(e)}'}), 500
 
+@app.route('/sparql_interface')
+@app.route('/sparql_page')
+@app.route('/dkg/sparql')
+def sparql_interface():
+    """Pagina interfaccia SPARQL"""
+    try:
+        with open('sparql_self_contained.html', 'r', encoding='utf-8') as f:
+            content = f.read()
+        return content
+    except FileNotFoundError:
+        # Fallback al file originale
+        try:
+            with open('sparql.html', 'r', encoding='utf-8') as f:
+                content = f.read()
+            return content
+        except FileNotFoundError:
+            return jsonify({'error': 'File SPARQL interface non trovato'}), 404
+    except Exception as e:
+        logger.error(f"Errore nel servire SPARQL interface: {str(e)}")
+        return jsonify({'error': f'Errore nel servire SPARQL interface: {str(e)}'}), 500
+
 @app.route('/api/stats')
+@app.route('/dkg/api/stats')
 def api_stats():
     """API per ottenere statistiche del knowledge graph"""
     if not knowledge_graph:
@@ -103,6 +153,7 @@ def api_stats():
         return jsonify({'error': f'Errore nel calcolare le statistiche: {str(e)}'}), 500
 
 @app.route('/api/contributions')
+@app.route('/dkg/api/contributions')
 def api_contributions():
     """API ottimizzata per ottenere contributions con platform organization"""
     if not knowledge_graph:
@@ -188,6 +239,7 @@ def api_contributions():
         return jsonify({'error': f'Errore nell\'API contributions: {str(e)}'}), 500
 
 @app.route('/api/export/<format>')
+@app.route('/dkg/api/export/<format>')
 def api_export(format):
     """API per esportare il knowledge graph"""
     if not knowledge_graph:
@@ -225,6 +277,7 @@ def api_export(format):
         return jsonify({'error': f'Errore nell\'export: {str(e)}'}), 500
 
 @app.route('/sparql', methods=['GET', 'POST'])
+@app.route('/dkg/sparql', methods=['GET', 'POST'])
 def sparql_endpoint():
     """Endpoint SPARQL standard"""
     if not knowledge_graph:
@@ -298,6 +351,32 @@ def css_files(filename):
 @app.route('/static/<path:filename>')
 def static_files(filename):
     return send_from_directory('.', filename)
+
+@app.route('/images/<filename>')
+def serve_images(filename):
+    """Serve immagini dalla directory root o images"""
+    try:
+        return send_from_directory('.', filename)
+    except FileNotFoundError:
+        return jsonify({'error': f'File {filename} non trovato'}), 404
+
+@app.route('/<filename>.png')
+@app.route('/<filename>.jpg')
+@app.route('/<filename>.jpeg')
+@app.route('/<filename>.gif')
+@app.route('/<filename>.svg')
+@app.route('/<filename>.ico')
+def serve_root_images(filename):
+    """Serve immagini dalla directory root"""
+    import os
+    for ext in ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.ico']:
+        full_filename = filename + ext
+        if os.path.exists(full_filename):
+            try:
+                return send_from_directory('.', full_filename)
+            except FileNotFoundError:
+                continue
+    return jsonify({'error': f'Immagine {filename} non trovata'}), 404
 
 def load_knowledge_graph(kg_file):
     """Carica il knowledge graph"""
