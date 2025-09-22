@@ -4,68 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deliberation Knowledge Graph Visualization</title>
+  <link rel="stylesheet" href="css/styles.css">
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <style>
-    /* CSS Reset and Base Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #f8fafc;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    /* Custom color scheme */
+    /* Custom color scheme based on del daft.png (green vines, Donkey Kong, Daft Punk) */
     :root {
-      --primary-color: #4a9d3c;
+      --primary-color: #4a9d3c; /* Green for vines */
       --primary-light: #6abe5c;
       --primary-dark: #3a7d2c;
-      --secondary-color: #8b5a2b;
-      --accent-color: #ffd700;
+      --secondary-color: #8b5a2b; /* Brown for Donkey Kong */
+      --secondary-light: #a67c4e;
+      --secondary-dark: #6b4521;
+      --accent-color: #ffd700; /* Gold for Daft Punk helmets */
+      --accent-light: #ffe44d;
+      --accent-dark: #ccac00;
       --light-color: #f8fafc;
       --dark-color: #0f172a;
       --text-color: #334155;
       --text-light: #64748b;
-      --border-radius: 8px;
-    }
-
-    /* Button styles */
-    .btn {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: var(--primary-color);
-      color: white;
-      text-decoration: none;
-      border-radius: var(--border-radius);
-      border: none;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: var(--primary-dark);
-    }
-
-    .btn-secondary {
-      background-color: var(--secondary-color);
-    }
-
-    .btn-secondary:hover {
-      background-color: var(--secondary-color);
-      filter: brightness(0.9);
+      --link-color: #4a9d3c;
+      --link-hover-color: #3a7d2c;
     }
     
     /* Custom styles for the hero section with background image */
@@ -86,7 +44,9 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+      background-image: url('DKG daft.png');
+      background-size: cover;
+      background-position: center;
       filter: brightness(0.7);
       z-index: -1;
     }
@@ -123,381 +83,19 @@
       font-size: 1.1rem;
     }
     
-    /* Section styles */
-    .section {
-      padding: 3rem 0;
-      background-color: white;
-    }
-
-    .section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: var(--primary-color);
-    }
-
-    .section p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-      color: var(--text-color);
+    /* Override header background */
+    header {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     }
     
     /* Graph visualization styles */
-    .visualization-wrapper {
-      display: flex;
-      gap: 1.5rem;
-      margin-top: 2rem;
-      height: 85vh;
-      min-height: 700px;
-    }
-
     #graph-container {
-      flex: 2.5;
-      height: 100%;
-      border: 2px solid #e1e8ed;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
-      position: relative;
-      overflow: hidden;
-    }
-
-    #side-panel {
-      flex: 1;
-      min-width: 380px;
-      max-width: 450px;
-      height: 100%;
-      border: 2px solid #e1e8ed;
-      border-radius: 12px;
-      background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.05);
-      overflow: hidden;
-      display: none;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    #side-panel.visible {
-      display: flex;
-      flex-direction: column;
-      animation: slideInRight 0.3s ease-out;
-    }
-
-    @keyframes slideInRight {
-      from {
-        opacity: 0;
-        transform: translateX(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    .side-panel-header {
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-      color: white;
-      padding: 1.5rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .side-panel-header::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/><circle cx="20" cy="20" r="1" fill="white" opacity="0.15"/><circle cx="80" cy="30" r="1.5" fill="white" opacity="0.1"/></svg>');
-      pointer-events: none;
-    }
-
-    .side-panel-title {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: white;
-      margin-bottom: 0.5rem;
-      position: relative;
-      z-index: 1;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    }
-
-    .side-panel-type {
-      color: rgba(255, 255, 255, 0.9);
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 500;
-      position: relative;
-      z-index: 1;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 0.25rem 0.75rem;
-      border-radius: 20px;
-      display: inline-block;
-    }
-
-    .side-panel-content {
-      flex: 1;
-      padding: 1.5rem;
-      overflow-y: auto;
-      line-height: 1.6;
-    }
-
-    .side-panel-content::-webkit-scrollbar {
-      width: 6px;
-    }
-
-    .side-panel-content::-webkit-scrollbar-track {
-      background: #f1f1f1;
-      border-radius: 3px;
-    }
-
-    .side-panel-content::-webkit-scrollbar-thumb {
-      background: var(--primary-color);
-      border-radius: 3px;
-    }
-
-    .side-panel-content::-webkit-scrollbar-thumb:hover {
-      background: var(--primary-dark);
-    }
-
-    .detail-section {
-      margin-bottom: 2rem;
-      border-radius: 8px;
-      transition: all 0.2s ease;
-    }
-
-    .detail-section:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    }
-
-    .detail-label {
-      font-weight: 600;
-      color: var(--primary-dark);
-      margin-bottom: 0.75rem;
-      display: flex;
-      align-items: center;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .detail-label::before {
-      content: '';
-      width: 4px;
-      height: 4px;
-      background: var(--primary-color);
-      border-radius: 50%;
-      margin-right: 0.5rem;
-    }
-
-    .detail-value {
-      color: var(--text-color);
-      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-      padding: 1rem;
-      border-radius: 8px;
-      border: 1px solid #e2e8f0;
-      border-left: 4px solid var(--primary-color);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-      word-wrap: break-word;
-      position: relative;
-    }
-
-    .detail-value code {
-      background: #f1f5f9;
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-      font-size: 0.8rem;
-      color: #475569;
-    }
-
-    .contribution-text {
-      max-height: 250px;
-      overflow-y: auto;
-      font-style: italic;
-      line-height: 1.7;
-      padding-right: 0.5rem;
-    }
-
-    .contribution-text::-webkit-scrollbar {
-      width: 4px;
-    }
-
-    .contribution-text::-webkit-scrollbar-track {
-      background: #f1f1f1;
-      border-radius: 2px;
-    }
-
-    .contribution-text::-webkit-scrollbar-thumb {
-      background: var(--primary-color);
-      border-radius: 2px;
-    }
-
-    .node-stats {
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-      border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 1.5rem;
-      border: 1px solid #cbd5e1;
-    }
-
-    .stat-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.5rem 0;
-      border-bottom: 1px solid #e2e8f0;
-    }
-
-    .stat-item:last-child {
-      border-bottom: none;
-    }
-
-    .stat-label {
-      font-weight: 500;
-      color: var(--text-color);
-      font-size: 0.9rem;
-    }
-
-    .stat-value {
-      font-weight: 600;
-      color: var(--primary-dark);
-      background: white;
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.85rem;
-    }
-
-    .relationships-list {
-      max-height: 200px;
-      overflow-y: auto;
-    }
-
-    .relationship-item {
-      background: white;
-      border: 1px solid #e2e8f0;
-      border-radius: 6px;
-      padding: 0.75rem;
-      margin-bottom: 0.5rem;
-      transition: all 0.2s ease;
-    }
-
-    .relationship-item:hover {
-      border-color: var(--primary-color);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    }
-
-    .relationship-type {
-      font-weight: 600;
-      color: var(--primary-color);
-      font-size: 0.85rem;
-      text-transform: capitalize;
-    }
-
-    .relationship-target {
-      color: var(--text-color);
-      margin-top: 0.25rem;
-      font-size: 0.9rem;
-    }
-
-    .close-panel {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: rgba(255, 255, 255, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: 50%;
-      width: 36px;
-      height: 36px;
-      font-size: 1.2rem;
-      cursor: pointer;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.2s ease;
-      backdrop-filter: blur(10px);
-      z-index: 10;
-    }
-
-    .close-panel:hover {
-      background: rgba(255, 255, 255, 0.3);
-      transform: scale(1.05);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .close-panel:active {
-      transform: scale(0.95);
-    }
-
-    /* Mobile responsiveness for visualization */
-    @media (max-width: 1024px) {
-      .visualization-wrapper {
-        flex-direction: column;
-        height: auto;
-      }
-
-      #graph-container {
-        height: 60vh;
-        min-height: 500px;
-        margin-bottom: 1rem;
-      }
-
-      #side-panel {
-        min-width: unset;
-        max-width: 100%;
-        height: 40vh;
-        min-height: 400px;
-      }
-
-      .side-panel-content {
-        padding: 1rem;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .visualization-wrapper {
-        gap: 1rem;
-      }
-
-      #graph-container {
-        height: 50vh;
-        min-height: 400px;
-      }
-
-      #side-panel {
-        height: 35vh;
-        min-height: 300px;
-      }
-
-      .side-panel-header {
-        padding: 1rem;
-      }
-
-      .side-panel-title {
-        font-size: 1.2rem;
-      }
-    }
-
-    @media (max-width: 576px) {
-      #graph-container {
-        height: 45vh;
-        min-height: 350px;
-      }
-
-      #side-panel {
-        height: 40vh;
-        min-height: 280px;
-      }
-
-      .detail-section {
-        margin-bottom: 1.5rem;
-      }
-
-      .detail-value {
-        padding: 0.75rem;
-      }
+      width: 100%;
+      height: 800px;
+      border: 1px solid #ccc;
+      border-radius: var(--border-radius);
+      margin-top: 2rem;
+      background-color: #f8f9fa;
     }
     
     .node {
@@ -535,192 +133,34 @@
     
     .controls {
       display: flex;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
+      gap: 1rem;
+      margin-bottom: 1rem;
       flex-wrap: wrap;
-      align-items: center;
-      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-      padding: 1.5rem;
-      border-radius: 12px;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
-
-    .control-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      min-width: 180px;
-    }
-
-    .controls label {
-      font-weight: 600;
-      color: var(--primary-dark);
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
+    
     .controls select, .controls input {
-      padding: 0.75rem;
-      border: 2px solid #e2e8f0;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      background: white;
-      transition: all 0.2s ease;
-      min-width: 180px;
-    }
-
-    .controls select:focus, .controls input:focus {
-      outline: none;
-      border-color: var(--primary-color);
-      box-shadow: 0 0 0 3px rgba(74, 157, 60, 0.1);
-      transform: translateY(-1px);
-    }
-
-    .controls select:hover, .controls input:hover {
-      border-color: var(--primary-light);
-    }
-
-    .control-actions {
-      display: flex;
-      gap: 0.75rem;
-      align-items: flex-end;
-    }
-
-    .control-actions .btn {
-      padding: 0.75rem 1.25rem;
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    /* Mobile responsiveness for controls */
-    @media (max-width: 1024px) {
-      .controls {
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .control-group {
-        min-width: 100%;
-      }
-
-      .control-actions {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-      }
-
-      .legend {
-        gap: 1rem;
-      }
-
-      .legend-item {
-        flex: 1;
-        min-width: calc(50% - 0.5rem);
-        justify-content: center;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .controls {
-        padding: 1rem;
-        gap: 1rem;
-      }
-
-      .control-group {
-        min-width: 100%;
-      }
-
-      .control-actions {
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      .control-actions .btn {
-        width: 100%;
-        text-align: center;
-      }
-
-      .legend {
-        padding: 1rem;
-        gap: 0.75rem;
-      }
-
-      .legend-item {
-        min-width: calc(50% - 0.375rem);
-        padding: 0.5rem;
-      }
-
-      .legend-label {
-        font-size: 0.8rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .legend-item {
-        min-width: 100%;
-      }
-
-      .control-actions .btn {
-        padding: 0.75rem 1rem;
-        font-size: 0.8rem;
-      }
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: var(--border-radius);
     }
     
     .legend {
       display: flex;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
+      gap: 1rem;
+      margin-top: 1rem;
       flex-wrap: wrap;
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
-
+    
     .legend-item {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      padding: 0.5rem 1rem;
-      background: #f8fafc;
-      border-radius: 8px;
-      border: 1px solid #e2e8f0;
-      transition: all 0.2s ease;
-      cursor: pointer;
+      gap: 0.5rem;
     }
-
-    .legend-item:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border-color: var(--primary-color);
-    }
-
+    
     .legend-color {
-      width: 18px;
-      height: 18px;
+      width: 20px;
+      height: 20px;
       border-radius: 50%;
-      border: 2px solid white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .legend-label {
-      font-weight: 500;
-      color: var(--text-color);
-      font-size: 0.9rem;
-    }
-
-    /* Footer styles */
-    footer {
-      background-color: var(--dark-color);
-      color: white;
-      text-align: center;
-      padding: 2rem 0;
-      margin-top: 3rem;
     }
   </style>
 </head>
@@ -732,12 +172,24 @@
       <h1>Deliberation Knowledge Graph</h1>
       <p>Interactive Visualization</p>
       <div class="hero-buttons">
-        <a href="https://svagnoni.linkeddata.es/" class="btn">Back to Home</a>
-        <a href="https://svagnoni.linkeddata.es/sparql" class="btn btn-secondary">SPARQL Endpoint</a>
+        <a href="index.html" class="btn">Back to Home</a>
+        <a href="sparql.html" class="btn btn-secondary">SPARQL Endpoint</a>
       </div>
     </div>
   </section>
 
+  <header>
+    <div class="container">
+      <h1>Deliberation Knowledge Graph</h1>
+      <p class="subtitle">Interactive Visualization</p>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="sparql.html"><i class="fas fa-search"></i> SPARQL Endpoint</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <section class="section">
     <div class="container">
@@ -745,101 +197,60 @@
       <p>This interactive visualization shows the connections between different entities in the Deliberation Knowledge Graph. You can zoom, pan, and click on nodes to explore the graph.</p>
       
       <div class="controls">
-        <div class="control-group">
-          <label for="dataset-filter">Dataset Filter</label>
-          <select id="dataset-filter" aria-label="Filter knowledge graph by dataset">
-            <option value="all">All Datasets</option>
-            <option value="ep_debate">European Parliament Debates</option>
-            <option value="decide_madrid">Decide Madrid</option>
-            <option value="delidata">DeliData</option>
-            <option value="eu_have_your_say">EU Have Your Say</option>
-            <option value="habermas">Habermas Machine</option>
-            <option value="scotus">US Supreme Court Arguments</option>
-          </select>
-        </div>
-
-        <div class="control-group">
-          <label for="node-type-filter">Node Type Filter</label>
-          <select id="node-type-filter" aria-label="Filter knowledge graph by node type">
-            <option value="all">All Node Types</option>
-            <option value="DeliberationProcess">Deliberation Process</option>
-            <option value="Participant">Participant</option>
-            <option value="Organization">Organization</option>
-            <option value="Topic">Topic</option>
-            <option value="Contribution">Contribution</option>
-            <option value="Argument">Argument</option>
-          </select>
-        </div>
-
-        <div class="control-group">
-          <label for="link-distance">Link Distance: <span id="distance-value">150</span>px</label>
-          <input type="range" id="link-distance" min="50" max="300" value="150" aria-label="Adjust link distance between nodes">
-        </div>
-
-        <div class="control-actions">
-          <button id="reset-zoom" class="btn btn-secondary" aria-label="Reset zoom to original view">Reset View</button>
-          <button id="reset-filters" class="btn" aria-label="Reset all filters">Reset Filters</button>
-        </div>
+        <select id="dataset-filter">
+          <option value="all">All Datasets</option>
+          <option value="ep_debate">European Parliament Debates</option>
+          <option value="decide_madrid">Decide Madrid</option>
+          <option value="delidata">DeliData</option>
+          <option value="eu_have_your_say">EU Have Your Say</option>
+          <option value="habermas">Habermas Machine</option>
+          <option value="scotus">US Supreme Court Arguments</option>
+        </select>
+        
+        <select id="node-type-filter">
+          <option value="all">All Node Types</option>
+          <option value="DeliberationProcess">Deliberation Process</option>
+          <option value="Participant">Participant</option>
+          <option value="Organization">Organization</option>
+          <option value="Topic">Topic</option>
+          <option value="Contribution">Contribution</option>
+          <option value="Argument">Argument</option>
+        </select>
+        
+        <input type="range" id="link-distance" min="50" max="300" value="150">
+        <label for="link-distance">Link Distance</label>
+        
+        <button id="reset-zoom" class="btn btn-secondary">Reset Zoom</button>
       </div>
       
       <div class="legend">
-        <div class="legend-item" data-node-type="DeliberationProcess">
-          <div class="legend-color" style="background-color: #4a9d3c;"></div>
-          <span class="legend-label">Deliberation Process</span>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: var(--primary-color);"></div>
+          <span>Deliberation Process</span>
         </div>
-        <div class="legend-item" data-node-type="Participant">
-          <div class="legend-color" style="background-color: #8b5a2b;"></div>
-          <span class="legend-label">Participant</span>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: var(--secondary-color);"></div>
+          <span>Participant</span>
         </div>
-        <div class="legend-item" data-node-type="Topic">
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: var(--accent-color);"></div>
+          <span>Organization</span>
+        </div>
+        <div class="legend-item">
           <div class="legend-color" style="background-color: #e74c3c;"></div>
-          <span class="legend-label">Topic</span>
+          <span>Topic</span>
         </div>
-        <div class="legend-item" data-node-type="Organization">
-          <div class="legend-color" style="background-color: #ffd700;"></div>
-          <span class="legend-label">Organization</span>
-        </div>
-        <div class="legend-item" data-node-type="Contribution">
+        <div class="legend-item">
           <div class="legend-color" style="background-color: #3498db;"></div>
-          <span class="legend-label">Contribution</span>
+          <span>Contribution</span>
         </div>
-        <div class="legend-item" data-node-type="Argument">
+        <div class="legend-item">
           <div class="legend-color" style="background-color: #9b59b6;"></div>
-          <span class="legend-label">Argument</span>
+          <span>Argument</span>
         </div>
       </div>
       
-      <div class="visualization-wrapper">
-        <div id="graph-container" role="img" aria-label="Interactive knowledge graph visualization showing relationships between deliberation processes, participants, and topics">
-          <div id="loading-indicator" style="display: flex; justify-content: center; align-items: center; height: 100%; flex-direction: column;">
-            <div style="width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid var(--primary-color); border-radius: 50%; animation: spin 1s linear infinite;"></div>
-            <p style="margin-top: 1rem; color: var(--text-color);">Loading knowledge graph data...</p>
-          </div>
-        </div>
-
-        <div id="side-panel">
-          <div class="side-panel-header">
-            <button class="close-panel" aria-label="Close side panel">&times;</button>
-            <div class="side-panel-title" id="panel-title">Node Details</div>
-            <div class="side-panel-type" id="panel-type">Click on any node to see details</div>
-          </div>
-          <div class="side-panel-content" id="panel-content">
-            <div style="text-align: center; padding: 3rem 1rem; color: var(--text-light);">
-              <div style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.3;">🔍</div>
-              <h3 style="color: var(--text-color); margin-bottom: 1rem; font-weight: 600;">Explore the Knowledge Graph</h3>
-              <p style="line-height: 1.6; margin-bottom: 1.5rem;">Click on any node in the visualization to view detailed information about deliberation processes, participants, contributions, and their relationships.</p>
-              <p style="font-size: 0.9rem; color: var(--primary-color); font-weight: 500;">💡 Tip: Use the controls above to filter and customize the visualization</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <style>
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-      </style>
+      <div id="graph-container"></div>
     </div>
   </section>
 
@@ -851,258 +262,25 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Cache for API data to improve performance
-      let dataCache = null;
-      const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
-      let lastCacheTime = 0;
-
-      function fetchDataWithCache() {
-        const now = Date.now();
-
-        // Return cached data if it's still fresh
-        if (dataCache && (now - lastCacheTime) < CACHE_DURATION) {
-          return Promise.resolve(dataCache);
-        }
-
-        // Fetch all data using SPARQL query for complete graph
-        const sparqlQuery = `
-          PREFIX del: <https://w3id.org/deliberation/ontology#>
-          PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-          PREFIX owl: <http://www.w3.org/2002/07/owl#>
-
-          SELECT ?s ?p ?o WHERE {
-            ?s ?p ?o
-          }
-        `;
-
-        return fetch('/sparql', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-          },
-          body: `query=${encodeURIComponent(sparqlQuery)}`
-        })
-        .then(res => res.json())
-        .then(sparqlData => {
-          // Cache the data
-          dataCache = { sparqlData };
-          lastCacheTime = now;
-          return dataCache;
-        });
-      }
-
-      // Load the knowledge graph data from SPARQL endpoint
-      fetchDataWithCache().then(function({ sparqlData }) {
-        console.log('SPARQL data loaded successfully:', sparqlData);
-
-        // Hide loading indicator
-        const loadingIndicator = document.getElementById('loading-indicator');
-        if (loadingIndicator) {
-          loadingIndicator.style.display = 'none';
-        }
-
-        // Process the SPARQL data to create a graph structure
-        const graph = processSparqlData(sparqlData);
-        console.log('Graph data processed:', graph);
-
+      // Load the knowledge graph data
+      d3.json('knowledge_graph/deliberation_kg.jsonld').then(function(data) {
+        // Process the data to create a graph structure
+        const graph = processGraphData(data);
+        
         // Create the visualization
-        if (graph.nodes.length > 0) {
-          console.log('Creating graph with', graph.nodes.length, 'nodes and', graph.links.length, 'links');
-          createForceDirectedGraph(graph);
-        } else {
-          console.error('No nodes found in graph data');
-          document.getElementById('graph-container').innerHTML = `
-            <div style="padding: 2rem; text-align: center;">
-              <h3>No Graph Data Available</h3>
-              <p>No nodes were found in the processed SPARQL data.</p>
-            </div>
-          `;
-        }
+        createForceDirectedGraph(graph);
       }).catch(function(error) {
         console.error('Error loading the knowledge graph data:', error);
         document.getElementById('graph-container').innerHTML = `
           <div style="padding: 2rem; text-align: center;">
             <h3>Error Loading Knowledge Graph Data</h3>
-            <p>Make sure the SPARQL server is running:</p>
-            <pre>./start_platform.sh</pre>
+            <p>Make sure you have generated the knowledge graph by running:</p>
+            <pre>python3 create_knowledge_graph.py</pre>
             <p>Error details: ${error.message}</p>
           </div>
         `;
       });
-
-      function processSparqlData(sparqlResult) {
-        const nodes = [];
-        const links = [];
-        const nodeMap = new Map();
-
-        if (!sparqlResult || !sparqlResult.results || !sparqlResult.results.bindings) {
-          console.error('Invalid SPARQL result format');
-          return { nodes, links };
-        }
-
-        const bindings = sparqlResult.results.bindings;
-
-        // Process all triples to extract nodes and relationships
-        bindings.forEach(binding => {
-          if (!binding.s || !binding.p || !binding.o) return;
-
-          const subject = binding.s.value;
-          const predicate = binding.p.value;
-          const object = binding.o.value;
-
-          // Add subject as node if it's a resource
-          if (subject.startsWith('https://w3id.org/deliberation/resource/')) {
-            if (!nodeMap.has(subject)) {
-              const node = {
-                id: subject,
-                type: 'Unknown',
-                name: extractNameFromUri(subject),
-                dataset: extractDatasetFromUri(subject)
-              };
-              nodes.push(node);
-              nodeMap.set(subject, node);
-            }
-          }
-
-          // Add object as node if it's a resource
-          if (object.startsWith('https://w3id.org/deliberation/resource/')) {
-            if (!nodeMap.has(object)) {
-              const node = {
-                id: object,
-                type: 'Unknown',
-                name: extractNameFromUri(object),
-                dataset: extractDatasetFromUri(object)
-              };
-              nodes.push(node);
-              nodeMap.set(object, node);
-            }
-          }
-
-          // Update node types based on rdf:type triples
-          if (predicate === 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type') {
-            const node = nodeMap.get(subject);
-            if (node && object.includes('#')) {
-              node.type = object.split('#').pop();
-            }
-          }
-
-          // Update node names based on name triples
-          if (predicate === 'https://w3id.org/deliberation/ontology#name') {
-            const node = nodeMap.get(subject);
-            if (node) {
-              node.name = object;
-            }
-          }
-
-          // Create links for relationships between resources
-          if (subject.startsWith('https://w3id.org/deliberation/resource/') &&
-              object.startsWith('https://w3id.org/deliberation/resource/')) {
-
-            const predicateName = predicate.includes('#') ?
-              predicate.split('#').pop() :
-              predicate.split('/').pop();
-
-            links.push({
-              source: subject,
-              target: object,
-              type: predicateName
-            });
-          }
-        });
-
-        console.log('Processed SPARQL data:', {
-          totalTriples: bindings.length,
-          nodes: nodes.length,
-          links: links.length
-        });
-
-        return { nodes, links };
-      }
-
-      function processLiveData(processes, participants, stats) {
-        const nodes = [];
-        const links = [];
-        const nodeMap = new Map();
-
-        // Add process nodes
-        processes.forEach(process => {
-          const node = {
-            id: process.uri,
-            type: 'DeliberationProcess',
-            name: process.name,
-            dataset: extractDatasetFromUri(process.uri)
-          };
-          nodes.push(node);
-          nodeMap.set(process.uri, node);
-        });
-
-        // Add participant nodes
-        participants.forEach(participant => {
-          const node = {
-            id: participant.uri,
-            type: 'Participant',
-            name: participant.name,
-            dataset: extractDatasetFromUri(participant.uri)
-          };
-          nodes.push(node);
-          nodeMap.set(participant.uri, node);
-        });
-
-        // Create connections between participants and processes
-        // Since we don't have direct relationship data from the API,
-        // we'll infer relationships based on dataset patterns
-        processes.forEach(process => {
-          participants.forEach(participant => {
-            if (extractDatasetFromUri(process.uri) === extractDatasetFromUri(participant.uri)) {
-              links.push({
-                source: process.uri,
-                target: participant.uri,
-                type: 'hasParticipant'
-              });
-            }
-          });
-        });
-
-        // Add some sample topics based on the process names
-        if (processes.length > 0) {
-          processes.forEach(process => {
-            if (process.name.toLowerCase().includes('climate')) {
-              const topicNode = {
-                id: process.uri + '_topic_climate',
-                type: 'Topic',
-                name: 'Climate Policy',
-                dataset: extractDatasetFromUri(process.uri)
-              };
-              nodes.push(topicNode);
-              nodeMap.set(topicNode.id, topicNode);
-              links.push({
-                source: process.uri,
-                target: topicNode.id,
-                type: 'hasTopic'
-              });
-            }
-
-            if (process.name.toLowerCase().includes('madrid') || process.name.toLowerCase().includes('participatory')) {
-              const topicNode = {
-                id: process.uri + '_topic_participation',
-                type: 'Topic',
-                name: 'Participatory Democracy',
-                dataset: extractDatasetFromUri(process.uri)
-              };
-              nodes.push(topicNode);
-              nodeMap.set(topicNode.id, topicNode);
-              links.push({
-                source: process.uri,
-                target: topicNode.id,
-                type: 'hasTopic'
-              });
-            }
-          });
-        }
-
-        return { nodes, links };
-      }
-
+      
       function processGraphData(data) {
         // Extract nodes and links from the JSON-LD data
         const nodes = [];
@@ -1208,8 +386,8 @@
       }
       
       function extractDatasetFromUri(uri) {
-        if (uri.includes('eu_parliament')) return 'ep_debate';
-        if (uri.includes('madrid') || uri.includes('decide_madrid')) return 'decide_madrid';
+        if (uri.includes('ep_debate')) return 'ep_debate';
+        if (uri.includes('madrid')) return 'decide_madrid';
         if (uri.includes('delidata')) return 'delidata';
         if (uri.includes('euhys')) return 'eu_have_your_say';
         if (uri.includes('habermas')) return 'habermas';
@@ -1218,15 +396,10 @@
       }
       
       function createForceDirectedGraph(graph) {
-        const container = document.getElementById('graph-container');
-        const width = container.clientWidth || 800;
-        const height = container.clientHeight || 600;
-
-        console.log('Container dimensions:', { width, height });
-
-        // Clear container and create SVG element
-        d3.select('#graph-container').selectAll('*').remove();
-
+        const width = document.getElementById('graph-container').clientWidth;
+        const height = document.getElementById('graph-container').clientHeight;
+        
+        // Create SVG element
         const svg = d3.select('#graph-container')
           .append('svg')
           .attr('width', width)
@@ -1295,23 +468,13 @@
             tooltip.transition()
               .duration(500)
               .style('opacity', 0);
-          })
-          .on('click', function(event, d) {
-            event.stopPropagation();
-            showNodeDetails(d);
           });
         
         // Add labels to nodes
         node.append('text')
           .attr('dx', 12)
           .attr('dy', '.35em')
-          .text(d => {
-            // For contributions, show a more descriptive label
-            if (d.type === 'Contribution') {
-              return truncateText(`${d.name} (${d.dataset})`, 25);
-            }
-            return truncateText(d.name, 20);
-          });
+          .text(d => truncateText(d.name, 20));
         
         // Update positions on each tick
         simulation.on('tick', () => {
@@ -1348,23 +511,6 @@
         document.getElementById('node-type-filter').addEventListener('change', filterGraph);
         document.getElementById('link-distance').addEventListener('input', updateLinkDistance);
         document.getElementById('reset-zoom').addEventListener('click', resetZoom);
-        document.getElementById('reset-filters').addEventListener('click', resetFilters);
-
-        // Add legend click interactions
-        document.querySelectorAll('.legend-item').forEach(item => {
-          item.addEventListener('click', function() {
-            const nodeType = this.dataset.nodeType;
-            if (nodeType) {
-              document.getElementById('node-type-filter').value = nodeType;
-              filterGraph();
-            }
-          });
-        });
-
-        // Update distance display
-        document.getElementById('link-distance').addEventListener('input', function() {
-          document.getElementById('distance-value').textContent = this.value;
-        });
         
         function filterGraph() {
           const datasetFilter = document.getElementById('dataset-filter').value;
@@ -1401,18 +547,8 @@
         
         function updateLinkDistance() {
           const distance = parseInt(document.getElementById('link-distance').value);
-          document.getElementById('distance-value').textContent = distance;
           simulation.force('link').distance(distance);
           simulation.alpha(1).restart();
-        }
-
-        function resetFilters() {
-          document.getElementById('dataset-filter').value = 'all';
-          document.getElementById('node-type-filter').value = 'all';
-          document.getElementById('link-distance').value = '150';
-          document.getElementById('distance-value').textContent = '150';
-          filterGraph();
-          updateLinkDistance();
         }
         
         function resetZoom() {
@@ -1422,370 +558,24 @@
             d3.zoomTransform(svg.node()).invert([width / 2, height / 2])
           );
         }
-
-        // Side panel functionality
-        function showNodeDetails(nodeData) {
-          const sidePanel = document.getElementById('side-panel');
-          const panelTitle = document.getElementById('panel-title');
-          const panelType = document.getElementById('panel-type');
-          const panelContent = document.getElementById('panel-content');
-
-          // Show the side panel
-          sidePanel.classList.add('visible');
-
-          // Set title and type
-          panelTitle.textContent = nodeData.name || 'Unknown';
-          panelType.textContent = nodeData.type || 'Unknown Type';
-
-          // Show loading state
-          panelContent.innerHTML = `
-            <div style="display: flex; justify-content: center; align-items: center; height: 200px; flex-direction: column;">
-              <div style="width: 32px; height: 32px; border: 3px solid #f3f3f3; border-top: 3px solid var(--primary-color); border-radius: 50%; animation: spin 1s linear infinite;"></div>
-              <p style="margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">Loading node details...</p>
-            </div>
-          `;
-
-          // Fetch detailed information about this node
-          fetchNodeDetails(nodeData.id).then(details => {
-            // Calculate node statistics
-            const connections = graph.links.filter(link =>
-              (link.source.id || link.source) === nodeData.id ||
-              (link.target.id || link.target) === nodeData.id
-            ).length;
-
-            let contentHtml = '';
-
-            // Node statistics section
-            contentHtml += `
-              <div class="node-stats">
-                <div class="stat-item">
-                  <span class="stat-label">Connections</span>
-                  <span class="stat-value">${connections}</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-label">Node Type</span>
-                  <span class="stat-value">${nodeData.type}</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-label">Dataset</span>
-                  <span class="stat-value">${getDatasetDisplayName(nodeData.dataset)}</span>
-                </div>
-              </div>
-            `;
-
-            // URI section with copy functionality
-            contentHtml += `
-              <div class="detail-section">
-                <span class="detail-label">Resource URI</span>
-                <div class="detail-value">
-                  <code onclick="copyToClipboard('${nodeData.id}')" style="cursor: pointer; word-break: break-all; font-size: 0.8rem;" title="Click to copy">${nodeData.id}</code>
-                </div>
-              </div>
-            `;
-
-            // Show specific details based on node type and fetched data
-            if (details) {
-              if (details.text) {
-                contentHtml += `
-                  <div class="detail-section">
-                    <span class="detail-label">Content Text</span>
-                    <div class="detail-value contribution-text">${escapeHtml(details.text)}</div>
-                  </div>
-                `;
-              }
-
-              if (details.participant) {
-                contentHtml += `
-                  <div class="detail-section">
-                    <span class="detail-label">Participant</span>
-                    <div class="detail-value">${escapeHtml(details.participant)}</div>
-                  </div>
-                `;
-              }
-
-              if (details.organization) {
-                contentHtml += `
-                  <div class="detail-section">
-                    <span class="detail-label">Organization</span>
-                    <div class="detail-value">${escapeHtml(details.organization)}</div>
-                  </div>
-                `;
-              }
-
-              if (details.timestamp) {
-                const formattedDate = formatTimestamp(details.timestamp);
-                contentHtml += `
-                  <div class="detail-section">
-                    <span class="detail-label">Timestamp</span>
-                    <div class="detail-value">${formattedDate}</div>
-                  </div>
-                `;
-              }
-
-              if (details.process) {
-                contentHtml += `
-                  <div class="detail-section">
-                    <span class="detail-label">Process</span>
-                    <div class="detail-value">${escapeHtml(details.process)}</div>
-                  </div>
-                `;
-              }
-
-              if (details.topic) {
-                contentHtml += `
-                  <div class="detail-section">
-                    <span class="detail-label">Topic</span>
-                    <div class="detail-value">${escapeHtml(details.topic)}</div>
-                  </div>
-                `;
-              }
-
-              // Show relationships in a more structured way
-              if (details.relationships && details.relationships.length > 0) {
-                contentHtml += `
-                  <div class="detail-section">
-                    <span class="detail-label">Related Nodes (${details.relationships.length})</span>
-                    <div class="detail-value">
-                      <div class="relationships-list">
-                `;
-
-                details.relationships.forEach(rel => {
-                  contentHtml += `
-                    <div class="relationship-item">
-                      <div class="relationship-type">${rel.type}</div>
-                      <div class="relationship-target">${escapeHtml(rel.target)}</div>
-                    </div>
-                  `;
-                });
-
-                contentHtml += `</div></div></div>`;
-              }
-            }
-
-            // Show direct connections from the graph
-            const directConnections = graph.links.filter(link =>
-              (link.source.id || link.source) === nodeData.id ||
-              (link.target.id || link.target) === nodeData.id
-            );
-
-            if (directConnections.length > 0) {
-              contentHtml += `
-                <div class="detail-section">
-                  <span class="detail-label">Graph Connections (${directConnections.length})</span>
-                  <div class="detail-value">
-                    <div class="relationships-list">
-              `;
-
-              directConnections.slice(0, 10).forEach(link => {
-                const isSource = (link.source.id || link.source) === nodeData.id;
-                const otherNode = isSource ?
-                  (link.target.name || extractNameFromUri(link.target.id || link.target)) :
-                  (link.source.name || extractNameFromUri(link.source.id || link.source));
-                const direction = isSource ? '→' : '←';
-
-                contentHtml += `
-                  <div class="relationship-item">
-                    <div class="relationship-type">${direction} ${link.type}</div>
-                    <div class="relationship-target">${escapeHtml(otherNode)}</div>
-                  </div>
-                `;
-              });
-
-              if (directConnections.length > 10) {
-                contentHtml += `<div style="text-align: center; color: var(--text-light); margin-top: 0.5rem;">... and ${directConnections.length - 10} more connections</div>`;
-              }
-
-              contentHtml += `</div></div></div>`;
-            }
-
-            panelContent.innerHTML = contentHtml;
-          }).catch(error => {
-            console.error('Error fetching node details:', error);
-            panelContent.innerHTML = `
-              <div class="node-stats">
-                <div class="stat-item">
-                  <span class="stat-label">Node Type</span>
-                  <span class="stat-value">${nodeData.type}</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-label">Dataset</span>
-                  <span class="stat-value">${getDatasetDisplayName(nodeData.dataset)}</span>
-                </div>
-              </div>
-              <div class="detail-section">
-                <span class="detail-label">Resource URI</span>
-                <div class="detail-value">
-                  <code style="word-break: break-all; font-size: 0.8rem;">${nodeData.id}</code>
-                </div>
-              </div>
-              <div style="color: var(--text-light); text-align: center; padding: 2rem; background: #f8fafc; border-radius: 8px; margin-top: 1rem;">
-                <p style="margin-bottom: 0.5rem;">⚠️ Could not load additional details</p>
-                <p style="font-size: 0.85rem;">Basic node information is shown above</p>
-              </div>
-            `;
-          });
-        }
-
-        // Helper functions for better data display
-        function getDatasetDisplayName(dataset) {
-          const displayNames = {
-            'ep_debate': 'European Parliament',
-            'decide_madrid': 'Decide Madrid',
-            'delidata': 'DeliData',
-            'eu_have_your_say': 'EU Have Your Say',
-            'habermas': 'Habermas Machine',
-            'scotus': 'US Supreme Court',
-            'unknown': 'Unknown'
-          };
-          return displayNames[dataset] || dataset;
-        }
-
-        function escapeHtml(text) {
-          const div = document.createElement('div');
-          div.textContent = text;
-          return div.innerHTML;
-        }
-
-        function formatTimestamp(timestamp) {
-          try {
-            const date = new Date(timestamp);
-            return date.toLocaleString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-              hour: '2-digit',
-              minute: '2-digit'
-            });
-          } catch (e) {
-            return timestamp;
-          }
-        }
-
-        function copyToClipboard(text) {
-          navigator.clipboard.writeText(text).then(() => {
-            // Show a brief feedback
-            const tooltip = document.createElement('div');
-            tooltip.textContent = 'Copied!';
-            tooltip.style.position = 'fixed';
-            tooltip.style.top = '20px';
-            tooltip.style.right = '20px';
-            tooltip.style.background = 'var(--primary-color)';
-            tooltip.style.color = 'white';
-            tooltip.style.padding = '0.5rem 1rem';
-            tooltip.style.borderRadius = '4px';
-            tooltip.style.zIndex = '1000';
-            tooltip.style.fontSize = '0.9rem';
-            document.body.appendChild(tooltip);
-
-            setTimeout(() => {
-              document.body.removeChild(tooltip);
-            }, 2000);
-          }).catch(err => {
-            console.error('Failed to copy text: ', err);
-          });
-        }
-
-        async function fetchNodeDetails(nodeUri) {
-          try {
-            // Enhanced SPARQL query to get comprehensive attribution information
-            const sparqlQuery = `
-              PREFIX del: <https://w3id.org/deliberation/ontology#>
-
-              SELECT ?p ?o ?participantName ?processName ?organizationName WHERE {
-                <${nodeUri}> ?p ?o .
-
-                OPTIONAL {
-                  <${nodeUri}> del:madeBy ?participant .
-                  ?participant del:name ?participantName .
-                  OPTIONAL { ?participant del:organization ?org . ?org del:name ?organizationName }
-                }
-
-                OPTIONAL {
-                  ?process del:hasContribution <${nodeUri}> .
-                  ?process del:name ?processName
-                }
-              }
-            `;
-
-            const response = await fetch('/sparql', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-              },
-              body: `query=${encodeURIComponent(sparqlQuery)}`
-            });
-
-            const data = await response.json();
-
-            // Process the results to extract meaningful information
-            const details = {};
-            const relationships = [];
-
-            if (data.results && data.results.bindings) {
-              data.results.bindings.forEach(binding => {
-                const predicate = binding.p.value;
-                const object = binding.o.value;
-
-                // Extract participant attribution from the enhanced query
-                if (binding.participantName && binding.participantName.value) {
-                  details.participant = binding.participantName.value;
-                }
-                if (binding.organizationName && binding.organizationName.value) {
-                  details.organization = binding.organizationName.value;
-                }
-                if (binding.processName && binding.processName.value) {
-                  details.process = binding.processName.value;
-                }
-
-                // Extract specific properties
-                if (predicate.includes('#text')) {
-                  details.text = object;
-                } else if (predicate.includes('#name')) {
-                  details.name = object;
-                } else if (predicate.includes('#timestamp')) {
-                  details.timestamp = object;
-                } else if (predicate.includes('#topic')) {
-                  details.topic = object;
-                } else if (object.startsWith('https://w3id.org/deliberation/resource/')) {
-                  // This is a relationship to another resource
-                  const relationshipType = predicate.includes('#') ?
-                    predicate.split('#').pop() :
-                    predicate.split('/').pop();
-
-                  relationships.push({
-                    type: relationshipType,
-                    target: extractNameFromUri(object)
-                  });
-                }
-              });
-            }
-
-            details.relationships = relationships;
-            return details;
-
-          } catch (error) {
-            console.error('Error fetching node details:', error);
-            return null;
-          }
-        }
       }
       
       function getNodeColor(type) {
         switch (type) {
           case 'DeliberationProcess':
-            return '#4a9d3c'; // Green - Deliberation processes
+            return getComputedStyle(document.documentElement).getPropertyValue('--primary-color');
           case 'Participant':
-            return '#8b5a2b'; // Brown - Participants
-          case 'Topic':
-            return '#e74c3c'; // Red - Topics
+            return getComputedStyle(document.documentElement).getPropertyValue('--secondary-color');
           case 'Organization':
-            return '#ffd700'; // Gold - Organizations
+            return getComputedStyle(document.documentElement).getPropertyValue('--accent-color');
+          case 'Topic':
+            return '#e74c3c'; // Red
           case 'Contribution':
-            return '#3498db'; // Blue - Contributions
+            return '#3498db'; // Blue
           case 'Argument':
-            return '#9b59b6'; // Purple - Arguments
+            return '#9b59b6'; // Purple
           default:
-            return '#95a5a6'; // Gray - Unknown
+            return '#95a5a6'; // Gray
         }
       }
       
@@ -1795,17 +585,6 @@
         }
         return text;
       }
-
-      // Add event listener for closing the side panel
-      document.addEventListener('DOMContentLoaded', function() {
-        const closeButton = document.querySelector('.close-panel');
-        if (closeButton) {
-          closeButton.addEventListener('click', function() {
-            const sidePanel = document.getElementById('side-panel');
-            sidePanel.classList.remove('visible');
-          });
-        }
-      });
     });
   </script>
 </body>

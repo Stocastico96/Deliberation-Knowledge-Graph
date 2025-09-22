@@ -231,8 +231,8 @@
       <div class="hero-buttons">
         <a href="#about" class="btn">Learn More</a>
         <a href="#datasets" class="btn btn-secondary">Explore Datasets</a>
-        <a href="https://svagnoni.linkeddata.es/sparql" class="btn btn-secondary">SPARQL Endpoint</a>
-        <a href="https://svagnoni.linkeddata.es/visualize" class="btn btn-secondary">Visualize Knowledge Graph</a>
+        <a href="sparql.html" class="btn btn-secondary">SPARQL Endpoint</a>
+        <a href="visualize_kg.html" class="btn btn-secondary">Visualize Knowledge Graph</a>
       </div>
     </div>
   </section>
@@ -249,8 +249,8 @@
           <li><a href="#conversion"><i class="fas fa-exchange-alt"></i> Data Conversion Tools</a></li>
           <li><a href="#model"><i class="fas fa-sitemap"></i> Knowledge Graph Model</a></li>
           <li><a href="#documentation"><i class="fas fa-file-alt"></i> Documentation</a></li>
-          <li><a href="https://svagnoni.linkeddata.es/sparql" target="_blank"><i class="fas fa-search"></i> SPARQL Endpoint</a></li>
-          <li><a href="https://svagnoni.linkeddata.es/visualize" target="_blank"><i class="fas fa-project-diagram"></i> Knowledge Graph Visualization</a></li>
+          <li><a href="sparql.html"><i class="fas fa-search"></i> SPARQL Endpoint</a></li>
+          <li><a href="visualize_kg.html"><i class="fas fa-project-diagram"></i> Knowledge Graph Visualization</a></li>
         </ul>
       </nav>
     </div>
@@ -897,47 +897,6 @@ graph TD
         the respective ontology's classes and properties. By splitting the overall mapping into smaller
         diagrams, we ensure that each relationship set is easier to inspect, maintain, and update.
       </p>
-    </div>
-  </section>
-
-  <section id="visualization" class="section">
-    <div class="container">
-      <h2>Interactive Knowledge Graph</h2>
-      <p>Explore the connections between deliberation processes, participants, and topics in our interactive visualization.</p>
-
-      <div class="visualization-controls">
-        <button id="reset-zoom" class="btn btn-secondary">Reset Zoom</button>
-        <div class="filter-buttons">
-          <button class="filter-button btn active" data-filter="all">All</button>
-          <button class="filter-button btn" data-filter="ontology">Ontologies</button>
-          <button class="filter-button btn" data-filter="dataset">Datasets</button>
-          <button class="filter-button btn" data-filter="category">Categories</button>
-        </div>
-      </div>
-
-      <div class="real-data-showcase" style="background: white; border-radius: 12px; padding: 2rem; margin: 2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-        <h3 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">🏛️ Real Deliberative Data</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-          <div style="text-align: center; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
-            <h4 style="color: #e74c3c; margin-bottom: 0.5rem;">🇪🇸 Decide Madrid</h4>
-            <p style="font-size: 0.9rem; color: #666;">Participatory Democracy Platform<br>Real proposals in Spanish</p>
-          </div>
-          <div style="text-align: center; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
-            <h4 style="color: #3498db; margin-bottom: 0.5rem;">🇪🇺 EU Parliament</h4>
-            <p style="font-size: 0.9rem; color: #666;">Official Parliamentary Debates<br>98 contributions from March 2025</p>
-          </div>
-          <div style="text-align: center; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
-            <h4 style="color: #27ae60; margin-bottom: 0.5rem;">📊 12,295 Triples</h4>
-            <p style="font-size: 0.9rem; color: #666;">Complete RDF Knowledge Graph<br>559 contributions, 386 participants</p>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin-top: 2rem; text-align: center; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="https://svagnoni.linkeddata.es/contributions" class="btn" style="background: #e74c3c;">🔍 Explore Real Contributions</a>
-        <a href="https://svagnoni.linkeddata.es/visualize" class="btn" style="background: #3498db;">📈 Interactive Visualization</a>
-        <a href="https://svagnoni.linkeddata.es/api/export/ttl" class="btn btn-secondary" download>Export Knowledge Graph</a>
-      </div>
     </div>
   </section>
 

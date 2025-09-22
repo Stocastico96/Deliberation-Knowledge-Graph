@@ -435,10 +435,10 @@
         <h3>Export Knowledge Graph</h3>
         <p>Download the complete knowledge graph in different formats:</p>
         <div class="export-buttons">
-          <a href="/api/export/ttl" class="btn" download>Turtle (.ttl)</a>
-          <a href="/api/export/rdf" class="btn" download>RDF/XML (.rdf)</a>
-          <a href="/api/export/json" class="btn" download>JSON-LD (.json)</a>
-          <a href="/api/export/nt" class="btn" download>N-Triples (.nt)</a>
+          <a href="https://svagnoni.linkeddata.es/api/export/ttl" class="btn" download>Turtle (.ttl)</a>
+          <a href="https://svagnoni.linkeddata.es/api/export/rdf" class="btn" download>RDF/XML (.rdf)</a>
+          <a href="https://svagnoni.linkeddata.es/api/export/json" class="btn" download>JSON-LD (.json)</a>
+          <a href="https://svagnoni.linkeddata.es/api/export/nt" class="btn" download>N-Triples (.nt)</a>
         </div>
       </div>
 
@@ -487,7 +487,7 @@
 
     async function loadStats() {
       try {
-        const response = await fetch('/api/stats');
+        const response = await fetch('https://svagnoni.linkeddata.es/api/stats');
         const stats = await response.json();
 
         document.getElementById('total-contributions').textContent = stats.totalContributions || 0;
@@ -503,7 +503,7 @@
       container.innerHTML = '<div class="loading"><div class="spinner"></div>Loading contributions...</div>';
 
       try {
-        const response = await fetch('/api/contributions');
+        const response = await fetch('https://svagnoni.linkeddata.es/api/contributions');
         const data = await response.json();
 
         if (data.platforms) {
@@ -748,7 +748,7 @@
 
     function viewDetails(contributionId) {
       // Open a modal or new page with detailed information
-      window.open(`/api/contribution/${contributionId}`, '_blank');
+      window.open(`https://svagnoni.linkeddata.es/api/contribution/${contributionId}`, '_blank');
     }
 
     function formatTimestamp(timestamp) {
