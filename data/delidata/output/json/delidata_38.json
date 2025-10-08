@@ -1,0 +1,493 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_94b2f56c-7856-454c-a60c-4d68dce2ee4c",
+  "del:name": "DeliData Conversation 94b2f56c-7856-454c-a60c-4d68dce2ee4c",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c",
+      "del:name": "Conversation 94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Narwhal"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Koala"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Llama"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Giraffe"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_22ed61f0-832e-4653-99a8-8701838f4b05",
+      "del:text": "<CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_22ed61f0-832e-4653-99a8-8701838f4b05"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c43c1e44-43dd-4838-9e3a-850954ea5241",
+      "del:text": "Hello",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7fc4b8f3-41a4-4a92-8a5d-114b10ef632e",
+      "del:text": "hi",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_15335541-50e3-40f6-9eae-1b2da75b853e",
+      "del:text": "Hey there .",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_950733ac-d0ae-4e92-abc6-17fba776645a",
+      "del:text": "I agreed with <CARD> as well",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_950733ac-d0ae-4e92-abc6-17fba776645a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c00079c8-efa9-4629-82d8-4bd3bc81c4fd",
+      "del:text": "Lets do it",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4a68d880-2619-4574-b6f6-053e4e64cd20",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_99ea55e7-7c04-4c29-b6a8-617fb37e96c2",
+      "del:text": "So <CARD> is the only answer needed . Consonants can also have even numbers",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_99ea55e7-7c04-4c29-b6a8-617fb37e96c2"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_879e77fd-35fa-4137-b146-ae8fb757ad67",
+      "del:text": "'OK , I agreed with <CARD> as well , but the rule says that all cards with vowels on one side have an even number on the other , so wouldn''t it make sense to select the <CARD> as well to test that theory ?'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_879e77fd-35fa-4137-b146-ae8fb757ad67"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fe12a7aa-721d-45e0-8f8e-71ab3ab97b22",
+      "del:text": "Okay <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_fe12a7aa-721d-45e0-8f8e-71ab3ab97b22"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ed4ba28c-8f9a-412d-a599-70ef58eaee2e",
+      "del:text": "'No , that''s what makes it a trick question'",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ed4ba28c-8f9a-412d-a599-70ef58eaee2e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b393cb8a-a456-445e-97db-810affc44c00",
+      "del:text": "'Ah , I see . So , the only way to test the theory is to flip the <CARD> . I see what you''re saying .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b393cb8a-a456-445e-97db-810affc44c00"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0d15ec1e-8a43-46eb-8c72-26e81d60e0dd",
+      "del:text": "no <CARD> , consonants are allowed to also have even numbers . We are only interested in vowels",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0d15ec1e-8a43-46eb-8c72-26e81d60e0dd"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9a2cc8ab-f856-40b0-8990-94d68c921b8f",
+      "del:text": "yep",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_9a2cc8ab-f856-40b0-8990-94d68c921b8f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8a5be3d3-805e-401d-b782-ffd5a3abf132",
+      "del:text": "'Got it . Alright , so we''re all agreed on <CARD> then ?'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8a5be3d3-805e-401d-b782-ffd5a3abf132"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fb7542e7-c024-45dd-9215-81f5f37832eb",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1333759f-5286-4593-9e44-df04dff33cce",
+      "del:text": "Yea",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1333759f-5286-4593-9e44-df04dff33cce"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5b4c6490-119e-4a7c-aa19-91b1a5cea266",
+      "del:text": "We have to discuss for five minutes ... so any other thoughts ?",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5b4c6490-119e-4a7c-aa19-91b1a5cea266"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b8416e8e-6991-4445-8115-46ff1dc024b1",
+      "del:text": "None come to mind",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_eacdcf21-2b78-413e-a8bc-d53b0369fa31",
+      "del:text": "Yeah none here either , but it is a tricky question .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c2f4870a-351d-428f-9489-4e0362baf46f",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_372f3c58-8df1-479c-893f-6a682a8451d3",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d468f91d-1a96-44fe-af32-c3d0a448d275",
+      "del:text": "It makes you think that you have to flip two cards to test the theory while it is only one you need to test the theory .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_dcba4536-c47a-472e-ab89-7098845faa9d",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_27bf62cf-a5e4-4be6-b73b-22b10db43762",
+      "del:text": "Thanks for explaining that to me @Giraffeiraffe",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e4ae12ea-28d8-4b15-bfc0-d5f5a24d5caa",
+      "del:text": "'I think we''re safe to submit and we all agree .'",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3a28242a-39d7-4406-b636-fe62aa9c32c3",
+      "del:text": "no problem !",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_595e8fd1-2ae5-4aa5-8175-a3d346420be8",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b488d574-381a-4857-80c4-98e7b7208e22",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ed99ca13-67d0-4fc9-97a3-f741bb08fa4c",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_eaece434-9813-4f00-ae3d-81cb5932def8",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_bf43ac67-5d4c-4261-bf78-ac3bfb9d2f37",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_94b2f56c-7856-454c-a60c-4d68dce2ee4c"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_22ed61f0-832e-4653-99a8-8701838f4b05",
+      "del:text": "<CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_950733ac-d0ae-4e92-abc6-17fba776645a",
+      "del:text": "I agreed with <CARD> as well"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_99ea55e7-7c04-4c29-b6a8-617fb37e96c2",
+      "del:text": "So <CARD> is the only answer needed . Consonants can also have even numbers"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_879e77fd-35fa-4137-b146-ae8fb757ad67",
+      "del:text": "'OK , I agreed with <CARD> as well , but the rule says that all cards with vowels on one side have an even number on the other , so wouldn''t it make sense to select the <CARD> as well to test that theory ?'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_fe12a7aa-721d-45e0-8f8e-71ab3ab97b22",
+      "del:text": "Okay <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ed4ba28c-8f9a-412d-a599-70ef58eaee2e",
+      "del:text": "'No , that''s what makes it a trick question'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b393cb8a-a456-445e-97db-810affc44c00",
+      "del:text": "'Ah , I see . So , the only way to test the theory is to flip the <CARD> . I see what you''re saying .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0d15ec1e-8a43-46eb-8c72-26e81d60e0dd",
+      "del:text": "no <CARD> , consonants are allowed to also have even numbers . We are only interested in vowels"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_9a2cc8ab-f856-40b0-8990-94d68c921b8f",
+      "del:text": "yep"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8a5be3d3-805e-401d-b782-ffd5a3abf132",
+      "del:text": "'Got it . Alright , so we''re all agreed on <CARD> then ?'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1333759f-5286-4593-9e44-df04dff33cce",
+      "del:text": "Yea"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5b4c6490-119e-4a7c-aa19-91b1a5cea266",
+      "del:text": "We have to discuss for five minutes ... so any other thoughts ?"
+    }
+  ]
+}

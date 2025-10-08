@@ -1,0 +1,414 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_70246d7e-dcc7-47d3-a792-674f786bec73",
+  "del:name": "DeliData Conversation 70246d7e-dcc7-47d3-a792-674f786bec73",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73",
+      "del:name": "Conversation 70246d7e-dcc7-47d3-a792-674f786bec73"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Chipmunk"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Emu"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_146504c3-6875-46f7-8a5c-ea22ba1db064",
+      "del:text": "Hi . I chose one card , the <CARD> .",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_146504c3-6875-46f7-8a5c-ea22ba1db064"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4dcd6128-ca92-481f-aab0-9e285d4bab63",
+      "del:text": "What did you choose ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4dcd6128-ca92-481f-aab0-9e285d4bab63"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e5ca17f9-884a-433f-883c-26e709a8cc8e",
+      "del:text": "I chose two cards the <CARD> and the <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e5ca17f9-884a-433f-883c-26e709a8cc8e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4d4c0742-1483-4ea2-8f9b-b38971fe94ea",
+      "del:text": "why did you chose the <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4d4c0742-1483-4ea2-8f9b-b38971fe94ea"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_58437a50-f508-4c3e-aa02-5d3e01b11924",
+      "del:text": "Did you have the same rule ( All cards with vowels on one side have an even number on the other ) ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_58437a50-f508-4c3e-aa02-5d3e01b11924"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_547190c7-0036-49e3-9df3-c9b0af1e2445",
+      "del:text": "yes",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_547190c7-0036-49e3-9df3-c9b0af1e2445"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1468d408-442f-4a22-860f-08c2ff1c4d60",
+      "del:text": "Because the rule is all cards with vowels on one side have an even number on the other . This was the only card with a vowel , so I chose it since it could be tested by looking at the other side to see if it is an even number .",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1468d408-442f-4a22-860f-08c2ff1c4d60"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_cfce7d3d-c290-425f-b85a-358e9172368f",
+      "del:text": "why did you choose the <CARD> and <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_cfce7d3d-c290-425f-b85a-358e9172368f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ae431f57-ed41-46e3-ac52-538ca224b5fd",
+      "del:text": "I misunderstood unfortunatley , I thought it asked which cards would you chosee to switch",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ae431f57-ed41-46e3-ac52-538ca224b5fd"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f6f139be-a496-43de-a5ea-e4c53e0391d2",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_50b96fa5-d5fd-434d-893d-227fddfbec8a",
+      "del:text": "I revised my solution to <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_50b96fa5-d5fd-434d-893d-227fddfbec8a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_30fbb458-6ec8-4497-966a-4a556a380d6d",
+      "del:text": "I did not choose any of the others because they were not part of the rule . Each could have another rule ( example - all odd numbers will have an even number on the other side )",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_30fbb458-6ec8-4497-966a-4a556a380d6d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_874e15bf-cec1-4981-b304-6de3e3bd3e07",
+      "del:text": "that is easy enough to do !",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6c82369d-6b32-4b02-a924-60bfa3e65716",
+      "del:text": "Exactly , like I said i just misunderstood",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6c82369d-6b32-4b02-a924-60bfa3e65716"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d3fe7c0e-2e19-4d80-9ab5-2d065fe332c1",
+      "del:text": "thank you for the help",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_37387c86-8b9c-44df-ad2c-4cd8e3b28c49",
+      "del:text": "sure thing . it says we have to discuss for at least 5 minutes so what do we do when we agree in under 5 minutes lol",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f35a837c-b79e-4c1c-97ef-7cbf1fc495b5",
+      "del:text": "do you have any doubts about it just being the one card ? i could be wrong , but it makes sense to me",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f35a837c-b79e-4c1c-97ef-7cbf1fc495b5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c2651f6e-5abd-4566-ab4d-0e4f466a9301",
+      "del:text": "Discuss how funny it is that I misunderstood and overthought the whole question ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_dc634067-e862-4872-81b9-7296b649821f",
+      "del:text": "i am still overthinking it myself !",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_abc890d8-e3f4-45f7-bde6-68dca682effc",
+      "del:text": "That one is the one I think it should be",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1488c7de-34ff-49ec-b2ed-1f1835a039c5",
+      "del:text": "thank you again for the help",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1e5c4936-dfb2-43f0-ad48-b872269e636a",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b3b7f07f-fe41-4d29-8d11-d125107d5538",
+      "del:text": "'you''re welcome , just hope we are right lol'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_09cf718b-7a85-4736-925c-63e1bcd39328",
+      "del:text": "bye :-)",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fbe23d54-0e33-4b71-88a9-024265716f7a",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_70246d7e-dcc7-47d3-a792-674f786bec73"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_146504c3-6875-46f7-8a5c-ea22ba1db064",
+      "del:text": "Hi . I chose one card , the <CARD> ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4dcd6128-ca92-481f-aab0-9e285d4bab63",
+      "del:text": "What did you choose ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e5ca17f9-884a-433f-883c-26e709a8cc8e",
+      "del:text": "I chose two cards the <CARD> and the <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4d4c0742-1483-4ea2-8f9b-b38971fe94ea",
+      "del:text": "why did you chose the <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_58437a50-f508-4c3e-aa02-5d3e01b11924",
+      "del:text": "Did you have the same rule ( All cards with vowels on one side have an even number on the other ) ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_547190c7-0036-49e3-9df3-c9b0af1e2445",
+      "del:text": "yes"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1468d408-442f-4a22-860f-08c2ff1c4d60",
+      "del:text": "Because the rule is all cards with vowels on one side have an even number on the other . This was the only card with a vowel , so I chose it since it could be tested by looking at the other side to see if it is an even number ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_cfce7d3d-c290-425f-b85a-358e9172368f",
+      "del:text": "why did you choose the <CARD> and <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ae431f57-ed41-46e3-ac52-538ca224b5fd",
+      "del:text": "I misunderstood unfortunatley , I thought it asked which cards would you chosee to switch"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_50b96fa5-d5fd-434d-893d-227fddfbec8a",
+      "del:text": "I revised my solution to <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_30fbb458-6ec8-4497-966a-4a556a380d6d",
+      "del:text": "I did not choose any of the others because they were not part of the rule . Each could have another rule ( example - all odd numbers will have an even number on the other side )"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6c82369d-6b32-4b02-a924-60bfa3e65716",
+      "del:text": "Exactly , like I said i just misunderstood"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f35a837c-b79e-4c1c-97ef-7cbf1fc495b5",
+      "del:text": "do you have any doubts about it just being the one card ? i could be wrong , but it makes sense to me"
+    }
+  ]
+}

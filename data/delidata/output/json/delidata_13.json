@@ -1,0 +1,626 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5",
+  "del:name": "DeliData Conversation 2788e8a9-eecf-4d92-af82-08d8b5ce1bf5",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5",
+      "del:name": "Conversation 2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Emu"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Panda"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Dolphin"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a512a34b-f173-4bbc-ab40-01fc7776fa4d",
+      "del:text": "hello",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ce7bf2df-2cf3-4d2f-8d05-4102f121f0d6",
+      "del:text": "hello",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_83bf06c5-ad59-4b3a-91c8-fe4075f78b2f",
+      "del:text": "Hello",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6c7fd606-c7cb-45ae-b42d-80c352b3a199",
+      "del:text": "can you understand the game clear ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f8142e20-df25-4f1b-ad83-3e0f034de1fa",
+      "del:text": "I think so",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_48da0559-cdaf-46f2-bb43-6851960c2e50",
+      "del:text": "'if you don''t mind explain the game'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1b814c2d-37b0-439e-9359-6e13e0d6fff1",
+      "del:text": "I choose a odd number",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1b814c2d-37b0-439e-9359-6e13e0d6fff1"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_82402219-d2a8-40e6-9c8f-d7724b5df4f7",
+      "del:text": "I could be wrong but I chose to turn over the <CARD> card and the <CARD> card to check the rule",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_82402219-d2a8-40e6-9c8f-d7724b5df4f7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3e6cc228-c05b-4a36-8127-a087d6143a9c",
+      "del:text": "may be am worng , i choose <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3e6cc228-c05b-4a36-8127-a087d6143a9c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_761f25d6-3872-48ff-98b4-6388293e5821",
+      "del:text": "<CARD> card would need an even number on the other side to verify the rule",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_761f25d6-3872-48ff-98b4-6388293e5821"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a6e0e6ce-0fd2-4fed-9c40-76aa18e05820",
+      "del:text": "and the <CARD> card would need a vowel on the other side",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_a6e0e6ce-0fd2-4fed-9c40-76aa18e05820"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_987e93c7-8c44-43bf-9553-2e47aedb997e",
+      "del:text": "The other side of the card is given the even numbers",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_987e93c7-8c44-43bf-9553-2e47aedb997e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ba85b136-cf88-4de3-8682-b24f2aea3069",
+      "del:text": "but maybe choosing an odd would be a good idea too",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ba85b136-cf88-4de3-8682-b24f2aea3069"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d415289b-7696-47d1-ad2f-c56776d9ec5e",
+      "del:text": "I need to be the odd number",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d415289b-7696-47d1-ad2f-c56776d9ec5e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3a12e39c-d7e6-4c0d-a60e-e712ce0fcf57",
+      "del:text": "<MENTION> DO YOU HAVE ANY STARGY",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3a12e39c-d7e6-4c0d-a60e-e712ce0fcf57"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_68054fcc-8115-4572-b17c-04b1cd4a6ff6",
+      "del:text": "the card require to verify the rule",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_68054fcc-8115-4572-b17c-04b1cd4a6ff6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_79b3a687-faf0-427b-9592-4099073b0672",
+      "del:text": "<MENTION> I THINK YOUR GUESS IS CORRECT",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_79b3a687-faf0-427b-9592-4099073b0672"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2d1697fe-7d10-4a02-a7af-8f720544421c",
+      "del:text": "I think I am overthinking this lol",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e2a2b872-e372-487e-a231-aadbd00dcf7c",
+      "del:text": "<MENTION> YES",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e2a2b872-e372-487e-a231-aadbd00dcf7c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0e5e5f6e-500b-401d-b680-2ce967b263fb",
+      "del:text": "so what should we choose",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0e5e5f6e-500b-401d-b680-2ce967b263fb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b363be25-3ef0-492b-9c53-89d901673240",
+      "del:text": "<MENTION> NOT AT ALL LIKE THAT",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b363be25-3ef0-492b-9c53-89d901673240"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_254e4b83-762f-40ee-90db-73579f0c8455",
+      "del:text": "i like to choose <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_254e4b83-762f-40ee-90db-73579f0c8455"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d74984ff-a92e-4daa-9945-a43afaf8919d",
+      "del:text": "U,4",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3a5c5b7f-012f-45dd-acec-89f2199fefe2",
+      "del:text": "<MENTION> what did you say",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3a5c5b7f-012f-45dd-acec-89f2199fefe2"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fc94605b-8ded-402e-b70b-5498636176a0",
+      "del:text": "U,4",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8581a2ad-4418-490d-99e7-4b2cdfdfeab3",
+      "del:text": "MY CHOICE IS <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8581a2ad-4418-490d-99e7-4b2cdfdfeab3"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d9d3bc1f-774a-45fb-ac45-721b63e7e96e",
+      "del:text": "THIS IS ENOUGH TIME TO CHOOSE OUR SELECTION",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_45a250a5-9ebe-4016-887c-2d8ca205075c",
+      "del:text": "okay",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b974f3f7-1bc9-46a4-ade6-b782ae9389e3",
+      "del:text": "@Lobster <CARD> <CARD> THERE",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b974f3f7-1bc9-46a4-ade6-b782ae9389e3"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_13584a40-dbd3-4996-b57f-e52b0ddc6e86",
+      "del:text": "but what is our best choice",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_13584a40-dbd3-4996-b57f-e52b0ddc6e86"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a92aa2c7-840e-4d7c-849a-e84d98b96c0b",
+      "del:text": "<MENTION> WHAT ABOUT <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_a92aa2c7-840e-4d7c-849a-e84d98b96c0b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e764fe99-7286-4062-adbb-baae3ade81fd",
+      "del:text": "<MENTION> I am here",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1ed83c32-cc27-422a-88a5-260533051fd3",
+      "del:text": "<MENTION> I like this task only",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_16796c48-5044-4ce3-9900-87a6888e0f86",
+      "del:text": "YOU ARE ALSO @Lobster LOL",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9f4f9e0a-040f-4ec8-999b-bdd65f742c82",
+      "del:text": "done",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b5e9bcab-ee37-46c9-85b4-171554b9fc21",
+      "del:text": "5",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9ea4c365-75a4-4585-b26d-59641daa6a3c",
+      "del:text": "<MENTION> say something",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_9ea4c365-75a4-4585-b26d-59641daa6a3c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c77bf9fa-2485-4065-b121-1e612912538e",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2788e8a9-eecf-4d92-af82-08d8b5ce1bf5"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1b814c2d-37b0-439e-9359-6e13e0d6fff1",
+      "del:text": "I choose a odd number"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_82402219-d2a8-40e6-9c8f-d7724b5df4f7",
+      "del:text": "I could be wrong but I chose to turn over the <CARD> card and the <CARD> card to check the rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3e6cc228-c05b-4a36-8127-a087d6143a9c",
+      "del:text": "may be am worng , i choose <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_761f25d6-3872-48ff-98b4-6388293e5821",
+      "del:text": "<CARD> card would need an even number on the other side to verify the rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_a6e0e6ce-0fd2-4fed-9c40-76aa18e05820",
+      "del:text": "and the <CARD> card would need a vowel on the other side"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_987e93c7-8c44-43bf-9553-2e47aedb997e",
+      "del:text": "The other side of the card is given the even numbers"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ba85b136-cf88-4de3-8682-b24f2aea3069",
+      "del:text": "but maybe choosing an odd would be a good idea too"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d415289b-7696-47d1-ad2f-c56776d9ec5e",
+      "del:text": "I need to be the odd number"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3a12e39c-d7e6-4c0d-a60e-e712ce0fcf57",
+      "del:text": "<MENTION> DO YOU HAVE ANY STARGY"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_68054fcc-8115-4572-b17c-04b1cd4a6ff6",
+      "del:text": "the card require to verify the rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_79b3a687-faf0-427b-9592-4099073b0672",
+      "del:text": "<MENTION> I THINK YOUR GUESS IS CORRECT"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e2a2b872-e372-487e-a231-aadbd00dcf7c",
+      "del:text": "<MENTION> YES"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0e5e5f6e-500b-401d-b680-2ce967b263fb",
+      "del:text": "so what should we choose"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b363be25-3ef0-492b-9c53-89d901673240",
+      "del:text": "<MENTION> NOT AT ALL LIKE THAT"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_254e4b83-762f-40ee-90db-73579f0c8455",
+      "del:text": "i like to choose <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3a5c5b7f-012f-45dd-acec-89f2199fefe2",
+      "del:text": "<MENTION> what did you say"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8581a2ad-4418-490d-99e7-4b2cdfdfeab3",
+      "del:text": "MY CHOICE IS <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b974f3f7-1bc9-46a4-ade6-b782ae9389e3",
+      "del:text": "@Lobster <CARD> <CARD> THERE"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_13584a40-dbd3-4996-b57f-e52b0ddc6e86",
+      "del:text": "but what is our best choice"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_a92aa2c7-840e-4d7c-849a-e84d98b96c0b",
+      "del:text": "<MENTION> WHAT ABOUT <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_9ea4c365-75a4-4585-b26d-59641daa6a3c",
+      "del:text": "<MENTION> say something"
+    }
+  ]
+}

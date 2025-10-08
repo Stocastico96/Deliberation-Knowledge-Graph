@@ -1,0 +1,611 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_05627bda-cc61-43bb-833f-90e6140074dc",
+  "del:name": "DeliData Conversation 05627bda-cc61-43bb-833f-90e6140074dc",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc",
+      "del:name": "Conversation 05627bda-cc61-43bb-833f-90e6140074dc"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Lion"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Ox"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Emu"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_04bdaf08-2442-45b9-93ab-a6a45303ebc2",
+      "del:text": "I picked the <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_04bdaf08-2442-45b9-93ab-a6a45303ebc2"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_48993ef9-f559-4c24-977d-d6421111ca6c",
+      "del:text": "Do we all have the same cards ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_48993ef9-f559-4c24-977d-d6421111ca6c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3e1acf6c-40f6-4324-8f94-ddecc6212837",
+      "del:text": "yes <CARD> and <CARD> seems to be right",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3e1acf6c-40f6-4324-8f94-ddecc6212837"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c56dc88a-55dc-4d95-b94a-d3a8aa5b1eba",
+      "del:text": "<CARD> is <CARD> vowel so flipping that will determine whether the rule is true",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c56dc88a-55dc-4d95-b94a-d3a8aa5b1eba"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_25542cff-33d1-40c1-955f-369a7bc37789",
+      "del:text": "<CARD> <CARD> <CARD> <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_25542cff-33d1-40c1-955f-369a7bc37789"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_04d64a46-490c-4278-b195-53c274cd2494",
+      "del:text": "why flip all of them <MENTION>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_04d64a46-490c-4278-b195-53c274cd2494"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0dcc3ae1-6fdd-4cf9-91cf-837e743e0a56",
+      "del:text": "'that''s <CARD> possibility'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0dcc3ae1-6fdd-4cf9-91cf-837e743e0a56"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1011f698-2782-4426-91c7-e36638e3c7f4",
+      "del:text": "Only one card has to be flipped",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1011f698-2782-4426-91c7-e36638e3c7f4"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_370f3745-205c-458f-9d2a-4e2e2f4e506b",
+      "del:text": "<CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_370f3745-205c-458f-9d2a-4e2e2f4e506b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3a18e763-79ac-40dd-9cb2-549ba91a05ed",
+      "del:text": "it could be more than one",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3a18e763-79ac-40dd-9cb2-549ba91a05ed"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4726460b-8cf7-4ca1-bba7-724f764f446f",
+      "del:text": "'I guess all should be flipped to see if the rule holds true , because we don''t know what is on their other side'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4726460b-8cf7-4ca1-bba7-724f764f446f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_656107a6-090d-42cf-9ede-b107a393ddcf",
+      "del:text": "3,F,A,6",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c9e8e49b-3510-4917-a9ca-dc1bb378e8c0",
+      "del:text": "if its <CARD> test , then we can flip all",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c9e8e49b-3510-4917-a9ca-dc1bb378e8c0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5f2eee90-196d-4dc0-8633-6b40997c417a",
+      "del:text": "yes , I submitted flip all",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5f2eee90-196d-4dc0-8633-6b40997c417a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_54066b3e-2b78-48bc-8099-289ad924deda",
+      "del:text": "'let''s do it all'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_54066b3e-2b78-48bc-8099-289ad924deda"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_af8b68ae-99e8-47e0-aae7-5e7ac9d82ec4",
+      "del:text": "'Why don''t we just flip <CARD>'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_af8b68ae-99e8-47e0-aae7-5e7ac9d82ec4"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1031c5ef-0f3e-4594-b2de-914a0e548e43",
+      "del:text": "3,F,A,6",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4ba71935-60ad-4fc4-bd67-44141f5614b1",
+      "del:text": "because we need to test the rule . there could be an <CARD> on the back of the other cards",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4ba71935-60ad-4fc4-bd67-44141f5614b1"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5fe360a2-b5e1-4e79-8967-562fbbcb9880",
+      "del:text": "Only <CARD> or <CARD> would need to be flipped",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5fe360a2-b5e1-4e79-8967-562fbbcb9880"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d4612473-21cb-4f19-8ec5-5fce1e157e22",
+      "del:text": "A",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2fef051d-fdc4-4ff4-a3af-3ffeaae9db96",
+      "del:text": "we have to verify the rule so we can do it by flipping all",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_2fef051d-fdc4-4ff4-a3af-3ffeaae9db96"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c47e93f6-c4c2-497b-bf9c-e2a6252b84ad",
+      "del:text": "there could be <CARD> vowel on the back of <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c47e93f6-c4c2-497b-bf9c-e2a6252b84ad"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_80d6d8ea-1c57-4063-98ae-647fa3c62a1d",
+      "del:text": "I say flip all but <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_80d6d8ea-1c57-4063-98ae-647fa3c62a1d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8c0ceff6-b167-4efc-9ea7-77bef8b219b1",
+      "del:text": "3,A,6",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f9571dee-d26a-4979-aaa9-92817caa3d7f",
+      "del:text": "final decison ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f9571dee-d26a-4979-aaa9-92817caa3d7f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_db29b187-ecca-40f6-884e-fef817e51d5c",
+      "del:text": "<CARD> and <CARD> seem too obvious ... either the first <CARD> or all",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_db29b187-ecca-40f6-884e-fef817e51d5c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3be392d4-780b-4e63-84e9-7bee3fe21656",
+      "del:text": "I see first <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3be392d4-780b-4e63-84e9-7bee3fe21656"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4b48ac9e-aef5-4b0d-850a-7657f5d81be2",
+      "del:text": "No need to flip <CARD> because its not <CARD> vowel",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4b48ac9e-aef5-4b0d-850a-7657f5d81be2"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6919c86c-691b-4b37-add3-45ebd1eb0461",
+      "del:text": "im good with that",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6919c86c-691b-4b37-add3-45ebd1eb0461"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1920380e-88db-4178-88c6-d1bbe321d633",
+      "del:text": "<MENTION> ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1920380e-88db-4178-88c6-d1bbe321d633"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9bc13f92-763b-4739-8f17-b8a0d4295a26",
+      "del:text": "3,A,6",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0e2dca1d-d38e-46fe-81b3-e6ee14e01613",
+      "del:text": "3,A,6",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_21a3356a-238b-45e3-807a-3eb22fbc1907",
+      "del:text": "3,A,6",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_05627bda-cc61-43bb-833f-90e6140074dc"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_04bdaf08-2442-45b9-93ab-a6a45303ebc2",
+      "del:text": "I picked the <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_48993ef9-f559-4c24-977d-d6421111ca6c",
+      "del:text": "Do we all have the same cards ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3e1acf6c-40f6-4324-8f94-ddecc6212837",
+      "del:text": "yes <CARD> and <CARD> seems to be right"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c56dc88a-55dc-4d95-b94a-d3a8aa5b1eba",
+      "del:text": "<CARD> is <CARD> vowel so flipping that will determine whether the rule is true"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_25542cff-33d1-40c1-955f-369a7bc37789",
+      "del:text": "<CARD> <CARD> <CARD> <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_04d64a46-490c-4278-b195-53c274cd2494",
+      "del:text": "why flip all of them <MENTION>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0dcc3ae1-6fdd-4cf9-91cf-837e743e0a56",
+      "del:text": "'that''s <CARD> possibility'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1011f698-2782-4426-91c7-e36638e3c7f4",
+      "del:text": "Only one card has to be flipped"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_370f3745-205c-458f-9d2a-4e2e2f4e506b",
+      "del:text": "<CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3a18e763-79ac-40dd-9cb2-549ba91a05ed",
+      "del:text": "it could be more than one"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4726460b-8cf7-4ca1-bba7-724f764f446f",
+      "del:text": "'I guess all should be flipped to see if the rule holds true , because we don''t know what is on their other side'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c9e8e49b-3510-4917-a9ca-dc1bb378e8c0",
+      "del:text": "if its <CARD> test , then we can flip all"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5f2eee90-196d-4dc0-8633-6b40997c417a",
+      "del:text": "yes , I submitted flip all"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_54066b3e-2b78-48bc-8099-289ad924deda",
+      "del:text": "'let''s do it all'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_af8b68ae-99e8-47e0-aae7-5e7ac9d82ec4",
+      "del:text": "'Why don''t we just flip <CARD>'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4ba71935-60ad-4fc4-bd67-44141f5614b1",
+      "del:text": "because we need to test the rule . there could be an <CARD> on the back of the other cards"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5fe360a2-b5e1-4e79-8967-562fbbcb9880",
+      "del:text": "Only <CARD> or <CARD> would need to be flipped"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_2fef051d-fdc4-4ff4-a3af-3ffeaae9db96",
+      "del:text": "we have to verify the rule so we can do it by flipping all"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c47e93f6-c4c2-497b-bf9c-e2a6252b84ad",
+      "del:text": "there could be <CARD> vowel on the back of <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_80d6d8ea-1c57-4063-98ae-647fa3c62a1d",
+      "del:text": "I say flip all but <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f9571dee-d26a-4979-aaa9-92817caa3d7f",
+      "del:text": "final decison ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_db29b187-ecca-40f6-884e-fef817e51d5c",
+      "del:text": "<CARD> and <CARD> seem too obvious ... either the first <CARD> or all"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3be392d4-780b-4e63-84e9-7bee3fe21656",
+      "del:text": "I see first <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4b48ac9e-aef5-4b0d-850a-7657f5d81be2",
+      "del:text": "No need to flip <CARD> because its not <CARD> vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6919c86c-691b-4b37-add3-45ebd1eb0461",
+      "del:text": "im good with that"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1920380e-88db-4178-88c6-d1bbe321d633",
+      "del:text": "<MENTION> ?"
+    }
+  ]
+}

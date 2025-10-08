@@ -1,0 +1,594 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_b73d2e58-b71c-454b-a58c-0f43b6079bba",
+  "del:name": "DeliData Conversation b73d2e58-b71c-454b-a58c-0f43b6079bba",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba",
+      "del:name": "Conversation b73d2e58-b71c-454b-a58c-0f43b6079bba"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Beaver"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Narwhal"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Giraffe"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c08110ab-1b63-4b76-ac60-36ade13fb4e7",
+      "del:text": "Hey",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c08110ab-1b63-4b76-ac60-36ade13fb4e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d17bcf2b-36ef-45b0-976b-5bbc054ce4a1",
+      "del:text": "'I think the <CARD> needs to be flipped because it''s a vowel'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d17bcf2b-36ef-45b0-976b-5bbc054ce4a1"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1d535542-0858-4c96-8a5a-f4aa6dea7217",
+      "del:text": "'So if there''s an even number on the other side then the rule works'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1d535542-0858-4c96-8a5a-f4aa6dea7217"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9a26c295-74a2-406e-b601-d47c349fc743",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7b899b26-4ca3-4dcd-9038-9771000b263f",
+      "del:text": "If we flip <CARD> it should have a vowel on other side too",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_7b899b26-4ca3-4dcd-9038-9771000b263f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7ec50254-ef7f-48d5-a656-8a5d94db1f20",
+      "del:text": "'Why would a <CARD> have a vowel when it''s an odd number'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_7ec50254-ef7f-48d5-a656-8a5d94db1f20"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_59a34d6a-59f0-48e7-a715-05b6f39346bb",
+      "del:text": "sorry <CARD> *",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_59a34d6a-59f0-48e7-a715-05b6f39346bb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5a6d503c-e5d9-4e75-a5a5-4e50d76452cc",
+      "del:text": "Have you submitted answer for solo game yet ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5a6d503c-e5d9-4e75-a5a5-4e50d76452cc"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f3ccf6b2-c931-4004-91da-a4ade35758e8",
+      "del:text": "True since there are 5 vowels and 5 even numbers",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f3ccf6b2-c931-4004-91da-a4ade35758e8"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_205abe92-b1a4-4637-94ac-4ede35aa66d8",
+      "del:text": "I did I submitted <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_205abe92-b1a4-4637-94ac-4ede35aa66d8"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8d569b8e-4b98-4337-8e2b-86c1ec9e43f9",
+      "del:text": "But I think <CARD> would work , too .",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8d569b8e-4b98-4337-8e2b-86c1ec9e43f9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_29293871-4671-42f4-b828-5933d4361b05",
+      "del:text": "I submitted <CARD> also .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_29293871-4671-42f4-b828-5933d4361b05"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_429b020b-199a-4c2a-ae3b-7fd21741a821",
+      "del:text": "'I haven''t yet'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_429b020b-199a-4c2a-ae3b-7fd21741a821"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_74179fea-08c0-4bec-a8a4-860fd69ab623",
+      "del:text": "'<MENTION> you had to have if you''re in the chat'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_74179fea-08c0-4bec-a8a4-860fd69ab623"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e629de51-951c-489f-9104-c7320f54e332",
+      "del:text": "not the whole HIT just the card part",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e629de51-951c-489f-9104-c7320f54e332"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_74a31913-6574-4c8e-aeff-6c06fe765dfc",
+      "del:text": "Only having to prove an even number on other side of vowel",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_74a31913-6574-4c8e-aeff-6c06fe765dfc"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c7fff70c-006c-47b4-971c-ef2fab66d970",
+      "del:text": "an even number could also have a consonant so i think only <CARD> needs to be turned over",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c7fff70c-006c-47b4-971c-ef2fab66d970"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2eaf974b-da16-4c53-ac0b-e22f6b9c080c",
+      "del:text": "U,2",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_56bf3269-fad5-4484-81df-d82ec43bd384",
+      "del:text": "'Yeah I can''t see how it''s anything but <CARD> . I mean <CARD> could work but <CARD> is 100 % . <CARD> wouldn''t work if the numbers went up to 20 for instance'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_56bf3269-fad5-4484-81df-d82ec43bd384"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e487a79f-96d3-470b-b7fd-d981863df5d9",
+      "del:text": "<CARD> would work though if the only even numbers were 0,2 , 4,6 , 8 then the vowels A , E , I , O , <CARD> would correspond",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e487a79f-96d3-470b-b7fd-d981863df5d9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d2a42a43-af3c-4bd9-8914-02edbec86023",
+      "del:text": "<MENTION> , I 100 % agree",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d2a42a43-af3c-4bd9-8914-02edbec86023"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fc819144-b497-4f75-9c39-41a3573fdaf6",
+      "del:text": "'but if there''s more even numbers than vowels it no longer works'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_fc819144-b497-4f75-9c39-41a3573fdaf6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3689bedc-f62e-4cfa-a362-7d190c62a2a7",
+      "del:text": "'I''m glad we agree . We better get our dollar lol'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3689bedc-f62e-4cfa-a362-7d190c62a2a7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4d9600d8-4c34-4f85-8fba-251ff7f9a9f2",
+      "del:text": "<CARD> dollars",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4d9600d8-4c34-4f85-8fba-251ff7f9a9f2"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7aff8bb7-7aa0-4b96-a401-e99cf3805766",
+      "del:text": "<CARD> dollars actually ! haha",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_7aff8bb7-7aa0-4b96-a401-e99cf3805766"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6b2e6f67-06ca-4be3-a64b-607e50f34b19",
+      "del:text": "'Alright nice talking to y''all have a profitable day !'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6b2e6f67-06ca-4be3-a64b-607e50f34b19"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_25ad5ce8-200a-4b65-9753-d02993912f72",
+      "del:text": "There should be a timer in the room",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_25ad5ce8-200a-4b65-9753-d02993912f72"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_eea722f1-1fb2-46f5-993e-1b684815be9c",
+      "del:text": "Se ya",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_eea722f1-1fb2-46f5-993e-1b684815be9c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_16c16e0a-b0c1-43f2-bb6e-a39df621022c",
+      "del:text": "Oh theres a timer in the top left of the screen",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_16c16e0a-b0c1-43f2-bb6e-a39df621022c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_42b24cbc-c8fd-4980-93e7-7ad20f63a734",
+      "del:text": "80sec more",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b73d2e58-b71c-454b-a58c-0f43b6079bba"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_42b24cbc-c8fd-4980-93e7-7ad20f63a734"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c08110ab-1b63-4b76-ac60-36ade13fb4e7",
+      "del:text": "Hey"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d17bcf2b-36ef-45b0-976b-5bbc054ce4a1",
+      "del:text": "'I think the <CARD> needs to be flipped because it''s a vowel'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1d535542-0858-4c96-8a5a-f4aa6dea7217",
+      "del:text": "'So if there''s an even number on the other side then the rule works'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_7b899b26-4ca3-4dcd-9038-9771000b263f",
+      "del:text": "If we flip <CARD> it should have a vowel on other side too"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_7ec50254-ef7f-48d5-a656-8a5d94db1f20",
+      "del:text": "'Why would a <CARD> have a vowel when it''s an odd number'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_59a34d6a-59f0-48e7-a715-05b6f39346bb",
+      "del:text": "sorry <CARD> *"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5a6d503c-e5d9-4e75-a5a5-4e50d76452cc",
+      "del:text": "Have you submitted answer for solo game yet ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f3ccf6b2-c931-4004-91da-a4ade35758e8",
+      "del:text": "True since there are 5 vowels and 5 even numbers"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_205abe92-b1a4-4637-94ac-4ede35aa66d8",
+      "del:text": "I did I submitted <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8d569b8e-4b98-4337-8e2b-86c1ec9e43f9",
+      "del:text": "But I think <CARD> would work , too ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_29293871-4671-42f4-b828-5933d4361b05",
+      "del:text": "I submitted <CARD> also ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_429b020b-199a-4c2a-ae3b-7fd21741a821",
+      "del:text": "'I haven''t yet'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_74179fea-08c0-4bec-a8a4-860fd69ab623",
+      "del:text": "'<MENTION> you had to have if you''re in the chat'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e629de51-951c-489f-9104-c7320f54e332",
+      "del:text": "not the whole HIT just the card part"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_74a31913-6574-4c8e-aeff-6c06fe765dfc",
+      "del:text": "Only having to prove an even number on other side of vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c7fff70c-006c-47b4-971c-ef2fab66d970",
+      "del:text": "an even number could also have a consonant so i think only <CARD> needs to be turned over"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_56bf3269-fad5-4484-81df-d82ec43bd384",
+      "del:text": "'Yeah I can''t see how it''s anything but <CARD> . I mean <CARD> could work but <CARD> is 100 % . <CARD> wouldn''t work if the numbers went up to 20 for instance'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e487a79f-96d3-470b-b7fd-d981863df5d9",
+      "del:text": "<CARD> would work though if the only even numbers were 0,2 , 4,6 , 8 then the vowels A , E , I , O , <CARD> would correspond"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d2a42a43-af3c-4bd9-8914-02edbec86023",
+      "del:text": "<MENTION> , I 100 % agree"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_fc819144-b497-4f75-9c39-41a3573fdaf6",
+      "del:text": "'but if there''s more even numbers than vowels it no longer works'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3689bedc-f62e-4cfa-a362-7d190c62a2a7",
+      "del:text": "'I''m glad we agree . We better get our dollar lol'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4d9600d8-4c34-4f85-8fba-251ff7f9a9f2",
+      "del:text": "<CARD> dollars"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_7aff8bb7-7aa0-4b96-a401-e99cf3805766",
+      "del:text": "<CARD> dollars actually ! haha"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6b2e6f67-06ca-4be3-a64b-607e50f34b19",
+      "del:text": "'Alright nice talking to y''all have a profitable day !'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_25ad5ce8-200a-4b65-9753-d02993912f72",
+      "del:text": "There should be a timer in the room"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_eea722f1-1fb2-46f5-993e-1b684815be9c",
+      "del:text": "Se ya"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_16c16e0a-b0c1-43f2-bb6e-a39df621022c",
+      "del:text": "Oh theres a timer in the top left of the screen"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_42b24cbc-c8fd-4980-93e7-7ad20f63a734",
+      "del:text": "80sec more"
+    }
+  ]
+}

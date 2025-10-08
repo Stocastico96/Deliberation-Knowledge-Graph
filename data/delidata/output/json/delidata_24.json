@@ -1,0 +1,633 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_04edccd6-25d7-47dc-b73f-5bce9d77025b",
+  "del:name": "DeliData Conversation 04edccd6-25d7-47dc-b73f-5bce9d77025b",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b",
+      "del:name": "Conversation 04edccd6-25d7-47dc-b73f-5bce9d77025b"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Llama"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Tiger"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Raven"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_44ae589e-237e-4fe1-8d59-59de11361e45",
+      "del:text": "'It''s <CARD> and <CARD> because if you turn the <CARD> and it''s a vowel , then you know odd numbers become vowels and vice versa .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_44ae589e-237e-4fe1-8d59-59de11361e45"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_64f8f5e7-29f6-4171-90ff-614a09f9ab4c",
+      "del:text": "<CARD> *",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_92cc4b41-aef7-48ae-b154-746af347bead",
+      "del:text": "'Crap , I read it wrong , it''s evens .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f3980bc7-f0a8-4f86-b7bc-79d454721afc",
+      "del:text": "'hi - I''ve marked only <CARD> - if there is an even number on the other side it proves the rule'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f3980bc7-f0a8-4f86-b7bc-79d454721afc"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_035cf83e-9388-464b-914d-11882a9491ab",
+      "del:text": "'Mark <CARD> as well . If there''s a vowel on the other side , it also proves the rule .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_035cf83e-9388-464b-914d-11882a9491ab"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4098d2f4-8bc6-4fd9-b948-bcf6872e62d2",
+      "del:text": "'I chose <CARD> only because the rule says all card with vowels which means the other cards don''t matter - - they don''t have to follow the rule .'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4098d2f4-8bc6-4fd9-b948-bcf6872e62d2"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_68f13d69-5228-4e68-a18a-fac798436d66",
+      "del:text": "I agree with <MENTION>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_68f13d69-5228-4e68-a18a-fac798436d66"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_65a00036-6405-44c5-9b95-f32a72582602",
+      "del:text": "'It''s asking you to test the rule . Would it not prove that the rule is tested if the <CARD> turns up a vowel ?'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_65a00036-6405-44c5-9b95-f32a72582602"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2789bff4-aecc-41f1-834c-30b56b88b73d",
+      "del:text": "the test is all cards with a vowel",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_2789bff4-aecc-41f1-834c-30b56b88b73d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e33cfda1-23e5-405d-bc75-5eae97cb509e",
+      "del:text": "'Couldn''t the <CARD> just as easily have turned up a consonant ? In which case , the <CARD> is not necessary to prove the rule ?'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e33cfda1-23e5-405d-bc75-5eae97cb509e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_27bb5149-af74-4602-8410-88693c16396e",
+      "del:text": "Good point .",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_27bb5149-af74-4602-8410-88693c16396e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_de4a9996-38a8-4a93-b7cd-2ac7ac9b7894",
+      "del:text": "again - <MENTION> - I agree",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_de4a9996-38a8-4a93-b7cd-2ac7ac9b7894"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_38db748f-a26e-4c8b-9b72-5c0d894c52f5",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_337d30ae-a678-4cf0-ae59-10266e5d919b",
+      "del:text": "But would it not strengthen the correlation if we did find a vowel ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_337d30ae-a678-4cf0-ae59-10266e5d919b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8a7ce559-d148-427d-863b-6194bac8c2b2",
+      "del:text": "if <CARD> has an even number on the other side the rule is proven",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8a7ce559-d148-427d-863b-6194bac8c2b2"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_cecbdbe7-38f8-4978-996f-830902dce561",
+      "del:text": "I pose a question here .",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1eb0aa58-a43b-48ae-a22c-9895807600a7",
+      "del:text": "Would turning over the <CARD> not be useful for testing ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1eb0aa58-a43b-48ae-a22c-9895807600a7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e1170981-a59e-49d2-909e-30f6d76f934c",
+      "del:text": "'It might help , but if we didn''t find a vowel it would hurt the rule .'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e1170981-a59e-49d2-909e-30f6d76f934c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_87439ea5-f872-4c76-86bc-7956a638cde7",
+      "del:text": "It would , but it does seem like that would be necessary for a proper test .",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_87439ea5-f872-4c76-86bc-7956a638cde7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e4b69e6e-942f-4260-a926-e2cbef8ec892",
+      "del:text": "3,U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c3d9c323-cc3c-4e0e-9e80-0f1bb2ad962b",
+      "del:text": "The question in the task implies that you only need one card to prove the rule .",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c3d9c323-cc3c-4e0e-9e80-0f1bb2ad962b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ba55e79f-049d-4e0b-9c39-56d068532aec",
+      "del:text": "While it does , it says most players get it wrong . The assumption then would be that the task is more complex than that .",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ba55e79f-049d-4e0b-9c39-56d068532aec"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a6945464-b63f-410a-8c5a-814068a6ae7f",
+      "del:text": "if you want to turn a second card - turn <CARD> - if <CARD> has a vowel on the other side the rule is also proven",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_a6945464-b63f-410a-8c5a-814068a6ae7f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_607826ac-278f-4bbe-8ab9-fa67db138de5",
+      "del:text": "you turn ONLY the cards needed",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_607826ac-278f-4bbe-8ab9-fa67db138de5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0b41312c-6dc1-4aa4-938e-fa55c4e584f9",
+      "del:text": "'Agree with <MENTION> . You don''t \" need \" to turn over the <CARD> to prove the rule .'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0b41312c-6dc1-4aa4-938e-fa55c4e584f9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c4f9c485-1104-4fcf-bba9-87e107ed6a4f",
+      "del:text": "Does <CARD> coming up even really prove it if other cards could show something different ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c4f9c485-1104-4fcf-bba9-87e107ed6a4f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fda3ceb5-cb51-4fb1-91e2-04a76ac776f7",
+      "del:text": "ONLY is key",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_fda3ceb5-cb51-4fb1-91e2-04a76ac776f7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c090f57f-72e9-4dac-8f28-819905385942",
+      "del:text": "'no it''s a logical exclusion'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c090f57f-72e9-4dac-8f28-819905385942"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d83c3eca-1dfb-485c-8e7f-b6b20f9c86f1",
+      "del:text": "so what do we agree to ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d83c3eca-1dfb-485c-8e7f-b6b20f9c86f1"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5eda9c19-b304-4f38-b885-1cf980456b4f",
+      "del:text": "I vote \" <CARD> \" only .",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5eda9c19-b304-4f38-b885-1cf980456b4f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c5209bfa-134a-4d39-9c6d-d078560a46fd",
+      "del:text": "I guess what you do if it must be done , but the timer ran out , can it even be submitted ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4e9e66aa-0bc4-49bf-a6dd-363f0a40bbe8",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_181d3792-e1fb-47b2-b1cf-8614c87ddf06",
+      "del:text": "I vote <CARD> only",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_181d3792-e1fb-47b2-b1cf-8614c87ddf06"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9ac46b12-f79c-4193-b183-21332d2dac25",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8db269ee-0f02-4dd6-b137-c3f70f53edff",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_04edccd6-25d7-47dc-b73f-5bce9d77025b"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_44ae589e-237e-4fe1-8d59-59de11361e45",
+      "del:text": "'It''s <CARD> and <CARD> because if you turn the <CARD> and it''s a vowel , then you know odd numbers become vowels and vice versa .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f3980bc7-f0a8-4f86-b7bc-79d454721afc",
+      "del:text": "'hi - I''ve marked only <CARD> - if there is an even number on the other side it proves the rule'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_035cf83e-9388-464b-914d-11882a9491ab",
+      "del:text": "'Mark <CARD> as well . If there''s a vowel on the other side , it also proves the rule .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4098d2f4-8bc6-4fd9-b948-bcf6872e62d2",
+      "del:text": "'I chose <CARD> only because the rule says all card with vowels which means the other cards don''t matter - - they don''t have to follow the rule .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_68f13d69-5228-4e68-a18a-fac798436d66",
+      "del:text": "I agree with <MENTION>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_65a00036-6405-44c5-9b95-f32a72582602",
+      "del:text": "'It''s asking you to test the rule . Would it not prove that the rule is tested if the <CARD> turns up a vowel ?'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_2789bff4-aecc-41f1-834c-30b56b88b73d",
+      "del:text": "the test is all cards with a vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e33cfda1-23e5-405d-bc75-5eae97cb509e",
+      "del:text": "'Couldn''t the <CARD> just as easily have turned up a consonant ? In which case , the <CARD> is not necessary to prove the rule ?'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_27bb5149-af74-4602-8410-88693c16396e",
+      "del:text": "Good point ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_de4a9996-38a8-4a93-b7cd-2ac7ac9b7894",
+      "del:text": "again - <MENTION> - I agree"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_337d30ae-a678-4cf0-ae59-10266e5d919b",
+      "del:text": "But would it not strengthen the correlation if we did find a vowel ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8a7ce559-d148-427d-863b-6194bac8c2b2",
+      "del:text": "if <CARD> has an even number on the other side the rule is proven"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1eb0aa58-a43b-48ae-a22c-9895807600a7",
+      "del:text": "Would turning over the <CARD> not be useful for testing ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e1170981-a59e-49d2-909e-30f6d76f934c",
+      "del:text": "'It might help , but if we didn''t find a vowel it would hurt the rule .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_87439ea5-f872-4c76-86bc-7956a638cde7",
+      "del:text": "It would , but it does seem like that would be necessary for a proper test ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c3d9c323-cc3c-4e0e-9e80-0f1bb2ad962b",
+      "del:text": "The question in the task implies that you only need one card to prove the rule ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ba55e79f-049d-4e0b-9c39-56d068532aec",
+      "del:text": "While it does , it says most players get it wrong . The assumption then would be that the task is more complex than that ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_a6945464-b63f-410a-8c5a-814068a6ae7f",
+      "del:text": "if you want to turn a second card - turn <CARD> - if <CARD> has a vowel on the other side the rule is also proven"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_607826ac-278f-4bbe-8ab9-fa67db138de5",
+      "del:text": "you turn ONLY the cards needed"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0b41312c-6dc1-4aa4-938e-fa55c4e584f9",
+      "del:text": "'Agree with <MENTION> . You don''t \" need \" to turn over the <CARD> to prove the rule .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c4f9c485-1104-4fcf-bba9-87e107ed6a4f",
+      "del:text": "Does <CARD> coming up even really prove it if other cards could show something different ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_fda3ceb5-cb51-4fb1-91e2-04a76ac776f7",
+      "del:text": "ONLY is key"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c090f57f-72e9-4dac-8f28-819905385942",
+      "del:text": "'no it''s a logical exclusion'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d83c3eca-1dfb-485c-8e7f-b6b20f9c86f1",
+      "del:text": "so what do we agree to ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5eda9c19-b304-4f38-b885-1cf980456b4f",
+      "del:text": "I vote \" <CARD> \" only ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_181d3792-e1fb-47b2-b1cf-8614c87ddf06",
+      "del:text": "I vote <CARD> only"
+    }
+  ]
+}

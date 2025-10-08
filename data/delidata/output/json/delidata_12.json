@@ -1,0 +1,269 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_3a935930-cbc8-4895-a531-0be8e7e66b0e",
+  "del:name": "DeliData Conversation 3a935930-cbc8-4895-a531-0be8e7e66b0e",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e",
+      "del:name": "Conversation 3a935930-cbc8-4895-a531-0be8e7e66b0e"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Llama"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Zebra"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Koala"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_08af5a73-658a-4849-870d-88e95726dba5",
+      "del:text": "2E",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0333da4b-7bfe-4bdc-a88a-28207281594f",
+      "del:text": "Hello .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_de3ddd2f-b478-4d47-aa42-ad4004f73152",
+      "del:text": "'only need to test <CARD> and <CARD> because the other ones aren''t even or vowels'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_de3ddd2f-b478-4d47-aa42-ad4004f73152"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0a64c8cb-0cb9-4c80-9c86-d1cac8533324",
+      "del:text": "aye",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0a64c8cb-0cb9-4c80-9c86-d1cac8533324"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_32a484ae-2578-44ea-bc61-4c52872b5c27",
+      "del:text": "E,2",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7502248a-a87c-4e16-9843-d413c63cadc5",
+      "del:text": "'I picked <CARD> and <CARD> - I get what you both say , but don''t we need to check the <CARD> to see what is on the other side ? If it is a vowel on the other side , then the rule is not true'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_7502248a-a87c-4e16-9843-d413c63cadc5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_198ce802-893b-42e5-ac45-5077adbbbc6c",
+      "del:text": "yeah true ,",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_198ce802-893b-42e5-ac45-5077adbbbc6c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f2f74da0-5cfe-4b4b-ba5e-a6c68374a588",
+      "del:text": "E,5",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1baf8701-a5f3-44e5-a449-cb4b0734f87c",
+      "del:text": "ok ill submit <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1baf8701-a5f3-44e5-a449-cb4b0734f87c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_473ae6bd-7423-4d54-87b2-fd15f2529736",
+      "del:text": "'I didn''t choose the <CARD> because the rule does not say that only vowels will have an even number on the other side'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_473ae6bd-7423-4d54-87b2-fd15f2529736"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_93ce2725-2b9b-481f-a172-cc28c31e1bbc",
+      "del:text": "E,5",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e4bbcdcc-568b-4bdb-a19c-1ee4a4b55456",
+      "del:text": "thoughts , <MENTION> ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e4bbcdcc-568b-4bdb-a19c-1ee4a4b55456"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_756170b3-e7d0-4d5f-99c3-ea062e501cf3",
+      "del:text": "anyone here ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d00392b9-066f-4d1b-8537-a9adb51396de",
+      "del:text": "well i will submit the <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d00392b9-066f-4d1b-8537-a9adb51396de"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b6aea78a-185c-4299-bfd4-93db2e253663",
+      "del:text": "E,5",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_3a935930-cbc8-4895-a531-0be8e7e66b0e"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_de3ddd2f-b478-4d47-aa42-ad4004f73152",
+      "del:text": "'only need to test <CARD> and <CARD> because the other ones aren''t even or vowels'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0a64c8cb-0cb9-4c80-9c86-d1cac8533324",
+      "del:text": "aye"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_7502248a-a87c-4e16-9843-d413c63cadc5",
+      "del:text": "'I picked <CARD> and <CARD> - I get what you both say , but don''t we need to check the <CARD> to see what is on the other side ? If it is a vowel on the other side , then the rule is not true'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_198ce802-893b-42e5-ac45-5077adbbbc6c",
+      "del:text": "yeah true ,"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1baf8701-a5f3-44e5-a449-cb4b0734f87c",
+      "del:text": "ok ill submit <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_473ae6bd-7423-4d54-87b2-fd15f2529736",
+      "del:text": "'I didn''t choose the <CARD> because the rule does not say that only vowels will have an even number on the other side'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e4bbcdcc-568b-4bdb-a19c-1ee4a4b55456",
+      "del:text": "thoughts , <MENTION> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d00392b9-066f-4d1b-8537-a9adb51396de",
+      "del:text": "well i will submit the <CARD> and <CARD>"
+    }
+  ]
+}

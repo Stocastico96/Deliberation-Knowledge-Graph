@@ -1,0 +1,457 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_ba5efeec-f73e-4c91-b580-9893aaf3ae87",
+  "del:name": "DeliData Conversation ba5efeec-f73e-4c91-b580-9893aaf3ae87",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87",
+      "del:name": "Conversation ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Tiger"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Chipmunk"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_06f33311-621a-4f09-91b1-bcf786b16ddd",
+      "del:text": "So it looks like only two of us",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_69f1b9b6-28cc-4eff-83c1-27f3be7b5427",
+      "del:text": "'I''m fine carrying on this conversation by myself I suppose'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1f853343-95b8-4969-b528-9aef2b681d2e",
+      "del:text": "'It''d be helpful to have collaboration though'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d099cebc-fa4d-426f-a255-7383db8dee1b",
+      "del:text": "My thinking with this is that we",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e52fc281-cc23-496b-bb51-d746499e6cf7",
+      "del:text": "We would need to flip two cards",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e52fc281-cc23-496b-bb51-d746499e6cf7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6ce4b88a-cb3a-45e5-8c88-03c1e3d86382",
+      "del:text": "We need to see if the <CARD> card has an even number on the other side",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6ce4b88a-cb3a-45e5-8c88-03c1e3d86382"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d035ce3f-1c57-42e6-b036-b283230a7a44",
+      "del:text": "X,A",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_087413b5-447f-4d25-924e-59d3b40ae89e",
+      "del:text": "And we need to see if the odd number card has <CARD> vowel on the other side",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_087413b5-447f-4d25-924e-59d3b40ae89e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_062571bf-16a0-4254-9a75-d27c827d0b90",
+      "del:text": "A",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f2406786-2b8d-4bc1-8a49-030906ee56bd",
+      "del:text": "If the <CARD> has an even number behind it then the condition is true",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f2406786-2b8d-4bc1-8a49-030906ee56bd"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0b4a0285-e4ee-4632-8f6e-6753de4ca53e",
+      "del:text": "If the <CARD> has <CARD> vowel behind it then the condition is false",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0b4a0285-e4ee-4632-8f6e-6753de4ca53e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_bca7ca9c-6e20-455a-a970-cbb4ee60d5eb",
+      "del:text": "Yes , you are right",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_bca7ca9c-6e20-455a-a970-cbb4ee60d5eb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_01526aaf-fbfc-46d4-8a69-4a660416ab76",
+      "del:text": "There you are !",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_84f80ab0-84bf-4604-b47f-0dec034b41d2",
+      "del:text": "Lol",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fe1a9040-cc9c-4d98-965a-8c8484273b50",
+      "del:text": "'I''m working from home these days , I need some human contact'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_cb60cec4-4439-405a-be29-013c606e91b0",
+      "del:text": "'I''m willing to hear arguments though , I just don''t know that we can do it with less than two flips'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e67a3458-155f-4824-bb18-000829b348f1",
+      "del:text": "Me too",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8ccf10b5-fb3c-4783-be77-9cc44d35591c",
+      "del:text": "They do want us to talk about it for <CARD> few minutes though",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_62728c1a-b0bb-4b7c-97b4-df968d55c7c1",
+      "del:text": "I feel like my answer is too easy though",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8ccb421e-4d4f-41e9-816f-ec9756e51218",
+      "del:text": "Working from home is the best thing to do now because of the COVID 19 spreading everyday .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_82da1915-ee16-44a6-adb4-77d2362d7295",
+      "del:text": "'I''m half and half'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_efc7c284-c868-4f0f-bf83-c88af0415c88",
+      "del:text": "'Oddly enough , just got home but I still have <CARD> virtual meeting going on that''s basically pointless'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2a2684af-edd4-48c8-8bc4-28021f324f5d",
+      "del:text": "'I mean , we''re on lunch break but still'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1d3d4902-5192-4abe-93e8-31201e6ffcdd",
+      "del:text": "I work 70 % from home .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3826e2b6-fe19-4c9d-88e6-f0b7824ffa83",
+      "del:text": "I do miss the 3 months or so that I was 100 % remote , that was lovely but I went <CARD> little feral",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0cb7ce3d-4acb-462c-b5bc-48b354149978",
+      "del:text": "lunch break ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_29315d23-b6dd-429b-bdb0-f2d863f345fa",
+      "del:text": "'Yeah , it''s training stuff , all day meetings with various scheduled breaks for hourly staff'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2a7f92f0-c695-4184-bba0-8b21977cb47d",
+      "del:text": "you said , you just got home from work earlier .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d461773b-ae24-497b-9eaa-052391ca64c1",
+      "del:text": "Yeah , the meeting was all remote",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_321e49c0-b574-456a-afa6-e0c57233c235",
+      "del:text": "okay",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2c4a52d8-a586-4d83-85b4-6dfea7db8356",
+      "del:text": "I only do <CARD> half day in the office on Wednesdays",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5df0511c-2ea4-43f8-9088-fb138b069053",
+      "del:text": "5,A",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4aa23de8-9844-472a-b735-09c2451a459a",
+      "del:text": "'Guess we''re done'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e03a6014-068c-4d9d-9d76-a020d93c51b3",
+      "del:text": "Hope your day is amazing !",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ba5efeec-f73e-4c91-b580-9893aaf3ae87"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e52fc281-cc23-496b-bb51-d746499e6cf7",
+      "del:text": "We would need to flip two cards"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6ce4b88a-cb3a-45e5-8c88-03c1e3d86382",
+      "del:text": "We need to see if the <CARD> card has an even number on the other side"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_087413b5-447f-4d25-924e-59d3b40ae89e",
+      "del:text": "And we need to see if the odd number card has <CARD> vowel on the other side"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f2406786-2b8d-4bc1-8a49-030906ee56bd",
+      "del:text": "If the <CARD> has an even number behind it then the condition is true"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0b4a0285-e4ee-4632-8f6e-6753de4ca53e",
+      "del:text": "If the <CARD> has <CARD> vowel behind it then the condition is false"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_bca7ca9c-6e20-455a-a970-cbb4ee60d5eb",
+      "del:text": "Yes , you are right"
+    }
+  ]
+}

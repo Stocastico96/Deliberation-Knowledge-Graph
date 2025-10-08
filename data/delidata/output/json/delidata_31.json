@@ -1,0 +1,677 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_0d908396-4045-42af-9f1c-8b06ac2c0788",
+  "del:name": "DeliData Conversation 0d908396-4045-42af-9f1c-8b06ac2c0788",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788",
+      "del:name": "Conversation 0d908396-4045-42af-9f1c-8b06ac2c0788"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Kiwi"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Ox"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Bee"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c1c19960-fae2-4fac-899a-35b00eb5cfa0",
+      "del:text": "If you turn <CARD> it should be an odd number confirming",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c1c19960-fae2-4fac-899a-35b00eb5cfa0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d1b980aa-fcb5-4d0c-bbed-13bb49167dd5",
+      "del:text": "E,4",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_39e83956-9f19-443b-8427-56d9b7f01c41",
+      "del:text": "So what does everyone think ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_39e83956-9f19-443b-8427-56d9b7f01c41"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f6c4c16e-84fb-41e8-a4ed-df6385dd23a8",
+      "del:text": "All cards with vowels on one side have an even number on the other . So we flip the <CARD> and the <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f6c4c16e-84fb-41e8-a4ed-df6385dd23a8"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_932cb814-ee47-4620-af45-fc25b9d4d2be",
+      "del:text": "My idea is that if the <CARD> card has a vowel on the other side , it pretty much proves the rule",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_932cb814-ee47-4620-af45-fc25b9d4d2be"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c3733a28-3d53-4d7a-bb08-76535ae17e33",
+      "del:text": "E,X",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_080c5e43-adb8-4b2d-ae9e-69b0c727625a",
+      "del:text": "I think both the four and the <CARD> , yes",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_080c5e43-adb8-4b2d-ae9e-69b0c727625a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_49314f04-6940-448a-af79-5dae46017f80",
+      "del:text": "Also turning the <CARD> will reveal a even number <CARD> and <CARD> will confirm the rule",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_49314f04-6940-448a-af79-5dae46017f80"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_dba72bd7-edef-4346-928d-7ad209094395",
+      "del:text": "E,4",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e692f83c-4d45-4a6a-adfb-bdf37dde7c53",
+      "del:text": "'That''s true too , we don''t need to do both the <CARD> and the <CARD> then if we do <CARD> and <CARD>'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e692f83c-4d45-4a6a-adfb-bdf37dde7c53"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_83f49870-b235-4d79-997d-cc665c215dc8",
+      "del:text": "Would only one card suffice though ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_83f49870-b235-4d79-997d-cc665c215dc8"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_39704b59-b26d-463a-8926-6f5d00a2658e",
+      "del:text": "yes one of each . <CARD> and <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_39704b59-b26d-463a-8926-6f5d00a2658e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c5bc0765-55b7-4313-b67c-b36eaa972e23",
+      "del:text": "X,4",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f1003f1a-2d19-4231-8fee-ec2613dfbf17",
+      "del:text": "no need to confirm the odd and even numbers",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f1003f1a-2d19-4231-8fee-ec2613dfbf17"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_11dbbf4c-e809-4f98-8c0d-fe81c0473866",
+      "del:text": "If you turn one card it only confirms half the rule",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_11dbbf4c-e809-4f98-8c0d-fe81c0473866"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ad1f3127-bfad-403f-93dc-8df401f4cc24",
+      "del:text": "'Right , because we''re testing both and checking the flip side'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ad1f3127-bfad-403f-93dc-8df401f4cc24"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d12d8ba5-ca56-4a68-b040-f35d4a7f3fad",
+      "del:text": "E,X",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_304267bd-4f19-41e8-8b99-d6fa7cdca968",
+      "del:text": "so <CARD> and <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_304267bd-4f19-41e8-8b99-d6fa7cdca968"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d654b6c5-1404-4676-8aba-1078f72d476c",
+      "del:text": "could be xand <CARD> or <CARD> and <CARD> both will confirm full rule",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d654b6c5-1404-4676-8aba-1078f72d476c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1793d6a2-da70-45a3-8686-8c93482410ed",
+      "del:text": "Or <CARD> and <CARD> ? Would be the same , right ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1793d6a2-da70-45a3-8686-8c93482410ed"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6e54d749-4ecc-4a96-8a60-8c1975bca727",
+      "del:text": "Makes sense",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6e54d749-4ecc-4a96-8a60-8c1975bca727"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_aeea30ab-86d4-4f3f-867c-eba7d438a012",
+      "del:text": "yes",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_aeea30ab-86d4-4f3f-867c-eba7d438a012"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fc631249-8f41-4deb-9841-e7178ec9881e",
+      "del:text": "I chose <CARD> and <CARD> . Anyone support that ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_fc631249-8f41-4deb-9841-e7178ec9881e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c8fd58a5-d525-4899-8094-c298ade5e8c0",
+      "del:text": "yes of course . we should just pick a combo .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c8fd58a5-d525-4899-8094-c298ade5e8c0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7713ccd5-0750-489b-90a7-5438947cda17",
+      "del:text": "yes",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_7713ccd5-0750-489b-90a7-5438947cda17"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0fde436b-d032-484b-a885-58734581ef25",
+      "del:text": "ok <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0fde436b-d032-484b-a885-58734581ef25"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0d2a6522-9476-4a1c-93da-0e4086b6ef5e",
+      "del:text": "E,X",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6f1a9cda-15eb-474a-b5a1-6ecfac0aa540",
+      "del:text": "Thanks everyone",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_171f53e0-b691-4358-a088-b0c2963f3169",
+      "del:text": "sounds good",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_171f53e0-b691-4358-a088-b0c2963f3169"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_cad5ac52-65ff-4d83-aaa5-2a8d6fa13e66",
+      "del:text": "sweet",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_30745af3-b883-4a19-a518-340251ba43a7",
+      "del:text": "E,X",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4b3cb598-ba03-4d38-8771-d5f1b8838562",
+      "del:text": "Any advantage to going with <CARD> and <CARD> over say <CARD> and <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4b3cb598-ba03-4d38-8771-d5f1b8838562"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_249bb8bd-01bb-49cc-a282-9491473a89f3",
+      "del:text": "'Ok , I don''t think there is . Let''s go with <CARD> and <CARD> and submit . I think we''ve spend enough time on this .'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_249bb8bd-01bb-49cc-a282-9491473a89f3"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_26f2f214-fc50-4b1d-a214-1b0050602d78",
+      "del:text": "E,X",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_937ac7d0-2416-40a5-bf02-bbb07ef03209",
+      "del:text": "stop its wrong",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_937ac7d0-2416-40a5-bf02-bbb07ef03209"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ebf453cc-ed47-4faf-b087-ef0e4de3f94b",
+      "del:text": "I think to confirm the rule you need to choose the <CARD> and flip it to see a even number and the <CARD> to flip to see a costanant o0r non vowel because we already know whats on this side but wwe do not know whats on the other side",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ebf453cc-ed47-4faf-b087-ef0e4de3f94b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_46e59dc7-d6d9-425b-81a7-0669f4c7610a",
+      "del:text": "5,X,E",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e95b0050-fe8a-4a6e-911d-6f917b628b27",
+      "del:text": "5,E",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a2f68163-9ed5-423d-a251-5279a4c541c5",
+      "del:text": "5,E",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_0d908396-4045-42af-9f1c-8b06ac2c0788"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c1c19960-fae2-4fac-899a-35b00eb5cfa0",
+      "del:text": "If you turn <CARD> it should be an odd number confirming"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_39e83956-9f19-443b-8427-56d9b7f01c41",
+      "del:text": "So what does everyone think ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f6c4c16e-84fb-41e8-a4ed-df6385dd23a8",
+      "del:text": "All cards with vowels on one side have an even number on the other . So we flip the <CARD> and the <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_932cb814-ee47-4620-af45-fc25b9d4d2be",
+      "del:text": "My idea is that if the <CARD> card has a vowel on the other side , it pretty much proves the rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_080c5e43-adb8-4b2d-ae9e-69b0c727625a",
+      "del:text": "I think both the four and the <CARD> , yes"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_49314f04-6940-448a-af79-5dae46017f80",
+      "del:text": "Also turning the <CARD> will reveal a even number <CARD> and <CARD> will confirm the rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e692f83c-4d45-4a6a-adfb-bdf37dde7c53",
+      "del:text": "'That''s true too , we don''t need to do both the <CARD> and the <CARD> then if we do <CARD> and <CARD>'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_83f49870-b235-4d79-997d-cc665c215dc8",
+      "del:text": "Would only one card suffice though ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_39704b59-b26d-463a-8926-6f5d00a2658e",
+      "del:text": "yes one of each . <CARD> and <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f1003f1a-2d19-4231-8fee-ec2613dfbf17",
+      "del:text": "no need to confirm the odd and even numbers"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_11dbbf4c-e809-4f98-8c0d-fe81c0473866",
+      "del:text": "If you turn one card it only confirms half the rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ad1f3127-bfad-403f-93dc-8df401f4cc24",
+      "del:text": "'Right , because we''re testing both and checking the flip side'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_304267bd-4f19-41e8-8b99-d6fa7cdca968",
+      "del:text": "so <CARD> and <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d654b6c5-1404-4676-8aba-1078f72d476c",
+      "del:text": "could be xand <CARD> or <CARD> and <CARD> both will confirm full rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1793d6a2-da70-45a3-8686-8c93482410ed",
+      "del:text": "Or <CARD> and <CARD> ? Would be the same , right ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6e54d749-4ecc-4a96-8a60-8c1975bca727",
+      "del:text": "Makes sense"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_aeea30ab-86d4-4f3f-867c-eba7d438a012",
+      "del:text": "yes"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_fc631249-8f41-4deb-9841-e7178ec9881e",
+      "del:text": "I chose <CARD> and <CARD> . Anyone support that ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c8fd58a5-d525-4899-8094-c298ade5e8c0",
+      "del:text": "yes of course . we should just pick a combo ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_7713ccd5-0750-489b-90a7-5438947cda17",
+      "del:text": "yes"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0fde436b-d032-484b-a885-58734581ef25",
+      "del:text": "ok <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_171f53e0-b691-4358-a088-b0c2963f3169",
+      "del:text": "sounds good"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4b3cb598-ba03-4d38-8771-d5f1b8838562",
+      "del:text": "Any advantage to going with <CARD> and <CARD> over say <CARD> and <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_249bb8bd-01bb-49cc-a282-9491473a89f3",
+      "del:text": "'Ok , I don''t think there is . Let''s go with <CARD> and <CARD> and submit . I think we''ve spend enough time on this .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_937ac7d0-2416-40a5-bf02-bbb07ef03209",
+      "del:text": "stop its wrong"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ebf453cc-ed47-4faf-b087-ef0e4de3f94b",
+      "del:text": "I think to confirm the rule you need to choose the <CARD> and flip it to see a even number and the <CARD> to flip to see a costanant o0r non vowel because we already know whats on this side but wwe do not know whats on the other side"
+    }
+  ]
+}

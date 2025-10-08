@@ -1,0 +1,800 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6",
+  "del:name": "DeliData Conversation ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6",
+      "del:name": "Conversation ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Alpaca"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Bat"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Bee"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Butterfly"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_5",
+      "del:name": "Leopard"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1880d74b-8ec3-4f7c-acd9-e0d890746811",
+      "del:text": "I chose <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1880d74b-8ec3-4f7c-acd9-e0d890746811"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4abfffef-ed01-4866-8a1b-ecc207cb7303",
+      "del:text": "'Hi all , we would just need to test <CARD> and <CARD> , right ? Because for # <CARD> , it doesn''t matter what''s on the other side , since it doesn''t say all even-numbered cards have a vowel .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4abfffef-ed01-4866-8a1b-ecc207cb7303"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ea387d38-afb6-4d10-9d76-79bd3aa6e963",
+      "del:text": "Yes I chose the same . What do the rest of you think ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ea387d38-afb6-4d10-9d76-79bd3aa6e963"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d920795c-ca3c-42cc-8da7-9833a926fa44",
+      "del:text": "I chose <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d920795c-ca3c-42cc-8da7-9833a926fa44"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9c1a458f-1695-4f5f-83ee-18fa32244897",
+      "del:text": "we need to turn over the <CARD> and <CARD> to test <CARD>",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_9c1a458f-1695-4f5f-83ee-18fa32244897"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_90763268-6249-46aa-a3a6-262f6b95e94b",
+      "del:text": "because <CARD> is a vowel so we need to see if it has an even number on the other side . And <CARD> is odd , so if it has a vowel on the other side , it would disprove the rule",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_90763268-6249-46aa-a3a6-262f6b95e94b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f529b2cd-3a77-4fe8-b577-c3f8542be51b",
+      "del:text": "ok",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f529b2cd-3a77-4fe8-b577-c3f8542be51b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3ba7682c-938d-48a9-b475-5c6f9df977a3",
+      "del:text": "'We don''t need to turn over <CARD> , though . Because it says all w / vowels have even . It doesn''t say an even has to have a vowel .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3ba7682c-938d-48a9-b475-5c6f9df977a3"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ae65d1d8-8f82-4f5b-9528-ecd8efdf7d2c",
+      "del:text": "Yes I think <CARD> and <CARD> are all we need to test .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ae65d1d8-8f82-4f5b-9528-ecd8efdf7d2c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a4b692e0-d27c-4806-b4bb-382b4a78f2e7",
+      "del:text": "exactly",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_a4b692e0-d27c-4806-b4bb-382b4a78f2e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8c35b977-5d07-45e3-8ebc-5276737fb739",
+      "del:text": "But if anyone has other ideas I will listen .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8c35b977-5d07-45e3-8ebc-5276737fb739"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8a597609-b814-46ef-bb5c-53b804fe3077",
+      "del:text": "E,9",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_99328a7a-c692-4414-bc95-21fb5ab9be26",
+      "del:text": "Ok so <CARD> and <CARD> then huh ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_99328a7a-c692-4414-bc95-21fb5ab9be26"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8dbdad64-8632-41bc-9141-7f8b7f72593f",
+      "del:text": "ok i agree <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_5"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8dbdad64-8632-41bc-9141-7f8b7f72593f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b202c200-d39d-4108-b08d-9e56cb09ea03",
+      "del:text": "Kiwi , any thoughts ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b202c200-d39d-4108-b08d-9e56cb09ea03"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3e4b8f99-7dbf-4f55-a122-a18e833a3dd5",
+      "del:text": "yes ! do we just check off those and make it our final decision ? Do we have to wait for @Zebra and @Kiwi ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3e4b8f99-7dbf-4f55-a122-a18e833a3dd5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0b95e9b7-3916-41d5-9e38-fbed10859842",
+      "del:text": "'I don''t see anyone by the name of Zebra listed .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2f5ddb71-4702-4a4c-83c1-cbbf995add73",
+      "del:text": "'I don''t know if we''ll hear from @Kiwi .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6882948b-37c2-4fa4-b4a2-52d241a51c95",
+      "del:text": "'that''s so weird , there''s a zebra in my list'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f1962efe-0ce0-4c9c-972e-0c847475afb6",
+      "del:text": "Ok well I am going to submit <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f1962efe-0ce0-4c9c-972e-0c847475afb6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d8d74fab-5b9e-4abb-8e59-d960f12beba6",
+      "del:text": "'But it does say we''re supposed to participate for at least 5 minutes .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e9f55eb9-910f-4d26-afe9-887ad7d223e1",
+      "del:text": "TRUE",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_265a442d-a7ae-4ec9-b530-f7f937709ec6",
+      "del:text": "ok",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_97422354-d4a9-4cc3-94af-8d92dee14325",
+      "del:text": "'Lol but I don''t know what else there is to say .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a4bce8c8-510f-4b9c-8408-8c001fe7f981",
+      "del:text": "We generally seem to be in agreement .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_58e756b2-c2d8-43a7-8706-fee620e5a3be",
+      "del:text": "Ok nvm we need to chat for another 3 mins",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f4f6d279-4ed1-4264-90fd-673862433688",
+      "del:text": "anyone who hasnt spoken have a diff idea ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f4f6d279-4ed1-4264-90fd-673862433688"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8e60161f-91c9-4d2e-b245-244d6e175154",
+      "del:text": "'not sure what else to say haha other than <CARD> isn''t a vowel , so we don''t need to check it'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8e60161f-91c9-4d2e-b245-244d6e175154"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_688d46bc-0069-4b6e-84c5-b207d7001a65",
+      "del:text": "'Let''s see what happens if I @ mention @Zebra .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_688d46bc-0069-4b6e-84c5-b207d7001a65"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ed441ac9-7edb-451b-a29f-96ed9763291f",
+      "del:text": "Well , the name shows up in bold , idk if that just happens after every @ with no space , though . So maybe Zebra is not here .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c0df0a81-4535-46f8-8d6f-e3fd397ed6d5",
+      "del:text": "'Haven''t heard from @Kiwi still .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4d0c5509-f028-40db-8a3c-6cac704bc233",
+      "del:text": "@camel",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fc855807-82fc-4f6c-807e-32a7b5ccb1c9",
+      "del:text": "E,9",
+      "del:madeBy": {
+        "@id": "participant_5"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_111d830f-3ad9-4d09-bc96-faec17322f3b",
+      "del:text": "'But anyway , this is an interesting puzzle . It''s one of those things where I guess you need to pare down to the smallest amount of things possible to test a rule .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_54792a39-861f-44e6-9881-ee2daf4fd611",
+      "del:text": "Any last opinions we should consider besides just submitting <CARD> and <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_54792a39-861f-44e6-9881-ee2daf4fd611"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d76c1c5f-ea32-45e8-a638-765a72a41276",
+      "del:text": "what about <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_5"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d76c1c5f-ea32-45e8-a638-765a72a41276"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3845111a-304f-450a-845f-ce188d51e056",
+      "del:text": "'i''m not sure , it''s confusing'",
+      "del:madeBy": {
+        "@id": "participant_5"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_269dbbfd-3279-45ce-8b32-bcd0d2c0cbc8",
+      "del:text": "'It''s <CARD> and <CARD> ya ?'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_269dbbfd-3279-45ce-8b32-bcd0d2c0cbc8"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_52675956-ae3a-42f0-895c-5a4988c074d8",
+      "del:text": "E,9",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f5da9240-144d-4c67-8987-21d5ef0d7574",
+      "del:text": "'Well <CARD> wouldn''t help us with the rule . Because there''s no vowel , so it doesn''t have anything to do with the rule .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f5da9240-144d-4c67-8987-21d5ef0d7574"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c6b87f3a-f557-4681-8348-8b5df0cdd7b5",
+      "del:text": "yea <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_5"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c6b87f3a-f557-4681-8348-8b5df0cdd7b5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_46da0d6f-6ce1-4195-a17d-361841f91858",
+      "del:text": "Yes I think <CARD> and <CARD> .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_46da0d6f-6ce1-4195-a17d-361841f91858"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_595ba748-31b9-4d6a-8130-b4867bcf4577",
+      "del:text": "'nice chatting with y''all'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d3559608-be7e-49f4-8438-0300b45c266d",
+      "del:text": "E,9",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f3f6ede3-c243-4531-8548-2b3e77bf9a8d",
+      "del:text": "E,9",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_969701cb-7b07-4c4e-aab5-1719575ca416",
+      "del:text": "E,9",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_bfc4f6f1-577f-49d4-bf2c-c45695254033",
+      "del:text": "E,9",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_950a1c57-beee-433f-a69c-8d8664e26ddc",
+      "del:text": "E,9",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4ea5fad0-2b19-4ba4-bdec-c448a7e4fea7",
+      "del:text": "E,9",
+      "del:madeBy": {
+        "@id": "participant_5"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6701c153-a342-4092-92ea-b3dd648cf14a",
+      "del:text": "E,9",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ad8c0cf5-a0fe-42a3-aae0-fd52c73df3e6"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1880d74b-8ec3-4f7c-acd9-e0d890746811",
+      "del:text": "I chose <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4abfffef-ed01-4866-8a1b-ecc207cb7303",
+      "del:text": "'Hi all , we would just need to test <CARD> and <CARD> , right ? Because for # <CARD> , it doesn''t matter what''s on the other side , since it doesn''t say all even-numbered cards have a vowel .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ea387d38-afb6-4d10-9d76-79bd3aa6e963",
+      "del:text": "Yes I chose the same . What do the rest of you think ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d920795c-ca3c-42cc-8da7-9833a926fa44",
+      "del:text": "I chose <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_9c1a458f-1695-4f5f-83ee-18fa32244897",
+      "del:text": "we need to turn over the <CARD> and <CARD> to test <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_90763268-6249-46aa-a3a6-262f6b95e94b",
+      "del:text": "because <CARD> is a vowel so we need to see if it has an even number on the other side . And <CARD> is odd , so if it has a vowel on the other side , it would disprove the rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f529b2cd-3a77-4fe8-b577-c3f8542be51b",
+      "del:text": "ok"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3ba7682c-938d-48a9-b475-5c6f9df977a3",
+      "del:text": "'We don''t need to turn over <CARD> , though . Because it says all w / vowels have even . It doesn''t say an even has to have a vowel .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ae65d1d8-8f82-4f5b-9528-ecd8efdf7d2c",
+      "del:text": "Yes I think <CARD> and <CARD> are all we need to test ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_a4b692e0-d27c-4806-b4bb-382b4a78f2e7",
+      "del:text": "exactly"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8c35b977-5d07-45e3-8ebc-5276737fb739",
+      "del:text": "But if anyone has other ideas I will listen ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_99328a7a-c692-4414-bc95-21fb5ab9be26",
+      "del:text": "Ok so <CARD> and <CARD> then huh ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8dbdad64-8632-41bc-9141-7f8b7f72593f",
+      "del:text": "ok i agree <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b202c200-d39d-4108-b08d-9e56cb09ea03",
+      "del:text": "Kiwi , any thoughts ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3e4b8f99-7dbf-4f55-a122-a18e833a3dd5",
+      "del:text": "yes ! do we just check off those and make it our final decision ? Do we have to wait for @Zebra and @Kiwi ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f1962efe-0ce0-4c9c-972e-0c847475afb6",
+      "del:text": "Ok well I am going to submit <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f4f6d279-4ed1-4264-90fd-673862433688",
+      "del:text": "anyone who hasnt spoken have a diff idea ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8e60161f-91c9-4d2e-b245-244d6e175154",
+      "del:text": "'not sure what else to say haha other than <CARD> isn''t a vowel , so we don''t need to check it'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_688d46bc-0069-4b6e-84c5-b207d7001a65",
+      "del:text": "'Let''s see what happens if I @ mention @Zebra .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_54792a39-861f-44e6-9881-ee2daf4fd611",
+      "del:text": "Any last opinions we should consider besides just submitting <CARD> and <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d76c1c5f-ea32-45e8-a638-765a72a41276",
+      "del:text": "what about <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_269dbbfd-3279-45ce-8b32-bcd0d2c0cbc8",
+      "del:text": "'It''s <CARD> and <CARD> ya ?'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f5da9240-144d-4c67-8987-21d5ef0d7574",
+      "del:text": "'Well <CARD> wouldn''t help us with the rule . Because there''s no vowel , so it doesn''t have anything to do with the rule .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c6b87f3a-f557-4681-8348-8b5df0cdd7b5",
+      "del:text": "yea <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_46da0d6f-6ce1-4195-a17d-361841f91858",
+      "del:text": "Yes I think <CARD> and <CARD> ."
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_5b63c8dc-81e8-46e8-98bd-59d68cde4088",
+  "del:name": "DeliData Conversation 5b63c8dc-81e8-46e8-98bd-59d68cde4088",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088",
+      "del:name": "Conversation 5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Puffin"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Panda"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Emu"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_66c1bfe3-3145-440c-975f-8f789d1107ea",
+      "del:text": "3,8",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_636e59fa-61eb-4037-acad-0ccb3a452a1c",
+      "del:text": "E,C",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4deede13-bd13-410e-a6e4-26c9861ffe60",
+      "del:text": "'I don''t think you need to flip over any cards to test the rule .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4deede13-bd13-410e-a6e4-26c9861ffe60"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5bafd16e-fe6b-452b-a3b4-04311a47e903",
+      "del:text": "must be <CARD> right ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5bafd16e-fe6b-452b-a3b4-04311a47e903"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e1d012e4-33a5-4f82-a6e1-6f0e4e8854a1",
+      "del:text": "we only need to check the cards with vowels . none are there except <CARD> , so it has to be <CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e1d012e4-33a5-4f82-a6e1-6f0e4e8854a1"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8290de00-8e98-4c9d-8e94-0ce2b46ffdb8",
+      "del:text": "Would it be <CARD> and <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8290de00-8e98-4c9d-8e94-0ce2b46ffdb8"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ed08b664-5108-4348-8d28-30e354fb2b77",
+      "del:text": "'<CARD> could have a consonant on the other side and it wouldn''t impact anything .'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ed08b664-5108-4348-8d28-30e354fb2b77"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2eeacac2-e5ed-49b8-8096-d362fa09aded",
+      "del:text": "If we test the card with the vowel then we should test the card with the even number to make sure it has a vowel on it",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_2eeacac2-e5ed-49b8-8096-d362fa09aded"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_303e4ef4-76db-40e4-9c8c-c58c3152e1f5",
+      "del:text": "'it doesn''t state that all even numbers have a vowel . it just says all cards with vowels have an even number'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_303e4ef4-76db-40e4-9c8c-c58c3152e1f5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_015300c7-724e-4f45-9c4f-2f102e7b3e29",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f77fdbe3-46aa-4998-bda9-f3b0fe940250",
+      "del:text": "Right , that makes sense",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f77fdbe3-46aa-4998-bda9-f3b0fe940250"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e76f608d-f5a2-42d9-aa6b-bcaf40e004ca",
+      "del:text": "'I was thinking the inverse must be true , but I guess that''s not the case'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e76f608d-f5a2-42d9-aa6b-bcaf40e004ca"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_11402fa8-5f0c-4119-ad64-54948b891430",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0ddc75f9-0942-493e-9093-a75d5342dad9",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_5b63c8dc-81e8-46e8-98bd-59d68cde4088"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4deede13-bd13-410e-a6e4-26c9861ffe60",
+      "del:text": "'I don''t think you need to flip over any cards to test the rule .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5bafd16e-fe6b-452b-a3b4-04311a47e903",
+      "del:text": "must be <CARD> right ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e1d012e4-33a5-4f82-a6e1-6f0e4e8854a1",
+      "del:text": "we only need to check the cards with vowels . none are there except <CARD> , so it has to be <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8290de00-8e98-4c9d-8e94-0ce2b46ffdb8",
+      "del:text": "Would it be <CARD> and <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ed08b664-5108-4348-8d28-30e354fb2b77",
+      "del:text": "'<CARD> could have a consonant on the other side and it wouldn''t impact anything .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_2eeacac2-e5ed-49b8-8096-d362fa09aded",
+      "del:text": "If we test the card with the vowel then we should test the card with the even number to make sure it has a vowel on it"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_303e4ef4-76db-40e4-9c8c-c58c3152e1f5",
+      "del:text": "'it doesn''t state that all even numbers have a vowel . it just says all cards with vowels have an even number'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f77fdbe3-46aa-4998-bda9-f3b0fe940250",
+      "del:text": "Right , that makes sense"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e76f608d-f5a2-42d9-aa6b-bcaf40e004ca",
+      "del:text": "'I was thinking the inverse must be true , but I guess that''s not the case'"
+    }
+  ]
+}

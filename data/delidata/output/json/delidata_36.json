@@ -1,0 +1,341 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_442d9e64-97f2-427a-a16c-0d433774c755",
+  "del:name": "DeliData Conversation 442d9e64-97f2-427a-a16c-0d433774c755",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755",
+      "del:name": "Conversation 442d9e64-97f2-427a-a16c-0d433774c755"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Alpaca"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Emu"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Lion"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3d63a346-cb70-4f4e-80f7-37a4036543f2",
+      "del:text": "hi",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a0cfb177-7ab3-4ca2-8f3d-1126a9d2de38",
+      "del:text": "hi",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ccda941b-cfa8-4298-a6a6-b2549b684b3e",
+      "del:text": "hi",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_516ed417-0e9f-46a2-a214-8b396059f1df",
+      "del:text": "good",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d27f659e-dac3-447e-b7d1-a2685bd82eb7",
+      "del:text": "I am confused about what we are trying to solve .",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0838d8c8-df96-40e9-be44-f2a1a9d20b00",
+      "del:text": "B,A,5,6",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ee251eda-0ec7-49c7-b0de-e6ff55ee8382",
+      "del:text": "'Wouldn''t you have to turn all cards to verify rule ?'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ee251eda-0ec7-49c7-b0de-e6ff55ee8382"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b8329427-0818-4d70-8ccb-16179860d15f",
+      "del:text": "good to do",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a7ae97a0-8b82-4df0-9065-933576b1036a",
+      "del:text": "you need to check <CARD> to see if there is an even number and <CARD> to check for <CARD> vowel",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_a7ae97a0-8b82-4df0-9065-933576b1036a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4ea7acb5-caed-4132-9583-8f1734b7b1a4",
+      "del:text": "5",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a838f4ba-5407-4aea-81f8-4aa85db3ef8c",
+      "del:text": "easy",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_902579f2-f4b1-448f-913b-165e4520939f",
+      "del:text": "Oh I see , duh",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_902579f2-f4b1-448f-913b-165e4520939f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_af5a2484-61e0-4a85-b926-d1e91ca05130",
+      "del:text": "5,A",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_67f81670-74d0-4256-a542-94ef9a7aca34",
+      "del:text": "hi",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e1ae7c8f-7621-4cec-97d2-d4aa6a852772",
+      "del:text": "<MENTION>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f0872532-fc82-48d9-8b29-897b704c0a00",
+      "del:text": "5",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_db649035-0354-4775-a2a2-096a7038285d",
+      "del:text": "5,A",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c220e69a-8940-4f7a-9809-e48cc31db6c4",
+      "del:text": "So we should be good with <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c220e69a-8940-4f7a-9809-e48cc31db6c4"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5dede86f-8926-4176-b309-61ee569505ef",
+      "del:text": "How would you confirm that the letter behind <CARD> is <CARD> vowel ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5dede86f-8926-4176-b309-61ee569505ef"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2b475562-1722-4eeb-ba9d-4746a34fce9f",
+      "del:text": "'Are you sure you don''t need to check them all to confirm ?'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_2b475562-1722-4eeb-ba9d-4746a34fce9f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c475f171-b3a2-4adb-92d6-9f4d0446469f",
+      "del:text": "This is confusing .",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1348c2fc-1ec4-42c8-bbdf-15ce3b358ab8",
+      "del:text": "B,A,5,6",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9e3d9ed5-c79f-47ae-9762-c595c9659bb4",
+      "del:text": "B,A,5,6",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_442d9e64-97f2-427a-a16c-0d433774c755"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ee251eda-0ec7-49c7-b0de-e6ff55ee8382",
+      "del:text": "'Wouldn''t you have to turn all cards to verify rule ?'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_a7ae97a0-8b82-4df0-9065-933576b1036a",
+      "del:text": "you need to check <CARD> to see if there is an even number and <CARD> to check for <CARD> vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_902579f2-f4b1-448f-913b-165e4520939f",
+      "del:text": "Oh I see , duh"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c220e69a-8940-4f7a-9809-e48cc31db6c4",
+      "del:text": "So we should be good with <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5dede86f-8926-4176-b309-61ee569505ef",
+      "del:text": "How would you confirm that the letter behind <CARD> is <CARD> vowel ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_2b475562-1722-4eeb-ba9d-4746a34fce9f",
+      "del:text": "'Are you sure you don''t need to check them all to confirm ?'"
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb",
+  "del:name": "DeliData Conversation 659aa4d7-553d-4d27-ac22-b1ea5d87e7fb",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb",
+      "del:name": "Conversation 659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Raven"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Bat"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Cat"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Falcon"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_52f123bd-ad5b-464e-88ed-9402e9e7f309",
+      "del:text": "Hello I chose the <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_52f123bd-ad5b-464e-88ed-9402e9e7f309"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_27d815d8-7fcd-472a-a488-8678432d40ed",
+      "del:text": "I selected <CARD> and <CARD> too",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_27d815d8-7fcd-472a-a488-8678432d40ed"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6bdf9b29-0abf-4a4d-b7f7-09b35d844db6",
+      "del:text": "what did you all pick",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6bdf9b29-0abf-4a4d-b7f7-09b35d844db6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ebf662a0-d2e3-4b61-8c90-a007e2859700",
+      "del:text": "i chose <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ebf662a0-d2e3-4b61-8c90-a007e2859700"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_20386acf-dd9b-493b-819c-adbc459ab2ae",
+      "del:text": "6",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_75f53265-130a-4812-ba0f-d05db77c2b78",
+      "del:text": "'i''ll change it'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5e005a3c-5ef5-4291-a161-bc3dee4d0c19",
+      "del:text": "Why <CARD> and <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5e005a3c-5ef5-4291-a161-bc3dee4d0c19"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d4b8225e-42d0-4fc5-b354-2d76d7946f3c",
+      "del:text": "6,A",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c732d5a8-4df6-44c5-8641-e8dc92110b20",
+      "del:text": "W,A",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_92db8a15-0e9c-4b2a-8b2f-766015d46c90",
+      "del:text": "W,A",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7d562531-2e7f-4436-a455-03e9ede5e2bf",
+      "del:text": "<CARD> should show an even number on the other side and <CARD> should show <CARD> vowel",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_7d562531-2e7f-4436-a455-03e9ede5e2bf"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f823a747-df36-4e18-b20f-01e8e3f67bc2",
+      "del:text": "6,A",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c0a25bc7-b9a6-478e-81d9-f4e5e17ab7ff",
+      "del:text": "'The <CARD> doesn''t necessarily have to have <CARD> vowel on the other side'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c0a25bc7-b9a6-478e-81d9-f4e5e17ab7ff"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1dda92ce-8043-47f9-9ca6-c8a9a65cae46",
+      "del:text": "The only one that needs to be flipped 100 % is the <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1dda92ce-8043-47f9-9ca6-c8a9a65cae46"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_aae8931e-a743-45f1-95fc-db497fdc0d2d",
+      "del:text": "It should as there are 5 vowels and would be 5 even single digits",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_aae8931e-a743-45f1-95fc-db497fdc0d2d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8ea49b0d-3c81-442a-8296-9a35a048c3df",
+      "del:text": "'It doesn''t say that every even number has <CARD> vowel on the other side . Only that every vowel has an even number on the other side .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8ea49b0d-3c81-442a-8296-9a35a048c3df"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c95ea397-3ce1-4bf4-a710-c6616ba97acf",
+      "del:text": "'It''s confusing , but not the same thing'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c95ea397-3ce1-4bf4-a710-c6616ba97acf"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_716cf491-655b-437e-9102-02777505d2ff",
+      "del:text": "6,A",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_03a4ed75-4ddb-490d-8d7d-b383d014bf65",
+      "del:text": "'But I''m fine with going with <CARD> and <CARD>'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_03a4ed75-4ddb-490d-8d7d-b383d014bf65"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5aa7b345-1d34-4f35-913d-7ccaea1d1924",
+      "del:text": "True but if there are only 5 vowel and 5 even numbers it would have to be <CARD> 1 to 1 match",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5aa7b345-1d34-4f35-913d-7ccaea1d1924"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_88e0a724-2c76-451d-860b-9b4992a2dd47",
+      "del:text": "I guess . If none of the numbers can repeat",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_88e0a724-2c76-451d-860b-9b4992a2dd47"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a844dbc0-7c10-4857-ba75-5c08c3174132",
+      "del:text": "'Right , they didn''t mention that possibility'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d9c29e12-66ac-4137-99ed-7c71738e80e5",
+      "del:text": "'We''ll just go with <CARD> and <CARD>'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d9c29e12-66ac-4137-99ed-7c71738e80e5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8e2f8f7e-d837-450f-a23a-62b2fac0682b",
+      "del:text": "agreed",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8e2f8f7e-d837-450f-a23a-62b2fac0682b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_376cc91f-9732-4b96-b7fc-c16084993ed4",
+      "del:text": "6,A",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_feb10f79-78db-4eca-b66f-7fab742be3f0",
+      "del:text": "6,A",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_659aa4d7-553d-4d27-ac22-b1ea5d87e7fb"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_52f123bd-ad5b-464e-88ed-9402e9e7f309",
+      "del:text": "Hello I chose the <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_27d815d8-7fcd-472a-a488-8678432d40ed",
+      "del:text": "I selected <CARD> and <CARD> too"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6bdf9b29-0abf-4a4d-b7f7-09b35d844db6",
+      "del:text": "what did you all pick"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ebf662a0-d2e3-4b61-8c90-a007e2859700",
+      "del:text": "i chose <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5e005a3c-5ef5-4291-a161-bc3dee4d0c19",
+      "del:text": "Why <CARD> and <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_7d562531-2e7f-4436-a455-03e9ede5e2bf",
+      "del:text": "<CARD> should show an even number on the other side and <CARD> should show <CARD> vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c0a25bc7-b9a6-478e-81d9-f4e5e17ab7ff",
+      "del:text": "'The <CARD> doesn''t necessarily have to have <CARD> vowel on the other side'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1dda92ce-8043-47f9-9ca6-c8a9a65cae46",
+      "del:text": "The only one that needs to be flipped 100 % is the <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_aae8931e-a743-45f1-95fc-db497fdc0d2d",
+      "del:text": "It should as there are 5 vowels and would be 5 even single digits"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8ea49b0d-3c81-442a-8296-9a35a048c3df",
+      "del:text": "'It doesn''t say that every even number has <CARD> vowel on the other side . Only that every vowel has an even number on the other side .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c95ea397-3ce1-4bf4-a710-c6616ba97acf",
+      "del:text": "'It''s confusing , but not the same thing'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_03a4ed75-4ddb-490d-8d7d-b383d014bf65",
+      "del:text": "'But I''m fine with going with <CARD> and <CARD>'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5aa7b345-1d34-4f35-913d-7ccaea1d1924",
+      "del:text": "True but if there are only 5 vowel and 5 even numbers it would have to be <CARD> 1 to 1 match"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_88e0a724-2c76-451d-860b-9b4992a2dd47",
+      "del:text": "I guess . If none of the numbers can repeat"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d9c29e12-66ac-4137-99ed-7c71738e80e5",
+      "del:text": "'We''ll just go with <CARD> and <CARD>'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8e2f8f7e-d837-450f-a23a-62b2fac0682b",
+      "del:text": "agreed"
+    }
+  ]
+}

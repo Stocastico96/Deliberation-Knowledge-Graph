@@ -1,0 +1,209 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_a35fa104-2a39-4d6b-b2d3-9faf29b556f9",
+  "del:name": "DeliData Conversation a35fa104-2a39-4d6b-b2d3-9faf29b556f9",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_a35fa104-2a39-4d6b-b2d3-9faf29b556f9",
+      "del:name": "Conversation a35fa104-2a39-4d6b-b2d3-9faf29b556f9"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Puffin"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Dolphin"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4c6c46dc-ad9e-4750-b161-d54ff5e3a5dd",
+      "del:text": "what do you think ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_a35fa104-2a39-4d6b-b2d3-9faf29b556f9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4c6c46dc-ad9e-4750-b161-d54ff5e3a5dd"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b9d7ae74-6fbb-4ceb-8436-c3c82f16ef6a",
+      "del:text": "I think you should turn over the cards with vowels and even numbers . what do you think ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_a35fa104-2a39-4d6b-b2d3-9faf29b556f9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b9d7ae74-6fbb-4ceb-8436-c3c82f16ef6a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_cdff7937-c43b-420b-9715-b96fa282a539",
+      "del:text": "I chose <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_a35fa104-2a39-4d6b-b2d3-9faf29b556f9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_cdff7937-c43b-420b-9715-b96fa282a539"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fe86e855-f8d5-4d1e-8a52-b0ac83006175",
+      "del:text": "'I picked <CARD> because it is not <CARD> number and it''s <CARD> constant .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_a35fa104-2a39-4d6b-b2d3-9faf29b556f9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_fe86e855-f8d5-4d1e-8a52-b0ac83006175"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_788877f0-d058-497a-b9ce-47cd17425120",
+      "del:text": "Was this your rule : All cards with vowels on one side have an even number on the other .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_a35fa104-2a39-4d6b-b2d3-9faf29b556f9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_788877f0-d058-497a-b9ce-47cd17425120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_88a214f5-5bdd-4051-882d-645921fafbad",
+      "del:text": "T",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_a35fa104-2a39-4d6b-b2d3-9faf29b556f9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_bd8e8803-731a-4289-87e8-918817caf83a",
+      "del:text": "'I picked the even number and the vowel , because it doesn''t say the consonants CAN''T have an even number .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_a35fa104-2a39-4d6b-b2d3-9faf29b556f9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_bd8e8803-731a-4289-87e8-918817caf83a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fa06661b-070b-4eaa-82af-98a8bc11c078",
+      "del:text": "'or that odd numbers can''t have <CARD> vowel .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_a35fa104-2a39-4d6b-b2d3-9faf29b556f9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_fa06661b-070b-4eaa-82af-98a8bc11c078"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c8defe6f-a203-4e6b-a8e9-8ab5d408b1c1",
+      "del:text": "The rule is not so restrictive that you can only choose 1 card imo .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_a35fa104-2a39-4d6b-b2d3-9faf29b556f9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c8defe6f-a203-4e6b-a8e9-8ab5d408b1c1"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a2adb84d-6449-4775-b082-9ba9e8ef091b",
+      "del:text": "A,4",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_a35fa104-2a39-4d6b-b2d3-9faf29b556f9"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4c6c46dc-ad9e-4750-b161-d54ff5e3a5dd",
+      "del:text": "what do you think ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b9d7ae74-6fbb-4ceb-8436-c3c82f16ef6a",
+      "del:text": "I think you should turn over the cards with vowels and even numbers . what do you think ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_cdff7937-c43b-420b-9715-b96fa282a539",
+      "del:text": "I chose <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_fe86e855-f8d5-4d1e-8a52-b0ac83006175",
+      "del:text": "'I picked <CARD> because it is not <CARD> number and it''s <CARD> constant .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_788877f0-d058-497a-b9ce-47cd17425120",
+      "del:text": "Was this your rule : All cards with vowels on one side have an even number on the other ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_bd8e8803-731a-4289-87e8-918817caf83a",
+      "del:text": "'I picked the even number and the vowel , because it doesn''t say the consonants CAN''T have an even number .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_fa06661b-070b-4eaa-82af-98a8bc11c078",
+      "del:text": "'or that odd numbers can''t have <CARD> vowel .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c8defe6f-a203-4e6b-a8e9-8ab5d408b1c1",
+      "del:text": "The rule is not so restrictive that you can only choose 1 card imo ."
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7",
+  "del:name": "DeliData Conversation cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7",
+      "del:name": "Conversation cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Emu"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Alpaca"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b91e4b18-c7ed-4bc9-a2ac-c25849415e9d",
+      "del:text": "Hello , I think we need to turn each card in order to make sure of what is on the other side .",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b91e4b18-c7ed-4bc9-a2ac-c25849415e9d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ebc2779e-68ff-44ef-9fd9-381b24b371b2",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8bade930-7d9b-490f-b4a9-4465b2a8e022",
+      "del:text": "I think if we turn <CARD> it will show odd number",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8bade930-7d9b-490f-b4a9-4465b2a8e022"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d0b1a928-9822-4a88-89ed-774f514899c0",
+      "del:text": "by rules it says we can select only one card tho",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d0b1a928-9822-4a88-89ed-774f514899c0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9b87f83c-0e24-41cf-9f82-d8b65f826155",
+      "del:text": "Actually , I think we just need to turn the first card <CARD> to see if there is an even number on the other side .",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_9b87f83c-0e24-41cf-9f82-d8b65f826155"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a412eb2c-041f-4044-805f-b15a9b5faed2",
+      "del:text": "'The rule doesn''t care if consonants have a mix of even and odd numbers .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_a412eb2c-041f-4044-805f-b15a9b5faed2"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_70c5a1d5-c32f-4916-9107-03551f19d7c5",
+      "del:text": "'Also , it doesn''t matter to the rule what is on the other side of the <CARD> and <CARD> .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_70c5a1d5-c32f-4916-9107-03551f19d7c5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d1a4098f-e563-4295-9d8f-d25408020aa1",
+      "del:text": "I see your point . we can throw away numbers for sure",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d1a4098f-e563-4295-9d8f-d25408020aa1"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ef91bc0c-3398-4619-9d83-f3a01b4e294a",
+      "del:text": "then probably you are right need to open <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ef91bc0c-3398-4619-9d83-f3a01b4e294a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2ae379d2-3296-4e56-ab57-72a355b8844a",
+      "del:text": "U,K",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1da8f2a6-4da4-4e80-9c24-317fcd37062f",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f1279898-8e96-4572-aeb3-3911e30b44ee",
+      "del:text": "Although , what if we turned the <CARD> and it was a vowel ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f1279898-8e96-4572-aeb3-3911e30b44ee"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4655700b-70ab-438b-81dd-fdafb1cb7e2e",
+      "del:text": "5,U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b14c0162-8594-494c-9ab8-d68ffc5d6c6d",
+      "del:text": "but then if it will show consonant we will be only 50 % sure whether if we open <CARD> we are 100 % sure ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b14c0162-8594-494c-9ab8-d68ffc5d6c6d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2c2a4356-80f2-4fab-85a6-618b99bfbad1",
+      "del:text": "I don",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3e41002e-6ffe-4865-83e2-66f915cdd3e9",
+      "del:text": "'I don''t see where it says we can only pick one card'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d76c584c-b8ff-45aa-8258-c44de22a4a7e",
+      "del:text": "NB : Select ONLY the card ( s ) required to verify the rule . Most people get this task wrong .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_95135658-a428-48fb-8d8d-c27eb2dc737f",
+      "del:text": "5,U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ede6c442-5c28-44b2-a97c-8d16d92a74cd",
+      "del:text": "ah sorry",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4a7cf7c8-8a7e-42d2-ae8d-04b6d614c10e",
+      "del:text": "So I think we need to turn over the <CARD> and the <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4a7cf7c8-8a7e-42d2-ae8d-04b6d614c10e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_312ed5d5-4ad9-45d7-b9bc-d047c975b439",
+      "del:text": "why <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_312ed5d5-4ad9-45d7-b9bc-d047c975b439"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9992fddd-4d89-4ce4-8768-0c93723c8aa6",
+      "del:text": "To make sure that it is not a vowel",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_9992fddd-4d89-4ce4-8768-0c93723c8aa6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_50043001-4876-44a0-b270-4c2717c37062",
+      "del:text": "5,U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7959d0bc-68e9-4c38-891b-291dc61c73a4",
+      "del:text": "'but then again it doesn''t prove that it oculdn''t be mixed . I am confused'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_7959d0bc-68e9-4c38-891b-291dc61c73a4"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7da52a1c-53a8-4019-89c3-bc9bd6c5b07a",
+      "del:text": "maybe consonants could be mixed you know what I mean ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_7da52a1c-53a8-4019-89c3-bc9bd6c5b07a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_afc87a70-1b03-42a6-a2f1-748e42be01a4",
+      "del:text": "we could open U54 to be sure if it possible",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_afc87a70-1b03-42a6-a2f1-748e42be01a4"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fd5488cf-4a64-46a3-a7ea-9c7c253f6d43",
+      "del:text": "It might even be a tricky question where need to open all <CARD> cards",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_fd5488cf-4a64-46a3-a7ea-9c7c253f6d43"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ddf70b52-2130-4788-a4e4-99526a1d1b52",
+      "del:text": "5,U,4",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a6831cd0-b9c3-4925-a024-3ffe56e19fb4",
+      "del:text": "5,U,4",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_cbc5cff3-68c4-49b0-b4b4-54e10af9f8e7"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b91e4b18-c7ed-4bc9-a2ac-c25849415e9d",
+      "del:text": "Hello , I think we need to turn each card in order to make sure of what is on the other side ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8bade930-7d9b-490f-b4a9-4465b2a8e022",
+      "del:text": "I think if we turn <CARD> it will show odd number"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d0b1a928-9822-4a88-89ed-774f514899c0",
+      "del:text": "by rules it says we can select only one card tho"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_9b87f83c-0e24-41cf-9f82-d8b65f826155",
+      "del:text": "Actually , I think we just need to turn the first card <CARD> to see if there is an even number on the other side ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_a412eb2c-041f-4044-805f-b15a9b5faed2",
+      "del:text": "'The rule doesn''t care if consonants have a mix of even and odd numbers .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_70c5a1d5-c32f-4916-9107-03551f19d7c5",
+      "del:text": "'Also , it doesn''t matter to the rule what is on the other side of the <CARD> and <CARD> .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d1a4098f-e563-4295-9d8f-d25408020aa1",
+      "del:text": "I see your point . we can throw away numbers for sure"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ef91bc0c-3398-4619-9d83-f3a01b4e294a",
+      "del:text": "then probably you are right need to open <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f1279898-8e96-4572-aeb3-3911e30b44ee",
+      "del:text": "Although , what if we turned the <CARD> and it was a vowel ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b14c0162-8594-494c-9ab8-d68ffc5d6c6d",
+      "del:text": "but then if it will show consonant we will be only 50 % sure whether if we open <CARD> we are 100 % sure ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4a7cf7c8-8a7e-42d2-ae8d-04b6d614c10e",
+      "del:text": "So I think we need to turn over the <CARD> and the <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_312ed5d5-4ad9-45d7-b9bc-d047c975b439",
+      "del:text": "why <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_9992fddd-4d89-4ce4-8768-0c93723c8aa6",
+      "del:text": "To make sure that it is not a vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_7959d0bc-68e9-4c38-891b-291dc61c73a4",
+      "del:text": "'but then again it doesn''t prove that it oculdn''t be mixed . I am confused'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_7da52a1c-53a8-4019-89c3-bc9bd6c5b07a",
+      "del:text": "maybe consonants could be mixed you know what I mean ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_afc87a70-1b03-42a6-a2f1-748e42be01a4",
+      "del:text": "we could open U54 to be sure if it possible"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_fd5488cf-4a64-46a3-a7ea-9c7c253f6d43",
+      "del:text": "It might even be a tricky question where need to open all <CARD> cards"
+    }
+  ]
+}

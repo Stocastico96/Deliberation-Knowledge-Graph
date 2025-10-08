@@ -1,0 +1,610 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_9f25f000-082e-4644-af25-0e1af4e6a120",
+  "del:name": "DeliData Conversation 9f25f000-082e-4644-af25-0e1af4e6a120",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120",
+      "del:name": "Conversation 9f25f000-082e-4644-af25-0e1af4e6a120"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Lion"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Zebra"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Hedgehog"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_15993d0c-9c81-4a7b-ad74-dd8660447be0",
+      "del:text": "Hello",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_04af45b3-330d-44b8-af33-6cbdd0343e32",
+      "del:text": "Hi",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_19b57333-4f16-436a-aa26-c9e45f717149",
+      "del:text": "hi",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_86ee64aa-1cdc-4f37-b909-cca624ca60a4",
+      "del:text": "'I feel like I''ve seen this problem before but I can''t recall what the actual solution is .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e7a37e69-0500-49a3-8ec9-e54316fe5fa7",
+      "del:text": "me neither",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_59ff103f-6a4e-4043-a1c0-ebc0c7a920f8",
+      "del:text": "I went with <CARD> and <CARD> .",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_59ff103f-6a4e-4043-a1c0-ebc0c7a920f8"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_680d0088-f7a6-4a09-b158-b27e843b2bb9",
+      "del:text": "I think its only two cards though , doe that sound familiar ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_680d0088-f7a6-4a09-b158-b27e843b2bb9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_090d8355-f38b-4308-a6dd-9c2d20ff62b4",
+      "del:text": "yes thats what i think it is too",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_090d8355-f38b-4308-a6dd-9c2d20ff62b4"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e7c8370b-6cff-4861-b959-f49b88de3c70",
+      "del:text": "U,8",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ef1bf483-a6b5-4e14-a7af-181239261d7d",
+      "del:text": "Maybe it can just be <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ef1bf483-a6b5-4e14-a7af-181239261d7d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2e416976-ad97-49ba-88db-bed434a03a40",
+      "del:text": "I went with <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_2e416976-ad97-49ba-88db-bed434a03a40"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b1025234-b13e-47d5-b461-38324566e6e0",
+      "del:text": "'no i don''t think it''s <CARD>'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b1025234-b13e-47d5-b461-38324566e6e0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_32303c0f-75ea-4987-adec-daa4535937b3",
+      "del:text": "Because if you flip <CARD> and see a vowel then you know .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_32303c0f-75ea-4987-adec-daa4535937b3"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c310bce7-707d-4a0a-8e46-4930cf2a982e",
+      "del:text": "'even # '' s'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c310bce7-707d-4a0a-8e46-4930cf2a982e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1d918163-a507-4eca-9ead-e45b00c94254",
+      "del:text": "No I know that",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1d918163-a507-4eca-9ead-e45b00c94254"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_89439922-7a7c-430d-971c-e7a7452be4d0",
+      "del:text": "<CARD> and <CARD> is whati think it is",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_89439922-7a7c-430d-971c-e7a7452be4d0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1ccacbd9-dd1a-40aa-9f43-0cc8c3107040",
+      "del:text": "'If its an even number it doesn''t mean it has to be a vowel on the other side though .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1ccacbd9-dd1a-40aa-9f43-0cc8c3107040"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_53709238-ea7d-4c41-94aa-a37fd5c2f593",
+      "del:text": "I think",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2c5ec30e-d670-4e02-a45f-7275cbfdbb2a",
+      "del:text": "im not really sure",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b91cf793-3dba-480e-bad9-239648af3a90",
+      "del:text": "i still think <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b91cf793-3dba-480e-bad9-239648af3a90"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8840e75c-b987-4fcb-b861-82fc3c408a5f",
+      "del:text": "'I don''t know but I think you need to test both scenarios'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8840e75c-b987-4fcb-b861-82fc3c408a5f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2810689f-be1a-49c2-a260-0bcbbc9c0f74",
+      "del:text": "5,U",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_73445e4d-fba8-4811-bb11-3d9a9c89b9da",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_810f6ce3-4e22-4917-a607-203f905e83f7",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_34d34ac8-b093-4b20-bc39-723950c338f6",
+      "del:text": "'Though I can see where you''re coming from since the rules ONLY mention vowels and even numbers .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_34d34ac8-b093-4b20-bc39-723950c338f6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8bbc3f18-55a9-4ec7-90f1-74a444f0840d",
+      "del:text": "U,K",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2320056f-20f5-4304-af30-64f442bf786c",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_667d8bc5-1b7a-4fba-9393-e0084d29a1c1",
+      "del:text": "U,8",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ca6c61d1-3859-4f70-81b7-2363e8aade58",
+      "del:text": "i dont know what do you think",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ca6c61d1-3859-4f70-81b7-2363e8aade58"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1b3b56a5-9d73-4990-ad52-be2e227b3f78",
+      "del:text": "5,U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_84007ec8-c9d3-4436-adce-12daacee7ba2",
+      "del:text": "<CARD> and <CARD> make sense",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_84007ec8-c9d3-4436-adce-12daacee7ba2"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d36a71a4-48a7-4bae-addb-ba28cfe8ebaf",
+      "del:text": "because if <CARD> shows a vowel it would make the rule invalid",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d36a71a4-48a7-4bae-addb-ba28cfe8ebaf"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_bfce3715-f3d0-43b9-8276-0a2acccb750c",
+      "del:text": "'Honestly I have no idea but since both of you think <CARD> and <CARD> then I''m happy to go with that as well'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_bfce3715-f3d0-43b9-8276-0a2acccb750c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_570dbe56-66d6-4f06-8bf0-9e40e805c85b",
+      "del:text": "'I honestly have no clue and since its expected most people get it wrong I won''t be upset if I do as well'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9c4c69a7-b1e2-48e4-a13e-7513868e489d",
+      "del:text": "lets do <CARD> and <CARD> then",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_9c4c69a7-b1e2-48e4-a13e-7513868e489d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_23735afd-dec7-4d32-acca-69603936be3b",
+      "del:text": "U,8",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7966cbfb-35e4-4b25-a1e3-8bf12ef6fbef",
+      "del:text": "U,8",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f232d1b1-d6ec-4c5b-814d-dffcba571aef",
+      "del:text": "5,U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9f25f000-082e-4644-af25-0e1af4e6a120"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_59ff103f-6a4e-4043-a1c0-ebc0c7a920f8",
+      "del:text": "I went with <CARD> and <CARD> ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_680d0088-f7a6-4a09-b158-b27e843b2bb9",
+      "del:text": "I think its only two cards though , doe that sound familiar ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_090d8355-f38b-4308-a6dd-9c2d20ff62b4",
+      "del:text": "yes thats what i think it is too"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ef1bf483-a6b5-4e14-a7af-181239261d7d",
+      "del:text": "Maybe it can just be <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_2e416976-ad97-49ba-88db-bed434a03a40",
+      "del:text": "I went with <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b1025234-b13e-47d5-b461-38324566e6e0",
+      "del:text": "'no i don''t think it''s <CARD>'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_32303c0f-75ea-4987-adec-daa4535937b3",
+      "del:text": "Because if you flip <CARD> and see a vowel then you know ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c310bce7-707d-4a0a-8e46-4930cf2a982e",
+      "del:text": "'even # '' s'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1d918163-a507-4eca-9ead-e45b00c94254",
+      "del:text": "No I know that"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_89439922-7a7c-430d-971c-e7a7452be4d0",
+      "del:text": "<CARD> and <CARD> is whati think it is"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1ccacbd9-dd1a-40aa-9f43-0cc8c3107040",
+      "del:text": "'If its an even number it doesn''t mean it has to be a vowel on the other side though .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b91cf793-3dba-480e-bad9-239648af3a90",
+      "del:text": "i still think <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8840e75c-b987-4fcb-b861-82fc3c408a5f",
+      "del:text": "'I don''t know but I think you need to test both scenarios'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_34d34ac8-b093-4b20-bc39-723950c338f6",
+      "del:text": "'Though I can see where you''re coming from since the rules ONLY mention vowels and even numbers .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ca6c61d1-3859-4f70-81b7-2363e8aade58",
+      "del:text": "i dont know what do you think"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_84007ec8-c9d3-4436-adce-12daacee7ba2",
+      "del:text": "<CARD> and <CARD> make sense"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d36a71a4-48a7-4bae-addb-ba28cfe8ebaf",
+      "del:text": "because if <CARD> shows a vowel it would make the rule invalid"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_bfce3715-f3d0-43b9-8276-0a2acccb750c",
+      "del:text": "'Honestly I have no idea but since both of you think <CARD> and <CARD> then I''m happy to go with that as well'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_9c4c69a7-b1e2-48e4-a13e-7513868e489d",
+      "del:text": "lets do <CARD> and <CARD> then"
+    }
+  ]
+}

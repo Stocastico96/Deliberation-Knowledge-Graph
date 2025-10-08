@@ -1,0 +1,456 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_72f131b7-f61c-43c3-935e-5f4040b0b3a0",
+  "del:name": "DeliData Conversation 72f131b7-f61c-43c3-935e-5f4040b0b3a0",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0",
+      "del:name": "Conversation 72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Emu"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Cat"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Chipmunk"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Duck"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d3b6dced-3174-4e32-9621-882105cd2ad1",
+      "del:text": "Hello ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4cda9800-9627-4566-817d-dbb602df45d4",
+      "del:text": "A",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_51db30f9-0d67-444d-b8ce-0a34551f51b8",
+      "del:text": "i think <CARD> is the only card to turn over , since that is the only one necessary totest the solution",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_51db30f9-0d67-444d-b8ce-0a34551f51b8"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0d36ec60-db06-4399-9d6d-fdb50385b0f5",
+      "del:text": "I pick <CARD> and <CARD> , to test the rule . Since <CARD> and <CARD> should not work for the rule .",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0d36ec60-db06-4399-9d6d-fdb50385b0f5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a800f55e-fc56-45b2-b0e0-1e6385d687d4",
+      "del:text": "I also picked <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_a800f55e-fc56-45b2-b0e0-1e6385d687d4"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3a5d0ee4-c081-4cdf-b778-1b985187998d",
+      "del:text": "<CARD> is not <CARD> vowel",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3a5d0ee4-c081-4cdf-b778-1b985187998d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b32c1e30-832b-48f9-bd5a-1a8e4b0f6cb9",
+      "del:text": "What are others thoughts ?",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b32c1e30-832b-48f9-bd5a-1a8e4b0f6cb9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_671191f6-ee3b-4565-9a1c-ed00a468a37f",
+      "del:text": "I meant <CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_671191f6-ee3b-4565-9a1c-ed00a468a37f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a63490fc-12a1-4dcb-8d87-be40d16b6b6e",
+      "del:text": "Oh ok",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2deff363-0211-47a9-ac3b-717b45185e95",
+      "del:text": "'<CARD> wouldn''t work , since that could also be <CARD> coasnat on the other side'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_2deff363-0211-47a9-ac3b-717b45185e95"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ad785ac2-0558-4303-9978-81d8bdee9bb7",
+      "del:text": "one does not preclude the other",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ad785ac2-0558-4303-9978-81d8bdee9bb7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_979b6944-70ea-4057-92c1-b75596cc46f0",
+      "del:text": "Oh , yeah . Reading it again that makes sense .",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_979b6944-70ea-4057-92c1-b75596cc46f0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d26a91cc-a16c-4887-8fd3-673495ed5248",
+      "del:text": "Oh you have <CARD> good point",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d26a91cc-a16c-4887-8fd3-673495ed5248"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_26e84b23-63da-49a6-bfba-f5637d4cd751",
+      "del:text": "it was just if <CARD> vowel was on one side , it had to be that",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_26e84b23-63da-49a6-bfba-f5637d4cd751"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a4924afe-853b-4b5f-8555-ffe8fc029e53",
+      "del:text": "A",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_729cee56-69ac-41c1-a529-ec50816eff2c",
+      "del:text": "I see that now .",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_729cee56-69ac-41c1-a529-ec50816eff2c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_44aceab8-7acb-4b9d-a08a-b40b63ffde0b",
+      "del:text": "I would also agree with it being <CARD>",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_44aceab8-7acb-4b9d-a08a-b40b63ffde0b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f3cd77fb-4e70-4502-b822-e96ba2372d2f",
+      "del:text": "Me too",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f3cd77fb-4e70-4502-b822-e96ba2372d2f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9e3ee9eb-30dc-4010-8b3e-73039b452c55",
+      "del:text": "A",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8642a8d3-5503-4d2f-84c1-f1182dd317b6",
+      "del:text": "'Can you poke any holes in it ? I think that''s the way toread it'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8642a8d3-5503-4d2f-84c1-f1182dd317b6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7737ce3f-144b-4d89-8988-a7be2c7215f8",
+      "del:text": "no I think you are right . it never said that even numbers will only have <CARD> vowel on one side",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_7737ce3f-144b-4d89-8988-a7be2c7215f8"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9598be61-332f-4ff6-8adb-f10981fac1ff",
+      "del:text": "It being only <CARD> seems straight forward to me .",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_9598be61-332f-4ff6-8adb-f10981fac1ff"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3cc400aa-f2d5-45ec-b183-5e9fe59fa428",
+      "del:text": "A",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7fb28ef1-c0d8-4aad-af02-127f949d47d1",
+      "del:text": "A",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0fc68b1d-f9c8-4914-821b-654481f27648",
+      "del:text": "V",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_72f131b7-f61c-43c3-935e-5f4040b0b3a0"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_51db30f9-0d67-444d-b8ce-0a34551f51b8",
+      "del:text": "i think <CARD> is the only card to turn over , since that is the only one necessary totest the solution"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0d36ec60-db06-4399-9d6d-fdb50385b0f5",
+      "del:text": "I pick <CARD> and <CARD> , to test the rule . Since <CARD> and <CARD> should not work for the rule ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_a800f55e-fc56-45b2-b0e0-1e6385d687d4",
+      "del:text": "I also picked <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3a5d0ee4-c081-4cdf-b778-1b985187998d",
+      "del:text": "<CARD> is not <CARD> vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b32c1e30-832b-48f9-bd5a-1a8e4b0f6cb9",
+      "del:text": "What are others thoughts ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_671191f6-ee3b-4565-9a1c-ed00a468a37f",
+      "del:text": "I meant <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_2deff363-0211-47a9-ac3b-717b45185e95",
+      "del:text": "'<CARD> wouldn''t work , since that could also be <CARD> coasnat on the other side'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ad785ac2-0558-4303-9978-81d8bdee9bb7",
+      "del:text": "one does not preclude the other"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_979b6944-70ea-4057-92c1-b75596cc46f0",
+      "del:text": "Oh , yeah . Reading it again that makes sense ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d26a91cc-a16c-4887-8fd3-673495ed5248",
+      "del:text": "Oh you have <CARD> good point"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_26e84b23-63da-49a6-bfba-f5637d4cd751",
+      "del:text": "it was just if <CARD> vowel was on one side , it had to be that"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_729cee56-69ac-41c1-a529-ec50816eff2c",
+      "del:text": "I see that now ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_44aceab8-7acb-4b9d-a08a-b40b63ffde0b",
+      "del:text": "I would also agree with it being <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f3cd77fb-4e70-4502-b822-e96ba2372d2f",
+      "del:text": "Me too"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8642a8d3-5503-4d2f-84c1-f1182dd317b6",
+      "del:text": "'Can you poke any holes in it ? I think that''s the way toread it'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_7737ce3f-144b-4d89-8988-a7be2c7215f8",
+      "del:text": "no I think you are right . it never said that even numbers will only have <CARD> vowel on one side"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_9598be61-332f-4ff6-8adb-f10981fac1ff",
+      "del:text": "It being only <CARD> seems straight forward to me ."
+    }
+  ]
+}

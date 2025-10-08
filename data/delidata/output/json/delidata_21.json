@@ -1,0 +1,283 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_561af921-b29b-486e-ad76-aabbaf4c9a06",
+  "del:name": "DeliData Conversation 561af921-b29b-486e-ad76-aabbaf4c9a06",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06",
+      "del:name": "Conversation 561af921-b29b-486e-ad76-aabbaf4c9a06"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Butterfly"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Leopard"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0a9c5925-5b49-4723-990a-fdf2ca62c998",
+      "del:text": "So I think for sure you need to flip the card with <CARD> on it right ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0a9c5925-5b49-4723-990a-fdf2ca62c998"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_17360ba4-43b8-4c68-97f9-f07dac89858e",
+      "del:text": "8,A,9",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9c75fae4-11c6-4e0c-bdcc-6e36090fed38",
+      "del:text": "9,A",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b88e3681-755e-4321-a328-1ebe422cf905",
+      "del:text": "select the cards with even number and vowels . then you will be able to check whether the rule is true or false",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b88e3681-755e-4321-a328-1ebe422cf905"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1ccb30f2-b393-4db5-9922-02f538f0f6eb",
+      "del:text": "'We''re trying to just figure out if the rule is followed . If we flip <CARD> it could have <CARD> consonant on it and the rule is still valid so I don''t think <CARD> is valid .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1ccb30f2-b393-4db5-9922-02f538f0f6eb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f38931db-8edf-4f1f-8d8b-95f2b5aa1e25",
+      "del:text": "'I think it''s just <CARD> and <CARD> .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f38931db-8edf-4f1f-8d8b-95f2b5aa1e25"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_af2bd77f-c08f-4748-a0da-922e1d946444",
+      "del:text": "why <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_af2bd77f-c08f-4748-a0da-922e1d946444"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2d846dbc-340f-4435-9bad-b280574c4e9e",
+      "del:text": "'If we turn <CARD> over and it shows <CARD> vowel then the rule isn''t valid . But if we flip it and it shows <CARD> consonant than the rule is valid .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_2d846dbc-340f-4435-9bad-b280574c4e9e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ffbfe638-d3ca-466d-b7e3-c0e97e045e15",
+      "del:text": "'I''ve done tasks like these during my LSAT prep .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_cda9d9c7-1032-45fc-b5c4-2e0f634d8950",
+      "del:text": "maybe you are right .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_cda9d9c7-1032-45fc-b5c4-2e0f634d8950"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5c62babb-c34a-4ea2-810a-4d6a99631166",
+      "del:text": "'<CARD> and <CARD> are irrelevant since we''re just trying to solve for the rule .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5c62babb-c34a-4ea2-810a-4d6a99631166"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_86d30408-7953-424e-9915-fcd02d9f47f9",
+      "del:text": "9,A",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a56d11bd-4594-4f73-932d-9b6f7ae390ba",
+      "del:text": "8,A,9",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f3a170aa-ee4c-41d8-a1f9-adaba7bb545d",
+      "del:text": "9,A",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ca780300-9f48-4e01-8c15-ad91fbdbd7a1",
+      "del:text": "ok",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ca780300-9f48-4e01-8c15-ad91fbdbd7a1"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b6cb9f2b-6af0-432a-8fb0-d16ce3874f2c",
+      "del:text": "9,A",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_561af921-b29b-486e-ad76-aabbaf4c9a06"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0a9c5925-5b49-4723-990a-fdf2ca62c998",
+      "del:text": "So I think for sure you need to flip the card with <CARD> on it right ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b88e3681-755e-4321-a328-1ebe422cf905",
+      "del:text": "select the cards with even number and vowels . then you will be able to check whether the rule is true or false"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1ccb30f2-b393-4db5-9922-02f538f0f6eb",
+      "del:text": "'We''re trying to just figure out if the rule is followed . If we flip <CARD> it could have <CARD> consonant on it and the rule is still valid so I don''t think <CARD> is valid .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f38931db-8edf-4f1f-8d8b-95f2b5aa1e25",
+      "del:text": "'I think it''s just <CARD> and <CARD> .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_af2bd77f-c08f-4748-a0da-922e1d946444",
+      "del:text": "why <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_2d846dbc-340f-4435-9bad-b280574c4e9e",
+      "del:text": "'If we turn <CARD> over and it shows <CARD> vowel then the rule isn''t valid . But if we flip it and it shows <CARD> consonant than the rule is valid .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_cda9d9c7-1032-45fc-b5c4-2e0f634d8950",
+      "del:text": "maybe you are right ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5c62babb-c34a-4ea2-810a-4d6a99631166",
+      "del:text": "'<CARD> and <CARD> are irrelevant since we''re just trying to solve for the rule .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ca780300-9f48-4e01-8c15-ad91fbdbd7a1",
+      "del:text": "ok"
+    }
+  ]
+}

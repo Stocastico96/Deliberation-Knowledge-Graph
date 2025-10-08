@@ -1,0 +1,438 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_ec8896c6-56fb-4187-a932-92ac6bbd6f49",
+  "del:name": "DeliData Conversation ec8896c6-56fb-4187-a932-92ac6bbd6f49",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49",
+      "del:name": "Conversation ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Leopard"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Koala"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Puffin"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_61e010a7-4fd9-4586-9f22-12b0fb7137c7",
+      "del:text": "Hey guys",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e56fc18f-6249-4d19-8af7-68141411a39f",
+      "del:text": "HI",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d9b1cd8b-e429-48be-9f57-acbd8d0d23c9",
+      "del:text": "i think we need to select the cart <CARD> and the cart with number <CARD> to see if it it like it has to be",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d9b1cd8b-e429-48be-9f57-acbd8d0d23c9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1be18fc3-e890-4373-b721-6c8efd51ea6e",
+      "del:text": "I made the same picks !",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1be18fc3-e890-4373-b721-6c8efd51ea6e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_da3c1eb2-d9eb-4870-8084-5a9c28e9e5a4",
+      "del:text": "<CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_da3c1eb2-d9eb-4870-8084-5a9c28e9e5a4"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7b925b24-dae5-4388-a3fd-ef9d85465609",
+      "del:text": "U,9",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_00f2d204-2d5e-4d8d-bafa-2331a6412cd0",
+      "del:text": "how about <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_00f2d204-2d5e-4d8d-bafa-2331a6412cd0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c2345094-38b5-419c-b58f-750483c4f529",
+      "del:text": "U,4",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1b9946f6-6b84-442b-8d04-bd4fedefef48",
+      "del:text": "if the <CARD> has a number and if the <CARD> has a letter it would be my final solution",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1b9946f6-6b84-442b-8d04-bd4fedefef48"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4c254cee-4e69-4f3b-a562-a8dad26a3ab2",
+      "del:text": "U,9",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ee44e549-28d1-48e1-9946-b1aa866d4487",
+      "del:text": "its the same thing , but we have to select in this trial 1 letter and 1 number",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ee44e549-28d1-48e1-9946-b1aa866d4487"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_dcebe216-0472-4d46-ab65-ac43056a5b65",
+      "del:text": "'<CARD> isn''t necessary'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_dcebe216-0472-4d46-ab65-ac43056a5b65"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0a95293d-0b2b-4d6d-a882-045647188e2a",
+      "del:text": "ok thats nice <CARD> and <CARD> it is then",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0a95293d-0b2b-4d6d-a882-045647188e2a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_70048664-537b-4d75-b6c6-6185a189fb4d",
+      "del:text": "Are you ready to submit the HIT ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_70048664-537b-4d75-b6c6-6185a189fb4d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4391a882-123c-4de5-a7f3-180765da4168",
+      "del:text": "Or do we need to keep talking",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ce911bb5-f676-452e-971e-1ea723baa4fe",
+      "del:text": "yes , thats what i was about saying",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_74c8f7cf-e861-41d5-b70c-8d808d1200ab",
+      "del:text": "'So it''s not <CARD> since that''s a consonant'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_74c8f7cf-e861-41d5-b70c-8d808d1200ab"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e1ad46ba-411d-4e5e-8b78-1c4cbf74516e",
+      "del:text": "if we select the cart with <CARD> it must be a letter with vowels ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e1ad46ba-411d-4e5e-8b78-1c4cbf74516e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c009d074-d3e4-4e9c-aa86-64d6df440d98",
+      "del:text": "'And it''s not <CARD> because <CARD> could have a consonant and the rule given would be true'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c009d074-d3e4-4e9c-aa86-64d6df440d98"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7c8e48c5-89d4-4b4b-b3ed-642a20f16ee2",
+      "del:text": "U,9",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4dab3513-7a49-4359-974f-98707d529f7a",
+      "del:text": "should we click final decision ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4dab3513-7a49-4359-974f-98707d529f7a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_497839b4-4aa2-4fe3-8582-1c839066ebce",
+      "del:text": "U,9",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_22bd2c1d-0641-4bc3-9cb1-4edb8520669d",
+      "del:text": "'Yeah let''s go for it'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_22bd2c1d-0641-4bc3-9cb1-4edb8520669d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_df42e80e-af69-4406-b5b3-cf64a063c0ab",
+      "del:text": "Good working with you",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_dd08e2d2-93dc-4081-8bdb-db83814aea49",
+      "del:text": "U,9",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a1406094-1dcc-49af-9f03-150d5fe4d434",
+      "del:text": "U,9",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_ec8896c6-56fb-4187-a932-92ac6bbd6f49"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d9b1cd8b-e429-48be-9f57-acbd8d0d23c9",
+      "del:text": "i think we need to select the cart <CARD> and the cart with number <CARD> to see if it it like it has to be"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1be18fc3-e890-4373-b721-6c8efd51ea6e",
+      "del:text": "I made the same picks !"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_da3c1eb2-d9eb-4870-8084-5a9c28e9e5a4",
+      "del:text": "<CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_00f2d204-2d5e-4d8d-bafa-2331a6412cd0",
+      "del:text": "how about <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1b9946f6-6b84-442b-8d04-bd4fedefef48",
+      "del:text": "if the <CARD> has a number and if the <CARD> has a letter it would be my final solution"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ee44e549-28d1-48e1-9946-b1aa866d4487",
+      "del:text": "its the same thing , but we have to select in this trial 1 letter and 1 number"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_dcebe216-0472-4d46-ab65-ac43056a5b65",
+      "del:text": "'<CARD> isn''t necessary'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0a95293d-0b2b-4d6d-a882-045647188e2a",
+      "del:text": "ok thats nice <CARD> and <CARD> it is then"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_70048664-537b-4d75-b6c6-6185a189fb4d",
+      "del:text": "Are you ready to submit the HIT ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_74c8f7cf-e861-41d5-b70c-8d808d1200ab",
+      "del:text": "'So it''s not <CARD> since that''s a consonant'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e1ad46ba-411d-4e5e-8b78-1c4cbf74516e",
+      "del:text": "if we select the cart with <CARD> it must be a letter with vowels ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c009d074-d3e4-4e9c-aa86-64d6df440d98",
+      "del:text": "'And it''s not <CARD> because <CARD> could have a consonant and the rule given would be true'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4dab3513-7a49-4359-974f-98707d529f7a",
+      "del:text": "should we click final decision ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_22bd2c1d-0641-4bc3-9cb1-4edb8520669d",
+      "del:text": "'Yeah let''s go for it'"
+    }
+  ]
+}

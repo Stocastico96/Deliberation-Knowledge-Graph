@@ -1,0 +1,445 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_4324dd3f-6ddf-4919-ad12-90d9dbe089be",
+  "del:name": "DeliData Conversation 4324dd3f-6ddf-4919-ad12-90d9dbe089be",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be",
+      "del:name": "Conversation 4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Kiwi"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Bat"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Ox"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Hamster"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_23548aad-abf9-4b6e-a448-d5bc9ac6b9f9",
+      "del:text": "'Hi ! I believe the solution is to check the '' <CARD> '' and the '' <CARD> '' cards .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_23548aad-abf9-4b6e-a448-d5bc9ac6b9f9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3655a3aa-58c0-4295-b0d6-8d2d9897c671",
+      "del:text": "Correct option",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3655a3aa-58c0-4295-b0d6-8d2d9897c671"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f9dac8b5-24ee-42fb-8b93-e1b41ce7fc0e",
+      "del:text": "Why not jut the <CARD> card ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f9dac8b5-24ee-42fb-8b93-e1b41ce7fc0e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_70509d3f-6d7a-4ee6-8561-ac64548d681e",
+      "del:text": "'We must confirm the '' <CARD> '' isn''t opposite of <CARD> vowel and that the '' <CARD> '' has an even number on its opposite side .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_70509d3f-6d7a-4ee6-8561-ac64548d681e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c08249ce-56ff-446e-b3d2-7330017f3dd5",
+      "del:text": "makes sense",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c08249ce-56ff-446e-b3d2-7330017f3dd5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_61161a8a-74bf-4dc7-b2cc-461513039a71",
+      "del:text": "Do we all agree ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_61161a8a-74bf-4dc7-b2cc-461513039a71"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ea9a0251-5f38-4eda-9bc2-e67e0f322658",
+      "del:text": "I agree , obviously .",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ea9a0251-5f38-4eda-9bc2-e67e0f322658"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_23d35bd4-a3e1-4852-ac3c-dbc61327b6cb",
+      "del:text": "Anyone has <CARD> different point of view ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_23d35bd4-a3e1-4852-ac3c-dbc61327b6cb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_480ebe85-2de3-42bc-9352-a180b357da2d",
+      "del:text": "I agree , obviously .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_480ebe85-2de3-42bc-9352-a180b357da2d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_01ca3733-bd07-4b0d-a896-f95b7534654f",
+      "del:text": "Does that mean that cards with an even number necessarily have <CARD> vowel on the other side ? All cards with vowels on one side have an even number on the other ... but do all cards with even numbers have <CARD> vowel on the other ?",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_01ca3733-bd07-4b0d-a896-f95b7534654f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0443316e-b324-4e98-ade7-bb8935744032",
+      "del:text": "No <MENTION>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0443316e-b324-4e98-ade7-bb8935744032"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ba112ed4-1e7b-4da8-ba7d-66b284567041",
+      "del:text": "'<MENTION> The logic does not go both ways . We don''t have to care what is opposite the '' <CARD> '' since it''s fine being <CARD> consonant then .'",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ba112ed4-1e7b-4da8-ba7d-66b284567041"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_18757d25-e75c-43a5-85e2-b3c7e28fd4cb",
+      "del:text": "Why would we check the <CARD> card then ?",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_18757d25-e75c-43a5-85e2-b3c7e28fd4cb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_44f82a01-8569-4711-b3a3-e1e88bd26ddc",
+      "del:text": "Locking in <CARD> and <CARD> .",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_44f82a01-8569-4711-b3a3-e1e88bd26ddc"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7c58e20e-831b-4bb5-9717-6b2349ec6ae6",
+      "del:text": "A",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_dd0fb27a-0b1d-47d1-9ce7-9d283810024f",
+      "del:text": "5,A",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_924673ae-0b4b-47e7-8428-6a974ae3a977",
+      "del:text": "<MENTION> Need to confirm <CARD> vowel is not behind the <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_924673ae-0b4b-47e7-8428-6a974ae3a977"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_da6054be-640e-4499-ae11-471c14001b01",
+      "del:text": "5,A",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_242612a6-58cc-4b66-b0a2-ea5fca898f36",
+      "del:text": "good luck",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c8243fb7-0df0-400e-90fd-e2b78e8eb850",
+      "del:text": "I locked in both <CARD> and <CARD> .",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c8243fb7-0df0-400e-90fd-e2b78e8eb850"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c0b47739-c12c-415f-bcc3-325c46ab12d8",
+      "del:text": "5,A",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ca2c0ca0-c957-4a78-a47d-648e65dee04d",
+      "del:text": "5,A",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_841e0bb2-e5c4-41ad-9e79-4b1bc734e478",
+      "del:text": "5,A",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4f4e4fae-983e-4124-83f3-6f9bb50560db",
+      "del:text": "I locked in both <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_4324dd3f-6ddf-4919-ad12-90d9dbe089be"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4f4e4fae-983e-4124-83f3-6f9bb50560db"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_23548aad-abf9-4b6e-a448-d5bc9ac6b9f9",
+      "del:text": "'Hi ! I believe the solution is to check the '' <CARD> '' and the '' <CARD> '' cards .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3655a3aa-58c0-4295-b0d6-8d2d9897c671",
+      "del:text": "Correct option"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f9dac8b5-24ee-42fb-8b93-e1b41ce7fc0e",
+      "del:text": "Why not jut the <CARD> card ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_70509d3f-6d7a-4ee6-8561-ac64548d681e",
+      "del:text": "'We must confirm the '' <CARD> '' isn''t opposite of <CARD> vowel and that the '' <CARD> '' has an even number on its opposite side .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c08249ce-56ff-446e-b3d2-7330017f3dd5",
+      "del:text": "makes sense"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_61161a8a-74bf-4dc7-b2cc-461513039a71",
+      "del:text": "Do we all agree ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ea9a0251-5f38-4eda-9bc2-e67e0f322658",
+      "del:text": "I agree , obviously ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_23d35bd4-a3e1-4852-ac3c-dbc61327b6cb",
+      "del:text": "Anyone has <CARD> different point of view ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_480ebe85-2de3-42bc-9352-a180b357da2d",
+      "del:text": "I agree , obviously ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_01ca3733-bd07-4b0d-a896-f95b7534654f",
+      "del:text": "Does that mean that cards with an even number necessarily have <CARD> vowel on the other side ? All cards with vowels on one side have an even number on the other ... but do all cards with even numbers have <CARD> vowel on the other ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0443316e-b324-4e98-ade7-bb8935744032",
+      "del:text": "No <MENTION>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ba112ed4-1e7b-4da8-ba7d-66b284567041",
+      "del:text": "'<MENTION> The logic does not go both ways . We don''t have to care what is opposite the '' <CARD> '' since it''s fine being <CARD> consonant then .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_18757d25-e75c-43a5-85e2-b3c7e28fd4cb",
+      "del:text": "Why would we check the <CARD> card then ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_44f82a01-8569-4711-b3a3-e1e88bd26ddc",
+      "del:text": "Locking in <CARD> and <CARD> ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_924673ae-0b4b-47e7-8428-6a974ae3a977",
+      "del:text": "<MENTION> Need to confirm <CARD> vowel is not behind the <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c8243fb7-0df0-400e-90fd-e2b78e8eb850",
+      "del:text": "I locked in both <CARD> and <CARD> ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4f4e4fae-983e-4124-83f3-6f9bb50560db",
+      "del:text": "I locked in both <CARD> and <CARD>"
+    }
+  ]
+}

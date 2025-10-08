@@ -1,0 +1,590 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_eb3cba4b-ee25-4af0-93c9-57603ffcc448",
+  "del:name": "DeliData Conversation eb3cba4b-ee25-4af0-93c9-57603ffcc448",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448",
+      "del:name": "Conversation eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Zebra"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Ox"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Giraffe"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Bee"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c3d58224-9075-4b12-9d2e-eff534cd2157",
+      "del:text": "qu6 are the cards i choose",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c3d58224-9075-4b12-9d2e-eff534cd2157"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_17d6c47d-dd27-40d3-a878-9d21a1a6c809",
+      "del:text": "howdy !",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9e9fb884-4881-4b5f-b0ea-a8ce4e5ba402",
+      "del:text": "i choose <CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_9e9fb884-4881-4b5f-b0ea-a8ce4e5ba402"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_33796212-f827-4f41-a4ae-dd6de9b344d9",
+      "del:text": "at least \" <CARD> \"",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_33796212-f827-4f41-a4ae-dd6de9b344d9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e31dfd37-55a4-4449-9655-589bf948cda7",
+      "del:text": "if <CARD> iss odd , then that disproves it",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e31dfd37-55a4-4449-9655-589bf948cda7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_773225c4-2d27-4078-86c6-0d7ab9d7090c",
+      "del:text": "yes",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_773225c4-2d27-4078-86c6-0d7ab9d7090c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8044373d-3641-40c2-9aef-58b0d099cea0",
+      "del:text": "<CARD> it is then",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8044373d-3641-40c2-9aef-58b0d099cea0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ace993d4-d051-422f-87f7-00f4590fb940",
+      "del:text": "what does \" test the rule \" mean ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ace993d4-d051-422f-87f7-00f4590fb940"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_54052c72-4015-4164-b141-33add37e2502",
+      "del:text": "U",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_649a8c77-8c22-4c7a-a337-56d53cbcc9b4",
+      "del:text": "<CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_649a8c77-8c22-4c7a-a337-56d53cbcc9b4"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9774a034-ff91-4638-bae5-4cbef5317575",
+      "del:text": "to solve it i think",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_9774a034-ff91-4638-bae5-4cbef5317575"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c9fe3858-2be7-464f-ae1a-54c4aaf3de3c",
+      "del:text": "i choose <CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c9fe3858-2be7-464f-ae1a-54c4aaf3de3c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6c8ab8d3-f2ec-4ed4-8842-d544cf152065",
+      "del:text": "i need coffee",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_41b65a70-5d2e-47e4-a10c-18c303c832f1",
+      "del:text": "yea huh , hah",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4563fa78-5b4c-4ced-8993-b6c71f57d0c1",
+      "del:text": "the more i read thr rules the less i understand",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_031b5bc2-fae7-4a9b-8f90-bbd20aaea258",
+      "del:text": "no shit",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ae823233-c7e9-4f92-827f-a44e4056ddbf",
+      "del:text": "U,6",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e550e434-3865-47b9-917a-3b3304e22645",
+      "del:text": "yes take please",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_643cc85b-9c3e-452f-afc4-2b1cb7df3f26",
+      "del:text": "3,U",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_80cb2270-b2eb-4125-8742-cdfb429d5059",
+      "del:text": "so dont we need to know what is behind <CARD> , <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_80cb2270-b2eb-4125-8742-cdfb429d5059"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6d7b1a9a-d356-4536-b9cd-7bc28d4e3a1c",
+      "del:text": "'i think it''s <CARD> and <CARD>'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6d7b1a9a-d356-4536-b9cd-7bc28d4e3a1c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f53918ea-3ed9-4bfa-b0cc-9ca4417ac015",
+      "del:text": "qu6 ... w know <CARD> wont test the rule",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f53918ea-3ed9-4bfa-b0cc-9ca4417ac015"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2088edd8-dc9e-4069-9adb-995a0b679a45",
+      "del:text": "oh wow , yea <CARD> is not a vowel",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_2088edd8-dc9e-4069-9adb-995a0b679a45"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_afc14faf-bfa1-411b-b84d-e8f07d12be87",
+      "del:text": "Q,U,6",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_02f6fa56-05d7-483c-a974-022f1f3c4f17",
+      "del:text": "All cards with vowels on one side have an even number on the other .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_02f6fa56-05d7-483c-a974-022f1f3c4f17"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0be7bc2d-3492-43fb-a5ab-ff98f7d25364",
+      "del:text": "U,6",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f6367c36-2c4e-40eb-9c99-f3bf57d070e4",
+      "del:text": "so we need to \" test \" even and vowels",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f6367c36-2c4e-40eb-9c99-f3bf57d070e4"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a05754c3-4b9d-4db4-8870-65874a348511",
+      "del:text": "<CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_a05754c3-4b9d-4db4-8870-65874a348511"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_134d9f1c-1b23-4432-b05a-7d54a2cd553f",
+      "del:text": "yes",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_134d9f1c-1b23-4432-b05a-7d54a2cd553f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_826be35d-01a9-472e-bf26-c53deac88c9e",
+      "del:text": "agreed ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_826be35d-01a9-472e-bf26-c53deac88c9e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6921e804-9db3-4d02-b337-909a195376d3",
+      "del:text": "agreed",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6921e804-9db3-4d02-b337-909a195376d3"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0f2c2508-616e-45ca-b168-41c0073235e8",
+      "del:text": "U,6",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_04f32a67-733f-49b5-9138-7d8bc80bc06b",
+      "del:text": "U,6",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ce31d7a6-e2d9-4a11-8025-846bb80217f6",
+      "del:text": "but we have to chat for 5 minutes",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6f057b39-5810-4437-88f5-fea21d4f7eaa",
+      "del:text": "U,6",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_eb3cba4b-ee25-4af0-93c9-57603ffcc448"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c3d58224-9075-4b12-9d2e-eff534cd2157",
+      "del:text": "qu6 are the cards i choose"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_9e9fb884-4881-4b5f-b0ea-a8ce4e5ba402",
+      "del:text": "i choose <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_33796212-f827-4f41-a4ae-dd6de9b344d9",
+      "del:text": "at least \" <CARD> \""
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e31dfd37-55a4-4449-9655-589bf948cda7",
+      "del:text": "if <CARD> iss odd , then that disproves it"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_773225c4-2d27-4078-86c6-0d7ab9d7090c",
+      "del:text": "yes"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8044373d-3641-40c2-9aef-58b0d099cea0",
+      "del:text": "<CARD> it is then"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ace993d4-d051-422f-87f7-00f4590fb940",
+      "del:text": "what does \" test the rule \" mean ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_649a8c77-8c22-4c7a-a337-56d53cbcc9b4",
+      "del:text": "<CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_9774a034-ff91-4638-bae5-4cbef5317575",
+      "del:text": "to solve it i think"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c9fe3858-2be7-464f-ae1a-54c4aaf3de3c",
+      "del:text": "i choose <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_80cb2270-b2eb-4125-8742-cdfb429d5059",
+      "del:text": "so dont we need to know what is behind <CARD> , <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6d7b1a9a-d356-4536-b9cd-7bc28d4e3a1c",
+      "del:text": "'i think it''s <CARD> and <CARD>'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f53918ea-3ed9-4bfa-b0cc-9ca4417ac015",
+      "del:text": "qu6 ... w know <CARD> wont test the rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_2088edd8-dc9e-4069-9adb-995a0b679a45",
+      "del:text": "oh wow , yea <CARD> is not a vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_02f6fa56-05d7-483c-a974-022f1f3c4f17",
+      "del:text": "All cards with vowels on one side have an even number on the other ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f6367c36-2c4e-40eb-9c99-f3bf57d070e4",
+      "del:text": "so we need to \" test \" even and vowels"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_a05754c3-4b9d-4db4-8870-65874a348511",
+      "del:text": "<CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_134d9f1c-1b23-4432-b05a-7d54a2cd553f",
+      "del:text": "yes"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_826be35d-01a9-472e-bf26-c53deac88c9e",
+      "del:text": "agreed ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6921e804-9db3-4d02-b337-909a195376d3",
+      "del:text": "agreed"
+    }
+  ]
+}

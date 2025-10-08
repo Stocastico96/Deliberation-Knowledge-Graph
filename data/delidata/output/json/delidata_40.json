@@ -1,0 +1,858 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9",
+  "del:name": "DeliData Conversation 2cddf5d7-dfe4-4913-a02d-0c7424e46ce9",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9",
+      "del:name": "Conversation 2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Hedgehog"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Giraffe"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Ox"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Hamster"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_97d22042-5047-43bf-9f3b-7444b6507aa5",
+      "del:text": "hi",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ac85ce14-4055-48a0-bc9e-76c5776c6073",
+      "del:text": "how are you",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ddc4cde6-5242-4e0e-9b4f-5017cb64e567",
+      "del:text": "hello",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f6cdabfa-bb99-49a1-8e42-8c5b5607e193",
+      "del:text": "hello",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e0917aa2-e7eb-4e8f-8d7d-5d63b1491651",
+      "del:text": "so lets get this started",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0c8c091b-7839-47be-8319-99ea122a7805",
+      "del:text": "hello",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4c9e4724-c29d-4ef7-bb64-a156b33c6a7f",
+      "del:text": "did all verify the code ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c02b7315-52b4-491b-af1a-38a6bbb46197",
+      "del:text": "my selection was <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c02b7315-52b4-491b-af1a-38a6bbb46197"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_05590b66-86e1-4048-bfed-d0f9a1618127",
+      "del:text": "i hope so",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1a966ced-2d28-46f7-a7c5-80672a5a8e4d",
+      "del:text": "same",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1a966ced-2d28-46f7-a7c5-80672a5a8e4d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6173b891-adc8-4818-ba12-180da1419613",
+      "del:text": "mines also <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6173b891-adc8-4818-ba12-180da1419613"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_711e286b-9421-4eea-8781-dec2418ee08f",
+      "del:text": "how did u get <CARD> and <CARD> though",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_711e286b-9421-4eea-8781-dec2418ee08f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e7873bb8-d304-4225-ba10-dfde4a7836b3",
+      "del:text": "<CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e7873bb8-d304-4225-ba10-dfde4a7836b3"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_abdf8de2-7266-4f48-8f4f-084c75b1f667",
+      "del:text": "i think it is just <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_abdf8de2-7266-4f48-8f4f-084c75b1f667"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0b983d3b-9b13-45e5-95b5-18d4e4a296a5",
+      "del:text": "since its the only vowel",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0b983d3b-9b13-45e5-95b5-18d4e4a296a5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_946909a5-2298-462f-9268-07aec8382867",
+      "del:text": "I have no idea",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_af26694d-67ba-4d7e-b0f3-8fbeba027ce5",
+      "del:text": "it says select only the cards that cerify the rule",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_af26694d-67ba-4d7e-b0f3-8fbeba027ce5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_71049896-806c-4a21-890d-ff95deb1d025",
+      "del:text": "what card can cerify the rule though",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_71049896-806c-4a21-890d-ff95deb1d025"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e04a36e6-afd3-4e1b-9892-ace83b0a7a07",
+      "del:text": "'isn''t <CARD> and <CARD> just the same as <CARD> and <CARD>'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e04a36e6-afd3-4e1b-9892-ace83b0a7a07"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1b1edfc5-f2ed-4ba2-a128-214e6d0035ca",
+      "del:text": "i have no idea",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_83ac4758-0d00-4284-bd7b-cf7c013238c9",
+      "del:text": "how so",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_83ac4758-0d00-4284-bd7b-cf7c013238c9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d9048ff4-2155-406f-b839-7571fe4306d2",
+      "del:text": "'I don''t understand that game'",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d5b37105-999f-482b-963b-1790033db327",
+      "del:text": "instruction is not that clear",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_402344ad-837d-4158-84da-746a606f8b78",
+      "del:text": "not sure which one to select",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_34f809ff-92ec-4a71-90ef-5cf5f12ea15a",
+      "del:text": "i think maybe we just need to have the same answer ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_037d99ba-4b96-427f-a00e-ff06de666e15",
+      "del:text": "how about we all select <CARD> and <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_037d99ba-4b96-427f-a00e-ff06de666e15"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a88c618b-0dc5-422c-9bad-10a9973e094b",
+      "del:text": "says select only the card ( s ) that verify the rule",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_a88c618b-0dc5-422c-9bad-10a9973e094b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7b52bc0a-a988-41bf-a7c9-8742d2ba9b07",
+      "del:text": "so ...",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_35c26678-0fb8-455a-8f1d-47647988895c",
+      "del:text": "we technically",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ff38676e-c795-4bce-8340-c271de72b6cb",
+      "del:text": "only need to turn <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ff38676e-c795-4bce-8340-c271de72b6cb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_09270c30-564f-4970-8e85-a827ea6f3962",
+      "del:text": "whatever",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9edcb8c9-70f3-46fa-b8d5-8beeda906f21",
+      "del:text": "becuase there will be a vowel on the other side",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_9edcb8c9-70f3-46fa-b8d5-8beeda906f21"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ba48b95a-d40d-409f-a6c3-33b86e14eaba",
+      "del:text": "what about <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ba48b95a-d40d-409f-a6c3-33b86e14eaba"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_cf95b74e-8a30-449f-9702-51bd17edb692",
+      "del:text": "wont there be a vowel behind it ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_cf95b74e-8a30-449f-9702-51bd17edb692"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_16f4038d-0951-4611-b440-034bf99a28e3",
+      "del:text": "there is no 100 % reason that <CARD> will be a letter , but <CARD> IS",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_16f4038d-0951-4611-b440-034bf99a28e3"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1796bc0f-4683-4f90-b68c-0dad947f2479",
+      "del:text": "and <CARD> is not a vowel",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1796bc0f-4683-4f90-b68c-0dad947f2479"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6ebce975-4dce-4d35-9924-f736c716b714",
+      "del:text": "so lets all select <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6ebce975-4dce-4d35-9924-f736c716b714"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_db05a20c-7d83-40ae-8622-01fbabf5f985",
+      "del:text": "when it this done",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f99248ec-ec94-4086-87c9-9fbd530cc88a",
+      "del:text": "8",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ee3d2579-0f17-4c43-8ee4-4f3ab9046b3a",
+      "del:text": "I say <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ee3d2579-0f17-4c43-8ee4-4f3ab9046b3a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3842bb1a-b2d1-4e24-ae0f-ca0f093de23b",
+      "del:text": "dont wanan be here all day",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_36693a1f-e393-47e8-a5dd-cde373c699f5",
+      "del:text": "ok , lets all select <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_36693a1f-e393-47e8-a5dd-cde373c699f5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_69a5d4cd-d6e4-443a-979c-ffa5b868620a",
+      "del:text": "same here",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ddaf300f-13d6-4c63-b785-e9733fb25fee",
+      "del:text": "8",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_020cb241-4147-469e-840c-b8c397ed7960",
+      "del:text": "8",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5a6e4035-1573-4f5b-befe-6968e9ac5caf",
+      "del:text": "I selected <CARD>",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5a6e4035-1573-4f5b-befe-6968e9ac5caf"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1d819374-89a4-4218-b522-b553a4dceece",
+      "del:text": "8",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_977997f9-e1d2-4cf9-83bb-b2b438280174",
+      "del:text": "i do not believe we need the same answer , just have to have a discussion",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_977997f9-e1d2-4cf9-83bb-b2b438280174"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3e4f2d11-1a30-415b-996f-c0337bc511a5",
+      "del:text": "we are having it",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_05368c84-91df-4711-8a75-27f721eea2af",
+      "del:text": "selecting <CARD> and YOLO I ghuess",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_05368c84-91df-4711-8a75-27f721eea2af"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_454ee679-c8b3-4124-b801-23cbfffcc9af",
+      "del:text": "8",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_38219d10-3301-4245-ad75-2c1dbf150c6d",
+      "del:text": "8",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a08381be-9769-406b-91da-cd2db6a7aef0",
+      "del:text": "<CARD> it is then",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_a08381be-9769-406b-91da-cd2db6a7aef0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9524e9b2-a1cf-4be5-a234-8a8f0756d9e3",
+      "del:text": "8",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9db000bc-f21c-4d21-96fe-90418be7d9d1",
+      "del:text": "8",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_2cddf5d7-dfe4-4913-a02d-0c7424e46ce9"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c02b7315-52b4-491b-af1a-38a6bbb46197",
+      "del:text": "my selection was <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1a966ced-2d28-46f7-a7c5-80672a5a8e4d",
+      "del:text": "same"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6173b891-adc8-4818-ba12-180da1419613",
+      "del:text": "mines also <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_711e286b-9421-4eea-8781-dec2418ee08f",
+      "del:text": "how did u get <CARD> and <CARD> though"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e7873bb8-d304-4225-ba10-dfde4a7836b3",
+      "del:text": "<CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_abdf8de2-7266-4f48-8f4f-084c75b1f667",
+      "del:text": "i think it is just <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0b983d3b-9b13-45e5-95b5-18d4e4a296a5",
+      "del:text": "since its the only vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_af26694d-67ba-4d7e-b0f3-8fbeba027ce5",
+      "del:text": "it says select only the cards that cerify the rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_71049896-806c-4a21-890d-ff95deb1d025",
+      "del:text": "what card can cerify the rule though"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e04a36e6-afd3-4e1b-9892-ace83b0a7a07",
+      "del:text": "'isn''t <CARD> and <CARD> just the same as <CARD> and <CARD>'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_83ac4758-0d00-4284-bd7b-cf7c013238c9",
+      "del:text": "how so"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_037d99ba-4b96-427f-a00e-ff06de666e15",
+      "del:text": "how about we all select <CARD> and <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_a88c618b-0dc5-422c-9bad-10a9973e094b",
+      "del:text": "says select only the card ( s ) that verify the rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ff38676e-c795-4bce-8340-c271de72b6cb",
+      "del:text": "only need to turn <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_9edcb8c9-70f3-46fa-b8d5-8beeda906f21",
+      "del:text": "becuase there will be a vowel on the other side"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ba48b95a-d40d-409f-a6c3-33b86e14eaba",
+      "del:text": "what about <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_cf95b74e-8a30-449f-9702-51bd17edb692",
+      "del:text": "wont there be a vowel behind it ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_16f4038d-0951-4611-b440-034bf99a28e3",
+      "del:text": "there is no 100 % reason that <CARD> will be a letter , but <CARD> IS"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1796bc0f-4683-4f90-b68c-0dad947f2479",
+      "del:text": "and <CARD> is not a vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6ebce975-4dce-4d35-9924-f736c716b714",
+      "del:text": "so lets all select <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ee3d2579-0f17-4c43-8ee4-4f3ab9046b3a",
+      "del:text": "I say <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_36693a1f-e393-47e8-a5dd-cde373c699f5",
+      "del:text": "ok , lets all select <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5a6e4035-1573-4f5b-befe-6968e9ac5caf",
+      "del:text": "I selected <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_977997f9-e1d2-4cf9-83bb-b2b438280174",
+      "del:text": "i do not believe we need the same answer , just have to have a discussion"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_05368c84-91df-4711-8a75-27f721eea2af",
+      "del:text": "selecting <CARD> and YOLO I ghuess"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_a08381be-9769-406b-91da-cd2db6a7aef0",
+      "del:text": "<CARD> it is then"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_abd7229e-f643-457c-8d1a-dadefa121155",
+  "del:name": "DeliData Conversation abd7229e-f643-457c-8d1a-dadefa121155",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_abd7229e-f643-457c-8d1a-dadefa121155",
+      "del:name": "Conversation abd7229e-f643-457c-8d1a-dadefa121155"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Narwhal"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Panda"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ed3947a6-9a8a-4421-8af5-2dede3754f59",
+      "del:text": "what a weird game , i dont get it",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_abd7229e-f643-457c-8d1a-dadefa121155"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0c7711c1-3771-45b3-9fc4-bbb938301642",
+      "del:text": "It is kind of confusing",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_abd7229e-f643-457c-8d1a-dadefa121155"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3c52ad7d-2820-4c11-b772-289d366e96d8",
+      "del:text": "Any ideas what is exactly the task ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_abd7229e-f643-457c-8d1a-dadefa121155"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3c52ad7d-2820-4c11-b772-289d366e96d8"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_692c56cd-3aa0-4a45-b787-956dca67db1a",
+      "del:text": "i chose all for cards , dont know any other way",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_abd7229e-f643-457c-8d1a-dadefa121155"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_692c56cd-3aa0-4a45-b787-956dca67db1a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_93384de3-165f-4f3f-9b66-f16de61b180b",
+      "del:text": "I chose only 2 but I think I am wrong",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_abd7229e-f643-457c-8d1a-dadefa121155"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_93384de3-165f-4f3f-9b66-f16de61b180b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_61ab8270-17e3-4033-a082-c3332aa9404f",
+      "del:text": "I think you might be right . The only way to know if they are telling us the truth is by seeing the other side of all of them",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_abd7229e-f643-457c-8d1a-dadefa121155"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_61ab8270-17e3-4033-a082-c3332aa9404f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f0a6fc2c-b22c-4ac4-84f2-88ff303a4931",
+      "del:text": "to test the rule that the card has letter in one side and the number on the other side i need to flip all cards to see if all has the number in one side and letter on the other",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_abd7229e-f643-457c-8d1a-dadefa121155"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_f0a6fc2c-b22c-4ac4-84f2-88ff303a4931"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_13f017f2-5ca6-426d-9634-51c23e62e259",
+      "del:text": "5,U,8,J",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_abd7229e-f643-457c-8d1a-dadefa121155"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3c52ad7d-2820-4c11-b772-289d366e96d8",
+      "del:text": "Any ideas what is exactly the task ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_692c56cd-3aa0-4a45-b787-956dca67db1a",
+      "del:text": "i chose all for cards , dont know any other way"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_93384de3-165f-4f3f-9b66-f16de61b180b",
+      "del:text": "I chose only 2 but I think I am wrong"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_61ab8270-17e3-4033-a082-c3332aa9404f",
+      "del:text": "I think you might be right . The only way to know if they are telling us the truth is by seeing the other side of all of them"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_f0a6fc2c-b22c-4ac4-84f2-88ff303a4931",
+      "del:text": "to test the rule that the card has letter in one side and the number on the other side i need to flip all cards to see if all has the number in one side and letter on the other"
+    }
+  ]
+}

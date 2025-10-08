@@ -1,0 +1,472 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_01acf3e3-714c-4d53-9b74-9170a645bcd0",
+  "del:name": "DeliData Conversation 01acf3e3-714c-4d53-9b74-9170a645bcd0",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0",
+      "del:name": "Conversation 01acf3e3-714c-4d53-9b74-9170a645bcd0"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Kiwi"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Beaver"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Lion"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6c02f8a6-91f4-4564-8bbd-f3de05227d1a",
+      "del:text": "the obvious answer would be to chhose <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6c02f8a6-91f4-4564-8bbd-f3de05227d1a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7dbda1e8-0a85-4aba-bb3d-055e6e130bbc",
+      "del:text": "what do you think",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_7dbda1e8-0a85-4aba-bb3d-055e6e130bbc"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_ace1de9f-e2e5-4bb2-9969-2bb270c90392",
+      "del:text": "I agree . If <CARD> = even then <CARD> should be <CARD> vowel",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_ace1de9f-e2e5-4bb2-9969-2bb270c90392"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6e278e26-1e63-4455-a210-f8bed4616b99",
+      "del:text": "yes , it would I think its <CARD> and <CARD> because <CARD> is the vowel so we have to test if there would be an even number when turned over and <CARD> is an odd number so if it had <CARD> vowel the rule wouldnt be right",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6e278e26-1e63-4455-a210-f8bed4616b99"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_87e1b290-0569-4a1b-b7fa-30a4a5be4b2d",
+      "del:text": "'Actually wouldn''t you have to turn all of the cards ?'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_87e1b290-0569-4a1b-b7fa-30a4a5be4b2d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7dafa3ee-7175-4acd-b37c-2489a5b124a8",
+      "del:text": "'to test the rule , we need to check the other cards don''t follow the rule'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_7dafa3ee-7175-4acd-b37c-2489a5b124a8"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_666c176e-bbe3-4434-b959-7c3187abe4f2",
+      "del:text": "yeah to then see if there are any excetions to the rule",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_666c176e-bbe3-4434-b959-7c3187abe4f2"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8fe9d18f-f905-497e-9bb0-3b4ef4d95221",
+      "del:text": "what happens now ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8fe9d18f-f905-497e-9bb0-3b4ef4d95221"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_34a32a95-c29a-463b-8743-d115a09b3c17",
+      "del:text": "do we need to turn <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_34a32a95-c29a-463b-8743-d115a09b3c17"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_683ada50-30d6-4f0e-9145-233fdcea6476",
+      "del:text": "<CARD> and <CARD> I think",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_683ada50-30d6-4f0e-9145-233fdcea6476"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2f662703-ed26-4655-9bab-d3866ef83612",
+      "del:text": "we need to turn <CARD> over to test the vowel",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_2f662703-ed26-4655-9bab-d3866ef83612"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_203c2381-2a11-47d7-ad03-accf1bb105e9",
+      "del:text": "do we not need to turn <CARD> to see if it has an even number on the other",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_203c2381-2a11-47d7-ad03-accf1bb105e9"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_23e7306e-03a5-4b87-b014-39e15b97a160",
+      "del:text": "yes",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_23e7306e-03a5-4b87-b014-39e15b97a160"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1796e3aa-a040-475d-9d91-1468fd4db259",
+      "del:text": "yeah , sorry",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1796e3aa-a040-475d-9d91-1468fd4db259"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_a641a9cf-b799-4e0e-ab9e-cefd09b11b47",
+      "del:text": "so which ones do we need to turn ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_a641a9cf-b799-4e0e-ab9e-cefd09b11b47"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5724d481-820c-42ba-aa4a-c72d8b1fd49d",
+      "del:text": "is it <CARD> , <CARD> and <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5724d481-820c-42ba-aa4a-c72d8b1fd49d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_38fb5161-5fb8-48ff-bb01-0f781c3a5336",
+      "del:text": "all of them , we need to know if the rule applies to every card",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_38fb5161-5fb8-48ff-bb01-0f781c3a5336"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5034eb8d-9bf7-4135-9215-2f2a347efd00",
+      "del:text": "oh yeah sorry",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5034eb8d-9bf7-4135-9215-2f2a347efd00"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_95ced55c-7772-4a97-8e5e-a709006c4dd2",
+      "del:text": "everyone happy with that ?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_95ced55c-7772-4a97-8e5e-a709006c4dd2"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_226c98ec-5194-4932-b08b-4719355a5c7b",
+      "del:text": "yeah deffinately",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_226c98ec-5194-4932-b08b-4719355a5c7b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1e9c3c30-75f9-4a3a-8e76-d0747c6705cd",
+      "del:text": "yeah",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1e9c3c30-75f9-4a3a-8e76-d0747c6705cd"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_309ae1a2-6c2a-455f-84bc-76d7ea2c1f07",
+      "del:text": "3,A,Z,6",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_f7aeffe8-0199-45f5-8d7e-d979961b8320",
+      "del:text": "3,A,6",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5801f621-6b05-4c81-a92b-36185b716bf4",
+      "del:text": "3,A,Z,6",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_01acf3e3-714c-4d53-9b74-9170a645bcd0"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6c02f8a6-91f4-4564-8bbd-f3de05227d1a",
+      "del:text": "the obvious answer would be to chhose <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_7dbda1e8-0a85-4aba-bb3d-055e6e130bbc",
+      "del:text": "what do you think"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_ace1de9f-e2e5-4bb2-9969-2bb270c90392",
+      "del:text": "I agree . If <CARD> = even then <CARD> should be <CARD> vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6e278e26-1e63-4455-a210-f8bed4616b99",
+      "del:text": "yes , it would I think its <CARD> and <CARD> because <CARD> is the vowel so we have to test if there would be an even number when turned over and <CARD> is an odd number so if it had <CARD> vowel the rule wouldnt be right"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_87e1b290-0569-4a1b-b7fa-30a4a5be4b2d",
+      "del:text": "'Actually wouldn''t you have to turn all of the cards ?'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_7dafa3ee-7175-4acd-b37c-2489a5b124a8",
+      "del:text": "'to test the rule , we need to check the other cards don''t follow the rule'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_666c176e-bbe3-4434-b959-7c3187abe4f2",
+      "del:text": "yeah to then see if there are any excetions to the rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8fe9d18f-f905-497e-9bb0-3b4ef4d95221",
+      "del:text": "what happens now ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_34a32a95-c29a-463b-8743-d115a09b3c17",
+      "del:text": "do we need to turn <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_683ada50-30d6-4f0e-9145-233fdcea6476",
+      "del:text": "<CARD> and <CARD> I think"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_2f662703-ed26-4655-9bab-d3866ef83612",
+      "del:text": "we need to turn <CARD> over to test the vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_203c2381-2a11-47d7-ad03-accf1bb105e9",
+      "del:text": "do we not need to turn <CARD> to see if it has an even number on the other"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_23e7306e-03a5-4b87-b014-39e15b97a160",
+      "del:text": "yes"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1796e3aa-a040-475d-9d91-1468fd4db259",
+      "del:text": "yeah , sorry"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_a641a9cf-b799-4e0e-ab9e-cefd09b11b47",
+      "del:text": "so which ones do we need to turn ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5724d481-820c-42ba-aa4a-c72d8b1fd49d",
+      "del:text": "is it <CARD> , <CARD> and <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_38fb5161-5fb8-48ff-bb01-0f781c3a5336",
+      "del:text": "all of them , we need to know if the rule applies to every card"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5034eb8d-9bf7-4135-9215-2f2a347efd00",
+      "del:text": "oh yeah sorry"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_95ced55c-7772-4a97-8e5e-a709006c4dd2",
+      "del:text": "everyone happy with that ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_226c98ec-5194-4932-b08b-4719355a5c7b",
+      "del:text": "yeah deffinately"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1e9c3c30-75f9-4a3a-8e76-d0747c6705cd",
+      "del:text": "yeah"
+    }
+  ]
+}

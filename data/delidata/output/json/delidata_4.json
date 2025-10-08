@@ -1,0 +1,661 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_9e1cd22c-ea95-41b3-baea-4ff6be7295d6",
+  "del:name": "DeliData Conversation 9e1cd22c-ea95-41b3-baea-4ff6be7295d6",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6",
+      "del:name": "Conversation 9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Puffin"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Beaver"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Zebra"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Leopard"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9d2257ab-95f6-47c3-b6f8-fbb1c721a678",
+      "del:text": "Hi all",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4e660138-92dc-4afe-ae16-dce6251a74fd",
+      "del:text": "Hello !",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_cfb3dc47-4469-445e-9739-0ac4e06e04ef",
+      "del:text": "Hello",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_63c5acdd-978f-4f70-af5c-31e3a6074a3b",
+      "del:text": "Hi there",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_efa3daa5-2590-4fb8-8c4d-f796b08b2e64",
+      "del:text": "we all know we need to flip the <CARD> and the <CARD> to start and agree on those right ?",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_efa3daa5-2590-4fb8-8c4d-f796b08b2e64"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_df136ab8-018e-4041-8b5d-7b003116f970",
+      "del:text": "I think we also need to flip the <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_df136ab8-018e-4041-8b5d-7b003116f970"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d737cfcb-0ffc-4314-b11e-4934ce23a635",
+      "del:text": "'Yes I think that''s right'",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d737cfcb-0ffc-4314-b11e-4934ce23a635"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_76844109-7753-439e-b31e-a72552b413e9",
+      "del:text": "'I don''t know if I choose the right letter'",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_551a9bfe-ea37-4c89-b87f-34b1d22bd0ab",
+      "del:text": "Yes I agree !",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_551a9bfe-ea37-4c89-b87f-34b1d22bd0ab"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_588bdb77-fa36-42a6-bb6a-ec7cbe600c92",
+      "del:text": "why the <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_588bdb77-fa36-42a6-bb6a-ec7cbe600c92"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_549a65dc-ccc9-4629-ad46-d74183cdedbb",
+      "del:text": "I picked the <CARD>",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_549a65dc-ccc9-4629-ad46-d74183cdedbb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d0d0956a-bdb1-4997-af9a-917afd9eb05c",
+      "del:text": "I picked <CARD> and <CARD> .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d0d0956a-bdb1-4997-af9a-917afd9eb05c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_cee8bfd4-bf9f-42a1-bf3d-930b3cad79db",
+      "del:text": "I also picked <CARD> and <CARD> .",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_cee8bfd4-bf9f-42a1-bf3d-930b3cad79db"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3103abae-2425-450f-8160-ff0d1512c5a8",
+      "del:text": "we know the <CARD> is an off right , so we need to verify that there is not a vowel on the other side",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_3103abae-2425-450f-8160-ff0d1512c5a8"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7f8f46b2-6f5d-41d0-bb19-9cf0058ad0b0",
+      "del:text": "odd *",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_88196bea-42ce-4b3f-ae83-3d01ab28eef6",
+      "del:text": "Okay , so I will select <CARD> as well then . Good point , <MENTION> .",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_88196bea-42ce-4b3f-ae83-3d01ab28eef6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1eafe292-a060-4bb2-995c-575591de0448",
+      "del:text": "I was thinking we need to pick two also",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1eafe292-a060-4bb2-995c-575591de0448"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_9810229e-c70b-4980-acce-6e7a8dd1ccb0",
+      "del:text": "E,5,4",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8747359e-e5df-4088-9487-e3f28e875be7",
+      "del:text": "Since <CARD> is not a vowel , we dont care about flipping that to determine the rule regarding \" all vowels \"",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8747359e-e5df-4088-9487-e3f28e875be7"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b1ba00d9-8013-412e-b639-3dad8ab24ce4",
+      "del:text": "'The task states that \" all cards with vowels on one side have an even number on the other \" so I would personally not pick <CARD> since it''s an odd not even number .'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b1ba00d9-8013-412e-b639-3dad8ab24ce4"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8f4e307c-bb0c-46e7-973e-8eaa93aa3082",
+      "del:text": "Then we need to pick the <CARD> ?",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8f4e307c-bb0c-46e7-973e-8eaa93aa3082"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0d9ab703-28f0-4ef6-86d4-f55bb476c0ff",
+      "del:text": "i think we need <CARD> , <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0d9ab703-28f0-4ef6-86d4-f55bb476c0ff"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_30c8ff6c-78cb-44f3-9399-ed5338d0e12f",
+      "del:text": "That might be a good idea",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_30c8ff6c-78cb-44f3-9399-ed5338d0e12f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fa9648c5-a4c1-45d3-982a-a41372769b99",
+      "del:text": "I went with <CARD> , <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_fa9648c5-a4c1-45d3-982a-a41372769b99"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e149667d-6365-4d12-b17d-2c8356bcab4b",
+      "del:text": "<MENTION> picking the <CARD> is required to prove the counterpoint that if we have a <CARD> it will be a non vowel",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e149667d-6365-4d12-b17d-2c8356bcab4b"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8d435ce1-25ba-478f-95d4-1f42f2ba90c0",
+      "del:text": "I just am totally confused about this task as which one to pick for sure",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_20884909-a6fc-4fb5-b899-668e13313792",
+      "del:text": "oooh wait . I think I may know what <MENTION> is saying .",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_02699571-ce74-481e-930b-1ec562c28e6a",
+      "del:text": "Has everyone picked ?",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_02699571-ce74-481e-930b-1ec562c28e6a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_56faf78c-d104-42b9-834d-0be4d8291405",
+      "del:text": "<CARD> , <CARD> , and <CARD> is my final answer unless anyone has new info to share",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_56faf78c-d104-42b9-834d-0be4d8291405"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_715c792c-71ad-45e1-97d6-851e56a17581",
+      "del:text": "I have chosen !",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b9f5fbd8-3c11-48b9-b139-bf36f3eb2b53",
+      "del:text": "E,5,4",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_3e4577e2-c2ce-4521-9d4b-7dda12cdb360",
+      "del:text": "If so , when do we hit the submit button on the chat ?",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_dba5625c-d9ba-499e-be44-6dc89c4dbb90",
+      "del:text": "Considering that the task claims most people get it wrong , and our first instincts mostly seemed to be <CARD> and <CARD> , I think <MENTION> is probably right about selecting <CARD> as well .",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_dba5625c-d9ba-499e-be44-6dc89c4dbb90"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_fd238bcf-d80f-4755-a38b-a1a2873da86a",
+      "del:text": "I agree <MENTION>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_fd238bcf-d80f-4755-a38b-a1a2873da86a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_55ca3b0d-567e-4925-b427-fe18d594985d",
+      "del:text": "Sorry , I mean the final decision and submit hit button ?",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_889fe4fb-7737-4544-8f0b-845dec477ac3",
+      "del:text": "E,5,4",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_937616ac-a956-4308-8b72-b5ae3e3092a1",
+      "del:text": "E,5,4",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8c1d52b1-58b5-47cd-b741-8f5f7a0ecd3e",
+      "del:text": "E,5,4",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2e6aa1a3-b87c-4bf2-9938-32c7b6486414",
+      "del:text": "E,5,4",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b2b87dd5-6875-450f-8a74-43872e42c195",
+      "del:text": "E",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_9e1cd22c-ea95-41b3-baea-4ff6be7295d6"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_efa3daa5-2590-4fb8-8c4d-f796b08b2e64",
+      "del:text": "we all know we need to flip the <CARD> and the <CARD> to start and agree on those right ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_df136ab8-018e-4041-8b5d-7b003116f970",
+      "del:text": "I think we also need to flip the <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d737cfcb-0ffc-4314-b11e-4934ce23a635",
+      "del:text": "'Yes I think that''s right'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_551a9bfe-ea37-4c89-b87f-34b1d22bd0ab",
+      "del:text": "Yes I agree !"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_588bdb77-fa36-42a6-bb6a-ec7cbe600c92",
+      "del:text": "why the <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_549a65dc-ccc9-4629-ad46-d74183cdedbb",
+      "del:text": "I picked the <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d0d0956a-bdb1-4997-af9a-917afd9eb05c",
+      "del:text": "I picked <CARD> and <CARD> ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_cee8bfd4-bf9f-42a1-bf3d-930b3cad79db",
+      "del:text": "I also picked <CARD> and <CARD> ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_3103abae-2425-450f-8160-ff0d1512c5a8",
+      "del:text": "we know the <CARD> is an off right , so we need to verify that there is not a vowel on the other side"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_88196bea-42ce-4b3f-ae83-3d01ab28eef6",
+      "del:text": "Okay , so I will select <CARD> as well then . Good point , <MENTION> ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1eafe292-a060-4bb2-995c-575591de0448",
+      "del:text": "I was thinking we need to pick two also"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8747359e-e5df-4088-9487-e3f28e875be7",
+      "del:text": "Since <CARD> is not a vowel , we dont care about flipping that to determine the rule regarding \" all vowels \""
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b1ba00d9-8013-412e-b639-3dad8ab24ce4",
+      "del:text": "'The task states that \" all cards with vowels on one side have an even number on the other \" so I would personally not pick <CARD> since it''s an odd not even number .'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8f4e307c-bb0c-46e7-973e-8eaa93aa3082",
+      "del:text": "Then we need to pick the <CARD> ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0d9ab703-28f0-4ef6-86d4-f55bb476c0ff",
+      "del:text": "i think we need <CARD> , <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_30c8ff6c-78cb-44f3-9399-ed5338d0e12f",
+      "del:text": "That might be a good idea"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_fa9648c5-a4c1-45d3-982a-a41372769b99",
+      "del:text": "I went with <CARD> , <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e149667d-6365-4d12-b17d-2c8356bcab4b",
+      "del:text": "<MENTION> picking the <CARD> is required to prove the counterpoint that if we have a <CARD> it will be a non vowel"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_02699571-ce74-481e-930b-1ec562c28e6a",
+      "del:text": "Has everyone picked ?"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_56faf78c-d104-42b9-834d-0be4d8291405",
+      "del:text": "<CARD> , <CARD> , and <CARD> is my final answer unless anyone has new info to share"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_dba5625c-d9ba-499e-be44-6dc89c4dbb90",
+      "del:text": "Considering that the task claims most people get it wrong , and our first instincts mostly seemed to be <CARD> and <CARD> , I think <MENTION> is probably right about selecting <CARD> as well ."
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_fd238bcf-d80f-4755-a38b-a1a2873da86a",
+      "del:text": "I agree <MENTION>"
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "delidata_process_b381d5ca-df12-447b-8b2d-27bae81f6f7d",
+  "del:name": "DeliData Conversation b381d5ca-df12-447b-8b2d-27bae81f6f7d",
+  "del:startDate": null,
+  "del:endDate": null,
+  "del:hasTopic": [
+    {
+      "del:identifier": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d",
+      "del:name": "Conversation b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Kiwi"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Llama"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Narwhal"
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_5a0b245f-ce7a-49fe-8a7e-10f8a2f6612c",
+      "del:text": "Hello",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_5a0b245f-ce7a-49fe-8a7e-10f8a2f6612c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_89ad7215-f954-4f4e-a47c-e6e9aa15864a",
+      "del:text": "Hello",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_89ad7215-f954-4f4e-a47c-e6e9aa15864a"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4445b5d2-d02d-409a-8263-a2dffe68c70c",
+      "del:text": "Hello",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4445b5d2-d02d-409a-8263-a2dffe68c70c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_dcc66eaa-d85d-40f6-a8bb-c2f915ca9516",
+      "del:text": "so I take it we have to come to a decision",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_dcc66eaa-d85d-40f6-a8bb-c2f915ca9516"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_cbbf7ba8-96af-477c-9035-b9365d01cfb3",
+      "del:text": "I believe so",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_cbbf7ba8-96af-477c-9035-b9365d01cfb3"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e67f0df0-8a26-4bfc-852a-419c8f9b1e63",
+      "del:text": "I say <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e67f0df0-8a26-4bfc-852a-419c8f9b1e63"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_457484b2-2dbc-4c96-9ec1-58575ae3889c",
+      "del:text": "I agree",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_457484b2-2dbc-4c96-9ec1-58575ae3889c"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c7ec2447-5633-4cc6-a5b0-d7a08fb15b01",
+      "del:text": "I agree with you both",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c7ec2447-5633-4cc6-a5b0-d7a08fb15b01"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_189823ad-db7b-447c-9b57-50efeb5244b6",
+      "del:text": "Okay , Lets submit",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_189823ad-db7b-447c-9b57-50efeb5244b6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c08aa450-7b47-4aa4-b356-e904431c3b4d",
+      "del:text": "E,2",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c1d4d18e-803a-43f6-b87c-67de426ccda6",
+      "del:text": "Alright",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c1d4d18e-803a-43f6-b87c-67de426ccda6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_cba38399-aba7-4fa1-8335-ca654a589092",
+      "del:text": "E,2",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_7037959e-5249-4f36-8515-547244111a57",
+      "del:text": "ahh , we have a timer in the uper right that says we have 4 minutes to go",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_7037959e-5249-4f36-8515-547244111a57"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_d4faeea0-c72d-4c8e-a646-75d1532c22be",
+      "del:text": "So I guess we can discuss why we decided on <CARD> and <CARD>",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_d4faeea0-c72d-4c8e-a646-75d1532c22be"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_909c4608-f70c-4eff-951b-259b3901e52f",
+      "del:text": "Well , <CARD> is a vowel and <CARD> is an even number",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_909c4608-f70c-4eff-951b-259b3901e52f"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_8ef18c81-3f5c-4173-b2d1-41173994fa37",
+      "del:text": "i thought that if the cards had to have a vowel or even number on both sides <CARD> and <CARD> made sense",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_8ef18c81-3f5c-4173-b2d1-41173994fa37"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_37fe1ccf-6219-4c2a-b821-6d8027a0f93d",
+      "del:text": "Yeah , those cards would test the rule",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_37fe1ccf-6219-4c2a-b821-6d8027a0f93d"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_924b9b42-2ff4-4b4c-a645-490f917d2b98",
+      "del:text": "'it''s the only thing that makes sense to me'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_924b9b42-2ff4-4b4c-a645-490f917d2b98"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_92dc39b0-81a5-43df-8ded-999c523c22b0",
+      "del:text": "It would only make sense to turn them both because if you just turned the <CARD> card then that could be an exception . So it makes sense to turn both <CARD> and <CARD> to check that it works both ways",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_92dc39b0-81a5-43df-8ded-999c523c22b0"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_c52dd24e-aa76-4511-8813-8758e12f6486",
+      "del:text": "I agree",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_c52dd24e-aa76-4511-8813-8758e12f6486"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_e619fb9b-da81-4fe3-a41f-69423d348c3e",
+      "del:text": "<MENTION> true",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_e619fb9b-da81-4fe3-a41f-69423d348c3e"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6b649740-a6f5-4935-9010-ab54281ddbd6",
+      "del:text": "'So I guess we''re all in agreement'",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_6b649740-a6f5-4935-9010-ab54281ddbd6"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_b27d92f5-81d6-472d-a5cb-8325aadb9273",
+      "del:text": "I am glad we came to a conclusion quickly without any arguments",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_b27d92f5-81d6-472d-a5cb-8325aadb9273"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_2a3557a7-90f8-4a83-93b9-3118ca619ef5",
+      "del:text": "Me too",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_2a3557a7-90f8-4a83-93b9-3118ca619ef5"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_0c312916-1a6f-4783-be54-1c4f2cdcdebb",
+      "del:text": "It was a pleasure to work with you both",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_0c312916-1a6f-4783-be54-1c4f2cdcdebb"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_4c4c037f-36f5-40d7-9b92-2c5d313f8eda",
+      "del:text": "Likewise :)",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_4c4c037f-36f5-40d7-9b92-2c5d313f8eda"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_1263c749-0453-4082-a94d-14fa4d7ca7ab",
+      "del:text": "Thank you . Same here . Good luck !",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      },
+      "del:hasArgument": {
+        "@id": "delidata_argument_1263c749-0453-4082-a94d-14fa4d7ca7ab"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "delidata_message_6adea696-7a30-4a6d-85b8-53fba27f3f96",
+      "del:text": "E,2",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:hasTopic": {
+        "@id": "delidata_topic_b381d5ca-df12-447b-8b2d-27bae81f6f7d"
+      }
+    }
+  ],
+  "del:hasArgument": [
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_5a0b245f-ce7a-49fe-8a7e-10f8a2f6612c",
+      "del:text": "Hello"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_89ad7215-f954-4f4e-a47c-e6e9aa15864a",
+      "del:text": "Hello"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4445b5d2-d02d-409a-8263-a2dffe68c70c",
+      "del:text": "Hello"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_dcc66eaa-d85d-40f6-a8bb-c2f915ca9516",
+      "del:text": "so I take it we have to come to a decision"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_cbbf7ba8-96af-477c-9035-b9365d01cfb3",
+      "del:text": "I believe so"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e67f0df0-8a26-4bfc-852a-419c8f9b1e63",
+      "del:text": "I say <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_457484b2-2dbc-4c96-9ec1-58575ae3889c",
+      "del:text": "I agree"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c7ec2447-5633-4cc6-a5b0-d7a08fb15b01",
+      "del:text": "I agree with you both"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_189823ad-db7b-447c-9b57-50efeb5244b6",
+      "del:text": "Okay , Lets submit"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c1d4d18e-803a-43f6-b87c-67de426ccda6",
+      "del:text": "Alright"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_7037959e-5249-4f36-8515-547244111a57",
+      "del:text": "ahh , we have a timer in the uper right that says we have 4 minutes to go"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_d4faeea0-c72d-4c8e-a646-75d1532c22be",
+      "del:text": "So I guess we can discuss why we decided on <CARD> and <CARD>"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_909c4608-f70c-4eff-951b-259b3901e52f",
+      "del:text": "Well , <CARD> is a vowel and <CARD> is an even number"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_8ef18c81-3f5c-4173-b2d1-41173994fa37",
+      "del:text": "i thought that if the cards had to have a vowel or even number on both sides <CARD> and <CARD> made sense"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_37fe1ccf-6219-4c2a-b821-6d8027a0f93d",
+      "del:text": "Yeah , those cards would test the rule"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_924b9b42-2ff4-4b4c-a645-490f917d2b98",
+      "del:text": "'it''s the only thing that makes sense to me'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_92dc39b0-81a5-43df-8ded-999c523c22b0",
+      "del:text": "It would only make sense to turn them both because if you just turned the <CARD> card then that could be an exception . So it makes sense to turn both <CARD> and <CARD> to check that it works both ways"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_c52dd24e-aa76-4511-8813-8758e12f6486",
+      "del:text": "I agree"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_e619fb9b-da81-4fe3-a41f-69423d348c3e",
+      "del:text": "<MENTION> true"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_6b649740-a6f5-4935-9010-ab54281ddbd6",
+      "del:text": "'So I guess we''re all in agreement'"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_b27d92f5-81d6-472d-a5cb-8325aadb9273",
+      "del:text": "I am glad we came to a conclusion quickly without any arguments"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_2a3557a7-90f8-4a83-93b9-3118ca619ef5",
+      "del:text": "Me too"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_0c312916-1a6f-4783-be54-1c4f2cdcdebb",
+      "del:text": "It was a pleasure to work with you both"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_4c4c037f-36f5-40d7-9b92-2c5d313f8eda",
+      "del:text": "Likewise :)"
+    },
+    {
+      "@type": "del:Argument",
+      "del:identifier": "delidata_argument_1263c749-0453-4082-a94d-14fa4d7ca7ab",
+      "del:text": "Thank you . Same here . Good luck !"
+    }
+  ]
+}
