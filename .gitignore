@@ -1,0 +1,22 @@
+# Large data files
+data/habermas_machine/data/*.parquet
+data/delidata/data/raw/**/*.tsv
+data/delidata/data/combined/*
+data/EU_have_your_say/eu_haveyoursay_specific.db
+data/EU_have_your_say/csv_export/*.csv
+
+# Knowledge graph data files (can be regenerated)
+*.ttl
+*.rdf
+*.jsonld
+*.n3
+!ontology_deliberation.ttl
+!ontologies/*.owl
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# System files
+.DS_Store
