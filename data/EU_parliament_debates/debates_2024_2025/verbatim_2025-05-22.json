@@ -1,0 +1,1420 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "ep_debate_20250522",
+  "del:name": "European Parliament Debate - 2025-05-22",
+  "del:startDate": "2025-05-22T00:00:00Z",
+  "del:endDate": "2025-05-22T23:59:59Z",
+  "del:hasTopic": [
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem1",
+      "del:name": "Opening of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem2",
+      "del:name": "Choose Europe for Science (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem3",
+      "del:name": "Deliberations of the Committee on Petitions in 2023 (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem4",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem5",
+      "del:name": "Voting time"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem6",
+      "del:name": "Amending Regulation (EU) No 228/2013 as regards additional assistance and further flexibility to outermost regions affected by severe natural disasters and in the context of cyclone Chido devastating Mayotte (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem7",
+      "del:name": "Amending Regulation (EU) 2023/956 as regards simplifying and strengthening the carbon border adjustment mechanism (A10-0085/2025 - Antonio Decaro) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem8",
+      "del:name": "Modification of customs duties applicable to imports of certain goods originating in or exported from the Russian Federation and the Republic of Belarus (A10-0087/2025 - Inese Vaidere) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem9",
+      "del:name": "Granting equivalence to Moldova and Ukraine for field inspections and seed production (A10-0043/2025 - Veronika VrecionovÃ¡) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem10",
+      "del:name": "Amendments to the Capital Requirements Regulation as regards securities financing transactions under the net stable funding ratio (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem11",
+      "del:name": "Euratom Research and Training Programme for the period 2026-2027 complementing Horizon Europe (A10-0083/2025 - Borys Budka) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem12",
+      "del:name": "Partial renewal of Members of the Court of Auditors â HR nominee (A10-0088/2025 - OndÅej Knotek) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem13",
+      "del:name": "Deliberations of the Committee on Petitions in 2023 (A10-0063/2025 - Gheorghe FalcÄ) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem14",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem15",
+      "del:name": "Explanations of vote"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem16",
+      "del:name": "Amending Regulation (EU) 2023/956 as regards simplifying and strengthening the carbon border adjustment mechanism (A10-0085/2025 - Antonio Decaro)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem17",
+      "del:name": "Approval of the minutes of the part-session and forwarding of texts adopted"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem18",
+      "del:name": "Dates of the next part-session"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem19",
+      "del:name": "Closure of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem20",
+      "del:name": "Adjournment of the session"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "Presidente.",
+      "del:hasRole": {
+        "@type": "del:Role",
+        "del:name": "President"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Ekaterina Zaharieva,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Christian Ehler,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Giorgio Gori,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_5",
+      "del:name": "Catherine Griset,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_6",
+      "del:name": "Piotr MÃ¼ller,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_7",
+      "del:name": "ValÃ©rie Hayer,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_8",
+      "del:name": "Anna Strolenberg,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_9",
+      "del:name": "Ilaria Salis,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_10",
+      "del:name": "Marc Jongen,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_11",
+      "del:name": "Letizia Moratti",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_12",
+      "del:name": "Lina GÃ¡lvez",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_13",
+      "del:name": "AnnamÃ¡ria Vicsek",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_14",
+      "del:name": "Marion MarÃ©chal",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_15",
+      "del:name": "Christophe Grudler",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_16",
+      "del:name": "Vladimir PrebiliÄ",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_17",
+      "del:name": "Catarina Martins",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_18",
+      "del:name": "Zsuzsanna BorvendÃ©g",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_19",
+      "del:name": "Diana Iovanovici ÅoÅoacÄ",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_20",
+      "del:name": "Angelika Niebler",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_21",
+      "del:name": "Sofie Eriksson",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_22",
+      "del:name": "Jana NagyovÃ¡",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_23",
+      "del:name": "Diego Solier",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_24",
+      "del:name": "Oihane Agirregoitia MartÃ­nez",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_25",
+      "del:name": "Anthony Smith",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_26",
+      "del:name": "HÃ©lder Sousa Silva",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_27",
+      "del:name": "JoÃ£o Oliveira",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_28",
+      "del:name": "Bruno GonÃ§alves",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_29",
+      "del:name": "Kris Van Dijck",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_30",
+      "del:name": "JÃ¼ri Ratas",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_31",
+      "del:name": "Elena Sancho Murillo",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_32",
+      "del:name": "Eszter Lakos",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_33",
+      "del:name": "Liudas MaÅ¾ylis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_34",
+      "del:name": "Vytenis Povilas Andriukaitis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_35",
+      "del:name": "Sebastian Tynkkynen",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_36",
+      "del:name": "Helmut BrandstÃ¤tter",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_37",
+      "del:name": "Lukas Sieper",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_38",
+      "del:name": "President.",
+      "del:hasRole": {
+        "@type": "del:Role",
+        "del:name": "President"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_39",
+      "del:name": "Victor Negrescu",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_40",
+      "del:name": "PreÅedinte."
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_41",
+      "del:name": "Peter Agius,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_42",
+      "del:name": "Glenn Micallef,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_43",
+      "del:name": "Rosa EstarÃ s Ferragut,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_44",
+      "del:name": "Sandra GÃ³mez LÃ³pez,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_45",
+      "del:name": "PÃ¡l Szekeres,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_46",
+      "del:name": "Kosma ZÅotowski,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_47",
+      "del:name": "Jana Toom,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_48",
+      "del:name": "Ana Miranda Paz,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_49",
+      "del:name": "Marcin Sypniewski,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_50",
+      "del:name": "Maria Walsh",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_51",
+      "del:name": "Mireia BorrÃ¡s PabÃ³n",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_52",
+      "del:name": "Elena Nevado del Campo",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_53",
+      "del:name": "Juan Fernando LÃ³pez Aguilar",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_54",
+      "del:name": "Petras GraÅ¾ulis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_55",
+      "del:name": "ÎÎ±ÏÎ¯Î± ÎÎ±ÏÎ±ÏÎ¯Î±",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_56",
+      "del:name": "ÎÎµÏÏÎ­ÏÎ·Ï ÎÎ¹ÎºÎ¿Î»Î¬Î¿Ï-ÎÎ»Î±Î²Î¬Î½Î¿Ï",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_57",
+      "del:name": "Patryk Jaki",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_58",
+      "del:name": "Antonio Decaro,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_59",
+      "del:name": "Inese Vaidere,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_60",
+      "del:name": "Fabienne Keller",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_61",
+      "del:name": "Jadwiga WiÅniewska",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_62",
+      "del:name": "Jessika Van Leeuwen",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_1",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T09:00:46"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_2",
+      "del:text": "As President von der Leyen stated in the Sorbonne in Paris a few weeks ago, Europe is determined to start a new age of invention and ingenuity. We are making a clear choice to place research and innovation at the heart of our societies and economies. Europe is choosing science.\nToday, this choice is more urgent than ever. Science is a source of prosperity, but it is also fundamental to our sovereignty and economic security, our resilience, democracy and leading role on the global stage. For example, scientific leadership in AI or quantum is directly linked to the ability of protecting our society and our values. We need talent to progress in those crucial technology domains.\nCountries understand this. Global research and development has recently surpassed EURÂ 2.5Â trillion per year. At the same time, we also see science exploited for political ends, and academic freedom is under pressure.\nLast month, we had the opportunity to discuss developments on the other side of the Atlantic. Their universities, and fields like vaccine science and climate research, are being targeted by funding cuts.\nBut it is not only in the United States. Elsewhere in the globe, scientists are instrumentalised, at best, and openly attacked, at worst. In conflict zones, schools and universities are not spared. In Ukraine, Putin's war has physically damaged over 1Â 400 science-related buildings, constituting 30Â % of all research institutions, and displaced 20Â % of the country's researchers.\nIn this context, Europe must do more than hold its ground. We must become the best place in the globe to do research, the place our young people choose for their careers, and the place global talent comes to help us tackle global challenges.\nThis is the ambition of Choose Europe for Science. It builds on four dimensions. First: scientific freedom. Europe must remain the global leader in free and open research. We need a research and innovation union where knowledge flows as freely as goods, services and capital. This is why we commit to protecting freedom of scientific research through law with the new European Research Area Act. This is in line with the European Parliament's resolution of January 2024 on protecting the freedom of scientific research.\nSecond: funding. Horizon Europe is already the largest international research programme. It is a global magnet that received applicants from 194 countries, with 90 countries associated and more wanting in.\nIn addition, earlier this month, President von der Leyen announced a EURÂ 500Â million package for the programming period 2025â2027. It will include a new seven-year super grant under the European Research Council. We will support the brightest researchers regardless of their origin.\nWe are also expanding our Marie SkÅodowska-Curie Actions with a new pilot starting in October. It will build on the attractive conditions offered by Marie SkÅodowska-Curie Actions, with longer contracts and more secure professional perspectives to support excellent early-career scientists choosing Europe.\nFor established researchers, we are doubling the top-up funding for grantees moving in Europe. We also work with Member States to reach our 3Â % GDP target for R&D by 2030.\nFurthermore, the European Regional Development Fund is spending around EURÂ 35 billion to increase research and innovation capacity across the Union. This will help reduce the innovation divide by strengthening regional R&I ecosystems. Member States and regions are improving their innovation performance and cohesion, and thus retain their talents and attract new ones. Under the next Framework Programme, we will put forward ambitious proposals on research and innovation funding.\nThird: fast-tracking innovation. We must ensure our excellent research can be translated into breakthrough innovation, so that our citizens can benefit from science. Horizon Europe beneficiaries already submitted over 600Â patent applications, and we are going further. Next week I will present Europe's first start-up and scale-up strategy. Retaining and attracting talent will be a crucial dimension of this strategy. Next year we will table a new European Innovation Act, further simplifying and accelerating the path to market.\nFinally: global talent. If you want the best minds to choose Europe, we need to make it easier for them to come and live here. We are working to make the legal framework for researchers more effective, and to speed up entry to the EU. At the same time, we will strengthen our EURAXESS platform, which already links global researchers with thousands of opportunities across the EU.\nHonourable Members, to achieve this ambition, we also need mobilisation at national level. In the past weeks, we have witnessed our Member States opening their doors to talent, from the Welcome to Poland initiative and Choose France for Science, to Estonia's Mobilitas 3.0 or Czechia's Junior Star, and many more.\nHere we need a true Team Europe approach to maximise our efforts. As the European Commission, we stand ready to promote this coordinated approach, including through enhanced public communication, starting from tomorrow's Competitiveness Council. I wish to thank the Polish Presidency for its leadership on this subject.\nTo conclude, the aim of Choose Europe for Science is clear: to make Europe the leading destination for researchers on Earth. We can achieve this together as a Union with the active commitment from the Member States and, of course, with the crucial support of this House. The European Parliament has long championed scientific excellence and academic freedom. Your leadership has paved the way to our action today. So thank you very much and I look forward to working together.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2025-05-22T09:01:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_3",
+      "del:text": "I think we should also emphasise that this is not that we want to attract the most talented in the world, it is that we stand in also for the freedom of science. Much smaller programmes, like the programme for researchers at risk, are an expression for that stand-in. Yes, we want to be attractive for the world, but we also are the safe haven for researchers, women researchers in Afghanistan, researchers under pressure in other parts of the world â we are the safe haven for them. So it's both: our expression for excellence or ambition for excellence, but also our expression for standing in for the freedom of science.\nBasically, we all know that it's just going to work if we have a strong research programme. We can appeal to the world, but if we do not have a higher ambition in terms of research, it's not going to be attractive. What we need is, simply put, more money. The last programme had been designed for a budget of EURÂ 120Â billion and we ended up with EURÂ 80Â billion. So, research budgets are in constraints and that is in complete opposition to what our formulated ambition had been â that at least 3Â % of the GDP of Europe should be allocated to research and innovation.\nSo in a way, ambitions should follow also with the political courage to prioritise research and innovation in Europe. If I may conclude: now that the Commission and even the President have fully recognised the importance of science for the future of Europe, we also expect the Commission's proposal for FP10 to be a Commission which also chooses science for Europe.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-05-22T09:09:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_4",
+      "del:text": "La Commissione europea ha colto questa opportunitÃ  annunciando un piano da 500 milioni di euro, per il periodo 25-27, volto ad attrarre ricercatori internazionali. Tra le misure previste, una super sovvenzione di sette anni gestita dal Consiglio europeo della ricerca che offre stabilitÃ  e incentivi raddoppiati per chi si trasferisce in Europa. Questa iniziativa Ã¨ un passo nella giusta direzione per rafforzare la posizione dell'Europa nella ricerca scientifica globale.\nTuttavia, Ã¨ essenziale fare di piÃ¹. Negli ultimi venti anni l'Europa ha perso molto terreno rispetto ad altre regioni del mondo â su tutte Cina e Stati Uniti â riguardo alla capacitÃ  di attrarre investimenti per la ricerca e di coltivare talenti e progetti nei settori dell'innovazione piÃ¹ avanzata. E questa Ã¨ una delle cause del declino della competitivitÃ  europea.\nNon basta, quindi, l'iniziativa della Commissione: gli Stati membri vanno spinti a costruire un quadro legislativo in grado di valorizzare e sostenere stabilmente la capacitÃ  dei ricercatori, di quelli che sono emigrati e vogliamo che tornino, di quelli che vogliamo attrarre e, soprattutto, di quelli che sono rimasti ma che vivono e lavorano in condizioni di precarietÃ .\nVanno aumentati i finanziamenti nazionali e i salari dei ricercatori, vanno progettati percorsi di carriera solidi e trasparenti e per chi sceglie di venire in Europa vanno semplificate le procedure di visto. Solo cosÃ¬ la ricerca potrÃ  fiorire in Europa, diventando motore di innovazione e di ricerca.",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:timestamp": "2025-05-22T09:11:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_5",
+      "del:text": "Alors qu'on leur dÃ©roule le tapis rouge, que devient la recherche en Europe? Elle est noyÃ©e sous des financements pour des projets sur le genre, la race ou la dÃ©construction. Erasmus+ subventionne mÃªme des universitÃ©s islamistes. Â«HorizonÂ EuropeÂ» est devenu un guichet pour l'idÃ©ologie. Quant Ã  la Hongrie, elle est exclue, non pour des raisons scientifiques, mais parce qu'elle ose penser autrement. VoilÃ  la libertÃ© acadÃ©mique selon Bruxelles: un outil politique.\nComme si cela ne suffisait pas, on efface dÃ©sormais la France, jusque dans sa propre langue. Pour cette opÃ©ration de communication, le franÃ§ais a Ã©tÃ© remplacÃ© par un Â«globishÂ» fade et sans racine. Les identitÃ©s sont gommÃ©es, les cultures sont nivelÃ©es et l'Europe est standardisÃ©e Ã  coups de slogans creux. C'est plus qu'un renoncement, c'est une soumission culturelle assumÃ©e. Cette opÃ©ration n'a rien de scientifique:Â il s'agit d'un plan de rÃ©Ã©ducation idÃ©ologiqueÂ et nous la combattrons.",
+      "del:madeBy": {
+        "@id": "participant_5"
+      },
+      "del:timestamp": "2025-05-22T09:13:53"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_6",
+      "del:text": "Jest to tylko moÅ¼liwe wtedy, gdy faktycznie Årodki finansowe skoncentrujemy na tych najwaÅ¼niejszych obszarach i faktycznie na nich siÄ skupimy. Z racji tego, Å¼e oczywiste jest, Å¼e zasoby podatkowe, zasoby finansowe, ktÃ³rymi dysponuje Unia Europejska i paÅstwa czÅonkowskie, sÄ ograniczone, musimy podjÄÄ takÄ decyzjÄ. I musimy teÅ¼ odwaÅ¼nie powiedzieÄ, Å¼e wydatkowanie ÅrodkÃ³w finansowych na lewicowe, ideologiczne badania jest po prostu stratÄ ÅrodkÃ³w finansowych. Jest stratÄ nadziei na postÄp nauki w takich obszarach, o ktÃ³rych przed chwilÄ powiedziaÅem. I dzisiaj odwaÅ¼nie lewica musi wybraÄ, czy chcecie, aby finansowaÄ wasze lewicowe pomysÅy, badania na temat tego, czy jest 30 czy 35 pÅci, czy chcecie, Å¼eby Europa podÄÅ¼aÅa w wyÅcigu w zakresie rozwoju sztucznej inteligencji, energetyki czy innych obszarÃ³w, ktÃ³re przeÅoÅ¼Ä siÄ na jakoÅÄ Å¼ycia obywateli.\nSzanowni PaÅstwo, to nie jest kwestia dyskusji o wolnoÅci nauki, bo kaÅ¼dy moÅ¼e prowadziÄ badania naukowe, jakie sobie chce. MoÅ¼e decydowaÄ o tym samodzielnie. To jest decyzja o tym, gdzie idÄ pieniÄdze podatnikÃ³w. A pieniÄdze podatnikÃ³w powinny iÅÄ tam, gdzie efekty przeÅoÅ¼Ä siÄ na lepsze Å¼ycie obywateli.",
+      "del:madeBy": {
+        "@id": "participant_6"
+      },
+      "del:timestamp": "2025-05-22T09:15:15"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_7",
+      "del:text": "Mes chers collÃ¨gues, ce n'est pas seulement aux Ãtats-Unis, mais partout dans le monde oÃ¹ les extrÃªmes progressent, que la libertÃ© scientifique est menacÃ©e. L'initiative Â«Choose Europe for ScienceÂ» promeut cette libertÃ© scientifique. Elle vise Ã  renforcer l'attractivitÃ© des carriÃ¨res scientifiques en Europe. Elle veut accÃ©lÃ©rer l'innovation en facilitant le passage de la recherche fondamentale au marchÃ©.\nMadame la Commissaire, le groupe RenewÂ Europe soutient pleinement cette initiative. Il est Ã  vos cÃ´tÃ©s pour faire de l'Europe ce pÃ´le d'attraction pour la science. Il est Ã  vos cÃ´tÃ©s pour dÃ©fendre notre identitÃ©, celle d'une dÃ©mocratie europÃ©enne qui nous protÃ¨ge de tout obscurantisme. Alors travaillons ensemble pour octroyer davantage de moyens aux scientifiques europÃ©ens et Ã©trangers et pour faciliter le retour des chercheurs europÃ©ens expatriÃ©s.\nJe le dis aux scientifiques du monde entier: entendez cet appel et choisissez l'Europe pour continuer Ã  travailler. Des financements, un environnement favorable, des facilitÃ©s administratives, la mobilisation d'un budget deÂ 500Â millionsÂ d'EUR, ainsi que le soutien inconditionnel Ã  la libertÃ© et Ã  l'excellence scientifique sont lÃ  pour vous. L'Europe est gÃ©nÃ©reuse, car elle a besoin des scientifiques.\nChers collÃ¨gues, sans recherche, sans innovation, nous ne parviendrons pas Ã  rÃ©pondre Ã  l'enjeu de notre compÃ©titivitÃ©. C'est l'une des conditions pour faire de l'Union europÃ©enne une puissance politique pleine et entiÃ¨re. L'Ã©quation est posÃ©e. Alors avanÃ§ons.",
+      "del:madeBy": {
+        "@id": "participant_7"
+      },
+      "del:timestamp": "2025-05-22T09:17:01"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_8",
+      "del:text": "Choosing Europe also means long and difficult visa procedures. It also means having your diplomas recognised in one country, but not in the other. To choose Europe means to talk about researchers and professors that we want, but sometimes forgetting about the nurses, truckers and caregivers that we need.\nChoose Europe also means that sometimes we don't use our full workforce potential because refugees and women don't always find a job. I want the best talent to come to Europe, but I also want the best for talent in Europe, and I believe we can do both if we invest in the people here and if we see labour migration as an opportunity.\nSo why don't we train the people in Ljubljana but also look for them in Lagos? Why don't we help women in DÃ¼sseldorf to find a job, but also look for them in Delhi? Why don't we pay our professors and teachers in Saint-Ãtienne a fair wage, but also look for them in San Francisco?\nI would say, let's not ask why people would choose Europe, but let's ask ourselves, how can we make Europe the destination of choice for all talent?",
+      "del:madeBy": {
+        "@id": "participant_8"
+      },
+      "del:timestamp": "2025-05-22T09:19:19"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_9",
+      "del:text": "L'iniziativa Choose Europe for Science Ã¨ importante e la sostengo: l'Europa dovrebbe sempre essere un rifugio, un luogo di libertÃ , cooperazione e speranza. Sarebbe bello â aggiungo â se lo fosse anche per migranti e richiedenti asilo, che fanno altri lavori e provengono da altre parti del mondo; ma non lo Ã¨.\nApriamo le porte solo alle eccellenze, come se il sapere non fosse sempre frutto di un lavoro collettivo, spesso invisibile e quasi sempre sottopagato. Ã una visione miope, che tradisce un'idea elitaria della conoscenza: l'idea capitalistica. L'UniversitÃ  va difesa nella sua interezza, come comunitÃ , come luogo di sviluppo condiviso e non come vetrina di merito individuale.\nIn Italia chi fa ricerca Ã¨ spesso un lavoratore povero, intrappolato in una precarietÃ  cronica, costretto a una mobilitÃ  imposta, con conseguenze materiali e psicologiche devastanti. I posti di lavoro sono pochi, le prospettive pesanti, spesso solo all'estero. L'UniversitÃ  non si costruisce selezionando pochi eccellenti ma garantendo a tutte e tutti l'accesso al sapere.\nPertanto servono politiche pubbliche ambiziose, inclusive, di massa. Servono veri investimenti nella ricerca, perchÃ© la produzione di sapere Ã¨ il miglior valore aggiunto che possiamo generare, non solo sul piano economico ma, soprattutto, sul piano culturale, sociale e democratico.",
+      "del:madeBy": {
+        "@id": "participant_9"
+      },
+      "del:timestamp": "2025-05-22T09:20:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_10",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_10"
+      },
+      "del:timestamp": "2025-05-22T09:23:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_11",
+      "del:text": "L'intelligenza artificiale sta aprendo nuove frontiere: potenzia la ricerca, accelera le scoperte e rende le nostre industrie piÃ¹ competitive a livello globale. La scienza dunque non Ã¨ astratta: Ã¨ concreta, genera soluzioni, crea futuro.\nEppure in Europa il trasferimento tecnologico rimane una delle nostre maggiori debolezze. Abbiamo ottimi ricercatori, ma non sempre riusciamo a trasformare la ricerca in valore sociale ed economico. Gli investimenti pubblici in ricerca nell'Unione europea â fondamentali investimenti che vanno potenziati â sono pari al 2,2 percento del PIL, mentre negli USA sfiorano il 3,5 percento. Anche gli investimenti privati sono ancora troppo bassi: solo l'1,5 percento del PIL contro il 2,2 percento degli Stati Uniti.\nDobbiamo agire per colmare questi gap. Serve facilitare la ricerca di spin-off e start-up universitarie, promuovere partnership pubblico-privato, creare un ecosistema favorevole che attragga investimenti, acceleri il trasferimento tecnologico e quindi attragga i migliori ricercatori.\nL'Unione europea deve essere protagonista nell'affermare una scienza libera che non solo scopre ma costruisce per il bene dei propri cittadini. E questo significa anche sostenere con forza la sua applicazione industriale ed economica: Ã¨ una sfida che dobbiamo vincere.",
+      "del:madeBy": {
+        "@id": "participant_11"
+      },
+      "del:timestamp": "2025-05-22T09:24:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_12",
+      "del:text": "Europa debe posicionarse como refugio para las y los investigadores que buscan desarrollar sus ideas en un entorno de libertad y de respeto por la diversidad, por el pensamiento crÃ­tico que inspira el propio mÃ©todo cientÃ­fico, y Elige Europa para la ciencia es un paso en la direcciÃ³n correcta, pero debe ser un proyecto verdaderamente europeo para evitar crear desigualdades. No podemos permitir que esta medida beneficie solo a algunos territorios: esa no es la Europa que queremos.\nQueremos que Europa sea un lugar donde puedan investigar en libertad y abordar los desafÃ­os globales, donde puedan colaborar con personas expertas de todo el mundo y donde se puedan aprovechar bien las oportunidades de financiaciÃ³n. Y para eso debemos garantizar, principalmente, dos cosas: primero, un presupuesto fuerte, y segundo, un programa europeo de ciencia e innovaciÃ³n autÃ³nomo. Afortunadamente, la presidenta de la ComisiÃ³n el otro dÃ­a anunciÃ³ que asÃ­ serÃ­a.\nTenemos que convencernos de que, sin ciencia, no hay ni competitividad, ni democracia, ni proyecto europeo.",
+      "del:madeBy": {
+        "@id": "participant_12"
+      },
+      "del:timestamp": "2025-05-22T09:26:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_13",
+      "del:text": "Az EurÃ³pai BizottsÃ¡g a magyar kutatÃ³i kÃ¶zÃ¶ssÃ©g kizÃ¡rÃ¡sÃ¡val akarja bÃ¼ntetni a magyar kormÃ¡nyt, pedig ezzel pont azt fogja eredmÃ©nyezni, amit elvileg meg akarna akadÃ¡lyozni, az agyelszÃ­vÃ¡st. A magyar kutatÃ³k ma nemcsak az uniÃ³s, hanem mÃ¡r harmadik orszÃ¡gbeli kollÃ©gÃ¡ikkal szemben is hÃ¡trÃ¡nyban vannak. Ez a kirekesztÃ©s nemcsak igazsÃ¡gtalan, hanem EurÃ³pa versenykÃ©pessÃ©gÃ©t is gyengÃ­ti. A kivÃ¡lÃ³ magyar kutatÃ³k megÃ©rdemlik, hogy az egysÃ©ges kutatÃ¡si tÃ©rsÃ©ghez tartozzanak.",
+      "del:madeBy": {
+        "@id": "participant_13"
+      },
+      "del:timestamp": "2025-05-22T09:28:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_14",
+      "del:text": "Pour l'occasion, le prÃ©sident franÃ§ais n'a pas eu honte de proposerÂ 100Â millions d'euros pour attirer les chercheurs amÃ©ricains, alors que dans le mÃªme temps, le budget franÃ§ais dÃ©volu Ã  l'enseignement supÃ©rieur et Ã  la recherche s'est vu retirerÂ 1Â milliard d'euros enÂ 2025.\nPendant que les Ãtats-Unis consacrent plus deÂ 3,5Â % de leur PIB Ã  la recherche et au dÃ©veloppement, l'UE, elle, peine Ã  dÃ©passer lesÂ 2,2Â %. L'Europe, en effet, peine Ã  garder ses chercheurs, puisque, depuisÂ 2010, le taux de dÃ©part des docteurs europÃ©ens vers les Ãtats-Unis est d'environÂ 20Â %.\nAlors, avant de vouloir faire venir les chercheurs amÃ©ricains anti-Trump en Europe, commenÃ§ons dÃ©jÃ  par comprendre et faire en sorte de garder nos propres chercheurs en Europe grÃ¢ce Ã  une rÃ©munÃ©ration et Ã  des crÃ©dits dignes de ce nom.\nProfitons-en aussi pour nous interroger sur les orientations budgÃ©taires de la recherche publique dans nos pays qui, en France par exemple, avec le CNRS, est devenu le paradis des sciences molles pour militants woke au dÃ©triment de la recherche scientifique qui, elle, crÃ©e de la richesse et de l'emploi.",
+      "del:madeBy": {
+        "@id": "participant_14"
+      },
+      "del:timestamp": "2025-05-22T09:29:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_15",
+      "del:text": "Ã cet Ã©gard, je salue l'initiative Â«Choose EuropeÂ» et l'annonce d'une enveloppe deÂ 500Â millions d'euros jusqu'enÂ 2027, mais soyons clairs: lesÂ 22Â millions d'euros du programme pilote, via l'action MarieÂ Curie, ne suffiront pas. Ce programme pilote doit ouvrir la voie, oui, mais l'ouvrir vite, avec des procÃ©dures d'accueil simplifiÃ©es, une sÃ©lection rapide des projets et des perspectives de long terme pour celles et ceux qui veulent reconstruire ici leur avenir scientifique.\nPar ailleurs, l'excellence scientifique n'est pas incompatible avec l'agenda stratÃ©gique de l'Union, bien au contraire. Les projets portÃ©s dans ce cadre peuvent, par leurs rÃ©sultats, contribuer aux prioritÃ©s de l'Union, du climat Ã  la santÃ© en passant par les technologies critiques et de rupture.\nEnfin, j'en appelle Ã  toutes les universitÃ©s, acadÃ©mies et centres de recherche europÃ©ens: rejoignez le mouvement, ouvrez vos portes.",
+      "del:madeBy": {
+        "@id": "participant_15"
+      },
+      "del:timestamp": "2025-05-22T09:30:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_16",
+      "del:text": "V Äasu, ko so ogroÅ¾ene akademske svoboÅ¡Äine v ZdruÅ¾enih drÅ¾avah Amerike in drugje, kjer so dejstva spolitizirana, akademiki pa utiÅ¡ani, mora Evropa dajati zgled. Biti moramo upanje za tiste, ki iÅ¡Äejo resnico in ne nadzora. Za tiste, ki iÅ¡Äejo sodelovanje in ne cenzure. Zato moramo odpreti vrata svetu z novimi programi, kot so Erasmus+ za Indijo in Afriko, ter vzpostaviti nova partnerstva s tretjimi drÅ¾avami.\nTo niso le programi mednarodne izmenjave, ampak so lahko tudi reÅ¡ilni Äoln za tiste, ki so danes ogroÅ¾eni na Harvardu, Columbiji in drugje. Evropa mora sprejeti bistre ume iz vsega sveta. Naj jasno povem, Äe verjamete v svobodno misel in dostojanstvo znanja, potem izberite Evropo za znanost.",
+      "del:madeBy": {
+        "@id": "participant_16"
+      },
+      "del:timestamp": "2025-05-22T09:32:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_17",
+      "del:text": "Um grupo da extrema-direita chega e defende cortar o financiamento a universidades que se posicionam contra o genocÃ­dio na Palestina. Logo a seguir, outro dos grupos da extrema-direita vem defender cortes na investigaÃ§Ã£o cientÃ­fica sobre mulheres. Como se nÃ£o chegasse, vem o terceiro grupo de extrema-direita deste Parlamento e propÃµe adotar o conceito fascista de ciÃªncia: sÃ³ se investiga o que lhes der razÃ£o.\nA questÃ£o da liberdade acadÃ©mica nÃ£o Ã© um problema sÃ³ nos Estados Unidos, onde a administraÃ§Ã£o de Donald Trump estÃ¡ a perseguir as universidades e os cientistas. A interferÃªncia e a ameaÃ§a contra as universidades, o desrespeito completo pela autonomia, a falta de conhecimento â onde sobram racismo, misoginia e homofobia, elevados a critÃ©rios da ciÃªncia, que se pode ou nÃ£o produzir â, tambÃ©m jÃ¡ estÃ£o na Hungria. JÃ¡ estÃ¡ Ã  espreita em tantos paÃ­ses europeus. E nÃ£o foi, afinal, o que ouvimos aqui hoje?\nA iniciativa Escolhe a Europa para a CiÃªncia tem o objetivo de atrair cientistas de outras partes do mundo para fazer ciÃªncia na Europa. E Ã© bom que a Europa o queira fazer, que se queira abrir ao mundo e que perceba que a ciÃªncia Ã© fundamental.\nMas olhemos para o que estÃ¡ a acontecer: orÃ§amento para a ciÃªncia insuficiente, xenofobia no centro da polÃ­tica de imigraÃ§Ã£o e, mais, com a cobertura crescente que populares e liberais dÃ£o Ã  extrema-direita um pouco por toda a Europa, quem acolherÃ¡ os investigadores americanos,Â europeus, seja onde for, quando a perseguiÃ§Ã£o, aqui, tambÃ©m se tornar a regra?",
+      "del:madeBy": {
+        "@id": "participant_17"
+      },
+      "del:timestamp": "2025-05-22T09:33:32"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_18",
+      "del:text": "A tudomÃ¡nyos szabadsÃ¡g nem tÅ±ri a politikai Ã©s ideolÃ³giai nyomÃ¡sgyakorlÃ¡st, ezÃ©rt kÃ¡ros, hogy a tervezet eleve kiemeli a zÃ¶ld Ã¡tÃ¡llÃ¡st, a gender-tanokat, Ã©s kiemelt figyelmet fordÃ­t az ukrÃ¡n kutatÃ³kra, ezzel kvÃ¡zi meghatÃ¡rozva a tÃ¡mogatÃ¡s politikai feltÃ©teleit. A mobilitÃ¡s tÃºlhangsÃºlyozÃ¡sÃ¡val az eurÃ³pai kutatÃ³k hÃ¡trÃ¡nyba kerÃ¼lhetnek a harmadik orszÃ¡gbÃ³l Ã©rkezÅkkel szemben. Vagyis rejtetten a migrÃ¡ciÃ³t segÃ­ti a tervezet, rÃ¡adÃ¡sul nehezÃ­ti a kutatÃ³k visszatÃ©rÃ©sÃ©t sajÃ¡t hazÃ¡jukba, ezzel az UniÃ³n belÃ¼li agyelszÃ­vÃ¡st fokozzÃ¡k, ami a kevÃ©sbÃ© gazdag tagÃ¡llamokat sÃºlyosan Ã©rinti.",
+      "del:madeBy": {
+        "@id": "participant_18"
+      },
+      "del:timestamp": "2025-05-22T09:35:19"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_19",
+      "del:text": "Nu faceÈi absolut nimic pentru Europa. VÄ bateÈi joc! AduceÈi doar vaccinuri care au efecte secundare Èi omoarÄ oameni. Ideologii de gen, asta este cercetarea europeanÄ. CÃ¢nd veÈi Ã®nvÄÈa sÄ respectaÈi Europa Èi cercetÄtorii europeni, atunci veÈi avea excelenÈÄ.",
+      "del:madeBy": {
+        "@id": "participant_19"
+      },
+      "del:timestamp": "2025-05-22T09:36:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_20",
+      "del:text": "Woran wir wirklich noch arbeiten mÃ¼ssen, ist, dass wir hier auch die Rahmenbedingungen fÃ¼r die Talente, die nach Europa kommen, erleichtern. Ich hÃ¶re aus der Wissenschaftscommunity, dass es immer noch Riesenprobleme in den Mitgliedstaaten bei der Erteilung von Visa gibt, dass es beim Start schwierig istÂ â auch in dieser neuen Umgebung. Das ist jetzt nicht in erster Linie Aufgabe der Kommission, aber vielleicht kann man doch auch darauf hinwirken, dass die Talente, die zu uns nach Europa kommen wollen, sich hier auch wirklich willkommen fÃ¼hlen. Und das beginnt damit, dass wir bei der Visaerteilung Erleichterungen schaffen.",
+      "del:madeBy": {
+        "@id": "participant_20"
+      },
+      "del:timestamp": "2025-05-22T09:38:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_21",
+      "del:text": "Men vi hÃ¶r ju samma rop hÃ¤r i denna sal hÃ¤r i dag frÃ¥n extremhÃ¶gern som hÃ¥nar vetenskap, som fÃ¶rnekar klimatfÃ¶rÃ¤ndringarna, som vill bygga makten pÃ¥ rÃ¤dsla och fÃ¶rakt. Det duger inte.\nDÃ¤rfÃ¶r mÃ¥ste Europa svara, inte med tystnad utan med mod. Det Ã¤r nu som vi mÃ¥ste ta stÃ¤llning. Vi ska vara den sjÃ¤lvklara platsen i vÃ¤rlden dÃ¤r kunskapen fÃ¥r andas, dÃ¤r sanningen inte Ã¤r till salu. DÃ¤rfÃ¶r Ã¤r det hÃ¤r initiativet frÃ¥n kommissionen viktigt. Men det behÃ¶vs mer Ã¤n ord. Det krÃ¤vs handling, det krÃ¤vs fÃ¶rnuft. FÃ¶r lÃ¥t det nu inte bli sÃ¥ att vi skrumpnar till torra, bruna, orangea och sura apelsiner, utan lÃ¥t oss vara stolta i Europa dÃ¤r vetenskapen alltid har en plats.",
+      "del:madeBy": {
+        "@id": "participant_21"
+      },
+      "del:timestamp": "2025-05-22T09:39:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_22",
+      "del:text": "ÄlovÄk vÅ¡ak musÃ­ vÄÅit, Å¾e bude lÃ©pe. Proto vÄÅÃ­m, Å¾e poslednÃ­ kroky EvropskÃ© komise, a to je program Choose Europe for Science a pÅÃ­slib samostatnÃ©ho programu Horizont pÅinesou svÃ© ovoce. Jen doufÃ¡m, Å¾e pÅÃ­stup do nÄj bude nastaven tak, aby i menÅ¡Ã­ stÃ¡ty mÄly reÃ¡lnou Å¡anci z toho Äerpat. Jinak bude platit âPoslednÃ­ zhasÃ­nÃ¡â.",
+      "del:madeBy": {
+        "@id": "participant_22"
+      },
+      "del:timestamp": "2025-05-22T09:41:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_23",
+      "del:text": "Somos un continente con democracias sÃ³lidas: sanidad, educaciÃ³n, movilidad... SÃ­, pero Â¿puede un joven e investigador pagar un piso en Ãmsterdam, MÃºnich o Madrid con un contrato de tres aÃ±os? Financiamos ciencia con Horizonte Europa, pero llenamos a los investigadores de papeles y formularios. Los cientÃ­ficos pasan mÃ¡s tiempo acreditando que investigando.\nAdemÃ¡s, no podemos permitir que nuestros investigadores vivan en la precariedad. Necesitamos mÃ¡s vÃ­nculos con las empresas, mÃ¡s empleabilidad y mÃ¡s sinergias. Si queremos que elijan Europa, hagamos de Europa una elecciÃ³n real, no una apuesta inestable. La ciencia necesita libertad, continuidad y estabilidad. Sin ciencia no hay Europa.",
+      "del:madeBy": {
+        "@id": "participant_23"
+      },
+      "del:timestamp": "2025-05-22T09:42:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_24",
+      "del:text": "En este nuevo tablero geopolÃ­tico, el liderazgo cientÃ­fico e innovador proporciona una ventaja competitiva cada vez mayor. Y eso, en el medio y en el largo plazo, se traduce en nuevos y mejores puestos de trabajo, mÃ¡s autonomÃ­a estratÃ©gica y menos desigualdades.\nPor lo tanto, en una Euskadi que siempre ha apostado por la investigaciÃ³n y el desarrollo, por la libertad cientÃ­fica y el fomento del talento, esperamos que esos mÃ¡s de 1Â 250 millones de euros sirvan para hacer crecer nuestro espacio de oportunidad y nuestro paÃ­s.",
+      "del:madeBy": {
+        "@id": "participant_24"
+      },
+      "del:timestamp": "2025-05-22T09:43:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_25",
+      "del:text": "Ce sont les mÃªmes qui, ici, s'enlisent dans des circonvolutions pour ne pas dÃ©noncer le gÃ©nocide en cours Ã  Gaza. Les mÃªmes qui, ici, frappent d'anathÃ¨me les militants et les Ã©tudiants dÃ©nonÃ§ant les massacres de Tsahal; les mÃªmes qui, ici, accusent d'antisÃ©mitisme toute personne critiquant le gouvernement d'extrÃªme droite de M.Â Netanyahou.\nDepuis que M.Â Macron est au pouvoir, le budget de l'enseignement supÃ©rieur par Ã©tudiant a baissÃ© deÂ 15Â % en France. Une destruction mÃ©thodique de l'universitÃ© publique a lieu sous nos yeux. Les universitÃ©s ne parviennent plus Ã  boucler leur budget et la prÃ©carisation des personnels et des Ã©tudiants atteint des niveaux records.\nAssez de cette hypocrisie et de ces plans de communication obscÃ¨nes! Nous dÃ©fendrons toujours les libertÃ©s politiques et acadÃ©miques et les moyens nÃ©cessaires Ã  leur expression, tout comme nous dÃ©fendrons toujours l'accueil des rÃ©fugiÃ©s, peu importe leur origine.",
+      "del:madeBy": {
+        "@id": "participant_25"
+      },
+      "del:timestamp": "2025-05-22T09:45:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_26",
+      "del:text": "Pela primeira vez, os investigadores terÃ£o nÃ£o sÃ³ financiamento robusto e direto da UniÃ£o Europeia, mas tambÃ©m a garantia de contratos prolongados por parte das instituiÃ§Ãµes e a necessÃ¡ria continuidade da carreira cientÃ­fica.\nAlÃ©m disso, com a exigÃªncia de cofinanciamento que esta iniciativa impÃµe, devemos garantir que todas as instituiÃ§Ãµes sediadas em regiÃµes com menos recursos possam realmente participar sem deixar ninguÃ©m para trÃ¡s.\nMas precisamos de sonhar mais alto. Precisamos de garantir que esta iniciativa posiciona a UniÃ£o Europeia como lÃ­der global em ciÃªncia e inovaÃ§Ã£o, oferecendo um ambiente de investigaÃ§Ã£o aberto, bem financiado, coeso e com forte ligaÃ§Ã£o ao setor empresarial. Ã muito importante que tal aconteÃ§a.\n(O orador aceita responder a uma pergunta Â«cartÃ£o azulÂ»)",
+      "del:madeBy": {
+        "@id": "participant_26"
+      },
+      "del:timestamp": "2025-05-22T09:46:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_27",
+      "del:text": "A desvalorizaÃ§Ã£o social e profissional dos seus cientistas e dos seus investigadores Ã© uma marca que afunda o nosso paÃ­s, que condena o nosso paÃ­s a nÃ£o dispor das condiÃ§Ãµes de que precisa para se desenvolver. A FundaÃ§Ã£o para a CiÃªncia e a Tecnologia ainda nÃ£o ratificou o CÃ³digo de Conduta para o Recrutamento de Investigadores, nem a Carta Europeia do Investigador. Vai fazÃª-lo ou nÃ£o?\nQual vai ser a soluÃ§Ã£o do senhor deputado e do seu partido para a revogaÃ§Ã£o do estatuto de bolseiro de investigaÃ§Ã£o e para a substituiÃ§Ã£o das bolsas por um enquadramento adequado do ponto de vista laboral e social, para os cientistas e os investigadores, que tÃªm de ter condiÃ§Ãµes adequadas do ponto de vista do seu enquadramento laboral, em vez de serem contratados precariamente como bolseiros?",
+      "del:madeBy": {
+        "@id": "participant_27"
+      },
+      "del:timestamp": "2025-05-22T09:48:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_28",
+      "del:text": "Portugal tem centros de excelÃªncia de inovaÃ§Ã£o e desenvolvimento. Dou como exemplo a questÃ£o da saÃºde; a FundaÃ§Ã£o Champalimaud, em particular, Ã© um bom exemplo de investigaÃ§Ã£o e desenvolvimento no que diz respeito ao cancro e ao combate ao cancro.\nEstou certo de que os investigadores portugueses, naturalmente, usarÃ£o tambÃ©m esta prerrogativa de escolher a Europa para a ciÃªncia para poderem melhorar e aprofundar as suas carreiras ââ e espero que tal aconteÃ§a. SerÃ¡ um passo fundamental para seguirmos no sentido que referi, de ligaÃ§Ã£o da investigaÃ§Ã£o tambÃ©m ao mundo empresarial.",
+      "del:madeBy": {
+        "@id": "participant_26"
+      },
+      "del:timestamp": "2025-05-22T09:49:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_29",
+      "del:text": "A iniciativa Chose Europe, agora apresentada, acrescenta 500 milhÃµesÂ EUR, que permitem valorizar os nossos jovens qualificados e novos centros de investigaÃ§Ã£o. Mas o aumento de financiamento abre tambÃ©m portas ao recrutamento dos melhores cientistas que jÃ¡ nÃ£o estÃ£o na Europa.\nFalo daqueles que, nos Estados Unidos e noutros paÃ­ses, sofreram cortes no apoio ao seu trabalho e que sentem a ciÃªncia ameaÃ§ada por parte dos mesmos que em Gaza ameaÃ§am crianÃ§as, mas que no mundo ameaÃ§am a verdade.\nEsta Ã© uma oportunidade Ãºnica para reinventar a Europa como lÃ­der de uma nova era do conhecimento na descarbonizaÃ§Ã£o, na inteligÃªncia artificial ou nas biotecnologias de saÃºde. Mas, sejamos claros, o futuro nÃ£o vai esperar por nÃ³s. E Ã© por isso que, mais do que Ã© importante apresentar, Ã© urgente fazer.Â Essa deve ser razÃ£o suficiente para que o Velho Continente volte a ser o mais iluminado.\n(O orador aceita responder a uma pergunta Â«cartÃ£o azulÂ»)",
+      "del:madeBy": {
+        "@id": "participant_28"
+      },
+      "del:timestamp": "2025-05-22T09:50:12"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_30",
+      "del:text": "Primeiro, como Ã© que Portugal sai da situaÃ§Ã£o de dependÃªncia dos paÃ­ses mais fortes, das grandes potÃªncias da UniÃ£o Europeia, no acesso aos fundos para a ciÃªncia? A UniÃ£o Europeia acaba de anunciar um conjunto de medidas com grandes fundos associados. Portugal continua sempre numa posiÃ§Ã£o de dependÃªncia, porque, para aceder a esses fundos, as nossas unidades de ciÃªncia e de investigaÃ§Ã£o precisam sempre de encontrar alguma espÃ©cie de consÃ³rcio com unidades de paÃ­ses mais importantes, mais fortes, para conseguir aceder aos fundos.\nA segunda pergunta Ã© esta: como Ã© que o PS resolve a contradiÃ§Ã£o do seu discurso e do seu posicionamento, defendendo, por um lado, o investimento na ciÃªncia e na investigaÃ§Ã£o, mas, por outro lado, estando de acordo com todas as restriÃ§Ãµes e condicionamentos orÃ§amentais que a UniÃ£o Europeia nos impÃµe, nomeadamente atravÃ©s do Pacto de Estabilidade?\nPrecisamos de fazer o investimento em ciÃªncia e tecnologia, e isso nÃ£o Ã© compatÃ­vel com a aceitaÃ§Ã£o das restriÃ§Ãµes orÃ§amentais que a UniÃ£o Europeia nos impÃµe.",
+      "del:madeBy": {
+        "@id": "participant_27"
+      },
+      "del:timestamp": "2025-05-22T09:51:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_31",
+      "del:text": "E, portanto, responderei sendo de um partido profundamente europeÃ­sta, de um partido que criou, em Portugal, a FundaÃ§Ã£o para a CiÃªncia e a Tecnologia, de um partido que aprofundou a integraÃ§Ã£o europeia tambÃ©m no conhecimento, e que jÃ¡ na Ãºltima legislatura â nÃ£o na Ãºltima legislatura do governo AD, mas do governo do Partido Socialista â criou clusters em Portugal que nÃ£o sÃ³ permitiram aceder a mais fundos, mas permitiram aceder a mais fundos entre empresas e universidades portuguesas.\nE, portanto, essa visÃ£o cÃ©tica sobre a Europa Ã© algo que caracteriza bem a bancada de onde o senhor deputado vem, mas nÃ£o Ã© algo que seja refletido nos dados pÃºblicos, que nos demonstram que, hoje, temos pessoas mais qualificadas, mais inovaÃ§Ã£o â e muito mais do que tÃ­nhamos antes da integraÃ§Ã£o europeia.",
+      "del:madeBy": {
+        "@id": "participant_28"
+      },
+      "del:timestamp": "2025-05-22T09:52:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_32",
+      "del:text": "Het gemiddelde in de Europese Unie ligt nu rond de 2,2Â % en dat is ruim onvoldoende. Onze productiviteit lijdt hieronder. Zo kunnen we de wereldwijde concurrentie niet aangaan en dreigen we aan welvaart in te boeten. Dus goed dat de Commissie actie onderneemt. Maar sta me toe, mevrouw de commissaris, drie belangrijke kanttekeningen te maken:\n1) laat fundamenteel onderzoek niet vallen. Dat brengt het Europese concurrentievermogen op lange termijn immers in gevaar;\n2) behoud de zeer waardevolle bottom-upbenadering in het Marie Curie-programma. Hierin is politieke sturing niet wenselijk;\n3) let op met het reguleren van academische vrijheid, want het enige kader ter bescherming van de academische vrijheid is net dat er geen kader is.\nConclusie: kiezen voor onderzoek en innovatie is kiezen voor de toekomst.",
+      "del:madeBy": {
+        "@id": "participant_29"
+      },
+      "del:timestamp": "2025-05-22T09:53:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_33",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2025-05-22T09:55:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_34",
+      "del:text": "Â¿QuÃ© hubiera sido de nuestra historia sin Marie Curie, la espaÃ±ola Margarita Salas, Charles Darwin o Grace Hopper? Os aseguro que la historia tal y como la conocemos no hubiera sucedido. Continuemos rompiendo barreras en defensa de la ciencia y de la tecnologÃ­a y rompiendo, ademÃ¡s, techos de cristal para que las mujeres tambiÃ©n seamos lÃ­deres y estemos presentes en esta transformaciÃ³n de la innovaciÃ³n y de la ciencia.\nEl desarrollo en I+D, la tecnologÃ­a, la inteligencia artificial y la digitalizaciÃ³n deben reforzarse como herramientas de avance, de libertad, de seguridad y de competitividad europea frente a las amenazas de los oligarcas estadounidenses como Donald Trump o Elon Musk.\nElige Europa para la ciencia debe ser el compromiso por el liderazgo de Europa en innovaciÃ³n para que nuestros jÃ³venes elijan venir y quedarse en Europa. La inversiÃ³n anunciada son buenas noticias, pero debemos seguir siendo ambiciosos. Debemos seguir atrayendo talento a Europa a travÃ©s de mÃ¡s inversiÃ³n y buenas condiciones laborales. Si queremos el avance cientÃ­fico de Europa, debemos estar del lado de los cientÃ­ficos y cientÃ­ficas.",
+      "del:madeBy": {
+        "@id": "participant_31"
+      },
+      "del:timestamp": "2025-05-22T09:56:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_35",
+      "del:text": "Nem feledkezhetÃ¼nk meg a kutatÃ¡si innovÃ¡ciÃ³s szakadÃ©k csÃ¶kkentÃ©sÃ©rÅl sem. ErÅs eurÃ³pai kutatÃ¡si tÃ©rsÃ©get kell kiÃ©pÃ­tenÃ¼nk, kivÃ¡lÃ³ infrastruktÃºrÃ¡kkal, amelyek minden rÃ©giÃ³t Ã©s tagÃ¡llamot bevonnak, beleÃ©rtve MagyarorszÃ¡got is, amely a jÃ¶vÅben, amikor majd mi, a Tisza leszÃ¼nk kormÃ¡nyon, visszaadjuk az AkadÃ©mia szabadsÃ¡gÃ¡t, Ã©s majd ismÃ©t Ã©lÃ©nk tudomÃ¡nyos Ã¶koszisztÃ©mÃ¡vÃ¡ vÃ¡lhat, ahol a tehetsÃ©g valÃ³ban kibontakozhat. EurÃ³pÃ¡nak erÅsÃ­tenie kell tudomÃ¡nyos szuverenitÃ¡sÃ¡t, nem csak a csÃºcstechnolÃ³giÃ¡ba kell befektetnie, hanem az azt lÃ©trehozÃ³ emberekbe is.",
+      "del:madeBy": {
+        "@id": "participant_32"
+      },
+      "del:timestamp": "2025-05-22T09:57:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_36",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_33"
+      },
+      "del:timestamp": "2025-05-22T09:59:29"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_37",
+      "del:text": "And of course, Draghi mentioned the necessity to build a research and innovation union. A union requires a lot of effort and a whole-of-Commission approach and a whole-of-government approach. We are just proposing to establish a pilot project using European reference networks, using artificial intelligence fabrics, using a health data space, using biobanks and oneÂ million genomics to build an ecosystem and a reductionÂ in the area of rare diseases, rare cancers and low prevalence diseases.\nIt would be a good example to have pan-European infrastructure. I will send you our proposals.",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-05-22T10:00:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_38",
+      "del:text": "TÃ¤mÃ¤ jÃ¤ttipaketti on omiaan houkuttelemaan tutkijoita, joilta nÃ¤mÃ¤ tutkimusrahat ovat Atlantin toisella puolella huvenneet. Yhdysvallat hylkÃ¤si jo nÃ¤mÃ¤ akateemiset pyristelyt. Jos ne olisivat tehneet Amerikasta vahvan, ei niitÃ¤ olisi hylÃ¤tty. SitÃ¤ kannattaisi miettiÃ¤ Euroopassakin. Jos yksittÃ¤iset jÃ¤senmaat haluavat omasta pussistaan tukea tÃ¤tÃ¤, olkaa hyvÃ¤ ja maksakaa se omista varoistanne. Eurooppa tarvitsee kasvua, innovaatiota ja aitoa tiedettÃ¤. Ei lisÃ¤Ã¤ woken kyllÃ¤stÃ¤miÃ¤ tutkimuksia.",
+      "del:madeBy": {
+        "@id": "participant_35"
+      },
+      "del:timestamp": "2025-05-22T10:01:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_39",
+      "del:text": "So that's the situation. In the United States, they can't work freely anymore. So please, Commissioner, go there, get them. We really have to do something. They have great talent and they should come to Europe.\nOne more thing: yesterday, we had a conference about the mental health of the children of Ukraine. They are refugees â 20Â 000 of them were stolen and brought to Russia. They need a lot for mental health. Please think about them as well. Let's do something for them.",
+      "del:madeBy": {
+        "@id": "participant_36"
+      },
+      "del:timestamp": "2025-05-22T10:03:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_40",
+      "del:text": "Mas as opÃ§Ãµes que tÃªm sido feitas sÃ£o exatamente no sentido contrÃ¡rio. NÃ£o apenas nas polÃ­ticas econÃ³micas, que determinam, para alguns paÃ­ses, melhores condiÃ§Ãµes de desenvolvimento cientÃ­fico e tecnolÃ³gico e de incorporaÃ§Ã£o da ciÃªncia e da tecnologia na sua atividade produtiva, mas tambÃ©m porque, no acesso aos fundos, as condiÃ§Ãµes de acesso entre paÃ­ses nÃ£o sÃ£o iguais, e os paÃ­ses menos desenvolvidos tÃªm mais dificuldades em aceder aos fundos da UniÃ£o Europeia para poderem garantir melhores condiÃ§Ãµes para o desenvolvimento cientÃ­fico e tecnolÃ³gico.\nOs paÃ­ses menos desenvolvidos tÃªm mais dificuldades tambÃ©m em fazer o investimento com os seus prÃ³prios recursos orÃ§amentais, porque as limitaÃ§Ãµes e os condicionamentos da UniÃ£o Europeia pesam mais.\nÃ preciso inverter essas opÃ§Ãµes para garantir que haja verdadeiramente coesÃ£o dentro da UniÃ£o Europeia.",
+      "del:madeBy": {
+        "@id": "participant_27"
+      },
+      "del:timestamp": "2025-05-22T10:04:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_41",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_37"
+      },
+      "del:timestamp": "2025-05-22T10:05:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_42",
+      "del:text": "Today, already 42Â % of our young doctoral and postdoctoral researchers that we support through Marie SkÅodowska-Curie Actions come from outside the EU and 80Â % of our publications that we fund through Horizon Europe are open access. I think that we have to be proud of our European model that we have for research. In Europe, science is free. In Europe, we celebrate both questions and our diverse academic traditions. In Europe, people are at the centre of scientific research and we should be proud of that.\nI heard a lot of you who said we have to improve the conditions of European researchers who are already here and that we have to create a true union of science and research. This was actually one of my number one priorities. In the five minutes at the beginning, I unfortunately wasn't able to present the full package of Choose Europe for Science, but I can reassure you that we are working on everything that you mentioned, like improving career development, improving conditions for scientists in Europe, visa facilitation â we worked with Commissioner Brunner and with the Member States on that â and all the other questions that were raised and proposals that I heard today.\nI want to share with you one concrete number: now, with only 5Â % of the world's population, Europe is already home to one fourth of scientists in the world. In a decade, the number of European researchers will have grown by 45Â %, which is significant. That means that young people choose science and choose to become scientists despite disinformation and science scepticism on the rise. They embrace science and for those young people who choose science, we are obliged to continue to do our best for Europe to remain the best place to do science in the world. I am committed and I rely on your support to work to achieve this.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2025-05-22T10:07:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_43",
+      "del:text": "The debate is closed.\nWritten Statements (Rule 178)",
+      "del:madeBy": {
+        "@id": "participant_38"
+      },
+      "del:timestamp": "2025-05-22T10:10:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_44",
+      "del:text": "Ãn calitate de vicepreÈedinte al Parlamentului European responsabil pentru Serviciul de Cercetare al Parlamentului European, Sistemul european de evaluare a strategiilor Èi a politicilor Èi Comitetul pentru viitorul ÈtiinÈei Èi tehnologiei, consider cÄ ÈtiinÈa trebuie sÄ fie un pilon central al proiectului european.\nEuropa are talentul, infrastructura Èi ambiÈia necesare, dar pentru a deveni un lider global autentic, trebuie sÄ ne demonstrÄm angajamentul prin investiÈii concrete. De aceea, Ã®n calitate de negociator-Èef al Parlamentului European pentru bugetul UE din acest an, am obÈinut fonduri suplimentare pentru cercetare Èi inovare, reflectÃ¢nd efortul nostru comun de a susÈine o EuropÄ orientatÄ spre ÈtiinÈÄ, prin sprijinirea oamenilor, ideilor Èi soluÈiilor de viitor.\nTrebuie sÄ continuÄm sÄ susÈinem programe precum Orizont Europa, sÄ reducem barierele administrative pentru cercetÄtori Èi sÄ asigurÄm acces echitabil pentru toate statele membre. Este esenÈial sÄ aducem ÈtiinÈa mai aproape de cetÄÈeni prin transparenÈÄ, educaÈie Èi acces deschis la cunoaÈtere.\nSÄ construim Ã®mpreunÄ o EuropÄ care crede Ã®n cunoaÈtere, respectÄ ÈtiinÈa Èi sprijinÄ pe cei care creeazÄ viitorul.",
+      "del:madeBy": {
+        "@id": "participant_39"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_45",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_40"
+      },
+      "del:timestamp": "2025-05-22T10:10:44"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_46",
+      "del:text": "Because after all, this is what citizens really care about. They do not care about laws; they care about rights reaching them and their families. During the year 2023, the Committee of Petitions received 1Â 452 petitions representing a 16Â % increase over previous years, but we believe there is room for much more. We believe there should be much more awareness about this important tool for citizens.\nThe main topics of the petitions were the environment, internal market and fundamental rights. We received, for instance, many petitions on the Data Protection Regulation and its breaches in various Member States. We received petitions on the rule of law and democracy and a lot of petitions on environmental concerns. In fact, it's fair to say that there is no Petitions Committee hearing without matters on environmental protection discussed in the committee, including wildlife conservation, forest policy and breaches to the Habitats Directive.\nWe received many petitions also in the area of health, and this clearly shows that citizens want more out of Europe in this area. And in many discussions we had in the committee, it is with pride that I say that a lot of our discussions lead to changes, lead to implementation, lead to enforcement, lead to investigations. Of course, we need more of this. We need the Commission to dedicate even more resources to following up, to responding to petitions and to implementation.\nIn 2023 we organised also four public hearings, some jointly with other committees, and these covered a wide range of petition-driven issues, including the Schengen border concerns, the impact of climate change on social security and vulnerable groups. The committee and the Commission maintain a very solid ongoing cooperation and we need, as we said, more involved Commission services and dedication to responding to petition concerns.\nNixtieq nagÄ§laq bil-messaÄ¡Ä¡ bil-Malti billi nenfasizza r-rabta Äara li hemm bejn id-drittijiet tagÄ§na bÄ§ala Äittadini Ewropej u Å¼-Å¼mien li ndumu biex neÄ§duhom id-drittijiet. Bl-IngliÅ¼ ngÄ§idu Justice delayed is justice denied. U hawn nieÄ§u eÅ¼empju minn Malta, l-elettorat tiegÄ§i. F'Malta suppost gÄ§andna standards Ewropej gÄ§al baÄ§ar nadif imma tiltaqa' ma' familji bit-tfal, jgÄ§idulek: \"Jien ma nistax ingawdi l-bajja gÄ§ax hemm id-drenaÄ¡Ä¡ Ä§iereÄ¡ fil-bajja\". Fil-fatt, meta tara l-istorja tara li l-Kummissjoni Ewropea ilha gÄ§axar snin tibgÄ§at l-ittri. Is-sena l-oÄ§ra kellna sentenza tal-qorti li fl-aÄ§Ä§ar qalet li gÄ§andna bÅ¼onn ninfurzaw il-liÄ¡i Ewropea. PerÃ², sadanittant, dawk it-tfal saru adulti u ma gawdewiex il-bajja. Ejja nagÄ§mluha aktar, kollha kemm aÄ§na, biex niffukaw fuq l-implimentazzjoni. GÄ§ax wara kollox l-implimentazzjoni twassal gÄ§ad-drittijiet.\nAÄ§na fil-kumitat tal-petizzjonijiet ser nagÄ§mlu l-biÄÄa tagÄ§na billi nagÄ§tu l-vuÄi liÄ-Äittadini li Ä§afna drabi m'gÄ§andhomx triq oÄ§ra Ä§lief li jiÄ¡u quddiemna. GÄ§alhekk nagÄ§laq billi nirringrazzja lill-kollegi tal-gruppi politiÄi kollha u anki MEPs bla grupp, tal-Ä§idma dedikata immens f'dan il kumitat u nÄ§ares 'il quddiem gÄ§al djalogu interessanti llum u vot b'saÄ§Ä§tu u koerenti gÄ§ar-riÅ¼oluzzjoni li gÄ§andna quddiemna.",
+      "del:madeBy": {
+        "@id": "participant_41"
+      },
+      "del:timestamp": "2025-05-22T10:11:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_47",
+      "del:text": "As MrÂ Agius has just said, petitions are an effective channel for direct contact and open dialogue on problems affecting the daily lives of Europeans.\nAs mentioned by Commissioner Å efÄoviÄ last week in the structured dialogue with your committee, the Commission remains committed to providing timely and pertinent contributions to the European Parliament's response to these concerns.\nA clear signal of this commitment is that, throughout 2023, Commission representatives were present at all meetings of the Committee on Petitions, including at the highest political level. For example, ViceâPresident Å efÄoviÄ was with you in February 2023 for a structured dialogue in accordance with the Framework Agreement on relations between our two institutions, and Commissioner Dalli took part in the annual workshop on the Rights of Persons with Disabilities in November 2023.\nAccording to your report, in 2023, you sent us 557 new petitions for opinion. In total, we provided on 984 petitions. The Commission continues to deploy the resources necessary to ensure that all petitions you send are properly addressed.\nLooking at the petitions received in 2023, the main topics raised were the environment, the economy and fundamental rights. These concerns remain valid today and broadly align with the priorities of this Commission, as outlined in President von der Leyen's political guidelines and reflected in the 2025 Commission Work Programme adopted earlier this year, which focuses on bold action to bolster our security, prosperity and democracy.\nI would like to reiterate our commitment on addressing petitions that raise concerns on the implementation of EU law â a core priority under this mandate, and something crucial to maintaining the credibility of the EU institutions.\nIn February, we adopted a communication on implementation and simplification, setting out our vision for fast and visible improvements for Europeans and European businesses.\nWhen it comes to the enforcement of EU law, the Commission takes action where necessary, using the infringement procedure. But the infringement procedure is not designed to offer concrete solutions for individuals or ensure individual redress. Rather, it is aimed at addressing systemic problems affecting a large amount of people, often across Member States.\nPetitioners pointing to the incorrect application of EU law in individual cases would benefit more from the mechanisms available at national level, such as the national courts, regulatory bodies or ombudsman. If the problem has a crossâborder dimension, the SOLVIT network may offer quick and flexible remedies.\nWe have heard your calls for more transparency and better informationâsharing with regard to the Commission's enforcement actions. We publish decisions on every step of an infringement procedure on the Europol webpage.\nIn the current version of the Infringement Register, the public can search for cases, with a link to the petition portal of Parliament. Tools such as this make it easier to track the progress of specific infringements, and to verify if there is any petition linked to any ongoing investigations.\nThe petitions portal now also links to the Infringement Register, allowing those who intend to file a petition to check whether an infringement procedure is already in progress.\nIn addition, the Commission has recently published a new Europol webpage to give userâfriendly information on infringement cases, the transposition of directives and EU pilot dialogues.\nFinally, I want to commend your committee for your work on the European Citizens' initiatives, in particular for advocating to increase the impact of European Citizens' initiatives and for contributing to the organisation of public hearings for successful initiatives.\nSeveral legislative acts in recent years have been triggered by successful European Citizens' Initiatives, such as the revised Drinking Water Directive, the Regulation on the Transparency and Sustainability of EU Risk Assessment in the Food Chain and the Nature Restoration Law.\nThe next public hearing will be on the successful European Citizens' Initiative on Cohesion Policy for the equality of the regions and the sustainability of regional cultures.",
+      "del:madeBy": {
+        "@id": "participant_42"
+      },
+      "del:timestamp": "2025-05-22T10:15:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_48",
+      "del:text": "El examen de esta ComisiÃ³n de Peticiones de 2023 se ha hecho con eficacia, atenciÃ³n, imparcialidad, equidad y transparencia. Los ciudadanos han enviado peticiones sobre muchos temas, como ha comentado el ponente, pero me gustarÃ­a referirme especialmente a la preocupaciÃ³n sobre la situaciÃ³n del Estado de Derecho en EspaÃ±a: se han presentado mÃ¡s de cuarenta peticiones sobre este tema, bÃ¡sicamente por los ataques a los jueces, las colonizaciones de las instituciones y la reducciÃ³n de las penas por delitos de corrupciÃ³n.\nEntre las misiones realizadas, me gustarÃ­a destacar las de Irlanda, RumanÃ­a y EspaÃ±a y, mÃ¡s concretamente, esta Ãºltima, de la que debo resaltar y lamentar los ataques y tensiones que allÃ­ se vivieron. Yo estuve presente y nos insultaron diciendo: Â«Fuera, fascistas, de estos barrios. No metan las narices donde no les llamanÂ». Creo que esta no debe ser la actitud.\nTambiÃ©n me preocupa que no se haga un seguimiento de las recomendaciones que formulamos, pues lo hacemos para poder proteger los derechos de los ciudadanos. Por Ãºltimo, quiero poner en valor el trabajo tan magnÃ­fico que se ha hecho desde esta comisiÃ³n.",
+      "del:madeBy": {
+        "@id": "participant_43"
+      },
+      "del:timestamp": "2025-05-22T10:21:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_49",
+      "del:text": "Lo siento por el ponente, pero lo importante de este informe âde este debateâ ni siquiera son las enmiendas o el informe, es la estrategia de la ComisiÃ³n de Peticiones, sobre todo en el aÃ±o 2023, que ha consistido en politizarla, utilizarla y manosearla para la propia agenda del Partido Popular. Y, realmente, peticiones que sÃ­ que son importantes y son de la ciudadanÃ­a nunca fueron atendidas o, como estamos viendo, son vetadas por intereses polÃ­ticos, como es el caso de una peticiÃ³n gallega o de una sobre la DANA en Valencia, en donde su ciudadanÃ­a âlas vÃ­ctimasâ ha podido verse antes con Ãrsula von der Leyen o con Roberta Metsola que comparecer en la ComisiÃ³n de Peticiones.\nYo le quiero hacer una pregunta al resto de delegaciones del Partido Popular o de Patriots. Â¿Van a seguir consintiendo que una delegaciÃ³n concreta utilice una comisiÃ³n, que deberÃ­a atender a la ciudadanÃ­a, pero que se ha convertido una especie de sucursal del Congreso de los Diputados? Â¿EstÃ¡n utilizando recursos del Parlamento Europeo para hacer oposiciÃ³n a un Gobierno de un Estado miembro?\nNosotros no vamos a aceptar que una comisiÃ³n, que deberÃ­a ser un verdadero instrumento de participaciÃ³n ciudadana, sea una mera fÃ¡brica de confrontaciÃ³n polÃ­tica, una pantalla de propaganda, y que se haya convertido en eso, ademÃ¡s, exactamente en el aÃ±o 2023, bajo la presidencia del Partido Popular EspaÃ±ol y de Dolors Montserrat. Nosotros no vamos a ser cÃ³mplices y, por lo tanto, no vamos a permitir que se destruyaÂ lo queÂ tantoÂ costÃ³ construir: una Europa al servicio de la ciudadanÃ­a y no de sus partidos.",
+      "del:madeBy": {
+        "@id": "participant_44"
+      },
+      "del:timestamp": "2025-05-22T10:22:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_50",
+      "del:text": "ÃdvÃ¶zlÃ¶m, hogy a szakbizottsÃ¡g elismerte, hogy a kommunikÃ¡ciÃ³ nem luxus, hanem alapjog. EzÃ©rt nagyon fontos, hogy szorgalmazzuk a Parlament eljÃ¡rÃ¡si szabÃ¡lyzatÃ¡nak mÃ³dosÃ­tÃ¡sÃ¡t annak Ã©rdekÃ©ben, hogy a siket polgÃ¡rok tudjanak a sajÃ¡t anyanyelvÃ¼kÃ¶n, a nemzeti jelnyelven kommunikÃ¡lni. Ez nem csupÃ¡n technikai kÃ©rdÃ©s, hanem kÃ¶telezettsÃ©g is, amelyet az ENSZ fogyatÃ©kossÃ¡ggal Ã©lÅ szemÃ©lyek jogairÃ³l szÃ³lÃ³ egyezmÃ©nye is alÃ¡Ã­r Ã©s deklarÃ¡lja. Ãn Ã¼dvÃ¶zlÃ¶m a pozitÃ­v lÃ©pÃ©seket, Ã©s felszÃ³lÃ­tom a kollÃ©gÃ¡kat, hogy ne engedjÃ©k, hogy az eredmÃ©nyek kirakatintÃ©zkedÃ©sekkÃ© silÃ¡nyuljanak, Ã©s nagyon fontosnak tartom, hogy tovÃ¡bbra is tÃ¡mogassuk az eurÃ³pai polgÃ¡rokat, hogy petÃ­ciÃ³kat tudjanak benyÃºjtani, hogy tudjuk, hogy mi a vÃ©lemÃ©nyÃ¼k a munkÃ¡nkrÃ³l.",
+      "del:madeBy": {
+        "@id": "participant_45"
+      },
+      "del:timestamp": "2025-05-22T10:25:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_51",
+      "del:text": "To takÅ¼e dziÄki naszemu zaangaÅ¼owaniu udaÅo siÄ wywrzeÄ skutecznÄ presjÄ w sprawie wÅÄczenia Rumunii i BuÅgarii do strefy Schengen. Warto wspomnieÄ takÅ¼e o zaangaÅ¼owaniu PETI w obronÄ praw rodzicÃ³w i dzieci do edukacji w jÄzyku hiszpaÅskim w Katalonii. Odniesienia do misji rozpoznawczej w tej sprawie, ktÃ³rej byÅem uczestnikiem, i agresji, z jakÄ siÄ spotkaliÅmy na miejscu, muszÄ byÄ naleÅ¼ycie odzwierciedlone w tym sprawozdaniu.\nMam nadziejÄ, Å¼e w dzisiejszym gÅosowaniu uda siÄ ten tekst jeszcze w kilku punktach poprawiÄ i uzupeÅniÄ.",
+      "del:madeBy": {
+        "@id": "participant_46"
+      },
+      "del:timestamp": "2025-05-22T10:26:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_52",
+      "del:text": "This report very well reflects these expectations, as well as our ability to meet them. This ability, to be honest, is pretty limited. While citizens are very well aware of their rights, they are not so well aware, for instance, of ArticleÂ 51 of the European Charter of Fundamental Rights, which clearly states that the charter is obligatory to follow only if Member States implement European law, which leaves a huge gap between the rights and values we promote and the real life of our citizens, which in turn leads to disappointment and Euroscepticism.\nThere are two ways: we leave this as it is and wait for the next crisis to force us to open the Treaties and remove these and other obstacles, or we find courage to put political pressure on our governments and not only promote, but truly defend the rights of Europeans are entitled to exercise â at least on paper.",
+      "del:madeBy": {
+        "@id": "participant_47"
+      },
+      "del:timestamp": "2025-05-22T10:27:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_53",
+      "del:text": "Mas nÃ£o fizeram sÃ³ isso, tambÃ©m usaram esta comissÃ£o para tratar de assuntos da exclusiva responsabilidade dos Estados-Membros â nomeadamente do Estado espanhol â, com acusaÃ§Ãµes infundadas, gerando um ambiente de pouco consenso e levando a que a maioria das alteraÃ§Ãµes do nosso grupo fossem rejeitadas sempre por questÃµes ideolÃ³gicas â como sempre fazem e continuam a fazer.\nUm dos aspetos mais censurÃ¡veis Ã© a atitude do Partido Popular espanhol desde que as maiorias parlamentares mudaram. Antes, era capaz de pactuar com os grupos progressistas deste Parlamento e, agora, prefere alinhar-se com a extrema-direita para bloquear qualquer iniciativa interessante e construtiva proposta pelos outros grupos parlamentares, ignorando, assim, a cidadania europeia. Tal como as petiÃ§Ãµes que, no ano passado, foram apresentadas contra a empresa de macrocelulose Altri â um projeto que trouxe Ã  rua mais de 100 mil pessoas â, nÃ£o lhes importa.\nPor isso, Senhor Relator, tenham este aspeto em conta, porque temos de mudar as coisas na ComissÃ£o das PetiÃ§Ãµes e temos de fazer um trabalho que seja de todos os grupos, conjuntamente, e nÃ£o trabalho sectÃ¡rio e manipulado, como fez o Partido Popular espanhol, manipulando tambÃ©m esta ComissÃ£o das PetiÃ§Ãµes.",
+      "del:madeBy": {
+        "@id": "participant_48"
+      },
+      "del:timestamp": "2025-05-22T10:29:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_54",
+      "del:text": "Podobnie w sprawie popularnych polskich pasÃ³w bezpieczeÅstwa dla dzieci, Smart Kids Belt, ktÃ³re zostaÅy zaorane przez regulacje unijne. Tu teÅ¼ sÄd stwierdziÅ, Å¼e Komisja prowadziÅa kontakty z konkurentami i to wykoÅczyÅo polskÄ firmÄ. I Å¼adnych konsekwencji. PosÅowie nie majÄ teÅ¼ dostÄpu do waÅ¼nych dokumentÃ³w i ustaleÅ. Jaka to jest transparentnoÅÄ? Tylko w teorii. I te instytucje tak naprawdÄ dziaÅajÄ tylko dla elit, a nie dla ludzi. I to widaÄ w tych petycjach, ktÃ³re rozpatrujemy.\nOd siedmiu lat nie moÅ¼ecie znieÅÄ zmiany czasu, ale gdy trzeba wydaÄ kolejne miliardy euro, gdy trzeba zaÅatwiÄ kolejnÄ zapomogÄ dla Ukrainy, to dziaÅamy ekspresowo i bez namysÅu. To maÅe sprawy, waÅ¼ne dla ludzi powinny byÄ zaÅatwiane ekspresowo, a waÅ¼ne sprawy dotyczÄce wielomiliardowych wydatkÃ³w powinny byÄ rozpatrywane rozwaÅ¼nie i z namysÅem.",
+      "del:madeBy": {
+        "@id": "participant_49"
+      },
+      "del:timestamp": "2025-05-22T10:31:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_55",
+      "del:text": "In 2023, I joined colleagues from the Petitions Committee on its fact-finding mission to Donegal, a powerful moment that helped bring much-needed European attention to this crisis. The Parliament visit was built on years of local advocacy and resulted in clear, practical recommendations: first being faster access to a scheme that is fit for purpose, less red tape, stronger support for families, including mental health services, and accountability, with assurances that this would never happen again.\nWe must properly enforce rules on construction materials and hold those to account and prevent this from ever happening again. We must ensure colleagues in the Irish Government and this Parliament deliver on those recommendations to strengthen the protections for everyone's future.",
+      "del:madeBy": {
+        "@id": "participant_50"
+      },
+      "del:timestamp": "2025-05-22T10:32:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_56",
+      "del:text": "Este informe menciona, por primera vez, la traiciÃ³n que supone amnistiar a delincuentes condenados por atentar contra el orden constitucional a cambio del puÃ±ado de votos que Pedro SÃ¡nchez necesitaba para poder seguir aferrado al poder, asÃ­ queÂ este Parlamento no puede seguir mirando hacia otro lado: si de verdad es la casa de la democracia europea, hoy debe condenar âsin ambigÃ¼edadesâ esta infamia, por respeto a EspaÃ±a y a los espaÃ±oles.\nY aunque sabemos que a los socialistas les escuece y les avergÃ¼enza enormemente este punto, para VOX es tan crucial que nuestro voto final dependerÃ¡ de ello; porque hoy no se vota solo un informe, se vota si esta CÃ¡mara estÃ¡ con los ciudadanos y la justicia o con quienes pisotean y retuercen la ley para seguir en el poder.",
+      "del:madeBy": {
+        "@id": "participant_51"
+      },
+      "del:timestamp": "2025-05-22T10:33:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_57",
+      "del:text": "El Partido Socialista espaÃ±ol pretende instrumentalizar hasta el Parlamento Europeo. Confunde su forma de hacer con el derecho de los espaÃ±oles a trasladar sus preocupaciones a este Parlamento y su preocupaciÃ³n por los permanentes atentados al Estado de Derecho que estamos padeciendo. Porque los espaÃ±oles, en 2023, fueron los ciudadanos que mÃ¡s peticiones presentaron a esta comisiÃ³n. Esto es la consecuencia del asalto de nuestro Gobierno al CIS, el ataque a los jueces y a los tribunales, la colonizaciÃ³n de las empresas y el uso de la FiscalÃ­a, del Tribunal Constitucional y del Banco de EspaÃ±a. Es la consecuencia de casos como el caso Koldo, el del hermano del presidente, la amnistÃ­a por los condenados por el procÃ©s, el derecho a protestar por la imputaciÃ³n de la mujer del presidente y un largo etcÃ©tera. Eso es lo que debe preocuparnos. La ComisiÃ³n de Peticiones estÃ¡ para responder a estos problemas. No les insulten.",
+      "del:madeBy": {
+        "@id": "participant_52"
+      },
+      "del:timestamp": "2025-05-22T10:35:01"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_58",
+      "del:text": "Nada pone mÃ¡s ây peorâ de manifiesto la distorsiÃ³n que padece la comisiÃ³n que este Parlamento Europeo establece para escuchar a los ciudadanos en ese ejercicio del derecho fundamental que las intervenciones en espaÃ±ol que hemos escuchado por parte de los grupos de la derecha en esta CÃ¡mara, todas ellas dirigidas a distorsionar el derecho de peticiÃ³n al servicio de su agenda polÃ­tica de hostigamiento del Gobierno de EspaÃ±a, con asuntos que nada tienen que ver con la competencia legislativa del Parlamento Europeo. Las alusiones que acabamos de escuchar hacia la Ley OrgÃ¡nica de amnistÃ­a, que no tiene ningÃºn problema de encaje con el Derecho europeo ni tampoco con la ConstituciÃ³n espaÃ±ola, lo ponen paladinamente de manifiesto.\nPor tanto, seÃ±ores de la derecha, respeten el ejercicio del derecho de peticiÃ³n de la ciudadanÃ­a y respeten la igualdad en el ejercicio del derecho de peticiÃ³n, que queda distorsionada con su subordinaciÃ³n a una agenda polÃ­tica partidaria que impide que los ciudadanos puedan traer sus derechos de peticiÃ³n a la comisiÃ³n competente con normalidad democrÃ¡tica.",
+      "del:madeBy": {
+        "@id": "participant_53"
+      },
+      "del:timestamp": "2025-05-22T10:36:19"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_59",
+      "del:text": "Edellisen vuosikymmenen aikana nÃ¤itÃ¤ perussopimusten asettamia vaatimuksia on rikottu ja jÃ¤senvaltioiden oikeutta pÃ¤Ã¤ttÃ¤Ã¤ omista asioistaan on murennettu pala palalta. TÃ¤mÃ¤ systemaattinen piilofederalismin ajaminen on lopetettava vÃ¤littÃ¶mÃ¤sti. Jokainen jÃ¤senmaa on uniikki ja erilainen. Kaikki eivÃ¤t yksinkertaisesti sovi samaan muottiin. Siksi, kun puhutaan EU-tason vetoomusten kÃ¤sittelystÃ¤, on tÃ¤mÃ¤nkin kokonaisuuden osuttava EU:n toimivallan sisÃ¤lle.",
+      "del:madeBy": {
+        "@id": "participant_35"
+      },
+      "del:timestamp": "2025-05-22T10:37:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_60",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_54"
+      },
+      "del:timestamp": "2025-05-22T10:38:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_61",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_55"
+      },
+      "del:timestamp": "2025-05-22T10:40:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_62",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_56"
+      },
+      "del:timestamp": "2025-05-22T10:41:29"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_63",
+      "del:text": "I want to commend the European Parliament and its commitment to responding to citizens' concerns and the overall parliamentary activity of the Committee on Petitions, including their reports and opinions, as well as the organisation of hearings and workshops on a wide range of topics.\nI am convinced that together we can show citizens that we take their concerns seriously, and I count on your cooperation to strengthen citizens' confidence and trust in the European project, particularly in the current international context.",
+      "del:madeBy": {
+        "@id": "participant_42"
+      },
+      "del:timestamp": "2025-05-22T10:42:44"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_64",
+      "del:text": "So sometimes maybe we exaggerate about the attention we give to this committee and the effort we put into the petitions, but this is democracy, after all. The committee represents the democracy of this House and the balance of this House, so we need to make more effort to represent all voices, and our engagement is precisely that.\nWe have a resolution in front of us which should represent this balance. We'll make our efforts to come across to all voices and we look forward to a coherent and strong signal from this House so that the Petitions Committee can continue delivering on representing the citizens and securing a better implementation of our rights on the ground.",
+      "del:madeBy": {
+        "@id": "participant_41"
+      },
+      "del:timestamp": "2025-05-22T10:43:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_65",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_38"
+      },
+      "del:timestamp": "2025-05-22T10:45:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_66",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:01:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_67",
+      "del:text": "(PrzewodniczÄca odebraÅa mÃ³wcy gÅos)",
+      "del:madeBy": {
+        "@id": "participant_57"
+      },
+      "del:timestamp": "2025-05-22T11:02:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_68",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:02:57"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_69",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:03:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_70",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:03:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_71",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:04:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_72",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_58"
+      },
+      "del:timestamp": "2025-05-22T11:10:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_73",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:10:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_74",
+      "del:text": "In addition, it has had a negative impact on the European fertiliser industry. Instead of a ban on importing Russian fertilisers as we, the European Parliament already called for in September, the Commission proposed to gradually, over a period of three years, increase import duties for fertilisers and agricultural goods from Russia and Belarus.\nThis will give the farming sector time to adjust and the fertiliser industry time to boost their production. Additionally, European producers will benefit from increased tariffs on other agricultural goods imported from Russia and Belarus. To prevent that these tariff measures have a negative effect on the agricultural sector, we have asked the Commission to provide a statement about their action plan.\nDear colleagues, I urge you to adopt this proposal without any amendments. This way, we will be able to ensure that this regulation enters into force, as foreseen, by 1Â July this year. Every delayed day will mean lost lives in Ukraine.\nOf course, this proposal is a compromise and it's never the case that compromises make everyone happy. Can you name a law that everyone is 100Â % happy with?\nThe Council has already confirmed their readiness to adopt this regulation without any amendments. I sincerely thank the Members who were able to set aside their particular interests for a while to agree on the overarching goal at the forefront. We need to stop financing Russia's war in Ukraine. War is right next to our external borders. Stopping it is needed for our safety.",
+      "del:madeBy": {
+        "@id": "participant_59"
+      },
+      "del:timestamp": "2025-05-22T11:11:27"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_75",
+      "del:text": "The Union's food security depends on the continuous existence of the autonomous Union's nitrogenâbased fertiliser production industry that can supply the European Union market. The present level of imports from the Russian Federation, competing unfairly in the EU market due to gas price differences, is undermining the EU industry.\nAt the same time, it is essential to ensure that Union farmers have predictable, sufficient and affordable access to nitrogenâbased fertilisers as this is indispensable to the stabilisation of the EU agricultural markets. Article 2 of the Regulation provides that the Commission shall monitor prices applicable in the Union of the goods listed in Annex II during four years from the application of this Regulation.\nThe Commission recalls that it already publishes regularly data reflecting the price evolution of fertilisers. Trends shown by this data set are discussed during the EU Fertilisers Market Observatory meetings.\nOn this basis, the Commission will continue the monitoring of the prices of nitrogenâbased fertilisers subject to this Regulation and will make the information about the results of this monitoring available to the Member States on a regular monthly basis through a consolidated document published on the website of the Commission.\nThe Commission notes that the Regulation provides for the suspension of tariffs for concerned fertiliser products imported from origins other than the Russian Federation and the Republic of Belarus, as one of the potential appropriate actions in case of a substantial surge in fertiliser prices. The Commission commits to take such action if this case arises.\nAlready in 2022, the Commission proposed, and the Council accepted, a temporary suspension of common customs tariffs on some nitrogenâbased fertilisers from countries other than Russia and Belarus due to a significant price increase in the Union market.\nFurthermore, the Commission recalls that since the start of Russia's war of aggression against Ukraine, it adopted measures to support European farmers in all Member States whenever it was considered necessary. The Commission recognises the need to take fully into account the competitiveness of the EU fertilisers industry in the future actions implementing the Clean Industrial Deal.",
+      "del:madeBy": {
+        "@id": "participant_42"
+      },
+      "del:timestamp": "2025-05-22T11:13:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_76",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:17:49"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_77",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:19:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_78",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:22:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_79",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:22:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_80",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:23:21"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_81",
+      "del:text": "'Urges, in that sense, the European Commission, in due respect of the spirit of the ECI â the European Citizens' Initiative procedure â to provide adequate, concrete and effective followâup to ECIs related to fundamental rights of citizens, such as the one calling for a binding legal ban on conversion practices targeting LGBTIQ+ citizens in the EU and the ECI 'My voice, my choice'.'\nChers collÃ¨gues, cet amendement est nÃ©cessaire, Ã  l'heure oÃ¹ les droits des communautÃ©sÂ LGBT et les droits des femmes sont menacÃ©s partout en Europe. Avec mon groupe RenewÂ Europe et avec beaucoup d'entre vous, je l'espÃ¨re, nous sommes engagÃ©s en faveur de la dÃ©fense de ces droits inscrits dans la Charte des droits fondamentaux de l'Union europÃ©enne et nous apporterons notre soutien aux communautÃ©sÂ LGBT lors de la Pride de Budapest leÂ 28Â juin prochain.",
+      "del:madeBy": {
+        "@id": "participant_60"
+      },
+      "del:timestamp": "2025-05-22T11:35:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_82",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:42:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_83",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:42:44"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_84",
+      "del:text": "Niestety pierwotne przepisy okazaÅy siÄ zbyt skomplikowane. ObjÄÅy nawet mikroprzedsiÄbiorstwa importujÄce niewielkie iloÅci towarÃ³w. Dlatego propozycjÄ, by wyÅÄczyÄ z systemu tak zwanych importerÃ³w okazjonalnych, czyli tych, ktÃ³rzy sprowadzajÄ do Unii mniej niÅ¼ 50 ton rocznie, uwaÅ¼am za rozsÄdne i proporcjonalne rozwiÄzanie, zmniejszajÄce obciÄÅ¼enia biurokratyczne dla MÅP i niezakÅÃ³cajÄce unijnej konkurencji.\nNiemniej mechanizm CBAM wciÄÅ¼ wymaga dopracowania. Kluczowe wyzwania to zapewnienie wiarygodnoÅci danych dotyczÄcych emisyjnoÅci produktÃ³w z paÅstw trzecich oraz zapobieganie obchodzeniu przepisÃ³w. Co wiÄcej, CBAM nie moÅ¼e byÄ jedynÄ odpowiedziÄ na problemy przemysÅu. Potrzebne sÄ komplementarne dziaÅania, w tym powrÃ³t do bezpÅatnych uprawnieÅ emisyjnych i dalsze wsparcie dla firm dotkniÄtych wysokimi kosztami energii.",
+      "del:madeBy": {
+        "@id": "participant_61"
+      },
+      "del:timestamp": "2025-05-22T11:43:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_85",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:45:08"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_86",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_62"
+      },
+      "del:timestamp": "2025-05-22T11:45:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_87",
+      "del:text": "E Lei, onorevole, voleva intervenire per la relazione Decaro? Per quale relazione intendeva intervenire?",
+      "del:madeBy": {
+        "@id": "participant_38"
+      },
+      "del:timestamp": "2025-05-22T11:45:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_88",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_62"
+      },
+      "del:timestamp": "2025-05-22T11:46:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_89",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:46:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_90",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:46:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_91",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:46:36"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_92",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-05-22T11:46:45"
+    }
+  ]
+}

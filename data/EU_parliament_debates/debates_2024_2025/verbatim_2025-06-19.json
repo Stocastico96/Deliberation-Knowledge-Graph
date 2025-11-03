@@ -1,0 +1,2145 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "ep_debate_20250619",
+  "del:name": "European Parliament Debate - 2025-06-19",
+  "del:startDate": "2025-06-19T00:00:00Z",
+  "del:endDate": "2025-06-19T23:59:59Z",
+  "del:hasTopic": [
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem1",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem2",
+      "del:name": "Institutional and political implications of the EU enlargement process and global challenges (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem3",
+      "del:name": "The United Kingdom accession to the Convention of 2 July 2019 on the Recognition and Enforcement of Foreign Judgments in Civil or Commercial Matters (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem4",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem5",
+      "del:name": "Voting time"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem6",
+      "del:name": "Media freedom in Georgia, particularly the case of Mzia Amaglobeli (RC-B10-0282/2025, B10-0282/2025, B10-0283/2025, B10-0287/2025, B10-0288/2025, B10-0289/2025, B10-0290/2025, B10-0295/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem7",
+      "del:name": "Case of Ahmadreza Jalali in Iran (RC-B10-0284/2025, B10-0280/2025, B10-0284/2025, B10-0285/2025, B10-0286/2025, B10-0296/2025, B10-0299/2025, B10-0300/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem8",
+      "del:name": "Dissolution of political parties and the crackdown on the opposition in Mali (RC-B10-0291/2025, B10-0281/2025, B10-0291/2025, B10-0292/2025, B10-0293/2025, B10-0294/2025, B10-0297/2025, B10-0298/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem9",
+      "del:name": "Welfare of dogs and cats and their traceability (A10-0104/2025 - Veronika VrecionovÃ¡) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem10",
+      "del:name": "Electricity grids: the backbone of the EU energy system (A10-0091/2025 - Anna StÃ¼rgkh) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem11",
+      "del:name": "Clean Industrial Deal (B10-0277/2025, B10-0278/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem12",
+      "del:name": "The United Kingdom accession to the Convention of 2 July 2019 on the Recognition and Enforcement of Foreign Judgments in Civil or Commercial Matters (B10-0273/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem13",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem14",
+      "del:name": "Approval of the minutes of the previous sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem15",
+      "del:name": "Protecting bees: advancing the EU's New Deal for Pollinators (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem16",
+      "del:name": "Oral explanations of vote (Rule 201)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem17",
+      "del:name": "Electricity grids: the backbone of the EU energy system (A10-0091/2025 - Anna StÃ¼rgkh)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem18",
+      "del:name": "Clean Industrial Deal (B10-0277/2025)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem19",
+      "del:name": "Explanations of votes in writing (Rule 201)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem20",
+      "del:name": "Approval of the minutes of the sitting and forwarding of texts adopted"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem21",
+      "del:name": "Dates of the next part-session"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem22",
+      "del:name": "Closure of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem23",
+      "del:name": "Adjournment of the session"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "PriekÅ¡sÄdÄtÄjs."
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Ekaterina Zaharieva,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Å½eljana Zovko,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Kathleen Van Brempt,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_5",
+      "del:name": "Kinga GÃ¡l,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_6",
+      "del:name": "Alberico Gambino,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_7",
+      "del:name": "Sandro Gozi,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_8",
+      "del:name": "Daniel Freund,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_9",
+      "del:name": "Anthony Smith,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_10",
+      "del:name": "Ewa ZajÄczkowska-Hernik,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_11",
+      "del:name": "Rasa JukneviÄienÄ",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_12",
+      "del:name": "Maria Grapini",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_13",
+      "del:name": "Juan Fernando LÃ³pez Aguilar",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_14",
+      "del:name": "AntÃ³nio TÃ¢nger CorrÃªa",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_15",
+      "del:name": "ÐÐ²Ð°Ð¹Ð»Ð¾ ÐÑÐ»ÑÐµÐ²",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_16",
+      "del:name": "Charles Goerens",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_17",
+      "del:name": "Thomas Waitz",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_18",
+      "del:name": "Li Andersson",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_19",
+      "del:name": "President.",
+      "del:hasRole": {
+        "@type": "del:Role",
+        "del:name": "President"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_20",
+      "del:name": "Ð¡ÑÐ°Ð½Ð¸ÑÐ»Ð°Ð² Ð¡ÑÐ¾ÑÐ½Ð¾Ð²",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_21",
+      "del:name": "Thomas Geisel",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_22",
+      "del:name": "Lukas Mandl",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_23",
+      "del:name": "Petras GraÅ¾ulis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_24",
+      "del:name": "ÐÑÐ¸ÑÑÐ¸Ð°Ð½ ÐÐ¸Ð³ÐµÐ½Ð¸Ð½",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_25",
+      "del:name": "Anders Vistisen",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_26",
+      "del:name": "Cristian TerheÅ",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_27",
+      "del:name": "Dan Barna",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_28",
+      "del:name": "Reinier Van Lanschot",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_29",
+      "del:name": "Lynn Boylan",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_30",
+      "del:name": "Alexander Sell",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_31",
+      "del:name": "Luis-VicenÈiu Lazarus",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_32",
+      "del:name": "Karlo Ressler",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_33",
+      "del:name": "Tonino Picula",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_34",
+      "del:name": "Tomislav Sokol",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_35",
+      "del:name": "Anna BryÅka",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_36",
+      "del:name": "Charlie Weimers",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_37",
+      "del:name": "Marjan Å arec",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_38",
+      "del:name": "Vladimir PrebiliÄ",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_39",
+      "del:name": "Marc Botenga",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_40",
+      "del:name": "Francisco Assis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_41",
+      "del:name": "Marieke Ehlers",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_42",
+      "del:name": "MaÅgorzata Gosiewska",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_43",
+      "del:name": "ÐÐ»ÑÐ°Ð½ ÐÑÑÑÐº",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_44",
+      "del:name": "Kai Tegethoff",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_45",
+      "del:name": "Sebastian Everding",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_46",
+      "del:name": "ÐÐ½Ð´ÑÐµÐ¹ ÐÐ¾Ð²Ð°ÑÐµÐ²",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_47",
+      "del:name": "Thijs Reuten",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_48",
+      "del:name": "Csaba DÃ¶mÃ¶tÃ¶r",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_49",
+      "del:name": "Claudiu-Richard TÃ¢rziu",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_50",
+      "del:name": "Petras AuÅ¡treviÄius",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_51",
+      "del:name": "SeÃ¡n Kelly",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_52",
+      "del:name": "Marc Angel",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_53",
+      "del:name": "Pascale Piera",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_54",
+      "del:name": "Mario Mantovani",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_55",
+      "del:name": "MichaÅ Kobosko",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_56",
+      "del:name": "Mika Aaltola",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_57",
+      "del:name": "Vytenis Povilas Andriukaitis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_58",
+      "del:name": "Siegbert Frank Droese",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_59",
+      "del:name": "Marie Dauchy",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_60",
+      "del:name": "Hildegard Bentele",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_61",
+      "del:name": "Nicola Zingaretti",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_62",
+      "del:name": "Alexandre Varaut",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_63",
+      "del:name": "Davor Ivo Stier",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_64",
+      "del:name": "Vilija BlinkeviÄiÅ«tÄ",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_65",
+      "del:name": "Liudas MaÅ¾ylis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_66",
+      "del:name": "MichaÅ Szczerba",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_67",
+      "del:name": "Åukasz Kohut",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_68",
+      "del:name": "SunÄana Glavak",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_69",
+      "del:name": "ViktÃ³ria Ferenc",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_70",
+      "del:name": "Sebastian Tynkkynen",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_71",
+      "del:name": "Lukas Sieper",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_72",
+      "del:name": "Ilhan Kyuchyuk,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_73",
+      "del:name": "Axel Voss,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_74",
+      "del:name": "Ana Catarina Mendes,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_75",
+      "del:name": "Pascale Piera,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_76",
+      "del:name": "Dainius Å½alimas,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_77",
+      "del:name": "Ville NiinistÃ¶,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_78",
+      "del:name": "Mary Khan,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_79",
+      "del:name": "Die PrÃ¤sidentin."
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_80",
+      "del:name": "Matthieu Valet",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_81",
+      "del:name": "Veronika VrecionovÃ¡,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_82",
+      "del:name": "Tomislav Sokol,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_83",
+      "del:name": "GÃ¼nther Sidl,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_84",
+      "del:name": "ValÃ©rie Deloge,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_85",
+      "del:name": "Thomas Waitz,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_86",
+      "del:name": "Sebastian Everding,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_87",
+      "del:name": "Marcin Sypniewski,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_88",
+      "del:name": "Maria Noichl",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_89",
+      "del:name": "Tilly Metz",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_90",
+      "del:name": "Valentina Palmisano",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_91",
+      "del:name": "Anja Arndt",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_92",
+      "del:name": "PÃ¤r Holmgren",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_93",
+      "del:name": "Younous Omarjee",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_94",
+      "del:name": "Alexander Jungbluth",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_95",
+      "del:name": "Bogdan RzoÅca",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_96",
+      "del:name": "Christine Schneider",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_1",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-06-19T09:00:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_2",
+      "del:text": "In March last year, the Commission therefore adopted a first communication of the preâenlargement policy reviews covering four strands: values, policies, budget and governance. That communication was our contribution to the discussion that led to the adoption by EU leaders of a roadmap for future work on enlargement and reform in June 2024.\nIn July last year, President von der Leyen announced that the new college will present the preâenlargement policy reviews focusing on individual sectors such as the rule of law, the single market, food security, defence and security, climate and energy, and migration, as well as social, economic and territorial cohesion more broadly.\nAs announced in our work programme for 2025, the Commission is currently carrying out in-depth policy reviews in view of future enlargement. Allow me to make a few comments without prejudging the outcome of the reviews, in particular on institutional reform.\nMr President, honourable Members, I am aware that the question of institutional reform and treaty change has been key to Parliament in particular during the last legislature. In November 2023, this House adopted a resolution with proposals for amendments of the treaties. As President von der Leyen stated in her political guidelines, we need treaty change where it can improve our Union. So in order to prepare the Union for enlargement, we need to examine all options, starting with using the full potential of the current treaties.\nWe first need to focus on what can already be done under the current treaties. In that regard, the Commission believes we need to extend the use of qualified majority voting in the Council in some areas, moving away from unanimity. This could in particular mean activating so-calledÂ passerelle clauses. The position of the Commission is well known: if the Union wants to play its role quickly, efficiently and therefore strategically, we need we need to decrease the number of decisions where unanimity is needed. But we also need to acknowledge the sensitivities among Member States on this topic. We have to discuss the question of unanimity with the objective of finding a way to address Member States' legitimate concerns.\nWe remain committed to engage in a constructive dialogue with both Parliament and the Council on these important matters. The Commission welcomes the ongoing reflections on these issues in the AFCO Committee, and in particular, the upcoming report on the institutional consequences of the EU enlargement negotiations.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2025-06-19T09:01:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_3",
+      "del:text": "Kao posljednja zemlja koja je pristupila Europskoj uniji, Hrvatska itekako dobro zna koliko je vrijedilo prolaziti kroz nuÅ¾ne reforme i ispunjavati kriterije za punopravno Älanstvo te na kraju, u kljuÄnim trenucima imati zaÅ¡titu i sigurnost koju Älanstvo u Europskoj uniji donosi.\nS jedne strane imamo zemlje IstoÄnog partnerstva koje zbog svojih demokratskih teÅ¾nji plaÄaju visoku cijenu Å¾ivotima svojih graÄana zbog autoritativnih reÅ¾ima u susjedstvu. S druge strane, zemlje zapadnog Balkana koje su veÄ proÅ¡le kroz ratna razaranja, a danas su Å¾rtve birokratske inertnosti Europske unije i nerijeÅ¡enih povijesnih nesuglasica koje usporavaju njihovu integraciju i potkopavaju njihovu institucionalnu obnovu.\nPoÅ¡tovane kolege, naÅ¡ najveÄi izazov danas je nedostatak vizije. Vizije koja Äe Uniju vratiti njezinim izvoriÅ¡tima - ideji mira i sigurnosti, ne samo unutar Europske unije veÄ i na njezinim granicama. Ako zemlje kandidatkinje ostavimo u rukama onih koji Å¾ele razgraditi Europu izvana i iznutra, mir i sigurnost viÅ¡e neÄe imati tko braniti. NaÅ¡ ego mora odstupiti pred zajedniÄkom odgovornoÅ¡Äu u odnosima stare i nove Europe.\nÄesto se postavlja pitanje je li moguÄe proÅ¡irenje bez produbljenja. Ta dilema je apsurdna. Nijedan Äovjek nije otok, kako je rekao engleski pjesnik John Donne. Tako ni jedna zemlja ne moÅ¾e sama. Od samih poÄetaka europskog kontinenta stvarale su se unije s ciljem zaÅ¡tite graÄana. NajuspjeÅ¡niji projekt u toj povijesti upravo je Europska unija, koja je kroz proces proÅ¡irenja postala najpoÅ¾eljnije mjesto za Å¾ivljenje. Kao Å¡to se naÅ¡ mir brani na ukrajinskoj granici, tako se i naÅ¡a sigurnost Äuva na granicama zapadnog Balkana.\nOvo nije mjesto na kojem odluÄujemo tko je viÅ¡e, a tko manje privilegiran da bude Europljanin. Ovo je mjesto na kojem odluÄujemo Å¡to mi moÅ¾emo uÄiniti za Europsku uniju kako bi ostala kao projekt mira, solidarnosti i pomirenja.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-06-19T09:05:12"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_4",
+      "del:text": "The momentum is real and we cannot afford to make the same mistakes we made in the past. So no shortcuts on our values. The rule of law, independent courts, freedom of speech, freedom of media, fundamental rights, democracy: they are non-negotiable. Even now â especially now â if a candidate country slides back on these values, we must act.\nWhen Serbia's President shows up at Putin's parade, while silencing democracy back home, the EU must respond. No more appeasement! Our credibility is on the line, and so is Serbia's future.\nAnd at the same time â as you mentioned, Commissioner â we need to reform ourselves. We can't demand from others when we ignore it ourselves. We need stronger tools to address democratic backsliding in the EU itself.\nAnd let's be honest: enlargement means readiness on our side, too. As candidate countries prepare, so must we, by reforming our institutions in parallel, updating the EU budget, making it fit for a bigger Union and, yes, moving beyond unanimity, as you mentioned.\nDear Commissioner, people also need to see the benefits of enlargement â both in the EU and in the candidate and future Member States. So let's act: speed up access to the single market, give candidate countries observer seats in the EU institutions and let them be part of the project as they work towards full membership.\nAnd I would like you to convey the message to the Commissioner for Enlargement that she has the backing of the S&D Group to do all that in the coming months and years.",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:timestamp": "2025-06-19T09:07:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_5",
+      "del:text": "Nem ez az elsÅ eset, hogy az UniÃ³ politikai irÃ¡nytÅ±je rossz irÃ¡nyba fordul, figyelmen kÃ­vÃ¼l hagyva az eurÃ³pai polgÃ¡rok valÃ³s Ã©rdekeit. PÃ©ldÃ¡ul szÃ¼ksÃ©ges lenne, hogy a BizottsÃ¡g haladÃ©ktalanul kÃ©szÃ­tsen egy Ã¡tfogÃ³ hatÃ¡stanulmÃ¡nyt Ukrajna esetleges csatlakozÃ¡sÃ¡nak vÃ¡rhatÃ³ kÃ¶vetkezmÃ©nyeirÅl. Ukrajna semmilyen csatlakozÃ¡si kritÃ©riumnak nem felel meg. Egy hÃ¡borÃº sÃºjtotta orszÃ¡grÃ³l beszÃ©lÃ¼nk, Ã­gy a gyorsÃ­tott csatlakozÃ¡sÃ¡val a hÃ¡borÃºt is importÃ¡lnÃ¡nk. ElÃ©gtelen pÃ©ldÃ¡ul a nemzeti kisebbsÃ©gi jogok helyzete. Az ukrÃ¡n munkaerÅ beÃ¡ramlÃ¡sa veszÃ©lyezteti a munkahelyeket, az agrÃ¡rtermÃ©kek tÃ¶meges beÃ¡radÃ¡sa Ã©s az agrÃ¡rtÃ¡mogatÃ¡sok elvesztÃ©se pedig a gazdÃ¡k megÃ©lhetÃ©sÃ©t. ArÃ¡nytalanul nagymÃ©rtÃ©kben vonnÃ¡nak el kohÃ©ziÃ³s forrÃ¡sokat mÃ¡s tagÃ¡llamoktÃ³l.\nAz emberek feje felett nem szÃ¼lethetnek meg elhamarkodott dÃ¶ntÃ©sek. EzÃ©rt kezdemÃ©nyeztÃ¼nk MagyarorszÃ¡gon, EurÃ³pÃ¡ban egyedÃ¼lÃ¡llÃ³ mÃ³don vÃ©lemÃ©nynyilvÃ¡nÃ­tÃ³ nÃ©pszavazÃ¡st errÅl. Nem engedjÃ¼k, hogy a kierÅltetett ukrÃ¡n uniÃ³s tagsÃ¡g Ã¡rÃ¡t a magyar emberek fizessÃ©k meg, mint ahogy azt sem engedhetjÃ¼k meg, hogy Ãºjabb lopakodÃ³ hatÃ¡skÃ¶relvonÃ¡ssal csorbuljon a szuverenitÃ¡sunk. A bÅvÃ­tÃ©spolitikÃ¡ban csak egyhangÃºsÃ¡ggal lehet dÃ¶ntÃ©seket hozni, nem pedig a tagÃ¡llamokat megkerÃ¼lve, politikai alapon. Ez a tagÃ¡llamok Ã©s az egÃ©sz UniÃ³ alapvetÅ Ã©rdeke.",
+      "del:madeBy": {
+        "@id": "participant_5"
+      },
+      "del:timestamp": "2025-06-19T09:10:12"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_6",
+      "del:text": "L'Italia ha sempre sostenuto con convinzione il cammino europeo dei Balcani occidentali e degli altri paesi candidati. Ma Ã¨ giusto che questo percorso sia serio, graduale, basato su impegni concreti e su un'autentica volontÃ  di avvicinamento ai valori e agli standard europei. PerchÃ© chi chiede di entrare nell'Unione deve dimostrare di voler essere parte integrante di una comunitÃ  politica, non solo economica.\nIn questo processo strumenti come Twinning, TAIEX e il Fondo INCE, che l'Italia finanzia interamente, hanno un ruolo fondamentale. Progetti reali che aiutano questi paesi a costruire amministrazioni solide, capaci ed efficienti.\nMa l'allargamento Ã¨ anche una questione strategica, vista la situazione geopolitica che viviamo, piena di instabilitÃ  e di minacce ibride. Rafforzare i legami con i paesi del vicinato Ã¨ anche un modo per rendere piÃ¹ sicura e resiliente l'Unione europea.\nL'Italia continuerÃ  a contribuire con determinazione a questo percorso comune. In questo scenario Ã¨ l'intera Europa che deve riaffermare il proprio ruolo da protagonista, promuovendo un allargamento che sia realmente utile, credibile e sostenibile.",
+      "del:madeBy": {
+        "@id": "participant_6"
+      },
+      "del:timestamp": "2025-06-19T09:12:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_7",
+      "del:text": "Nous avons besoin d'une Union plus efficace, avec moins de veto et plus de vote Ã  la majoritÃ©, d'une Union plus puissante, avec plus de ressources pour une vÃ©ritable Europe de la dÃ©fense et des investissements. D'une Union plus dÃ©mocratique avec une nouvelle loi Ã©lectorale. Si les rÃ©formes sont nÃ©cessaires Ã  27, elles le deviennent encore plus dans une Union Ã  30, 32 ou davantage de pays. Il n'y a jamais eu un Ã©largissement dans l'histoire de l'Union europÃ©enne qui n'a pas Ã©tÃ© prÃ©cÃ©dÃ© par des rÃ©formes institutionnelles et des rÃ©formes des traitÃ©s.\nDonc, je dis Ã  la Commission: plus de courage, plus de courage. Soyez explicites, vous savez bien que la rÃ©forme des traitÃ©s est nÃ©cessaire. Assumez vos responsabilitÃ©s et, ensemble, rÃ©formons l'Union pour unifier l'Europe.",
+      "del:madeBy": {
+        "@id": "participant_7"
+      },
+      "del:timestamp": "2025-06-19T09:13:54"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_8",
+      "del:text": "Was Putin abschrecken wird, ist, wenn wir in Europa stÃ¤rker zusammenarbeitenÂ â auch in Verteidigungsfragen. Und vor allen Dingen, wenn wir ein paar grundsÃ¤tzliche Konstruktionsfehler der EuropÃ¤ischen Union endlich angehen. Die Einstimmigkeit abzuschaffen, die ist doch das grÃ¶Ãte Geschenk an Putin: Er muss nur einen einzigen von 27Â Staats- und Regierungschefs bestechen, erpressen, irgendwie auf seine Seite ziehen.\nWir mÃ¼ssen endlich bei der Demokratie Fortschritte machen. Denn wenn die Demokratie von auÃen und von innen angegriffen wird, dann mÃ¼ssen wir doch in der EuropÃ¤ischen Union damit reagieren, dass wir die EU demokratischer machen, dass wir endlich ein Initiativrecht bekommen fÃ¼r dieses EuropÃ¤ische Parlament, dass wir endlich wirkliche Europawahlen bekommen, dass wir endlich sehen kÃ¶nnen, was die Regierungen im Rat eigentlich genau machen, wo stimmen sie zu, wo lehnen sie ab. Und fÃ¼r all diese Fragen braucht es am Ende VertragsÃ¤nderungen, und das wollen die BÃ¼rgerinnen und BÃ¼rger; die Zustimmungswerte fÃ¼r die EuropÃ¤ische Union sind so hoch, wie wir sie noch nie gesehen haben in der Geschichte der EuropÃ¤ischen Union. Lassen Sie uns diesen Moment nutzen!\nDas EuropÃ¤ische Parlament hat ja bereits VorschlÃ¤ge gemacht. Wir wollen die VertrÃ¤ge Ã¤ndern. Und wenn wir es am Ende ernst meinen mit unserem Versprechen an die Ukraine, an den Balkan, an die LÃ¤nder, die in die EuropÃ¤ische Union wollen, wenn wir dieses Versprechen ernst meinen, dann mÃ¼ssen wir die VertrÃ¤ge Ã¤ndern. Und es ist der Rat, der blockiert, der heute nicht mal hier zu dieser Debatte auftaucht, Sonntagsreden hÃ¤lt, am Ende aber nicht das liefert, was die BÃ¼rgerinnen und BÃ¼rger wollen. Das mÃ¼ssen wir angehen.",
+      "del:madeBy": {
+        "@id": "participant_8"
+      },
+      "del:timestamp": "2025-06-19T09:15:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_9",
+      "del:text": "Mais, disons le d'emblÃ©e, votre Union europÃ©enne peut aujourd'hui se rÃ©sumer Ã  un ensemble de moyens permettant une concurrence libre et non faussÃ©e au service d'une vision impÃ©rialiste. Notre Europe, celle que nous dÃ©fendons, porte un projet de paix, de partage des richesses, de dÃ©mocratie, d'accueil et d'humanitÃ©. Ã l'heure oÃ¹ les extrÃªmes droites arbitrent les dÃ©cisions de notre institution, nous ne pouvons que constater les rÃ©gressions de toutes parts, acclamÃ©es par les conservateurs et par les libÃ©raux.\nVoilÃ  l'Europe que vous proposez aux peuples de notre continent, celle de la catastrophe climatique et de la pauvretÃ© gÃ©nÃ©ralisÃ©e, celle de la corruption et des discriminations, bref, une union Ã  l'image d'OrbÃ¡n et de Nawrocki. L'accueil de nouveaux Ãtats doit se faire autour d'un socle commun ambitieux de droits sociaux dans lequel la dÃ©mocratie sociale, et notamment la nÃ©gociation collective, doivent jouer tout leur rÃ´le. Sinon, c'est l'exploitation des travailleurs, la course au moinsâdisant social et environnemental qui s'imposera.\nCela exige que les aides de prÃ©adhÃ©sion servent aussi Ã  construire cette Europe du commun, avec des institutions fortes, transparentes, intÃ¨gres, des inspections efficaces, des systÃ¨mes judiciaires indÃ©pendants. L'Ã©largissement doit Ãªtre un levier de construction d'un continent plus juste, oÃ¹ les droits sociaux et les contre-pouvoirs dÃ©mocratiques soient la rÃ¨gle, qui rejette la concurrence gÃ©nÃ©ralisÃ©e, le dumping social, la corruption. En un mot, pas d'Ã©largissement sans projet social ambitieux.",
+      "del:madeBy": {
+        "@id": "participant_9"
+      },
+      "del:timestamp": "2025-06-19T09:17:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_10",
+      "del:text": "Od tego momentu Unia Europejska ma twarz Junckera, ktÃ³ry pijany wychodziÅ na miÄdzynarodowe konferencje. Ma twarz Timmermansa, ktÃ³ry zaciekle atakowaÅ PolskÄ i WÄgry i bardzo agresywnie forsowaÅ szkodliwÄ, niebezpiecznÄ, zielonÄ politykÄ. Unia Europejska ma twarz korupcji, autorytarnego zamordyzmu, moralnego zepsucia, lobbingu zagranicznego, niebezpieczeÅstwa, gÅupoty i nakrÄtek przymocowanych do plastikowych butelek. Unia Europejska ma twarz Ursuli von der Leyen, ktÃ³ra nie nadÄÅ¼a za Åwiatowymi zmianami i pcha EuropÄ ku samozagÅadzie.\nTo nie jest ta sama Unia Europejska, do ktÃ³rej Polska wchodziÅa w 2004 r. WchodziliÅmy na konkretnych zasadach, ktÃ³re dziÅ leÅ¼Ä w koszu, zastÄpione autorytaryzmem i lewackÄ agendÄ. DziÅ Unia Europejska przestaje byÄ dobrym miejscem do Å¼ycia. I pytanie: czy do takiej struktury rzeczywiÅcie jakieÅ paÅstwo chce wejÅÄ i powinno wejÅÄ? Najpierw trzeba UniÄ EuropejskÄ naprawiÄ.\nMusimy wrÃ³ciÄ do naszego DNA, do wspÃ³lnoty suwerennych paÅstw narodowych. Cywilizacja Å¼ycia musi wygraÄ z cywilizacjÄ Åmierci. Musimy ochroniÄ nasze rodziny, nasze bezpieczeÅstwo i nasze granice. W przeciwnym razie po prostu nie bÄdzie do czego wchodziÄ. I tyle.",
+      "del:madeBy": {
+        "@id": "participant_10"
+      },
+      "del:timestamp": "2025-06-19T09:19:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_11",
+      "del:text": "One of the reasons why Putin started this war is the grey areas of insecurity in Europe. If we had had such an understanding and decisions, at least immediately after the annexation of Crimea, there is a high probability that Ukraine would not be attacked today.\nNot too late. We have that chance. It is necessary to seek consensus in our societies that enlargement is as important for the future of the EU as defence. In essence, enlargement is an integral part of our defence union. The unification of the European continent on the basis of democracies is in our own interests. Either a larger, secure, strong EU or Russia and China closer to our borders.\nSuch an understanding requires leaders in each Member State. That's why I end my speech with a James Freeman Clark quote: 'A politician thinks of the next election, a statesman of the next generation'. At least, let's think about both, about the elections and about the next generations.\n(The speaker agreed to take a blue-card question)",
+      "del:madeBy": {
+        "@id": "participant_11"
+      },
+      "del:timestamp": "2025-06-19T09:21:59"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_12",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_12"
+      },
+      "del:timestamp": "2025-06-19T09:24:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_13",
+      "del:text": "But now I think that we have to start negotiations with Ukraine as well as Moldova as soon as possible. Ukraine is ready to start negotiations, to open negotiation chapters now.",
+      "del:madeBy": {
+        "@id": "participant_11"
+      },
+      "del:timestamp": "2025-06-19T09:24:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_14",
+      "del:text": "Esto muestra con claridad el Ã©xito de la polÃ­tica de ampliaciÃ³n, Â¿verdad? Porque supuso no solamente un impulso a reformas polÃ­ticas y a la modernizaciÃ³n econÃ³mica, sino tambiÃ©n, y sobre todo, a la estabilizaciÃ³n de las democracias en los dos paÃ­ses ibÃ©ricos, que contribuyeron desde su adhesiÃ³n a mejorar la construcciÃ³n europea.\nDe modo que la polÃ­tica de cohesiÃ³n debe muchÃ­simo a EspaÃ±a y Portugal. El refuerzo de la polÃ­tica agrÃ­cola y tambiÃ©n la ciudadanÃ­a y el programa Erasmus tienen, por tanto, una deuda clara con esta adhesiÃ³n.\nPero, cuarenta aÃ±os despuÃ©s, la UniÃ³n Europea creciÃ³. Â¡Vaya si creciÃ³! Llegamos a ser veintiocho, y ahora somos veintisiete. Pero hay, al menos en estos momentos, candidatos en la lista de espera hasta sumar treinta y cinco.\nY lo primero que hace falta es un ejercicio de realismo, no engaÃ±arse con placebos. Es una hipocresÃ­a que TurquÃ­a continÃºe formalmente en la lista de espera como paÃ­s candidato, cuando es evidente que hace tiempo que abandonÃ³ toda expectativa y se ha cualificado como un actor regional por sÃ­ mismo.\nPero hay otros paÃ­ses candidatos a los que hay que exigir, por supuesto, la adhesiÃ³n a los valores europeos: artÃ­culo 2 del Tratado; esa idea europea de democracia que incluye pluralismo, que incluye pluralismo informativo, que incluye independencia judicial y estrategias contra la corrupciÃ³n.\nY, por eso, la adhesiÃ³n tiene que ser muy exigente. Pero, para empezar, tiene que ser exigente para la propia UniÃ³n Europea.Â Y esto exige, si queremos ser treinta y cinco, cambiar los mÃ©todos de decisiÃ³n. Porque, si el contraste entre nuestros objetivos y ambiciones proclamados y nuestro mÃ©todo de decisiÃ³n disfuncional e impracticable es insoportable a veintisiete, Â¿cÃ³mo serÃ¡ a treinta y cinco?\nLo pone de manifiesto HungrÃ­a: cuando hace falta unanimidad, HungrÃ­a es el missing link, el eslabÃ³n fallido de la cadena, y obliga a todos los demÃ¡s a formar una coalition of the willing para hacer lo que HungrÃ­a veta.\nPor tanto, es imprescindible un ejercicio de seriedad para que esa reforma institucional sea previa a toda ampliaciÃ³n de la construcciÃ³n europea. Esa es la exigencia.",
+      "del:madeBy": {
+        "@id": "participant_13"
+      },
+      "del:timestamp": "2025-06-19T09:25:21"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_15",
+      "del:text": "NÃ³s falamos por nÃ³s prÃ³prios e por aquilo que Portugal ganhou em aderir Ã  UniÃ£o Europeia, e queremos que os outros paÃ­ses candidatos tambÃ©m ganhem quando aderirem Ã  UniÃ£o Europeia. Mas essa adesÃ£o tem de ser feita no estrito cumprimento dos critÃ©rios de Copenhaga e nosÂ timings exatamente iguais uns aos outros. NÃ£o deve haver primeiras e segundas velocidades, nÃ£o deve haver filhos e enteados nessa adesÃ£o, por um lado.\nPor outro lado, Ã© preciso que nÃ³s arrumemos a casa ââ a nossa casa europeia ââ porque a nossa casa europeia, como qualquer outra casa, precisa de manutenÃ§Ã£o, e essa manutenÃ§Ã£o nÃ£o tem sido feita. Essa manutenÃ§Ã£o Ã© absolutamente necessÃ¡ria, antes de qualquer alargamento.\nTemos de rever os Tratados, temos de rever a nossa prÃ³pria UniÃ£o e os princÃ­pios e valores pelos quais nos regemos, pois muitos anos se passaram desde o inÃ­cio deste grande projeto que Ã© a UniÃ£o Europeia, e o mundo mudou. O mundo global mudou.\nEstrategicamente, temos outros desafios que nÃ£o tÃ­nhamos nessa altura, e Ã© preciso enfrentar esses desafios de uma forma mais moderna, mais proativa e, principalmente, de uma forma mais eficaz e ativa para nÃ³s prÃ³prios europeus.\nPortanto, queria deixar aqui esta mensagem e dizer sim ao alargamento, mas a um alargamento Ã  medida do sÃ©culo XXI e nÃ£o a um alargamento Ã  medida do sÃ©culo XX.",
+      "del:madeBy": {
+        "@id": "participant_14"
+      },
+      "del:timestamp": "2025-06-19T09:27:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_16",
+      "del:text": "Ð¡Ð¸ÑÑÐ°ÑÐ¸ÑÑÐ°, Ð² ÐºÐ¾ÑÑÐ¾ ÑÐµ Ð½Ð°Ð¼Ð¸ÑÐ° Ð¡ÐºÐ¾Ð¿Ð¸Ðµ Ð² Ð¼Ð¾Ð¼ÐµÐ½ÑÐ°, Ðµ ÑÐµÐ·ÑÐ»ÑÐ°Ñ ÐµÐ´Ð¸Ð½ÑÑÐ²ÐµÐ½Ð¾ Ð¸ ÑÐ°Ð¼Ð¾ Ð½Ð° ÑÐµÑÐ½Ð¸ÑÐµ ÑÐ¾Ð±ÑÑÐ²ÐµÐ½Ð¸ Ð´ÐµÐ¹ÑÑÐ²Ð¸Ñ Ð¸Ð»Ð¸ Ð¿Ð¾-Ð¿ÑÐ°Ð²Ð¾ â Ð±ÐµÐ·Ð´ÐµÐ¹ÑÑÐ²Ð¸Ñ. ÐÐ½ÐµÑ Ð¡ÐºÐ¾Ð¿Ð¸Ðµ Ð¼Ð¾Ð¶ÐµÑÐµ Ð´Ð° Ð±ÑÐ´Ðµ ÑÐ°Ð¼Ð¾ Ð´Ð¾ ÑÐ°Ð¼Ð¾ Ñ Ð¢Ð¸ÑÐ°Ð½Ð° Ð¸ ÐÐ¾Ð´Ð³Ð¾ÑÐ¸ÑÐ°, Ð¼Ð¾Ð¶ÐµÑÐ° Ð´Ð° Ð±ÑÐ´Ð°Ñ Ð·Ð´ÑÐ°Ð²Ð¾ ÑÑÑÐ¿Ð¸Ð»Ð¸ Ð½Ð° ÑÐ²Ð¾Ñ ÐµÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸ Ð¿ÑÑ. ÐÐµ Ð³Ð¾ Ð½Ð°Ð¿ÑÐ°Ð²Ð¸ÑÐ°, Ð·Ð°ÑÐ¾ÑÐ¾ Ð² ÐºÑÐ°Ð¹Ð½Ð° ÑÐ¼ÐµÑÐºÐ° Ð½Ðµ Ð¸ÑÐºÐ°Ñ. ÐÑÐ¼Ð° Ð¾ÑÑÑÑÐ¿ÐºÐ¸, ÐºÐ¾Ð¸ÑÐ¾ Ð±Ð¸ÑÐ° Ð´Ð¾Ð²ÐµÐ»Ð¸ Ð´Ð¾ ÑÐ¾Ð²Ð° ÑÐµ Ð´Ð° Ð¸Ð·Ð¿ÑÐ»Ð½ÑÑ ÑÐ²Ð¾Ð¸ÑÐµ Ð²ÐµÑÐµ Ð¿Ð¾ÐµÑÐ¸ Ð°Ð½Ð³Ð°Ð¶Ð¸Ð¼ÐµÐ½ÑÐ¸. ÐÑÐ¾ Ð·Ð°ÑÐ¾ Ð°Ð· Ð±Ð¸Ñ Ð¿Ð¾Ð¼Ð¾Ð»Ð¸Ð» Ð³Ð¾ÑÐ¿Ð¾Ð¶Ð° ÐÐ¾Ñ ÑÐ»ÐµÐ´Ð²Ð°ÑÐ¸Ñ Ð¿ÑÑ Ð´Ð° Ð¿Ð¾Ð¿Ð¸ÑÐ° Ð¿ÑÐ°Ð²Ð¸ÑÐµÐ»ÑÑÐ²Ð¾ÑÐ¾ Ð² Ð¡ÐºÐ¾Ð¿Ð¸Ðµ Ð´Ð¸ÑÐµÐºÑÐ½Ð¾: âÐÑÐºÐ°ÑÐµ Ð»Ð¸ Ð´Ð° Ð±ÑÐ´ÐµÑÐµ ÑÐ°ÑÑ Ð¾Ñ ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸Ñ ÑÑÑÐ· Ð¸Ð»Ð¸ Ð½Ðµ?â ÐÐ°ÑÐ¾ÑÐ¾ Ð¾ÑÐ³Ð¾Ð²Ð¾ÑÑÑ Ðµ Ð¿ÑÐ¾ÑÑ: Ð°ÐºÐ¾ Ð¸ÑÐºÐ°ÑÐµ, Ð¿ÑÐ¾ÑÑÐ¾ Ð¸Ð·Ð¿ÑÐ»Ð½ÐµÑÐµ ÑÐ²Ð¾Ð¸ÑÐµ Ð°Ð½Ð³Ð°Ð¶Ð¸Ð¼ÐµÐ½ÑÐ¸. ÐÑÐ»Ð³Ð°ÑÐ¸Ñ Ð²ÐµÑÐµ Ð½Ð°Ð¿ÑÐ°Ð²Ð¸ ÐºÐ¾Ð¼Ð¿ÑÐ¾Ð¼Ð¸ÑÐ¸ Ð¸ Ð½ÑÐ¼Ð° Ð´Ð° Ð¾ÑÑÑÑÐ¿Ð¸ Ð¸ Ð½Ð° Ð¹Ð¾ÑÐ° Ð¾Ñ ÑÑÑ, Ð·Ð°ÑÐ¾ÑÐ¾ Ð½ÑÐ¼Ð° Ð¿ÑÐ¸ÑÐ¸Ð½Ð° Ð´Ð° Ð²ÑÑÐ²Ð°, ÑÐµ Ð¾ÑÐ¸ÑÐ¸Ð°Ð»Ð½Ð¾ Ð¡ÐºÐ¾Ð¿Ð¸Ðµ ÑÐµ Ð¿ÑÐ¾Ð¼ÐµÐ½Ð¸ Ð¿Ð¾Ð»Ð¸ÑÐ¸ÐºÐ°ÑÐ° ÑÐ¸ Ð¸ Ð³Ð¾Ð²Ð¾ÑÐ° ÑÐ¸ Ð½Ð° Ð¾Ð¼ÑÐ°Ð·Ð° ÑÐ¿ÑÑÐ¼Ð¾ Ð±ÑÐ»Ð³Ð°ÑÐ¸ÑÐµ Ð¸ ÐÑÐ»Ð³Ð°ÑÐ¸Ñ.\nÐÐ¾ÑÐ»ÐµÐ´Ð½Ð¸ÑÐµ ÑÑÐ±Ð¸ÑÐ¸Ñ â Ð¿ÑÐ¸ÑÑÐ´Ð°ÑÐ° ÑÑÐµÑÑ ÐÑÐ±ÑÐ¾ ÐÐµÐ¾ÑÐ³Ð¸ÐµÐ²ÑÐºÐ¸ Ð¸ ÑÐµÐ¶ÐºÐ¾ÑÐ¾ ÑÑÑÑÐ¾ÑÐ½Ð¸Ðµ Ð½Ð° Ð¼Ð°ÐºÐµÐ´Ð¾Ð½ÑÐºÐ¸ÑÐµ Ð±ÑÐ»Ð³Ð°ÑÐ¸, ÑÐ° Ð½Ð°Ð¹ Ð´Ð¾Ð±ÑÐ°ÑÐ° Ð¸Ð»ÑÑÑÑÐ°ÑÐ¸Ñ Ð·Ð° ÑÐ¾Ð²Ð° Ð·Ð°ÑÐ¾ Ð¸ÑÐºÐ°ÑÐ¼Ðµ Ð´Ð¾Ð¿ÑÐ»Ð½Ð¸ÑÐµÐ»Ð½Ð¸ÑÐµ ÑÑÐ»Ð¾Ð²Ð¸Ñ Ð¾Ñ Ð¡ÐºÐ¾Ð¿Ð¸Ðµ Ð² Ð¿ÑÐµÐ³Ð¾Ð²Ð¾ÑÐ½Ð°ÑÐ° ÑÐ°Ð¼ÐºÐ°.",
+      "del:madeBy": {
+        "@id": "participant_15"
+      },
+      "del:timestamp": "2025-06-19T09:29:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_17",
+      "del:text": "DeuxiÃ¨me remarque: je ne cesse de m'Ã©tonner de l'insouciance dont font preuve certains Ãtats membres pour ce qui est de l'Ã©largissement et de ses implications. Il est patent de constater que les Ãtats membres ne montrent pas la moindre disponibilitÃ© Ã  envisager une modification des traitÃ©s jugÃ©e plus que nÃ©cessaire et condition indispensable pour un meilleur fonctionnement d'une Union europÃ©enne Ã©largie.\nFinalement, il est irresponsable de fermer les yeux devant les difficultÃ©s de gouvernance qui s'annoncent pour une Europe Ã©largie. Le Conseil europÃ©en aurait dÃ©jÃ  dÃ», au moment oÃ¹ le statut de pays candidat a Ã©tÃ© accordÃ© Ã  plusieurs pays, lancer en mÃªme temps une convention europÃ©enne susceptible de prÃ©parer un changement de traitÃ©.",
+      "del:madeBy": {
+        "@id": "participant_16"
+      },
+      "del:timestamp": "2025-06-19T09:31:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_18",
+      "del:text": "But we also have to see that most of these countries that are seeking accession are making great progress. And we have two candidate states that have a realistic chance to join this European Union until 2028:Â clearly Montenegro and maybe â if they keep the ambition â Albania. I want to say these are two countries that have been reliable partners, that have been sharing our CFSP, so foreign policy, standpoints. They have shown their commitment to the European Union and they have a realistic chance to come as 28th and 29th members into the European Union.\nYes, we need reforms of the Treaty, but we also need a signal to the region that enlargement is possible based on merits, based on the rule of law, but that we're acting in terms of enlargement and we're not kicking the can down the road when it comes to reforms. So, let's keep the door open for Montenegro and Albania. The region needs this signal.",
+      "del:madeBy": {
+        "@id": "participant_17"
+      },
+      "del:timestamp": "2025-06-19T09:32:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_19",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_18"
+      },
+      "del:timestamp": "2025-06-19T09:33:49"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_20",
+      "del:text": "I will give you floor again. Sorry about that.\nYou can continue in Finnish. You may understand why this happens.",
+      "del:madeBy": {
+        "@id": "participant_19"
+      },
+      "del:timestamp": "2025-06-19T09:34:32"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_21",
+      "del:text": "Putinin autoritaarisuuden voimistuessa ihmiset ovat valmiita lÃ¤htemÃ¤Ã¤n kaduille puolustamaan oikeuttaan valita, vapauttaan ja eurooppalaisia arvoja, ja siksi laajentuminen on nyt niin tÃ¤rkeÃ¤ kysymys.\nKysymys on myÃ¶s Ukrainasta. Jos ja kun ukrainalaiset haluavat liittyÃ¤ EU:hun, meidÃ¤n on oltava valmiina toivottamaan heidÃ¤t tervetulleeksi. Samalla meidÃ¤n tulee varmistaa, ettÃ¤ jÃ¤senyyskriteerit tÃ¤yttyvÃ¤t.Â Me tarvitsemme avointa keskustelua laajentumisen tuomista muutoksista unionin pÃ¤Ã¤tÃ¶ksentekoon ja budjettiin.\nMutta aiempien laajentumisprosessien virheistÃ¤ pitÃ¤Ã¤ myÃ¶s oppia. Tarvitsemme parempia vÃ¤lineitÃ¤ ja yhteisiÃ¤ digitaalisia jÃ¤rjestelmiÃ¤ rajatylittÃ¤vÃ¤n tyÃ¶voiman hyvÃ¤ksikÃ¤ytÃ¶n torjumiseksi. Kun otetaan huomioon, kuinka kauan sisÃ¤markkinoilla on ollut vapaata liikkuvuutta, on kÃ¤sittÃ¤mÃ¤tÃ¶ntÃ¤, ettemme ole edistyneet tÃ¤mÃ¤n pidemmÃ¤lle tÃ¤mÃ¤n ongelman ratkaisussa.",
+      "del:madeBy": {
+        "@id": "participant_18"
+      },
+      "del:timestamp": "2025-06-19T09:34:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_22",
+      "del:text": "ÐÐµÐ´Ð¾Ð¿ÑÑÑÐ¸Ð¼Ð¾ Ðµ ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸ÑÑ ÑÑÑÐ· Ð´Ð° Ð´ÐµÐ¹ÑÑÐ²Ð° Ð¿Ð¾Ð´ Ð¿Ð¾Ð»Ð¸ÑÐ¸ÑÐµÑÐºÐ¸ Ð½Ð°ÑÐ¸ÑÐº, Ð° Ð¾ÑÐµ Ð¿Ð¾-Ð½ÐµÐ´Ð¾Ð¿ÑÑÑÐ¸Ð¼Ð¾ Ðµ ÑÐ°Ð·ÑÐ¸ÑÑÐ²Ð°Ð½ÐµÑÐ¾ Ð´Ð° ÑÐµ Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð° ÐºÐ°ÑÐ¾ Ð¸Ð½ÑÑÑÑÐ¼ÐµÐ½Ñ Ð·Ð° Ð³ÐµÐ¾Ð¿Ð¾Ð»Ð¸ÑÐ¸ÑÐµÑÐºÐ¸ ÑÐµÐ»Ð¸. ÐÑÐ°Ð¹Ð½Ð¾ Ð²ÑÐµÐ¼Ðµ Ðµ Ð´Ð° ÑÐ¿ÑÐµÐ¼ Ñ Ð±ÐµÐ·Ð¾ÑÐ³Ð¾Ð²Ð¾ÑÐ½Ð¸ÑÐµ Ð¿Ð¾Ð»Ð¸ÑÐ¸ÐºÐ¸ Ð¸ Ð´Ð° Ð¿Ð¾ÑÑÐ°Ð²Ð¸Ð¼ ÑÐµÑÐ°Ð²Ð°Ð½ÐµÑÐ¾ Ð½Ð° Ð¿ÑÐ¾Ð±Ð»ÐµÐ¼Ð¸ÑÐµ Ð¸ Ð¸Ð½ÑÐµÑÐµÑÐ¸ÑÐµ Ð½Ð° Ð³ÑÐ°Ð¶Ð´Ð°Ð½Ð¸ÑÐµ Ð½Ð° Ð¿ÑÑÐ²Ð¾ Ð¼ÑÑÑÐ¾.\nÐÐ°ÑÐµÐ³Ð¾ÑÐ¸ÑÐ½Ð¾ ÑÐµ Ð¿ÑÐ¾ÑÐ¸Ð²Ð¾Ð¿Ð¾ÑÑÐ°Ð²ÑÐ¼ Ð½Ð° Ð¾Ð¿Ð¸ÑÐ¸ÑÐµ ÑÐ°Ð·ÑÐ¸ÑÑÐ²Ð°Ð½ÐµÑÐ¾ Ð´Ð° ÑÐ»ÑÐ¶Ð¸ Ð·Ð° ÑÐµÐ½ÑÑÐ°Ð»Ð¸Ð·Ð¸ÑÐ°Ð½Ðµ Ð½Ð° Ð²Ð»Ð°ÑÑÑÐ°, Ð¿ÑÐµÐ¼Ð°ÑÐ²Ð°Ð½Ðµ Ð½Ð° Ð¿ÑÐ°Ð²Ð¾ÑÐ¾ Ð½Ð° Ð²ÐµÑÐ¾ Ð¸ Ð¾ÑÑÐ»Ð°Ð±Ð²Ð°Ð½Ðµ Ð½Ð° Ð½Ð°ÑÐ¸Ð¾Ð½Ð°Ð»Ð½Ð¸Ñ ÑÑÐ²ÐµÑÐµÐ½Ð¸ÑÐµÑ. ÐÑÐ´ÐµÑÐµÑÐ¾ Ð½Ð° ÐÐ²ÑÐ¾Ð¿Ð° Ð½Ðµ Ð¼Ð¾Ð¶Ðµ Ð´Ð° Ð±ÑÐ´Ðµ Ð´Ð¸ÐºÑÑÐ²Ð°Ð½Ð¾ Ð¾Ñ Ð±ÑÑÐ¾ÐºÑÐ°ÑÐ¸ÑÑÐ°. ÐÐ¾Ð¼Ð¿ÑÐ¾Ð¼Ð¸Ñ Ñ Ð¿ÑÐ°Ð²Ð¸Ð»Ð°ÑÐ°, ÑÐµÐ½Ð½Ð¾ÑÑÐ¸ÑÐµ Ð¸ Ð´ÐµÐ¼Ð¾ÐºÑÐ°ÑÐ¸ÑÑÐ° Ð½Ðµ ÑÑÑÐ±Ð²Ð° Ð´Ð° Ð¸Ð¼Ð°.",
+      "del:madeBy": {
+        "@id": "participant_20"
+      },
+      "del:timestamp": "2025-06-19T09:36:36"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_23",
+      "del:text": "Die Diskussion ist auch unehrlich, weil wir sie uns nicht leisten kÃ¶nnen. Kein Mitgliedstaat wird bereit sein, seinen Beitrag zum EUâHaushalt zu erhÃ¶hen oder auf Leistungen der Union zu verzichten. Wie auch, wenn 5Â % der nationalen Etats fÃ¼r Verteidigungsausgaben ausgegeben werden sollen!\nUnd sie ist drittens unehrlich, weil sie in Wahrheit keiner will, nicht einmal die Menschen in den BeitrittskandidatenlÃ¤ndern. Schauen Sie sich doch nur die letzten Wahlergebnisse in Georgien und Moldawien an!\nDie Wachstumsschmerzen der EuropÃ¤ischen Union sind schon heute unverkennbar. Noch mehr MitgliedslÃ¤nder sind keine geeignete TherapieÂ â im Gegenteil, dadurch werden sie weiter verschlimmert.",
+      "del:madeBy": {
+        "@id": "participant_21"
+      },
+      "del:timestamp": "2025-06-19T09:37:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_24",
+      "del:text": "But we also need a Europe with more strength to the outside for the sake of European values, for the sake of the interests of the Europeans of this generation and of generations to come, and that means fostering the enlargement process.\nWe have to be aware of the fact that the so-called 'methodologies' of accession to the European Union just haven't worked. They haven't worked for many years. I remember at the beginning of the last mandate, here, we were more or less obliged to define a new methodology for the enlargement process. Did it help? No, not at all.\nWhile many European countries, nearly all of them, want to be part of the integrated Europe, of the European Union, the best shape our continent ever had in history, while this is the case on one side, on the other side, we are reluctant and stuck in bureaucracy, in so-called 'methodologies', when it comes to enlargement. We need a more holistic and a more visionary approach here.\n(The speaker agreed to take a blue-card question)",
+      "del:madeBy": {
+        "@id": "participant_22"
+      },
+      "del:timestamp": "2025-06-19T09:38:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_25",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_23"
+      },
+      "del:timestamp": "2025-06-19T09:40:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_26",
+      "del:text": "The other side is, I mean, we have still a war ongoing. Putin and Russia's aggression against Ukraine. We have on the table several ideas of new Member States, which are not yet official candidate countries. Ukraine is officially a candidate country. But we need also here the holistic approach. We have six Western Balkan countries. We have the Eastern Partnership countries.\nWe will have a future Europe for future generations, which will be entirely one integrated Europe in unity with freedom and peace and prosperity. This is what we have to thrive for. And polemics or extremism will not work on this path ahead.",
+      "del:madeBy": {
+        "@id": "participant_22"
+      },
+      "del:timestamp": "2025-06-19T09:41:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_27",
+      "del:text": "ÐÑÐ¾Ð¼ÑÐ½Ð°ÑÐ° Ð½Ð° ÐÐ¾Ð³Ð¾Ð²Ð¾ÑÐ¸ÑÐµ Ðµ ÑÐ»Ð¾Ð¶ÐµÐ½ Ð¸ Ð±Ð°Ð²ÐµÐ½ Ð¿ÑÐ¾ÑÐµÑ Ð±ÐµÐ· Ð³Ð°ÑÐ°Ð½ÑÐ¸Ð¸ Ð·Ð° ÐºÑÐ°Ð¹Ð½Ð¸Ñ ÑÐµÐ·ÑÐ»ÑÐ°Ñ. ÐÐ°ÑÐ¾Ð²Ð° ÑÑÑÐ±Ð²Ð° Ð´Ð° Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¼Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»Ð½Ð¾ ÑÐµÐ³Ð°ÑÐ½Ð°ÑÐ° Ð¿ÑÐ°Ð²Ð½Ð° ÑÐ°Ð¼ÐºÐ°, Ð¸Ð½Ð°ÑÐµ Ð¸Ð¼Ð° ÑÐ¸ÑÐº Ð´Ð° Ð¾ÑÑÐ»Ð°Ð±Ð¸Ð¼ ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸Ñ ÑÑÑÐ· Ð¸ Ð´Ð° Ð±Ð»Ð¾ÐºÐ¸ÑÐ°Ð¼Ðµ Ð¿ÑÐ¾ÑÐµÑÐ° Ð½Ð° ÑÐ°Ð·ÑÐ¸ÑÑÐ²Ð°Ð½Ðµ Ð·Ð° Ð½ÐµÐ¾Ð¿ÑÐµÐ´ÐµÐ»ÐµÐ½Ð¾ Ð²ÑÐµÐ¼Ðµ.\nÐÐ°ÑÐ¾ Ð¿ÑÐµÐ´ÑÑÐ°Ð²Ð¸ÑÐµÐ» Ð½Ð° ÐÑÐ»Ð³Ð°ÑÐ¸Ñ â ÐµÐ´Ð½Ð° Ð¾Ñ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸ÑÐµ Ð¿ÑÐ¸ÑÑÐµÐ´Ð¸Ð½Ð¸Ð»Ð¸ ÑÐµ Ð´ÑÑÐ¶Ð°Ð²Ð¸, Ð¸ÑÐºÐ°Ð¼ ÑÑÐ½Ð¾ Ð´Ð° Ð¿Ð¾Ð´ÑÐµÑÑÐ°Ñ: Ð¾ÑÐ³Ð¾Ð²Ð¾ÑÐ½Ð¾ÑÑÑÐ° Ð² ÑÐ»ÑÑÐ°Ñ Ðµ Ð´Ð²ÑÑÑÑÐ°Ð½Ð½Ð°. ÐÐ°Ð½Ð´Ð¸Ð´Ð°ÑÐºÐ¸ÑÐµ Ð·Ð° ÑÐ»ÐµÐ½ÑÑÐ²Ð¾ ÑÑÑÐ¾ ÑÑÑÐ±Ð²Ð° Ð´Ð° ÑÐ¸ ÑÐ²ÑÑÑÐ°Ñ ÑÐ°Ð±Ð¾ÑÐ°ÑÐ° Ð¸ Ð´Ð° Ð¿ÑÐµÐ´Ð¿ÑÐ¸ÐµÐ¼Ð°Ñ Ð½ÐµÐ¾Ð±ÑÐ¾Ð´Ð¸Ð¼Ð¸ÑÐµ Ð¿ÑÐ¾Ð¼ÐµÐ½Ð¸, Ð·Ð° Ð´Ð° Ð¿ÑÐ¸Ð»Ð°Ð³Ð°Ñ ÐµÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸ÑÐµ ÑÑÐ°Ð½Ð´Ð°ÑÑÐ¸ Ð²ÑÐ² Ð²ÑÑÐºÐ° ÐµÐ´Ð½Ð° ÑÑÐµÑÐ°. Ð¡Ð°Ð¼Ð¾ ÑÐ°ÐºÐ° Ð¿ÑÐ¾ÑÐµÑÑÑ ÑÐµ Ð·Ð°Ð¿Ð°Ð·Ð¸ Ð¿Ð¾Ð´ÐºÑÐµÐ¿Ð°ÑÐ° Ð½Ð° Ð³ÑÐ°Ð¶Ð´Ð°Ð½Ð¸ÑÐµ, ÐºÐ¾ÐµÑÐ¾ Ðµ Ð½Ð°Ð¹-Ð²Ð°Ð¶Ð½Ð¾, ÐºÐ°ÐºÑÐ¾ Ð² ÑÑÑÐ°Ð½Ð¸ÑÐµ ÐºÐ°Ð½Ð´Ð¸Ð´Ð°ÑÐºÐ¸, ÑÐ°ÐºÐ° Ð¸ Ð² Ð´ÑÑÐ¶Ð°Ð²Ð¸ÑÐµ ÑÐ»ÐµÐ½ÐºÐ¸, Ð·Ð° Ð´Ð° Ð¿Ð¾ÑÑÐ¸Ð³Ð½ÐµÐ¼ Ð·Ð°ÐµÐ´Ð½Ð¾ ÐµÐ´Ð½Ð¾ Ð´ÐµÐ¼Ð¾ÐºÑÐ°ÑÐ¸ÑÐ½Ð¾, ÑÐ¾Ð»Ð¸Ð´Ð°ÑÐ½Ð¾ Ð¸ Ð´Ð¾Ð±ÑÐ¾ Ð±ÑÐ´ÐµÑÐµ Ð·Ð° Ð²ÑÐµÐºÐ¸ ÐµÐ´Ð¸Ð½ ÐµÐ²ÑÐ¾Ð¿ÐµÐµÑ.",
+      "del:madeBy": {
+        "@id": "participant_24"
+      },
+      "del:timestamp": "2025-06-19T09:42:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_28",
+      "del:text": "And all the countries are below EU standards in all key areas. Take corruption: according to Transparency International, these countries rank among the worst in Europe. Bosnia and Herzegovina is at 108th place, lower than countries like Algeria or Zambia. Ukraine and Serbia share 104th place, and Albania ranks 98th. By comparison, Denmark is number one!\nIn terms of median income, these countries are light years behind: Ukraine has an average monthly salary of only EURÂ 380, Moldova EURÂ 330, and even the most developed, Montenegro, has an average below EURÂ 800.\nOpening the single market to these countries will only lead to massive social dumping and welfare tourism in Europe.",
+      "del:madeBy": {
+        "@id": "participant_25"
+      },
+      "del:timestamp": "2025-06-19T09:44:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_29",
+      "del:text": "Din pÄcate, cortina de fier Èi ocupaÈia sovieticÄ a estului Europei au blocat peste 200 de milioane de europeni Ã®n afara acestui spaÈiu al libertÄÈii Èi prosperitÄÈii. A fost nevoie sÄ cadÄ comunismul Èi sÄ treacÄ aproape 50 de ani de la Ã®nfiinÈare, pentru ca fostele state comuniste captive sÄ Ã®nceapÄ sÄ facÄ parte din aceastÄ comunitate. AstÄzi, integrarea Republicii Moldova, Ucrainei Èi a Balcanilor de Vest este pasul firesc al unui proiect politico-economic care a demonstrat cÄ unitatea aduce forÈÄ Èi creÈte prosperitatea tuturor statelor membre.",
+      "del:madeBy": {
+        "@id": "participant_26"
+      },
+      "del:timestamp": "2025-06-19T09:45:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_30",
+      "del:text": "But we face a critical challenge: our current institutions risk paralysis in a larger Union. The unanimity rule threatens to block the very action we need to be a credible global actor. Inaction is not an option; it means losing credibility, importing instability and undermining the rule of law we champion.\nWe must act now, treating enlargement and internal reform as two sides of the same coin. So I call on us to be bold: move to qualified majority voting to break the gridlock. Let's be smart: implement phased integration to reward reform now. And let's be prepared: overhaul our budget to be fit for a stronger Union.\nLet us seize this moment to build a Union that is not just bigger, but more cohesive and decisive, ready to secure peace for generations to come.",
+      "del:madeBy": {
+        "@id": "participant_27"
+      },
+      "del:timestamp": "2025-06-19T09:47:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_31",
+      "del:text": "There's only one solution: reform, treaty reform. Let's create a Europe 2.0 with a European Prime Minister and Foreign Minister, free from the oppressive veto, a Europe that speaks with one voice. This could become a reality by enlarging and reforming the Union â in other words, a new Europe that is bigger and better. Parliament voted for treaty reform already, but the Council refuses to act. They are not even present at this debate, only thinking about the next election, not thinking about the next generation.",
+      "del:madeBy": {
+        "@id": "participant_28"
+      },
+      "del:timestamp": "2025-06-19T09:48:19"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_32",
+      "del:text": "The conversation on reunification is taking place across the island of Ireland, in both public and private forums. Its special status is already recognised in international agreements. It's only a small step to reintegration into the EU.\nThe conversation on unity has been heightened since the people of the North were forced out of the EU against their will by the Brexit vote. It is now time for the British Government to set definitive criteria for a unity referendum. The north of Ireland is a developed region which spent decades in the EU. The next enlargement could be about welcoming back the people of the North.\nHowever, I urge caution: an enlarged EU must be one that upholds the values that it claims to hold: that means respect for Member States' foreign policy and their policy of neutrality, and that means respect for international law and human rights.",
+      "del:madeBy": {
+        "@id": "participant_29"
+      },
+      "del:timestamp": "2025-06-19T09:49:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_33",
+      "del:text": "Aber statt die deutschen Steuerzahler zu entlasten, wollen Sie uns immer neue Lasten aufbÃ¼rden. Moldawien, Albanien oder die Ukraine sollen jetzt Mitglied in der EuropÃ¤ischen Union werden, weil sich Frau von der Leyen mehr Gewicht auf der weltpolitischen BÃ¼hne erhofft. Das wird nicht funktionieren; wir Deutschen werden uns nicht lÃ¤nger ausplÃ¼ndern lassen. Wir werden Ihrem GrÃ¶Ãenwahnsinn den Geldhahn abdrehen. Darauf kÃ¶nnen Sie sich verlassen, denn dafÃ¼r wird meine Partei gewÃ¤hlt. Sagen Sie bitte Ihrer KommissionsprÃ¤sidentin: Wer untergehen soll, der wird vorher hochmÃ¼tig, und Hochmut kommt vor dem Fall.",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2025-06-19T09:51:09"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_34",
+      "del:text": "Au inventat Ã®ncÄ Èi o limbÄ moldoveneascÄ. Nu existÄ o limbÄ moldoveneascÄ, dupÄ cum nu existÄ o republicÄ moldoveneascÄ. Moldova este o regiune din RomÃ¢nia. Faptul cÄ existÄ o RepublicÄ Moldova, asta se Ã®ntÃ¢mplÄ doar pentru cÄ un bolÈevic Èi cu un nazist au fÄcut un Pact Ribbentrop-Molotov Èi un Dictat de la Viena acum 85 de ani Èi pentru RomÃ¢nia acest pact nu este Ã®ncÄ denunÈat. AÈa cÄ, sÄ nu fiu prost Ã®nÈeles, eu sunt de acord ca Moldova sÄ adere Èi am votat Ã®n acest sens la Uniunea EuropeanÄ, dar totuÈi, nu era mai simplu sÄ se uneascÄ cu RomÃ¢nia? Era mult mai simplu, mÄ gÃ¢ndesc.",
+      "del:madeBy": {
+        "@id": "participant_31"
+      },
+      "del:timestamp": "2025-06-19T09:52:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_35",
+      "del:text": "U tom kontekstu, plan rasta za zapadni Balkan svakako predstavlja priliku za dublju integraciju i konkretne promjene, no bez jasne politiÄke poruke, bez jasne teÅ¾nje i traÅ¾enja jasnog opredjeljenja, ostat Äe tek okvir bez sadrÅ¾aja.\nSjeverna Makedonija, drÅ¾ava koja unatoÄ viÅ¡estrukim preporukama Komisije joÅ¡ uvijek Äeka poÄetak pregovora, primjer je politiÄke nepravde koja takoÄer potkopava vjeru u europski projekt. U Bosni i Hercegovini iscrpljuju se separatistiÄke poruke, separatistiÄke politike s jedne strane, ali isto tako nerealne unitaristiÄke ambicije s druge. Crna Gora bori se za svoju europsku i prozapadnu orijentaciju.\nNaivno i u ovoj raspravi zvuÄe iluzije da Äe preglasavanje unutar Europske unije dovesti do veÄeg jedinstva. To nije moguÄe, to je kontraproduktivno ne samo za manje i srednje velike drÅ¾ave Älanice nego isto tako i za cijelu Europu. Zbog toga moramo biti jasni, moramo biti prisutni, ali isto tako moramo zajedno raditi na uvaÅ¾avanju svih stajaliÅ¡ta.\n(Govornik je pristao odgovoriti na pitanje postavljeno podizanjem plave kartice.)",
+      "del:madeBy": {
+        "@id": "participant_32"
+      },
+      "del:timestamp": "2025-06-19T09:53:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_36",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_23"
+      },
+      "del:timestamp": "2025-06-19T09:56:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_37",
+      "del:text": "MeÄutim, ono Å¡to postoji kao ambicija mislim da treba poÅ¡tivati i s naÅ¡e strane da moramo napraviti reda i kod politike proÅ¡irenja. I u tom smislu, drÅ¾avi koja je sada u ratnom stanju trebamo uÄiniti sve da joj pomognemo, a nadamo se da Äe jednoga dana naÅ¡i kolege ovdje dolaziti i iz Ukrajine.",
+      "del:madeBy": {
+        "@id": "participant_32"
+      },
+      "del:timestamp": "2025-06-19T09:56:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_38",
+      "del:text": "Europska unija treba pruÅ¾ati podrÅ¡ku samo stvarnim, a ne fiktivnim reformama, i odmah pozitivno reagirati kada se kriteriji ispune.\nPremda je proÅ¡irenje opet strateÅ¡ki prioritet Europske unije, gotovo transakcijski se dugo odnosila prema ovoj politici, voÄena pogreÅ¡nim uvjerenjem da Äe europskim novcem rijeÅ¡iti sve unutarnje probleme drÅ¾ava kandidata.\nTako na liste strateÅ¡ki vaÅ¾nih projekata stavljamo one koje graÄani ne podrÅ¾avaju ili preporuÄujemo zatvaranje poglavlja o javnoj nabavi neposredno nakon sklapanja ugovora s treÄom zemljom koji se izuzima od tih pravila.\nInzistiranje na vladavini prava i europskim vrijednostima, ali usklaÄenom geopolitiÄkom orijentacijom, moraju biti temelji za nastavak politike proÅ¡irenja.\nAko se politika proÅ¡irenja provodi na taj naÄin, interna reforma institucija Europske unije ne bi trebala biti ni prepreka ni alibi za odgaÄanje novog proÅ¡irenja Europske unije.\n(Govornik je pristao odgovoriti na pitanje postavljeno podizanjem plave kartice.)",
+      "del:madeBy": {
+        "@id": "participant_33"
+      },
+      "del:timestamp": "2025-06-19T09:57:29"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_39",
+      "del:text": "Vi ste mnogo puta govorili o toj temi, ali znamo da postoje razliÄiti pogledi na samo to pitanje. Recimo, predsjednik Republike Hrvatske Zoran MilanoviÄ je rekao da oni koji su za ukidanje prava veta Äine veleizdaju ili neÅ¡to u tom smislu.\nMoÅ¾ete li mi Vi ovdje reÄi, jeste li Vi za ukidanje prava veta za male drÅ¾ave Älanice, neÅ¡to Å¡to ide protivno njihovim nacionalnim interesima, ili ste za to da male drÅ¾ave uspiju zaÅ¡tititi svoja prava i dalje u Europskoj uniji? Hvala lijepa.",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-06-19T09:58:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_40",
+      "del:text": "MeÄutim, i tema ove rasprave je Europska unija u buduÄnosti i mislim da se grubo ovdje dijelimo na one koji bi aÅ¾urirali Europsku uniju, dakle priklonili se nastavku politike proÅ¡irenja, ali ima i onih koji bi anulirali Europsku uniju.\nSvakako, buduÄa Europska unija mora voditi raÄuna i o pravnim tekovinama na kojima poÄiva, a to je, izmeÄu ostalog, i politika konsenzusa, ali mnogo puta u praksi se pokazalo da ona postaje usko grlo kada treba donijeti hitne odluke u korist Europske unije i njezinih graÄana.",
+      "del:madeBy": {
+        "@id": "participant_33"
+      },
+      "del:timestamp": "2025-06-19T09:59:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_41",
+      "del:text": "Mamienie pogrÄÅ¼onego w wojnie i chaosie paÅstwa jest wrÄcz nieprzyzwoite. Akcesja Ukrainy do Unii Europejskiej po prostu krajom czÅonkowskim siÄ nie opÅaca. Dodatkowo nieuregulowane granice Ukrainy, olbrzymi wskaÅºnik korupcji i brak powodzenia w wewnÄtrznych reformach sprawiajÄ, Å¼e ta dyskusja jest bezprzedmiotowa.\nZwolennicy rozszerzenia Unii Europejskiej sÄ w istocie przeciwnikami europejskiego rolnictwa, branÅ¼y przewozowej czy energochÅonnej. JeÅ¼eli Europa ma przetrwaÄ kryzysy i iÅÄ do przodu, musi zrezygnowaÄ z tego mesjanizmu, z jakim mamy tutaj do czynienia. JuÅ¼ dziÅ wiele branÅ¼ zostaÅo poÅoÅ¼onych na oÅtarzu tej sprawy.\nUnia Europejska musi siÄ skupiÄ na odbudowie wÅasnej, silnej gospodarki i wydaleniu nielegalnych imigrantÃ³w. Trzeba skoÅczyÄ z naraÅ¼eniem interesÃ³w paÅstw Europy w imiÄ Ukrainy. Dlatego nie moÅ¼e byÄ Å¼adnego rozszerzenia.",
+      "del:madeBy": {
+        "@id": "participant_35"
+      },
+      "del:timestamp": "2025-06-19T10:00:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_42",
+      "del:text": "You call it enlargement; you say we're exporting stability â I say we're importing instability. Let's look at the Balkans' candidates: Bosnia is ready to implode; Serbia and Kosovo are one spark away from open conflict; Albania looks for money in Brussels, but they look to an authoritarian Islamist regime for direction. What regime? TÃ¼rkiye â another candidate country.\nAnd the EU solution: not to fix the problems, but to make it easier to ignore Member States that say no. You don't build an extension while the house is burning â you put out the fire first.",
+      "del:madeBy": {
+        "@id": "participant_36"
+      },
+      "del:timestamp": "2025-06-19T10:01:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_43",
+      "del:text": "DrÅ¾ave, ki Å¾e dokazujejo evropsko zavezanost, potrebujejo jasna sporoÄila in spodbudne korake iz Bruslja. Obljuba Älanstva v Evropski uniji mora biti resniÄna in zanesljiva. Sicer tudi sistem postavljanja zahtev ne deluje.\nPoznamo primere drÅ¾av kandidatk, ki so sledile pomembnim reformam, nato pa obtiÄale v vmesnem prostoru. Severna Makedonija je kriÄeÄ primer.\nMedtem pa drugi akterji krepijo svoj vpliv in alternativne poti, ki lahko ogrozijo stabilnost in dragocene vrednote Evropske unije. Tiste vrednote, ki jih prepogosto jemljemo za samoumevne. To moramo znova in znova sporoÄati tudi evropskim drÅ¾avljankam in drÅ¾avljanom.\nSkupna prihodnost z drÅ¾avami kandidatkami pomeni moÄnejÅ¡o, varnejÅ¡o in bolj enotno Evropo.",
+      "del:madeBy": {
+        "@id": "participant_37"
+      },
+      "del:timestamp": "2025-06-19T10:02:57"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_44",
+      "del:text": "PrviÄ, nujno bi bilo potrebno naÅ¡im kolegom poslancem Zahodnega Balkana v tem Parlamentu dodeliti status opazovalcev Å¾e danes. DrugiÄ, za Å¡iritev je potrebno nameniti veÄ sredstev iz proraÄuna Evropske unije.\nIn tretjiÄ, spremeniti je potrebno proces odloÄanja v postopku pogajanj. Namesto konsenza predlagamo glasovanje s kvalificirano veÄino. Dejstvo je, da drÅ¾ave po vstopu v Evropsko unijo poveÄujejo blagostanje. Slovenija je prav zaradi Älanstva nadoknadila razvojni zaostanek v kar 30 odstotkih.\nÅ iritev Evropske unije ni tveganje, temveÄ dokonÄanje izgradnje Evropske unije. Sredstva, namenjena Å¡iritvi, pa so naloÅ¾ba v varnost in stabilnost stare celine.",
+      "del:madeBy": {
+        "@id": "participant_38"
+      },
+      "del:timestamp": "2025-06-19T10:04:12"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_45",
+      "del:text": "Dans le contexte des rÃ¨gles actuelles du marchÃ© europÃ©en, qui ne garantit mÃªme pas qu'aujourd'hui un travailleur qui va travailler dans un autre Ãtat membre ait droit aux mÃªmes rÃ¨gles de protection, Ã  la mÃªme sÃ©curitÃ© sociale qu'un autre, que va-t-il se passer dans le cadre d'un Ã©largissement? Tout simplement que des entreprisesÂ â d'ailleurs, il y a pas mal de sociÃ©tÃ©s Â«boÃ®tes aux lettresÂ», comme on les appelleÂ â vont en profiter pour faire baisser, pour faire empirer les conditions de travail des travailleurs un peu partout en Europe.\nEt Ã§a, Ã§a serait l'impact concret en Europe, aujourd'hui, d'un Ã©largissement pour les travailleurs. Ne cachez pas Ã§a, ne faites pas des rÃªves de grandeur sur combien l'Europe sera jolie Ã  200Â Ãtats. C'est pas Ã§a, ce que vivent les travailleurs. Les travailleurs veulent aujourd'hui que vous changiez cette Europe; non plus de la concurrence, mais de la coopÃ©ration, de la sÃ©curitÃ© sociale.",
+      "del:madeBy": {
+        "@id": "participant_39"
+      },
+      "del:timestamp": "2025-06-19T10:05:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_46",
+      "del:text": "NaÅ¾alost, po tom pitanju ne da ne vidimo napredak, nego, naÅ¾alost, uglavnom vidimo nazadovanje. Srbija je i dalje apsolutno najveÄi destabilizacijski faktor u jugoistoÄnoj Europi. HegemonistiÄka politika koju vodi Beograd ugroÅ¾ava neovisnost i suverenost okolnih drÅ¾ava te je jasno da ovakvoj Srbiji nije mjesto u Europskoj uniji.\nNadalje, Bosna i Hercegovina razapeta je izmeÄu boÅ¡njaÄkog unitarizma i srpskog separatizma. U toj drÅ¾avi Hrvati su jedini narod koji istinski, bez fige u dÅ¾epu gleda prema Europskoj uniji i zapadu.\nCrna Gora i Albanija, pak, najdalje su odmakle na europskom putu, s time da je Crna Gora ipak spremnija za zakljuÄenje pregovora, iako je pred njom joÅ¡ uvijek puno posla.\nMeÄutim, ono Å¡to je vaÅ¾no reÄi je da proÅ¡irenje Europske unije nema apsolutno nikakve veze s ukidanjem jednoglasnosti odluÄivanja. Tvrdnja da je proÅ¡irenje nemoguÄe bez ukidanja prava veta je naprosto netoÄna. 2004., kada je pravo veta bilo puno raÅ¡irenije, dogodilo se najveÄe proÅ¡irenje Europske unije u povijesti.\nUkidanje prava veta i uvoÄenje preglasavanja negiralo bi temeljne dimenzije nacionalnog suvereniteta, poveÄalo podjele u Europskoj uniji te ugrozilo sam njezin opstanak. U konaÄnici, ako netko smatra da proÅ¡irenjem uvodimo trojanskog konja u Uniju, onda do takvog proÅ¡irenja vjerojatno ne treba niti doÄi. Europa mora ostati zajednica slobodnih suverenih naroda, a ne zajednica u kojoj veliki odluÄuju umjesto malih.",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-06-19T10:06:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_47",
+      "del:text": "NÃ£o foram sÃ³ os paÃ­ses que foram entrando que beneficiaram das vantagens da integraÃ§Ã£o europeia; os prÃ³prios paÃ­ses fundadores beneficiaram, desde logo, dessa vantagem.\nBasta olhar para o caso alemÃ£o: foi a sua integraÃ§Ã£o nas instituiÃ§Ãµes europeias que permitiu a sua reinserÃ§Ã£o na comunidade internacional apÃ³s o tenebroso perÃ­odo nazi.\nTrata-se, afinal, de acolher agora no seio da UE novos paÃ­ses e novos povos. O novo alargamento que temos agora no horizonte deve inspirar-se no mesmo espÃ­rito de partilha e fraternidade. Mas dificilmente poderemos acomodar novos membros com a mesma arquitetura institucional e o mesmo acervo tratadÃ­stico.\nO problema Ã© que andamos a navegar as Ã¡guas tumultuosas dos Ãºltimos anos ââ o Brexit, a pandemia, a crise energÃ©tica, a invasÃ£o da UcrÃ¢nia ââ com uma carta de marear desenhada hÃ¡ quase 15 anos para um clima previsÃ­vel e pacificado.\nNesse sentido, quero aqui recordar o pedido formal feito por esta Casa em 2022, e pela primeira vez na sua histÃ³ria, apelando ao Conselho para iniciar uma convenÃ§Ã£o para a revisÃ£o dos Tratados, em linha com as conclusÃµes da ConferÃªncia sobre o Futuro da Europa. Esse pedido tem sido menosprezado pelo Conselho.\nEstÃ¡, provavelmente, na hora de este Parlamento ser mais ouvido pelo Conselho Europeu.",
+      "del:madeBy": {
+        "@id": "participant_40"
+      },
+      "del:timestamp": "2025-06-19T10:08:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_48",
+      "del:text": "De EU verder uitbreiden is als het toelaten van passagiers op een zinkend schip. Wat ons te wachten staat, is een versnelde weg richting een transferunie, omdat nieuwe lidstaten vrijwel zonder uitzondering netto-ontvanger zullen zijn. En wie draait op voor de kosten? Nettobetalers zoals Nederland.\nAls we dan ook nog het vetorecht afschaffen, creÃ«ren we een systeem waarin nettobetalers steeds meer betalen, maar steeds minder te zeggen hebben. Dit is niet het Europa waar wij voor gekozen hebben. Het is de hoogste tijd dat we het roer terugpakken, vÃ³Ã³r onze belangen definitief overboord gaan.",
+      "del:madeBy": {
+        "@id": "participant_41"
+      },
+      "del:timestamp": "2025-06-19T10:10:12"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_49",
+      "del:text": "W odpowiedzi na rosyjskÄ agresjÄ Unia Europejska w 2022 r. zliberalizowaÅa dostÄp Ukrainy do jednolitego rynku, caÅkowicie znoszÄc cÅa i kontyngenty oraz rezygnujÄc z systemu licencji w transporcie drogowym. DziaÅania te, oficjalnie motywowane solidarnoÅciÄ, wywoÅaÅy istotne napiÄcia spoÅeczne w paÅstwach czÅonkowskich. NajwiÄkszymi beneficjentami tych dziaÅaÅ okazaÅy siÄ potÄÅ¼ne agroholdingi, w tym te kontrolowane przez miÄdzynarodowy kapitaÅ.\nTwierdziliÅcie, Å¼e troszczycie siÄ o ukraiÅskich rolnikÃ³w, Å¼e to wyraz solidarnoÅci z walczÄcym krajem. W rzeczywistoÅci byÅo to wsparcie dla miÄdzynarodowych graczy w umacnianiu ich pozycji na rynku europejskim kosztem naszych rolnikÃ³w, kosztem naszych przetwÃ³rcÃ³w. Nie na tym polega solidarnoÅÄ miÄdzynarodowa. Nie tak powinien przebiegaÄ proces rozszerzania Unii Europejskiej.",
+      "del:madeBy": {
+        "@id": "participant_42"
+      },
+      "del:timestamp": "2025-06-19T10:11:28"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_50",
+      "del:text": "ÐÐµÐºÐ° Ð·Ð°ÐµÐ´Ð½Ð¾ Ð´Ð° ÑÐ¸ Ð·Ð°Ð´Ð°Ð´ÐµÐ¼ ÑÐ¾Ð·Ð¸ Ð²ÑÐ¿ÑÐ¾Ñ Ð¸ ÑÑÐº Ð½Ðµ Ð³Ð»ÐµÐ´Ð°Ð¼ ÐºÑÐ°Ð¹Ð½Ð¾ÑÐ¾ Ð»ÑÐ²Ð¾ Ð¸Ð»Ð¸ ÐºÑÐ°Ð¹Ð½Ð¾ÑÐ¾ Ð´ÑÑÐ½Ð¾, Ð¿Ð¾Ð»Ð¸ÑÐ¸ÑÐµÑÐºÐ¸Ñ ÑÐµÐ½ÑÑÑ, ÐºÐ¾Ð¹ÑÐ¾ ÑÑÑÐ±Ð²Ð° Ð´Ð° Ð´Ð¾Ð½ÐµÑÐµ Ð½ÐµÐ¾Ð±ÑÐ¾Ð´Ð¸Ð¼Ð¸ÑÐµ ÑÐµÑÐ¾ÑÐ¼Ð¸ Ð·Ð° Ð±ÑÐ´ÐµÑÐµÑÐ¾ Ð½Ð° ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸Ñ ÑÑÑÐ·. ÐÐ¾Ð¶ÐµÐ¼ Ð»Ð¸ Ð¿ÑÐ¸ ÑÐ°Ð·Ð¸ Ð¸Ð½ÑÑÐ¸ÑÑÑÐ¸Ð¾Ð½Ð°Ð»Ð½Ð° Ð¿Ð¾Ð´ÑÐµÐ´Ð±Ð° Ð´Ð° ÑÐ¸ Ð¿Ð¾Ð·Ð²Ð¾Ð»Ð¸Ð¼ 35 Ð´ÑÑÐ¶Ð°Ð²Ð¸ Ð² ÑÐ°Ð¼ÐºÐ¸ÑÐµ Ð½Ð° ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸Ñ ÑÑÑÐ·? ÐÑÐ³Ð¾Ð²Ð¾ÑÑÑ Ðµ âÐ½Ðµâ. ÐÐ¾Ð³Ð»ÐµÐ´Ð½ÐµÑÐµ ÑÐ°Ð¼Ð¾ Ð´ÐµÐ±Ð°ÑÐ°, ÐºÐ¾Ð¹ÑÐ¾ ÑÐµÑÐµ Ð² Ð¼Ð¾Ð¼ÐµÐ½ÑÐ° Ð·Ð° ÐÐ½Ð¾Ð³Ð¾Ð³Ð¾Ð´Ð¸ÑÐ½Ð°ÑÐ° ÑÐ¸Ð½Ð°Ð½ÑÐ¾Ð²Ð° ÑÐ°Ð¼ÐºÐ°. ÐÑÐºÐ°Ð¼Ðµ ÑÑÐ°ÑÐ¸ÑÐµ Ð¿ÑÐ¸Ð¾ÑÐ¸ÑÐµÑÐ¸, Ð¸ÑÐºÐ°Ð¼Ðµ Ð½Ð¾Ð²Ð¸ Ð¿ÑÐ¸Ð¾ÑÐ¸ÑÐµÑÐ¸ Ð¸ Ð½Ð° Ð²ÑÐ¸ÑÐºÐ¾ÑÐ¾ Ð¾ÑÐ³Ð¾ÑÐµ ÑÑÑÐ±Ð²Ð° Ð´Ð° Ð²Ð·ÐµÐ¼ÐµÐ¼ ÑÐµÑÐµÐ½Ð¸Ðµ Ð² ÐµÐ´Ð¸Ð½ Ð¡ÑÑÐ· Ñ 35 Ð´ÑÑÐ¶Ð°Ð²Ð¸ Ð² ÐµÐ´Ð½Ð¾ Ð¾Ð±Ð¾Ð·ÑÐ¸Ð¼Ð¾ Ð±ÑÐ´ÐµÑÐµ. ÐÐ°Ðº Ðµ Ð²ÑÐ·Ð¼Ð¾Ð¶Ð½Ð¾ ÑÐ¾Ð²Ð°?\nÐÐ¾Ð³Ð»ÐµÐ´Ð½ÐµÑÐµ ÑÐ°Ð½ÐºÑÐ¸Ð¾Ð½Ð½Ð°ÑÐ° Ð¿Ð¾Ð»Ð¸ÑÐ¸ÐºÐ° Ð½Ð° ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸Ñ ÑÑÑÐ·. ÐÐ¾Ð»ÐºÐ¾ Ð¿ÑÑÐ¸ Ð½Ð¸Ðµ ÑÐµ Ð¿ÑÐ¾Ð²Ð°Ð»ÑÐ¼Ðµ Ð² Ð¸Ð´ÐµÑÑÐ° ÑÐ¸ Ð´Ð° Ð¸Ð¼Ð°Ð¼Ðµ ÐµÐ´Ð½Ð¾Ð¿Ð¾ÑÐ¾ÑÐ½Ð¾ Ð¿Ð¾ÑÐ»Ð°Ð½Ð¸Ðµ ÐºÑÐ¼ Ð½Ð°Ñ Ð² ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸Ñ ÑÑÑÐ· Ð¸ ÐºÑÐ¼ ÑÐµÐ·Ð¸, ÐºÐ¾Ð¸ÑÐ¾ Ð¸ÑÐºÐ°Ñ Ð´Ð° ÑÐµ Ð¿ÑÐ¸ÑÑÐµÐ´Ð¸Ð½ÑÑ ÐºÑÐ¼ Ð½Ð°Ñ? Ð Ð´Ð° Ð¼Ð¸ ÐºÐ°Ð¶ÐµÑÐµ, ÑÐµ ÑÐ¾Ð²Ð° Ðµ Ð´ÐµÐ¼Ð¾ÐºÑÐ°ÑÐ¸ÑÐ½Ð¾? ÐÑÐ±Ð°Ð½ Ð¿Ð¾ÑÑÐ¾ÑÐ½Ð½Ð¾ Ð´Ð° Ð½Ð¸ Ð¸Ð·Ð½ÑÐ´Ð²Ð° Ð·Ð° Ð½ÐµÑÐ¾. ÐÐµ Ð³Ð¾ Ð¿ÑÐ¸ÐµÐ¼Ð°Ð¼Ðµ. Ð¢ÑÑÐ±Ð²Ð° Ð´Ð° Ð¸Ð¼Ð° ÑÐµÑÐ¾ÑÐ¼Ð° ...\n(ÐÑÐµÐ´ÑÐµÐ´Ð°ÑÐµÐ»ÑÑ Ð¾ÑÐ½ÐµÐ¼Ð° Ð´ÑÐ¼Ð°ÑÐ° Ð½Ð° Ð¾ÑÐ°ÑÐ¾ÑÐ°)",
+      "del:madeBy": {
+        "@id": "participant_43"
+      },
+      "del:timestamp": "2025-06-19T10:12:59"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_51",
+      "del:text": "There's only one solution: reform. Treaty reform. Let's create a Europe 2.0 with a European constitution, where you can vote for the person who best represents you, no matter where you live. A Europe that speaks with one voice. Not ruled by national egos but by common interests. In other words, a new Europe that is bigger and better.",
+      "del:madeBy": {
+        "@id": "participant_44"
+      },
+      "del:timestamp": "2025-06-19T10:14:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_52",
+      "del:text": "DarÃ¼ber hinaus dÃ¼rfen Abfallwirtschaft und Umweltschutz bei Beitrittskandidaten nicht vernachlÃ¤ssigt werden. Profit darf dort niemals vor der Umwelt stehen, wie es im Fall des Lithiumabbaus im JadarâTal in Serbien oder beim Bau des Flughafens in einem Naturschutzgebiet in der Vjosa-Narta in Albanien der Fall ist. Wir mÃ¼ssen diesen LÃ¤ndern eine klare Botschaft vermitteln, dass Tierschutz- und Umweltschutzstandards ebenso wichtig sind. Diesen Stellenwert sollten sie auch hier im Parlament bekommen.",
+      "del:madeBy": {
+        "@id": "participant_45"
+      },
+      "del:timestamp": "2025-06-19T10:15:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_53",
+      "del:text": "Ð ÑÑÐº Ð±Ð¸Ñ Ð¸ÑÐºÐ°Ð» Ð´Ð° ÑÐµ ÑÐ¿ÑÐ° Ð½Ð° Ð°ÐºÑÑÐ°Ð»Ð½Ð¸Ñ Ð¿ÑÐ¸Ð¼ÐµÑ Ñ Ð ÐµÐ¿ÑÐ±Ð»Ð¸ÐºÐ° Ð¡ÐµÐ²ÐµÑÐ½Ð° ÐÐ°ÐºÐµÐ´Ð¾Ð½Ð¸Ñ. ÐÐ° ÑÑÐ¶Ð°Ð»ÐµÐ½Ð¸Ðµ, Ð¼Ð°Ð½Ð¸Ð¿ÑÐ»Ð°ÑÐ¸Ð²Ð½Ð¾ÑÐ¾ Ð¸Ð½ÑÐµÑÐ¿ÑÐµÑÐ¸ÑÐ°Ð½Ðµ Ð¾Ñ ÑÑÑÐ°Ð½Ð° Ð½Ð° Ð¼Ð¸Ð½Ð¸ÑÑÑÑ-Ð¿ÑÐµÐ´ÑÐµÐ´Ð°ÑÐµÐ»Ñ Ð³-Ð½ ÐÐ¸ÑÐºÐ¾Ð²ÑÐºÐ¸ Ð½Ð° Ð¿ÑÐ¾ÐµÐºÑÐ¾ÑÐµÐºÑÑÐ¾Ð²Ðµ Ð½Ð° ÑÐ¾Ð·Ð¸ ÐÐ°ÑÐ»Ð°Ð¼ÐµÐ½Ñ Ð²Ð¾Ð´Ð¸ Ð´Ð¾ Ð¿Ð¾Ð²ÐµÑÐµ Ð½Ð°Ð¿ÑÐµÐ¶ÐµÐ½Ð¸Ðµ Ð¸ Ð¿Ð¾Ð²ÐµÑÐµ ÑÐ°Ð·ÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ðµ, Ð¾ÑÐ²ÐµÐ½ ÑÐµ Ð¿Ð¾ÑÑÐ°Ð²Ñ Ð² Ð½ÐµÑÐ´Ð¾Ð±Ð½Ð¾ Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð´Ð¾ÐºÐ»Ð°Ð´ÑÐ¸ÑÐ¸ÑÐµ.\nÐ-Ð½ ÐÐ¸ÑÐºÐ¾Ð²ÑÐºÐ¸, Ð² Ð¿ÑÐ¾ÐµÐºÑÐ¾ÑÐµÐºÑÑÐ¾Ð²ÐµÑÐµ, ÐºÐ¾Ð¸ÑÐ¾ ÑÐ²Ð½Ð¾ ÐÐ¸Ðµ Ð¸Ð¼Ð°ÑÐµ, Ð½Ð¸ÐºÑÐ´Ðµ ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸ÑÑ Ð¿Ð°ÑÐ»Ð°Ð¼ÐµÐ½Ñ Ð½Ðµ ÑÐµÑÑÐ¸ÑÐ¸ÑÐ¸ÑÐ° Ð¼Ð½Ð¾Ð³Ð¾Ð²ÐµÐºÐ¾Ð²Ð½Ð° Ð¸Ð´ÐµÐ½ÑÐ¸ÑÐ½Ð¾ÑÑ Ð¸Ð»Ð¸ ÐµÐ·Ð¸Ðº. Ð¢Ð¾Ð²Ð° Ð½Ðµ Ðµ Ð¸Ð½ÑÑÐ¸ÑÑÑ Ð¿Ð¾ Ð¸ÑÑÐ¾ÑÐ¸Ñ Ð¸Ð»Ð¸ Ð°ÐºÐ°Ð´ÐµÐ¼Ð¸Ñ Ð½Ð° Ð½Ð°ÑÐºÐ¸ÑÐµ. ÐÐ°ÑÐ¾Ð²Ð° Ð¿ÑÐº Ð¸Ð¼Ð° Ð¼ÐµÐ¶Ð´ÑÐ½Ð°ÑÐ¾Ð´Ð½Ð¾Ð¿ÑÐ°Ð²Ð½Ð¸ Ð´Ð¾Ð³Ð¾Ð²Ð¾ÑÐ¸ Ð¸ ÑÐ¾Ð²Ð° Ðµ Ð´Ð¾Ð³Ð¾Ð²Ð¾ÑÑÑ Ð¼ÐµÐ¶Ð´Ñ ÐÑÐ»Ð³Ð°ÑÐ¸Ñ, ÐºÑÐ´ÐµÑÐ¾ Ð¸Ð¼Ð° Ð¿Ð»Ð°ÑÑÐ¾ÑÐ¼Ð°, ÑÐ¾Ð²Ð° Ðµ Ð¼ÑÐ»ÑÐ¸Ð´Ð¸ÑÑÐ¸Ð¿Ð»Ð¸Ð½Ð°ÑÐ½Ð°ÑÐ° Ð°ÐºÐ°Ð´ÐµÐ¼Ð¸ÑÐ½Ð° ÐºÐ¾Ð¼Ð¸ÑÐ¸Ñ, ÐºÑÐ´ÐµÑÐ¾ ÑÐµÐ·Ð¸ Ð´Ð²Ðµ ÑÐµÑÐµÐ½Ð¸Ñ ÑÑÑÐ±Ð²Ð° Ð´Ð° Ð±ÑÐ´Ð°Ñ Ð²Ð·ÐµÑÐ¸ Ð¾Ñ ÑÐ¿ÐµÑÐ¸Ð°Ð»Ð¸ÑÑÐ¸ÑÐµ. ÐÐ°ÑÐ¾Ð²Ð° Ð¿ÑÐ¸Ð·Ð¾Ð²Ð°Ð²Ð°Ð¼: Ð²Ð¼ÐµÑÑÐ¾ Ð´Ð° Ð¸Ð½Ð²ÐµÑÑÐ¸ÑÐ°Ð¼Ðµ ÑÐ¾Ð»ÐºÐ¾Ð²Ð° Ð¼Ð½Ð¾Ð³Ð¾ Ð²ÑÐµÐ¼Ðµ Ð¸ ÐµÐ½ÐµÑÐ³Ð¸Ñ â Ð´Ð¸Ð¿Ð»Ð¾Ð¼Ð°ÑÐ¸ÑÐ½Ð° Ð¸ ÑÐ¸Ð½Ð°Ð½ÑÐ¾Ð²Ð° â Ð² Ð»Ð¾Ð±Ð¸Ð·ÑÐ¼ Ð¸ Ð±Ð¾ÑÐ±Ð°, Ð´Ð° ÑÐµ ÐºÐ¾Ð½ÑÐµÐ½ÑÑÐ¸ÑÐ°Ð¼Ðµ Ð² Ð¸Ð·Ð¿ÑÐ»Ð½ÐµÐ½Ð¸Ðµ Ð½Ð° Ð¿ÑÐµÐ³Ð¾Ð²Ð¾ÑÐ½Ð°ÑÐ° ÑÐ°Ð¼ÐºÐ°, Ð·Ð°Ð¿Ð¾ÑÐ²Ð°Ð½Ðµ Ð½Ð° Ð¿ÑÐµÐ³Ð¾Ð²Ð¾ÑÐ¸, Ð´Ð¾Ð³Ð¾Ð²Ð¾ÑÐ¸ÑÐµ Ð¼ÐµÐ¶Ð´Ñ Ð´Ð²ÐµÑÐµ ÑÑÑÐ°Ð½Ð¸ Ð¸ ÑÐ°Ð·Ð±Ð¸ÑÐ° ÑÐµ, Ð²Ð·Ð°Ð¸Ð¼Ð½Ð¾ ÑÐ²Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð¼ÐµÐ¶Ð´Ñ Ð½Ð°Ñ.\nÐ¢ÑÐº Ð½Ðµ Ð¼Ð¾Ð³Ð° Ð´Ð° Ð½Ðµ ÐºÐ°Ð¶Ð° Ð¸ ÐºÑÐµÑÑÑÐ¸Ñ Ð½Ð°Ð¿ÑÐ¸Ð¼ÐµÑ Ð·Ð° Ð¿ÑÐ¸ÑÑÐ´Ð°ÑÐ° ÑÑÐµÑÑ ÐÑÐ±ÑÐ¾ ÐÐµÐ¾ÑÐ³Ð¸ÐµÐ²ÑÐºÐ¸, ÐµÐ´Ð¸Ð½ Ð¼Ð°ÐºÐµÐ´Ð¾Ð½ÑÐºÐ¸ Ð±ÑÐ»Ð³Ð°ÑÐ¸Ð½, ÐºÐ¾Ð¹ÑÐ¾ Ð±ÐµÑÐµ Ð¾ÑÑÐ´ÐµÐ½ Ð½Ð° Ð¿ÑÑÐ²Ð° Ð¸Ð½ÑÑÐ°Ð½ÑÐ¸Ñ ÑÐ°Ð¼Ð¾ Ð·Ð° ÑÐ¾Ð²Ð°, ÑÐµ Ð²ÑÐ² Ð¤ÐµÐ¹ÑÐ±ÑÐº Ð¿Ð¾ÑÑÐ° ÑÐ¸ Ð±ÐµÑÐµ ÑÐ¸ÑÐ¸ÑÐ°Ð» Ð¸ÑÑÐ¾ÑÐ¸ÑÐµÑÐºÐ° Ð»Ð¸ÑÐ½Ð¾ÑÑ Ð¸ Ð¸ÑÑÐ¸Ð½Ð°ÑÐ° Ð·Ð° Ð½Ð°ÑÐ°ÑÐ° Ð¾Ð±ÑÐ° Ð¸ÑÑÐ¾ÑÐ¸Ñ.",
+      "del:madeBy": {
+        "@id": "participant_46"
+      },
+      "del:timestamp": "2025-06-19T10:17:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_54",
+      "del:text": "History shows enlargement works only when domestic reformers see real rewards and when backsliding carries consequences, when citizens feel tangible benefits, and when EU institutions and Member States speak with one voice â clearly, consistently and honestly, to reinforce local ownership.\nInstead, what we see is shifting goalposts, appeasement and double standards, especially on Bosnia and Herzegovina, Serbia, North Macedonia, Kosovo and Georgia. This Parliament has sounded the alarm again and again. Reforms cannot succeed without deep democratic transformation. And yet, too often, the EU enables autocrats, excuses kleptocrats and ignores those fighting for the rule of law.\nCitizens are not blind. They won't wait forever. Enlargement processes have a shelf life and we are close to the expiry date. And meanwhile, Russia and China are more than happy to fill the vacuum we are leaving.\nSo let's be honest, with ourselves and our partners. We need a hard look at what has worked, what has not and what needs fixing. And we need to show enlargement is real by ensuring that at least two countries can join the Union before 2030.\nLet enlargement become the transformative force it was meant to be, fulfilling the promise of a united Europe as we started working on over 75 years ago.",
+      "del:madeBy": {
+        "@id": "participant_47"
+      },
+      "del:timestamp": "2025-06-19T10:19:01"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_55",
+      "del:text": "EgyvalamirÅl azonban nem beszÃ©lnek. A gazdasÃ¡gi kÃ¶vetkezmÃ©nyekrÅl.\nAz itteni KÃ¶ltsÃ©gvetÃ©si BizottsÃ¡gnak vannak szÃ¡mÃ­tÃ¡sai, amelyek szerint a kohÃ©ziÃ³s forrÃ¡sok 24%-kal, az agrÃ¡rtÃ¡mogatÃ¡sok pedig 15%-kal csÃ¶kkennÃ©nek a mostani tagorszÃ¡gokban.\nAzutÃ¡n tÃ¶rtÃ©nne ez, hogy EurÃ³pa elkÃ¶ltÃ¶tt 150 milliÃ¡rd eurÃ³t a hÃ¡borÃºra.\nMiÃ©rt gondoljÃ¡k azt itt, hogy az eurÃ³pai emberek minden pÃ©nzÃ¼gyi terhet elbÃ­rnak? Ki fog a szemÃ¼kbe nÃ©zni Ã©s bevallani, hogy milyen terhekkel jÃ¡rna mindez?\nMagyarorszÃ¡gon mÃ¡r tÃ¶bb mint kÃ©tmilliÃ³an vettek rÃ©szt az ukrÃ¡n tagsÃ¡grÃ³l szÃ³lÃ³ szavazÃ¡son. Mi megkÃ©rdeztÃ¼k, hogy mit gondolnak a bÅvÃ­tÃ©srÅl azok, akik a szÃ¡mlÃ¡t Ã¡lljÃ¡k.\nA vÃ¡lasztÃ³l egy kicsit fÃ©lve teszem fel a kÃ©rdÃ©st: ÃnÃ¶k meg merik ezt tenni?",
+      "del:madeBy": {
+        "@id": "participant_48"
+      },
+      "del:timestamp": "2025-06-19T10:20:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_56",
+      "del:text": "Din punctul nostru de vedere, ajutorul acordat Moldovei Ã®n procesul de integrare este mai mult decÃ¢t un obiectiv de politicÄ externÄ, este o datorie faÈÄ de identitatea Èi dreptul istoric al naÈiunii romÃ¢ne. Dar tocmai pentru cÄ ne pasÄ atÃ¢t de mult, trebuie sÄ spunem adevÄrul: Uniunea EuropeanÄ nu este astÄzi pregÄtitÄ instituÈional pentru o extindere masivÄ. FÄrÄ o reformÄ realÄ a mecanismelor decizionale, a alocÄrii bugetare, fÄrÄ un control democratic real, riscÄm sÄ transformÄm extinderea Ã®ntr-o nouÄ ameninÈare pentru stabilitatea Uniunii.\nAÈadar, susÈinem extinderea, dar cerem o reformÄ serioasÄ Èi o consolidare a proceselor decizionale Ã®n structurile Uniunii, respect pentru suveranitatea statelor membre Èi o viziune clarÄ asupra viitorului european.",
+      "del:madeBy": {
+        "@id": "participant_49"
+      },
+      "del:timestamp": "2025-06-19T10:21:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_57",
+      "del:text": "However, improving the EU's institutional functioning and political processes cannot be postponed or made dependent on enlargement, budgeting or other issues.\nColleagues, I find today's debate, with the extreme focus on enlargement only, a bit misleading. It's too narrow. Let's look broader, face all the challenges we have. We must look into a long, be ready to face any future challenges to the security and prosperity of our citizens in the long term, when our bold actions will bear fruit, and seize the opportunity to improve the efficiency of EU decision-making and policy implementation. So let's look at the broader picture.",
+      "del:madeBy": {
+        "@id": "participant_50"
+      },
+      "del:timestamp": "2025-06-19T10:23:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_58",
+      "del:text": "The strategic case is clearer than ever. Russia's war in Ukraine shows that peace in Europe cannot be assumed. Bringing in countries like Ukraine and Moldova, and the Western Balkans, once ready, serves both their interests and ours. It strengthens our security, economy and global influence. We cannot let radical voices hijack this debate with fearmongering about migration or budgets. That distorts the truth.\nPast enlargements reduced poverty, grew trade and created new opportunities, including for Ireland, which has been transformed and modernised since we joined in 1973. Conversely, the United Kingdom has suffered greatly since it left the European Union a few years ago. The path ahead must be rigorous, but the door must stay open.\nMÃ­le buÃ­ochas Ã¡ UachtarÃ¡in, agus go n-Ã©irÃ­ libh. Maith thÃº.",
+      "del:madeBy": {
+        "@id": "participant_51"
+      },
+      "del:timestamp": "2025-06-19T10:24:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_59",
+      "del:text": "It is important and good that enlargement is, again, high on the agenda. War on our continent, the rise of fascism, the shift in transatlantic relations â all this reminds us that enlargement is in our own strategic interest.\nThere will be no shortcuts on EU values and fundamental principles. Accession to the EU must always remain a merit-based process and, therefore, as EU institutions and Member States, we must support the candidate countries.\nWe also have homework to do: institutional and financial reforms are needed to absorb new members. Our Union is barely functioning at the current state with 27, so what about 30, 32 or 35? We need to change our way of working so that every citizen, every worker, every business and society as a whole can continue to benefit from our European project.\nSo let's have the courage to adopt targeted treaty changes, move away from unanimity, deepen the social dimension of our Union and strengthen the union of equality, and we must live up to our promises to citizens and to the candidate countries.",
+      "del:madeBy": {
+        "@id": "participant_52"
+      },
+      "del:timestamp": "2025-06-19T10:26:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_60",
+      "del:text": "Si l'Ã©largissement de l'Union europÃ©enne est un catalyseur, c'est celui de la dilapidation de l'argent public. Des milliards dont on perd la trace, alors qu'on enjoint aux peuples europÃ©ens de se serrer la ceinture. Une note du Conseil europÃ©en chiffre le coÃ»t de cet Ã©largissement Ã  la somme de 264Â milliards d'euros sur sept ans.\nSi l'Ã©largissement de l'Union europÃ©enne est un catalyseur, c'est celui de l'instabilitÃ© et de l'insÃ©curitÃ© pour nos concitoyens avec les gangs venus de pays qui ne respectent pas nos lois. Ne soyons pas dupes.\nL'Ã©largissement, et notamment celui Ã  l'Ukraine, est enfin le catalyseur de la destruction de notre agriculture. En cas d'adhÃ©sion, l'Ukraine deviendrait le premier bÃ©nÃ©ficiaire de la politique agricole commune, avec 10 Ã  12Â milliards d'euros d'aides par an, c'est 20Â % du budget de la PAC.\nCette concurrence si dÃ©loyale, venue de pays qui ne respectent ni nos normes environnementales ni nos normes sociales, c'est unÂ crime organisÃ© contre notre agriculture et nous n'accepterons pas cela.",
+      "del:madeBy": {
+        "@id": "participant_53"
+      },
+      "del:timestamp": "2025-06-19T10:27:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_61",
+      "del:text": "L'ingresso di nuovi Stati membri comporta senza dubbio opportunitÃ  per promuovere e consolidare quei valori di democrazia e di libertÃ  propri di questa Unione, ma anche opportunitÃ  di crescita ed espansione dei mercati e rafforzamento del proprio peso politico europeo.\nIn quest'ottica occorre una revisione delle politiche comuni, affinchÃ© non diventino strumenti di ridistribuzione di inefficienza, ma leve per innovazione, produttivitÃ  e sviluppo dell'occupazione.\nÃ altresÃ¬ essenziale una governance economica, che garantisca condizioni eque di concorrenza del mercato interno e garantisca la tutela degli investimenti comunitari che faremo in quei paesi.\nIn conclusione, un allargamento non governato indebolisce, un allargamento accompagnato da riforme aiuta l'Unione europea.",
+      "del:madeBy": {
+        "@id": "participant_54"
+      },
+      "del:timestamp": "2025-06-19T10:29:08"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_62",
+      "del:text": "ZaczÄÅem od Polski, bo wÅaÅnie nasz kraj jest najlepszym przykÅadem sukcesu procesu rozszerzania Unii Europejskiej. W krÃ³tkim czasie Polska staÅa siÄ liderem rozwoju gospodarczego i spoÅecznego w caÅej Unii. WierzÄ, Å¼e przyjÄcie nowych czÅonkÃ³w wzmocni naszÄ wspÃ³lnÄ odpornoÅÄ wobec rosnÄcej presji geopolitycznej.\nProces rozszerzania Unii â w tym takÅ¼e o UkrainÄ, po zakoÅczeniu wojny z RosjÄ â moÅ¼e byÄ scenariuszemÂ win-win. Uproszczenie procedur akcesyjnych, przy jednoczesnych mechanizmach chroniÄcych rolnictwo obecnych krajÃ³w czÅonkowskich (w tym polskich rolnikÃ³w), byÅoby dla nas wszystkich wÅaÅciwym krokiem naprzÃ³d.\nWobec tego naleÅ¼y uproÅciÄ procedurÄ akcesyjnÄ. Rozszerzenie to nie tylko gest solidarnoÅci, ale i inwestycja w bezpieczeÅstwo i dobrobyt caÅej Europy. W trudnych okolicznoÅciach globalnych czas potwierdziÄ globalne przywÃ³dztwo Unii. PozwÃ³lmy braÄ w tym udziaÅ takÅ¼e tym, ktÃ³rzy chcÄ ten projekt z nami wspÃ³ÅtworzyÄ.",
+      "del:madeBy": {
+        "@id": "participant_55"
+      },
+      "del:timestamp": "2025-06-19T10:30:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_63",
+      "del:text": "Vahvan Ukrainan tuominen joukkoomme on suoraan meidÃ¤n turvallisuutemme tae. VenÃ¤jÃ¤n uhka vaanii porteillamme odottaen otollista hetkeÃ¤. Suomi tietÃ¤Ã¤ tÃ¤mÃ¤n historiansa kautta. MeillÃ¤ on puolet EU:n ja Naton VenÃ¤jÃ¤-rajasta. Suomi on se valli, jonka on kestettÃ¤vÃ¤, tai kansojen vapaus on vaakalaudalla. Samoin on Ukrainan laita. YhtenÃ¤isyys on voimaa. Integroimalla Ukrainan lÃ¤hetÃ¤mme Putinille selkeÃ¤n viestin: emme anna periksi, emme pelkÃ¤Ã¤.\nMuistakaamme Winston ChurchilliÃ¤, jonka muistoksi tÃ¤Ã¤llÃ¤ on rakennus nimettynÃ¤. HÃ¤n ymmÃ¤rsi integraation geopoliittisen syvÃ¤n ytimen: padota idÃ¤n uhkaa ja torjua totalitarismin vaaroja. MeidÃ¤n on ymmÃ¤rrettÃ¤vÃ¤, ettÃ¤ EU ei ole pelkkÃ¤ rauhanprojekti, vaan ytimessÃ¤ on pelote, jonka pitÃ¤Ã¤ yllÃ¤pitÃ¤Ã¤ rauhaa. EpÃ¤rÃ¶innin aika on ohi. MeidÃ¤n on toimittava â tarvittaessa myÃ¶s ilman Yhdysvaltoja.",
+      "del:madeBy": {
+        "@id": "participant_56"
+      },
+      "del:timestamp": "2025-06-19T10:31:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_64",
+      "del:text": "(KalbÄtojas sutiko atsakyti Ä¯ mÄlynosios kortelÄs klausimÄ)",
+      "del:madeBy": {
+        "@id": "participant_57"
+      },
+      "del:timestamp": "2025-06-19T10:33:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_65",
+      "del:text": "Sie haben gesprochen vom Sieg der Ukraine, und der Sieg der Ukraine hÃ¤ngt von deren Mitgliedschaft in der EU ab. Ist Ihnen eigentlich bewusst, dass Sie dort eines der grÃ¶Ãten korrupten Regimes derzeit an der Regierung haben, die zusammen mit Bandera, also mit ehemaligen Faschistenverehrern, die Regierung bilden? Wollen Sie wirklich dieses Land um den Preis dieser Gemeinschaft in die â¦\n(Der PrÃ¤sident entzieht dem Redner das Wort.)",
+      "del:madeBy": {
+        "@id": "participant_58"
+      },
+      "del:timestamp": "2025-06-19T10:35:15"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_66",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_57"
+      },
+      "del:timestamp": "2025-06-19T10:35:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_67",
+      "del:text": "Comme l'URSS Ã  la fin de sa vie qui pensait rÃ©soudre les problÃ¨mes du communisme par plus de communisme, vous persistez Ã  croire que l'Union rÃ©glera les Ã©checs de l'Union et vous vous acharnez Ã  nous imposer votre modÃ¨le que le peuple refuse. Vous voulez encore Ã©largir cette machine folle Ã  des pays comme la Turquie ou la Moldavie, qui ne partagent ni notre culture ni nos intÃ©rÃªts.\nCe que les FranÃ§ais attendent, ce n'est pas plus d'intÃ©gration, c'est plus de protection. Et ce que l'histoire retiendra, c'est que votre idÃ©ologie aura dÃ©truit l'idÃ©e europÃ©enne bien plus sÃ»rement que tous vos adversaires rÃ©unis.",
+      "del:madeBy": {
+        "@id": "participant_59"
+      },
+      "del:timestamp": "2025-06-19T10:36:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_68",
+      "del:text": "Gerade auf dem Westbalkan ist Vertrauen ein knappes Gut. Wenn wir es verspielen, gefÃ¤hrden wir die europÃ¤ische Perspektive dieser Region. Das Beispiel Serbien zeigt, wie schwierig das Gleichgewicht ist. Einerseits steht der Kurs der serbischen FÃ¼hrung zu Russland und zum Kosovo in direktem Widerspruch zu unseren europÃ¤ischen Werten, andererseits sprechen geostrategische Ãberlegungen dafÃ¼r, Serbien enger an Europa zu binden, etwa als potenziellen Partner im Bereich kritischer Rohstoffe. Doch gerade in diesem sensiblen Sektor sind funktionierende, unabhÃ¤ngige Institutionen sowie das Vertrauen und die UnterstÃ¼tzung der BevÃ¶lkerung fÃ¼r das Gelingen gemeinsamer Projekte entscheidend.\nDie EU sollte hier sehr viel entschiedener auftreten. Sie kÃ¶nnte in den Augen der BevÃ¶lkerung viel an Ansehen gewinnen, wenn sie denn Ã¼ber den Hebel des Beitrittsprozesses ganz klar auf KorruptionsbekÃ¤mpfung, Pressefreiheit und Rechtsstaatlichkeit dringen wÃ¼rde, die ja auch fÃ¼r eine echte, gesunde wirtschaftliche Entwicklung und damit fÃ¼r die ZukunftsfÃ¤higkeit des Landes entscheidend sind. Wir mÃ¼ssen Handlungsbereitschaft, GlaubwÃ¼rdigkeit und strategische VerlÃ¤sslichkeit zeigenÂ â nur dann werden wir als der Partner wahrgenommen, der wir sein wollen und sein mÃ¼ssen.\n(Die Rednerin ist damit einverstanden, auf eine Frage nach dem Verfahren der âblauen Karteâ zu antworten.)",
+      "del:madeBy": {
+        "@id": "participant_60"
+      },
+      "del:timestamp": "2025-06-19T10:37:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_69",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_58"
+      },
+      "del:timestamp": "2025-06-19T10:39:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_70",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_60"
+      },
+      "del:timestamp": "2025-06-19T10:40:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_71",
+      "del:text": "L'Europa dunque ci Ã¨ servita ad arrivare fino a qui, ma la sua crescita senza riforme e un salto in avanti nell'integrazione rappresenta un rischio per la sua stessa esistenza. Quindi bene continuare ad aprirsi, ma Ã¨ fondamentale rilanciare i suoi valori, un'identitÃ  comune europea e darsi regole nuove per essere piÃ¹ efficaci: riforma del diritto di veto, politica estera e di difesa davvero comuni, nuove risorse proprie destinate a investimenti per il nostro sistema produttivo e modello sociale e quindi riforme verso gli Stati Uniti d'Europa.\nL'Europa non Ã¨ una cappa, come dicono i nazionalisti, Ã¨ lo scudo che ci ha permesso di esistere da persone libere. Ma ora, per non tradire la sua storia, deve cambiare ed andare avanti. E se non si vuole andare avanti in 27, con cooperazioni rafforzate, cominciamo con chi ci sta a cambiare questa Europa.",
+      "del:madeBy": {
+        "@id": "participant_61"
+      },
+      "del:timestamp": "2025-06-19T10:40:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_72",
+      "del:text": "Lorsque les Ãtats-Unis ont menacÃ© de s'emparer par la force du Groenland, l'Union europÃ©enne n'a rien fait, sinon acheter tout de suite davantage d'armes aux AmÃ©ricains en pensant les amadouer. Et mÃªme si l'Union europÃ©enne s'Ã©mancipait, il ne faut pas que ce soit pour devenir elle-mÃªme un bloc qui Ã©craserait les peuples et les nations qui la composent.\nÃ ce messianisme politique et Ã  cette boulimie impuissante, nous opposons un pragmatisme qui s'appuie sur la raison. Les peuples europÃ©ens sont une famille que rapprochent des liens civilisationnels naturels. Poursuivre l'intÃ©gration ne sera envisageable qu'une fois le cadre intÃ©grateur lui-mÃªme redressÃ©. RÃ©parons l'Europe d'abord, voyons le reste aprÃ¨s.",
+      "del:madeBy": {
+        "@id": "participant_62"
+      },
+      "del:timestamp": "2025-06-19T10:42:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_73",
+      "del:text": "U sluÄaju Ukrajine suoÄavamo se s problemom donoÅ¡enja odluka u VijeÄu, a njezino Älanstvo vjerojatno traÅ¾i i prilagodbu nekih europskih politika poput poljoprivredne. No, EU bi strateÅ¡ki pogrijeÅ¡io ako ne bi uoÄio da unatoÄ ratu, Ukrajina pokazuje kapacitet za EU reforme i svaki dan na bojiÅ¡tu pokazuje privrÅ¾enost europskoj ideji.\nMoldova takoÄer pokazuje snaÅ¾nu politiÄku volju, dok je proces s Gruzijom morao biti zaustavljen zbog potpunog nedostatka politiÄke volje vlasti.\nKod Srbije problem je takoÄer u politiÄkoj volji, no u ovom sluÄaju bilo bi kontraproduktivno zaustaviti pregovore. Ali moramo biti svjesni da sama Srbija zasad ne Å¾eli ispuniti kljuÄne kriterije, posebice u vanjskoj politici i u podruÄju vladavine prava. Stoga, umjesto grandioznih izjava i nerealnih oÄekivanja i kasnijih frustracija, puno je bolje prihvatiti realnost da je Srbija drÅ¾ava koja se ne Å¾eli svrstati s Europskom unijom, a tu ni opozicija ne nudi jasnu alternativu. I stoga, na temelju te realnosti moramo pragmatiÄno oblikovati naÅ¡e odnose.\nNo, EU mora istovremeno viÅ¡e uÄiniti da takva nesvrstana politika Beograda ne utjeÄe negativno na BiH, Crnu Goru, Kosovo i Sjevernu Makedoniju i na njihov europski put.\nNa kraju, vaÅ¾no je nastaviti s novim tempom pregovora s Albanijom. Ona postaje lider u procesu i tu treba inzistirati na kriterijima, ali ostati ambiciozan za zavrÅ¡etak pregovora u ovom mandatu.",
+      "del:madeBy": {
+        "@id": "participant_63"
+      },
+      "del:timestamp": "2025-06-19T10:43:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_74",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_64"
+      },
+      "del:timestamp": "2025-06-19T10:45:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_75",
+      "del:text": "Per tai visa ligÅ¡iolinÄ plÄtros istorija beveik iÅ¡imtinai â sÄkmÄs istorija. Europa kaskart tapdavo ir stipresnÄ, ir labiau integruota. StruktÅ«riniai fondai, sanglauda â tasai pozityvas radosi kaip tik per plÄtros iÅ¡Å¡Å«kius.\nBe abejo, bÅ«tÅ³ idealu iÅ¡ anksto eksplicitiÅ¡kai sutarti dÄl palankiausios institucinÄs sÄrangos, bet prisiminkime ratifikavimo trikdÅ¾ius, ypaÄ, kai, nepaisant oficialios valstybÄs pozicijos, ji bÅ«davo paneigiama referendumais. Man tikrai skaudu, kad tiesioginÄs iÅ¡mokos Lietuvos Å«kininkams per maÅ¾os, bet tokia gi ir bÅ«na derybÅ³ dÄl narystÄs kaina.\nDÄl institucinÄs sÄrangos diskutuokime, bet netrukdykime brandinti politinÄ valiÄ plÄtrai.",
+      "del:madeBy": {
+        "@id": "participant_65"
+      },
+      "del:timestamp": "2025-06-19T10:46:45"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_76",
+      "del:text": "Let me concentrate on two crucial challenges: the Western Balkans and Ukraine. The Western Balkans governments must keep up reform momentum to move forward on the European path. We support further strengthening relations with Western Balkans countries in all areas of common interests, in particular security, by building resilience against hostile influence from within and third actors. We contribute to the security of the EU itself.\nWe welcome the Commission's positive signal on Ukraine's progress. Talks on key reforms should start as soon as possible. OrbÃ¡n's veto is political, not substantive. One country cannot blackmail the rest of us, forcing its unjustified and politically motivated stance. Our determined and clear stance regarding Ukraine is needed. Its efforts to fulfil the Commission's requirements matter more than attempts to achieve artificial EU unanimity. A broader Union means a stronger Europe, and enlargement is our strategic answer to threats.",
+      "del:madeBy": {
+        "@id": "participant_66"
+      },
+      "del:timestamp": "2025-06-19T10:48:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_77",
+      "del:text": "Europa potrzebuje nowego, mocnego impulsu. Unia powinna pokazaÄ, Å¼e jest atrakcyjna nie tylko dla biedniejszych, ale takÅ¼e dla zamoÅ¼nych krajÃ³w. Bo rozszerzenie to nie tylko WschÃ³d i PoÅudnie â dalsza integracja to powinna byÄ przede wszystkim PÃ³Ånoc.\nTo PÃ³Ånoc jest kluczowa dla bezpieczeÅstwa Europy. Norwegia to Å¼elazny sojusznik z NATO, z ktÃ³rym ÅÄczÄ nas nie tylko wspÃ³lne wartoÅci, ale takÅ¼e wspÃ³lne zagroÅ¼enie â agresywna Rosja.\nFlagi NATO-wskie w Sztokholmie i w Helsinkach to byÅ czarny sen Putina, ktÃ³ry siÄ ziÅciÅ. Warto byÄ konsekwentnym. Pora, Å¼eby kolejny sen o europejskich flagach w Oslo i w Reykjaviku siÄ speÅniÅ. To jest moÅ¼liwe.",
+      "del:madeBy": {
+        "@id": "participant_67"
+      },
+      "del:timestamp": "2025-06-19T10:49:59"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_78",
+      "del:text": "Hrvatska je najmlaÄa Älanica Europske unije, ali ima i posebnu odgovornost da bude most izmeÄu Unije i naÅ¡ih susjeda. U Bosni i Hercegovini, primjerice, i Crnoj Gori Å¾ive aktivne hrvatske zajednice koje nisu samo most identiteta veÄ i most povjerenja. Njihova integracija, pravna i kulturna vidljivost moraju ostati dio europske agende.\nAko proÅ¡irenje ne napreduje, prostor neÄe ostati prazan i ispunit Äe ga drugi koji nemaju interes za demokraciju, veÄ za utjecaj. Zato moramo ubrzati integracijske procese, ali uz jasna pravila, institucionalnu sigurnost i politiÄku volju.\nAko Å¾elimo da Europa ostane globalni akter, a ne birokratski projekt, proÅ¡irenje mora biti strateÅ¡ki prioritet, ali uz paralelnu reformu institucija i jaÄanje unutarnje kohezije. Jer ako se ne Å¡irimo, to znaÄi da stagniramo, a stagnacija u geopolitici znaÄi povlaÄenje. Europa se ne smije povuÄi.",
+      "del:madeBy": {
+        "@id": "participant_68"
+      },
+      "del:timestamp": "2025-06-19T10:51:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_79",
+      "del:text": "CsalÃ³dottan lÃ¡tjuk azonban, hogy az elmÃºlt 365 nap sorÃ¡n nem tÃ¶rtÃ©nt Ã©rdemi elÅrelÃ©pÃ©s ebben a kÃ©rdÃ©sben, csupÃ¡n lÃ¡tszatintÃ©zkedÃ©sek tÃ¶rtÃ©ntek. A nemzeti kisebbsÃ©gek jogainak vÃ©delmÃ©re irÃ¡nyulÃ³ cselekvÃ©si tervet ugyan elfogadta a kijevi vezetÃ©s, azonban diszkriminatÃ­v mÃ³don a kÃ¡rpÃ¡taljai magyar kÃ¶zÃ¶ssÃ©g legnagyobb Ã©rdekvÃ©delmi szervezetÃ©t nem vontÃ¡k be a tÃ¡rgyalÃ¡sokba. Ãgy ÃnÃ¶k, kollÃ©gÃ¡im, amikor az eurÃ³pai uniÃ³s vezetÅk, politikusok szemet hunynak Ukrajna nemzeti kisebbsÃ©geit Ã©rintÅ kirakatintÃ©zkedÃ©sei fÃ¶lÃ¶tt, sÅt tÃ¡mogatjÃ¡k azokat, veszÃ©lybe sodorjÃ¡k az uniÃ³s intÃ©zmÃ©nyek hitelessÃ©gÃ©t, Ã©s valÃ³jÃ¡ban ÃnÃ¶k sajÃ¡t maguk akadÃ¡lyozzÃ¡k Ukrajna valÃ³di demokratizÃ¡lÃ¡sÃ¡t.",
+      "del:madeBy": {
+        "@id": "participant_69"
+      },
+      "del:timestamp": "2025-06-19T10:53:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_80",
+      "del:text": "MeidÃ¤n pitÃ¤Ã¤ olla uskottava kumppani jÃ¤senmaaehdokkaillemme. Kun lÃ¤hentymistÃ¤ standardeihimme tapahtuu, me emme jarruta.Â Mutta samaan aikaan on pidettÃ¤vÃ¤ huolta, ettemme geopolitiikan vuoksi tee poikkeuksia siinÃ¤, mihin arvoihin uskomme. Jos sisÃ¤lle pÃ¤Ã¤see epÃ¤kelpo, esimerkiksi imperialistista VenÃ¤jÃ¤Ã¤ ulkopolitiikassaan tukeva maa, myÃ¶s ja varsinkin sisÃ¤ltÃ¤ pÃ¤in Euroopan horjuttaminen onnistuu. Silloin hyppÃ¤Ã¤mme ojasta allikkoon.",
+      "del:madeBy": {
+        "@id": "participant_70"
+      },
+      "del:timestamp": "2025-06-19T10:54:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_81",
+      "del:text": "The second thing that drives me crazy every time I hear it is when they say, 'Oh, we cannot do this enlargement because it will cost us money', and they throw around these big numbers. I'm a jurist; I do not come from the economy, but what I understand is that you have to invest if you want to grow your business. And investing in enlargement is investing in the future of Europe, of the European Union.",
+      "del:madeBy": {
+        "@id": "participant_71"
+      },
+      "del:timestamp": "2025-06-19T10:55:49"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_82",
+      "del:text": "And I also think that this debate confirmed that most of you support enlargement, and it shows that an enlarged Union will be a stronger and more efficient Union.\nBut to do so, we should really reflect on how we prepare our Union for environment. As I mentioned in my introduction, actually, later this year, the Commission will present the communication on pre-enlargement policy review. And we are always ready to debate withÂ this House, how best to ensure that the Unions remains able to take decisions fast, swiftly, efficiently in benefits of our citizens.\nSo once again, thanks for this debate, it was really very, very needed, and we are going to present the pre-enlargement policy review later this year.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2025-06-19T10:57:12"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_83",
+      "del:text": "The debate is closed.\nDeclaraciones por escrito (artÃ­culo 178 del Reglamento interno)",
+      "del:madeBy": {
+        "@id": "participant_19"
+      },
+      "del:timestamp": "2025-06-19T10:58:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_84",
+      "del:text": "O altÄ problemÄ pe care vreau sÄ v-o adresez este cea legatÄ de aderarea Republicii Moldova Èi a Ucrainei. Contextul actual Èi prelungirea rÄzboiului sunt cauze obiective care Ã®mpiedicÄ Ucraina sÄ rÄspundÄ cerinÈelor pentru aderare. Republica Moldova este Ã®ntr-un stadiu mai avansat Èi cred cÄ ar trebui sÄ tratÄm separat parcursul celor douÄ state Ã®n procesul de aderare. VÄ cer, doamnÄ comisarÄ, sÄ supuneÈi analizei Ã®n Colegiul comisarilor aceastÄ problemÄ pentru a nu Ã®ntÃ¢rzia aderarea Republicii Moldova.",
+      "del:madeBy": {
+        "@id": "participant_12"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_85",
+      "del:text": "I would like to inform Members that there will be only one round of political group speakers for this debate. Therefore, there is no catch-the-eye procedure and no blue cards will be accepted.",
+      "del:madeBy": {
+        "@id": "participant_19"
+      },
+      "del:timestamp": "2025-06-19T10:58:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_86",
+      "del:text": "In accordance with ArticleÂ 29(2) of the Judgments Convention, the EU can notify the depositary, before 27Â June 2025, that the ratification by the UK does not have the effect of establishing treaty relations between the United Kingdom and the European Union. If no such notification is issued â that is, if the EU tacitly accepts the UK's accession â the Judgments Convention will begin to apply between the two parties on 1Â July 2025.\nParliament understands that the Commission's assessment of the UK's accession is positive and that the Commission would be in favour of tacitly accepting it. However, the significance of private international law rules for EU citizens in this particular area also has a political and legal impact, not only on the area of judicial cooperation but also beyond, bearing in mind the relevance of relations between the UK and the European Union in a volatile international context.\nWith respect for each EU institution's prerogatives and Parliament's consistent position, a statement would allow the Commission to tacitly accept the UK's accession to the Judgments Convention on the EU's behalf, under the relevant provisions of that Convention.\nGiven the deadline laid down in the Judgments Convention, the need for the EU institutions to act without delay to ascertain the EU's acceptance of the UK's accession to the Convention, and Parliament's intention to make an appropriate statement in this regard, could the Commission confirm its assessment of the UK's accession to the Convention?\nSecondly, MadamÂ Zaharieva, having regard to the commitments made here in November 2024 by CommissionerÂ MaroÅ¡ Å efÄoviÄ with regard to third countries' accession to conventions and respect for ArticleÂ 218(6) of the Treaty on the Functioning of the European Union, what concrete steps does the Commission intend to take in future to ensure that Parliament's prerogatives relating to third countries' accession to the Judgments Convention are always fully and formally respected under the Treaties, and what timetable does it envisage for taking these steps?",
+      "del:madeBy": {
+        "@id": "participant_72"
+      },
+      "del:timestamp": "2025-06-19T10:59:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_87",
+      "del:text": "In its written assessment of the United Kingdom's certification of the Judgments Convention, which the Commission transmitted to the Committee of Legal Affairs of the European Parliament and to the Council, the Commission concluded that the UK has systematic capability to apply the Judgments Convention and to deal satisfactorily with individual problematic cases.\nThe Commission therefore sees no obstacle for the European Union to establish Treaty relations with the United Kingdom based on the Judgments Convention.\nAs regards the procedure to be followed when a third country joins the Judgments Convention, this issue was discussed during the process leading to the EU accession to the Judgments Convention with the European Parliament consent and on several occasions after that. The Judgments Convention is based on the principle of the acceptance of accession by other contracting parties, and only envisages an objection procedure in exceptional cases.\nThe Commission therefore takes the view that formal decisions under Article 218 of the Treaty are required only where the EU intends to object to the establishment of such Treaty relations. This approach is in line with the need to implement the EU obligations under international law in good faith.\nAt the same time, the Commission is committed to consulting Parliament and to take its views into account in full compliance with the Treaties and, notably, the duty of sincere cooperation. This is why, when deciding whether to propose an objection decision, we committed to consistently inform the Parliament of each intended accession of a third country to the Judgments Convention, taking full account of the views expressed by this House.\nI therefore look forward to the Parliament's views in the debate today.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2025-06-19T11:02:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_88",
+      "del:text": "Die schriftliche Bewertung, die wir erhalten haben, folgt nicht dem Verfahren gemÃ¤Ã ArtikelÂ 218 AbsatzÂ 6Â AEUV. Es gibt keinen Vorschlag an den Rat, kein Ersuchen um die Zustimmung des Parlaments, lediglich eine Informationsnotiz. Das mag der derzeitigen Praxis durchaus entsprechen, aber ist eben nicht wirklich geltendes Recht. Und der Gerichtshof hatte ja bereits schon einmal klargestellt: Selbst eine sogenannte Nichtbeanstandung stellt ein internationales Abkommen dar. Also, das Parlament muss einbezogen werden, und das ist keine freiwillige Entscheidung.\nDeshalb hat der Rechtsausschuss eine Anfrage zur mÃ¼ndlichen Beantwortung mit der EntschlieÃung eingebracht, um die Kommission aufzufordern, ihren rechtlichen Ansatz zu bestÃ¤tigen, und sie daran zu erinnern, dass Gesetzgebungsbefugnisse des Parlaments in diesem Bereich auch nicht umgangen werden sollten. Wir unterstÃ¼tzen natÃ¼rlich den Beitritt des Vereinigten KÃ¶nigreiches, aber diese UnterstÃ¼tzung darf eben nicht zulasten eines ordnungsgemÃ¤Ãen Verfahrens gehen.",
+      "del:madeBy": {
+        "@id": "participant_73"
+      },
+      "del:timestamp": "2025-06-19T11:05:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_89",
+      "del:text": "Seja o reforÃ§o na Ã¡rea da seguranÃ§a e da juventude, que deve ser mesmo feito, seja o reforÃ§o no domÃ­nio da polÃ­tica de defesa e seguranÃ§a ââ sabemos como o contexto internacional o exige ââ, seja o reforÃ§o das histÃ³ricas relaÃ§Ãµes com o Reino Unido.\nAssim, desse ponto de vista, e da parte do S&D, queria deixar aqui um sublinhado de congratulaÃ§Ã£o pelo Ãªxito desta cimeira, mas tambÃ©m pelo regresso Ã s boas relaÃ§Ãµes de cooperaÃ§Ã£o, de solidariedade e de vizinhanÃ§a, se quisermos, com o Reino Unido.\nÃ nesse quadro que se insere esta vontade expressa do Reino Unido de aderir Ã  ConvenÃ§Ã£o de Haia, que tambÃ©m quero aqui, em nome do S&D, saudar. Aquilo que se espera, como o colega anterior aqui disse, Ã© saber qual Ã© a posiÃ§Ã£o da ComissÃ£o e se a ComissÃ£o, tÃ£o brevemente quanto possÃ­vel, aceita esta vontade expressa e confirma com brevidade a sua avaliaÃ§Ã£o favorÃ¡vel da aceitaÃ§Ã£o da adesÃ£o do Reino Unido Ã  ConvenÃ§Ã£o de Haia.\nNo entanto, como o colega anterior tambÃ©m disse, Senhora ComissÃ¡ria, Ã© preciso que as relaÃ§Ãµes institucionais sejam respeitadas; o artigo 218.Âº, parÃ¡grafo seis, estabelece muito claramente que este Parlamento tem tambÃ©m um papel a desempenhar neste contexto, nÃ£o apenas para aplaudir, nÃ£o apenas para saudar, mas sobretudo para estar empenhado e comprometido no reforÃ§o desta relaÃ§Ã£o.\nPor isso, Senhora ComissÃ¡ria, a minha intervenÃ§Ã£o visa solicitar que a boa cooperaÃ§Ã£o institucional continue a existir e que nÃ£o se ignore o papel extraordinÃ¡rio que o Parlamento Europeu tambÃ©m pode ter na ratificaÃ§Ã£o desta ConvenÃ§Ã£o por parte do Reino Unido, a qual, volto a dizer, saÃºdo com grande alegria.",
+      "del:madeBy": {
+        "@id": "participant_74"
+      },
+      "del:timestamp": "2025-06-19T11:07:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_90",
+      "del:text": "Une fois de plus, la technocratie de la Commission est prise en flagrant dÃ©lit de violation des procÃ©dures dÃ©finies par les traitÃ©s europÃ©ens. Ce fut le cas rÃ©cemment pour l'adoption en urgence du plan Â«ReArm EuropeÂ». On peut Ã©galement citer le plan de relance NextGenerationEU ou encore la directive sur les travailleurs dÃ©tachÃ©s. Aucun de ces textes ne ressort de la compÃ©tence de l'Union europÃ©enne au regard du traitÃ© de Lisbonne.\nLes Ãtats membres n'ont pas de leÃ§on Ã  recevoir d'une institution qui est incapable de respecter les traitÃ©s dont elle se prÃ©tend la gardienne. La signature des traitÃ©s internationaux devrait constituer une compÃ©tence des Ãtats membres uniquement. Ne laissons pas la toute-puissance technocratique de Bruxelles venir Ã  bout de la souverainetÃ© des Ãtats.",
+      "del:madeBy": {
+        "@id": "participant_75"
+      },
+      "del:timestamp": "2025-06-19T11:10:15"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_91",
+      "del:text": "However, as in the case of Ukraine's accession, we are again confronted with the Commission's refusal to recognise this inherent function of the Parliament as provided by the Treaty on the Functioning of the European Union. In this way, the Commission undermines the principle of representative democracy, including institutional balance and accountability to EU citizens. The Commission, as a guardian of the Treaties, must fully respect them without improvisation beyond its mandate.\nTherefore, with today's oral question and resolution, we not only support the accession of the UK, but we also are defending our parliamentary prerogatives and the rule of law.",
+      "del:madeBy": {
+        "@id": "participant_76"
+      },
+      "del:timestamp": "2025-06-19T11:11:19"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_92",
+      "del:text": "But let's be clear: this debate is not about the UK today. It is about us, about our role as Parliament in shaping how the EU builds binding legal ties with the rest of the world.\nWe believe in the rule of law. We believe that judgments recognised across borders must be rooted in fairness, due process and human rights. And we also believe that the European Parliament must have a say when those decisions impact millions of Europeans.Â The Commission should take the legal role of the co-legislators properly into account in this ratification process.\nThat's why we are here today, to make sure our democratic role isn't sidelined, to ensure that Parliament's voice is heard, respected and empowered. Let's build bridges, yes, but let's build them strong, transparent and with full democratic oversight, because Europe works best when it works together.",
+      "del:madeBy": {
+        "@id": "participant_77"
+      },
+      "del:timestamp": "2025-06-19T11:12:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_93",
+      "del:text": "Ein souverÃ¤ner Staat, ein vÃ¶lkerrechtlicher Vertrag, klare Regeln, ganz ohne milliardenteuren Beamtenapparat, ohne IdeologieÂ â genau das ist unser Weg.Â Wir mÃ¼ssen die europÃ¤ische Zusammenarbeit auf das Wesentliche reduzieren: Binnenmarkt, Schutz der AuÃengrenzen und freiwillige bilaterale VertrÃ¤ge zwischen souverÃ¤nen Nationalstaaten.\nStattdessen erleben wir eine EU, die sich zu einem politischen Superstaat aufblÃ¤ht, der Milliarden kostet und sich immer tiefer in nationale Entscheidungen einmischt. Wir stimmen zu, weil es zeigt, wie echte Partnerschaft aussieht: rechtsstaatlich, freiwillig und souverÃ¤n.",
+      "del:madeBy": {
+        "@id": "participant_78"
+      },
+      "del:timestamp": "2025-06-19T11:13:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_94",
+      "del:text": "We are really committed to keeping the Parliament fully informed of each accession to the Judgments Convention and to take the Parliament's views duly into account.\nA couple of you mentioned Commissioner Å efÄoviÄ's commitment during his hearing, and I can confirm that we are ready to look further into ways of optimising inter-institutional cooperation in the context of non-objection procedures, which is the question here during this debate. So I can confirm what he said during his hearing in November 2024.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2025-06-19T11:15:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_95",
+      "del:text": "I have received one motion for a resolution to wind up this debate.\nThe debate is closed.\nThe vote will take place today.",
+      "del:madeBy": {
+        "@id": "participant_19"
+      },
+      "del:timestamp": "2025-06-19T11:16:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_96",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T12:01:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_97",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T12:01:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_98",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T12:01:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_99",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T12:03:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_100",
+      "del:text": "Je propose donc la formulation suivante: Â«considÃ©rant que l'Union europÃ©enne et plusieurs Ãtats membres ont dÃ©ployÃ© des efforts et perdu des vies dans la lutte contre le djihadisme, Ã  la demande des anciennes autoritÃ©s maliennes, dont 58 soldats franÃ§ais, cinq soldats nÃ©erlandais, deux soldats allemands, un soldat espagnol et un soldat portugaisÂ». Je vous remercie. Cela sera un signal fort pour nos soldats qui, souvent si jeunes, s'engagent pour nos libertÃ©s et tombent pour dÃ©fendre des dÃ©mocraties.",
+      "del:madeBy": {
+        "@id": "participant_80"
+      },
+      "del:timestamp": "2025-06-19T12:05:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_101",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T12:06:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_102",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_81"
+      },
+      "del:timestamp": "2025-06-19T12:20:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_103",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T12:21:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_104",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T12:26:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_105",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T12:34:29"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_106",
+      "del:text": "Gibt es EinwÃ¤nde dagegen? Das ist nicht der Fall.\nDas Protokoll ist somit genehmigt.",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T15:01:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_107",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T15:01:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_108",
+      "del:text": "Yet, pollinator populations have dramatically declined in the recent decades. Populations of 1 in 3 bee, butterfly and hoverflies species are collapsing. Many species are on the verge of extinction. This has a direct impact on the productivity and competitiveness of the EU's agriculture sector and on our food security.\nAs highlighted in the EU 2020 biodiversity strategy, in the EU pollinators initiative and in the EU biodiversity strategy for 2030, we need to take urgent action to restore pollinator populations. To step up efforts and reverse this decline of pollinators, we reinforced two years ago the EU pollinators initiative by revising its action plan. We have also enshrined a target to reverse the decline of pollinators by 2030 in the Nature Restoration Regulation.\nTogether, those efforts constitute the new deal for pollinators â our response to society's demand to take decisive action. This demand was manifested in the European citizens' initiative 'Save bees and farmers'. This House has been a strong and vocal advocate of the EU pollinator agenda. I thank you for that and for the opportunity to update you today on the progress in the implementation of the new deal for pollinators.\nWe are currently implementing more than 40 actions through the revised EU pollinators initiative. These actions aim to mitigate the drivers of pollinator decline, generate knowledge, foster Member States' actions and mobilise society.\nAgriculture is the essential sector. It depends on pollinators the most, and at the same time it exerts the highest pressure on them. That is why we have been working closely with Member States to increase support for pollinatorâfriendly farming under the common agricultural policy.\nWe want to support farmers to restore nature and pollinator populations, including through the development of nature credits and through enhanced farm advisory services. We are working on strengthening the pesticide authorisation process to increase protection of pollinators from the use of pesticides. We are also supporting Member States in reducing the risk in use of pesticide by increasing the uptake of integrated pest management and availability of low-risk plant protection products.\nEU sales of pesticides in 2023 were at the lowest level since the start of Eurostat data series in 2011. Still, the work is not over. Despite our efforts, pesticide use remains a major driver of pollinator decline. We count on your continued support for strict regulatory framework on pesticides. Meanwhile, we have substantially improved our understanding of pollinator decline through comprehensive assessment of pollinator species and the European 'red list' and thanks to numerous projects launched through Horizon Europe.\nWe are currently preparing a delegated act on pollinator monitoring, as required under the Nature Restoration Regulation.Â I call on Parliament and Member States to support a robust scientific monitoring method. Good data will enable smart and well-guided investment in the restoration of pollinators and ecosystems, yielding substantial savings in the long term.\nIn addition, the preparatory action for the European Biodiversity Observation Coordination Centre, initiated by Parliament will help Member States implement a monitoring system for pollinators.\nTo conclude, a word on our outreach efforts. We have built a strong and dedicated community of experts from Member States, authorities and stakeholder organisations through our working group on pollinators. We also continue to strongly support citizens' engagement, especially youth engagement in actions for pollinators.\nYouth is our future and the future needs pollinators. That is why in the coming months we will launch the Young Citizens Assembly on Pollinators, the European Fund for Youth Action on Pollinators and 'buzzing schools'. This is part of the pilot project initiated by the European Parliament. I thank you for your support and the overall commitment to the EU's action on pollinators.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2025-06-19T15:01:57"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_109",
+      "del:text": "MeÄutim, novi plan za opraÅ¡ivaÄe mora iÄi ruku pod ruku sa strategijom za europske pÄelare koji svakodnevno vode borbu s nelojalnom konkurencijom, uvoznicima patvorenog i nekvalitetnog meda iz treÄih zemalja, a tu su podaci porazni. Naime, prema istraÅ¾ivanjima, gotovo svaka druga staklenka meda na europskom trÅ¾iÅ¡tu sadrÅ¾i krivotvoreni med. NaÅ¡i pÄelari koji proizvode kvalitetan prirodni med ne mogu konkurirati damping cijenama, nedefiniranim standardima i laÅ¾nim deklaracijama.\nZato smo u proÅ¡lom mandatu izmjenom Direktive o medu uspjeli zabraniti zavaravajuÄe oznaÄavanje mjeÅ¡avina meda i uvesti obvezu navoÄenja toÄnog postotka i zemlju porijekla svake komponente mjeÅ¡avine meda. To je velik korak za transparentnost i zaÅ¡titu potroÅ¡aÄa, ali i za opstanak naÅ¡ih pÄelara.\nMeÄutim, ne smijemo stati na tome. Moramo koristiti trgovinske i carinske mehanizme, pojaÄati kontrole na granicama, uvesti stroÅ¾e nadzore uvoza i zatraÅ¾iti ukljuÄivanje interesa pÄelara u trgovinske sporazume s treÄim drÅ¾avama.\nTakoÄer, novi plan za opraÅ¡ivaÄe neÄe biti djelotvoran bez borbe protiv upotrebe Å¡tetnih pesticida i novih genskih tehnika kojima ne smijemo dozvoliti da naruÅ¡e sigurnost hrane i zdravlje potroÅ¡aÄa. Zato je kljuÄno poticati lokalnu proizvodnju hrane i prirodan uzgoj.\nS tim u vezi, treba veÄ sada analizirati uÄinke strategije âod polja do stolaâ, za koju sam bio izvjestitelj Kluba EPP-a u odboru IMCO, i predloÅ¾iti njezinu nadopunu u svjetlu izazova s kojima se pÄelari susreÄu. Kolegice i kolege, zaÅ¡titimo pÄele, ali i interese naÅ¡ih pÄelara.",
+      "del:madeBy": {
+        "@id": "participant_82"
+      },
+      "del:timestamp": "2025-06-19T15:07:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_110",
+      "del:text": "Wir brauchen endlich ein ernsthaftes Programm zum Schutz der Bienen. Ich bin froh, dass die EUâKommission dieses Thema aufgreift, aber ich hoffe, Sie verstehen, dass ich skeptisch bin. Denn bis jetzt war die Kommission nicht die groÃe BeschÃ¼tzerin der Bienen, sonst hÃ¤tte sie nicht ein ums andere Mal den Einsatz von Pestiziden wie Glyphosat zugelassen, sonst hÃ¤tten Sie schon lÃ¤ngst mit der Praxis der Notfallzulassungen fÃ¼r problematische Mittel aufgerÃ¤umt. Ich verstehe, dass Landwirte Ertragssicherheit brauchen, aber wenn wir das nur mit Mitteln erreichen, die den Bienen schaden, hat am Ende niemand etwas davon.\nWir mÃ¼ssen endlich allen klarmachen, und es muss uns allen klar sein, dass Pestizide nicht die alleinige LÃ¶sung sind, sondern ein gravierendes Problem. Ein Problem, das sich Ã¼berall festsetztÂ â in BÃ¶den, in GewÃ¤ssern, in unserem Trinkwasser und letztlich auch in unserem KÃ¶rper, und genau da haben Umweltgifte und Ewigkeitschemikalien nichts zu suchen. Suchen wir endlich nach einer LÃ¶sung, die allen hilft: der Natur, den Bienen und damit auch uns.\nWir brauchen endlich eine europÃ¤ische Forschungsstrategie fÃ¼r wirksame und Ã¶kologische Pestizidalternativen. Nur damit geben wir der Landwirtschaft neue Instrumente in die Hand, mit denen sie nachhaltig und ertragssicher arbeiten kann. Packen wir das Problem an den Wurzeln und geben wir unserer Umwelt eine echte Chance, sich zu erholen!",
+      "del:madeBy": {
+        "@id": "participant_83"
+      },
+      "del:timestamp": "2025-06-19T15:09:44"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_111",
+      "del:text": "On demande aux agriculteurs franÃ§ais de renoncer Ã  certains traitements, d'intÃ©grer des bandes fleuries, de diversifier leurs cultures et c'est une bonne chose si on les accompagne. Mais pendant ce temps, on continue d'importer sans vergogne des produits agricoles venus de pays qui utilisent des substances interdites chez nous. OÃ¹ est la cohÃ©rence? OÃ¹ est la justice?\nSoyons clairs protÃ©ger les pollinisateurs, c'est aussi dÃ©fendre l'avenir de notre agriculture. Il ne s'agit pas de choisir entre les abeilles et les agriculteurs, mais de sortir de cette logique de punition et d'hypocrisie. La pollution qui menace les insectes pollinisateurs ne vient pas uniquement des champs. Elle vient aussi de l'air que nous respirons, des polluants persistants, des microplastiques, des mÃ©taux lourds et d'un effet cocktail de substances chimiques dont l'Union europÃ©enne ne mesure pas encore sÃ©rieusement les interactions. Ce sont autant de facteurs qui affaiblissent les insectes, mais aussi la santÃ© humaine.\nEt lÃ , le texte de la Commission reste timide. Il traite longuement des pesticides, mais presque rien n'est dit sur l'impact des grandes zones industrielles, de la pollution de l'air ou de la charge chimique globale. Or, les agriculteurs ne doivent pas devenir les boucs Ã©missaires d'un systÃ¨me de production mondialisÃ© qui Ã©chappe Ã  tout contrÃ´le. Il est temps de changer votre logiciel, inspirez-vous des Ãtats membres qui sont les plus vertueux en la matiÃ¨re, comme la France. Oubliez votre vision vision en silo et rÃ©flÃ©chissez plutÃ´t Ã  une approche globale sur les polluants invisibles.\nAu delÃ  des produits phytosanitaires, c'est toute la question de la qualitÃ© de notre air qui doit se poser. Soutenez les agriculteurs qui ont dÃ©jÃ  pris conscience du problÃ¨me et Åuvrez dÃ©jÃ  Ã  protÃ©ger les habitats des pollinisateurs. Encouragez la recherche sur les alternatives aux intrants chimiques pour ne pas que nos agriculteurs se retrouvent privÃ©s de solutions. Il est temps de dÃ©fendre Ã  la fois nos agriculteurs et la biodiversitÃ© avec des politiques rÃ©alistes, cohÃ©rentes et souveraines.",
+      "del:madeBy": {
+        "@id": "participant_84"
+      },
+      "del:timestamp": "2025-06-19T15:12:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_112",
+      "del:text": "And it's not just honeybees â I'm a beekeeper and a farmer at the same time â it's also about wild pollinators. The Commission â under the rule of simplification â has reduced the fallow land that we need for wild pollinators. Is there real support for organic farming? Because this is the way of farming that safeguards natural pollinators, wild pollinators and our bees as well.\nIs there real support for beekeepers in the European Union? Well, let's see the new CAP proposal. We need real support for beekeepers because, due to climate crisis and pesticides, it's harder and harder to keep a beekeeper's business going. I can say that from my very own experience. But I'm ready to work on this, and I'm happy to contribute if there are concrete proposals to safeguard wild pollinators and bees.",
+      "del:madeBy": {
+        "@id": "participant_85"
+      },
+      "del:timestamp": "2025-06-19T15:14:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_113",
+      "del:text": "Viele Menschen haben die Problematik erkannt und mÃ¶chten Insekten helfen. Sie kaufen gutglÃ¤ubig sogenannte Insektenhotels, gefÃ¼llt mit Holzwolle, mit Tannenzapfen, mit Baumrinde, weil dies NatÃ¼rlichkeit vermittelt. Aber diese sind ganz oft ein Fall fÃ¼r den BiomÃ¼ll, werden nicht angenommen und kÃ¶nnen im schlimmsten Fall sogar Insekten schaden. Hier mÃ¼ssen ganz dringend nachvollziehbare Siegel fÃ¼r die Orientierung geschaffen werden.\nVergesst Biene Maja, kÃ¼mmert Euch um die GehÃ¶rnte Mauerbiene, die Dunkelfransige Hosenbiene, schafft LebensrÃ¤ume und BlÃ¼hstreifen und verbietet Pestizide wie Glyphosat!",
+      "del:madeBy": {
+        "@id": "participant_86"
+      },
+      "del:timestamp": "2025-06-19T15:16:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_114",
+      "del:text": "Tymczasem w Unii tworzymy pakty, strategie, zielone Åady, konsultacje, a zapominamy, Å¼e najlepszym sojusznikiem pszczoÅy nie jest Å¼aden biurokrata, tylko po prostu pszczelarz i rolnik â ten, ktÃ³ry wie, Å¼e bez zapylaczy nie bÄdzie Å¼adnych plonÃ³w. Chcecie ratowaÄ pszczoÅy, to przestaÅcie w koÅcu szkodziÄ rolnikom. PrzestaÅcie wspieraÄ konkurencjÄ spoza Unii. Nie zamÄczajcie ich kolejnymi regulacjami, zakazami i sprawozdawczoÅciÄ. PrzestaÅcie karaÄ ich za to, Å¼e chcÄ produkowaÄ Å¼ywnoÅÄ, a nie wypeÅniaÄ arkusze Excela. PszczoÅy potrzebujÄ ciszy, spokoju, rÃ³wnowagi w krajobrazie, a nie chaosu legislacyjnego. PotrzebujÄ lasÃ³w, ÅÄk, pasiek, nie â Zielonego Åadu, ktÃ³ry niszczy to, co miaÅ chroniÄ. Nie powielajmy scenariusza z filmu, w ktÃ³rym czÅowiek niszczy wszystko, Å¼eby pozbyÄ siÄ jednej pszczoÅy. ChroÅmy naturÄ razem z tymi, ktÃ³rzy jÄ naprawdÄ rozumiejÄ â z rolnikami i pszczelarzami.",
+      "del:madeBy": {
+        "@id": "participant_87"
+      },
+      "del:timestamp": "2025-06-19T15:17:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_115",
+      "del:text": "Per tÄ laikÄ priimtas New Deal for Pollinators, atnaujintas Bee Guidance, o 2023-iaisiais Reglamentas dÄl gamtos atkÅ«rimo suteikÄ apdulkintojams â tarp jÅ³ ir bitÄms â teisinÄ¯ apsaugos statusÄ. Tai reikÅ¡mingas Å¾ingsnis, kuris Ä¯pareigoja valstybes nares stebÄti jÅ³ populiacijas pagal standartizuotÄ metodikÄ; iki 2030 m. turi bÅ«ti sustabdytas apdulkintojÅ³ nykimas, vÄliau â uÅ¾tikrintas jÅ³ tvarus gausÄjimas. Svarbus klausimas â Europos raudonasis sÄraÅ¡as bitÄms. Jis turi bÅ«ti atnaujintas ir atspindÄti dabartines rÅ«Å¡iÅ³ bÅ«klÄs tendencijas. Be kita ko, minÄtam tikslui grÄsmÄ kelia invazinÄs rÅ«Å¡ys. Tokios rÅ«Å¡ies kaip Azijos vapsva viena kolonija per sezonÄ gali sunaikinti iki 90 tÅ«kstanÄiÅ³ apdulkintojÅ³. Tad jau bÅ«tÅ³ laikas imtis atitinkamÅ³ veiksmÅ³, grÄ¯stÅ³ rizikos vertinimu. PesticidÅ³ atveju Å¾iediniai bandymai vieniÅ¡Äms bitÄms yra Å¾ingsnis pirmyn, taÄiau vis dar trÅ«ksta ilgalaikiÅ³ tyrimÅ³ kolonijÅ³ lygmeniu. Subletaliniai ir chroniniai poveikiai, deja, tebelieka neÄ¯vertinti. O juk tik visapusiÅ¡ki tyrimai suteiks galimybÄ priimti mokslu pagrÄ¯stus sprendimus. Teigiamai vertinu tai, kad duomenÅ³ bazÄs apie bites tampa vis plaÄiau prieinamos ir vis dÄlto jos turi bÅ«ti ne tik atviros, bet ir iÅ¡samios, nuolat atnaujinamos bei integruotos Ä¯ sprendimÅ³ priÄmimÄ â tiek sudarant Europos raudonÄjÄ¯ biÄiÅ³ sÄraÅ¡Ä, tiek planuojant buveiniÅ³ atkÅ«rimÄ. Pasikartosiu, kad tik remdamiesi patikimais moksliniais duomenimis galime pasiekti savo tikslÅ³ ir sustabdyti biÄiÅ³ nykimÄ.",
+      "del:madeBy": {
+        "@id": "participant_65"
+      },
+      "del:timestamp": "2025-06-19T15:19:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_116",
+      "del:text": "Wir alle wissen, dass die Hauptursache fÃ¼r den RÃ¼ckgang der Bienen die landwirtschaftliche Intensivhaltung ist. Wir alle wissen, dass die Aufgabe der extensiven landwirtschaftlichen Systeme ein Problem ist, dass der Klimawandel, aber auch die invasiven Arten, die Urbanisierung und die Intensivierung der Forstwirtschaft alles GrÃ¼nde sind. Diesen GrÃ¼nden wird man nur zuvorkommen.\nMan wird die Bienen nicht mit kleinen BienenâHotspots, sondern nur mit einer flÃ¤chendeckenden, guten, nachhaltigen Landwirtschaft in ganz Europa unterstÃ¼tzen kÃ¶nnen. Deswegen: Bienenpolitik ist Landwirtschaftspolitik, Landwirtschaftspolitik ist Bienenpolitik. Ein groÃes Banner oben drÃ¼ber hilft uns nichts, wir brauchen es jeden Tag.",
+      "del:madeBy": {
+        "@id": "participant_88"
+      },
+      "del:timestamp": "2025-06-19T15:21:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_117",
+      "del:text": "Klimawandel, der Verlust und die Verschlechterung der LebensrÃ¤ume, massive Auswirkungen von Pestiziden auf die Umwelt, auf unsere GesundheitÂ â das sind alles PhÃ¤nomene, die mit konservativen Politiken und Handlungsunwilligkeit nicht angegangen werden kÃ¶nnen. Wir brauchen einen zukunftsgerichteten EUâPakt fÃ¼r BestÃ¤uber, eine gemeinsame Agrarpolitik, die fÃ¼r Landwirtinnen und Landwirte und die Umwelt funktioniert, und klare Vorschriften zur Pestizidreduzierung.",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2025-06-19T15:23:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_118",
+      "del:text": "Le principali minacce degli impollinatori sono ben conosciute: l'agricoltura intensiva, l'uso dei pesticidi, la perdita di habitat, cosÃ¬ come sono conosciute anche le misure per contrastarle. Serve solo il coraggio politico di applicarle con coerenza e in tempi rapidi. Dobbiamo incentivare pratiche agricole amiche delle api, rafforzare la tutela degli apicoltori nella PAC, limitare l'uso di pesticidi, salvaguardare gli impollinatori selvatici, rafforzare il programma LIFE, che giÃ  oggi finanzia degli strumenti efficaci per proteggere gli habitat e le biodiversitÃ .\nCi sono anche esperienze urbane da valorizzare, ad esempio il progetto UrBees, nato a Torino, dimostra che le api possono aiutarci a monitorare l'ambiente e a costruire comunitÃ  piÃ¹ consapevoli.\nEcco, proteggere gli impollinatori significa proteggere l'equilibrio tra natura, agricoltura e salute pubblica. Ã una responsabilitÃ  che ci riguarda tutti. Oggi abbiamo gli strumenti e il dovere per agire.",
+      "del:madeBy": {
+        "@id": "participant_90"
+      },
+      "del:timestamp": "2025-06-19T15:24:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_119",
+      "del:text": "Der neue Deal fÃ¼r BestÃ¤uber ist nichts anderes als ein weiteres BÃ¼rokratiemonster, das nationale Kompetenzen ignoriert und Landwirte drangsaliert. Statt echter Hilfe soll ein teures, EUâweites Ãberwachungssystem eingefÃ¼hrt werden, ohne praktischen Nutzen fÃ¼r Insekten. Gleichzeitig will man die PestizideinsÃ¤tze einfach mal pauschal halbieren, und das wurde hier schon angesprochen, dass das letztes Jahr zum GlÃ¼ck abgewendet wurde. Ohne RÃ¼cksicht auf die Landwirte soll das geschehen, regionale Unterschiede sollen nicht berÃ¼cksichtigt werden oder die ErnÃ¤hrungssicherheit unserer BÃ¼rger.\nSo etwas muss gestoppt werden. Deutschland braucht deshalb die AfD, und Europa braucht die ESN.\n(Die Rednerin lehnt eine Frage nach dem Verfahren der âblauen Karteâ von Lukas Sieper ab.)",
+      "del:madeBy": {
+        "@id": "participant_91"
+      },
+      "del:timestamp": "2025-06-19T15:26:09"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_120",
+      "del:text": "Det Ã¤r verkligen pollinering och andra liknande ekosystemtjÃ¤nster som Ã¤r helt avgÃ¶rande fÃ¶r vÃ¥r matfÃ¶rsÃ¶rjning, fÃ¶r att vi ska kunna arbeta med klimatanpassning och faktiskt ocksÃ¥ fÃ¶r att vi ska kunna lindra effekterna av sjÃ¤lva den globala uppvÃ¤rmningen i sig.\nMen de allra flesta av mina kollegor Ã¤r pÃ¥ vÃ¤g hem. MÃ¥nga sitter sÃ¤kert redan pÃ¥ sina flygplan pÃ¥ vÃ¤g till sina hemlÃ¤nder. En torsdag eftermiddag som det hÃ¤r sÃ¥ blir det fÃ¶r mig, och sÃ¤kert fÃ¶r mÃ¥nga andra grÃ¶na, mer Ã¶vertydligt Ã¤n vanligt, att det Ã¤r i princip inga andra av mina kollegor som bryr sig om de hÃ¤r helt grundlÃ¤ggande, viktiga existentiella frÃ¥gorna: klimat, biologisk mÃ¥ngfald, pollinering, ekosystemtjÃ¤nster.\nVi mÃ¥ste se till att fÃ¶rsÃ¶rja och fÃ¶rsvara dem sÃ¥ att vi faktiskt har ett fungerande samhÃ¤lle Ã¤ven i framtiden.",
+      "del:madeBy": {
+        "@id": "participant_92"
+      },
+      "del:timestamp": "2025-06-19T15:27:49"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_121",
+      "del:text": "J'appelle donc la Commission europÃ©enne Ã  ne pas cÃ©der au sabordage du Pacte vert europÃ©en et Ã  bannir les substances les plus dangereuses et Ã  soutenir les pratiques agroÃ©cologiques. Il est tout Ã  fait vital que les insectes demeurent, il est vital d'interdire ce qui les tue, d'aimer et de protÃ©ger ce qui permet la vie.",
+      "del:madeBy": {
+        "@id": "participant_93"
+      },
+      "del:timestamp": "2025-06-19T15:29:08"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_122",
+      "del:text": "Nyt jos koskaan on keskityttÃ¤vÃ¤ kaikista olennaisimpiin asioihin, myÃ¶s pieniin sellaisiin â kirjaimellisesti. Jopa 80 prosenttia viljelykasveistamme ovat riippuvaisia hyÃ¶nteisten pÃ¶lytyksestÃ¤, josta ison roolin kantavat mehilÃ¤iset. Niiden kannat ovat nyt roimassa laskussa. Karu fakta on, ettÃ¤ ilman mehilÃ¤isiÃ¤ ruokaturvamme romahtaa. TÃ¤mÃ¤n kauhukuvan estÃ¤minen on jotain, johon meidÃ¤n kannattaa Euroopassa kÃ¤yttÃ¤Ã¤ paukkuja.",
+      "del:madeBy": {
+        "@id": "participant_70"
+      },
+      "del:timestamp": "2025-06-19T15:30:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_123",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_94"
+      },
+      "del:timestamp": "2025-06-19T15:31:49"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_124",
+      "del:text": "Frau Kommissarin, ich mÃ¶chte Ihnen ganz kurz sagen: Das, was ich am besten finde an dem Vorschlag, den Sie da machen, ist die urbane BegrÃ¼nung. Denn das ist ja der Lebensraum, aus dem wir die Tiere quasi komplett vertrieben haben, und wenn wir da wieder ein bisschen mehr GrÃ¼n in die StÃ¤dte holenÂ â das ist nicht nur fÃ¼r die mentale Gesundheit der Menschen gut, das ist auch fÃ¼r die Natur gut. Also mÃ¶chte ich, da sich eigentlich alle einig sind, das Haus hier dazu aufrufen, ein bisschen mehr diese ideologischen GrabenkÃ¤mpfe sein zu lassen.\nDas Witzigste, was ich gehÃ¶rt habe, der grÃ¶Ãte Schuss ist das mit den WindrÃ¤dern. Es ist wirklich so dermaÃen bescheuert zu sagen, WindrÃ¤der sind bÃ¶se, weil dadurch Tiere sterben. Rechnen Sie doch mal durch, wenn Sie so gerne mit Zahlen um sich schmeiÃen, wie viele Tiere sterben, wenn der Klimawandel einmal so richtig reinknallt bei uns! Dann ist nÃ¤mlich gar nichts mehr mit der BiodiversitÃ¤t. Also, stehen wir zusammen, halten wir uns an die Ratio! SchÃ¶nes Wochenende!",
+      "del:madeBy": {
+        "@id": "participant_71"
+      },
+      "del:timestamp": "2025-06-19T15:32:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_125",
+      "del:text": "I tu chcÄ zwrÃ³ciÄ uwagÄ PaÅstwa na wielkÄ niekonsekwencjÄ Unii Europejskiej. Mianowicie, jeÅli dzisiaj otwieramy w Unii Europejskiej rynek na produkty z Ameryki PoÅudniowej, to pamiÄtajmy, Å¼e tam sÄ karczowane lasy, tam sÄ niszczone ÅÄki, gdzie wÅaÅnie sÄ siedliska zapylaczy. I tam bÄdÄ ginÄÄ te zapylacze. Tam bÄdzie przyrost pestycydÃ³w. A my bÄdziemy mÃ³wiÄ, Å¼e mamy Å¼ywnoÅÄ z Ameryki PoÅudniowej w ramach umowy z Merkosurem. To jest wielki bÅÄd i myÅlÄ, Å¼e wszystkie Årodowiska teÅ¼ na to powinny zwrÃ³ciÄ uwagÄ. SÅuchajmy mÄdrych rolnikÃ³w, mÄdrych pszczelarzy. Å»ycie bÄdzie lepsze.",
+      "del:madeBy": {
+        "@id": "participant_95"
+      },
+      "del:timestamp": "2025-06-19T15:34:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_126",
+      "del:text": "It's really a game changer, this new deal, and we are at a crucial moment of its implementation. I think we need to keep the momentum, ensuring that the Member States and the stakeholders continue implementing the actions that we agreed. We are not there yet, unfortunately: 2030 is not far away and we have a long way to go to stop â and ultimately reverse â the decline of pollinators in the EU.\nSocietal expectations are high: the European Citizens' Initiative 'Save bees and farmers' â which gathered more than 1 million statements of support â has sent us a clear message, which is: 'act now, act decisively'.\nThe Commission is committed to meet those expectations, and for that, we need your support.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2025-06-19T15:35:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_127",
+      "del:text": "Schriftliche ErklÃ¤rungen (Artikel 178)",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T15:36:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_128",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_69"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_129",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_96"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_130",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_24"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_131",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T15:36:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_132",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T15:36:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_133",
+      "del:text": "Fingridin tilastojen mukaan kantaverkkojen luotettavuusaste Suomessa oli viime vuonna 99,9995 prosenttia â pÃ¤Ã¤tÃ¤huimaavan hieno luku. Olisiko se ollut nÃ¤in korkea, jos sÃ¤hkÃ¶verkoista olisikin vastanneet virkamiehet BrysselissÃ¤ eikÃ¤ Suomen olosuhteet parhaiten tuntevat kotimaiset toimijat? Ei varmasti, sanon minÃ¤.\nKaikkein parasta Euroopan huoltovarmuudelle on antaa jÃ¤senvaltioiden hoitaa asiansa ja tehdÃ¤ sellaista kansainvÃ¤listÃ¤ yhteistyÃ¶tÃ¤, mistÃ¤ kaikki osapuolet varmasti hyÃ¶tyvÃ¤t. TÃ¤mÃ¤n vuoksi pÃ¤Ã¤tin Ã¤Ã¤nestÃ¤Ã¤ esitystÃ¤ vastaan, sillÃ¤ vaikka siirtÃ¤isimmekin sÃ¤hkÃ¶Ã¤ kauas, tulee pÃ¤Ã¤tÃ¤ntÃ¤vallan sÃ¤ilyÃ¤ lÃ¤hellÃ¤.",
+      "del:madeBy": {
+        "@id": "participant_70"
+      },
+      "del:timestamp": "2025-06-19T15:36:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_134",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T15:38:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_135",
+      "del:text": "Energia solarÄ sau eolianÄ, pretins curatÄ, se produce intermitent. Ce sÄ facÄ europenii Ã®nsÄ cÃ¢nd nu e soare sau cÃ¢nd nu bate vÃ¢ntul? Mai grav, s-au respins amendamente Ã®n acest raport care recunoÈteau energia nuclearÄ drept curatÄ. DupÄ ce Germania Èi-a Ã®nchis centralele atomice, acum importÄ energie din FranÈa, produsÄ Ã®n centrale atomice. Aceasta nu e tranziÈie verde, ci o sinucidere economicÄ a Europei, asistatÄ politic Èi birocratic de la Bruxelles.\nSub pretextul âverdeluiâ, distrugeÈi competitivitatea Europei pe altarul unei iluzii de sorginte marxistÄ, care a Ã®mpins Èi condamnat deja milioane de europeni la sÄrÄcie. OpriÈi aceastÄ nebunie utopicÄ Ã®nainte sÄ fie prea tÃ¢rziu!",
+      "del:madeBy": {
+        "@id": "participant_26"
+      },
+      "del:timestamp": "2025-06-19T15:38:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_136",
+      "del:text": "Viime kaudella puhuttiin Green DealistÃ¤. Huomattiin, ettÃ¤ siinÃ¤ mentiin pikkaisen vÃ¤Ã¤rÃ¤Ã¤n suuntaan nimenomaan teollisuuden nÃ¤kÃ¶kulmasta, ja tÃ¤llÃ¤ kaudella nyt sitten ollaan puhuttu tÃ¤stÃ¤ Clean Industrial DealistÃ¤. Mutta tÃ¤ssÃ¤ pÃ¤Ã¤tÃ¶slauselmassa, jota kÃ¤siteltiin tÃ¤nÃ¤Ã¤n ja josta Ã¤Ã¤nestettiin, oli niin paljon â kuten harmikseni jouduin huomaamaan â vihreÃ¤tÃ¤ agendaa, vÃ¤Ã¤rÃ¤nlaista ideologista agendaa, ei markkinaehtoista sÃ¤Ã¤telyÃ¤, ettÃ¤ valitettavasti jouduin tulemaan siihen johtopÃ¤Ã¤tÃ¶kseen, ettÃ¤ en voi tÃ¤mÃ¤n paperin puolesta Ã¤Ã¤nestÃ¤Ã¤. EhkÃ¤ ensi kaudella me voimme saada pÃ¤Ã¤tÃ¶slauselman nimeltÃ¤Ã¤n pelkÃ¤stÃ¤Ã¤n Industrial Deal.",
+      "del:madeBy": {
+        "@id": "participant_70"
+      },
+      "del:timestamp": "2025-06-19T15:39:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_137",
+      "del:text": "Wenn es keine EinwÃ¤nde gibt, werde ich die in der heutigen Sitzung angenommenen EntschlieÃungen den in diesen EntschlieÃungen genannten Personen und Gremien Ã¼bermitteln.",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T15:41:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_138",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T15:41:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_139",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-06-19T15:41:26"
+    }
+  ]
+}

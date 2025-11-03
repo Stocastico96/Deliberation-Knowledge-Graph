@@ -20,3 +20,23 @@ __pycache__/
 
 # System files
 .DS_Store
+
+# Virtual environments
+venv/
+env/
+ENV/
+*.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+nohup.out
+
+# Temporary files
+/tmp/
+*.tmp

@@ -1,0 +1,167 @@
+{
+  "debate_date": "2024-10-07",
+  "debate_id": "ep_debate_20241007",
+  "source": "European Parliament Plenary Debates",
+  "speeches": [
+    {
+      "id": "eli/dl/event/MTG-PL-2024-10-07-OTH-2017002073447",
+      "type": "Activity",
+      "activity_date": "2024-10-07",
+      "activity_id": "MTG-PL-2024-10-07-OTH-2017002073447",
+      "activity_label": {
+        "en": "Need to fight the systemic problem of gender-based violence in Europe (debate)"
+      },
+      "had_activity_type": "def/ep-activities/PROCEEDING_ACTIVITY",
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2024-10-07-OTH-2017002073447",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2024-10-07-ITM-014",
+          "number": "1-0175-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2024-10-07-OTH-2017002073447",
+          "notation_speechId": "2017002073447",
+          "numbering": 164,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/RON"
+          ],
+          "api:xmlFragment": {
+            "en": "<communication><narrative xml:lang=\"en\">(Closing of on-demand interventions)</narrative></communication>"
+          }
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2024-10-07-PVCRE-ITM-14"
+      ]
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2024-10-07-OTH-2017002076977",
+      "type": "Activity",
+      "activity_date": "2024-10-07",
+      "activity_id": "MTG-PL-2024-10-07-OTH-2017002076977",
+      "activity_label": {
+        "en": "The extreme wildfires in Southern Europe, in particular Portugal and Greece and the need for further EU climate action on adaptation and mitigation (debate)"
+      },
+      "had_activity_type": "def/ep-activities/PROCEEDING_ACTIVITY",
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2024-10-07-OTH-2017002076977",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2024-10-07-ITM-016",
+          "number": "1-0246-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2024-10-07-OTH-2017002076977",
+          "notation_speechId": "2017002076977",
+          "numbering": 241,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/DEU"
+          ],
+          "api:xmlFragment": {
+            "en": "<communication><narrative xml:lang=\"en\">Spontaneous interventions</narrative></communication>"
+          }
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2024-10-07-PVCRE-ITM-16"
+      ]
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2024-10-07-OTH-2017002079557",
+      "type": "Activity",
+      "activity_date": "2024-10-07",
+      "activity_id": "MTG-PL-2024-10-07-OTH-2017002079557",
+      "activity_label": {
+        "en": "Closure of the sitting"
+      },
+      "had_activity_type": "def/ep-activities/PROCEEDING_ACTIVITY",
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2024-10-07-OTH-2017002079557",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2024-10-07-ITM-021",
+          "number": "1-0297-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2024-10-07-OTH-2017002079557",
+          "notation_speechId": "2017002079557",
+          "numbering": 287,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/DEU"
+          ],
+          "api:xmlFragment": {
+            "en": "<communication><narrative xml:lang=\"en\">(The meeting closed at 23.31)</narrative></communication>"
+          }
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2024-10-07-PVCRE-ITM-21"
+      ]
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2024-10-07-OTH-2017002062368",
+      "type": "Activity",
+      "activity_date": "2024-10-07",
+      "activity_id": "MTG-PL-2024-10-07-OTH-2017002062368",
+      "activity_label": {
+        "en": "The reintroduction of internal border controls in a number of Member States and its impact on the Schengen Area (debate)"
+      },
+      "had_activity_type": "def/ep-activities/PROCEEDING_ACTIVITY",
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2024-10-07-OTH-2017002062368",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2024-10-07-ITM-013",
+          "number": "1-0126-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2024-10-07-OTH-2017002062368",
+          "notation_speechId": "2017002062368",
+          "numbering": 114,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/RON"
+          ],
+          "api:xmlFragment": {
+            "en": "<communication><narrative xml:lang=\"en\">Interventions on request</narrative></communication>"
+          }
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2024-10-07-PVCRE-ITM-13"
+      ]
+    },
+    {
+      "id": "eli/dl/event/MTG-PL-2024-10-07-OTH-2017002062392",
+      "type": "Activity",
+      "activity_date": "2024-10-07",
+      "activity_id": "MTG-PL-2024-10-07-OTH-2017002062392",
+      "activity_label": {
+        "en": "The reintroduction of internal border controls in a number of Member States and its impact on the Schengen Area (debate)"
+      },
+      "had_activity_type": "def/ep-activities/PROCEEDING_ACTIVITY",
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2024-10-07-OTH-2017002062392",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2024-10-07-ITM-013",
+          "number": "1-0138-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2024-10-07-OTH-2017002062392",
+          "notation_speechId": "2017002062392",
+          "numbering": 126,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/RON"
+          ],
+          "api:xmlFragment": {
+            "en": "<communication><narrative xml:lang=\"en\">(Closing of on-demand interventions)</narrative></communication>"
+          }
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2024-10-07-PVCRE-ITM-13"
+      ]
+    }
+  ],
+  "metadata": {
+    "collected_at": "2025-10-29T10:39:01.645980",
+    "source_api": "European Parliament Open Data API v2",
+    "language": "en"
+  }
+}

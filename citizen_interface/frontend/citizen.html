@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Interface - Deliberation Knowledge Graph</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/citizen.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Hero Section with Citizen DKG background */
+        .hero-section {
+            position: relative;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/images/citizen-dkg.png');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.6);
+            z-index: -1;
+        }
+
+        .hero-content {
+            background-color: rgba(15, 23, 42, 0.75);
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            backdrop-filter: blur(8px);
+            max-width: 900px;
+            margin: 0 1rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: white;
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 0;
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1><i class="fas fa-users"></i> Citizen Interface</h1>
+            <p>Explore deliberation processes, detect fallacies, and engage with democratic participation</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search deliberation processes (e.g., 'privacy', 'climate change', 'data protection')..."
+                        autocomplete="off"
+                    >
+                    <button id="searchBtn" class="btn-primary">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+                <div id="autocomplete" class="autocomplete-results"></div>
+
+                <!-- Search Options -->
+                <div class="search-options">
+                    <label>
+                        Results:
+                        <select id="topK">
+                            <option value="5">5</option>
+                            <option value="10" selected>10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div id="stats" class="stats-grid"></div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <div id="searchResults" class="search-results"></div>
+            <div id="processDetails" class="process-details" style="display: none;"></div>
+        </div>
+    </section>
+
+    <!-- Resource Details Modal -->
+    <div id="resourceModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeResourceModal()">&times;</span>
+            <h2 id="modalTitle">Resource Details</h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Download Section -->
+    <section class="download-section">
+        <div class="container">
+            <h2><i class="fas fa-download"></i> Download Data</h2>
+            <div class="download-options">
+                <button onclick="downloadData('ttl')" class="btn-secondary">
+                    <i class="fas fa-file-code"></i> RDF/Turtle
+                </button>
+                <button onclick="downloadData('jsonld')" class="btn-secondary">
+                    <i class="fas fa-file-code"></i> JSON-LD
+                </button>
+                <button onclick="downloadData('json')" class="btn-secondary">
+                    <i class="fas fa-file-alt"></i> JSON
+                </button>
+                <button onclick="downloadData('csv')" class="btn-secondary">
+                    <i class="fas fa-file-csv"></i> CSV
+                </button>
+            </div>
+            <p class="help-text">
+                <i class="fas fa-info-circle"></i>
+                Download complete snapshot of the Deliberation Knowledge Graph
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Deliberation Knowledge Graph - CIRSFID, University of Bologna</p>
+            <p>
+                <a href="https://gitlab.com/CIRSFID/Deliberation-Knowledge-Graph" target="_blank">
+                    <i class="fab fa-gitlab"></i> GitLab
+                </a> |
+                <a href="https://svagnoni.linkeddata.es" target="_blank">
+                    <i class="fas fa-globe"></i> Main DKG
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="/js/citizen.js"></script>
+</body>
+</html>

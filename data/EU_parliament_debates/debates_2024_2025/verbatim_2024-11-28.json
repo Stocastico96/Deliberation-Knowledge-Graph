@@ -1,0 +1,2623 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "ep_debate_20241128",
+  "del:name": "European Parliament Debate - 2024-11-28",
+  "del:startDate": "2024-11-28T00:00:00Z",
+  "del:endDate": "2024-11-28T23:59:59Z",
+  "del:hasTopic": [
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem1",
+      "del:name": "Opening of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem2",
+      "del:name": "Council position at first reading (Rule 64)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem3",
+      "del:name": "Strengthening childrenâs rights in the EU - 35th anniversary of the adoption of the United Nations Convention on the Rights of the Child (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem4",
+      "del:name": "Foreign interference and espionage by third country actors in European universities (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem5",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem6",
+      "del:name": "Voting time"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem7",
+      "del:name": "Hong Kong, notably the cases of Jimmy Lai and the 45 activists recently convicted under the national security law (RC-B10-0208/2024, B10-0208/2024, B10-0209/2024, B10-0210/2024, B10-0211/2024, B10-0212/2024) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem8",
+      "del:name": "The increasing and systematic repression of women in Iran (RC-B10-0188/2024, B10-0186/2024, B10-0188/2024, B10-0197/2024, B10-0199/2024, B10-0202/2024, B10-0203/2024, B10-0207/2024) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem9",
+      "del:name": "The shrinking space for civil society in Cambodia, in particular the case of the labour rights organisation CENTRAL (RC-B10-0190/2024, B10-0187/2024, B10-0190/2024, B10-0201/2024, B10-0204/2024, B10-0205/2024, B10-0206/2024) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem10",
+      "del:name": "Georgia's worsening democratic crisis following the recent parliamentary elections and alleged electoral fraud (RC-B10-0179/2024, B10-0179/2024, B10-0180/2024, B10-0181/2024, B10-0182/2024, B10-0183/2024, B10-0184/2024) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem11",
+      "del:name": "Reinforcing EUâs unwavering support to Ukraine against Russiaâs war of aggression and the increasing military cooperation between North Korea and Russia (RC-B10-0191/2024, B10-0189/2024, B10-0191/2024, B10-0192/2024, B10-0193/2024, B10-0195/2024, B10-0198/2024, B10-0200/2024) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem12",
+      "del:name": "Recommendation on smoke- and aerosol-free environments (RC-B10-0173/2024, B10-0173/2024, B10-0174/2024, B10-0175/2024, B10-0176/2024, B10-0177/2024) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem13",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem14",
+      "del:name": "Approval of the minutes of the previous sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem15",
+      "del:name": "Need to adopt an ambitious international legally binding agreement on plastic pollution, including in the marine environment"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem16",
+      "del:name": "Explanations of votes"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem17",
+      "del:name": "Georgia's worsening democratic crisis following the recent parliamentary elections and alleged electoral fraud (RC-B10-0179/2024)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem18",
+      "del:name": "Recommendation on smoke- and aerosol-free environments (RC-B10-0173/2024)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem19",
+      "del:name": "Approval of the minutes of the sitting and forwarding of texts adopted"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem20",
+      "del:name": "Dates of forthcoming sittings"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem21",
+      "del:name": "Closure of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem22",
+      "del:name": "Adjournment of the session"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "President.",
+      "del:hasRole": {
+        "@type": "del:Role",
+        "del:name": "President"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Helena Dalli,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Ewa Kopacz,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Gabriele Bischoff,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_5",
+      "del:name": "AnnamÃ¡ria Vicsek,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_6",
+      "del:name": "Jadwiga WiÅniewska,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_7",
+      "del:name": "Ð¥ÑÐ¸ÑÑÐ¾ ÐÐµÑÑÐ¾Ð²,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_8",
+      "del:name": "Saskia Bricmont,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_9",
+      "del:name": "Rima Hassan,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_10",
+      "del:name": "Ewa ZajÄczkowska-Hernik,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_11",
+      "del:name": "ÎÎ»ÎµÎ¿Î½ÏÏÎ± ÎÎµÎ»Î­ÏÎ·",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_12",
+      "del:name": "HelÃ©ne Fritzon",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_13",
+      "del:name": "Fabrice Leggeri",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_14",
+      "del:name": "Antonella Sberna",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_15",
+      "del:name": "Anna-Maja Henriksson",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_16",
+      "del:name": "Benedetta Scuderi",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_17",
+      "del:name": "Estrella GalÃ¡n",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_18",
+      "del:name": "Siegbert Frank Droese",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_19",
+      "del:name": "Monika BeÅovÃ¡",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_20",
+      "del:name": "Javier Zarzalejos",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_21",
+      "del:name": "Sandro Ruotolo",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_22",
+      "del:name": "AndrÃ¡s LÃ¡szlÃ³",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_23",
+      "del:name": "Georgiana Teodorescu",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_24",
+      "del:name": "Cynthia NÃ­ MhurchÃº",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_25",
+      "del:name": "Villy SÃ¸vndal",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_26",
+      "del:name": "ÎÎ¯ÎºÎ¿Ï Î Î±ÏÏÎ¬Ï",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_27",
+      "del:name": "Irmhild BoÃdorf",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_28",
+      "del:name": "Branislav OndruÅ¡",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_29",
+      "del:name": "David Casa",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_30",
+      "del:name": "Alex Agius Saliba",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_31",
+      "del:name": "AngÃ©line Furet",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_32",
+      "del:name": "Laurence Trochu",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_33",
+      "del:name": "Veronika CifrovÃ¡ OstrihoÅovÃ¡",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_34",
+      "del:name": "Tilly Metz",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_35",
+      "del:name": "Isabel Serra SÃ¡nchez",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_36",
+      "del:name": "Paulo Cunha",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_37",
+      "del:name": "Hannes Heide",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_38",
+      "del:name": "Barbara Bonte",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_39",
+      "del:name": "Chiara Gemma",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_40",
+      "del:name": "Abir Al-Sahlani",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_41",
+      "del:name": "Vicent MarzÃ  IbÃ¡Ã±ez",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_42",
+      "del:name": "JoÃ£o Oliveira",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_43",
+      "del:name": "FranÃ§ois-Xavier Bellamy",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_44",
+      "del:name": "Marc Angel",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_45",
+      "del:name": "Mathilde AndrouÃ«t",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_46",
+      "del:name": "Dominik TarczyÅski",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_47",
+      "del:name": "Kathleen Funchion",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_48",
+      "del:name": "Reinhold Lopatka",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_49",
+      "del:name": "Evin Incir",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_50",
+      "del:name": "Julie Rechagneux",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_51",
+      "del:name": "Stephen Nikola Bartulica",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_52",
+      "del:name": "Mario Furore",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_53",
+      "del:name": "SunÄana Glavak",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_54",
+      "del:name": "Estelle Ceulemans",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_55",
+      "del:name": "Sebastian Everding",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_56",
+      "del:name": "Manuela Ripa",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_57",
+      "del:name": "Alessandro Zan",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_58",
+      "del:name": "AnnamÃ¡ria Vicsek",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_59",
+      "del:name": "DÃ³ra DÃ¡vid",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_60",
+      "del:name": "Maria Guzenina",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_61",
+      "del:name": "Caterina Chinnici",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_62",
+      "del:name": "Francisco Assis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_63",
+      "del:name": "Jessika Van Leeuwen",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_64",
+      "del:name": "Sabrina Repp",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_65",
+      "del:name": "Mika Aaltola",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_66",
+      "del:name": "Javier Moreno SÃ¡nchez",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_67",
+      "del:name": "Antonio LÃ³pez-IstÃºriz White",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_68",
+      "del:name": "Isilda Gomes",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_69",
+      "del:name": "Marcos Ros Sempere",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_70",
+      "del:name": "Nikolina Brnjac",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_71",
+      "del:name": "Maria Grapini",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_72",
+      "del:name": "Sebastian Tynkkynen",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_73",
+      "del:name": "Petras GraÅ¾ulis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_74",
+      "del:name": "PreÅedinte."
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_75",
+      "del:name": "HÃ©lder Sousa Silva",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_76",
+      "del:name": "Lukas Sieper",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_77",
+      "del:name": "Juan Fernando LÃ³pez Aguilar",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_78",
+      "del:name": "Vilija BlinkeviÄiÅ«tÄ",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_79",
+      "del:name": "Andrzej BuÅa",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_80",
+      "del:name": "KlÃ¡ra Dobrev",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_81",
+      "del:name": "ÎÎ¿ÏÎºÎ¬Ï Î¦Î¿ÏÏÎ»Î¬Ï",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_82",
+      "del:name": "Victor Negrescu",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_83",
+      "del:name": "PÃ¡l Szekeres",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_84",
+      "del:name": "ZoltÃ¡n Tarr,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_85",
+      "del:name": "Hannes Heide,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_86",
+      "del:name": "AntÃ³nio TÃ¢nger CorrÃªa,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_87",
+      "del:name": "MaÅgorzata Gosiewska,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_88",
+      "del:name": "Laurence Farreng,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_89",
+      "del:name": "MarkÃ©ta GregorovÃ¡,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_90",
+      "del:name": "Milan UhrÃ­k,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_91",
+      "del:name": "AndrÃ© RougÃ©",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_92",
+      "del:name": "Guillaume Peltier",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_93",
+      "del:name": "Bart Groothuis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_94",
+      "del:name": "Vladimir PrebiliÄ",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_95",
+      "del:name": "Bogdan Andrzej Zdrojewski",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_96",
+      "del:name": "JosÃ© Cepeda",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_97",
+      "del:name": "Piotr MÃ¼ller",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_98",
+      "del:name": "Lukas Mandl",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_99",
+      "del:name": "Marco Squarta",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_100",
+      "del:name": "Stine Bosse",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_101",
+      "del:name": "Salvatore De Meo",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_102",
+      "del:name": "TomÃ¡Å¡ ZdechovskÃ½",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_103",
+      "del:name": "Fernand Kartheiser",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_104",
+      "del:name": "MaÅgorzata Gosiewska",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_105",
+      "del:name": "BartÅomiej Sienkiewicz",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_106",
+      "del:name": "Christine Anderson",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_107",
+      "del:name": "SebastiÃ£o Bugalho",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_108",
+      "del:name": "Thijs Reuten",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_109",
+      "del:name": "PredsedajÃºci ."
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_110",
+      "del:name": "Francisco JosÃ© MillÃ¡n Mon,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_111",
+      "del:name": "Thomas Bajada,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_112",
+      "del:name": "France Jamet,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_113",
+      "del:name": "Michael McNamara,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_114",
+      "del:name": "Isabella LÃ¶vin,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_115",
+      "del:name": "ÎÎ¹ÎºÏÎ»Î±Ï Î¦Î±ÏÎ±Î½ÏÎ¿ÏÏÎ·Ï,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_116",
+      "del:name": "Siegbert Frank Droese,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_117",
+      "del:name": "Paulo Do Nascimento Cabral",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_118",
+      "del:name": "Rasmus Nordqvist",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_119",
+      "del:name": "Niels Geuking",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_120",
+      "del:name": "Bogdan RzoÅca",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_121",
+      "del:name": "CÃ©sar Luena",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_122",
+      "del:name": "Michael McNamara",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_123",
+      "del:name": "Martin Sonneborn",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_1",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T09:05:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_2",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T09:06:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_3",
+      "del:text": "On 20Â November, we celebrated World Children's Day, marking the 35thÂ anniversary of the UN Convention on the Rights of the Child. While we have made significant progress since the coming of age of the convention, no one can deny that times are challenging for all of us, especially for children. Children are disproportionately facing the adverse effects of climate change, armed conflict, war and multiple crises.\nTo address these challenges, we have put in place a robust and comprehensive legal policy and support framework with clear commitments to step up the protection, promotion and fulfilment of children's rights. This brings decisive progress to empower children, promote and protect their rights offline as online, in the EU and globally.\nThis Commission has made significant progress in turning the EU strategy on the rights of the child into action. Participation of children in democratic life is a right. It is also necessary to make our democracy stronger. The EU Children's Participation Platform creates a permanent space for child voices in EU decision-making. It fosters democratic engagement at all levels. It empowers children to take an active role in shaping their future.\nWe are encouraged to see that it is evolving into a recognised practice, bringing together children from more than 80 participating mechanisms from 24 Member States. As announced in the political guidelines, the Commission will further reinforce synergies between child and youth participation. We will step up our efforts to promote intergenerational fairness and solidarity between generations. A youth advisory board advising President von der Leyen will be created, and the youth policy dialogues continued.\nTo prevent and combat child poverty, we will strengthen the European Child Guarantee. It is a landmark tool to guarantee access to key services, early childhood education and care, education, at least one healthy meal per school day, healthcare, healthy nutrition and adequate housing, progress in national plans and bringing tangible results for children in need.\nOne of our greatest challenges in this decade is protecting the mental health of children and young people, especially online. Thousands of children told us that they need to be safe online as well as offline. Children ask for prevention, swift and better support from all adults, and they also ask to be heard. Their views informed our recommendation on integrated child protection. Advancing a zero tolerance on violence against children is the responsibility of all of us at all levels, and families and caregivers have a key role to play.\nImplementing the Pact on Migration and Asylum will also strengthen guarantees available to the vulnerable asylum seekers, including children, notably unaccompanied minors. Stronger guardianship systems are crucial to meet those higher child protection standards.\nThe digital environment should be designed in a way that allows children to thrive online, while protecting them from harm. The Digital Services Act and the Audiovisual Media Services Directive contain dedicated rules to protect minors. The European strategy for a better internet for kids strives to ensure that every child is respected, protected and empowered online.\nThe Commission is also actively working to provide a common method for verifying age across all 27 Member States. We need to ensure that users can access age restricted online services securely and seamlessly. The solution will be integrated in the new European Digital Identity Wallet, which will be available to all EU citizens at the end of 2026.\nTo address the growing threat of online bullying and harassment of children, the next Commission will act on cyberbullying, the impact of social media on mental health and addictive design features in digital products.\nWe are tackling child sexual abuse crimes in a holistic way, using both legislative and non-legislative initiatives. We are focusing on prevention, investigation and victim assistance. Effective solutions are essential to protect all fundamental rights, including child protection and privacy in the digital sphere, as in real life. Legislation has also been reinforced on child trafficking, gender-based and domestic violence, notably in a child-centric and protective way.\nIn February of 2022, millions of Ukrainian children saw their lives abruptly upended and we have ensured that those seeking shelter in the EU enjoy the same rights and protection as any other child here. Upholding children's rights is also our continuous EU global priority, building on the Youth Action Plan in external action, keeping a zero-tolerance policy for child labour through the directive on corporate sustainability, fostering the protection of children against the impact of climate change and environmental hazards, continuing our investment in education.\nToday, it is estimated that some 450Â million children â roughly one in five â are living in or fleeing from no less than 120 conflict zones. 450Â million: this equals the entire population of the European Union. Many are being injured, killed, abducted or sexually violated. The revised EU Guidelines on Children and Armed Conflict provide a vital and effective framework for a coordinated EU response, ensuring that our actions are consistent and impactful across regions.\nThe EU is also actively engaged in a range of initiatives from Ukraine to Colombia, Mozambique to Yemen. We remain steadfast in our commitment to translate policy into concrete action. We are working in tandem with our global partners and the United Nations to ensure that the voices of children in conflict zones are heard and their rights and lives fully protected. Children do not start wars. Children need peace. Children need peace now.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2024-11-28T09:06:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_4",
+      "del:text": "InicjujÄc tÄ debatÄ jako koordynator Parlamentu Europejskiego ds. praw dziecka, chciaÅam, Å¼eby byÅa ona nie tylko okazjÄ do symbolicznego ÅwiÄtowania, ale powodem do gÅÄbokiej refleksji na temat dzieci i ich praw. PamiÄtajmy â duma z osiÄgniÄÄ nigdy nie powinna przesÅoniÄ tego, co jeszcze zostaÅo do zrobienia. Zbyt wiele dzieci wciÄÅ¼ Å¼yje w cieniu wojen, przemocy, gÅodu i ubÃ³stwa. Nie powinniÅmy akceptowaÄ Åwiata, w ktÃ³rym dzieci padajÄ ofiarÄ wojen, ktÃ³rych nie wywoÅujÄ, konfliktÃ³w, ktÃ³rych nie rozumiejÄ, decyzji, ktÃ³rych nie podejmujÄ. WidzieliÅmy dzieci uciekajÄce przed bombami w Ukrainie, gÅodujÄce w Afryce, tonÄce w Morzu ÅrÃ³dziemnym, a takÅ¼e, a moÅ¼e przede wszystkim, problemy dzieci w naszych wÅasnych spoÅecznoÅciach, ktÃ³re doÅwiadczajÄ przemocy domowej, biedy czy braku wsparcia psychologicznego. Niestety, wszystkie one pÅacÄ cenÄ decyzji dorosÅych.\nNiezbÄdne jest wiÄc wdroÅ¼enie Konwencji w peÅni â bez wyjÄtkÃ³w i kompromisÃ³w â w kaÅ¼dym kraju. Ochrona dzieci przed wykorzystywaniem zarÃ³wno w Åwiecie rzeczywistym, jak i online. Walka z ubÃ³stwem. Tworzenie przestrzeni, w ktÃ³rej dzieci bÄdÄ traktowane jako podmiot praw, z gÅosem, ktÃ³ry chcemy i musimy sÅyszeÄ. ApelujÄ o zaangaÅ¼owanie nas wszystkich â politykÃ³w, organizacji spoÅecznych, instytucji miÄdzynarodowych â w tworzenie Åwiata, w ktÃ³rym kaÅ¼de dziecko bÄdzie miaÅo szansÄ na bezpieczne, zdrowe i szczÄÅliwe Å¼ycie. Dzieci nie potrzebujÄ od nas wielkich deklaracji. One potrzebujÄ naszych dziaÅaÅ. Szanowni PaÅstwo! Zapiszmy siÄ w historii jako ci, ktÃ³rzy chronili naszych najmÅodszych obywateli nie sÅowami, a czynami.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2024-11-28T09:15:59"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_5",
+      "del:text": "Wir mÃ¼ssen aber auch die Beteiligung und Sichtbarkeit von Kindern stÃ¤rken in der Politik hier. Deshalb hat das Parlament in der letzten Legislatur vorgeschlagen, dass wir jÃ¤hrlich eine europÃ¤ische Kinderhauptstadt ausrufen, wo wir wirklich Ã¼ber die RechtemÃ¶glichkeiten und den Schutz reden, das in den Mittelpunkt stellen. Deshalb fordere ich die neue Kommission auf: Nehmen Sie diesen Vorschlag wahr. Statten Sie tatsÃ¤chlich die Garantie fÃ¼r Kinder so aus, dass sie wirken kann, dass wir 5Â Millionen Kinder weniger in Armut haben, und setzen Sie gleichzeitig eine europÃ¤ische Kinderhauptstadt ein. Lassen Sie uns die Kinder in den Mittelpunkt stellen!",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:timestamp": "2024-11-28T09:18:28"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_6",
+      "del:text": "A vilÃ¡gban zajlÃ³ fegyveres konfliktusok, az azok okozta gazdasÃ¡gi Ã©s egyÃ©b nehÃ©zsÃ©gek legnagyobb vesztesei minden esetben a gyermekek. A hÃ¡borÃºban a gyermekek elveszÃ­tik Ã©letÃ¼ket, otthonukat, szÃ¼leiket, testi vagy lelki Ã©psÃ©gÃ¼ket. Nem rÃ©szesÃ¼lnek rendszeres oktatÃ¡sban, sem egÃ©szsÃ©gÃ¼gyi ellÃ¡tÃ¡sban. EzÃ©rt egyÃ©rtelmÅ±, hogy a gyermekjogok megvalÃ³sÃ­tÃ¡sÃ¡nak Ã©s vÃ©delmÃ©nek a nÃ©lkÃ¼lÃ¶zhetetlen alapfeltÃ©tele a bÃ©ke.\nMagyarorszÃ¡g hisz a bÃ©kÃ©ben, hiszen csak bÃ©kÃ©ben tudja megvalÃ³sÃ­tani az elmÃºlt Ã©vtizedben kidolgozott Ã©s alkalmazott hatÃ©kony gyermekvÃ©delmi stratÃ©giÃ¡jÃ¡t. A magyar gyermekvÃ©delem a csalÃ¡dok otthonteremtÃ©sÃ©t tÃ¡mogatÃ³ programokkal, a babavÃ¡rÃ³ hitellel Ã©s az EurÃ³pÃ¡ban egyedÃ¼lÃ¡llÃ³ csalÃ¡di adÃ³rendszerrel teremti meg a gyermekek testi Ã©s lelki fejlÅdÃ©se szempontjÃ¡bÃ³l megfelelÅ feltÃ©teleket. A gyermekeket nevelÅ szÃ¼lÅk Ã©s e mÃ³don a gyermekeik tÃ¡mogatÃ¡sa Ã¡ltal.\nA magyar kormÃ¡ny konkrÃ©t eredmÃ©nyeket Ã©rt el e terÃ¼leten, Ã©s a legtÃ¶bb trend tekintetÃ©ben pozitÃ­v Ã©s tartÃ³s fordulatot lehet tapasztalni. A csalÃ¡dtÃ¡mogatÃ³ programok MagyarorszÃ¡gon bÅvÃ¼ltek az elmÃºlt idÅszakban, annak ellenÃ©re, hogy EurÃ³pÃ¡t a hÃ¡borÃºs helyzet Ã©s a szankciÃ³k miatt sÃºlyos gazdasÃ¡gi vÃ¡lsÃ¡g sÃºjtja, Ã©s az EurÃ³pai BizottsÃ¡g politikai zsarolÃ¡sÃ¡nak kÃ¶vetkezmÃ©nyÃ©ben a MagyarorszÃ¡gnak jÃ¡rÃ³ pÃ©nzÃ¼gyi alapok blokkolÃ¡sra kerÃ¼ltek.\nAhhoz, hogy a gyermekek jogait garantÃ¡lÃ³ programokat folytatni Ã©s az eredmÃ©nyeket megÅrizni lehessen, gazdasÃ¡gi stabilitÃ¡s, kiszÃ¡mÃ­thatÃ³ jÃ¶vÅ Ã©s bÃ©ke kell EurÃ³pÃ¡ban. Gyermekeink legfontosabb joga a bÃ©kÃ©hez valÃ³ jog.",
+      "del:madeBy": {
+        "@id": "participant_5"
+      },
+      "del:timestamp": "2024-11-28T09:19:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_7",
+      "del:text": "Dzieciom wmawia siÄ, Å¼e mogÄ Åatwo i dowolnie wybieraÄ swojÄ toÅ¼samoÅÄ pÅciowÄ, jakby to byÅa zabawa. Propagowanie tranzycji u dzieci jest szaleÅstwem, dlatego mÃ³wiÄ stanowcze ânieâ dla deprawacji i seksualizacji dzieci. MÃ³wiÄ stanowcze âtakâ dla wartoÅciowej edukacji. PamiÄtajmy: inwestycja w wartoÅciowÄ edukacjÄ jest inwestycjÄ w najlepszÄ przyszÅoÅÄ Europy i Åwiata.",
+      "del:madeBy": {
+        "@id": "participant_6"
+      },
+      "del:timestamp": "2024-11-28T09:22:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_8",
+      "del:text": "ÐÐ¸Ðµ ÑÐ¼Ðµ Ð¸Ð·Ð±ÑÐ°Ð½Ð¸ ÑÑÐº, Ð·Ð° Ð´Ð° Ð¿ÑÐ¾Ð¼ÐµÐ½Ð¸Ð¼ ÑÐ¾Ð²Ð°. ÐÑ Ð¼Ð¾Ð¸ÑÐµ ÑÑÐµÑÐ¸ Ñ Ð±ÑÐ´ÐµÑÐ¸ÑÐµ ÐºÐ¾Ð¼Ð¸ÑÐ°ÑÐ¸ ÐÑÐ½Ð·Ð°ÑÑ Ð¸ ÐÐ¸ÐºÐ°Ð»ÐµÑ Ð¾ÑÑÐ°Ð½Ð°Ñ Ñ Ð²Ð¿ÐµÑÐ°ÑÐ»ÐµÐ½Ð¸Ðµ, ÑÐµ ÑÐµ ÑÐ° ÑÐ¸Ð»Ð½Ð¾ Ð¼Ð¾ÑÐ¸Ð²Ð¸ÑÐ°Ð½Ð¸ Ð´Ð° Ð¿Ð¾Ð´Ð¾Ð±ÑÐ¸Ð¼ Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸ÐµÑÐ¾ Ð½Ð° Ð´ÐµÑÐ°ÑÐ°. ÐÐ¸Ðµ Ð¾Ñ Renew Europe Ð¸Ð¼Ð°Ð¼Ðµ ÐºÐ¾Ð½ÐºÑÐµÑÐ½Ð¸ Ð¿ÑÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ, ÐºÐ¾Ð¸ÑÐ¾ ÑÐµ Ð¿ÑÐµÐ´ÑÑÐ°Ð²Ð¸Ð¼ Ð² ÑÐ»ÐµÐ´Ð²Ð°ÑÐ¸ÑÐµ Ð¼ÐµÑÐµÑÐ¸. ÐÐ¸Ð¶Ð´Ð°Ð¼, ÑÐµ Ð² Ð¿Ð¾ÑÑÐ¸ Ð²ÑÐ¸ÑÐºÐ¸ Ð³ÑÑÐ¿Ð¸ Ð¸Ð¼Ð° ÑÐ¾ÑÐ°, ÐºÐ¾Ð¸ÑÐ¾ Ð±Ð¸ÑÐ° Ð¸ÑÐºÐ°Ð»Ð¸ Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸ÐµÑÐ¾ Ð½Ð° Ð´ÐµÑÐ°ÑÐ° Ð´Ð° ÑÐµ Ð¿Ð¾Ð´Ð¾Ð±ÑÐ¸. Ð Ð²Ð¸ Ð¿ÑÐ¸Ð·Ð¾Ð²Ð°Ð²Ð°Ð¼ Ð´Ð° ÑÐµ Ð¾Ð±ÐµÐ´Ð¸Ð½Ð¸Ð¼, Ð·Ð° Ð´Ð° Ð¿Ð¾ÐºÐ°Ð¶ÐµÐ¼, ÑÐµ ÑÐ¾Ð²Ð° Ð½Ðµ ÑÐ° Ð¿ÑÐ°Ð·Ð½Ð¸ Ð¿ÑÐ¸ÐºÐ°Ð·ÐºÐ¸, Ð° Ð¸ÑÑÐ¸Ð½ÑÐºÐ¸ Ð´ÐµÐ¹ÑÑÐ²Ð¸Ñ Ð² Ð¿Ð¾Ð»Ð·Ð° Ð½Ð° Ð´ÐµÑÐ°ÑÐ°.",
+      "del:madeBy": {
+        "@id": "participant_7"
+      },
+      "del:timestamp": "2024-11-28T09:23:36"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_9",
+      "del:text": "Comment tolÃ©rer que prÃ¨s de 25Â % des enfants europÃ©ens, soit prÃ¨s de 20Â millions d'enfants, soient menacÃ©s de pauvretÃ© ou d'exclusion sociale? Comment tolÃ©rer que des milliers d'enfants dorment dans les rues de nos capitales et meurent dans la Manche et la MÃ©diterranÃ©e? Comment tolÃ©rer que le rÃ¨glement contre le travail forcÃ© ne couvre que 3Â millions d'enfants, alors que 78Â millions d'entre eux sont victimes des pires formes de travail forcÃ©? Pire encore: nous allons conclure un accord commercial avec le BrÃ©sil, qui compte 1,5Â million d'enfants victimes de travail dangereux. Or l'accord ne prÃ©voit rien pour les aider. Comment tolÃ©rer encore que 14Â 100Â enfants aient perdu la vie Ã  Gaza, qu'ils soient pris au piÃ¨ge d'une guerre sans fin au Proche-Orient et que l'Europe reste silencieuse?\nDepuis cinq ans, nous demandons ici, dans cette AssemblÃ©e, que leur voix soit entendue. Mais pourquoi, alors que les lobbys du fossile peuvent faire entendre leur voix Ã  la COP sur le climat, les enfants ne le peuvent-ils pas? Pourquoi le dialogue europÃ©en sur la politique en faveur de la jeunesse ne s'Ã©tend-il pas Ã  tous les enfants? Il est temps de les Ã©couter.\nChaque commissaire est chargÃ©, dans sa lettre de mission, d'organiser le dialogue europÃ©en sur la politique en faveur de la jeunesse dans les 100Â premiers jours de son mandat. Il faut entendre la voix des enfants pour que l'ensemble des politiques europÃ©ennes aient enfin une approche respectueuse des enfants. C'est la seule maniÃ¨re d'apprÃ©hender tous leurs problÃ¨mes, de les Ã©couter et de bÃ¢tir enfin un monde de paix.",
+      "del:madeBy": {
+        "@id": "participant_8"
+      },
+      "del:timestamp": "2024-11-28T09:25:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_10",
+      "del:text": "Cette situation est une fois de plus un miroir douloureux de l'instrumentalisation, par l'Union europÃ©enne, de la position gÃ©ographique de ses Ãtats membres pour renforcer une politique migratoire forteresse, une politique xÃ©nophobe qui foule aux pieds les droits inaliÃ©nables des enfants, contraints de migrer seuls.\nL'urgence humanitaire est aujourd'hui une crise structurelle. La convention relative aux droits de l'enfant exige que l'intÃ©rÃªt supÃ©rieur de l'enfant soit la prioritÃ© absolue, peu importe l'origine, la couleur de peau ou la religion.\nPour autant, accueillir avec dignitÃ© ne saurait suffire. Nous devons nous attaquer aux causes profondes de l'exil en mettant fin Ã  l'extractivisme et au pillage des ressources africaines qui alimentent crises et inÃ©galitÃ©s. L'Europe porte une responsabilitÃ© historique et doit cesser ses pratiques nÃ©ocoloniales.\nComment l'Union europÃ©enne peut-elle signer des accords lÃ©onins aux consÃ©quences dÃ©sastreuses dans les pays d'origine, tout en s'indignant lorsque les populations qu'elle a dÃ©pouillÃ©es cherchent Ã  survivre, quitte Ã  risquer leur vie en traversant des mers mortelles?",
+      "del:madeBy": {
+        "@id": "participant_9"
+      },
+      "del:timestamp": "2024-11-28T09:26:53"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_11",
+      "del:text": "Dlaczego ideologiczna lewica chce znieczuliÄ dzieci na zagroÅ¼enie, jakim jest pedofilia? Rodzice majÄ prawo powiedzieÄ doÅÄ, a dzieci majÄ prawo do bezpieczeÅstwa. Dzieci potrzebujÄ miÅoÅci, a nie eksperymentÃ³w ideologicznych. Jako matka mÃ³wiÄ wprost: wara od naszych dzieci. âNieâ dla deprawacji. âTakâ dla rodziny.",
+      "del:madeBy": {
+        "@id": "participant_10"
+      },
+      "del:timestamp": "2024-11-28T09:28:27"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_12",
+      "del:text": "196 ÏÏÏÎµÏ Î±ÏÏ ÏÎ·Î½ ÏÏÏÏÎ· ÏÏÎ¹Î³Î¼Î® ÏÏÎ­Î³ÏÎ±ÏÎ±Î½ ÎºÎ±Î¹ ÎµÏÎ¹ÎºÏÏÏÏÎ±Î½ Î±ÏÏÎ®Î½ ÏÎ· ÏÏÎ½Î¸Î®ÎºÎ·, Î³Î¹Î±ÏÎ¯ ÏÎ»Î¿Î¹ Î¼Î±Ï Î±Î½Î±Î³Î½ÏÏÎ¯Î¶Î¿ÏÎ¼Îµ ÏÏÎ¹ ÏÎ± ÏÎ±Î¹Î´Î¹Î¬ Î¼Î¬Ï Î­ÏÎ¿ÏÎ½ Î±Î½Î¬Î³ÎºÎ·, Î­ÏÎ¿ÏÎ½ Î±Î½Î¬Î³ÎºÎ· Î±ÏÏ ÏÎ·Î½ ÏÏÎ¿ÏÏÎ±ÏÎ¯Î± Î¼Î±Ï. ÎÎ±Î¹ ÎµÎ¼ÎµÎ¯Ï, ÏÎ¼ÏÏ, Î­ÏÎ¿ÏÎ¼Îµ Î±Î½Î¬Î³ÎºÎ· Î±ÏÏ ÏÎ± ÏÎ±Î¹Î´Î¹Î¬, Î³Î¹Î±ÏÎ¯ ÏÎ± ÏÎ±Î¹Î´Î¹Î¬ ÎµÎ¯Î½Î±Î¹ Î· Î¶ÏÎ® ÏÎ¿Ï Î¼Î­Î»Î»Î¿Î½ÏÎ¿Ï ÏÏÎ¿ ÏÏÏÎ±.\nÎ£Î®Î¼ÎµÏÎ± ÏÎ¼ÏÏ, 35 ÏÏÏÎ½Î¹Î± Î¼ÎµÏÎ¬ ÏÎ· ÏÏÎ½Î¸Î®ÎºÎ·, Î³Î¯Î½ÎµÏÎ±Î¹ Î¾ÎµÎºÎ¬Î¸Î±ÏÎ¿ ÏÏÏ Î¼Î¯Î± ÏÏÎ¿Î³ÏÎ±ÏÎ® Î´ÎµÎ½ Î±ÏÎºÎµÎ¯ Î¼Î¿Î½Î¬ÏÎ±, Î´ÎµÎ½ ÎºÎ±Î¸Î¹ÏÏÎ¬ Î±ÏÏÎ¿Î½ÏÎ·ÏÎ¿ ÏÏÏ Î¸Î± ÎµÎ¾Î±ÏÏÎ±Î»Î¯ÏÎµÎ¹ ÏÎ± Î´Î¹ÎºÎ±Î¹ÏÎ¼Î±ÏÎ± ÏÏÎ½ ÏÎ±Î¹Î´Î¹ÏÎ½ ÏÎµ ÏÎ»Î¿ ÏÎ¿Î½ ÎºÏÏÎ¼Î¿. ÎÎºÎµÎ¯ Î­Î¾Ï ÏÏÎ¬ÏÏÎ¿ÏÎ½ ÏÎ±Î¹Î´Î¹Î¬ ÏÎ¿Ï ÏÎµÎ¹Î½Î¬Î½Îµ, ÏÎ¿Ï ÎºÎ¹Î½Î´ÏÎ½ÎµÏÎ¿ÏÎ½, ÏÎ¿Ï ÎºÎ±ÎºÎ¿ÏÎ¿Î¹Î¿ÏÎ½ÏÎ±Î¹, ÏÎ¿Ï ÎµÎ³ÎºÎ±ÏÎ±Î»ÎµÎ¯ÏÎ¿Î½ÏÎ±Î¹, ÏÎ¿Ï Î´ÎµÎ½ ÏÎ¬Î½Îµ ÏÏÎ¿Î»ÎµÎ¯Î¿, Î´ÎµÎ½ Î­ÏÎ¿ÏÎ½ ÏÏÎ¯ÏÎ¹, Î´ÎµÎ½ Î­ÏÎ¿ÏÎ½ ÏÎ±ÏÏÎ¯Î´Î±. Î Î±Î¹Î´Î¹Î¬ ÏÎ¿Ï Î´Î¿ÏÎ»ÎµÏÎ¿ÏÎ½, ÏÎ¿Ï Î´ÎµÎ½ Î­ÏÎ¿ÏÎ½ ÏÏÏÏÎ²Î±ÏÎ· ÏÏÎ·Î½ Î¹Î±ÏÏÎ¹ÎºÎ® ÏÎµÏÎ¯Î¸Î±Î»ÏÎ·. Î Î±Î¹Î´Î¹Î¬ ÏÎ¿Ï ÎµÎ¯Î½Î±Î¹ ÎµÎ¸Î¹ÏÎ¼Î­Î½Î± ÏÏÎ¿ Î´Î¹Î±Î´Î¯ÎºÏÏÎ¿ Î±ÏÏ ÏÎ± ÏÎ­ÏÏÎµÏÎ¬ ÏÎ¿ÏÏ ÏÏÏÎ½Î¹Î±. ÎÎºÎµÎ¯ Î­Î¾Ï ÏÏÎ¬ÏÏÎ¿ÏÎ½ Î±ÎºÏÎ¼Î± ÏÎ±Î¹Î´Î¹Î¬ ÎµÎ½ÏÏ ÎºÎ±ÏÏÏÎµÏÎ¿Ï Î¸ÎµÎ¿Ï.\nÎ ÏÏÎ³ÏÏÎ¿Î½Î¿Ï ÏÏÏÏÎ¿Ï Î¶ÏÎ®Ï, Î¿Î¹ Î­Î½Î¿ÏÎ»ÎµÏ ÏÏÎ³ÎºÏÎ¿ÏÏÎµÎ¹Ï, ÎºÎ¬ÏÎ¿Î¹ÎµÏ Î±ÎºÏÎ±Î¯ÎµÏ ÏÎ¿Î»Î¹ÏÎ¹ÏÎ¼Î¹ÎºÎ­Ï ÏÏÎ±ÎºÏÎ¹ÎºÎ­Ï, Î· Î¿Î¹ÎºÎ¿Î½Î¿Î¼Î¹ÎºÎ® Î±ÏÏÎ¬Î¸ÎµÎ¹Î±, Î¿Î¹ ÏÎ±Î¸Î¿Î³Î­Î½ÎµÎ¹ÎµÏ ÏÎ·Ï ÎµÎ½Î®Î»Î¹ÎºÎ·Ï ÎºÎ¿Î¹Î½ÏÎ½Î¯Î±Ï ÎµÎ¯Î½Î±Î¹ ÏÏÎ¬Î³Î¼Î±ÏÎ± Î³Î¹Î± ÏÎ± Î¿ÏÎ¿Î¯Î± ÏÎ± ÏÎ±Î¹Î´Î¹Î¬ Î´ÎµÎ½ ÏÎ­ÏÎ¿ÏÎ½ ÎºÎ±Î¼Î¯Î± Î±ÏÎ¿Î»ÏÏÏÏ ÎµÏÎ¸ÏÎ½Î·, ÎºÎ±Î¹ ÏÎ¼ÏÏ ÏÎ»Î·ÏÏÎ½Î¿ÏÎ½ Î³Î¹Î± Î±ÏÏÎ¬. ÎÎ±Î¹ ÎµÎ³Ï Î±Î½Î±ÏÏÏÎ¹Î­Î¼Î±Î¹, Î±Î½ Î­ÏÎ¸ÎµÎ¹ Î­Î½Î± ÏÎ±Î¹Î´Î¯ ÎºÎ±Î¹ Î¼Î±Ï ÎºÎ¿Î¹ÏÎ¬Î¾ÎµÎ¹ ÏÏÎ± Î¼Î¬ÏÎ¹Î± ÎºÎ±Î¹ Î¼Î±Ï ÏÏÏÎ®ÏÎµÎ¹: Â«ÎÎ¹Î±ÏÎ¯; ÎÎ¹Î±ÏÎ¯ ÏÏÎ¼Î²Î±Î¯Î½Î¿ÏÎ½ ÏÎ»Î± Î±ÏÏÎ¬; ÎÎ¹Î±ÏÎ¯ Î´ÎµÎ½ ÏÎ± Î±ÏÎ¿ÏÏÎ­ÏÎµÏÎµ;Â», ÎµÎ¼ÎµÎ¯Ï ÏÎ¹ Î¸Î± ÏÎ¿ÏÏ Î±ÏÎ±Î½ÏÎ®ÏÎ¿ÏÎ¼Îµ;",
+      "del:madeBy": {
+        "@id": "participant_11"
+      },
+      "del:timestamp": "2024-11-28T09:29:52"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_13",
+      "del:text": "Vi har ansvaret och verktygen fÃ¶r att skapa samhÃ¤llen dÃ¤r alla barn fÃ¥r lika mÃ¶jligheter och dÃ¤r deras rÃ¤ttigheter alltid respekteras, bÃ¥de i verkligheten och pÃ¥ nÃ¤tet. Det Ã¤r vÃ¥r plikt, bÃ¥de nu och fÃ¶r framtiden. Vi som Ã¤ger besluten mÃ¥ste ta det ansvaret.",
+      "del:madeBy": {
+        "@id": "participant_12"
+      },
+      "del:timestamp": "2024-11-28T09:31:29"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_14",
+      "del:text": "La Commission promeut l'agression wokiste contre les fondements de la famille et elle paie des ONG pour nous faire croire que tous les migrants du monde ont un droit inconditionnel Ã  violer les frontiÃ¨res de l'Europe. Le wokisme et l'immigration de masse s'Ã©paulent mutuellement pour dÃ©truire l'avenir de notre Europe.\nLes premiÃ¨res victimes sont les enfants. En France, comme dans chacune de nos nations reprÃ©sentÃ©es dans ce Parlement, nos enfants sont en effet les premiÃ¨res victimes du poison wokiste, cette idÃ©ologie qui veut rÃ©Ã©crire notre histoire et dÃ©truire nos repÃ¨res culturels. Aujourd'hui, les enfants grandissent dans des Ã©coles oÃ¹ nos identitÃ©s nationales sont systÃ©matiquement attaquÃ©es et oÃ¹ on leur apprend Ã  avoir honte d'eux-mÃªmes, Ã  se sentir coupables pour des faits du passÃ© qui ne les concernent en rien.\nCe climat de culpabilisation est inacceptable. Nous refusons que nos enfants soient sacrifiÃ©s sur l'autel du multiculturalisme et du reniement de notre hÃ©ritage. Mener cette bataille culturelle et protÃ©ger nos frontiÃ¨res, c'est aussi protÃ©ger leur avenir.\nLe combat contre l'immigration incontrÃ´lÃ©e est un combat pour nos enfants, pour leur droit Ã  une Ã©ducation de qualitÃ©, mais surtout pour leur droit Ã  Ãªtre fiers de leur identitÃ© nationale, de son histoire et de ses valeurs puisÃ©es dans le creuset de la civilisation europÃ©enne. L'intÃ©rÃªt supÃ©rieur de l'enfant, c'est d'Ãªtre prÃ©servÃ© des mÃ©faits du wokisme et du relativisme culturel.",
+      "del:madeBy": {
+        "@id": "participant_13"
+      },
+      "del:timestamp": "2024-11-28T09:32:44"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_15",
+      "del:text": "Oggi che celebriamo il 35Âº anniversario della Convenzione ONU sui diritti del fanciullo, Ã¨ un pilastro fondamentale, che ha sancito ancora di piÃ¹ come i bambini siano cittadini a pieno titolo e portatori di diritti inalienabili. Ma questo Ã¨ sufficiente? L'Europa deve avere coraggio e lo diciamo oggi, a inizio legislatura.\nDobbiamo rafforzare le norme per garantire una piena sicurezza e diritti uguali per tutti i bambini e anche un ambiente digitale sicuro, dove ognuno sia protetto e possa crescere senza paura. Anche la sicurezza online non Ã¨ un lusso ma Ã¨ un diritto.\nI bambini vivono le nostre comunitÃ  insieme alle loro famiglie, in quel meraviglioso intreccio di generazioni dove il presente convive con la memoria del passato e guarda con speranza al futuro.\nGovernare i passaggi della vita significa proprio questo, affinchÃ© nessun bambino resti indietro e ogni famiglia possa sentirsi parte di un'Europa che non dimentica ma che costruisce. Ecco quindi il nostro compito: pensare in grande pensando ai piÃ¹ piccoli.",
+      "del:madeBy": {
+        "@id": "participant_14"
+      },
+      "del:timestamp": "2024-11-28T09:34:36"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_16",
+      "del:text": "Vi vet att mÃ¥nga barn iÂ dag mÃ¥r dÃ¥ligt. Vi vet att mÃ¥nga utsÃ¤tts fÃ¶r faror â faror pÃ¥ nÃ¤tet, som kanske inte fanns fÃ¶r 35Â Ã¥r sedan. Vi mÃ¥ste skydda vÃ¥ra barn bÃ¤ttre ocksÃ¥ i den digitala miljÃ¶n. HÃ¤r har vi i Europaparlamentet ett alldeles speciellt ansvar.\nVarje barn har ocksÃ¥ rÃ¤tt att gÃ¥ i skola. Vi behÃ¶ver den jÃ¤mlika skolan, dÃ¤r varje barn fÃ¥r vara sig sjÃ¤lv, dÃ¤r man fÃ¥r det stÃ¶d man behÃ¶ver och dÃ¤r man kan se fram emot en utbildning som sedan ger ett jobb. Det Ã¤r till allas vÃ¥r fÃ¶rdel. Varje barn borde ocksÃ¥ ha rÃ¤tt till en hobby.",
+      "del:madeBy": {
+        "@id": "participant_15"
+      },
+      "del:timestamp": "2024-11-28T09:36:01"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_17",
+      "del:text": "Penso alle bambine e ai bambini che muoiono ai nostri confini fuggendo da guerre, persecuzioni e gli impatti devastanti del cambiamento climatico. Penso alle bambine in Afghanistan, il cui diritto allo studio e all'esistenza stessa Ã¨ brutalmente calpestato; alle giovani iraniane e al loro grido di libertÃ  soffocato nelle piazze da un regime autoritario; ai bambini di Gaza e al loro diritto alla vita, non una mera sopravvivenza ma una vita piena, libera dalle bombe, dalla fame e dalla povertÃ .\nPenso ai milioni di bambine e bambini che vivono in povertÃ  assoluta all'interno della nostra Europa: un bambino su dieci in Italia non puÃ² mangiare un pasto proteico al giorno. Ã questa l'Europa che deve fare di piÃ¹. Dobbiamo assicurarci che l'iniziativa come quella delÂ Child Guarantee continui ad essere perseguita e che vi siano messe le risorse necessarie.\nNon ci puÃ² essere austeritÃ  davanti al presente e al futuro delle generazioni piÃ¹ giovani. L'Europa ritroverÃ  se stessa soltanto quando tornerÃ  a pronunciare le parole che l'hanno resa un progetto di speranza: pace, diritti e libertÃ .",
+      "del:madeBy": {
+        "@id": "participant_16"
+      },
+      "del:timestamp": "2024-11-28T09:37:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_18",
+      "del:text": "Â¿Saben, ademÃ¡s, que, segÃºn el ACNUR, el 70Â % de estos niÃ±os y niÃ±as son refugiados? Â¿Y la razÃ³n de esta vergÃ¼enza? El racismo y el odio que han sembrado los partidos antiinmigraciÃ³n que se sientan hoy en este Parlamento y que, ademÃ¡s, son mayorÃ­a y provocan el bloqueo de un reparto justo y solidario por todo el territorio espaÃ±ol, con la complicidad del resto de Europa, que tampoco quiere acogerlos.\nDÃ­ganme ustedes cÃ³mo vamos a explicar esto a nuestros hijos cuando sepan el trato que estamos dando a estos chavales de su misma edad, que simplemente necesitan unas mÃ­nimas condiciones de vida para ser lo que son: niÃ±os y niÃ±as que necesitan soÃ±ar, jugar y tener derechos, como contempla la ConvenciÃ³n, que es precisamente lo que estamos tratando aquÃ­.\nDejen ya de criminalizarlos y de utilizarlos como arma polÃ­tica, con fines electoralistas. Son niÃ±os y niÃ±as. Porque, no lo duden, Europa tendrÃ¡ que dar explicaciones no solo por estos niÃ±os, sino por los cuarenta niÃ±os diarios...\n(la presidenta retira la palabra a la oradora)",
+      "del:madeBy": {
+        "@id": "participant_17"
+      },
+      "del:timestamp": "2024-11-28T09:38:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_19",
+      "del:text": "Alle drei Opfer sind Kinder von Eltern im Prinzip, nur groÃe Kinder. Alle drei kÃ¶nnten ohne die brutale Migrantengewalt noch leben oder unverletzt sein. Niemand braucht eine Koordinatorin fÃ¼r Kinderrechte, solange Millionen von brutalen Killern und MÃ¶rdern ganz ungestÃ¶rt nach Europa einwandern kÃ¶nnen und hier unsere Kinder brutal ermorden, verstÃ¼mmeln oder verletzen.\nDie EU braucht sich nicht um die Sicherheit von Spielzeug zu kÃ¼mmern, solange das Problem von explodierenden Straftaten von jungen Migranten, die sich gerade gegen unsere Kinder richten, besteht. Jede Kriminalstatistik gibt darÃ¼ber erschreckende Auskunft. Das sollten Sie sich auf der linken Seite einmal anschauen. Die EU sollte die millionenfache illegale Migration unterbinden, groÃe Remigrationsprogramme auflegen und unsere Kinder vor den perversen PÃ¤dophilennetzwerken â¦\n(Die PrÃ¤sidentin entzieht dem Redner das Wort.)",
+      "del:madeBy": {
+        "@id": "participant_18"
+      },
+      "del:timestamp": "2024-11-28T09:40:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_20",
+      "del:text": "PandÃ©mia hlboko zasiahla ich duÅ¡evnÃ© zdravie, izolÃ¡cia a strach priniesli ÃºzkosÅ¥ a depresiu. Ale nemÃ´Å¾eme sa donekoneÄna vyhovÃ¡raÅ¥ na pandÃ©miu a na to, Äo priÅ¡lo po pandÃ©mii. MusÃ­me prijaÅ¥ uÅ¾ koneÄne aj nejakÃ© rozhodnutia. MusÃ­me zlepÅ¡iÅ¥ prÃ­stup k zdravotnej starostlivosti, vzdelÃ¡vaniu, vÃ½Å¾ive, ale aj domÃ¡cej pohode a spoloÄenskej pohode. RieÅ¡enie chronickÃ½ch zdravotnÃ½ch problÃ©mov a zabezpeÄenie lepÅ¡ej vÃ½Å¾ivy sÃº nevyhnutnÃ© pre ich zdravotnÃ½ vÃ½voj. Preto aj vÃ­tam, Å¾e Äoskoro, verÃ­m a teda dÃºfam, Å¾e bude samostatnÃ½ vÃ½bor pre zdravie, ktorÃ½ bude rieÅ¡iÅ¥ prÃ¡ve tieto oblasti.\nDovoÄ¾te mi eÅ¡te spomenÃºÅ¥ jednu veÄ¾mi Å¡pecifickÃº tÃ©mu, a to je nÃ¡rast detÃ­ s ochoreniami autistickÃ©ho spektra, ktorÃ© zatiaÄ¾ nie sÃº vÃ´bec v hÄ¾adÃ¡Äiku naÅ¡ich inÅ¡titÃºciÃ­ a ktorÃ½m sa musÃ­me veÄ¾mi dÃ´sledne venovaÅ¥, pretoÅ¾e mnohÃ­ rodiÄia nemajÃº dostatoÄnÃ© prostriedky na to, aby mohli zabezpeÄiÅ¥ tÃ½mto deÅ¥om potrebnÃº starostlivosÅ¥ a aj lekÃ¡rsku starostlivosÅ¥. A v neposlednom rade potrebujeme lekÃ¡rov. Potrebujeme detskÃ½ch psycholÃ³gov, detskÃ½ch psychiatrov (predsedajÃºca preruÅ¡ila reÄnÃ­Äku), bez nich tÃ½mto deÅ¥om nepomÃ´Å¾eme.",
+      "del:madeBy": {
+        "@id": "participant_19"
+      },
+      "del:timestamp": "2024-11-28T09:41:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_21",
+      "del:text": "La exposiciÃ³n de muchos niÃ±os a riesgos de pobreza âun millÃ³n en EspaÃ±aâ y de exclusiÃ³n es una realidad; como es una realidad el abuso que sufren, especialmente las niÃ±as, que son vÃ­ctimas de supuestas prÃ¡cticas culturales que ni son respetables ni son legÃ­timas ni son legales.\nEs una exigencia crear oportunidades mÃ¡s sÃ³lidas a travÃ©s de la educaciÃ³n. Y tenemos nuevos retos: la explotaciÃ³n, en muy diversas modalidades, y el abuso sexual online y offline, que es un gravÃ­simo problema que estÃ¡ creciendo hasta niveles absolutamente inaceptables.Â Porque es inaceptable tambiÃ©n que, mientras este Parlamento alcanzÃ³ en el Ãºltimo mandato un consenso muy amplio sobre el Reglamento para la prevenciÃ³n de los contenidos de abuso sexual infantil en la red, los Estados miembros no han sido capaces, todavÃ­a, de alcanzar una posiciÃ³n comÃºn que nos permita iniciar las negociaciones. Es una vergÃ¼enza y es inexplicable: de ahÃ­ mi llamamiento.\nEn esta tribuna se habla mucho de futuro. Pues bien, cuando hablemos de futuro deberÃ­amos recordar que el futuro son, precisamente, nuestros niÃ±os y nuestras niÃ±as.",
+      "del:madeBy": {
+        "@id": "participant_20"
+      },
+      "del:timestamp": "2024-11-28T09:43:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_22",
+      "del:text": "Abbiamo sentito i colleghi dire: il 25% vive a rischio povertÃ  e a rischio emarginazione sociale. E allora povertÃ  ed emarginazione significano: alto tasso di evasione scolastica, povertÃ  culturale, analfabetismo di ritorno, cioÃ¨ il nulla per il futuro di queste generazioni.\nAllora dobbiamo fare di piÃ¹ come Europa: dobbiamo intervenire concretamente nella vita dei bambini e trasmettere loro regole e valori sani come puÃ² fare per esempio lo sport.\nNon c'Ã¨ tempo da perdere. I bambini delle nostre periferie hanno il diritto di sognare e cambiare il loro futuro e l'Unione europea deve sostenerli e porre i loro diritti al centro di qualsiasi azione politica.",
+      "del:madeBy": {
+        "@id": "participant_21"
+      },
+      "del:timestamp": "2024-11-28T09:45:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_23",
+      "del:text": "EzenfelÃ¼l MagyarorszÃ¡g EurÃ³pa legszigorÃºbb gyermekvÃ©delmi Ã©s pedofilellenes tÃ¶rvÃ©nyÃ©t fogadta el. A szÃ¼lÅk mellett Ã¡llunk. A pedofil bÅ±ncselekmÃ©nyek nem Ã©vÃ¼lnek el. A szÃ¼lÅk dÃ¶ntsenek arrÃ³l, hogy a szexualitÃ¡ssal foglalkozÃ³ tartalmakkal mikor Ã©s hogyan talÃ¡lkozzanak a gyerekeik. A digitÃ¡lis eszkÃ¶zÃ¶k terjedÃ©se miatt ez egyre nehezebb Ã©s egyre fontosabb kÃ©rdÃ©s. A magyar Ã¡llam vÃ©di a gyermekek szÃ¼letÃ©si nemÃ©nek megfelelÅ Ã¶nazonossÃ¡ghoz valÃ³ jogÃ¡t, vagyis megvÃ©djÃ¼k Åket a transzgender ideolÃ³gia borzalmaitÃ³l. EzÃ©rt azonban nem elismerÃ©st kaptunk, hanem pert indÃ­tott ellenÃ¼nk az EurÃ³pai BizottsÃ¡g. Nem fogjuk hagyni magunkat, meg fogjuk vÃ©deni a magyar csalÃ¡dokat Ã©s a gyerekeket.",
+      "del:madeBy": {
+        "@id": "participant_22"
+      },
+      "del:timestamp": "2024-11-28T09:46:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_24",
+      "del:text": "Unde am greÈit ca europeni, de nu am reuÈit sÄ eradicÄm sÄrÄcia Ã®n Europa? Cum de guvernele naÈionale nu au prioritizat nevoile copiilor Èi nu au respectat ConvenÈia ONU? De ce nu stimulÄm financiar familiile ale cÄror copii au rezultate remarcabile la Ã®nvÄÈÄturÄ, astfel Ã®ncÃ¢t sÄ Ã®ncurajÄm copiii sÄ continue Ècoala Èi sÄ combatem eficient abandonul Ècolar? IatÄ doar cÃ¢teva Ã®ntrebÄri pentru ale cÄror rÄspunsuri ar fi bine sÄ nu mai treacÄ Ã®ncÄ 35 de ani.",
+      "del:madeBy": {
+        "@id": "participant_23"
+      },
+      "del:timestamp": "2024-11-28T09:48:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_25",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_24"
+      },
+      "del:timestamp": "2024-11-28T09:49:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_26",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_25"
+      },
+      "del:timestamp": "2024-11-28T09:50:54"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_27",
+      "del:text": "Î ÏÏÎ¼Î²Î±ÏÎ· Î´ÎµÎ½ ÎµÎ¯Î½Î±Î¹ Î¼ÏÎ½Î¿ Î­Î½Î± Î­Î³Î³ÏÎ±ÏÎ¿. ÎÎ¯Î½Î±Î¹ Î¼Î¹Î± Î­ÎºÎºÎ»Î·ÏÎ· Î³Î¹Î± Î´ÏÎ¬ÏÎ· ÏÎµ ÏÎ»Î¿ÏÏ Î¼Î±Ï, Î³Î¹Î± Î½Î± ÏÏÎ±Î¸Î¿ÏÎ¼Îµ ÏÏÎµÏÎ±ÏÏÎ¹ÏÏÎ­Ï ÎºÎ±Î¹ ÏÏÎ¿ÏÏÎ¬ÏÎµÏ ÏÏÎ½ ÏÎ±Î¹Î´Î¹ÏÎ½, ÏÏÎ¿Ï ÎºÎ±Î¹ Î±Î½ Î²ÏÎ¯ÏÎºÎ¿Î½ÏÎ±Î¹, Î±ÏÏ ÏÏÎ¿Ï ÎºÎ±Î¹ Î±Î½ ÏÏÎ¿Î­ÏÏÎ¿Î½ÏÎ±Î¹. ÎÎ¹Î± ÏÎ±ÏÎ¬Î´ÎµÎ¹Î³Î¼Î±, ÏÏÎ·Î½ Î Î±Î»Î±Î¹ÏÏÎ¯Î½Î·, Î¼ÎµÏÎ¬ Î±ÏÏ Î­Î½Î±Î½ ÏÏÏÎ½Î¿ Î³ÎµÎ½Î¿ÎºÏÎ¿Î½Î¯Î±Ï ÎºÎ±Î¹ Î±Î½ÎµÎ¯ÏÏÏÎ·Ï Î²Î±ÏÎ²Î±ÏÏÏÎ·ÏÎ±Ï, ÏÎ± ÏÎ±Î¹Î´Î¹Î¬ ÏÏÎµÏÎ¿ÏÎ½ÏÎ±Î¹ ÏÎ± Î²Î±ÏÎ¹ÎºÎ¬ ÏÎ¿ÏÏ Î´Î¹ÎºÎ±Î¹ÏÎ¼Î±ÏÎ±, ÏÎ±Î³Î¹Î´ÎµÏÎ¼Î­Î½Î± ÏÎµ ÎºÏÎºÎ»Î¿ÏÏ ÏÏÏÏÎµÎ¹Î±Ï, ÏÎ¿Î»Î­Î¼ÏÎ½ ÎºÎ±Î¹ Î±Î½Î±Î»ÏÎ±Î²Î·ÏÎ¹ÏÎ¼Î¿Ï.\nÎÎ¯Î½Î±Î¹ ÎºÎ±Î¸Î®ÎºÎ¿Î½ Î¼Î±Ï, Î»Î¿Î¹ÏÏÎ½, Î½Î± ÎµÎ¾Î±ÏÏÎ±Î»Î¯ÏÎ¿ÏÎ¼Îµ ÏÏÎ¹ Î¸Î± Î´Î¿Î¸ÎµÎ¯ Î· ÎµÏÎºÎ±Î¹ÏÎ¯Î± ÏÎµ ÏÎ»Î± ÏÎ± ÏÎ±Î¹Î´Î¹Î¬ Î½Î± Î¶Î®ÏÎ¿ÏÎ½ ÎºÎ±Î¹ Î½Î± ÏÎµÏÏÏÎ¿ÏÎ½ ÏÎ± ÏÎ½ÎµÎ¹ÏÎ¬ ÏÎ¿ÏÏ. Î ÏÏÎ¿ÏÏÎ±ÏÎ¯Î± ÏÏÎ½ ÏÎ±Î¹Î´Î¹ÏÎ½ Î´ÎµÎ½ ÎµÎ¯Î½Î±Î¹ Î±ÏÎ»ÏÏ Î¼Î¹Î± Î·Î¸Î¹ÎºÎ® ÏÏÎ¿ÏÏÎ­ÏÏÎ·. ÎÎ¯Î½Î±Î¹ Î¸ÎµÎ¼ÎµÎ»Î¹ÏÎ´ÎµÏ Î±Î½Î¸ÏÏÏÎ¹Î½Î¿ Î´Î¹ÎºÎ±Î¯ÏÎ¼Î±.",
+      "del:madeBy": {
+        "@id": "participant_26"
+      },
+      "del:timestamp": "2024-11-28T09:52:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_28",
+      "del:text": "In den Niederlanden sind im Rahmen der sogenannten KinderzuschlagsaffÃ¤re fast 2Â 000 Kinder aus Familien genommen worden. Ihr Verbleib ist bis heute ungeklÃ¤rt. Auch wenn den Eltern hinterher mitgeteilt wurde, dass die ganze staatlich konzertierte Aktion zu Unrecht geschehen ist â die Kinder haben ihre Eltern bis heute nicht wiedergesehen.Â Oder schauen wir nach Norwegen. Die staatlichen BehÃ¶rden haben dort mittlerweile mehr als 7Â Prozent aller Kinder aus Familien genommen, in mehr als 70Â Prozent aller FÃ¤lle ohne Zustimmung der Eltern. Hier â in Norwegen â kann es schon ausreichen, dass die Kinder in traditionellen Geschlechterrollen erzogen wurden oder zum Beispiel kein eigenes Kinderzimmer haben.Â Auch in Deutschland leben mehr als 65Â 000 Kinder nicht bei ihren Eltern, und die Tendenz ist steigend. Das Selbstbestimmungsgesetz, welches in Deutschland zum 1.Â November in Kraft getreten ist, und die angeheizte Diskussion um Kinderrechte im Grundgesetz werden diese Situation nur noch weiter verschÃ¤rfen.\nJeder von uns will, dass Kinder behÃ¼tet und beschÃ¼tzt aufwachsen kÃ¶nnen. Und nur da, wo das nicht der Fall ist, darf der Staat eingreifen. In allen anderen FÃ¤llen gilt: HÃ¤nde weg von unseren Kindern! Kindererziehung ist ureigenste Elternangelegenheit. StÃ¤rken wir unsere Familien, schaffen wir die materiellen und ideellen Voraussetzungen, damit Kinder bei ihren Eltern bleiben kÃ¶nnen, und wehren wir uns gegen die Ãbergriffigkeit des Staates, der in der Erziehung unserer Kinder nichts, aber auch gar nichts verloren hat.\n(Die Rednerin ist damit einverstanden, auf eine Frage nach dem Verfahren der âblauen Karteâ zu antworten.)",
+      "del:madeBy": {
+        "@id": "participant_27"
+      },
+      "del:timestamp": "2024-11-28T09:53:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_29",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_11"
+      },
+      "del:timestamp": "2024-11-28T09:55:53"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_30",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_27"
+      },
+      "del:timestamp": "2024-11-28T09:57:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_31",
+      "del:text": "TridsaÅ¥pÃ¤Å¥ rokov Dohovoru o prÃ¡vach dieÅ¥aÅ¥a je alarmujÃºcim vÃ½roÄÃ­m v zÃ¡ujme detÃ­. Teda Ãnia ako drÅ¾iteÄ¾ka Nobelovej ceny za mier musÃ­ namiesto zbranÃ­ posielaÅ¥ diplomatov a hÄ¾adaÅ¥ hoci aj bolestivÃ© kompromisy v prospech mieru.",
+      "del:madeBy": {
+        "@id": "participant_28"
+      },
+      "del:timestamp": "2024-11-28T09:58:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_32",
+      "del:text": "Allura aÄ§na rridu niÅ¼guraw kwalitÃ  taâ Ä§ajja aÄ§jar gÄ§alihom, preÅ¼ent u futur aÄ§jar gÄ§alihom. GÄ§aliex il-kwalitÃ  tat-trobbija tagÄ§hom tindika l-kwalitÃ  tal-kumplament taâ Ä§ajjithom. GÄ§aliex il-faqar jintiret u jaffettwa kull aspett tal-iÅ¼vilupp tagÄ§hom. GÄ§al 35Â sena kellna l-Konvenzjoni tan-Nazzjonijiet Uniti dwar id-Drittijiet tat-Tfal. Pass storiku, u wieÄ§ed li poÄ¡Ä¡a t-tfal fiÄ-Äentru tal-politika soÄjali tagÄ§na.\nImma minkejja dan, minkejja l-progress li gÄ§amilna, xorta hemm persentaÄ¡Ä¡ kbir taâ tfal fl-Unjoni Ewropea li jgÄ§ixu fil-faqar. Iqabbduk il-bard l-istatistiÄi mill-Eurochild, li juru li miljuni taâ tfal, miljuni ta' tfal, fl-Unjoni Ewropea jgÄ§ixu fil-faqar. JeÄ§tieÄ¡ li d-drittijiet tat-tfal ma jibqgÄ§ux biss miktubin fuq il-karta, imma jsiru realtÃ .\nDana, gÄ§amilna Ä§afna favur it-tfal: il-Work-Life Balance, pereÅ¼empju, se tgÄ§in fit-trobbija tagÄ§hom. GÄ§andna Ä-Child Guarantee, imma jeÄ§tieÄ¡ li nsaÄ§Ä§uha. GÄ§adna biÄ-Äans. Kuljum li ninjoraw is-suÄ¡Ä¡ett tat-tfal, qegÄ§din ninjoraw ukoll il-preÅ¼ent u l-futur taâ pajjiÅ¼na.",
+      "del:madeBy": {
+        "@id": "participant_29"
+      },
+      "del:timestamp": "2024-11-28T09:59:27"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_33",
+      "del:text": "L-Unjoni Ewropea gÄ§amlet passi ta' Ä¡gant fl-avvanz tad-drittijiet tat-tfal, u nifraÄ§ lill-Kummissarju Malti Glenn Micallef gÄ§all-impenn tiegÄ§u sabiex jibni fuq dawn il-pedamenti. L-impenn tiegÄ§u lejn il-Ä¡ustizzja interÄ¡enerazzjonali, is-sigurtÃ  tat-tfal fid-dinja diÄ¡itali, il-Ä¡lieda kontra s-cyberbullying huma kruÄjali f'dinja iÅ¼jed dipendenti fuq it-teknoloÄ¡iji. Madankollu, strateÄ¡iji b'saÄ§Ä§ithom mhumiex biÅ¼Å¼ejjed. L-istrateÄ¡iji jridu finanzjament, implimentazzjoni u gÄ§andhom jiÄ¡u eÅ¼egwiti.\nIrridu nimpenjaw ruÄ§na dejjem aktar sabiex nassiguraw edukazzjoni b'xejn u aÄÄessibbli gÄ§al kulÄ§add, nikkumbattu l-faqar u nipprijoritizzaw is-saÄ§Ä§a mentali tat-tfal u l-benesseri tagÄ§hom fl-isfera diÄ¡itali. Flimkien irridu nkomplu nqiegÄ§du d-drittijiet tat-tfal fiÄ-Äentru tal-politika tal-Unjoni Ewropea u niÅ¼guraw li d-deÄiÅ¼jonijiet meÄ§uda llum, joÄ§olqu futur aÄ§jar u aktar sigur gÄ§all-Ä¡enerazzjonijiet Ä¡ejjiena.\nIl-vuÄi tat-tfal trid tiÄ¡i mismugÄ§a. Il-bÅ¼onnijiet tagÄ§hom iridu jingÄ§ataw prijoritÃ  u d-drittijiet tagÄ§hom iridu jiÄ¡u ssalvagwardjati dejjem. Ejja naÄ¡ixxu b'urÄ¡enza, u nikkommettu ruÄ§na li noÄ§olqu Ewropa fejn kull tifel u tifla jkollhom l-istess suÄÄess.",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-11-28T10:01:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_34",
+      "del:text": "Pourtant, nous observons aujourd'hui dans ce domaine des initiatives inquiÃ©tantes, parfois encouragÃ©es par des institutions publiques qui tendent Ã  promouvoir une prÃ©tendue Ã©ducation Ã  la sexualitÃ©, et ceci dÃ¨s le plus jeune Ã¢ge. Ainsi, sous couvert de sensibiliser et de lutter contre les discriminations, certaines de ces actions risquent de banaliser des contenus inadaptÃ©s ou de briser le cadre de la protection que nous devons garantir aux enfants. Ces pratiques, trÃ¨s loin d'Ãªtre Ã©ducatives en rÃ©alitÃ©, peuvent dÃ¨s lors Ãªtre assimilÃ©es Ã  une forme d'exploitation et de manipulation idÃ©ologique. Or la sexualitÃ© des enfants ne doit Ãªtre en aucun cas instrumentalisÃ©e.\nAlors que fait la Commission europÃ©enne pour garantir que la prÃ©tendue Ã©ducation Ã  la sexualitÃ© reste adaptÃ©e Ã  l'Ã¢ge des enfants et respectueuse de leur innocence? Rien. Absolument rien. Que fait la Commission pour s'assurer qu'aucune initiative scabreuse ne puisse porter atteinte au dÃ©veloppement sain des enfants ou Ã  leur intÃ©gritÃ©? Rien. LÃ  encore, absolument rien. Et que fait la Commission pour s'assurer que ces dÃ©rives ne soient pas financÃ©es ou promues par des fonds europÃ©ens? Rien. Encore et toujours. Absolument rien.",
+      "del:madeBy": {
+        "@id": "participant_31"
+      },
+      "del:timestamp": "2024-11-28T10:02:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_35",
+      "del:text": "Nos enfants, le futur de notre continent, font face aujourd'hui Ã  de nouvelles menaces, parfois importÃ©es, parfois niÃ©es, mais bien prÃ©sentes. Menaces de violences physiques d'abord, avec une immigration qui, en France, a dÃ©jÃ  tuÃ© Lola, Thomas, Mathis, Philippine et tant d'autres. Menaces de violences sexuelles, ensuite, avec l'inquiÃ©tant dÃ©veloppement de l'exploitation sexuelle des mineurs en ligne. Le parcours des prÃ©dateurs sexuels commence d'ailleurs trÃ¨s souvent par la consommation de pornographie et c'est un sujet qu'il faut oser affronter.\nMenaces aussi sur l'Ã©ducation, avec des programmes scolaires sur la vie affective et sexuelle qui se substituent aux parents, aux familles et sexualisent les enfants. Menaces enfin du transgenrisme militant soutenu par la Commission europÃ©enne dans son programme LGBT. Les pratiques des opÃ©rations de changement de sexe pour les mineurs, qui sont de vÃ©ritables mutilations, doivent Ãªtre bannies de l'Union europÃ©enne. Et pour le futur de nos nations, nous serons intraitables...Â\n(La PrÃ©sidente retire la parole Ã  l'oratrice)",
+      "del:madeBy": {
+        "@id": "participant_32"
+      },
+      "del:timestamp": "2024-11-28T10:04:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_36",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_33"
+      },
+      "del:timestamp": "2024-11-28T10:06:09"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_37",
+      "del:text": "Deshalb werden wir auch nicht zulassen, wenn Kinder instrumentalisiert werden von den extremen Rechten, um eine Ideologie â ja, da ist die Ideologie â durchzusetzen. Es ist unsere Aufgabe, hinzusehen und die Kinder zu beschÃ¼tzen vor Einsamkeit, vor psychischen Belastungen, und sie vor negativem Einfluss auch von sozialen Medien zu bewahren, sie zu stÃ¤rken, zu verantwortungsvollen, kritischen und selbstbewussten Menschen auszubilden. Wir mÃ¼ssen ihnen auf AugenhÃ¶he begegnen, ihren Sorgen zuhÃ¶ren und ihre Stimme ernst nehmen.",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2024-11-28T10:07:28"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_38",
+      "del:text": "La semana pasada el Consejo de Europa dejaba en evidencia a mi paÃ­s, a EspaÃ±a, porque decÃ­a que hay un maltrato institucional contra las madres protectoras; madres que, por proteger a los niÃ±os y niÃ±as, son criminalizadas y perseguidas por parte de la justicia. Desde aquÃ­, mi reconocimiento y apoyo a esas madres, a esos niÃ±os y a esas niÃ±as.\nLa justicia debe dejar de ser adultocÃ©ntrica y patriarcal. El derecho a la escucha debe ser un derecho garantizado. Y un maltratador nunca es un buen padre.",
+      "del:madeBy": {
+        "@id": "participant_35"
+      },
+      "del:timestamp": "2024-11-28T10:08:44"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_39",
+      "del:text": "A UniÃ£o Europeia deve assumir um papel de lideranÃ§a. Ã urgente avanÃ§ar com uma estratÃ©gia forte e clara, focada na prevenÃ§Ã£o, na formaÃ§Ã£o dos profissionais que trabalham com crianÃ§as e no reforÃ§o dos sistemas de proteÃ§Ã£o infantil. Os Estados-Membros tÃªm de trabalhar juntos para garantir que todas as crianÃ§as, independentemente da sua origem, tenham acesso a um ambiente seguro, a uma educaÃ§Ã£o de qualidade e a serviÃ§os essenciais.Â Proteger os seus direitos e garantir o seu bemâestar nÃ£o Ã© apenas um dever moral, Ã© uma aposta no futuro de todos nÃ³s. NÃ£o podemos esperar. Ã tempo de agir.",
+      "del:madeBy": {
+        "@id": "participant_36"
+      },
+      "del:timestamp": "2024-11-28T10:10:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_40",
+      "del:text": "Auch im Internet brauchen unsere Kinder mehr Schutz. Lange Nutzungsdauer sozialer Medien gefÃ¤hrdet die psychische Gesundheit unserer Jugendlichen. Die geplante EUâUntersuchung zu den Auswirkungen von sozialen Medien begrÃ¼Ãe ich. Dazu allerdings brauchen wir einen verbindlichen Aktionsplan gegen Cybermobbing. Wir mÃ¼ssen die EUâStrategie fÃ¼r Kinderrechte mit ausreichend Mitteln ausstatten und konsequent in allen Mitgliedstaaten umsetzen, ebenso eine Strategie zur Generationengerechtigkeit, damit Familienarmut entschieden bekÃ¤mpft werden kann. Unsere Kinder mÃ¼ssen sicher und gerecht aufwachsen kÃ¶nnen. Wir tragen die Verantwortung, ihre Rechte konsequent zu schÃ¼tzen und fÃ¼r Chancengleichheit zu sorgen.",
+      "del:madeBy": {
+        "@id": "participant_37"
+      },
+      "del:timestamp": "2024-11-28T10:11:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_41",
+      "del:text": "Onderzoek toont aan dat kinderen die voldoende tijd doorbrengen met hun ouders emotioneel sterker en gelukkiger zijn. Tegelijkertijd laten bedrijven met tevreden werknemers zien dat ze productiever en succesvoller zijn. Het creÃ«ren van een evenwichtige omgeving waarin werk en gezin elkaar aanvullen in plaats van tegenwerken, is dus geen luxe, maar een noodzaak. Het hoeft dus geen ofâofâverhaal te zijn, het kan perfect een enâenâverhaal zijn. Een gezonde balans tussen werk en gezin komt dus iedereen ten goede. En het is aan ons om hiervoor te ijveren. Laat kinderen opgroeien in optimale omstandigheden en genieten van het best mogelijke onderwijs. Dat is de beste garantie voor een bloeiende toekomst voor ons volk.",
+      "del:madeBy": {
+        "@id": "participant_38"
+      },
+      "del:timestamp": "2024-11-28T10:13:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_42",
+      "del:text": "Eppure sono tante le situazioni in cui le loro opinioni non vengono esaminate, quasi negate, soprattutto in contesti sociali o legali dove sono spesso percepiti come passivi destinatari di decisioni anzichÃ© attori con diritti e idee proprie.\nRafforziamo questo diritto. Assicuriamoci che l'ascolto allora, diventi davvero una pratica concreta e diffusa nella vita dei nostri bambini. Diamo voce e ascolto ai nostri bambini, impariamo a rispettarli, rivolgiamoci con parole educate e poi, colleghi, abbassiamoci alla loro altezza per guardarli sempre negli occhi.",
+      "del:madeBy": {
+        "@id": "participant_39"
+      },
+      "del:timestamp": "2024-11-28T10:14:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_43",
+      "del:text": "And still, we have Member States that do not allow for children to access and inherit their parents' citizenship because their parents belong to the same sex.\nSo, the new Commission will have a lot to do when it comes to the issue of children's rights. We are not done, even if we have for 35 years been talking about children's rights and the Convention of the Rights of the Child. But we cannot talk about the convention about the rights of the child without also addressing the situation in Gaza and the horrendous amount of children who have been killed. It is time to discharge the Association Agreement with Israel, to adhere to the ICC decision of the arrest warrant and it is time to actually treat all children equally.",
+      "del:madeBy": {
+        "@id": "participant_40"
+      },
+      "del:timestamp": "2024-11-28T10:16:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_44",
+      "del:text": "El 98Â % de estas niÃ±as ha sufrido violencia sexual en su camino. Son niÃ±os y niÃ±as que huyen de las guerras y que buscan refugio, y se sienten abandonados por Europa; niÃ±os y niÃ±as que, como hemos visto en este estrado, los seÃ±ores y las seÃ±oras de la extrema derecha criminalizan, seÃ±alan y buscan que sean el chivo expiatorio de sus odios.\nSeÃ±orÃ­a del Partido Popular, usted ha preguntado antes, con muy buenas palabras, Â«Â¿quÃ© podemos hacer para garantizar los derechos de los niÃ±os?Â».\nPrimero, no pactar con aquellos que los criminalizan y los seÃ±alan con su odio; segundo, cumplir con los artÃ­culos 22 y 39 de la ConvenciÃ³n de los derechos de la infancia y hacer, por ejemplo, lo mismo que hemos hecho con los niÃ±os de Ucrania tambiÃ©n con los niÃ±os que huyen de Ãfrica y con los niÃ±os que huyen de Oriente PrÃ³ximo; y tercero, decir aquÃ­, de una vez por todas, que donde mÃ¡s se estÃ¡n vulnerando los derechos de los niÃ±os es en Palestina: en ese genocidio que hay que parar de una vez por todas.\nQuiero acabar diciendo que sÃ­, tenemos que conmemorar el DÃ­a Mundial de la Infancia, pero cumpliendo sus derechos.",
+      "del:madeBy": {
+        "@id": "participant_41"
+      },
+      "del:timestamp": "2024-11-28T10:17:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_45",
+      "del:text": "Ã preciso erradicar a pobreza dos pais para que ela nÃ£o atinja tambÃ©m as crianÃ§as, garantindo o trabalho com direitos e salÃ¡rios justos, o reforÃ§o das licenÃ§as de parentalidade e de amamentaÃ§Ã£o ou a universalizaÃ§Ã£o e reforÃ§o do abono de famÃ­lia. Ã preciso aumentar o investimento em serviÃ§os de saÃºde e educaÃ§Ã£o universais, pÃºblicos e de qualidade, aumentar a oferta pÃºblica e universal de creches e educaÃ§Ã£o prÃ©-escolar, garantir condiÃ§Ãµes dignas de habitaÃ§Ã£o, uma alimentaÃ§Ã£o equilibrada e transportes acessÃ­veis.\nPara que cresÃ§am felizes, Ã© preciso combater as discriminaÃ§Ãµes e violÃªncias de que sÃ£o vÃ­timas e garantir-lhes efetivo direito ao lazer e tempo livre, a receber cuidados no meio familiar. Ã preciso ouvir as crianÃ§as e dar-lhes efetivamente a possibilidade de participarem nas decisÃµes que as afetam. O caminho Ã© longo, mas Ã© um caminho que precisamos de percorrer.",
+      "del:madeBy": {
+        "@id": "participant_42"
+      },
+      "del:timestamp": "2024-11-28T10:18:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_46",
+      "del:text": "En Europe, 30Â % des mineurs de moins de 12Â ans ont dÃ©jÃ  Ã©tÃ© exposÃ©s Ã  des contenus pornographiques, 80Â % pour les moins de 17Â ans. Ces contenus laissent aujourd'huiÂ â les psychologues le disent, ils l'ont dit ici mÃªme dans un colloque que nous avons organisÃ© au Parlement europÃ©enÂ â, ces expositions, ces images, ces contenus laissent des traces indÃ©lÃ©biles chez beaucoup d'entre eux.\nAujourd'hui, mÃªme les Ãtats qui, dans notre Union europÃ©enne, voudraient protÃ©ger les enfants des plateformes qui font leurs affaires sur la destruction de leur vie affective en sont incapables, car ces plateformes se dÃ©fendent en s'abritant derriÃ¨re le droit europÃ©en pour pouvoir continuer leurs activitÃ©s criminelles.\nNous le disons, cela ne peut plus Ãªtre, et c'est la raison pour laquelle j'ai proposÃ©, dans le texte qui viendra sur la protection des enfants contre les abus sexuels, d'inclure l'exposition Ã  la pornographie comme un abus sexuel, et que le fait que ces plateformes ne mettent pas en Åuvre les verrous pourtant existants pour protÃ©ger les enfants devrait Ãªtre considÃ©rÃ© comme le crime que cela est.\nChers collÃ¨gues, nous avons le devoir d'avancer ensemble sur ce sujet pour que le droit europÃ©en ne soit plus le bouclier derriÃ¨re lequel s'abritent ceux qui mettent en danger l'enfance et l'esprit d'enfance, son innocence, son Ã©quilibre et la prÃ©paration des adultes de demain.\nBernanos Ã©crivait que chacun devra se justifier aux yeux de l'enfant qu'il fut. Je pense que notre devoir, et ce sera, je l'espÃ¨re, un combat commun, est de dÃ©fendre ensemble cet esprit d'enfance. C'est notre engagement envers l'avenir et les gÃ©nÃ©rations futures.",
+      "del:madeBy": {
+        "@id": "participant_43"
+      },
+      "del:timestamp": "2024-11-28T10:20:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_47",
+      "del:text": "35 years later, we must continue strengthening these children's rights here in Europe. Therefore, comprehensive and age-adapted sexuality and relationship education is an essential tool to prevent sexual abuse, paedophilia and violence, and it is critical for the health of children and young people.\nIn a world where sexual abuse, gender-based violence, unwanted pregnancies, AIDS and STDs pose a risk to the well-being of young people, education becomes a very powerful instrument. However, despite the clear evidence of the benefits of sexuality education, it is still challenged.\nDear colleagues, the health and well-being of children cannot be politicised. It is not about ideology, it is about human rights. And together, we need to fight for a more resilient society without leaving behind vulnerable groups like children living with disabilities, LGBTI young people, rainbow families, refugee and migrant children. Children are our future, but let's not forget they are also our present.",
+      "del:madeBy": {
+        "@id": "participant_44"
+      },
+      "del:timestamp": "2024-11-28T10:22:02"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_48",
+      "del:text": "Chaque annÃ©e, en Europe, environ 250Â 000Â enfants disparaissent. Des disparitions souvent facilitÃ©es par la crise migratoire. EnÂ 2020, Europol signalait la disparition de prÃ¨s de 10Â 000Â enfants migrants non accompagnÃ©s, vulnÃ©rables aux rÃ©seaux criminels spÃ©cialisÃ©s dans le trafic d'Ãªtres humains.\nChers collÃ¨gues, l'immigration, c'est aussi cet aspect, que vous faites semblant de ne pas voir. En France, 45Â 000Â signalements d'enfants disparus ont Ã©tÃ© enregistrÃ©s enÂ 2021, alimentant les trafics oÃ¹ l'Europe est Ã  la fois un lieu de passage, mais surtout un marchÃ© de victimes.\nUn autre flÃ©au, la pÃ©dopornographie, s'aggrave, avec plus de 85Â millions de fichiers signalÃ©s enÂ 2021. Des rÃ©seaux internationaux exploitent les plateformes numÃ©riques et le darknet pour diffuser ces contenus. Le silence autour de ces crimes doit Ãªtre au cÅur de nos discussions, appelant Ã  des lois plus strictes et Ã  une coopÃ©ration internationale renforcÃ©e.\nEn tant que maire et dÃ©putÃ©e, j'appelle Ã  une mobilisation collective, qui est essentielle pour protÃ©ger les enfants, briser le cycle de la violence et garantir leurs droits fondamentaux. Parents ou non, nous sommes tous responsables des enfants en Europe.",
+      "del:madeBy": {
+        "@id": "participant_45"
+      },
+      "del:timestamp": "2024-11-28T10:23:15"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_49",
+      "del:text": "When I was a kid, I thought that I'm a pirate. Thank God my parents did not let me cut off my arm or poke out my eye. What you're doing, what your promotion and your ideology does to the children is: 'Let's cut off your genitals. Now we're going to pretend that you're a girl.' That is why I'm going to fight your sick leftist ideology. I'm going to fight for the right of our children. I'm going to defeat you. And I'm going to make sure that your sick leftist ideology is gone forever. So help me God.",
+      "del:madeBy": {
+        "@id": "participant_46"
+      },
+      "del:timestamp": "2024-11-28T10:24:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_50",
+      "del:text": "We need to tackle serious issues such as child poverty, child sexual abuse and the protection of children online. While I commend the vital work of the Intergroup, the EU must do a lot more. We need a dedicated forum to amplify children's voices and â I would argue â a dedicated committee to children.\nWe also need to ensure that children's rights are actually fully realised and they do not become endless reports gathering dust on shelves. We need to ensure that action is taken.\nI also want to reference the situation in Palestine, because we cannot speak about children without speaking about the horrific situation that they find themselves in. How can the EU seriously claim to champion children's rights while refusing to suspend the Association Agreement with Israel? How can we talk about children's rights when Israeli bombs rain down on Gaza and children burn alive in tents? Every single child matters, no matter where they are born or where they come from. And every single child deserves the same rights, protections and opportunities.",
+      "del:madeBy": {
+        "@id": "participant_47"
+      },
+      "del:timestamp": "2024-11-28T10:25:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_51",
+      "del:text": "As European parliamentary Members, we must make decisive actions to take inspiration and enhance our own projects in our Member States. And we have to use our development projects to support the needs of children, especially in countries where living standards are very low. We must recognise the importance of EU initiatives such as the European Child Guarantee.\nLet us move forward with determination to fulfil our obligations to the children. Together we have to work for a future where every child's rights are respected.",
+      "del:madeBy": {
+        "@id": "participant_48"
+      },
+      "del:timestamp": "2024-11-28T10:27:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_52",
+      "del:text": "While all Member States have ratified the convention, we must move from words to actions. We need to implement an EU-wide strategy to prevent child recruitment into organised crime; hold social media platforms accountable to ensure we protect children from online sexual abuse and recruitment, and ensure that all Member States provide provides housing, education, healthcare and basic needs for all children so that achieving one's dreams is not dependent on parental welfare.\nAnd finally, I want to say to the far right here, there is one sick ideology in here, and that is your ideology that is depriving so many children their right to be themselves, that even leads to...\n(The President cut off the speaker)",
+      "del:madeBy": {
+        "@id": "participant_49"
+      },
+      "del:timestamp": "2024-11-28T10:28:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_53",
+      "del:text": "Le bien-Ãªtre et la rÃ©ussite des enfants placÃ©s devraient Ãªtre l'une des prioritÃ©s de l'Ãtat, mais ce n'est pas le cas. Ces enfants sont les grands oubliÃ©s. Pourtant, les budgets dÃ©diÃ©s Ã  l'aide sociale Ã  l'enfance ne cessent d'augmenter. L'une des raisons: l'aide sociale Ã  l'enfance est dÃ©tournÃ©e de son but initial pour prendre en charge les prÃ©tendus mineurs clandestins isolÃ©s qui s'entassent sans avenir dans les villes franÃ§aises. SurprotÃ©gÃ©s par les textes internationaux et par les dÃ©cisions de la Cour de justice de l'Union europÃ©enne, certains mentent sur leur Ã¢ge, d'autres multiplient les incivilitÃ©s et les actes de dÃ©linquance, tout en pesant sur les budgets de l'aide sociale Ã  l'enfance des dÃ©partements franÃ§ais.\nPour protÃ©ger notre systÃ¨me social, rÃ©tablissons enfin des contrÃ´les Ã  nos frontiÃ¨res.",
+      "del:madeBy": {
+        "@id": "participant_50"
+      },
+      "del:timestamp": "2024-11-28T10:30:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_54",
+      "del:text": "Pored toga Å¡to nemaju pravo se roditi, dakle, nisu neroÄena djeca zaÅ¡tiÄena u Europi, moram reÄi da mi svakodnevno indoktriniramo naÅ¡u djecu u Å¡kolama od najranije dobi, dakle, to je oblik emotivnog zlostavljanja. Treba to konaÄno prestati, i seksualizacija male djece. Dakle, dosta je bilo sluÅ¡ati ove licemjerne retorike. Trebamo jasno i glasno reÄi da i neke Å¾ivotinjske vrste su zaÅ¡tiÄenije u Europi od neroÄene djece.",
+      "del:madeBy": {
+        "@id": "participant_51"
+      },
+      "del:timestamp": "2024-11-28T10:31:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_55",
+      "del:text": "La giornata di oggi, quella del 35Âº anniversario dell'adozione della Convenzione ONU sui diritti dell'infanzia, non deve essere di pura circostanza: il nostro vero obiettivo deve essere quello di combattere ogni forma di violenza fisica, psicologica, digitale, attraverso leggi che combattono la povertÃ  e l'esclusione sociale per promuovere piÃ¹ diritti e piÃ¹ integrazione.\nPer questa ragione il Movimento 5 Stelle propone lo Ius scholae, una proposta di legge che punta a favorire l'integrazione dei minori stranieri attraverso la cittadinanza.\nPer concludere, mi piacerebbe sentire da questo Parlamento un'autocritica: avete votato l'austerity che porta a tagli agli asili nido e poi a parole difendiamo tutti i diritti dei minori. Lasciatemelo dire: quanta ipocrisia!",
+      "del:madeBy": {
+        "@id": "participant_52"
+      },
+      "del:timestamp": "2024-11-28T10:33:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_56",
+      "del:text": "Suvremeni izazovi s kojima se suoÄavamo oÄekuju od politike rjeÅ¡enja - za obrazovanje, okoliÅ¡, druÅ¡tvenu pravdu. Porast anksioznosti i depresije meÄu mladima, o njemu je danas bilo puno rijeÄi, ukazuje na potrebu za boljom podrÅ¡kom mentalnom zdravlju. I ono Äemu Äu se posebno posvetiti, o Äemu sam govorila u proÅ¡lom sazivu, jest regulacija za sigurnije digitalno okruÅ¾enje, zaÅ¡titu podataka i kriminaliziranjeÂ cyber bullyinga. Mi smo ti koji moramo biti odgovorni za buduÄnost naÅ¡e djece.",
+      "del:madeBy": {
+        "@id": "participant_53"
+      },
+      "del:timestamp": "2024-11-28T10:34:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_57",
+      "del:text": "Il y a trois ans, l'Union europÃ©enne adoptait une garantie europÃ©enne pour l'enfance, dont l'objectif est de garantir aux enfants dans le besoin l'accÃ¨s effectif Ã  des droits, comme des structures d'accueil gratuites, une scolaritÃ© gratuiteÂ â y compris d'ailleurs un repas sain par jour d'Ã©coleÂ â, mais aussi de leur garantir des soins de santÃ© gratuits, une alimentation saine et un logement adaptÃ©. Si ces engagements sont clairs, le chemin pour y arriver semble malheureusement encore bien long. Ce n'est pas acceptable dans une sociÃ©tÃ© comme la nÃ´tre.\nLe nouveau commissaire Ã  la jeunesse aura donc beaucoup de pain sur la planche, mais il peut compter sur nous, parce que chaque enfant compte et a le droit de vivre une enfance digne et heureuse et de se construire un avenir, loin des idÃ©ologies, du sexisme et du racisme que nous avons entendus aujourd'hui sur les bancs de l'extrÃªme droite.",
+      "del:madeBy": {
+        "@id": "participant_54"
+      },
+      "del:timestamp": "2024-11-28T10:35:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_58",
+      "del:text": "Ein ebenfalls immer wichtigerer Aspekt ist die psychische Gesundheit von Kindern. Diese verschlechtert sich seit Anfang der 2010er-Jahre kontinuierlich. Dies kann schon in jungen Jahren zu AngstzustÃ¤nden, Depressionen bis hin zum Suizid fÃ¼hren. Doch die Mehrzahl der jungen Menschen in Europa hat keinen Zugang zu Therapien und bleibt somit unbehandelt. Dies ist absolut nicht akzeptabel. AbschlieÃend sei noch erwÃ¤hnt, dass seit 2018 Ã¼ber 1Â 500 Kinder im Mittelmeer auf der Flucht gestorben sind oder als vermisst gelten.\n(Der Redner ist damit einverstanden, auf eine Frage nach dem Verfahren der âblauen Karteâ zu antworten.)",
+      "del:madeBy": {
+        "@id": "participant_55"
+      },
+      "del:timestamp": "2024-11-28T10:36:59"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_59",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_18"
+      },
+      "del:timestamp": "2024-11-28T10:38:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_60",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_55"
+      },
+      "del:timestamp": "2024-11-28T10:39:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_61",
+      "del:text": "Kinder brauchen RÃ¤ume zur Entschleunigung und UnterstÃ¼tzung, um diesen Herausforderungen zu begegnen. Kinder erwarten von uns, dass wir ihnen eine lebenswerte Zukunft hinterlassen. Dazu gehÃ¶rt auch ein gesunder Planet. Wir mÃ¼ssen die Rechte der Kinder weiter stÃ¤rken und schÃ¼tzen. Bei politischen Entscheidungsfindungen mÃ¼ssen sie mehr einbezogen werden, und es muss eine kinderrechtliche FolgenabschÃ¤tzung durchgefÃ¼hrt werden. Wir mÃ¼ssen den Schwerpunkt auf prÃ¤ventive MaÃnahmen legen und in FamilienfÃ¼rsorge investieren. Unsere Kinder verdienen es, und die Zukunft verlangt es von uns.",
+      "del:madeBy": {
+        "@id": "participant_56"
+      },
+      "del:timestamp": "2024-11-28T10:39:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_62",
+      "del:text": "A proposito di questo, sempre piÃ¹ spesso, come ci ha ricordato la recente relazione dell'Agenzia europea per i diritti fondamentali, minori e adolescenti, in particolare quelli LGBTQIA+, subiscono pratiche aberranti come le terapie di conversione, finalizzate a modificare l'orientamento sessuale o l'identitÃ  di genere di una persona. Una violenza terribile che spinge molti minori adolescenti addirittura al suicidio. I dati su questo sono impressionanti.\nAllora, vorrei chiedere ai deputati della destra, che continuano a usare la retorica \"i bambini non si toccano\", cosa pensano degli adulti che spingono i minori sotto la propria responsabilitÃ  ad affrontare pratiche come queste che causano danni spaventosi?\nSappiamo che la Commissione europea Ã¨ finalmente pronta a vietare questa pratica abusiva. Allora, chiedo con forza che la Commissione presenti subito una proposta legislativa per un divieto definitivo delle pratiche di conversione in tutta l'Unione. Si tratta di uno strumento fondamentale per proteggere il benessere dei minori.\n(L'oratore accetta di rispondere a una domanda \"cartellino blu\")",
+      "del:madeBy": {
+        "@id": "participant_57"
+      },
+      "del:timestamp": "2024-11-28T10:41:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_63",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_58"
+      },
+      "del:timestamp": "2024-11-28T10:42:36"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_64",
+      "del:text": "E allora su questo voi state facendo una propaganda, utilizzando i bambini come gancio per discriminare un'intera comunitÃ , che Ã¨ quella LGBTQ+.\nDunque voi deputati dell'estrema destra state facendo una crociata contro i diritti umani delle persone.",
+      "del:madeBy": {
+        "@id": "participant_57"
+      },
+      "del:timestamp": "2024-11-28T10:43:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_65",
+      "del:text": "A magyarok szerint a kÃ¶zÃ¶ssÃ©gi mÃ©dia veszÃ©lyesebb a gyerekekre, mint a tÃ¶megkÃ¶zlekedÃ©s. A 6-14 Ã©vesek egyharmada mÃ©gis rendszeresen hasznÃ¡lja. Mit tehetÃ¼nk, hogy a Gyermekjogi EgyezmÃ©nyben foglaltak az interneten is Ã©rvÃ©nyesÃ¼ljenek? VÃ¡lasz lehet a âChild Rights by Designâ, vagyis a digitÃ¡lis kÃ¶rnyezet megtervezÃ©se sorÃ¡n a gyermekek Ã©rdeke legyen az elsÅdleges szempont. EzÃ©rt biztatjuk pÃ©ldÃ¡ul a gyermekek figyelmÃ©Ã©rt versenyzÅ alkalmazÃ¡sok Ã©s videojÃ¡tÃ©kok tervezÅit Ã©s az influencereket, akik a gyermekek testkÃ©pÃ©t vagy a vÃ¡sÃ¡rlÃ¡sait hatÃ¡rozzÃ¡k meg, hogy szÃ¡njanak idÅt az egyezmÃ©ny megismerÃ©sÃ©re.\nA gyermekek jogainak tiszteletben tartÃ¡sa nem csak jogi kÃ¶telezettsÃ©g, hanem kÃ¶zÃ¶s morÃ¡lis felelÅssÃ©gÃ¼nk is.",
+      "del:madeBy": {
+        "@id": "participant_59"
+      },
+      "del:timestamp": "2024-11-28T10:44:09"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_66",
+      "del:text": "Tutkimusten mukaan lasten hÃ¤iriÃ¶kÃ¤yttÃ¤ytyminenkin on lisÃ¤Ã¤ntynyt ja erilaiset diagnoosit tÃ¤hÃ¤n liittyen ovat lisÃ¤Ã¤ntyneet. Sosiaalisten kontaktien sijaan lapset kohtaavat yhÃ¤ useammin netin tulvaa ja virtuaalitodellisuutta. NÃ¤mÃ¤ haasteet koskevat kaikkia EU-maiden lapsia. Sosiaalinen eriarvoisuus pitÃ¤Ã¤ sisÃ¤llÃ¤Ã¤n myÃ¶s eriarvoisuuden leikkimiseen ja harrastamiseen. Ongelma on jo niin iso, ettÃ¤ meidÃ¤n pitÃ¤Ã¤ nÃ¤hdÃ¤ tÃ¤mÃ¤ paitsi henkilÃ¶kohtaisina tragedioina, myÃ¶s kansantaloudellisena isona kysymyksenÃ¤.\nHaluankin kiinnittÃ¤Ã¤ uuden komission huomion lasten ja nuorten harrastusmahdollisuuksien turvaamiseen ja lisÃ¤Ã¤miseen. TÃ¤hÃ¤n on kÃ¤ytettÃ¤vÃ¤ kaikki mahdolliset vÃ¤lineet. Kyse on Euroopan tulevaisuudesta ja Euroopan kestokyvystÃ¤.",
+      "del:madeBy": {
+        "@id": "participant_60"
+      },
+      "del:timestamp": "2024-11-28T10:45:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_67",
+      "del:text": "Ma ancora oggi troppi bambini non vedono rispettati i loro diritti: bambini che vivono in zone di conflitto; bambini vittime di violenza fisica, psicologica, di sfruttamento, di abusi anche online; bambini non scolarizzati in condizioni di povertÃ  ed esclusione sociale.\nE l'ultimo rapporto UNICEF del febbraio 2024 lascia sgomenti: un bambino su quattro nei paesi dell'Unione Ã¨ a rischio di povertÃ  o esclusione sociale, cioÃ¨ 20 milioni di bambini. E questo soltanto in Europa: Ã¨ inaccettabile.\nAbbiamo tutti il dovere morale, oltre che giuridico, di ascoltare la voce dei bambini e di intervenire per tutelare i loro diritti. Deve essere questa la nostra prioritÃ .",
+      "del:madeBy": {
+        "@id": "participant_61"
+      },
+      "del:timestamp": "2024-11-28T10:46:52"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_68",
+      "del:text": "As crianÃ§as de Gaza, massacradas sem dÃ³ nem piedade, as crianÃ§as ucranianas deportadas para a RÃºssia, as meninas afegÃ£s anuladas pelo fanatismo medieval e religioso dos talibÃ£s, as crianÃ§as sudanesas que fogem Ã  guerra civil. E hÃ¡ crianÃ§as que sofrem aqui mesmo na Europa. A pobreza infantil afeta quase 20Â % das nossas crianÃ§as. O acesso Ã  educaÃ§Ã£o de qualidade e inclusiva ainda Ã© desigual e hÃ¡ crianÃ§as migrantes e refugiadas queÂ continuam Ã  margem ou longe dos seus pais.\nHÃ¡, por isso, um longo caminho ainda a percorrer no domÃ­nio da promoÃ§Ã£o e da proteÃ§Ã£o dos direitos das crianÃ§as, daÃ­ que seja importante assinalar o aniversÃ¡rio desta importantÃ­ssima ConvenÃ§Ã£o das NaÃ§Ãµes Unidas.",
+      "del:madeBy": {
+        "@id": "participant_62"
+      },
+      "del:timestamp": "2024-11-28T10:48:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_69",
+      "del:text": "Look at this room. The future of the children of Europe. Who is here? Well, thank you for being here. But, everybody that's not here, why are you not here? Unbelievable. I mean, it's like there's nothing going on in Europe. We have mental health issues. We just had a debate yesterday on the recruitment of minors for criminal activities. Nobody's here. I am the mother of four children, aged 5 to 15, and I am very, very concerned for their wellâbeing. So I invite you all: get over these political differences and work towards a solution and to real ideas to strengthen children's rights in Europe. If you want to have any suggestions, my speech is here.",
+      "del:madeBy": {
+        "@id": "participant_63"
+      },
+      "del:timestamp": "2024-11-28T10:49:27"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_70",
+      "del:text": "Die EU muss Kinderrechte konsequent umsetzen, Armut bekÃ¤mpfen, Bildung und kulturelle Teilhabe stÃ¤rken. Sie muss Integration fÃ¶rdern und den Schutz vor Gewalt sicherstellen. Deine Herkunft darf nicht darÃ¼ber entscheiden, welche Zukunft du hast. Deine Rechte auf Schutz, Bildung, Gesundheit und Mitbestimmung zu wahren, bedeutet, dir die Chance auf ein selbstbestimmtes und sicheres Leben zu geben. Damit stÃ¤rken wir auch ein gerechteres Europa und unsere Zukunft. Denn Kinder haben Rechte, das ist doch klar.",
+      "del:madeBy": {
+        "@id": "participant_64"
+      },
+      "del:timestamp": "2024-11-28T10:50:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_71",
+      "del:text": "Mutta silti Euroopassa rÃ¤ikeÃ¤sti rikotaan lasten oikeuksia, kohdellaan heitÃ¤ epÃ¤inhimillisesti. Viha, joka Ukrainassa tÃ¤llÃ¤ hetkellÃ¤ on VenÃ¤jÃ¤n toimesta laitettu liikkeelle, on saanut aikaan sen, ettÃ¤ satojatuhansia lapsia on kateissa siirrettynÃ¤ VenÃ¤jÃ¤lle. MissÃ¤ nuo lapset ovat ja mitÃ¤ me voimme tehdÃ¤ heidÃ¤n lÃ¶ytÃ¤misekseen?\n35 vuotta on lyhyt aika ja edistystÃ¤ sopisi tapahtuvan. Mutta jos katsomme isoa historian kaarta, tulen maasta, jossa historian jaksoja kutsutaan vihaksi, VenÃ¤jÃ¤n terrorin aikakausiksi. Ja muistan aina isoisoÃ¤itini, joka sanoi, ettÃ¤ viha vie viljan pellosta, kalat joesta ja riistÃ¤Ã¤ lapset sylistÃ¤. Juuri mikÃ¤Ã¤n ei ole VenÃ¤jÃ¤n kÃ¤ytÃ¶ksessÃ¤ muuttunut. 300 vuotta sitten isoviha Suomessa sai aikaan paljon lapsien ryÃ¶stÃ¤mistÃ¤, ja toivoisin, ettÃ¤ me pÃ¤Ã¤sisimme viimeinkin eteenpÃ¤in.",
+      "del:madeBy": {
+        "@id": "participant_65"
+      },
+      "del:timestamp": "2024-11-28T10:52:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_72",
+      "del:text": "AdemÃ¡s de los aspectos materiales, debemos considerar la falta de oportunidades de desarrollo educativo, fÃ­sico y socioemocional. TambiÃ©n tenemos que afrontar las situaciones de fragilidad mental que, tras la pandemia, se han vuelto aÃºn mÃ¡s preocupantes entre los jÃ³venes.\nSeÃ±orÃ­as, hace unas semanas acogimos con entusiasmo el Informe Draghi para invertir en la competitividad de la UniÃ³n Europea. AÃºn mÃ¡s importante es invertir en los seres humanos y, sobre todo, en los niÃ±os y los jÃ³venes, y sacarlos de la pobreza; tambiÃ©n invertir en educaciÃ³n y formaciÃ³n para desarrollar sus capacidades, sus talentos y sus aspiraciones.\nAvancemos por este camino para garantizar un futuro esperanzador para los niÃ±os y las niÃ±as y, en definitiva, para nuestra UniÃ³n Europea.",
+      "del:madeBy": {
+        "@id": "participant_66"
+      },
+      "del:timestamp": "2024-11-28T10:53:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_73",
+      "del:text": "The creation of an Intergroup on Children's Rights here in this Parliament is not a symbolic gesture: it is a profound commitment to place children at the heart of our policies. Across Europe, too many children face poverty, abuse and barriers to opportunities that are their fundamental rights. The EU must lead by example, ensuring that no child is left behind. It is our duty to ensure that every child, regardless of their background or circumstances, has the chance to grow, thrive and contribute to a better Europe.\nLet us seize this opportunity to prove that in Europe, protecting children's rights is not just a priority: it is an emergency.",
+      "del:madeBy": {
+        "@id": "participant_67"
+      },
+      "del:timestamp": "2024-11-28T10:55:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_74",
+      "del:text": "Ã chocante a persistÃªncia de casos de violÃªncia e exploraÃ§Ã£o de crianÃ§as sob as mais diversas formas. E o que dizer das crianÃ§as que vivem e sobrevivem em zonas de guerra? Que futuro esperamos para elas? Tornarem-se adultos belicistas ou construtores de paz? Mas Ã© tambÃ©m inaceitÃ¡vel que milhÃµes de crianÃ§as continuem sujeitas Ã  pobreza e Ã  falta de acesso a serviÃ§os de saÃºde e educaÃ§Ã£o de qualidade. E nÃ£o serÃ£o as vozes estridentes e as ideias extremistas que ajudarÃ£o a resolver os problemas.\nÃ imperativo que a UniÃ£o Europeia e este Parlamento atuem de forma decisiva para enfrentar esses problemas com coragem e determinaÃ§Ã£o para que nenhuma crianÃ§a seja deixada para trÃ¡s.",
+      "del:madeBy": {
+        "@id": "participant_68"
+      },
+      "del:timestamp": "2024-11-28T10:56:29"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_75",
+      "del:text": "Todos los niÃ±os deben tener acceso a una educaciÃ³n gratuita, obligatoria y accesible. La situaciÃ³n econÃ³mica, de gÃ©nero, social o cultural de partida no puede ser un impedimento que coarte sus oportunidades. AdemÃ¡s, debemos proteger su salud y bienestar fÃ­sico y mental: el acoso y el ciberacoso acechan a los niÃ±os en las aulas e impiden su normal desarrollo; y, ahora, este problema se ve acrecentado veinticuatro horas al dÃ­a por el mÃ³vil dentro del bolsillo.\nAbordemos estos problemas para lograr un futuro mejor.",
+      "del:madeBy": {
+        "@id": "participant_69"
+      },
+      "del:timestamp": "2024-11-28T10:58:01"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_76",
+      "del:text": "ZakljuÄno, moramo uloÅ¾iti napore kako bismo glas djece stavili u srediÅ¡te svih politika koje ih se tiÄu. Djeca nisu samo buduÄnost, ona su sadaÅ¡njost i njihova prava nisu stvar izbora, veÄ obveza. Neka nam ova obljetnica bude podsjetnik na naÅ¡u odgovornost, ne samo da slavimo postignuto, veÄ da hrabro i odluÄno zajedno radimo na onome Å¡to je pred nama. Svi mi u ovoj dvorani.",
+      "del:madeBy": {
+        "@id": "participant_70"
+      },
+      "del:timestamp": "2024-11-28T10:59:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_77",
+      "del:text": "DoamnÄ comisarÄ, trebuie sÄ avem reguli comune privind instituÈionalizarea copiilor. Imediat Comisia se spalÄ pe mÃ¢ini, o petiÈie nu este de competenÈa noastrÄ, dar statul de drept nu include Èi acest lucru, respectarea drepturilor copilului? De aceea vÄ cer Èi cer noii Comisii sÄ avem reguli egale pentru a nu mai fi smulÈi copiii din braÈele mamelor Èi, dupÄ 5 ani, marcaÈi fiind copiii de ceea ce li s-a Ã®ntÃ¢mplat, abia atunci revin la mame.",
+      "del:madeBy": {
+        "@id": "participant_71"
+      },
+      "del:timestamp": "2024-11-28T11:00:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_78",
+      "del:text": "TyttÃ¶jen sukuelinten silpominen on yksi raaimpia vÃ¤kivallan muotoja, joita lapsiin kohdistetaan. IkÃ¤vÃ¤ kyllÃ¤ se on edelleen maailmalla varsin yleinen ilmiÃ¶. Mutta miten toimivat valtiot myÃ¶s tÃ¤Ã¤llÃ¤ Euroopassa? Laillistavat vÃ¤kivallan poikalapsia kohtaan.\nPoikien sukuelinten silpominen uskonnollisiin tai kulttuurisiin syihin vedoten on vÃ¤kivaltaa. Jos lapselta leikattaisiin pala korvaa, se olisi vÃ¤kivaltaa. Jos pala leikataan paljon herkemmÃ¤ltÃ¤ alueelta, sukuelimistÃ¤, miksi se olisi yhtÃ¤Ã¤n vÃ¤hemmÃ¤n vÃ¤kivaltaa? Jokainen on vapaa tekemÃ¤Ã¤n itselleen toimenpiteitÃ¤, kun saavuttaa tÃ¤ysi-ikÃ¤isyyden. Mutta se, ettÃ¤ pienet lapset pakotetaan veitsen alle, on sukupuolesta riippumatta raakuutta, jota en voi hyvÃ¤ksyÃ¤.",
+      "del:madeBy": {
+        "@id": "participant_72"
+      },
+      "del:timestamp": "2024-11-28T11:01:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_79",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_73"
+      },
+      "del:timestamp": "2024-11-28T11:03:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_80",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_74"
+      },
+      "del:timestamp": "2024-11-28T11:04:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_81",
+      "del:text": "Felizmente, Portugal avanÃ§a agora na resoluÃ§Ã£o deste problema, reduzindo este ano significativamente o nÃºmero de alunos sem professor. Mas enquanto existir um aluno sem professor, nÃ³s nÃ£o podemos baixar os braÃ§os. E tambÃ©m Ã© imperativo melhorar as condiÃ§Ãµes de trabalho no ensino e tornÃ¡-lo mais atrativo para as futuras geraÃ§Ãµes de professores. Porque a educaÃ§Ã£o Ã© o maior elevador social, nunca desistiremos de lutar pelos direitos das nossas crianÃ§as.",
+      "del:madeBy": {
+        "@id": "participant_75"
+      },
+      "del:timestamp": "2024-11-28T11:04:45"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_82",
+      "del:text": "Now I'm going to switch to English for the colleague that unfortunately left, who had the audacity to actually call the education system of the Soviet Union a better place than Europe, and then add up by quoting the Bible. To you, sir, as Christ, I say you are wrong, and God has tears on his face because of the zealotry that you put out in this Parliament.",
+      "del:madeBy": {
+        "@id": "participant_76"
+      },
+      "del:timestamp": "2024-11-28T11:06:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_83",
+      "del:text": "El primero, frente a los veinte millones de niÃ±os en riesgo de exclusiÃ³n social: implementaciÃ³n exigente de la GarantÃ­a Infantil con financiaciÃ³n suficiente del pilar europeo de derechos sociales relanzado.\nEn segundo lugar, frente al abuso rampante contra los menores en la red y el abuso sexual contra los menores: hay que exigirle al Consejo una posiciÃ³n comÃºn ante la legislaciÃ³n que aprobÃ³ este Parlamento Europeo.\nY, en tercer lugar, el Pacto sobre MigraciÃ³n y Asilo: nos hemos esforzado por atender adecuadamente los derechos de los menores. Su redistribuciÃ³n solidaria es urgente allÃ­ donde hay regiones de frontera exterior, como es el caso de Canarias, donde se apilan âsin solidaridad, para empezar, del resto de las comunidades autÃ³nomas en EspaÃ±a, pero tambiÃ©n de los Estados miembrosâ. Por tanto, programas de realojamiento solidario y respetuoso con los derechos de todos los menores que llegan a las fronteras exteriores de la UniÃ³n Europea.",
+      "del:madeBy": {
+        "@id": "participant_77"
+      },
+      "del:timestamp": "2024-11-28T11:07:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_84",
+      "del:text": "Upholding children's rights is a strategic investment in more resilient, stronger and inclusive societies. I am very grateful to the European Parliament, Member States, international and civil society organisations at EU, national and local levels, our partners at UNICEF and the wider United Nations system for the hard work to advance children's rights during this mandate. My warmest thanks goes to the children, of course, who clearly spoke out on what they expect from the EU.\nThe 35th anniversary of the UN Convention on the Rights of the Child is a milestone. It reaffirms our collective commitment to ensuring that every child can grow up and thrive in a world that is just, that is fair, that is safe. Upholding the children's rights remains our joint EU priority, underpinned by intergenerational equity and solidarity for present and future generations.\nAs we move forward, we need to strengthen existing frameworks by fostering greater collaboration among Member States, enhanced resource allocation, and ensure that our legal and policy reform translate into real-world protections. On reflection, the progress this Commission â together with the European Parliament, the European and global child rights community and with children â has made in advancing children's rights leaves a legacy that transcends political cycles.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2024-11-28T11:08:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_85",
+      "del:text": "DeclaraÈii scrise (articolul 178)",
+      "del:madeBy": {
+        "@id": "participant_74"
+      },
+      "del:timestamp": "2024-11-28T11:10:52"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_86",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_78"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_87",
+      "del:text": "W swoim wystÄpieniu chciaÅbym skupiÄ siÄ na dzieciach pozostajÄcych w instytucjach opieki zastÄpczej.\nSzacuje siÄ, Å¼e w Europie jest ich nawet 660 tysiÄcy. Sytuacja rÃ³Å¼ni siÄ pomiÄdzy krajami, ale np. w Polsce nadal mamy ponad 17 tysiÄcy dzieci przebywajÄcych w instytucjach opiekuÅczych i 58 tysiÄcy w rodzinach zastÄpczych.\nDzieci te na co dzieÅ borykajÄ siÄ z brakiem stabilnoÅci emocjonalnej, niskim poczuciem przynaleÅ¼noÅci i bliskiej wiÄzi, trudno jest im takÅ¼e uzyskaÄ wystarczajÄcÄ iloÅÄ indywidualnej uwagi. Skutkuje to problemami takimi jak lÄki, depresja, poczucie bezwartoÅciowoÅci, co w konsekwencji rzutuje na caÅe ich dorosÅe Å¼ycie.\nChciaÅbym tutaj podkreÅliÄ rolÄ Europejskiego Funduszu SpoÅecznego Plus, ktÃ³ry doskonale sprawdziÅ siÄ dziaÅaniu w tym obszarze. Jestem przekonany, Å¼e w tym kierunku powinniÅmy iÅÄ. OczywiÅcie waÅ¼ne sÄ ogÃ³lne strategie i spojrzenie holistyczne, ale to konkretne dziaÅania i pieniÄdze przynoszÄ realne efekty.\nDlatego uwaÅ¼am, Å¼e polityka regionalna, w tym EFS+, muszÄ mieÄ moÅ¼liwoÅÄ wspierania takich dziaÅaÅ i posiadaÄ odpowiednie Årodki. ApelujÄ do komisarza Fitto o wziÄcie pod uwagÄ tego aspektu przy planowaniu polityki spÃ³jnoÅci po 2027 r.",
+      "del:madeBy": {
+        "@id": "participant_79"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_88",
+      "del:text": "A gyermekek jogai nem lehetnek puszta deklarÃ¡ciÃ³k: ezek konkrÃ©t cselekvÃ©seket kÃ¶vetelnek. Az EurÃ³pai UniÃ³nak Ã©s tagÃ¡llamainak minden eszkÃ¶zzel vÃ©deniÃ¼k kell a gyermekeket a szegÃ©nysÃ©gtÅl, az erÅszaktÃ³l Ã©s a diszkriminÃ¡ciÃ³tÃ³l. Elfogadhatatlan, hogy EurÃ³pÃ¡ban ma minden Ã¶tÃ¶dik, MagyarorszÃ¡gon pedig minden harmadik gyermek szegÃ©nysÃ©gben Ã©l. Az EU Gyermekjogi StratÃ©giÃ¡ja Ã©s az azt kiegÃ©szÃ­tÅ eurÃ³pai gyermekgarancia jÃ³ alap, de biztosÃ­tanunk kell a megfelelÅ forrÃ¡sokat Ã©s a tagÃ¡llami szintÅ± hatÃ©kony vÃ©grehajtÃ¡st.\nMagyarorszÃ¡gon kÃ¼lÃ¶nÃ¶sen aggasztÃ³, ahogy az oktatÃ¡s Ã©s a szociÃ¡lis rendszer alulfinanszÃ­rozottsÃ¡ga veszÃ©lyezteti a gyermekek jÃ¶vÅjÃ©t. Egy jÃ³l mÅ±kÃ¶dÅ, befogadÃ³ oktatÃ¡si rendszer, amelyben a tanÃ¡rokat megbecsÃ¼lik, Ã©s minden gyermek egyenlÅ esÃ©lyekkel indul, alapfeltÃ©tele annak, hogy megvalÃ³sÃ­tsuk az ENSZ-egyezmÃ©ny cÃ©ljait.\nEurÃ³pa Ã©s MagyarorszÃ¡g jÃ¶vÅje a gyermekekÃ©. EzÃ©rt itt Ã©s most kell lÃ©pnÃ¼nk: befektetni oktatÃ¡sukba, egÃ©szsÃ©gÃ¼kbe Ã©s biztonsÃ¡gukba. EmlÃ©kezzÃ¼nk a 35 Ã©vvel ezelÅtti Ã¼zenetre: minden gyermek joga, hogy szeretve Ã©s megbecsÃ¼lve Ã©ljen.",
+      "del:madeBy": {
+        "@id": "participant_80"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_89",
+      "del:text": "ÎÎ½ÏÏÏ ÏÎ·Ï ÎÎ, ÏÎ±ÏÎ¬ ÏÎ¹Ï ÏÏÎ¿ÏÏÎ¬Î¸ÎµÎ¹ÎµÏ Î³Î¹Î± ÏÎ· Î²ÎµÎ»ÏÎ¯ÏÏÎ· ÏÏÎ½ ÏÏÎ½Î¸Î·ÎºÏÎ½ Î´Î¹Î±Î²Î¯ÏÏÎ·Ï ÎºÎ±Î¹ ÏÏÎ¿ÏÏÎ±ÏÎ¯Î±Ï, ÏÎ± ÏÎ±Î¹Î´Î¹Î¬ ÏÏÎ½ÎµÏÎ¯Î¶Î¿ÏÎ½ Î½Î± Î±Î½ÏÎ¹Î¼ÎµÏÏÏÎ¯Î¶Î¿ÏÎ½ ÏÏÎ¿ÎºÎ»Î®ÏÎµÎ¹Ï, ÏÏÏÏ Î· ÏÏÏÏÎµÎ¹Î±, Î· ÎµÎºÎ¼ÎµÏÎ¬Î»Î»ÎµÏÏÎ· ÎºÎ±Î¹ Î· ÎºÎ±ÎºÎ¿ÏÎ¿Î¯Î·ÏÎ·. Î ÏÏÎ¿ÏÎ¸Î·ÏÎ· ÏÎ¿Î»Î¹ÏÎ¹ÎºÏÎ½ ÏÎ¿Ï ÎµÎ½Î¹ÏÏÏÎ¿ÏÎ½ ÏÎ·Î½ ÏÏÎ¿ÏÏÎ±ÏÎ¯Î± ÏÏÎ½ ÏÎ±Î¹Î´Î¹ÏÎ½, ÏÎ·Î½ ÏÏÏÏÎ²Î±ÏÎ· ÏÏÎ·Î½ ÎµÎºÏÎ±Î¯Î´ÎµÏÏÎ· ÎºÎ±Î¹ ÏÎ·Î½ ÏÎ³ÎµÎ¹Î¿Î½Î¿Î¼Î¹ÎºÎ® ÏÎµÏÎ¯Î¸Î±Î»ÏÎ· ÎµÎ¯Î½Î±Î¹ ÎµÎ¾Î±Î¹ÏÎµÏÎ¹ÎºÎ¬ ÏÎ·Î¼Î±Î½ÏÎ¹ÎºÎ®. ÎÎ¯Î½Î±Î¹ ÎºÎ±Î¸Î®ÎºÎ¿Î½ Î¼Î±Ï Î½Î± ÏÏÎ½ÎµÏÎ¯ÏÎ¿ÏÎ¼Îµ ÏÎ¿Î½ Î±Î³ÏÎ½Î± Î³Î¹Î± Î­Î½Î± ÎºÎ±Î»ÏÏÎµÏÎ¿ Î¼Î­Î»Î»Î¿Î½ Î³Î¹Î± ÏÎ± ÏÎ±Î¹Î´Î¹Î¬ Î¼Î±Ï.",
+      "del:madeBy": {
+        "@id": "participant_81"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_90",
+      "del:text": "Ca europarlamentar, am luptat Èi am obÈinut fonduri suplimentare Ã®n bugetul european, contribuind astfel la asigurarea resurselor necesare pentru a sprijini educaÈia Èi incluziunea socialÄ. Proiectele sociale derulate Ã®mpreunÄ cu Partidul Social Democrat Èi PES activists RomÃ¢nia au ajutat deja mii de copii sÄ treacÄ mai Ã®ncrezÄtori peste problemele cu care se confruntÄ.\nPentru a clÄdi o societate Ã®n care niciun copil nu este lÄsat Ã®n urmÄ, trebuie sÄ reducem decalajele dintre rural Èi urban, sÄ le oferim acces la educaÈie Èi sÄnÄtate de calitate, sÄ Ã®i protejÄm Ã®n mediul online Èi sÄ respectÄm drepturile fiecÄrui copil. Doar aÈa putem garanta un viitor mai bun Èi sigur pentru generaÈiile care vin.",
+      "del:madeBy": {
+        "@id": "participant_82"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_91",
+      "del:text": "MagyarorszÃ¡g nem csak beszÃ©l, hanem aktÃ­van tesz azÃ©rt, hogy a gyermekeknek joga legyen megfelelÅ Ã©letszÃ­nvonalhoz, oktatÃ¡shoz, szociÃ¡lis- Ã©s egÃ©szsÃ©gÃ¼gyi ellÃ¡tÃ¡shoz: ingyenes Ã©s 3 Ã©ves kortÃ³l kÃ¶telezÅ az Ã³voda, ingyenes az Ã¡ltalÃ¡nos iskola, minden tankÃ¶nyvet tÃ©rÃ­tÃ©s nÃ©lkÃ¼l kapnak a diÃ¡kok, sÅt a rÃ¡szorulÃ³ gyermekek rÃ©szÃ©re napi hÃ¡romszori Ã©tkezÃ©s is ingyenes az Ã³vodÃ¡ban Ã©s iskolÃ¡ban. Minden gyermek szÃ¡mÃ¡ra ingyenes az egÃ©szsÃ©gÃ¼gyi ellÃ¡tÃ¡s 18 Ã©ves korukig.\nA gyermekeket ugyanakkor nem lehet Ã¶nmagukban szemlÃ©lni, ezÃ©rt a csalÃ¡dok tÃ¡mogatÃ¡sa kiemelt figyelmet kap MagyarorszÃ¡gon: az adÃ³kedvezmÃ©nyek, vissza nem tÃ©rÃ­tendÅ tÃ¡mogatÃ¡sok, a hÃ¡zassÃ¡got kÃ¶tÅ, babÃ¡t vÃ¡rÃ³ fiatalok tÃ¡mogatÃ¡sa, az otthonteremtÃ©shez nyÃºjtott segÃ­tsÃ©g mind elengedhetetlen ahhoz, hogy a gyermekek jogai Ã©rvÃ©nyesÃ¼ljenek.\nMagyarorszÃ¡g a Gyermekjogi EgyezmÃ©nynek megfelelÅen lehetÅvÃ© teszi, hogy a csalÃ¡d Ã©s a kÃ¶zÃ¶ssÃ©gek tanÃ­tsÃ¡k meg a gyermeknek, hogy milyen jogaik vannak, Ã©s hogyan Ã©lhetnek azokkal.",
+      "del:madeBy": {
+        "@id": "participant_83"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_92",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_74"
+      },
+      "del:timestamp": "2024-11-28T11:11:02"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_93",
+      "del:text": "The EU actively encourages a crossâborder dimension in academic activities and is currently revitalising the way it supports this through the European strategy for universities, the European Universities Alliance, the proposed blueprint for a European degree and, of course, through the Erasmus+ programme, which has an increasingly international dimension.\nSo academia in Europe has openness and borderless cooperation in its DNA, and this is its great advantage, but it is also a vulnerability. Therefore, we need to strike the right balance between being open and being prudent. We need to be aware of existing risks and address them. The Commission remains vigilant about activities conducted by or on behalf of foreign actors that involve coercion, concealment, deception or corruption, and that are contrary to the EU's sovereignty, values and interests. Our priority is to protect our fundamental values by ensuring that universities remain a free and safe space for knowledge creation and exchange. To this end, we have taken important steps in several areas.\nFirst, on foreign interference in research and innovation, our commitment to tackle this is clearly embedded in our 2021 global approach to research and innovation and is a priority action of the ERA policy agenda for 2022â2024. Moreover, in 2022, our staff working document on tackling foreign interference provided universities with a practical guidance on how to enhance the security of their research and innovation activities, while maintaining an open research environment.\nSince we know that universities cannot confront this threat alone, last year we launched a mutual learning exercise involving 12 Member States whose findings will benefit our entire Union. In addition, we are developing a oneâstop platform for higher education institutions and researchers. This will be a userâfriendly online dashboard consolidating all available tools and resources on foreign interference in research and innovation.\nOn research security, the Council recommendation on enhancing research security, adopted in May 2024, provides a robust basis for cooperation with the Member States, the funding organisations and researchers. Our approach is based on self-governance, on the principle that with academic freedom comes academic responsibility. This is, of course, combined with the support and the crucial guidance by public authorities. Where sensitive technologies are concerned, we need to exercise caution, of course.\nThe recommendation advocates protecting research organisations from foreign interference, looking also at coercion of diaspora by the state of origin and other forms of malign influence. These are factors that could lead to self-censorship and security risks for foreign researchers, doctoral candidates and students. Furthermore, the defence of democracy package adopted in December of last year ensures, through a specific directive, that where research is used as a channel to represent the interests of a thirdâcountry government, this is done in full transparency and upholding democratic accountability.\nWhen it comes to cyberattacks and espionage, the recommendation recognises the sophisticated forms of critical knowledge and technology transfer. While our intelligence has an obvious role to play, our universities and researchers can help combat espionage by raising awareness and fostering a strong security culture and cyberâhygiene. Universities should take measures to prevent thirdâcountry actors from taking advantage of international academic cooperation, seemingly carried out in good faith. We should not be naive. While some forms of cooperation may not be legally prohibited, they can still be clearly undesirable.\nThe Commission is actively working to follow up on these objectives with concrete actions in the mandate ahead. For example, in line with the Council recommendation on enhancing research security, we will establish a European Centre of Expertise on Research Security, contributing to creating an EUâwide community of practice and maintaining a structural dialogue with stakeholder organisations and developing tools to support researchâperforming organisations to perform due diligence into prospective partners.\nThe EU is a staunch defender of academic freedom, freedom of scientific research and the autonomy of institutions, which is the third area where we are taking important steps while tackling foreign interference, we must remain firm in upholding fundamental values like institutional autonomy and academic freedom. This is why, as we take measures to counter these threats, we must also pursue initiatives to protect and promote the freedom of scientific research.\nIn this respect, I welcome the European Parliament resolution on promoting and protecting the freedom of scientific research in Europe, adopted earlier this year. In support of a potential proposal, the Commission launched a study in September to collect all the necessary evidence. The study will analyse existing relevant legal frameworks within and beyond the EU, gathering input from key stakeholders to better understand the current state of scientific research freedom. It will also build on initiatives such as the European Parliament Academic Freedom Monitor and the Academic Freedom Index.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2024-11-28T11:11:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_94",
+      "del:text": "A tudomÃ¡nyos Ã©let hazai politikai befolyÃ¡solÃ¡sa mellett a harmadik orszÃ¡gok kÃ©mkedÃ©se is rendkÃ­vÃ¼l komoly fenyegetÃ©s. Egyes kormÃ¡nyok, mint pÃ©ldÃ¡ul a jelenlegi magyar kormÃ¡ny is, nemcsak hogy nem vÃ©dekeznek az ilyen kÃ©mkedÃ©s ellen, hanem mÃ©g elÅ is segÃ­tik oda nem figyelÃ©sÃ¼kkel, sÅt olykor aktÃ­v kÃ¶zremÅ±kÃ¶dÃ©sÃ¼kkel. A jelenlegi kormÃ¡ny KÃ­na-barÃ¡t politikÃ¡ja sÃºlyosbÃ­tja a helyzetet.\nEnnek egyik pÃ©ldÃ¡ja, hogy a kÃ­nai Fudan Egyetem budapesti projektet indÃ­tott, amely valÃ³di beavatkozÃ¡st Ã©s biztonsÃ¡gi kockÃ¡zatot jelent. Nem az oktatÃ¡srÃ³l szÃ³l, hanem KÃ­na befolyÃ¡sszerzÃ©sÃ©t szolgÃ¡lja. Kedves MindnyÃ¡jan! Ez nem csupÃ¡n MagyarorszÃ¡g problÃ©mÃ¡ja, hanem egy Ã¶sszeurÃ³pai kihÃ­vÃ¡s. EurÃ³pa szuverenitÃ¡sa, versenykÃ©pessÃ©ge Ã©s kutatÃ¡s-fejlesztÃ©si teljesÃ­tmÃ©nye mÃºlik azon, hogy megakadÃ¡lyozzuk a rosszindulatÃº cselekmÃ©nyeket az akadÃ©miai szfÃ©rÃ¡ban is.\nHa egy tagÃ¡llam kormÃ¡nya, mint pÃ©ldÃ¡ul MagyarorszÃ¡g kÃ¼lfÃ¶ldi Ã©rdekeket szolgÃ¡l ki, az az egÃ©sz UniÃ³t sebezhetÅvÃ© teszi. EzÃ©rt Ã¼dvÃ¶zÃ¶ljÃ¼k, sÃ¼rgetjÃ¼k Ã©s tÃ¡mogatjuk az EurÃ³pai KutatÃ¡sbiztonsÃ¡gi SzakÃ©rtÅi KÃ¶zpont lÃ©trehozÃ¡sÃ¡t, amely stratÃ©giai segÃ­tsÃ©get fog tudni nyÃºjtani a kutatÃ³intÃ©zetek Ã©s egyetemek vÃ©delmÃ©ben, az akadÃ©miai szabadsÃ¡g vÃ©delme Ã©s a kutatÃ¡sok biztonsÃ¡gÃ¡nak garantÃ¡lÃ¡sa Ã©rdekÃ©ben. SÃ¼rgetjÃ¼k, hogy az EU mielÅbb konkrÃ©tan intÃ©zkedjen!",
+      "del:madeBy": {
+        "@id": "participant_84"
+      },
+      "del:timestamp": "2024-11-28T11:20:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_95",
+      "del:text": "Eine strengere PrÃ¼fung und mehr Transparenz bei der Finanzierung von Forschungsprojekten sind daher dringend notwendig. Jede finanzielle UnterstÃ¼tzung von Drittstaaten oder externen Organisationen muss offengelegt, mÃ¶gliche Einflussnahme geprÃ¼ft werden, um die UnabhÃ¤ngigkeit der europÃ¤ischen Forschung zu garantieren. Wir sind verpflichtet, alles dafÃ¼r zu tun, dass die akademische Forschung in Europa frei und unabhÃ¤ngig bleibt.",
+      "del:madeBy": {
+        "@id": "participant_85"
+      },
+      "del:timestamp": "2024-11-28T11:22:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_96",
+      "del:text": "Recent cases have highlighted this problem, such as academic partnerships in our countries that have resulted in access to sensitive technologies in fields like artificial intelligence, biotechnology and cybersecurity. A study by the European Union Institute for Security Studies itself has revealed how authoritarian regimes use universities to infiltrate and influence networks, collect sensitive data, and even recruit agents. These actions go beyond the academic espionage, they represent a direct threat to our security and sovereignty.\nWe need to act now. I propose concrete measures. One: strengthen security in EU-funded projects with righteous audits and vetoes on suspicious collaborations. Two: supervise foreign researchers in sensitive fields in coordination with national intelligence services. Three: establish a European list of high-risk foreign institutions, warning universities about potential threats. Four: promote partnerships within the European space and the free world with the countries that share our democratic values.\nEuropean universities are pillars of innovation and our independence. Protecting the knowledge generated with them is safeguarding our freedom and the future of Europe.",
+      "del:madeBy": {
+        "@id": "participant_86"
+      },
+      "del:timestamp": "2024-11-28T11:23:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_97",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_87"
+      },
+      "del:timestamp": "2024-11-28T11:25:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_98",
+      "del:text": "Les universitÃ©s sont au cÅur de la bataille pour notre recherche et notre compÃ©titivitÃ© europÃ©enne. S'il faut bien sÃ»r continuer Ã  accueillir des Ã©tudiants Ã©trangers et Ã  dÃ©fendre la libertÃ© acadÃ©mique, ne soyons pas pour autant naÃ¯fs. Des puissances Ã©trangÃ¨res, gouvernements comme entreprises, tentent de capter nos dÃ©couvertes scientifiques. Elles mettent aussi en place des stratÃ©gies d'influence agressives via leurs Ã©tudiants pour faire passer des messages positifs sur leurs rÃ©gimes. Parmi elles, la Chine, la Turquie, la Russie ou encore les pays du Golfe. Certains pays europÃ©ens sont trÃ¨s complaisants Ã  leur Ã©gard; je pense comme toujours Ã  la Hongrie de ViktorÂ Orban.\nAssumons donc de dÃ©fendre notre sÃ©curitÃ© acadÃ©mique et sortons des logiques nationales. Si nous voulons assurer notre souverainetÃ© scientifique et technologique dans un monde incertain, adoptons une approche europÃ©enne cohÃ©rente dans l'accueil des Ã©tudiants Ã©trangers et nos partenariats avec les entreprises et renforÃ§ons le renseignement europÃ©en.",
+      "del:madeBy": {
+        "@id": "participant_88"
+      },
+      "del:timestamp": "2024-11-28T11:27:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_99",
+      "del:text": "I agree that we need to urgently identify our most valuable technology sectors and corresponding PhDs, and train them in operational and research security. We should also coordinate this work with European intelligence agencies â after all, they will often be the first to uncover foreign interference and we should not pretend that this is an actorâagnostic issue.\nChina and Russia are our main sources of foreign interference, so while we welcome students with ties to these nations into our universities, we should not be naive and grant easy access to cuttingâedge technology to everyone. We must be vigilant, though not paranoid. The strength of our universities lies not just in their innovation, but also in their openness. Our challenge is to build walls of wisdom that safeguard our research without erecting barriers to the free exchange of ideas, because the future will belong not to those who fear knowledge, but to those who can protect it while sharing it.",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2024-11-28T11:28:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_100",
+      "del:text": "OveÄ¾a vÃ¤ÄÅ¡Ã­m problÃ©mom ako nejakÃ­ zahraniÄnÃ­ agenti na univerzitÃ¡ch, na Å¡kolÃ¡ch je podÄ¾a mÃ´jho nÃ¡zoru pÃ´sobenie mimovlÃ¡dnych organizÃ¡ciÃ­, Ä¾avicovÃ½ch mimovlÃ¡dnych organizÃ¡ciÃ­ na Å¡kolÃ¡ch, ktorÃ© doslova vymÃ½vajÃº mozgy mladÃ½m Ä¾udom, uÄia ich nezmysly, uÄia ich Ä¾avicovÃº propagandu, Ä¾avicovÃº ideolÃ³giu, ktorÃ¡ je odtrhnutÃ¡ od reality, a nepripravujÃº ich na reÃ¡lny svet, na skutoÄnÃ© hodnoty, ktorÃ© tu Ä¾udia skutoÄne potrebujÃº na to, aby preÅ¾ili dobrÃ½ a spokojnÃ½ a Å¡Å¥astnÃ½ Å¾ivot.",
+      "del:madeBy": {
+        "@id": "participant_90"
+      },
+      "del:timestamp": "2024-11-28T11:30:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_101",
+      "del:text": "Kroz sveuÄiliÅ¡ta Äesto se plasiraju ideoloÅ¡ke poruke i politiÄka propaganda kako bi se utjecalo na mlade intelektualce. Finaciranje odreÄenih programa, predavanja ili studentskih organizacija od strane stranih vlada moÅ¾e se koristiti i za promoviranje, naravno, prikrivenih interesa. Å to se tiÄe mladih studenata i istraÅ¾ivaÄa, oni su Äesto i mete za regrutaciju u svrhu prikupljanja podataka, a Äesto se koriste pristupi poput financijskih poticaja, obeÄanja karijernog napretka ili ideoloÅ¡kog vrbovanja. Posebno su ranjivi studenti sa stipendijama u inozemstvu i oni mogu biti izloÅ¾eni pritiscima od strane domaÄih ili stranih aktera.\nJaÄanje suradnje izmeÄu sveuÄiliÅ¡ta i obavjeÅ¡tajnih sluÅ¾bi nije stvar stvaranja drÅ¾ava nadzora. RijeÄ je o zaÅ¡titi intelektualnih dobara koja pokreÄu naÅ¡a gospodarstva i Å¡tite naÅ¡u sigurnost. To znaÄi osigurati da europske inovacije koriste naÅ¡im graÄanima, a ne stranim akterima. Za vlade, ovo je test predanosti zaÅ¡titi naÅ¡ih ljudi, vrijednosti i suvereniteta. Za Europu, ovo je prilika da pokaÅ¾e svijetu da akademska otvorenost i sigurnost mogu koegzistirati.",
+      "del:madeBy": {
+        "@id": "participant_53"
+      },
+      "del:timestamp": "2024-11-28T11:31:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_102",
+      "del:text": "Y en mayo de 2023 la ComisiÃ³n Especial sobre Injerencias Extranjeras en Todos los Procesos DemocrÃ¡ticos de la UniÃ³n Europea, en particular la DesinformaciÃ³n âde la que tuve el honor de ser parteâ, concluyÃ³ con claridad que tanto la libertad acadÃ©mica como la investigaciÃ³n cientÃ­fica, en Ã¡mbitos tan sensibles como la neurociencia, las tecnologÃ­as cuÃ¡nticas o la investigaciÃ³n civil y militar, estÃ¡n amenazadas por interferencias extranjeras, notablemente por China, que obliga a todos los investigadores chinos a compartir su conocimiento con el Estado.\nPor tanto, es absolutamente imprescindible que, en cumplimiento de las conclusiones de esa comisiÃ³n especial, la ComisiÃ³n que viene âla ComisiÃ³n Von der LeyenÂ IIâ adopte cuantas iniciativas sean necesarias para proteger la integridad de la investigaciÃ³n cientÃ­fica, de la autonomÃ­a acadÃ©mica, de la libertad acadÃ©mica frente a sus enemigos, frente a las interferencias extranjeras que intentan socavar los cimientos del modelo de convivencia europeo.",
+      "del:madeBy": {
+        "@id": "participant_77"
+      },
+      "del:timestamp": "2024-11-28T11:33:46"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_103",
+      "del:text": "DerriÃ¨re une faÃ§ade de coopÃ©ration, la Chine dÃ©ploie toute son influence afin de bÃ©nÃ©ficier de notre recherche et dÃ©veloppement et de manipuler l'intÃ©gritÃ© acadÃ©mique de nos institutions. Cette stratÃ©gie s'inscrit Ã  la lisiÃ¨re du renseignement et de la politique d'influence. DerriÃ¨re la rÃ©alitÃ© de partenariats acadÃ©miques entre universitÃ©s chinoises et europÃ©ennes existent des tentatives de contrÃ´ler le discours scientifique europÃ©en. Exploitant les porositÃ©s de nos systÃ¨mes universitaires, d'autres puissances, comme l'AzerbaÃ¯djanÂ â qui se livre par ailleurs Ã  un activisme subversif dans la France d'outre-merÂ â, la Russie ou certains Ãtats du Golfe emploient des mÃ©thodes similaires.\nIl convient donc de renforcer la transparence sur les financements extra-europÃ©ens des universitÃ©s et de dÃ©velopper un classement europÃ©en des universitÃ©s respectant les libertÃ©s acadÃ©miques, mais aussi d'instaurer des sanctions crÃ©dibles contre toute ingÃ©rence.\nL'universitÃ© europÃ©enne doit rester un sanctuaire du savoir, ouvert aux idÃ©es et aux innovations du reste du monde. PrÃ©servons donc nos universitÃ©s de dynamiques qui ne participent en rien Ã  l'Ã©lÃ©vation des savoirs, mais constituent des jeux d'influences gÃ©ostratÃ©giques qui ne disent pas leur nom.",
+      "del:madeBy": {
+        "@id": "participant_91"
+      },
+      "del:timestamp": "2024-11-28T11:35:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_104",
+      "del:text": "Un combat funeste s'est aujourd'hui emparÃ© de nos chaires. Les wokistes veulent dÃ©coloniser l'Europe, offrant aux islamistes le droit de la recoloniser. Ces noces apparemment contradictoires constituent la nouvelle convergence des luttes, la plus funeste des ingÃ©rences Ã©trangÃ¨res, celle qui apprend aux EuropÃ©ens Ã  se haÃ¯r, Ã  rompre les liens gÃ©nÃ©alogiques, Ã  devenir des dÃ©racinÃ©s.\nLes nations vacillent, mais soudain se lÃ¨ve la gÃ©nÃ©ration des consciences dressÃ©es et des anciennes sagesses. Je serai toujours du cÃ´tÃ© des pÃ©rennitÃ©s franÃ§aises, des cloches de nos Ã©glises, des calvaires, de nos chemins creux, qui annoncent pour toujours la primautÃ© de notre civilisation.",
+      "del:madeBy": {
+        "@id": "participant_92"
+      },
+      "del:timestamp": "2024-11-28T11:37:01"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_105",
+      "del:text": "What we did do in Europe was set up an excellent parliamentary committee to investigate unwanted foreign interference and espionage. Unfortunately, this work was not continued, but much needs to be done. If there is still any doubt after today's debate, we should make clear that we need this committee in the previous mandate to become permanent, to keep pressure on countering foreign interference, monitor our own recommendations, because this threat will not disappear by itself.",
+      "del:madeBy": {
+        "@id": "participant_93"
+      },
+      "del:timestamp": "2024-11-28T11:38:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_106",
+      "del:text": "A prav ta odprtost nas hkrati dela ranljive. OgroÅ¾ajo nas tuji vdori in vohunjenje s strani akterjev iz tretjih drÅ¾av. Ti izkoriÅ¡Äajo raziskovalne programe, akademske izmenjave in partnerstva ter pogosto ciljajo na obÄutljiva podroÄja, kot so umetna inteligenca, biotehnologija in obramboslovje. Njihov cilj ni kraja znanja, temveÄ spodkopavanje naÅ¡ih idej in napredka.\nUniverze morajo zato dobiti orodja in se usposobiti za zaznavanje in prepreÄevanje tovrstnih posegov. Zato je bistveno krepiti sodelovanje in povezovanje univerz in jim zato tudi zagotoviti vire. Ne gre le za zaÅ¡Äito naÅ¡ih univerz, temveÄ obrambo evropskih vrednot.",
+      "del:madeBy": {
+        "@id": "participant_94"
+      },
+      "del:timestamp": "2024-11-28T11:39:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_107",
+      "del:text": "MuszÄ powiedzieÄ, Å¼e te przypadki z Norwegii czy z Niemiec powinny nas czegoÅ nauczyÄ. Powinny przede wszystkim doprowadziÄ do sytuacji, w ktÃ³rej okreÅlona jest gradacja dla okreÅlonych tematÃ³w, rodzajÃ³w badaÅ. KtÃ³re powinny byÄ otwarte, a ktÃ³re, krÃ³tko mÃ³wiÄc, powinny byÄ objÄte okreÅlonÄ ochronÄ?\nOd razu dopowiem, Å¼e wedÅug mojej oceny, wczorajsza informacja o tym, Å¼e mamy identycznÄ liczbÄ patentÃ³w co Stany Zjednoczone, ale tylko 30% realizacji, teÅ¼ z czegoÅ wynika. Okazuje siÄ, Å¼e czÄÅÄ patentÃ³w jest wykorzystywana poza granicami Europy. CzÄÅÄ jest po prostu kradziona, a czÄÅÄ jest wykorzystywana w sposÃ³b absolutnie nielegalny. WaÅ¼ne sÄ, jeszcze raz podkreÅlam: klasyfikacja, strategia, budowanie hierarchii wartoÅci. Co powinno byÄ w ogÃ³le otwarte, co nie powinno byÄ zamykane w jakichÅ szklanych skansenach, skansenach bezpieczeÅstwa, a co powinno byÄ zamkniÄte przed szpiegami, przed obcymi mocarstwami, ktÃ³re korzystajÄ z naszych osiÄgniÄÄ i naszych pieniÄdzy?",
+      "del:madeBy": {
+        "@id": "participant_95"
+      },
+      "del:timestamp": "2024-11-28T11:40:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_108",
+      "del:text": "Sin lugar a dudas, el tema de la protecciÃ³n de nuestra ciencia, de nuestras universidades, de nuestro conocimiento es una cuestiÃ³n prioritaria que el Ãºltimo Informe NiinistÃ¶ ha puesto encima de la mesa. Y esta es una cuestiÃ³n que, desde luego, la prÃ³xima ComisiÃ³n âque estÃ¡ trabajando ya en la protecciÃ³n de nuestros datos, de nuestro conocimiento, de nuestros investigadores, de nuestros centros de investigaciÃ³nâ tiene que colocar en el centro como una de las grandes prioridades.\nNuestro conocimiento, el de nuestras investigaciones, el de nuestros investigadores, estÃ¡ en juego; nos jugamos mucho. Y, por eso, hablar de la ciberseguridad y la protecciÃ³n de nuestros centros de investigaciÃ³n es algo prioritario, tambiÃ©n, para la ComisiÃ³n que hoy se pone en marcha.",
+      "del:madeBy": {
+        "@id": "participant_96"
+      },
+      "del:timestamp": "2024-11-28T11:42:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_109",
+      "del:text": "Pierwszy obszar to energetyka. Przypomnijmy sobie doskonale, jak Rosja wpÅywaÅa na wiele uczelni na terenie Europy i przekonywaÅa, Å¼e to gaz jest lepszy jako sposÃ³b zasilania Europy niÅ¼ na przykÅad energia elektryczna pochodzÄca z elektrowni jÄdrowych. Wiele osÃ³b na tej sali nabraÅo siÄ na tÄ retorykÄ.\nDruga kwestia: ograniczanie pod pretekstem nauki, pod pretekstem ochrony Årodowiska rozwoju infrastruktury, na przykÅad w przypadku Polski na Odrze. TeÅ¼ tutaj czÄsto sÄ argumenty naukowe, ale tak naprawdÄ za plecami lobby innych krajÃ³w.\nI trzecia rzecz: toÅ¼samoÅÄ. Bo czÄsto teÅ¼ wÅaÅnie w ramach rÃ³Å¼nych dziaÅaÅ na uniwersytetach prÃ³buje siÄ zbudowaÄ kosmopolitycznÄ toÅ¼samoÅÄ po to, abyÅmy nie mieli silnych narodÃ³w w Europie. A tak naprawdÄ to spowoduje w przyszÅoÅci, Å¼e Europa wÅaÅnie bÄdzie sÅaba.",
+      "del:madeBy": {
+        "@id": "participant_97"
+      },
+      "del:timestamp": "2024-11-28T11:43:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_110",
+      "del:text": "Und das ist es, was wir erleben in unseren Gesellschaften als Teil von Putin-Russlands Angriffskrieg und von den hybriden Mitteln, die gegen uns eingesetzt werden, um uns zu schwÃ¤chen, um uns zu spalten, um uns mÃ¼de zu machen und die Ukraine selbst dafÃ¼r verantwortlich zu machen, dass sie Opfer dieses Angriffskriegs Putin-Russlands ist.\nUnd deshalb ist es so wichtig klarzumachen, dass Fakten, dass VÃ¶lkerrecht, dass Freiheit und auf diesem Weg die Arbeit fÃ¼r den Frieden im Vordergrund stehen mÃ¼ssen und dass wir uns nicht irremachen lassen dÃ¼rfen von denen, die uns ein X fÃ¼r ein U vormachen wollen und die eben nicht direkt sagen, in wessen Auftrag sie aktiv sind, sondern die das Gegenteil behaupten, aber in Wahrheit ihr Skript von Putin geschrieben bekommen.",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2024-11-28T11:45:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_111",
+      "del:text": "Necesitamos fortalecer nuestra competitividad y autonomÃ­a estratÃ©gica para ser capaces de hacer frente a las grandes potencias como China o los Estados Unidos. Y este camino pasa por universidades libres y autÃ³nomas. Debemos defenderlas de injerencias externas por parte de potencias extranjeras que intentan debilitar nuestra democracia, socavar la integridad de nuestras instituciones acadÃ©micas y censurar nuestra diversidad intelectual.\nHa de haber cooperaciÃ³n acadÃ©mica en la UniÃ³n Europea y mÃ¡s transparencia en la financiaciÃ³n de las investigaciones. La UniÃ³n Europea debe explorar âjunto a los Estados miembrosâ medidas para proteger la investigaciÃ³n acadÃ©mica y garantizar nuestra democracia y nuestra libertad acadÃ©mica; medidas que, ademÃ¡s, cuenten con la dotaciÃ³n presupuestaria adecuada.",
+      "del:madeBy": {
+        "@id": "participant_69"
+      },
+      "del:timestamp": "2024-11-28T11:46:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_112",
+      "del:text": "Le universitÃ  europee sono un baluardo per l'innovazione globale ma la diplomazia culturale puÃ² mascherare intenti ben piÃ¹ oscuri. Un Paese come la Cina, infatti, Ã¨ riuscito a drenare in modo occulto conoscenze scientifiche e tecnologiche pregiate (alcune parole inudibili) la geopolitica. Non Ã¨ piÃ¹ una questione di ideologia, ma di sicurezza.\nPer questo l'Europa deve agire con fermezza. Dobbiamo adottare linee guida rigorose per monitorare e gestire gli scambi internazionali, proteggere le nostre tecnologie sensibili e incentivare la condivisione di buone pratiche di sicurezza tra gli atenei.\nProteggere il nostro know how Ã¨ un imperativo, una battaglia che trascende il colore politico perchÃ© Ã¨ una battaglia per la nostra sovranitÃ  scientifica e tecnologico. Ã ora di difendere ciÃ² che Ã¨ nostro.",
+      "del:madeBy": {
+        "@id": "participant_99"
+      },
+      "del:timestamp": "2024-11-28T11:47:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_113",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_100"
+      },
+      "del:timestamp": "2024-11-28T11:49:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_114",
+      "del:text": "Ci sono infatti tanti casi documentati di trasferimento non autorizzato di dati sensibili da parte dei paesi ostili che lo fanno attraverso regolari collaborazioni accademiche o attivitÃ  di spionaggio.\nL'Italia Ã¨ stato uno dei paesi che ha promosso la decisione del Consiglio affinchÃ© ci sia una migliore condivisione di informazione tra gli atenei e le agenzie di intelligence. Ed Ã¨ su questa direzione che dobbiamo insistere per garantire che la ricerca scientifica rimanga uno strumento di progresso e non di manipolazione esterna, nell'interesse delle sicurezze nazionali e dell'integritÃ  delle nostre istituzioni europee.",
+      "del:madeBy": {
+        "@id": "participant_101"
+      },
+      "del:timestamp": "2024-11-28T11:50:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_115",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_102"
+      },
+      "del:timestamp": "2024-11-28T11:51:49"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_116",
+      "del:text": "MeidÃ¤n pitÃ¤Ã¤ ottaa tÃ¤hÃ¤n nyt kokonaan uusi ote. Laki mÃ¤Ã¤rÃ¤Ã¤ Suomessa, ettÃ¤ puolustusvoimien virkoihin nimitettÃ¤vÃ¤llÃ¤ ei saa olla valtion turvallisuutta vaarantavaa kaksoiskansalaisuutta tai ulkomaan sidonnaisuutta. Samalla tapaa tÃ¤llaista mallia voisi alkaa hyÃ¶dyntÃ¤Ã¤ esimerkiksi yliopistojen tutkijoihin. Tutkimus ja innovointi ovat yksiÃ¤ niistÃ¤ asioista, joilla voimme voittaa Kiinan kaltaisen valtion. Ei luovuteta sitÃ¤kin valttikorttia heille.",
+      "del:madeBy": {
+        "@id": "participant_72"
+      },
+      "del:timestamp": "2024-11-28T11:53:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_117",
+      "del:text": "Oggi le nostre universitÃ  si trovano ad affrontare una sfida sempre piÃ¹ grande: Paesi come la Cina e la Russia stanno tentando di infiltrarsi e influenzare le nostre istituzioni accademiche, mettendo a rischio l'indipendenza e la libertÃ  che sono il cuore dell'istruzione europea.\nSi tratta di un attacco diretto alla nostra sovranitÃ  intellettuale e ai valori che consideriamo fondamentali. Le universitÃ  devono rimanere luoghi di esplorazione libera non strumenti di giochi geopolitici.",
+      "del:madeBy": {
+        "@id": "participant_76"
+      },
+      "del:timestamp": "2024-11-28T11:54:53"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_118",
+      "del:text": "Moreover, we all need to ensure that our fundamental values stay strong. Democracy, fundamental rights and the rule of law. With the upcoming democracy shield, as announced by President von der Leyen in her political priorities, we will work to further counter foreign information manipulation and interference and increase societal resilience to attacks on our democracy. You can count on the Commission to continue our active work, and I thank the European Parliament for your constant advocacy and support on this matter.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2024-11-28T11:56:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_119",
+      "del:text": "Dezbaterea a fost Ã®nchisÄ.",
+      "del:madeBy": {
+        "@id": "participant_74"
+      },
+      "del:timestamp": "2024-11-28T11:57:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_120",
+      "del:text": "Le 21Â octobre dernier, j'ai essayÃ© de faire une dÃ©claration en langue luxembourgeoise dans ce Parlement. J'ai tout de suite Ã©tÃ© interrompu et invitÃ© Ã  m'exprimer en anglais. Je voudrais donc informer mes collÃ¨gues que, suite Ã  cela, j'ai proposÃ© de modifier deux articles de notre rÃ¨glement pour permettre l'utilisation de la langue luxembourgeoise lors de nos Ã©changes.\nOn m'indique maintenant qu'un avis juridique a Ã©tÃ© demandÃ©. Cet avis ne doit pas servir Ã  fabriquer des arguments pour Ã©terniser la discrimination de la langue luxembourgeoise par le Parlement europÃ©en. Au contraire, le Parlement doit s'appliquer Ã  trouver des solutions pour permettre de reconnaÃ®tre la langue nationale du Grand-DuchÃ© de Luxembourg et de l'introduire dans cette enceinte. Le peuple luxembourgeois est en droit de s'attendre Ã  ne pas Ãªtre traitÃ© de faÃ§on autre que les autres nations reprÃ©sentÃ©es dans cette assemblÃ©e.",
+      "del:madeBy": {
+        "@id": "participant_103"
+      },
+      "del:timestamp": "2024-11-28T12:05:12"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_121",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T12:06:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_122",
+      "del:text": "Then there is group or individual meetings afterwards, so-called lunch debates. Then there is food and drinks with theÂ intergroups, followed by dinner debates. You see a pattern here. And then finishing up in the night while the plenary is still ongoing, there are cocktail receptions with NGOs and lobbyists. Colleagues, this Hemicycle is a majestic sanctuary of democracy. It is the heart of this continent, and with all my soul, I want to see it alive, full of passionâ¦\n(The President cut off the speaker)",
+      "del:madeBy": {
+        "@id": "participant_76"
+      },
+      "del:timestamp": "2024-11-28T12:06:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_123",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T12:07:57"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_124",
+      "del:text": "Liczba wiÄÅºniÃ³w politycznych na BiaÅorusi kaÅ¼dego dnia roÅnie i siÄgaÄ juÅ¼ moÅ¼e dziesiÄciu tysiÄcy. WÅrÃ³d nich jest Palina Szarenda-Panasiuk â jedna z najbardziej przeÅladowanych dziaÅaczek opozycyjnych, brutalnie aresztowana w styczniu 2021 roku na oczach swojego czteroletniego syna. Zdiagnozowano u niej ostatnio przewlekÅe, nieuleczalne zapalenie trzustki, ktÃ³re w warunkach wiÄziennych, przy braku pomocy medycznej, to wyrok Åmierci. Wzywam wiÄc spoÅecznoÅÄ miÄdzynarodowÄ do natychmiastowego podjÄcia dziaÅaÅ na rzecz uwolnienia Paliny Szarendy-Panasiuk oraz wszystkich wiÄÅºniÃ³w politycznych na BiaÅorusi.",
+      "del:madeBy": {
+        "@id": "participant_104"
+      },
+      "del:timestamp": "2024-11-28T12:08:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_125",
+      "del:text": "Autorami tej poprawki sÄ posÅowie polskiej skrajnie prawicowej partii Konfederacja â partii antyukraiÅskiej i wielokrotnie prezentujÄcej stanowiska zgodne z rosyjskÄ propagandÄ. Celem tej poprawki jest podwaÅ¼enie zawartego parÄ dni temu porozumienia miÄdzy rzÄdem Polski a Ukrainy w sprawie ekshumacji ofiar zbrodni popeÅnianych na Polakach przez nacjonalistÃ³w ukraiÅskich w czasie II wojny Åwiatowej. Ta poprawka ma storpedowaÄ to porozumienie. (PrzewodniczÄca przerwaÅa mÃ³wcy). PrzyjÄcie tej poprawki byÅoby jakimÅ okrutnym paradoksem wobec tej uchwaÅy.",
+      "del:madeBy": {
+        "@id": "participant_105"
+      },
+      "del:timestamp": "2024-11-28T12:09:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_126",
+      "del:text": "Mit einem solchen Vorgehen verlÃ¤sst man den Boden der freiheitlichen demokratischen Grundordnung. Ein Bundesminister, der ob der Nennung âSchwachkopfâ den Rechtsstaat instrumentalisiert, ist aber in erster Linie totalitÃ¤r und erst in zweiter Linie ein Riesenschwachkopf. Ich fordere daher eine ÃberprÃ¼fung der Auslegung des ArtikelsÂ 150 unserer GeschÃ¤ftsordnung.",
+      "del:madeBy": {
+        "@id": "participant_106"
+      },
+      "del:timestamp": "2024-11-28T12:10:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_127",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T12:11:59"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_128",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T12:12:09"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_129",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T12:12:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_130",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T12:13:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_131",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T12:14:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_132",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T12:15:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_133",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T12:18:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_134",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_107"
+      },
+      "del:timestamp": "2024-11-28T12:22:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_135",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_108"
+      },
+      "del:timestamp": "2024-11-28T12:23:46"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_136",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T12:27:44"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_137",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_109"
+      },
+      "del:timestamp": "2024-11-28T15:00:15"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_138",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_109"
+      },
+      "del:timestamp": "2024-11-28T15:00:21"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_139",
+      "del:text": "The stakes couldn't be higher. Plastic pollution is one of the world's most pressing environmental crises, and it requires immediate, concrete and decisive action from the global community. Business as usual is not an option. We have a clear and unwavering commitment to the mandate set forth by the United Nations Environment Assembly in 2022 to conclude negotiations by the end of this year.\nINC-5 represents a unique opportunity for the international community to take immediate, concrete and decisive action. We feel prepared, and while the road to get here has been challenging, we are optimistic about our chances of success. That said, we also acknowledge, of course, that there are significant risks and challenges ahead. The outcome of these negotiations is far from certain.\nI shall now provide a brief overview of the ongoing process. I am informed by colleagues on the ground that negotiators are engaging on a new version of the treaty text developed by the INC Chair, Ambassador Luis Vayas Valdivieso. While we appreciate the Chair's efforts to simplify the complicated text we have from INC-4 it is at the same time clear to us that his text falls short of where we need to be. To make real progress, we must raise ambition. Time is short and discussions do not seem to be moving at a pace that could lead us to the desired outcome on Sunday. We made that very clear to the Chair over the past few days: the pace needs to change if we are aiming for a conclusion.\nBut to reach a conclusion, there are also critical areas where we must first do more, like product design, chemicals of concern and problematic plastics. Another vital element that seems to be almost missing from the text is the extended producer responsibility. The 'polluter pays' principle is extremely important for us to be reflected in the future treaty, and EPR is one way of operationalising it.\nWe also need the instrument to address the unsustainable levels of primary plastic production, as it is clearly linked to the amount of plastic pollution. This is a highly sensitive and politically charged area, but it is essential that the treaty reflects the urgency of tackling plastic production at its source.\nOne of the most complex and challenging aspects of these negotiations will, however, be to agree on an acceptable financing structure. How do we ensure the effective mobilisation of resources, the necessary capacity building? This is a core area of negotiation, and the ChairÂ has left it open for the INC to reach a compromise. There are many divergent views and we have over the past months explored and tried to identify necessary landing zones where compromises can be made.\nI thank the EU Member States for the efforts to find a compromise and this Parliament for your support. Many of our partners have prepared similarly, which shows a commitment to this process. We are also doing our utmost to make progress by bridging positions and urging the Chair to take difficult decisions. It is, however, important that we do not compromise for a too high price. We need a plastics treaty that is effective and that brings us forward, if we are serious about addressing the harmful consequences for humanity, human health, the environment, ecosystems and the climate of the increasing leakage of plastic into rivers and oceans.\nAlthough time is not on our side, the EU stands ready to work and to deliver a robust global treaty that addresses the root causes of plastic pollution. Now is our chance.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2024-11-28T15:00:45"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_140",
+      "del:text": "La contaminaciÃ³n por plÃ¡sticos es uno de los principales problemas del medio ambiente y, en especial, del medio marino. Es esencial que seamos ambiciosos en esta negociaciÃ³n. Yo soy miembro de la ComisiÃ³n de Pesca y soy consciente de la importancia de unos ocÃ©anos limpios, pues son los pescadores los que mÃ¡s sufren por la contaminaciÃ³n del mar.\nMe voy a detener en los microplÃ¡sticos, que deben ocupar un lugar importante en la negociaciÃ³n de BusÃ¡n. El transporte marÃ­timo de plÃ¡sticos debe ser regulado de una manera mÃ¡s estricta para evitar los vertidos de granzas de plÃ¡stico o pÃ©lets. A nivel europeo todos estamos haciendo progresos. Como saben, el Parlamento fijÃ³ en abril su PosiciÃ³n sobre la propuesta de Reglamento relativo a la prevenciÃ³n de las pÃ©rdidas de granza de plÃ¡stico e incluimos el trÃ¡fico marÃ­timo en nuestra PosiciÃ³n. Yo espero que el Consejo pronto concluya sus trabajos y que se inicien las negociaciones interinstitucionales cuanto antes.\nPero todos sabemos que las negociaciones europeas no son suficientes. Debemos implicar a toda la comunidad internacional y alcanzar tambiÃ©n una regulaciÃ³n global. Por eso, hay que trabajar firmemente en el marco de este Acuerdo de las Naciones Unidas, como tambiÃ©n en el seno de la OrganizaciÃ³n MarÃ­tima Internacional (OMI). En la OMI necesitamos normas vinculantes mÃ¡s estrictas en materia de pÃ©lets, como el uso de embalajes de alta resistencia y procedimientos de estiba bajo cubierta en todos los casos.\nTermino con dos preguntas, seÃ±ora comisaria: Â¿quÃ© lugar ocupa la contaminaciÃ³n por granzas de plÃ¡stico en las negociaciones de BusÃ¡n? Y, en segundo lugar, Â¿quÃ© avances estamos impulsando en esta materia como UniÃ³n Europea en la OMI? Â¿QuÃ© estamos haciendo en el seno de la OMI? Es otra pregunta importante.",
+      "del:madeBy": {
+        "@id": "participant_110"
+      },
+      "del:timestamp": "2024-11-28T15:06:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_141",
+      "del:text": "I just had lunch before this debate,Â and I canât even be sure if what I ate is free from plastic.Â Every single day,Â the equivalent of 2.000Â truckloads of plastic waste is dumped into the ocean.Â By 2050, our ocean could have more plastic than fish. That is where we are at, right now. Think about that for a moment.\nIt is not just about visible litter, it is about invisible poison. It is about the toxic chemicalsÂ leaching into our soils, our ocean and yes, our bloodstreams. It is also about the carbon emissionsÂ from plastic production,Â which today are even higher than those of aviation. We must take tangible action now: the Global Plastic Treaty, which is being negotiated right now in South Korea, is our chance to turn the tide.\nThis is not just a meeting, it is our worldâs defining moment. But it can only be so if we take bold action with tangible action. We need ambitious, legally binding targets to cut plastic production.Â We need to end single-use plastics globally,Â ban harmful chemicalsÂ and hold accountable those who profit from this crisis and I call on those few statesÂ blocking this from happeningÂ to be ambitiousÂ and think about our common future and that of generations to come.\nAnd yes, a one-size-fits-all approach will not work, but I believe that good governance and sustainable mechanisms must guide this treaty. We must ensure equal access to alternatives and avoid creating additional burdens on our consumers and businesses, particularly our SMEs. An upstream approach is critical, addressing the entire lifecycle of plastics, from production, to use, to its disposal. And as you said, dear Commissioner, by focusing on product design and linking production with pollution, we can prevent waste before it even happens, and we can only do this together and for everyone. A just transition must ensure that no one is left behind: from waste pickers, that collect around 60Â % of recycled plastic,Â to the impacted communitiesÂ bearing the burden of our wasteÂ and our activists fighting the good fight,Â such as the Maltese swimmer Neil Agius, who is beating plastic one stroke at the time.\nThis is not a European problem, this is a global crisis, but Europe has the power to lead and we have shownÂ that bold action on climate is possible.Â Colleagues, this is not just about protecting our ocean,Â it is not about cleaning up our beaches, it is about protecting our future, our health, our humanity. Let us fight for a global treaty that does not just manage plastic pollution,Â but ends it.",
+      "del:madeBy": {
+        "@id": "participant_111"
+      },
+      "del:timestamp": "2024-11-28T15:08:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_142",
+      "del:text": "Oui, 80Â % de la pollution plastique du milieu maritime est issue des pays d'Asie du Sud et de la Chine, mais peut-on enfin dire qu'il en va aussi de la responsabilitÃ© des pays occidentaux? Car, aprÃ¨s tout, qui a promu le mondialisme? Qui a dÃ©localisÃ© nos usines dans ces pays? Sacrifiant nos emplois et dÃ©truisant notre Ã©conomie? C'est l'Union europÃ©enne.\nEn s'appuyant sur des rÃ©glementations abusives, l'Union europÃ©enne a tout simplement dÃ©truit notre industrie, notre agriculture, notre pÃªche et dÃ©placÃ© la pollution ailleurs. Car, enfin, qui a voulu utiliser ces pays comme des dÃ©charges Ã  ciel ouvert? L'Union europÃ©enne. EntreÂ 2004 etÂ 2024, les exportations des dÃ©chets de l'Union vers les pays tiers ont augmentÃ© de 72Â %. Les exportations de dÃ©chets!\nAlors certains ici peuvent se fendre de grandes dÃ©clarations sur l'urgence climatique, la biodiversitÃ©, la catastrophe Ã©cologique, mais la rÃ©alitÃ© est lÃ . C'est vous. C'est vous, europÃ©istes bÃ©ats, qui avez promu ce modÃ¨le ultralibÃ©ral qui nous met dans cette situation calamiteuse.\nÂ«Quand le sage montre la lune, l'imbÃ©cile regarde le doigtÂ»: c'est un proverbe chinois. Nous ne serons pas les idiots utiles. Alors si cette maigre initiative est toujours Ã  prendre, n'oublions pas qu'il n'est pas question seulement d'objectifs juridiques contraignants, qui ont peu de chance, finalement, de prospÃ©rer tant que vous n'aurez pas changÃ© de paradigme. Il faut changer cette politique nomadiste et mortifÃ¨re que les peuples d'Europe ont massivement rejetÃ©e derniÃ¨rement.\nLa clÃ© du problÃ¨me est simple, c'est le localisme, c'est le rÃ©-enracinement, c'est la relocalisation de nos productions, c'est le respect des nations du Sud, c'est le respect de toutes les nations, c'est le respect des peuples.",
+      "del:madeBy": {
+        "@id": "participant_112"
+      },
+      "del:timestamp": "2024-11-28T15:11:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_143",
+      "del:text": "Yes, recycling of plastic is hugely important â we currently recycle only a third of the plastic produced â but recycling isn't enough. We have to reduce the production of plastic. If you look at those who developed plastic and interviews with them and their hopes for it, it's really instrumental because they saw it as an environmental benefit that we wouldn't have to cut down trees, but they never imagined that plastic would be produced for single-use materials. They imagined that it would be something that could be used and reused, rather than this single-use plastic, which we must combat.\nIn my own constituency, plastic pollution and litter is a huge problem along the Clare coast. Lahinch, Doolin and even Mountshannon, which is inland, are cited by An Taisce for plastic pollution. Ireland is the highest producer of plastic waste per person in the European Union, 65Â kg a year per person, twice the EU average. Most of the EU's plastic is burned and, as I said, less than a third is recycled.\nSo I think it is very important that we conclude the Global Plastic Treaty this week. But, Commissioner, I share your reservations about it â we do need to go further, but we do need to at least start combating this. Because, as I said, I talked about my aesthetic sensibilities in picking up plastic â that, of course, is irrelevant compared to the impact it is having on habitats and the many species that rely on not having to survive amid plastic for their future. So it is, as I say, something that I hope the European Union can work on and support, but also develop further because there are many weaknesses in what is proposed. But it is at least a start.",
+      "del:madeBy": {
+        "@id": "participant_113"
+      },
+      "del:timestamp": "2024-11-28T15:14:28"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_144",
+      "del:text": "So the EU must push hard to get a globally binding agreement in Busan to end plastic pollution but also stem the flood of new plastics at its sources. We know the 1.5âdegree climate goal cannot be achieved without a sharp reduction in the production of primary plastic polymers, since these are made of petroleum. We know our oceans will suffocate with plastics if we don't achieve management and recycling of plastic waste in all countries, including in the Global South, where producers also have responsibility. And we know our children will suffer if we don't ban hazardous chemicals contained in plastic products.\nFinal point, I hear that the same countries that were obstructing during the climate negotiations last week in Baku are now creating problems in Busan. Oilâproducing countries â Saudi Arabia, Russia, Iran â trying to safeguard their future markets, I just have one thing to say: shame on you.",
+      "del:madeBy": {
+        "@id": "participant_114"
+      },
+      "del:timestamp": "2024-11-28T15:17:02"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_145",
+      "del:text": "Î©Ï Î¼Î­Î»Î¿Ï ÏÎ·Ï ÎÏÎ¹ÏÏÎ¿ÏÎ®Ï Î ÎµÏÎ¹Î²Î¬Î»Î»Î¿Î½ÏÎ¿Ï, ÎµÎ¯ÏÎ± ÏÎ·Î½ ÎµÏÎºÎ±Î¹ÏÎ¯Î± Î½Î± ÏÎ±ÏÎ±ÎºÎ¿Î»Î¿ÏÎ¸Î®ÏÏ Î±ÏÏ ÎºÎ¿Î½ÏÎ¬ ÎºÎ±Î¹ ÏÎ¹Ï ÎµÏÎ³Î±ÏÎ¯ÎµÏ ÏÏÎ¿ ÎÏÎ±ÎºÎ¿Ï Î³Î¹Î± ÏÎ·Î½ ÎºÎ»Î¹Î¼Î±ÏÎ¹ÎºÎ® ÎºÏÎ¯ÏÎ·, ÏÎ¿ COP29. Î¤Î± Î±ÏÎ¿ÏÎµÎ»Î­ÏÎ¼Î±ÏÎ± Î´ÎµÎ½ ÎµÎ¯Î½Î±Î¹ Î¹ÎºÎ±Î½Î¿ÏÎ¿Î¹Î·ÏÎ¹ÎºÎ¬, Î´Î¹ÏÏÎ¹ Î´ÎµÎ½ ÏÏÎ¬ÏÏÎµÎ¹ Î´Î­ÏÎ¼ÎµÏÏÎ· Î¿ÏÏÎµ Î³Î¹Î± ÏÏÎ·Î¼Î±ÏÎ¿Î´ÏÏÎ·ÏÎ· Î¿ÏÏÎµ Î³Î¹Î± ÏÎ± ÎµÏÏÎ¼ÎµÎ½Î± Î²Î®Î¼Î±ÏÎ± ÏÏÎ½ Î±Î½ÎµÏÏÏÎ³Î¼Î­Î½ÏÎ½ ÏÏÏÏÎ½ Î³Î¹Î± Î­Î½Î±Î½ ÎºÎ±Î¸Î±ÏÏÏÎµÏÎ¿ ÏÎ»Î±Î½Î®ÏÎ·. ÎÎ´Ï, Î»Î¿Î¹ÏÏÎ½, ÏÎ®Î¼ÎµÏÎ± ÏÎ¿Ï Î¼Î¹Î»Î¬Î¼Îµ, Î±ÏÏÎ® ÏÎ· ÏÏÎ¹Î³Î¼Î®, ÏÏÎ¿ ÎÏÎ¿ÏÏÎ¬Î½ ÏÎ·Ï ÎÎ¿ÏÎ­Î±Ï ÏÏÎ½ÎµÏÎ¯Î¶Î¿Î½ÏÎ±Î¹ Î¿Î¹ Î´Î¹Î±ÏÏÎ±Î³Î¼Î±ÏÎµÏÏÎµÎ¹Ï Î³Î¹Î± Î¼Î¯Î± Î´Î¹ÎµÎ¸Î½Î® ÏÏÎ¼ÏÏÎ½Î¯Î± Î³Î¹Î± ÏÎ± ÏÎ»Î±ÏÏÎ¹ÎºÎ¬ ÏÏÏ ÏÎ·Î½ Î±Î¹Î³Î¯Î´Î± ÏÎ¿Ï ÎÏÎ³Î±Î½Î¹ÏÎ¼Î¿Ï ÎÎ½ÏÎ¼Î­Î½ÏÎ½ ÎÎ¸Î½ÏÎ½, ÎºÎ±Î¹ Î· ÎÏÏÏÏÎ±ÏÎºÎ® ÎÎ½ÏÏÎ· ÏÏÎ­ÏÎµÎ¹ Î½Î± ÏÏÏÏÎ¿ÏÏÎ±ÏÎ®ÏÎµÎ¹.\nKÎ¬Î½Ï Î­ÎºÎºÎ»Î·ÏÎ· ÏÏÎ¿Ï ÏÎ·Î½ ÎÏÏÏÏÎ±ÏÎºÎ® ÎÏÎ¹ÏÏÎ¿ÏÎ® Î½Î± ÏÎ±ÏÎ±Î¼ÎµÎ¯Î½ÎµÎ¹ ÏÏÎ±Î¸ÎµÏÎ® ÎºÎ±Î¹ ÏÏÎ¿ÏÎ·Î»ÏÎ¼Î­Î½Î· ÏÏÎ¿Î½ ÏÏÏÏÎ¿ ÏÎ·Ï Î¼ÎµÎ¯ÏÏÎ·Ï ÏÏÎ½ ÏÎ»Î±ÏÏÎ¹ÎºÏÎ½ âÏÏÎ¹ Î±ÏÎ»Î¬ ÏÎ·Ï Î±ÏÎ¾Î·ÏÎ·Ï ÏÎ·Ï Î±Î½Î±ÎºÏÎºÎ»ÏÏÎ·Ï, Î±Î»Î»Î¬ ÏÎ·Ï Î¼ÎµÎ¯ÏÏÎ·Ï ÏÎ±ÏÎ±Î³ÏÎ³Î®Ï ÏÏÎ½ ÏÎ»Î±ÏÏÎ¹ÎºÏÎ½, Î· Î¿ÏÎ¿Î¯Î± ÎµÎ¯Î½Î±Î¹ Î±ÏÎ¿Î³Î¿Î·ÏÎµÏÏÎ¹ÎºÎ®. ÎÏÎ¾Î¬Î½ÎµÏÎ±Î¹ Î¼Îµ Î³ÎµÏÎ¼ÎµÏÏÎ¹ÎºÎ® ÏÎ±ÏÏÏÎ·ÏÎ±. Î ÏÏÏÎ¿Î½.\nÎÎµÏÏÎµÏÎ¿Î½, Î±Î½Î±ÎºÏÎºÎ»ÏÏÎ·. ÎÏÎ½Î¿ 9% ÏÏÎ½ ÏÎ»Î±ÏÏÎ¹ÎºÏÎ½ Î±Î½Î±ÎºÏÎºÎ»ÏÎ½Î¿Î½ÏÎ±Î¹ ÏÎ±Î³ÎºÎ¿ÏÎ¼Î¯ÏÏ ÎºÎ¬Î¸Îµ ÏÏÏÎ½Î¿. Î ÏÎ­ÏÎµÎ¹ Î½Î± Î´Î¹ÏÎ»Î±ÏÎ¹Î±ÏÏÎµÎ¯ ÎºÎ±Î¹ Î½Î± ÏÏÎ¹ÏÎ»Î±ÏÎ¹Î±ÏÏÎµÎ¯ Î¬Î¼ÎµÏÎ± Î±ÏÏÏ ÏÎ¿ Î½Î¿ÏÎ¼ÎµÏÎ¿.\nÎ¤ÏÎ¯ÏÎ¿Î½, Î½Î± Î¼Î·Î½ ÎµÏÎ¹ÏÏÎ­ÏÎ¿ÏÎ¼Îµ ÏÎµ ÏÎ»ÎµÏ Î±ÏÏÎ­Ï ÏÎ¹Ï ÎµÏÎ±Î¹ÏÎµÎ¯ÎµÏ-Î»ÏÎ¼ÏÎ¹ ÏÎ¿Ï Î±ÏÏÎ® ÏÎ· ÏÏÎ¹Î³Î¼Î® Î­ÏÎ¿ÏÎ½ ÎºÎ±ÏÎ±ÎºÎ»ÏÏÎµÎ¹ ÏÎ¹Ï ÎµÏÎ³Î±ÏÎ¯ÎµÏ ÏÎ·Ï ÏÎ±Î³ÎºÏÏÎ¼Î¹Î±Ï ÏÏÎ½Î´Î¹Î¬ÏÎºÎµÏÎ·Ï ÏÏÎ· ÎÏÏÎ¹Î± ÎÎ¿ÏÎ­Î±, ÏÏÎ¿ ÎÏÎ¿ÏÏÎ¬Î½, 220 ÏÎ¿Î½ Î±ÏÎ¹Î¸Î¼Ï âÎ¿ Î¼ÎµÎ³Î±Î»ÏÏÎµÏÎ¿Ï Î±ÏÎ¹Î¸Î¼ÏÏ ÎµÏÎ±Î¹ÏÎµÎ¹ÏÎ½ Î¿ÏÏÎºÏÏÎ½ ÎºÎ±Î¹ ÏÎ»Î±ÏÏÎ¹ÎºÏÎ½ ÏÎ¿Ï ÎµÎ¼ÏÎ±Î½Î¯ÏÏÎ·ÎºÎµ ÏÎ¿ÏÎ­ ÏÎµ ÏÎ­ÏÎ¿Î¹Î± Î´Î¹ÎµÎ¸Î½Î® ÏÏÎ½Î´Î¹Î¬ÏÎºÎµÏÎ·â Î½Î± ÎºÎ±Î¸Î¹ÎµÏÏÏÎ¿ÏÎ½ ÏÎ·Î½ Î±ÏÎ¶Î­Î½ÏÎ± ÏÎ¿ÏÏ.\nÎÎ´Ï ÎºÎ±Î¹ ÏÏÏÎ± ÏÏÎµÎ¹Î±Î¶ÏÎ¼Î±ÏÏÎµ ÏÎ±Î³ÎºÏÏÎ¼Î¹Î¿ÏÏ ÎºÎ±Î½ÏÎ½ÎµÏ, Î½Î¿Î¼Î¹ÎºÎ¬ Î´ÎµÏÎ¼ÎµÏÏÎ¹ÎºÎ¿ÏÏ Î³Î¹Î± ÏÎ»Î¿ÏÏ, ÎºÏÏÎ¯ÏÏ Î³Î¹Î± ÏÎ¹Ï Î±Î½ÎµÏÏÏÎ³Î¼Î­Î½ÎµÏ Î±Î»Î»Î¬ ÎºÎ±Î¹ ÏÎ¹Ï Î±Î½Î±ÏÏÏÏÏÏÎ¼ÎµÎ½ÎµÏ ÏÏÏÎµÏ. Î ÏÏÏÎ¿Î½, Î³Î¹Î± Î¼ÎµÎ¯ÏÏÎ· ÏÏÎ½ ÏÎ»Î±ÏÏÎ¹ÎºÏÎ½. ÎÎ±Î¹, Î´ÎµÏÏÎµÏÎ¿Î½, Î³Î¹Î± Î±ÏÎ¾Î·ÏÎ· ÏÎ·Ï Î±Î½Î±ÎºÏÎºÎ»ÏÏÎ·Ï.",
+      "del:madeBy": {
+        "@id": "participant_115"
+      },
+      "del:timestamp": "2024-11-28T15:18:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_146",
+      "del:text": "Seltsamerweise hÃ¶rt man nie etwas Ã¼ber die Verursacher von PlastikmÃ¼ll in den Meeren. Am Pranger stehen immer bestimmte LÃ¤nder, aber eben nicht konkret der Verursacher. Wenn ein SchiffskapitÃ¤n vorsÃ¤tzlich Plastik im Meer entsorgt, und es wird ihm nachgewiesen, dann sollte er dafÃ¼r hart bestraft werden. Aber die PlastiktÃ¼te an sich oder der Luftballon oder das WattestÃ¤bchen am Strand sind nicht schuld.\nEs gibt ja erstklassige Beispiele, wo Recycling von MÃ¼ll funktioniert â ohne staatliche Einwirkung. Die MÃ¼llabfuhr in Kairo mit mehr als 20Â Millionen Einwohnern wird weitgehend in einer Art Selbstverwaltung von privaten Firmen, findigen Einzelunternehmern organisiert, die die Lage vor Ort kennen und die Probleme lÃ¶sen. Ãhnliches hÃ¶rt man aus Indien.\nWenn heute gesagt wird, die Ostsee sei das dreckigste Meer der Welt, so mÃ¼ssen die einzelnen Verursacher zur Verantwortung gezogen werden. Diese ganze EUâVerbotskultur fÃ¼hrt hier eben nicht zwangslÃ¤ufig zur Verbesserung. Das Ziel, die Meere und Fische vor PlastikmÃ¼ll zu schÃ¼tzen, ist natÃ¼rlich richtigÂ â hatte ich ja gesagt. Aber die ideologische Aufbauschung und maÃlose Ãbertreibung durch zumeist grÃ¼ne NGOs sind hier eben nicht zielfÃ¼hrend. So behaupten einfach ein paar irre grÃ¼ne Aktivisten, 2050 gibt es mehr TÃ¼ten als Fische in den Meeren. Ja, und besonders gefÃ¤hrdet sei der Tiefsee-Flohkrebs.\nIm Ernst: Wo ist die Frage, frage ich mich? Hier ist eigentlich der kreative Ansatz dieser EU. Wenn Plastik so gefÃ¤hrlich ist, warum investiert man nicht in Forschung, um andere Materialien fÃ¼r Verpackungen zu entwickeln? Zusammengefasst: Verursacher von Umweltverschmutzung unserer Ozeane und Meere hart bestrafen, aber nicht die europÃ¤ische Wirtschaft mit immer mehr BÃ¼rokratie gÃ¤ngeln und die Verbraucher mit immer neuen Vorschriften nerven.",
+      "del:madeBy": {
+        "@id": "participant_116"
+      },
+      "del:timestamp": "2024-11-28T15:21:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_147",
+      "del:text": "Em Portugal, adotamos recentemente o Plano de AÃ§Ã£o Nacional para o Lixo Marinho e consta do nosso manifesto eleitoral a criaÃ§Ã£o do ObservatÃ³rio do Lixo Marinho, que resulta de sinergias com diversas organizaÃ§Ãµes nÃ£o governamentais do ambiente, que tÃªm feito um trabalho fantÃ¡stico na defesa do nosso oceano e zonas costeiras.\nMas tambÃ©m saÃºdo a colaboraÃ§Ã£o e empenho dos pescadores e operadores marÃ­timos, que muitas vezes pescam literalmente plÃ¡sticos, ajudando a limpar o nosso oceano AtlÃ¢ntico e salvando muitas das nossas espÃ©cies marinhas. Temos de apostar na reduÃ§Ã£o, reutilizaÃ§Ã£o e reciclagem dos plÃ¡sticos, na cooperaÃ§Ã£o internacional, neste que Ã© um esforÃ§o coletivo que deve ter metas obrigatÃ³rias e ambiciosas, envolvendo os prÃ³prios produtores de polÃ­meros de plÃ¡stico, que devem financiar a sua recolha e tambÃ©m ser responsabilizados pela sua utilizaÃ§Ã£o e transporte.\n(O orador aceita responder a uma pergunta Â«cartÃ£o azulÂ»)",
+      "del:madeBy": {
+        "@id": "participant_117"
+      },
+      "del:timestamp": "2024-11-28T15:23:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_148",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_73"
+      },
+      "del:timestamp": "2024-11-28T15:25:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_149",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_117"
+      },
+      "del:timestamp": "2024-11-28T15:26:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_150",
+      "del:text": "What is so important with this treaty and with the negotiations from the EU side is that we follow the High Ambition Coalition and actually put a high reduction target on production of new plastic. Because we can talk about recycling, but if we continue with the use we have right now, we are in a deep mess. And yes, we should be willing to find compromise with people, but we shouldn't be compromised in this question. I mean, we owe it to the coming generations, to nature, the animals and the oceans to actually stand firm on this and also to be a first mover, not only wait for the others.",
+      "del:madeBy": {
+        "@id": "participant_118"
+      },
+      "del:timestamp": "2024-11-28T15:27:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_151",
+      "del:text": "Als Mitglied im Entwicklungsausschuss kann ich das nur verurteilen. Bei aller internationaler BemÃ¼hung, wir mÃ¼ssen auch vor der eigenen HaustÃ¼r kehren und den MÃ¼ll erstens in der Produktion weitestgehend durch vernÃ¼nftige Ersatzprodukte, die abbaubar sind, ersetzen, wo wir es kÃ¶nnen. Und zweitens mÃ¼ssen wir innerhalb einer funktionierenden Kreislaufwirtschaft effektiv verwerten, und zwar zur Not auch thermisch. Denn es ist wesentlich sinniger, unseren MÃ¼ll dann in MÃ¼llverbrennungsanlagen noch in Strom und WÃ¤rme umzuwandeln, als ihn mit dreckigem SchwerÃ¶l um die Welt zu schiffen. Insofern: Das Verursacherprinzip muss beim MÃ¼ll maÃgebend sein.",
+      "del:madeBy": {
+        "@id": "participant_119"
+      },
+      "del:timestamp": "2024-11-28T15:28:27"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_152",
+      "del:text": "Wobec tego na kanwie tej dyskusji o plastiku zastanawiam siÄ, czy tak samo gorÄco na tej sali plenarnej bÄdziemy za jakiÅ czas dyskutowaÄ o problemach z utylizacjÄ baterii fotowoltaicznych, paneli fotowoltaicznych, baterii samochodowych, caÅego tego przemysÅu, tak dzisiaj zachwalanego, zwiÄzanego z elektromobilnoÅciÄ. Bo to teÅ¼ bÄdzie problem i teÅ¼ bÄdziemy musieli ktÃ³regoÅ dnia wprowadziÄ podatek. Tak jak dzisiaj jest podatek od plastiku, bÄdzie podatek od elektromobilnoÅci.",
+      "del:madeBy": {
+        "@id": "participant_120"
+      },
+      "del:timestamp": "2024-11-28T15:29:59"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_153",
+      "del:text": "I would like to express that I am happy that in this debate we have seen a lot of people catching up talking points that the Greens have already made 20 years ago. But we should maybe now, in this time of environmental crisis, of climate change, listen to them a little bit more, even if we are not part of their team. Because if we don't do it now, we have to listen to them even more in 20 years.\nSo let's work together, let's save our climate, let's save our planet, and I wish you all a pleasant weekend.",
+      "del:madeBy": {
+        "@id": "participant_76"
+      },
+      "del:timestamp": "2024-11-28T15:31:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_154",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-11-28T15:32:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_155",
+      "del:text": "I appreciate, especially, also because you are directly linked to our citizens, to our constituents, whilst we are not. So I can never stop saying how important this Parliament is for the Commission, for legislators, for policymakers, because you are the closest link with our electorate, with our people, with our citizens. And you know, you hear them, you know what is bothering our people, and therefore, the best thing a Commissioner can do is listen well to the parliamentarians, so thank you for your work.\nAnd this being my last speech here, I'm going to ask you to put on your headphones â no, you don't need to put them on, MrÂ Bajada! â because I'm going to speak in my language, Maltese.\nPresident, onorevoli Membri, l-gÄ§an tagÄ§na huwa li nagÄ§lqu dawn in-negozjati imma mhux akkost ta' kollox. Irridu nkunu preparati gÄ§all-kompromessi f'Busan, imma lesti li nitilqu 'l hemm min-negozjati jekk nitilfu l-livell ta' ambizzjoni mixtieq. Irridu naÄ§dmu flimkien biex naslu flimkien.\nL-Unjoni Ewropea u l-Istati Membri jagÄ§fsu fuq il-Ä§tieÄ¡a tal-inkluÅ¼joni ta' miÅ¼uri fuq il-mikroplastiks tul iÄ-Äiklu tal-Ä§ajja tal-plastik. Dan gÄ§adu fuq il-mejda tad-diskussjoni f'Busan. L-Unjoni Ewropea tinsisti wkoll fuq l-inkluÅ¼joni fit-trattat ta' miÅ¼uri ta' riduzzjoni tal-produzzjoni tal-plastic polymer primarju u tar-riÄiklar. Nenfasizza li l-Unjoni Ewropea hija lesta biex taÄ§dem u tasal gÄ§al trattat globali b'saÄ§Ä§tu li jindirizza l-gÄ§erq tat-tniÄ¡Ä¡is mill-plastik. Issa huwa Ä-Äans. Grazzi Ä§afna.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2024-11-28T15:33:09"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_156",
+      "del:text": "PÃ­somnÃ© vyhlÃ¡senia (ÄlÃ¡nok 178)",
+      "del:madeBy": {
+        "@id": "participant_109"
+      },
+      "del:timestamp": "2024-11-28T15:36:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_157",
+      "del:text": "El Tratado mundial contra la contaminaciÃ³n por plÃ¡sticos representa una oportunidad histÃ³rica para frenar esta tendencia y garantizar un futuro sostenible. Es fundamental que la UniÃ³n, como lÃ­der en la lucha contra el cambio climÃ¡tico y segundo mayor productor de plÃ¡sticos, defienda lÃ­mites estrictos a la producciÃ³n global, la eliminaciÃ³n de plÃ¡sticos de un solo uso y la regulaciÃ³n de sustancias quÃ­micas daÃ±inas.\nAdemÃ¡s, debemos garantizar que las decisiones se basen en la ciencia y no en intereses industriales que perpetÃºan el statu quo. El ciclo de vida completo del plÃ¡stico debe abordarse con firmeza, desde su producciÃ³n hasta su eliminaciÃ³n, priorizando la reutilizaciÃ³n y la economÃ­a circular.\nLos socialistas pedimos a todos los actores que demuestren compromiso multilateral y responsabilidad: el mundo no puede permitirse otro fracaso medioambiental.",
+      "del:madeBy": {
+        "@id": "participant_121"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_158",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_109"
+      },
+      "del:timestamp": "2024-11-28T15:36:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_159",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_109"
+      },
+      "del:timestamp": "2024-11-28T15:37:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_160",
+      "del:text": "Simply, I voted against the resolution because it bore no relation, in my view, with the statement of the long-term mission which was in place of the OSCE-ODIHR, but to which the European Parliament, the NATO Parliamentary Assembly, the OSCE Parliamentary Assembly, the Council of Europe and the Parliamentary Assembly of the Council of Europe also subscribed.\nColleagues, in 2016 a Declaration of Principles for International Election Observation was agreed, and it was endorsed at that time by the Commission and since by the Parliament. Essentially, what it does is say that we need to be very careful about people who arrive in country for a very short period of time around election time. We put in an impartial mission for a long period of time that assesses the overall election during the whole period of the election and indeed looks at the treatment of essential freedoms around that. That mission was put in place with the agreement of everybody, and it came up with a statement.\nI happen to know the person who was in charge of that, but that is not why I agree with it: it is the principle. I also know those who put forward the resolution, but I just think we have to respect the processes, and there is always a danger that people who are going there for a very short period of time can have their heads turned by regimes, but there is equally a danger that they can have their heads turned by the opposition, and when faced with a conflict between short-term observers and a long-term mission, I have to side with the long-term mission.\nAnd for that reason I have no alternative â and reluctantly, given that many of my colleagues were involved â but to not support the resolution.",
+      "del:madeBy": {
+        "@id": "participant_122"
+      },
+      "del:timestamp": "2024-11-28T15:37:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_161",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_109"
+      },
+      "del:timestamp": "2024-11-28T15:39:15"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_162",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_123"
+      },
+      "del:timestamp": "2024-11-28T15:39:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_163",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_109"
+      },
+      "del:timestamp": "2024-11-28T15:39:52"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_164",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_109"
+      },
+      "del:timestamp": "2024-11-28T15:40:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_165",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_109"
+      },
+      "del:timestamp": "2024-11-28T15:40:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_166",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_109"
+      },
+      "del:timestamp": "2024-11-28T15:40:26"
+    }
+  ]
+}

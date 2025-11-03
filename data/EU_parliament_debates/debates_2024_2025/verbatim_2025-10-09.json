@@ -1,0 +1,2528 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "ep_debate_20251009",
+  "del:name": "European Parliament Debate - 2025-10-09",
+  "del:startDate": "2025-10-09T00:00:00Z",
+  "del:endDate": "2025-10-09T23:59:59Z",
+  "del:hasTopic": [
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem1",
+      "del:name": "Opening of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem2",
+      "del:name": "Council positions at first reading (Rule 64)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem3",
+      "del:name": "Declaration of principles for a gender-equal society (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem4",
+      "del:name": "Deliberations of the Committee on Petitions in 2024 (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem5",
+      "del:name": "World Mental Health Day - addressing the socio-economic factors (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem6",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem7",
+      "del:name": "Request for waiver of immunity"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem8",
+      "del:name": "Voting time"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem9",
+      "del:name": "Motion of censure on the Commission (B10-0400/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem10",
+      "del:name": "Motion of censure on the Commission (B10-0402/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem11",
+      "del:name": "Arbitrary detention of EU citizens Javier MaraÃ±Ã³n Montero and David RodrÃ­guez Ballesta in Equatorial Guinea (RC-B10-0439/2025, B10-0438/2025, B10-0439/2025, B10-0440/2025, B10-0441/2025, B10-0442/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem12",
+      "del:name": "Humanitarian and security situation in Haiti, in particular the rising power of criminal gangs and the recent massacre in Cabaret (RC-B10-0411/2025, B10-0411/2025, B10-0413/2025, B10-0428/2025, B10-0430/2025, B10-0432/2025, B10-0434/2025, B10-0436/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem13",
+      "del:name": "10th anniversary of the detention of jailed Swedish publisher Gui Minhai in China (RC-B10-0412/2025, B10-0412/2025, B10-0414/2025, B10-0429/2025, B10-0431/2025, B10-0433/2025, B10-0435/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem14",
+      "del:name": "Establishment and functioning of European Works Councils - effective enforcement (A10-0029/2024 - Dennis Radtke) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem15",
+      "del:name": "The role of simple tax rules and tax fragmentation in European competitiveness (A10-0155/2025 - Michalis Hadjipantela) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem16",
+      "del:name": "Deliberations of the Committee on Petitions in 2024 (A10-0170/2025 - Fredis Beleris) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem17",
+      "del:name": "Situation in Afghanistan: supporting women and communities affected by the recent earthquakes (RC-B10-0415/2025, B10-0415/2025, B10-0416/2025, B10-0417/2025, B10-0418/2025, B10-0420/2025, B10-0425/2025, B10-0426/2025, B10-0427/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem18",
+      "del:name": "United response to recent Russian violations of the EU Member Statesâ airspace and critical infrastructure (RC-B10-0419/2025, B10-0419/2025, B10-0421/2025, B10-0422/2025, B10-0423/2025, B10-0424/2025, B10-0437/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem19",
+      "del:name": "Second World Summit for Social Development (B10-0408/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem20",
+      "del:name": "Declaration of principles for a gender-equal society (B10-0406/2025, B10-0409/2025, B10-0410/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem21",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem22",
+      "del:name": "Approval of the minutes of the previous sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem23",
+      "del:name": "Public health risks in a Europe affected by global warming: tackling the spread of mosquito- and tick-borne diseases (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem24",
+      "del:name": "Oral explanations of vote (Rule 201)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem25",
+      "del:name": "Situation in Afghanistan: supporting women and communities affected by the recent earthquakes (RC-B10-0415/2025)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem26",
+      "del:name": "United response to recent Russian violations of the EU Member Statesâ airspace and critical infrastructure (RC-B10-0419/2025)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem27",
+      "del:name": "Explanations of votes in writing (Rule 201)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem28",
+      "del:name": "Approval of the minutes of the sitting and forwarding of texts adopted"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem29",
+      "del:name": "Dates of the next part-session"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem30",
+      "del:name": "Closure of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem31",
+      "del:name": "Adjournment of the session"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "PredsedajÃºci ."
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Marko VeÅ¡ligaj,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Jessika Roswall,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "ÎÎ»ÎµÎ¿Î½ÏÏÎ± ÎÎµÎ»Î­ÏÎ·,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_5",
+      "del:name": "HelÃ©ne Fritzon,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_6",
+      "del:name": "Margarita de la Pisa CarriÃ³n,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_7",
+      "del:name": "Antonella Sberna,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_8",
+      "del:name": "Abir Al-Sahlani,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_9",
+      "del:name": "Alice Kuhnke,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_10",
+      "del:name": "Irene Montero,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_11",
+      "del:name": "Irmhild BoÃdorf,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_12",
+      "del:name": "MirosÅawa Nykiel",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_13",
+      "del:name": "Joanna Scheuring-Wielgus",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_14",
+      "del:name": "Elisabeth Dieringer",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_15",
+      "del:name": "ValÃ©rie Devaux",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_16",
+      "del:name": "Anna Strolenberg",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_17",
+      "del:name": "Carolina Morace",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_18",
+      "del:name": "Christine Anderson",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_19",
+      "del:name": "Abir Al-Sahlani",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_20",
+      "del:name": "Giusi Princi",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_21",
+      "del:name": "Jean-Marc Germain",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_22",
+      "del:name": "Catherine Griset",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_23",
+      "del:name": "Lucia Yar",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_24",
+      "del:name": "Kathleen Funchion",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_25",
+      "del:name": "Hans Neuhoff",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_26",
+      "del:name": "Raquel GarcÃ­a Hermida-Van Der Walle",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_27",
+      "del:name": "Maria Walsh",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_28",
+      "del:name": "Vytenis Povilas Andriukaitis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_29",
+      "del:name": "Rosa EstarÃ s Ferragut",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_30",
+      "del:name": "Elisabeth Grossmann",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_31",
+      "del:name": "Gabriella Gerzsenyi",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_32",
+      "del:name": "Nina Carberry",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_33",
+      "del:name": "Martine Kemp",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_34",
+      "del:name": "President.",
+      "del:hasRole": {
+        "@type": "del:Role",
+        "del:name": "President"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_35",
+      "del:name": "ÎÎ»ÎµÎ½Î± ÎÎ¿ÏÎ½ÏÎ¿ÏÏÎ¬",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_36",
+      "del:name": "Jagna MarczuÅajtis-Walczak",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_37",
+      "del:name": "Î¦ÏÎ­Î½ÏÎ·Ï ÎÏÎµÎ»Î­ÏÎ·Ï,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_38",
+      "del:name": "Elena Nevado del Campo,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_39",
+      "del:name": "Alex Agius Saliba,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_40",
+      "del:name": "PÃ¡l Szekeres,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_41",
+      "del:name": "Cristian TerheÅ,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_42",
+      "del:name": "MichaÅ Kobosko,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_43",
+      "del:name": "Ana Miranda Paz,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_44",
+      "del:name": "ÎÎ¯ÎºÎ¿Ï Î Î±ÏÏÎ¬Ï,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_45",
+      "del:name": "Marcin Sypniewski,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_46",
+      "del:name": "Dariusz JoÅski",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_47",
+      "del:name": "Virginie Joron",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_48",
+      "del:name": "Diego Solier",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_49",
+      "del:name": "ÎÎµÏÏÎ­ÏÎ·Ï ÎÎ¹ÎºÎ¿Î»Î¬Î¿Ï-ÎÎ»Î±Î²Î¬Î½Î¿Ï",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_50",
+      "del:name": "Alexandra Mehnert",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_51",
+      "del:name": "Guillaume Peltier",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_52",
+      "del:name": "ÎÎ±ÏÎ¯Î± ÎÎ±ÏÎ±ÏÎ¯Î±",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_53",
+      "del:name": "Kosma ZÅotowski",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_54",
+      "del:name": "Petras GraÅ¾ulis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_55",
+      "del:name": "Juan Fernando LÃ³pez Aguilar",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_56",
+      "del:name": "Tomislav Sokol,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_57",
+      "del:name": "Vytenis Povilas Andriukaitis,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_58",
+      "del:name": "OndÅej Knotek,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_59",
+      "del:name": "Carlo Ciccioli,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_60",
+      "del:name": "Veronika CifrovÃ¡ OstrihoÅovÃ¡,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_61",
+      "del:name": "Tilly Metz,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_62",
+      "del:name": "Catarina Martins,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_63",
+      "del:name": "AndrÃ¡s Tivadar Kulja",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_64",
+      "del:name": "Alex Agius Saliba",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_65",
+      "del:name": "Marie-Luce Brasier-Clain",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_66",
+      "del:name": "MaÅgorzata Gosiewska",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_67",
+      "del:name": "Irena Joveva",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_68",
+      "del:name": "Ignazio Roberto Marino",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_69",
+      "del:name": "Valentina Palmisano",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_70",
+      "del:name": "Elena Nevado del Campo",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_71",
+      "del:name": "Romana JerkoviÄ",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_72",
+      "del:name": "Marie Dauchy",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_73",
+      "del:name": "Chiara Gemma",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_74",
+      "del:name": "Ð¥ÑÐ¸ÑÑÐ¾ ÐÐµÑÑÐ¾Ð²",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_75",
+      "del:name": "Bartosz ArÅukowicz",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_76",
+      "del:name": "Maria Guzenina",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_77",
+      "del:name": "Margarita de la Pisa CarriÃ³n",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_78",
+      "del:name": "Laurent Castillo",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_79",
+      "del:name": "Alessandra Moretti",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_80",
+      "del:name": "Nikos Papandreou",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_81",
+      "del:name": "Gabriel Mato",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_82",
+      "del:name": "Cynthia NÃ­ MhurchÃº",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_83",
+      "del:name": "Lukas Sieper",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_84",
+      "del:name": "SunÄana Glavak",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_85",
+      "del:name": "ÐÑÐ¸ÑÑÐ¸Ð°Ð½ ÐÐ¸Ð³ÐµÐ½Ð¸Ð½",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_86",
+      "del:name": "Nikolina Brnjac",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_87",
+      "del:name": "Caterina Chinnici",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_88",
+      "del:name": "Vasile DÃ®ncu",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_89",
+      "del:name": "ViktÃ³ria Ferenc",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_90",
+      "del:name": "Ewa Kopacz",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_91",
+      "del:name": "Elio Di Rupo",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_92",
+      "del:name": "Nicola Procaccini",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_93",
+      "del:name": "Iratxe GarcÃ­a PÃ©rez",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_94",
+      "del:name": "Bas Eickhout",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_95",
+      "del:name": "Petras AuÅ¡treviÄius",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_96",
+      "del:name": "Jacek Ozdoba",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_97",
+      "del:name": "Nathalie Loiseau",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_98",
+      "del:name": "Presidente.",
+      "del:hasRole": {
+        "@type": "del:Role",
+        "del:name": "President"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_99",
+      "del:name": "Laurent Castillo,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_100",
+      "del:name": "France Jamet,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_101",
+      "del:name": "Beatrice Timgren,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_102",
+      "del:name": "Anja Arndt,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_103",
+      "del:name": "Marta Temido",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_104",
+      "del:name": "Julien Leonardelli",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_105",
+      "del:name": "Siegbert Frank Droese",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_106",
+      "del:name": "SeÃ¡n Kelly",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_107",
+      "del:name": "Julien Sanchez",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_108",
+      "del:name": "Liudas MaÅ¾ylis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_109",
+      "del:name": "Rody Tolassy",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_110",
+      "del:name": "Bogdan RzoÅca",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_1",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-09T09:00:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_2",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-09T09:00:54"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_3",
+      "del:text": "U proteklih pet godina Europska unija je ostvarila povijesni napredak donoÅ¡enjem niza vrlo znaÄajnih zakonodavnih akata, primjerice o transparentnosti plaÄa, rodnoj ravnoteÅ¾i u upravnim odborima tvrtki te o borbi protiv nasilja nad Å¾enama. Ipak, napredak prema rodnoj ravnopravnosti ostaje spor, a suoÄeni smo i sa sve ÄeÅ¡Äim napadima na Å¾enska prava, rodnu ravnopravnost i ostvarene standarde u ljudskim pravima. Upravo zato je vaÅ¾no da se danas uÄini mnogo viÅ¡e, a Plan bi trebao pruÅ¾iti smjernice za konkretne mjere u novoj Sgiji za rodnu ravnopravnost, Äiji sam izvjestitelj.Â Parlament pozdravlja donoÅ¡enje nove Strategije i pripremamo svoj doprinos kroz vlastiti izvjeÅ¡taj o Strategiji rodne ravnopravnosti za 2025. godinu o kojem Äemo sljedeÄi tjedan glasovati na Odboru za Å¾enska prava i rodnu ravnopravnost, a sljedeÄeg mjeseca i ovdje na plenarnoj sjednici.\nPozivamo Komisiju da pri razvoju nove Strategije za rodnu ravnopravnost nakon 2025. godine uzme u obzir stajaliÅ¡ta Parlamenta koja Äe biti izraÅ¾ena u naÅ¡oj nadolazeÄoj rezoluciji i da zajedno osiguramo da Europa ostane globalni lider kada govorimo o ljudskim pravima, kada govorimo o rodnoj ravnopravnosti. Kako bismo to mogli reÄi, nekoliko je kljuÄnih stvari koje moramo zaÅ¡tititi i unaprijediti.\nPrvo, seksualno i reproduktivno zdravlje i prava Å¾ena. Ovo nije zamolba oko punog pristupa ovim pravima, ukljuÄujuÄi pravo na pobaÄaj. NeÄemo ovdje pregovarati i licitirati. Oko ovoga Komisija mora biti izuzetno jasna. Pravo na izbor - uvijek. Suzbijanje nasilja nad Å¾enama je apsolutni prioritet. Vrijeme je da ispravimo neke nepravde iz proÅ¡loga mandata, osobito kada je rijeÄ o silovanju i seksualnom nasilju, ali i da unaprijedimo zakonodavstvo u pogledu definicije rodno uvjetovanog nasilja i femicida.\nDalje, osnaÅ¾ivanje Å¾ena na trÅ¾iÅ¡tu rada i sigurna radna mjesta nisu samo lijepe Å¾elje. Danas se Å¾ene suoÄavaju s uznemiravanjem i nasiljem u svim prostorima, od javnih prostora do njihovog radnog mjesta. TakoÄer, vaÅ¾an nam je i potreban novi zakonski okvir za skrb. Neregulirani uvjeti rada, nesigurni ugovori, teret veÄinski na Å¾enama, to nije sustav koji je prihvatljiv. To nije sustav koji Å¾elimo zajedniÄki graditi. U vremenima kada poveÄavamo sredstva za obranu i sigurnost krivo je reÄi da su ti prioriteti suprotstavljeni onima u podruÄju Å¾enskih prava i socijalne sigurnosti. PoveÄana izdvajanja i rodno osjetljivi proraÄun moraju postati realnost, a vrijeme je i da kritiÄki pogledamo dosadaÅ¡nju dodjelu sredstava, jer kako se moÅ¾e dogoditi da Europska unija svoja sredstva daje za neke projekte i programe koji su u sukobu s temeljnim vrijednostima te Europske unije? Koji Å¡ire laÅ¾i i dezinformacije o, primjerice, seksualnim i reproduktivnim pravima. To treba pratiti i tome treba stati na kraj odmah.\nDalje, feministiÄka vanjska politika nije nikakav bauk kakvim je neki Å¾ele prikazati. To jednostavno znaÄi jedan politiÄki okvir koji postavlja rodnu ravnopravnost i ljudska prava svih Å¾ena i marginaliziranih skupina u srediÅ¡te vanjskopolitiÄkih ciljeva, strategija i implementaciju.\nI na kraju, otpor svima koji naruÅ¡avaju temeljne vrijednosti i slobode te prava Å¾ena. NaÅ¾alost, znamo da takvi sjede i ovdje u Europskom parlamentu. Uz sve ove prioritete, u srpnju ove godine Odbor za prava Å¾ena i rodnu ravnopravnost usvojio je Nacrt prijedloga rezolucije o Deklaraciji naÄela za druÅ¡tvo s rodnom ravnopravnoÅ¡Äu. U tom nacrtu pozdravljamo Komunikaciju Komisije od 7. OÅ¾ujka 2025. i smatramo da je ona dobar temelj za pripremu nadolazeÄe Strategije za rodnu ravnopravnost koja ipak mora iÄi mnogo dalje i pruÅ¾iti konkretne zakonske mjere kako bismo osigurali zaÅ¡titu i napredak u podruÄju Å¾enskih prava i rodne ravnopravnosti. Odbor takoÄer podrÅ¾ava naÄela koja su ukljuÄena u Deklaraciju priloÅ¾enu uz Komunikaciju Komisije. MeÄutim, sve ovo bez konkretnih mjera znaÄi malo, a Parlament Äe svoje izloÅ¾iti veÄ sljedeÄi tjedan. Budite sigurni da Äe naÅ¡i zahtjevi biti jasni, konkretni i usmjereni na maksimalnu zaÅ¡titu i unapreÄenje Å¾enskih prava. Stoga bih Å¾elio postaviti slijedeÄa pitanja Komisiji. Kako Äe Komisija osigurati da se stajaliÅ¡ta Parlamenta u podruÄju prava Å¾ena predoÄe uz Strategiju za rodnu ravnopravnost nakon 2025. godine? Parlament je viÅ¡e puta konkretno pozvao na nove zakonodavne prijedloge u podruÄju prava Å¾ena i rodne ravnopravnosti. Å to moÅ¾emo oÄekivati od Komisije u nadolazeÄoj strategiji u tom pogledu?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2025-10-09T09:01:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_4",
+      "del:text": "We need strong unity between EU institutions in rallying behind this important declaration and its principles. It will strengthen the impact of our joint work on women's rights and speed up the progress toward gender equality. I would like to thank this House for its unwavering dedication and relentless efforts to protect and advance women's rights. I would like to express my gratitude to the chair and the rapporteur and all the members of the committee for advancing a resolution to endorse the roadmap for women's rights. Endorsement by the European Parliament will set a shared framework for action for the coming years.\nAdoption of the new gender equality strategy is among key priorities for the coming years in the President's letter of intent, and this reflects its key role in fulfilling the objectives outlined in the roadmap. This oral question addressed to the Commission gives me the opportunity to talk about the next steps and the preparation of the new gender equality strategy 2026 to 2030.\nWe have carried out a comprehensive consultation process, gathering input from the public and a wide range of stakeholders. It includes an open public consultation and several meetings with stakeholders, social partners, equity bodies, international organisations, civil society organisations, as well as relevant EU agencies. We are now analysing this input. We are also eagerly awaiting the European Parliament's own initiative report on the future gender equality strategy, which I understand will be voted on in the next few weeks.\nIn drafting the future strategy, the European Parliament's input in its past positions on gender equality and in the upcoming report will be a fundamental contribution to our work. The new strategy will reflect ambitious actions based on the priority areas underlined in the President's political guidelines, the longâterm vision of the roadmap, stakeholder consultations and the data gathered and analysed during the preparatory work.\nYou also asked whether the strategy will provide for legislative action. It is important to emphasise that despite the extensive work that has already been done to implement the gender equality legislation adopted in recent years, our work on this must continue. Ensuring proper transposition and implementation in the Member States is essential to ensure that rights introduced or strengthened by the new directives do not exist only theoretically. They need to have a real effect for all EU citizens, and this does not preclude the possibility of new legislation, if needed, to reach the objectives of the roadmap for women's rights.\nYou have our commitment that we will carefully examine and consider all the proposals formulated by this House. We will join forces with you to work towards achieving the goals set out in the roadmap for women's rights. This is needed to deliver on the new gender equality strategy once it is adopted by the Commission. I thank you for the attention and am really looking forward to the debate.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-09T09:08:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_5",
+      "del:text": "Î Î¹ÏÎ¿ÏÏÎ¿ÏÎ¯Î± Î±Î½Î¬Î¼ÎµÏÎ± ÏÏÎ·Î½ ÎµÏÎ±Î³Î³ÎµÎ»Î¼Î±ÏÎ¹ÎºÎ® ÎºÎ±Î¹ ÏÎ·Î½ Î¿Î¹ÎºÎ¿Î³ÎµÎ½ÎµÎ¹Î±ÎºÎ® Î¶ÏÎ® Î´ÎµÎ½ ÎµÎ¯Î½Î±Î¹ ÏÎ¿Î»ÏÏÎ­Î»ÎµÎ¹Î±. ÎÎ± Î­ÏÏÎµÏÎµ Î½Î± ÎµÎ¯Î½Î±Î¹ Î´Î¹ÎºÎ±Î¯ÏÎ¼Î± âÎ´Î¹ÎºÎ±Î¯ÏÎ¼Î± ÏÎ¿Ï ÏÏÎ­ÏÎµÎ¹ Î½Î± ÏÏÎ¿ÏÏÎ±ÏÎµÏÏÎ¿ÏÎ¼Îµ ÏÎµÏÎ¹ÏÏÏÏÎµÏÎ¿ Î±ÏÏ ÏÎ¿ÏÎ­, Î¼Îµ ÏÎ¿Î½ ÏÎ¬ÏÏÎ· ÏÎ¿ÏÎµÎ¯Î±Ï Î³Î¹Î± ÏÎ± Î´Î¹ÎºÎ±Î¹ÏÎ¼Î±ÏÎ± ÏÏÎ½ Î³ÏÎ½Î±Î¹ÎºÏÎ½. Î Î¿Î´Î·Î³Î¯Î± Î³Î¹Î± ÏÎ·Î½ Î¹ÏÎ¿ÏÏÎ¿ÏÎ¯Î± ÎµÏÎ±Î³Î³ÎµÎ»Î¼Î±ÏÎ¹ÎºÎ®Ï ÎºÎ±Î¹ Î¹Î´Î¹ÏÏÎ¹ÎºÎ®Ï Î¶ÏÎ®Ï ÎµÎ¯Î½Î±Î¹ Î­Î½Î± ÏÎ·Î¼Î±Î½ÏÎ¹ÎºÏ Î²Î®Î¼Î±, ÏÏÏÏÏÎ¿ Î· ÎµÏÎ±ÏÎ¼Î¿Î³Î® ÏÎ·Ï ÏÎ±ÏÎ±Î¼Î­Î½ÎµÎ¹ Î¬Î½Î¹ÏÎ·. Î§ÏÎµÎ¹Î±Î¶ÏÎ¼Î±ÏÏÎµ ÎºÎ±Î»ÏÏÎµÏÎ± ÏÏÏÏÎ®Î¼Î±ÏÎ± Î¬Î´ÎµÎ¹Î±Ï Î¼Î·ÏÏÏÏÎ·ÏÎ±Ï, ÏÎ»Î®ÏÏÏ Î±Î¼ÎµÎ¹Î²ÏÎ¼ÎµÎ½Î±, ÏÏÏÎµ ÎºÎ±Î¼Î¯Î± Î¼Î·ÏÎ­ÏÎ± Î½Î± Î¼Î·Î½ ÏÏÎ­ÏÎµÎ¹ Î½Î± Î´Î¹Î±Î»Î­Î¾ÎµÎ¹ Î±Î½Î¬Î¼ÎµÏÎ± ÏÏÎ· Î´Î¿ÏÎ»ÎµÎ¹Î¬ ÎºÎ±Î¹ ÏÏÎ¿ ÏÎ±Î¹Î´Î¯ ÏÎ·Ï. Î§ÏÎµÎ¹Î±Î¶ÏÎ¼Î±ÏÏÎµ ÏÏÎ¿ÏÎ²Î¬ÏÎ¹Î¼ÎµÏ ÏÏÎ·ÏÎµÏÎ¯ÎµÏ ÏÏÎ¿Î½ÏÎ¯Î´Î±Ï, ÏÏÎ¹ Î¼ÏÎ½Î¿ Î³Î¹Î± ÏÎ± Î²ÏÎ­ÏÎ· Î±Î»Î»Î¬ ÎºÎ±Î¹ Î³Î¹Î± ÏÎ± Î¼ÎµÎ³Î±Î»ÏÏÎµÏÎ± ÏÎ±Î¹Î´Î¹Î¬. Î ÏÏÎ®ÏÎ¹Î¾Î· ÏÎ·Ï Î¼Î·ÏÎ­ÏÎ±Ï Î´ÎµÎ½ ÏÏÎ­ÏÎµÎ¹ Î½Î± ÏÎµÎ»ÎµÎ¹ÏÎ½ÎµÎ¹ ÏÏÎ¿Î½ ÏÏÏÏÎ¿ ÏÏÏÎ½Î¿ ÏÎ¿Ï ÏÎ±Î¹Î´Î¹Î¿Ï, ÏÏÏÏ Î´ÎµÎ½ ÏÎµÎ»ÎµÎ¹ÏÎ½ÎµÎ¹ ÎºÎ±Î¹ Î¿ ÏÏÎ»Î¿Ï ÏÎ·Ï. Î§ÏÎµÎ¹Î¬Î¶ÎµÏÎ±Î¹ Î½Î± Î´Î¹Î±ÏÏÎ±Î»Î¯ÏÎ¿ÏÎ¼Îµ ÏÎ·Î½ ÎµÏÎ±Î½Î­Î½ÏÎ±Î¾Î· ÏÏÎ½ Î³ÏÎ½Î±Î¹ÎºÏÎ½ ÏÏÎ·Î½ Î±Î³Î¿ÏÎ¬ ÎµÏÎ³Î±ÏÎ¯Î±Ï Î¼ÎµÏÎ¬ Î±ÏÏ Î¼Î±ÎºÏÎ¬ Î¬Î´ÎµÎ¹Î±, Î¼Îµ ÎºÎ¯Î½Î·ÏÏÎ± Î³Î¹Î± ÏÎ¿ÏÏ ÎµÏÎ³Î¿Î´ÏÏÎµÏ, ÏÏÎ¿Î³ÏÎ¬Î¼Î¼Î±ÏÎ± ÎµÏÎ¹Î¼ÏÏÏÏÏÎ·Ï, ÎµÏÎ­Î»Î¹ÎºÏÎµÏ Î¼Î¿ÏÏÎ­Ï Î±ÏÎ±ÏÏÏÎ»Î·ÏÎ·Ï ÏÎ¿Ï Î½Î± Î¼Î· ÏÏÎ¹Î³Î¼Î±ÏÎ¯Î¶Î¿ÏÎ½.\nÎÎ±Î¹, ÏÏÏÎ¹ÎºÎ¬, ÏÏÎµÎ¹Î¬Î¶ÎµÏÎ±Î¹ Î½Î± ÏÏÎ¿ÏÏÎ±ÏÎµÏÏÎ¿ÏÎ¼Îµ ÏÎ¿ Î´Î¹ÎºÎ±Î¯ÏÎ¼Î± ÏÏÎ· Î¼Î·ÏÏÏÏÎ·ÏÎ±. ÎÎ±Î¼Î¯Î± Î³ÏÎ½Î±Î¯ÎºÎ± Î´ÎµÎ½ ÏÏÎ­ÏÎµÎ¹ Î½Î± ÏÎ¿Î²Î¬ÏÎ±Î¹ Î½Î± Î¼ÎµÎ¯Î½ÎµÎ¹ Î­Î³ÎºÏÎ¿Ï Î¼Î®ÏÏÏ ÎºÎ±Î¹ ÏÎ¬ÏÎµÎ¹ ÏÎ· Î´Î¿ÏÎ»ÎµÎ¹Î¬ ÏÎ·Ï. ÎÏÏÏÏÏÏÏ ÏÎ¼ÏÏ ÏÎ¿ ÏÏÏÏÎ·Î¼Î± ÏÎ¹Î¼ÏÏÎµÎ¯. Î ÎµÏÎ³Î±ÏÎ¯Î± Î¼Î¹Î±Ï Î½Î­Î±Ï Î¼Î·ÏÎ­ÏÎ±Ï ÏÏÎ¿ÏÎ¹Î¼Î¬ÏÎ±Î¹. H Î¸Î­ÏÎ· ÏÎ·Ï Î´ÎµÎ½ Î´Î¹Î±ÏÏÎ±Î»Î¯Î¶ÎµÏÎ±Î¹. ÎÎ¹ ÎµÏÎºÎ±Î¹ÏÎ¯ÎµÏ ÎµÎ¾Î­Î»Î¹Î¾Î·Ï Î¼ÎµÎ¹ÏÎ½Î¿Î½ÏÎ±Î¹. ÎÎ½ Î¸Î­Î»Î¿ÏÎ¼Îµ Î¿ ÏÎ¬ÏÏÎ·Ï ÏÎ¿ÏÎµÎ¯Î±Ï Î³Î¹Î± ÏÎ± Î´Î¹ÎºÎ±Î¹ÏÎ¼Î±ÏÎ± ÏÏÎ½ Î³ÏÎ½Î±Î¹ÎºÏÎ½ Î½Î± Î­ÏÎµÎ¹ Î¿ÏÏÎ¯Î±, ÏÏÏÎµ Î¸Î± ÏÏÎ­ÏÎµÎ¹ Î½Î± Î´ÏÏÎµÎ¹ ÏÏÎ¹Ï Î³ÏÎ½Î±Î¯ÎºÎµÏ ÏÏÎ¹ Î¼ÏÎ½Î¿ Î¯ÏÎµÏ ÎµÏÎºÎ±Î¹ÏÎ¯ÎµÏ Î±Î»Î»Î¬ ÎºÎ±Î¹ Î¯ÏÎµÏ ÏÏÎ½Î¸Î®ÎºÎµÏ Î³Î¹Î± Î½Î± ÏÎ¹Ï Î±Î¾Î¹Î¿ÏÎ¿Î¹Î®ÏÎµÎ¹. Î ÎÏÏÏÏÎ· Î¿ÏÎµÎ¯Î»ÎµÎ¹ Î½Î± Î³Î¯Î½ÎµÎ¹ ÏÏÎ¼Î¼Î±ÏÎ¿Ï ÏÎ·Ï Î¼Î·ÏÎ­ÏÎ±Ï ÎºÎ±Î¹ ÏÏÎ¹ Î¸ÎµÎ±ÏÎ®Ï ÏÎ¿Ï Î±Î³ÏÎ½Î± ÏÎ·Ï.",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:timestamp": "2025-10-09T09:12:27"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_6",
+      "del:text": "SÃ¥ nu mÃ¥ste kommissionen leverera en verklig jÃ¤mstÃ¤lldhetsstrategi dÃ¤r vi garanterar rÃ¤tten till laglig och sÃ¤ker abort i EU:s stadga, dÃ¤r vi fÃ¥r en samtyckeslag dÃ¤r endast ett ja betyder ja och dÃ¤r vi helt enkelt sÃ¤kerstÃ¤ller jÃ¤mstÃ¤lldhetsintegrering och jÃ¤mstÃ¤lldhetsbudgetering. Slutligen vill jag ocksÃ¥ ha en feministisk utrikespolitik. Det startade en gÃ¥ng i Sverige. Det har varit oerhÃ¶rt framgÃ¥ngsrikt dÃ¤r och nu Ã¤r det dags att EU gÃ¶r pÃ¥ samma sÃ¤tt.",
+      "del:madeBy": {
+        "@id": "participant_5"
+      },
+      "del:timestamp": "2025-10-09T09:14:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_7",
+      "del:text": "Esta declaraciÃ³n no menciona ni una vez la palabra maternidad. Mira que es difÃ­cil hablando de mujer. La preocupaciÃ³n es que las mujeres contribuyamos al PIB. SÃ­, sÃ­, que no dejemos de trabajar ni un solo dÃ­a. Â¿Porque queremos? CuÃ¡ntas veces por obligaciÃ³n... con dos sueldos no se llega a fin de mes. Â¿DÃ³nde estÃ¡ esa libertad que prometÃ­an? Se nos promete, se nos pone en la injusta situaciÃ³n de tener que renunciar a una vida, a enamorarnos, a casarnos, a formar una familia.\nÂ¡Lo que estoy diciendo!\nEsto nos lo tratan de mostrar como un retroceso: tener hijos, cuidar, cuidarles, amarles. Amor que luego se devuelve a la sociedad en todos los sentidos. Se olvida esta declaraciÃ³n de la maravillosa y necesaria contribuciÃ³n que supone la familia, que tampoco se menciona. Y se ignoran otras graves agresiones a la dignidad de la mujer como son la mutilaciÃ³n genital femenina, los matrimonios forzosos, la prostituciÃ³n, la gestaciÃ³n subrogada. Todas ellas, desgraciadamente, una realidad en Europa.",
+      "del:madeBy": {
+        "@id": "participant_6"
+      },
+      "del:timestamp": "2025-10-09T09:16:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_8",
+      "del:text": "Credo che la vera paritÃ  significhi libertÃ  di scelta, poter lavorare, crescere, essere madri o imprenditrici, senza dover rinunciare alle proprie aspirazioni, compresa quella genitoriale. Io porto spesso i miei figli in questo contesto per provare a conciliare tutto questo, anche se non Ã¨ facile per niente.\nDa anni con la Gender Equality Week, che si terrÃ  la prima settimana di novembre, promuoviamo la paritÃ  e l'inclusione. Quest'anno sarÃ  dedicata al talento, che esploreremo in tutte le sue dimensioni. Il nuovo Piano d'azione per l'uguaglianza di genere, approvato questa settimana dall'Ufficio di presidenza del Parlamento europeo, va nella giusta direzione. Dimostra la volontÃ  di fare dell'Europa un esempio concreto per tutte le istituzioni europee, regionali e nazionali.\nMa serve uno slancio in piÃ¹. Dobbiamo costruire un vero ecosistema di sostegno alle famiglie, capace di affrontare il calo demografico, offrire servizi di qualitÃ  e rendere la paritÃ  una realtÃ  vissuta. La mia domanda quindi per la Commissione Ã¨: siamo pronti a lavorare insieme al Parlamento in questa direzione?",
+      "del:madeBy": {
+        "@id": "participant_7"
+      },
+      "del:timestamp": "2025-10-09T09:18:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_9",
+      "del:text": "Today we are witnessing, across Europe and beyond, a global backlash against gender equality and a growing anti-gender movement that yesterday was outside the House â today they hold seats in this House of democracy, trying to roll back decades of progress on gender equality and silence our voices.\nThe roadmap that the Commission presented is very welcome. It is a renewed commitment, and I would like to thank Commissioner Hadja Lahbib for her strong and dedicated leadership for women, for a more equal Europe and world.\nThe priorities are clear: a world free of gender-based violence, equal opportunities and education, sexual and reproductive health, and rights for everyone.\nEvery step towards gender equality was once called uncomfortable, impossible or necessary until it became undeniable. Endorsing the roadmap is our next step to stand firm when gender equality is under attack, not just with promises, but with concrete, real actions.",
+      "del:madeBy": {
+        "@id": "participant_8"
+      },
+      "del:timestamp": "2025-10-09T09:19:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_10",
+      "del:text": "Det Ã¤r de och andra som gÃ¶r jÃ¤mstÃ¤lldhet i praktiken, i vardagen, lokalt, pÃ¥ gator och torg som Ã¤r hjÃ¤ltarna. De fÃ¶rtjÃ¤nar vÃ¥rt fullstÃ¤ndigt ovillkorliga stÃ¶d. I resurser, i lag och i handling.",
+      "del:madeBy": {
+        "@id": "participant_9"
+      },
+      "del:timestamp": "2025-10-09T09:21:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_11",
+      "del:text": "Ustedes no estÃ¡n defendiendo la vida, quieren dominar la vida de las mujeres y dicen que no estamos preparadas para decidir, lo han dicho siempre: no estÃ¡bamos preparadas para abrir una cuenta en el banco, para votar, para divorciarnos... Y tambiÃ©n quieren decidir sobre nuestros cuerpos.\nÂ¿Saben lo que sÃ­ pone en peligro la vida? Que ahora mismo, en AndalucÃ­a, hay miles de mujeres que, dosÂ aÃ±os despuÃ©s de hacerse un control, todavÃ­a no saben ni han sido informadas de que podÃ­an tener un cÃ¡ncer de mama. Denuncian que han muerto mujeres âhan muerto mujeresâ por estos retrasos en el cribado, y la responsabilidad es de un Gobierno del Partido Popular que pone en riesgo la vida destrozando la sanidad pÃºblica.\nComisaria, las mujeres andaluzas merecen su atenciÃ³n. ActÃºen para que tengan atenciÃ³n sanitaria y psicolÃ³gica urgente, para que se indemnice a las vÃ­ctimas y para que la sanidad pÃºblica estÃ© bien financiada, porque el machismo mata y las polÃ­ticas feministas salvan vidas.",
+      "del:madeBy": {
+        "@id": "participant_10"
+      },
+      "del:timestamp": "2025-10-09T09:22:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_12",
+      "del:text": "Genau deshalb werden wir den EntschlieÃungsantrag der Sozialisten ablehnen, denn dieser Antrag steht fÃ¼r Ideologisierung, fÃ¼r die AuflÃ¶sung natÃ¼rlicher und gesellschaftlicher Grundlagen, fÃ¼r die Bevormundung durch BrÃ¼ssel. Wir haben eine eigene EntschlieÃung verfasst, bei der wir klar die Linie der Slowakei unterstÃ¼tzen. Alle Menschen, ob mÃ¤nnlich oder weiblich, sind gleich vor dem Gesetz und gleich an Wertigkeit. Lassen Sie uns endlich fÃ¼r echte Geschlechtergerechtigkeit kÃ¤mpfen!",
+      "del:madeBy": {
+        "@id": "participant_11"
+      },
+      "del:timestamp": "2025-10-09T09:23:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_13",
+      "del:text": "I choÄ od dekad mÃ³wimy o rÃ³wnoÅci, postÄp jest dramatycznie wolny. WedÅug danych ONZ przy obecnym tempie peÅne rÃ³wnouprawnienie na Åwiecie moÅ¼e zajÄÄ â uwaga â 286 lat. To sygnaÅ alarmowy. JeÅli dziÅ nie przyspieszymy, nasze wnuczki wciÄÅ¼ bÄdÄ walczyÄ o prawa, ktÃ³re nam w teorii juÅ¼ przyznano.\nDlatego rola Parlamentu Europejskiego jest kluczowa. To tutaj moÅ¼emy sprawiÄ, by rÃ³wnoÅÄ byÅa nie tylko piÄknym hasÅem, ale obowiÄzujÄcym standardem. I juÅ¼ uspokajam wszystkich zaniepokojonych mÄÅ¼czyzn: nam nie chodzi o przywileje. Chodzi o rÃ³wne szanse, o moÅ¼liwoÅÄ uczestniczenia w Å¼yciu spoÅecznym, politycznym â bez barier, bez protekcjonalnego tonu, bez tÅumaczenia, Å¼e to nie ten moment. Zapraszam panÃ³w do wspÃ³Åpracy, bo wspÃ³Åczesny feminizm bez mÄÅ¼czyzn nie istnieje.\nJako polska parlamentarzystka miaÅam zaszczyt wspieraÄ kobiety w trudnych sytuacjach: ofiary przemocy, samotne matki, kobiety walczÄce o swojÄ niezaleÅ¼noÅÄ. To trudne doÅwiadczenia, ale wiem teÅ¼, Å¼e wiele potrafimy, gdy mamy przestrzeÅ do dziaÅania. WspÃ³ÅpracowaÅam z fantastycznymi kobietami â mÄdrymi, silnymi, zdeterminowanymi. Dlatego mÃ³wiÄ dziÅ jedno: nie blokujcie nas! Dajcie nam rÃ³wne szanse, a zbudujemy sprawiedliwÄ EuropÄ.",
+      "del:madeBy": {
+        "@id": "participant_12"
+      },
+      "del:timestamp": "2025-10-09T09:25:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_14",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_13"
+      },
+      "del:timestamp": "2025-10-09T09:27:28"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_15",
+      "del:text": "Ohne diese rechtliche Klarheit besteht die Gefahr, dass SchutzrÃ¤ume und Sicherheitsstandards nicht nur tatsÃ¤chlich Frauen zugutekommen. Lassen Sie mich das an einem Beispiel konkretisieren: Im Frauensport treten Frauen gegeneinander an, weil sie biologische Gemeinsamkeiten teilen. Dadurch entstehen faire Wettbewerbsbedingungen. Wenn nicht mehr klar ist oder es Ã¼berhaupt nicht mehr definiert ist, ob das Kriterium die Biologie oder eine SelbsteinschÃ¤tzung ist, gerÃ¤t dieses Prinzip ins Wanken. Unter dem Schlagwort der Geschlechtergerechtigkeit entstehen bereits Regelungen, die auch Personen mit mÃ¤nnlicher Biologie den Zugang zu Frauenwettbewerben ermÃ¶glichen. Damit wird genau das untergraben, was die ErklÃ¤rung selbst anstrebt, nÃ¤mlich Fairness, Sicherheit und Schutz fÃ¼r Frauen.",
+      "del:madeBy": {
+        "@id": "participant_14"
+      },
+      "del:timestamp": "2025-10-09T09:28:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_16",
+      "del:text": "Je pense Ã  GisÃ¨le Pelicot, de retour au tribunal cette semaine, et Ã  toutes les femmes victimes de violences qui osent agir pour que la honte change de camp. Leur combat pour la justice doit trouver un Ã©cho dans nos dÃ©cisions politiques.\nJe pense aussi Ã  celles qui vivent des discriminations croisÃ©es, notamment les femmes en situation de handicap. La prochaine stratÃ©gie en faveur des droits des personnes handicapÃ©es devra aller de pair avec cette feuille de route pour garantir l'Ã©galitÃ© de traitement.\nEt je pense enfin aux femmes aidantes qui accompagnent un proche en mettant souvent leur carriÃ¨re entre parenthÃ¨ses. Nous attendons une stratÃ©gie europÃ©enne en matiÃ¨re de soins ambitieuse, qui reconnaisse enfin leur rÃ´le et leur donne le soutien qu'elles mÃ©ritent. Cette feuille de route fixe un cap. Ã nous maintenant de faire en sorte qu'elle change vraiment la vie des femmes au quotidien.",
+      "del:madeBy": {
+        "@id": "participant_15"
+      },
+      "del:timestamp": "2025-10-09T09:30:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_17",
+      "del:text": "Just wait? 1 in 3 women experience sexual or physical violence â 1 in 3 â so there is no time to wait. We must take concrete actions. This declaration is a good step, but we can do more.\nSo I have two suggestions: first, let us come up with a European approach to end femicide, not just a national approach; second, let us establish a harmonised definition of cyber violence against women, because if we cannot agree what cyber violence is, we cannot fight it.\nPretty words are not enough because every day we delay equality, we deny equality.",
+      "del:madeBy": {
+        "@id": "participant_16"
+      },
+      "del:timestamp": "2025-10-09T09:31:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_18",
+      "del:text": "Questa dichiarazione dovrebbe difendere un principio molto semplice, ma a quanto pare ancora rivoluzionario, vale a dire che ogni donna possa decidere del proprio corpo, del proprio tempo e del proprio destino.\nL'Europa deve dimostrare che crede davvero nei diritti delle donne, non con nuove parole, ma con il coraggio politico di trasformarle in azioni. Fino a quando il mondo delle donne, e dico di tutte le donne, anche quelle che non sono madri, continuerÃ  a far paura, anche alle donne, l'uguaglianza resterÃ  sempre una chimera.",
+      "del:madeBy": {
+        "@id": "participant_17"
+      },
+      "del:timestamp": "2025-10-09T09:32:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_19",
+      "del:text": "Ihre Frauenquote entmÃ¼ndigt Frauen und basiert auf derÂ â wie ich glaubteÂ â Ã¼berkommenen Vorstellung, dass Frauen zu schwach sind, um ohne staatliche UnterstÃ¼tzung im Leben etwas zu erreichen. Aber auch benevolenter Sexismus bleibt Sexismus, meine Damen und Herren. HÃ¶ren Sie bitte endlich auf, Frauen zu bevormunden, und kÃ¼mmern Sie sich lieber um die real existierende BelÃ¤stigung und VerdrÃ¤ngung von Frauen durch MÃ¤nner in Frauenkleidern.\n(Die Rednerin ist damit einverstanden, auf mehrere Fragen nach dem Verfahren der âblauen Karteâ zu antworten.)",
+      "del:madeBy": {
+        "@id": "participant_18"
+      },
+      "del:timestamp": "2025-10-09T09:34:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_20",
+      "del:text": "So tell me, what do you actually want to do to combat the violence against women inside the EU? Besides talking about migration â all kinds of violence against women, what do you want to do so we can achieve true gender equality between women and men and all other genders? What do you actually want to do besides leading here with disinformation? Thank you.",
+      "del:madeBy": {
+        "@id": "participant_19"
+      },
+      "del:timestamp": "2025-10-09T09:35:36"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_21",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_18"
+      },
+      "del:timestamp": "2025-10-09T09:36:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_22",
+      "del:text": "Moje pytanie jest konkretne: najwiÄcej przemocy wobec kobiet jest w rodzinach. Co pani zrobi, Å¼eby uratowaÄ te kobiety, wobec ktÃ³rych przemoc stosujÄ ich najbliÅ¼si?",
+      "del:madeBy": {
+        "@id": "participant_13"
+      },
+      "del:timestamp": "2025-10-09T09:37:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_23",
+      "del:text": "This is exactly what I'm talking about. You flood our countries with illegal migrants, and then the women get slaughtered, raped, beaten within an inch of their life. And you have the guts to talk to me about violence in the family? Yeah, there is violence in the family. But what we're experiencing is real violence in the street against women and girls. Shame on you.",
+      "del:madeBy": {
+        "@id": "participant_18"
+      },
+      "del:timestamp": "2025-10-09T09:38:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_24",
+      "del:text": "Le leggi cambiano le norme e l'educazione cambia le menti, per cui servono entrambe. L'8 marzo 2025 la Commissione ha tracciato una rotta ambiziosa per i diritti delle donne, un passo importante che accogliamo. Ma la lotta alle discriminazioni culturali deve andare oltre l'evoluzione legislativa, perchÃ© le discriminazioni piÃ¹ pericolose non sono solo quelle che le leggi combattono, ma sono quelle invisibili, radicate nelle culture, tramandate di generazione in generazione, quelle che si imparano a casa, nei cortili.\nUna donna su tre ha subito violenza, il gap pensionistico supera il 25Â %, solo un terzo dei seggi parlamentari Ã¨ occupato da donne: questi dati non sono numeri, sono il risultato di culture che resistono al cambiamento.\nPer cui io dico: investiamo nell'educazione. La scuola non Ã¨ un dettaglio: Ã¨ lÃ¬ che si formano le coscienze, Ã¨ lÃ¬ che nascono i limiti o le possibilitÃ . L'istruzione deve essere il fondamento della nostra strategia postâ2025. Ogni scuola europea deve essere il luogo dove nessuna bambina rinuncia ai suoi sogni, dove nessun bambino cresce con confini immaginari. Le leggi garantiscono diritti sulla carta, ma Ã¨ l'educazione che li rende naturali, evidenti, irreversibili.",
+      "del:madeBy": {
+        "@id": "participant_20"
+      },
+      "del:timestamp": "2025-10-09T09:39:09"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_25",
+      "del:text": "Dans quelques semaines, nous allons commencer notre travail sur le cadre financier pluriannuel. Avec mon groupe, nous nous battrons pour imposer aux bÃ©nÃ©ficiaires des programmes europÃ©ens, en commenÃ§ant par les Ãtats membres, le strict respect d'une stricte Ã©galitÃ© entre les femmes et les hommes. Pas d'Ã©galitÃ©, pas d'argent: telle sera la loi d'airain de la nouvelle gÃ©nÃ©ration de fonds europÃ©ens.\nNotre Europe s'honore d'avoir pour socle de valeurs la charte des droits fondamentaux de l'Union europÃ©enne, qui garantit l'Ã©galitÃ© entre les femmes et les hommes. Il est grand temps de faire de ce droit une rÃ©alitÃ© fondamentale pour les EuropÃ©ennes.",
+      "del:madeBy": {
+        "@id": "participant_21"
+      },
+      "del:timestamp": "2025-10-09T09:41:02"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_26",
+      "del:text": "Or l'Ã©galitÃ©, la vraie, c'est de permettre Ã  chaque femme de vivre pleinement ses choix, d'Ãªtre mÃ¨re, de faire carriÃ¨re ou de concilier les deux. C'est de lui donner les moyens de concilier travail et famille, pas de lui faire croire qu'elle doit renoncer Ã  l'un pour rÃ©ussir dans l'autre.\nL'Europe n'a pas besoin de leÃ§ons de wokisme. Elle a besoin qu'on protÃ¨ge les femmes, qu'on soutienne les mÃ¨res, qu'on lutte contre l'insÃ©curitÃ© et contre la marchandisation du corps humain. Parce que l'Ã©galitÃ©, ce ne sont pas des quotas, c'est le respect de la femme dans toutes ses dimensions professionnelles, maternelles, personnelles.\nC'est en permettant aux femmes d'assumer pleinement ce qu'elles sont que nous construirons une sociÃ©tÃ© plus juste. Oui Ã  l'Ã©galitÃ©, non Ã  l'idÃ©ologie du genre.\n(L'oratrice refuse de rÃ©pondre Ã  deux questions carton bleu de Raquel GarcÃ­a Hermida-Van Der Walle et Abir Al-Sahlani)",
+      "del:madeBy": {
+        "@id": "participant_22"
+      },
+      "del:timestamp": "2025-10-09T09:42:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_27",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_23"
+      },
+      "del:timestamp": "2025-10-09T09:43:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_28",
+      "del:text": "While it is great to see women coming forward and finding the courage to speak out, the supports needed are still falling far short. When a woman finally manages to escape abuse, often with her children, we need to ensure that both short-term and longer-term supports are available to her.\nThe Irish Government and all EU Member States must lead with action by investing in our refuge spaces as a short-term support, in housing, in step-down housing and, really importantly, in education and awareness programmes against misogyny and sexism, and by supporting organisations that offer a lifeline for every woman in every community across our Member States.\nIt is time to guarantee long-term funding and real commitment to these services and the workers, to show that we value and stand with those who do life-saving work every single day.",
+      "del:madeBy": {
+        "@id": "participant_24"
+      },
+      "del:timestamp": "2025-10-09T09:45:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_29",
+      "del:text": "Kolleginnen und Kollegen, in den GrundsÃ¤tzen der Kommissionsvorlage kann man das Wort âFrauâ³ Ã¼berall durch âMannâ ersetzen, ohne dass sich an der Richtigkeit etwas Ã¤ndert. Denn die WÃ¼rde gilt allenÂ â MÃ¤nnern wie Frauen, Jungen wie MÃ¤dchen. Schlagen wir das Kapitel daher zu und geben das Papier dorthin, wo es hingehÃ¶rt: ins Vergessen.\n(Der Redner ist damit einverstanden, auf eine Frage nach dem Verfahren der âblauen Karteâ zu antworten.)",
+      "del:madeBy": {
+        "@id": "participant_25"
+      },
+      "del:timestamp": "2025-10-09T09:46:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_30",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_26"
+      },
+      "del:timestamp": "2025-10-09T09:48:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_31",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_25"
+      },
+      "del:timestamp": "2025-10-09T09:48:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_32",
+      "del:text": "In this house, we have seen a recent disgraceful campaign that seeks to ban the hijab in the name of gender equality, and we have continuously seen members of the House targeted online and offline simply for defending equality. If we cannot uphold respect and solidarity within these walls, if pro-European parties in the centre will not match their words to action for gender equality, a core value enshrined in our treaties, then how can we expect to deliver true equality to the 450Â million citizens we represent? We have to do better.",
+      "del:madeBy": {
+        "@id": "participant_27"
+      },
+      "del:timestamp": "2025-10-09T09:49:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_33",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_28"
+      },
+      "del:timestamp": "2025-10-09T09:51:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_34",
+      "del:text": "Vijf dodelijke slachtoffers in Ã©Ã©n maand tijd, in mijn land, waarbij de daders vaak in beeld waren. Femicide is een voorkombare epidemie, maar femicide is âslechtsâ het tragische topje van de ijsberg. Het is de extreme vorm van een wereldbeeld waarin vrouwen gereduceerd worden tot eigendom, tot âdragers van kinderenâ of âÂ in de woorden van Nederlandse universiteitsstudentenÂ â tot âsperma-emmersâ.\nHet is een wereldbeeld waarin online haat tegen vrouwen en kwetsbare minderheden niet alleen geaccepteerd, maar zelfs gepromoot wordt. Een wereldbeeld dat helaas steeds luider klinkt in dit Parlement. Ik kies om te vechten tegen dat wereldbeeld, voor onze rechten en voor onze levens.",
+      "del:madeBy": {
+        "@id": "participant_26"
+      },
+      "del:timestamp": "2025-10-09T09:52:32"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_35",
+      "del:text": "En mi paÃ­s, EspaÃ±a, una mal aprobada Ley del Â«solo sÃ­ es sÃ­Â» posibilitÃ³ que miles y cientos de violadores vieran rebajadas sus condenas y estuvieran en la calle, siendo ministra una compaÃ±era del Grupo The Left que ahora es eurodiputada. TambiÃ©n ahora en mi paÃ­s han fallado las pulseras antimaltrato durante ocho meses, y eso ha posibilitado que muchos casos de violencia contra las mujeres hayan sido sobreseÃ­dos yendo en contra de todo lo que aprobamos en este Parlamento, como la Directiva de protecciÃ³n de las vÃ­ctimas o la orden europea de protecciÃ³n, porque habla de que los dispositivos tienen que ser fiables.\nTenemos derecho a una conciliaciÃ³n de la vida familiar y laboral. En mi paÃ­s, se ha multado a EspaÃ±a con casi siete millones de euros porque no se ha traspuesto bien el permiso parental, tambiÃ©n siendo ministra una de nuestras compaÃ±eras de The Left. Tenemos derecho a la igualdad salarial, tenemos derecho a la igualdad de oportunidades. Tenemos que estar unidas todas y todos en la defensa de estos derechos de la mujer para conseguir que haya verdadera democracia.",
+      "del:madeBy": {
+        "@id": "participant_29"
+      },
+      "del:timestamp": "2025-10-09T09:54:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_36",
+      "del:text": "Gewalt, meine sehr geehrten Damen und Herren, kann niemals Privatsache sein. Gewalt ist immer ein Auftrag an die Politik, zu handeln. Und in der letzten Legislaturperiode wurde gehandelt. Da wurde ein ambitioniertes Gewaltschutzpaket erarbeitet, und dieses muss nun konsequent in allen Mitgliedstaaten umgesetzt werden. Und wir brauchen dringend und rasch eine einheitliche Definition der Vergewaltigung. Geschlechtliche Handlungen mÃ¼ssen immer auf einem expliziten Zustimmungsprinzip beruhen. Das ist unerlÃ¤sslich. Nur ein Ja heiÃt Ja!",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2025-10-09T09:55:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_37",
+      "del:text": "OrbÃ¡n Viktor rÃ©g megmondta, hogy nÅÃ¼gyekkel nem foglalkozik. Ãs lÃ¡m, egyetlen nÅ sincs ma a magyar kormÃ¡nyban. A TISZA ezen is vÃ¡ltoztatni fog jÃ¶vÅ Ã¡prilistÃ³l. Visszaadjuk a nÅk egyenlÅ esÃ©lyeit Ã©s megbecsÃ¼lÃ©sÃ©t.",
+      "del:madeBy": {
+        "@id": "participant_31"
+      },
+      "del:timestamp": "2025-10-09T09:57:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_38",
+      "del:text": "This Parliament has made it clear that women's rights must be central to the strength of our democracy and societies. Last year, the EU directive on combating violence against women was adopted. Now this piece of legislation must be fully implemented. We need to support survivors. We must help them seek access to justice and improve coordination between various authorities.\nThis also means investment. And so I want to welcome this week's Irish budget, which has put an additional EURÂ 11.5Â million towards tackling domestic and gender-based violence. It is a step forward, but we must go further. We must seek to create a zero-tolerance society for violence, where every woman and girl can thrive and live in safety.",
+      "del:madeBy": {
+        "@id": "participant_32"
+      },
+      "del:timestamp": "2025-10-09T09:58:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_39",
+      "del:text": "But equality alone is not enough; we must also strive for equity, recognising that women and men may face different barriers and ensuring that policies and resources respond to those differences. True fairness is not about treating everyone the same, but about giving each person what they need to thrive. Young women deserve the same opportunities as men: no pay gaps, no glass ceilings, no stereotypes. Europe cannot afford to waste their talent. This roadmap is a welcome step but principles must become real change for working women, for mothers and for the next generation of girls.",
+      "del:madeBy": {
+        "@id": "participant_33"
+      },
+      "del:timestamp": "2025-10-09T09:59:53"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_40",
+      "del:text": "Finally, only by working together at all institutional levels, men and women â and to be honest, I hope that next time we have this debate on this issue, I will see more male colleagues in the chamber. Together, we can receive our shared vision of a gender-equal society to make that tomorrow's reality. Thank you very much for the debate.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-09T10:01:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_41",
+      "del:text": "The debate is closed.\nThe vote will be held today.\nPÃ­somnÃ© vyhlÃ¡senia (ÄlÃ¡nok 178)",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T10:03:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_42",
+      "del:text": "Î¤Î± ÏÎµÎ»ÎµÏÏÎ±Î¯Î± ÏÏÏÎ½Î¹Î±, ÏÎ¹Î¿Î¸ÎµÏÎ®ÏÎ±Î¼Îµ ÏÎ·Î¼Î±Î½ÏÎ¹ÎºÎ­Ï Î½Î¿Î¼Î¿Î¸ÎµÏÎ¯ÎµÏ ÏÏÏÏÎ¿Î²Î¿ÏÎ»Î¯ÎµÏ Î³Î¹Î± ÏÎ·Î½ ÎµÎ½Î¯ÏÏÏÏÎ· ÏÎ·Ï Î¸Î­ÏÎ·Ï ÏÏÎ½ Î³ÏÎ½Î±Î¹ÎºÏÎ½ ÎºÎ±Î¹ ÏÎ·Î½ ÎµÏÎ¯ÏÎµÏÎ¾Î· ÏÎ·Ï Î¹ÏÏÏÎ·ÏÎ±Ï ÏÏÎ½ ÏÏÎ»ÏÎ½. Î©ÏÏÏÏÎ¿, Î±ÏÏÎ¬ Î´ÎµÎ½ Î±ÏÎ¿ÏÏÏÏÎ½Î¿Î½ÏÎ±Î¹ ÏÏÎ·Î½ ÎºÎ±Î¸Î·Î¼ÎµÏÎ¹Î½ÏÏÎ·ÏÎ± ÏÎ¿Ï Î²Î¹ÏÎ½Î¿ÏÎ½ ÎµÎºÎ±ÏÎ¿Î¼Î¼ÏÏÎ¹Î± Î³ÏÎ½Î±Î¯ÎºÎµÏ ÏâÏÎ»Î· ÏÎ·Î½ ÎÏÏÏÏÎ·.\nÎÏÎ±Î½ ÎµÎºÎ±ÏÎ¿Î¼Î¼ÏÏÎ¹Î± Î³ÏÎ½Î±Î¯ÎºÎµÏ ÏÏÎ½ÎµÏÎ¯Î¶Î¿ÏÎ½ Î½Î± ÏÏÎ¯ÏÏÎ±Î½ÏÎ±Î¹ Î­Î¼ÏÏÎ»Î· ÎºÎ±Î¹ ÎµÎ½Î´Î¿Î¿Î¹ÎºÎ¿Î³ÎµÎ½ÎµÎ¹Î±ÎºÎ® Î²Î¯Î±, ÏÏÎµÏÎ¿ÏÎ½ÏÎ±Î¹ Î¿Î¹ÎºÎ¿Î½Î¿Î¼Î¹ÎºÎ®Ï Î±Î½ÎµÎ¾Î±ÏÏÎ·ÏÎ¯Î±Ï, ÏÎ­ÏÏÎ¿ÏÎ½ Î¸ÏÎ¼Î±ÏÎ± ÎµÎºÎ¼ÎµÏÎ¬Î»Î»ÎµÏÏÎ·Ï ÎºÎ±Î¹ Î´Î¹Î±ÎºÏÎ¯ÏÎµÏÎ½, Î±ÏÎ¿ÎºÎ»ÎµÎ¯Î¿Î½ÏÎ±Î¹ Î±ÏÏ Î¸Î­ÏÎµÎ¹Ï Î»Î®ÏÎ·Ï Î±ÏÎ¿ÏÎ¬ÏÎµÏÎ½ Î® Î±Î¼ÎµÎ¯Î²Î¿Î½ÏÎ±Î¹ ÏÎ¿Î»Ï Î»Î¹Î³ÏÏÎµÏÎ¿ Î±ÏâÏÎ¿ÏÏ Î¬Î½Î´ÏÎµÏ Î³Î¹Î± ÎµÏÎ³Î±ÏÎ¯Î± Î¯ÏÎ·Ï Î±Î¾Î¯Î±Ï, Î±ÏÏÏ ÏÎ¿Ï ÏÏÎ±Î³Î¼Î±ÏÎ¹ÎºÎ¬ Î¼ÎµÏÏÎ¬ÎµÎ¹ ÎµÎ¯Î½Î±Î¹ ÏÏÎ± ÏÎ»Î¿ÏÎ¿Î¹Î¿ÏÎ½ÏÎ±Î¹ ÏÏÎ·Î½ ÏÏÎ¬Î¾Î·.\nÎÎ½ Î¸Î­Î»Î¿ÏÎ¼Îµ ÏÏÎ±Î³Î¼Î±ÏÎ¹ÎºÎ¬ Î¿ ÏÎ¬ÏÏÎ·Ï ÏÎ¿ÏÎµÎ¯Î±Ï Î³Î¹Î± ÏÎ± Î´Î¹ÎºÎ±Î¹ÏÎ¼Î±ÏÎ± ÏÏÎ½ Î³ÏÎ½Î±Î¹ÎºÏÎ½ Î½Î± ÎµÏÎ¹ÏÎ­ÏÎµÎ¹ Î¿ÏÏÎ¹Î±ÏÏÎ¹ÎºÎ­Ï Î±Î»Î»Î±Î³Î­Ï, ÏÏÏÎµ ÏÏÎ­ÏÎµÎ¹ Î½Î± ÏÏÎ½Î¿Î´ÎµÏÎµÏÎ±Î¹ Î±ÏÏ Î¼Î¹Î± ÏÎ¹Î»ÏÎ´Î¿Î¾Î· ÏÏÏÎ±ÏÎ·Î³Î¹ÎºÎ® Î³Î¹Î± ÏÎ·Î½ Î¹ÏÏÏÎ·ÏÎ± ÏÏÎ½ ÏÏÎ»ÏÎ½, Î¼Îµ Î½Î¿Î¼Î¿Î¸ÎµÏÎ¹ÎºÎ­Ï ÏÏÎ¿ÏÎ¬ÏÎµÎ¹Ï ÎºÎ±Î¹ ÎºÏÏÎ¯ÏÏ ÎµÏÎ±ÏÎºÎ® ÎµÏÏÏÏÎ±ÏÎºÎ® ÏÏÎ·Î¼Î±ÏÎ¿Î´ÏÏÎ·ÏÎ· ÏÏÎ¿ Î½Î­Î¿ Î ÎÎ .\nÎÎ¹Î± ÏÏÏÎ±ÏÎ·Î³Î¹ÎºÎ® ÏÎ¿Ï Î¸Î± ÎµÎ³Î³ÏÎ¬ÏÎ±Î¹ ÏÏÎ¹Ï Î³ÏÎ½Î±Î¯ÎºÎµÏ:\n-Î´ÏÏÎµÎ¬Î½ ÏÏÏÏÎ²Î±ÏÎ· ÏÎµ ÏÏÎ·ÏÎµÏÎ¯ÎµÏ ÏÎµÎ¾Î¿ÏÎ±Î»Î¹ÎºÎ®Ï ÎºÎ±Î¹ Î±Î½Î±ÏÎ±ÏÎ±Î³ÏÎ³Î¹ÎºÎ®Ï ÏÎ³ÎµÎ¯Î±Ï, ÎºÎ±Î¹ ÏÎ¿ Î´Î¹ÎºÎ±Î¯ÏÎ¼Î± ÏÎµ Î½ÏÎ¼Î¹Î¼Î· ÎºÎ±Î¹ Î±ÏÏÎ±Î»Î® Î¬Î¼Î²Î»ÏÏÎ·.\n-Î²ÎµÎ»ÏÎ¯ÏÏÎ· ÏÎ·Ï Î½Î¿Î¼Î¿Î¸ÎµÏÎ¯Î±Ï Î³Î¹Î± Î±Î½ÏÎ¹Î¼ÎµÏÏÏÎ¹ÏÎ· ÏÎ»ÏÎ½ ÏÏÎ½ Î¼Î¿ÏÏÏÎ½ Î­Î¼ÏÏÎ»Î·Ï Î²Î¯Î±Ï, Î¼Îµ ÎµÏÏÏÏÎ±ÏÎºÏ Î¿ÏÎ¹ÏÎ¼Ï ÏÎ¿Ï Î²Î¹Î±ÏÎ¼Î¿Ï ÏÏÎ· Î²Î¬ÏÎ· ÏÎ·Ï ÏÏÎ½Î±Î¯Î½ÎµÏÎ·Ï, ÎºÎ±Î¹ Î±Î½Î±Î³Î½ÏÏÎ¹ÏÎ· ÏÎ·Ï Î³ÏÎ½Î±Î¹ÎºÎ¿ÎºÏÎ¿Î½Î¯Î±Ï.\n-ÎµÎ½Î´ÏÎ½Î¬Î¼ÏÏÎ· ÏÎ¿ÏÏ ÏÏÎ·Î½ Î±Î³Î¿ÏÎ¬ ÎµÏÎ³Î±ÏÎ¯Î±Ï, Î¼Îµ Î±ÏÏÎ±Î»ÎµÎ¯Ï ÏÏÏÎ¿ÏÏ ÎµÏÎ³Î±ÏÎ¯Î±Ï, ÎµÎ¾Î¬Î»ÎµÎ¹ÏÎ· ÏÏÎ½ Î¼Î¹ÏÎ¸Î¿Î»Î¿Î³Î¹ÎºÏÎ½ Î±Î½Î¹ÏÎ¿ÏÎ®ÏÏÎ½, Î»Î®ÏÎ· ÎºÎ¿Î¹Î½ÏÎ½Î¹ÎºÏÎ½ ÎºÎ±Î¹ Î¿Î¹ÎºÎ¿Î½Î¿Î¼Î¹ÎºÏÎ½ Î¼Î­ÏÏÏÎ½ Î³Î¹Î± ÏÎ¿ÏÏ Î¬ÏÏÏÎ¿ÏÏ ÏÏÎ¿Î½ÏÎ¹ÏÏÎ­Ï ÎºÎ±Î¹ Î¹ÏÎ¿ÏÏÎ¿ÏÎ¯Î± ÎµÏÎ±Î³Î³ÎµÎ»Î¼Î±ÏÎ¹ÎºÎ®Ï ÎºÎ±Î¹ ÏÏÎ¿ÏÏÏÎ¹ÎºÎ®Ï Î¶ÏÎ®Ï.\n-ÎºÎ±Î¹ ÏÎ·Î½ ÎµÎ¾Î¬Î»ÎµÎ¹ÏÎ· ÏÏÎ½ Î±Î½Î¹ÏÎ¿ÏÎ®ÏÏÎ½ ÏÏÎ·Î½ ÏÎ³ÎµÎ¯Î±, Î¼Îµ Î­Î¼ÏÎ±ÏÎ· ÏÏÎ·Î½ ÏÏÏÎ»Î·ÏÎ· ÎºÎ±Î¹ ÏÎ±ÏÎ¿ÏÎ® ÏÎ¿Î¹Î¿ÏÎ¹ÎºÎ®Ï ÏÎµÏÎ¯Î¸Î±Î»ÏÎ·Ï",
+      "del:madeBy": {
+        "@id": "participant_35"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_43",
+      "del:text": "Dlatego apelujÄ do poszczegÃ³lnych ministrÃ³w w krajach czÅonkowskich o zwiÄkszenie wysiÅkÃ³w i jak najszybsze implementowanie dyrektywy o kwotach w zarzÄdach spÃ³Åek i dyrektywy o przejrzystoÅci wynagrodzeÅ.\nW ten sposÃ³b pokaÅ¼ecie prawdziwe wsparcie dla milionÃ³w Europejek, ktÃ³re dyskryminowane sÄ niÅ¼szymi zarobkami. A chodzi nam o rÃ³wne pÅace za tÄ samÄ pracÄ, rÃ³wne traktowanie przez pracodawcÄ i wspÃ³ÅpracownikÃ³w, o moÅ¼liwoÅÄ ÅÄczenia kariery zawodowej z Å¼yciem rodzinnym, tak by wypracowaÄ godne, a nie gÅodowe emerytury.",
+      "del:madeBy": {
+        "@id": "participant_36"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_44",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-09T10:03:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_45",
+      "del:text": "Î Î¯ÏÏ Î±ÏÏ ÎºÎ¬Î¸Îµ Î±ÏÎ¹Î¸Î¼Ï ÏÏÎ¬ÏÏÎµÎ¹ Î¼Î¯Î± ÏÏÎ½Î®, Î¼Î¯Î± Î±Î½Î·ÏÏÏÎ¯Î±, Î¼Î¯Î± Î±ÏÎ±Î¯ÏÎ·ÏÎ· Î³Î¹Î± Î´Î¹ÎºÎ±Î¹Î¿ÏÏÎ½Î·. ÎÎ¹ Î±Î½Î±ÏÎ¿ÏÎ­Ï ÏÎ¿Ï Î»Î¬Î²Î±Î¼Îµ ÎºÎ±Î»ÏÏÏÎ¿ÏÎ½ Î­Î½Î± ÎµÏÏÏ ÏÎ¬ÏÎ¼Î± Î¸ÎµÎ¼Î¬ÏÏÎ½, Î±ÏÏ ÏÎ·Î½ ÏÏÎ¿ÏÏÎ±ÏÎ¯Î± ÏÏÎ½ Î¸ÎµÎ¼ÎµÎ»Î¹ÏÎ´ÏÎ½ Î´Î¹ÎºÎ±Î¹ÏÎ¼Î¬ÏÏÎ½ ÎºÎ±Î¹ ÏÎ¿Ï ÏÎµÏÎ¹Î²Î¬Î»Î»Î¿Î½ÏÎ¿Ï Î­ÏÏ ÏÎ·Î½ ÏÎ³ÎµÎ¯Î±, ÏÎ± Î´Î¹ÎºÎ±Î¹ÏÎ¼Î±ÏÎ± ÏÏÎ½ Î±ÏÏÎ¼ÏÎ½ Î¼Îµ Î±Î½Î±ÏÎ·ÏÎ¯Î± ÎºÎ±Î¹ ÏÎ¿ ÎºÏÎ¬ÏÎ¿Ï Î´Î¹ÎºÎ±Î¯Î¿Ï. ÎÏÏÎ­Ï Î¿Î¹ ÏÏÎ½Î­Ï Î¼Î¬Ï Î¸ÏÎ¼Î¯Î¶Î¿ÏÎ½ Î³Î¹Î±ÏÎ¯ ÏÏÎ¬ÏÏÎµÎ¹ Î· ÎÏÎ¹ÏÏÎ¿ÏÎ® ÎÎ½Î±ÏÎ¿ÏÏÎ½: Î³Î¹Î± Î½Î± Î´Î¯Î½Î¿ÏÎ¼Îµ Î±ÏÎ±Î½ÏÎ®ÏÎµÎ¹Ï ÏÏÎ¿ÏÏ ÏÎ¿Î»Î¯ÏÎµÏ, Î½Î± ÎµÎ½ÏÎ¿ÏÎ¯Î¶Î¿ÏÎ¼Îµ ÏÎ±ÏÎ±Î²Î¹Î¬ÏÎµÎ¹Ï ÏÎ¿Ï ÎµÏÏÏÏÎ±ÏÎºÎ¿Ï Î´Î¹ÎºÎ±Î¯Î¿Ï, Î½Î± ÎµÎ½Î¹ÏÏÏÎ¿ÏÎ¼Îµ ÏÎ· Î´Î¹Î±ÏÎ¬Î½ÎµÎ¹Î± ÎºÎ±Î¹ ÏÎ· Î»Î¿Î³Î¿Î´Î¿ÏÎ¯Î±, Î½Î± ÎºÎ±Î»Î»Î¹ÎµÏÎ³Î¿ÏÎ¼Îµ ÏÎ· Î´Î·Î¼Î¿ÎºÏÎ±ÏÎ¹ÎºÎ® ÏÏÎ¼Î¼ÎµÏÎ¿ÏÎ® ÎºÎ±Î¹ Î½Î± ÏÎ­ÏÎ¿ÏÎ¼Îµ ÏÎ·Î½ ÎÏÏÏÏÎ· ÏÎ¹Î¿ ÎºÎ¿Î½ÏÎ¬ ÏÏÎ¿ÏÏ Î±Î½Î¸ÏÏÏÎ¿ÏÏ ÏÎ·Ï.\nÎ©ÏÏÏÏÎ¿, Î· Î­ÎºÎ¸ÎµÏÎ® Î¼Î±Ï Î´ÎµÎ¯ÏÎ½ÎµÎ¹ ÏÏÎ¹ Î­ÏÎ¿ÏÎ¼Îµ Î±ÎºÏÎ¼Î· Î´ÏÏÎ¼Î¿ Î¼ÏÏÎ¿ÏÏÎ¬ Î¼Î±Ï. ÎÎ¹Î± ÏÎ±ÏÎ¬Î´ÎµÎ¹Î³Î¼Î±, ÏÏÎ¬ÏÏÎµÎ¹ Î¾ÎµÎºÎ¬Î¸Î±ÏÎ· Î±Î½Î¬Î³ÎºÎ· Î³Î¹Î± ÎºÎ±Î»ÏÏÎµÏÎ· ÎµÎ½Î·Î¼Î­ÏÏÏÎ· ÏÏÎ½ ÏÎ¿Î»Î¹ÏÏÎ½ ÏÏÎµÏÎ¹ÎºÎ¬ Î¼Îµ ÏÎ¹Ï Î±ÏÎ¼Î¿Î´Î¹ÏÏÎ·ÏÎµÏ ÏÎ·Ï ÎÎ½ÏÏÎ·Ï ÎºÎ±Î¹ ÏÎ·Ï ÎÏÎ¹ÏÏÎ¿ÏÎ®Ï Î¼Î±Ï, ÎµÎ½Ï ÎºÎ±Î¹ Î¿ ÏÏÎ½Î¿Î»Î¹ÎºÏÏ Î±ÏÎ¹Î¸Î¼ÏÏ ÏÏÎ½ Î±Î½Î±ÏÎ¿ÏÏÎ½ ÏÎ±ÏÎ±Î¼Î­Î½ÎµÎ¹ ÏÎ±Î¼Î·Î»ÏÏ ÏÎµ ÏÏÎ­ÏÎ· Î¼Îµ ÏÎ¿Î½ ÏÎ»Î·Î¸ÏÏÎ¼Ï ÏÎ·Ï ÎÏÏÏÏÎ±ÏÎºÎ®Ï ÎÎ½ÏÏÎ·Ï. ÎÏÏÏ ÏÎ·Î¼Î±Î¯Î½ÎµÎ¹ ÏÏÎ¹ ÏÏÎ­ÏÎµÎ¹ Î½Î± ÎµÎ½ÏÎµÎ¯Î½Î¿ÏÎ¼Îµ ÏÎ¹Ï ÏÏÎ¿ÏÏÎ¬Î¸ÎµÎ¹Î­Ï Î¼Î±Ï, ÏÏÏÎµ Î¿Î¹ ÏÎ¿Î»Î¯ÏÎµÏ Î½Î± Î³Î½ÏÏÎ¯Î¶Î¿ÏÎ½ ÏÏÎ¹ Î¼ÏÎ½Î¿ ÏÎ± Î´Î¹ÎºÎ±Î¹ÏÎ¼Î±ÏÎ¬ ÏÎ¿ÏÏ, Î½Î± ÏÏÎ¿Î²Î¬Î»Î»Î¿ÏÎ½ Î±Î½Î±ÏÎ¿ÏÎ­Ï,, Î±Î»Î»Î¬ ÎºÎ±Î¹ ÏÎ· Î´ÏÎ½Î±Î¼Î· Î±ÏÏÎ¿Ï ÏÎ¿Ï ÎµÏÎ³Î±Î»ÎµÎ¯Î¿Ï: Î½Î± Î´Î¯Î½Î¿ÏÎ½ Î»ÏÏÎ· ÏÏÎ± Î¶Î·ÏÎ®Î¼Î±ÏÎ± ÏÎ¿Ï ÏÎ¿ÏÏ Î±ÏÎ±ÏÏÎ¿Î»Î¿ÏÎ½. Î Î±ÏÎ¬Î½ÏÎ·ÏÎ· Î²ÏÎ¯ÏÎºÎµÏÎ±Î¹ ÏÎµ Î¼Î¹Î± ÎµÏÎ¹ÎºÎ¿Î¹Î½ÏÎ½Î¯Î± ÏÎ¹Î¿ ÏÏÎ¿ÏÎ²Î¬ÏÎ¹Î¼Î· ÎºÎ±Î¹ ÎºÎ±ÏÎ±Î½Î¿Î·ÏÎ®, Î¼Îµ Î±ÏÎ»Î¿ÏÏÏÎµÏÎ· Î³Î»ÏÏÏÎ± ÎºÎ±Î¹ ÏÏÎ¿ÏÎµÏÎ¼Î­Î½ÎµÏ Î´ÏÎ¬ÏÎµÎ¹Ï, Î¹Î´Î¯ÏÏ ÏÏÎ¿Ï ÏÎ¿ÏÏ Î½Î­Î¿ÏÏ ÎºÎ±Î¹ ÏÏÎ¿Ï ÏÏÎ¿ÏÏ Î¶Î¿ÏÎ½ ÏÎµ Î±ÏÎ¿Î¼Î±ÎºÏÏÏÎ¼Î­Î½ÎµÏ Î® Î½Î·ÏÎ¹ÏÏÎ¹ÎºÎ­Ï ÏÎµÏÎ¹Î¿ÏÎ­Ï. Î¤Î¿ Î¯Î´Î¹Î¿ Î¹ÏÏÏÎµÎ¹ ÎºÎ±Î¹ Î³Î¹Î± ÏÎ¿ÏÏ ÎÏÏÏÏÎ±Î¯Î¿ÏÏ ÏÎ¿Î»Î¯ÏÎµÏ ÏÎ¿Ï Î¶Î¿ÏÎ½ ÎµÎºÏÏÏ ÏÏÎ½ ÏÏÎ½ÏÏÏÎ½ ÏÎ·Ï ÎÎ½ÏÏÎ·Ï ÎºÎ±Î¹ Î¹Î´Î¹Î±Î¯ÏÎµÏÎ± ÏÏÎ¹Ï ÏÏÎ¿Ï Î­Î½ÏÎ±Î¾Î· ÏÏÏÎµÏ. ÎÎ¯Î½Î±Î¹ ÏÎ·Î¼Î±Î½ÏÎ¹ÎºÏ Î½Î± Î³Î½ÏÏÎ¯Î¶Î¿ÏÎ½ ÏÏÎ¹ Î¼ÏÎ¿ÏÎ¿ÏÎ½ Î½Î± ÏÏÎ­Î»Î½Î¿ÏÎ½ Î±Î½Î±ÏÎ¿ÏÎ­Ï ÎºÎ±Î¹ Î½Î± Î½Î¹ÏÎ¸Î¿ÏÎ½ ÏÎ·Î½ ÎÏÏÏÏÎ· ÎºÎ¿Î½ÏÎ¬ ÏÎ¿ÏÏ.\nÎ¤Î±ÏÏÏÏÏÎ¿Î½Î±, Î· ÎµÏÎ¹ÏÏÏÎ¯Î± ÏÎ·Ï Î´Î¹Î±Î´Î¹ÎºÎ±ÏÎ¯Î±Ï ÎµÎ¾Î±ÏÏÎ¬ÏÎ±Î¹ Î±ÏÏ ÏÎ·Î½ ÎµÎ½Î¹ÏÏÏÎ¼Î­Î½Î· ÏÏÎ½ÎµÏÎ³Î±ÏÎ¯Î± Î¼ÎµÏÎ±Î¾Ï ÎµÏÏÏÏÎ±ÏÎºÏÎ½ Î¸ÎµÏÎ¼ÏÎ½ ÎºÎ±Î¹ ÎµÎ¸Î½Î¹ÎºÏÎ½, ÏÎµÏÎ¹ÏÎµÏÎµÎ¹Î±ÎºÏÎ½ ÎºÎ±Î¹ ÏÎ¿ÏÎ¹ÎºÏÎ½ Î±ÏÏÏÎ½. ÎÏÎ½Î¿ Î¼Î­ÏÎ± Î±ÏÏ Î¿ÏÏÎ¹Î±ÏÏÎ¹ÎºÏ ÏÏÎ½ÏÎ¿Î½Î¹ÏÎ¼Ï Î¼ÏÎ¿ÏÎ¿ÏÎ¼Îµ Î½Î± Î±Î½ÏÎ¹Î¼ÎµÏÏÏÎ¯ÏÎ¿ÏÎ¼Îµ Î±ÏÎ¿ÏÎµÎ»ÎµÏÎ¼Î±ÏÎ¹ÎºÎ¬ ÏÎ¹Ï Î±Î½Î·ÏÏÏÎ¯ÎµÏ ÏÏÎ½ ÏÎ¿Î»Î¹ÏÏÎ½ ÎºÎ±Î¹ Î½Î± ÎµÎ¾Î±ÏÏÎ±Î»Î¯ÏÎ¿ÏÎ¼Îµ ÏÎ·Î½ Î¿ÏÎ¸Î® ÏÎ±ÏÎ±ÎºÎ¿Î»Î¿ÏÎ¸Î·ÏÎ· ÏÏÎ½ Î±Î½Î±ÏÎ¿ÏÏÎ½. Î ÎÏÎ¹ÏÏÎ¿ÏÎ® Î¼Î±Ï ÎµÎ¯Î½Î±Î¹ ÎµÎ´Ï ÎºÎ±Î¹ ÏÏÏÎ½Î¹Î± ÏÏÏÏÎ¿ÏÏÏÎ¿Ï ÏÏÎ· Î´Î¹Î±Î´Î¹ÎºÎ±ÏÎ¯Î± ÏÏÎ½ Î±Î½Î±ÏÎ¿ÏÏÎ½. ÎÏÎ¿ÏÎ¿ÏÎ¼Îµ ÏÎ¼ÏÏ Î½Î± ÏÎ· Î²ÎµÎ»ÏÎ¹ÏÏÎ¿ÏÎ¼Îµ Î±ÎºÏÎ¼Î± ÏÎµÏÎ¹ÏÏÏÏÎµÏÎ¿ Î¼Îµ ÎºÎ±Î»ÏÏÎµÏÎ· ÎºÎ±Î¹ ÏÎ¹Î¿ ÏÎ¹Î»Î¹ÎºÎ® ÏÎ·ÏÎ¹Î±ÎºÎ® ÏÎ»Î±ÏÏÏÏÎ¼Î± ÎºÎ±Î¹ Î±Î¾Î¹Î¿ÏÎ¿Î¹ÏÎ½ÏÎ±Ï ÏÎ·Î½ ÏÎµÏÎ½Î·ÏÎ® Î½Î¿Î·Î¼Î¿ÏÏÎ½Î· Î³Î¹Î± ÎµÏÎºÎ¿Î»ÏÏÎµÏÎ· Î­ÏÎµÏÎ½Î± ÎºÎ±Î¹ ÎºÎ±Î»ÏÏÎµÏÎ· ÏÏÏÏÎ²Î±ÏÎ· Î³Î¹Î± ÏÎ»Î¿ÏÏ.\nÎÎ³Î±ÏÎ·ÏÎ¿Î¯ ÏÏÎ½Î¬Î´ÎµÎ»ÏÎ¿Î¹, Î¿Î¹ Î±Î½Î±ÏÎ¿ÏÎ­Ï Î´ÎµÎ½ ÎµÎ¯Î½Î±Î¹ Î±ÏÎ»ÏÏ Î­Î³Î³ÏÎ±ÏÎ±. ÎÎ¯Î½Î±Î¹ Î¹ÏÏÎ¿ÏÎ¯ÎµÏ ÎºÎ±Î¹ Î±Î½Î·ÏÏÏÎ¯ÎµÏ ÏÏÎ½ ÏÎ¿Î»Î¹ÏÏÎ½ Î¼Î±Ï. ÎÎ¯Î½Î±Î¹ Î¿Î¹ ÏÏÎ¿ÎºÎ»Î®ÏÎµÎ¹Ï ÏÎ¿Ï Î¼Î±Ï ÎºÎ±Î»Î¿ÏÎ½ Î½Î± Î³Î¯Î½Î¿ÏÎ¼Îµ ÎºÎ±Î»ÏÏÎµÏÎ¿Î¹ Î½Î¿Î¼Î¿Î¸Î­ÏÎµÏ ÎºÎ±Î¹ Î½Î± Î´ÏÏÎ¿ÏÎ¼Îµ Î»ÏÏÎµÎ¹Ï ÏÎ¿Ï Î²ÎµÎ»ÏÎ¹ÏÎ½Î¿ÏÎ½ ÏÎ·Î½ ÎºÎ±Î¸Î·Î¼ÎµÏÎ¹Î½ÏÏÎ·ÏÎ¬ ÏÎ¿ÏÏ. Î Î­ÎºÎ¸ÎµÏÎ· ÏÎ¿Ï Î­ÏÎ¿ÏÎ¼Îµ Î¼ÏÏÎ¿ÏÏÎ¬ Î¼Î±Ï Î±ÏÎ¿ÏÏÏÏÎ½ÎµÎ¹ Î±ÏÏÎ® ÏÎ·Î½ Î±ÏÎ¿ÏÏÎ¿Î»Î®. Î£Î±Ï ÎºÎ±Î»Ï, Î»Î¿Î¹ÏÏÎ½, Î½Î± ÏÎ·Î½ ÏÏÎµÏÏÎ·ÏÎ¯ÏÎ¿ÏÎ¼Îµ âÏÏÎ¹ ÏÏ Î¼Î¹Î± ÏÏÏÎ¹ÎºÎ® Î´Î¹Î±Î´Î¹ÎºÎ±ÏÎ¯Î±, Î±Î»Î»Î¬ ÏÏ Î¼Î¹Î± Î¾ÎµÎºÎ¬Î¸Î±ÏÎ· Î´Î­ÏÎ¼ÎµÏÏÎ· ÏÏÎ¹ Î¸Î± ÏÏÎ½ÎµÏÎ¯ÏÎ¿ÏÎ¼Îµ Î½Î± Î±ÎºÎ¿ÏÎ¼Îµ ÏÎ¹Ï ÏÏÎ½Î­Ï ÏÏÎ½ ÏÎ¿Î»Î¹ÏÏÎ½ ÎºÎ±Î¹ Î½Î± ÏÏÎµÏÎ±ÏÏÎ¹Î¶ÏÎ¼Î±ÏÏÎµ ÏÎ± Î´Î¹ÎºÎ±Î¹ÏÎ¼Î±ÏÎ¬ ÏÎ¿ÏÏ.",
+      "del:madeBy": {
+        "@id": "participant_37"
+      },
+      "del:timestamp": "2025-10-09T10:03:57"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_46",
+      "del:text": "The Commission has increased its efforts to provide timely and pertinent contributions to your responses to citizens. We are also endeavouring to offer your clear and simple observations that address the concerns of our citizens. When it comes to figures; according to your report, you sent us 377Â new petitions for our opinion. In total, the Commission provided opinions on 521Â petitions in 2024. These numbers testify the efforts and resources deployed by the Commission to ensure that all petitions you sent are being addressed.\nWe take notice that for the third year in a row, the environment remains the most frequent issue raised by petitioners, followed by personal matters, fundamental rights, justice and the internal market. Let me reassure you that the priorities of this Commission â as outlined in President von der Leyen's Political Guidelines in 2024 and reiterated in the State of the Union address last month â fully respond to the concerns raised by citizens. As regards environment, the Commission often focuses its enforcement action on zero pollution, circular economy and biodiversity. In addition, we prioritise enforcement and dialogue on environmental governance issues and these cross-cutting areas underpin the delivery of the European Green Deal's priorities.\nI would like to reiterate our commitment on addressing petitions that raise concerns on the enforcement of EU law. The implementation of EU law is a core priority under this mandate and a joint endeavour of EU institutions and Member States. This is why we welcome your call for more active cooperation with Member States to unblock those petitions requiring prompt response and reactions from national authorities. When it comes to enforcement of EU law, the Commission acts when necessary using infringement procedures, but the infringement procedures are not meant to offer concrete solutions for individuals or ensure individual redress. Rather, it's aimed at addressing systematic problems affecting a significant proportion of the population across Member States. In individual cases where petitioners have complaints about the incorrect application of EU law, they would benefit more from the mechanisms available at national level, such as national courts, regulatory bodies or the ombudsman. If the problem has a cross-border dimension, the Solvit network may offer quick and flexible remedies.\nHonourable Members, we have also listened to your calls for more transparency and better information sharing with regards to our enforcement actions. The Commission published its decisions for every step of infringement procedures on the EU's webpage. Moreover, since 2024, there has been a link on the infringement register to your petition portal so that citizens can search for cases linked to the petition. In April this year, the Commission launched a new user-friendly website offering up-to-date information on infringement procedures, transposition of directives, and pre-infringement dialogues. These tools help to track the progress of specific infringement cases and verify if there is any petition linked to ongoing investigations. Furthermore, the Commissioners will be in a position to inform the follow-up on petitions that allege a breach of EU law in their policy area when they present the Annual Progress Report on Simplification, Implementation and Enforcement to the responsible Parliamentary Committee.\nFinally, the Commission commends your constructive cooperation with the European Ombudsman, with whom you share the objectives of ensuring the transparency, professionalism and integrity of the EU institutions vis-a-vis EU citizens.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-09T10:07:29"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_47",
+      "del:text": "Quiero aprovechar esta oportunidad para agradecer al seÃ±or BelerisÂ su labor como ponente. Expreso tambiÃ©n mi reconocimiento a los distintos grupos polÃ­ticos por su compromiso y quiero seÃ±alar que esta cooperaciÃ³n y participaciÃ³n ciudadana fortalece la democracia y hace que la UniÃ³n Europea sea un proyecto verdaderamente cercano a la gente. Un trabajo conjunto que permite que las inquietudes de la ciudadanÃ­a se reflejen adecuadamente en las actividades de la ComisiÃ³n de Peticiones.",
+      "del:madeBy": {
+        "@id": "participant_38"
+      },
+      "del:timestamp": "2025-10-09T10:12:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_48",
+      "del:text": "Imma f'numru ta' sitwazzjonijiet ukoll nemmen li l-Kummissjoni Ewropea tista' tkun Ä§afna aktar proattiva biex naraw illi dawk iÄ-Äittadini tagÄ§na li gÄ§amlu effort mhux Å¼gÄ§ir illi saÄ§ansitra jiÄ¡u hawnhekk fil-Parlament Ewropew sabiex jiÄ¡Ä¡ieldu gÄ§ad-drittijiet tagÄ§hom: id-drittijiet ambjentali, gÄ§ad-drittijiet fundamentali, gÄ§ad-drittijiet tal-annimali. Drittijiet illi huma sanÄiti u protetti minn dan it-Trattat tal-Unjoni Ewropea. Nemmen li gÄ§andna nagÄ§tuhom aktar u aktar importanza sabiex insibu vera soluzzjonijiet u, fl-aÄ§Ä§ar mill-aÄ§Ä§ar, sabiex il-proÄ¡ett Ewropew jibqa' verament proÄ¡ett tan-nies illi jindirizza l-prijoritajiet tan-nies.",
+      "del:madeBy": {
+        "@id": "participant_39"
+      },
+      "del:timestamp": "2025-10-09T10:14:21"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_49",
+      "del:text": "Elfogadhatatlannak tartom viszont, hogy nem kerÃ¼lt az Ã©ves jelentÃ©sbe a kutatÃ³szolgÃ¡lat tanulmÃ¡nya, amely vilÃ¡gos kÃ¶vetkeztetÃ©seket fogalmazott meg az Åshonos eurÃ³pai kisebbsÃ©gek helyzetÃ©rÅl. A tanulmÃ¡nyt 2024 januÃ¡rjÃ¡ban tÃ¡rgyaltuk, tehÃ¡t az Ã©ves tevÃ©kenysÃ©gÃ¼nk fontos rÃ©sze volt. Ezzel ugyanazt a hibÃ¡t kÃ¶vetjÃ¼k el, mint a BizottsÃ¡g, amely nemrÃ©giben 1,2 milliÃ³ uniÃ³s polgÃ¡r akaratÃ¡t sÃ¶pÃ¶rte le az asztalrÃ³l azzal, hogy elutasÃ­totta jogalkotÃ¡si kÃ©rÃ©sÃ¼ket a nemzeti rÃ©giÃ³k vÃ©delmÃ©rÅl szÃ³lÃ³ polgÃ¡ri kedvezmÃ©nyesek kapcsÃ¡n.",
+      "del:madeBy": {
+        "@id": "participant_40"
+      },
+      "del:timestamp": "2025-10-09T10:16:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_50",
+      "del:text": "Pornind de la petiÈia nr.Â 0004/2023, depusÄ de RÄzvan Eugen Nicolescu, s-a ajuns la o rezoluÈie Ã®n plen, iar pe 1Â ianuarieÂ 2025, RomÃ¢nia Èi Bulgaria au intrat deplin Ã®n Schengen. Pornind de la petiÈia nr.Â 1168/2023, depusÄ de Mihai Igna Ã®n numele ONG-ului âÃmpreunÄ aducem bunÄstareâ, s-a vorbit pentru prima datÄ Ã®ntr-o comisie europarlamentarÄ despre restituirea tezaurului RomÃ¢niei, deÈinut ilegal de Rusia din 1916. Comisia pentru petiÈii a avut un rol istoric Èi moral Ã®n protejarea patrimoniului cultural Èi Ã®n sprijinirea revendicÄrilor legitime ale statelor membre afectate de acte de jefuire. Felicit stafful Èi colegii din Comisia pentru petiÈii pentru profesionalismul arÄtat Èi recomand europenilor sÄ petiÈioneze cu Ã®ncredere aceastÄ comisie.",
+      "del:madeBy": {
+        "@id": "participant_41"
+      },
+      "del:timestamp": "2025-10-09T10:18:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_51",
+      "del:text": "W 2024 r. wpÅynÄÅo do nas ponad 1500 petycji. KaÅ¼da z nich to konkretna, ludzka sprawa. Wiele z nich poruszaÅo problem smogu w miastach czy naruszania praw konsumentÃ³w. To dowÃ³d, Å¼e ludzie chcÄ uczestniczyÄ w Å¼yciu Unii i Å¼e ich gÅos ma znaczenie.\nRaport przypomina teÅ¼, Å¼e wciÄÅ¼ musimy usprawniaÄ procedury. Dlatego w Komisji Petycji ja rÃ³wnieÅ¼ bÄdÄ zabiegaÅ o to, by petycje byÅy rozpatrywane szybciej, bardziej transparentnie, w sposÃ³b dostÄpny dla kaÅ¼dego.\nChcÄ teÅ¼ podkreÅliÄ, Å¼e PETI nie powinno byÄ wykorzystywane do partyjnych celÃ³w krajowych. PatrzÄ tutaj z peÅnÄ sympatiÄ szczegÃ³lnie na moich kolegÃ³w z Hiszpanii. Takie dziaÅania mogÄ bowiem osÅabiaÄ zaufanie obywateli do instytucji unijnych.\nChcÄ powiedzieÄ jasno: dla nas kaÅ¼da petycja siÄ liczy. SkÅadajÄc jÄ, obywatel realnie wpÅywa na decyzje tej Izby. To dowÃ³d, Å¼e Unia nie jest odlegÅÄ instytucjÄ. To nasza wspÃ³lna przestrzeÅ, w ktÃ³rej kaÅ¼dy gÅos moÅ¼e tworzyÄ prawo oraz przyszÅoÅÄ Unii.",
+      "del:madeBy": {
+        "@id": "participant_42"
+      },
+      "del:timestamp": "2025-10-09T10:19:36"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_52",
+      "del:text": "Sin embargo, esto no siempre sucede asÃ­. El aÃ±o 2024 ha sido un aÃ±o negro para la ComisiÃ³n de Peticiones. Un aÃ±o en el que ha sido utilizada anteponiendo los acuerdos entre grupos de derecha y extrema derecha a un buen funcionamiento democrÃ¡tico de esta comisiÃ³n que garantizara la pluralidad de todos los grupos polÃ­ticos y, sobre todo, lo que es mÃ¡s importante y debe prevalecer, que es el derecho de peticiÃ³n de los ciudadanos. Se han traÃ­do temas que no son realistas, como las cuestiones de CataluÃ±a âabsolutamente manipuladasâ, y los temas manipulados no se han traÃ­do porque a los ciudadanos se les ha boicoteado su derecho de peticiÃ³n. Por eso defiendo el derecho de comparecer de los colectivos que presentan siempre una peticiÃ³n que es aceptada por referirse directamente a normativas europeas, que debe estar siempre por encima de las decisiones de los grupos polÃ­ticos cuando esas peticiones han sido inicialmente aceptadas.\nEsto es lo que ha sucedido el Ãºltimo aÃ±o con dos peticiones de mi paÃ­s, de Galiza, como la de Altri o la de la CRTVG. Por eso, seÃ±or Beleris, me dirijo a usted: si quiere contar con el apoyo positivo del Grupo de los Verdes/Alianza Libre Europea en este informe, le pido que apoye nuestra enmiendaÂ 13, que pide que cada grupo democrÃ¡tico tenga al menos una peticiÃ³n propuesta por sesiÃ³n en la ComisiÃ³n de Peticiones. Si pasa, votaremos a favor. Esta es la Ãºnica forma de ser constructivos y de garantizar el buen funcionamiento democrÃ¡tico de una comisiÃ³n que ha pasado un aÃ±o horrible. Esperemos que el aÃ±o 2025 sea menos horrible y podamos tener diÃ¡logo democrÃ¡tico.",
+      "del:madeBy": {
+        "@id": "participant_43"
+      },
+      "del:timestamp": "2025-10-09T10:21:19"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_53",
+      "del:text": "Î ÎµÏÎ¹ÏÏÎ¿ÏÎ® PETI Î¿ÏÎµÎ¯Î»ÎµÎ¹ Î½Î± Î±Î½ÏÎ±ÏÎ¿ÎºÏÎ¯Î½ÎµÏÎ±Î¹ ÏÎµ Î±ÏÏÎ­Ï ÏÎ¹Ï ÏÏÎ¿ÏÎ´Î¿ÎºÎ¯ÎµÏ Î¼Îµ Î´Î¹ÎºÎ±Î¹Î¿ÏÏÎ½Î·, Î´Î¹Î±ÏÎ¬Î½ÎµÎ¹Î± ÎºÎ±Î¹ Î±Î¼ÎµÏÎ¿Î»Î·ÏÎ¯Î±. ÎÎµÎ½ ÏÏÎ­ÏÎµÎ¹ Î½Î± Î¼ÎµÏÎ±ÏÏÎ­ÏÎµÏÎ±Î¹ ÏÎµ ÏÎµÎ´Î¯Î¿ Î¼Î¹ÎºÏÎ¿ÏÎ¿Î»Î¹ÏÎ¹ÎºÏÎ½ ÏÎ±Î¹ÏÎ½Î¹Î´Î¹ÏÎ½ Î® ÏÎµ ÏÏÎ¿Î­ÎºÏÎ±ÏÎ· ÎºÎ¿Î¼Î¼Î±ÏÎ¹ÎºÏÎ½ Î´Î¹Î±ÏÎ¿ÏÏÎ½. ÎÏÎµÎ¯Î»Î¿ÏÎ¼Îµ Î½Î± ÏÏÎµÏÎ±ÏÏÎ¹Î¶ÏÎ¼Î±ÏÏÎµ ÏÎ¿ÏÏ ÏÎ¿Î»Î¯ÏÎµÏ ÎºÎ±Î¹ ÏÏÎ¹ ÏÎ± ÎºÏÎ¼Î¼Î±ÏÎ±. ÎÎ½Î± ÏÎ±ÏÎ±ÎºÏÎ·ÏÎ¹ÏÏÎ¹ÎºÏ ÏÎ±ÏÎ¬Î´ÎµÎ¹Î³Î¼Î± ÎµÎ¯Î½Î±Î¹ Î· Î±Î½Î±ÏÎ¿ÏÎ¬ ÏÏÎ½ Î¿Î¹ÎºÎ¿Î³ÎµÎ½ÎµÎ¹ÏÎ½ ÏÏÎ½ Î¸ÏÎ¼Î¬ÏÏÎ½ ÏÎ¿Ï ÎµÎ³ÎºÎ»Î®Î¼Î±ÏÎ¿Ï ÏÏÎ½ Î¤ÎµÎ¼ÏÏÎ½ ÏÏÎ· ÏÏÏÎ± Î¼Î¿Ï. ÎÎ­ÏÎ± Î±ÏÏ ÏÎ· ÏÏÎ½Î® ÏÎ¿ÏÏ ÏÎ¬Î½Î·ÎºÎµ Î¾ÎµÎºÎ¬Î¸Î±ÏÎ± ÏÏÏÎ¿ ÎºÏÎ¯ÏÎ¹Î¼Î· ÎµÎ¯Î½Î±Î¹ Î· ÏÏÎ±ÏÎ¾Î· Î¼Î¹Î±Ï ÎµÏÎ¹ÏÏÎ¿ÏÎ®Ï, Î¼Î¹Î±Ï ÎµÏÏÏÏÎ±ÏÎºÎ®Ï ÎµÏÎ¹ÏÏÎ¿ÏÎ®Ï, ÏÎ¿Ï Î´Î¯Î½ÎµÎ¹ ÏÏÏÎ¿ ÎºÎ±Î¹ Î±Î¾Î¹Î¿ÏÏÎ­ÏÎµÎ¹Î± ÏÎµ ÏÏÎ¿ÏÏ Î¶Î·ÏÎ¿ÏÎ½ Î´Î¹ÎºÎ±Î¹Î¿ÏÏÎ½Î·. ÎÏÎ¿ ÏÏÎ¬ÏÏÎµÎ¹ Î· ÎÏÎ¹ÏÏÎ¿ÏÎ® ÎÎ½Î±ÏÎ¿ÏÏÎ½, Î¿Î¹ ÏÎ¿Î»Î¯ÏÎµÏ Î­ÏÎ¿ÏÎ½ Î»ÏÎ³Î¿ Î½Î± ÏÎ¹ÏÏÎµÏÎ¿ÏÎ½ ÏÏÎ¹ ÏÏÎ·Î½ ÎÏÏÏÏÎ· Î· Î±Î»Î®Î¸ÎµÎ¹Î± ÎºÎ±Î¹ ÏÎ¿ Î´Î¯ÎºÎ±Î¹Î¿ Î¼ÏÎ¿ÏÎ¿ÏÎ½ Î±ÎºÏÎ¼Î± Î½Î± Î½Î¹ÎºÎ¿ÏÎ½.",
+      "del:madeBy": {
+        "@id": "participant_44"
+      },
+      "del:timestamp": "2025-10-09T10:23:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_54",
+      "del:text": "I dziÄki tym petycjom nagÅaÅniane sÄ takie sprawy, o ktÃ³rych nie mÃ³wimy tutaj na sali plenarnej, ktÃ³rych nie ma w Å¼adnych raportach, a ktÃ³re wszyscy znajÄ z Å¼ycia â skutki Åºle napisanych rozporzÄdzeÅ, Åºle wdroÅ¼onych przepisÃ³w, marnowanie pieniÄdzy podatnikÃ³w. Od bezpieczeÅstwa kolei po decyzje Årodowiskowe wydane bez rzetelnych danych. Tu Unia Europejska moÅ¼e wykazaÄ siÄ uÅ¼ytecznoÅciÄ, naprawiÄ coÅ, uÅciÅliÄ albo po prostu przestaÄ ludziom przeszkadzaÄ.\nAle przede wszystkim ta komisja ma sÅuÅ¼yÄ ludziom, a nie byÄ paÅkÄ na paÅstwa czÅonkowskie czy sÅuÅ¼yÄ do jakichÅ sporÃ³w politycznych. Gdyby UniÄ rzÄdzili jej obywatele, to moÅ¼e wreszcie by tu coÅ dziaÅaÅo. I dlatego oceniam KomisjÄ Petycji bardzo pozytywnie, bo to jedno z niewielu miejsc w tej instytucji, gdzie jeszcze sÅychaÄ ludzki gÅos. I nie psujmy tego.",
+      "del:madeBy": {
+        "@id": "participant_45"
+      },
+      "del:timestamp": "2025-10-09T10:24:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_55",
+      "del:text": "I chciaÅbym podaÄ dwa przykÅady. ChociaÅ¼by jednym jest petycja zÅoÅ¼ona przez polskiego obywatela w sprawie wprowadzenia minimalnej dopuszczalnej przestrzeni na nogi we wszystkich liniach lotniczych dziaÅajÄcych w Unii Europejskiej. Ta sprawa pokazuje, jak komisja moÅ¼e podejmowaÄ kwestie bezpoÅrednio wpÅywajÄce na komfort i bezpieczeÅstwo podrÃ³Å¼nych, a takÅ¼e wpÅywaÄ na unijne regulacje dotyczÄce praw konsumentÃ³w.\nA drugi przykÅad, rÃ³wnieÅ¼ z Polski, w sprawie zajÄcia siÄ selektywnym egzekwowaniem przepisÃ³w Unii Europejskiej w branÅ¼y wÄdzonego Åososia. Petycja ta podkreÅla potrzebÄ zapewnienia jednolitego stosowania przepisÃ³w dotyczÄcych przetwÃ³rstwa produktÃ³w ryboÅÃ³wstwa w caÅej Unii Europejskiej, aby uniknÄÄ nierÃ³wnoÅci konkurencyjnych i zapewniÄ sprawiedliwe warunki dla wszystkich przedsiÄbiorstw w branÅ¼y. No i zadaniem posÅÃ³w w Parlamencie Europejskim jest nie tylko sÅuchaÄ tych gÅosÃ³w, ale konkretnie dziaÅaÄ. I to robimy. ChciaÅbym serdecznie podziÄkowaÄ sprawozdawcy Fredisowi Belerisowi i wszystkim koleÅ¼ankom i kolegom za wspÃ³ÅpracÄ. I proszÄ o poparcie tego sprawozdania.",
+      "del:madeBy": {
+        "@id": "participant_46"
+      },
+      "del:timestamp": "2025-10-09T10:26:12"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_56",
+      "del:text": "GrÃ¢ce Ã  l'Ã©coute du rapporteur, douzeÂ amendements portÃ©s par le groupe Patriotes pour l'Europe ont pu Ãªtre adoptÃ©s. Ces amendements dÃ©fendent des valeurs fondamentales: la souverainetÃ© nationale, la libertÃ© d'expression et la transparence de nos institutions.\nCe rÃ©sultat prouve qu'un travail lÃ©gislatif Ã©quilibrÃ© et pragmatique est possible, Ã  une seule condition: que le PPE accepte enfin de travailler avec les forces souverainistes, plutÃ´t que de se soumettre au cordon antidÃ©mocratique imposÃ© par la gauche et l'extrÃªme gauche. Un cordon qui prive plus de 18Â millions d'EuropÃ©ens de toute reprÃ©sentation. La dÃ©mocratie doit Ãªtre respectÃ©e.\nEn votant ce texte aujourd'hui, nous saluons un rapport constructif, libÃ©rÃ© des dogmes idÃ©ologiques et fidÃ¨le Ã  la vocation premiÃ¨re de cette commission: Ã©couter les citoyens et dÃ©fendre leurs droits. C'est pourquoi, sans hÃ©sitation, nous voterons en faveur de ce rapport.",
+      "del:madeBy": {
+        "@id": "participant_47"
+      },
+      "del:timestamp": "2025-10-09T10:28:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_57",
+      "del:text": "AquÃ­ en esta CÃ¡mara y en la ComisiÃ³n hay una inmensa hipocresÃ­a: se seÃ±ala con el dedo a HungrÃ­a o a Polonia mientras se guarda un silencio cÃ³mplice ante lo que ocurre en EspaÃ±a. Ponen desde el Gobierno en peligro la independencia judicial pero no pasa nada: se mira hacia otro lado. En CataluÃ±a, miles de familias han pedido algo tan bÃ¡sico como escolarizar a sus hijos en castellano, la lengua oficial de todos los espaÃ±oles. Lo han pedido en los tribunales, lo han ganado y la Generalitat se niega a cumplir las sentencias.\nÂ¿DÃ³nde estÃ¡ la ComisiÃ³n o dÃ³nde estÃ¡n los defensores del Estado de Derecho cuando se pisotean los derechos lingÃ¼Ã­sticos de los ciudadanos? Defender el Estado de Derecho tambiÃ©n es proteger a los jueces independientes y a las familias que solo quieren educar a sus hijos en paz en su propia lengua. Desde el Grupo ECR decimos alto y claro: no hay democracia sin ley y no hay libertad sin igualdad.\nFeliz 9 de octubre a todos los valencianos de bien.",
+      "del:madeBy": {
+        "@id": "participant_48"
+      },
+      "del:timestamp": "2025-10-09T10:29:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_58",
+      "del:text": "ÎÏÏÏ Î¼Îµ ÏÎ¿ Î­Î³ÎºÎ»Î·Î¼Î± ÏÏÎ½ Î¤ÎµÎ¼ÏÏÎ½: Î Î±Î½Î±ÏÎ¿ÏÎ¬ ÏÏÎ½ ÏÏÎ³Î³ÎµÎ½ÏÎ½ Î¼Î­Î½ÎµÎ¹ ÎµÎ½Î¬Î¼Î¹ÏÎ· ÏÏÏÎ½Î¿ ÏÎ±Î³ÏÎ¼Î­Î½Î·, ÎµÎ½Ï ÏÏÎ¬ÏÏÎ¿ÏÎ½ ÏÎ¿Î²Î±ÏÎ­Ï ÎµÎ¾ÎµÎ»Î¯Î¾ÎµÎ¹Ï. Î Î±ÏÎ­ÏÎ±Ï Î¸ÏÎ¼Î±ÏÎ¿Ï Î­ÎºÎ±Î½Îµ 25 Î¼Î­ÏÎµÏ Î±ÏÎµÏÎ³Î¯Î± ÏÎµÎ¯Î½Î±Ï, Î¶Î·ÏÏÎ½ÏÎ±Ï Î½Î± Î¼Î¬Î¸ÎµÎ¹ ÏÎ¹ ÏÏÎ½Î­Î²Î· ÏÏÎ¿Î½ Î³Î¹Î¿ ÏÎ¿Ï. ÎÎ·ÏÎ®ÏÎ±Î¼Îµ Î½Î± Î±Î½Î¿Î¯Î¾ÎµÎ¹ ÎºÎ±ÏÎµÏÎµÎ¹Î³ÏÎ½ÏÏÏ Î· Î±Î½Î±ÏÎ¿ÏÎ¬. Î¤Î¹ ÎºÎ¬Î½Î±ÏÎµ; Î ÏÎ¿Î³ÏÎ±Î¼Î¼Î±ÏÎ¯Î¶ÎµÏÎµ ÎµÏÎ¯ÏÎºÎµÏÎ· ÏÏÎ·Î½ ÎÎ»Î»Î¬Î´Î± ÏÎµ Î­Î½Î±Î½ ÏÏÏÎ½Î¿. ÎÎ»ÎµÎ¯Î½ÎµÏÎµ ÏÎ¿ Î¼Î¬ÏÎ¹ ÏÏÎ·Î½ ÎºÏÎ²Î­ÏÎ½Î·ÏÎ· ÏÎ·Ï ÎÎ­Î±Ï ÎÎ·Î¼Î¿ÎºÏÎ±ÏÎ¯Î±Ï. ÎÎ¹Î±Î¹ÏÎ½Î¯Î¶ÎµÏÎµ ÏÎ· ÏÏÎ³ÎºÎ¬Î»ÏÏÎ·, ÏÎ¿Î½ ÏÏÎ½Î­Î½Î¿ÏÎ¿ ÏÏÎ»Î¿ ÎÏÏÏÏÎ±ÏÎºÎ®Ï ÎÎ½ÏÏÎ·Ï ÎºÎ±Î¹ ÎÏÏÏÎºÎ¿Î¹Î½Î¿Î²Î¿ÏÎ»Î¯Î¿Ï ÎºÎ±Î¹ ÏÏÎ½ ÎºÎ¿Î¼Î¼Î¬ÏÏÎ½ ÏÎ¿Ï ÏÎ· ÏÏÎ·ÏÎ¯Î¶Î¿ÏÎ½ ÎºÎ±Î¹ ÏÎ·Î½ ÎµÎ¾ÏÏÎ±ÎÎ¶Î¿ÏÎ½. ÎÎ±Î»Î»Î¹ÎµÏÎ³ÎµÎ¯ÏÎµ ÏÎ·Î½ Î±ÏÏÎ±ÏÎ¬ÏÎ· ÏÏÎ¹ Î¿Î¹ ÎµÏÎ³Î±Î¶ÏÎ¼ÎµÎ½Î¿Î¹ Î¸Î± Î²ÏÎ¿ÏÎ½ ÏÎ¿ Î´Î¯ÎºÎ¹Î¿ ÏÎ¿ÏÏ ÎµÎ´Ï Î¼Î­ÏÎ±. ÎÎ¼ÏÏ Î´Î¹ÎºÎ±Î¯ÏÏÎ· ÏÏÎ± ÎµÏÎ³Î±ÏÎ¹ÎºÎ¬ Î»Î±ÏÎºÎ¬ Î±Î¹ÏÎ®Î¼Î±ÏÎ±, Î´Î¹ÎºÎ±Î¯ÏÏÎ· Î³Î¹Î± ÏÎ± Î¸ÏÎ¼Î±ÏÎ± ÏÏÎ½ Î¤ÎµÎ¼ÏÏÎ½, ÏÏÎ­ÏÎµÎ¹ Î½Î± Î´ÏÏÎ¿ÏÎ½ ÏÎµÎ»Î¹ÎºÎ¬ Î¿Î¹ Î¯Î´Î¹Î¿Î¹ Î¿Î¹ ÎµÏÎ³Î±Î¶ÏÎ¼ÎµÎ½Î¿Î¹ ÎºÎ±Î¹ Î¿ Î»Î±ÏÏ, Î¼Îµ ÏÎºÎ»Î·ÏÎ¿ÏÏ Î±Î³ÏÎ½ÎµÏ ÎºÏÎ½ÏÏÎ± ÏÏÎ·Î½ ÎÏÏÏÏÎ±ÏÎºÎ® ÎÎ½ÏÏÎ·, ÏÎ¹Ï ÎºÏÎ²ÎµÏÎ½Î®ÏÎµÎ¹Ï ÎºÎ±Î¹ ÏÎ± ÎºÏÎ¼Î¼Î±ÏÎ± ÏÎ¿Ï ÏÎ· ÏÏÎ·ÏÎ¯Î¶Î¿ÏÎ½.",
+      "del:madeBy": {
+        "@id": "participant_49"
+      },
+      "del:timestamp": "2025-10-09T10:30:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_59",
+      "del:text": "Solche und vielfÃ¤ltige Beispiele gibt es in allen Mitgliedstaaten. Sie zeigen, der Petitionsausschuss ermÃ¶glicht, dass Schwierigkeiten aufgezeigt werden. Im Jahr 2024 sind 1Â 518Â Petitionen an das EuropÃ¤ische Parlament gerichtet worden â die Tendenz ist steigend. Die Arbeit des Petitionsausschusses wird mehr, nicht weniger. Und das ist gut so, denn es beweist, dass die BÃ¼rgerinnen und BÃ¼rger den Kontakt zum EuropÃ¤ischen Parlament suchen. Dies zeichnet auch der Bericht nach, und er ist wirklich lesenswert. Ich mÃ¶chte ganz herzlich meinem Kollegen Fredis Beleris fÃ¼r die gute Arbeit an dem Bericht danken, aber auch den Petenten fÃ¼r ihre Anliegen und das Vertrauen in das EuropÃ¤ische Parlament.",
+      "del:madeBy": {
+        "@id": "participant_50"
+      },
+      "del:timestamp": "2025-10-09T10:31:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_60",
+      "del:text": "Commission des pÃ©titions ou pas, je veux que vous sachiez que plus personne ne vous croit, depuis que vous avez violÃ© la volontÃ© du peuple franÃ§ais lors du rÃ©fÃ©rendum deÂ 2005. Votre inventivitÃ© est sans limite: d'un cÃ´tÃ©, vous bÃ¢illonnez le peuple; de l'autre, vous amusez la galerie en nous cÃ©dant quelques miettes d'intÃ©rÃªt. Mais sachez que nous n'avons pas besoin d'intrigants en costume pour nous distraire.\nVous voulez un jour inspirer un peu de respect? Alors, Ã©coutez PhilippeÂ deÂ Villiers, soutenu par deux millions de FranÃ§ais, pour dire non Ã  l'immigration et redonner la parole aux peuples d'Europe qui ne veulent plus Ãªtre ni remplacÃ©s, ni taxÃ©s, ni culpabilisÃ©s.",
+      "del:madeBy": {
+        "@id": "participant_51"
+      },
+      "del:timestamp": "2025-10-09T10:33:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_61",
+      "del:text": "ÎÏÏÎ¼Î¹ÏÎ¹ ÏÏÏÎ½Î¹Î± ÎµÎ¼ÏÎ±Î¹Î³Î¼Î¿Ï ÏÎ·Ï ÎµÎ»Î»Î·Î½Î¹ÎºÎ®Ï ÎºÏÎ²Î­ÏÎ½Î·ÏÎ·Ï ÏÏÎ¿Ï ÏÎ¿ÏÏ ÏÏÎ³Î³ÎµÎ½ÎµÎ¯Ï. ÎÎ½Î¬Î¼Î¹ÏÎ·Ï ÏÏÏÎ½Î¿Ï Î±ÏÏÎ±Î¾Î¯Î±Ï ÏÎ¿Ï ÎÏÏÏÏÎ±ÏÎºÎ¿Ï ÎÎ¿Î¹Î½Î¿Î²Î¿ÏÎ»Î¯Î¿Ï. Î§ÏÎµÎ¹Î¬ÏÏÎ·ÎºÎ±Î½ 23 Î¼Î­ÏÎµÏ Î±ÏÎµÏÎ³Î¯Î±Ï ÏÎ¿Ï ÏÎ±ÏÎ­ÏÎ±, Î³Î¹Î± Î½Î± Î±ÏÎ¿ÎºÎ±ÏÎ±ÏÏÎ±Î¸ÎµÎ¯ ÏÎ¿ ÎºÏÎ¬ÏÎ¿Ï Î´Î¹ÎºÎ±Î¯Î¿Ï. Î Î¿Î»Î¯ÏÎµÏ Î¼Îµ ÏÎ¹Ï Î´Î¹Î±Î´Î·Î»ÏÏÎµÎ¹Ï ÏÎ¿ÏÏ, ÏÎ·Î½ Î±Î»Î»Î·Î»ÎµÎ³Î³ÏÎ· ÏÎ¿ÏÏ, Î±Î½Î¬Î³ÎºÎ±ÏÎ±Î½ ÏÎ¹Ï Î±ÏÏÎ­Ï Î½Î± ÏÏÎ¿ÏÏÏÎ®ÏÎ¿ÏÎ½. ÎÏÎ¹ Î¿Î¹ Î¸ÎµÏÎ¼Î¿Î¯Î Î¿Î¹ ÏÎ¿Î»Î¯ÏÎµÏ. Î ÎÏÎ¹ÏÏÎ¿ÏÎ® ÎÎ½Î±ÏÎ¿ÏÏÎ½ ÏÎ¹ ÎºÎ¬Î½ÎµÎ¹ ÏÎµÎ»Î¹ÎºÎ¬; Î¤Î¹ ÏÏÎ»Î¿ Î­ÏÎµÎ¹; Î¤Î¹ ÏÏÎ»Î¿ ÏÎ±Î¯Î¶ÎµÏÎµ, ÎºÏÏÎ¹Î¿Î¹;",
+      "del:madeBy": {
+        "@id": "participant_52"
+      },
+      "del:timestamp": "2025-10-09T10:34:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_62",
+      "del:text": "My zajmujemy siÄ tekstami, ktÃ³re przysyÅajÄ Parlamentowi Europejskiemu obywatele i podajemy je dalej, do Komisji Europejskiej â w ten sposÃ³b, Å¼e niektÃ³re petycje zostajÄ otwarte, a jeÅli petycja dotyczy wielu krajÃ³w, wielu ludzi, przedstawiamy Parlamentowi rezolucjÄ. Parlament takÄ rezolucjÄ przyjmuje.\nOt, na przykÅad w zeszÅej kadencji byÅa taka rezolucja dotyczÄca oczyszczenia Morza BaÅtyckiego z resztek amunicji i wrakÃ³w po II i I wojnie Åwiatowej. I co, Szanowni PaÅstwo? I nic. I nic! Reakcja Komisji Europejskiej jest zwykle milczÄca. Kilku urzÄdnikÃ³w przyjdzie, pokiwa gÅowami â tak, tak, trzeba by coÅ zrobiÄ... I nic siÄ z tym nie dzieje. W nastÄpstwie tej petycjiÂ zostaje uchwalonaÂ rezolucja Parlamentu â i nic. W ten sposÃ³b Komisja Europejska traktuje obywateli.\nSzanowni PaÅstwo, wyciÄgnijmy z tego wnioski, rÃ³wnieÅ¼ w dzisiejszym gÅosowaniu nad wotum zaufania dla Komisji Europejskiej. Ale szczerze powiedziawszy, wszystkie poprzednie Komisje Europejskie petycje traktowaÅy tak samo.",
+      "del:madeBy": {
+        "@id": "participant_53"
+      },
+      "del:timestamp": "2025-10-09T10:35:52"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_63",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_54"
+      },
+      "del:timestamp": "2025-10-09T10:37:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_64",
+      "del:text": "La peticiÃ³n es, desde su concepciÃ³n en el Tratado de Maastricht âpero desde luego en el Tratado de Lisboa y en la Carta de los Derechos Fundamentales de la UniÃ³n Europeaâ un derecho fundamental. Pero tenemos que respetar el perÃ­metro de ese derecho fundamental sin distorsionarlo y comunicarlo mal, porque se da muy frecuentemente el caso de que, cuando se utiliza legÃ­timamente la caja de resonancia, que es el Parlamento Europeo, para exponer una preocupaciÃ³n, esta preocupaciÃ³n no tiene que ver con las competencias del Parlamento Europeo, y ese es el sentido del derecho fundamental de peticiÃ³n. Y otra forma de distorsionarlo es que luego se dÃ© lugar al equÃ­voco de que el Parlamento Europeo investigarÃ¡ un asunto como si el Parlamento Europeo fuese una comisiÃ³n de investigaciÃ³n permanente.\nNo, no es prestar un buen servicio al derecho de peticiÃ³n el rebasar el perÃ­metro de su ejercicio: competencias institucionales europeas y caja de resonancia europea para una preocupaciÃ³n ciudadana.",
+      "del:madeBy": {
+        "@id": "participant_55"
+      },
+      "del:timestamp": "2025-10-09T10:39:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_65",
+      "del:text": "I also commend Parliament's commitment to respond to citizens' concerns and the overall parliamentary activity of the Committee on Petitions, including reports and opinions, as well as the organisational hearings and workshops on a wide range of topics.\nWe, in the Commission, will continue our efforts to improve the speed, quality and pertinence of our contributions to your replies to petitioners' concerns.\nI am also convinced that together we can show citizens that we take their concerns seriously. I count on your cooperation to strengthen citizens' confidence and trust and, of course, our actions in our European project, particularly in the current international context.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-09T10:40:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_66",
+      "del:text": "ÎÎ± Î®Î¸ÎµÎ»Î± Î½Î± ÎµÏÏÎ±ÏÎ¹ÏÏÎ®ÏÏ Î¸ÎµÏÎ¼Î¬ ÏÎ¿ÏÏ ÏÎºÎ¹ÏÎ´ÎµÎ¹Ï ÎµÎ¹ÏÎ·Î³Î·ÏÎ­Ï Î³Î¹Î± ÏÎ·Î½ ÎµÏÎ¿Î¹ÎºÎ¿Î´Î¿Î¼Î·ÏÎ¹ÎºÎ® ÏÏÎ½ÎµÏÎ³Î±ÏÎ¯Î± ÏÎ¿ÏÏ, ÎºÎ±Î¸ÏÏ ÎºÎ±Î¹ ÏÎ»Î¿ÏÏ ÏÎ¿ÏÏ ÏÏÎ½Î±Î´Î­Î»ÏÎ¿ÏÏ ÏÎ¿Ï ÏÏÎ­Î²Î±Î»Î±Î½ ÏÏÎ¿ÏÎ¿Î»Î¿Î³Î¯ÎµÏ ÎºÎ±Î¹ ÏÏÎ½Î­Î²Î±Î»Î±Î½ ÎµÎ½ÎµÏÎ³Î¬ ÏÏÎ· Î´Î¹Î±Î´Î¹ÎºÎ±ÏÎ¯Î±. ÎÎ­Î»Ï Î½Î± ÏÏÎ¿Î³ÏÎ±Î¼Î¼Î¯ÏÏ, ÏÎ­Î»Î¿Ï, ÏÏÎ¹ Î¿ ÏÏÎ»Î¿Ï ÏÎ·Ï ÎÏÎ¹ÏÏÎ¿ÏÎ®Ï ÎÎ½Î±ÏÎ¿ÏÏÎ½ Î´ÎµÎ½ ÎµÎ¯Î½Î±Î¹ Î½Î± Î´Î¹ÏÎ¬Î¶ÎµÎ¹, Î±Î»Î»Î¬ Î½Î± ÎµÎ½ÏÎ½ÎµÎ¹. ÎÎ± Î±ÏÎ¿ÏÎµÎ»ÎµÎ¯ ÏÏÏÎ¿ Î´Î¹Î±Î»ÏÎ³Î¿Ï, Î´Î·Î¼Î¿ÎºÏÎ±ÏÎ¹ÎºÎ®Ï ÏÏÎ¼Î¼ÎµÏÎ¿ÏÎ®Ï ÎºÎ±Î¹ ÎµÎ¼ÏÎ¹ÏÏÎ¿ÏÏÎ½Î·Ï Î¼ÎµÏÎ±Î¾Ï ÏÏÎ½ ÏÎ¿Î»Î¹ÏÏÎ½ ÎºÎ±Î¹ ÏÏÎ½ Î¸ÎµÏÎ¼ÏÎ½.",
+      "del:madeBy": {
+        "@id": "participant_37"
+      },
+      "del:timestamp": "2025-10-09T10:41:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_67",
+      "del:text": "The vote will be held today.",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T10:43:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_68",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T10:43:15"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_69",
+      "del:text": "These days, more and more young people are using smartphones and accessing the internet. More and more are spending a lot of their time online. And, on the one hand, social platforms offer a space of connection, learning and creativity, but on the other hand, the digital environment is not always safe. Cyber bullying, privacy and safety threats, hate speech, harmful or inappropriate content, misinformation and addictive algorithms â these are just a few of the risks around being online, not to mention the physical impact that excessive screen time has.Â These things can cause compulsive and addictive behaviour, and they can make mental health issues worse in young people.\nThis is why we need the right safeguards. In her State of the Union speech this year, President von der Leyen emphasised the need to protect children from social media risks. She highlighted the importance of supporting parents and proposed exploring the need for age restrictions on social media. An expert panel is planned by the end of this year to advise on the best approaches for Europe to take. We are also preparing an EU-wide inquiry into the broader impacts of social media on young people's mental health and well-being.\nAhead of Mental Health Day tomorrow, we need everybody's commitment. If we want to make a difference, we need to work together with all public and private stakeholders, including industry and digital businesses. This is the only way we can ensure the highest safety and privacy standards.\nIn 2023, we adopted the communication on a comprehensive approach to mental health, which has 20 flagship initiatives and almost EURÂ 1.3Â billion in funding opportunities. It has a strong focus on children and young people. For example, one action is our work with UNICEF to develop a prevention toolkit to help improve the mental and physical health of children and teenagers and to understand how social media affects them.\nWe are also collecting best and most promising practices on mental health. With EURÂ 6Â million in support from the EU4Health programme, we are supporting Member States in transferring some of these practices across the EU. One example of this is a programme on community suicide prevention led by the Basque Health Service. Another example is the ABCs of Mental Health project. It aims to improve the mental health and well-being of disadvantaged groups across Europe, using a common research-based model that can beÂ adapted locally.\nHonourable Members, the Commission is taking important steps to strengthen mental health support. For young people especially, this means looking at the impact of the digital world. New generations should be enjoying the benefits of technology, not suffering because of it.\nThe Commission looks forward to working with the European Parliament on this important issue.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-09T10:43:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_70",
+      "del:text": "Upravo zato danas Å¾elim posebno istaknuti majke. ViÅ¡e od 67 % njih u EU kaÅ¾e da se osjeÄa mentalno preoptereÄeno, a polovica navodi da se bori s tjeskobom, depresijom iliÂ burnoutom. Ako zanemarimo njihove potrebe, propuÅ¡tamo brinuti o stupu naÅ¡ih obitelji i druÅ¡tva. Kolegice i kolege, vrijeme je da mentalno zdravlje postane europski prioritet, da prestane biti tabu tema i da brigu o mentalnom zdravlju ugradimo u temelje naÅ¡e politike, a posebno je vaÅ¾no donijeti potrebnu regulativu o digitalnim sadrÅ¾ajima kako bismo zaÅ¡titili mlade od svih onih problema i rizika koji postoje na internetu.",
+      "del:madeBy": {
+        "@id": "participant_56"
+      },
+      "del:timestamp": "2025-10-09T10:47:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_71",
+      "del:text": "Mental health should not be silent as a health sector issue only, but integrated into jobs, education, digital policy, social inclusion and addiction strategies. And it must pay special attention to gender issues â women's, men's and gender diverse people's mental health. Such strategies should establish binding minimum standards for workplace psychological protection, regulate digital technologies through the lens of cognitive integrity, and use well-being together with integrating policies on addiction in broader public health strategy.\nExcessive screen time, especially on social media, correlates with risk of anxiety, depression and lower self-esteem. We need to pay very big attention to children's and youngsters' issues because it is a very big challenge and we need to establish digital regulation, especially for minors, as a key in preventing the mental health problems among them.",
+      "del:madeBy": {
+        "@id": "participant_57"
+      },
+      "del:timestamp": "2025-10-09T10:49:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_72",
+      "del:text": "To accent topics of the mental health and well-being of young people, we reaffirm our commitment to strengthen national healthcare systems through reducing inequalities and through advancing towards complex health coverage. We further agree to ensure access to safe youthâ and childâfriendly healthcare, including mental and digital health.\nAcross Europe, too many citizens face stress from insecure jobs, rising living costs, housing difficulties and also social isolation. These pressures deepen inequalities and put the most vulnerable at even greater risk. Therefore, improving mental health must be a fundamental priority and we call for continual and systematic action in this area.",
+      "del:madeBy": {
+        "@id": "participant_58"
+      },
+      "del:timestamp": "2025-10-09T10:51:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_73",
+      "del:text": "La deprivazione affettiva, l'isolamento, la dispersione scolastica e la disgregazione dei nuclei familiari generano un vuoto di riferimenti e di modelli positivi da imitare. Ã proprio lÃ¬ che nasce il disagio, terreno fertile per la deriva mentale e sociale. Quando mancano luoghi di aggregazione storici sani, come parrocchie, centri sportivi e associazioni di volontariato, si cercano surrogati: la comunicazione virtuale, priva di contatto reale, e le aggregazioni distruttive nelle piazze, tra violenza, spaccio e dipendenze. Le sostanze stupefacenti diventano cosÃ¬ una paradossale forma di normalizzazione del vuoto esistenziale e del dolore psicologico.\nLa salute mentale, allora, non Ã¨ solo una questione individuale, ma profondamente culturale e comunitaria. Dobbiamo ricostruire legami e relazioni, offrire modelli positivi e restituire senso e appartenenza. Come la famiglia si dovrebbe prendere cura della propria prole, crescere ed educarla con amore e responsabilitÃ , cosÃ¬ anche la societÃ  deve farsi carico dei suoi membri. Sostenendo le famiglie e rafforzando le comunitÃ , potremmo davvero costruire una societÃ  sana, capace di prevenire il disagio e di generare speranza. Questo lo affermo da medico psichiatra che ha lavorato per oltre venticinque anni nel servizio pubblico.",
+      "del:madeBy": {
+        "@id": "participant_59"
+      },
+      "del:timestamp": "2025-10-09T10:52:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_74",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_60"
+      },
+      "del:timestamp": "2025-10-09T10:54:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_75",
+      "del:text": "Seventy-five per cent of young people believe that the future is frightening. Just imagine you are a young person in the world today. Your future is full of uncertainty. You struggle to find affordable housing. Your professional future, even if you try your best, is one big question mark. And you see more and more natural disasters. You see armed conflicts and genocide are close reality. Every day you are exposed to harmful social media algorithms full of standards and self-harm content. So it is very difficult to keep your mental health in check. It is very difficult to stay resilient.\nOur youth deserve more than resilience. They deserve justice. They deserve protection. They deserve care, and they will get it if we act together. So let us stop asking them to adapt to a broken world. Let's fix the world instead.",
+      "del:madeBy": {
+        "@id": "participant_61"
+      },
+      "del:timestamp": "2025-10-09T10:55:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_76",
+      "del:text": "Trabalhar por baixo salÃ¡rio, com longas horas e contratos precÃ¡rios, pÃµe em risco a saÃºde mental.\nQuando a educaÃ§Ã£o Ã© uma competiÃ§Ã£o, em vez de ser uma aprendizagem, pÃµe em risco a saÃºde mental.\nEm cima de tudo isto, ter tarefas de casa e de cuidado, sem o apoio de serviÃ§os pÃºblicos de qualidade, e ainda lidar com a violÃªncia machista quotidiana, sim, pÃµe a saÃºde mental em causa. A pobreza pÃµe a saÃºde mental em causa.\nA ComissÃ£o Europeia diz que estÃ¡ preocupada com tudo isto, mas promove a especulaÃ§Ã£o imobiliÃ¡ria, a sobre-exploraÃ§Ã£o do trabalho e o desinvestimento no estado social e nos serviÃ§os pÃºblicos.\nNÃ£o esqueÃ§o que a ComissÃ£o Europeia, em 2016, se opÃ´s Ã  subida do salÃ¡rio mÃ­nimo no meu paÃ­s; e nÃ£o esqueÃ§o a luta que foi para o fazermos mesmo assim. Mas sei tambÃ©m que agora estÃ¡ a confortar os planos do Governo portuguÃªs para destruir os poucos direitos do trabalho que ainda restam no meu paÃ­s.\nA vossa polÃ­tica pÃµe em risco a saÃºde mental e o descaso entre o que proclamam e o que fazem pÃµem em risco a democracia.",
+      "del:madeBy": {
+        "@id": "participant_62"
+      },
+      "del:timestamp": "2025-10-09T10:57:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_77",
+      "del:text": "EzÃ©rt nagyon fontosnak tartom, hogy meghirdessÃ¼k az UniÃ³ban a MentÃ¡lis EgÃ©szsÃ©g ÃvÃ©t, melynek keretÃ©ben egy uniÃ³s mentÃ¡lisegÃ©szsÃ©g-stratÃ©giÃ¡t dolgozunk ki, amivel meg tudjuk segÃ­teni polgÃ¡rainkat Ã©s tÃ¡rsadalmunk legelesettebb tagjait.",
+      "del:madeBy": {
+        "@id": "participant_63"
+      },
+      "del:timestamp": "2025-10-09T10:58:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_78",
+      "del:text": "Is-suwiÄidju huwa l-ikbar kawÅ¼a ta' mewt fost iÅ¼-Å¼gÄ§aÅ¼agÄ§, it-tfal Ewropej u allura huwa urÄ¡enti, aktar minn qatt qabel, li f'jiem bÄ§al dawn, fejn gÄ§ada Ä§a nkunu qegÄ§din niÄÄelebraw il-Jum Dinji tas-SaÄ§Ä§a Mentali, naraw li mhux noqogÄ§du nparlaw u nagÄ§mlu Ä§afna diskorsi biss. Imma naraw illi jkollna azzjoni reali u nistgÄ§u naraw li jkollna azzjoni reali billi nikkontrollaw il-mod ta' kif jaÄ§dmu dawn il-pjattaformi, nikkontrollaw l-aÄÄess illi t-tfal u Å¼-Å¼gÄ§aÅ¼agÄ§ tagÄ§na gÄ§andhom gÄ§al pjattaformi li huma high risk illi jistgÄ§u jwasslu gÄ§al problemi kbar fis-saÄ§Ä§a mentali tagÄ§hom.\nEjja nkunu kuraÄ¡Ä¡uÅ¼i u niÄÄelebraw il-Jum tas-SaÄ§Ä§a Mentali, mhux biss bÄ§al gÄ§ada, imma matul is sena kollha.",
+      "del:madeBy": {
+        "@id": "participant_64"
+      },
+      "del:timestamp": "2025-10-09T11:00:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_79",
+      "del:text": "Un FranÃ§ais sur quatre est touchÃ©, et ce chiffre est en nette accÃ©lÃ©ration depuis la pandÃ©mie de COVID-19. La France compte plus de 9 000 suicides par an, soit l'un des taux les plus Ã©levÃ©s d'Europe, et les maladies mentales y constituent dÃ©sormais la premiÃ¨re cause d'affections chroniques devant les cancers et les maladies cardiovasculaires. Cette situation pÃ¨se sur un secteur hospitalier dÃ©jÃ  en crise, oÃ¹ 30 % des postes d'infirmiers sont vacants.\nEt que fait l'Ãtat? Le budget de la psychiatrie reste carencÃ© en raison de mauvaises rÃ©formes financiÃ¨res, les fermetures massives de lits se poursuivent et la recherche manque cruellement de financement. Pourtant, les maladies mentales peuvent Ãªtre guÃ©ries si elles sont traitÃ©es rapidement, car elles gÃ©nÃ¨rent souvent de la prÃ©caritÃ© et de l'isolement social. Pire, elles compromettent la rÃ©ussite de la jeunesse et ont d'importantes rÃ©percussions Ã©conomiques et sociales.\nLa lutte contre les souffrances psychologiques doit reposer sur la prÃ©vention dÃ¨s l'Ã©cole. Il faut former les enseignants Ã  repÃ©rer les signaux faibles, et offrir des ressources en ligne et un meilleur accÃ¨s Ã  la consultation. La santÃ© mentale doit devenir une prioritÃ© stratÃ©gique des politiques publiques.",
+      "del:madeBy": {
+        "@id": "participant_65"
+      },
+      "del:timestamp": "2025-10-09T11:01:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_80",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_66"
+      },
+      "del:timestamp": "2025-10-09T11:02:59"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_81",
+      "del:text": "V minulem mandatu je Komisija predstavila evropsko strategijo za duÅ¡evno zdravje, ki ni slaba, ampak â iskreno â ni dovolj. DuÅ¡evno zdravje se ne zaÄne v bolniÅ¡nicah, veste. ZaÄne se v druÅ¾bah, ki dajejo ljudem varnost, stabilnost in priloÅ¾nosti.\nPotrebujemo torej res konkretne ukrepe: moÄnejÅ¡e socialne varnostne mreÅ¾e, dostopna stanovanja, zmanjÅ¡evanje revÅ¡Äine in neenakosti, zaÅ¡Äito pred izgorelostjo in vkljuÄitev duÅ¡evnega zdravja v evropski steber socialnih pravic. Danes bolj kot kadarkoli, ko so naÅ¡e druÅ¾be vse bolj odvisne od algoritmov, umetna inteligenca pa oblikuje naÅ¡a Å¾ivljenja in naÅ¡a Äustva. Umetna inteligenca je zaradi nepravilnega svetovanja vodila do konÄanja Å¾ivljenja najstnika. Najstnika.\nTudi zato ukrepi na evropski ravni morajo postaviti jasna pravila, duÅ¡evno zdravje pa mora postati merilo uspeha naÅ¡e Unije. Ker samo Evropa, ki skrbi za duÅ¡evno zdravje, je Evropa, ki resniÄno, resniÄno skrbi za ljudi.",
+      "del:madeBy": {
+        "@id": "participant_67"
+      },
+      "del:timestamp": "2025-10-09T11:04:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_82",
+      "del:text": "Ma ci sono milioni di giovani che hanno una malattia grave con sintomi non fisicamente evidenti: depressione, ansia, solitudine. Alcuni, come Ã¨ giÃ  stato affermato da altri prima di me, arrivano al suicidio, che Ã¨ la seconda causa di morte tra i nostri giovani in Europa, dopo gli incidenti stradali.\nMentre i giovani vengono assorbiti dai social sui loro smartphone, in un mondo virtuale, noi non costruiamo alternative nel mondo reale per loro, o ne costruiamo troppo poche. La cultura, l'istruzione, la ricerca e gli scambi internazionali dovrebbero offrire piÃ¹ spazi reali in cui crescere e confrontarsi.\nL'Europa invece Ã¨ preoccupata a investire in armi e taglia fondi a programmi come Horizon ed Erasmus, esattamente i programmi che aprono porte, creano legami, danno prospettive.\nNella commissione per la sanitÃ  pubblica di questo Parlamento â un Parlamento che spesso non riesce ad avere l'unitÃ  necessaria a risolvere i problemi della nostra societÃ  â abbiamo deciso, una volta tutti insieme, di avviare uno studio sulla salute mentale dei giovani nel continente europeo.\nSpero che tra pochi mesi avremo piÃ¹ dati e che questi dati ci spingano a investire nelle risorse necessarie, affinchÃ© un giovane con problemi di salute mentale possa essere curato senza ritardi e senza stigma, come un paziente con la polmonite o con il diabete.",
+      "del:madeBy": {
+        "@id": "participant_68"
+      },
+      "del:timestamp": "2025-10-09T11:05:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_83",
+      "del:text": "La salute mentale Ã¨ stata per troppo tempo sottovalutata e ignorata dai sistemi sanitari, contribuendo a un vero e proprio boom di disturbi psichici nella societÃ  contemporanea. La Giornata mondiale della salute mentale non sia soltanto una giornata di commemorazione, ma sia l'occasione per voltare pagina e prevenire i troppi casi di suicidio, oggi seconda causa di morte tra i giovani, come Ã¨ stato ribadito anche prima di me.\nL'Unione europea Ã¨ credibile se crede e investe nei suoi giovani e se Ã¨ vicina alle persone che soffrono. Noi siamo con loro.",
+      "del:madeBy": {
+        "@id": "participant_69"
+      },
+      "del:timestamp": "2025-10-09T11:07:44"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_84",
+      "del:text": "No son solo las redes sociales. El problema es muchÃ­simo mÃ¡s amplio. Abordar la salud mental desde una perspectiva socioeconÃ³mica significa reconocer su impacto transversal en la educaciÃ³n, en el mercado laboral, en la sostenibilidad de nuestro sistema de bienestar. Cuidar la salud mental de los europeos no es solo proteger su salud: es proteger su capacidad de avanzar, de innovar, de crecer y de creer en su propio futuro.\nImpulsemos ya el Plan Europeo de AcciÃ³n para la Salud Mental.",
+      "del:madeBy": {
+        "@id": "participant_70"
+      },
+      "del:timestamp": "2025-10-09T11:08:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_85",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_71"
+      },
+      "del:timestamp": "2025-10-09T11:10:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_86",
+      "del:text": "Pendant ce temps, vous saupoudrez et rÃ©clamez une stratÃ©gie europÃ©enne contraignante, sans vision, sans rÃ©sultats, sans mÃªme une Ã©tude d'impact. Mais Ã  quoi cela rime-t-il? Avez-vous seulement consultÃ© les professionnels concernÃ©s? Bien sÃ»r que non. Avec vous, c'est toujours plus de pouvoirs pour la bureaucratie et moins de libertÃ© pour les Ãtats membres. Une fois de plus, nous le refusons.\nLa santÃ© mentale de nos enfants, de nos familles, de nos soignants ne se gÃ©rera jamais depuis un bureau Ã  Bruxelles. Elle se gÃ¨re avec des mÃ©decins prÃ©sents, des structures qui tiennent et surtout une nation qui croit encore Ã  la valeur de la vie humaine.",
+      "del:madeBy": {
+        "@id": "participant_72"
+      },
+      "del:timestamp": "2025-10-09T11:11:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_87",
+      "del:text": "La salute mentale non deve essere piÃ¹ un tabÃ¹, non deve essere piÃ¹ accompagnata da stigma, vergogna, silenzi forzati. Non Ã¨ un segno di debolezza, ma un diritto fondamentale.\nEppure, in Europa ancora troppe persone soffrono in silenzio. Troppe famiglie portano da sole il peso di una malattia invisibile che non lascia cicatrici sulla pelle, ma segna profondamente le vite. Penso alla depressione, il buco nero dell'anima, un male oscuro che risucchia energie, speranze, desideri. Non Ã¨ una semplice tristezza, ma una malattia che coinvolge mente e corpo, spesso invisibile agli occhi degli altri.\nIn una societÃ  che esalta la forza e la perfezione, chi soffre tende a nascondersi. Impariamo allora ad ascoltare, a riconoscere il dolore, a non avere paura di chiedere aiuto. Non c'Ã¨ futuro senza l'impegno di costruire un'Europa che sappia proteggere non solo i corpi, ma anche le fragilitÃ  invisibili delle menti e dei cuori.",
+      "del:madeBy": {
+        "@id": "participant_73"
+      },
+      "del:timestamp": "2025-10-09T11:12:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_88",
+      "del:text": "ÐÐ°ÑÐ¾ ÑÐ¾Ð²ÐµÐº, ÐºÐ¾Ð¹ÑÐ¾ ÑÑÐ» Ð¶Ð¸Ð²Ð¾Ñ ÑÐ¸ ÑÐ»ÑÐ¶Ð¸ Ñ Ð´ÑÐ¼Ð¸ÑÐµ, Ð°Ð· Ð·Ð½Ð°Ð¼, ÑÐµ ÑÐµ Ð¸Ð¼Ð°Ñ Ð¾Ð³ÑÐ¾Ð¼Ð½Ð° ÑÐ¸Ð»Ð° Ð¸ Ð·Ð°ÑÐ¾Ð²Ð° Ð¸ÑÐºÐ°Ð¼ Ð´Ð° Ð¾Ð±ÑÑÐ½Ð° Ð²Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ Ð½Ð° ÐµÐ·Ð¸ÐºÐ°, ÐºÐ¾Ð¹ÑÐ¾ Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¼Ðµ. ÐÐ°Ð»ÐµÑ ÑÑÐ¼ Ð¾Ñ Ð¼Ð¸ÑÑÐ»ÑÐ°, ÑÐµ ÑÑÑÐ±Ð²Ð° Ð´Ð° ÑÐµ Ð¿ÑÐµÑÑÑÑÐ²Ð°Ð¼Ðµ ÐºÐ°Ðº Ð¶Ð¸Ð²ÐµÐµÐ¼ Ð² Ð¿ÐµÑÑÐµÐºÑÐ½Ð°ÑÐ° ÐÐ²ÑÐ¾Ð¿Ð°. ÐÑÑÐ²Ð°Ð¼ Ð¾Ð±Ð°ÑÐµ, ÑÐµ Ð°ÐºÐ¾ Ð¿Ð¾ÐºÐ°Ð¶ÐµÐ¼ Ð½Ð° ÑÐ¾ÑÐ°ÑÐ°, ÐºÐ¾Ð¸ÑÐ¾ Ð½Ð¸ Ð³Ð»ÐµÐ´Ð°Ñ, Ð¿Ð¾Ð²ÐµÑÐµ Ð´Ð¾Ð±ÑÐ¾Ð½Ð°Ð¼ÐµÑÐµÐ½Ð¾ÑÑ Ð¸ Ð¶ÐµÐ»Ð°Ð½Ð¸Ðµ Ð´Ð° ÑÐµÑÐ°Ð²Ð°Ð¼Ðµ Ð¿ÑÐ¾Ð±Ð»ÐµÐ¼Ð¸ÑÐµ, Ð²ÑÐ¿ÑÐµÐºÐ¸ Ð¿Ð¾Ð»Ð¸ÑÐ¸ÑÐµÑÐºÐ¸ÑÐµ Ð½Ð¸ ÑÐ°Ð·Ð»Ð¸ÑÐ¸Ñ, ÑÐ¾Ð²Ð° Ð±Ð¸ Ð´Ð¾Ð¿ÑÐ¸Ð½ÐµÑÐ»Ð¾ Ð¿Ð¾Ð²ÐµÑÐµ Ð¾Ñ Ð²ÑÐµÐºÐ¸ ÐµÐ´Ð¸Ð½ Ð½Ð¾ÑÐ¼Ð°ÑÐ¸Ð²ÐµÐ½ Ð°ÐºÑ Ð½Ð° ÑÐµÐ¼Ð° Ð¿ÑÐ¸ÑÐ¸ÑÐ½Ð¾ Ð·Ð´ÑÐ°Ð²Ðµ Ð¸ ÑÑÑ ÑÐ¸Ð³ÑÑÐ½Ð¾ÑÑ Ð±Ð¸ Ð±Ð¸Ð»Ð¾ Ð¿Ð¾Ð»ÐµÐ·Ð½Ð¾ ÐºÐ°ÐºÑÐ¾ Ð·Ð° Ð·Ð´ÑÐ°Ð²ÐµÑÐ¾ Ð½Ð° ÑÐ¾ÑÐ°ÑÐ°, ÐºÐ¾Ð¸ÑÐ¾ Ð½Ð¸ Ð³Ð»ÐµÐ´Ð°Ñ, ÑÐ°ÐºÐ° Ð¸ Ð·Ð° Ð½Ð°ÑÐµÑÐ¾ ÑÐ¾Ð±ÑÑÐ²ÐµÐ½Ð¾.",
+      "del:madeBy": {
+        "@id": "participant_74"
+      },
+      "del:timestamp": "2025-10-09T11:14:15"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_89",
+      "del:text": "80 mln ludzi w Europie rokrocznie wymaga wsparcia w leczeniu chorÃ³b psychicznych, co kosztuje nas 600 mld euro. A ile przeznaczyliÅmy pieniÄdzy jako Europa? 1 mld 200 mln w perspektywie 2021â2027. To pokazuje skalÄ zaniedbania w tej sprawie. I myÅlÄ, Å¼e wyborcy w Europie sÄ juÅ¼ zmÄczeni tym wspieraniem, popieraniem, wpinaniem sobie wpinek w marynarki, Åwiatowym dniem tego czy tamtego.\nAlbo siÄ weÅºmiemy za robotÄ w tej sprawie i uznamy, Å¼e Europa ponosi odpowiedzialnoÅÄ za zdrowie i Å¼ycie swoich obywateli, albo nie. CiÄgle sÅyszymy, Å¼e â jeÅli chodzi o raka, o zdrowie psychiczne â zdrowie jest w rÄkach paÅstw czÅonkowskich i Komisja Europejska, Unia Europejska nie moÅ¼e.\nA wiÄc oÅwiadczam, Å¼e moÅ¼e. I Europejczycy oczekujÄ od nas dzisiaj zdecydowanych, realnych dziaÅaÅ. Mniej wpinek w marynarki, wiÄcej ratowania ludzi.",
+      "del:madeBy": {
+        "@id": "participant_75"
+      },
+      "del:timestamp": "2025-10-09T11:15:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_90",
+      "del:text": "EihÃ¤n tÃ¤llaiseen pitÃ¤isi olla varaa. MeidÃ¤n yhteiskuntamme ei kestÃ¤ sitÃ¤, ettÃ¤ asia, joka pitÃ¤isi pystyÃ¤ ennaltaehkÃ¤isemÃ¤Ã¤n ja hoitamaan tehokkaasti ensimmÃ¤isten merkkien ilmennettyÃ¤, aiheuttaa tÃ¤llaisia henkilÃ¶kohtaisia katastrofeja, jotka vaikuttavat myÃ¶s koko yhteiskunnan hyvinvointiin.\nMielenterveysongelmat keskittyvÃ¤t tÃ¤nÃ¤ pÃ¤ivÃ¤nÃ¤ myÃ¶s yhÃ¤ enemmÃ¤n lapsiin ja nuoriin. LÃ¤hes joka viides 18â22 vuotias Suomessa pelkÃ¤stÃ¤Ã¤n on joutunut kÃ¤yttÃ¤mÃ¤Ã¤n mielenterveyspalveluita. VÃ¤itÃ¤n, ettÃ¤ tÃ¤ssÃ¤ yksi syypÃ¤Ã¤ on internet. Kun meillÃ¤ oikeassa maailmassa on pelisÃ¤Ã¤nnÃ¶t, millÃ¤ tavalla me suojelemme lapsia ja nuoria, internet edelleen on villi lÃ¤nsi.\nMeillÃ¤ on DSA-lainsÃ¤Ã¤dÃ¤ntÃ¶, jonka pitÃ¤isi pystyÃ¤ vaikuttamaan niin, ettÃ¤ netti olisi turvallinen paikka lapsille ja nuorille liikkua. Mutta DSA on pantu tÃ¤ytÃ¤ntÃ¶Ã¶n siten, ettÃ¤ sen perÃ¤Ã¤n ei ole katsottu tarpeeksi. TÃ¤ssÃ¤ meillÃ¤ Euroopan parlamentissa on myÃ¶s nyt vaikuttamisen paikka.",
+      "del:madeBy": {
+        "@id": "participant_76"
+      },
+      "del:timestamp": "2025-10-09T11:16:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_91",
+      "del:text": "Sabemos que la estabilidad familiar, el desarrollo de la infancia, el entorno afectivo y los hÃ¡bitos son factores esenciales para la salud. Pero no podemos olvidar que existen tambiÃ©n afecciones del cerebro y del sistema nervioso central que son congÃ©nitas o que tienen un componente genÃ©tico, como algunos tipos de esclerosis y ataxias o el autismo. Otras afectan al desarrollo neurolÃ³gicoÂ y son degenerativas a lo largo de la vida, como la migraÃ±a, la epilepsia o el ELA. TambiÃ©n pueden ocurrir traumatismos. Por eso debemos adoptar un enfoque mÃ¡s holÃ­stico en Europa que amplÃ­e la mirada: ampliar el alcance de este temaÂ hacia lo que se entienda como salud cerebral.\nMillones de personas viven con enfermedades neurolÃ³gicas; muchas son enfermedades raras, invisibles y poco comprendidas que tambiÃ©n necesitan atenciÃ³n. Vayamos mÃ¡s allÃ¡ de lo que se entiende por salud mental, donde muchas patologÃ­as puedan no estar siendo abordadas: impulsemos la investigaciÃ³n, la prevenciÃ³n y la rehabilitaciÃ³n y garanticemos la participaciÃ³n activa de las personas afectadas, sus familias y cuidadores. Solo asÃ­ podremos hablar de una Europa que cuida la salud y la dignidad de las personas de forma completa.",
+      "del:madeBy": {
+        "@id": "participant_77"
+      },
+      "del:timestamp": "2025-10-09T11:18:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_92",
+      "del:text": "Mais cette souffrance n'est pas Ã©gale, elle suit malheureusement le gradient social. La prÃ©caritÃ©, la solitude, la perte de sens au travail frappent avant tout les plus modestes. Trop souvent, cette dÃ©tresse conduit Ã  des addictionsÂ â alcool, tabac, Ã©crans, droguesÂ â qui enferment plus qu'elles ne soulagent. La santÃ© mentale n'est pas seulement une question mÃ©dicale, mais aussi une question de dignitÃ© et de justice sociale.\nL'Union europÃ©enne doit agir sans se substituer aux Ãtats, mais en formant, en partageant et en soutenant la prÃ©vention. Investir dans la santÃ© mentale, c'est protÃ©ger nos peuples, leur Ã©quilibre, leur avenir et leur souverainetÃ©.",
+      "del:madeBy": {
+        "@id": "participant_78"
+      },
+      "del:timestamp": "2025-10-09T11:20:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_93",
+      "del:text": "Aumentano i disturbi alimentari, aumenta l'autolesionismo, aumentano l'ansia, l'aggressivitÃ  e la dispersione scolastica. Nonostante questo, l'assistenza per la salute mentale non Ã¨ inclusa tra le prestazioni sanitarie pubbliche e le persone vengono cosÃ¬ lasciate sole.\nLe conseguenze non ricadono esclusivamente sulle persone colpite direttamente, ma sulla societÃ , che da un lato perde risorse umane e dall'altro rischia di avere soggetti problematici abbandonati a se stessi. Serve un impegno maggiore, sia europeo che dei paesi membri, per includere la salute mentale tra le prioritÃ  nell'ambito di una vera Unione europea della salute che dobbiamo completare.",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-10-09T11:21:21"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_94",
+      "del:text": "The general is the problems that are caused that bring us to mental health problems. So we have the war in Ukraine. If you go to Ukraine, which I've been, they say we all have mental health anxiety. We are trying to stop the war. We have the apocalypse of the climate above us. We have the Green Deal to try to deal with that. And of course, because I have children, we have the awful thing called the screen, which has great things, but also has caused an increase in anxiety in the young. And I think of Foucault's visit to the mental asylums â I would say visit the schools, and we can see the craziness going on there today.\nFinally, everybody agreed â everybody agreed, regardless of politics â that mental health should be at the top, top priority in every single policy. So I think if we take something away, let's make it really the number one project for the EU. The EU will be a gentle place. It will not be the rampant wars and capitalism we see in other countries. This should be the place where the social welfare state really works and supports the people.",
+      "del:madeBy": {
+        "@id": "participant_80"
+      },
+      "del:timestamp": "2025-10-09T11:22:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_95",
+      "del:text": "En la vÃ­spera del DÃ­a Mundial de la Salud Mental, quiero insistir en que estamos en una situaciÃ³n crÃ­tica. La pandemia y el deterioro econÃ³mico de los Ãºltimos aÃ±os han agravado mÃ¡s aÃºn la situaciÃ³n, especialmente entre los jÃ³venes donde los casos de depresiÃ³n se han duplicado. Son esos mismos jÃ³venes a los que legamos la responsabilidad de construir el futuro de Europa.\nY no puedo dejar de referirme a mi isla de La Palma, donde, tras la erupciÃ³n del volcÃ¡n, las secuelas del mismo siguen bien presentes en todos los Ã¡mbitos. Esto debe cambiar. No podemos permitir que la salud mental siga siendo una carga oculta en nuestras sociedades. Debemos ser ambiciosos en nuestros objetivos: reducir el estigma que rodea la salud mental, mejorar el acceso a servicios de calidad y apoyar a los grupos mÃ¡s vulnerables. No importa cuÃ¡ntas leyes, reuniones y debates tengamos; si no conseguimos que buscar ayuda y querer estar mejor sean cosas normales, no habremos conseguido nada.\nLa salud mental no puede esperar.",
+      "del:madeBy": {
+        "@id": "participant_81"
+      },
+      "del:timestamp": "2025-10-09T11:24:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_96",
+      "del:text": "Por tanto, el mensaje es muy claro: el Parlamento Europeo debe legislar sobre la protecciÃ³n de los menores en lÃ­nea con urgencia porque es imprescindible poner reglas comunes en lo que de otro modo serÃ¡n soluciones fragmentarias y contradictorias entre sÃ­ de los Parlamentos nacionales.\nY la tercera lecciÃ³n es que sÃ­: ya no hay debate sobre salud que no incorpore la salud mental. Pero no hay debate sobre la salud mental que no tenga que fijar la vista en una regulaciÃ³n del acceso de los menores a las plataformas en lÃ­nea y a los servicios de internet que sea compatible con la privacidad y la confidencialidad de los datos personales âclaro que sÃ­â, pero tambiÃ©n con la dignidad y con el libre desarrollo de la personalidad, que son derechos fundamentales.",
+      "del:madeBy": {
+        "@id": "participant_55"
+      },
+      "del:timestamp": "2025-10-09T11:25:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_97",
+      "del:text": "I proudly wear the pin of the Samaritans in Ireland today because economic inequality, unemployment, poor housing, lack of access to education or healthcare â they all create conditions that can harm mental health, push people to the margins, to the edge. And, of course, when people struggle to make ends meet, their stress, anxiety and sense of hopelessness only grows.\nSo mental healthcare must go beyond therapy rooms. It should include fair wages, safe communities, affordable housing and quality education. Investing in these social foundations isn't charity, it's prevention. When societies address inequality and build security together, they nurture resilience and mental health resilience.",
+      "del:madeBy": {
+        "@id": "participant_82"
+      },
+      "del:timestamp": "2025-10-09T11:27:02"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_98",
+      "del:text": "Dear colleagues, after I got elected was the worst time of my life. I worked 80Â hours, I was lonely, I was away from home and I fell into a deep depression. For the first time in my life I developed a drinking problem, and that's something coming from a German, I can tell you.\nThis job, this world that we live in, is so challenging for our mental health that we sometimes forget what it does to ourselves. So I would take this opportunity, dear colleagues, to remind you to look after yourselves because Europe needs you â Europe can only progress when you, as MEPs, take care of your mental health.",
+      "del:madeBy": {
+        "@id": "participant_83"
+      },
+      "del:timestamp": "2025-10-09T11:28:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_99",
+      "del:text": "PoÅ¡tovani predsjedavajuÄi, kolegice i kolege, samo Äu podsjetiti da je ovogodiÅ¡nja tema Svjetskog meÄunarodnog dana zdravlja pristup uslugama mentalnog zdravlja u katastrofama i izvanrednim situacijama i da ovog trenutka jedna od pet osoba u podruÄjima pogoÄenima sukobom pati od mentalnih teÅ¡koÄa. MeÄutim, i jedan od pet adolescenata u dobi od 15 do 19 godina pati od mentalnih poremeÄaja. 97 % djece koristi internet svaki dan 8 sati i 40 minuta. Jedno od Å¡estero djece doÅ¾ivjelo je cyberbullying. I, da, slaÅ¾em se, moramo uÄiniti korak dalje, posebno u zaÅ¡titi djece. EPP se veÄ nekoliko godina zalaÅ¾e za kriminalizaciju internetskog nasilja i ja se iskreno nadam da Äe svi zastupnici u ovom parlamentu podrÅ¾ati naÅ¡u inicijativu. Mentalno zdravlje je tiÅ¡ina koju preÄesto ne Äujemo. Zato, pogledajmo se, budimo otvoreni i iskreni i pomozimo, ne samo graditi ceste, veÄ graditi zdraviju Europu.",
+      "del:madeBy": {
+        "@id": "participant_84"
+      },
+      "del:timestamp": "2025-10-09T11:29:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_100",
+      "del:text": "And I wish to speak of those whose mental struggles are too often overseen: our farming community.Â Across our Member States, farmers are facing the perfect storm: a reduced CAP budget, mounting climate pressures, volatile markets and financial constraints. In a recent survey of Irish farmers, 54Â % said they do not know how to contact a local mental health clinic and 22Â % do not know where to get information about mental illness.\nThis is why organisations like Embrace FARM â based in my constituency, in County Laois â are vital. They stand beside families after farm accidents or sudden deaths, by offering emotional and practical support when the unthinkable happens. So, colleagues, if we're truly going to value the farming industry, we need to ensure that upcoming agricultural supports include investments in services such as Embrace FARM.\nCan I also highlight: in 2021, 47Â 000 deaths by suicide occurred here in our European Union â 47Â 000. That is not good enough. And we need to do everything we can do across all political groups to end the loneliness of people across our 27 Member States.",
+      "del:madeBy": {
+        "@id": "participant_27"
+      },
+      "del:timestamp": "2025-10-09T11:31:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_101",
+      "del:text": "ÐÑÐ¾ Ð·Ð°ÑÐ¾ Ð±Ð¾ÑÐ±Ð°ÑÐ° Ð·Ð° Ð¿ÑÐ¸ÑÐ¸ÑÐ½Ð¾ Ð·Ð´ÑÐ°Ð²Ðµ ÑÑÑÐ±Ð²Ð° Ð´Ð° Ð±ÑÐ´Ðµ Ð¸ Ð±Ð¾ÑÐ±Ð° Ð·Ð° ÑÐ¾ÑÐ¸Ð°Ð»Ð½Ð° ÑÐ¿ÑÐ°Ð²ÐµÐ´Ð»Ð¸Ð²Ð¾ÑÑ. ÐÐµÐ¾Ð±ÑÐ¾Ð´Ð¸Ð¼Ð¸ ÑÐ° Ð¿Ð¾Ð²ÐµÑÐµ Ð¸Ð½Ð²ÐµÑÑÐ¸ÑÐ¸Ð¸ Ð² Ð¾Ð±ÑÐ°Ð·Ð¾Ð²Ð°Ð½Ð¸Ðµ, Ð´Ð¾ÑÑÑÐ¿Ð½Ð¾ Ð·Ð´ÑÐ°Ð²ÐµÐ¾Ð¿Ð°Ð·Ð²Ð°Ð½Ðµ Ð¸ Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¸ Ð·Ð° Ð¿Ð¾Ð´ÐºÑÐµÐ¿Ð° Ð½Ð° ÑÑÐ·Ð²Ð¸Ð¼Ð¸ÑÐµ Ð³ÑÑÐ¿Ð¸. ÐÑÐ¶Ð½Ð¾ Ðµ Ð´Ð° Ð³Ð¾Ð²Ð¾ÑÐ¸Ð¼ Ð¾ÑÐºÑÐ¸ÑÐ¾ Ð·Ð° Ð¿ÑÐ¸ÑÐ¸ÑÐ½Ð¾ÑÐ¾ Ð·Ð´ÑÐ°Ð²Ðµ, Ð±ÐµÐ· ÑÑÐ°Ð¼ Ð¸ ÑÑÐ¸Ð³Ð¼Ð°, Ð¸ Ð´Ð° ÑÑÐ·Ð´Ð°Ð´ÐµÐ¼ Ð¾Ð±ÑÐµÑÑÐ²Ð¾, Ð² ÐºÐ¾ÐµÑÐ¾ Ð¿Ð¾Ð¼Ð¾ÑÑÐ° Ðµ Ð±Ð»Ð¸Ð·Ð¾ Ð´Ð¾ Ð²ÑÐµÐºÐ¸ ÑÐ¾Ð²ÐµÐº, Ð½ÐµÐ·Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ Ð¾Ñ Ð½ÐµÐ³Ð¾Ð²Ð¸Ñ ÑÐ¾ÑÐ¸Ð°Ð»ÐµÐ½ ÑÑÐ°ÑÑÑ. ÐÑÐ¸ÐµÑÐ°ÑÐ° Ð¿ÑÐµÐ· 2023 Ð³. ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ° ÑÑÑÐ°ÑÐµÐ³Ð¸Ñ Ð·Ð° Ð¿ÑÐ¸ÑÐ¸ÑÐ½Ð¾ Ð·Ð´ÑÐ°Ð²Ðµ, ÐºÐ¾ÑÑÐ¾ Ð¿Ð¾ÑÑÐ°Ð²Ñ Ð°ÐºÑÐµÐ½Ñ Ð²ÑÑÑÑ Ð¿ÑÐµÐ²ÐµÐ½ÑÐ¸ÑÑÐ°, Ð´Ð¾ÑÑÑÐ¿Ð° Ð´Ð¾ Ð³ÑÐ¸Ð¶Ð¸ Ð¸ Ð±Ð¾ÑÐ±Ð° ÑÑÑ ÑÑÐ¸Ð³Ð¼Ð°ÑÐ° Ðµ Ð´Ð¾Ð±ÑÐ¾ Ð½Ð°ÑÐ°Ð»Ð¾, Ð½Ð¾ ÑÐ° Ð½ÐµÐ¾Ð±ÑÐ¾Ð´Ð¸Ð¼Ð¸ Ð¸ ÐºÐ¾Ð½ÐºÑÐµÑÐ½Ð¸ Ð¼ÐµÑÐºÐ¸.\nÐÐ½ÐµÑ Ð½ÐµÐºÐ° Ð½Ð°Ð¿ÑÐ°Ð²Ð¸Ð¼ ÐºÑÐ°ÑÐºÐ° Ð½Ð°Ð¿ÑÐµÐ´ ÐºÑÐ¼ ÑÐ²ÑÑ, Ð² ÐºÐ¾Ð¹ÑÐ¾ Ð¿ÑÐ¸ÑÐ¸ÑÐ½Ð¾ÑÐ¾ Ð·Ð´ÑÐ°Ð²Ðµ Ðµ Ð¿ÑÐ°Ð²Ð¾, Ð° Ð½Ðµ Ð¿ÑÐ¸Ð²Ð¸Ð»ÐµÐ³Ð¸Ñ. Ð¡Ð²ÑÑ, Ð² ÐºÐ¾Ð¹ÑÐ¾ Ð³ÑÐ¸Ð¶Ð°ÑÐ°, ÑÐ°Ð·Ð±Ð¸ÑÐ°Ð½ÐµÑÐ¾ Ð¸ ÑÐ¾Ð»Ð¸Ð´Ð°ÑÐ½Ð¾ÑÑÑÐ° ÑÑÐ¾ÑÑ Ð² Ð¾ÑÐ½Ð¾Ð²Ð°ÑÐ° Ð½Ð° ÑÐ¾Ð²ÐµÑÐºÐ¾ÑÐ¾ Ð´Ð¾ÑÑÐ¾Ð¹Ð½ÑÑÐ²Ð¾.",
+      "del:madeBy": {
+        "@id": "participant_85"
+      },
+      "del:timestamp": "2025-10-09T11:32:49"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_102",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_86"
+      },
+      "del:timestamp": "2025-10-09T11:34:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_103",
+      "del:text": "In my first intervention, I talked about what the Commission is doing from the communication on a comprehensive approach to mental health that it decided on in 2023 and the acts that we are doing. And as digitalisation keeps changing our world, on social media, use continues to go up; we can expect further challenges on this front. Protecting young people from the danger they pose is a major task for the Member States, and the Commission will continue to support by promoting comprehensive and evidence-based policies to protect our citizens, and by working with digital business stakeholders to ensure they apply the highest safety and privacy standards.\nNavigating the online world safely has become an essential skill. With the right policies and tools, we can support young people. Tomorrow's World Mental Health Day â I think we all need to be committed. Thank you very much for the debate.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-09T11:35:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_104",
+      "del:text": "Declaraciones por escrito (artÃ­culo 178 del Reglamento interno)",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T11:36:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_105",
+      "del:text": "La salute mentale degli europei Ã¨ purtroppo in continuo peggioramento.\nMa ancora piÃ¹ terribile Ã¨ che, stando a dati dellâOMS pubblicati questo settembre, tale allarmante fenomeno a livello globale colpisce un ragazzo su sette (il 14,3%) tra i 10 e i 19 anni: depressione, ansia, disturbi comportamentali come deficit di attenzione e iperattivitÃ , disturbi alimentari, isolamento sociale estremo - fenomeno noto come hikikomori - autolesionismo, fino ad arrivare al suicidio che Ã¨ drammaticamente diventato la terza causa di morte tra i 15 e i 29 anni!\nLâUnione europea deve affrontare i fattori socioeconomici e, aggiungo, morali, allâorigine del malessere profondo dei nostri giovani, certamente esasperato dalla digitalizzazione delle relazioni sociali, che ha portato ad un eccessivo utilizzo dei social media e ad una diminuzione delle interazioni personali.\nLa giornata mondiale sulla salute mentale ci invita a moltiplicare gli sforzi, a livello unionale e nazionale, per rafforzare le strategie di prevenzione e diagnosi precoce, ed altresÃ¬ per garantire servizi di assistenza di psicoterapia accessibili e tempestivi. Le conseguenze del mancato trattamento dei problemi di salute mentale in etÃ  adolescenziale compromettono le opportunitÃ  di condurre una vita serena da adulti. Non abbiamo piÃ¹ tempo da perdere!",
+      "del:madeBy": {
+        "@id": "participant_87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_106",
+      "del:text": "Ãn acelaÈi timp, Europa intrÄ Ã®ntr-o nouÄ realitate climaticÄ. Temperaturile Ã®n creÈtere schimbÄ geografia bolilor. ÈÃ¢nÈarii care poartÄ dengue Èi cÄpuÈele care rÄspÃ¢ndesc encefalita se extind spre nord. SchimbÄrile climatice devin o urgenÈÄ de sÄnÄtate publicÄ, fÄrÄ graniÈe Èi fÄrÄ rÄgaz.\nSÄnÄtatea minÈii Èi sÄnÄtatea mediului sunt douÄ feÈe ale aceleiaÈi monede. O minte sÄnÄtoasÄ are nevoie de o lume stabilÄ â de muncÄ decentÄ, spaÈii verzi, echilibru digital Èi un viitor sigur.\nEuropa trebuie sÄ acÈioneze prin ÈtiinÈÄ, prevenÈie Èi compasiune. Pentru cÄ a proteja mintea Èi planeta Ã®nseamnÄ a apÄra demnitatea umanÄ Èi speranÈa Ã®ntr-un secol care le pune la Ã®ncercare.",
+      "del:madeBy": {
+        "@id": "participant_88"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_107",
+      "del:text": "Az oroszâukrÃ¡n hÃ¡borÃº immÃ¡r negyedik Ã©ve tart, Ã©s mikÃ¶zben a vilÃ¡g a katonai esemÃ©nyekre figyel, a lelki kÃ¶vetkezmÃ©nyekrÅl kevesebb szÃ³ esik. EP-kÃ©pviselÅkÃ©nt fontosnak tartom, hogy az ukrajnai mentÃ¡lis egÃ©szsÃ©gÃ¼gy â benne a nemzeti kisebbsÃ©gek anyanyelvÅ± segÃ­tsÃ©ge â nagyobb figyelmet kapjon.\nNemrÃ©giben KÃ¡rpÃ¡taljÃ¡n jÃ¡rtam, ahol talÃ¡lkoztam helyi magyar kÃ¶zÃ¶ssÃ©gekkel, civil Ã©s egyhÃ¡zi szervezetekkel. MegerÅsÃ­tÃ©st nyert, hogy a hÃ¡borÃº nemcsak fizikai, hanem sÃºlyos lelki sebeket is ejt. A segÃ­tÅ szolgÃ¡latok Ã©s karitatÃ­v szervezetek emberfeletti munkÃ¡t vÃ©geznek, Ã¡m forrÃ¡saik korlÃ¡tozottak.\nEzÃ©rt arra kÃ©rem az EurÃ³pai BizottsÃ¡got, hogy indÃ­tson cÃ©lzott programokat a nemzeti kisebbsÃ©gek anyanyelvÅ± tÃ¡mogatÃ¡sÃ¡ra, a pszicholÃ³guskÃ©pzÃ©s Ã©s a terepi segÃ­tÅ hÃ¡lÃ³zatok erÅsÃ­tÃ©sÃ©re, valamint biztosÃ­tson uniÃ³s forrÃ¡sokat a civil Ã©s egyhÃ¡zi szervezetek mentÃ¡lhigiÃ©nÃ©s munkÃ¡jÃ¡hoz.",
+      "del:madeBy": {
+        "@id": "participant_89"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_108",
+      "del:text": "Kiedy mÃ³wimy o zdrowiu psychicznym, mÃ³wimy o realnych historiach ludzi - naszych bliskich, przyjaciÃ³Å, wspÃ³ÅpracownikÃ³w. Zaburzenia psychiczne dotyczÄ juÅ¼ co czwartego Europejczyka, a w wielu krajach pomoc jest poza zasiÄgiem - brakuje specjalistÃ³w, wsparcia w szkoÅach i w podstawowej opiece zdrowotnej. WHO ostrzega, Å¼e problemy psychiczne stanÄ jednym z najwiÄkszych wyzwaÅ zdrowotnych XXI wieku. SzczegÃ³lnie niepokojÄcy jest wzrost zaburzeÅ wÅrÃ³d mÅodych - w pokoleniu dorastajÄcym w atmosferze presji, niepewnoÅci i cyfrowej izolacji.\n\nNie wystarczy wiÄc mÃ³wiÄ o zdrowiu psychicznym w kategoriach medycznych. To temat polityczny i gospodarczy. Å¹rÃ³dÅem kryzysu sÄ czynniki spoÅeczne: niestabilnoÅÄ zatrudnienia, ubÃ³stwo, nierÃ³wnoÅci, brak poczucia bezpieczeÅstwa.\n\nDlatego potrzebujemy europejskiej strategii zdrowia psychicznego, ktÃ³ra poÅÄczy politykÄ zdrowotnÄ, spoÅecznÄ i gospodarczÄ. Musimy wÅÄczyÄ perspektywÄ zdrowia psychicznego do dziaÅaÅ w zakresie zatrudnienia, edukacji i cyfryzacji. WspÃ³lnotowe podejÅcie, oparte na wspÃ³Åpracy paÅstw czÅonkowskich, samorzÄdÃ³w i organizacji spoÅecznych, moÅ¼e stworzyÄ realny system wczesnego wsparcia i profilaktyki. Tylko tak zbudujemy spoÅeczeÅstwo odporne na kryzysy, w ktÃ³rym dobrostan psychiczny stanie siÄ integralnym elementem rozwoju.\n\nPotrzebujemy konsekwentnej polityki opartej na dowodach, a nie symbolicznych gestach. Czas, by zdrowie psychiczne staÅo siÄ jednym z filarÃ³w europejskiego modelu spoÅecznego - nie hasÅem, lecz realnym priorytetem.",
+      "del:madeBy": {
+        "@id": "participant_90"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_109",
+      "del:text": "The request is referred to the Committee on Legal Affairs.\nâ\nI have received three requests for a point of order. I will give them in the order that they have been received, starting with Elio Di Rupo.",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:02:15"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_110",
+      "del:text": "Je vous demande de clarifier la situation au moyen dâune commission ad hoc. Par ailleurs, si une commission dâenquÃªte du Parlement europÃ©en confirmait, aprÃ¨s une analyse prÃ©liminaire, la vÃ©racitÃ© de ces faits, cela signifierait que les traitÃ©s actuels seraient, une fois de plus, inadaptÃ©s aux rÃ©alitÃ©s dâaujourdâhui de lâUnion europÃ©enne.",
+      "del:madeBy": {
+        "@id": "participant_91"
+      },
+      "del:timestamp": "2025-10-09T12:03:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_111",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:03:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_112",
+      "del:text": "Today, however, we can all join the celebrations of the people in the streets of Tel Aviv and Gaza. A few minutes ago, a peace agreement was signed. Donald Trump has made it; despite all the bias against him, he succeeded. And this reaffirms a long tradition: conservative American presidents end wars rather than start them.\nSo, long live peace in Israel and Palestine.",
+      "del:madeBy": {
+        "@id": "participant_92"
+      },
+      "del:timestamp": "2025-10-09T12:04:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_113",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:05:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_114",
+      "del:text": "MuchÃ­simas personas que estamos aquÃ­ llevamos estos dos Ãºltimos aÃ±os pidiendo acabar con el terror que estaba ocurriendo en Israel y Palestina, y me hubiera gustado ver la misma intensidad y las mismas sonrisas que he visto hoy en esta CÃ¡mara a aquellos que han negado un genocidio que ha acabado con la vida de decenas de miles de niÃ±os inocentes âÂ¡de decenas de miles de niÃ±os inocentes!â.\nPara todos los demÃ³cratas, para todos los que pensamos que es necesaria la paz, hoy es un dÃ­a de celebrar, pero tambiÃ©n es solo el comienzo. El final solo serÃ¡ posible el dÃ­a que haya una realidad, que es que el pueblo de Israel y el pueblo de Palestina, dos Estados, puedan convivir en paz.",
+      "del:madeBy": {
+        "@id": "participant_93"
+      },
+      "del:timestamp": "2025-10-09T12:05:32"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_115",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:07:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_116",
+      "del:text": "It has to do with Gaza, though. This is about our very highly esteemed colleague, MÃ©lissa Camara. She was on the Freedom Flotilla and she was detained by the Israeli authorities. She is a Member of the European Parliament, who was part of a humanitarian mission ...\n(Laughter from certain quarters)",
+      "del:madeBy": {
+        "@id": "participant_94"
+      },
+      "del:timestamp": "2025-10-09T12:07:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_117",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:07:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_118",
+      "del:text": "What we hear now, and we do not know for sure, but what we hear now is that she may have been taken to a maximum security prison. We are very much ...\n(Cheering and clapping from certain quarters)",
+      "del:madeBy": {
+        "@id": "participant_94"
+      },
+      "del:timestamp": "2025-10-09T12:07:44"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_119",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:07:59"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_120",
+      "del:text": "So what I would like to make very clear, we are concerned about a colleague, about her safety, about her health, about her position, and we should all be.\nTherefore, I ask you, Madam President, in all kindness, because that is sometimes very complicated on the right, to do your utmost to make sure that she is released and gets all the help that she needs. Thank you very much!\n(Loud applause from certain quarters)",
+      "del:madeBy": {
+        "@id": "participant_94"
+      },
+      "del:timestamp": "2025-10-09T12:08:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_121",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:08:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_122",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:09:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_123",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:09:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_124",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:09:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_125",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:10:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_126",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:10:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_127",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:11:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_128",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:12:02"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_129",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:12:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_130",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:13:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_131",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:15:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_132",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:18:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_133",
+      "del:text": "I read the text of paragraph one with the amendment. I quote:\n'Expresses its full solidarity with Moldova as well as with Denmark, Sweden, Poland, Lithuania, Latvia, Finland, Romania, Estonia and all other Member States exposed to Russiaâs direct threats, military provocations and acts of hybrid warfare; considers that the deliberate disruption, by Russian agents, of the EUâs air traffic, targeting Europeâs military critical services and infrastructure, and of the functioning of the political institutions of the EU and the Member States using UAVs is escalatory, risks miscalculation, endangers lives, constitutes a serious violation of applicable international norms and poses a serious threat to EU citizens and to peace and security in Europe'.",
+      "del:madeBy": {
+        "@id": "participant_95"
+      },
+      "del:timestamp": "2025-10-09T12:18:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_134",
+      "del:text": "wzywa KomisjÄ EuropejskÄ oraz RadÄ do podjÄcia dziaÅaÅ majÄcych na celu wyciÄgniÄcie konsekwencji wobec osÃ³b odpowiedzialnych za tak zwany reset w stosunkach Unii Europejskiej z FederacjÄ RosyjskÄ oraz za promowanie i realizacjÄ projektÃ³w gospodarczych, ktÃ³re przyczyniÅy siÄ do wzrostu zaleÅ¼noÅci energetycznej Europy od Rosji, a w konsekwencji do obecnego kryzysu bezpieczeÅstwa i wojny przeciwko Ukrainie;\npodkreÅla, Å¼e Gerhard SchrÃ¶der powinien zostaÄ objÄty sankcjami Unii Europejskiej, a jego przypadek winien stanowiÄ symboliczny przykÅad braku akceptacji dla postaw sprzecznych z wartoÅciami i interesami Unii Europejskiej.",
+      "del:madeBy": {
+        "@id": "participant_96"
+      },
+      "del:timestamp": "2025-10-09T12:21:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_135",
+      "del:text": "Je mâÃ©tonne, Madame la PrÃ©sidente, que vos services se soient opposÃ©s Ã  ce que je dÃ©pose un amendement Ã©crit. Câest pourquoi je prÃ©sente un amendement oral. Peut-Ãªtre que certains, Ã  lâextrÃªmeÂ droite, sây opposeront et, sâils sây opposent, ils nous diront quâils ne sont pas seulement les amis de Viktor OrbÃ¡n, mais aussi ceux de Vladimir Poutine.\nLâamendement oral que je vous soumets est le suivant: Â«souligne que les Ãtats membres de lâUnion europÃ©enne ne doivent en aucun cas se livrer Ã  des violations volontaires de lâespace aÃ©rien souverain dâautres Ãtats membres ou des pays candidats Ã  lâadhÃ©sion Ã  lâUnion europÃ©enne, comme cela a rÃ©cemment Ã©tÃ© le cas, de faÃ§on regrettable, puisque le Premier ministre hongrois, Viktor OrbÃ¡n, a admis que des drones lancÃ©s depuis le territoire hongrois avaient pÃ©nÃ©trÃ© dans le ciel ukrainienÂ».",
+      "del:madeBy": {
+        "@id": "participant_97"
+      },
+      "del:timestamp": "2025-10-09T12:26:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_136",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:28:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_137",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-09T12:33:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_138",
+      "del:text": "Vi sono osservazioni?\nIl processo verbale Ã¨ approvato.",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2025-10-09T15:00:21"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_139",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2025-10-09T15:00:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_140",
+      "del:text": "One of the main carriers or vectors of these diseases is the tiger mosquito. This mosquito has expanded its territory significantly and can now be found in 13Â Member States. Europe has seen 27Â clusters of locally acquired chikungunya infections so far this year, which is a new record for our continent. And, for the first time, locally acquired chikungunya cases have been reported in France's Alsace region. This is a sign that the risk is spreading steadily. Therefore, we must treat these threats as a key public health concern. This is why the Commission, together with these agencies and in cooperation with Member States, is improving how we prevent, prepare for and respond to these diseases.\nWe also work closely with Member States and partner countries on the topic of vector-borne diseases through the Health Security Committee, and we have appointed three European reference laboratories covering vector-borne diseases. In turn, they support national reference laboratories in making testing and detection methods more consistent across Europe. We are running a pilot project on mosquito control techniques with the Cypriot public health authorities. We work closely with the European Centre for Disease Prevention and Control (ECDC) as it improves vector surveillance activities at country level, with tailored recommendations for countries that haven't faced these threats before. We invest in the research and development of new vaccines, anti-viral treatments and innovative diagnostic tests which encompass dengue, Zika and the West Nile virus, while also supporting clinical studies for vaccines.\nBut more is needed. This includes making health strategies more practical, holistic and forward-looking. On top of that, national approaches to climate adaptation should integrate more health considerations, particularly at local level. Closer cooperation between all stakeholders is necessary to strengthen these efforts. To support this and to strengthen Europe's overall resilience, work under the Preparedness Union Strategy is on its way. We will soon present the Union prevention, preparedness and response plan for health crises. The call for evidence is currently open for submission until 29Â October. The Union plan is expected to provide a practical overview of our arrangement for governance capacities and resources to respond to health crises, including on vector surveillance and control.\nIn July, we adopted the Medical Countermeasures Strategy, which identify vector-borne diseases as one of the top four threat categories. The EU needs to prepare for and outline related medical countermeasures. We will also develop a wastewater surveillance system that can detect outbreaks as they emerge, and we will provide financial support to boost Member States' vector-control systems. This work has already started because there is no time to lose â emerging vector-borne diseases, present a significant public health risk for Europe and working together gives us the best chance against them.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-09T15:01:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_141",
+      "del:text": "Ce nâest pas une maladie anodine: câest une maladie qui bloque, qui isole, qui dÃ©sorganise la vie quotidienne comme lâÃ©conomie locale. Ce nâest pas un Ã©pisode isolÃ©: câest le symptÃ´me dâun continent qui se rÃ©chauffe et dâune santÃ© publique qui, trop souvent, rÃ©agit au lieu dâanticiper. Les moustiques et les tiques remontent vers le nord. Le climat a changÃ©. Nos politiques de prÃ©vention doivent changer.\nAlors oui, il faut agir. Renforcer la surveillance vectorielle. Partager les donnÃ©es entre Ãtats membres. Soutenir la recherche vaccinale et mutualiser les moyensÂ â insecticides, rÃ©pulsifs, laboratoiresÂ â pour Ã©viter que chaque pays ne lutte seul dans son coin. Car, mÃªme si la santÃ© reste et doit rester une compÃ©tence nationale, ce sujet montre que, sur ces enjeux sanitaires et climatiques, lâEurope doit Ãªtre unie, concrÃ¨te et utile.\nLe chikungunya sur la CÃ´te dâAzur nâest pas un fait divers local: câest un signal dâalarme continental. Il nous rappelle que les menaces sanitaires ne connaissent pas de frontiÃ¨res et que seule une action coordonnÃ©e, fondÃ©e sur la science et la prÃ©vention, peut protÃ©ger durablement les EuropÃ©ens.",
+      "del:madeBy": {
+        "@id": "participant_99"
+      },
+      "del:timestamp": "2025-10-09T15:05:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_142",
+      "del:text": "Therefore, we are at the forefront of this new dangerous trend. Because of that, Europe is experiencing longer and more intense transmission seasons for mosquito- and tick-borne diseases, and it should be kept in mind. Of course, despite a record number of deaths from heat and climate change-related concerns, we have big problems ahead of us.\nOver the past years, the number of countries affected by, for example, Asian tiger mosquitoes presenting the chikungunya virus has doubled. The number of regions with the presence of those mosquitoes increased by 223Â % in the last decade. It's once again a message to those who do not understand what it means. Surveillance, protection, prevention, preparedness, control actions and possibilities to protect and also to understand that we need to have vaccination in our hands.\nTick-borne encephalitis, which is spread by encephalitis ticks, is once again on the rise. And I welcome Baltic countries where vaccination against tick-spread encephalitis shows very good results. I welcome Commission intentions, I urge Member States to do more and include the European Commission proposal into their national action plans curbing mosquito-borne diseases.",
+      "del:madeBy": {
+        "@id": "participant_57"
+      },
+      "del:timestamp": "2025-10-09T15:07:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_143",
+      "del:text": "Regardons nos territoires ultramarins. Le rÃ©chauffement climatique, lÃ -bas, nâa pas causÃ© dâÃ©pidÃ©mies, de paludisme ou autres. Câest bien la pauvretÃ©; câest bienÂ â vous le disiez, MadameÂ â par exemple le problÃ¨me des eaux usÃ©es et notre refus dâune politique de dÃ©veloppement sÃ©rieuse de nos territoires qui les rend si vulnÃ©rables. Le vrai remÃ¨de contre les maladies infectieuses transmises par ces insectes parasites, ce nâest pas la dÃ©croissance prÃ´nÃ©e par les Ã©cofanatiques; câest la croissance Ã©conomique, la prospÃ©ritÃ© matÃ©rielle et la recherche, comme on lâa vu Ã  Montpellier, oÃ¹ une chercheuse, en stÃ©rilisant les moustiques-tigres mÃ¢les, est parvenue Ã  rÃ©sorber cette Ã©pidÃ©mie.\nVoilÃ , mes chers collÃ¨gues, câest Ã  cela que nous devons travailler.",
+      "del:madeBy": {
+        "@id": "participant_100"
+      },
+      "del:timestamp": "2025-10-09T15:09:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_144",
+      "del:text": "Att plocka bort en och annan fÃ¤sting hÃ¶r sommaren till, men har man otur sÃ¥ kan en av dessa fÃ¤stingar faktiskt sprida farliga sjukdomar. NÃ¤r jag vÃ¤xte upp sÃ¥ hade vi en liten pudel, Kajsa. Varje sommar fick hon fÃ¤stingmedel och fÃ¤stinghalsband. Men min pappa, nÃ¤r han var liten hade han en hund som hette Cheri och den gick tyvÃ¤rr bort pÃ¥ grund av en fÃ¤stingburen sjukdom.\nI Norden fÃ¶ljer vi noggrant den hÃ¤r utvecklingen genom initiativ som till exempel SVA:s \"Rapportera fÃ¤sting\". DÃ¤rfÃ¶r vill jag nu passa pÃ¥ att rikta ett stort tack till alla er dÃ¤r hemma som engagerar er fÃ¶r att bidra med data fÃ¶r att kartlÃ¤gga spridningen. Detta Ã¤r en lokal frÃ¥ga. Vi behÃ¶ver inte nÃ¥gon mer EU-inblandning. Jag hoppas aldrig hÃ¶ra nÃ¥gra fÃ¶rslag pÃ¥ en EU-strategi eller, Ã¤nnu vÃ¤rre, en fÃ¤stingkommissionÃ¤r. Det skulle bli minst lika dÃ¥ligt som allt annat som ska centraliseras och beslutas Ã¶verstatligt utan nationell kompetens. Vi behÃ¶ver inga fransmÃ¤n och inga tyskar fÃ¶r att hantera vÃ¥ra problem med fÃ¤stingar i Sverige. LÃ¥t Ã¤ven jakten regleras nationellt utan restriktioner frÃ¥n EU, sÃ¥ att vi i Sverige effektivt kan bekÃ¤mpa fÃ¤stingar och spridningen av dessa sjukdomar.",
+      "del:madeBy": {
+        "@id": "participant_101"
+      },
+      "del:timestamp": "2025-10-09T15:11:28"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_145",
+      "del:text": "Ja, es gab laut der ECDC im Jahr 2024 in ganz Europa 304Â Dengue-FÃ¤lle und im Jahr 2025 ganze 27Â Chikungunya-FÃ¤lle, die nicht durch ReiserÃ¼ckkehrer oder Migranten importiert wurden. Aber die meisten Menschen entwickelten gar keine Symptome. Nur wenige hatten Ã¼berhaupt Fieber. Warum sprechen wir dann darÃ¼ber? Um die horrenden Klimaausgaben zu rechtfertigen, oder werden hier wieder groÃe GeschÃ¤fte mit der Pharmaindustrie vorbereitet? Deutschland braucht die AfD, und Europa braucht die ESN.",
+      "del:madeBy": {
+        "@id": "participant_102"
+      },
+      "del:timestamp": "2025-10-09T15:14:08"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_146",
+      "del:text": "Na Europa mantÃ©m-se a tendÃªncia de aumento das temperaturas, com verÃµes mais prolongados e quentes, ondas de calor mais frequentes e severas, chuvas devastadoras, tempestades. Estes padrÃµes sÃ£o agravados pela perda de biodiversidade e pelo aumento da mobilidade humana, e vÃ£o aumentar o risco de doenÃ§as transmitidas por vetores e carraÃ§as, alterando a dinÃ¢mica da transmissÃ£o, mas tambÃ©m a distribuiÃ§Ã£o geogrÃ¡fica.\nNo meu paÃ­s, em Portugal, para alÃ©m do dengue na ilha da Madeira, jÃ¡ hÃ¡ relatos de deteÃ§Ã£o de mosquitos transmissores do vÃ­rus zika. Estas doenÃ§as, muitas delas, nÃ£o tÃªm vacinas e sÃ£o fatais. Quem estÃ¡ disponÃ­vel para deixar morrer uma pessoa por causa de uma doenÃ§a destas Ã© inconsciente.\nPela nossa parte, consideramos da maior importÃ¢ncia a declaraÃ§Ã£o que hoje estamos a discutir e, por isso, apelamos para que a resposta a estas novas ameaÃ§as tenha sempre presente o seguinte: a Ã³tica de uma sÃ³ saÃºde; uma abordagem multidisciplinar e multinÃ­vel; a integraÃ§Ã£o de dados epidemiolÃ³gicos, biolÃ³gicos, climatÃ©ricos; a investigaÃ§Ã£o entomolÃ³gica de qualidade; a sensibilizaÃ§Ã£o pÃºblica e, naturalmente, o combate Ã s alteraÃ§Ãµes climÃ¡ticas e a sua mitigaÃ§Ã£o.",
+      "del:madeBy": {
+        "@id": "participant_103"
+      },
+      "del:timestamp": "2025-10-09T15:15:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_147",
+      "del:text": "Et que fait Bruxelles? Des Ã©tudes, des rapports, des programmes pilotes. Pendant ce temps, les infections explosent et les EuropÃ©ens les plus modestes restent sans dÃ©fense. Nous demandons donc une vraie stratÃ©gie de lutte antivectorielle et dâÃ©radication des espÃ¨ces invasives dans tous nos territoires et les zones touchÃ©es. ProtÃ©ger nos peuples, nos terres et nos Ã©cosystÃ¨mes: câest cela, la vraie Ã©cologie.",
+      "del:madeBy": {
+        "@id": "participant_104"
+      },
+      "del:timestamp": "2025-10-09T15:17:08"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_148",
+      "del:text": "Es ist kein Wunder, dass der Rest der Welt das Pariser Klimaabkommen und sein Versprechen, die globale ErwÃ¤rmung auf deutlich unter zwei Grad zu begrenzen, aufgegeben hat. WÃ¤hrend nur die Vereinigten Staaten das Abkommen formell verlassen haben, geben viele andere Unterzeichnerstaaten still und schweigend ihre Verpflichtungen auf. Mexikos PrÃ¤sidentin Claudia Sheinbaum hat die ÃlâÂ und Gasindustrie ihres Landes ausgebaut, Brasilien tut dasselbe. Diese LÃ¤nder haben verstanden, dass keine Herausforderung einschlieÃlich der von MÃ¼cken und Zecken Ã¼bertragenen Krankheiten von einer Ã¤rmeren BevÃ¶lkerung besser bewÃ¤ltigt werden kann. Genau das sind wir in dieser EU unter dem Klimaregime geworden. Wir sind Ã¤rmer geworden. Der Green Deal der EU muss beendet werden, damit die Menschen in Europa wieder in Wohlstand leben kÃ¶nnen und natÃ¼rlich gesÃ¼nder.",
+      "del:madeBy": {
+        "@id": "participant_105"
+      },
+      "del:timestamp": "2025-10-09T15:18:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_149",
+      "del:text": "Imagine a summer trip to southern France or even northern Germany, where West Nile virus or Lyme disease are not anomalies, but regular occurrences.Â Whilst obviously a greater burden for those living in these regions, it will also negatively impact our ability and willingness to travel between countries, undermining a key freedom of the European Union.\nTo keep our continent safe, we must adapt. We need enhanced disease-vector surveillance systems at borders to the EU, along with integration of weather modelling and cross-border disease control. New and dangerous diseases will be commonplace if we do not act swiftly to prepare and defend against their spread.",
+      "del:madeBy": {
+        "@id": "participant_106"
+      },
+      "del:timestamp": "2025-10-09T15:20:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_150",
+      "del:text": "Itse tulen Suomesta. MeillÃ¤ on valtava ongelma punkkien kanssa tÃ¤llÃ¤ hetkellÃ¤. Mutta jos katsomme maailmanlaajuisesti esimerkiksi hyttysten levittÃ¤miÃ¤ tauteja, emme voi vÃ¤lttyÃ¤ ymmÃ¤rtÃ¤mÃ¤stÃ¤ sitÃ¤, ettÃ¤ ilmastonmuutos on tuonut tÃ¤nne Eurooppaan sellaisia tarttuvia tauteja, joita hyttyset ja punkit vÃ¤littÃ¤vÃ¤t yhÃ¤ suuremmissa mÃ¤Ã¤rin.\nSingapore on hyvÃ¤ esimerkki siitÃ¤, millÃ¤ tavalla esimerkiksi hyttysten leviÃ¤mistÃ¤ pyritÃ¤Ã¤n vÃ¤hentÃ¤mÃ¤Ã¤n. SiellÃ¤ voidaan jopa mÃ¤Ã¤rÃ¤tÃ¤ kotitalouksille sakkoja, jos he eivÃ¤t pidÃ¤ huolta siitÃ¤, ettei heidÃ¤n tontilleen kerry ylimÃ¤Ã¤rÃ¤isiÃ¤ vesialueita. HyttysethÃ¤n leviÃ¤vÃ¤t vedessÃ¤.\nMutta punkkien leviÃ¤misen estÃ¤minen onkin hankalampi tapaus, ja sen takia meidÃ¤n pitÃ¤Ã¤ pystyÃ¤ ennaltaehkÃ¤isemÃ¤Ã¤n niitÃ¤ sairauksia, joita nÃ¤mÃ¤ pienet eliÃ¶t ihmisille aiheuttavat. MeillÃ¤ Suomessa hyvÃ¤nÃ¤ esimerkkinÃ¤ ovat punkkibussit, jotka menevÃ¤t kylien keskuksiin ja joista ihmiset voivat hakea rokotteensa usein ilmaiseksi, koska me katsomme yhteiskuntana, ettÃ¤ punkkien levittÃ¤mien sairauksien hoito tulee paljon kalliimmaksi kuin rokotteiden antaminen.",
+      "del:madeBy": {
+        "@id": "participant_76"
+      },
+      "del:timestamp": "2025-10-09T15:21:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_151",
+      "del:text": "Sâagissant des maladies liÃ©es aux moustiquesÂ â sujet de notre dÃ©bat du jourÂ â, des zones entiÃ¨res dâEurope connaissent aujourdâhui des problÃ©matiques dignes de pays sous-dÃ©veloppÃ©s. Alors, jâai plusieurs questions. PremiÃ¨rement, nâavez-vous pas honte de voir de telles maladies apparaÃ®tre et se dÃ©velopper en Europe? DeuxiÃ¨mement, Ã  part dÃ©battre, que fait lâUnion europÃ©enne et que font les Ãtats membres pour protÃ©ger la santÃ© publique des EuropÃ©ens et Ã©radiquer ces moustiques? Enfin, MmeÂ vonÂ derÂ Leyen, trÃ¨s attachÃ©e Ã  la santÃ© publique, compte-t-elle envoyer des SMS quâelle effacera aussitÃ´t Ã  ce sujet? Ou la protection des EuropÃ©ens vis-Ã -vis des moustiques nâest-elle pas, Ã  ses yeux, un business suffisamment juteux?",
+      "del:madeBy": {
+        "@id": "participant_107"
+      },
+      "del:timestamp": "2025-10-09T15:23:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_152",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_108"
+      },
+      "del:timestamp": "2025-10-09T15:24:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_153",
+      "del:text": "Jâai cru entendre, chez certains, Ã  lâextrÃªmeÂ gauche ou Ã  gauche, la dÃ©croissance. Moi, je prÃ´ne une chose: la dÃ©croissance de la bÃªtise et la croissance du bon sens et de lâintelligence. Car, dans nos territoires, il faut de la croissance, il faut des infrastructures. Ce nâest pas cela qui rÃ©glera le problÃ¨me.",
+      "del:madeBy": {
+        "@id": "participant_109"
+      },
+      "del:timestamp": "2025-10-09T15:25:53"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_154",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_110"
+      },
+      "del:timestamp": "2025-10-09T15:27:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_155",
+      "del:text": "Con il caldo che aumenta, nuovi insetti arrivano in Europa: zanzare tse-tse, parassiti che portano malattie come la dengue, il virus del Nilo e la malaria. Queste non sono paure lontane, sono fatti.\nChi dice di difendere il popolo deve proteggere la sua salute. Possiamo avere idee diverse su come fare la transizione ecologica, ma chi nega il problema o accusa l'Unione europea per le sue azioni, abbandona i cittadini e lascia il campo alle malattie e alla paura. Difendere il clima significa difendere la vita e questo Ã¨ il nostro dovere come europei.\nUnd vielleicht ein letztes Wort auf Deutsch: Niemand braucht die AfD, niemand braucht die ESN. Sie sÃ¤en nur Angst und Unruhe in den Herzen unserer Menschen, und das ist eine Schande fÃ¼r Deutschland und eine Schande fÃ¼r Europa.",
+      "del:madeBy": {
+        "@id": "participant_83"
+      },
+      "del:timestamp": "2025-10-09T15:28:08"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_156",
+      "del:text": "We need to scale up vector control and communicate clearly around the risks so that people can protect themselves. We need to train health care professionals to be more aware of these vector-borne diseases, so they can be diagnosed earlier, and we need to develop new vaccines where they are not yet available for some of these diseases, like West Nile virus.\nHonourable Members, with that, I would like to thank you for today's discussion. We have the evidence and we have the data, and now it's time to act to prevent these diseases and protect citizens across Europe.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-09T15:29:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_157",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2025-10-09T15:30:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_158",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2025-10-09T15:30:57"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_159",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2025-10-09T15:31:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_160",
+      "del:text": "The marginalisation of women in Afghanistan has reached new heights. Bans on women working in NGOs, studying, and restrictions on their travel have massively impacted women's access to healthcare and humanitarian aid. Women also face increased gender-based violence following disasters, brought on by the intense pressure on communities through displacement, loss of livelihoods and more.\nI applaud the work of organisations such as UN Women, who are doing extraordinary work to help people on the ground. These organisations need financial support, and I urge the world to not turn their backs on the Afghan women and girls, and the organisations dedicated to help them.",
+      "del:madeBy": {
+        "@id": "participant_106"
+      },
+      "del:timestamp": "2025-10-09T15:31:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_161",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2025-10-09T15:32:36"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_162",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_106"
+      },
+      "del:timestamp": "2025-10-09T15:32:52"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_163",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2025-10-09T15:34:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_164",
+      "del:text": "Se non vi sono obiezioni, procedo alla trasmissione immediata delle risoluzioni approvate nella seduta odierna ai loro destinatari.",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2025-10-09T15:34:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_165",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2025-10-09T15:34:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_166",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2025-10-09T15:34:30"
+    }
+  ]
+}

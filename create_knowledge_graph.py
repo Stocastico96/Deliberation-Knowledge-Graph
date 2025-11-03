@@ -39,15 +39,20 @@ def create_unified_graph():
 def process_ep_debates(graph, file_path):
     """Process European Parliament debates data"""
     print(f"Processing European Parliament debates from {file_path}")
-    
+
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
-        
+
+        # Extract debate date prefix from identifier for unique IDs
+        process_id = data.get("del:identifier", data.get("dkg:identifier", f"ep_debate_{uuid.uuid4()}"))
+        debate_prefix = process_id.replace("ep_debate_", "")  # e.g., "20250310"
+
         # Add deliberation process
-        process_uri = URIRef(BASE_URI + data.get("del:identifier", data.get("dkg:identifier", f"ep_debate_{uuid.uuid4()}")))
+        process_uri = URIRef(BASE_URI + process_id)
         graph.add((process_uri, RDF.type, DEL.DeliberationProcess))
-        
+        graph.add((process_uri, DEL.platform, Literal("European Parliament")))
+
         # Add basic properties
         for prefix in ["del:", "dkg:"]:  # Try both prefixes for compatibility
             if f"{prefix}identifier" in data:
@@ -64,9 +69,11 @@ def process_ep_debates(graph, file_path):
             if f"{prefix}hasTopic" in data:
                 for topic in data[f"{prefix}hasTopic"]:
                     topic_id = topic.get(f"{prefix}identifier", f"topic_{uuid.uuid4()}")
-                    topic_uri = URIRef(BASE_URI + topic_id)
+                    # Make topic ID unique by adding debate prefix
+                    unique_topic_id = f"{debate_prefix}_{topic_id}"
+                    topic_uri = URIRef(BASE_URI + unique_topic_id)
                     graph.add((topic_uri, RDF.type, DEL.Topic))
-                    graph.add((topic_uri, DEL.identifier, Literal(topic_id)))
+                    graph.add((topic_uri, DEL.identifier, Literal(unique_topic_id)))
                     graph.add((topic_uri, DEL.name, Literal(topic.get(f"{prefix}name", ""))))
                     graph.add((process_uri, DEL.hasTopic, topic_uri))
         
@@ -75,19 +82,21 @@ def process_ep_debates(graph, file_path):
             if f"{prefix}hasParticipant" in data:
                 for participant in data[f"{prefix}hasParticipant"]:
                     participant_id = participant.get(f"{prefix}identifier", f"participant_{uuid.uuid4()}")
-                    participant_uri = URIRef(BASE_URI + participant_id)
+                    # Make participant ID unique by adding debate prefix
+                    unique_participant_id = f"{debate_prefix}_{participant_id}"
+                    participant_uri = URIRef(BASE_URI + unique_participant_id)
                     graph.add((participant_uri, RDF.type, DEL.Participant))
-                    graph.add((participant_uri, DEL.identifier, Literal(participant_id)))
+                    graph.add((participant_uri, DEL.identifier, Literal(unique_participant_id)))
                     graph.add((participant_uri, DEL.name, Literal(participant.get(f"{prefix}name", ""))))
-                    
+
                     # Add role if available
                     if f"{prefix}hasRole" in participant:
                         role = participant[f"{prefix}hasRole"]
-                        role_uri = URIRef(BASE_URI + f"role_{participant_id}")
+                        role_uri = URIRef(BASE_URI + f"{debate_prefix}_role_{participant_id}")
                         graph.add((role_uri, RDF.type, DEL.Role))
                         graph.add((role_uri, DEL.name, Literal(role.get(f"{prefix}name", ""))))
                         graph.add((participant_uri, DEL.hasRole, role_uri))
-                    
+
                     # Add affiliation if available
                     if f"{prefix}isAffiliatedWith" in participant:
                         org = participant[f"{prefix}isAffiliatedWith"]
@@ -96,7 +105,7 @@ def process_ep_debates(graph, file_path):
                         graph.add((org_uri, RDF.type, DEL.Organization))
                         graph.add((org_uri, DEL.name, Literal(org_name)))
                         graph.add((participant_uri, DEL.isAffiliatedWith, org_uri))
-                    
+
                     graph.add((process_uri, DEL.hasParticipant, participant_uri))
         
         # Process contributions
@@ -104,22 +113,26 @@ def process_ep_debates(graph, file_path):
             if f"{prefix}hasContribution" in data:
                 for contribution in data[f"{prefix}hasContribution"]:
                     contribution_id = contribution.get(f"{prefix}identifier", f"contribution_{uuid.uuid4()}")
-                    contribution_uri = URIRef(BASE_URI + contribution_id)
+                    # Make contribution ID unique by adding debate prefix
+                    unique_contribution_id = f"{debate_prefix}_{contribution_id}"
+                    contribution_uri = URIRef(BASE_URI + unique_contribution_id)
                     graph.add((contribution_uri, RDF.type, DEL.Contribution))
-                    graph.add((contribution_uri, DEL.identifier, Literal(contribution_id)))
+                    graph.add((contribution_uri, DEL.identifier, Literal(unique_contribution_id)))
                     graph.add((contribution_uri, DEL.text, Literal(contribution.get(f"{prefix}text", ""))))
-                    
+
                     # Add timestamp if available
                     if f"{prefix}timestamp" in contribution:
-                        graph.add((contribution_uri, DEL.timestamp, 
+                        graph.add((contribution_uri, DEL.timestamp,
                                   Literal(contribution[f"{prefix}timestamp"], datatype=XSD.dateTime)))
-                    
+
                     # Link to participant
                     if f"{prefix}madeBy" in contribution and "@id" in contribution[f"{prefix}madeBy"]:
                         participant_id = contribution[f"{prefix}madeBy"]["@id"]
-                        participant_uri = URIRef(BASE_URI + participant_id)
+                        # Use the unique participant ID with debate prefix
+                        unique_participant_id = f"{debate_prefix}_{participant_id}"
+                        participant_uri = URIRef(BASE_URI + unique_participant_id)
                         graph.add((contribution_uri, DEL.madeBy, participant_uri))
-                    
+
                     # Link contribution to process
                     graph.add((process_uri, DEL.hasContribution, contribution_uri))
         
@@ -551,7 +564,7 @@ def main():
     # Process datasets
     datasets = [
         {
-            "name": "European Parliament Debates",
+            "name": "European Parliament Debates 2025-03-10",
             "function": process_ep_debates,
             "file_path": "data/EU_parliament_debates/ep_debates/debate_2025-03-10.json"
         },
@@ -564,31 +577,6 @@ def main():
             "name": "European Parliament Debates 2025-03-12",
             "function": process_ep_debates,
             "file_path": "data/EU_parliament_debates/ep_debates/debate_2025-03-12.json"
-        },
-        {
-            "name": "Decide Madrid",
-            "function": process_decide_madrid,
-            "file_path": "data/decide_Madrid/sample/sample.json"
-        },
-        {
-            "name": "DeliData",
-            "function": process_delidata,
-            "file_path": "data/delidata/sample/sample.json"
-        },
-        {
-            "name": "EU Have Your Say",
-            "function": process_eu_have_your_say,
-            "file_path": "data/EU_have_your_say/sample/sample.csv"
-        },
-        {
-            "name": "Habermas Machine",
-            "function": process_habermas_machine,
-            "file_path": "data/habermas_machine/sample/sample.json"
-        },
-        {
-            "name": "US Supreme Court Arguments",
-            "function": process_us_supreme_court,
-            "file_path": "data/US_supreme_court_arguments/sample/sample.json"
         }
     ]
     

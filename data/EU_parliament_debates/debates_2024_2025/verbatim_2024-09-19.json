@@ -1,0 +1,2616 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "ep_debate_20240919",
+  "del:name": "European Parliament Debate - 2024-09-19",
+  "del:startDate": "2024-09-19T00:00:00Z",
+  "del:endDate": "2024-09-19T23:59:59Z",
+  "del:hasTopic": [
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem1",
+      "del:name": "Opening of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem2",
+      "del:name": "Droughts and extreme weather events as a threat to local communities and EU agriculture in times of climate change (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem3",
+      "del:name": "The historic CJEU ruling on the Apple state aid case and its consequences (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem4",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem5",
+      "del:name": "Composition of interparliamentary delegations"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem6",
+      "del:name": "Composition of committees and delegations"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem7",
+      "del:name": "Voting time"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem8",
+      "del:name": "The deteriorating situation of women in Afghanistan due to the recent adoption of the law on the âPromotion of Virtue and Prevention of Viceâ (RC-B10-0024/2024, B10-0024/2024, B10-0038/2024, B10-0040/2024, B10-0045/2024, B10-0047/2024, B10-0048/2024, B10-0050/2024) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem9",
+      "del:name": "The severe situation of political prisoners in Belarus (RC-B10-0026/2024, B10-0026/2024, B10-0051/2024, B10-0052/2024, B10-0053/2024, B10-0054/2024, B10-0055/2024) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem10",
+      "del:name": "The case of JosÃ© Daniel Ferrer GarcÃ­a in Cuba (RC-B10-0022/2024, B10-0022/2024, B10-0041/2024, B10-0042/2024, B10-0043/2024, B10-0044/2024, B10-0049/2024) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem11",
+      "del:name": "EU/USA Agreement on launch of Galileo satellites from U.S. territory (A10-0001/2024 - Borys Budka) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem12",
+      "del:name": "Continued financial and military support to Ukraine by EU Member States (RC-B10-0028/2024, B10-0028/2024, B10-0029/2024, B10-0031/2024, B10-0033/2024, B10-0036/2024, B10-0039/2024) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem13",
+      "del:name": "Situation in Venezuela (RC-B10-0023/2024, B10-0023/2024, B10-0025/2024, B10-0027/2024, B10-0030/2024, B10-0034/2024, B10-0035/2024, B10-0037/2024) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem14",
+      "del:name": "The devastating floods in Central and Eastern Europe, the loss of lives and the EUâs preparedness to act on such disasters exacerbated by climate change (RC-B10-0057/2024, B10-0057/2024, B10-0058/2024, B10-0059/2024, B10-0060/2024, B10-0061/2024, B10-0062/2024, B10-0063/2024) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem15",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem16",
+      "del:name": "Approval of the minutes of the previous sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem17",
+      "del:name": "Possible extradition of Paul Watson: the danger of criminalisation of environmental defenders and whistle-blowers, and the need for their protection in the EU (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem18",
+      "del:name": "Explanations of vote"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem19",
+      "del:name": "Continued financial and military support to Ukraine by EU Member States (RC-B10-0028/2024)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem20",
+      "del:name": "Situation in Venezuela (RC-B10-0023/2024)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem21",
+      "del:name": "The devastating floods in Central and Eastern Europe, the loss of lives and the EUâs preparedness to act on such disasters exacerbated by climate change (RC-B10-0057/2024)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem22",
+      "del:name": "Approval of the minutes of the sitting and forwarding of texts adopted"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem23",
+      "del:name": "Dates of forthcoming sittings"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem24",
+      "del:name": "Closure of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem25",
+      "del:name": "Adjournment of the session"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "PredsedajÃºci ."
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Janusz Wojciechowski,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Daniel Buda,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Stefano Bonaccini,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_5",
+      "del:name": "Veronika VrecionovÃ¡,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_6",
+      "del:name": "GrÃ©gory Allione,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_7",
+      "del:name": "Jutta Paulus,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_8",
+      "del:name": "ÎÎ¹ÏÏÎ³Î¿Ï ÎÎµÏÏÎ³Î¯Î¿Ï,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_9",
+      "del:name": "Anja Arndt,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_10",
+      "del:name": "Herbert Dorfmann",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_11",
+      "del:name": "Marcos Ros Sempere",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_12",
+      "del:name": "Silvia Sardone",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_13",
+      "del:name": "Sergio Berlato",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_14",
+      "del:name": "Barry Cowen",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_15",
+      "del:name": "Virginijus SinkeviÄius",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_16",
+      "del:name": "Valentina Palmisano",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_17",
+      "del:name": "Anna BryÅka",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_18",
+      "del:name": "Carmen Crespo DÃ­az",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_19",
+      "del:name": "HelÃ©ne Fritzon",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_20",
+      "del:name": "Anne-Sophie Frigout",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_21",
+      "del:name": "Bert-Jan Ruissen",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_22",
+      "del:name": "Emma Wiesner",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_23",
+      "del:name": "Thomas Waitz",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_24",
+      "del:name": "Siegbert Frank Droese",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_25",
+      "del:name": "ÎÎ»ÎµÎ½Î± ÎÎ¿ÏÎ½ÏÎ¿ÏÏÎ¬",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_26",
+      "del:name": "Paulo Do Nascimento Cabral",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_27",
+      "del:name": "Cristina Maestre",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_28",
+      "del:name": "Mireia BorrÃ¡s PabÃ³n",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_29",
+      "del:name": "Jadwiga WiÅniewska",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_30",
+      "del:name": "President.",
+      "del:hasRole": {
+        "@type": "del:Role",
+        "del:name": "President"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_31",
+      "del:name": "Anna Zalewska",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_32",
+      "del:name": "Benoit Cassart",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_33",
+      "del:name": "Rasmus Nordqvist",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_34",
+      "del:name": "Carola Rackete",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_35",
+      "del:name": "Alexander Bernhuber",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_36",
+      "del:name": "Jessika Van Leeuwen",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_37",
+      "del:name": "Î£Î¬ÎºÎ·Ï ÎÏÎ½Î±Î¿ÏÏÎ¿Î³Î»Î¿Ï",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_38",
+      "del:name": "ValÃ©rie Deloge",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_39",
+      "del:name": "Guillaume Peltier",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_40",
+      "del:name": "Irena Joveva",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_41",
+      "del:name": "Salvatore De Meo",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_42",
+      "del:name": "Antonio Decaro",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_43",
+      "del:name": "Gilles Pennelle",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_44",
+      "del:name": "Ruggero Razza",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_45",
+      "del:name": "Jeannette Baljeu",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_46",
+      "del:name": "Esther Herranz GarcÃ­a",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_47",
+      "del:name": "Annalisa Corrado",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_48",
+      "del:name": "Stefano Cavedagna",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_49",
+      "del:name": "Dominik TarczyÅski",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_50",
+      "del:name": "Martin HojsÃ­k",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_51",
+      "del:name": "Dan-Åtefan Motreanu",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_52",
+      "del:name": "Thomas Bajada",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_53",
+      "del:name": "Lukas Sieper",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_54",
+      "del:name": "Rosa Serrano Sierra",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_55",
+      "del:name": "AndrÃ© Rodrigues",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_56",
+      "del:name": "Raffaele Stancanelli",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_57",
+      "del:name": "Krzysztof Hetman",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_58",
+      "del:name": "Maria Grapini",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_59",
+      "del:name": "Michele Picaro",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_60",
+      "del:name": "Ana Miranda Paz",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_61",
+      "del:name": "ÎÎ¹ÎºÏÎ»Î±Ï Î¦Î±ÏÎ±Î½ÏÎ¿ÏÏÎ·Ï",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_62",
+      "del:name": "Grzegorz Braun",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_63",
+      "del:name": "Laura BallarÃ­n Cereza",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_64",
+      "del:name": "Caterina Chinnici",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_65",
+      "del:name": "Javi LÃ³pez",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_66",
+      "del:name": "CÃ©sar Luena",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_67",
+      "del:name": "JoÃ£o Oliveira",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_68",
+      "del:name": "Elena Sancho Murillo",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_69",
+      "del:name": "ÐÐ²Ð°Ð¹Ð»Ð¾ ÐÑÐ»ÑÐµÐ²",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_70",
+      "del:name": "PriekÅ¡sÄdÄtÄjs."
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_71",
+      "del:name": "JÃ¡nos BÃ³ka,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_72",
+      "del:name": "Stella Kyriakides,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_73",
+      "del:name": "Markus Ferber,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_74",
+      "del:name": "Gabriele Bischoff,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_75",
+      "del:name": "Pierre Pimpie,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_76",
+      "del:name": "Gheorghe Piperea,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_77",
+      "del:name": "StÃ©phanie Yon-Courtin,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_78",
+      "del:name": "Rasmus Andresen,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_79",
+      "del:name": "Pasquale Tridico,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_80",
+      "del:name": "Zsuzsanna BorvendÃ©g,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_81",
+      "del:name": "Fernando Navarrete Rojas",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_82",
+      "del:name": "JonÃ¡s FernÃ¡ndez",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_83",
+      "del:name": "Jana NagyovÃ¡",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_84",
+      "del:name": "Billy Kelleher",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_85",
+      "del:name": "Kira Marie Peter-Hansen",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_86",
+      "del:name": "Kathleen Funchion",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_87",
+      "del:name": "Fabio De Masi",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_88",
+      "del:name": "Regina Doherty",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_89",
+      "del:name": "Bruno GonÃ§alves",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_90",
+      "del:name": "Yvan Verougstraete",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_91",
+      "del:name": "Kim Van Sparrentak",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_92",
+      "del:name": "Manon Aubry",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_93",
+      "del:name": "Dirk Gotink",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_94",
+      "del:name": "Matthias Ecke",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_95",
+      "del:name": "Angelika Winzig",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_96",
+      "del:name": "Evelyn Regner",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_97",
+      "del:name": "SeÃ¡n Kelly",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_98",
+      "del:name": "AodhÃ¡n Ã RÃ­ordÃ¡in",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_99",
+      "del:name": "Majdouline Sbai",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_100",
+      "del:name": "Luke Ming Flanagan",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_101",
+      "del:name": "Vytenis Povilas Andriukaitis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_102",
+      "del:name": "Christophe Grudler",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_103",
+      "del:name": "Nathalie Loiseau",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_104",
+      "del:name": "Kinga GÃ¡l",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_105",
+      "del:name": "Jorge BuxadÃ© Villalba",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_106",
+      "del:name": "SebastiÃ£o Bugalho",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_107",
+      "del:name": "Leire PajÃ­n,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_108",
+      "del:name": "Virginie Joron,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_109",
+      "del:name": "Yvan Verougstraete,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_110",
+      "del:name": "Marie Toussaint,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_111",
+      "del:name": "Per Clausen,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_112",
+      "del:name": "Siegbert Frank Droese,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_113",
+      "del:name": "Emma Fourreau",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_114",
+      "del:name": "ChloÃ© Ridel",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_115",
+      "del:name": "Jean-Marc Germain",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_116",
+      "del:name": "Saskia Bricmont",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_117",
+      "del:name": "Adrian-George Axinia",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_118",
+      "del:name": "ÎÎµÎ¬Î´Î·Ï ÎÎµÎ¬Î´Î·",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_119",
+      "del:name": "ÐÐ½Ð´ÑÐµÐ¹ ÐÐ¾Ð²Ð°ÐºÐ¾Ð²",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_120",
+      "del:name": "Åerban Dimitrie Sturdza",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_1",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2024-09-19T09:00:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_2",
+      "del:text": "You have already exchanged yesterday with my colleague, Commissioner LenarÄiÄ, on our response. Let me also be clear affected farmers and rural communities can count on the support of the European Commission. We are following the situation closely and are in contact with the national authorities of the countries concerned, so we can receive a full assessment ofÂ the situation and its impact on farmers. This will also help us choose the best course of action in terms of assistance, in close coordination with the countries concerned.\nAs the fastest warming continent, Europe is particularly vulnerable to extreme weather events. They will become more frequent and intense. The European Climate Risk Assessment concluded that the European Union policies related to food production are not yet adequately prepared for climate risks.\nWe need to build resilience in a proactive manner now and in the future. We need a systemic transformation based on an integrated and multifaceted approach to reduce and contain impact from floods as well as from droughts. Business as usual is not an option.\nPresident von der Leyen announced that the European Climate Adaptation Plan will be developed in the next College, in close cooperation with Member States. We need to step up action to build climate resilience, including in agriculture.\nOn the latter, these extreme events remind us of the deep existential challenges that climate change and unsustainable management of natural resources, including water and soils, is posing toÂ farming. They also affect significantly vulnerable groups, including rural communities and farmers.\nSpecifically on drought, I attended the recent MED-9 ministers meeting in Cyprus. We discussed the challenges drought brings with both ministers and local farmers, and indeed, I experienced firsthand what innovative tools are on the market to deal with droughts. But this requires investments, such as investing in risk management tools and preventive actions, or promoting drought resistant crops and varieties to that consume less water.\nThe news I shared with them, and I share with you today, is that the European Union has a robust framework in place to support our farmers and rural communities in building longer term resilience, while reacting also in the immediate aftermath of crises for short term mechanism.\nThe Common Agricultural Policy is a central part of this framework. Member States can support preventive investments and risk management interventions, as well as ecoâschemes and agroâenvironmental measures to help make farmers production more resilient to shock. For instance, the Common Agricultural Policy encourages the use of drought-resistant crops, landscapeâmanagement practices that increase water retention, efficient water management systems and soil conservation techniques.Â Where appropriate, exceptional market measures funded through the Agricultural Reserve can also be mobilised.\nBeyond the Common Agricultural Policy, the Union Civil Protection Mechanism and the European Union Solidarity Fund can also be mobilised in the event of several natural disasters. Support from the national budgets can also be used in line with European Union State aid rules.Â The cohesion policy also provides important support to rural communities for climate change adaptation.\nPreparedness on community and national level to identify risks is also essential. Technology research and innovation play a critical role in that regard. The Horizon Europe mission on adaptation to climate change aims to accelerate adaptation efforts at the regional and local levels by deploying innovative solutions and providing support for climateârisk assessment and adaptation pathways, with more than EUR 490 million made available through dedicated calls for projects.\nThe Commission is also strengthening its scientific and analytical capabilities as so to better forecast and monitor droughts in Europe. One the core action areas of the upcoming European Water Resilience Strategy will be to improve the early warning and monitoring systems against floods and drought. This helps public authorities to have the most complete picture of the events and to respond effectively to public emergencies.\nFinally, Europe is not the only affected continent. A global action is needed and Europe should play its role. We should foster a strong international cooperation to tackle droughts and other extreme weather events. Africa, in particular strongly calls for a global response to drought at the 16th Conference of the Parties to the United Nations Conventions to Combat Desertification in December in Riyadh, Saudi Arabia.\nLooking ahead to the next mandate, the report delivered by the Strategic Dialogue on the Future of Agriculture, has highlighted that enhanced action is needed to facilitate the adaptation of agriculture to changing climatic conditions. The agriculture sector will need more investments in sustainable water management practices, water efficiency, including water reuse, smarter and sustainable irrigation, and, importantly, better soilâmanagement practices and natureâbased solutions to retain more water in our soils.\nHow exactly it will be achieved is the task of the future College of Commissioners, and this honourable House will certainly be informed of all developments in a timely manner.\nTo conclude, the recent floods remind us that our farmers and rural communities stand in the front line of climate change. They cannot stand alone and none of them can be left behind. We already know what needs to be done, and we already have a number of tools at our disposal.\nOn that note, I thank you for your time and look forward to our discussion.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2024-09-19T09:01:02"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_3",
+      "del:text": "Ãn RomÃ¢nia, anul acesta, s-au Ã®nregistrat constant temperaturi de peste 40 de grade, fiind cel mai secetos an de cÃ¢nd se fac mÄsurÄtori, afectÃ¢nd aproximativ 2,5 milioane de hectare. Ãn Sicilia, fermierii au suferit pierderi de 2,7 miliarde de euro, iar Ã®n Insulele Azore, seceta a dus la o diminuare a producÈiei agricole cu 70Â % Èi exemplele pot continua cu Spania sau alte state.\nComisia EuropeanÄ trebuie sÄ Ã®nÈeleagÄ cÄ fermierii nu pot face faÈÄ singuri acestor provocÄri. Ãn acest context, trebuie sÄ aloce fonduri pentru a compensa pierderile de venit, dar Èi pentru a putea investi Ã®n infrastructurÄ modernÄ de irigaÈii Èi sÄ utilizeze apa Ã®n mod eficient, inclusiv Ã®n ceea ce Ã®nseamnÄ regularizarea cursurilor de apÄ Èi prin crearea unor capacitÄÈi de stocare. Este esenÈial ca fermierii sÄ aibÄ acces la sisteme de asigurare eficiente, dar mai ales, domnule comisar, sÄ se creeze mecanisme fiabile de creditare.\nNu Ã®n ultimul rÃ¢nd, aÈ dori sÄ Ã®ntreb Comisia care sunt mecanismele Èi instrumentele pe care le are la dispoziÈie pentru a ajuta agricultorii sÄ supravieÈuiascÄ acum acestor fenomene meteo extreme, Ã®n condiÈiile Ã®n care rezerva de crizÄ pare a fi insuficientÄ. Vreau sÄ vÄ Ã®ntreb, domnule comisar, dacÄ aveÈi Ã®n vedere sÄ aduceÈi bani noi Ã®n agriculturÄ, deoarece trebuie sÄ nu uitÄm cÄ fÄrÄ agriculturÄ nu existÄ securitatea alimentarÄ, iar fÄrÄ securitatea alimentarÄ nu existÄ viitor.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2024-09-19T09:09:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_4",
+      "del:text": "Proprio in queste ore, la coda del ciclone Boris sta di nuovo mandando nell'incubo la nostra terra. A tutti i cittadini, alle popolazioni colpite e ai soccorritori, un abbraccio e una gratitudine per chi si sta prodigando verso chi ha bisogno.\nIn quell'occasione, l'Unione europea Ã¨ stata al fianco dei suoi cittadini, mettendo a disposizione unÂ miliardo e 200Â milioni di euro lo scorso gennaio per la ricostruzione, fondi che, incredibilmente, il governo italiano non ha ancora concesso ai Comuni e messo a disposizione delle comunitÃ , in attesa di risposte da oltre un anno.\nLe sempre piÃ¹ frequenti catastrofi climatiche â incredibilmente qualcuno le nega â ci obbligano perÃ² a riflettere su soluzioni di piÃ¹ ampio respiro, soprattutto per i nostri agricoltori, prime vittime e primo settore piÃ¹ colpito da queste devastazioni.\nL'Europa, caro Commissario, ha bisogno di scelte ambiziose, se davvero vogliamo un'agricoltura piÃ¹ resiliente e giusta.",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:timestamp": "2024-09-19T09:11:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_5",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_5"
+      },
+      "del:timestamp": "2024-09-19T09:13:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_6",
+      "del:text": "Dans ce contexte, comment ne pas entendre les cris d'alarme qu'ils nous ont lancÃ©s, notamment au mois de juin, lors des derniÃ¨res Ã©chÃ©ances Ã©lectorales? Oui, les rÃ©centes mesures prises par la Commission vont dans le bon sens. Oui, les rÃ©centes mesures permettent de faciliter, de simplifier et de trouver des solutions rapidement, notamment en termes de liquiditÃ©. Nous le savons, ces phÃ©nomÃ¨nes extrÃªmes, tels que la sÃ©cheresse, vont s'accentuer Ã  l'avenir. C'est pourquoi l'urgence est de garantir Ã  nos agriculteurs un revenu dÃ©cent, une juste reconnaissance des efforts rÃ©alisÃ©s pour la prÃ©servation de notre environnement et des rÃ¨gles de concurrence Ã©quitables.",
+      "del:madeBy": {
+        "@id": "participant_6"
+      },
+      "del:timestamp": "2024-09-19T09:14:53"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_7",
+      "del:text": "Es gibt aber auch stillere Katastrophen. Der stille Killer Hitze hat allein letztes Jahr fast 50Â 000 Menschen in Europa getÃ¶tet, und es wÃ¤ren noch viel mehr gewesen, wenn nicht schon AnpassungsmaÃnahmen erfolgt wÃ¤ren.\nAm stÃ¤rksten betroffen sind natÃ¼rlich unsere Landwirtinnen und Landwirte, und deswegen ist es so Ã¼beraus wichtig, dass wir uns da anpassenÂ â dass wir weniger intensiv wirtschaften, dass weitere Fruchtfolgen gemacht werden, dass wir den FlÃ¼ssen mehr Raum geben, sprich, dass wir das Gesetz zur Wiederherstellung der Natur endlich umsetzen.\nHerr Kommissar, ich baue darauf, dass die Kommission nicht nur einen Klimaanpassungsplan, sondern ein Klimaanpassungsgesetz vorlegen wird, denn ein Plan alleine wird uns in Europa nicht ausreichen.",
+      "del:madeBy": {
+        "@id": "participant_7"
+      },
+      "del:timestamp": "2024-09-19T09:16:15"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_8",
+      "del:text": "ÎÏ Î±Î½Î±Î»Î¬Î²ÎµÎ¹ ÎµÏÎ¹ÏÎ­Î»Î¿ÏÏ Î¿ ÎºÎ±Î¸Î­Î½Î±Ï ÏÎ·Î½ ÎµÏÎ¸ÏÎ½Î· ÏÎ¿Ï. ÎÎµÎ½ Î±ÏÎºÎ¿ÏÎ½ Î¿Î¹ Î±ÏÎ­ÏÎ¼Î¿Î½ÎµÏ ÏÏÎ¶Î·ÏÎ®ÏÎµÎ¹ÏÎ Î±ÏÎ±Î¹ÏÎ¿ÏÎ½ÏÎ±Î¹ Î­ÏÎ³Î±. Î ÎºÎ»Î¹Î¼Î±ÏÎ¹ÎºÎ® Î±Î»Î»Î±Î³Î®, ÏÎ¿Ï ÏÎ±Î»Î±Î½Î¯Î¶ÎµÎ¹ ÏÎ¿ÏÏ Î±Î³ÏÏÏÎµÏ Î¼Î±Ï, ÎµÎ¯Î½Î±Î¹ Î±ÏÎ¿ÏÎ­Î»ÎµÏÎ¼Î± ÎºÎ±Î¹ Î¿ÏÎ¹ÏÎ¼Î­Î½ÏÎ½ ÎµÏÏÏÏÎ±ÏÎºÏÎ½ âÎ³Î¹Î± Î½Î± ÎµÎ¯Î¼Î±ÏÏÎµ ÎµÎ¹Î»Î¹ÎºÏÎ¹Î½ÎµÎ¯Ïâ ÏÎ¿Î»Î¹ÏÎ¹ÎºÏÎ½, ÏÎ¿Ï Î¸ÏÏÎ¹Î¬Î¶Î¿ÏÎ½ ÏÏÎ¿Î½ Î²ÏÎ¼Ï ÏÎ¿Ï ÎºÎ­ÏÎ´Î¿ÏÏ ÏÏÎ½ Î¼ÎµÎ³Î¬Î»ÏÎ½ ÎµÏÎ±Î¹ÏÎµÎ¹ÏÎ½ ÏÎ¿ ÏÎµÏÎ¹Î²Î¬Î»Î»Î¿Î½ ÎºÎ±Î¹ ÏÎ· Î´Î·Î¼ÏÏÎ¹Î± ÏÎ³ÎµÎ¯Î±. ÎÎ¼ÎµÎ¯Ï Î¸Î± ÏÏÎ½ÎµÏÎ¯ÏÎ¿ÏÎ¼Îµ ÏÎ¿Î½ Î±Î³ÏÎ½Î± Î³Î¹Î± ÏÎ·Î½ ÏÏÎ¿ÏÏÎ±ÏÎ¯Î± ÏÎ¿Ï ÏÎµÏÎ¹Î²Î¬Î»Î»Î¿Î½ÏÎ¿Ï Î±Î»Î»Î¬ ÎºÎ±Î¹ Î³Î¹Î± ÏÎ± Î´Î¯ÎºÎ±Î¹Î± Î±Î¹ÏÎ®Î¼Î±ÏÎ± ÏÏÎ½ Î±Î³ÏÎ¿ÏÏÎ½. Î£Î±Ï ÎºÎ±Î»Î¿ÏÎ¼Îµ Î½Î± ÏÏÎ·ÏÎ¯Î¾ÎµÏÎµ Î­Î¼ÏÏÎ±ÎºÏÎ± Î±ÏÏ ÏÎ¿ Î³ÎµÏÏÎ³Î¹ÎºÏ Î±ÏÎ¿Î¸ÎµÎ¼Î±ÏÎ¹ÎºÏ ÏÎ¿ÏÏ Î±Î³ÏÏÏÎµÏ ÎºÎ±Î¹ Î½Î± ÏÏÎ¿ÏÏÏÎ®ÏÎµÏÎµ ÏÎµ Î´Î·Î¼ÏÏÎ¹ÎµÏ ÎµÏÎµÎ½Î´ÏÏÎµÎ¹Ï Î³Î¹Î± Î½Î± Î´Î·Î¼Î¹Î¿ÏÏÎ³Î·Î¸Î¿ÏÎ½ ÎºÎ±Î¹ Î¼Î¿Î½Î¬Î´ÎµÏ Î±ÏÎ±Î»Î¬ÏÏÏÎ·Ï, Î¼ÎµÏÎ±Î¾Ï Î¬Î»Î»ÏÎ½, ÏÏÏÎµ Î½Î± Î±Î½ÏÎ¹Î¼ÎµÏÏÏÎ¯ÏÎ¿ÏÎ¼Îµ ÏÎ¿ ÏÏÏÎ²Î»Î·Î¼Î± ÏÎ·Ï Î»ÎµÎ¹ÏÏÎ´ÏÎ¯Î±Ï.",
+      "del:madeBy": {
+        "@id": "participant_8"
+      },
+      "del:timestamp": "2024-09-19T09:17:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_9",
+      "del:text": "Meine Fraktion ESN lehnt es entschieden ab, von einer weltweiten Zunahme extremer Wetterereignisse zu sprechen, die aufgrund des Klimawandels entstehen. Wir lehnen es auch ab, die gesamte WeltbevÃ¶lkerung stÃ¤ndig in Panik und Angst zu versetzen.\nJetzt wird es richtig interessant: Im aktuellen Sachstandsbericht des IPCC stellt der Weltklimarat hÃ¶chstpersÃ¶nlich im zwÃ¶lften Kapitel auf SeiteÂ 1856 fest, dass es weltweit aufgrund der bisher verfÃ¼gbaren Daten keine Zunahme an Ãberschwemmungen, Starkregen und DÃ¼rren gibt. Und dieser Bericht zeigt auÃerdem, dass sogar bis zum Ende dieses Jahrhunderts keine Zunahme zu erwarten ist.\nWie passt das alles zusammen? Das, was tatsÃ¤chlich zugenommen hat, sind haltlose Behauptungen von Politikern, die die globale ErwÃ¤rmung fÃ¤lschlicherweise mit extremen Wetterereignissen in Verbindung bringen.\nDas Klima hat sich schon immer geÃ¤ndert. Die Hoffnung auf ein perfektes, stabiles Klima ist genauso sinnlos wie die Vorstellung, dass das Wetter jeden Tag gleich sein kann. Der Klimawandel kann nicht vom Menschen kontrolliert werden, schon gar nicht die globale Temperatur. Selbst wenn wir in der EU ab 2050 keinerlei CO2âEmissionen mehr ausstoÃen wÃ¼rden, wÃ¼rde das rein gar nichts am Klima und den Wetterereignissen Ã¤ndern. Durch die Klimagesetze werden aber gerade unsere Wirtschaft ruiniert und die Existenzen von Millionen Familien vernichtet. Alles, um das Klima zu verÃ¤ndern? Oder geht es hier um Macht und Profitinteressen? Das ist hier die entscheidende Frage.",
+      "del:madeBy": {
+        "@id": "participant_9"
+      },
+      "del:timestamp": "2024-09-19T09:19:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_10",
+      "del:text": "Leider ist das, was wir sehen, nicht mehr auÃergewÃ¶hnlich, es ist leider der neue Normalzustand. Das hat Auswirkungen auf die Landwirtschaft, die Produktion. Die Ernte von zum Beispiel Sojablumen und Mais wird sich in diesem Jahr um rund 5Â % europaweit verringern. Das ist ein Problem, ein groÃes Problem natÃ¼rlich fÃ¼r die BÃ¤uerinnen und Bauern, die davon betroffen sind, das ist aber auch ein Problem fÃ¼r die GesamtbevÃ¶lkerung. Das ist nÃ¤mlich ein Problem fÃ¼r die ErnÃ¤hrungssicherheit in Europa, und das wird Auswirkungen auf die Lebensmittelpreise haben und trifft dann letztendlich alle Menschen.\nDeswegen glaube ich, wir mÃ¼ssen dem Ganzen vorbeugen, natÃ¼rlich gegen den Klimawandel ankÃ¤mpfen, aber uns auch anpassen, und vor allem die Landwirtschaft muss sich auch anpassen. Sie, Herr Kommissar, haben heute eine Reihe von MaÃnahmen aufgezeigt, die wir angehen kÃ¶nnen. Da ist natÃ¼rlich das Krisenmanagement, aber wir mÃ¼ssen auch eine stabilere Risikovorsorge in der GAP haben, und wir mÃ¼ssen vor allem in den Bereich BewÃ¤sserung investieren. Immer noch landen 95Â % des SÃ¼Ãwassers direkt im Meer, und ich glaube, da kann man vieles noch tun, um die Wasserversorgung der Landwirtschaft zu verbessern.\nAlso, diese MaÃnahmen mÃ¼ssen wir dringend angehen, dann werden wir die nÃ¤chsten Jahre hier erfolgreich weiterhin Landwirtschaft machen kÃ¶nnen.",
+      "del:madeBy": {
+        "@id": "participant_10"
+      },
+      "del:timestamp": "2024-09-19T09:22:28"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_11",
+      "del:text": "Necesitamos soluciones y medidas preventivas a largo plazo, y la respuesta son los fondos europeos: la polÃ­tica agrÃ­cola comÃºn y la polÃ­tica de cohesiÃ³n alineada con el Pacto Verde pueden mitigar el impacto de estas sequÃ­as, pueden promover prÃ¡cticas agrÃ­colas sostenibles y pueden garantizar la adaptaciÃ³n de nuestras comunidades al cambio climÃ¡tico.\nLa ComisiÃ³n debe aprobar una estrategia de resiliencia hÃ­drica para dar una respuesta global y estable: no podemos reaccionar improvisadamente ante cada sequÃ­a. En mi tierra, mientras las hojas de los almendros y las oliveras se secan mostrando un paisaje desolador, y el Gobierno regional no hace nada para evitarlo, solo el Gobierno de EspaÃ±a aprueba ayudas. La UniÃ³n Europea tambiÃ©n debe estar a la altura.",
+      "del:madeBy": {
+        "@id": "participant_11"
+      },
+      "del:timestamp": "2024-09-19T09:24:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_12",
+      "del:text": "Dibattere sulle conseguenze della siccitÃ , delle alluvioni e dei fenomeni estremi Ã¨ importante ed Ã¨ dovere dell'Europa e degli Stati prendersi cura dei territori colpiti, ma puntare il dito esclusivamente sull'uomo e sui cambiamenti climatici toglie anche la responsabilitÃ  a quelli che, certe opere, proprio non le vogliono.\nQuando si parla di siccitÃ  bisogna andare nella direzione opposta al credo degli ecologisti. Per combattere questi fenomeni serve piÃ¹ uomo, servono piÃ¹ lavori e piÃ¹ investimenti, servono piÃ¹ strutture costruite sui territori, servono bacini idrici, a cui spesso gli ambientalisti si oppongono, mentre contro le alluvioni servono vasche di contenimento, barriere mobili e pulizia degli argini. E, anche qui, la sinistra spesso Ã¨ contraria.\nPer quanto riguarda gli agricoltori, in questi anni l'Europa li ha scandalosamente colpevolizzati, additandoli come nemici del clima, quando invece sono importantissimi per i territori. Soprattutto in questi momenti difficili, vanno sostenuti, perchÃ© sono loro che lavorano la terra, che se ne prendono cura â i veri presidi dei territori.\nInsomma, basta ideologia: servono serietÃ  e piÃ¹ responsabilitÃ , anche dalle istituzioni europee, per aiutare le popolazioni colpite.",
+      "del:madeBy": {
+        "@id": "participant_12"
+      },
+      "del:timestamp": "2024-09-19T09:25:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_13",
+      "del:text": "Gli eventi atmosferici che ciclicamente colpiscono i vari Stati membri dell'Unione europea ci dovrebbero far capire che non ha piÃ¹ alcun senso continuare a parlare in modo anacronistico di lotta ai cambiamenti climatici, ma Ã¨ piÃ¹ opportuno cominciare a parlare di adeguamento o adattamento ai cambiamenti climatici, che ci sono sempre stati e ci saranno sempre, soprattutto per effetto della variabile intensitÃ  dell'attivitÃ  solare.\nBasta, quindi, con lo spreco immane di risorse pubbliche, che, lungi dal proteggerci dagli effetti dei cambiamenti climatici, finiscono solo per far perdere competitivitÃ  alla nostra economia e alle nostre attivitÃ  produttive.\nLe nostre regioni sono colpite ciclicamente, a volte da eccessive precipitazioni atmosferiche e a volte da periodi di prolungata siccitÃ . Crediamo che non ci voglia molto a capire che bisogna costruire bacini di contenimento e di stoccaggio di acqua, che possono essere riempiti nelle stagioni piÃ¹ piovose e utilizzati nelle stagioni di maggiore siccitÃ . In territori desertici sono stati costruiti impianti di desalinizzazione dell'acqua di mare a scopo di utilizzo umano, ma non capiamo perchÃ© questo non sia possibile nel territorio dell'Unione europea.\nIn molte regioni dell'Unione europea molti territori di notevole pregio ambientale vengono irrimediabilmente deturpati dalla installazione di orrende e costosissime pale eoliche â micidiali strumenti di distruzione di massa degli uccelli migratori â o da distese immense di pannelli fotovoltaici, senza che coloro che sono pervasi dall'ideologia animale e ambientalista trovino nulla da obiettare o per cui protestare.\nL'Unione europea deve cambiare le politiche con le quali affrontare gli effetti dei cambiamenti climatici, puntando e investendo corposamente e convintamente sulle opere di manutenzione del territorio.",
+      "del:madeBy": {
+        "@id": "participant_13"
+      },
+      "del:timestamp": "2024-09-19T09:27:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_14",
+      "del:text": "The two resolutions I would want this new Commission to champion: are first, a commitment to invest in pan-European sustainable power-generation projects. For example, the massive potential that exists off the west coast of Ireland can not only aid that country, but can aid Europe in lessening its dependency on Russian gas.\nThe second issue is to create a new funding stream that is separate and distinct from CAP, which would reward farms rather than just a cost forgone metric, as I said, but champion enviro- and eco-schemes. And that would allow CAP, of course, to return to its original remit of supplementing farm income and supporting sustainable food systems to produce, that would align our environmental ambition with consumer sentiment and thus, of course, deliver a dividend for farmers, for society and climate change.",
+      "del:madeBy": {
+        "@id": "participant_14"
+      },
+      "del:timestamp": "2024-09-19T09:29:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_15",
+      "del:text": "Climate change is intensifying. Droughts, extreme weather events and floods are not only devastating to ecosystems, but also endanger the livelihoods of our farmers and entire communities in the European Union. Preparing for those challenges means investing better in land and water management, and focusing on more sustainable and climateâresilient farming practices. At the same time, it's also crucial to effectively implement Union disaster resilience goals, promoting stronger cooperation and coordination among Member States to improve risk prevention and enhance civil protection.",
+      "del:madeBy": {
+        "@id": "participant_15"
+      },
+      "del:timestamp": "2024-09-19T09:31:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_16",
+      "del:text": "Quest'anno, ad esempio, le temperature in Sicilia, Puglia e Calabria hanno superato i 45Â°C per diversi giorni, causando perdite devastanti nei raccolti. E mentre in questi giorni le alluvioni e le inondazioni colpiscono l'Emilia Romagna â ai cui cittadini va tutta la mia solidarietÃ  â solo ieri la presidente Meloni chiedeva di cancellare il Green Deal. In realtÃ , le inondazioni e le siccitÃ  sono strettamente correlate e sono frutto di quei cambiamenti climatici che l'Europa dovrebbe combattere con ancora maggiore forza. Alla Meloni noi diciamo: le politiche ambientali come il Green Deal europeo e la strategia \"farm to fork\" non sono un capriccio, ma sono una necessitÃ , una necessitÃ  per difendere le nostre produzioni e la sicurezza alimentare dei nostri cittadini e i cittadini stessi.\nNoi del Movimento Cinque Stelle proponiamo la creazione di un fondo di emergenza climatica per la prevenzione di questi disastri naturali, attraverso politiche attente ai territori e alle future sfide ambientali. Il futuro del mondo in cui viviamo Ã¨ nelle nostre mani. Dobbiamo prendercene cura.",
+      "del:madeBy": {
+        "@id": "participant_16"
+      },
+      "del:timestamp": "2024-09-19T09:32:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_17",
+      "del:text": "OgÅoszony na poczÄtku wrzeÅnia dialog strategiczny to nic innego jak wyeliminowanie hodowli zwierzÄcej, zaostrzenie rygorÃ³w Årodowiskowych i klimatycznych oraz wÅÄczenie rolnictwa do systemu ETS. Wszystko po prostu bÄdzie droÅ¼sze i spoza Europy. Zamiast wolnoÅci dziaÅalnoÅci rolnej Unia konsekwentnie realizuje plan likwidacji europejskiego rolnictwa.",
+      "del:madeBy": {
+        "@id": "participant_17"
+      },
+      "del:timestamp": "2024-09-19T09:34:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_18",
+      "del:text": "Hay que trabajar y, por tanto, estamos de acuerdo en que en este momento se haya creado una comisarÃ­a para el agua y en que se trabaje en un plan europeo por el agua y en un pacto europeo por el agua, porque no se puede politizar este tema, es un tema social. AdemÃ¡s, el acceso al agua estÃ¡ en la Carta de Derechos Humanos. Y hay que trabajar porque se estÃ¡ destruyendo el 60Â % de los cultivos en muchos territorios. No podemos desdeÃ±ar ninguna fuente hÃ­drica, no podemos politizar la desalaciÃ³n, el agua regenerada o las interconexiones. Lo que estÃ¡ claro es que hay que hacer una revoluciÃ³n hÃ­drica, en toda Europa, y el tope lo ponen solamente los cientÃ­ficos, no los polÃ­ticos.\nLa polÃ­tica agrÃ­cola comÃºn tiene que ser una herramienta para esa revoluciÃ³n hÃ­drica, para el equilibrio hÃ­drico que buscamos, junto con otros fondos europeos adicionales. No olvidemos que el agua se convierte en la agricultura en alimentos, esos alimentos fundamentales que necesitan los europeos para una soberanÃ­a alimentaria y para consumir alimentos sanos y sostenibles.",
+      "del:madeBy": {
+        "@id": "participant_18"
+      },
+      "del:timestamp": "2024-09-19T09:35:19"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_19",
+      "del:text": "FÃ¶r mÃ¥nga lantbrukare innebÃ¤r detta en osÃ¤ker framtid med minskade inkomster och Ã¶kad sÃ¥rbarhet. Men det handlar inte bara om ekonomiska fÃ¶rluster. Det handlar om vÃ¥r matfÃ¶rsÃ¶rjning, vÃ¥r landsbygd och framtiden fÃ¶r vÃ¥ra lokalsamhÃ¤llen.\nEU:s jordbrukspolitik mÃ¥ste dÃ¤rfÃ¶r vara en del av lÃ¶sningen. Vi mÃ¥ste stÃ¶tta vÃ¥ra lantbrukare sÃ¥ att man kan minska utslÃ¤ppen, gÃ¶ra investeringar i klimatsmarta jordbruksmetoder och se till att vi har en hÃ¥llbar vattenhantering. Det Ã¤r bara sÃ¥ vi kan mÃ¶ta framtiden och Ã¶verlÃ¤mna en frisk planet till vÃ¥ra barn och barnbarn.",
+      "del:madeBy": {
+        "@id": "participant_19"
+      },
+      "del:timestamp": "2024-09-19T09:37:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_20",
+      "del:text": "Les pertes spÃ©cifiques au secteur agricole liÃ©es Ã  la sÃ©cheresse sont environ de 5Â milliardsÂ d'euros par an. En France, on annonce une chute de 10Â % des ventes dans le domaine viticole, en particulier dans ma rÃ©gion, en Champagne. Ces Ã©vÃ©nements sont instrumentalisÃ©s par ceux qui poursuivent un agenda idÃ©ologique faisant peser une charge excessive et bureaucratique sur nos agriculteurs Ã  travers un pacte vert mortifÃ¨re. PlutÃ´t que de condamner ceux qui font vivre et rayonner nos Ã©cosystÃ¨mes et nos terroirs, nous devons soutenir l'adaptation des exploitations.\nSi l'Europe veut encore prÃ©tendre dÃ©fendre ses agriculteurs, elle doit cesser de les Ã©craser sous le poids de rÃ¨glements irrÃ©alistes et leur offrir les moyens concrets de surmonter les dÃ©fis climatiques. Les beaux discours ne nourrissent pas les peuples, seulement les actes.",
+      "del:madeBy": {
+        "@id": "participant_20"
+      },
+      "del:timestamp": "2024-09-19T09:38:29"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_21",
+      "del:text": "Wat is nodig? Ik noem twee hoofdlijnen:\nDe eerste hoofdlijn is versterken van de weerbaarheid door plantenveredeling, met behulp van NGT's bijvoorbeeld, door het bodemleven te bevorderen en door goede keuzes te maken in het bouwplan en de teeltmethoden.\nDe tweede hoofdlijn is zorgen dat boeren kunnen ingrijpen, mocht dat nodig zijn. Denk aan gewasbeschermingsmiddelen voor ziektebestrijding, bij voorkeur zo gericht mogelijk via precisielandbouw en met laagrisicomiddelen. Maar we hebben die middelen wel nodig. Zelfs in de biologische sector kan men niet helemaal zonder. Kijk maar naar het gebruik van koper tegen phytophthora in een aantal landen.\nEÃ©n ding is ondertussen duidelijk: kalenderlandbouw werkt niet. Het is toch dwaas dat de overheid voorschrijft wanneer een gewas uiterlijk geoogst moet zijn, wetend dat ieder groeiseizoen weer anders is. Ook hiervoor geldt: geef de boer de ruimte ondernemer te zijn en eigen keuzes te maken.",
+      "del:madeBy": {
+        "@id": "participant_21"
+      },
+      "del:timestamp": "2024-09-19T09:39:45"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_22",
+      "del:text": "Det hÃ¤r Ã¤r varfÃ¶r vi mÃ¥ste fortsÃ¤tta jobba hÃ¥rt fÃ¶r att minska utslÃ¤ppen och stÃ¤rka klimatarbetet. FÃ¶r ofta Ã¤r det just lantbrukare, mÃ¤nniskor runt om pÃ¥ vÃ¥ra landsbygder, skogsÃ¤gare som drabbas hÃ¥rdast av extremvÃ¤der. Det hÃ¤r handlar om vÃ¥r livsmedelsfÃ¶rsÃ¶rjning och mÃ¶jligheten att bo och verka i hela landet. Vi ser det Ã¤ven i Sverige. Torka, skogsbrÃ¤nder, Ã¶versvÃ¤mningar Ã¶kar hela tiden och har gjort det de senaste tio Ã¥ren. Vi mÃ¥ste fortsÃ¤tta prata om klimatfrÃ¥gan, men vi mÃ¥ste ocksÃ¥ prata om klimatanpassning, anpassa sÃ¥vÃ¤l samhÃ¤llet som den enskilda gÃ¥rden.\nVi behÃ¶ver ett nytt ramverk och regelverk fÃ¶r att stÃ¤rka klimatanpassningen, men ocksÃ¥ en klimatanpassningsfond sÃ¥ att det finns pengar fÃ¶r att hantera de hÃ¤r extrema utmaningarna vi stÃ¥r infÃ¶r.",
+      "del:madeBy": {
+        "@id": "participant_22"
+      },
+      "del:timestamp": "2024-09-19T09:41:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_23",
+      "del:text": "Es sollte wohl mittlerweile jeder hier begriffen haben, dass wir hier jetzt etwas tun mÃ¼ssen, dass wir in BÃ¶den investieren mÃ¼ssen, die das Wasser aufnehmen, mit unserer Gemeinsamen Agrarpolitik, dass wir FlÃ¼ssen Platz geben mÃ¼ssen, um eben Ã¼berschwemmen zu kÃ¶nnenÂ â sprich Gesetz zur Wiederherstellung der NaturÂ â und dass wir MaÃnahmen brauchen, um unsere StÃ¤dte zu kÃ¼hlen, um Hitzetote zu vermeiden, die wir leider auch dieses Jahr in Wien bei 53Â TropennÃ¤chten wieder zahlreich gesehen haben.\nWir sollten endlich aufhÃ¶ren, den Kopf in den Sand zu stecken, die Wissenschaft zu ignorieren, den Klimawandel zu leugnen und dabei auch noch die Leute gegeneinander aufzuhetzen. Wir sind gewÃ¤hlt, um BÃ¼rger und BÃ¼rgerinnen zu schÃ¼tzen, und wir sind gewÃ¤hlt, um langfristige Versorgungssicherheit von Lebensmitteln zu gewÃ¤hrleisten. Kommen Sie Ihrer Verantwortung endlich nach!\n(Der Redner ist damit einverstanden, auf eine Frage nach dem Verfahren der âblauen Karteâ zu antworten.)",
+      "del:madeBy": {
+        "@id": "participant_23"
+      },
+      "del:timestamp": "2024-09-19T09:42:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_24",
+      "del:text": "Warum haben Sie MaÃnahmen, die Sie gerade bemÃ¤ngelt haben, nicht schon lÃ¤ngst in Angriff genommen oder umgesetzt? Wenn Sie schon noch in der Regierung sindÂ â das ist ja zum GlÃ¼ck in vielen LÃ¤ndern nicht mehr lange, die GrÃ¼nen werden ja Ã¼berall abgewÃ¤hlt, was gottlob passiertÂ â, warum fÃ¼hren Sie diese Dinge, die Sie kritisiert haben, nicht lÃ¤ngst aus?",
+      "del:madeBy": {
+        "@id": "participant_24"
+      },
+      "del:timestamp": "2024-09-19T09:44:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_25",
+      "del:text": "Die MaÃnahmen, die die GrÃ¼nen in all den LÃ¤ndern gesetzt haben, wo sie regieren, heiÃen Ausbau der erneuerbaren Energie, weniger fossile EnergietrÃ¤ger, mehr Eisenbahn und weniger StraÃen, und Investitionen in den Klimaschutz. So geht zukunftstrÃ¤chtige Politik, und zwar gemeinsam und ohne Sie, die Sie Hass und Zwietracht sÃ¤en.",
+      "del:madeBy": {
+        "@id": "participant_23"
+      },
+      "del:timestamp": "2024-09-19T09:44:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_26",
+      "del:text": "Î ÎºÎ±Î¹Î½Î¿ÏÎ¿Î¼Î¯Î± ÎºÎ±Î¹ Î· ÏÎ·ÏÎ¹Î¿ÏÎ¿Î¯Î·ÏÎ· ÏÏÎ·Î½ Î±Î³ÏÎ¿ÏÎ¹ÎºÎ® ÏÎ±ÏÎ±Î³ÏÎ³Î®, ÎºÎ±Î¸ÏÏ ÎºÎ±Î¹ Î· ÎµÏÎ±ÏÎ¼Î¿Î³Î® Î²Î¹ÏÏÎ¹Î¼ÏÎ½ ÏÏÎ±ÎºÏÎ¹ÎºÏÎ½ Î´Î¹Î±ÏÎµÎ¯ÏÎ¹ÏÎ·Ï ÏÎ´Î¬ÏÏÎ½, ÎµÎ¯Î½Î±Î¹ Î¶ÏÏÎ¹ÎºÎ®Ï ÏÎ·Î¼Î±ÏÎ¯Î±Ï ÎºÎ±Î¹ ÏÏÎ­ÏÎµÎ¹ Î½Î± ÎµÎ½Î¹ÏÏÏÎ¸Î¿ÏÎ½. Î¤Î¿ ÎÏÏÏÏÎ±ÏÎºÏ Î¤Î±Î¼ÎµÎ¯Î¿ ÎÎ»Î»Î·Î»ÎµÎ³Î³ÏÎ·Ï ÎºÎ±Î¹ Î¿ ÎÏÏÏÏÎ±ÏÎºÏÏ ÎÎ·ÏÎ±Î½Î¹ÏÎ¼ÏÏ Î Î¿Î»Î¹ÏÎ¹ÎºÎ®Ï Î ÏÎ¿ÏÏÎ±ÏÎ¯Î±Ï Î´ÏÏÏÏÏÏÏ Î´ÎµÎ½ ÎµÏÎ±ÏÎºÎ¿ÏÎ½. ÎÎ¯Î½Î±Î¹ ÎµÏÎ¹ÏÎ±ÎºÏÎ¹ÎºÎ® Î±Î½Î¬Î³ÎºÎ· Î½Î± Î±Î½Î±Î»Î¬Î²ÎµÏÎµ ÎµÏÏÏÏÎ±ÏÎºÎ­Ï ÏÏÏÏÎ¿Î²Î¿ÏÎ»Î¯ÎµÏ ÎµÎ½Î¯ÏÏÏÏÎ·Ï ÏÏÎ½ ÎµÏÏÏÏÎ±ÏÎºÏÎ½ Î¼Î·ÏÎ±Î½Î¹ÏÎ¼ÏÎ½ Î±Î»Î»Î·Î»ÎµÎ³Î³ÏÎ·Ï ÎºÎ±Î¹ Î½Î± ÏÏÎ¿ÏÎµÎ¯Î½ÎµÏÎµ Î½Î­Î±, ÏÎ¹Î¿ ÏÏÎ¿ÏÎµÏÎ¼Î­Î½Î± ÏÏÎ·Î¼Î±ÏÎ¿Î´Î¿ÏÎ¹ÎºÎ¬ ÎµÏÎ³Î±Î»ÎµÎ¯Î± ÏÎ¿Ï Î¸Î± ÏÏÎ·ÏÎ¯Î¾Î¿ÏÎ½ ÏÎ¹Ï ÏÏÏÎµÏ ÏÎ¿Ï ÎÏÏÎ¿Ï âÎºÎ±Î¹ Î¹Î´Î¹Î±Î¯ÏÎµÏÎ± ÏÎ·Î½ ÎÎ»Î»Î¬Î´Î±, ÏÏÏÎµ Î½Î± Î±Î½ÏÎ¹Î¼ÎµÏÏÏÎ¯ÏÎ¿ÏÎ½ ÏÎ¿ Î¼Î­Î³ÎµÎ¸Î¿Ï ÏÎ·Ï ÏÏÏÎºÎ»Î·ÏÎ·Ï ÎºÎ±Î¹ Î½Î± ÏÏÎ¿ÏÎ±ÏÎ¼Î¿ÏÏÎ¿ÏÎ½ ÏÏÎ·Î½ ÎºÎ»Î¹Î¼Î±ÏÎ¹ÎºÎ® Î±Î»Î»Î±Î³Î®.",
+      "del:madeBy": {
+        "@id": "participant_25"
+      },
+      "del:timestamp": "2024-09-19T09:45:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_27",
+      "del:text": "Tais eventos provocam uma enorme pressÃ£o sobre os agricultores, que apresentam quebras significativas de produÃ§Ã£o, custos cada vez maiores e colocam em risco a prÃ³pria alimentaÃ§Ã£o dos animais. Em muitos casos, as reservas para o inverno jÃ¡ foram consumidas e os agricultores olham para os prÃ³ximos meses com incerteza. Ã esta a realidade tambÃ©m nas ilhas de onde venho, os AÃ§ores, em ilhas como a Graciosa, o Pico, SÃ£o Jorge, entre outras, nÃ£o obstante o constante apoio do Governo Regional.\nAs consequÃªncias sÃ£o severas: menos produÃ§Ã£o de alimentos, os preÃ§os irÃ£o subir e teremos de aumentar as importaÃ§Ãµes, colocando em risco a soberania alimentar na UniÃ£o Europeia.\nÃ urgente criar novos instrumentos de gestÃ£o de crises na agricultura e aumentar a dotaÃ§Ã£o de reserva agrÃ­cola, que Ã© insuficiente para fazer face Ã  quantidade e gravidade dos eventos extremos a que assistimos.\nA seguranÃ§a e a soberania alimentar da UniÃ£o estÃ£o dependentes de uma boa gestÃ£o dos recursos hÃ­dricos, da aposta na ciÃªncia e inovaÃ§Ã£o, na agricultura de precisÃ£o e na digitalizaÃ§Ã£o, de modo a aumentar a eficiÃªncia na utilizaÃ§Ã£o da Ã¡gua e desenvolver espÃ©cies e variedades vegetais mais adaptadas Ã s novas condiÃ§Ãµes edafo-climÃ¡ticas.\nHÃ¡ que aumentar tambÃ©m a captaÃ§Ã£o e armazenamento de Ã¡gua, porque hÃ¡ muita Ã¡gua a correr para o mar. Estudos do Joint Research Center indicam que, se nada for feito, a produtividade de milho em grÃ£o irÃ¡ contrair 22% e a do trigo 49% atÃ© 2050.\nTermino com uma palavra de Ã¢nimo e esperanÃ§a para os nossos agricultores.",
+      "del:madeBy": {
+        "@id": "participant_26"
+      },
+      "del:timestamp": "2024-09-19T09:47:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_28",
+      "del:text": "Por eso urgen medidas de mitigaciÃ³n del cambio climÃ¡tico y tambiÃ©n necesitamos lograr una gestiÃ³n eficiente del agua, modernizar el sistema de regadÃ­o con el uso de tÃ©cnicas inteligentes, y eso cuesta dinero, seÃ±or comisario: apostar por una agricultura de precisiÃ³n que garantice los cultivos y el uso eficiente cuesta dinero; implementar medidas de reciclaje y de reutilizaciÃ³n del agua, puesto que en Europa apenas se recicla el 2,4Â % del agua y por eso hay que aplicar el Reglamento relativo a los requisitos mÃ­nimos para la reutilizaciÃ³n del agua, cuesta tambiÃ©n dineroâ¦ Y tambiÃ©n hay que fomentar el uso de las desaladoras y de otros recursos e infraestructuras.\nTodo esto requiere la financiaciÃ³n y el apoyo financiero de la UniÃ³n Europea y, por supuesto, tambiÃ©n la concesiÃ³n de ayudas directas y pagos directos a esos agricultores afectados, y tambiÃ©n una cosa muy importante: explorar, con valentÃ­a, sin demagogia y con mucha ciencia, el avance de las nuevas tÃ©cnicas genÃ³micas que garantizan cultivos sostenibles y adaptados a la escasez de agua. No hacerlo es quedarnos atrÃ¡s en una tendencia en la que el resto del mundo nos saca ya una gran ventaja, algo que no podemos permitirnos. Tal vez el seÃ±or Draghi deberÃ­a haber incorporado este ejemplo de libro en su informe sobre el futuro de la competitividad europea.",
+      "del:madeBy": {
+        "@id": "participant_27"
+      },
+      "del:timestamp": "2024-09-19T09:48:53"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_29",
+      "del:text": "Y es que ustedes no solo no hacen caso a sus peticiones âni siquiera les escuchanâ, sino que ademÃ¡s les culpan de sus delirios climÃ¡ticos, castigÃ¡ndoles con restricciones fitosanitarias y condiciones tremendamente injustas, en medio de un laberinto de burocracia.\nDesde la comodidad de sus despachos es muy fÃ¡cil hablar, es muy fÃ¡cil que se les llene la boca de demagogia climÃ¡tica, mientras ellos estÃ¡n en el campo, produciendo nuestros alimentos y enfrentÃ¡ndose a la dura realidad que ustedes les han impuesto desde aquÃ­, en este Parlamento.\nSeÃ±orÃ­as, los agricultores no necesitan su alarmismo climÃ¡tico, no es lo que necesitan. Lo que necesitan es que deroguen toda su agenda ecofanÃ¡tica. Lo que necesitan es que respeten la preferencia comunitaria que les exigen y que protejan a nuestro sector primario de la competencia desleal a la que este Parlamento les ha sometido. En definitiva, lo que necesitan es que ustedes no les condenen a desaparecer porque, sin nuestros agricultores, Europa no tiene futuro.\n(La oradora acepta responder a una pregunta formulada con arreglo al procedimiento de la Â«tarjeta azulÂ»)",
+      "del:madeBy": {
+        "@id": "participant_28"
+      },
+      "del:timestamp": "2024-09-19T09:50:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_30",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_29"
+      },
+      "del:timestamp": "2024-09-19T09:52:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_31",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T09:53:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_32",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_29"
+      },
+      "del:timestamp": "2024-09-19T09:53:59"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_33",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_28"
+      },
+      "del:timestamp": "2024-09-19T09:54:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_34",
+      "del:text": "RÃ³wnieÅ¼ upominam siÄ o rolnikÃ³w. Wiem i za to dziÄkujÄ, Å¼e sÄ takie mechanizmy, Å¼e dopÅaty bezpoÅrednie na terenach, ktÃ³re zostaÅy zalane, bÄdÄ dalej wypÅacane. Natomiast rolnicy na poÅudniu Polski stracili tak naprawdÄ moÅ¼liwoÅÄ kontynuacji zbioru burakÃ³w, hodowcy utracili pasze, straciÅy Å¼ycie zwierzÄta, w zwiÄzku z tym rzeczywiÅcie potrzebujÄ pomocy, upomnienia siÄ o to, czy bÄdÄ stworzone dodatkowe pieniÄdze. JuÅ¼ wiemy, Å¼e z Funduszu SolidarnoÅci w tym roku nie ma w ogÃ³le pieniÄdzy na koncie. Na nastÄpny rok zaplanowano tylko ponad miliard euro dla wszystkich krajÃ³w. Potrzebujemy wsparcia Komisji Rolnictwa, by celowo wskazaÄ pieniÄdze dla rolnikÃ³w.",
+      "del:madeBy": {
+        "@id": "participant_31"
+      },
+      "del:timestamp": "2024-09-19T09:55:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_35",
+      "del:text": "Cette situation, combinÃ©e Ã  des rendements cÃ©rÃ©aliers mÃ©diocres et Ã  des prix agricoles insuffisants, va entraÃ®ner une catastrophe dans les trÃ©soreries agricoles Ã  la fin de cette annÃ©e.\nNous demandons donc Ã  la Commission, premiÃ¨rement, une politique europÃ©enne de lutte contre les maladies vectorielles, notamment en matiÃ¨re de vaccination; deuxiÃ¨mement, une gestion centralisÃ©e au niveau europÃ©en des conditions du mouvement des animaux, en lieu et place de la renationalisation actuelle dans les rÃ©glementations et les marchÃ©s, totalement contraire Ã  l'esprit europÃ©en; troisiÃ¨mement, des pistes europÃ©ennes de financement pour l'indemnisation des filiÃ¨res menacÃ©es Ã  court terme.",
+      "del:madeBy": {
+        "@id": "participant_32"
+      },
+      "del:timestamp": "2024-09-19T09:56:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_36",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_33"
+      },
+      "del:timestamp": "2024-09-19T09:58:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_37",
+      "del:text": "EU fossil fuel subsidies were, on average, EURÂ 56 billion per year between 2015 and 2021. Last year, EU fossil fuel subsidies were EURÂ 123 billion. So even now the EU is subsidising the destruction of life on Earth.\nEU agricultural subsidies favour agribusiness over small and medium-scale farms. EU policies and trade deals like Mercosur destroy the possibilities of farmers to sustain their families around the globe.\nGiven these absurd and dangerous policies, asking farmers to produce grain or apples is akin to asking them to produce miracles.\n(The speaker agreed to take a blue-card question)",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2024-09-19T09:59:44"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_38",
+      "del:text": "Da ist schon auch die Frage an Sie: Was haben Sie selbst aktiv bereits dazu beigetragen, dass es eine Ãnderung des Klimawandels gibt? Jemand anderem die Schuld geben, ist immer sehr gut, aber was haben Sie selbst gemacht?",
+      "del:madeBy": {
+        "@id": "participant_35"
+      },
+      "del:timestamp": "2024-09-19T10:01:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_39",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2024-09-19T10:01:44"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_40",
+      "del:text": "Wat betreft het effect van extreem weer op de landbouw zijn er twee zaken van cruciaal belang: kalenderlandbouw en watermanagement.\nVoor de nitraatrichtlijn hebben we afspraken gemaakt over de zogenaamde kalenderlandbouw, maar het is waanzin dat Brussel beslist wanneer een boer kan zaaien, oogsten en mest mag uitrijden zonder rekening te houden met de weersomstandigheden. Dankzij het extreem natte voorjaar zijn diverse gewassen veel later gepoot of gezaaid dan normaal, maar onze boeren verplichten we wel om te oogsten voor 1Â oktober.\nGoed watermanagement houdt in: het vasthouden van water in droge tijden en het zo snel mogelijk afvoeren van water in natte tijden. De afgelopen jaren zijn er vele dammen en waterkeringen in Europa verwijderd om de natuur zijn gang te laten gaan. In Nederland zijn onze waterschappen gelukkig een stuk voorzichtiger. Wij weten immers uit ervaring dat als je waterkeringen weghaalt, je het risico op natte voeten vergroot. Ondanks de recordneerslag inÂ 2023 hebben we dat in Nederland in goede kanalen weten te leiden.\nVolgens experts zullen de weersomstandigheden de komende jaren alleen nog maar onvoorspelbaarder worden. Laten we dus nu de juiste keuzes maken. Bij verantwoordelijk omgaan met water gaat wat mij betreft veiligheid boven wensdenken. Hetzelfde geldt voor de kalenderlandbouw, waarbij onze boeren het vertrouwen verdienen om hun productiekalender aan te kunnen passen aan de onvoorspelbare weersomstandigheden.",
+      "del:madeBy": {
+        "@id": "participant_36"
+      },
+      "del:timestamp": "2024-09-19T10:02:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_41",
+      "del:text": "Î¤Î¹ ÏÏÎ­ÏÎµÎ¹ Î½Î± ÎºÎ¬Î½ÎµÎ¹ Î· ÎÏÏÏÏÎ±ÏÎºÎ® ÎÎ½ÏÏÎ·; ÎÎ± ÏÏÎ­ÏÎµÎ¹ Î½Î± ÎºÎ¹Î½Î·Î¸ÎµÎ¯ Î±ÏÎ¿ÏÎ±ÏÎ¹ÏÏÎ¹ÎºÎ¬. ÎÎ¯Î½Î±Î¹ ÏÎ·Î¼Î±Î½ÏÎ¹ÎºÎ® Î· Î±Î½Î¬ÏÏÏÎ¾Î· ÎºÎ±Î¹ Î· Î²ÎµÎ»ÏÎ¯ÏÏÎ· ÏÏÎ½ ÏÏÏÏÎ·Î¼Î¬ÏÏÎ½ Î­Î³ÎºÎ±Î¹ÏÎ·Ï ÏÏÎ¿ÎµÎ¹Î´Î¿ÏÎ¿Î¯Î·ÏÎ·Ï Î³Î¹Î± Î±ÎºÏÎ±Î¯Î± ÎºÎ±Î¹ÏÎ¹ÎºÎ¬ ÏÎ±Î¹Î½ÏÎ¼ÎµÎ½Î±. ÎÎ­Î»Ï Î½Î± ÏÎ¿Î½Î¯ÏÏ ÏÎ¿ ÎµÎ¾Î®Ï: Î· Î­Î³ÎºÎ±Î¹ÏÎ· ÏÏÎ¿ÎµÎ¹Î´Î¿ÏÎ¿Î¯Î·ÏÎ· Î³Î¹Î± Î±ÏÏÎ¬ ÏÎ± Î±ÎºÏÎ±Î¯Î± ÎºÎ±Î¹ÏÎ¹ÎºÎ¬ ÏÎ±Î¹Î½ÏÎ¼ÎµÎ½Î± ÏÏÎ­ÏÎµÎ¹ Î½Î± Î³Î¯Î½ÎµÏÎ±Î¹ Î±ÏÏ ÎµÎ¾ÎµÎ¹Î´Î¹ÎºÎµÏÎ¼Î­Î½Î¿ÏÏ ÏÏÎ¿Î³Î½ÏÏÏÎµÏ âÎ¿ÏÏÎ¹Î±ÏÏÎ¹ÎºÎ¬ Î¼ÎµÏÎµÏÏÎ¿Î»ÏÎ³Î¿ÏÏ, ÏÏÎ¹ Î±ÏÏ Î¿ÏÎ¿Î¹Î¿ÏÏÎ´Î®ÏÎ¿ÏÎµ, ÎºÎ±Î¹ Î½Î± ÏÏÎ¿ÏÎ¸Î·Î¸Î¿ÏÎ½ ÎºÎ±Î¹ Î¬Î»Î»ÎµÏ ÎºÎ±Î»Î­Ï ÏÏÎ±ÎºÏÎ¹ÎºÎ­Ï... (Î Î ÏÏÎµÎ´ÏÎ¿Ï Î±ÏÎ±Î¹ÏÎµÎ¯ ÏÎ¿Î½ Î»ÏÎ³Î¿ Î±ÏÏ ÏÎ¿Î½ Î¿Î¼Î¹Î»Î·ÏÎ®)",
+      "del:madeBy": {
+        "@id": "participant_37"
+      },
+      "del:timestamp": "2024-09-19T10:04:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_42",
+      "del:text": "Ce que l'on dit peu, c'est que les consÃ©quences de ces Ã©vÃ©nements auraient pu Ãªtre Ã©vitÃ©es si nous avions correctement entretenu notre patrimoine humain et matÃ©riel. Combien de ponts s'effondrent lors des inondations? Combien d'hectares brÃ»lent parce que les chemins d'urgence ne sont plus accessibles? Combien d'hectares de rÃ©coltes meurent parce qu'on ne peut plus irriguer? Ces milliards dÃ©pensÃ©s Ã  gÃ©rer les consÃ©quences et Ã  dÃ©dommager les victimes pourraient Ãªtre investis dans des retenues d'eau, dans l'entretien des ponts, des Ã©gouts et des routes â ces dÃ©marches de bon sens qu'ont nos agriculteurs â, mais encore faut-il la volontÃ© politique et nous ne l'avons pas. C'est vrai qu'Ã  vos yeux, il est plus sexy de proposer la fin du moteur thermique pourÂ 2035 plutÃ´t qu'un grand plan d'entretien des digues agricoles. L'une des deux propositions est pourtant moins coÃ»teuse et plus utile. Il est temps de vous rÃ©veiller et d'agir.",
+      "del:madeBy": {
+        "@id": "participant_38"
+      },
+      "del:timestamp": "2024-09-19T10:06:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_43",
+      "del:text": "Sans les Torquemada de la gauche verte et rouge qui ne connaissent rien Ã  nos campagnes, aux saisons, Ã  notre amour des animaux, la France Ã©tait la premiÃ¨re agriculture d'Europe, et je sais comment elle le restera: en tÃ©moignant de toute sa foi dans les sages paysans de Sologne plutÃ´t qu'en s'abandonnant aux Ã©pigones de GretaÂ Thunberg. LÃ¢chez vos rÃ¨glements, vos peurs et votre propagande, laissez-nous tranquilles et notre agriculture sera sauvÃ©e!",
+      "del:madeBy": {
+        "@id": "participant_39"
+      },
+      "del:timestamp": "2024-09-19T10:07:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_44",
+      "del:text": "V minulem mandatu smo precej postorili za veÄjo odzivnost na krize. Ne reÄem, izboljÅ¡ali smo mehanizem, nakupili skupna letala za gaÅ¡enje poÅ¾arov, vkljuÄili veÄ drÅ¾av v evropske mehanizme. Solidarnost je temelj Evropske unije in ravno pri teh nesreÄah se to zares tudi pokaÅ¾e.\nAmpak odpravljanje posledic je prepoÄasno in teÅ¾je je nastalo Å¡kodo popraviti, kot pa se na naravne nesreÄe pripraviti, da te niso tako uniÄujoÄe. Pogledati moramo resnici v oÄi. In podnebne spremembe so resnica. Naravne katastrofe kot posledica so resnica in ni reÅ¡itev v tem, da zvodenimo famozni âGreen dealâ, kot trdijo nekateri, ampak je reÅ¡itev v tem, da poveÄamo namenska sredstva Evropske unije in investiramo v to, da drÅ¾ave prilagodijo infrastrukturo ter s tem zmanjÅ¡ajo ogroÅ¾enost in posledice na lokalni ravni za tiste, ki jih te nesreÄe najbolj seveda prizadenejo.",
+      "del:madeBy": {
+        "@id": "participant_40"
+      },
+      "del:timestamp": "2024-09-19T10:09:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_45",
+      "del:text": "Questo evento drammatico ci ricorda che non possiamo piÃ¹ rimandare un'azione concreta e incisiva per affrontare le emergenze legate al clima. Bene, allora, la scelta della Presidente von der Leyen di affidare alla commissaria per l'Ambiente Jessica Roswall anche la delega alla resilienza idrica. Questo dimostra la sua attenzione su un tema ormai cruciale, ma anche la forte preoccupazione che dobbiamo esprimere rispetto a una risorsa naturale, indispensabile, insostituibile, ma purtroppo non infinita.\nDurante la scorsa legislatura, Forza Italia ha chiesto un dibattito in Parlamento e ha ottenuto dalla Commissione un impegno a intraprendere azioni concrete per prevenire e mitigare le drammatiche conseguenze di questo fenomeno. Il settore agricolo sarÃ  quello maggiormente penalizzato, perchÃ© ovviamente incide sulla produttivitÃ  e mette a repentaglio la nostra autonomia e sicurezza alimentare.\nSiamo all'inizio della nuova legislatura e colgo l'occasione per rinnovare l'appello perchÃ© si arrivi concretamente a un piano infrastrutturale europeo per l'uso, il riutilizzo e lo stoccaggio dell'acqua, che permetta di fronteggiare questa calamitÃ  in modo efficace. Al contempo, abbiamo bisogno di accelerare la legislazione europea sull'impiego delle tecniche di evoluzione assistita, che sono ben distinte dagli OGM, per sviluppare nuove colture che siano piÃ¹ resilienti ai nuovi agenti patogeni, ma anche alla scarsitÃ  dell'acqua.\nL'Unione europea dimostri una visione strategica e coraggiosa nell'affrontare la crisi idrica, perchÃ© solo attraverso un impegno deciso e un coordinamento tra gli Stati potremo garantire la tutela delle risorse naturali e la sostenibilitÃ  delle nostre economie.",
+      "del:madeBy": {
+        "@id": "participant_41"
+      },
+      "del:timestamp": "2024-09-19T10:10:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_46",
+      "del:text": "Oggi, purtroppo, l'emergenza Ã¨ diventata urgenza. L'acqua Ã¨ un problema dove non cade ed Ã¨ un pericolo enorme nei territori dove purtroppo cade in maniera incontrollabile e dannosa, come dimostrano i fatti recenti nei paesi dell'est e del centro Europa, ma in queste ore anche nel mio paese e nella mia regione, dove ha perso la vita il caporeparto dei vigili del fuoco Antonio Ciccorelli, che oggi qui voglio ricordare.\nL'Europa ha il dovere di indicare soluzioni e interventi. Lavoriamo insieme per un Blue Deal europeo con strategie di sistema, azioni di mitigazione del clima su scala globale, interventi di adattamento ed efficienza delle reti, partendo dall'analisi della domanda e dell'offerta dell'acqua.\nL'acqua Ã¨ la forza motrice della natura, diceva Leonardo da Vinci: a noi il compito di preservare e governare la piÃ¹ grande forza che il pianeta ci ha dato.",
+      "del:madeBy": {
+        "@id": "participant_42"
+      },
+      "del:timestamp": "2024-09-19T10:12:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_47",
+      "del:text": "La solution, bien Ã©videmment, ce n'est pas la dÃ©croissance agricole. Il faut au contraire assurer notre souverainetÃ© alimentaire et, contrairement Ã  ce que veulent les Ã©cologistes, accroÃ®tre les progrÃ¨s scientifiques et techniques. Dans le domaine de la sÃ©cheresse la solution ce n'est pas, comme le veulent les extrÃ©mistes Ã©cologistes, laisser couler l'eau douce dans la mer et jeter des cocktails Molotov contre des gendarmes Ã  Sainte-Soline en France pour empÃªcher le stockage de l'eau.\nLutter contre les consÃ©quences des alÃ©as climatiques que nous constatons, eh bien, c'est tout simplement tourner le dos radicalement aux idÃ©ologies Ã©cologistes catastrophistes et aux discours du mÃªme ton, ces discours Ã©cologistes catastrophistes qui contaminent beaucoup trop nos institutions europÃ©ennes.",
+      "del:madeBy": {
+        "@id": "participant_43"
+      },
+      "del:timestamp": "2024-09-19T10:14:09"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_48",
+      "del:text": "La siccitÃ  Ã¨ il reciproco dello stesso fenomeno. Ã urgente rafforzare l'apparato europeo di protezione civile e riformare le regole di accesso al Fondo di solidarietÃ , che deve essere piÃ¹ capiente e piÃ¹ rapido, mentre oggi costituisce solo una forma di parziale ristoro per i bilanci pubblici.\nL'Agenzia europea dell'ambiente ha stimato in 110Â miliardi di euro l'impatto economico delle catastrofi climatiche negli anni 2021 e 2022; maggiore Ã¨ stato il peso nel 2023 e lo sarÃ  ancora nel 2024. In Sicilia, la mia regione, i danni per gli agricoltori hanno giÃ  superato i 3Â miliardi di euro e sta intervenendo il governo italiano attraverso il commissario per la siccitÃ  per realizzare dissalatori, impianti e maggiori dighe. Esistono le risorse per la gestione ordinaria delle politiche di coesione, ma non Ã¨ piÃ¹ sufficiente l'ordinario.\nIn conclusione, serve una risposta che affianchi gli strumenti attuali con la costituzione di un fondo europeo per la prevenzione e la tutela del territorio a valenza pluriennale. Solo cosÃ¬ potremo dare risposte agli agricoltori e alle comunitÃ  locali.",
+      "del:madeBy": {
+        "@id": "participant_44"
+      },
+      "del:timestamp": "2024-09-19T10:15:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_49",
+      "del:text": "Europese inwoners worden steeds vaker geconfronteerd met droogtes, zeespiegelstijging en overstromingen. Ook de landbouw wordt hard geraakt. Overal, in het zuiden van Europa, maar ook bijvoorbeeld in Nederland, resulteert droogte in zoetwatertekorten voor onder andere de landbouw, maar ook in verdere verzilting van de bodem, waar gewassen niet tegen bestand zijn. Beide situaties raken onze voedselvoorziening.\nDaarom roep ik de Europese Commissie op om haar aangekondigde waterweerbaarheidsstrategie te publiceren. Burgers, boeren en bedrijven hebben zo snel mogelijk een gecoÃ¶rdineerd plan nodig, ook om beter om te gaan met droogte. Om onze voedselzekerheid te garanderen, moeten op korte termijn innovaties worden toegelaten die bijdragen aan klimaatbestendige gewassen, waaronder nieuwe veredelingstechnieken, de zogenaamde NGTâs. Hoe kijkt de commissaris daarnaar? Wordt hier snel werk van gemaakt?",
+      "del:madeBy": {
+        "@id": "participant_45"
+      },
+      "del:timestamp": "2024-09-19T10:16:52"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_50",
+      "del:text": "FenÃ³menos meteorolÃ³gicos extremos como este nos recuerdan la importancia de invertir en medidas e infraestructuras que ayuden a la prevenciÃ³n. Las inundaciones y las sequÃ­as son dosÂ caras de la misma moneda: es necesario hacer una mejor gestiÃ³n del agua y sus repercusiones en la autonomÃ­a alimentaria de la UniÃ³n Europea.\nEn EspaÃ±a, por desgracia, somos muy conscientes de los efectos que tienen las sequÃ­as sobre las personas, nuestra masa forestal, nuestros suelos y nuestros cultivos. Este es un problema que afecta a todos los europeos y que requiere una visiÃ³n transfronteriza, inversiones desde todas las instancias y polÃ­ticas coordinadas.\nDesde la UniÃ³n Europea tenemos que fomentar inversiones tanto en el mantenimiento y construcciÃ³n de presas, para asegurar un caudal constante y la generaciÃ³n de energÃ­as renovables, como en sistemas de regadÃ­o que nos permitan un uso mÃ¡s eficiente del agua.Â Hay que evitar situaciones como la que vivimos en mi regiÃ³n, La Rioja, donde la presa de SotoâTerroba lleva diecisÃ©isÂ aÃ±os de obras y trabas. La UniÃ³n Europea debe destinar inversiones y recursos para aliviar la sequÃ­a que vivimos.",
+      "del:madeBy": {
+        "@id": "participant_46"
+      },
+      "del:timestamp": "2024-09-19T10:18:02"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_51",
+      "del:text": "E, di fronte a tutto ciÃ², ancora c'Ã¨ chi si ostina a parlare di estremismi o di ideologie ecologiste, quando l'ecologia diceva esattamente quello che sta accadendo. Non possiamo parlare solo di adattamento senza parlare anche di mitigazione: Ã¨ come curare una ferita senza togliere il pugnale. Dobbiamo ascoltare la scienza, dobbiamo farlo subito.\n(L'oratrice accetta di rispondere a una domanda \"cartellino blu\")",
+      "del:madeBy": {
+        "@id": "participant_47"
+      },
+      "del:timestamp": "2024-09-19T10:19:29"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_52",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_48"
+      },
+      "del:timestamp": "2024-09-19T10:20:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_53",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_47"
+      },
+      "del:timestamp": "2024-09-19T10:21:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_54",
+      "del:text": "Ale takÅ¼e z dumÄ chciaÅbym mÃ³wiÄ w moim jÄzyku ojczystym, poniewaÅ¼ to, co dzieje siÄ teraz w mojej ojczyÅºnie, w Polsce, to ogromna tragedia. Te ogromne zalewy, potopy wrÄcz moÅ¼na by nazwaÄ, wielkie powodzie, majÄ miejsce miÄdzy innymi dlatego, Å¼e szaleÅstwo ekoterroryzmu zostaÅo dopuszczone do gÅosu. Lewactwo, ktÃ³re popiera i popieraÅo organizacje ekoterrorystyczne, bo tak trzeba je nazwaÄ, organizacje, ktÃ³re przeciwstawiaÅy siÄ budowie infrastruktury przeciwpowodziowej, to sÄ ludzie odpowiedzialni za to, co dzieje siÄ teraz w Polsce i w tej czÄÅci Europy.Â Nikt nie mÃ³wi o tym, o czym usÅyszeliÅmy wczoraj. Niemiecki wywiad prÃ³bowaÅ zwerbowaÄ jednego z ekologÃ³w, z dziaÅaczy ekologicznych, aby protestowaÅ przeciwko inwestycjom w Polsce. To jest wojna wywiadÃ³w, a ekoterroryzm jest wykorzystywany przeciwko rozwojowi takich paÅstw jak Polska.\nDziÄkujÄ, panie komisarzu, Å¼e stoi pan na straÅ¼y rozsÄdku w Europie. My, konserwatyÅci, stoimy na straÅ¼y rozsÄdku i bÄdziemy nazywaÄ rzeczy po imieniu. Stop ekoterroryzmowi!\n(MÃ³wca zgodziÅ siÄ na pytanie zasygnalizowane przez podniesienie niebieskiej kartki)",
+      "del:madeBy": {
+        "@id": "participant_49"
+      },
+      "del:timestamp": "2024-09-19T10:22:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_55",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_50"
+      },
+      "del:timestamp": "2024-09-19T10:24:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_56",
+      "del:text": "On the other side, we have a government now, we have MrÂ Tusk, who went out on Friday and said: 'Oh, the weather is not so bad'. So if you're asking us what is happening and why there is so much damage, it's because of Tusk and his party, not about infrastructure. That is a fact.",
+      "del:madeBy": {
+        "@id": "participant_49"
+      },
+      "del:timestamp": "2024-09-19T10:24:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_57",
+      "del:text": "Ãn ultimii patru ani, am solicitat Comisiei Europene de mai multe ori alocarea de fonduri dedicate exclusiv combaterii deÈertificÄrii Èi secetei Èi elaborarea unui plan concret Ã®n acest sens. Din pÄcate, mÄsurile sunt total insuficiente. Programele Uniunii Europene sunt fragmentate Èi lipsite de coerenÈÄ. Ne costÄ mai mult sÄ plÄtim despÄgubiri comparativ cu cÃ¢t ne-ar costa sÄ prevenim aceste fenomene. Doar seceta provoacÄ anual daune de 9 miliarde de euro Ã®n Uniunea EuropeanÄ. Solicit noii Comisii Europene sÄ includÄ Ã®n bugetul post 2027 un program integrat, clar Èi bine finanÈat, care sÄ abordeze aceste probleme Ã®n mod unitar.",
+      "del:madeBy": {
+        "@id": "participant_51"
+      },
+      "del:timestamp": "2024-09-19T10:25:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_58",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_52"
+      },
+      "del:timestamp": "2024-09-19T10:26:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_59",
+      "del:text": "Und natÃ¼rlich treffen solche Extremwetterereignisse auch unsere Landwirtschaft. Wir haben heuer den heiÃesten Sommer erlebt, seit es Aufzeichnungen gibt. Wir haben in wenigen Tagen jetzt NiederschlÃ¤ge erlebt, die es sonst nur in einem halben Jahr gibt, und wir mÃ¼ssen auf diese Situation reagieren, nicht nur in Europa, sondern global das Problem sehen.\nDie FAO warnt davor, dass die Nahrungsmittelproduktion weltweit bis 2050 um bis zu 30Â % sinken kann. Da kann es nicht der Weg sein, den sich hier einige wÃ¼nschen, in Europa landwirtschaftliche ProduktionsflÃ¤chen aus der Nutzung zu nehmen und ProduktionsmÃ¶glichkeiten weiter einzuschrÃ¤nken. Wir haben eine globale Verantwortung zu tragen, klimafitte Sorten zu zÃ¼chten, zu schauen, BewÃ¤sserung auszubauen, wo es mÃ¶glich ist, Versicherungsmodelle zu etablierenÂ â das sind die Wege, die wir brauchen.\nUnd hÃ¶ren wir auf, unseren BÃ¤uerinnen und Bauern die Schuld am Klimawandel zu geben! Sie sind die, die uns tÃ¤glich mit Nahrungsmitteln versorgen; das haben einige hier leider oft vergessen.\n(Der Redner ist damit einverstanden, auf eine Frage nach dem Verfahren der âblauen Karteâ zu antworten.)",
+      "del:madeBy": {
+        "@id": "participant_35"
+      },
+      "del:timestamp": "2024-09-19T10:28:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_60",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_53"
+      },
+      "del:timestamp": "2024-09-19T10:29:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_61",
+      "del:text": "Wir sehen, die Katastrophen werden immer mehr. Hier braucht es rasche Hilfe, hier bin ich wirklich jedem dankbar. Ich glaube, wir gehen hier wirklich den richtigen Weg, gerade auf Freiwillige Feuerwehr usw. zu setzen; die sind hier wirklich sehr unterstÃ¼tzend.",
+      "del:madeBy": {
+        "@id": "participant_35"
+      },
+      "del:timestamp": "2024-09-19T10:30:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_62",
+      "del:text": "Mi regiÃ³n, AragÃ³n, sufrÃ­a hace unos dÃ­as grandes inundaciones que han provocado afecciones graves en infraestructuras, viviendas y explotaciones ganaderas y agrÃ­colas, con estimaciones de pÃ©rdidas millonarias. Los mecanismos de financiaciÃ³n y coordinaciÃ³n europeos actuales no se adaptan a la gravedad de estos desastres naturales, cuya principal causa es la emergencia climÃ¡tica que todavÃ­a muchos hoy niegan. El Mecanismo de ProtecciÃ³n Civil de la UniÃ³n o el Fondo de Solidaridad de la UniÃ³n Europea creados hace veinteÂ aÃ±os fueron un acierto, pero se quedan cortos ante esta crisis climÃ¡tica. La presidenta de la ComisiÃ³n Europea reconociÃ³ que la adaptaciÃ³n climÃ¡tica es una prioridad europea y ha anunciado la elaboraciÃ³n de un plan para abordar este desafÃ­o.\nPor eso, ahora es el momento de que esta ComisiÃ³n se comprometa a aumentar los recursos en los prÃ³ximos presupuestos europeos porque debemos pasar de las palabras a los hechos con el fin de ayudar a los territorios para que se preparen y coordinen una mejor respuesta ante esta emergencia climÃ¡tica.",
+      "del:madeBy": {
+        "@id": "participant_54"
+      },
+      "del:timestamp": "2024-09-19T10:31:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_63",
+      "del:text": "Esta Ã© a hora de expressarmos a nossa profunda solidariedade a todas as populaÃ§Ãµes afetadas e de fazer um sentido agradecimento aos bombeiros e a todas as equipas de socorro envolvidas. Mas precisamos de aÃ§Ã£o.\nO clima nÃ£o se compadece com as nossas hesitaÃ§Ãµes e os nossos cidadÃ£os nÃ£o as perdoarÃ£o. Tal como contÃ¡mos com a entreajuda europeia no combate a estes fenÃ³menos, temos agora de apoiar a rÃ¡pida recuperaÃ§Ã£o dos territÃ³rios afetados e de redobrar esforÃ§os na adaptaÃ§Ã£o aos efeitos das alteraÃ§Ãµes climÃ¡ticas.\nCongratulo-me, por isso, por ver anunciada, nas cartas de missÃ£o dos ComissÃ¡rios designados, uma EstratÃ©gia Europeia para a ResiliÃªncia HÃ­drica. Mas relembro que esta era jÃ¡ uma promessa que continua por ser concretizada.Â Esta estratÃ©gia nÃ£o poderÃ¡ ser, por isso, um mero documento de reflexÃ£o.\nPrecisamos de aÃ§Ã£o urgente, imediata e concreta, e de alocar os recursos financeiros para salvaguardar o futuro da agricultura e das comunidades rurais. O tempo de agir Ã© agora.",
+      "del:madeBy": {
+        "@id": "participant_55"
+      },
+      "del:timestamp": "2024-09-19T10:32:53"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_64",
+      "del:text": "Oggi ci troviamo di fronte a una questione di cruciale importanza. La siccitÃ  e gli eventi meteorologici estremi costituiscono una minaccia significativa per le comunitÃ  locali e per il settore agricolo e nella mia Sicilia in questo momento abbiamo subito gravissimi danni, la situazione Ã¨ difficilissima.\nIl tessuto imprenditoriale, in particolare il settore agricolo, rappresenta un asset fondamentale, da preservare. Tuttavia, l'attuale mercato europeo Ã¨ messo a dura prova da un'eccessiva regolamentazione e da limitazioni che impediscono l'efficace implementazione delle pratiche di sostenibilitÃ . Inoltre, nonostante le rigorose misure imposte agli agricoltori, i benefici tangibili nella lotta contro i cambiamenti climatici si sono rivelati deludenti. Questo implica la necessitÃ  di concentrarsi su strumenti e strategie che possano efficacemente contrastare gli effetti della siccitÃ  e prevenire situazioni emergenziali, piuttosto che applicare vincoli che impediscono interventi concreti.\nLa futura politica agricola comune dovrÃ  pertanto focalizzarsi sull'efficacia degli strumenti di gestione del rischio, specie nel settore idrico, promuovendo opere infrastrutturali necessarie e incoraggiando l'impiego delle nuove tecnologie emergenti. Tali tecnologie, in sinergia con il lavoro degli agricoltori, possono offrire soluzioni innovative.\nPer concludere, Ã¨ indispensabile adottare misure pragmatiche e avanzate, non ideologiche. Mi auguro che anche il nuovo commissario faccia proprie queste nostre considerazioni e si muova in armonia con gli imprenditori...\n(Il Presidente toglie la parola all'oratore)",
+      "del:madeBy": {
+        "@id": "participant_56"
+      },
+      "del:timestamp": "2024-09-19T10:34:19"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_65",
+      "del:text": "KlimatickÃ¡ krÃ­za sa pretavuje do klimatickÃ½ch katastrof. A kaÅ¾dÃ½ kÃºsoÄek, o ktorÃ½ dokÃ¡Å¾eme znÃ­Å¾iÅ¥ oteplenie planÃ©ty, bude zachraÅovaÅ¥ tisÃ­ce ak nie miliÃ³ny Å¾ivotov. Ale sÃºÄasne sa musÃ­me zaÄaÅ¥ adaptovaÅ¥. PrispÃ´sobovaÅ¥ naÅ¡u krajinu, naÅ¡e mestÃ¡ tak, aby sme nerobili Äalej komunistickÃ© betÃ³novanie poÄ¾nohospodÃ¡rskej krajiny, ale aby sme robili to, Äo naÅ¡i predkovia. Pracovali spolu s prÃ­rodou. Aby sme naÅ¡e mestÃ¡ a naÅ¡e obce nebetÃ³novali, ale aby sme ich ozeleÅovali, aby boli omnoho miernejÅ¡ie klimatickÃ© podmienky.\nA toto vÅ¡etko bude zÃ¡visieÅ¥ ako od budÃºcej EurÃ³pskej komisie, tak od toho, Äi nÃ¡rodnÃ© Å¡tÃ¡ty dokÃ¡Å¾u a budÃº ochotnÃ© tieto veci implementovaÅ¥.",
+      "del:madeBy": {
+        "@id": "participant_50"
+      },
+      "del:timestamp": "2024-09-19T10:36:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_66",
+      "del:text": "Ekstremalne zjawiska pogodowe w latach 1980â2021 spowodowaÅy w krajach Unii Europejskiej straty siÄgajÄce 560 miliardÃ³w euro, przy czym straty te z roku na rok sÄ coraz wyÅ¼sze. Nie ulega zatem wÄtpliwoÅci, Å¼e jest to gigantyczne wyzwanie, a jednoczeÅnie niezwykle waÅ¼ny sprawdzian dla rzÄdzÄcych. Musimy dziaÅaÄ szybko, skutecznie i wielopÅaszczyznowo. Musimy zapewniÄ natychmiastowe wsparcie dla tych, ktÃ³rzy w tych kataklizmach ucierpieli. W tym zakresie niezbÄdna jest elastycznoÅÄ w odniesieniu do ÅrodkÃ³w z polityki spÃ³jnoÅci, WspÃ³lnej Polityki Rolnej czy teÅ¼ Funduszu Odbudowy, aby mÃ³c przeznaczyÄ Årodki na ten cel.",
+      "del:madeBy": {
+        "@id": "participant_57"
+      },
+      "del:timestamp": "2024-09-19T10:38:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_67",
+      "del:text": "CredeÈi cÄ politica agricolÄ comunÄ, pe care am cerut de foarte multe ori sÄ fie schimbatÄ, sÄ fie echitabilÄ - fermierii din Èara mea au altÄ subvenÈie - nu e o politicÄ agricolÄ comunÄ, Èi vÄ Ã®ntreb concret, domnule comisar, probabil cÄ aÈi auzit cÄ Ã®n RomÃ¢nia sunt omorÃ¢te animalele, oile, din cauza bolilor, rÄspunsul pe care l-am primit de la comisia AGRI a fost cÄ nu avem vaccin, nu avem soluÈii. Ce sÄ spunem noi? Eu mÃ¢ine mÄ Ã®ntÃ¢lnesc cu fermierii din RomÃ¢nia. Ce sÄ le transmit? LÄsaÈi ceva pentru viitorul comisar?",
+      "del:madeBy": {
+        "@id": "participant_58"
+      },
+      "del:timestamp": "2024-09-19T10:39:54"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_68",
+      "del:text": "In un contesto di cambiamento climatico, queste sfide non possono essere ignorate. Le regioni agricole â penso in particolar modo a quelle dell'Italia meridionale, fulcro della nostra economia â stanno subendo impatti devastanti. La scarsitÃ  d'acqua compromette le coltivazioni e riduce la produttivitÃ , mettendo a rischio la sicurezza alimentare. Gli agricoltori â che sono i custodi del nostro territorio, non i nemici â devono affrontare costi sempre piÃ¹ elevati e incertezze senza precedenti.\nÃ nostro dovere agire. Servono investimenti per infrastrutture all'avanguardia e strategie di adattamento che garantiscano la protezione delle nostre terre e dei nostri agricoltori. Ã essenziale che l'Unione europea coordini le attivitÃ  fra Stati membri, creando un sistema di allerta precoce e un fondo di emergenza per supportare le comunitÃ  colpite.\nInsieme possiamo trasformare questa crisi in un'opportunitÃ  per costruire un'Europa piÃ¹ forte e piÃ¹ sostenibile. Le nostre azioni di oggi determinano quelle future delle nostre generazioni.",
+      "del:madeBy": {
+        "@id": "participant_59"
+      },
+      "del:timestamp": "2024-09-19T10:41:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_69",
+      "del:text": "A imagem da terra queimada em Portugal... Toda a minha solidariedade com o paÃ­s irmÃ£o. As cinzas estÃ£o a chegar ao meu paÃ­s, a Galiza. Ã devastador!\nMortes, terrenos agrÃ­colas afetados, perda de biodiversidade, bombeiros esgotados. E sabem porquÃª? Porque o eucalipto Ã© a espÃ©cie que mais ardeu em Portugal e na Galiza.\nA indÃºstria da celulose, que devasta Portugal e a Galiza e cresce graÃ§as a empresas como a Ence, e agora com a ameaÃ§a da empresa portuguesa Altri, que quer vir para a Galiza, Ã© uma espÃ©cie inflamÃ¡vel que aumenta os riscos de incÃªndio e que tem impacto na escassez de Ã¡gua e na mudanÃ§a do ciclo hidrolÃ³gico.\nDigo hoje Ã  ComissÃ£o Europeia e aos seus serviÃ§os: estejam alerta, atentos ao problema do cultivo intensivo de eucalipto, vigiem essa empresa de celulose, a Altri, que ataca a Ã¡gua e provoca incÃªndios.",
+      "del:madeBy": {
+        "@id": "participant_60"
+      },
+      "del:timestamp": "2024-09-19T10:42:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_70",
+      "del:text": "ÎÎµÏÏÎµÏÎ¿Î½, ÏÏÎ½ÎµÏÎ³Î±ÏÎ¯Î± Î¼Îµ ÏÎ¿ ÏÎ±ÏÏÎ¿ÏÏÎ»Î¬ÎºÎ¹Î¿ ÏÎ·Ï ÎºÎ¿Î¹Î½Î®Ï ÎµÎ¼ÏÎ¿ÏÎ¹ÎºÎ®Ï ÏÎ¿Î»Î¹ÏÎ¹ÎºÎ®Ï. ÎÎ±Î¹ ÏÏÎ·Î½ ÏÏÎ¬ÏÎ¹Î½Î· ÏÎ¿Î»Î¹ÏÎ¹ÎºÎ® ÏÏÎ· Î³ÎµÏÏÎ³Î¯Î±. ÎÏÎ¹ ÏÏÎ¿ Î±Î½ÏÎ±Î³ÏÎ½Î¹ÏÏÎ¹ÎºÏ Î¼ÎµÎ¹Î¿Î½Î­ÎºÏÎ·Î¼Î± ÏÏÎ½ ÎÏÏÏÏÎ±Î¯ÏÎ½ Î³ÎµÏÏÎ³ÏÎ½ ÏÎµ ÏÏÎ­ÏÎ· Î¼Îµ ÎµÎ¹ÏÎ±Î³ÏÎ¼ÎµÎ½ÎµÏ ÏÏÏÏÎµÏ ÏÎ»ÎµÏ, ÏÎ»Î¹ÎºÎ¬,Â Î¶ÏÎ¹ÎºÎ® ÏÎ±ÏÎ±Î³ÏÎ³Î® ÎºÎ±Î¹ ÏÏÏÎ¹ÎºÎ® ÏÎ±ÏÎ±Î³ÏÎ³Î® Î±ÏÏ ÏÏÎ¯ÏÎµÏ ÏÏÏÎµÏ Î¼Îµ Î¼Î·Î´ÎµÎ½Î¹ÎºÎ¬ ÏÏÏÏÏÏÎ± ÎºÎ±Î»Î»Î¹Î­ÏÎ³ÎµÎ¹Î±Ï.",
+      "del:madeBy": {
+        "@id": "participant_61"
+      },
+      "del:timestamp": "2024-09-19T10:44:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_71",
+      "del:text": "(The President cut off the speaker)",
+      "del:madeBy": {
+        "@id": "participant_62"
+      },
+      "del:timestamp": "2024-09-19T10:45:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_72",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T10:46:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_73",
+      "del:text": "ChciaÅbym w tym momencie podziÄkowaÄ serdecznie wszystkim paÅstwu posÅom, z ktÃ³rymi miaÅem zaszczyt wspÃ³ÅpracowaÄ na przestrzeni kilku kadencji, od 5. kadencji poczynajÄc, na obecnej, 10. kadencji, koÅczÄc. DziÄkujÄ bardzo.\nWracajÄc do tematu naszej dzisiejszej debaty: nie wchodzÄc w spÃ³r z jakich przyczyn, w oczywisty sposÃ³b widaÄ, jak wielkÄ kumulacjÄ dramatycznych zdarzeÅ klimatycznych, pogodowych obserwujemy. Ja pamiÄtam ubiegÅorocznÄ mojÄ wizytÄ w Grecji, w SÅowenii, w krajach dramatycznie dotkniÄtych przez powÃ³dÅº. W Tesalii na przykÅad, w Grecji, ogromne obszary zalane. UdzielaliÅmy wtedy rolnikom pomocy z rezerwy kryzysowej. MinÄÅ rok, w SÅowenii kolejna wielka powÃ³dÅº. Kilka miesiÄcy temu decydowaliÅmy w Komisji o uruchomieniu pomocy, teÅ¼ z rezerwy kryzysowej, dla rolnikÃ³w w Austrii, w Czechach i w Polsce â dotkniÄtych przez przymrozki, sadownikÃ³w gÅÃ³wnie. Tym razem w tych krajach, a takÅ¼e w kilku innych jest dramatyczna, tragiczna powÃ³dÅº, teÅ¼ dotykajÄca rolnikÃ³w. A to nie koniec tej listy nieszczÄÅÄ, bo nasi rolnicy w ostatnich latach doÅwiadczani sÄ przez konsekwencje pandemii COVID-u, destabilizacjÄ rynku spowodowanÄ rosyjskÄ agresjÄ na UkrainÄ, choroby zwierzÄt, takie jak afrykaÅski pomÃ³r ÅwiÅ, ptasia grypa czy ostatnio, wiem o tej sytuacji w Rumunii, choroba owiec. A mimo tych nieszczÄÅÄ, ktÃ³re spadajÄ na naszych rolnikÃ³w, nasi rolnicy, europejscy rolnicy, przez swojÄ ciÄÅ¼kÄ pracÄ zapewniajÄ nam bezpieczeÅstwo Å¼ywnoÅciowe â i za to naleÅ¼y im siÄ naprawdÄ wielka wdziÄcznoÅÄ i wielki szacunek.\nI chcÄ tutaj uspokoiÄ, moÅ¼e nie uspokoiÄ, ale sprostowaÄ pewne informacje. MÃ³wi siÄ, Å¼e Unia Europejska zmniejsza produkcjÄ Å¼ywnoÅci i zwiÄksza zaleÅ¼noÅÄ od importu. Nie, to nie jest prawda. Na szczÄÅcie to nie jest pÃ³ki co prawda. Produkcja rolna w Europie, w Unii Europejskiej, utrzymuje siÄ na staÅym, wysokim poziomie, a import spada. DziÄki temu Unia Europejska jest dzisiaj najwiÄkszym w Åwiecie eksporterem Å¼ywnoÅci, a bilans, nadwyÅ¼ka handlowa w 2023 r., osiÄgnÄÅa rekordowy poziom 70 mld euro. I ciÄgle mamy wiÄkszy problem z tym, gdzie sprzedaÄ naszÄ europejskÄ Å¼ywnoÅÄ, niÅ¼ gdzie jÄ kupiÄ. I zawdziÄczamy to naszym rolnikom. ChcÄ bardzo wyraÅºnie tutaj powiedzieÄ, Å¼e nie przedstawiam tego w kontekÅcie jakichÅ zasÅug politycznych. To ciÄÅ¼ka praca naszych rolnikÃ³w â ktÃ³rym naleÅ¼y siÄ za to wdziÄcznoÅÄ i szacunek â powoduje tÄ sytuacjÄ.\nAle oczywiÅcie zagroÅ¼enia sÄ ogromne, te klimatyczne. Ja tutaj siÄ odwoÅam do doÅwiadczenia z mojego kraju, z Polski, gdzie miaÅem na przestrzeni dÅugiego okresu czasu to obserwowaÄ. I o ile w przeszÅoÅci susze zdarzaÅy siÄ mniej wiÄcej raz na 10 lat, no to teraz sÄ w zasadzie zjawiskiem corocznym. Nie mÃ³wiÄ juÅ¼ o poÅudniu Europy â Hiszpania, WÅochy, Grecja â te kraje permanentnie doÅwiadczajÄ kolejnych suszy.\nI na dwie rzeczy chcÄ tutaj zwrÃ³ciÄ PaÅstwa uwagÄ, dziÄkujÄc za bardzo ciekawÄ, za bardzo inspirujÄcÄ dyskusjÄ. Po pierwsze, rezerwa kryzysowa, ktÃ³ra jest we wspÃ³lnej polityce rolnej â to, zdaje siÄ, pani poseÅ WiÅniewska pytaÅa, czy ona jest wystarczajÄca â absolutnie nie jest wystarczajÄca. Przez wiele lat ona sobie byÅa i w zasadzie jej nie uÅ¼ywaliÅmy. W czasie COVID-u uÅ¼yliÅmy jej do dziaÅania wobec pewnych trudnoÅci rynkowych. A w tej chwili ona jest uÅ¼ywana juÅ¼ w zasadzie jako taki dodatkowy Fundusz SolidarnoÅci dla rolnikÃ³w poszkodowanych przez suszÄ. W Hiszpanii, we WÅoszech uÅ¼ywaliÅmy tej rezerwy. MÃ³wiÅem o tych przymrozkach. I w tej chwili na pewno â i chcÄ to bardzo wyraÅºnie zadeklarowaÄ â Komisja Europejska jest gotowa w kaÅ¼dej chwili uÅ¼yÄ tych ÅrodkÃ³w do wsparcia rolnikÃ³w dotkniÄtych przez powÃ³dÅº.\nNatomiast oczywiÅcie ta rezerwa, ktÃ³ra wynosi 450 mln euro, jest absolutnie niewystarczajÄca. I to jest moja pierwsza proÅba, postulat do przyszÅej wspÃ³lnej polityki rolnej â tej wspÃ³lnej polityki rolnej, ktÃ³rÄ nastÄpna Komisja juÅ¼ bÄdzie tworzyÄ, ale PaÅstwo, ta Izba bÄdzie o niej decydowaÄ â Å¼eby te Årodki na interwencje kryzysowe byÅy zdecydowanie wiÄksze. One muszÄ byÄ co najmniej kilka razy wiÄksze. Musimy mieÄ bardzo silny taki filar wspÃ³lnej polityki rolnej, pomocy kryzysowej, bo Å¼aden system ubezpieczeniowy tego nie zapewni. Ryzyko jest juÅ¼ tak wielkie w dziaÅalnoÅci rolniczej, Å¼e Å¼aden system, nawet wspierany rÃ³Å¼nymi dotacjami system ubezpieczeniowy, nie jest w stanie zapewniÄ bezpieczeÅstwa rolnikom. Dlatego to jest bardzo waÅ¼ne: zwiÄkszenie tych ÅrodkÃ³w na rÃ³Å¼ne dziaÅania kryzysowe.\nI druga rzecz, ktÃ³ra juÅ¼ siÄ bezpoÅrednio odnosi do tego problemu suszy. OtÃ³Å¼ w dialogu strategicznym pojawia siÄ ten postulat, ale ja go chcÄ bardzo mocno wyeksponowaÄ, bo mÃ³wiÄ o nim juÅ¼ od dÅuÅ¼szego czasu i rolnicy to generalnie przyjmujÄ jako bardzo sÅuszny kierunek. OtÃ³Å¼ wsparcie dla gospodarstw mieszanych, dla gospodarstw, ktÃ³re ÅÄczÄ produkcjÄ roÅlinnÄ z produkcjÄ zwierzÄcÄ. Nie tylko, Å¼e nie naleÅ¼y postulowaÄ jakiejÅ redukcji hodowli, ale wrÄcz zrÃ³wnowaÅ¼ona hodowla â wyraÅºnie mÃ³wiÄ, zrÃ³wnowaÅ¼ona â ktÃ³ra pozostaje w pewnej proporcji, odpowiedniej proporcji: wielkoÅÄ hodowli do wielkoÅci gospodarstw, wielkoÅci upraw. Hodowla oparta na wÅasnych paszach i hodowla produkujÄca naturalny nawÃ³z, obornik jako naturalny nawÃ³z, to jest najlepsza metoda na poprawÄ gospodarki wodnej, na poprawÄ jakoÅci gleby, na to Å¼eby ta gleba zatrzymywaÅa wilgoÄ, zatrzymywaÅa wodÄ. I powinniÅmy stworzyÄ taki system zachÄcajÄcej pÅatnoÅci redystrybucyjnej â tak to moÅ¼na okreÅliÄ â dla rolnikÃ³w, ktÃ³rzy ÅÄczÄ te dwa rodzaje produkcji.\nBardzo o to proszÄ, Å¼eby to w przyszÅej wspÃ³lnej polityce rolnej siÄ znalazÅo jako istotna czÄÅÄ dopÅat bezpoÅrednich, ktÃ³ra powinna byÄ adresowana wÅaÅnie do takich gospodarstw. I wtedy moÅ¼emy liczyÄ na przynajmniej wiÄkszÄ odpornoÅÄ tych gospodarstw rolnych, ktÃ³re tak drastycznie, tak dramatycznie dotykane sÄ przez suszÄ.\nByÅo pytanie o to, jakie instrumenty sÄ do pomocy. Poza tÄ bardzo skromnÄ w tej chwili i coraz bardziej symbolicznÄ niÅ¼ rzeczywistÄ pomoc w ramach rezerwy kryzysowej, mamy oczywiÅcie Årodki w drugim filarze wspÃ³lnej polityki rolnej. Jest takie dziaÅanie moÅ¼liwe, ktÃ³re siÄ nazywa: odbudowa potencjaÅu rolnego zniszczonego przez klÄski Å¼ywioÅowe. Te instrumenty oczywiÅcie mogÄ byÄ uÅ¼yte na wniosek paÅstw czÅonkowskich, bo to one muszÄ zaproponowaÄ okreÅlone zmiany w planach strategicznych i uÅ¼ycie niewykorzystanych ÅrodkÃ³w z drugiego filaru wÅaÅnie na tego typu dziaÅanie. TeÅ¼ deklarujÄ, Å¼e tutaj Komisja jest otwarta na bardzo szybkie zmiany, po to Å¼eby te Årodki moÅ¼na byÅo przesunÄÄ dla rolnikÃ³w dotkniÄtych czy przez suszÄ, czy przez powÃ³dÅº, przez rÃ³Å¼ne nieszczÄÅcia, czy na przykÅad choroby zwierzÄt â bo to teÅ¼ siÄ coraz bardziej daje we znaki hodowli.\nPanie PrzewodniczÄcy! Szanowni PaÅstwo! Jeszcze raz bardzo dziÄkujÄ za inspirujÄcÄ debatÄ.\nAt the end of of of my speech, I'd like to present my short reflection for the future of the Common Agricultural Policy, which will be proposed by the next Commission by but which will be adopted by this this Chamber. For the future of agriculture, we need the approach with the 'four Ss' principle: security, stability, sustainability and solidarity. Food security for our old citizens, stability for our agriculture, sustainability for our environment, climate, our rural areas, and solidarity with our farmers. Thank you very much.",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2024-09-19T10:47:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_74",
+      "del:text": "The debate is closed.\nRakstiski paziÅojumi (178. pants)",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T10:56:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_75",
+      "del:text": "La agricultura es uno de los sectores mÃ¡s vulnerables a las sequÃ­as y los fenÃ³menos extremos. La escasez de agua y el estrÃ©s tÃ©rmico en cultivos y ganado, asÃ­ como la destrucciÃ³n de infraestructuras agrÃ­colas, estÃ¡n poniendo en peligro la seguridad alimentaria y la sostenibilidad del sector, que son clave para la economÃ­a y el bienestar de las zonas rurales de Europa. En este marco, las comunidades rurales, que dependen en gran medida de la agricultura y los recursos naturales, son las mÃ¡s afectadas.\nLos socialistas pedimos explorar soluciones que protejan a estas comunidades y a los agricultores frente a los desafÃ­os climÃ¡ticos, al tiempo que permitan abordar de manera ambiciosa el cambio climÃ¡tico. La bÃºsqueda de soluciones al impacto del cambio climÃ¡tico en la agricultura y las comunidades locales es crucial para la transiciÃ³n justa y sostenible, garantizando que los sectores mÃ¡s vulnerables no queden rezagados.",
+      "del:madeBy": {
+        "@id": "participant_63"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_76",
+      "del:text": "Le cifre dell'Osservatorio europeo sulla siccitÃ  della Commissione, in particolare, sono inconfutabili: la siccitÃ  agricola si sta pericolosamente intensificando, soprattutto in vaste aree delle regioni mediterranee. Come nella mia regione, la Sicilia, dove a fine luglio le riserve idriche erano sotto la soglia di allerta, con volumi inferiori del 45Â % rispetto all'anno precedente: laghi e fiumi prosciugati, interi raccolti bruciati dalla siccitÃ  e fortissimi disagi anche per i cittadini.\nBene, quindi, la scelta della Presidente von der Leyen di prevedere un commissario anche per la resilienza idrica.\nGarantire l'approvvigionamento idrico alle comunitÃ  locali e al settore agricolo, in contesti di siccitÃ  sempre piÃ¹ estrema, deve essere una prioritÃ  assoluta nell'agenda della nuova Commissione europea!",
+      "del:madeBy": {
+        "@id": "participant_64"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_77",
+      "del:text": "La agricultura es uno de los sectores mÃ¡s vulnerables a las sequÃ­as y los fenÃ³menos extremos. La escasez de agua y el estrÃ©s tÃ©rmico en cultivos y ganado, asÃ­ como la destrucciÃ³n de infraestructuras agrÃ­colas, estÃ¡n poniendo en peligro la seguridad alimentaria y la sostenibilidad del sector, que son clave para la economÃ­a y el bienestar de las zonas rurales de Europa. En este marco, las comunidades rurales, que dependen en gran medida de la agricultura y los recursos naturales, son las mÃ¡s afectadas.\nLos socialistas pedimos explorar soluciones que protejan a estas comunidades y a los agricultores frente a los desafÃ­os climÃ¡ticos, al tiempo que permitan abordar de manera ambiciosa el cambio climÃ¡tico. La bÃºsqueda de soluciones al impacto del cambio climÃ¡tico en la agricultura y las comunidades locales es crucial para la transiciÃ³n justa y sostenible, garantizando que los sectores mÃ¡s vulnerables no queden rezagados.",
+      "del:madeBy": {
+        "@id": "participant_65"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_78",
+      "del:text": "La agricultura es uno de los sectores mÃ¡s vulnerables a las sequÃ­as y los fenÃ³menos extremos. La escasez de agua y el estrÃ©s tÃ©rmico en cultivos y ganado, asÃ­ como la destrucciÃ³n de infraestructuras agrÃ­colas, estÃ¡n poniendo en peligro la seguridad alimentaria y la sostenibilidad del sector, que son clave para la economÃ­a y el bienestar de las zonas rurales de Europa. En este marco, las comunidades rurales, que dependen en gran medida de la agricultura y los recursos naturales, son las mÃ¡s afectadas.\nLos socialistas pedimos explorar soluciones que protejan a estas comunidades y a los agricultores frente a los desafÃ­os climÃ¡ticos, al tiempo que permitan abordar de manera ambiciosa el cambio climÃ¡tico. La bÃºsqueda de soluciones al impacto del cambio climÃ¡tico en la agricultura y las comunidades locales es crucial para la transiciÃ³n justa y sostenible, garantizando que los sectores mÃ¡s vulnerables no queden rezagados.",
+      "del:madeBy": {
+        "@id": "participant_66"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_79",
+      "del:text": "As suas consequÃªncias fazem-se sentir no abastecimento de Ã¡gua Ã s populaÃ§Ãµes, na agricultura, nos incÃªndios.\nTudo isto estÃ¡ ligado a um modo de produÃ§Ã£o assente numa desadequada relaÃ§Ã£o do ser humano com o ambiente, que esgota recursos e mercantiliza a natureza.\nÃ preciso uma polÃ­tica que garanta a Ã¡gua como bem pÃºblico, assegure o investimento pÃºblico nas redes de abastecimento Ã s populaÃ§Ãµes, promova modos de produÃ§Ã£o agrÃ­cola sustentÃ¡vel, trave a concentraÃ§Ã£o produtiva, a monocultura e as produÃ§Ãµes intensivas, apoie a agricultura familiar, garanta preÃ§os justos aos produtores.\nÃ preciso uma polÃ­tica de ocupaÃ§Ã£o equilibrada do territÃ³rio e de desenvolvimento econÃ³mico e social coeso, assente na valorizaÃ§Ã£o da produÃ§Ã£o nacional e dos pequenos e mÃ©dio produtores, respondendo Ã s necessidades de soberania alimentar, combatendo dependÃªncias externas, em equilÃ­brio com a natureza.",
+      "del:madeBy": {
+        "@id": "participant_67"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_80",
+      "del:text": "La agricultura es uno de los sectores mÃ¡s vulnerables a las sequÃ­as y los fenÃ³menos extremos. La escasez de agua y el estrÃ©s tÃ©rmico en cultivos y ganado, asÃ­ como la destrucciÃ³n de infraestructuras agrÃ­colas, estÃ¡n poniendo en peligro la seguridad alimentaria y la sostenibilidad del sector, que son clave para la economÃ­a y el bienestar de las zonas rurales de Europa. En este marco, las comunidades rurales, que dependen en gran medida de la agricultura y los recursos naturales, son las mÃ¡s afectadas.\nLos socialistas pedimos explorar soluciones que protejan a estas comunidades y a los agricultores frente a los desafÃ­os climÃ¡ticos, al tiempo que permitan abordar de manera ambiciosa el cambio climÃ¡tico. La bÃºsqueda de soluciones al impacto del cambio climÃ¡tico en la agricultura y las comunidades locales es crucial para la transiciÃ³n justa y sostenible, garantizando que los sectores mÃ¡s vulnerables no queden rezagados.",
+      "del:madeBy": {
+        "@id": "participant_68"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_81",
+      "del:text": "Ð ÐÑÐ»Ð³Ð°ÑÐ¸Ñ, Ð½Ð°Ð¿ÑÐ¸Ð¼ÐµÑ, ÑÐ¼Ðµ ÑÐ²Ð¸ÐºÐ½Ð°Ð»Ð¸ Ð´Ð° ÑÐ¼ÑÑÐ°Ð¼Ðµ, ÑÐµ Ð¿ÑÐ¸ÑÐµÐ¶Ð°Ð²Ð°Ð¼Ðµ Ð¸Ð·Ð¾Ð±Ð¸Ð»Ð¸Ðµ Ð¾Ñ Ð²Ð¾Ð´Ð½Ð¸ ÑÐµÑÑÑÑÐ¸. Ð ÐµÐ°Ð»Ð½Ð°ÑÐ° ÐºÐ°ÑÑÐ¸Ð½Ð°, Ð¾Ð±Ð°ÑÐµ, Ðµ ÑÑÐ²ÑÐµÐ¼ ÑÐ°Ð·Ð»Ð¸ÑÐ½Ð°. Ð Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸ÑÐµ Ð³Ð¾Ð´Ð¸Ð½Ð¸ Ð²ÑÐµ Ð¿Ð¾-ÑÐµÑÑÐ¾ ÑÐµ ÑÑÐ¸Ð³Ð° Ð´Ð¾ Ð²Ð¾Ð´Ð½Ð¸ ÑÐµÐ¶Ð¸Ð¼Ð¸. ÐÑÐ¸ÑÐ¸Ð½Ð¸ÑÐµ, Ð¾ÐºÐ¾Ð»Ð¾ ÐºÐ¾Ð¸ÑÐ¾ ÑÐµ Ð¾Ð±ÐµÐ´Ð¸Ð½ÑÐ²Ð°Ñ ÐµÐºÑÐ¿ÐµÑÑÐ¸ÑÐµ, ÑÐ° Ð´Ð²Ðµ - Ð³Ð¾Ð»ÐµÐ¼Ð¸ÑÐµ Ð·Ð°Ð³ÑÐ±Ð¸ Ð¿Ð¾ Ð¿ÑÐµÐ½Ð¾ÑÐ½Ð°ÑÐ° Ð¼ÑÐµÐ¶Ð° Ð¸ Ð·Ð°ÑÑÑÐ°Ð²Ð°Ð½ÐµÑÐ¾, Ð¿ÑÐµÐ´Ð¸Ð·Ð²Ð¸ÐºÐ°Ð½Ð¾ Ð¾Ñ ÐºÐ»Ð¸Ð¼Ð°ÑÐ¸ÑÐ½Ð¸ÑÐµ Ð¿ÑÐ¾Ð¼ÐµÐ½Ð¸. Ð ÐÑÐ»Ð³Ð°ÑÐ¸Ñ Ð·Ð°Ð³ÑÐ±Ð¸ÑÐµ ÑÑÐ¸Ð³Ð°Ñ Ð´Ð¾ 70%, Ð° Ð¿ÑÐ¾Ð¼ÐµÐ½Ð¸ÑÐµ ÑÐµ Ð¸Ð·ÑÐ°Ð·ÑÐ²Ð°Ñ Ð²ÑÐ² Ð²ÑÐµ Ð¿Ð¾-Ð½ÐµÐ¿Ð¾ÑÑÐ¾ÑÐ½Ð½Ð¸ ÑÐµÐ·Ð¾Ð½Ð½Ð¸ Ð¼Ð¾Ð´ÐµÐ»Ð¸.\nÐ¡Ð¿Ð¾ÑÐµÐ´ ÑÐ°Ð·ÑÐ°Ð±Ð¾ÑÐµÐ½Ð¸ÑÐµ Ð¼Ð¾Ð´ÐµÐ»Ð¸, ÑÐ¸ÑÐºÑÑ Ð¾Ñ Ð±ÐµÐ·Ð²Ð¾Ð´Ð¸Ðµ Ð·Ð°ÑÑÐ³Ð° Ð½Ð°Ð¹-Ð¿Ð»Ð¾Ð´Ð¾ÑÐ¾Ð´Ð½Ð¸ÑÐµ Ð½Ð¸ ÑÐ°Ð¹Ð¾Ð½Ð¸ - Ð¢ÑÐ°ÐºÐ¸Ð¹ÑÐºÐ°ÑÐ° Ð½Ð¸Ð·Ð¸Ð½Ð°, ÐÑÐ½Ð°Ð²ÑÐºÐ°ÑÐ° ÑÐ°Ð²Ð½Ð¸Ð½Ð°, Ð½Ð°Ð¹-Ð²ÐµÑÐµ Ð² Ð¸Ð·ÑÐ¾ÑÐ½Ð°ÑÐ° Ñ ÑÐ°ÑÑ, ÐºÑÐ´ÐµÑÐ¾ ÑÐ° Ð³ÑÐ°Ð´Ð¾Ð²ÐµÑÐµ Ð¨ÑÐ¼ÐµÐ½, ÐÐ°ÑÐ½Ð° Ð¸ Ð¶Ð¸ÑÐ½Ð¸ÑÐ°ÑÐ° Ð½Ð° ÐÑÐ»Ð³Ð°ÑÐ¸Ñ - ÐÐ¾Ð±ÑÐ¸Ñ.\nÐÐ°ÑÐ¾Ð²Ð° Ð¿ÑÐ¸Ð·Ð¾Ð²Ð°Ð²Ð°Ð¼ ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ°ÑÐ° ÐºÐ¾Ð¼Ð¸ÑÐ¸Ñ Ð´Ð° Ð¿ÑÐµÐ´Ð¿ÑÐ¸ÐµÐ¼Ðµ Ð¼ÐµÑÐºÐ¸ Ð¸ Ð´Ð° ÑÑÐ·Ð´Ð°Ð´Ðµ ÑÐ¸Ð½Ð°Ð½ÑÐ¾Ð² Ð¼ÐµÑÐ°Ð½Ð¸Ð·ÑÐ¼, ÐºÐ¾Ð¹ÑÐ¾ Ð´Ð° Ð¿Ð¾Ð´ÐºÑÐµÐ¿Ð¸ Ð´ÑÑÐ¶Ð°Ð²Ð¸ÑÐµ Ð² Ð¸Ð·Ð³ÑÐ°Ð¶Ð´Ð°Ð½ÐµÑÐ¾ Ð½Ð° Ð¸Ð½ÑÑÐ°ÑÑÑÑÐºÑÑÑÐ° Ð·Ð° ÑÐ¿ÑÐ°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð½Ð° Ð²Ð¾Ð´Ð½Ð¸ÑÐµ ÑÐµÑÑÑÑÐ¸. Ð¢Ð¾Ð²Ð° Ð±Ð¸ ÑÐ¿Ð¾Ð¼Ð¾Ð³Ð½Ð°Ð»Ð¾ Ð·Ð° Ð½Ð°Ð¼Ð°Ð»ÑÐ²Ð°Ð½Ðµ Ð½Ð° ÐµÑÐµÐºÑÐ¸ÑÐµ Ð¾Ñ Ð·Ð°ÑÑÑÐ°Ð²Ð°Ð½ÐµÑÐ¾, ÐµÐºÑÑÑÐµÐ¼Ð½Ð¸ÑÐµ Ð²Ð°Ð»ÐµÐ¶Ð¸ Ð¸ ÑÐµ Ð¿Ð¾Ð·Ð²Ð¾Ð»Ð¸ Ð¿Ð¾-ÐµÑÐµÐºÑÐ¸Ð²Ð½Ð¾ Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð½Ðµ Ð½Ð° ÑÐµÑÑÑÑÐ¸ÑÐµ, ÐºÐ°ÐºÑÐ¾ Ð² Ð´Ð¾Ð¼Ð°ÐºÐ¸Ð½ÑÑÐ²Ð°ÑÐ°, ÑÐ°ÐºÐ° Ð¸ Ð² ÑÐµÐ»ÑÐºÐ¾ÑÐ¾ ÑÑÐ¾Ð¿Ð°Ð½ÑÑÐ²Ð¾, ÐºÑÐ´ÐµÑÐ¾ Ð¸Ð¼Ð° Ð½Ð°Ð¹-ÑÐ¸Ð»Ð½Ð¾ Ð²Ð»Ð¸ÑÐ½Ð¸Ðµ. ÐÑÐ¶Ð½Ð¸ ÑÐ° ÑÐ¿ÐµÑÐ½Ð¸ Ð¼ÐµÑÐºÐ¸, Ð·Ð° Ð´Ð° Ð¾ÑÐ¸Ð³ÑÑÐ¸Ð¼ Ð¿Ð¸ÑÐµÐ¹Ð½Ð°ÑÐ° Ð¸ Ð½ÑÐ¶Ð½Ð°ÑÐ° Ð·Ð° ÑÐµÐ»ÑÐºÐ¾ÑÐ¾ ÑÑÐ¾Ð¿Ð°Ð½ÑÑÐ²Ð¾ Ð¸ Ð±Ð¸Ð·Ð½ÐµÑÐ° Ð²Ð¾Ð´Ð°.",
+      "del:madeBy": {
+        "@id": "participant_69"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_82",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_70"
+      },
+      "del:timestamp": "2024-09-19T10:57:08"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_83",
+      "del:text": "The Council took note of the ruling. As you know, the European Commission is in charge of assessing the compatibility of state aid with EU rules, and this decision can be challenged before the Court of Justice of the European Union. The Council has a general interest in guaranteeing that relevant EU legislation on state aid is effectively enforced as a key feature of the EU's efforts to enhance our competitiveness and protect the single market.\nHaving said that, it is, of course, not for the Council to comment on a ruling by the European Court of Justice.",
+      "del:madeBy": {
+        "@id": "participant_71"
+      },
+      "del:timestamp": "2024-09-19T10:57:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_84",
+      "del:text": "I would like to thank the European Parliament and specifically the subcommittees of Tax and Fisc for following this issue closely and supporting the Commission's enforcement efforts throughout the last decade. A lot of work has been done during this mandate, which has decisively contributed to important changes by the different actors concerned. The Commission State aid cases have helped trigger or accelerate legislative reforms, some of which your subcommittees were involved with.\nThe Commission publishes a yearly report on where we stand with taxation in Europe. We see that the combined effect of enforcement and legislative action has led to important changes, but not yet put a complete end to aggressive tax planning and tax avoidance. Executive Vice-President Vestager has been explicit on this when welcoming the Apple judgment last week.\nThese practices continue to distort the internal market and competition between big multinational groups and smallerâsized companies. So, undeniably, there is more work needed to level the playing field in the internal market and achieve tax fairness. These efforts are important also because when certain member states resort to harmful tax competition, the consequences are generally borne by other Member States.\nHowever, State aid to enforcement alone is not enough to fight harmful tax competition and aggressive tax planning, the Commission considers that full use should be made of the various instruments at its disposal to enforce Union law. It is true that outside the spheres in which EU tax law has been harmonised, Member States have a high degree of autonomy in designing their fiscal rules.\nHowever, the Apple judgment confirms that State aid enforcement can be used to ensure that Member States adhere in practice to the rules that they themselves have decided. There are also other important actors in the fight against aggressive tax planning and tax avoidance measures: Member States, the Council, the European Parliament. All these actors should work together in the coming years to improve the level playing field.\nAll the Commission's efforts in this field derive from one basic principle: that all companies were the big or small, whether digital or brick and mortar, must all pay their fair share of taxes. Otherwise the public purse and European citizens are deprived of much needed funds. They are needed for our social security systems, our education systems, our public infrastructure, to name just a few.\nOur efforts in defending this principle need to continue at all levels, be it national, European or international and by all actors, be it the Commission, the Council or the European Parliament.",
+      "del:madeBy": {
+        "@id": "participant_72"
+      },
+      "del:timestamp": "2024-09-19T10:58:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_85",
+      "del:text": "Das Urteil aus der vergangenen Woche ist jedoch eine erfreuliche Abwechslung. Da das Steuerrecht natÃ¼rlich eine weitgehend nationale Angelegenheit bleibt, war es der EuropÃ¤ischen Kommission in der Vergangenheit oft nicht mÃ¶glich, bei fragwÃ¼rdigen Steuerpraktiken einzelner Mitgliedstaaten durchzugreifen. Das Urteil gibt der Kommission nun RÃ¼ckenwind und ist mithin auch eine Warnung an die Finanzminister derjenigen Mitgliedstaaten, die es mit der SolidaritÃ¤t im Binnenmarkt nicht so genau nehmen. Denn wir haben mittlerweile einen ganzen Katalog von Urteilen des EuropÃ¤ischen Gerichtshofs, der zeigt, welche Argumentationslinien gerichtsfest sind und welche nicht.\nIm Kampf gegen fragwÃ¼rdige Steuerpraktiken muss die Kommission diese Urteile nun genau analysieren und die richtigen Konsequenzen ziehen. Selbst wenn sich das Wettbewerbsrecht bewÃ¤hrt, sollte man Steuerdumping aber nicht von Einzelfall zu Einzelfall angehen, sondern anhand eines klaren gemeinsamen Rahmens, der auch von den Finanzministern der Mitgliedstaaten angenommen wird, denn die Rechtsprechung des EuropÃ¤ischen Gerichtshofs kann diesen Rahmen abstecken. Diese Aufgabe sollte sich die Kommission zu Herzen nehmen, denn Irland ist nicht der einzige Mitgliedstaat, der zulasten seiner Nachbarn hier Sondersteuerregeln gewÃ¤hrt. Das Urteil sollte also Auftrag fÃ¼r die Kommission sein, jetzt endlich zu handeln.",
+      "del:madeBy": {
+        "@id": "participant_73"
+      },
+      "del:timestamp": "2024-09-19T11:02:49"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_86",
+      "del:text": "Ich mÃ¶chte der Kommission auch fÃ¼r die HartnÃ¤ckigkeit danken, und natÃ¼rlichÂ â es ist ja betont wordenÂ â war dieses Haus immer der Motor dafÃ¼r. Aber wir brauchen einen systematischen Ansatz fÃ¼r die nÃ¤chste Kommission dafÃ¼r, SchlupflÃ¶cher zu schlieÃen und wirklich dafÃ¼r zu sorgen, dass es Steuergerechtigkeit Ã¼berall gibt und dass wir sicherstellen, so das Vertrauen in die Demokratie weiter zu stÃ¤rken.",
+      "del:madeBy": {
+        "@id": "participant_74"
+      },
+      "del:timestamp": "2024-09-19T11:05:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_87",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_75"
+      },
+      "del:timestamp": "2024-09-19T11:06:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_88",
+      "del:text": "Pe de altÄ parte Ã®nsÄ, sunt ÈÄri precum RomÃ¢nia care nu au voie sÄ practice fiscalitatea amicalÄ cu marile Ã®ntreprinderi. Problema este una de principiu. Ãntr-o Uniune Ã®n care toÈi membrii ar trebui sÄ fie egali, conform tratatelor, de ce unora le sunt permise practici care pe alÈii Ã®i transformÄ Ã®n oi negre ale Europei? La obligaÈii suntem egali Èi e normal. ÃnsÄ nu este normal ca unii sÄ aibÄ favoruri, Ã®n timp ce alÈii sÄ fie puÈi la zid. Are de gÃ¢nd Uniunea EuropeanÄ sÄ reflecteze la aceastÄ problemÄ sau vom continua sÄ mimÄm cÄ suntem egali?",
+      "del:madeBy": {
+        "@id": "participant_76"
+      },
+      "del:timestamp": "2024-09-19T11:07:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_89",
+      "del:text": "L'Europe, que certains dÃ©peignent comme chantre d'un libÃ©ralisme dÃ©bridÃ©, siffle en fait la fin de la concurrence fiscale dÃ©loyale. Les grandes entreprises ne sont pas au-dessus de nos lois, mÃªme en matiÃ¨re d'impÃ´t. C'est un jugement crucial qui montre que la justice fiscale ne se fera pas au dÃ©triment de notre marchÃ© unique, ni sur le dos des contribuables europÃ©ens, alors j'adresse mes fÃ©licitations Ã  la vice-prÃ©sidente exÃ©cutive MargretheÂ Vestager et Ã  ses Ã©quipes.",
+      "del:madeBy": {
+        "@id": "participant_77"
+      },
+      "del:timestamp": "2024-09-19T11:09:21"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_90",
+      "del:text": "In Europa entscheidet die Politik und nicht groÃe Konzerne, welche Regeln gelten. Deshalb sind die Urteile gegen Apples 13âMilliardenâSteuertrick, aber auch gegen Google Shopping so wichtig. Sie zeigen, dass wir der Macht der groÃen Konzerne nicht ohnmÃ¤chtig gegenÃ¼berstehen. Google darf bei Google Shopping nicht einfach seine eigenen Produkte bevorteilen.\nDer Streit mit den Techriesen liegt jetzt einige Jahre zurÃ¼ck, und seitdem ist auch gesetzgeberisch beispielsweise mit dem Digital Markets Act einiges passiert. Aber das reicht nicht aus; wir brauchen mehr. Wir brauchen MindeststeuersÃ¤tze fÃ¼r groÃe Konzerne, einen besseren Austausch von Steuerdaten und eine Reform des Wettbewerbsrechts.\nWir GrÃ¼ne erwarten von der neuen EU-Kommission, dass sie dort weitermacht, wo VizeprÃ¤sidentin Vestager in den letzten Jahren aufgehÃ¶rt hat. Wir mÃ¼ssen nachlegen, wir dÃ¼rfen nicht nachlassen.",
+      "del:madeBy": {
+        "@id": "participant_78"
+      },
+      "del:timestamp": "2024-09-19T11:10:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_91",
+      "del:text": "Il modello economico attuale Ã¨ profondamente ingiusto e va ripensato attraverso nuove politiche fiscali e tributarie. Dobbiamo porre fine all'impunitÃ  dei giganti, dobbiamo avere il coraggio di affrontare le multinazionali della tecnologia e della finanza e costruire un sistema fiscale che non si pieghi ai loro interessi, seguendo tre prioritÃ : l'armonizzazione fiscale tra i paesi membri, con una tassa comune sui capitali, la lotta all'elusione ed evasione fiscale, con una vera lista dei paradisi fiscali, e la riduzione della burocrazia per le imprese.\nE permettetemi di aggiungere che abbiamo molti dubbi che queste proposte possano essere prese in considerazione dal nuovo commissario per la tassazione, il cui nome compariva nei Pandora Papers perchÃ© possedeva investimenti attraverso shell companies in un paradiso fiscale delle Isole Vergini. Chiediamo che questa delega venga ritirata.\nIl peso del fisco non puÃ² ricadere sulle spalle dei lavoratori e delle piccole e medie imprese. Il tempo delle esenzioni per le multinazionali e per i multimilionari deve finire.",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2024-09-19T11:12:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_92",
+      "del:text": "Az Apple pÃ©ldÃ¡jÃ¡n lÃ¡thatÃ³, hogy a leghatÃ©konyabb adÃ³jogi, versenyjogi Ã©s fogyasztÃ³vÃ©delmi eszkÃ¶zÃ¶kkel lehet megregulÃ¡zni a globÃ¡lis cÃ©geket. A DSA rendeletet az alapjogok vÃ©delmÃ©re hivatkozva fogadtÃ¡k el. Ha a BizottsÃ¡g nem lÃ©p fel a vÃ©lemÃ©nydiktatÃºra ellen, tovÃ¡bbra is asszisztÃ¡l a jogsÃ©rtÃ©sekhez, azzal azt bizonyÃ­tja, hogy szÃ¡mÃ¡ra elfogadhatÃ³ a negatÃ­v diszkriminÃ¡ciÃ³ a szÃ³lÃ¡sszabadsÃ¡g terÃ¼letÃ©n.",
+      "del:madeBy": {
+        "@id": "participant_80"
+      },
+      "del:timestamp": "2024-09-19T11:13:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_93",
+      "del:text": "Es, sencillamente, un caso paradigmÃ¡tico de ayudas de Estado ilegales. Estas ayudas ilegales pueden tomar muchas formas: subsidios, subvenciones o, como en este caso particular, tratos fiscales privilegiados, pero para restaurar la competitividad en Europa y dar mÃ¡s prosperidad a los ciudadanos el camino no es el de los tratos privilegiados para unas pocas empresas o sectores, no existen los atajos.\nLo que necesitan las empresas europeas, todas ellas, grandes y pequeÃ±as, es, en primer lugar, un marco normativo claro, sencillo y con costes de cumplimiento bajos; en segundo lugar, una fiscalidad internacionalmente competitiva e incentivadora de la innovaciÃ³n, la inversiÃ³n y la creaciÃ³n de empleo, y, en tercer lugar, un verdadero mercado Ãºnico, integrado y sin distorsiones.Â Cuanto antes comencemos en Europa a recorrer este camino, antes podremos evitar el riesgo de irrelevancia y estancamiento al que nos aboca la inacciÃ³n y del que nos avisÃ³ Mario Draghi con su informe el otro dÃ­a.",
+      "del:madeBy": {
+        "@id": "participant_81"
+      },
+      "del:timestamp": "2024-09-19T11:14:54"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_94",
+      "del:text": "Hemos trabajado mucho en esta Ãºltima legislatura para armonizar el impuesto de las grandes compaÃ±Ã­as, hemos tenido que implementar en Europa el acuerdo de la OCDE para tener un tipo mÃ­nimo y debiÃ©ramos avanzar rÃ¡pidamente tambiÃ©n en ese pilar 1. Creo que sentencias como esta, que obligan a una gran multinacional que ha venido evadiendo o usando estrategias de elusiÃ³n fiscal para que se tributaran en Irlanda los beneficios de toda Europa es, en mi opiniÃ³n, un punto y aparte. Son 13Â 000 millones que hemos recuperado para los ciudadanos, para los trabajadores europeos. Y este es el camino que la futura ComisiÃ³n debe seguir.",
+      "del:madeBy": {
+        "@id": "participant_82"
+      },
+      "del:timestamp": "2024-09-19T11:16:36"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_95",
+      "del:text": "I also support the idea that paying taxes is normal and that if the EU wants to be competitive we need a level playing field all across the Europe. Otherwise, businesses in Europe will be racing for state aid among the Member States.\nBut the current situation reminds me a little bit of the saying that 'the road to hell is paved with good intentions'. Therefore, let me express my concerns about the implication of the Apple tax judgment in two important areas.\nFirst, one can argue that this judgement represents a major shift in power, giving the EU greater influence over national tax policies. But if fiscal issues are to be touched, then only Member States should decide.\nSecond, it sends a signal to investors, whether from the EU or abroad, that doing business in the EU is like shooting at moving targets that move in an unknown direction. Is this the message we want to send to investors? I don't think so.\nMoreover, we are sending this message in a time of intensive discussions about the urgent need to increase EU competitiveness in the global world. At the same time, we all know very well that there are issues we cannot or don't want to deal with because we would have to compromise our social or environmental standards, and this is something we don't want to do.\nWhat we can and should do is to create a stable and attractive regulatory environment.",
+      "del:madeBy": {
+        "@id": "participant_83"
+      },
+      "del:timestamp": "2024-09-19T11:18:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_96",
+      "del:text": "But just for members of the House here who may not be aware: Apple in Cork in Ireland employs 6Â 000 people. It's not just a wallplate company. It is a real, tangible company employing 6Â 000 of my constituents. So I just want to ensure that people are aware of that. There's a perception that it seems to be just some tax avoidance wallplate company. It is a very tangible, real business in Cork: it came to Cork in 1980 with 50 employees and it is now employing 6Â 000 people.\nWe accept the ruling, but Ireland and the integrity of our taxation laws and policy is something that the Irish Government stands by. And that is why they were involved in the process of appealing as well with Apple, because the General Court found in favour of Apple and Ireland. It was on appeal that the European Court of Justice found against. But that's why Ireland was involved in that case. It was because we do defend the integrity of our taxation policy and industrial policy.",
+      "del:madeBy": {
+        "@id": "participant_84"
+      },
+      "del:timestamp": "2024-09-19T11:19:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_97",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_85"
+      },
+      "del:timestamp": "2024-09-19T11:21:15"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_98",
+      "del:text": "Make no mistake, the money from the unpaid taxes wasn't spent on helping Apple workers or to improve their pay and conditions. It was not used to help them or their communities in any way. That is why it is vital now that the taxes due are paid immediately and that the funds need to be invested in our communities, in our urban and our rural communities, that for far too long have been left behind by successive governments.",
+      "del:madeBy": {
+        "@id": "participant_86"
+      },
+      "del:timestamp": "2024-09-19T11:22:27"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_99",
+      "del:text": "Auch die internationale Mindeststeuer hat weiterhin etliche SchlupflÃ¶cher. Apple verkauft sein iPhone aber vor allem in groÃen MÃ¤rkten wie Deutschland, Frankreich, Italien oder Spanien, nicht in Irland oder Luxemburg. Wir wissen durch die internationale Berichtspflicht, wie hoch die UmsÃ¤tze und Gewinne von diesen Konzernen in jedem Land sind. Deswegen brauchen wir endlich eine Koalition der willigen Staaten, die das Scheitern der EU im Kampf gegen das Steuerdumping der Konzerne endlich in die Hand nimmt und etwas dagegen tut und mit Strafsteuern bzw. Quellensteuern gegen kÃ¼nstliche FinanzflÃ¼sse in Steueroasen endlich ein Zeichen setzt. Holen wir das Geld zurÃ¼ck und schÃ¼tzen wir unseren Mittelstand!",
+      "del:madeBy": {
+        "@id": "participant_87"
+      },
+      "del:timestamp": "2024-09-19T11:23:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_100",
+      "del:text": "The case is hugely historic and only has relevance there relating to Revenue opinions from between 1991 and 2007, and Ireland has already made significant reforms to its tax code since 2007: changes in the law and corporate residence rules, and the attribution of profits to branches of non-resident companies operating in Ireland.\nAnd whilst taxation is of course a national sovereignty, it still requires European and international cooperation. Ireland is an active participant in our international tax discussions, and we have also made the necessary changes as international tax law rules have developed over the years.\nAnd this includes the important work of the OECD two-pillar agreement, where Ireland made significant tax changes that have not been matched by any other country. Ireland is also a strong advocate of this agreement because base erosion and profit shifting is a global issue that requires a global response.\nSo it's absolutely right to tackle unfair state aid. And this should also include the large amount of state aid through subsidies that currently take place in many of our Member States.\nBut also, I think we need to be really, really clear: in a week where we've spoken so much about Europe's need to boost our competitiveness, private investment, innovation, this judgment shouldn't be used â as it is by some â as a stick against the foreign direct investment sector.\nWe need to remain open for business, to attract foreign direct investment, and this includes measures such as tax competition that makes us competitive on the international stage. Foreign direct investment makes us stronger, creates jobs and boosts the economy. And that's exactly what we need.\n(The speaker declined to take a blue-card question from Luke Ming Flanagan)",
+      "del:madeBy": {
+        "@id": "participant_88"
+      },
+      "del:timestamp": "2024-09-19T11:25:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_101",
+      "del:text": "Enquanto a Europa perde competitividade devido Ã  falta de investimento, como nos avisa MÃ¡rio Draghi, alguns paÃ­ses permitem que poucas empresas contornem a nossa lei.\nPergunto: estes 13 mil milhÃµes de euros sÃ£o mais valiosos para uma empresa gigante, com acionistas multimilionÃ¡rios? Ou sÃ£o mais valiosos para pequenas empresas, para trabalhadores do nosso Estado social, da proteÃ§Ã£o civil aos cuidados de saÃºde?\nPara colocar em perspetiva, no meu paÃ­s, Portugal, 13 mil milhÃµes de euros seriam suficientes para um ano de orÃ§amento de Estado na Ã¡rea da saÃºde, para pagar a enfermeiros, a mÃ©dicos, para tratar as pessoas.\nComissÃ£o, e Senhora comissÃ¡ria, que nÃ£o estÃ¡ presente, quero felicitÃ¡-los pela vossa coragem. A coragem polÃ­tica, que deve ser o espÃ­rito desta Casa da UniÃ£o Europeia.\nNo entanto, nÃ³s estamos conscientes de que este Ã© apenas o primeiro de muitos passos que devemos dar para combater os esquemas de evasÃ£o fiscal. Ã de justiÃ§a que estamos a falar.",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2024-09-19T11:27:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_102",
+      "del:text": "Il faut Ãªtre clair: ce jeu fait perdre toute l'Europe. Ce jeu n'est pas un jeu Ã  somme nulle et cette Europe de la dÃ©sunion a un impact sur les citoyens. L'Irlande a prÃ¨s de trois fois plus de rentrÃ©es liÃ©es Ã  l'impÃ´t des sociÃ©tÃ©s que la Belgique, alors qu'elle a un taux plus bas. L'impÃ´t sur les sociÃ©tÃ©s a baissÃ© de plus d'un tiers au cours des 20Â derniÃ¨res annÃ©es. C'est autant de rentrÃ©es en moins pour les EuropÃ©ens.\nÃ force de se faire concurrence, la seule chose que l'on pourra encore taxer, c'est le travail, et cela n'a aucun sens. C'est Ã  cause de cela que l'on Ã©touffe nos citoyens, notre compÃ©titivitÃ©. L'Union doit garantir un impÃ´t sur les sociÃ©tÃ©s plus Ã©levÃ© et Ã©viter la concurrence avec des aides d'Ãtat, spÃ©cifiques d'un Ãtat Ã  l'autre. Il y a urgence. Face Ã  Apple et Ã  toutes les multinationales, il faut Ãªtre clair: tant que nous serons dÃ©sunis, nous serons perdants.",
+      "del:madeBy": {
+        "@id": "participant_90"
+      },
+      "del:timestamp": "2024-09-19T11:28:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_103",
+      "del:text": "Their decision not to release Apple intelligence comes exactly when talks about the concrete AI obligations in the Code of Practice are starting. This is no coincidence, but a cheap lobby technique to ramp up pressure and weaken the rules for the biggest AI companies.\nApple is not above the law. The truth is, people are not living guinea pigs. The AI we use has to be safe, and if your product cannot comply with basic safety rules, then we don't want it in the EU.",
+      "del:madeBy": {
+        "@id": "participant_91"
+      },
+      "del:timestamp": "2024-09-19T11:30:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_104",
+      "del:text": "Mais la guerre contre l'Ã©vasion fiscale est loin d'Ãªtre gagnÃ©e. Chaque annÃ©e, les multinationales enregistrent 1Â 000Â milliards d'euros dans les paradis fiscaux, dont la moitiÃ© dans les paradis fiscaux europÃ©ens. Et qui est-ce que la Commission europÃ©enne a choisi pour mener ce combat? WopkeÂ Hoekstra, ancien ministre des Finances d'un paradis fiscal europÃ©en et lui-mÃªme impliquÃ© dans le dernier scandale d'Ã©vasion fiscale des PandoraÂ Papers avec une sociÃ©tÃ© Ã©cran, tenez-vous bien, aux Ã®les Vierges britanniques. On a envie d'en pleurer, et malheureusement, c'est bien le cas. Mais tant que vous y Ãªtes, demandez Ã  Monsanto de mettre fin aux OGM. Franchement, le message est clair: des cadeaux fiscaux aux multinationales et faire payer la note au peuple. Nous ne vous lÃ¢cherons pas, pour mettre fin Ã  ce braquage en bande organisÃ©e.",
+      "del:madeBy": {
+        "@id": "participant_92"
+      },
+      "del:timestamp": "2024-09-19T11:31:32"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_105",
+      "del:text": "Ik denk dat commissaris Vestager â jammer genoeg is zij hier niet vandaag â zich geen beter afscheidscadeau kan wensen, want na de ups en downs die ze de afgelopen jaren bij het Hof heeft gezien, eindigt ze in ieder geval op een hoogtepunt.\nWat sommigen dus politieke onzin noemen, is precies wat we moesten doen. In een tijd waarin zelfs de grootste Europese landen te klein zijn om op hetzelfde niveau te onderhandelen met de grootste bedrijven ter wereld, moeten we er in Europa voor zorgen dat we sterke mededingingsautoriteiten hebben en dat we ook staatssteun aanpakken om de publieke goederen en de bestaanszekerheid in Europa te borgen. En niet alleen in Europa, want als iemand baat heeft bij een meer gecoÃ¶rdineerde aanpak tegen agressieve belastingregimes, dan zijn het wel ontwikkelingslanden. Waar het op neerkomt is dat we de oneerlijke race naar de bodem van belastingen en de regelconcurrentie tussen landen en vooral in de EU moeten aanpakken en moeten vermijden.\nIn de week waarin het Draghi-verslag hier is gepresenteerd, is toch echt wel de vraag: willen we dat bedrijven naar Europa komen omdat wij de laagste belastingen hebben of omdat wij de beste werknemers hebben? Of omdat we het beste politieke klimaat hebben? Of de beste regelgeving? Daar schort het aan.\nDeze uitspraak is een duidelijke waarschuwing voor iedereen die zich laat verleiden tot een door staatssteun gedreven economische heropleving van Europa. Wees voorzichtig met wat je hoopt.",
+      "del:madeBy": {
+        "@id": "participant_93"
+      },
+      "del:timestamp": "2024-09-19T11:32:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_106",
+      "del:text": "However, it raises a key question: should tax policy be left to competition law and courts? I do not think that this is sustainable. We need the political will to create a fair tax system and to close loopholes. When companies like Apple play countries against each other, our societies lose out on essential investment, on healthcare, infrastructure, education. The global minimum tax, championed by Olaf Scholz and others, ensures that companies pay taxes where profits are made and not where their headquarters are. I think it's time that we go on that way, that the US follows suit. It's time for a fair global tax system.",
+      "del:madeBy": {
+        "@id": "participant_94"
+      },
+      "del:timestamp": "2024-09-19T11:34:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_107",
+      "del:text": "Diese staatlichen Beihilfen an den Konzern liefern natÃ¼rlich Wettbewerbsvorteile im Vergleich zu anderen Unternehmen, fÃ¼r unseren Binnenmarkt brauchen wir aber Fairness zwischen den Mitgliedstaaten. NatÃ¼rlich wÃ¼nschen sich die Mitgliedstaaten ab und an, dass das Beihilfenrecht ausgeweitet wird. Aber man sollte an andere Dinge denken wie Reformen, wie weniger BÃ¼rokratie und BelastungenÂ â auch so kann man einen Standort attraktiv machen.\nDie Fairness muss fÃ¼r alle Unternehmen gelten, ob groÃ oder klein, ob groÃer Konzern oder der BÃ¤cker von nebenan. Und weiters mÃ¼ssen wir auch die BÃ¼rgerinnen und BÃ¼rger in unseren LÃ¤ndern vor diesen Praktiken schÃ¼tzen, denn der sorgsame Umgang mit Steuergeldern muss Ã¼berall in Europa oberste PrioritÃ¤t haben.",
+      "del:madeBy": {
+        "@id": "participant_95"
+      },
+      "del:timestamp": "2024-09-19T11:35:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_108",
+      "del:text": "Richtig so, denn die 13Â Milliarden Euro kÃ¶nnen wir in Zeiten der Klimakrise, der sozialen Krise mehr als gut gebrauchen. Ãberschwemmungen und DÃ¼rren, also die SchÃ¤den, die der Klimawandel verursacht, belaufen sich allein in Ãsterreich auf 5 bis 7Â MilliardenÂ Euro pro Jahr. Da kommen die 13Â Milliarden gerade recht. Ich denke, Irland kann das auch sehr gut gebrauchen.\nHolen wir uns also das Geld, das uns als Gesellschaft zusteht, von den Konzernen zurÃ¼ck!",
+      "del:madeBy": {
+        "@id": "participant_96"
+      },
+      "del:timestamp": "2024-09-19T11:37:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_109",
+      "del:text": "Two points. One, this is a state aid ruling, not a taxation ruling. And two, Ireland does not give any preferential tax treatment to companies or taxpayers, and this current legislation complies with all international taxation obligations. We have participated in OECD initiatives on base erosion and profit shifting, etc.,\nAnd our success is not just down to competitive corporation tax rates; it is also due to a skilled workforce, a good education system, a proud member of the EU, English-speaking, close ties with the US, etc.\nSo Ireland â whether apple pie or no apple pie â is not going to lie down and die. Ãire AbÃº!",
+      "del:madeBy": {
+        "@id": "participant_97"
+      },
+      "del:timestamp": "2024-09-19T11:39:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_110",
+      "del:text": "For years, the Irish Labour Party has called for Ireland to step up and engage with global tax justice initiatives. This judgment vindicates our call â for which we were roundly criticised by other parties in Ireland â to sign up to both pillars of the OECD corporation tax reform process. Although belated, I am glad the Irish Government has begun to engage with global tax reform initiatives. But there's a long way to go if we are to ensure tax justice once and for all for our citizens.\nAny economic model that relies disproportionately on corporation tax receipts is completely unsustainable and ultimately a danger to the Irish economy.\nIf we don't act now, we risk repeating the mistakes we made 15Â years ago in Ireland. Three corporations in Ireland account for EURÂ 10Â billion of Ireland's tax revenue. The Commission needs to remind Ireland of the reasons for the economic collapse of 15Â years ago.",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2024-09-19T11:40:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_111",
+      "del:text": "Eu vreau sÄ o felicit pe doamna comisar, care a reuÈit, iatÄ, pe final de mandat, sÄ facÄ acest lucru extrem de bun, care poate fi Èi luat ca dacÄ vreÈi, o prevenÈie pentru ceilalÈi, sÄ nu mai facÄ aceste lucruri. Èi da, poate cÄ ar trebui ca banii pe care-i recuperÄm acum, Ã®n aceastÄ perioadÄ â avem Èi Parchet European, avem Èi OLAF â din evaziune, sÄ meargÄ cÄtre, iatÄ, cÄtre persoanele care acum suferÄ din cauza calamitÄÈilor.",
+      "del:madeBy": {
+        "@id": "participant_58"
+      },
+      "del:timestamp": "2024-09-19T11:42:21"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_112",
+      "del:text": "L'arrÃªt de la Cour de justice de l'Union europÃ©enne est une excellente nouvelle et un encouragement pour mettre fin Ã  l'impunitÃ© des pratiques commerciales illÃ©gales. Nous espÃ©rons que d'autres suivront, par exemple contre les sites d'ultra-fast fashion aux pratiques douteuses qui emploient aujourd'hui des anciens commissaires europÃ©ens comme chargÃ©s des relations publiques. Ceux qui trichent avec les rÃ¨gles europÃ©ennes doivent Ãªtre contrÃ´lÃ©s et sanctionnÃ©s, ils doivent payer ou s'en aller.",
+      "del:madeBy": {
+        "@id": "participant_99"
+      },
+      "del:timestamp": "2024-09-19T11:43:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_113",
+      "del:text": "But in here, when you're in here, like anywhere in life â even in a classroom or on a board of management in a school or in your local council â you obviously have to be liked and you have to gain influence with people. You've got to get people to work with you. And in the election, we were told: elect EPP members in our country because they'll have influence. And then I come in here and I hear another very influential EPP member say that my country is living at the expense of their neighbours.\nNow, I look at SÃ©an Kelly â and I have good respect for you, SeÃ¡n, and people like you around here â but, I mean, how can you hold your head up high when your colleague that you're trying to influence is saying that you and I are living at the expense of their neighbours? Well done! Keep it up! By the way, there might be more there.",
+      "del:madeBy": {
+        "@id": "participant_100"
+      },
+      "del:timestamp": "2024-09-19T11:44:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_114",
+      "del:text": "Toliau be galo svarbu pasakyti, kad tai yra dabar tik pati pradÅ¾ia. Toliau kovoti su mokesÄiÅ³ vengimu, mokesÄiÅ³ plovimu, agresyviu mokesÄiÅ³ planavimu ir iÅ¡naudojimu milÅ¾iniÅ¡kÅ³ lobistiniÅ³ Ä¯takÅ³ tam, kad Å¡alyse narÄse vyrautÅ³ nesÄÅ¾ininga mokesÄiÅ³ konkuravimo Ä¯vairiomis mokestinÄmis lengvatomis politika. Tai griauna viskÄ. Europos SÄjungai reikia savo biudÅ¾eto. Mes turime galvoje savo nuosavus iÅ¡teklius ir transnacionaliniÅ³ akcijÅ³ korporacijÅ³, bankiniÅ³ korporacijÅ³ apmokestinimas yra iÅ¡teklius, ir net transnacionaliniÅ³ korporacijÅ³ pelnai irgi iÅ¡teklius, todÄl turime judÄti Ä¯ priekÄ¯ ir, svarbiausia, Ä¯veikti vienbalsiÅ¡kumo principÄ Taryboje, nes ten bus daug bÄdÅ³ diskutuojant dÄl mokesÄiÅ³.",
+      "del:madeBy": {
+        "@id": "participant_101"
+      },
+      "del:timestamp": "2024-09-19T11:46:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_115",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_72"
+      },
+      "del:timestamp": "2024-09-19T11:48:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_116",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T11:48:45"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_117",
+      "del:text": "The lists of Members nominated to form the interparliamentary delegations are published on Parliament's website and will be annexed to today's minutes.",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T12:00:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_118",
+      "del:text": "This decision will be set out in the minutes of today's sitting and take effect on the date of this announcement.",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T12:01:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_119",
+      "del:text": "Je vous invite bien sÃ»r Ã  voter cet accord nÃ©cessaire pour des circonstances exceptionnelles, car nous n'allons pas faire redescendre nos satellites. Toutefois, nous devons envoyer un message ferme au Conseil et Ã  la Commission: l'accord du Parlement europÃ©en, ce n'est pas une simple formalitÃ© administrative. Il est impÃ©ratif que nous soyons consultÃ©s en temps voulu.",
+      "del:madeBy": {
+        "@id": "participant_102"
+      },
+      "del:timestamp": "2024-09-19T12:01:53"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_120",
+      "del:text": "Dans quelques semaines, la COPÂ 29 se tiendra Ã  Bakou. Ceux qui s'y rendront ont le devoir moral de rÃ©clamer le retour des centÂ mille ArmÃ©niens du Haut-Karabakh et la libÃ©ration des dÃ©tenus. Le combat pour la planÃ¨te ne peut pas aller Ã  l'encontre du combat pour les droits de ceux qui l'habitent.",
+      "del:madeBy": {
+        "@id": "participant_103"
+      },
+      "del:timestamp": "2024-09-19T12:03:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_121",
+      "del:text": "I ask you, Madam President, pursuant to Rule 22(2) of the Rules of Procedure, to see to it that the rules are being respected and applied â not only with regard to the delegations, but also with regard to the committees.",
+      "del:madeBy": {
+        "@id": "participant_104"
+      },
+      "del:timestamp": "2024-09-19T12:04:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_122",
+      "del:text": "Esta maÃ±ana, en un medio de comunicaciÃ³n espaÃ±ol, el seÃ±or GonzÃ¡lez Pons ha mentido afirmando que la ResoluciÃ³n que vamos a votar hoy sobre el fraude electoral en Venezuela no contaba con el apoyo de VOX y de este grupo polÃ­tico, y no solo cuenta con nuestro apoyo y firma, sino que este grupo polÃ­tico ha tenido un papel sustancial en la redacciÃ³n del mejor texto en defensa de la libertad y el Estado de Derecho en Venezuela y contra el secuestro, la tortura, el asesinato y la violaciÃ³n de derechos polÃ­ticos por la tiranÃ­a socialista.\nNo vamos a consentir ni mentiras ni bulos. Pida perdÃ³n si su orgullo se lo permite, pero la mancha de indignidad quedarÃ¡ para siempre, como su foto y su acuerdo con el Partido Comunista chino.",
+      "del:madeBy": {
+        "@id": "participant_105"
+      },
+      "del:timestamp": "2024-09-19T12:05:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_123",
+      "del:text": "(For the results and other details concerning the vote: see minutes)",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T12:06:54"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_124",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T12:06:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_125",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T12:10:12"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_126",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T12:11:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_127",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T12:13:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_128",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T12:13:45"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_129",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T12:24:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_130",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_106"
+      },
+      "del:timestamp": "2024-09-19T12:26:21"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_131",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_106"
+      },
+      "del:timestamp": "2024-09-19T12:27:52"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_132",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T12:36:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_133",
+      "del:text": "The minutes are approved.",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T15:03:53"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_134",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T15:04:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_135",
+      "del:text": "A clean, healthy and sustainable environment is a human right as recognised by the UN resolution in 2022. That means citizens mobilising for the protection of the environment can be human rights defenders. They deserve our special attention and our protection.\nPlease note that beyond the specific case of Paul Watson, I will be speaking generally about environmental human rights defenders and the instruments and measures available in the EU to protect them. Indeed, environmental defenders play a crucial role in safeguarding the environment and ensuring the environmental rule of law. However, in doing so, they sometimes risk attacks and threats, in some countries, such as judicial harassment, arbitrary detention, online and offline surveillance, as well as killings. They are essential in promoting democratic values in environmental decision-making. As members of civil society, they collaborate with authorities such as police inspectors and other enforcement authorities by reporting environmental crimes, providing evidence and advocating for accountability. Their efforts are vital in addressing various environmental crimes such as destruction of protected European wildlife, fauna and flora, wildlife trafficking offences, pollution and waste crimes.\nEnvironmental human rights defenders should be able to operate in a context where their fundamental rights are respected. The EU and its Member States are parties to the Aarhus Convention, which defines procedural rights related to environment, namely access to environmental information, public participation in decision-making, access to justice and legal remedies. These state obligations give citizens and environmental rights defenders an important tool to engage and advocate for the protection of the environment.\nAs policymakers and legislators, we have an important responsibility to protect those that are protecting our values, our human rights and our environment. In this respect, the European legislative framework was recently reinforced with two new instruments. First, the anti-SLAPP Directive sets minimum standards for protecting persons and organisations, in particular journalists and human rights defenders, including environmental defenders, on account of their engagement in public participation against manifestly unfounded claims or abusive proceedings in cross-border civil matters. The second is the new Environmental Crime Directive. Once transposed, these two instruments will strengthen the protection of environmental defenders.\nThe anti-SLAPP Directive entered into force on 6Â May this year, and will have to be transposed by the Member States by 7Â May 2026. This directive aims to protect people and organisations from the manifestly unfounded claims or abusive court proceedings which are being set up to intimidate and to harass those who defend our values and our societies. The directive lays out a number of procedural safeguards and measures to protect journalists and human rights defenders, including environmental defenders and others, who are targeted by abusive court proceedings for their involvement protecting the public interest in matters with cross-border implications.\nIt is complemented by a horizontal Commission recommendation with a broader scope, including pure national SLAPP cases and covering topics such as training, awareness-raising and support mechanisms for potential SLAPP targets and data collections for Member States.\nSecondly, the new Environmental Crime Directive requires Member States to grant support and assistance to those who report environmental crimes and cooperate with enforcers in criminal proceedings in accordance with national law. It contains provisions to support anyone who reports environmental offences, provides evidence or in any other way cooperates with competent authorities in criminal proceedings. This cooperation is important as it allows law enforcement and judicial authorities to be more efficient in the fight against environmental crime.\nMember States are obligated to transpose the Environmental Crime Directive by May 2026. The Commission will continue to cooperate with EU member States to facilitate the transposition of these two directives. These new pieces of legislation â the anti-SLAPP directive and the Environmental Crime Directive â come in addition to the already strong legislative framework for the protection of whistle-blowers reporting breaches of EU environmental law. The EU Whistle-blowers Directive, adopted in 2019, provides robust protection to persons who report breaches of EU environmental rules that they discover in the context of their work, and for this reason suffer retaliation in the context of their work.\nAs laid out in the EU Guidelines on Human Rights Defenders, the EU is firmly committed to protect human rights defenders at risk globally by enhancing their visibility and recognition, and by publicly speaking out against the threats that they face. The EU, through its network of EU delegations, uses a wide range of tools to protect human rights defenders, including public diplomacy, human rights dialogues, campaigns and awards, trial monitoring and emergency grants.\nIn line with our mandate to protect human rights defenders, the EU set up in 2015 the Protect Defenders mechanism, which has supported more than 60Â 000 human rights defenders so far. This mechanism includes emergency financial support for human rights defenders that face immediate risk which can finance a wide range of measures including legal representation, medical costs and protection measures. Environmental human rights defenders are amongst the main recipients of this emergency support.",
+      "del:madeBy": {
+        "@id": "participant_72"
+      },
+      "del:timestamp": "2024-09-19T15:04:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_136",
+      "del:text": "Cada vez hay mÃ¡s ciudadanos y ciudadanas que alzan la voz y que son exigentes denunciando la vulneraciÃ³n del Derecho europeo y que tambiÃ©n estÃ¡n desesperados por llamar nuestra atenciÃ³n respecto a la acciÃ³n en la lucha contra el cambio climÃ¡tico. Hemos visto a activistas, hemos visto tambiÃ©n a cientÃ­ficos y, por eso, estamos hablando de la necesidad de mejorar la protecciÃ³n para los denunciantes en Europa; es decir, para proteger a las personas que sean testigos de actividades ilegales o abusos de la ley y decidan sacarlo a la luz.\nEn el Grupo socialista llevamos mucho tiempo liderando la necesidad de articular la protecciÃ³n de los denunciantes, ya sean periodistas, ya sean activistas, defensores y defensoras de los derechos humanos u organizaciones de mujeres. Y es verdad que hemos avanzado, que nos hemos dotado de instrumentos como la Directiva sobre los denunciantes de irregularidades o la mÃ¡s reciente Directiva contra las demandas estratÃ©gicas contra la participaciÃ³n pÃºblica, pero debemos hacerla efectiva y, por eso, queremos una revisiÃ³n real, para que podamos hacerla efectiva y no consintamos nunca mÃ¡s esto en nuestras sociedades.",
+      "del:madeBy": {
+        "@id": "participant_107"
+      },
+      "del:timestamp": "2024-09-19T15:11:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_137",
+      "del:text": "Je ne connais pas personnellement PaulÂ Watson, mais je note que la France, BrigitteÂ Bardot et plus de 700Â 000 personnes se sont mobilisÃ©es pour lui en signant une pÃ©tition contre son extradition qui lui serait fatale. Mais au fil des ans, PaulÂ Watson est devenu cÃ©lÃ¨bre et mÃªme l'emblÃ¨me de la dÃ©fense des baleines, dauphins et autres mammifÃ¨res marins chassÃ©s Ã  travers le monde. Nous respectons le peuple, la culture et l'Ãtat du Japon. Je respecte le Danemark, le Groenland et ce sera au final bien sÃ»r leur dÃ©cision, mais ce cas pose question. Le KangeiÂ Maru, baleinier japonais inaugurÃ© en maiÂ 2024, est une machine de guerre conÃ§ue pour tuer des milliers de baleines jusque dans les coins les plus reculÃ©s de la planÃ¨te. Le Japon agit en violation du moratoire international sur le commerce de viande de baleine, entrÃ© en vigueur enÂ 1986, moratoire que le Danemark a ratifiÃ©. Il rÃ©pand le sang des baleines Ã  l'heure mÃªme oÃ¹ une mobilisation mondiale s'organise pour libÃ©rer leur plus grand dÃ©fenseur.\nCette poursuite jusqu'aux cheveux blancs et Ã  la mort d'un homme, cette extradition m'en rappelle d'autres: celles de Julian Assange et d'Edward Snowden, combattants de la vÃ©ritÃ©, combattants pour les libertÃ©s, lanceurs d'alerte, ils ont Ã©tÃ© pourchassÃ©s Ã  travers le monde. Le Japon traque PaulÂ Watson depuisÂ 2012 au moyen d'une notice rouge Ã©mise par Interpol. Un rapport du Parlement europÃ©en deÂ 2017 dÃ©nonce les multiples abus et dÃ©tournements du systÃ¨me de la notice rouge, utilisÃ© par certains gouvernements pour traquer des activistes et des opposants politiques. Le cas de PaulÂ Watson est citÃ© comme l'un des exemples de ce genre d'abus. Notre dÃ©fi aujourd'hui est de trouver un Ã©quilibre entre la lutte contre les souffrances animales et la perduration des traditions humaines, sans entrer dans le jeu des tensions gÃ©opolitiques qui sous-tendent souvent ces combats.",
+      "del:madeBy": {
+        "@id": "participant_108"
+      },
+      "del:timestamp": "2024-09-19T15:13:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_138",
+      "del:text": "Chaque jour se multiplie le nombre d'actes de braconnage. Chaque jour augmente le nombre de tueurs d'espÃ¨ces en voie de disparition. Chaque jour augmente le nombre de crimes sur des animaux. Chaque jour, on entend ou constate des actes malveillants de multinationales qui dÃ©truisent la biodiversitÃ© pour quelques bÃ©nÃ©fices financiers. Si nous ne changeons rien, un jour, l'Ãªtre humain pourrait Ãªtre en voie de disparition et nous l'aurons bien cherchÃ©. Free PaulÂ Watson!",
+      "del:madeBy": {
+        "@id": "participant_109"
+      },
+      "del:timestamp": "2024-09-19T15:16:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_139",
+      "del:text": "Car oui, c'est le Japon qui a Ã©tÃ© condamnÃ© par la Cour internationale de justice pour chasse illÃ©gale Ã  la baleine. Et oui, c'est le Japon qui persÃ©vÃ¨re et qui ouvre la chasse Ã  un nombre croissant d'espÃ¨ces de baleines Ã  des fins commerciales. Mais qui a le pouvoir de protÃ©ger les baleines, puisque ces baleines ont des droits? Qui peut parler pour les protÃ©ger et qui en a le devoir? C'est la communautÃ© internationale et donc aussi l'Union europÃ©enne, la Commission europÃ©enne, le Parlement europÃ©en et les Ãtats membres. Cette communautÃ© internationale aujourd'hui est trop silencieuse. Il nous revient de nous lever et de protÃ©ger les droits du vivant et de ceux qui le protÃ¨gent.\nL'Union europÃ©enne doit Ãªtre Ã  la hauteur de l'histoire, chers collÃ¨gues, elle doit Ãªtre du cÃ´tÃ© des baleines plutÃ´t que des braconniers, du cÃ´tÃ© de PaulÂ Watson plutÃ´t que du Japon. Alors soyons Ã  la hauteur, soyons Ã  la hauteur de nos engagements internationaux pour le vivant, le climat, la biodiversitÃ© et les droits humains. ProtÃ©geons les rÃ¨gles dont nous nous sommes nous-mÃªmes dotÃ©s contre la criminalitÃ© environnementale, pour protÃ©ger les lanceurs d'alerte ou encore contre les poursuites bÃ¢illons abusives. En somme, exigeons haut et fort du gouvernement danois la non-extradition et la libÃ©ration immÃ©diate de PaulÂ Watson. Free PaulÂ Watson!",
+      "del:madeBy": {
+        "@id": "participant_110"
+      },
+      "del:timestamp": "2024-09-19T15:18:02"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_140",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_111"
+      },
+      "del:timestamp": "2024-09-19T15:20:19"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_141",
+      "del:text": "Ein gutes Beispiel dafÃ¼r ist der Fall Paul Watson. Dieser Ãkoterrorist hat mehrere Kutter versenkt, den Tod von Seeleuten in Kauf genommen und so ziemlich jede internationale Schifffahrtsregel gebrochen, die es gibt; Schiffe wurden blockiert und geentert. Dennoch verlangt die links-grÃ¼ne sogenannte Zivilgesellschaft seine FreilassungÂ â selbst die Kommissarin habe ich heute in diesem Sinne so verstanden, aber auch der franzÃ¶sische PrÃ¤sident Macron fordert die Freilassung des Terroristen Watson, sogar gemeinsam mit dem linksradikalen MÃ©lenchon. Das ist unglaublich!\nJapan hat natÃ¼rlich das Recht, wenn es die Auslieferung des Terroristen Watson fordert. Es gibt keinen Unterschied zwischen Paul Watson und bin Laden. DÃ¤nemark, GrÃ¶nland muss Watson unverzÃ¼glich ausliefern.\nAber Watson ist nur ein kleiner Fisch, und wir wissen, dass der Fisch immer vom Kopf her stinkt. In dieser EU gehÃ¶ren ganz andere Verbrecher vor Gericht. Daher frage ich hier von diesem Podium aus die KommissionsprÃ¤sidentin von der Leyen: Was ist mit Ihrer Korruption bei der Corona-Impfstoffbeschaffung? Was sind das fÃ¼r 7,4Â MilliardenÂ Euro fÃ¼r ÃgyptenÂ â angeblich zur EindÃ¤mmung der Migration? Wo bleibt die Untersuchung zu den golden Visa, die von der Leyen offenbar weiter billigt?\nNimmt man Augustinus zum MaÃstab, so wÃ¤re von der Leyen heute Chefin einer RÃ¤uberbande. Sie gehÃ¶rte damit in ein kaltes GefÃ¤ngnis, aber eben nicht in den warmen Sessel der Kommission. Frau von der Leyen ist eine Schande fÃ¼r Europa, insbesondere fÃ¼r mein Vaterland Deutschland.\nIm Ãbrigen bin ich der Meinung, meiner deutschen Heimat wird es erst wieder besser gehen, wenn die Alternative fÃ¼r Deutschland in Deutschland regiert. In diesem Sinne wÃ¼nsche ich meinen Kollegen in Brandenburg alles Gute fÃ¼r die Wahl am Sonntag, dem 22.",
+      "del:madeBy": {
+        "@id": "participant_112"
+      },
+      "del:timestamp": "2024-09-19T15:21:45"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_142",
+      "del:text": "Ã una prospettiva inaccettabile per un'azione non violenta volta a salvare alcuni di questi meravigliosi cetacei, condotta 13Â anni fa in acque alte contro un'imbarcazione giapponese.\nL'Unione europea e la Danimarca, che Ã¨ chiamata a prendere una decisione sull'estradizione, non possono permettere un simile epilogo. Chi difende l'ambiente, denunciando e contrastando pratiche illegali come la caccia alle balene, va tutelato e non criminalizzato.\nPer questo, insieme al collega Dario Nardella, abbiamo scritto all'ambasciatore danese presso l'Unione europea chiedendo l'immediata liberazione di Paul Watson.\nOgni anno oltre 1Â 000 balene vengono ancora massacrate a fini commerciali â numeri che rappresentano un disastro ecologico e parlano di una sofferenza indicibile per creature altamente intelligenti e sociali che ci aiutano a contrastare la crisi climatica e svolgono servizi ecosistemici fondamentali per la salute degli oceani.\nFermiamo una volta per tutte questa pratica barbara. Liberiamo il capitano Watson. Proteggiamo chi difende l'ambiente.",
+      "del:madeBy": {
+        "@id": "participant_47"
+      },
+      "del:timestamp": "2024-09-19T15:24:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_143",
+      "del:text": "Japan is demanding the extradition of environmental activist Paul Watson following his arrest in Greenland.Â The same Japan which has repeatedly ignored international laws on whaling.\nNow, the focus must be on Watsonâs legal rights.Â I am deeply concerned that Denmark may extradite Paul Watson on too weak of a basis.\nDo you think that Watson will receive a fair trial in Japan, when their motives for silencing him are so evident?\nI donât think so.\nOf course, we must ensure that our support reflects international law, but we must also protect those who fight for endangered animals and our environment.\nIf we donât stand up for the whales, and for the legal rights of environmental activists, who will?",
+      "del:madeBy": {
+        "@id": "participant_33"
+      },
+      "del:timestamp": "2024-09-19T15:25:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_144",
+      "del:text": "Oui, le Danemark a jouÃ© un rÃ´le actif dans ce guet-apens. De l'aveu de son ministre de la Justice, c'est bien la police des ÃlesÂ FÃ©roÃ© qui a alertÃ© le Groenland de l'escale de PaulÂ Watson. Les ÃlesÂ FÃ©roÃ© et le Danemark ne supportent visiblement pas que SeaÂ Shepherd s'oppose aux massacres de dauphins qui y sont commis chaque annÃ©e. Et les voilÃ  unis par un lien de sang avec le Japon pour mener une opÃ©ration de vengeance politique et faire taire Ã  tout jamais un infatigable dÃ©fenseur du vivant.\nQue le gouvernement danois l'entende bien: les Ã©cologistes du monde entier vous regardent, et ils ne vous pardonneront jamais de jeter l'un des leurs en pÃ¢ture Ã  un pays qui ne respecte pas les droits de l'homme. Nous ne dÃ©fendons pas seulement PaulÂ Watson, mais aussi, Ã  travers lui, l'ensemble des activistes Ã©cologistes menacÃ©s, rÃ©primÃ©s, criminalisÃ©s en Europe et dans le monde.\nLes soulÃ¨vements de la mer ont commencÃ© et ils ne sont pas prÃ¨s de s'arrÃªter. Contre les ravages de la pÃªche industrielle et les pratiques de chasse cruelles, pour la biodiversitÃ© marine, pour l'ocÃ©an, free PaulÂ Watson!",
+      "del:madeBy": {
+        "@id": "participant_113"
+      },
+      "del:timestamp": "2024-09-19T15:27:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_145",
+      "del:text": "Quel est ce monde oÃ¹ l'on enferme des dÃ©fenseurs de l'environnement alors que la biodiversitÃ© s'effondre, tandis que les Ãtats et les multinationales qui tuent la biodiversitÃ© restent, eux, impunis. D'un cÃ´tÃ©, nous avons perdu en moins deÂ 50Â ans 70Â % des espÃ¨ces d'animaux vertÃ©brÃ©s et 49Â % des espÃ¨ces marines, et, de l'autre cÃ´tÃ©, on criminalise de plus en plus les dÃ©fenseurs et les dÃ©fenseurs de l'environnement. Ce sont prÃ¨s de 2Â 000 de ces dÃ©fenseurs qui ont Ã©tÃ© tuÃ©s entreÂ 2012 etÂ 2022. Donc le cas PaulÂ Watson n'est pas isolÃ© et je dÃ©nonce ici l'utilisation abusive des notices rouges d'Interpol qui sont censÃ©es lutter contre le terrorisme et la grande criminalitÃ©, et certainement pas contre ceux qui dÃ©fendent le vivant et notre commune humanitÃ©. Il faut libÃ©rer le capitaine PaulÂ Watson.",
+      "del:madeBy": {
+        "@id": "participant_114"
+      },
+      "del:timestamp": "2024-09-19T15:28:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_146",
+      "del:text": "Agus sin Ã© an cÃ¡s maidir le Paul Watson. An ceart duine atÃ¡ ag iarraidh dÃ­riÃº ar iascaireacht mhÃ­dhleathach maidir le mÃ­olta mÃ³ra a bheith i bprÃ­osÃºn? An ceart go mbeadh air dul go dtÃ­ an tSeapÃ¡in agus dul os comhair na cÃºirte? Ba chÃ³ir go seasfaimid go lÃ¡idir leis na daoine atÃ¡ ag troid i gcoinne athrÃº aerÃ¡ide agus go hÃ¡irithe Ã¡r bhfarraigÃ­ a chosaint.",
+      "del:madeBy": {
+        "@id": "participant_97"
+      },
+      "del:timestamp": "2024-09-19T15:30:36"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_147",
+      "del:text": "J'ajoute qu'agissant comme lanceur d'alerte, il devrait bÃ©nÃ©ficier, Madame la Commissaire, de la protection dÃ©coulant de la directive du 28Â octobreÂ 2019 relative au signalement des violations du droit. Nous vous appelons solennellement, Madame la Commissaire, Ã  ce que la Commission agisse par tous les moyens pour activer cette protection. Nous en appelons aussi aux autoritÃ©s du Danemark pour qu'il ne soit pas extradÃ©. Non, PaulÂ Watson n'est pas un dÃ©linquant, il n'a fait de mal Ã  personne. PaulÂ Watson sauve. Il sauve les baleines, il sauve le vivant, il sauve les gÃ©nÃ©rations futures. En leur nom, nous exigeons sa libÃ©ration.",
+      "del:madeBy": {
+        "@id": "participant_115"
+      },
+      "del:timestamp": "2024-09-19T15:32:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_148",
+      "del:text": "Son arrestation au Groenland, sur le sol europÃ©en, dans un contexte oÃ¹ l'utilisation des procÃ©dures judiciaires pour rÃ©duire au silence les activistes et les lanceurs d'alerte est de plus en plus rÃ©pandue, est extrÃªmement problÃ©matique. Dans le cas de PaulÂ Watson, l'utilisation d'une alerte rouge d'Interpol est un abus de la coopÃ©ration judiciaire internationale Ã  des fins politiques, en contravention avec les statuts d'Interpol. Les protecteurs de l'environnement, qui sont aussi nos protecteurs, doivent Ãªtre libres et protÃ©gÃ©s. Les procÃ©dures judiciaires bÃ¢illons pour les faire taire n'ont pas leur place dans nos dÃ©mocraties.\nLe cas de PaulÂ Watson illustre la menace qui pÃ¨se sur les droits de manifester, de s'exprimer, de se rÃ©unir pour tous les citoyens engagÃ©s pour des causes Ã  travers l'Europe et le monde. Le Danemark doit refuser l'instrumentalisation du cas Watson Ã  des fins politiques et Ã©conomiques, et refuser l'extradition du fondateur de SeaÂ Shepherd. Et nous attendons aussi de la Commission europÃ©enne qu'elle se positionne dans ce sens. Free PaulÂ Watson.",
+      "del:madeBy": {
+        "@id": "participant_116"
+      },
+      "del:timestamp": "2024-09-19T15:33:32"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_149",
+      "del:text": "The scale of these environmental protests has led to escalating state-led repression by the VuÄiÄ government, with activists facing smear campaigns, unlawful arrests and increased surveillance. On 11Â August, during the biggest environmental protests in Belgrade, three people were arrested and sentenced for 30 and 40 days, respectively, of prison on the same day, just to suppress the protests. Over the course of the next ten days, 33 arrests were made. The most frequent charge was calling for violent change of the constitutional order, which in Serbia means up to 15 years in prison.\nThe government's crackdown is a clear reaction to the growing democratic energy of the protest. I remind you that this Parliament passed a resolution last year on the unlawful election of VuÄiÄ. Serbians have a right to clean air and clean water. They have a right to protest. They have a right to a democracy.\n(The President cut off the speaker)",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2024-09-19T15:35:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_150",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T15:36:12"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_151",
+      "del:text": "It's not just as a moral duty to these people, but as part of our firm commitment to human rights, including the right to a healthy environment and to defend the rule of law on which our European society is built.\nSo, together with the Member States, we will continue to support civil society through the legal instruments I have already mentioned in detail during my introductory remarks.",
+      "del:madeBy": {
+        "@id": "participant_72"
+      },
+      "del:timestamp": "2024-09-19T15:36:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_152",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T15:37:44"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_153",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T15:37:52"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_154",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T15:38:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_155",
+      "del:text": "Russia's systematic atrocities, including indiscriminate attacks on civilians and critical infrastructure, constitute war crimes. Millions of Ukrainians remain displaced, suffering the consequences of this brutal aggression. The US mobilised over EURÂ 100Â billion in support, including military aid. However, we must do more.\nWe must remember that this conflict is not just about Ukraine: it threatens our shared values and democracy. As we consider the long-term recovery of Ukraine, we must push for accountability for war crimes and support reconstruction efforts. Together, we can stand with Ukraine and ensure that justice prevails in the end.",
+      "del:madeBy": {
+        "@id": "participant_97"
+      },
+      "del:timestamp": "2024-09-19T15:38:19"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_156",
+      "del:text": "Ãn egalÄ mÄsurÄ, este crucial sÄ existe o atenÈie sporitÄ pentru zonele limitrofe conflictului. Republica Moldova, stat puternic afectat de perpetuarea rÄzboiului, va avea pe 20 octombrie un referendum privind aderarea la Uniunea EuropeanÄ. Fac un apel cÄtre statele membre, cÄtre Parlamentul European, cÄtre Comisia EuropeanÄ sÄ ofere sprijin economic, tehnic Èi administrativ mai mare pentru ChiÈinÄu. Basarabenii trebuie sÄ vadÄ Èi sÄ simtÄ cÄ sunt doriÈi Ã®n proiectul unic european.\nNoi, AUR, ne dorim ca Republica Moldova sÄ fie cÃ¢t mai repede membrÄ a Uniunii Europene. Aceasta pare sÄ fie o condiÈie prealabilÄ a ideii noastre cÄ este necesarÄ Èi utilÄ o unire politicÄ Ã®ntre RomÃ¢nia Èi Republica Moldova sub umbrela Uniunii Europene. ConsiderÄm cÄ ar fi un lucru bun din perspectiva reeditÄrii Ã®n cadrul Uniunii Europene, a unei reunificÄrii, aÈa cum s-a Ã®ntÃ¢mplat cu cele douÄ Germanii Ã®n octombrie 1990.",
+      "del:madeBy": {
+        "@id": "participant_117"
+      },
+      "del:timestamp": "2024-09-19T15:39:33"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_157",
+      "del:text": "ÎÎ¼ÏÏ, Î³Î¹Î± Î»ÏÎ³Î¿ÏÏ Î±ÏÏÎ®Ï, ÎµÏÎ­Î»ÎµÎ¾Î± Î½Î± ÏÎ·ÏÎ®ÏÏ Î±ÏÎ¿ÏÎ® Î³Î¹Î± Î½Î± ÏÏÎ¿Î³ÏÎ±Î¼Î¼Î¯ÏÏ ÏÎ·Î½ ÎµÏÎ¹Î»ÎµÎºÏÎ¹ÎºÎ® ÎµÏÎ±Î¹ÏÎ¸Î·ÏÎ¯Î±. ÎÎ± Î³Î¯Î½Ï ÏÎ¹Î¿ ÏÎ±ÏÎ®Ï: Î´ÎµÎ½ Î³Î¯Î½ÎµÏÎ±Î¹ Î½Î± ÎºÎ±Î»ÎµÎ¯ÏÎ±Î¹ Î· ÎÏÏÏÎ¹Î±ÎºÎ® ÎÎ·Î¼Î¿ÎºÏÎ±ÏÎ¯Î± Î½Î± ÏÏÎ½ÎµÎ¹ÏÏÎ­ÏÎµÎ¹ Î¿Î¹ÎºÎ¿Î½Î¿Î¼Î¹ÎºÎ¬ ÎºÎ±Î¹ ÏÏÏÎ±ÏÎ¹ÏÏÎ¹ÎºÎ¬ ÏÏÎ·Î½ ÎÏÎºÏÎ±Î½Î¯Î± Î³Î¹Î± Î½Î± Î±Î½ÏÎ¹Î¼ÎµÏÏÏÎ¹ÏÏÎ¿ÏÎ½ ÏÎ±ÏÎ¬Î½Î¿Î¼ÎµÏ ÎµÎ¾ÏÏÎµÏÎ¹ÎºÎ­Ï ÎµÎ½Î­ÏÎ³ÎµÎ¹ÎµÏ, ÏÎ· ÏÏÎ¹Î³Î¼Î® ÏÎ¿Ï ÏÎ± ÎµÏÏÏÏÎ±ÏÎºÎ¬ ÏÎ·Ï ÎµÎ´Î¬ÏÎ· ÎºÎ±ÏÎ­ÏÎ¿Î½ÏÎ±Î¹ ÏÎ±ÏÎ¬Î½Î¿Î¼Î± Î±ÏÏ ÏÎ¿Î½ ÏÎ¿ÏÏÎºÎ¹ÎºÏ ÏÏÏÎ±ÏÏ. ÎÏÏÏ Î²Î»Î­ÏÎ¿ÏÎ¼Îµ ÏÏÎ·Î½ ÎÏÎºÏÎ±Î½Î¯Î± Î²Î¯Î±Î¹Î· ÎµÎºÎ´Î¯ÏÎ¾Î· ÏÎ»Î·Î¸ÏÏÎ¼Î¿Ï, Î±Î³Î½Î¿Î¿ÏÎ¼ÎµÎ½Î¿ÏÏ, ÏÎ±ÏÎ¬Î½Î¿Î¼Î· ÎºÎ±ÏÎ¿ÏÎ®, ÎµÏÎ¿Î¹ÎºÎ¹ÏÎ¼Ï, Î±Î½Î¸ÏÏÏÎ¿ÎºÏÎ¿Î½Î¯ÎµÏ, ÏÏÎ­ÏÎ·ÏÎ· ÏÎ·Ï ÎµÎ»ÎµÏÎ¸ÎµÏÎ¯Î±Ï ÎºÎ±Î¹ ÏÎ¿Ï Î´Î¹ÎºÎ±Î¹ÏÎ¼Î±ÏÎ¿Ï ÏÎ·Ï ÏÎµÏÎ¹Î¿ÏÏÎ¯Î±Ï, ÏÎ± Î¯Î´Î¹Î± Î±ÎºÏÎ¹Î²ÏÏ ÏÏÎ¼Î²Î±Î¯Î½Î¿ÏÎ½ ÎºÎ±Î¹ ÏÏÎ·Î½ ÎÏÏÏÎ¿.\nÎ©Ï ÎµÎº ÏÎ¿ÏÏÎ¿Ï, Î±Î½Î±Î¼Î­Î½Ï Î±ÏÏ ÏÎ·Î½ ÎÏÏÏÏÎ· ÏÎ·Î½ Î¯Î´Î¹Î± ÏÏÎ®ÏÎ¹Î¾Î· ÎºÎ±Î¹ Î±Î½ÏÎ¯Î´ÏÎ±ÏÎ· Î±ÏÎ­Î½Î±Î½ÏÎ¹ ÏÏÎ·Î½ Î¤Î¿ÏÏÎºÎ¯Î± Î¼Îµ Î±ÏÏÎ®Î½ ÏÎ¿Ï ÏÎ¹Î¿Î¸ÎµÏÎµÎ¯ÏÎ±Î¹ ÎºÎ±ÏÎ¬ ÏÎ·Ï Î¡ÏÏÎ¯Î±Ï. ÎÎ»Î»Î¹ÏÏ ÎµÎ¯Î½Î±Î¹ ÏÏÎ¿ÎºÏÎ¹ÏÎ¯Î±. ÎÏÎ±Î½ Î¼Î¹Î»Î¬Î¼Îµ Î³Î¹Î± ÏÎ·Î½ ÎÏÎºÏÎ±Î½Î¯Î±, ÏÎ»Î¿Î¹ Î¸Î± ÏÏÎ­ÏÎµÎ¹ Î½Î± Î­ÏÎ¿ÏÎ½ ÏÏÎ¿ Î¼ÏÎ±Î»Ï ÎºÎ±Î¹ ÏÎ· ÏÎºÎ­ÏÎ· ÏÎ¿ÏÏ ÏÏÎ¹ Î­Î½Î± Î¼Î­Î»Î¿Ï ÏÎ·Ï ÎÏÏÏÏÎ±ÏÎºÎ®Ï ÎÎ½ÏÏÎ·Ï, Î· ÎÏÏÏÎ¿Ï, Î²ÏÎ¯ÏÎºÎµÏÎ±Î¹ ÏÏÏ ÎºÎ±Î¸ÎµÏÏÏÏ Î¿Î¼Î·ÏÎ¯Î±Ï Î±ÏÏ Î­Î½Î± ÎºÏÎ¬ÏÎ¿Ï Î¼Îµ ÏÎ¿Î¹Î½Î¹ÎºÏ Î¼Î·ÏÏÏÎ¿ âÏÎ·Î½ Î¤Î¿ÏÏÎºÎ¯Î±.",
+      "del:madeBy": {
+        "@id": "participant_118"
+      },
+      "del:timestamp": "2024-09-19T15:40:51"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_158",
+      "del:text": "ÐÐ° Ð¶Ð°Ð»Ð¾ÑÑ Ð¿ÑÐµÐ· Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸ÑÐµ ÑÐµÐ´Ð¼Ð¸ÑÐ¸ Ð¿ÑÐ°Ð²Ð¸ÑÐµÐ»ÑÑÐ²Ð¾ÑÐ¾ Ð² Ð¡ÐºÐ¾Ð¿Ð¸Ðµ Ð¿ÑÐ±Ð»Ð¸ÑÐ½Ð¾ Ð¾Ð±ÑÐ²Ð¸, ÑÐµ Ð½ÑÐ¼Ð° Ð½Ð¸ÐºÐ°ÐºÐ²Ð¾ Ð½Ð°Ð¼ÐµÑÐµÐ½Ð¸Ðµ Ð¸ ÑÐ¾ ÑÐ»ÐµÐ´ 115 Ð³Ð¾Ð´Ð¸Ð½Ð¸ ÑÐ°ÐºÐ°Ð½Ðµ Ð´Ð° Ð¿Ð¾ÑÑÑÐ¾Ð¸ ÑÐ°Ð·Ð¸ Ð¶Ð¿ Ð»Ð¸Ð½Ð¸Ñ. ÐÑ Ð½ÐµÑ Ð·Ð°Ð²Ð¸ÑÐ¸ Ð½Ð°ÑÐ°ÑÐ° Ð¾Ð±ÑÐ° Ð¾ÑÐ±ÑÐ°Ð½Ð°. ÐÐ¾ Ð½ÐµÑ ÑÑÑÐ±Ð²Ð° Ð´Ð° Ð¼Ð¸Ð½Ð°Ñ Ð¿Ð¾Ð´ÐºÑÐµÐ¿Ð»ÐµÐ½Ð¸ÑÑÐ°, ÐºÐ¾Ð¸ÑÐ¾ Ð´Ð° Ð¿Ð°Ð·ÑÑ ÐÑÐ»Ð³Ð°ÑÐ¸Ñ Ð¸ Ð ÑÐ¼ÑÐ½Ð¸Ñ Ð¿ÑÐ¸ ÐµÐ²ÐµÐ½ÑÑÐ°Ð»ÐµÐ½ ÐºÐ¾Ð½ÑÐ»Ð¸ÐºÑ. ÐÑÐ¸Ð·Ð¾Ð²Ð°Ð²Ð°Ð¼ Ð·Ð° ÑÐ¾Ð²Ð° Ð´Ð° Ð¿ÑÐ¸ÐµÐ¼ÐµÐ¼ Ð²ÑÐ¸ÑÐºÐ¸ Ð²ÑÐ·Ð¼Ð¾Ð¶Ð½Ð¸ Ð´ÐµÐ¹ÑÑÐ²Ð¸Ñ, Ð¿Ð¾ Ð½Ð°ÑÐ¸ÑÐµ Ð¿ÑÐ°Ð²Ð¸Ð»Ð°, Ð´Ð° Ð½Ð°Ð¿ÑÐ°Ð²Ð¸Ð¼ ÑÐ°ÐºÐ°, ÑÐµ Ð¿ÑÐ°Ð²Ð¸ÑÐµÐ»ÑÑÐ²Ð¾ÑÐ¾ Ð² Ð¡ÐµÐ²ÐµÑÐ½Ð° ÐÐ°ÐºÐµÐ´Ð¾Ð½Ð¸Ñ Ð½Ð°Ð¹-Ð¿Ð¾ÑÐ»Ðµ Ð´Ð° Ð´Ð¾Ð²ÑÑÑÐ¸ ÑÐ¾Ð·Ð¸ Ð¿ÑÐ¾ÐµÐºÑ Ð¸ Ð´Ð° Ð·Ð°Ð¿Ð°Ð·Ð¸Ð¼ Ð½Ð°ÑÐ°ÑÐ° Ð¾ÑÐ±ÑÐ°Ð½Ð¸ÑÐµÐ»Ð½Ð° ÑÐ¿Ð¾ÑÐ¾Ð±Ð½Ð¾ÑÑ Ð² ÐÑÐ»Ð³Ð°ÑÐ¸Ñ Ð¸ Ð ÑÐ¼ÑÐ½Ð¸Ñ, Ð¸ Ð²ÑÐ¾Ð±ÑÐµ Ð² ÐÐ°Ð¿Ð°Ð´Ð½Ð¸ÑÐµ ÐÐ°Ð»ÐºÐ°Ð½Ð¸.",
+      "del:madeBy": {
+        "@id": "participant_119"
+      },
+      "del:timestamp": "2024-09-19T15:42:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_159",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T15:44:04"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_160",
+      "del:text": "Without transparency, his self-declared victory cannot reflect the will of the people. International observers were banned while friendly monitors were allowed to mislead the world about the election's legitimacy. This complicity in vote-rigging contributes to the ongoing survival of this oppressive regime, which has driven nearly 8 million people to flee Venezuela â more than those fleeing Syria.\nWe must urgently call for an end to the repression of opposition members and civil society. We must put more pressure on Maduro. Without international pressure, the hopes of democracy in Venezuela are fading fast.",
+      "del:madeBy": {
+        "@id": "participant_97"
+      },
+      "del:timestamp": "2024-09-19T15:44:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_161",
+      "del:text": "Peste 7,7 milioane de venezueleni au fost forÈaÈi sÄ fugÄ din propria ÈarÄ Ã®n cÄutarea unei vieÈi demne. Alegerile recente, declarate nedemocratice de cÄtre observatorii independenÈi Èi fraudate de Consiliul NaÈional Electoral, nu au fÄcut decÃ¢t sÄ confirme dorinÈa acestui regim de a se agÄÈa cu putere, cu orice preÈ, de putere. PreÈedintele ilegitim, Maduro, a subjugat efectiv instituÈiile ÈÄrii Ã®n slujba propriului sÄu interes. Comunitatea internaÈionalÄ, inclusiv Uniunea EuropeanÄ, nu poate sÄ recunoascÄ acest regim. DupÄ decenii de conducere totalitarÄ, Venezuela este astÄzi un stat eÈuat. Acestea sunt roadele comunismului. Nu putem lÄsa istoria sÄ se repete.",
+      "del:madeBy": {
+        "@id": "participant_120"
+      },
+      "del:timestamp": "2024-09-19T15:45:29"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_162",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T15:47:27"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_163",
+      "del:text": "Ach nÃ­ hÃ­ seo an chÃ©ad uair go bhfuil sÃ© seo ag tarlÃº. TÃ¡ sÃ© ag Ã©irÃ­ nÃ­os measa le trÃ­ocha bliain anuas agus insa trÃ©imhse sin cuireadh isteach ar 5.5 milliÃºn duine. Fuair 3 mhilliÃºn duine bÃ¡s agus chosain sÃ© an geilleagar 170 billiÃºn. TaispeÃ¡nann sÃ© sin, go gearrthÃ©armach, go gcaithfimid comhar agus cabhair airgid agus mar sin de a thabhairt dÃ³ibh chun an t-infreastruchtÃºr a chur ina cheart, ach taispeÃ¡nann sÃ© an tÃ¡bhacht atÃ¡ ann anois chun troid i gcoinne athrÃº aerÃ¡ide agus Ã¡r margadh glas a chur i bhfeidhm agus na hastaÃ­ochtaÃ­ a laghdÃº chomh tapa agus is fÃ©idir linn.",
+      "del:madeBy": {
+        "@id": "participant_97"
+      },
+      "del:timestamp": "2024-09-19T15:47:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_164",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T15:48:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_165",
+      "del:text": "If there are no objections, I shall forward forthwith the resolutions adopted at today's sitting to the persons and bodies named in the resolutions.",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T15:49:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_166",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T15:49:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_167",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2024-09-19T15:49:35"
+    }
+  ]
+}

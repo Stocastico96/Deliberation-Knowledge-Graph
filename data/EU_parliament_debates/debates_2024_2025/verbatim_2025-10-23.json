@@ -1,0 +1,2478 @@
+{
+  "@context": {
+    "del": "https://w3id.org/deliberation/ontology#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "del:DeliberationProcess",
+  "del:identifier": "ep_debate_20251023",
+  "del:name": "European Parliament Debate - 2025-10-23",
+  "del:startDate": "2025-10-23T00:00:00Z",
+  "del:endDate": "2025-10-23T23:59:59Z",
+  "del:hasTopic": [
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem1",
+      "del:name": "Opening of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem2",
+      "del:name": "Council positions at first reading (Rule 64)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem3",
+      "del:name": "Audiovisual Media Services Directive obligations in the transatlantic dialogue (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem4",
+      "del:name": "Combating violence against women and girls, including the exploitation of motherhood (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem5",
+      "del:name": "Breast cancer: the importance of screening (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem6",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem7",
+      "del:name": "Composition of committees and delegations"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem8",
+      "del:name": "Voting time"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem9",
+      "del:name": "Dates of application and transitional provisions for chemical products (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem10",
+      "del:name": "Objection pursuant to Rule 114(3): InvestEU Fund strategic investments in the field of defence (B10-0456/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem11",
+      "del:name": "Objections pursuant to Rule 114(3): Specifying a methodology for assessing greenhouse gas emissions savings from low-carbon fuels (B10-0457/2025, B10-0464/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem12",
+      "del:name": "Soil Monitoring and Resilience (Soil Monitoring Law) (A10-0204/2025 - Martin HojsÃ­k) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem13",
+      "del:name": "Preventing plastic pellet losses to reduce microplastic pollution (A10-0203/2025 - CÃ©sar Luena) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem14",
+      "del:name": "Renewing the EU-Africa Partnership: building common priorities ahead of the Angola Summit (RC-B10-0471/2025, B10-0470/2025, B10-0471/2025, B10-0472/2025, B10-0473/2025, B10-0474/2025, B10-0475/2025, B10-0476/2025, B10-0477/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem15",
+      "del:name": "UN Climate Change Conference 2025 in BelÃ©m, Brazil (COP30) (B10-0445/2025, B10-0458/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem16",
+      "del:name": "Key objectives for the CITES COP20 meeting in Uzbekistan (B10-0450/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem17",
+      "del:name": "Audiovisual Media Services Directive obligations in the transatlantic dialogue (B10-0446/2025) (vote)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem18",
+      "del:name": "Resumption of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem19",
+      "del:name": "Approval of the minutes of the previous sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem20",
+      "del:name": "Discontinuing seasonal time change (debate)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem21",
+      "del:name": "Oral explanations of votes (Rule 201)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem22",
+      "del:name": "UN Climate Change Conference 2025 in BelÃ©m, Brazil (COP30) (B10-0445/2025, B10-0458/2025)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem23",
+      "del:name": "Key objectives for the CITES COP20 meeting in Uzbekistan (B10-0450/2025)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem24",
+      "del:name": "Explanations of votes in writing (Rule 201)"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem25",
+      "del:name": "Approval of the minutes of the sitting and forwarding of texts adopted"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem26",
+      "del:name": "Dates of the next part-session"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem27",
+      "del:name": "Closure of the sitting"
+    },
+    {
+      "@type": "del:Topic",
+      "del:identifier": "creitem28",
+      "del:name": "Adjournment of the session"
+    }
+  ],
+  "del:hasParticipant": [
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_1",
+      "del:name": "President.",
+      "del:hasRole": {
+        "@type": "del:Role",
+        "del:name": "President"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_2",
+      "del:name": "Nela Riehl,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_3",
+      "del:name": "Dan JÃ¸rgensen,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_4",
+      "del:name": "Sabine Verheyen,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_5",
+      "del:name": "Hannes Heide,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_6",
+      "del:name": "Catherine Griset,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_7",
+      "del:name": "Lara Magoni,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_8",
+      "del:name": "Laurence Farreng,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_9",
+      "del:name": "Diana Riba i Giner,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_10",
+      "del:name": "Volker Schnurrbusch,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_11",
+      "del:name": "SunÄana Glavak",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_12",
+      "del:name": "Marcos Ros Sempere",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_13",
+      "del:name": "Guillaume Peltier",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_14",
+      "del:name": "Manuela Ripa",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_15",
+      "del:name": "Sandro Ruotolo",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_16",
+      "del:name": "Bogdan Andrzej Zdrojewski",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_17",
+      "del:name": "Vytenis Povilas Andriukaitis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_18",
+      "del:name": "Juan Fernando LÃ³pez Aguilar",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_19",
+      "del:name": "Cynthia NÃ­ MhurchÃº",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_20",
+      "del:name": "Lukas Sieper",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_21",
+      "del:name": "Maria Grapini",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_22",
+      "del:name": "Vasile DÃ®ncu",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_23",
+      "del:name": "Marie Bjerre,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_24",
+      "del:name": "ÎÎ»ÎµÎ¿Î½ÏÏÎ± ÎÎµÎ»Î­ÏÎ·,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_25",
+      "del:name": "Joanna Scheuring-Wielgus,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_26",
+      "del:name": "Margarita de la Pisa CarriÃ³n,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_27",
+      "del:name": "Laurence Trochu,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_28",
+      "del:name": "Abir Al-Sahlani,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_29",
+      "del:name": "Alice Kuhnke,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_30",
+      "del:name": "Irene Montero,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_31",
+      "del:name": "Irmhild BoÃdorf,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_32",
+      "del:name": "ElÅ¼bieta Katarzyna Åukacijewska",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_33",
+      "del:name": "Marc Angel",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_34",
+      "del:name": "Laurence Trochu",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_35",
+      "del:name": "Julie Rechagneux",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_36",
+      "del:name": "Jadwiga WiÅniewska",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_37",
+      "del:name": "Lucia Yar",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_38",
+      "del:name": "Anna Strolenberg",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_39",
+      "del:name": "ÎÎ»ÎµÎ½Î± ÎÎ¿ÏÎ½ÏÎ¿ÏÏÎ¬",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_40",
+      "del:name": "Christine Anderson",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_41",
+      "del:name": "Maria Zacharia",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "NI"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_42",
+      "del:name": "Miriam Lexmann",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_43",
+      "del:name": "Evin Incir",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_44",
+      "del:name": "Elisabeth Dieringer",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_45",
+      "del:name": "Abir Al-Sahlani",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_46",
+      "del:name": "Paolo Inselvini",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_47",
+      "del:name": "Billy Kelleher",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_48",
+      "del:name": "Katrin Langensiepen",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Verts/ALE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_49",
+      "del:name": "Paulo Do Nascimento Cabral",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_50",
+      "del:name": "Isabella Tovaglieri",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_51",
+      "del:name": "Rosa EstarÃ s Ferragut",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_52",
+      "del:name": "Nina Carberry",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_53",
+      "del:name": "Bert-Jan Ruissen",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_54",
+      "del:name": "Sigrid Friis",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_55",
+      "del:name": "Marit Maij",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_56",
+      "del:name": "Magdalena Adamowicz",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_57",
+      "del:name": "Alexander Jungbluth",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_58",
+      "del:name": "Gabriella Gerzsenyi",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_59",
+      "del:name": "Yvan Verougstraete",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_60",
+      "del:name": "Tomislav Sokol,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_61",
+      "del:name": "Lina GÃ¡lvez,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_62",
+      "del:name": "Gerald Hauser,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_63",
+      "del:name": "Georgiana Teodorescu,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_64",
+      "del:name": "Vlad Vasile-Voiculescu,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_65",
+      "del:name": "Tilly Metz,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_66",
+      "del:name": "Catarina Martins,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_67",
+      "del:name": "Carmen Crespo DÃ­az",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_68",
+      "del:name": "Marie-Luce Brasier-Clain",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_69",
+      "del:name": "Aurelijus Veryga",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_70",
+      "del:name": "Stine Bosse",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "Renew"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_71",
+      "del:name": "Estrella GalÃ¡n",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_72",
+      "del:name": "NicolÃ¡s GonzÃ¡lez Casares",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_73",
+      "del:name": "Jessica PolfjÃ¤rd",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_74",
+      "del:name": "Romana JerkoviÄ",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_75",
+      "del:name": "Elena Nevado del Campo",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_76",
+      "del:name": "Leire PajÃ­n",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_77",
+      "del:name": "Juan Ignacio Zoido Ãlvarez",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_78",
+      "del:name": "Ana Miguel Pedro",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_79",
+      "del:name": "SÃ©rgio Humberto",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_80",
+      "del:name": "ViktÃ³ria Ferenc",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PfE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_81",
+      "del:name": "Gabriela Firea",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_82",
+      "del:name": "ÎÎ¿ÏÎºÎ¬Ï Î¦Î¿ÏÏÎ»Î¬Ï",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_83",
+      "del:name": "Sandra GÃ³mez LÃ³pez",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_84",
+      "del:name": "Alicia Homs Ginel",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_85",
+      "del:name": "Ewa Kopacz",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_86",
+      "del:name": "AndrÃ¡s Tivadar Kulja",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_87",
+      "del:name": "Dan-Åtefan Motreanu",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_88",
+      "del:name": "Martin HojsÃ­k,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_89",
+      "del:name": "Die PrÃ¤sidentin."
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_90",
+      "del:name": "Apostolos Tzitzikostas,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_91",
+      "del:name": "JÃ¼ri Ratas,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_92",
+      "del:name": "Johan Danielsson,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_93",
+      "del:name": "Julien Leonardelli,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_94",
+      "del:name": "Aurelijus Veryga,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_95",
+      "del:name": "Joachim Streit,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_96",
+      "del:name": "Ana Miranda Paz,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_97",
+      "del:name": "Siegbert Frank Droese,"
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_98",
+      "del:name": "Maria Guzenina",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_99",
+      "del:name": "Marcin Sypniewski",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_100",
+      "del:name": "ÐÑÐ¸ÑÑÐ¸Ð°Ð½ ÐÐ¸Ð³ÐµÐ½Ð¸Ð½",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_101",
+      "del:name": "Bogdan RzoÅca",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_102",
+      "del:name": "JoÃ£o Oliveira",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "The Left"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_103",
+      "del:name": "Tomasz Froelich",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ESN"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_104",
+      "del:name": "ÐÐ¼Ð¸Ð» Ð Ð°Ð´ÐµÐ²",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "PPE"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_105",
+      "del:name": "Waldemar Tomaszewski",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "ECR"
+      }
+    },
+    {
+      "@type": "del:Participant",
+      "del:identifier": "participant_106",
+      "del:name": "GÃ¼nther Sidl",
+      "del:isAffiliatedWith": {
+        "@type": "del:Organization",
+        "del:name": "S&D"
+      }
+    }
+  ],
+  "del:hasContribution": [
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_1",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T09:00:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_2",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T09:01:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_3",
+      "del:text": "The President of the US talks about 'making Hollywood great again', but the problem isn't investing in the American film industry, it's trying to do it on our dime and against our laws. Threatening Europe's cultural rules is not acceptable. Our laws protect creators, children and independent media. Let me be clear: culture will never, ever be a bargaining chip in any trade negotiation.\nPresident von der Leyen, we need to send a clear message across the Atlantic: Europe will not back down. First, European citizens decide what rules govern their culture. Second, our audiovisual sector as a source of jobs and creativity must be defended. Our sovereignty and credibility are on the line. Culture is key to preserving our diversity and Europe's soft power. The AVMSD is not just a law on paper, it's a shield for Europe's culture. When we updated it in 2018, we made a deliberate choice: protect European works in a fast-changing media world, keep harmful content away from our children and guarantee independent media regulators. Yes, this means big platforms like Netflix or Disney+ must invest in European stories, but it also creates the blockbusters of tomorrow right here in Europe.\nNo, the AVMSD is not a barrier, it's a shield. No, the AVMSD is not a distortion of trade, it opens doors for European talents. Look at the success ofÂ Borgen, Lupin or Money Heist: these are all European works that have reached global audiences, mostly through big platforms like Netflix. If it was not for the AVMSD, major audiovisual platforms â which are mainly American â would probably not invest so much in European productions. Given the power that these platforms wield, we must make sure European stories remain visible in Europe. The sustainability of our audiovisual sector depends on it, as does our cultural diversity.\nMr Trump, attacking European rules to protect Hollywood is hypocritical. If you really care about American creators, meet them, talk to the guilds. They told us last May, when we were in LA, that 100Â % tariffs on foreign films is a bad idea. Many American productions export to Europe because of lower costs: it's business, not a culture threat. Art and culture thrive by opening doors, not closing them. European and American cinema have always grown together. Let's keep it that way.\nNow, I would like to thank my CULT colleagues for their support and introduce my oral question to the Commission on the AVMSD obligations in the transatlantic dialogue.\nThe administration of US President Donald Trump has recently targeted as foreign trade barriers the provisions of the Audiovisual Media Services Directive (AVMSD) applying to streaming industries. In particular, it has focussed on investment obligations aimed at promoting European content and cultural diversity and a requirement for the catalogues of providers of on-demand audiovisual media services to meet a quota of at least 30Â % of European works and give these works appropriate prominence. Furthermore, within the context of the ongoing trade negotiations, President Trump also stated his intention to impose a 100Â % tax on films made outside the United States.\nFirst, the AVMSD is a cornerstone of the EU's audiovisual policy, aiming to create a single market for audiovisual media services in the EU while promoting cultural diversity. Does the Commission consider that backtracking on the principles of the AVMSD would be detrimental to the European culture model given the context of very strong international competition within the audiovisual media sector? And second, is the Commission in favour of recognising the crucial importance of the AVMSD in defending Europe's cultural sovereignty and diversity and the soft power of the EU, both in its negotiation with the United States and also in evaluating the AVMSD prior to its potential review in 2026?",
+      "del:madeBy": {
+        "@id": "participant_2"
+      },
+      "del:timestamp": "2025-10-23T09:01:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_4",
+      "del:text": "The directive is the long-standing foundation of Europe's audiovisual content legislation. It harmonises the rules for the provision of audiovisual media services across the Union, supporting European creation, and it guarantees that audiovisual service providers active in the EU contribute fairly to the diversity and vitality of our cultural ecosystem.\nThe EU remains firmly committed to the principles of this directive, as well as to open markets and non-discriminatory laws and taxes in full alignment with global trade rules. Accordingly, the directive applies equally to all audiovisual media service providers operating in our single market, regardless of their country of origin.\nThose rules encompass the possibility for Member States to impose financial contributions for the production of European works, both on broadcasters and on on-demand services. This framework has contributed significantly to the objective of promoting cultural and linguistic diversity within the Union.\nNext year, the Commission will assess the impact of the directive and present an evaluation report accompanied by proposals for review. Our work will take into account, in particular, the new challenges related to the prominence of European content, of general interest, fair advertising and the emergence of new technologies and players such as influencers. All are crucial issues for the sustainability of the European media sector. Simplification will also be one of our guiding principles in this exercise.\nIn addition, we will also look at the impact and application of the measures aimed at protecting minors from illegal or harmful content, including on video sharing platforms.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-23T09:07:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_5",
+      "del:text": "Wenn amerikanische Plattformen und Streaming-Dienste in Europa tÃ¤tig sind, dann profitieren sie von unserem Publikum, unseren Kreativen, unserer Infrastruktur â und wer bei uns auf dem europÃ¤ischen Markt mitspielt, muss sich auch an europÃ¤ische Regeln halten. Das ist keine Wettbewerbsverzerrung, sondern ein legitimes politisches Instrument, um den Markt auszugleichen und sicherzustellen, dass europÃ¤ische Inhalte auch sichtbar bleiben. Wir wollen keinen Kulturkampf mit den USA, aber wir dÃ¼rfen unsere eigene Kultur dabei auch nicht opfern.\nEnttÃ¤uschend ist, dass sich die Kommission nach den jÃ¼ngsten AnkÃ¼ndigungen aus Washington nicht klarer zur AVMD positioniert hat. Wir brauchen jetzt ein starkes, geeignetes Signal. Europa bleibt offen, wettbewerbsfÃ¤hig und selbstbewusst und verteidigt dabei das, was uns ausmacht: unsere kulturelle Vielfalt.",
+      "del:madeBy": {
+        "@id": "participant_4"
+      },
+      "del:timestamp": "2025-10-23T09:09:49"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_6",
+      "del:text": "Die Richtlinie Ã¼ber audiovisuelle Mediendienste ist gerade deshalb ein legitimes Instrument zur StÃ¤rkung unseres heimischen, wirtschaftlich bedeutenden Kultur- und Kreativsektors. Sie ist definitiv keine Handelsbarriere. Ihre MaÃnahmen sind von hÃ¶chstem Ã¶ffentlichen Interesse. 30-Prozent-Quoten fÃ¼r europÃ¤ische Inhalte, Investitionspflichten und die FÃ¶rderung unabhÃ¤ngiger Produktionen garantieren KreativitÃ¤t, kulturelle Vielfalt und Medienpluralismus in Europa, bewahren und fÃ¶rdern unsere SouverÃ¤nitÃ¤t und Vielfalt. Die Richtlinie schafft zudem faire Bedingungen zwischen Sendern, Streamingdiensten und Videoplattformen, schÃ¼tzt zugleich minderjÃ¤hrige Verbraucherinnen und Verbraucher und die Meinungsfreiheit.\nAudiovisuelle Dienste bislang aus den Verhandlungen auszuschlieÃen, war richtig und ist auch im Interesse der USA. Diese kulturelle Ausnahme hat jedenfalls in HandelsvertrÃ¤gen berÃ¼cksichtigt zu werden. Die Kommission muss daher diese Richtlinie entschlossen verteidigen.",
+      "del:madeBy": {
+        "@id": "participant_5"
+      },
+      "del:timestamp": "2025-10-23T09:11:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_7",
+      "del:text": "Cette politique impose aux plateformes de diffuser au moins 30Â % d'Åuvres europÃ©ennes et de contribuer au financement de notre crÃ©ation. C'est crucial lorsque 85Â % du temps d'Ã©cran est accaparÃ© par trois services de streaming amÃ©ricains. Ces dispositions sont un filet de sÃ©curitÃ© indispensable au moment oÃ¹ l'administration amÃ©ricaine menace de taxerÂ Ã  100Â % nos Åuvres. Cette rÃ©solution rÃ©affirme Ã©galement la compÃ©tence des Ãtats membres en matiÃ¨re culturelle et le principe de subsidiaritÃ© inscrit dans les traitÃ©s. Ce respect de notre souverainetÃ© est suffisamment rare pour Ãªtre saluÃ©.\nAu final, je me rÃ©jouis que ce texte s'inspire de l'exception culturelle franÃ§aise et je forme un vÅu: que, demain, nous puissions porter ce quota d'Åuvres europÃ©ennes de 30 Ã  50Â %, comme le demande le Centre national du cinÃ©ma. Car dÃ©fendre nos crÃ©ateurs, c'est dÃ©fendre notre identitÃ© et donc notre libertÃ©.",
+      "del:madeBy": {
+        "@id": "participant_6"
+      },
+      "del:timestamp": "2025-10-23T09:13:09"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_8",
+      "del:text": "Senza questa tutela rischiamo di perdere il controllo sulle nostre politiche culturali e di vedere marginalizzate le produzioni europee. I dati parlano chiaro: nel 2023 il 69% degli ingressi al cinema in Europa riguardava film statunitensi, mentre l'85% del tempo speso sulle piattaforme di video Ã¨ concentrato su pochi colossi americani. Questa predominanza rappresenta una sfida concreta alla nostra capacitÃ  di sostenere un mercato audiovisivo veramente europeo e pluralista.\nDifendere la direttiva non significa chiudersi al mondo ma preservare la nostra identitÃ  culturale in un contesto globale. Allo stesso tempo, dobbiamo evitare escalation inutili e mantenere un dialogo aperto con i nostri partner transatlantici.\nProteggere la cultura europea Ã¨ una responsabilitÃ  che ci riguarda tutti e richiede decisione, equilibrio e lungimiranza.",
+      "del:madeBy": {
+        "@id": "participant_7"
+      },
+      "del:timestamp": "2025-10-23T09:14:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_9",
+      "del:text": "En fÃ©vrier dernier, l'administration Trump, bien aidÃ©e par les Â«majorsÂ» du cinÃ©ma et de la vidÃ©o Ã  la demande, a publiÃ© un document recensant toutes les barriÃ¨res au bon dÃ©veloppement du business amÃ©ricain. Parmi les lois dÃ©noncÃ©es, on trouve la directive Â«Services de mÃ©dias audiovisuelsÂ», la pierre angulaire de la diversitÃ© culturelle sur les plateformes de vidÃ©o Ã  la demande. Elle nous permet, depuis 2019, de faire contribuer Netflix, Disney, Amazon et autres Ã  la production et Ã  la diffusion de sÃ©ries et de films europÃ©ens.\nLe sens de la rÃ©solution que nous votons aujourd'hui est de combattre ces attaques rÃ©pÃ©tÃ©es, qui sont renforcÃ©es Ã  nouveau par cette nouvelle menace de taxer Ã  100Â % tous les films rÃ©alisÃ©s hors des Ãtats-Unis. Ce que le prÃ©sident amÃ©ricain attaque, c'est notre modÃ¨le culturel europÃ©en qui parvient Ã  exprimer sa singularitÃ© face Ã  Hollywood et Ã  son hyperpuissance.\nDans ces conditions de guerre culturelle, peut-on vraiment imaginer faire confiance Ã  DonaldÂ Trump pour tenir sa parole dans les accords commerciaux que nous discutons en ce moment?\nDÃ©solÃ©e, M.Â le prÃ©sident, mais nous continuerons Ã  dÃ©fendre nos talents, nos Palmes d'or, nos Ours d'or, nos Lions d'or, qu'ils soient franco-iraniens, suÃ©dois, danois, espagnols.",
+      "del:madeBy": {
+        "@id": "participant_8"
+      },
+      "del:timestamp": "2025-10-23T09:15:52"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_10",
+      "del:text": "Gracias a esta Directiva, las plataformas que operan en Europa deben ofrecer al menos el 30Â % de obras europeas y contribuir a financiar nuevas producciones. Porque nuestras pelÃ­culas y series no solo son entretenimiento. Son la forma en que entendemos el mundo. Y eso es Europa: maneras diversas de mirar, contar y crear.\nNuestro mensaje es simple: proteger el audiovisual catalÃ¡n, francÃ©s o polaco y garantizar que se puedan ver en nuestras lenguas y en toda Europa. Es la primera lÃ­nea de defensa de nuestra soberanÃ­a cultural. Porque esto no es solo un negocio. Y quien quiera operar en Europa debe respetar nuestras reglas. Algunos dicen que quieren hacer unÂ Hollywood great again, y nosotros les decimos que Europe is already great.",
+      "del:madeBy": {
+        "@id": "participant_9"
+      },
+      "del:timestamp": "2025-10-23T09:17:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_11",
+      "del:text": "Doch es ist falsch, USâProgrammanbieter nur als Bedrohung zu sehen. Denn lÃ¤ngst sind es ja Amazon, Netflix und andere, die Filme und Serien in Europa von europÃ¤ischen Teams und Kreativen herstellen lassen. Auch europÃ¤ische Inhalte werden transportiert, sodass wir froh Ã¼ber diese Bereicherung sein kÃ¶nnen.\nWir in Europa mÃ¼ssen uns stattdessen fragen, warum wir Ã¼berhaupt Quotenregelungen brauchen. Liegt es vielleicht daran, dass unser Selbstgedrehtes zu Ã¼berfrachtet ist mit DiversitÃ¤tsauflagen, dass die Wirklichkeit verzerrt, der Zeigefinger auch im Fiktionalen erhoben ist?Â Wir haben eine lebendige Produzentenlandschaft in Europa, die es wert ist, erhalten und auch gefÃ¶rdert zu werden. Aber bitte nicht nach politischen, sondern kÃ¼nstlerischen oder journalistischen Kriterien.\nDiese EntschlieÃung bringt nicht viel Neues und soll wohl nur ein Zeichen gegen Trump sein. Der wichtigste Satz darin lautet: Kulturpolitik ist Sache der Mitgliedstaaten. Und dabei soll es auch bleiben!",
+      "del:madeBy": {
+        "@id": "participant_10"
+      },
+      "del:timestamp": "2025-10-23T09:19:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_12",
+      "del:text": "Govorimo o jeziku, o naÄinu na koji vidimo svijet, o tome tko smo. A upravo je naÅ¡ europski identitet u digitalnom prostoru ugroÅ¾en. ViÅ¡e od 65% posto prihoda trÅ¾iÅ¡ta videa na zahtjev u Europi ostvaruju tri velika neeuropska servisa, Netflix, Amazon Prime i Disney Plus. Europski sadrÅ¾aji, iako Äine oko 30-ak % ponude u katalogu, tek su 16% ukupnog vremena. Drugim rijeÄima, viÅ¡e od 80% vremena koje europski graÄani provode gledajuÄi sadrÅ¾aj, provode uz neeuropske programe.\nDirektiva o audiovizualnim medijskim uslugama nije prepreka trÅ¾iÅ¡tu, nego alat kojim Europa Å¡titi svoj glas, u Italiji, u NjemaÄkoj, u Poljskoj, u Hrvatskoj. Bez nje europski autori, redatelji i producenti bili bi preplavljeni globalnim sadrÅ¾ajem koji dominira naÅ¡im ekranima. U tom smislu, Direktiva ne podiÅ¾e zidove, veÄ otvara vrata. Kada Europska unija traÅ¾i 30% sadrÅ¾aja na platformama da bude europskog podrijetla, to nije birokratska kvota, to je obrana naÅ¡e kulture.\nI zato pozivam Komisiju i drÅ¾ave Älanice da u Transatlantskom dijalogu Ävrsto i jedinstveno brane obveze iz ove Direktive.",
+      "del:madeBy": {
+        "@id": "participant_11"
+      },
+      "del:timestamp": "2025-10-23T09:20:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_13",
+      "del:text": "Por eso hoy no hablamos solo de una Directiva, hablamos de defender la UniÃ³n Europea frente a quienes quieren imponer sus reglas por la fuerza.Â Las amenazas de Trump, con su impuesto del 100Â % a las producciones europeas, son un ataque directo a nuestra libertad cultural.\nLa Directiva de Servicios de ComunicaciÃ³n Audiovisual garantiza condiciones justas entre creadores y plataformas, al tiempo que protege a los menores, los consumidores y la libertad de expresiÃ³n; exige que los servicios de la carta incluyan al menos un 30Â % de obras europeas en sus catÃ¡logos y permite a los Estados miembros imponer contribuciones financieras a aquellas plataformas extranjeras que se dirijan a su pÃºblico.Â Esta Directiva es un escudo para proteger la diversidad, el pluralismo y el derecho de los europeos a ver historias contadas en nuestras lenguas, con nuestras voces y nuestras realidades.\nDefendamos nuestra cultura y nuestra independencia. Nuestra producciÃ³n audiovisual no es moneda de cambio.",
+      "del:madeBy": {
+        "@id": "participant_12"
+      },
+      "del:timestamp": "2025-10-23T09:22:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_14",
+      "del:text": "Je prÃ©fÃ¨re les paysans aux Ã©colos, les PME au RSA, le travail au social, le Tour de France Ã  France Inter, le Puy du Fou Ã  Hollywood, MoliÃ¨re, Cyrano ou AstÃ©rix Ã  vos homÃ©lies de nomade non binaire. Je prÃ©fÃ¨re l'amour courtois Ã  votre guerre des sexes, Notre-Dame et Jean-PaulÂ II Ã  vos destins de feuilles mortes, DonaldÂ Trump Ã  vos amis Macron et MÃ©lenchon, l'impertinence Ã  votre servilitÃ©.\nJe prÃ©fÃ¨re la France d'avant Ã  votre monde d'aprÃ¨s. Notre seul tort est d'avoir raison avant vous et sans vous. Mais nous avons 2Â 000Â ans d'avance. Vous Ãªtes la cendre qui s'Ã©teint, nous sommes le feu qui ne meurt jamais. Alors Ã©teignons vos Ã©crans et ouvrons nos livres.",
+      "del:madeBy": {
+        "@id": "participant_13"
+      },
+      "del:timestamp": "2025-10-23T09:23:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_15",
+      "del:text": "Die AVMD-Richtlinie garantiert den Zugang zu europÃ¤ischen Werken, schÃ¼tzt unsere Sprachen, unseren Medienpluralismus und unsere demokratische Debattenkultur. Die Zusammenarbeit mit unseren amerikanischen Partnern ist wichtig, keine Frage. Aber Europa darf nicht naiv sein. Es geht hier nicht um Protektionismus, sondern um kulturelle Selbstbestimmung, faire Wettbewerbsbedingungen und Respekt vor den Kreativen, die unsere IdentitÃ¤t lebendig halten. Wir sind nicht nur Konsumentinnen und Konsumenten von Inhalten. Wir sind HÃ¼ter unserer kulturellen Vielfalt.\nMein Appell an die Kommission: Lassen Sie uns unser europÃ¤isches Kulturmodell gemeinsam verteidigen! Die AVMD-Richtlinie ist keine Verhandlungsmasse. Das sind wir unseren Kreativen, uns allen und der europÃ¤ischen Idee selbst schuldig.",
+      "del:madeBy": {
+        "@id": "participant_14"
+      },
+      "del:timestamp": "2025-10-23T09:24:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_16",
+      "del:text": "L'amministrazione Trump ha scelto di indicare la direttiva sui servizi audiovisivi come una \"barriera commerciale\" e minaccia di colpire le produzioni europee con una tassa del 100%. Ã un gesto ostile, non solo verso l'Unione europea, ma verso tutti coloro che credono in un settore audiovisivo forte, diversificato, indipendente. Trump colpisce l'Europa imponendo la legge del piÃ¹ forte, ignorando il rispetto reciproco e la cooperazione, che sono alla base del dialogo transatlantico.\nMa noi non ci piegheremo. La difesa del nostro patrimonio culturale non Ã¨ negoziabile. Questa direttiva Ã¨ molto piÃ¹ di una legge: Ã¨ uno scudo a difesa della diversitÃ , del pluralismo dei nostri autori e delle nostre storie.\nQuesta Ã¨ la battaglia per l'indipendenza e la diversitÃ  culturale dell'Europa ed Ã¨ una battaglia che non intendiamo perdere.",
+      "del:madeBy": {
+        "@id": "participant_15"
+      },
+      "del:timestamp": "2025-10-23T09:26:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_17",
+      "del:text": "Z tego powodu tak bardzo waÅ¼ny jest ustÄp piÄty, ustÄp ostatni w rezolucji. Warto go przytoczyÄ w caÅoÅci: âwzywamy KomisjÄ do zdecydowanego odrzucenia wszelkich prÃ³b uznania dyrektywy o audiowizualnych usÅugach medialnych za zakÅÃ³cenie w handlu oraz do obrony tej dyrektywy jako uzasadnionego mechanizmu instrumentu regulacyjnego. Ma on bowiem znaczenie nie tylko dla zapewnienia ochrony rÃ³Å¼norodnoÅci kulturowej, ale takÅ¼e dla suwerennoÅci i posiadania przez nas miÄkkiej siÅy. Kultura dla nas jest nie tylko waÅ¼nym elementem polityki wewnÄtrznej, ale takÅ¼e obrony suwerennoÅci Europyâ.",
+      "del:madeBy": {
+        "@id": "participant_16"
+      },
+      "del:timestamp": "2025-10-23T09:27:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_18",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_17"
+      },
+      "del:timestamp": "2025-10-23T09:29:09"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_19",
+      "del:text": "Porque hay que saber que la UniÃ³n Europea es una superpotencia no solamente comercial y en ayuda al desarrollo y cooperaciÃ³n humanitaria, sino, sobre todo, una superpotencia cultural, y asÃ­ la debemos entender, preservar y defender.\nEstamos hablando de un sector enormemente dinÃ¡mico en el que la UniÃ³n Europea es primera en el mundo: la cultura.",
+      "del:madeBy": {
+        "@id": "participant_18"
+      },
+      "del:timestamp": "2025-10-23T09:30:32"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_20",
+      "del:text": "I could go on and on, but these are examples of the innate, cultural, wonderful, rich diversity that is associated with our Irish language in Ireland. That language is replicated amongst other languages within the Member States of the European Union. It is vital that we protect and defend our cultural diversity, our cultural sovereignty. It is a huge strength of Europe that we pay tribute and respect and protect our minorities, whether the language is a minority language or a minoritised language.\nSo I say to the Commissioner and to the Commission: please do everything in your power to protect this directive, to enhance this directive, and to ensure that there is at least 30Â % of European origin on platforms, and that we don't bend to the culture outside ...",
+      "del:madeBy": {
+        "@id": "participant_19"
+      },
+      "del:timestamp": "2025-10-23T09:31:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_21",
+      "del:text": "Wir leben in einer Zeit, in der Kultur in Europa nicht mehr nur etwas Nationalstaatliches ist. Zum ersten Mal sehen wir eine Generation junger Menschen, die sich neben ihrer nationalen Kultur auch als EuropÃ¤er begreifen. Wir tragen dieselben Klamotten, wir hÃ¶ren dieselbe Musik, wir schauen uns dieselben Serien auf den Streaming-Diensten an.\nUnd wenn wir in uns hineinfÃ¼hlen, dann fÃ¼hlen wir uns nicht nur als DeutscheÂ âÂ und ich weiÃ, das tut manchen hier weh, wenn ich das sageÂ â, aber dann fÃ¼hlen wir uns nicht nur als Deutsche, sondern auch als EuropÃ¤er. Also lassen Sie uns gemeinsam daran arbeiten, die Kultur der Mitgliedstaaten zu erhalten und eine europÃ¤ische Kultur zu entwickeln.",
+      "del:madeBy": {
+        "@id": "participant_20"
+      },
+      "del:timestamp": "2025-10-23T09:33:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_22",
+      "del:text": "Directiva este o posibilitate de a ne proteja patrimoniul cultural, dar nu e suficient sÄ avem o directivÄ, trebuie sÄ avem Èi mÄsuri concrete, sÄ dÄm posibilitatea investiÈiilor audiovizualului european. Èi, da, domnul Trump vrea sÄ punÄ taxe, oricine opereazÄ Ã®n spaÈiul Uniunii Europene trebuie sÄ respecte regulile Uniunii Europene, trebuie sÄ respecte cultura europeanÄ, trebuie sÄ respecte valorile europene.\nDe aceea, cred cÄ directiva Èi, sigur, cu ceea ce am cerut prin aceastÄ dezbatere, trebuie sÄ sprijine audiovizualul european tocmai pentru ca sÄ avem identitate, tocmai pentru a ne proteja valorile europene. Avem 24 de limbi oficiale, avem artiÈti care au cÃ¢Ètigat premiile cele mai prestigioase. AceÈti oameni trebuie sÄ fie cunoscuÈi pentru generaÈiile care vin, pentru copiii noÈtri Èi tocmai de aceea este bine cÄ avem aceastÄ...\n(PreÈedinta a retras cuvÃ¢ntul vorbitoarei)",
+      "del:madeBy": {
+        "@id": "participant_21"
+      },
+      "del:timestamp": "2025-10-23T09:34:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_23",
+      "del:text": "Europe's audiovisual and cultural model is built on openness, diversity and mutual respect, and we should continue defending it with confidence. As President von der Leyen said in her State of the Union address, it is the sovereign right of the European Union to define and apply its own rules.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-23T09:36:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_24",
+      "del:text": "The debate is closed.\nThe vote will take place today, 23 October 2025.\nWritten Statements (Rule 178)",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T09:36:49"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_25",
+      "del:text": "Ecosistemul media european se confruntÄ cu o asimetrie profundÄ. Platformele americane controleazÄ accesul, algoritmii Èi publicitatea, Ã®n timp ce producÄtorii europeni respectÄ reguli mai stricte privind conÈinutul, transparenÈa Èi cotele culturale. AceastÄ diferenÈÄ distorsioneazÄ concurenÈa Èi slÄbeÈte vocile locale.\nAvem nevoie de un cadru echitabil. Cooperarea transatlanticÄ trebuie sÄ respecte principiile Directivei, nu sÄ le dilueze. Responsabilitatea egalÄ privind moderarea conÈinutului, utilizarea datelor Èi sprijinul pentru media de interes public trebuie sÄ fie de neclintit. Europa nu trebuie sÄ-Èi coboare standardele pentru a mulÈumi platformele globale. Trebuie sÄ cearÄ reciprocitate.\nViitorul media audiovizualului nu Èine doar de accesul la piaÈÄ, ci de Ã®ncredere, pluralism Èi suveranitate democraticÄ. Directiva este contractul nostru social Ã®n spaÈiul digital. DacÄ o reducem la simbol, pierdem controlul asupra reprezentÄrii culturale.\nEuropa trebuie sÄ vorbeascÄ ferm Èi clar. Nu prin compromis, ci prin valori.",
+      "del:madeBy": {
+        "@id": "participant_22"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_26",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T09:37:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_27",
+      "del:text": "But we also know that our work is far from complete. Building on recent resolve, the Council adopted last week conclusions on violence against women and domestic violence. These conclusions focused on three important pillars: prevention, early detection and intervention. Both the national authorities and the public play a role here, especially in spotting violence earlier, supporting victims and raising the alarm.\nMen and boys should also be encouraged to help prevent, detect and intervene against violence. They may also be victims of violence themselves and have gender-specific barriers to reaching out for help.\nHonourable Members, in the EU, approximately two women are killed every day by a partner or family member, and gender-based violence costs the EU approximately EURÂ 290Â billion each year in social benefits and lost labour. Yet we still have many who believe that we already have achieved gender equality. Violence against women is rooted in old social attitudes, gender stereotypes and restrictive social norms.\nStopping it requires efforts on many fronts. Action at the level of Member States is key, but the EU can also make very important contributions. The work involves many different areas of life.\nOne is the digital world. New forms of violence are starting online, including through the misuse of AI. We must adapt our policies to this. This includes the non-consensual sharing of intimate or manipulated images, cyber stalking, cyber harassment, and incitement to violence and hatred. In an equal society, everyone, including women and girls, should feel safe to take part in the digital world. We must protect women and girls against these risks. A specific case directly relevant to us women in politics is online harassment against women politicians â a form of violence that damages the very foundation of our democracy.\nThe fight for gender equality and stopping violence against women and girls is a duty and a priority. It is about standing up for our values, principles and our democracy.",
+      "del:madeBy": {
+        "@id": "participant_23"
+      },
+      "del:timestamp": "2025-10-23T09:37:28"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_28",
+      "del:text": "We have made historic progress in the past five years: the EU accession to the Istanbul Convention was the first step. The EU is now bound by the highest international standards on combating violence against women. The second major step was the adoption of the first-ever EU law on combating violence against women and domestic violence.\nWe thank the European Parliament once again for the crucial role you played in the negotiations. Your strong dedication and spirit of constructive compromise made this long-awaited result possible. With this directive, the same high standards of prevention, protection and support to victims will apply across the EU.Â And on prevention, one point is key: we must prevent rape by promoting a culture of consent.\nThe directive offers particular support for mothers who are victims of domestic violence and who need to find shelters for themselves and their children to be able to leave a violent relationship. The directive makes sure that there is room for children in shelters and interim accommodation, and that the rights and needs of children are ensured. This will also put mothers more at ease in these difficult situations. The directive also criminalises certain forms of violence at EU level â including forced marriage, which is a form of sexual exploitation of the woman or girl.Â To help women and mothers to escape violent relationships and start a new life for themselves and their children, we must promote women's economic empowerment. Gender equality policies help women and mothers to become financially independent.\nOur achievements over the past years are not the end of our work on gender-based violence. As long as the headlines continue to report cases of femicide, domestic violence and sexual violence, we will not rest. That is why, in March, the Commission presented the EU Roadmap for Women's Rights, reaffirming the EU's commitment to advance gender equality and women's rights. The roadmap will underpin concrete policy initiatives that will be defined in the next gender equality strategy. One week ago, Commissioner Habib hosted an event in Brussels to celebrate the broad political support that the Roadmap for Women's Rights received from European political, institutional and civil society leaders. The European Parliament, the Economic and Social Committee, the Committee of Regions, the European Investment Bank and all 27 Member States endorsed the roadmap's Declaration of principles for a gender-equal society.\nWe are all committed to the same guiding principles in our future actions. The very first principle in the Declaration of principles is freedom from gender-based violence. Together, our goal is for every woman and girl to have the right to security and to be treated with dignity â both online and offline, in public and in private. Only by being free from violence can women enjoy and thrive in all aspects of their lives. To further empower women and their families to make life choices that reflect their aspirations, it is also key to advance the other principles of the roadmap's Declaration of principles. It is essential to ensure that every woman has the right to the highest attainable standards of physical and mental health, the right to equal pay for equal work, the right to equal employment opportunities and adequate working conditions, the right to balance their professional and private life, the right to high quality and inclusive education and training, the right to actively and safely participate in public life â to mention just a few of those rights.\nWe've already made some steps in these directions with the legislation and policy initiatives adopted in recent years. Now we need to make sure that these legislations become a reality on the ground in all Member States. Only then will women and men equally thrive in our societies.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-23T09:41:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_29",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_24"
+      },
+      "del:timestamp": "2025-10-23T09:46:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_30",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_25"
+      },
+      "del:timestamp": "2025-10-23T09:48:00"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_31",
+      "del:text": "Derecho a decidir sobre mi cuerpo o sobre mi vida, derecho a ser padres, autodeterminaciÃ³n... aunque se disfracen de nuevos derechos, contradicen el derecho natural, degradando a las personas como un objeto, incluso de comercio o descarte: las personas como un medio para un fin âen la gestaciÃ³n subrogada o en la prostituciÃ³n, pero tambiÃ©n en el aborto o la eutanasia, entre otrosâ.\nÂ¿Puede ser legÃ­tima una agresiÃ³n porque haya un consentimiento o un pago? Nunca. Esta lÃ³gica funciona como un arma contra los mÃ¡s vulnerables âtambiÃ©n contra nosotros mismosâ y contra la sociedad, y destruye de raÃ­z el amparo que deberÃ­an procurarnos los derechos humanos.",
+      "del:madeBy": {
+        "@id": "participant_26"
+      },
+      "del:timestamp": "2025-10-23T09:49:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_32",
+      "del:text": "Il nous faut rappeler que la GPA contrevient Ã  la charte des droits fondamentaux de l'Union europÃ©enne. Il nous faut souligner que la GPA contrevient Ã  la Convention des droits de l'enfant, qui en interdit la vente. Il nous faut aussi affirmer que, en utilisant les fonctions reproductives d'une femme au profit d'un autre, la GPA contrevient Ã  la convention sur l'abolition de l'esclavage. Car la GPA n'est rien d'autre que cela, un esclavagisme moderne, effroyable, au nom des droits individuels et du progrÃ¨s technique, qui se termine par l'arrachement d'un enfant des bras de sa mÃ¨re. Nous devons donc dÃ¨s aujourd'hui et dÃ©finitivement demander son abolition. L'esclavage ne s'encadre pas, il s'abolit.",
+      "del:madeBy": {
+        "@id": "participant_27"
+      },
+      "del:timestamp": "2025-10-23T09:50:32"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_33",
+      "del:text": "So what's to be done, one can ask? Well, let's address the elephant in the room: we have to talk about men. Because even if it's not all men, it is always a man who is the perpetrator. And we have to talk to men because men have to be responsible for setting the norms among the male population in the EU.\nWe also have to have consent-based legislation, because a 'no' has to mean a 'no' in Europe. And if we want to walk the talk, then we have to ensure that there is enough money in the next MFF to combat gender-based violence. It is high time for the EU to come back and come on track to the gender equality track.",
+      "del:madeBy": {
+        "@id": "participant_28"
+      },
+      "del:timestamp": "2025-10-23T09:51:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_34",
+      "del:text": "Globalt dÃ¶das 140 kvinnor och flickor av en nÃ¤rstÃ¥ende varje dag. VÃ¥ldet Ã¤r en pandemi, och vi politiker mÃ¥ste ta ansvar fÃ¶r vad som formar pojkars och mÃ¤ns syn pÃ¥ kvinnor, relationer, sex, vÃ¥ld och makt. Om vi inte bryter denna onda cirkel nu kommer den att upprepas om och om igen.",
+      "del:madeBy": {
+        "@id": "participant_29"
+      },
+      "del:timestamp": "2025-10-23T09:53:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_35",
+      "del:text": "Una vez mÃ¡s, vienen ustedes aquÃ­, seÃ±orÃ­as, a decirnos cÃ³mo tenemos nosotras que ser buenas mujeres. Y a mÃ­ me gustarÃ­a preguntarles Â¿cuÃ¡ndo se van a preocupar ustedes de lo que hacen ustedes mismos, de lo que hacen sus amigos, sus padres, sus hermanos, sus compaÃ±eros de trabajo? Â¿Por quÃ© no se preguntan cÃ³mo dejar de agredirnos en lugar de decirnos a nosotras lo que tenemos que hacer?\nPara ustedes, proteger a las mujeres nunca es que tengamos mÃ¡s derechos. Nunca es que seamos mÃ¡s libres. Es que hagamos lo que ustedes quieren. Y para este sistema las mujeres somos pura mercancÃ­a, objetos a su disposiciÃ³n. HÃ¡ganse cargo, seÃ±orÃ­as, de la parte que les toca, que es empezar a tratarnos a las mujeres como personas.",
+      "del:madeBy": {
+        "@id": "participant_30"
+      },
+      "del:timestamp": "2025-10-23T09:54:49"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_36",
+      "del:text": "82Â Prozent der Frauen in Deutschland haben ihr Verhalten im Ã¶ffentlichen Raum angepasst. 55Â Prozent wurden schon einmal gegen ihren Willen begrabscht oder gekÃ¼sst. Mehr als die HÃ¤lfte aller Frauen in Deutschland trauen sich abends nicht mehr allein auf die StraÃe. Und es nÃ¼tzt gar nichts, wenn dann 2Â 000 âTÃ¶chter gegen rechtsâ erklÃ¤ren, sie gehen auf die StraÃe und wÃ¼rden gar nicht verstehen, was der Kanzler wohl meinen kÃ¶nnte.\nGewalt gegen Frauen nimmt drastisch zu, und zwar nicht durch alte weiÃe MÃ¤nner, sondern durch junge, nicht weiÃe MÃ¤nner. Bei den Gruppenvergewaltigungen in NRW waren die HÃ¤lfte der TÃ¤ter Migranten, die HÃ¤lfte der deutschen TÃ¤ter hatte einen auslÃ¤ndischen Vornamen. 2025 gab es allein in Deutschland 130Â 000 Straftaten gegen Frauen. Wenn wir es ernst meinen mit unserem Kampf gegen Gewalt gegen Frauen, dann mÃ¼ssen wir den Mut haben, das Kind beim Namen zu nennen. Nur dann kÃ¶nnen wir unsere TÃ¶chter und MÃ¼tter schÃ¼tzen. Unsere Frauen haben ein Recht darauf, sich in Europa sicher und wohl zu fÃ¼hlen.",
+      "del:madeBy": {
+        "@id": "participant_31"
+      },
+      "del:timestamp": "2025-10-23T09:56:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_37",
+      "del:text": "WedÅug Agencji Praw Podstawowych jedna na piÄÄ kobiet w Unii Europejskiej doÅwiadcza takiej przemocy. Jedna na trzy matki samotnie wychowujÄce dzieci w Europie Å¼yje na granicy ubÃ³stwa. I to nie sÄ bÅÄdy statystyczne.\nNiestety, czÄsto systemy nie wspierajÄ matek, tylko je rozliczajÄ. Kobieta, ktÃ³ra urodzi dziecko, nieraz traci zatrudnienie, czÄsto szansÄ awansu i finansowÄ niezaleÅ¼noÅÄ. Na rozmowie kwalifikacyjnej Å¼aden mÄÅ¼czyzna nie sÅyszy pytania, czy zostanie ojcem. Natomiast czÄsto sÅyszÄ je mÅode kobiety. SÅyszÄ pytanie, czy zamierzajÄ mieÄ dzieci, i zamiast rÃ³wnoÅci sÅyszÄ, Å¼e to jest ich wybÃ³r. Kobiety samozatrudnione, kobiety, ktÃ³re sÄ wÅaÅcicielkami firm, czÄsto majÄ inne Åwiadczenia spoÅeczne, gdy zajdÄ w ciÄÅ¼Ä i urodzÄ dzieci. I to wÅaÅnie jest przemoc instytucjonalna. Kiedy prawo nie chroni, a za macierzyÅstwo wymierzana jest kara.",
+      "del:madeBy": {
+        "@id": "participant_32"
+      },
+      "del:timestamp": "2025-10-23T09:57:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_38",
+      "del:text": "We are talking about the lives of millions of women being marked by fear, silence and injustice. And while women fight for safety and equality in the private and public sphere of life, the far right and ultra-conservative movements are working to turn back the clock. They glorify so-called 'traditional values' based on the confinement of women to obedience, to motherhood within patriarchal walls, stripped of their choice and of their voice. They say they defend families, but what they truly defend is control.\nReal families are built on equality, shared rights, responsibilities and opportunities. Equal rights do not destroy families, they strengthen them. Equal rights do not threaten our values, they fulfil them. Violence against women and girls is rooted in control, dominance and inequality that is relentlessly promoted by the patriarchal far right. We progressives will keep fighting until equality becomes a reality.\nAn exploitation of motherhood is, for me, the devaluation of care work, treating unpaid domestic work as women's responsibility rather than as a shared responsibility.\n(The speaker agreed to take a blue-card question)",
+      "del:madeBy": {
+        "@id": "participant_33"
+      },
+      "del:timestamp": "2025-10-23T09:59:21"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_39",
+      "del:text": "Vous avez omis de parler de la dÃ©pendance des femmes, de l'esclavage des femmes concernant la GPA. Je voudrais connaÃ®tre votre avis lÃ -dessus.",
+      "del:madeBy": {
+        "@id": "participant_34"
+      },
+      "del:timestamp": "2025-10-23T10:00:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_40",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_33"
+      },
+      "del:timestamp": "2025-10-23T10:01:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_41",
+      "del:text": "Ã 12Â ans, elle devrait rÃªver d'avenir. Pas finir comme Lola, victime d'un monstre que la France n'a pas su expulser, symbole d'un pays dÃ©sarmÃ© par l'angÃ©lisme migratoire.\nÃ 18Â ans, elle devrait pouvoir croire en la justice. Pas dÃ©couvrir que, dans cette Europe-lÃ , on excuse tout, on comprend tout, sauf les victimes.\nÃ 30Â ans, elle devrait pouvoir rentrer seule chez elle sans craindre une agression, dans une Europe oÃ¹ l'insÃ©curitÃ© s'installe avec l'importation de mÅurs Ã©trangÃ¨res que la gauche refuse de nommer.\nEt Ã  50Â ans, elle devrait pouvoir dire Ã  ses filles: Â«Ici, tu es protÃ©gÃ©e parce que nous avons dÃ©fendu notre civilisation.Â»\nProtÃ©ger les femmes, c'est refuser le silence, le relativisme et la soumission. C'est dÃ©fendre nos frontiÃ¨res, notre culture et notre dignitÃ©.",
+      "del:madeBy": {
+        "@id": "participant_35"
+      },
+      "del:timestamp": "2025-10-23T10:02:45"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_42",
+      "del:text": "Nie moÅ¼emy dÅuÅ¼ej udawaÄ, Å¼e nie widzimy, jak handel ludÅºmi kwitnie tuÅ¼ obok nas w Gruzji, w Ukrainie, w internecie. Europa musi przyjÄÄ wspÃ³lne stanowisko. CzÅowiek nie jest towarem. Kobieta nie jest inkubatorem, a dziecko nigdy nie powinno byÄ przedmiotem transakcji.\nZadziwia mnie pozycja lewicy. Przed chwilÄ pan z lewicy powiedziaÅ, Å¼e surogatka jest szczÄÅliwa, bo oddaÅa dziecko, dziecko, ktÃ³re nosiÅa pod sercem. To moÅ¼e powiedzieÄ tylko facet, ktÃ³ry nie rozumie kobiet i nie ma pojÄcia, czym jest macierzyÅstwo. Surogacja jest wyzyskiem ekonomicznym biednych kobiet, ktÃ³re w celu uzyskania jakiegoÅ zysku podejmujÄ tÄ dramatycznÄ decyzjÄ. Nie ma na to zgody.",
+      "del:madeBy": {
+        "@id": "participant_36"
+      },
+      "del:timestamp": "2025-10-23T10:03:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_43",
+      "del:text": "Far right: don't fool the people, because are you really talking about protecting women? I see that in 2025, we keep on hearing that the far right is perpetuating women's suffering. You criminalise women's control of their own bodies. You defund women's health programmes. You are the one that frames feminism as anti-male or anti-family.\nIn my country, Slovakia, and actually across Europe, women's rights are under siege by these forces. This is violence, the political violence that silences, that destroys freedoms, that even kills. And this must end once and for all.",
+      "del:madeBy": {
+        "@id": "participant_37"
+      },
+      "del:timestamp": "2025-10-23T10:05:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_44",
+      "del:text": "We are all shocked when we hear this, but then after a while, the urgency fades and a political response fails. Just this week, the Commission presented its annual work programme, and there is nothing on a legislative proposal for gender equality.\nMeanwhile, when we're scrolling online and on social media, it looks like we're going backwards. I would say let's take women's safety seriously, also online. We need a European definition of cyberviolence against women. We need stronger content moderation, and we must hold platforms accountable, because they do have a responsibility.\nI wish I could say I wish that women would feel as safe online as offline in the real world, but the line between offline and online does not exist. They reinforce each other and we must fight both.\n(The speaker agreed to take several blue-card questions)",
+      "del:madeBy": {
+        "@id": "participant_38"
+      },
+      "del:timestamp": "2025-10-23T10:06:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_45",
+      "del:text": "Ale chciaÅabym zapytaÄ PaniÄ rÃ³wnieÅ¼, jakie jest Pani stanowisko, jeÅli chodzi o surogacjÄ. Czy podziela Pani poglÄd, Å¼e kobiety Å¼yjÄce w trudnych warunkach spoÅecznych podejmujÄ siÄ wÅaÅnie tego czynu. Niemniej jest to czyn, ktÃ³ry de facto sprowadza siÄ do eksploatacji ich ciaÅa, a one stajÄ siÄ de facto inkubatorem, oddajÄc swoje dziecko, i jest to wspÃ³Åczesna forma wyzysku.",
+      "del:madeBy": {
+        "@id": "participant_36"
+      },
+      "del:timestamp": "2025-10-23T10:08:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_46",
+      "del:text": "Surrogacy, of course, is a delicate issue and we have to be careful with it. But I do think people should have the freedom to go for it if we are really careful with it.",
+      "del:madeBy": {
+        "@id": "participant_38"
+      },
+      "del:timestamp": "2025-10-23T10:09:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_47",
+      "del:text": "Å to se tiÄe ove Direktive, moram reÄi da je moja zemlja, iz koje dolazim, Hrvatska, veÄ tu poduzela korake i da je seksualno zlostavljanje, silovanje i ostalo veÄ u domeni kaznenog djela. Dakle, jeste li za cyberbullying kriminalizaciju, kao Å¡to je to i EPP?",
+      "del:madeBy": {
+        "@id": "participant_11"
+      },
+      "del:timestamp": "2025-10-23T10:10:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_48",
+      "del:text": "Also, looking at the fact that content moderation is something that platforms do not feel the need to do anymore is problematic. So instead of what is happening here, looking at what women should and should not do, I think we should really look into this, the responsibility of these platforms, and make sure they are held accountable.",
+      "del:madeBy": {
+        "@id": "participant_38"
+      },
+      "del:timestamp": "2025-10-23T10:11:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_49",
+      "del:text": "(Î Î ÏÏÎµÎ´ÏÎ¿Ï Î±ÏÎ±Î¹ÏÎµÎ¯ ÏÎ¿Î½ Î»ÏÎ³Î¿ Î±ÏÏ ÏÎ·Î½ Î¿Î¼Î¹Î»Î®ÏÏÎ¹Î±)",
+      "del:madeBy": {
+        "@id": "participant_39"
+      },
+      "del:timestamp": "2025-10-23T10:12:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_50",
+      "del:text": "Politische Gewalt â die Linken halten sie oft fÃ¼r gerechtfertigt. Charlie Kirk â kaltblÃ¼tig hingerichtet. Aber nicht nur, dass die linke Seite seine Ermordung feiert, sie stellt sich auch noch schÃ¼tzend vor Ilaria Salis, Mitglied der âHammerbandeâ. FÃ¼r diese Gewalt sind Sie nicht nur blind, Sie feiern sie gar ab. Was wir hier hÃ¶ren, sind immer die gleichen Parolen, immer die gleichen AllgemeinplÃ¤tze. Was ich hÃ¶ren will, ist das Klicken von Handschellen und das Brummen von Abschiebefliegern.\n(Die Rednerin ist damit einverstanden, auf eine Frage nach dem Verfahren der âblauen Karteâ zu antworten.)",
+      "del:madeBy": {
+        "@id": "participant_40"
+      },
+      "del:timestamp": "2025-10-23T10:13:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_51",
+      "del:text": "I druga sprawa dotyczÄca surogacji. Jaka jest pani opinia na temat surogacji? Czy uwaÅ¼a pani, Å¼e surogacja jest Åamaniem praw dziecka?",
+      "del:madeBy": {
+        "@id": "participant_36"
+      },
+      "del:timestamp": "2025-10-23T10:15:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_52",
+      "del:text": "(Die PrÃ¤sidentin entzieht der Rednerin das Wort.)",
+      "del:madeBy": {
+        "@id": "participant_40"
+      },
+      "del:timestamp": "2025-10-23T10:15:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_53",
+      "del:text": "How many times have you been catcalled on the street? How many times have you walked home holding your keys, almost running, drenched in fear, just to make it home? How many times have you been judged for your choices? Stripped of your value at the workplace, dismissed for your opinion, for being a woman?\n'What are you wearing?' 'Are you sure you are eating that?' 'Isn't this dress short?' 'You provoked him.' 'What were you wearing?' 'He is your husband, you have to forgive him'.\nThank you for your time, and please take a moment to ask yourselves: if patriarchy is not in the room with us, then why is femicide an established term?",
+      "del:madeBy": {
+        "@id": "participant_41"
+      },
+      "del:timestamp": "2025-10-23T10:16:46"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_54",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_42"
+      },
+      "del:timestamp": "2025-10-23T10:18:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_55",
+      "del:text": "Let me tell you that your patriarchal ideology, that's what legitimised a violence culture, a rape culture even. Our daughters should be protected from your ideology.\nGender-based violence exists, unfortunately, all through history, in all classes, offline, online, and we need to act. I'm proud to have been one of the two co-rapporteurs for the EU's first, and historical, directive on gender-based violence, but I also acknowledge that we need to do much more. We need to act.\nWe need â at last â a consent-based rape legislation in place, because it's long overdue. No other crime would have been accepted in our societies as the violence against women and girls that exists in all our 27 Member States. So to the Commission, I just want to urge the Commission to please ensure that you, during this mandate, put forward, once again, a proposal for a rape legislation, because women and girls have had enough.",
+      "del:madeBy": {
+        "@id": "participant_43"
+      },
+      "del:timestamp": "2025-10-23T10:19:27"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_56",
+      "del:text": "Aber zu dem Thema, das ich auch noch ansprechen mÃ¶chte: die Leihmutterschaft. Wir wissen, dass hier sehr viele physische, psychische und vor allem wirtschaftliche Gewalt ausgeÃ¼bt wird. Eine Not, die ausgenutzt wird, um die WÃ¼nsche anderer zu erfÃ¼llen. Auch in LÃ¤ndern gerade wie in der Ukraine oder Indien tragen Frauen Kinder fÃ¼r fremde Auftraggeber aus, oft ohne ausreichende medizinische Betreuung, rechtliche Absicherung oder echte Wahlfreiheit. Europa sollte sich an dieser Stelle eindeutig gegen diese Form von Gewalt aussprechen.\n(Die Rednerin ist damit einverstanden, auf eine Frage nach dem Verfahren der âblauen Karteâ zu antworten.)",
+      "del:madeBy": {
+        "@id": "participant_44"
+      },
+      "del:timestamp": "2025-10-23T10:21:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_57",
+      "del:text": "This is what you are not listening to when we are talking about men's violence. It's about the gender, it's not about the origin, because what is the common denominator is them being men â white, yellow, red, whatever.",
+      "del:madeBy": {
+        "@id": "participant_45"
+      },
+      "del:timestamp": "2025-10-23T10:23:08"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_58",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_44"
+      },
+      "del:timestamp": "2025-10-23T10:23:46"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_59",
+      "del:text": "Dietro c'Ã¨ sempre la solita ingiustizia: chi ha denaro compra, chi ha bisogno si vende, e a trionfare Ã¨ l'egoismo a danno delle donne e dei bambini. E diciamolo chiaramente: non esiste surrogata altruistica: esiste un mercato di oltre 22 miliardi che riempie le tasche di cliniche e associazioni senza scrupolo; esistono bambini, strappati dal grembo materno.\nL'Italia, grazie al governo Meloni, ha avuto il coraggio di rendere la surrogata reato universale e ora il ministro Roccella ha proposto all'ONU una coalizione internazionale contro l'utero in affitto. E mi auguro che anche qui si colga questo appello in modo trasversale, perchÃ© un bambino non potrÃ  mai appartenere all'egoismo di chi vuole esaudire un proprio capriccio.\nEd Ã¨ anche cosÃ¬, signori e signore, che si difendono le donne: con i fatti, non con i proclami, le belle parole e poi gli applausi a pratiche aberranti, che le vogliono schiave e sfruttate.",
+      "del:madeBy": {
+        "@id": "participant_46"
+      },
+      "del:timestamp": "2025-10-23T10:24:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_60",
+      "del:text": "Also, we have to accept that online is now a cesspit of violence against women and girls, and it has to be addressed. We have the Digital Services Act, and we have other pieces of legislation, but we just have simply not taken this seriously. And the idea that we can have a situation where shared images are sent online, to the point where young girls are taking their lives because of this damaging harassment online â we simply have to take this seriously if we are to talk about equality and protecting girls and women, and certainly any legislation that would come forward in supporting women should also be supported by those that expose free speech.",
+      "del:madeBy": {
+        "@id": "participant_47"
+      },
+      "del:timestamp": "2025-10-23T10:25:52"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_61",
+      "del:text": "Ich gehÃ¶re niemandem. Ich bin nicht deine Tochter, ich bin nicht seine Schwester, ich bin ich. Wir Frauen stehen fÃ¼r uns selber. Und das sehen wir ja hier klar in diesem Saal, wie viele Frauen hier im Saal sind, wie wenige bis gar keine MÃ¤nner hier im Saal sind und wie viele MÃ¤nner schweigen oder urplÃ¶tzlich unsere Rechte erkennen. Wo wart ihr, als der Prozess fÃ¼r Madame Pelicot lief? Wo waren Sie da? Das mÃ¶chte ich gerne mal wissen. Ich finde diese Debatte einfach nur heuchlerisch.",
+      "del:madeBy": {
+        "@id": "participant_48"
+      },
+      "del:timestamp": "2025-10-23T10:27:19"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_62",
+      "del:text": "As disparidades nos salÃ¡rios, na progressÃ£o da carreira e uma maior precariedade criam situaÃ§Ãµes de dependÃªncia econÃ³mica que reforÃ§am ciclos de vulnerabilidade e tornam mais difÃ­cil pÃ´r fim a contextos de violÃªncia ou de discriminaÃ§Ã£o.\nO direito Ã  maternidade tem de ser protegido, e Ã s mÃ£es devem ser disponibilizados todos os recursos necessÃ¡rios para que a maternidade nÃ£o seja uma vulnerabilidade nem um fator de desigualdade.\nSÃ³ poderemos combater a violÃªncia sobre as mulheres e as raparigas se a compreendermos em todas as suas dimensÃµes e expressÃµes, para que se aborde tambÃ©m outros tipos de violÃªncia que afetam tantas das nossas jovens, com impactos verdadeiramente dramÃ¡ticos.\nA partilha de conteÃºdos nÃ£o consentidos e os gerados por inteligÃªncia artificial, como vÃ­deos e fotos deep fake nas plataformas sociais Ã© inadmissÃ­vel e tem de ser crime em todos os EstadosâMembros. E a cada perfil tem de estar associado um cartÃ£o de identificaÃ§Ã£o. A sociedade como um todo deve penalizar quem partilha sem consentimento e quem permite esta partilha.",
+      "del:madeBy": {
+        "@id": "participant_49"
+      },
+      "del:timestamp": "2025-10-23T10:28:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_63",
+      "del:text": "Per questo deve essere combattuta anche all'interno delle comunitÃ  Rom, dove Ã¨ noto che la maternitÃ  Ã¨ spesso utilizzata come un lasciapassare per vivere impunemente di atti illegali, permettendo cosÃ¬ a certi uomini di sfruttare mogli e figlie incinte, mandate magari a borseggiare nelle metropolitane, salvandole dalla giustizia, grazie ad un susseguirsi infinito di gravidanze infinite e rischiose.\nLa sinistra, paladina delle minoranze, ha sempre chiuso gli occhi rispetto a questa piaga, barattando i diritti delle donne con la sottomissione al politicamente corretto. La Lega invece si Ã¨ sempre opposta e oggi, finalmente, grazie al DDL Sicurezza, anche le donne incinte potranno andare incontro a determinate forme di detenzione.\nQuesta sarÃ  quindi una svolta, non solo per fermare le attivitÃ  criminose dei Rom, ma soprattutto per porre fine ad una prassi vergognosa, che umilia la maternitÃ  e che calpesta i diritti delle donne.",
+      "del:madeBy": {
+        "@id": "participant_50"
+      },
+      "del:timestamp": "2025-10-23T10:30:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_64",
+      "del:text": "Cada diez minutos una mujer es asesinada en el mundo. Las cifras son devastadoras y la foto evoluciona para peor. Necesitamos un compromiso polÃ­tico y social, pero ese compromiso no se puede torpedear legislando en beneficio de los agresores sexuales. En mi paÃ­s se legislÃ³, y todavÃ­a hay consecuencias, para que muchÃ­simos violadores agresores sexuales fueran excarcelados. Cientos y cientos y miles vieron rebajadas su condena. AsÃ­ no se lucha contra la violencia contra las mujeres. Siendo ministra una de las portavoces que hoy ha hablado y nos ha dado lecciones de la lucha contra la violencia contra las mujeres.\nTampoco se ayuda cuando las pulseras antimaltrato en mi paÃ­s han estado ocho meses sin funcionar, vulnerando el derecho a la protecciÃ³n de las vÃ­ctimas y teniendo conocimiento de esto la ministra. Ni tampoco pagando con dinero pÃºblico prostitutas âdinero de todos ustedesâ y humillando a las mujeres con frases como Â«Carlota se enrolla que te cagasÂ», del ministro de Transportes y nÃºmero dos del Grupo socialista de mi paÃ­s.",
+      "del:madeBy": {
+        "@id": "participant_51"
+      },
+      "del:timestamp": "2025-10-23T10:31:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_65",
+      "del:text": "But passing laws such as this should be only the start. We must increase our support to those services which provide assistance for those facing domestic and sexual-based violence. Across my own constituency, I have been honoured to visit organisations like Teach Tearmainn, in Kildare, and Meath's Women's Refuge and Support Services. And finally, we must ensure that the recently finalised directive on combating domestic violence is implemented in full, across all 27 Member States.",
+      "del:madeBy": {
+        "@id": "participant_52"
+      },
+      "del:timestamp": "2025-10-23T10:33:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_66",
+      "del:text": "Pero mÃ¡s importante todavÃ­a que una declaraciÃ³n es la legislaciÃ³n. Lo hicimos âtrabajando mucho en la pasada legislaturaâ poniendo por fin en vigor una Directiva penal sobre la violencia contra las mujeres âen la que me comprometÃ­ intensamenteâ y que recoge la ablaciÃ³n, la maternidad y el matrimonio forzados.\nPero lanza tambiÃ©n un mensaje claro que no solamente apuesta por el consentimiento como base para definir toda forma de agresiÃ³n contra las mujeres, sino que ordena a los Estados que incorporen a su legislaciÃ³n penal el castigo a los consumidores de prostituciÃ³n de vÃ­ctimas de trata. Eso es legislar en compromiso con la igualdad.\nQuiero terminar diciendo que la igualdad no destruye a las familias, como hemos escuchado aquÃ­. La igualdad, sin duda, las refuerza en su integridad y diversidad.",
+      "del:madeBy": {
+        "@id": "participant_18"
+      },
+      "del:timestamp": "2025-10-23T10:34:34"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_67",
+      "del:text": "Kijk naar de uitbuiting van kwetsbare vrouwen, waarmee draagmoederschap vaak gepaard gaat. In babyâs is een levendige handel ontstaan. En dat is natuurlijk niet okÃ©. Kinderen zijn immers geen handelswaar.\nMaar ik kijk ook naar het feit dat bij draagmoederschap de biologische moeder vaak helemaal buiten beeld raakt, al direct na de geboorte. En dat terwijl een kind in beginsel toch echt het beste af is als het opgroeit bij de eigen biologische vader en moeder. Hier worden dus heel duidelijke ethische grenzen overschreden. Alle reden om over te gaan tot een mondiaal verbod op het draagmoederschap.\nIk daag de Raad en de Commissie uit om duidelijk positie in te nemen hierover. Ik heb de indruk dat mevrouw de minister niet naar mij heeft geluisterd, maar haar ambtenaren zijn vast bereid om haar even te briefen.",
+      "del:madeBy": {
+        "@id": "participant_53"
+      },
+      "del:timestamp": "2025-10-23T10:36:05"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_68",
+      "del:text": "Molaim sibh go hard agus sibh i mbun chosaint na mban atÃ¡ ag fulaingt faoi dhrochÃ­de. Cuirim fÃ¡ilte roimh an dÃ­ospÃ³ireacht seo inniu agus is deis iontach Ã­ iarradh ar na BallstÃ¡it an Treoir maidir le ForÃ©igean in aghaidh na mBan agus na gCailÃ­nÃ­ a Chomhrac a chur i bhfeidhm go huile is go hiomlÃ¡n is go sciobtha agus roimh spriocdhÃ¡ta Mheitheamh '27. In Ãirinn, tuigimid go rÃ³mhaith an costas a bhaineann le neamhghnÃ­omhaÃ­ocht. TÃ¡ Jenny's Law nÃ³ DlÃ­ Jenny Ã¡ thabhairt isteach ag Rialtas na hÃireann - reachtaÃ­ocht chun clÃ¡r oibre agus clÃ¡r poiblÃ­ forÃ©igin teaghlaigh a chruthÃº, agus rud a thugann ceart do mhnÃ¡, do dhaoine, fios a bheith acu an bhfuil taifead de mhÃ­-ÃºsÃ¡id thromchÃºiseach gnÃ©is ag duine? AinmnÃ­odh an dlÃ­ nua seo in Ã³mÃ³s do Jennifer Poole, mÃ¡thair Ã¡lainn Ã³g ar dhÃºnmharaigh a pÃ¡irtnÃ©ir Ã­ sa bhliain 2021. D'fhÃ©adfaÃ­ bÃ¡s Jenny a sheachaint agus tÃ¡ sÃºil agam go seachnÃ³idh an reachtaÃ­ocht nua seo bÃ¡sanna cosÃºil le bÃ¡s Jenny.",
+      "del:madeBy": {
+        "@id": "participant_19"
+      },
+      "del:timestamp": "2025-10-23T10:37:27"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_69",
+      "del:text": "Istodobno, revidirana Direktiva o suzbijanju trgovanja ljudima iz proÅ¡le godine proÅ¡iruje zaÅ¡titu na Å¾ene koje su izloÅ¾ene prisilnoj trudnoÄi, surogatstvu i iskoriÅ¡tavanju majÄinstva. Prema analizi iz 2024. godine sve je, naÅ¾alost, viÅ¡e tzv. komercijalnog surogatstva u treÄim zemljama, u kojima se iskoriÅ¡tavaju siromaÅ¡ne Å¾ene iz Azije i istoÄne Europe. Regrutiraju se Å¾ene iz siromaÅ¡nih zajednica. MeÄutim, raÄanje djece za trgovinu organima, seksualno zlostavljanje, to je najstraviÄniji oblik biznisa o kojem isto tako moramo progovoriti. To nije sloboda izbora, to je oblik modernog ropstva. Godine 2022. proglasili smo komercijalno surogatstvo oblikom iskoriÅ¡tavanja Å¾ena koji krÅ¡i njihova prava i ljudsko dostojanstvo.\nSada smo tri godine kasnije. Jesmo li napravili korak naprijed ili unatrag?",
+      "del:madeBy": {
+        "@id": "participant_11"
+      },
+      "del:timestamp": "2025-10-23T10:39:11"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_70",
+      "del:text": "DoamnÄ ministru, aÈi prezentat aici trei puncte extrem de importante: sÄ facem prevenÈie, sÄ detectÄm timpuriu Èi sÄ protejÄm. Dar, domnule comisar, Ã®n statele din Uniunea EuropeanÄ sunt situaÈii extraordinare: n-avem adÄposturi, femeilor le este teamÄ sÄ raporteze violenÈa, sunt omorÃ¢te Ã®n casÄ de cÄtre copii, de cÄtre bÄrbaÈi.\nAici nu vorbim de naÈionalitatea ucigaÈului, nu vorbim de naÈionalitatea celui care face violenÈÄ femeilor sau fetelor. Este important sÄ gÄsim situaÈia cu mÄsuri concrete, sÄ finanÈÄm, sÄ avem suficiente adÄposturi. Èi are legÄturÄ violenÈa cu sÄrÄcia. Trebuie sÄ vedem ce facem pentru eradicarea sÄrÄciei. Avem ÈÄri Ã®n top cu sÄrÄcia Èi la copii, Èi la familii.\nDe aceea, eu cred cÄ nu este suficient sÄ avem directiva, trebuie sÄ venim cu un set de mÄsuri pentru a ajuta statele membre sÄ aibÄ adÄposturi, pentru a face educaÈie, ca femeile sÄ aibÄ curaj Èi sÄ fie protejate dupÄ ce a fost identificatÄ violenÈa.",
+      "del:madeBy": {
+        "@id": "participant_21"
+      },
+      "del:timestamp": "2025-10-23T10:40:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_71",
+      "del:text": "No one should risk losing their life because they don't want to be pregnant, but unfortunately, they don't have the right or the access to safe abortions. Forcing women to carry out unwanted pregnancies is violence.\nRight now, the 'My Choice, My Voice' initiative is fighting for women's rights to access abortions no matter which Member State they live in in our Union. I think it's something that we in this House need to speak up for, with a very clear voice, that we want to support and ensure women's right to decide. Our bodies are only for us to decide on.",
+      "del:madeBy": {
+        "@id": "participant_54"
+      },
+      "del:timestamp": "2025-10-23T10:42:21"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_72",
+      "del:text": "Vrouwen en meisjes zijn niet veilig op straat, in huis, op school of op het werk. Elke week worden er in Nederland acht vrouwen vermoord en elke dag zijn dat er in de Europese Unie overigens zes. Vrouwen die vermoord worden omdat ze vrouw zijn.\nWat er nodig is, is meer geld, meer beleid en meer acties om geweld tegen vrouwen daadwerkelijk te bestrijden. Bijvoorbeeld het strafbaar stellen van psychisch geweld, maar ook het proactief vervolgen van daders. Ik verwacht van de Commissie dat zij in de komende periode dan ook komt met echt beleid, en ook van de lidstaten verwacht ik dat zij komen met echt beleid tegen geweld tegen vrouwen, en met wetgeving. Alleen maar een verdrag tekenen is hartstikke mooi, maar het voorkomt het geweld niet. We hebben daden nodig.",
+      "del:madeBy": {
+        "@id": "participant_55"
+      },
+      "del:timestamp": "2025-10-23T10:43:21"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_73",
+      "del:text": "So why do we do it? And the disgusting truth is because we can. Because we are stronger. We are faster. And quite frankly, we are more brutal. We have the power to hurt women. But with power comes also responsibility. And I think this is what men have to understand, that they have to take the responsibility to protect women instead of hurting them.\nDear ladies and gentlemen, in nine minutes from now, another woman will be killed by her partner. May she rest in peace.",
+      "del:madeBy": {
+        "@id": "participant_20"
+      },
+      "del:timestamp": "2025-10-23T10:44:47"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_74",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_56"
+      },
+      "del:timestamp": "2025-10-23T10:46:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_75",
+      "del:text": "Aber, und das mÃ¶chten wir an dieser Stelle auch mal betonen, das grÃ¶Ãte Problem ist heutzutage fÃ¼r junge MÃ¤dchen eben das vorherrschende Stadtbild. Das ist das, was junge MÃ¤dchen in StraÃenbahnen erleben mÃ¼ssen. Das ist das, was junge MÃ¤dchen in InnenstÃ¤dten erleben mÃ¼ssen. Das ist genau das, was die politische Linke leugnet. Das ist genau das Problem, das nur die politische Rechte lÃ¶sen wird.",
+      "del:madeBy": {
+        "@id": "participant_57"
+      },
+      "del:timestamp": "2025-10-23T10:47:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_76",
+      "del:text": "To address this, we must stay firm and determined in tackling the root causes of gender-based violence. Fighting gender-based violence is not just a women's issue, it is a societal issue. It affects our communities, our economies and our democracies. It undermines the values we hold dear: equality, justice and freedom.\nPolitical and spiritual leader Bacha Khan once said, 'If you wish to know how civilised the culture is, look at how they treat their women.' If one third of EU women or girls live in fear of violence, we are failing as a society. This simply cannot be our Union of equality.\nTogether with your contribution and that of the other EU institutions, we must build a Europe where every woman can live free from fear and where equality is not a promise but a reality.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-23T10:48:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_77",
+      "del:text": "We need men in this debate. Men and boys have to be part of the debate. Many men want to help prevent, detect and intervene against violence: we have to encourage that. And an aspect which we, as women, also have to take into account is that men and boys may also be victims of violence themselves, and it is not easy for them to reach out for help because of gender-specific barriers to them.\nA part of the debate has also been the consequences of migration. In my mind, there can be no doubt that that is also part of the debate, at least for my own country. Immigrants from certain parts of the world have higher criminal rates, and women with immigrant background are over-represented in women's shelters. The lack of gender equality in immigrant environments is a major gender equality problem.\nI also got a question about surrogacy. Surrogacy is within the remit of national law. This is also clearly the approach taken in the Directive on combating human trafficking, which only deals with the exploitation of surrogacy, not surrogacy itself.\nWe can be proud of what we have achieved in the European Union: we are the most gender-equal place in the world. But we need to look ahead: we do not have gender equality. The Council looks forward to the new gender equality strategy that the Commission is expected to issue soon. Meanwhile, Member States continue their work at national level.\nWe should see this as an opportunity: promoting gender equality policies also gives us a way to strengthen the cohesion, resilience and competitiveness of our societies.",
+      "del:madeBy": {
+        "@id": "participant_23"
+      },
+      "del:timestamp": "2025-10-23T10:50:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_78",
+      "del:text": "Written Statements (Rule 178)",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T10:53:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_79",
+      "del:text": "Az uniÃ³s adatok szerint a magyar nÅk 41 szÃ¡zalÃ©ka tapasztalt mÃ¡r pÃ¡rkapcsolati erÅszakot, 49 szÃ¡zalÃ©kuk fizikai vagy szexuÃ¡lis bÃ¡ntalmazÃ¡st, Ã©s minden hÃ©ten egy nÅ meghal a sajÃ¡t partnere keze Ã¡ltal.\nEz nem csupÃ¡n statisztika, ez tÃ¡rsadalmi tragÃ©dia, nemzeti szÃ©gyen.\nÃs ennek van neve, van arca, van szemÃ©lyes felelÅse: OrbÃ¡n Viktor!\nÅ az a miniszterelnÃ¶k, aki nyÃ­ltan kijelentette, hogy \"nÅÃ¼gyekkel nem foglalkozom\".\nÃs valÃ³ban - nem foglalkozik. Ez a cinikus mondat ma magyar nÅk Ã©letÃ©be kerÃ¼l.\nAz OrbÃ¡n-kormÃ¡ny 15 Ã©v alatt nem ratifikÃ¡lta az Isztambuli EgyezmÃ©nyt, nem hozott lÃ©tre Ã¡tfogÃ³ adatgyÅ±jtÃ©st, nem biztosÃ­tott elÃ©g menedÃ©khelyet, Ã©s nem tÃ¡mogatta a civil szervezeteket, akik az Ã¡llam helyett prÃ³bÃ¡lnak segÃ­teni.\nEz a kÃ¶zÃ¶ny kormÃ¡nyzati szinten rÃ¶gzÃ¼lt, Ã©s Ã©letekbe kerÃ¼l.\nA TISZA PÃ¡rt mÃ¡s utat kÃ©pvisel.\nMi azt mondjuk: igenis lehet Ãºjra kutatni, mÃ©rni, Ã©s ajÃ¡nlÃ¡sokat tenni. A nÅk elleni erÅszak nem tabu, mert csak Ã­gy tudunk valÃ³di segÃ­tsÃ©get nyÃºjtani az Ã¡ldozatoknak. A nÅk vÃ©delme nem magÃ¡nÃ¼gy, hanem Ã¡llami felelÅssÃ©g.\nA kÃ¶vetkezÅ kÃ©t Ã©v kulcsa: a teljes uniÃ³s irÃ¡nyelv Ã¡tÃ¼ltetÃ©se, az adat- Ã©s szolgÃ¡ltatÃ¡s-fejlesztÃ©s, valamint a civil-Ã¡llami egyÃ¼ttmÅ±kÃ¶dÃ©s stabilizÃ¡lÃ¡sa. Csak Ã­gy Ã©pÃ­thetÃ¼nk olyan MagyarorszÃ¡got, ahol a nÅk biztonsÃ¡ga nem politikai kegy, hanem garantÃ¡lt jog.",
+      "del:madeBy": {
+        "@id": "participant_58"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_80",
+      "del:text": "En Europe, en 2025, des femmes et des filles continuent dâÃªtre battues, violÃ©es, exploitÃ©es, parfois mÃªme rÃ©duites au silence par la peur ou la honte. Cette rÃ©alitÃ©, câest notre Ã©chec collectif. Car tant quâune femme ne peut vivre libre et en sÃ©curitÃ©, aucune dÃ©mocratie nâest pleinement accomplie.\nLa directive europÃ©enne contre la violence faite aux femmes est un progrÃ¨s majeur. Mais elle ne sauvera aucune vie si elle reste lettre morte dans les tiroirs des Ãtats membres. LâEurope doit Ãªtre ferme: transposer, appliquer, sanctionner. ProtÃ©ger les victimes, câest agir vite, câest former les policiers, les juges, les mÃ©decins, câest garantir un accueil digne et des refuges sÃ»rs partout en Europe.\nEt nâoublions pas les nouvelles formes dâexploitation, notamment autour de la maternitÃ©, oÃ¹ le corps des femmes devient un marchÃ©. Nous ne pouvons pas tolÃ©rer que la vulnÃ©rabilitÃ© devienne un business.\nLâEurope doit rester un rempart contre la violence et la marchandisation du corps fÃ©minin. Câest une question de justice, de dignitÃ© et dâhumanitÃ©.",
+      "del:madeBy": {
+        "@id": "participant_59"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_81",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T10:53:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_82",
+      "del:text": "But there is reason for hope. Through research, new and more effective treatments are becoming available. I would like to thank all researchers and doctors working in this area. Their efforts make a difference for many women suffering from breast cancer. Equally important, we have screening tools available that allow us to detect breast cancer early and to start treatment earlier.\nHowever, breast cancer screening still varies a lot across Member States â this is a challenge. The Council recommendations from 2022 recognised the key role early detection plays in treating cancer. It also included guidelines on improving screening for breast cancer. We must also make better use of EU programmes that support early detection, like the joint action EUCanScreen and the ELISAH project. We look forward to working with you to make more progress on this important matter.",
+      "del:madeBy": {
+        "@id": "participant_23"
+      },
+      "del:timestamp": "2025-10-23T10:53:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_83",
+      "del:text": "For better awareness, we will be launching the fifth edition of the European Code Against Cancer early next year. It includes two messages specific to breast cancer: to breastfeed and to take part in breast cancer screening. Screening is absolutely crucial and has been a point of focus for the EU, so I am glad that we are discussing it today. Under the new EU cancer screening scheme, 90Â % of the eligible EU population should have access to screening for breast, colorectal and cervical cancer.\nWe have new evidence, new tests and protocols and new EU-level targets brought in by the Council recommendations in 2022. Some Member States have already adapted their screening programmes to the new recommendations, and other Member States are following suit.Â To support Member States in doing this, the Commission is funding the joint action EUCANscreen.\nWhether through the 2008 regulation on combating cancer or the report in 2022 by Parliament's Special Committee on Beating Cancer, the first result of this push was the European Commission's Initiative on Breast Cancer, established in 2015. It updates the European guidelines on breast cancer screening and care and establishes clear quality standards. A number of Member States have put these into practice. The result is better screening, better care, and better outcomes for women across Europe. Thank you and I look forward to the debate.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-23T10:55:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_84",
+      "del:text": "Redoviti probir i rana dijagnostika mogu smanjiti smrtnost i do 30%, za Å¡to je pozitivni primjer Hrvatska. No, i dalje previÅ¡e pacijenata nema pristup kvalitetnim programima probira. Zato prevencija i rano otkrivanje moraju ostati temelj naÅ¡eg djelovanja u javnom zdravstvu. EU je usvojio ambiciozan europski plan za borbu protiv raka. Za njegovu daljnju provedbu nuÅ¾no je jasno financiranje, ulaganje u zdravstvene sustave i prije svega jednak pristup zdravstvenoj zaÅ¡titi u svim drÅ¾avama Älanicama.\nU nekim drÅ¾avama EU-a je pacijentima dostupno 46-48 novih onkoloÅ¡kih lijekova u roku od godine dana, a u pojedinim zemljama istoÄne Europe svega tri nova lijeka. To je nedopustivo i zato je vaÅ¾no da reformom farmaceutskog zakonodavstva rijeÅ¡imo konaÄno taj problem. Drago mi je Å¡to u Odboru za javno zdravlje zapoÄinjemo rad na izvjeÅ¡Äu o provedbi europskog plana za borbu protiv raka. To je prilika da jaÄamo nadzor nad njegovom primjenom, prepoznamo manjkavosti, ali i zahtijevamo ambiciozno i zaÅ¡tiÄeno financiranje zdravstva i u iduÄem viÅ¡egodiÅ¡njem financijskom okviru. TakoÄer, moramo slijediti dobar primjer Direktive o potroÅ¡aÄkim kreditima, kojom smo po prvi put na europskoj razini kodificirali pravo na zaborav za osobe koje su preboljele rak, a Å¡to sada moramo ugraditi i u druge propise. Nitko ne smije biti diskriminiran samo zato Å¡to boluje ili je bolovao od raka. Europa mora pokazati ne samo da ima plan, nego i sredstva, odluÄnost i ambiciju da ga provede.\nUlaganje u prevenciju i probir danas znaÄi spaÅ¡avanje Å¾ivota sutra.",
+      "del:madeBy": {
+        "@id": "participant_60"
+      },
+      "del:timestamp": "2025-10-23T10:57:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_85",
+      "del:text": "El Gobierno de Moreno Bonilla ha abandonado a las mujeres y posteriormente las ha culpado de atentar contra el prestigio del sistema andaluz de salud. Y es que, seÃ±or Moreno Bonilla, Â¿es mÃ¡s importante aparentar y retener votos que la vida de las mujeres? Porque todavÃ­a hoy no sabemos quÃ© ha pasado. Han dado varias versiones, han cambiado diagnÃ³sticos, han borrado los nombres de los radiÃ³logos en los registros. Falta informaciÃ³n, falta transparencia y respeto para las vÃ­ctimas y sus familias.\nPor eso exigimos responsabilidades al Gobierno de Moreno Bonilla. Que deje de mentir, que explique claramente quÃ© ha ocurrido, que escuche a las asociaciones de afectadas, que actÃºe con un plan efectivo. Y lo digo como eurodiputada socialista, como presidenta que soy de la ComisiÃ³n de Derechos de las Mujeres en este Parlamento y como andaluza que estÃ¡ en el sistema de cribado, que se hizo una mamografÃ­a el aÃ±o pasado y que todavÃ­a no tiene los resultados. Eso es ansiedad, seÃ±or Moreno Bonilla.\nNingÃºn gobierno puede violar los derechos fundamentales a la salud y a la informaciÃ³n. Â¿QuÃ© tienen que ocultar? Â¿QuÃ© intereses privados estÃ¡n por encima de la salud? Porque las privatizaciones en sanidad cuestan vidas. TambiÃ©n la suya, seÃ±or Moreno Bonilla.",
+      "del:madeBy": {
+        "@id": "participant_61"
+      },
+      "del:timestamp": "2025-10-23T10:59:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_86",
+      "del:text": "Wir haben letzte Woche in BrÃ¼ssel MEHA, eine neue europÃ¤ische Gesundheitsinitiative, gegrÃ¼ndet. Mit dabei war auch Dr. Robert Malone. Herr Kommissar JÃ¸rgensen, Sie wissen sicherlich, wer Dr. Robert Malone ist, ein weltweit anerkannter Wissenschaftler, der auch im ACIP, im Impfberatungsgremium der amerikanischen Regierung, sitzt. Und dieses ACIP hat im September vier Hauptursachen fÃ¼r COVIDâImpfungen festgestellt, die Krebs verursachen kÃ¶nnen. Aufgrund dessen hat die CDC die Werbung fÃ¼r die COVIDâ19âImpfungen in Amerika eingestellt.\nHerr Kommissar, ich mÃ¶chte haben, dass endlich auch in diesem Haus einmal faktenorientiert, faktenbasiert Ã¼ber die Nachteile der COVIDâ19âImpfungen diskutiert wird, weil in Amerika nicht umsonst die Werbung dafÃ¼r eingestellt wurde. Das ist notwendig und wichtig, und das verlange ich von diesem Haus.",
+      "del:madeBy": {
+        "@id": "participant_62"
+      },
+      "del:timestamp": "2025-10-23T11:01:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_87",
+      "del:text": "Cancerul mamar Èi cel de col uterin rÄmÃ¢n principalele cauze de deces Ã®n rÃ¢ndul femeilor din RomÃ¢nia. Mai mult de 80Â % din cazuri sunt depistate Ã®n stadii avansate, cÃ¢nd Èansele de supravieÈuire scad dramatic.\nAceasta nu este doar o statisticÄ medicalÄ - este o tragedie umanÄ Èi socialÄ. Ãn spatele fiecÄrui numÄr se aflÄ o femeie, o mamÄ, o fiicÄ, o sorÄ. Femei care, Ã®n multe cazuri, ar fi putut fi salvate prin screening accesibil Èi tratament adecvat.\nÃn timp ce Uniunea EuropeanÄ alocÄ fonduri semnificative pentru apÄrare, tranziÈie verde, sprijin extern, este momentul sÄ ne Ã®ntrebÄm: oferim aceeaÈi prioritate Èi protejÄrii vieÈii cetÄÈenilor noÈtri?\nCred cu tÄrie cÄ sÄnÄtatea trebuie sÄ fie o prioritate strategicÄ a Uniunii Europene. De aceea, solicit Comisiei Europene alocarea de fonduri pentru screening gratuit Èi tratamente oncologice gratuite pentru toÈi cetÄÈenii europeni.\nNu putem vorbi despre o EuropÄ unitÄ dacÄ acceptÄm ca diferenÈele de resurse sÄ Ã®nsemne diferenÈa dintre viaÈÄ Èi moarte. SÄ demonstrÄm, prin fapte Èi bugete, cÄ viaÈa fiecÄrei femei din Europa conteazÄ.",
+      "del:madeBy": {
+        "@id": "participant_63"
+      },
+      "del:timestamp": "2025-10-23T11:02:26"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_88",
+      "del:text": "In Romania, screening rates are among the lowest in Europe, as in other Central and Eastern European countries. The gap is unacceptable. We must keep the fight against cancer a European priority. From EU4Health to cohesion and research programmes, every euro should drive innovation, early detection and equitable screening across the European Union. Every woman, whether in Bucharest, in Sofia or in Paris, deserves the same chance to live.\nAs a man, I stand as an ally because women's health is not only a women's cause, it's a European cause. And Europe must protect, not by words, but by action, standing with every woman, in every country, in every moment. This is what our European Health Union should look like.",
+      "del:madeBy": {
+        "@id": "participant_64"
+      },
+      "del:timestamp": "2025-10-23T11:03:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_89",
+      "del:text": "While screening should be available for everyone, regardless of income, over-screening is not the solution either. Reason must lead testing, not fear. And let's be clear: no woman should ever have to make the choice between her wallet and her health. Universal, well distributed and responsible screening is a matter of equity and also of public health.\nFinally, let us also remember that the best prevention we can get is lowering the risk at the source. We know that pollution directly affects women's health, so acting for the planet is also acting for human health â especially for women.",
+      "del:madeBy": {
+        "@id": "participant_65"
+      },
+      "del:timestamp": "2025-10-23T11:05:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_90",
+      "del:text": "Tragicamente, o risco tem aumentado mesmo em mulheres jovens, mas a evoluÃ§Ã£o da saÃºde traz esperanÃ§a a todas as mulheres. Esta esperanÃ§a tem trÃªs condiÃ§Ãµes: um diagnÃ³stico atempado, o tratamento adequado e o acompanhamento. Para isso, precisamos de serviÃ§os de saÃºde robustos, universais e que atuem a tempo, nÃ£o de cortes na saÃºde. Precisamos de literacia para a saÃºde, de mais e melhor educaÃ§Ã£o e menos preconceitos e tabus. Combater o estigma e celebrar as sobreviventes, salva-nos tambÃ©m a todas.\nE precisamos de condiÃ§Ãµes de vida. Sim, as mulheres adiam vezes demais consultas e exames de diagnÃ³stico, porque o trabalho tem horas a mais, fora e dentro de casa, porque dÃ£o prioridade ao cuidado dos outros â filhos, pais, companheiros, famÃ­lia â e, quando elas precisam de cuidados, vezes demais, ficam sozinhas.\nOutubro Ã© o mÃªs da visibilidade do cancro da mama. Todos os meses sÃ£o para lutar pela saÃºde e pela vida das mulheres. Um apelo final: faÃ§am o rastreio.",
+      "del:madeBy": {
+        "@id": "participant_66"
+      },
+      "del:timestamp": "2025-10-23T11:06:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_91",
+      "del:text": "Â¿CuÃ¡l es la verdad? La verdad es que AndalucÃ­a ha pasado de un gasto en sanidad de 9Â 800 millones con los socialistas a 16Â 000 millones. Y la verdad es que el seÃ±or Moreno ha pedido perdÃ³n a las afectadas y ha asumido sus responsabilidades, la consejera ha dimitido y se han buscado soluciones inmediatas a travÃ©s de un plan de choque.\nLa verdad es decir que el protocolo de AndalucÃ­a lo hizo la hoy vicepresidenta del Gobierno, la seÃ±ora Montero: ni perdÃ³n ni dimisiÃ³n. La verdad es que el seÃ±or GarcÃ­a-Page, en Castilla-La Mancha, dejÃ³ a 2Â 500 mujeres en cinco aÃ±os sin cribado: ni perdÃ³n ni dimisiÃ³n. La verdad es que la seÃ±ora GarcÃ­a, ministra de Sanidad, dejÃ³ tres aÃ±os sin cribados en Ceuta y Melilla: y ni perdÃ³n ni dimisiÃ³n.\nY decir la verdad es que ustedes han sido los reyes de la privatizaciÃ³n, porque dejaron sin pagar 256 millones de euros de las clÃ­nicas privadas Pascual, en CÃ¡diz, que ha tenido que pagar el seÃ±or Moreno Bonilla.\nComo usted dice, las pulseras, la ley del sÃ­ es sÃ­...\nPor tanto, hay que pedir perdÃ³n a las mujeres y ponerse manos a la obra, que es lo que estÃ¡ haciendo Juanma Moreno en este caso. Desde luego, esto es lo que hay que hacer por las mujeres y no intentar utilizarlas.\n(La oradora se niega a que NicolÃ¡s GonzÃ¡lez Casares le formule una pregunta con arreglo al procedimiento de la Â«tarjeta azulÂ»)",
+      "del:madeBy": {
+        "@id": "participant_67"
+      },
+      "del:timestamp": "2025-10-23T11:07:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_92",
+      "del:text": "However, participation in screening programs varies significantly between Member States, with many falling short of the 70Â % target. And this is up to the Commission now to draw attention. We need to motivate Member States to be more active in screen screening programs â very active. We know very well that continuing investment in research and innovation can help us to develop screening models. Once again, early detection is better and cheaper and safer than treatment.\nLet us make a clear commitment together to protect women's health. Therefore I am calling for 15Â October to be established as European Breast Health Day â a day dedicated to raising awareness, promoting prevention and fostering solidarity across Member States. I count on you, Commissioner.",
+      "del:madeBy": {
+        "@id": "participant_17"
+      },
+      "del:timestamp": "2025-10-23T11:09:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_93",
+      "del:text": "S'il existe des plans nationaux qui encouragent les femmes de plus de 50Â ans Ã  se faire dÃ©pister tous les deux ans, le cancer du sein touche de plus en plus les jeunes. Le nombre de cas de cancers de tous types a bondi de 80Â % en 30Â ans chez les moins de 50Â ans. Or, les femmes jeunes sont plus susceptibles de dÃ©velopper un cancer du sein plus agressif. Plusieurs causes sont connues: l'accroissement de la population et son vieillissement, les facteurs hormonaux et reproductifs, l'alcool, le surpoids, la sÃ©dentaritÃ© et le tabac. Mais il y en a d'autres qui restent Ã  dÃ©terminer.\nQuel que soit son Ã¢ge, le dÃ©pistage et la sensibilisation au dÃ©pistage sont essentiels, tout en prenant garde Ã  Ã©viter les surdiagnostics et le surtraitement. Les pouvoirs publics ont pris la mesure de la situation. Il faut maintenant assurer le bon financement de la recherche pour mieux comprendre cette maladie et affiner les mÃ©thodes de diagnostic.",
+      "del:madeBy": {
+        "@id": "participant_68"
+      },
+      "del:timestamp": "2025-10-23T11:10:54"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_94",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_69"
+      },
+      "del:timestamp": "2025-10-23T11:12:15"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_95",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_70"
+      },
+      "del:timestamp": "2025-10-23T11:13:38"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_96",
+      "del:text": "Eso no fue un error, fue una negligencia polÃ­tica. El sistema fallÃ³ porque hay una estrategia para hacerlo fallar. Debilitar lo pÃºblico para acabar privatizÃ¡ndolo todo. No es un caso aislado, es un modelo que vemos repetido en la Comunidad Valenciana, en Murcia y en cada territorio donde se pone el dinero por delante de la vida.\nEl cÃ¡ncer no discrimina entre personas ricas y pobres, pero la posibilidad de superarlo con un diagnÃ³stico a tiempo, claro que sÃ­. Depende de contar con unos servicios pÃºblicos y universales de calidad. Necesitamos reforzar nuestra sanidad pÃºblica con recursos, con profesionales sanitarios que tengan unas buenas condiciones laborales, y dignas, y, sobre todo, con polÃ­ticas que prioricen la salud frente a los beneficios econÃ³micos.\nLos recortes cuestan vidas, seÃ±ores, y desmantelar la sanidad cuesta vidas.\n(La oradora acepta responder a una pregunta formulada con arreglo al procedimiento de la Â«tarjeta azulÂ»)",
+      "del:madeBy": {
+        "@id": "participant_71"
+      },
+      "del:timestamp": "2025-10-23T11:15:02"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_97",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_72"
+      },
+      "del:timestamp": "2025-10-23T11:16:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_98",
+      "del:text": "Por tanto, la opiniÃ³n polÃ­tica que despierta en mÃ­ una situaciÃ³n como la que hemos vivido en AndalucÃ­a es que hay que depurar responsabilidades.",
+      "del:madeBy": {
+        "@id": "participant_71"
+      },
+      "del:timestamp": "2025-10-23T11:16:55"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_99",
+      "del:text": "Det finns fortfarande stora skillnader bÃ¥de vad det gÃ¤ller fÃ¶rekomst och dÃ¶dlighet inom Europa. Det finns ett direkt samband mellan de lÃ¤nder som satsar pÃ¥ screening och prevention och minskad dÃ¶dlighet. DÃ¤rfÃ¶r mÃ¥ste Europas lÃ¤nder satsa pÃ¥ att fÃ¶rebygga, upptÃ¤cka och bekÃ¤mpa brÃ¶stcancer, sÃ¥ att alla kvinnor i Europa fÃ¥r en jÃ¤mlik vÃ¥rd och chanser till Ã¶verlevnad.",
+      "del:madeBy": {
+        "@id": "participant_73"
+      },
+      "del:timestamp": "2025-10-23T11:17:36"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_100",
+      "del:text": "So how do we respond to this failure? By acting. We must step up. We must reach out to the communities in rural areas. We must use the power of telemedicine and guarantee equal quality standards across all Member States. Our work is far from done.\nThis is why I call on you, dear colleagues, to join me in supporting the request to officially recognise 15Â October as a Breast Health Day, a day dedicated to prevention, early detection and support for women affected by cancer.\nIt's time to stop talking about goals and to start achieving them.",
+      "del:madeBy": {
+        "@id": "participant_74"
+      },
+      "del:timestamp": "2025-10-23T11:18:46"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_101",
+      "del:text": "So I have a few questions: a cancer plan was not included in the 2026 work programme released this week, so can you give more detail on how the Commission plans to address the ongoing issues in prevention, detection and screening highlighted in the evaluation report? Can you please provide an updated timeline highlighting which actions remain unachieved? And specifically, what is the Commission doing to assist Member States on reaching their screening targets?\nInvestment in research, people and screening will save lives.",
+      "del:madeBy": {
+        "@id": "participant_52"
+      },
+      "del:timestamp": "2025-10-23T11:20:14"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_102",
+      "del:text": "Me produce vergÃ¼enza que se use a las mujeres para hacer polÃ­tica y me produce vergÃ¼enza que pretendan cribar al seÃ±or Moreno Bonilla.\nUstedes estÃ¡n utilizando ideolÃ³gicamente este tema cuando han puesto a violadores en la calle, cuando han desprotegido a las vÃ­ctimas de violencia de gÃ©nero, cuando tienen Gobiernos que, durante aÃ±os, han dejado sin cribado a sus mujeres âmuchas tampoco estÃ¡nâ; ustedes priorizan la utilizaciÃ³n de la mujer, pero las mujeres no les importan. Â¿O es que las mujeres de Castilla-La Mancha son menos que las mujeres andaluzas?\nUstedes fallan en el discurso, fallan a las mujeres, fallan al utilizar al seÃ±or Moreno Bonilla como fallan siempre a las mujeres.",
+      "del:madeBy": {
+        "@id": "participant_75"
+      },
+      "del:timestamp": "2025-10-23T11:21:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_103",
+      "del:text": "GÃ¢ndiÈi-vÄ la femeile din mediul rural. Ce Èanse au sÄ-Èi facÄ aceastÄ analizÄ, care Ã®n unele ÈÄri e banalÄ, dar dupÄ aceea ce ÈansÄ au la un tratament adecvat? ÈtiÈi, femeile din Èara mea merg fie Ã®n Austria, fie Ã®n Israel, fie Ã®n Germania, pentru a-Èi face tratament.\nDacÄ nu vom avea buget Èi, sigur, aici competenÈa e partajatÄ, statele membre Èi Comisia, dar dacÄ nu punem ca prioritate sÄnÄtatea femeilor â pentru cÄ pÃ¢nÄ la urmÄ are legÄturÄ Èi cu populaÈia â Ètim bine ce probleme demografice avem. De aceea, domnule comisar, vÄ rog cuprindeÈi pentru perioada urmÄtoare Èi sprijin pentru statele membre care nu au reuÈit sÄ aibÄ suficiente fonduri pentru acces la medicamente, pentru acces la screening.",
+      "del:madeBy": {
+        "@id": "participant_21"
+      },
+      "del:timestamp": "2025-10-23T11:22:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_104",
+      "del:text": "Sin embargo, en mi paÃ­s, en algunas regiones gobernadas por la derecha, han aflorado inaceptables negligencias. En la Comunidad Valenciana, por ejemplo, una de cada cinco mujeres no recibiÃ³ la invitaciÃ³n al cribado. Se ha dejado fuera de los programas de prevenciÃ³n a mÃ¡s de 90Â 000; 21Â 000Â solo en el caso de Alicante. Pero, ademÃ¡s, estÃ¡n aflorando problemas en los protocolos, dejÃ¡ndose a las mujeres con la incertidumbre, con el miedo, sin conocer los resultados. Y esto es algo inaceptable.\nPor eso le pedimos a la ComisiÃ³n y al Consejo Europeo que actÃºen para implementar los planes de prevenciÃ³n del cÃ¡ncer y para velar por los derechos fundamentales de las mujeres relacionados con la salud. Porque detrÃ¡s de esto hay un desmantelamiento del sistema pÃºblico para generar negocio en la privada.",
+      "del:madeBy": {
+        "@id": "participant_76"
+      },
+      "del:timestamp": "2025-10-23T11:24:01"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_105",
+      "del:text": "SeÃ±ora GÃ¡lvez, he tenido la oportunidad de escucharla detenidamente. Habla usted de manipulaciÃ³n: usted, que precisamente formaba parte del Gobierno que ocultaba las listas de espera âÂ¡mÃ¡s de 500Â 000 personas!â; habla de defender a los sanitarios: usted, que formaba parte del Gobierno que expulsÃ³ a 7Â 700 profesionales y les bajÃ³ el sueldo.\nFrente a esta propaganda partidista y mezquina, unos datos: el presupuesto sanitario ha aumentado un 55Â % en AndalucÃ­a desde que llegÃ³ Juanma Moreno y la plantilla ha aumentado en 28Â 000 profesionales. Dos retos histÃ³ricos.\nLes recomiendo una cosa, socialistas espaÃ±oles, dejen la propaganda barata y mezquina y pÃ³nganse de una vez âsin utilizar a las mujeresâ a trabajar por los andaluces y por los espaÃ±oles.",
+      "del:madeBy": {
+        "@id": "participant_77"
+      },
+      "del:timestamp": "2025-10-23T11:25:23"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_106",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_19"
+      },
+      "del:timestamp": "2025-10-23T11:26:50"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_107",
+      "del:text": "O cancro nÃ£o tem cor polÃ­tica e o combate exige respeito. Porque, senhoras e senhores, governar nÃ£o Ã© agitar os problemas, Ã© resolvÃªâlos, nÃ£o Ã© gritar mais alto. Mas compreendo, quando faltam resultados, sobra teatro. O cancro da mama, senhores deputados, nÃ£o tem cor polÃ­tica. O oportunismo, esse sim, tem.",
+      "del:madeBy": {
+        "@id": "participant_78"
+      },
+      "del:timestamp": "2025-10-23T11:28:13"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_108",
+      "del:text": "Y eso es lo que se le ha robado a todas las mujeres andaluzas a las que se ha privado de conocer los resultados. Las condenan a tratamientos mÃ¡s agresivos, reducen sus posibilidades de supervivencia y, ademÃ¡s, se las humilla pÃºblicamente diciÃ©ndoles que son unas ansiosas.\nYo creo que hay que actuar claramente contra las negligencias. Y este es un claro ejemplo. No solo por cÃ³mo ha actuado la Junta de AndalucÃ­a, sino tambiÃ©n cÃ³mo ha actuado posteriormente, pues dice que han desaparecido los datos de los historiales, lo cual es prÃ¡cticamente delictivo.\nPero va mÃ¡s allÃ¡ el daÃ±o provocado. Cualquier fallo en un cribado, cualquier fallo en un sistema de detecciÃ³n precoz, es un problema para todos los sistemas de detecciÃ³n precoz, porque disminuye la confianza en nuestros sistemas sanitarios. Por tanto, pedimos actuar ya con contundencia.",
+      "del:madeBy": {
+        "@id": "participant_72"
+      },
+      "del:timestamp": "2025-10-23T11:29:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_109",
+      "del:text": "PorÃ©m, mais de um terÃ§o destes casos pode ser prevenido. A deteÃ§Ã£o precoce salva cerca de 21 mil vidas por ano, mas persistem desigualdades no acesso Ã  triagem entre os EstadosâMembros. Falar de triagem Ã© falar de igualdade de oportunidades na saÃºde. Uma Europa unida tem de garantir um acesso gratuito, universal e de qualidade ao rastreio.\nEm Portugal, o Programa Nacional de Rastreio do Cancro da Mama cobre quase a totalidade da populaÃ§Ã£o-alvo e tem taxas de sobrevivÃªncia superiores Ã  mÃ©dia europeia. Mas o sucesso nÃ£o pode ficar limitado Ã s fronteiras nacionais, porque salvar vidas Ã©, e deve continuar a ser, a nossa prioridade comum.",
+      "del:madeBy": {
+        "@id": "participant_79"
+      },
+      "del:timestamp": "2025-10-23T11:30:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_110",
+      "del:text": "Lassen Sie uns die BrustkrebsfrÃ¼herkennung zu einem Teil des europÃ¤ischen Versprechens machenÂ â gleicher Zugang, gemeinsame Daten, starke AufklÃ¤rung. Denn die Technologie existiert. Die Wissenschaft ist eindeutig. Und heute spÃ¼re ich, dass der politische Wille da ist, hier im Raum, unter uns. Lassen Sie uns daraus ein Handeln machen und dafÃ¼r sorgen, dass jede Frau in Europa die gleichen Chancen auf Leben hat.",
+      "del:madeBy": {
+        "@id": "participant_20"
+      },
+      "del:timestamp": "2025-10-23T11:31:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_111",
+      "del:text": "The Commission remains committed to supporting Member States as they put breast cancer screening programmes in place. We will continue to work towards access to screening for all eligible women in the EU and to tackle any challenges that remain. As always, we count on your support.\nBy putting breast cancer prevention high on the political agenda, we honour the millions of people impacted by it.",
+      "del:madeBy": {
+        "@id": "participant_3"
+      },
+      "del:timestamp": "2025-10-23T11:33:20"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_112",
+      "del:text": "I also thank the Commission for its work, in particular through the Europe's Beating Cancer Plan and the Cancer Mission. Finally, I would also like to inform you that still, during our presidency, we will host the second major event of the EU Cancer Mission, 'Advancing cancer care: personalised treatment and innovation' on 4Â December in Copenhagen. This meeting will certainly touch on some of the topics we also discussed today.",
+      "del:madeBy": {
+        "@id": "participant_23"
+      },
+      "del:timestamp": "2025-10-23T11:34:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_113",
+      "del:text": "Written Statements (Rule 178)",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T11:35:07"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_114",
+      "del:text": "A mellrÃ¡k sajnos ma is az egyik leggyakoribb daganatos betegsÃ©g EurÃ³pÃ¡ban, mÃ©gis sokan nincsenek tisztÃ¡ban azzal, hogy mennyit szÃ¡mÃ­t az idÅben elvÃ©gzett szÅ±rÅvizsgÃ¡lat. A korai felismerÃ©s Ã©letet menthet, az idÅben diagnosztizÃ¡lt betegsÃ©g Ã¶tÃ©ves tÃºlÃ©lÃ©si arÃ¡nya 90 szÃ¡zalÃ©k feletti lehet. HazÃ¡mban, MagyarorszÃ¡gon, Ã©vente mintegy nyolcezer Ãºj emlÅdaganatos beteget diagnosztizÃ¡lnak, kÃ¶zÃ¼lÃ¼k 2100-2200 nÅt veszÃ­tÃ¼nk el, ami Ã³riÃ¡si vesztesÃ©g. Az emlÅrÃ¡k egy jÃ³l szÅ±rhetÅ betegsÃ©g, ezÃ©rt is kiemelten fontos, hogy minÃ©l tÃ¶bb nÅ Ã©ljen a szÅ±rÅvizsgÃ¡latok lehetÅsÃ©gÃ©vel.\nAz Ã©letkor elÅrehaladtÃ¡val nÅ a mellrÃ¡k kialakulÃ¡sÃ¡nak az esÃ©lye, a legveszÃ©lyeztettebb korosztÃ¡ly, a 45-65 Ã©v kÃ¶zÃ¶tti nÅk, akik szÃ¡mÃ¡ra kÃ©tÃ©vente ajÃ¡nlott a mammogrÃ¡fiÃ¡s vizsgÃ¡lat. Azonban az elmÃºlt tÃ­z Ã©vben nÅtt a fiatalkori emlÅrÃ¡kos esetek elÅfordulÃ¡sa, Ã­gy korosztÃ¡lytÃ³l fÃ¼ggetlenÃ¼l fontos az odafigyelÃ©s, a rendszeres Ã¶nvizsgÃ¡lat Ã©s szakorvosi vizsgÃ¡lat.\nKÃ©pviselÅkÃ©nt Ã©s nÅkÃ©nt hiszem, hogy a figyelem felkeltÃ©se, a biztatÃ¡s Ã©s a pÃ©ldamutatÃ¡s kiemelt jelentÅssÃ©ggel bÃ­r. EzÃ©rt is fontos, hogy mind uniÃ³s, mind nemzeti szinten figyelmet fordÃ­tsunk a tÃ¡jÃ©koztatÃ¡sra Ã©s a tudatossÃ¡g erÅsÃ­tÃ©sÃ©re.\nArra kÃ©rem a nÅtÃ¡rsaimat MagyarorszÃ¡gon Ã©s EurÃ³pÃ¡ban, hogy tegyÃ¼k meg az elsÅ lÃ©pÃ©st Ã¶nmagunkÃ©rt, csalÃ¡dunkÃ©rt, kÃ¶zÃ¶ssÃ©gÃ¼nkÃ©rt: vegyÃ¼nk rÃ©szt a szÅ±rÅvizsgÃ¡latokon, figyeljÃ¼nk az egÃ©szsÃ©gÃ¼nkre, hiszen az Ã©let a legnagyobb Ã©rtÃ©k!",
+      "del:madeBy": {
+        "@id": "participant_80"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_115",
+      "del:text": "Ãn RomÃ¢nia, de exemplu, realitatea este Ã®ngrijorÄtoare:\nâ¢ anual sunt diagnosticate circa 12.000 de cazuri noi.\nâ¢ Mai grav, rata de supravieÈuire la 5 ani este cu mult sub media europeanÄ.\nâ¢ Iar 80% dintre cazuri sunt descoperite Ã®n stadii avansate, cÃ¢nd vindecarea este dificilÄ.\n\nPentru a diminua acest fenomen, trebuie sÄ acÈionÄm unitar.\n\n1. SÄ finanÈÄm Èi sÄ implementÄm urgent programe de screening bazate pe mamografie, pentru femeile peste 50 de ani Èi tinerele cu risc.\n\n2. SÄ investim Ã®n campanii de conÈtientizare Èi educaÈie medicalÄ.\n\n3. SÄ utilizÄm Planul European de Combatere a Cancerului pentru a oferi tratamente inovatoare, Ã®n toatÄ ÈÄrile.\n\nCerem Comisiei sÄ ia mÄsuri pentru prevenÈie Èi diagnosticare precoce",
+      "del:madeBy": {
+        "@id": "participant_81"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_116",
+      "del:text": "Î ÎºÎ±ÏÎºÎ¯Î½Î¿Ï ÏÎ¿Ï Î¼Î±ÏÏÎ¿Ï ÏÎ±ÏÎ±Î¼Î­Î½ÎµÎ¹ Î· ÏÎ¹Î¿ ÏÏÏÎ½Î® Î¼Î¿ÏÏÎ® ÎºÎ±ÏÎºÎ¯Î½Î¿Ï ÏÏÎ¹Ï Î³ÏÎ½Î±Î¯ÎºÎµÏ ÏÏÎ·Î½ ÎÏÏÏÏÎ±ÏÎºÎ® ÎÎ½ÏÏÎ·, ÎºÎ±Î¸ÏÏ ÎºÎ±Î¹ Î¼Î¯Î± Î±ÏÏ ÏÎ¹Ï ÎºÏÏÎ¹ÏÏÎµÏÎµÏ Î±Î¹ÏÎ¯ÎµÏ Î¸Î±Î½Î¬ÏÎ¿Ï. Î Î±Ïâ ÏÎ»Î± Î±ÏÏÎ¬, Î³Î½ÏÏÎ¯Î¶Î¿ÏÎ¼Îµ ÏÏÏ ÏÏÎ±Î½ Î´Î¹Î±Î³Î¹Î³Î½ÏÏÎºÎµÏÎ±Î¹ Î­Î³ÎºÎ±Î¹ÏÎ±, Î¿Î¹ ÏÎ¹Î¸Î±Î½ÏÏÎ·ÏÎµÏ ÎµÏÎ¹Î²Î¯ÏÏÎ·Ï Î¾ÎµÏÎµÏÎ½Î¿ÏÎ½ ÏÎ¿ 90%. Î ÏÏÎ¿ÏÏÎ¼ÏÏÏÎ¼Î±ÏÎ¹ÎºÏÏ Î­Î»ÎµÎ³ÏÎ¿Ï ÏÏÎ¶ÎµÎ¹ Î¶ÏÎ­Ï.\n\nÎ Î½Î­Î± ÏÏÏÏÎ±ÏÎ· ÏÎ·Ï ÎÎ Î³Î¹Î± ÏÎ¿Î½ ÏÏÎ¿ÏÏÎ¼ÏÏÏÎ¼Î±ÏÎ¹ÎºÏ Î­Î»ÎµÎ³ÏÎ¿ ÎºÎ±Î¹ ÏÎ¿ ÎÏÏÏÏÎ±ÏÎºÏ Î£ÏÎ­Î´Î¹Î¿ Î³Î¹Î± ÏÎ·Î½ ÎºÎ±ÏÎ±ÏÎ¿Î»Î­Î¼Î·ÏÎ· ÏÎ¿Ï ÎºÎ±ÏÎºÎ¯Î½Î¿Ï, Î±ÏÎ¿ÏÎµÎ»Î¿ÏÎ½ Î²Î®Î¼Î±ÏÎ± ÏÏÎ¿Ï ÏÎ· ÏÏÏÏÎ® ÎºÎ±ÏÎµÏÎ¸ÏÎ½ÏÎ·. ÎÎ¼ÏÏ ÏÏÎµÎ¹Î¬Î¶ÎµÏÎ±Î¹ ÏÎµÏÎ¹ÏÏÏÏÎµÏÎ· ÏÏÎ®ÏÎ¹Î¾Î· ÏÏÎ± ÎºÏÎ¬ÏÎ· Î¼Î­Î»Î· Î³Î¹Î± Î½Î± ÎµÎ¾Î±ÏÏÎ±Î»Î¹ÏÏÎµÎ¯ Î¹ÏÏÏÎ¹Î¼Î· ÏÏÏÏÎ²Î±ÏÎ· Î³Î¹Î± ÏÎ»ÎµÏ ÏÎ¹Ï Î³ÏÎ½Î±Î¯ÎºÎµÏ, Î±Î½ÎµÎ¾Î±ÏÏÎ®ÏÏÏ ÏÏÏÎ¿Ï Î´Î¹Î±Î¼Î¿Î½Î®Ï Î® ÎºÎ¿Î¹Î½ÏÎ½Î¹ÎºÎ¿Î¿Î¹ÎºÎ¿Î½Î¿Î¼Î¹ÎºÎ®Ï ÎºÎ±ÏÎ¬ÏÏÎ±ÏÎ·Ï.\n\nÎ£ÏÎ·Î½ ÎÏÏÏÎ¿, ÏÏÏÏ ÎºÎ±Î¹ ÏÎµ ÏÎ¿Î»Î»Î¬ Î¬Î»Î»Î± ÎºÏÎ¬ÏÎ· Î¼Î­Î»Î·, ÏÏÎ­ÏÎµÎ¹ Î½Î± ÎµÎ½Î¹ÏÏÏÎ¸Î¿ÏÎ½ Î¿Î¹ ÎºÎ¹Î½Î·ÏÎ­Ï Î¼Î¿Î½Î¬Î´ÎµÏ ÎµÎ»Î­Î³ÏÎ¿Ï ÎºÎ±Î¹ ÏÎ± ÏÏÎ¿Î³ÏÎ¬Î¼Î¼Î±ÏÎ± ÎµÎ½Î·Î¼Î­ÏÏÏÎ·Ï, ÏÏÏÎµ ÎºÎ±Î¼Î¯Î± Î³ÏÎ½Î±Î¯ÎºÎ± Î½Î± Î¼Î·Î½ Î±Î¼ÎµÎ»ÎµÎ¯ ÏÎ· Î¼Î±ÏÏÎ¿Î³ÏÎ±ÏÎ¯Î± ÏÎ·Ï Î»ÏÎ³Ï Î±ÏÏÏÏÎ±ÏÎ·Ï Î® Î¬Î³Î½Î¿Î¹Î±Ï.\n\nÎ©Ï Î¼Î­Î»Î¿Ï ÏÎ¿Ï ÎÏÏÏÏÎ±ÏÎºÎ¿Ï ÎÎ±ÏÎºÎ¿Ï ÎÏÎ¼Î¼Î±ÏÎ¿Ï, ÏÎ¹ÏÏÎµÏÏ ÏÎµ Î¼Î¹Î± ÎÏÏÏÏÎ· ÏÎ¿Ï ÏÏÎ¿ÏÏÎ±ÏÎµÏÎµÎ¹ ÏÎ· Î¶ÏÎ® ÎºÎ±Î¹ ÎµÏÎµÎ½Î´ÏÎµÎ¹ ÏÏÎ·Î½ ÏÏÏÎ»Î·ÏÎ·. Î ÎºÎ±ÏÎºÎ¯Î½Î¿Ï ÏÎ¿Ï Î¼Î±ÏÏÎ¿Ï Î¼ÏÎ¿ÏÎµÎ¯ Î½Î± Î½Î¹ÎºÎ·Î¸ÎµÎ¯. ÎÎµ ÎµÎ½Î·Î¼Î­ÏÏÏÎ·, Î¹ÏÏÏÎ¹Î¼Î· ÏÏÏÏÎ²Î±ÏÎ·, Î±Î»Î»Î¬ ÎºÎ±Î¹ ÏÎ¿Î»Î¹ÏÎ¹ÎºÎ® Î²Î¿ÏÎ»Î·ÏÎ·.",
+      "del:madeBy": {
+        "@id": "participant_82"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_117",
+      "del:text": "Las y los socialistas denunciamos que los gobiernos del Partido Popular en las comunidades autÃ³nomas espaÃ±olas estÃ¡n desmantelando el sistema pÃºblico para generar negocio en la sanidad privada, exigimos responsabilidades polÃ­ticas y un plan efectivo que garantice la salud, la transparencia y los derechos de las mujeres en toda EspaÃ±a.",
+      "del:madeBy": {
+        "@id": "participant_83"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_118",
+      "del:text": "Las y los socialistas denunciamos que los gobiernos del Partido Popular en las comunidades autÃ³nomas espaÃ±olas estÃ¡n desmantelando el sistema pÃºblico para generar negocio en la sanidad privada, exigimos responsabilidades polÃ­ticas y un plan efectivo que garantice la salud, la transparencia y los derechos de las mujeres en toda EspaÃ±a.",
+      "del:madeBy": {
+        "@id": "participant_84"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_119",
+      "del:text": "Europejski Plan Walki z Rakiem wyznacza cel objÄcia diagnostykÄ zdecydowanej wiÄkszoÅci uprawnionych kobiet. Teraz najwaÅ¼niejsze jest wdroÅ¼enie tego celu w praktyce, blisko ludzi, w warunkach dostÄpnych dla wszystkich, nie tylko dla mieszkaÅcÃ³w duÅ¼ych miast. To oznacza: badania moÅ¼liwe w lokalnych oÅrodkach, rzetelnÄ informacjÄ i wsparcie pacjentek na kaÅ¼dym etapie oraz staÅÄ troskÄ o jakoÅÄ sprzÄtu i personelu.\n\nDlatego potrzebujemy wspÃ³lnego europejskiego podejÅcia, ktÃ³re ÅÄczy standardy, finansowanie i realnÄ dostÄpnoÅÄ badaÅ. PaÅstwa, ktÃ³re dysponujÄ sÅabszÄ infrastrukturÄ, powinny otrzymaÄ wsparcie, tak aby kaÅ¼da kobieta niezaleÅ¼nie od miejsca zamieszkania mogÅa liczyÄ na wczesne wykrycie i skuteczne leczenie.\n\nW raku piersi czas ma decydujÄce znaczenie. Wczesna diagnoza daje szansÄ na zdrowie, codziennoÅÄ, poczucie bezpieczeÅstwa. Zbyt pÃ³Åºna, odbiera je krok po kroku.\n\nDlatego budujmy system, ktÃ³ry nie tylko zachÄca do badaÅ, ale realnie umoÅ¼liwia ich wykonanie. Profilaktyka musi byÄ prawem, nie przywilejem.",
+      "del:madeBy": {
+        "@id": "participant_85"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_120",
+      "del:text": "Î ÎºÎ±ÏÎºÎ¯Î½Î¿Ï ÏÎ¿Ï Î¼Î±ÏÏÎ¿Ï ÏÎ±ÏÎ±Î¼Î­Î½ÎµÎ¹ Î· ÏÏÏÎ½ÏÏÎµÏÎ· Î¼Î¿ÏÏÎ® ÎºÎ±ÏÎºÎ¯Î½Î¿Ï ÏÏÎ¹Ï Î³ÏÎ½Î±Î¯ÎºÎµÏ ÎºÎ±Î¹ Î¼Î¹Î± Î±ÏâÏÎ¹Ï ÏÎ¹Î¿ Î¸Î±Î½Î±ÏÎ·ÏÏÏÎµÏ ÏÏÎ·Î½ ÎÏÏÏÏÎ·. Î ÎµÏÎ¹ÏÏÏÏÎµÏÎµÏ Î±ÏÏ 90000 Î³ÏÎ½Î±Î¯ÎºÎµÏ ÏÎ¬Î½Î¿ÏÎ½ ÏÎ· Î¶ÏÎ® ÏÎ¿ÏÏ Î±ÏÏ ÎºÎ±ÏÎºÎ¯Î½Î¿ ÏÎ¿Ï Î¼Î±ÏÏÎ¿Ï ÎºÎ¬Î¸Îµ ÏÏÏÎ½Î¿.\nÎÏÏÏÏÏÏÏ, Î¿ ÎºÎ¯Î½Î´ÏÎ½Î¿Ï Î­ÏÎµÎ¹ Î±ÏÎ¾Î·Î¸ÎµÎ¯ Î±ÎºÏÎ¼Î· ÎºÎ±Î¹ Î¼ÎµÏÎ±Î¾Ï ÏÏÎ½ Î½Î­ÏÎ½ Î³ÏÎ½Î±Î¹ÎºÏÎ½. Î ÏÏÎ¿ÏÏÎ¼ÏÏÏÎ¼Î±ÏÎ¹ÎºÏÏ Î­Î»ÎµÎ³ÏÎ¿Ï Î¼ÎµÎ¹ÏÎ½ÎµÎ¹ Î´ÏÎ±ÏÏÎ¹ÎºÎ¬ ÏÎ· Î¸Î½Î·ÏÎ¹Î¼ÏÏÎ·ÏÎ±, Î¼Î­ÏÎ± Î±ÏâÏÎ·Î½ Î­Î³ÎºÎ±Î¹ÏÎ· Î´Î¹Î¬Î³Î½ÏÏÎ·, ÏÎ¹Ï Î»Î¹Î³ÏÏÎµÏÎ¿ ÎµÏÎµÎ¼Î²Î±ÏÎ¹ÎºÎ­Ï Î¸ÎµÏÎ±ÏÎµÎ¯ÎµÏ ÎºÎ±Î¹ ÏÎ± ÏÎ¿ÏÎ¿ÏÏÎ¬ Î¯Î±ÏÎ·Ï Î¬Î½Ï ÏÎ¿Ï 95% ÏÏÎ± ÏÏÏÎ¹Î¼Î± ÏÏÎ¬Î´Î¹Î±.\nÎÎ¼ÏÏ ÏÎ±ÏÏÏÎ¹, Î· Î­Î³ÎºÎ±Î¹ÏÎ· Î±Î½Î¯ÏÎ½ÎµÏÏÎ· Î±ÏÎ¿ÏÎµÎ»ÎµÎ¯ ÎºÎ±Î¸Î¿ÏÎ¹ÏÏÎ¹ÎºÏ ÏÎ±ÏÎ¬Î³Î¿Î½ÏÎ± ÎµÏÎ¹Î²Î¯ÏÏÎ·Ï, ÏÏÎ·Î½ ÏÎ±ÏÎ±Î¼Î­Î½Î¿ÏÎ½ ÏÎ·Î¼Î±Î½ÏÎ¹ÎºÎ­Ï Î±Î½Î¹ÏÏÏÎ·ÏÎµÏ ÎºÎ±Î¹ ÎµÎ¼ÏÏÎ´Î¹Î± ÏÏÎ·Î½ ÏÏÏÏÎ²Î±ÏÎ· ÏÎµ ÏÏÎ¿Î»Î·ÏÏÎ¹ÎºÏ Î­Î»ÎµÎ³ÏÎ¿.\nÎ£ÏÎ·Î½ ÎÎ»Î»Î¬Î´Î± ÏÎ±ÏÎ¬ ÏÎ± Î¸ÎµÏÎ¹ÎºÎ¬ Î²Î®Î¼Î±ÏÎ±, Î· ÎºÎ¬Î»ÏÏÎ· ÏÎ¿Ï ÏÎ»Î·Î¸ÏÏÎ¼Î¿Ï ÏÎ±ÏÎ±Î¼Î­Î½ÎµÎ¹ ÎµÎ¾Î±Î¹ÏÎµÏÎ¹ÎºÎ¬ Î¬Î½Î¹ÏÎ· Î³ÎµÏÎ³ÏÎ±ÏÎ¹ÎºÎ¬ ÎºÎ±Î¹ Î· ÏÏÏÎ± ÏÏÎ¼ÏÏÎ½Î± Î¼Îµ ÏÎ·Î½ Eurostat ÎµÎ¯Î½Î±Î¹ Î¿ÏÏÎ±Î³ÏÏ ÏÏÎ·Î½ ÎÎ, ÏÏÎ¿Î½ ÏÏÎ¿Î»Î·ÏÏÎ¹ÎºÏ Î­Î»ÎµÎ³ÏÎ¿. Î£Îµ ÏÎ¿Î»Î»Î­Ï Î±ÏÏÎºÎµÎ½ÏÏÎµÏ ÏÎµÏÎ¹Î¿ÏÎ­Ï ÎºÎ±Î¹ Î½Î·ÏÎ¹Î¬, ÏÏÎ¬ÏÏÎµÎ¹ Î­Î»Î»ÎµÎ¹Î¼Î¼Î± ÏÏÎ¿Î´Î¿Î¼ÏÎ½, ÏÏÎ·ÏÎµÏÎ¹ÏÎ½ ÎºÎ±Î¹ ÏÏÎ¿ÏÏÏÎ¹ÎºÎ¿Ï. ÎÎ¹ Î³ÏÎ½Î±Î¯ÎºÎµÏ Î±ÏÎ¿Î¸Î±ÏÏÏÎ½Î¿Î½ÏÎ±Î¹ Î±ÏâÏÎ¿ ÏÏÎ·Î»Ï ÎºÏÏÏÎ¿Ï Î¼ÎµÏÎ±ÎºÎ¯Î½Î·ÏÎ·Ï ÎºÎ±Î¹ ÎºÎ±Î¸ÏÏÏÎµÏÎ®ÏÎµÏÎ½ ÏÏÎ¿Î½ ÏÏÎ¿Î³ÏÎ±Î¼Î¼Î±ÏÎ¹ÏÎ¼Ï ÏÏÎ½ ÎµÎ¾ÎµÏÎ¬ÏÎµÏÎ½.\nÎÏÏÏÏÏÏÏ Î±ÏÎ¿ÏÏÏÎ±Î¼Îµ ÏÏÎ¿Î½ ÎºÏÎ¯ÏÎ¹Î¼Î¿ ÏÏÏÏÎ¿ ÏÎ¿Ï Â«ÎÏÏÏÏÎ±ÏÎºÎ¿Ï Î£ÏÎµÎ´Î¯Î¿Ï Î³Î¹Î± ÏÎ·Î½ ÎºÎ±ÏÎ±ÏÎ¿Î»Î­Î¼Î·ÏÎ· ÏÎ¿Ï ÎÎ±ÏÎºÎ¯Î½Î¿ÏÂ», Î½Î± Î´Î¹Î±ÏÏÎ±Î»Î¯ÏÎ¿ÏÎ¼Îµ ÏÏÎ¹ ÏÎ¿ 90% ÏÏÎ½ Î³ÏÎ½Î±Î¹ÎºÏÎ½ Î¸Î± Î­ÏÎ¿ÏÎ½ ÏÏÏÏÎ²Î±ÏÎ· ÏÎµ ÏÏÎ¿Î»Î·ÏÏÎ¹ÎºÏ Î­Î»ÎµÎ³ÏÎ¿ Î­ÏÏ ÏÎ¿ 2025.\nÎÎ¯Î½Î±Î¹ ÎµÏÎµÎ¯Î³Î¿ÏÏÎ± ÏÏÎ¿ÏÎµÏÎ±Î¹ÏÏÎ·ÏÎ± Î· Î´Î¹Î±ÏÏÎ¬Î»Î¹ÏÎ· ÎºÎ±Î¸Î¿Î»Î¹ÎºÎ®Ï ÎºÎ±Î¹ Î´ÏÏÎµÎ¬Î½ ÏÏÏÏÎ²Î±ÏÎ·Ï ÏÎ»ÏÎ½ ÏÏÎ½ Î³ÏÎ½Î±Î¹ÎºÏÎ½ ÏÎµ ÏÏÎ¿Î»Î·ÏÏÎ¹ÎºÎ¿ÏÏ ÎµÎ»Î­Î³ÏÎ¿ÏÏ. Î ÎµÎ½Î¯ÏÏÏÏÎ· ÏÏÎ½ Î´Î·Î¼Î¿ÏÎ¯ÏÎ½ Î´Î¿Î¼ÏÎ½ ÏÎ³ÎµÎ¯Î±Ï, Î¿Î¹ ÎºÎ¹Î½Î·ÏÎ­Ï Î¼Î¿Î½Î¬Î´ÎµÏ ÎºÎ±Î¹ ÏÎ± ÏÎ·ÏÎ¹Î±ÎºÎ¬ ÎµÏÎ³Î±Î»ÎµÎ¯Î± Î¼ÏÎ¿ÏÎ¿ÏÎ½ Î½Î± Î¼ÎµÎ¹ÏÏÎ¿ÏÎ½ ÏÎ± ÎµÎ¼ÏÏÎ´Î¹Î± ÎºÎ±Î¹ Î½Î± ÏÏÏÎ¿ÏÎ½ Î¶ÏÎ­Ï.",
+      "del:madeBy": {
+        "@id": "participant_39"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_121",
+      "del:text": "Breast cancer screening saves lives â yet participation across Member States still ranges from 6% to over 90%. This wide gap shows that while progress has been made, much more can be achieved. The European Beating Cancer Plan and the 2022 Council Recommendation set the shared goal of reaching 90% coverage for eligible populations. The EUCanScreen programme plays a crucial role in this effort.\nI kindly ask the Commission to provide transparent data on the efficiency and early results of the EUCanScreen programme â what works best, where, and for whom. Such evidence is essential to guide future action and ensure equal access to quality screening across Europe.\nFinally, improving health literacy remains key. When citizens understand the value of early detection, participation rises. Let us make health literacy a true European priority, backed by dedicated funding in the next MFF.",
+      "del:madeBy": {
+        "@id": "participant_86"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_122",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_87"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_123",
+      "del:text": "DziÄki postÄpowi naukowemu dostÄpne sÄ coraz skuteczniejsze terapie, a dziÄki badaniom przesiewowym chorobÄ moÅ¼na wykryÄ, zanim stanie siÄ groÅºna. Regularne badania i wczesna diagnostyka mogÄ zmniejszyÄ ÅmiertelnoÅÄ nawet o 30%. Profilaktyka i wczesne wykrywanie muszÄ pozostaÄ podstawÄ dziaÅaÅ w dziedzinie zdrowia publicznego. Europa wyznaczyÅa jasny cel â do 2025 roku kaÅ¼da kobieta kwalifikujÄca siÄ do badaÅ przesiewowych powinna mieÄ do nich dostÄp. Jednak nawet najlepszy system nie zadziaÅa, jeÅli kobiety nie bÄdÄ z niego korzystaÄ. Dlatego tak waÅ¼ne jest, by kaÅ¼da z nas pamiÄtaÅa o profilaktyce. Warto poÅwiÄciÄ chwilÄ na badanie, ktÃ³re moÅ¼e uratowaÄ Å¼ycie. Wczesne wykrycie raka piersi to szansa na skuteczne leczenie, na zdrowie, na Å¼ycie bez strachu i z nadziejÄ na przyszÅoÅÄ.",
+      "del:madeBy": {
+        "@id": "participant_36"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_124",
+      "del:text": "Some Members have asked to speak during the voting session. But I remind you that, unfortunately, RuleÂ 189(4) allows only for the rapporteur to speak during the voting sessions. So I have to reject this possibility.",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T12:02:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_125",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T12:03:22"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_126",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T12:03:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_127",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T12:04:06"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_128",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T12:04:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_129",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T12:05:19"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_130",
+      "del:text": "The solution is in our hands today. Soils are unique, soils are diverse. They face diverse challenges, just like unity in diversity, just like our Union. That is why we took the original Commission proposal, that was going in the wrong direction, and turned it around. Built it bottom up, using subsidiarity as a foundation for a level playing field across the Union. We made sure that there are no â and I repeat, no â obligations on farmers and foresters. We made sure that there is no â and I repeat, no â paperwork and bureaucracy for farmers and foresters.\nWhat we delivered is a mandate that the Member States should help farmers and foresters in protecting their soil, that the Member States will get better knowledge about the problems facing the soil, that there is a platform for collaboration. We, as the Parliament negotiation team, managed to get the support of the Member States for this approach and 25 of them â 25 of them â endorse the deal in the Council.\nI want to thank everybody who will make this happen, but especially I want to thank farmers, the young farmers that were standing by from the very start till the very end, that are supporting this deal. Young farmers are our future.\nNow it's your turn, colleagues. If you want to help farmers, if you want to help foresters, if you want healthy soil, and bread on our tables, please reject the rejecting amendments and allow for final adoption of the Soil Monitoring Law.",
+      "del:madeBy": {
+        "@id": "participant_88"
+      },
+      "del:timestamp": "2025-10-23T12:05:36"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_131",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T12:08:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_132",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T12:08:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_133",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T12:18:28"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_134",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T12:26:25"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_135",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T12:28:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_136",
+      "del:text": "Das Protokoll der gestrigen Sitzung und die angenommenen Texte sind verfÃ¼gbar.\nGibt es EinwÃ¤nde? Das sehe ich nicht.\nDas Protokoll ist somit genehmigt.",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2025-10-23T15:00:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_137",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2025-10-23T15:00:43"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_138",
+      "del:text": "As you know, the system with the seasonal change was introduced by many Member States in the 1970s as a response to the energy crisis, with the goal of saving energy. But as Europe grew closer and the internal market took shape, a patchwork of different summer times, start and end dates, across Member States, became a real challenge, particularly for the transport and energy costs and sectors. That is why it was decided to synchronise these dates to bring order to the EU internal market.\nBut times have changed, honourable Members. With today's technology and digitalisation, this system no longer produces any energy savings, not for any sector. The seasonal time change has become a source of unnecessary complication for society.\nTake the transport sector, for example. Operators have to adjust departure and arrival times twice a year, often at the cost of confusion and frustration for passengers. And, of course, some of you might think: 'When I travel between the European Parliament and my home country every week, I also change time zones. So what is the difference?' Although true for some, this is not the daily reality for the EU citizens. Of course, anyone can choose to travel for work or leisure across time zones, but no one should be forced by law to experience a clock change in their daily lives, especially when we know â we know it â that it harms people's health.\nResearch shows that these forced clock changes disrupt our inner body clock, interfering with our sleep routine and our metabolism. In the short term, they reduce our mood, energy and alertness, which already lowers productivity at work and road safety. But over the long term, the effects can be far more serious, with a higher risk of different illnesses. These negative effects impact everyone, but children and the elderly are especially vulnerable and their voices are rarely heard. Yet they are the ones that suffer more from these seasonal clock changes.\nWe have, honourable Members of the European Parliament, the responsibility and the possibility to act now. When the Commission asked Europeans for their views, a record-breaking 4.6Â million citizens responded â the highest participation rate ever in a Commission public consultation. The citizen's message was loud and clear: 84Â % want us to end this absurdity of changing the clocks twice a year.\nThat is why the Commission put forward a proposal to end the seasonal time change, and I am glad that the European Parliament supported this vision and voted in favour to abolish the time change. However, the Member States in the Council have not yet reached a unified position, so our work must continue.\nFrom day one of this new Commission, I have been engaging closely, as the Commissioner responsible for this file, with Council presidencies and Member States to carefully examine the legal and practical implications of clock change. Following discussions initiated by the Polish Presidency of the Council, the Commission has decided to undertake further analysis through a detailed study that we are working on right now to support future decision-making on this issue, so I look forward to sharing the results with you â and, of course, with the Member States â as soon as they are available. I also welcome that Spain raised this point at the Energy Council meeting earlier this week, showing their motivation to move forward, and that several Member States are today supportive.\nThe people of Europe want us to act, and my goal is to move forward. The time has come to finally stop the seasonal changes of time every year. The Commission is fully committed to working hand in hand with Parliament and the Council to deliver a pragmatic, timely solution that benefits all Europeans. So I really look forward to a lively and constructive debate today.",
+      "del:madeBy": {
+        "@id": "participant_90"
+      },
+      "del:timestamp": "2025-10-23T15:01:10"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_139",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_1"
+      },
+      "del:timestamp": "2025-10-23T15:07:18"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_140",
+      "del:text": "Kellakeeramise eesmÃ¤rk oli omal ajal kasutada paremini loomulikku pÃ¤evavalgust ja sÃ¤Ã¤sta energiat, kuid tÃ¤napÃ¤eva uuringud nÃ¤itavad selgelt, et need vÃ¤idetavad eelised on tegelikult tÃ¼hised, samal ajal kui negatiivne mÃµju on mÃ¤rkimisvÃ¤Ã¤rne. Harvardi ja Stanfordi Ã¼likoolide teadustÃ¶Ã¶d kinnitavad, et kellakeeramine rikub inimese bioloogilist rÃ¼tmi ehk meie sisemist kella. See tÃ¤hendab unehÃ¤ireid, meeleolu langust, tÃ¶Ã¶vÃµime vÃ¤henemist ja isegi suuremat riski sÃ¼dame- ja veresoonkonnahaigusteks. Uuringud on nÃ¤idanud, et vahetult peale kellakeeramist kasvab liiklusÃµnnetuste ja suremuse arv, sest meie keha ei suuda Ã¼he tunniga Ã¼mber hÃ¤Ã¤lestuda. Bioloogiline Ã¶Ã¶pÃ¤evarÃ¼tm jÃ¤Ã¤b tegelikult ajast maha. See pÃµhjustab unepuudust, keskendumisraskusi ja aeglasemaid reaktsioone, mis omakorda suurendavad Ãµnnetuste ja terviseriski ohtu. Kevadine kellakeeramine mÃµjub meile rohkem, sÃ¼gisene vÃ¤hem, kuid mÃµlemad toovad kaasa tarbetut stressi.\nEuroopa Liit on sellel teemal arutlenud juba aastaid. NÃ¼Ã¼d on aeg sÃµnadest tegudeks. Head ametikaaslased, ma arvan, et on piisavalt pÃµhjuseid, et see kellakeeramine lÃµpetada. Inimesed ootavad meilt otsustavust. AitÃ¤h teile!",
+      "del:madeBy": {
+        "@id": "participant_91"
+      },
+      "del:timestamp": "2025-10-23T15:07:37"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_141",
+      "del:text": "Samtidigt pÃ¥verkas mÃ¤nniskors hÃ¤lsa negativt. Europaparlamentet antog sin position redan 2019. Med en bred majoritet beslutade vi att tidsomstÃ¤llningen skulle avskaffas sÃ¥ snabbt som mÃ¶jligt. Nu har vi vÃ¤ntat pÃ¥ medlemsstaterna i sex Ã¥r, och vÃ¥ra medborgare har ju redan ocksÃ¥ gett sitt svar. NÃ¤r EU-kommissionen genomfÃ¶rde ett Ã¶ppet samrÃ¥d svarade 4,6Â miljoner europÃ©er, och av dessa sÃ¥ ville 84Â % avskaffa tidsomstÃ¤llningen.\nÃndÃ¥ hÃ¤nder ingenting. Vi stÃ¥r stilla. Eller rÃ¤ttare sagt gÃ¥r vi fram och tillbaka varje vÃ¥r och varje hÃ¶st, men kommer ingen vart.\nDear Commissioner, thank you for keeping this issue alive, for listening to the people of Europe. Because Europe does not need more time; it needs decisions.\nCitizens are waiting. Especially the young, the elderly, the chronically ill â they are waiting for a Europe that acts and doesn't just consult. And to the Council, even if they are not here: this is your responsibility. Parliament has waited for six years. So when Spain now creates momentum in the issue with Prime Minister SÃ¡nchez being clear that it is time to end the seasonal time change, this should also be the clear signal to the whole Council that it is time to act.\nI know this requires coordination among Member States to avoid a patchwork of time zones, but this is an issue that we should be able to solve.\nFru talman! Tiden har kommit. Det Ã¤r dags att sluta stÃ¤lla om klockan. Och fÃ¶r alla oss som har svÃ¥rt att komma ihÃ¥g om vi ska stÃ¤lla fram eller ta tillbaka utemÃ¶blerna, sÃ¥ fÃ¥r vi helt enkelt skaffa oss en annan minnesregel.",
+      "del:madeBy": {
+        "@id": "participant_92"
+      },
+      "del:timestamp": "2025-10-23T15:09:52"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_142",
+      "del:text": "Le changement d'heure, c'est le symbole d'une Europe dÃ©connectÃ©e, une Europe qui dÃ©rÃ¨gle les horloges comme elle dÃ©rÃ¨gle les nations. Rappelez-vous, en 2018 la Commission europÃ©enne avait promis de mettre fin Ã  ce systÃ¨me aprÃ¨s une grande consultation. PrÃ¨s de 5 millions d'EuropÃ©ens avaient rÃ©pondu et une immense majoritÃ© demandait la suppression du changement d'heure. Et que s'est-il passÃ© depuis? Rien. Rien, sinon de nouvelles discussions sans fin, de nouveaux reports, de nouvelles excuses bureaucratiques.\nC'est toujours la mÃªme histoire. Bruxelles Ã©coute, consulte, dÃ©bat, mais ne dÃ©cide jamais dans le sens des peuples. Et pendant ce temps, les FranÃ§ais, les EuropÃ©ens continuent de subir. Troubles du sommeil, fatigue, effets sur la santÃ©, dÃ©sorganisation des rythmes de travail et de vie. Tout Ã§a pour quoi? Pour une prÃ©tendue Ã©conomie d'Ã©nergie qui n'existe plus depuis longtemps. Pire encore, on en arrive Ã  des situations ridicules, des enfants qu'on rÃ©veille en pleine nuit pour aller Ã  l'Ã©cole dans le noir, des travailleurs qui partent au boulot avant le lever du jour. Des journÃ©es dÃ©calÃ©es artificiellement. Quelle absurditÃ©!\nAlors oui, le changement d'heure peut sembler un petit sujet, mais il dit beaucoup. Il dit l'incapacitÃ© de cette Union europÃ©enne Ã  se rÃ©former. Il dit le mÃ©pris avec lequel elle traite les citoyens. Il dit cette gouvernance lointaine, technocratique, qui impose sans Ã©couter. La politique, c'est l'art de la rÃ©pÃ©tition. Alors, nous le rÃ©pÃ©terons autant de fois que nÃ©cessaire. Les peuples europÃ©ens veulent reprendre la main. Ils veulent une Europe des nations libres, respectueuse des choix de chacun. Pas une Europe qui uniformise, qui infantilise, qui dÃ©racine. Si la Commission europÃ©enne veut enfin prouver qu'elle peut entendre la voix des peuples, qu'elle le montre par un acte concret, qu'elle renonce au changement d'heure et qu'elle laisse enfin aux nations le droit de rÃ©gler leurs propres horloges.",
+      "del:madeBy": {
+        "@id": "participant_93"
+      },
+      "del:timestamp": "2025-10-23T15:12:30"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_143",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_94"
+      },
+      "del:timestamp": "2025-10-23T15:15:31"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_144",
+      "del:text": "Madam President, Commissioner, dear colleagues,\nWe turn the clocks, but what's the gain? Twice a year, the same old pain.\nPolitics can talk for hours on end, yet time itself refuses to bend.\nWe call it progress, but let's be fair: this policy is stuck in yesteryear.\nSummertime, wintertime, what a loss: whoever thought this up wasn't thinking of us.\nSaving energy, that was the plan.Â But what's been saved? Honestly, none.\nOnly nerves that tremble, bodies that strain, kids still asleep when alarms complain.\nAnd Europe stays silent again.\nLet me be plain â I won't pretend â we free voters say this must end.\nPeople want stability, not stress, not this twice-yearly time-travel mess.\nAnd here's the best part: this isn't just the feeling, it's a fact, cold and clear, written in black and white, right here.\nThe Commission asked the people once â 2018, remember the year?\nMillions replied loud and sincere,Â 'We don't want this anymore. Get rid of it.'\nBut Ursula looked away, and Europe, well, it lost its wit.\nThe answer lying on the table, but no one dares, or no one's able.\nThat's no progress, that's Brussels sleepwalking under neon light.\nFrom Bavaria to Bohemia, from Rome to Madrid, people are saying, 'Enough of this, get rid!'\nThe farmer knows when the sun will rise, without Brussels twisting the skies.\nWe speak of progress, we praise mankind, yet we can't make up our European mind.\nA Union that can't decide on time should start listening to its people's rhyme.\nSo, friends of the hour, I'll say it clear: who wasted time loses gear.\nLet's fix this, simple and fair, the people are tired and rightly aware.\nOnly summertime, no more wintertime â I want living time!\nOne clock that simply stays true.Â No tricks, no spin, no political dÃ©jÃ  vu.\nFor if we can't yet change the world, then let's at least count hours well.\nEurope, wake up, you've overslept, it's time for summertime to stay.\nTo Ursula: who does not move with the times, goes with the times, as time goes by.\nI'm Joachim Streit, I've no tears in the eye to say,\n'Winter is coming, make summertime stay,\nTime change, goodbye.'",
+      "del:madeBy": {
+        "@id": "participant_95"
+      },
+      "del:timestamp": "2025-10-23T15:18:17"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_145",
+      "del:text": "Sabiam que a Galiza Ã© um dos paÃ­ses do mundo com maior desfasamento entre a hora oficial e a denominada hora solar? HÃ¡ duas horas de diferenÃ§a. Duas horas. Este desfasamento horÃ¡rio foi imposto pelo ditador Franco em 1940, que mudou a hora para a adaptar Ã  Alemanha nazi.\nÃ tempo de democratizar o fuso horÃ¡rio. Se no Estado espanhol hÃ¡ um desfasamento de uma hora em relaÃ§Ã£o ao horÃ¡rio solar, na Galiza, hÃ¡ duas. Duas horas de diferenÃ§a. Isto significa que, em paÃ­ses no mesmo fuso horÃ¡rio que o nosso, o sol nasce duas horas antes. Acontece que, geograficamente, a Galiza deveria estar no fuso da Europa Ocidental ou GMT -1, mas a hora oficial Ã© a da Europa Central, o GMT +1.\nNo verÃ£o, as zonas mais ocidentais da Galiza, como a Costa da Morte, chegam a ter uma diferenÃ§a de duas horas e meia relativamente Ã  hora solar. A mesma hora que em Belgrado. Ã duas horas a menos de diferenÃ§a.\nNa Galiza, ajustar o fuso horÃ¡rio e corrigir este desfasamento teria inegÃ¡veis benefÃ­cios para a qualidade de vida das galegas e dos galegos e para racionalizar os horÃ¡rios no que se refere ao fuso atual, Senhor ComissÃ¡rio, que nÃ£o responde a nenhum tipo de poupanÃ§a energÃ©tica nem de melhoria da vida dos cidadÃ£os. Adaptar a hora ao mesmo meridiano geogrÃ¡fico, como nos casos de Portugal, da Irlanda ou das Ilhas CanÃ¡rias, seria a saÃ­da mais adequada.\nEm 2007, o nosso senador no Senado espanhol, Francisco Jorquera, apresentou uma iniciativa para pedir ao governo que a Galiza adapte a sua hora natural, com o objetivo de melhorar o aproveitamento da luz solar. JÃ¡ daquela vez explicou que a mudanÃ§a de hora, segundo dados do Instituto EnergÃ©tico da Galiza, sÃ³ implica menos de uma poupanÃ§a de 1 % do consumo de energia face os 5 % do conjunto do Estado espanhol. Esta escassa poupanÃ§a explicaâse porque o nosso paÃ­s estÃ¡ situado num fuso horÃ¡rio que geograficamente nÃ£o lhe corresponde.\nCabe Ã  Europa decidir sobre a mudanÃ§a de hora e ao Governo do Estado espanhol ter em conta a hora natural da Galiza e nÃ£o a hora polÃ­tica decidida pelo franquismo, como o meu partido tem vindo a pedir desde hÃ¡ duas dÃ©cadas.\nÃ a hora, Ã© a hora da mudanÃ§a do fuso horÃ¡rio.",
+      "del:madeBy": {
+        "@id": "participant_96"
+      },
+      "del:timestamp": "2025-10-23T15:21:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_146",
+      "del:text": "Wieder einmal wird deutlich, wie handlungsunfÃ¤hig diese EuropÃ¤ische Union ist. Der BÃ¼rgerwille wird ignoriert, Entscheidungen werden verschleppt, Verantwortung wird nicht Ã¼bernommen, aber hin und her geschoben. Die EU versagt bei so einem profanen Thema wie der Zeitumstellung und versteckt sich hinter Ausreden. Fakt ist: Die Menschen in Europa wollen keine sinnlose Zeitumstellung mehr, und wenn es die EU nicht schafft, dann mÃ¼ssen endlich die Nationalstaaten handeln. Politik muss Probleme lÃ¶sen, Politik muss nicht Probleme verwalten. Also, worauf warten wir? Auf die nÃ¤chste Zeitumstellung? Der Kommissar hat mich heute hoffnungsvoll gestimmt. Ihre Worte, die waren in der Tat sehr wichtig. Gut, dass Sie das so klar formuliert haben. Ich danke Ihnen dafÃ¼r, und wir hoffen, dass wir demnÃ¤chst in einer gemeinsamen Zeit leben, ohne einâ, zweimal im Jahr die Zeiten hin und her drehen zu mÃ¼ssen.",
+      "del:madeBy": {
+        "@id": "participant_97"
+      },
+      "del:timestamp": "2025-10-23T15:24:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_147",
+      "del:text": "Die BÃ¼rgerinnen und BÃ¼rger wollen das Ende der Zeitumstellung, und zwar jetzt. Hoffentlich kommt durch die gestrige Meldung aus Spanien Bewegung ins Spiel. Denn Spanien will die Zeitumstellung abschaffen. Ich habe hier im Plenum eineinhalb Minuten Redezeit, aber das brÃ¤uchte ich gar nicht, denn das Einzige, was es zu diesem Thema zu sagen gibt, geht an die Mitgliedstaaten, also an den Rat: HÃ¶rt endlich auf die Menschen, schafft diese absurde Praxis ab! Den Segen des Parlaments habt ihr. Es wÃ¤re ein klares Signal, das allen Skeptikern zeigt: Europa hÃ¶rt auf seine BÃ¼rger und handelt pragmatisch, bÃ¼rgernah und vernÃ¼nftig.",
+      "del:madeBy": {
+        "@id": "participant_14"
+      },
+      "del:timestamp": "2025-10-23T15:25:59"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_148",
+      "del:text": "Kansalaiset ovat puhuneet, parlamentti on puhunut, komissio on antanut vihreÃ¤Ã¤ valoa ja silti me olemme tÃ¤ssÃ¤. MistÃ¤ siis kiikastaa? Kiikastaa siitÃ¤, ettÃ¤ jÃ¤senmaat eivÃ¤t ole pystyneet tekemÃ¤Ã¤n pÃ¤Ã¤tÃ¶stÃ¤. Eli jÃ¤senmaiden edustajat, ministerit, jotka istuvat ministerineuvostossa, eivÃ¤t ole pystyneet tekemÃ¤Ã¤n pÃ¤Ã¤tÃ¶stÃ¤ tÃ¤llaisessa asiassa, joka vaarantaa eurooppalaisten ihmisten terveyden. MeillÃ¤ Suomessa tÃ¤mÃ¤n asian pÃ¤Ã¤llÃ¤ istuu liikenne- ja viestintÃ¤ministeri Lulu Ranne. Terveiset tÃ¤Ã¤ltÃ¤ Euroopan parlamentista. EikÃ¶ olisi jo aika lÃ¶ytÃ¤Ã¤ yhteisymmÃ¤rrys ministerineuvostossa, saattaa tÃ¤mÃ¤ asia lopulliseen pÃ¤Ã¤tÃ¶kseen ja lopettaa tÃ¤mÃ¤ hulluus, kellojen siirtely? Nyt on se oikea hetki. TÃ¤Ã¤llÃ¤ parlamentissa odotetaan, komissiossa odotetaan, eurooppalaiset odottavat. TehkÃ¤Ã¤ tyÃ¶nne.",
+      "del:madeBy": {
+        "@id": "participant_98"
+      },
+      "del:timestamp": "2025-10-23T15:27:48"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_149",
+      "del:text": "I odnoszÄ wraÅ¼enie, Å¼e Unia Europejska potrafi wszystko, pod warunkiem Å¼e chodzi o drobiazgi. KiedyÅ, dawno temu, uregulowaÅa krzywiznÄ banana, zuÅ¼ycie spÅuczki w toaletach czy margines powietrza w opakowaniu chipsÃ³w. NakazaÅa nawet przytwierdzanie nakrÄtek do plastikowych butelek, bo inaczej nikt by sobie z tym nie poradziÅ. Ale kiedy 84% obywateli w konsultacjach Komisji powiedziaÅo jasno: âznieÅcie tÄ zmianÄ czasuâ, to nagle caÅa unijna machina siÄ zacina. MinÄÅo szeÅÄ lat i cisza, bo nikt nie potrafi zdecydowaÄ, czy wolimy sÅoÅce o piÄtej czy o szÃ³stej rano.\nJeÅ¼eli Unia siÄ zatrzymuje na tak prostej sprawie, to jak ma sobie poradziÄ z powaÅ¼niejszymi problemami jak kryzys migracyjny, jak kryzys na rynku energii? Czas w koÅcu skoÅczyÄ z tym absurdem. Zmiana czasu to jest relikt z epoki Åwiec i lokomotyw parowych. Wtedy oszczÄdzano energiÄ. Dzisiaj mamy LED-y, mamy automatyczne sterowanie oÅwietleniem, caÅodobowÄ produkcjÄ, a oficjalne raporty Komisji i Europejskiej Agencji Årodowiska mÃ³wiÄ jasno: oszczÄdnoÅci energetyczne sÄ zerowe, za to koszty... Dwa razy w roku caÅy kontynent dostaje jet laga bez biletu lotniczego. Wzrost wypadkÃ³w, zawaÅÃ³w, zaburzeÅ snu. Dzieci zasypiajÄ w szkoÅach, kierowcy jadÄ pÃ³Åprzytomni, pociÄgi majÄ bÅÄdne rozkÅady. I po co? Tylko po to, Å¼eby ten biurokratyczny zegar absurdu dalej tykaÅ. ZnieÅmy w koÅcu tÄ zmianÄ czasu, zanim bÄdziemy kolejny raz nad niÄ debatowaÄ.",
+      "del:madeBy": {
+        "@id": "participant_99"
+      },
+      "del:timestamp": "2025-10-23T15:30:08"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_150",
+      "del:text": "ÐÐµ ÐºÐ°Ð·Ð²Ð°Ð¼ Ð½ÐµÑÐ¾ Ð½Ð¾Ð²Ð¾. Ð¢Ð°Ð·Ð¸ Ð´Ð¸ÑÐºÑÑÐ¸Ñ ÑÐµÑÐµ Ð½Ð° Ð¿ÑÐ°Ð·Ð½Ð¸ Ð¾Ð±Ð¾ÑÐ¾ÑÐ¸ Ð²ÐµÑÐµ 7 Ð³Ð¾Ð´Ð¸Ð½Ð¸. ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ°ÑÐ° ÐºÐ¾Ð¼Ð¸ÑÐ¸Ñ Ð¾ÑÐ´Ð°Ð²Ð½Ð° Ð¿ÑÐµÐ´Ð»Ð¾Ð¶Ð¸ Ð¿ÑÐµÐºÑÐ°ÑÑÐ²Ð°Ð½Ðµ Ð½Ð° ÑÐµÐ·Ð¾Ð½Ð½Ð°ÑÐ° ÑÐ¼ÑÐ½Ð° Ð½Ð° Ð²ÑÐµÐ¼ÐµÑÐ¾ Ñ Ð¾Ð³ÑÐ¾Ð¼Ð½Ð° Ð¿Ð¾Ð´ÐºÑÐµÐ¿Ð° Ð¾Ñ ÐµÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸ÑÐµ Ð³ÑÐ°Ð¶Ð´Ð°Ð½Ð¸. Ð ÑÑÐº Ð²ÑÐ·Ð½Ð¸ÐºÐ²Ð° Ð»Ð¾Ð³Ð¸ÑÐ½Ð¸ÑÑ Ð²ÑÐ¿ÑÐ¾Ñ: ÐºÐ°Ðº ÑÐµ ÑÐ±ÐµÐ´Ð¸Ð¼ ÐµÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐ¸ÑÐµ, ÑÐµ ÑÐ¼Ðµ ÑÐ¿Ð¾ÑÐ¾Ð±Ð½Ð¸ Ð´Ð° ÑÐµÑÐ°Ð²Ð°Ð¼Ðµ Ð³Ð¾Ð»ÐµÐ¼Ð¸ÑÐµ Ð²ÑÐ¿ÑÐ¾ÑÐ¸ Ð½Ð° Ð¼Ð¸ÑÐ° Ð¸ Ð²Ð¾Ð¹Ð½Ð°ÑÐ°, Ð½Ð° Ð³Ð»Ð¾Ð±Ð°Ð»Ð½Ð°ÑÐ° ÑÐ¸Ð³ÑÑÐ½Ð¾ÑÑ Ð¸ ÐºÐ»Ð¸Ð¼Ð°ÑÐ¸ÑÐ½Ð¸ÑÐµ Ð¿ÑÐ¾Ð¼ÐµÐ½Ð¸, ÐºÐ¾Ð³Ð°ÑÐ¾ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÐ¼ Ð´Ð° ÑÐµ Ð´Ð¾Ð³Ð¾Ð²Ð¾ÑÐ¸Ð¼ Ð´Ð¾ÑÐ¸ Ð·Ð° Ð½ÐµÑÐ¾ ÑÐ¾Ð»ÐºÐ¾Ð²Ð° ÐµÐ»ÐµÐ¼ÐµÐ½ÑÐ°ÑÐ½Ð¾?\nÐÐ°ÑÑÐ°Ð²Ð°Ð¼ Ð¸Ð·ÑÑÐ»Ð¾ Ð·Ð°Ð´ Ð¸Ð½Ð¸ÑÐ¸Ð°ÑÐ¸Ð²Ð°ÑÐ° Ð½Ð° Ð¸ÑÐ¿Ð°Ð½ÑÐºÐ¾ÑÐ¾ Ð¿ÑÐ°Ð²Ð¸ÑÐµÐ»ÑÑÐ²Ð¾ Ð·Ð° ÑÐ»Ð°Ð³Ð°Ð½Ðµ Ð½Ð° ÐºÑÐ°Ð¹ Ð½Ð° ÑÐ¼ÑÐ½Ð°ÑÐ° Ð½Ð° Ð²ÑÐµÐ¼ÐµÑÐ¾. ÐÐµÐºÐ° ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸ÑÑ ÑÑÑÐ· Ð¿Ð¾ÐºÐ°Ð¶Ðµ, ÑÐµ Ð¼Ð¾Ð¶Ðµ Ð´Ð° Ð´ÐµÐ¹ÑÑÐ²Ð° ÑÐµÑÐ¸ÑÐµÐ»Ð½Ð¾, Ð¸ Ð½ÐµÐºÐ° Ð³ÑÐ°Ð¶Ð´Ð°Ð½Ð¸ÑÐµ ÑÐµ Ð¾Ð±ÑÑÐ½Ð°Ñ ÐºÑÐ¼ ÑÐ²Ð¾Ð¸ÑÐµ Ð¿ÑÐ°Ð²Ð¸ÑÐµÐ»ÑÑÐ²Ð°, Ð¾Ñ ÐºÐ¾Ð¸ÑÐ¾ Ð·Ð°Ð²Ð¸ÑÐ¸ Ð¾ÐºÐ¾Ð½ÑÐ°ÑÐµÐ»Ð½Ð¾ÑÐ¾ ÑÐµÑÐµÐ½Ð¸Ðµ.",
+      "del:madeBy": {
+        "@id": "participant_100"
+      },
+      "del:timestamp": "2025-10-23T15:32:03"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_151",
+      "del:text": "OczywiÅcie moÅ¼e trochÄ Å¼artujÄ, ale sprawa jest na tyle Åmieszna, Å¼e, jak to powiedziaÅ ostatni mÃ³wca: za rok prawdopodobnie znowu o tym bÄdziemy dyskutowaÄ. A sÄ osoby z poÅudnia, z pÃ³Ånocy Europy, ze Årodka Europy, ktÃ³re mÃ³wiÄ jednym gÅosem. SÄ argumenty: argumenty medyczne, Å¼eby nie wprowadzaÄ zmiany czasu, argumenty przemysÅowe, gospodarcze, bankowe, zdrowotne. WiÄc na co my czekamy? Jest akurat w tej sprawie peÅna zgoda, wiÄc do dzieÅa.",
+      "del:madeBy": {
+        "@id": "participant_101"
+      },
+      "del:timestamp": "2025-10-23T15:33:29"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_152",
+      "del:text": "Apesar de se ter avanÃ§ado no estudo desta questÃ£o, nÃ£o existe uma posiÃ§Ã£o fechada da comunidade cientÃ­fica sobre os termos em que as mudanÃ§as de hora sazonais devem ser consideradas, nem sobre os benefÃ­cios ou prejuÃ­zos da existÃªncia de tais mudanÃ§as e das suas implicaÃ§Ãµes para a saÃºde e o bemâestar da populaÃ§Ã£o.\nA existÃªncia ou nÃ£o de mudanÃ§as de hora sazonais deve ter em conta a vontade de cada povo, a opiniÃ£o da comunidade cientÃ­fica e o interesse de cada paÃ­s. O que nÃ£o Ã© aceitÃ¡vel Ã© haver qualquer tipo de imposiÃ§Ã£o da UniÃ£o Europeia nesta matÃ©ria.",
+      "del:madeBy": {
+        "@id": "participant_102"
+      },
+      "del:timestamp": "2025-10-23T15:34:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_153",
+      "del:text": "Das EuropÃ¤ische Parlament hat bereits 2019 fÃ¼r das Ende der Zeitumstellung bis 2021 gestimmt. Mittlerweile sind wir im Jahr 2025. Die Zeitumstellung gibt es immer noch. Das kann es doch nicht sein. Ja, es gibt bei der Abschaffung der Zeitumstellung einige technische Probleme. Einen Flickenteppich unterschiedlicher Zeitzonen in Europa gilt es zu verhindern. Aber das muss doch mÃ¶glich sein. Es wÃ¤re im Sinne unserer Gesundheit. Es wÃ¤re im Sinne unserer Wirtschaft. Es wÃ¤re im Sinne der Menschen.",
+      "del:madeBy": {
+        "@id": "participant_103"
+      },
+      "del:timestamp": "2025-10-23T15:35:42"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_154",
+      "del:text": "Dear people of Europe,\nJoachim rhymes with gentle grace, but like the clock, he lost his place.\nHe writes of time, yet slips the line. His hour's off, while mine's on time.\nHe says his rhyme can lead the light, but shifts like hands in autumn night.\nI stay aligned; he fades away, like daylight saving gone astray.\nHe talks of change yet moves too slow, like springtime clocks that lag below.\nI set the pace; I lead the climb. His verse runs late, I rhyme on time.\nFarmers groan when dawn won't stay, their cows confused, their yields decay.\nJoachim's flow does much the same: starts with hope and ends in shame.",
+      "del:madeBy": {
+        "@id": "participant_20"
+      },
+      "del:timestamp": "2025-10-23T15:36:56"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_155",
+      "del:text": "Ich mÃ¶chte die Aussprache mit einem kurzen Appell beenden, nÃ¤mlich einem Appell an die Mitgliedstaaten, hier endlich auf Parlament, die Kommission und die BÃ¼rger zu hÃ¶ren und diesen Unsinn endlich zu beenden.",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2025-10-23T15:37:57"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_156",
+      "del:text": "And I want to ask, not so much you, but rather the Council and the Member States: do you think that under this Parliament there was another moment where all aisles were unified under one position? No, I assure you, this isÂ only the first time during at least this term of Parliament that we all agree â we agree to adopt common sense.\nSo, honourable Members, by moving forward this file, we have a clear opportunity to show that Europe listens, and especially on issues that rely and that really affect the daily lives of all citizens in Europe. This is exactly what people expect from their elected representatives: to make a real, tangible difference in their everyday lives.\nSo please rest assured â and this is my promise â the Commission stands ready to support the ongoing work to help find a fair and pragmatic compromise among Member States. And I will fight for you until we finally stop changing the clocks in Europe.\nThank you very much for your attention and for your unwavering commitment to this matter. I look forward to continuing our engagement once the results of the very important study we are undertaking are available. Thank you again, let's work together.",
+      "del:madeBy": {
+        "@id": "participant_90"
+      },
+      "del:timestamp": "2025-10-23T15:38:40"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_157",
+      "del:text": "Schriftliche ErklÃ¤rungen (Artikel 178)",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2025-10-23T15:41:16"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_158",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_32"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_159",
+      "del:text": "ÐÐ»Ð¸Ð·Ð¾ 450 Ð¼Ð¸Ð»Ð¸Ð¾Ð½Ð° ÐµÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸ Ð³ÑÐ°Ð¶Ð´Ð°Ð½Ð¸ ÑÐ° Ð¿ÑÐ¸Ð½ÑÐ´ÐµÐ½Ð¸ Ð´Ð° ÑÐ¼ÐµÐ½ÑÑ ÑÐ°ÑÐ° Ð´Ð²Ð° Ð¿ÑÑÐ¸ Ð³Ð¾Ð´Ð¸ÑÐ½Ð¾ â Ð¿ÑÐµÐ· Ð¼Ð°ÑÑ Ð¸ Ð¾ÐºÑÐ¾Ð¼Ð²ÑÐ¸ - Ð¿ÑÐ°ÐºÑÐ¸ÐºÐ°, ÐºÐ¾ÑÑÐ¾ Ðµ Ð¾ÑÐ¶Ð¸Ð²ÐµÐ»Ð¸ÑÐ°. ÐÑÐµ Ð¿ÑÐµÐ· 2018 Ð³. 84% Ð¾Ñ ÑÑÐ°ÑÑÐ½Ð¸ÑÐ¸ÑÐµ Ð² Ð¾Ð±ÑÐµÑÑÐ²ÐµÐ½Ð°ÑÐ° ÐºÐ¾Ð½ÑÑÐ»ÑÐ°ÑÐ¸Ñ Ð½Ð° ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ°ÑÐ° ÐºÐ¾Ð¼Ð¸ÑÐ¸Ñ Ð·Ð°ÑÐ²Ð¸ÑÐ° ÑÑÐ½Ð¾: ÑÐ¼ÑÐ½Ð°ÑÐ° Ð½Ð° ÑÐ°ÑÐ° ÑÑÑÐ±Ð²Ð° Ð´Ð° Ð±ÑÐ´Ðµ Ð¿ÑÐµÐºÑÐ°ÑÐµÐ½Ð°. ÐÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸ÑÑ Ð¿Ð°ÑÐ»Ð°Ð¼ÐµÐ½Ñ Ð¿Ð¾Ð´ÐºÑÐµÐ¿Ð¸ ÑÐ°Ð·Ð¸ Ð¿Ð¾Ð·Ð¸ÑÐ¸Ñ Ð¿ÑÐµÐ· 2019 Ð³., Ð½Ð¾ Ð´Ð¾ÑÐµÐ³Ð° Ð²ÑÐµ Ð¾ÑÐµ Ð½ÑÐ¼Ð° Ð¾ÐºÐ¾Ð½ÑÐ°ÑÐµÐ»Ð½Ð¾ ÑÐµÑÐµÐ½Ð¸Ðµ.\nÐ¡Ð¼ÑÐ½Ð°ÑÐ° Ð½Ð° Ð²ÑÐµÐ¼ÐµÑÐ¾ Ð²Ð¾Ð´Ð¸ Ð´Ð¾ Ð½Ð°ÑÑÑÐµÐ½Ð¸Ñ Ð² ÑÑÐ½Ñ, Ð¿Ð¾Ð²Ð¸ÑÐµÐ½ ÑÐ¸ÑÐº Ð¾Ñ ÑÑÑÐ´ÐµÑÐ½Ð¾-ÑÑÐ´Ð¾Ð²Ð¸ Ð·Ð°Ð±Ð¾Ð»ÑÐ²Ð°Ð½Ð¸Ñ Ð¸ ÑÐ²ÐµÐ»Ð¸ÑÐ°Ð²Ð°Ð½Ðµ Ð½Ð° Ð¿ÑÑÐ½Ð¾ÑÑÐ°Ð½ÑÐ¿Ð¾ÑÑÐ½Ð¸ÑÐµ Ð¿ÑÐ¾Ð¸Ð·ÑÐµÑÑÐ²Ð¸Ñ. ÐÑÐ²ÐµÐ½ ÑÐ¾Ð²Ð°, ÐµÐ½ÐµÑÐ³Ð¾ÑÐ¿ÐµÑÑÑÐ²Ð°ÑÐ¸ÑÑ Ð°ÑÐ³ÑÐ¼ÐµÐ½Ñ Ð²ÐµÑÐµ Ð½Ðµ Ðµ Ð²Ð°Ð»Ð¸Ð´ÐµÐ½ â ÑÑÐ²ÑÐµÐ¼ÐµÐ½Ð½Ð¸ÑÐµ Ð¸Ð·ÑÐ»ÐµÐ´Ð²Ð°Ð½Ð¸Ñ ÑÐ¾ÑÐ°Ñ, ÑÐµ ÐµÑÐµÐºÑÑÑ Ð²ÑÑÑÑ ÐµÐ½ÐµÑÐ³Ð¾Ð¿Ð¾ÑÑÐµÐ±Ð»ÐµÐ½Ð¸ÐµÑÐ¾ Ðµ Ð½ÐµÐ·Ð½Ð°ÑÐ¸ÑÐµÐ»ÐµÐ½ Ð¸Ð»Ð¸ Ð´Ð¾ÑÐ¸ Ð¾ÑÑÐ¸ÑÐ°ÑÐµÐ»ÐµÐ½.\n\nÐÑÐµÐ· Ð¼Ð°ÑÑ ÑÐ°Ð·Ð¸ Ð³Ð¾Ð´Ð¸Ð½Ð° Ñ ÐºÐ¾Ð»ÐµÐ³Ð¸ Ð¾Ñ Ð²ÑÐ¸ÑÐºÐ¸ Ð¿Ð¾Ð»Ð¸ÑÐ¸ÑÐµÑÐºÐ¸ Ð³ÑÑÐ¿Ð¸ Ð¾ÑÐ½Ð¾Ð²Ð¾ Ð¿ÑÐ¸Ð·Ð¾Ð²Ð°ÑÐ¼Ðµ ÐÐ¾Ð¼Ð¸ÑÐ¸ÑÑÐ° Ð¸ Ð¡ÑÐ²ÐµÑÐ° Ð´Ð° Ð²Ð½ÐµÑÐ°Ñ ÐºÐ¾Ð½ÐºÑÐµÑÐ½Ð¾ Ð¿ÑÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð¸ ÑÑÐ½Ð¾ Ð´Ð° Ð¿Ð¾ÑÐ¾ÑÐ°Ñ Ð¿ÑÐ¸ÑÐ¸Ð½Ð¸ÑÐµ Ð·Ð° Ð·Ð°Ð±Ð°Ð²ÑÐ½ÐµÑÐ¾. ÐÑÐ¼Ð° Ð¿Ð¾Ð²ÐµÑÐµ Ð²ÑÐµÐ¼Ðµ Ð·Ð° Ð¾ÑÐ»Ð°Ð³Ð°Ð½Ðµ.\nÐÑÐ¸Ð²ÐµÑÑÑÐ²Ð°Ð¼ Ð¸Ð½Ð¸ÑÐ¸Ð°ÑÐ¸Ð²Ð°ÑÐ° Ð½Ð° ÐÑÐ¿Ð°Ð½Ð¸Ñ Ð¸ Ð¿ÑÐ¸Ð·Ð¾Ð²Ð°Ð²Ð°Ð¼ Ð²ÑÐ¸ÑÐºÐ¸ ÐµÐ²ÑÐ¾Ð¿ÐµÐ¹ÑÐºÐ¸ Ð¸Ð½ÑÑÐ¸ÑÑÑÐ¸Ð¸ Ð´Ð° Ð´ÐµÐ¹ÑÑÐ²Ð°Ñ ÑÐµÑÐ¸ÑÐµÐ»Ð½Ð¾ Ð¸ Ð´Ð° ÑÐ²Ð°Ð¶Ð°Ñ Ð²Ð¾Ð»ÑÑÐ° Ð½Ð° Ð³ÑÐ°Ð¶Ð´Ð°Ð½Ð¸ÑÐµ. ÐÑÐ°Ð¹Ð½Ð¾ Ð²ÑÐµÐ¼Ðµ Ðµ Ð´Ð° ÑÐ»Ð¾Ð¶Ð¸Ð¼ ÑÐ¾ÑÐºÐ° Ð½Ð° ÑÐ°Ð·Ð¸ Ð¾ÑÑÐ°ÑÑÐ»Ð° Ð¸ Ð²ÑÐµÐ´Ð½Ð° Ð¿ÑÐ°ÐºÑÐ¸ÐºÐ° Ð¸ Ð´Ð° ÑÐµ Ð²ÑÐ»ÑÑÐ°Ð¼Ðµ Ð² ÑÐ¾Ð²Ð°, ÐºÐ¾ÐµÑÐ¾ Ð½Ð°ÑÐ¸ÑÐµ Ð¸Ð·Ð±Ð¸ÑÐ°ÑÐµÐ»Ð¸ Ð¸ÑÐºÐ°Ñ.\nÐÐ»Ð°Ð³Ð¾Ð´Ð°ÑÑ Ð·Ð° Ð²Ð½Ð¸Ð¼Ð°Ð½Ð¸ÐµÑÐ¾!",
+      "del:madeBy": {
+        "@id": "participant_104"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_160",
+      "del:text": "DidÅ¾ioji dauguma Europos SÄjungos gyventojÅ³ nori panaikinti taisykles, verÄianÄias europieÄius du kartus per metus sukioti laikrodÅ¾ius. MÅ«sÅ³ pareiga â Ä¯siklausyti Ä¯ aiÅ¡kÅ³ mÅ«sÅ³ pilieÄiÅ³ balsÄ Å¡iuo klausimu ir kuo greiÄiau panaikinti sezoninÄ¯ laiko keitimÄ Europoje. Galime paminÄti nemaÅ¾ai argumentÅ³ uÅ¾ Å¡Ä¯ sprendimÄ, Ä¯skaitant efektyvÅ³ transporto ir susisiekimo darbÄ, kitÅ³ ekonomikos sektoriÅ³, kuriems reikalingas nuolatinis, ilgalaikis planavimas, veikimÄ. TaÄiau svarbiausia, jog dÄl laiko keitimo sutrikusi organizmo pusiausvyra gali sukelti sveikatos problemÅ³. Mokslininkai ir gydytojai sako, kad laikrodÅ¾iÅ³ sukiojimas sutrikdo mÅ«sÅ³ biologinÄ¯ laikrodÄ¯. MÅ«sÅ³ kÅ«no funkcijas, tokias kaip miegas, budrumas, virÅ¡kinimas, kÅ«no temperatÅ«ra ir net nuotaika, reguliuoja mÅ«sÅ³ biologinis laikrodis. Jo veikimas yra glaudÅ¾iai susijÄs su Å¡viesos prieinamumu ir tamsa. Laiko kaita sutrikdo Å¡Ä¯ ritmÄ. Labiausiai pastebimas poveikis yra miego trÅ«kumas ir pablogÄjusi nuotaika. Nors dauguma Å¾moniÅ³ greitai prisitaiko prie pasikeitusio laiko, pasekmÄs sveikatai gali bÅ«ti rimtesnÄs nei tikÄtasi. Tyrimai rodo, kad mirtinÅ³ eismo Ä¯vykiÅ³ rizika padidÄja laiko keitimo naktÄ¯. Taip pat iÅ¡kart po perÄjimo prie vasaros laiko uÅ¾registruojama daugiau nelaimingÅ³ atsitikimÅ³ darbe ir Å¡irdies priepuoliÅ³. Be to, laiko keitimas yra labai brangus ir turi daug neigiamÅ³ ekonominiÅ³ pasekmiÅ³, ypaÄ bankininkystÄs sektoriuje. Pats laikas nutraukti laiko keitimÄ Å¾moniÅ³ labui.",
+      "del:madeBy": {
+        "@id": "participant_105"
+      }
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_161",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2025-10-23T15:41:24"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_162",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2025-10-23T15:41:32"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_163",
+      "del:text": "Denn unser Ziel mÃ¼ssen kurze Wege sein, kurze Wege fÃ¼r uns Menschen zum Arbeitsplatz, zur Kinderbetreuung, zur medizinischen Versorgung, aber genauso auch kurze Wege fÃ¼r alle Produkte, die wir zum Leben brauchen. Das wÃ¤ren gute Beispiele und Vorzeigeprojekte fÃ¼r die kommende COPÂ 30 in Brasilien.",
+      "del:madeBy": {
+        "@id": "participant_106"
+      },
+      "del:timestamp": "2025-10-23T15:41:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_164",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2025-10-23T15:42:39"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_165",
+      "del:text": "Die kommende Konferenz, die COPÂ 20 in Usbekistan, kann und muss auf dem Weg zum effektiven Schutz aller Arten einen weiteren Meilenstein darstellen, wenn wir es schaffen, die internationale Zusammenarbeit zu stÃ¤rken und die RÃ¼ckverfolgbarkeit zu erhÃ¶hen. Genau dafÃ¼r habe ich der heutigen EntschlieÃung zugestimmt.",
+      "del:madeBy": {
+        "@id": "participant_106"
+      },
+      "del:timestamp": "2025-10-23T15:42:46"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_166",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2025-10-23T15:43:35"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_167",
+      "del:text": "Wenn es keine EinwÃ¤nde gibt, werde ich die in der heutigen Sitzung angenommenen EntschlieÃungen den in diesen EntschlieÃungen genannten Personen und Gremien Ã¼bermitteln.",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2025-10-23T15:43:41"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_168",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2025-10-23T15:43:58"
+    },
+    {
+      "@type": "del:Contribution",
+      "del:identifier": "contribution_169",
+      "del:text": "",
+      "del:madeBy": {
+        "@id": "participant_89"
+      },
+      "del:timestamp": "2025-10-23T15:44:12"
+    }
+  ]
+}
