@@ -290,7 +290,8 @@ def _get_process_details(uri):
             PREFIX del: <https://w3id.org/deliberation/ontology#>
             PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
             PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-            SELECT ?contribution ?text ?participant ?participantName
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            SELECT ?contribution ?text ?participant ?participantName ?responseTo ?timestamp
             WHERE {{
                 <{uri}> del:hasContribution ?contribution .
                 OPTIONAL {{ ?contribution del:text ?text }}
@@ -298,8 +299,11 @@ def _get_process_details(uri):
                 OPTIONAL {{ ?contribution del:madeBy ?participant }}
                 OPTIONAL {{ ?participant foaf:name ?participantName }}
                 OPTIONAL {{ ?participant del:name ?participantName }}
+                OPTIONAL {{ ?contribution del:responseTo ?responseTo }}
+                OPTIONAL {{ ?contribution del:timestamp ?timestamp }}
+                OPTIONAL {{ ?contribution dcterms:created ?timestamp }}
             }}
-            LIMIT 100
+            LIMIT 1000
             """
 
             contributions = []
@@ -319,12 +323,21 @@ def _get_process_details(uri):
                 if not text or text.strip() == "":
                     continue
 
-                contributions.append({
+                contribution_obj = {
                     'uri': contrib_uri,
                     'text': text,
                     'author': author_name
-                })
+                }
 
+                # Add responseTo if it exists
+                if row.responseTo:
+                    contribution_obj['responseTo'] = str(row.responseTo)
+
+                # Add timestamp if it exists
+                if row.timestamp:
+                    contribution_obj['timestamp'] = str(row.timestamp)
+
+                contributions.append(contribution_obj)
                 seen_contributions[contrib_uri] = True
 
             process['contributions'] = contributions
@@ -351,7 +364,39 @@ def _get_process_details(uri):
                 })
 
             process['fallacies'] = fallacies
-            process['participants'] = []
+
+            # Get participants
+            participants_query = f"""
+            PREFIX del: <https://w3id.org/deliberation/ontology#>
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+            SELECT DISTINCT ?participant ?name
+            WHERE {{
+                <{uri}> del:hasParticipant ?participant .
+                OPTIONAL {{ ?participant foaf:name ?name }}
+                OPTIONAL {{ ?participant del:name ?name }}
+            }}
+            LIMIT 500
+            """
+
+            participants = []
+            seen_participants = set()
+
+            for row in kg.query(participants_query):
+                participant_uri = str(row.participant)
+
+                # Skip duplicates
+                if participant_uri in seen_participants:
+                    continue
+                seen_participants.add(participant_uri)
+
+                name = str(row.name) if row.name else "Unknown Participant"
+
+                participants.append({
+                    'uri': participant_uri,
+                    'name': name
+                })
+
+            process['participants'] = participants
 
             return jsonify(process)
 
@@ -405,11 +450,39 @@ def get_resource():
     if not properties:
         return jsonify({'error': 'Resource not found'}), 404
 
-    return jsonify({
+    # If this is a Participant, also fetch their contributions
+    contributions = []
+    if rdf_type and 'Participant' in rdf_type:
+        contributions_query = f"""
+        PREFIX del: <https://w3id.org/deliberation/ontology#>
+        SELECT ?contribution ?text ?timestamp
+        WHERE {{
+            ?contribution del:madeBy <{uri}> .
+            OPTIONAL {{ ?contribution del:text ?text }}
+            OPTIONAL {{ ?contribution del:timestamp ?timestamp }}
+        }}
+        LIMIT 50
+        """
+
+        for row in kg.query(contributions_query):
+            contrib_text = str(row.text) if row.text else ""
+            if contrib_text and contrib_text.strip():
+                contributions.append({
+                    'uri': str(row.contribution),
+                    'text': contrib_text[:200] + '...' if len(contrib_text) > 200 else contrib_text,
+                    'timestamp': str(row.timestamp) if row.timestamp else None
+                })
+
+    result = {
         'uri': uri,
         'type': rdf_type,
         'properties': properties
-    })
+    }
+
+    if contributions:
+        result['contributions'] = contributions
+
+    return jsonify(result)
 
 
 @app.route('/resource/<path:resource_path>')
@@ -619,13 +692,19 @@ def main():
     parser.add_argument('--kg-path', required=True)
     parser.add_argument('--host', default='0.0.0.0')
     parser.add_argument('--port', default=5001, type=int)
+    parser.add_argument('--debug', action='store_true', help='Enable Flask debug mode with reloader')
 
     args = parser.parse_args()
 
     load_knowledge_graph(args.kg_path)
 
-    logger.info(f"Starting server on {args.host}:{args.port}")
-    app.run(host=args.host, port=args.port, debug=True)
+    logger.info(f"Starting server on {args.host}:{args.port} (debug={args.debug})")
+    app.run(
+        host=args.host,
+        port=args.port,
+        debug=args.debug,
+        use_reloader=args.debug
+    )
 
 
 if __name__ == '__main__':

@@ -5,6 +5,8 @@ const API_BASE = '/api';
 // State
 let currentResults = [];
 let currentProcess = null;
+let currentParticipants = [];
+let currentParticipantsPage = 1;
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
@@ -66,6 +68,7 @@ async function performSearch() {
     backToResults();
 
     const topK = parseInt(document.getElementById('topK').value);
+    const platformFilter = document.getElementById('platformFilter').value;
 
     showLoading();
 
@@ -80,7 +83,14 @@ async function performSearch() {
         });
 
         const data = await response.json();
-        currentResults = data.results || [];
+        let results = data.results || [];
+
+        // Apply platform filter on client side
+        if (platformFilter) {
+            results = results.filter(r => r.platform === platformFilter);
+        }
+
+        currentResults = results;
         displayResults(currentResults);
     } catch (error) {
         console.error('Search error:', error);
@@ -162,6 +172,10 @@ function displayProcessDetails(process) {
     resultsContainer.style.display = 'none';
     detailsContainer.style.display = 'block';
 
+    // Reset pagination state for participants
+    currentParticipants = process.participants || [];
+    currentParticipantsPage = 1;
+
     const detailsHTML = `
         <button class="back-button" onclick="backToResults()">
             <i class="fas fa-arrow-left"></i> Back to results
@@ -208,8 +222,11 @@ function displayProcessDetails(process) {
                 <i class="fas fa-users"></i>
                 Participants (${process.participants ? process.participants.length : 0})
             </h3>
-            <div class="participants-grid">
-                ${renderParticipants(process.participants || [])}
+            <div id="participants-container">
+                <div class="participants-grid" id="participants-grid">
+                    ${renderParticipants(process.participants || [], 1)}
+                </div>
+                <div id="participants-pagination"></div>
             </div>
         </div>
 
@@ -248,8 +265,9 @@ function displayProcessDetails(process) {
 let currentContributions = [];
 let currentContributionsPage = 1;
 const CONTRIBUTIONS_PER_PAGE = 10;
+const PARTICIPANTS_PER_PAGE = 10;
 
-// Render contributions with pagination
+// Render contributions with pagination and threading
 function renderContributions(contributions, page = 1) {
     if (!contributions || contributions.length === 0) {
         return '<p style="color: var(--text-light);">No contributions available</p>';
@@ -258,22 +276,59 @@ function renderContributions(contributions, page = 1) {
     currentContributions = contributions;
     currentContributionsPage = page;
 
+    // Organize contributions by threading
+    const mainContributions = [];
+    const commentsByParent = new Map();
+
+    // First pass: separate main contributions from comments
+    contributions.forEach(c => {
+        if (c.responseTo) {
+            // This is a comment responding to another contribution
+            if (!commentsByParent.has(c.responseTo)) {
+                commentsByParent.set(c.responseTo, []);
+            }
+            commentsByParent.get(c.responseTo).push(c);
+        } else {
+            // This is a main contribution
+            mainContributions.push(c);
+        }
+    });
+
+    // Paginate only main contributions
     const start = (page - 1) * CONTRIBUTIONS_PER_PAGE;
     const end = start + CONTRIBUTIONS_PER_PAGE;
-    const pageContributions = contributions.slice(start, end);
+    const pageMainContributions = mainContributions.slice(start, end);
 
-    const html = pageContributions.map(c => `
-        <div class="contribution-card clickable-contribution" onclick="showResourceDetails('${c.uri}')">
-            <p><strong>Author:</strong> ${escapeHtml(c.author || 'Unknown')}</p>
-            <p>${escapeHtml(truncate(c.text || '', 500))}</p>
-            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 0.5rem;">
-                <i class="fas fa-link"></i> Click to view full details
-            </p>
-        </div>
-    `).join('');
+    const html = pageMainContributions.map(c => {
+        const comments = commentsByParent.get(c.uri) || [];
+        const commentsHtml = comments.length > 0 ? `
+            <div style="margin-top: 1rem; padding-left: 1.5rem; border-left: 3px solid var(--primary-color);">
+                <p style="font-size: 0.9rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.5rem;">
+                    <i class="fas fa-reply"></i> ${comments.length} Response${comments.length > 1 ? 's' : ''}
+                </p>
+                ${comments.map(comment => `
+                    <div class="contribution-comment" onclick="showResourceDetails('${comment.uri}')" style="margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(74, 157, 60, 0.05); border-radius: 6px; cursor: pointer;">
+                        <p style="margin: 0;"><strong>${escapeHtml(comment.author || 'Unknown')}</strong> ${comment.timestamp ? `<span style="color: var(--text-light); font-size: 0.85rem;">• ${formatDate(comment.timestamp)}</span>` : ''}</p>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.95rem;">${escapeHtml(truncate(comment.text || '', 200))}</p>
+                    </div>
+                `).join('')}
+            </div>
+        ` : '';
 
-    // Render pagination after the grid is updated
-    setTimeout(() => renderContributionsPagination(contributions.length, page), 0);
+        return `
+            <div class="contribution-card clickable-contribution" onclick="showResourceDetails('${c.uri}')">
+                <p><strong>Author:</strong> ${escapeHtml(c.author || 'Unknown')} ${c.timestamp ? `<span style="color: var(--text-light); font-size: 0.85rem;">• ${formatDate(c.timestamp)}</span>` : ''}</p>
+                <p>${escapeHtml(truncate(c.text || '', 500))}</p>
+                <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 0.5rem;">
+                    <i class="fas fa-link"></i> Click to view full details
+                </p>
+                ${commentsHtml}
+            </div>
+        `;
+    }).join('');
+
+    // Render pagination after the grid is updated (paginate main contributions only)
+    setTimeout(() => renderContributionsPagination(mainContributions.length, page), 0);
 
     return html;
 }
@@ -360,17 +415,91 @@ function renderFallacies(fallacies) {
 }
 
 // Render participants
-function renderParticipants(participants) {
+function renderParticipants(participants, page = 1) {
+    currentParticipantsPage = page;
+
     if (!participants || participants.length === 0) {
+        setTimeout(() => renderParticipantsPagination(0, 1), 0);
         return '<p style="color: var(--text-light);">No participants available</p>';
     }
 
-    return participants.map(p => `
-        <div class="participant-card">
+    const start = (page - 1) * PARTICIPANTS_PER_PAGE;
+    const end = start + PARTICIPANTS_PER_PAGE;
+    const pageParticipants = participants.slice(start, end);
+
+    const html = pageParticipants.map(p => `
+        <div class="participant-card" onclick="showResourceDetails('${p.uri}')" style="cursor: pointer;">
             <p><strong>${escapeHtml(p.name || 'Unknown')}</strong></p>
             ${p.party ? `<p>Party: ${escapeHtml(p.party)}</p>` : ''}
+            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 0.5rem;">
+                <i class="fas fa-link"></i> Click to view details
+            </p>
         </div>
     `).join('');
+
+    setTimeout(() => renderParticipantsPagination(participants.length, page), 0);
+
+    return html;
+}
+
+function renderParticipantsPagination(totalParticipants, currentPage) {
+    const paginationContainer = document.getElementById('participants-pagination');
+    if (!paginationContainer) return;
+
+    const totalPages = Math.ceil(totalParticipants / PARTICIPANTS_PER_PAGE);
+
+    if (totalPages <= 1) {
+        paginationContainer.innerHTML = '';
+        return;
+    }
+
+    let html = '<div class="pagination">';
+
+    if (currentPage > 1) {
+        html += `<button class="pagination-btn" onclick="changeParticipantsPage(${currentPage - 1})">
+            <i class="fas fa-chevron-left"></i> Previous
+        </button>`;
+    }
+
+    const maxButtons = 5;
+    let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
+    let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+
+    if (endPage - startPage < maxButtons - 1) {
+        startPage = Math.max(1, endPage - maxButtons + 1);
+    }
+
+    if (startPage > 1) {
+        html += `<button class="pagination-btn" onclick="changeParticipantsPage(1)">1</button>`;
+        if (startPage > 2) html += '<span class="pagination-ellipsis">...</span>';
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+        html += `<button class="pagination-btn ${i === currentPage ? 'active' : ''}"
+                 onclick="changeParticipantsPage(${i})">${i}</button>`;
+    }
+
+    if (endPage < totalPages) {
+        if (endPage < totalPages - 1) html += '<span class="pagination-ellipsis">...</span>';
+        html += `<button class="pagination-btn" onclick="changeParticipantsPage(${totalPages})">${totalPages}</button>`;
+    }
+
+    if (currentPage < totalPages) {
+        html += `<button class="pagination-btn" onclick="changeParticipantsPage(${currentPage + 1})">
+            Next <i class="fas fa-chevron-right"></i>
+        </button>`;
+    }
+
+    html += '</div>';
+    paginationContainer.innerHTML = html;
+}
+
+function changeParticipantsPage(page) {
+    const grid = document.getElementById('participants-grid');
+    if (!grid) return;
+
+    grid.innerHTML = renderParticipants(currentParticipants, page);
+    document.getElementById('participants-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // Visualize graph with D3.js
@@ -390,21 +519,46 @@ function visualizeGraph(process) {
 
     // Track unique participants
     const participantsMap = new Map();
+    const contributionUriToId = new Map();
 
     // Add contributions and extract participants/topics
     (process.contributions || []).forEach((c, i) => {
         const nodeId = `contribution_${i}`;
+        contributionUriToId.set(c.uri, nodeId);
+
+        const isComment = !!c.responseTo;
+
         nodes.push({
             id: nodeId,
-            label: `Contribution ${i + 1}`,
-            type: 'contribution',
+            label: isComment ? `Comment ${i + 1}` : `Contribution ${i + 1}`,
+            type: isComment ? 'comment' : 'contribution',
             uri: c.uri
         });
-        links.push({ source: process.uri, target: nodeId });
+
+        // Link to process (only if not a comment)
+        if (!isComment) {
+            links.push({ source: process.uri, target: nodeId });
+        }
 
         // Track participant (will be linked later)
         if (c.author && c.author !== 'Unknown') {
             participantsMap.set(c.author, nodeId);
+        }
+    });
+
+    // Second pass: add responseTo links for comments
+    (process.contributions || []).forEach((c, i) => {
+        if (c.responseTo) {
+            const commentId = contributionUriToId.get(c.uri);
+            const parentId = contributionUriToId.get(c.responseTo);
+
+            if (commentId && parentId) {
+                links.push({
+                    source: parentId,
+                    target: commentId,
+                    type: 'responseTo'
+                });
+            }
         }
     });
 
@@ -463,8 +617,9 @@ function visualizeGraph(process) {
         .selectAll('line')
         .data(links)
         .enter().append('line')
-        .attr('stroke', '#999')
-        .attr('stroke-width', 2);
+        .attr('stroke', d => d.type === 'responseTo' ? '#f59e0b' : '#999')
+        .attr('stroke-width', d => d.type === 'responseTo' ? 2.5 : 2)
+        .attr('stroke-dasharray', d => d.type === 'responseTo' ? '5,5' : '0');
 
     const node = svg.append('g')
         .selectAll('circle')
@@ -479,6 +634,7 @@ function visualizeGraph(process) {
             if (d.type === 'process') return '#4a9d3c'; // DKG green
             if (d.type === 'fallacy') return '#ef4444'; // Red
             if (d.type === 'participant') return '#ffd700'; // Gold
+            if (d.type === 'comment') return '#f59e0b'; // Orange for comments
             return '#10b981'; // Contribution green
         })
         .style('cursor', 'pointer')
@@ -782,6 +938,28 @@ async function showResourceDetails(uri) {
         }
 
         modalBody.innerHTML = html;
+
+        if (resource.contributions && resource.contributions.length > 0) {
+            const contributionsList = resource.contributions.map((c, index) => `
+                <div class="resource-contribution-card" onclick="showResourceDetails('${c.uri}')" style="cursor: pointer; padding: 0.75rem; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 0.75rem;">
+                    <p style="margin: 0; font-weight: 600;">
+                        Contribution ${index + 1}
+                        ${c.timestamp ? `<span style="color: var(--text-light); font-size: 0.85rem;">• ${formatDate(c.timestamp)}</span>` : ''}
+                    </p>
+                    <p style="margin: 0.5rem 0 0 0;">${escapeHtml(truncate(c.text || '', 240))}</p>
+                    <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 0.5rem;">
+                        <i class="fas fa-link"></i> Click to open contribution
+                    </p>
+                </div>
+            `).join('');
+
+            modalBody.innerHTML += `
+                <div class="resource-section">
+                    <h4 style="margin-top: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-comments"></i> Contributions (${resource.contributions.length})</h4>
+                    ${contributionsList}
+                </div>
+            `;
+        }
     } catch (error) {
         modalBody.innerHTML = `<p style="color: var(--error-color);">Error loading resource: ${error.message}</p>`;
     }
