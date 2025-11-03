@@ -66,6 +66,37 @@
       ]
     },
     {
+      "id": "eli/dl/event/MTG-PL-2024-07-17-OTH-20750000",
+      "type": "Activity",
+      "activity_date": "2024-07-17",
+      "activity_id": "MTG-PL-2024-07-17-OTH-20750000",
+      "activity_label": {
+        "en": "Resumption of the sitting"
+      },
+      "had_activity_type": "def/ep-activities/PROCEEDING_ACTIVITY",
+      "recorded_in_a_realization_of": [
+        {
+          "id": "eli/dl/doc/CRE-10-2024-07-17-OTH-20750000",
+          "type": "WorkSubdivision",
+          "is_part_of": "eli/dl/doc/CRE-10-2024-07-17-ITM-011",
+          "number": "2-075-0000",
+          "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
+          "identifier": "CRE-10-2024-07-17-OTH-20750000",
+          "notation_speechId": "20750000",
+          "numbering": 62,
+          "originalLanguage": [
+            "http://publications.europa.eu/resource/authority/language/DEU"
+          ],
+          "api:xmlFragment": {
+            "en": "<communication><narrative xml:lang=\"en\">(The meeting resumed at 12.54)</narrative></communication>"
+          }
+        }
+      ],
+      "inverse_consists_of": [
+        "eli/dl/event/MTG-PL-2024-07-17-PVCRE-ITM-11"
+      ]
+    },
+    {
       "id": "eli/dl/event/MTG-PL-2024-07-17-OTH-20440000",
       "type": "Activity",
       "activity_date": "2024-07-17",
@@ -128,39 +159,39 @@
       ]
     },
     {
-      "id": "eli/dl/event/MTG-PL-2024-07-17-OTH-20750000",
+      "id": "eli/dl/event/MTG-PL-2024-07-17-OTH-20790000",
       "type": "Activity",
       "activity_date": "2024-07-17",
-      "activity_id": "MTG-PL-2024-07-17-OTH-20750000",
+      "activity_id": "MTG-PL-2024-07-17-OTH-20790000",
       "activity_label": {
-        "en": "Resumption of the sitting"
+        "en": "The need for the EU's continuous support for Ukraine (B10-0007/2024)"
       },
       "had_activity_type": "def/ep-activities/PROCEEDING_ACTIVITY",
       "recorded_in_a_realization_of": [
         {
-          "id": "eli/dl/doc/CRE-10-2024-07-17-OTH-20750000",
+          "id": "eli/dl/doc/CRE-10-2024-07-17-OTH-20790000",
           "type": "WorkSubdivision",
-          "is_part_of": "eli/dl/doc/CRE-10-2024-07-17-ITM-011",
-          "number": "2-075-0000",
+          "is_part_of": "eli/dl/doc/CRE-10-2024-07-17-ITM-012-01",
+          "number": "2-079-0000",
           "type_subdivision": "http://publications.europa.eu/resource/authority/subdivision/OTH",
-          "identifier": "CRE-10-2024-07-17-OTH-20750000",
-          "notation_speechId": "20750000",
-          "numbering": 62,
+          "identifier": "CRE-10-2024-07-17-OTH-20790000",
+          "notation_speechId": "20790000",
+          "numbering": 64,
           "originalLanguage": [
             "http://publications.europa.eu/resource/authority/language/DEU"
           ],
           "api:xmlFragment": {
-            "en": "<communication><narrative xml:lang=\"en\">(The meeting resumed at 12.54)</narrative></communication>"
+            "en": "<communication><narrative xml:lang=\"en\">Oral explanations of vote</narrative></communication>"
           }
         }
       ],
       "inverse_consists_of": [
-        "eli/dl/event/MTG-PL-2024-07-17-PVCRE-ITM-11"
+        "eli/dl/event/MTG-PL-2024-07-17-PVCRE-ITM-12-1"
       ]
     }
   ],
   "metadata": {
-    "collected_at": "2025-08-19T13:51:54.531128",
+    "collected_at": "2025-10-29T10:38:52.630849",
     "source_api": "European Parliament Open Data API v2",
     "language": "en"
   }
