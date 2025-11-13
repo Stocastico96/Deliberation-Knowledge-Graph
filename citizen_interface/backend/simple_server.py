@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Simple Flask API server for Citizen Interface (without ML dependencies)
-Uses only SPARQL for search
+Simple Flask API server for Citizen Interface
+Supports both SPARQL and semantic search
 """
 
 import os
@@ -16,6 +16,14 @@ import pandas as pd
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Try to import semantic search
+try:
+    from semantic_api import init_semantic_search, search_semantic
+    SEMANTIC_SEARCH_AVAILABLE = True
+except ImportError:
+    logger.warning("Semantic search not available")
+    SEMANTIC_SEARCH_AVAILABLE = False
 
 # Namespaces
 DEL = Namespace("https://w3id.org/deliberation/ontology#")
@@ -135,6 +143,39 @@ def index():
         return jsonify({'error': 'Frontend not found'}), 404
 
 
+@app.route('/citizen.html')
+def citizen():
+    """Serve citizen interface page"""
+    try:
+        html_path = Path(__file__).parent.parent / 'frontend' / 'citizen.html'
+        with open(html_path, 'r', encoding='utf-8') as f:
+            return f.read()
+    except:
+        return jsonify({'error': 'Frontend not found'}), 404
+
+
+@app.route('/topics.html')
+def topics():
+    """Serve topics page"""
+    try:
+        html_path = Path(__file__).parent.parent / 'frontend' / 'topics.html'
+        with open(html_path, 'r', encoding='utf-8') as f:
+            return f.read()
+    except:
+        return jsonify({'error': 'Topics page not found'}), 404
+
+
+@app.route('/arguments.html')
+def arguments():
+    """Serve arguments page"""
+    try:
+        html_path = Path(__file__).parent.parent / 'frontend' / 'arguments.html'
+        with open(html_path, 'r', encoding='utf-8') as f:
+            return f.read()
+    except:
+        return jsonify({'error': 'Arguments page not found'}), 404
+
+
 @app.route('/css/<path:filename>')
 def serve_css(filename):
     """Serve CSS files"""
@@ -212,8 +253,32 @@ def stats():
         'total_processes': len(processes_cache),
         'total_contributions': total_contributions,
         'total_fallacies': total_fallacies,
-        'platforms': list(platforms)
+        'platforms': sorted(list(platforms))
     })
+
+
+@app.route('/api/topics')
+def get_topics():
+    """Get topic modeling results"""
+    # Check if topic modeling results exist
+    topic_model_dir = Path(__file__).parent.parent.parent / 'knowledge_graph' / 'topic_models'
+    topics_file = topic_model_dir / 'topics_summary.json'
+
+    if not topics_file.exists():
+        # Return 404 if topics not yet computed
+        return jsonify({
+            'error': 'Topic modeling results not yet available',
+            'status': 'not_ready'
+        }), 404
+
+    try:
+        with open(topics_file, 'r', encoding='utf-8') as f:
+            topics_data = json.load(f)
+
+        return jsonify(topics_data)
+    except Exception as e:
+        logger.error(f"Error loading topics: {e}")
+        return jsonify({'error': str(e)}), 500
 
 
 @app.route('/api/search', methods=['POST'])
@@ -258,8 +323,69 @@ def search():
     return jsonify({
         'results': results[:top_k],
         'query': query,
-        'total_results': len(results)
+        'total_results': len(results),
+        'search_type': 'keyword'
     })
+
+
+@app.route('/api/semantic-search', methods=['POST'])
+def semantic_search_endpoint():
+    """Semantic search using sentence embeddings"""
+    if not SEMANTIC_SEARCH_AVAILABLE:
+        return jsonify({'error': 'Semantic search not available'}), 503
+
+    data = request.get_json()
+    query = data.get('query', '')
+    top_k = data.get('top_k', 10)
+    platform_filter = data.get('platform', None)
+
+    if not query:
+        return jsonify({'error': 'No query provided'}), 400
+
+    try:
+        # Get semantic search results (contributions)
+        semantic_results = search_semantic(query, top_k, platform_filter)
+
+        # Map contributions to processes
+        process_scores = {}
+
+        for result in semantic_results:
+            process_uri = result['process']
+
+            # Find process in cache
+            for p in processes_cache:
+                if p['uri'] == process_uri:
+                    if process_uri not in process_scores:
+                        process_scores[process_uri] = {
+                            **p,
+                            'relevance_score': result['similarity_score'],
+                            'matching_contributions': []
+                        }
+
+                    process_scores[process_uri]['matching_contributions'].append({
+                        'text': result['text'][:200] + '...' if len(result['text']) > 200 else result['text'],
+                        'score': result['similarity_score']
+                    })
+
+                    # Update score if this contribution has higher relevance
+                    if result['similarity_score'] > process_scores[process_uri]['relevance_score']:
+                        process_scores[process_uri]['relevance_score'] = result['similarity_score']
+                    break
+
+        # Convert to list and sort
+        results = list(process_scores.values())
+        results.sort(key=lambda x: x['relevance_score'], reverse=True)
+
+        return jsonify({
+            'results': results[:top_k],
+            'query': query,
+            'total_results': len(results),
+            'search_type': 'semantic'
+        })
+
+    except Exception as e:
+        logger.error(f"Semantic search error: {e}")
+        return jsonify({'error': str(e)}), 500
 
 
 @app.route('/api/process/<path:uri>')
@@ -690,6 +816,8 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--kg-path', required=True)
+    parser.add_argument('--embeddings-path', default='knowledge_graph/embeddings.pkl',
+                       help='Path to semantic search embeddings')
     parser.add_argument('--host', default='0.0.0.0')
     parser.add_argument('--port', default=5001, type=int)
     parser.add_argument('--debug', action='store_true', help='Enable Flask debug mode with reloader')
@@ -697,6 +825,18 @@ def main():
     args = parser.parse_args()
 
     load_knowledge_graph(args.kg_path)
+
+    # Try to load semantic search if available
+    if SEMANTIC_SEARCH_AVAILABLE:
+        embeddings_path = Path(args.embeddings_path)
+        if embeddings_path.exists():
+            logger.info("Loading semantic search...")
+            if init_semantic_search(args.embeddings_path):
+                logger.info("Semantic search enabled")
+            else:
+                logger.warning("Semantic search failed to load")
+        else:
+            logger.warning(f"Embeddings not found at {embeddings_path}. Semantic search disabled.")
 
     logger.info(f"Starting server on {args.host}:{args.port} (debug={args.debug})")
     app.run(

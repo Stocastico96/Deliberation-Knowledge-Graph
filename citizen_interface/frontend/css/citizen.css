@@ -5,9 +5,9 @@
     --primary-color: #4a9d3c; /* Verde vines */
     --primary-light: #6abe5c;
     --primary-dark: #3a7d2c;
-    --secondary-color: #8b5a2b; /* Marrone Donkey Kong */
-    --secondary-light: #a67c4e;
-    --secondary-dark: #6b4521;
+    --secondary-color: #0f172a; /* Deep teal accent */
+    --secondary-light: #1f354a;
+    --secondary-dark: #0b1626;
     --accent-color: #ffd700; /* Oro Daft Punk */
     --accent-light: #ffe44d;
     --accent-dark: #ccac00;
@@ -478,11 +478,12 @@
 
 /* Footer */
 footer {
-    background: var(--secondary-color);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(34, 62, 40, 0.92) 55%, rgba(74, 157, 60, 0.9) 100%);
     color: white;
     padding: 2.5rem 0;
     text-align: center;
     margin-top: 0;
+    box-shadow: 0 -12px 24px rgba(15, 23, 42, 0.22);
 }
 
 footer p {

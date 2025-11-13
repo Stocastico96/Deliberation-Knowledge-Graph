@@ -28,7 +28,7 @@ function setupEventListeners() {
     searchInput.addEventListener('input', handleAutocomplete);
 }
 
-// Load statistics
+// Load statistics and populate platform filter
 async function loadStats() {
     try {
         const response = await fetch(`${API_BASE}/stats`);
@@ -54,8 +54,34 @@ async function loadStats() {
         `;
 
         document.getElementById('stats').innerHTML = statsHTML;
+
+        // Populate platform filter dropdown dynamically with guardrails
+        if (data.platforms && Array.isArray(data.platforms)) {
+            const platformFilter = document.getElementById('platformFilter');
+            // Keep "All Platforms" option
+            platformFilter.innerHTML = '<option value="">All Platforms</option>';
+
+            // Add each platform from API (sorted alphabetically)
+            data.platforms
+                .filter(p => p && typeof p === 'string' && p.trim().length > 0) // Guardrail: validate platform names
+                .sort()
+                .forEach(platform => {
+                    const option = document.createElement('option');
+                    option.value = platform;
+                    option.textContent = platform;
+                    platformFilter.appendChild(option);
+                });
+        }
     } catch (error) {
         console.error('Error loading stats:', error);
+        // Guardrail: if stats fail, show error message
+        document.getElementById('stats').innerHTML = `
+            <div class="stat-card" style="grid-column: 1 / -1;">
+                <div class="stat-label" style="color: var(--error-color);">
+                    <i class="fas fa-exclamation-triangle"></i> Unable to load statistics. Please refresh the page.
+                </div>
+            </div>
+        `;
     }
 }
 
@@ -73,22 +99,18 @@ async function performSearch() {
     showLoading();
 
     try {
-        const response = await fetch(`${API_BASE}/search`, {
+        const response = await fetch(`${API_BASE}/semantic-search`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 query,
-                top_k: topK
+                top_k: topK,
+                platform: platformFilter || null
             })
         });
 
         const data = await response.json();
-        let results = data.results || [];
-
-        // Apply platform filter on client side
-        if (platformFilter) {
-            results = results.filter(r => r.platform === platformFilter);
-        }
+        const results = data.results || [];
 
         currentResults = results;
         displayResults(currentResults);

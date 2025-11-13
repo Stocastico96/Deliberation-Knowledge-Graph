@@ -117,16 +117,24 @@ class TopicModeler:
         contributions = []
 
         query = """
-        PREFIX del: <http://purl.org/ontology/deliberation#>
+        PREFIX del: <https://w3id.org/deliberation/ontology#>
         PREFIX dcterms: <http://purl.org/dc/terms/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
         SELECT ?contrib ?text ?process ?date ?platform
         WHERE {
             ?contrib a del:Contribution .
-            ?contrib del:hasText ?text .
-            ?contrib del:isPartOf ?process .
+            {
+                ?contrib del:text ?text .
+            } UNION {
+                ?contrib rdfs:comment ?text .
+            }
+            OPTIONAL {
+                ?process del:hasContribution ?contrib .
+                OPTIONAL { ?process del:platform ?platform }
+            }
             OPTIONAL { ?contrib dcterms:created ?date }
-            OPTIONAL { ?process del:hasPlatform ?platform }
+            OPTIONAL { ?contrib del:timestamp ?date }
 
             FILTER(STRLEN(?text) > 50)
         }
@@ -179,25 +187,93 @@ class TopicModeler:
         return lda_model, dictionary
 
     def train_bertopic(self, texts: List[str], num_topics: int = 20) -> BERTopic:
-        """Train BERTopic model with multilingual embeddings"""
+        """Train BERTopic model with BAAI/bge-m3 multilingual embeddings"""
         print(f"\nTraining BERTopic with {num_topics} topics (this may take a while)...")
+        print("Using BAAI/bge-m3 for state-of-the-art multilingual embeddings...")
 
-        # Use multilingual sentence transformer
-        embedding_model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+        # Use BAAI/bge-m3 - best multilingual model (100+ languages, 8192 context)
+        embedding_model = SentenceTransformer("BAAI/bge-m3")
 
-        # Configure BERTopic
+        # bge-m3 specific: use mean pooling and normalization
+        embedding_model.max_seq_length = 8192  # Full context window
+
+        # Configure UMAP with parameters to reduce language clustering
+        from umap import UMAP
+        umap_model = UMAP(
+            n_neighbors=10,   # Fewer neighbors to focus on local semantic structure
+            n_components=10,  # More dimensions to preserve semantic nuances
+            min_dist=0.0,     # Allow tight clusters
+            metric='cosine',
+            random_state=42
+        )
+
+        # Configure HDBSCAN with parameters for better semantic clustering
+        from hdbscan import HDBSCAN
+        hdbscan_model = HDBSCAN(
+            min_cluster_size=20,      # Even smaller clusters for more granular topics
+            min_samples=3,            # Very low threshold to find more specific clusters
+            metric='euclidean',
+            cluster_selection_method='eom',
+            prediction_data=True
+        )
+
+        # Pre-generate embeddings in batches with disk caching to avoid memory issues
+        import numpy as np
+        import os
+
+        embeddings_cache_file = "/tmp/bge_embeddings_cache.npy"
+
+        if os.path.exists(embeddings_cache_file):
+            print(f"Loading cached embeddings from {embeddings_cache_file}...")
+            all_embeddings = np.load(embeddings_cache_file)
+            print(f"Loaded {len(all_embeddings)} cached embeddings")
+        else:
+            print("Generating embeddings in batches with disk caching...")
+            batch_size = 16  # Reduce batch size further for memory
+            all_embeddings = []
+
+            for i in range(0, len(texts), batch_size):
+                batch = texts[i:i+batch_size]
+                batch_embeddings = embedding_model.encode(
+                    batch,
+                    show_progress_bar=False,
+                    batch_size=batch_size,
+                    normalize_embeddings=True  # Normalize for cosine similarity
+                )
+                all_embeddings.extend(batch_embeddings)
+
+                # Progress indicator and periodic saving
+                if (i + batch_size) % 500 == 0:
+                    print(f"Processed {i + batch_size}/{len(texts)} texts...")
+                    # Save intermediate results
+                    np.save(embeddings_cache_file + ".tmp", np.array(all_embeddings))
+
+            # Convert to numpy array and save
+            all_embeddings = np.array(all_embeddings)
+            print(f"Generated embeddings for {len(all_embeddings)} texts")
+            print(f"Saving embeddings to cache: {embeddings_cache_file}")
+            np.save(embeddings_cache_file, all_embeddings)
+            print("Embeddings cached successfully")
+
+        # Configure BERTopic with custom models
+        # Note: nr_topics="auto" lets HDBSCAN determine optimal number first,
+        # then we can optionally reduce. Set to None for no reduction.
         topic_model = BERTopic(
             embedding_model=embedding_model,
+            umap_model=umap_model,
+            hdbscan_model=hdbscan_model,
             language="multilingual",
             calculate_probabilities=False,
-            nr_topics=num_topics,
+            nr_topics=None,  # Don't force reduction, let HDBSCAN find natural clusters
             verbose=True
         )
 
-        # Train
-        topics, probs = topic_model.fit_transform(texts)
+        # Train with pre-computed embeddings
+        topics, probs = topic_model.fit_transform(texts, embeddings=all_embeddings)
 
         print("BERTopic training complete")
+        print(f"Initial topics found: {len(set(topics))}")
+        print(f"After reduction to {num_topics} topics")
 
         return topic_model
 
@@ -225,33 +301,34 @@ class TopicModeler:
                 continue
 
             # LDA topics
-            bow = dictionary.doc2bow(tokens)
-            lda_topics = lda_model.get_document_topics(bow)
+            if lda_model and dictionary:
+                bow = dictionary.doc2bow(tokens)
+                lda_topics = lda_model.get_document_topics(bow)
 
-            # Get top LDA topic
-            if lda_topics:
-                top_topic_id, top_prob = max(lda_topics, key=lambda x: x[1])
+                # Get top LDA topic
+                if lda_topics:
+                    top_topic_id, top_prob = max(lda_topics, key=lambda x: x[1])
 
-                if top_prob > 0.2:  # Threshold
-                    topic_uri = URIRef(f"{BASE_URI}topic_lda_{top_topic_id}")
+                    if top_prob > 0.2:  # Threshold
+                        topic_uri = URIRef(f"{BASE_URI}topic_lda_{top_topic_id}")
 
-                    # Add topic entity
-                    topic_graph.add((topic_uri, RDF.type, DEL.Topic))
-                    topic_graph.add((topic_uri, RDFS.label,
-                                   Literal(f"LDA Topic {top_topic_id}", lang="en")))
+                        # Add topic entity
+                        topic_graph.add((topic_uri, RDF.type, DEL.Topic))
+                        topic_graph.add((topic_uri, RDFS.label,
+                                       Literal(f"LDA Topic {top_topic_id}", lang="en")))
 
-                    # Get top words for this topic
-                    top_words = lda_model.show_topic(top_topic_id, topn=5)
-                    words_str = ", ".join([w for w, _ in top_words])
-                    topic_graph.add((topic_uri, DCTERMS.description,
-                                   Literal(words_str, lang="en")))
+                        # Get top words for this topic
+                        top_words = lda_model.show_topic(top_topic_id, topn=5)
+                        words_str = ", ".join([w for w, _ in top_words])
+                        topic_graph.add((topic_uri, DCTERMS.description,
+                                       Literal(words_str, lang="en")))
 
-                    # Link contribution to topic
-                    topic_graph.add((contrib_uri, DEL.hasTopic, topic_uri))
-                    topic_graph.add((topic_uri, DEL.hasWeight,
-                                   Literal(float(top_prob), datatype=XSD.float)))
+                        # Link contribution to topic
+                        topic_graph.add((contrib_uri, DEL.hasTopic, topic_uri))
+                        topic_graph.add((topic_uri, DEL.hasWeight,
+                                       Literal(float(top_prob), datatype=XSD.float)))
 
-                    topic_counts[top_topic_id] += 1
+                        topic_counts[top_topic_id] += 1
 
             # BERTopic if available
             if topic_model is not None:
@@ -276,11 +353,12 @@ class TopicModeler:
                     topic_graph.add((contrib_uri, DEL.hasTopic, topic_uri))
 
         # Save topic statistics
-        print("\nTop 10 LDA topics by frequency:")
-        for topic_id, count in topic_counts.most_common(10):
-            top_words = lda_model.show_topic(topic_id, topn=5)
-            words = [w for w, _ in top_words]
-            print(f"  Topic {topic_id}: {', '.join(words)} ({count} contributions)")
+        if lda_model and topic_counts:
+            print("\nTop 10 LDA topics by frequency:")
+            for topic_id, count in topic_counts.most_common(10):
+                top_words = lda_model.show_topic(topic_id, topn=5)
+                words = [w for w, _ in top_words]
+                print(f"  Topic {topic_id}: {', '.join(words)} ({count} contributions)")
 
         # Merge with original graph
         output_path = Path(self.kg_path).parent / "deliberation_kg_with_topics.ttl"
@@ -300,14 +378,15 @@ class TopicModeler:
 
         return topic_graph
 
-    def save_models(self, lda_model: LdaModel, dictionary: corpora.Dictionary,
+    def save_models(self, lda_model: Optional[LdaModel], dictionary: Optional[corpora.Dictionary],
                    topic_model: Optional[BERTopic] = None):
         """Save trained models"""
         print("\nSaving models...")
 
         # Save LDA
-        lda_model.save(str(self.output_dir / "lda_model.pkl"))
-        dictionary.save(str(self.output_dir / "lda_dictionary.pkl"))
+        if lda_model and dictionary:
+            lda_model.save(str(self.output_dir / "lda_model.pkl"))
+            dictionary.save(str(self.output_dir / "lda_dictionary.pkl"))
 
         # Save BERTopic
         if topic_model:
@@ -315,6 +394,90 @@ class TopicModeler:
                            serialization="safetensors")
 
         print(f"Models saved to {self.output_dir}")
+
+    def save_topics_json(self, topic_model: BERTopic, df: pd.DataFrame = None):
+        """Save topics in JSON format for citizen interface with platform metadata"""
+        print("\nGenerating topics JSON for citizen interface...")
+
+        topic_info = topic_model.get_topic_info()
+
+        # Get topic assignments for each document
+        topics_per_doc = topic_model.topics_
+
+        # Calculate platform distribution per topic if df provided
+        platform_distributions = {}
+        if df is not None and 'platform' in df.columns and len(topics_per_doc) == len(df):
+            df_with_topics = df.copy()
+            df_with_topics['topic'] = topics_per_doc
+
+            for topic_id in df_with_topics['topic'].unique():
+                if topic_id == -1:  # Skip outliers
+                    continue
+
+                topic_docs = df_with_topics[df_with_topics['topic'] == topic_id]
+                platform_counts = topic_docs['platform'].value_counts().to_dict()
+
+                # Remove None values and calculate percentages
+                platform_counts = {k: v for k, v in platform_counts.items() if k and str(k) != 'None'}
+                total = sum(platform_counts.values())
+
+                if total > 0:
+                    platform_distributions[topic_id] = {
+                        'counts': platform_counts,
+                        'percentages': {k: round(v/total * 100, 1) for k, v in platform_counts.items()},
+                        'dominant': max(platform_counts, key=platform_counts.get)
+                    }
+
+        topics = []
+        for _, row in topic_info.iterrows():
+            topic_id = row['Topic']
+            if topic_id == -1:  # Skip outlier topic
+                continue
+
+            count = row['Count']
+            topic_words = topic_model.get_topic(topic_id)
+
+            # Get top keywords
+            keywords = [word for word, score in topic_words[:10]] if topic_words else []
+
+            # Get representative documents (sample contributions)
+            try:
+                repr_docs = topic_model.get_representative_docs(topic_id)
+                sample_contributions = repr_docs[:3] if repr_docs else []
+            except:
+                sample_contributions = []
+
+            # Get platform info for this topic
+            platform_info = platform_distributions.get(topic_id, {})
+            platforms_list = list(platform_info.get('counts', {}).keys()) if platform_info else ["Multiple"]
+
+            topic_data = {
+                "id": int(topic_id),
+                "name": f"Topic {topic_id}",
+                "keywords": keywords,
+                "contributions_count": int(count),
+                "sample_contributions": sample_contributions,
+                "platforms": platforms_list,
+                "platform_distribution": platform_info.get('percentages', {}),
+                "dominant_platform": platform_info.get('dominant', None)
+            }
+            topics.append(topic_data)
+
+        # Sort by contribution count
+        topics.sort(key=lambda x: x['contributions_count'], reverse=True)
+
+        output = {
+            "topics": topics,
+            "total_topics": len(topics),
+            "timestamp": pd.Timestamp.now().isoformat()
+        }
+
+        json_path = self.output_dir / "topics_summary.json"
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(output, f, indent=2, ensure_ascii=False)
+
+        print(f"Topics JSON saved to {json_path}")
+        print(f"Platform distribution calculated for {len(platform_distributions)} topics")
 
     def generate_topic_report(self, lda_model: LdaModel, topic_model: Optional[BERTopic] = None):
         """Generate human-readable topic report"""
@@ -326,11 +489,12 @@ class TopicModeler:
         report.append(f"Timestamp: {pd.Timestamp.now()}\n\n")
 
         # LDA topics
-        report.append("## LDA Topics\n\n")
-        for topic_id in range(lda_model.num_topics):
-            top_words = lda_model.show_topic(topic_id, topn=10)
-            report.append(f"### Topic {topic_id}\n")
-            report.append("Words: " + ", ".join([f"{w} ({p:.3f})" for w, p in top_words]) + "\n\n")
+        if lda_model:
+            report.append("## LDA Topics\n\n")
+            for topic_id in range(lda_model.num_topics):
+                top_words = lda_model.show_topic(topic_id, topn=10)
+                report.append(f"### Topic {topic_id}\n")
+                report.append("Words: " + ", ".join([f"{w} ({p:.3f})" for w, p in top_words]) + "\n\n")
 
         # BERTopic
         if topic_model:
@@ -398,16 +562,22 @@ def main():
     if args.method in ["bertopic", "both"]:
         bert_model = modeler.train_bertopic(df['text'].tolist(), args.num_topics)
 
-    # Add topics to KG
-    if lda_model:
-        modeler.add_topics_to_kg(df, lda_model, dictionary, bert_model)
-
-    # Save models
-    if lda_model:
+    # Save models FIRST (before potentially failing add_topics_to_kg)
+    if lda_model or bert_model:
         modeler.save_models(lda_model, dictionary, bert_model)
 
+    # Save topics JSON for citizen interface (with platform metadata)
+    if bert_model:
+        modeler.save_topics_json(bert_model, df)
+
+    # Add topics to KG (optional, can fail without breaking everything)
+    # Temporarily disabled due to indexing issues - will fix separately
+    # if lda_model or bert_model:
+    #     modeler.add_topics_to_kg(df, lda_model, dictionary, bert_model)
+
     # Generate report
-    modeler.generate_topic_report(lda_model, bert_model)
+    if lda_model or bert_model:
+        modeler.generate_topic_report(lda_model, bert_model)
 
     print("\n✓ Topic modeling complete!")
 

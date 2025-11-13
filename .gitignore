@@ -13,6 +13,22 @@ data/EU_have_your_say/csv_export/*.csv
 !ontology_deliberation.ttl
 !ontologies/*.owl
 
+# Large embeddings and model files
+*.pkl
+*.npy
+knowledge_graph/topic_models/
+*.db
+*.sqlite
+*.sqlite3
+
+# EU Have Your Say data
+data/EU_have_your_say/*.db
+data/EU_have_your_say/*.json
+data/EU_have_your_say/csv_export/
+
+# Collective Intelligence Project data
+data/collective_intelligence_project/
+
 # Python cache
 __pycache__/
 *.pyc

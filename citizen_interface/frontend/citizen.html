@@ -56,15 +56,95 @@
             margin-bottom: 0;
             opacity: 0.95;
         }
+
+        .logo-bar {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(34, 62, 40, 0.9) 55%, rgba(74, 157, 60, 0.88) 100%);
+            border-bottom: 1px solid rgba(15, 23, 42, 0.12);
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.28);
+            backdrop-filter: blur(12px);
+        }
+
+        .logo-bar.bottom {
+            border-top: 1px solid rgba(15, 23, 42, 0.12);
+            border-bottom: none;
+            margin-top: 3rem;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(34, 62, 40, 0.9) 55%, rgba(74, 157, 60, 0.88) 100%);
+            box-shadow: 0 -10px 24px rgba(15, 23, 42, 0.24);
+        }
+
+        .logo-bar .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+            padding: 0.85rem 0;
+        }
+
+        .logo-bar .logo-item {
+            flex: 0 1 auto;
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(244, 249, 255, 0.93));
+            padding: 0.65rem 1.7rem;
+            border-radius: 9999px;
+            box-shadow: 0 16px 32px rgba(12, 74, 110, 0.28);
+            border: 1px solid rgba(12, 74, 110, 0.12);
+        }
+
+        .logo-bar .logo-item:first-child {
+            background: radial-gradient(circle at 50% 40%, rgba(254, 247, 244, 0.98), rgba(248, 233, 226, 0.92));
+            border-color: rgba(160, 30, 50, 0.22);
+        }
+
+        .logo-bar .logo-item:last-child {
+            background: radial-gradient(circle at 50% 40%, rgba(240, 248, 255, 0.96), rgba(230, 242, 254, 0.9));
+            border-color: rgba(22, 64, 122, 0.2);
+        }
+
+        .logo-bar img {
+            max-height: 66px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 12px 24px rgba(15, 23, 42, 0.28));
+        }
     </style>
 </head>
 <body>
+    <div class="logo-bar">
+        <div class="container logo-container">
+            <div class="logo-item">
+                <img src="/images/unibo-logo.png" alt="University of Bologna logo">
+            </div>
+            <div class="logo-item">
+                <img src="/images/upm-logo.png" alt="Universidad Politecnica de Madrid logo">
+            </div>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-bg"></div>
         <div class="hero-content">
             <h1><i class="fas fa-users"></i> Citizen Interface</h1>
             <p>Explore deliberation processes, detect fallacies, and engage with democratic participation</p>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <section class="container" style="padding: 0 1rem;">
+        <div style="display: flex; gap: 1rem; padding: 2rem 0 1rem 0; border-bottom: 2px solid #e5e7eb; flex-wrap: wrap;">
+            <a href="/citizen.html" style="padding: 0.75rem 1.5rem; background: #4a9d3c; color: white; border: 2px solid #4a9d3c; border-radius: 8px 8px 0 0; font-weight: 600; text-decoration: none;">
+                <i class="fas fa-search"></i> Search
+            </a>
+            <a href="/topics.html" style="padding: 0.75rem 1.5rem; background: white; border: 2px solid #e5e7eb; border-radius: 8px 8px 0 0; cursor: pointer; font-weight: 600; text-decoration: none; color: #1f2937; transition: all 0.3s ease;">
+                <i class="fas fa-brain"></i> Topics
+            </a>
+            <a href="/arguments.html" style="padding: 0.75rem 1.5rem; background: white; border: 2px solid #e5e7eb; border-radius: 8px 8px 0 0; cursor: pointer; font-weight: 600; text-decoration: none; color: #1f2937; transition: all 0.3s ease;">
+                <i class="fas fa-comments"></i> Arguments
+            </a>
+            <a href="https://dkg.svagnoni.linkeddata.es" target="_blank" style="padding: 0.75rem 1.5rem; background: white; border: 2px solid #e5e7eb; border-radius: 8px 8px 0 0; cursor: pointer; font-weight: 600; text-decoration: none; color: #1f2937; transition: all 0.3s ease;">
+                <i class="fas fa-project-diagram"></i> Knowledge Graph
+            </a>
         </div>
     </section>
 
@@ -92,10 +172,7 @@
                         Platform:
                         <select id="platformFilter">
                             <option value="">All Platforms</option>
-                            <option value="Decidim Barcelona">Decidim Barcelona</option>
-                            <option value="Decide Madrid">Decide Madrid</option>
-                            <option value="European Parliament">European Parliament</option>
-                            <option value="EU Have Your Say">EU Have Your Say</option>
+                            <!-- Platforms will be loaded dynamically from API -->
                         </select>
                     </label>
                     <label>
@@ -159,8 +236,18 @@
 
     <!-- Footer -->
     <footer>
+        <div class="logo-bar bottom">
+            <div class="container logo-container">
+                <div class="logo-item">
+                    <img src="/images/unibo-logo.png" alt="University of Bologna logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/upm-logo.png" alt="Universidad Politecnica de Madrid logo">
+                </div>
+            </div>
+        </div>
         <div class="container">
-            <p>&copy; 2024 Deliberation Knowledge Graph - CIRSFID, University of Bologna</p>
+            <p>&copy; 2025 Simone Vagnoni, CIRSFID, University of Bologna - OEG, Universidad Politecnica de Madrid</p>
             <p>
                 <a href="https://gitlab.com/CIRSFID/Deliberation-Knowledge-Graph" target="_blank">
                     <i class="fab fa-gitlab"></i> GitLab
