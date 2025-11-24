@@ -262,8 +262,22 @@
 
     <!-- Main Content -->
     <section class="container" style="padding: 2rem 1rem;">
+        <!-- Work in Progress Banner -->
+        <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 2px solid #f59e0b; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; text-align: center;">
+            <h2 style="color: #92400e; margin-bottom: 1rem;">
+                <i class="fas fa-tools"></i> Work in Progress
+            </h2>
+            <p style="color: #78350f; font-size: 1.1rem; margin-bottom: 0.5rem;">
+                The argument mapping and analysis feature is currently under development.
+            </p>
+            <p style="color: #92400e; font-size: 0.95rem;">
+                We are working on implementing advanced NLP techniques to automatically extract arguments,
+                detect reasoning patterns, and identify fallacies from deliberative contributions.
+            </p>
+        </div>
+
         <!-- Statistics Row -->
-        <div class="stats-row" id="argStats">
+        <div class="stats-row" id="argStats" style="opacity: 0.4; pointer-events: none;">
             <div class="stat-box">
                 <div class="stat-box-number" id="totalArguments">-</div>
                 <div class="stat-box-label">Total Arguments</div>
@@ -283,7 +297,7 @@
         </div>
 
         <!-- Filters -->
-        <div class="filter-section">
+        <div class="filter-section" style="opacity: 0.4; pointer-events: none;">
             <h3><i class="fas fa-filter"></i> Filters</h3>
             <div class="filter-group" style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
                 <label>
@@ -311,20 +325,20 @@
         </div>
 
         <!-- Argument Network Visualization -->
-        <div class="visualization-container">
-            <h2><i class="fas fa-project-diagram"></i> Argument Network</h2>
+        <div class="visualization-container" style="opacity: 0.4; pointer-events: none;">
+            <h2><i class="fas fa-project-diagram"></i> Argument Network (Preview)</h2>
             <p style="color: #6b7280; margin-bottom: 1rem;">Interactive network showing relationships between arguments and topics</p>
             <div id="argumentNetwork" class="network-graph"></div>
         </div>
 
         <!-- Arguments Quality Chart -->
-        <div class="visualization-container">
-            <h2><i class="fas fa-chart-line"></i> Deliberative Quality Metrics</h2>
+        <div class="visualization-container" style="opacity: 0.4; pointer-events: none;">
+            <h2><i class="fas fa-chart-line"></i> Deliberative Quality Metrics (Preview)</h2>
             <div id="qualityChart" style="width: 100%; height: 400px;"></div>
         </div>
 
         <!-- Arguments List -->
-        <div id="argumentsList"></div>
+        <div id="argumentsList" style="opacity: 0.4; pointer-events: none;"></div>
     </section>
 
     <!-- Footer -->
