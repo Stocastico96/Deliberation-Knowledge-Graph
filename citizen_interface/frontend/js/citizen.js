@@ -95,25 +95,35 @@ async function performSearch() {
 
     const topK = parseInt(document.getElementById('topK').value);
     const platformFilter = document.getElementById('platformFilter').value;
+    const sortBy = document.getElementById('sortBy').value;
+    const minContributions = document.getElementById('minContributions').value;
 
     showLoading();
 
     try {
+        const requestBody = {
+            query,
+            top_k: topK,
+            platform: platformFilter || null,
+            sort_by: sortBy || 'relevance'
+        };
+
+        // Only add min_contributions if set
+        if (minContributions) {
+            requestBody.min_contributions = parseInt(minContributions);
+        }
+
         const response = await fetch(`${API_BASE}/semantic-search`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                query,
-                top_k: topK,
-                platform: platformFilter || null
-            })
+            body: JSON.stringify(requestBody)
         });
 
         const data = await response.json();
         const results = data.results || [];
 
         currentResults = results;
-        displayResults(currentResults);
+        displayResults(currentResults, data);
     } catch (error) {
         console.error('Search error:', error);
         showError('Search error. Please try again.');
@@ -121,7 +131,7 @@ async function performSearch() {
 }
 
 // Display search results
-function displayResults(results) {
+function displayResults(results, metadata) {
     const resultsContainer = document.getElementById('searchResults');
 
     if (!results || results.length === 0) {
@@ -129,13 +139,40 @@ function displayResults(results) {
             <div style="text-align: center; padding: 3rem; color: var(--text-light);">
                 <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 1rem;"></i>
                 <h3>No results found</h3>
-                <p>Try different keywords</p>
+                <p>Try different keywords or adjust filters</p>
             </div>
         `;
         return;
     }
 
-    const resultsHTML = results.map((result, index) => `
+    // Display active filters info
+    let filterInfo = '';
+    if (metadata && (metadata.filters || metadata.sort_by)) {
+        const filters = [];
+        if (metadata.filters?.platform) {
+            filters.push(`Platform: ${metadata.filters.platform}`);
+        }
+        if (metadata.filters?.min_contributions) {
+            filters.push(`Min. ${metadata.filters.min_contributions} contributions`);
+        }
+        if (metadata.sort_by && metadata.sort_by !== 'relevance') {
+            const sortLabels = {
+                'contributions': 'Most Contributions',
+                'date': 'Most Recent'
+            };
+            filters.push(`Sorted by: ${sortLabels[metadata.sort_by] || metadata.sort_by}`);
+        }
+        if (filters.length > 0) {
+            filterInfo = `
+                <div style="margin-bottom: 1rem; padding: 0.75rem; background: #f3f4f6; border-radius: 8px; font-size: 0.9rem;">
+                    <i class="fas fa-filter"></i> Active filters: ${filters.join(' • ')}
+                    ${metadata.total_results ? ` • ${metadata.total_results} results` : ''}
+                </div>
+            `;
+        }
+    }
+
+    const resultsHTML = results.map(result => `
         <div class="result-card" onclick="viewProcess('${escapeHtml(result.uri)}')">
             <div class="result-header">
                 <h3>${escapeHtml(result.title || 'Untitled Process')}</h3>
@@ -165,7 +202,7 @@ function displayResults(results) {
         </div>
     `).join('');
 
-    resultsContainer.innerHTML = resultsHTML;
+    resultsContainer.innerHTML = filterInfo + resultsHTML;
 }
 
 // View process details

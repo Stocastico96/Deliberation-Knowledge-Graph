@@ -61,29 +61,34 @@ def extract_processes():
     """Extract all processes from KG"""
     global processes_cache
 
-    # First get all processes with their basic info
+    # Get all processes - fully compliant with DEL ontology
     query = """
     PREFIX del: <https://w3id.org/deliberation/ontology#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX dcterms: <http://purl.org/dc/terms/>
 
-    SELECT DISTINCT ?process ?title ?description ?date ?platform
+    SELECT DISTINCT ?process ?title ?description ?date ?forumName
            (COUNT(DISTINCT ?contribution) as ?contributions)
     WHERE {
         ?process a del:DeliberationProcess .
+
         OPTIONAL { ?process del:name ?title }
         OPTIONAL { ?process del:title ?title }
         OPTIONAL { ?process rdfs:label ?title }
+        OPTIONAL { ?process dcterms:title ?title }
         OPTIONAL { ?process del:description ?description }
         OPTIONAL { ?process dcterms:description ?description }
         OPTIONAL { ?process del:date ?date }
         OPTIONAL { ?process dcterms:date ?date }
         OPTIONAL { ?process del:startDate ?date }
         OPTIONAL { ?process del:endDate ?date }
-        OPTIONAL { ?process del:platform ?platform }
+        OPTIONAL {
+            ?process del:takesPlaceIn ?forum .
+            ?forum del:name ?forumName .
+        }
         OPTIONAL { ?process del:hasContribution ?contribution }
     }
-    GROUP BY ?process ?title ?description ?date ?platform
+    GROUP BY ?process ?title ?description ?date ?forumName
     """
 
     processes_cache = []
@@ -98,10 +103,10 @@ def extract_processes():
         # For now, set fallacies and participants to 0 to speed up loading
         # These can be counted on-demand when viewing a specific process
 
-        # Infer platform from URI if not specified
-        platform = str(row.platform) if row.platform else "Unknown"
+        # Get forum name or infer from URI
+        platform = str(row.forumName) if row.forumName else "Unknown"
         if platform == "Unknown":
-            if "eu_hys" in process_uri or "haveyoursay" in process_uri:
+            if "hys_" in process_uri or "haveyoursay" in process_uri:
                 platform = "EU Have Your Say"
             elif "ep_debate" in process_uri or "europarl" in process_uri:
                 platform = "European Parliament"
@@ -338,13 +343,17 @@ def semantic_search_endpoint():
     query = data.get('query', '')
     top_k = data.get('top_k', 10)
     platform_filter = data.get('platform', None)
+    sort_by = data.get('sort_by', 'relevance')  # relevance, contributions, date
+    min_contributions = data.get('min_contributions', None)
 
     if not query:
         return jsonify({'error': 'No query provided'}), 400
 
     try:
         # Get semantic search results (contributions)
-        semantic_results = search_semantic(query, top_k, platform_filter)
+        # Fetch more results to allow for filtering and sorting
+        fetch_k = top_k * 3 if min_contributions or sort_by != 'relevance' else top_k
+        semantic_results = search_semantic(query, fetch_k, platform_filter)
 
         # Map contributions to processes
         process_scores = {}
@@ -372,15 +381,31 @@ def semantic_search_endpoint():
                         process_scores[process_uri]['relevance_score'] = result['similarity_score']
                     break
 
-        # Convert to list and sort
+        # Convert to list
         results = list(process_scores.values())
-        results.sort(key=lambda x: x['relevance_score'], reverse=True)
+
+        # Apply min_contributions filter
+        if min_contributions:
+            results = [r for r in results if r.get('contributions_count', 0) >= min_contributions]
+
+        # Sort results
+        if sort_by == 'contributions':
+            results.sort(key=lambda x: (x.get('contributions_count', 0), x['relevance_score']), reverse=True)
+        elif sort_by == 'date':
+            results.sort(key=lambda x: (x.get('date', ''), x['relevance_score']), reverse=True)
+        else:  # relevance (default)
+            results.sort(key=lambda x: x['relevance_score'], reverse=True)
 
         return jsonify({
             'results': results[:top_k],
             'query': query,
             'total_results': len(results),
-            'search_type': 'semantic'
+            'search_type': 'semantic',
+            'sort_by': sort_by,
+            'filters': {
+                'platform': platform_filter,
+                'min_contributions': min_contributions
+            }
         })
 
     except Exception as e:
@@ -422,6 +447,7 @@ def _get_process_details(uri):
                 <{uri}> del:hasContribution ?contribution .
                 OPTIONAL {{ ?contribution del:text ?text }}
                 OPTIONAL {{ ?contribution rdfs:comment ?text }}
+                OPTIONAL {{ ?contribution del:content ?text }}
                 OPTIONAL {{ ?contribution del:madeBy ?participant }}
                 OPTIONAL {{ ?participant foaf:name ?participantName }}
                 OPTIONAL {{ ?participant del:name ?participantName }}

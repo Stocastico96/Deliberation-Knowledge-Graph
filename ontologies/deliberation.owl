@@ -21,7 +21,7 @@
         <dct:description xml:lang="en">An ontology for representing and analyzing deliberative processes, arguments, and discourse.</dct:description>
         <dct:creator>Simone Vagnoni</dct:creator>
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-03</dct:created>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-20</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:modified>
         <vann:preferredNamespacePrefix>deliberation</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/deliberation/ontology#</vann:preferredNamespaceUri>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
@@ -148,8 +148,14 @@
         <rdfs:comment>The subject matter of a deliberation.</rdfs:comment>
         <rdfs:label>Topic</rdfs:label>
     </owl:Class>
-    
-    <!-- 
+
+    <!-- https://w3id.org/deliberation/ontology#Forum -->
+    <owl:Class rdf:about="https://w3id.org/deliberation/ontology#Forum">
+        <rdfs:comment>A physical or virtual space where deliberations take place (e.g., digital platform, parliament chamber, court, public square).</rdfs:comment>
+        <rdfs:label>Forum</rdfs:label>
+    </owl:Class>
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -312,8 +318,16 @@
         <rdfs:comment>Indicates that an argument supports another argument or position.</rdfs:comment>
         <rdfs:label>supports</rdfs:label>
     </owl:ObjectProperty>
-    
-    <!-- 
+
+    <!-- https://w3id.org/deliberation/ontology#takesPlaceIn -->
+    <owl:ObjectProperty rdf:about="https://w3id.org/deliberation/ontology#takesPlaceIn">
+        <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Forum"/>
+        <rdfs:comment>Relates a deliberation process to the forum where it takes place.</rdfs:comment>
+        <rdfs:label>takes place in</rdfs:label>
+    </owl:ObjectProperty>
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -406,5 +420,21 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment>The URL of an information resource.</rdfs:comment>
         <rdfs:label>url</rdfs:label>
+    </owl:DatatypeProperty>
+
+    <!-- https://w3id.org/deliberation/ontology#country -->
+    <owl:DatatypeProperty rdf:about="https://w3id.org/deliberation/ontology#country">
+        <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The country of origin of a participant (ISO 3166-1 alpha-3 code).</rdfs:comment>
+        <rdfs:label>country</rdfs:label>
+    </owl:DatatypeProperty>
+
+    <!-- https://w3id.org/deliberation/ontology#participantType -->
+    <owl:DatatypeProperty rdf:about="https://w3id.org/deliberation/ontology#participantType">
+        <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The type or status of participant (e.g., EU_CITIZEN, NON_EU_CITIZEN, COMPANY, NGO, PUBLIC_AUTHORITY, ACADEMIC_RESEARCH_INSTITUTION).</rdfs:comment>
+        <rdfs:label>participant type</rdfs:label>
     </owl:DatatypeProperty>
 </rdf:RDF>

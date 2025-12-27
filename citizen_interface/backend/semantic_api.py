@@ -56,7 +56,7 @@ class SemanticSearchAPI:
         )
 
         # Get top results (fetch more than needed for filtering)
-        top_indices = np.argsort(similarities)[::-1][:top_k * 5]
+        top_indices = np.argsort(similarities)[::-1][:top_k * 10]
 
         results = []
         for idx in top_indices:
@@ -71,9 +71,15 @@ class SemanticSearchAPI:
 
             # Apply platform filter if specified
             if platform_filter:
-                # Check if process_name or process uri contains platform name
-                if platform_filter.lower() not in result['process_name'].lower():
-                    continue
+                # Check platform/forum field in metadata
+                metadata_platform = self.metadata[idx].get('platform') or self.metadata[idx].get('forum')
+                if metadata_platform:
+                    if platform_filter.lower() not in metadata_platform.lower():
+                        continue
+                else:
+                    # Fallback to checking process_name
+                    if platform_filter.lower() not in result['process_name'].lower():
+                        continue
 
             results.append(result)
 
