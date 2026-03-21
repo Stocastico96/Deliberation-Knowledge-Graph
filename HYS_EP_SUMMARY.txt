@@ -1,0 +1,151 @@
+================================================================================
+HYS-EP INTEGRATION PIPELINE - IMPLEMENTAZIONE COMPLETATA
+================================================================================
+
+Data: 2026-01-06
+Repository: deliberation-knowledge-graph/
+
+OBIETTIVO
+---------
+Collegare consultazioni pubbliche EU Have Your Say con dibattiti Parlamento 
+Europeo e atti legislativi finali, usando il Deliberation Knowledge Graph.
+
+Domande di ricerca:
+1. Rappresentatività: quanto HYS è presente nei dibattiti EP?
+2. Impatto: quanto HYS influenza il testo legislativo finale?
+
+DATI DISPONIBILI
+----------------
+• DB HYS completo: /home/svagnoni/haveyoursay/haveyoursay_full_fixed.db
+  - 3,835 iniziative
+  - ~1M feedback (dataset limitato; quello completo ha ~3M)
+  - Metadati: paese, user_type, organizzazione, Ares reference
+
+• EUR-Lex: dibattiti EP, proposte legislative, atti finali (via API/SPARQL)
+
+PIPELINE IMPLEMENTATA
+---------------------
+
+✅ FASE 1: Export e Conversione HYS
+   Script: scripts/integrate_hys_full.py
+   - Export DB SQLite → CSV (initiatives, feedback)
+   - Mapping Ares reference → initiative_id
+   
+   Script: data/EU_have_your_say/convert_hys_csv_to_del_rdf_batched.py
+   - Conversione CSV → RDF Turtle con batch processing
+   - Usa SOLO classi/proprietà dell'ontologia Deliberation v1.0
+   - Output: hys_initiatives.ttl + hys_feedback_full.ttl
+
+✅ FASE 2: Embeddings
+   Script: scripts/generate_embeddings_batched.py
+   - Genera embeddings testuali (sentence-transformers)
+   - Batch processing per evitare memory overflow
+   - Supporta filtro per iniziative "major"
+   - Output: NPZ compresso con embeddings + metadata
+
+✅ FASE 3: Linking EUR-Lex
+   Script: scripts/eurlex/link_ares_to_celex.py
+   - Mapping Ares(YYYY)NNNNNNN → CELEX
+   - Cache JSON per evitare richieste duplicate
+   - Supporta SPARQL + HTML search fallback
+   
+   Script: scripts/eurlex/fetch_legislation.py
+   - Download atti legislativi (XML/HTML)
+   - Metadati salvati in JSON
+   
+   TODO: scripts/eurlex/fetch_debates.py
+   - Download trascrizioni dibattiti EP
+
+✅ FASE 4: Analisi
+   Script: analysis/representativity_analysis.py
+   - Distribuzione geografica, user_type, organizzazioni
+   - Gini coefficient (concentrazione)
+   - Top-10, top-100 coverage
+   
+   Script: analysis/topic_alignment.py (template)
+   - LDA topic modeling HYS vs EP
+   - Coverage, salience metrics
+   
+   TODO: analysis/impact_tracing.py
+   - Similarità embedding feedback ↔ articoli legislativi
+
+ONTOLOGIA UTILIZZATA
+-------------------
+Deliberation Ontology v1.0 (https://w3id.org/deliberation/ontology#)
+
+Classi usate:
+• del:DeliberationProcess (iniziative HYS)
+• del:Contribution (feedback)
+• del:Participant (cittadini/organizzazioni)
+• del:Organization
+• del:Forum (piattaforma HYS)
+
+Proprietà usate:
+• del:hasContribution (processo → contributi)
+• del:hasParticipant (processo → partecipanti)
+• del:madeBy (contributo → partecipante)
+• del:isAffiliatedWith (partecipante → organizzazione)
+• del:takesPlaceIn (processo → forum)
+• del:text, del:timestamp, del:country, del:participantType
+
+RISULTATI TEST (campione 5k feedback)
+-------------------------------------
+✓ Export: 3,835 iniziative + 5,000 feedback in 4 secondi
+✓ RDF: 33k triples (initiatives) + 9.4 MB (feedback) in 6 secondi
+✓ Analisi rappresentatività:
+  - 54 paesi unici
+  - Germania domina (38%), poi Belgio (13%), UK (12%)
+  - 50% cittadini EU, 50% organizzazioni
+  - Gini 0.86: alta concentrazione (top-10 = 77% feedback)
+  - Top user_type: EU_CITIZEN (51%), BUSINESS_ASSOCIATION (16%), COMPANY (15%)
+
+QUICK START
+-----------
+1. Export CSV:
+   python3 scripts/integrate_hys_full.py --limit-feedback 5000 -v
+
+2. Conversione RDF:
+   python3 data/EU_have_your_say/convert_hys_csv_to_del_rdf_batched.py -v
+
+3. Analisi:
+   python3 analysis/representativity_analysis.py --output results/repr.json
+
+4. Verificare:
+   ls -lh data/EU_have_your_say/*.ttl
+   cat results/repr.json | jq .
+
+Documentazione completa: HYS_EP_PIPELINE_README.md
+
+PROSSIMI PASSI
+--------------
+1. Implementare fetch_debates.py per scaricare dibattiti EP
+2. Completare topic_alignment.py con parsing testi EP
+3. Implementare impact_tracing.py per similarity analysis
+4. Testare pipeline su dataset completo (~3M feedback)
+5. Integrare RDF nel knowledge graph principale
+
+FILE GENERATI
+-------------
+scripts/
+  integrate_hys_full.py                    (export DB → CSV)
+  generate_embeddings_batched.py           (embeddings batch)
+  eurlex/
+    link_ares_to_celex.py                  (Ares → CELEX)
+    fetch_legislation.py                   (download atti)
+
+data/EU_have_your_say/
+  convert_hys_csv_to_del_rdf_batched.py   (CSV → RDF)
+  hys_initiatives.ttl                      (output RDF)
+  hys_feedback_full.ttl                    (output RDF)
+
+analysis/
+  representativity_analysis.py             (metriche rappresentatività)
+  topic_alignment.py                       (template alignment)
+  EXPERIMENT_HYS_EP.md                     (documentazione esperimento)
+
+HYS_EP_PIPELINE_README.md                  (guida operativa)
+
+================================================================================
+Pipeline pronta per esecuzione su dataset completo e ulteriori sviluppi.
+Per domande o contributi: GitHub Stocastico96/Deliberation-Knowledge-Graph
+================================================================================

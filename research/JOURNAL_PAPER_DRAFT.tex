@@ -1,0 +1,150 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{amsmath}
+
+\geometry{margin=2.4cm}
+
+\title{Measuring Deliberative Distance: A Multi-Forum Comparison of EU Public Consultations and Parliamentary Debates}
+\author{Authors: \textit{(to be completed)}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\begin{abstract}
+This paper proposes a multi-forum framework to measure the distance between public consultation feedback and parliamentary debate in EU policymaking. We build a pilot dataset that links European Commission Have Your Say (HYS) consultations with European Parliament (EP) plenary debates across three policy dossiers: COVID Digital Certificate extension, the AI Act, and the Deforestation Regulation. The dataset includes 301,366 HYS feedback items and 1,443 EP speeches (2021--2025). We introduce a Deliberative Distance Index (DDI) that combines topic distance, salience gap, temporal lag, and actor distance to quantify alignment between citizen input and legislative discourse. Our analysis pipeline applies BERTopic for topic modeling, cross-forum topic alignment, stance detection, and distance metrics. This draft reports dataset construction, methodological choices, and the analysis plan; quantitative results will be inserted after topic modeling and alignment are completed. The goal is to provide a reproducible, scalable method for auditing deliberative alignment and to inform better consultation design in EU lawmaking.
+\end{abstract}
+
+\paragraph{Keywords} Deliberative distance, public consultation, European Parliament, topic modeling, BERTopic, stance detection, knowledge graph, EU lawmaking.
+
+\section{Introduction}
+Public consultations are intended to inform EU policymaking, yet the relationship between citizen feedback and parliamentary debate remains largely unmeasured. Existing studies focus on clustering consultation responses, but they rarely connect consultation discourse to subsequent legislative deliberation. This paper addresses that gap by linking HYS consultations to EP plenary debates and by proposing a metric that quantifies how closely the two forums align in topics, salience, timing, and participation.
+
+We present a pilot study with three policy cases covering health, technology regulation, and environmental policy. The pilot provides a concrete testbed for measuring deliberative distance at scale and for validating a pipeline that can be extended to additional dossiers and legislative sources.
+
+Contributions:
+\begin{itemize}
+  \item A curated HYS--EP pilot dataset with three matched cases and transparent selection criteria.
+  \item A multi-level comparison framework for cross-forum deliberation analysis.
+  \item A Deliberative Distance Index (DDI) that operationalizes alignment across forums.
+  \item A reproducible analysis pipeline (topic modeling, alignment, stance detection, distance metrics).
+\end{itemize}
+
+\section{Related Work}
+Research on computational analysis of public consultations has highlighted misalignment between clustered opinions and stakeholder categories, but typically focuses on single-forum data. In contrast, cross-forum deliberation analysis is still rare. This work builds on prior NLP-based studies of consultation feedback while extending the scope to include parliamentary debate. We also connect to literature on deliberative democracy, argumentation mining, and policy traceability, and align with the emerging use of knowledge graphs to integrate heterogeneous civic participation data.
+
+\section{Data and Case Selection}
+\subsection{Sources}
+\begin{itemize}
+  \item HYS feedback database (2016--2025) with structured metadata, including stakeholder categories and consultation references.
+  \item EP plenary debate transcripts (verbatim HTML) for 2021--2025, converted into JSON with full speech texts.
+\end{itemize}
+
+\subsection{Pilot Cases}
+\textbf{Case 1: COVID Digital Certificate extension}
+\begin{itemize}
+  \item HYS feedback: 299,815 items
+  \item EP speeches: 1,185 speeches in 155 debates
+  \item References: COM(2022)50, COM(2022)55
+\end{itemize}
+
+\textbf{Case 2: AI Act}
+\begin{itemize}
+  \item HYS feedback: 1,349 items
+  \item EP speeches: 119 speeches in 60 debates
+  \item References: AIConsult2020, Ares(2020)3896535
+\end{itemize}
+
+\textbf{Case 3: Deforestation Regulation}
+\begin{itemize}
+  \item HYS feedback: 202 items
+  \item EP speeches: 139 speeches in 66 debates
+  \item References: Ares(2018)6516782
+\end{itemize}
+
+\subsection{Dataset Structure}
+The dataset is exported as JSON with per-case folders containing HYS feedback, EP debates, and metadata. Total size is 171 MB. The dataset enables direct loading into Python for analysis and topic modeling.
+
+\subsection{Matching Logic}
+HYS consultations were matched to EP debates by topic keywords and temporal overlap. The pilot yields three high-quality matches with clear policy references.
+
+\section{Methods}
+\subsection{Overview}
+The pipeline consists of four stages:
+\begin{itemize}
+  \item Topic modeling (BERTopic) per forum and case.
+  \item Topic alignment across HYS and EP corpora.
+  \item Stance detection on aligned topics.
+  \item Deliberative Distance Index computation.
+\end{itemize}
+
+\subsection{Topic Modeling}
+We use BERTopic to generate topic distributions for each forum and case. This is suitable for short texts and supports interpretable topic keywords. Outputs include topic lists, topic prevalence, and interactive visualizations.
+
+\subsection{Topic Alignment}
+Aligned topics are identified via cosine similarity between topic embeddings. The alignment produces a correspondence matrix that supports comparison of topic coverage and salience across forums.
+
+\subsection{Stance Detection}
+We plan to apply NLI-based stance classification on topic-relevant propositions, producing distributions of favor, against, and neutral positions by topic and forum.
+
+\subsection{Deliberative Distance Index (DDI)}
+We define DDI as a weighted combination of four measurable components in the pilot phase:
+\begin{equation}
+\text{DDI} = 0.3 \cdot \text{TopicDistance} + 0.3 \cdot \text{SalienceDistance} + 0.2 \cdot \text{TemporalLag} + 0.2 \cdot \text{ActorDistance}
+\end{equation}
+
+Where:
+\begin{itemize}
+  \item \textbf{TopicDistance} is the cosine distance between aligned topic embeddings.
+  \item \textbf{SalienceDistance} is the absolute difference in topic prevalence.
+  \item \textbf{TemporalLag} measures time differences between HYS and EP discussion peaks.
+  \item \textbf{ActorDistance} captures divergence in participant types (e.g., citizen vs institutional speakers).
+\end{itemize}
+
+A full version of DDI can incorporate framing and argumentation distances in future work.
+
+\section{Results (Planned)}
+This section will be populated after completing topic modeling and alignment.
+
+Planned outputs:
+\begin{itemize}
+  \item Table: topic overlap and salience gaps by case.
+  \item Figure: aligned topic maps for HYS vs EP.
+  \item Table: stance distributions by forum and topic.
+  \item DDI scores per case with sensitivity analysis on weights.
+\end{itemize}
+
+\section{Discussion and Policy Implications}
+The proposed framework enables a systematic audit of deliberative alignment between citizen input and legislative debate. For EU policymaking, this provides evidence for whether consultations anticipate or diverge from parliamentary discourse, and whether specific stakeholder categories have disproportionate influence. The DDI can inform Better Regulation practices by identifying consultations that are substantively disconnected from legislative deliberation.
+
+\section{Limitations and Ethics}
+\begin{itemize}
+  \item The pilot focuses on EP plenary debates and excludes committee work and final legal text.
+  \item HYS feedback is multilingual, while EP debates are largely in English; this may introduce language bias.
+  \item Stance detection is sensitive to proposition formulation and model bias.
+  \item Privacy is respected by using publicly available data and aggregated results only.
+\end{itemize}
+
+\section{Conclusions and Future Work}
+We present a pilot dataset and a measurable framework for cross-forum deliberation analysis in EU policymaking. The next steps include completing BERTopic modeling, topic alignment, stance detection, and DDI computation, followed by expansion to additional dossiers and legislative stages (e.g., final acts). This work aims to provide a scalable method to assess deliberative alignment and to support transparency in EU lawmaking.
+
+\section{Reproducibility and Data Availability}
+\begin{itemize}
+  \item Dataset path: \texttt{data/pilot\_study\_dataset/}
+  \item Analysis scripts: \texttt{scripts/analysis/}
+  \item Key script to run: \texttt{scripts/analysis/01\_bertopic\_modeling.py}
+\end{itemize}
+
+\section{References}
+% TODO: add bibliography entries
+
+\end{document}
