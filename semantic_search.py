@@ -49,12 +49,17 @@ class SemanticSearchEngine:
 
         query = """
         PREFIX del: <https://w3id.org/deliberation/ontology#>
+        PREFIX deldata: <http://data.cogenta.org/ontology/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
         SELECT DISTINCT ?contribution ?text ?process ?processName
         WHERE {
             ?contribution a del:Contribution .
-            ?contribution del:text ?text .
+            {
+                ?contribution del:text ?text .
+            } UNION {
+                ?contribution deldata:content ?text .
+            }
             ?process del:hasContribution ?contribution .
             OPTIONAL { ?process del:name ?processName }
             OPTIONAL { ?process del:title ?processName }

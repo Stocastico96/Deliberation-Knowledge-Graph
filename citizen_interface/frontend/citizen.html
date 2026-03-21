@@ -107,6 +107,73 @@
             object-fit: contain;
             filter: drop-shadow(0 12px 24px rgba(15, 23, 42, 0.28));
         }
+
+        /* ── How It Works (compact collapsible) ── */
+        .hiw-bar {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.65rem 1rem;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #475569;
+            user-select: none;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .hiw-bar:hover { border-color: #4a9d3c; color: #0f172a; }
+        .hiw-bar i.hiw-main-icon { color: #4a9d3c; }
+        .hiw-bar .hiw-chevron { margin-left: auto; font-size: 0.75rem; color: #94a3b8; transition: transform 0.25s; }
+        .hiw-bar.open .hiw-chevron { transform: rotate(180deg); }
+
+        .hiw-body {
+            display: none;
+            padding: 1.25rem 0 0;
+        }
+        .hiw-body.open { display: block; }
+
+        .hiw-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 0.75rem;
+            overflow-x: auto;
+        }
+        .hiw-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 0.9rem 0.85rem;
+            min-width: 150px;
+        }
+        .hiw-item-icon {
+            width: 32px; height: 32px;
+            border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.95rem; color: white; flex-shrink: 0;
+        }
+        .hiw-ig { background: linear-gradient(135deg,#4a9d3c,#3a7d2c); }
+        .hiw-ia { background: linear-gradient(135deg,#f59e0b,#d97706); }
+        .hiw-id { background: linear-gradient(135deg,#334155,#1e293b); }
+        .hiw-item-text strong {
+            display: block; font-size: 0.88rem; color: #0f172a; margin-bottom: 0.2rem;
+        }
+        .hiw-item-text p {
+            font-size: 0.82rem; color: #64748b; line-height: 1.5; margin: 0;
+        }
+        .hiw-item-text a { color: #4a9d3c; font-weight: 600; }
+        .hiw-wip-pill {
+            font-size: 0.65rem; font-weight: 700;
+            background: #fef3c7; color: #92400e;
+            padding: 0.1rem 0.45rem; border-radius: 20px;
+            border: 1px solid #fde68a; white-space: nowrap;
+            vertical-align: middle; margin-left: 0.3rem;
+        }
     </style>
 </head>
 <body>
@@ -146,6 +213,69 @@
                 <i class="fas fa-project-diagram"></i> Knowledge Graph
             </a>
         </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="container" style="padding: 1rem 1rem 0;">
+        <div class="hiw-bar" id="hiwToggle" onclick="toggleHiw()">
+            <i class="fas fa-info-circle hiw-main-icon"></i>
+            How this interface works
+            <i class="fas fa-chevron-down hiw-chevron" id="hiwChevron"></i>
+        </div>
+        <div class="hiw-body" id="hiwBody">
+            <div class="hiw-grid">
+                <div class="hiw-item">
+                    <div class="hiw-item-icon hiw-ig"><i class="fas fa-search"></i></div>
+                    <div class="hiw-item-text">
+                        <strong>Semantic Search</strong>
+                        <p>Finds deliberative processes by meaning, not just keywords, using embedding similarity. Filter by platform, contributions, and sort order.</p>
+                    </div>
+                </div>
+                <div class="hiw-item">
+                    <div class="hiw-item-icon hiw-ig"><i class="fas fa-brain"></i></div>
+                    <div class="hiw-item-text">
+                        <strong>Topics Explorer</strong>
+                        <p>Auto-generated topic clusters from the full dataset, with key terms, contribution counts, cross-platform breakdown, and interactive charts.</p>
+                    </div>
+                </div>
+                <div class="hiw-item">
+                    <div class="hiw-item-icon hiw-ia"><i class="fas fa-comments"></i></div>
+                    <div class="hiw-item-text">
+                        <strong>Arguments Analysis <span class="hiw-wip-pill">coming soon</span></strong>
+                        <p>Will extract pro/con structures, map reasoning networks and detect logical fallacies via NLP.</p>
+                    </div>
+                </div>
+                <div class="hiw-item">
+                    <div class="hiw-item-icon hiw-ig"><i class="fas fa-project-diagram"></i></div>
+                    <div class="hiw-item-text">
+                        <strong>Knowledge Graph</strong>
+                        <p>Unified RDF dataset: Decide Madrid, Decidim Barcelona, EU Have Your Say, European Parliament debates, aligned to the Deliberation Ontology.</p>
+                    </div>
+                </div>
+                <div class="hiw-item">
+                    <div class="hiw-item-icon hiw-ig"><i class="fas fa-download"></i></div>
+                    <div class="hiw-item-text">
+                        <strong>Open Data</strong>
+                        <p>Download the full graph as RDF/Turtle, JSON-LD, JSON or CSV from the section below.</p>
+                    </div>
+                </div>
+                <div class="hiw-item">
+                    <div class="hiw-item-icon hiw-id"><i class="fas fa-flask"></i></div>
+                    <div class="hiw-item-text">
+                        <strong>For Researchers</strong>
+                        <p><a href="https://dkg.svagnoni.linkeddata.es/sparql.html" target="_blank">SPARQL endpoint</a> &amp; datasets on the DKG site. Methodology: <a href="https://link.springer.com/chapter/10.1007/978-3-032-02225-7_9" target="_blank">EGOVIS 2025 paper</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleHiw() {
+                var bar = document.getElementById('hiwToggle');
+                var body = document.getElementById('hiwBody');
+                bar.classList.toggle('open');
+                body.classList.toggle('open');
+            }
+        </script>
     </section>
 
     <!-- Search Section -->

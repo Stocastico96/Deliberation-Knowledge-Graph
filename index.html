@@ -16,9 +16,9 @@
       --primary-color: #4a9d3c; /* Green for vines */
       --primary-light: #6abe5c;
       --primary-dark: #3a7d2c;
-      --secondary-color: #8b5a2b; /* Brown for Donkey Kong */
-      --secondary-light: #a67c4e;
-      --secondary-dark: #6b4521;
+      --secondary-color: #0f172a; /* Deep teal accent */
+      --secondary-light: #1f354a;
+      --secondary-dark: #0b1626;
       --accent-color: #ffd700; /* Gold for Daft Punk helmets */
       --accent-light: #ffe44d;
       --accent-dark: #ccac00;
@@ -86,7 +86,80 @@
       padding: 0.8rem 2rem;
       font-size: 1.1rem;
     }
-    
+
+    /* University logo bars */
+    .logo-bar {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(34, 62, 40, 0.9) 55%, rgba(74, 157, 60, 0.88) 100%);
+      border-bottom: 1px solid rgba(15, 23, 42, 0.12);
+      box-shadow: 0 12px 24px rgba(15, 23, 42, 0.28);
+      backdrop-filter: blur(12px);
+    }
+
+    .logo-bar.bottom {
+      border-top: 1px solid rgba(15, 23, 42, 0.12);
+      border-bottom: none;
+      margin-top: 3rem;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(34, 62, 40, 0.9) 55%, rgba(74, 157, 60, 0.88) 100%);
+      box-shadow: 0 -12px 24px rgba(15, 23, 42, 0.24);
+    }
+
+    .logo-bar .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      padding: 0.85rem 0;
+    }
+
+    .logo-bar .logo-item {
+      flex: 0 1 auto;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(244, 249, 255, 0.93));
+      padding: 0.65rem 1.7rem;
+      border-radius: 9999px;
+      box-shadow: 0 16px 32px rgba(12, 74, 110, 0.28);
+      border: 1px solid rgba(12, 74, 110, 0.12);
+    }
+
+    .logo-bar img {
+      max-height: 66px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 12px 24px rgba(15, 23, 42, 0.28));
+    }
+
+    .logo-bar .logo-item:first-child {
+      background: radial-gradient(circle at 50% 40%, rgba(254, 247, 244, 0.98), rgba(248, 233, 226, 0.92));
+      border: 1px solid rgba(160, 30, 50, 0.22);
+    }
+
+    .logo-bar .logo-item:last-child {
+      background: radial-gradient(circle at 50% 40%, rgba(240, 248, 255, 0.96), rgba(230, 242, 254, 0.9));
+      border: 1px solid rgba(22, 64, 122, 0.2);
+    }
+
+    .ontology-download {
+      margin: 3rem 0;
+    }
+
+    .ontology-diagram {
+      margin: 2rem 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .ontology-diagram img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+    }
+
+    .ontology-download + hr {
+      margin: 3rem 0;
+    }
+
     /* EU Parliament Debates section */
     .eu-parliament-section {
       background-color: #f8f9fa;
@@ -204,6 +277,95 @@
     .table tr:nth-child(even) {
       background-color: #f8f9fa;
     }
+
+    /* Publication card */
+    .publication-card {
+      background: linear-gradient(135deg, rgba(74, 157, 60, 0.06) 0%, rgba(15, 23, 42, 0.04) 100%);
+      border: 1px solid rgba(74, 157, 60, 0.25);
+      border-left: 4px solid var(--primary-color);
+      border-radius: var(--border-radius);
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .publication-card .pub-icon {
+      font-size: 2rem;
+      color: var(--primary-color);
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+    }
+
+    .publication-card .pub-body {
+      flex: 1;
+    }
+
+    .publication-card .pub-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary-color);
+      margin-bottom: 0.4rem;
+    }
+
+    .publication-card .pub-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--secondary-color);
+      margin-bottom: 0.4rem;
+      line-height: 1.4;
+    }
+
+    .publication-card .pub-meta {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+
+    .publication-card .pub-links {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .publication-card .pub-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .publication-card .pub-links .btn-springer {
+      background-color: var(--primary-color);
+      color: white;
+      border: 1.5px solid var(--primary-color);
+    }
+
+    .publication-card .pub-links .btn-springer:hover {
+      background-color: var(--primary-dark);
+      border-color: var(--primary-dark);
+      text-decoration: none;
+    }
+
+    .publication-card .pub-links .btn-openaccess {
+      background-color: white;
+      color: var(--primary-color);
+      border: 1.5px solid var(--primary-color);
+    }
+
+    .publication-card .pub-links .btn-openaccess:hover {
+      background-color: rgba(74, 157, 60, 0.08);
+      text-decoration: none;
+    }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -214,7 +376,7 @@
         securityLevel: 'loose',
         themeCSS: `
           .node rect { fill: #4a9d3c; stroke: #3a7d2c; }
-          .node.external rect { fill: #8b5a2b; stroke: #6b4521; }
+          .node.external rect { fill: #0f172a; stroke: #0b1626; }
           .edgeLabel { background-color: white; }
         `
       });
@@ -222,6 +384,17 @@
   </script>
 </head>
 <body>
+  <div class="logo-bar">
+    <div class="container logo-container">
+      <div class="logo-item">
+        <img src="img/unibo-logo.png" alt="University of Bologna logo">
+      </div>
+      <div class="logo-item">
+        <img src="img/upm-logo.png" alt="Universidad Politecnica de Madrid logo">
+      </div>
+    </div>
+  </div>
+
   <!-- Hero Section with Background Image -->
   <section class="hero-section">
     <div class="hero-bg"></div>
@@ -233,6 +406,8 @@
         <a href="#datasets" class="btn btn-secondary">Explore Datasets</a>
         <a href="sparql.html" class="btn btn-secondary">SPARQL Endpoint</a>
         <a href="visualize_kg.html" class="btn btn-secondary">Visualize Knowledge Graph</a>
+        <a href="https://citizen.svagnoni.linkeddata.es" class="btn btn-primary" target="_blank"><i class="fas fa-users"></i> Citizen Interface</a>
+        <a href="https://link.springer.com/chapter/10.1007/978-3-032-02225-7_9" class="btn" target="_blank" style="background:rgba(255,215,0,0.18);border:2px solid #ffd700;color:#ffd700;"><i class="fas fa-file-alt"></i> Read the Paper</a>
       </div>
     </div>
   </section>
@@ -251,6 +426,7 @@
           <li><a href="#documentation"><i class="fas fa-file-alt"></i> Documentation</a></li>
           <li><a href="sparql.html"><i class="fas fa-search"></i> SPARQL Endpoint</a></li>
           <li><a href="visualize_kg.html"><i class="fas fa-project-diagram"></i> Knowledge Graph Visualization</a></li>
+          <li><a href="https://citizen.svagnoni.linkeddata.es" target="_blank"><i class="fas fa-users"></i> Citizen Interface - Explore & Search Deliberations</a></li>
         </ul>
       </nav>
     </div>
@@ -262,6 +438,20 @@
       <p>The Deliberation Knowledge Graph project aims to connect various deliberative process datasets and ontologies into a comprehensive knowledge graph. This project provides a unified framework for analyzing deliberative processes across different platforms and contexts, from formal parliamentary debates to citizen participation initiatives.</p>
       <p>By integrating diverse datasets and ontologies, the Deliberation Knowledge Graph enables researchers, policymakers, and citizens to explore the connections between different deliberative processes, identify patterns, and gain insights into how deliberation works across various contexts.</p>
       
+      <div class="publication-card">
+        <div class="pub-icon"><i class="fas fa-book-open"></i></div>
+        <div class="pub-body">
+          <div class="pub-label">Research Publication &bull; EGOVIS 2025</div>
+          <div class="pub-title">A Deliberation Knowledge Graph: Bridging Institutional and Civic Democratic Discourse</div>
+          <div class="pub-meta">Simone Vagnoni &amp; Víctor Rodríguez-Doncel &mdash; In: <em>Electronic Government and the Information Systems Perspective</em>, LNCS vol.&nbsp;16049, pp.&nbsp;122–136, Springer (2025)</div>
+          <div class="pub-links">
+            <a href="https://link.springer.com/chapter/10.1007/978-3-032-02225-7_9" target="_blank" class="btn-springer">
+              <i class="fas fa-external-link-alt"></i> Read on Springer
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="authors">
         <h3>Authors</h3>
         <div class="author-card">
@@ -420,6 +610,34 @@
 
   <section id="ontologies" class="section">
     <div class="container">
+      <div class="ontology-download">
+        <h2>Deliberation Ontology</h2>
+        <p>The core ontology of this project, which integrates concepts from the ontologies listed below:</p>
+        <div class="mappings-download">
+          <a href="ontologies/deliberation.owl" class="btn">Download Deliberation Ontology</a>
+          <a href="ontologies/mappings.owl" class="btn btn-secondary">Download Ontology Mappings</a>
+        </div>
+
+        <div class="ontology-diagram">
+          <img src="img/del-ontology-diagram.png" alt="Deliberation Ontology high-level diagram">
+        </div>
+        
+        <div class="ontology-mappings-info">
+          <h3>Ontology Mappings</h3>
+          <p>The mappings.owl file contains explicit mappings between the Deliberation Ontology and other standard ontologies like FOAF, Dublin Core, SIOC, AIF, and LKIF. These mappings enable interoperability and integration with existing semantic web resources.</p>
+          <p>Key mapping relationships include:</p>
+          <ul>
+            <li><strong>skos:exactMatch</strong> - Concepts that are exactly equivalent</li>
+            <li><strong>skos:closeMatch</strong> - Concepts that are very similar but not identical</li>
+            <li><strong>skos:relatedMatch</strong> - Concepts that are related but not equivalent</li>
+            <li><strong>skos:broadMatch</strong> - The source concept is broader than the target</li>
+            <li><strong>skos:narrowMatch</strong> - The source concept is narrower than the target</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
       <h2>Relevant Ontologies</h2>
       <table class="ontologies-table">
         <thead>
@@ -593,27 +811,6 @@
 
       <hr>
 
-      <div class="ontology-download">
-        <h3>Deliberation Ontology</h3>
-        <p>The core ontology of this project, which integrates concepts from the above ontologies:</p>
-        <div class="mappings-download">
-          <a href="ontologies/deliberation.owl" class="btn">Download Deliberation Ontology</a>
-          <a href="ontologies/mappings.owl" class="btn btn-secondary">Download Ontology Mappings</a>
-        </div>
-        
-        <div class="ontology-mappings-info">
-          <h4>Ontology Mappings</h4>
-          <p>The mappings.owl file contains explicit mappings between the Deliberation Ontology and other standard ontologies like FOAF, Dublin Core, SIOC, AIF, and LKIF. These mappings enable interoperability and integration with existing semantic web resources.</p>
-          <p>Key mapping relationships include:</p>
-          <ul>
-            <li><strong>skos:exactMatch</strong> - Concepts that are exactly equivalent</li>
-            <li><strong>skos:closeMatch</strong> - Concepts that are very similar but not identical</li>
-            <li><strong>skos:relatedMatch</strong> - Concepts that are related but not equivalent</li>
-            <li><strong>skos:broadMatch</strong> - The source concept is broader than the target</li>
-            <li><strong>skos:narrowMatch</strong> - The source concept is narrower than the target</li>
-          </ul>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -914,8 +1111,26 @@ graph TD
   </section>
 
   <footer>
+    <div class="logo-bar bottom">
+      <div class="container logo-container">
+        <div class="logo-item">
+          <img src="img/unibo-logo.png" alt="University of Bologna logo">
+        </div>
+        <div class="logo-item">
+          <img src="img/upm-logo.png" alt="Universidad Politecnica de Madrid logo">
+        </div>
+      </div>
+    </div>
     <div class="container">
       <p>&copy; 2025 Simone Vagnoni, CIRSFID, University of Bologna - OEG, Universidad Politecnica de Madrid</p>
+      <p>
+        <a href="https://gitlab.com/CIRSFID/Deliberation-Knowledge-Graph" target="_blank">
+          <i class="fab fa-gitlab"></i> GitLab
+        </a> |
+        <a href="https://citizen.svagnoni.linkeddata.es" target="_blank">
+          <i class="fas fa-users"></i> Main Citizen Interface
+        </a>
+      </p>
     </div>
   </footer>
 

@@ -1,4 +1,6 @@
 # Large data files
+data/
+analysis/
 data/habermas_machine/data/*.parquet
 data/delidata/data/raw/**/*.tsv
 data/delidata/data/combined/*

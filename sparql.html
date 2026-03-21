@@ -16,9 +16,9 @@
       --primary-color: #4a9d3c; /* Green for vines */
       --primary-light: #6abe5c;
       --primary-dark: #3a7d2c;
-      --secondary-color: #8b5a2b; /* Brown for Donkey Kong */
-      --secondary-light: #a67c4e;
-      --secondary-dark: #6b4521;
+      --secondary-color: #0f172a; /* Deep teal accent */
+      --secondary-light: #1f354a;
+      --secondary-dark: #0b1626;
       --accent-color: #ffd700; /* Gold for Daft Punk helmets */
       --accent-light: #ffe44d;
       --accent-dark: #ccac00;
@@ -85,6 +85,58 @@
     .hero-buttons .btn {
       padding: 0.8rem 2rem;
       font-size: 1.1rem;
+    }
+
+    /* University logo bars */
+    .logo-bar {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(34, 62, 40, 0.9) 55%, rgba(74, 157, 60, 0.88) 100%);
+      border-bottom: 1px solid rgba(15, 23, 42, 0.12);
+      box-shadow: 0 12px 24px rgba(15, 23, 42, 0.28);
+      backdrop-filter: blur(12px);
+    }
+
+    .logo-bar.bottom {
+      border-top: 1px solid rgba(15, 23, 42, 0.12);
+      border-bottom: none;
+      margin-top: 3rem;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(34, 62, 40, 0.9) 55%, rgba(74, 157, 60, 0.88) 100%);
+      box-shadow: 0 -12px 24px rgba(15, 23, 42, 0.24);
+    }
+
+    .logo-bar .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      padding: 0.85rem 0;
+    }
+
+    .logo-bar .logo-item {
+      flex: 0 1 auto;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(244, 249, 255, 0.93));
+      padding: 0.65rem 1.7rem;
+      border-radius: 9999px;
+      box-shadow: 0 16px 32px rgba(12, 74, 110, 0.28);
+      border: 1px solid rgba(12, 74, 110, 0.12);
+    }
+
+    .logo-bar img {
+      max-height: 66px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 12px 24px rgba(15, 23, 42, 0.28));
+    }
+
+    .logo-bar .logo-item:first-child {
+      background: radial-gradient(circle at 50% 40%, rgba(254, 247, 244, 0.98), rgba(248, 233, 226, 0.92));
+      border: 1px solid rgba(160, 30, 50, 0.22);
+    }
+
+    .logo-bar .logo-item:last-child {
+      background: radial-gradient(circle at 50% 40%, rgba(240, 248, 255, 0.96), rgba(230, 242, 254, 0.9));
+      border: 1px solid rgba(22, 64, 122, 0.2);
     }
     
     /* Override header background */
@@ -218,6 +270,17 @@
   </style>
 </head>
 <body>
+  <div class="logo-bar">
+    <div class="container logo-container">
+      <div class="logo-item">
+        <img src="img/unibo-logo.png" alt="University of Bologna logo">
+      </div>
+      <div class="logo-item">
+        <img src="img/upm-logo.png" alt="Universidad Politecnica de Madrid logo">
+      </div>
+    </div>
+  </div>
+
   <!-- Hero Section with Background Image -->
   <section class="hero-section">
     <div class="hero-bg"></div>
@@ -227,6 +290,7 @@
       <div class="hero-buttons">
         <a href="index.html" class="btn">Back to Home</a>
         <a href="#sparql-interface" class="btn btn-secondary">Start Querying</a>
+        <a href="https://citizen.svagnoni.linkeddata.es" class="btn btn-primary" target="_blank"><i class="fas fa-users"></i> Citizen Interface</a>
       </div>
     </div>
   </section>
@@ -241,6 +305,7 @@
           <li><a href="#sparql-interface"><i class="fas fa-search"></i> Query Interface</a></li>
           <li><a href="#example-queries"><i class="fas fa-list"></i> Example Queries</a></li>
           <li><a href="#about-sparql"><i class="fas fa-info-circle"></i> About SPARQL</a></li>
+          <li><a href="https://citizen.svagnoni.linkeddata.es" target="_blank"><i class="fas fa-users"></i> Citizen Interface</a></li>
         </ul>
       </nav>
     </div>
@@ -451,8 +516,26 @@ WHERE {
   </section>
 
   <footer>
+    <div class="logo-bar bottom">
+      <div class="container logo-container">
+        <div class="logo-item">
+          <img src="img/unibo-logo.png" alt="University of Bologna logo">
+        </div>
+        <div class="logo-item">
+          <img src="img/upm-logo.png" alt="Universidad Politecnica de Madrid logo">
+        </div>
+      </div>
+    </div>
     <div class="container">
       <p>&copy; 2025 Simone Vagnoni, CIRSFID, University of Bologna - OEG, Universidad Politecnica de Madrid</p>
+      <p>
+        <a href="https://gitlab.com/CIRSFID/Deliberation-Knowledge-Graph" target="_blank">
+          <i class="fab fa-gitlab"></i> GitLab
+        </a> |
+        <a href="https://citizen.svagnoni.linkeddata.es" target="_blank">
+          <i class="fas fa-users"></i> Main Citizen Interface
+        </a>
+      </p>
     </div>
   </footer>
 

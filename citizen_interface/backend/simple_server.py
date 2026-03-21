@@ -62,6 +62,7 @@ def extract_processes():
     global processes_cache
 
     # Get all processes - fully compliant with DEL ontology
+    # Uses aggregation to count contributions efficiently
     query = """
     PREFIX del: <https://w3id.org/deliberation/ontology#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -105,8 +106,16 @@ def extract_processes():
 
         # Get forum name or infer from URI
         platform = str(row.forumName) if row.forumName else "Unknown"
-        if platform == "Unknown":
-            if "hys_" in process_uri or "haveyoursay" in process_uri:
+
+        # Check if it's Pol.is platform (has explicit forum name)
+        if platform == "Pol.is":
+            platform = "Pol.is"
+        elif platform == "Unknown":
+            if "polis_" in process_uri:
+                platform = "Pol.is"
+            elif "cip_" in process_uri or "collective_intelligence" in process_uri.lower():
+                platform = "Collective Intelligence Project"
+            elif "hys_" in process_uri or "haveyoursay" in process_uri:
                 platform = "EU Have Your Say"
             elif "ep_debate" in process_uri or "europarl" in process_uri:
                 platform = "European Parliament"
@@ -114,6 +123,12 @@ def extract_processes():
                 platform = "Decidim"
             elif "decide_madrid" in process_uri:
                 platform = "Decide Madrid"
+            elif "scotus_" in process_uri:
+                platform = "US Supreme Court Oral Arguments"
+            elif "habermas" in process_uri:
+                platform = "Habermas Position Statements"
+            elif "yourpriorities.org" in process_uri:
+                platform = "Your Priorities"
 
         # Generate description if missing
         description = str(row.description) if row.description else ""
@@ -442,20 +457,26 @@ def _get_process_details(uri):
             PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
             PREFIX foaf: <http://xmlns.com/foaf/0.1/>
             PREFIX dcterms: <http://purl.org/dc/terms/>
-            SELECT ?contribution ?text ?participant ?participantName ?responseTo ?timestamp
+            SELECT DISTINCT ?contribution
+                   (SAMPLE(?text1) as ?text)
+                   (SAMPLE(?participant1) as ?participant)
+                   (SAMPLE(?participantName1) as ?participantName)
+                   (SAMPLE(?responseTo1) as ?responseTo)
+                   (SAMPLE(?timestamp1) as ?timestamp)
             WHERE {{
                 <{uri}> del:hasContribution ?contribution .
-                OPTIONAL {{ ?contribution del:text ?text }}
-                OPTIONAL {{ ?contribution rdfs:comment ?text }}
-                OPTIONAL {{ ?contribution del:content ?text }}
-                OPTIONAL {{ ?contribution del:madeBy ?participant }}
-                OPTIONAL {{ ?participant foaf:name ?participantName }}
-                OPTIONAL {{ ?participant del:name ?participantName }}
-                OPTIONAL {{ ?contribution del:responseTo ?responseTo }}
-                OPTIONAL {{ ?contribution del:timestamp ?timestamp }}
-                OPTIONAL {{ ?contribution dcterms:created ?timestamp }}
+                OPTIONAL {{ ?contribution del:text ?text1 }}
+                OPTIONAL {{ ?contribution rdfs:comment ?text1 }}
+                OPTIONAL {{ ?contribution del:content ?text1 }}
+                OPTIONAL {{ ?contribution del:madeBy ?participant1 }}
+                OPTIONAL {{ ?contribution del:author ?participant1 }}
+                OPTIONAL {{ ?participant1 foaf:name ?participantName1 }}
+                OPTIONAL {{ ?participant1 del:name ?participantName1 }}
+                OPTIONAL {{ ?contribution del:responseTo ?responseTo1 }}
+                OPTIONAL {{ ?contribution del:timestamp ?timestamp1 }}
+                OPTIONAL {{ ?contribution dcterms:created ?timestamp1 }}
             }}
-            LIMIT 1000
+            GROUP BY ?contribution
             """
 
             contributions = []
@@ -835,6 +856,57 @@ def autocomplete():
                 break
 
     return jsonify({'suggestions': list(suggestions)})
+
+
+@app.route('/sparql')
+def sparql_endpoint():
+    """SPARQL 1.1 HTTP Protocol endpoint — reuses the KG already in memory"""
+    query = request.args.get('query', '').strip()
+    if not query:
+        return jsonify({'error': 'Missing query parameter'}), 400
+
+    try:
+        results = kg.query(query)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 400
+
+    from rdflib import URIRef, Literal, BNode
+
+    # SELECT
+    if hasattr(results, 'vars') and results.vars:
+        vars_ = [str(v) for v in results.vars]
+        bindings = []
+        for row in results:
+            binding = {}
+            for v, val in zip(vars_, row):
+                if val is None:
+                    continue
+                if isinstance(val, URIRef):
+                    binding[v] = {'type': 'uri', 'value': str(val)}
+                elif isinstance(val, BNode):
+                    binding[v] = {'type': 'bnode', 'value': str(val)}
+                elif isinstance(val, Literal):
+                    entry = {'type': 'literal', 'value': str(val)}
+                    if val.language:
+                        entry['xml:lang'] = val.language
+                    if val.datatype:
+                        entry['datatype'] = str(val.datatype)
+                    binding[v] = entry
+            bindings.append(binding)
+        resp = jsonify({'head': {'vars': vars_}, 'results': {'bindings': bindings}})
+        resp.headers['Access-Control-Allow-Origin'] = '*'
+        return resp
+
+    # ASK
+    try:
+        if isinstance(results.askAnswer, bool):
+            resp = jsonify({'head': {}, 'boolean': results.askAnswer})
+            resp.headers['Access-Control-Allow-Origin'] = '*'
+            return resp
+    except AttributeError:
+        pass
+
+    return jsonify({'error': 'Unsupported query type'}), 400
 
 
 def main():

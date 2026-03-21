@@ -25,3 +25,6 @@ pyyaml>=5.4.0
 # Testing (opzionale)
 pytest>=6.0.0
 pytest-flask>=1.2.0
+
+# Semantic search
+sentence-transformers>=2.2.0

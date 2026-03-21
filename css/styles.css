@@ -557,12 +557,13 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: var(--secondary-color);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(34, 62, 40, 0.92) 55%, rgba(74, 157, 60, 0.9) 100%);
     color: white;
     padding: 3rem 0;
     text-align: center;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 -12px 30px rgba(15, 23, 42, 0.22);
 }
 
 footer::before {
@@ -581,8 +582,8 @@ footer .container {
 }
 
 footer p {
-    margin-bottom: 0;
-    opacity: 0.8;
+    margin-bottom: 0.5rem;
+    opacity: 0.85;
 }
 
 .footer-links {
@@ -599,6 +600,19 @@ footer p {
 .footer-links a:hover {
     opacity: 1;
     text-decoration: none;
+}
+
+footer p a {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 0.35rem;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+footer p a:hover {
+    color: var(--accent-light);
+    opacity: 1;
 }
 
 /* Card Styles */
