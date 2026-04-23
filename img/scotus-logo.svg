@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="16" fill="#1e3a5f"/>
+  <text x="60" y="45" font-family="Arial,sans-serif" font-weight="bold" font-size="13" fill="white" text-anchor="middle">US Supreme</text>
+  <text x="60" y="65" font-family="Arial,sans-serif" font-weight="bold" font-size="13" fill="white" text-anchor="middle">Court</text>
+  <text x="60" y="92" font-family="serif" font-size="22" fill="#c8a050" text-anchor="middle">⚖</text>
+</svg>
