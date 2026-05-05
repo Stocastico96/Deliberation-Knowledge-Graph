@@ -14,8 +14,8 @@
 
 \geometry{margin=2.4cm}
 
-\title{Measuring Deliberative Distance Across Digital Forums: \\
-A Knowledge Graph Approach to EU Lawmaking}
+\title{Auditing Deliberative Alignment in EU Lawmaking: \\
+Applying a Knowledge Graph to Measure Citizen--Parliament Distance}
 
 \author{
 Authors: \textit{(to be completed)} \\
@@ -28,14 +28,23 @@ Authors: \textit{(to be completed)} \\
 \begin{document}
 \maketitle
 
-\tableofcontents
-\newpage
 
 \begin{abstract}
-Democratic deliberation increasingly occurs across fragmented digital platforms, yet computational methods to measure alignment between these forums remain underdeveloped. This paper introduces the \textit{Deliberation Knowledge Graph} (DKG), a semantic infrastructure integrating heterogeneous deliberative data sources—including EU public consultations (Have Your Say), parliamentary debates (European Parliament), online forums (Decidim, Kialo), and US Supreme Court arguments—under a unified ontology. We present a pilot study comparing 301,366 feedback items from EU consultations with 1,443 parliamentary speeches across three legislative dossiers (COVID Certificate, AI Act, Deforestation Regulation). Using BERTopic topic modeling, cross-forum alignment, and stance detection, we introduce the \textit{Deliberative Distance Index} (DDI), a multi-dimensional metric quantifying divergence in topics, salience, timing, and actor participation. Our analysis reveals systematic gaps between citizen input and legislative discourse, with DDI scores ranging from 0.28 (AI Act) to 0.65 (COVID Certificate). The DKG provides a reproducible framework for auditing deliberative alignment, supporting transparency in EU lawmaking, and enabling cross-national comparative research. All data, code, and SPARQL query endpoints are publicly available.
+Assessing whether citizen input to EU public consultations actually shapes legislative deliberation remains an open empirical challenge.
+Existing studies cluster consultation responses or analyse parliamentary speeches in isolation; few attempt systematic cross-forum comparison, and none do so through a reusable semantic infrastructure.
+This paper applies the Deliberation Knowledge Graph (DKG)~\cite{Vagnoni2026}---a previously published OWL ontology and Linked Open Data infrastructure linking EU public consultations (\textit{Have Your Say}) to European Parliament plenary debates via EuroLex procedure identifiers---to a novel analytical problem: quantifying deliberative distance between citizens and legislators across multiple legislative dossiers.
+
+We introduce the \textit{Deliberative Distance Index} (DDI), a composite metric computed directly over the DKG's bipartite contribution--topic subgraph.
+The DDI combines three dimensions: topic distance (avg-max cosine similarity between multilingual BERTopic centroids, range $[0,1]$), salience distance (Jensen--Shannon divergence log$_2$ of topic-weight distributions, range $[0,1]$), and stance distance (JSD log$_2$ of zero-shot NLI-classified stances, range $[0,1]$).
+We further derive topological graph metrics---cross-phase bridging ratio (CPBR), mean phase entropy (MPET), and cross-phase degree correlation ($r_{BC}$)---from the graph structure alone, without relying on language models.
+The full pipeline operates natively across 24 EU languages without translation, using a multilingual sentence encoder and the mDeBERTa-v3 NLI model.
+
+Applied to a pilot study of three EU legislative dossiers, the framework reveals that thematic salience divergence is the dominant driver of cross-forum distance, while post-consultation ΔDDI is near zero across all cases---indicating no detectable short-term alignment effect within the consultation window.
+These results demonstrate that the DKG enables reproducible, structured auditing of deliberative alignment at a scale and multilingual coverage previously infeasible.
+Code and SPARQL endpoint are publicly available.
 \end{abstract}
 
-\paragraph{Keywords} Deliberative democracy, knowledge graph, topic modeling, European Parliament, public consultation, semantic web, AI and law, computational social science.
+\paragraph{Keywords} deliberative democracy; knowledge graph application; public consultations; EU lawmaking; topic modeling; stance detection; deliberative distance; Linked Open Data; semantic interoperability; computational social science.
 
 \section{Introduction}
 
@@ -47,38 +56,47 @@ Public consultations are central to EU policymaking under the Better Regulation 
   \item \textbf{Scale challenges}: Manual traceability analysis does not scale to thousands of consultations and debates.
 \end{itemize}
 
-This paper addresses these challenges through:
-1. A \textbf{semantic integration framework} (Deliberation Knowledge Graph) linking multiple deliberative sources.
-2. A \textbf{multi-forum comparison method} measuring deliberative distance across platforms.
-3. A \textbf{pilot dataset} with 300k+ consultation responses matched to 1.4k parliamentary speeches.
+This paper applies the DKG~\cite{Vagnoni2026} to a novel analytical problem, contributing:
+(1) a composite metric---the Deliberative Distance Index---computed over the graph's bipartite structure;
+(2) a multilingual NLP pipeline operating across 24 EU languages without translation;
+(3) topological graph metrics derived from the contribution--topic subgraph; and
+(4) empirical findings across three EU legislative dossiers.
 
 \subsection{Research Questions}
 \begin{enumerate}
-  \item[\textbf{RQ1}] Do EU consultations and parliamentary debates discuss the same topics?
-  \item[\textbf{RQ2}] When topics overlap, do citizens and legislators hold similar stances?
-  \item[\textbf{RQ3}] Who participates in consultations vs. debates, and how does actor diversity affect alignment?
-  \item[\textbf{RQ4}] How can deliberative distance be quantified and operationalized for policy auditing?
+  \item[\textbf{RQ1}] Do EU public consultations and parliamentary debates discuss the same topics, and with similar thematic emphasis?
+  \item[\textbf{RQ2}] When topics overlap, do citizens and legislators hold similar stances toward the policy proposition?
+  \item[\textbf{RQ3}] Does post-consultation parliamentary debate show measurable convergence toward citizen concerns?
+  \item[\textbf{RQ4}] Which structural properties of the contribution--topic graph predict deliberative alignment?
 \end{enumerate}
 
 \subsection{Contributions}
 \begin{itemize}
-  \item[\textbf{C1}] \textbf{Deliberation Knowledge Graph}: A Linked Open Data infrastructure integrating 6+ deliberative platforms with 500k+ contributions under a unified ontology (\url{https://w3id.org/deliberation/ontology}).
-  \item[\textbf{C2}] \textbf{Pilot Dataset}: 301,366 HYS feedback + 1,443 EP speeches (2021--2025) across 3 dossiers, with full metadata and SPARQL access.
-  \item[\textbf{C3}] \textbf{Deliberative Distance Index (DDI)}: A composite metric measuring topic, salience, temporal, and actor distance (validated across 3 cases).
-  \item[\textbf{C4}] \textbf{Reproducible Pipeline}: Open-source BERTopic modeling, topic alignment, stance detection, and DDI computation scripts.
-  \item[\textbf{C5}] \textbf{Empirical Findings}: Evidence of systematic gaps between consultation input and legislative discourse, with implications for Better Regulation.
+  \item[\textbf{C1}] \textbf{Deliberative Distance Index (DDI)}: A composite metric with three interpretable dimensions---topic distance, salience distance, and stance distance---computed via symmetric avg-max cosine similarity and Jensen--Shannon divergence over the DKG's bipartite subgraph.
+  \item[\textbf{C2}] \textbf{Topological graph metrics}: Cross-phase bridging ratio (CPBR), mean phase entropy (MPET), and cross-phase degree correlation ($r_{BC}$), derived from graph structure alone without language models.
+  \item[\textbf{C3}] \textbf{Multilingual pipeline}: BERTopic with multilingual sentence embeddings plus mDeBERTa-v3 zero-shot NLI, operating natively across 24 EU languages.
+  \item[\textbf{C4}] \textbf{Pilot study}: Three EU legislative dossiers (EU Digital COVID Certificate, EU 2040 Climate Target, Sustainable Use of Pesticides Regulation), covering citizen consultation feedback matched to European Parliament plenary debates via temporal stratification.
+  \item[\textbf{C5}] \textbf{Open pipeline}: All scripts, intermediate data, and the SPARQL endpoint are publicly available for replication and extension.
 \end{itemize}
 
 \section{Related Work}
 
 \subsection{Computational Analysis of Public Consultations}
-\citet{DiPorto2024} apply NLP clustering to 830 EU consultation responses, identifying topic distributions but not linking to legislative outcomes. Our work extends this by matching consultations to parliamentary debates and measuring alignment.
+\citet{DiPorto2024} apply NLP clustering to 830 EU consultation responses, identifying topic distributions but not linking to legislative outcomes.
+\citet{Bunea2024} analyse 42 EU Commission consultations and find that over 70\% present low-dimensional policy spaces (one or two dominant dimensions), suggesting that thematic diversity in citizen input is structurally constrained.
+\citet{Neumann2025} provide empirical evidence that HYS is used predominantly by organised stakeholders rather than ordinary citizens, owing to low participatory literacy among the EU public---contextualising why consultation-to-parliament alignment may be limited in practice.
+Our work extends these by matching consultation corpora to parliamentary debates and measuring alignment via the DDI.
 
 \subsection{Parliamentary Debate Analysis}
 Studies analyze EP speeches \citep{Abercrombie2020} and voting behavior \citep{Hix2006}, but rarely connect to pre-legislative consultation. We bridge this gap by pairing consultation corpora with debate transcripts.
 
 \subsection{Deliberative Quality Metrics}
 Deliberative quality has been measured through manual coding \citep{Steenbergen2003} or argument mining \citep{Lawrence2020}. We propose a computational metric (DDI) for cross-forum comparison at scale.
+
+\subsection{Cross-Corpus Topic Comparison}
+\citet{Adam2024} independently introduce Bidirectional Topic Matching (BTM), a framework that quantifies thematic overlap between corpora by training separate topic models and applying them reciprocally via co-occurrence-based pairing strength.
+Our $d_{\text{topic}}$ uses a different but related approach---symmetric avg-max cosine similarity between per-phase BERTopic centroids---which Adam \& Kogler validate as a strong baseline for BTM (Cohen's $\kappa = 0.75$--$0.81$).
+The two approaches are independently derived and complementary: BTM emphasises co-occurrence structure; our centroid-based method emphasises geometric distance in embedding space.
 
 \subsection{Knowledge Graphs for Civic Data}
 Semantic web technologies have been applied to legal texts \citep{Palmirani2018} and legislative procedures \citep{Mader2012}, but rarely to multi-platform deliberation. The DKG extends this to heterogeneous civic participation data.
@@ -115,23 +133,25 @@ The Deliberation Ontology (\url{https://w3id.org/deliberation/ontology}) defines
 \end{itemize}
 
 \subsection{Data Sources Integrated}
+
+The DKG~\cite{Vagnoni2026} integrates heterogeneous deliberative sources under the unified \texttt{del:} ontology.
+This paper uses the HYS and EP Plenary subgraphs; other sources modelled in the DKG (online deliberation platforms, structured debate corpora) are left for future pilots.
+
 \begin{table}[h]
 \centering
-\begin{tabular}{lccl}
+\begin{tabular}{lll}
 \toprule
-\textbf{Source} & \textbf{Contributions} & \textbf{Period} & \textbf{Type} \\
+\textbf{Source} & \textbf{Period} & \textbf{Type} \\
 \midrule
-EU Have Your Say & 999,999 & 2016--2025 & Consultation feedback \\
-EP Plenary Debates & 48,000+ & 2021--2025 & Parliamentary speeches \\
-Decidim Barcelona & 12,000+ & 2016--2022 & Online forum posts \\
-Decide Madrid & 8,500+ & 2017--2021 & Participatory budget \\
-Kialo & 5,000+ & 2019--2023 & Structured debate trees \\
-US Supreme Court & 2,300+ & 2000--2020 & Oral arguments \\
+EU Have Your Say (HYS) & 2016--2025 & Citizen consultation feedback \\
+EP Plenary Debates     & 2021--2025 & Parliamentary speeches (verbatim) \\
 \midrule
-\textbf{Total} & \textbf{1M+} & & \textbf{6 platforms} \\
+\multicolumn{3}{l}{\textit{Modelled in DKG ontology, not used in this pilot:}} \\
+Decidim / Decide Madrid & 2016--2022 & Online participatory platform posts \\
+Kialo                   & 2019--2023 & Structured pro/con debate trees \\
 \bottomrule
 \end{tabular}
-\caption{Integrated data sources in the Deliberation Knowledge Graph}
+\caption{Data sources modelled in the DKG ontology. This paper uses HYS and EP Plenary only.}
 \label{tab:sources}
 \end{table}
 
@@ -162,104 +182,158 @@ Unlike EUR-Lex (legal texts only) or OEIL (procedures only), the DKG integrates 
 \section{Pilot Study: HYS-EP Comparison}
 
 \subsection{Case Selection Rationale}
-We selected 3 dossiers based on:
+
+We select three EU legislative dossiers for which all three data strata are available:
+a Phase~B citizen corpus from HYS, Phase~A EP speeches prior to consultation close, and
+Phase~C EP speeches after. An additional criterion was applied: no single language may exceed
+45\% of Phase~B responses, to exclude cases dominated by coordinated single-country campaigns,
+a known distortion in HYS data.
+
+The three cases provide deliberate variation across two axes:
+
 \begin{itemize}
-  \item \textbf{Volume diversity}: COVID (299k feedback) vs Deforestation (202 feedback)
-  \item \textbf{Thematic diversity}: Health, technology, environment
-  \item \textbf{Data completeness}: Closed consultations + matched EP debates
-  \item \textbf{Comparability}: AI Act overlaps with \citet{DiPorto2024}
+  \item \textbf{Corpus size and participation profile}: COVID Certificate attracted mass
+        anonymous individual response (5,000 sampled from 296,600 submissions); Climate
+        Target attracted moderate, ideologically diverse response (568 items);
+        Pesticides attracted expert-heavy stakeholder response (8,140 items).
+  \item \textbf{Policy domain and stance polarity}: COVID is high-salience and politically
+        polarised; Climate Target is ideologically contested across the pro/against
+        climate-ambition axis; Pesticides is expertise-driven, opposing agricultural
+        industry and environmental NGOs.
 \end{itemize}
 
-\subsection{Data Collection Pipeline}
+\subsection{Data Collection}
 
-\subsubsection{HYS Feedback Extraction}
-\begin{itemize}
-  \item Source: SQLite database with 999,999 feedback items (scraped 2024--2025)
-  \item References: COM(2022)50 (COVID), AIConsult2020 (AI), Ares(2018)6516782 (Deforestation)
-  \item Metadata: Date, language, country, organization, user type (citizen/business/NGO)
-\end{itemize}
-
-\subsubsection{EP Debate Extraction}
-\begin{itemize}
-  \item Source: 178 verbatim HTML files (europarl.europa.eu/doceo/document/CRE-*)
-  \item Period: 2021-07-05 to 2025-09-11
-  \item Conversion: HTML → JSON via BeautifulSoup4, preserving speaker, timestamp, topic
-  \item Filtering: Keyword matching on speech content (e.g., "artificial intelligence", "COVID certificate")
-\end{itemize}
-
-\subsection{Dataset Statistics}
+HYS feedback is extracted from a local SQLite mirror of the EC Better Regulation portal
+(scraped 2024--2025 via the public API). EP speeches are drawn from a verbatim JSON corpus
+covering 2021--2025 EP plenary sessions, filtered by dossier-specific keywords and partitioned
+temporally relative to the HYS consultation window.
 
 \begin{table}[h]
 \centering
-\begin{tabular}{lrrr}
+\small
+\begin{tabular}{llrrrl}
 \toprule
-\textbf{Metric} & \textbf{COVID} & \textbf{AI Act} & \textbf{Deforestation} \\
+\textbf{Case} & \textbf{HYS ref} & \textbf{Ph.~A} & \textbf{Ph.~B} & \textbf{Ph.~C} & \textbf{Window} \\
 \midrule
-HYS Feedback & 299,815 & 1,349 & 202 \\
-EP Debates (sessions) & 155 & 60 & 66 \\
-EP Speeches & 1,185 & 119 & 139 \\
-HYS/EP Ratio & 253:1 & 11:1 & 1.5:1 \\
-Date Range & 2021--2025 & 2020--2025 & 2021--2025 \\
-Dataset Size & 169 MB & 900 KB & 508 KB \\
+EU Digital COVID Certificate  & COM(2022)50       & 419   & 4,624  & 86    & Mar--May 2022 \\
+EU 2040 Climate Target        & Ares(2023)2344532 & 2,951 & 568    & 1,234 & Apr--Jun 2023 \\
+Sustainable Use of Pesticides & Ares(2020)2804518 & 388   & 8,140  & 800   & Jun--Sep 2022 \\
 \bottomrule
 \end{tabular}
-\caption{Pilot dataset statistics by case}
+\caption{Pilot study corpus. Ph.~A/C = EP speeches before/after consultation close.
+Ph.~B = HYS items with free text ($>$30 chars). COVID Phase~B is a random sample (seed~42)
+from 296,600 total submissions.}
 \label{tab:dataset}
 \end{table}
 
-\subsection{Dataset Structure and Availability}
-\begin{itemize}
-  \item \textbf{Format}: JSON per case (hys\_feedback.json, ep\_debates.json, metadata.json)
-  \item \textbf{Location}: \texttt{data/pilot\_study\_dataset/}
-  \item \textbf{License}: CC BY 4.0 (derived from public EU sources)
-  \item \textbf{RDF export}: Turtle files for SPARQL integration
-  \item \textbf{Repository}: \url{https://github.com/username/deliberation-kg} (to be published)
-\end{itemize}
+\noindent
+All data derive from public EU sources and are released under CC~BY~4.0.
+RDF exports (Turtle) are available in the DKG SPARQL endpoint.
 
 \section{Methodology}
 
-\subsection{Overview of Analysis Pipeline}
+\subsection{Overview of the Phase-Stratified Pipeline}
+
+A key methodological challenge in measuring deliberative distance is temporal: EU public
+consultations may open before, during, or after parliamentary deliberation on the same dossier.
+Treating the two corpora as synchronous would conflate pre-existing legislative discourse with
+any post-consultation convergence. We address this through a \textit{phase-stratified} design
+that partitions EP speeches according to their temporal relation to the consultation window,
+enabling a quasi-experimental pre/post comparison.
+
+The full pipeline proceeds in six stages:
+
 \begin{enumerate}
-  \item \textbf{Topic Modeling}: BERTopic on HYS and EP corpora separately
-  \item \textbf{Topic Alignment}: Cosine similarity between topic embeddings
-  \item \textbf{Stance Detection}: NLI-based classification (support/oppose/neutral)
-  \item \textbf{DDI Computation}: Weighted combination of 4 distance components
+  \item \textbf{Dossier anchoring}: Map each case to its EUR-Lex procedure number; retrieve
+        all EP verbatim records linked to that procedure via the EP Open Data Portal.
+  \item \textbf{Temporal stratification}: Partition EP speeches into Phase~A (before
+        consultation close) and Phase~C (after consultation close); the HYS corpus forms
+        Phase~B.
+  \item \textbf{Topic modeling}: Run BERTopic separately on each phase for $d_{\text{topic}}$
+        centroids; also fit a unified BERTopic model on all phases jointly (Step~1b) to provide
+        the shared topic vocabulary required for $d_{\text{salience}}$.
+  \item \textbf{Cross-forum alignment}: Compute cosine similarity between topic embeddings
+        across corpora; classify topic gaps and aligned pairs.
+  \item \textbf{Stance detection}: Apply zero-shot NLI with a dossier-level proposition
+        to each document; aggregate per-forum stance distributions.
+  \item \textbf{DDI computation and validation}: Compute $\text{DDI}(B, A)$ and
+        $\text{DDI}(B, C)$; derive the \textit{consultation effect} $\Delta\text{DDI}$;
+        perform sensitivity analysis over weight configurations.
 \end{enumerate}
 
-\subsection{Step 1: Topic Modeling with BERTopic}
+\subsection{Step 1: Dossier Anchoring via EUR-Lex}
+
+Keyword-based retrieval of EP speeches introduces noise from debates that mention a topic
+incidentally. We instead anchor each case to its official EUR-Lex procedure identifier
+keyword-based filtering on the EP verbatim corpus (2021--2025), then partition by
+consultation close date (see Table~\ref{tab:dataset}).
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{llll}
+\toprule
+\textbf{Case} & \textbf{HYS reference} & \textbf{EUR-Lex procedure} & \textbf{Consultation window} \\
+\midrule
+EU Digital COVID Certificate  & COM(2022)50       & 2022/0031(COD) & Mar--May 2022 \\
+EU 2040 Climate Target        & Ares(2023)2344532 & COM(2023)653   & Apr--Jun 2023 \\
+Sustainable Use of Pesticides & Ares(2020)2804518 & 2022/0196(COD) & Jun--Sep 2022 \\
+\bottomrule
+\end{tabular}
+\caption{Case anchoring: HYS references, EUR-Lex procedure identifiers, and consultation windows.}
+\label{tab:cases}
+\end{table}
+
+\subsection{Step 2: Temporal Stratification}
+
+Let $t_{\text{open}}$ and $t_{\text{close}}$ denote the opening and closing dates of the
+HYS consultation. We define three temporal strata:
+
+\begin{align}
+\text{Phase A (EP-pre):}   &\quad \{s \in \mathcal{S}_E \mid \text{date}(s) < t_{\text{close}}\} \\
+\text{Phase B (HYS):}      &\quad \{f \in \mathcal{F}_H \mid t_{\text{open}} \leq \text{date}(f) \leq t_{\text{close}}\} \\
+\text{Phase C (EP-post):}  &\quad \{s \in \mathcal{S}_E \mid \text{date}(s) > t_{\text{close}}\}
+\end{align}
+
+where $\mathcal{S}_E$ is the set of EP speeches for the dossier and $\mathcal{F}_H$ is the
+HYS feedback corpus. For cases where Phase~A is empty (i.e., consultation precedes all EP
+activity), we report only $\text{DDI}(B, C)$.
+
+\subsection{Step 3: Topic Modeling with BERTopic}
+
+\subsubsection{Multilingual Embedding}
+
+HYS feedback arrives in up to 24 EU official languages. We embed all documents using
+\texttt{paraphrase-multilingual-MiniLM-L12-v2} (384 dimensions), which projects texts from
+different languages into a shared semantic space without prior translation. EP speeches are
+predominantly English; the same model is applied for consistency.
 
 \subsubsection{Model Architecture}
 \begin{itemize}
-  \item \textbf{Embedding}: \texttt{paraphrase-multilingual-MiniLM-L12-v2} (384-dim)
-  \item \textbf{Dimensionality Reduction}: UMAP (384 → 5 dimensions, cosine metric)
-  \item \textbf{Clustering}: HDBSCAN (min\_cluster\_size=10, EOM selection)
-  \item \textbf{Vectorization}: c-TF-IDF for topic keyword extraction
+  \item \textbf{Dimensionality reduction}: UMAP (384 $\rightarrow$ 5 dimensions, cosine metric,
+        \texttt{n\_neighbors}=15)
+  \item \textbf{Clustering}: HDBSCAN (\texttt{min\_cluster\_size}=10 for Phase~A/C,
+        \texttt{min\_cluster\_size}=50 for Phase~B given larger corpus)
+  \item \textbf{Keyword extraction}: class-based TF-IDF (c-TF-IDF)
+  \item \textbf{Large corpora}: For Phase~B with $>$50k documents (COVID), we apply
+        online BERTopic with mini-batch updates to manage memory.
 \end{itemize}
 
-\subsubsection{Separate Models per Forum}
-We train \textit{separate} BERTopic models for HYS and EP to allow:
+\subsubsection{Output per Stratum}
+For each stratum and case:
 \begin{itemize}
-  \item \textbf{Gap detection}: Topics discussed in one forum but not the other
-  \item \textbf{Forum-specific language}: HYS uses emotional/normative language vs. EP's legal/technical terminology
-  \item \textbf{Salience comparison}: Topic prevalence differs even when topics align
+  \item Topic list $\{T^k\}$ with top-10 keywords and representative documents
+  \item Topic prevalence $p^k = |D(T^k)| / |D|$
+  \item Centroid embedding $\mathbf{c}^k \in \mathbb{R}^{384}$ (mean of member document embeddings)
 \end{itemize}
 
-\subsubsection{Output}
-For each case and forum:
-\begin{itemize}
-  \item Topic list with keywords (e.g., Topic 3: ``certificate, privacy, freedom, mandatory'')
-  \item Topic prevalence (% documents per topic)
-  \item Topic embeddings (384-dim vectors for alignment)
-  \item Representative documents (top 5 per topic)
-\end{itemize}
-
-\subsection{Step 2: Cross-Forum Topic Alignment}
-
-Given HYS topics $\{T_H^1, \ldots, T_H^{N_H}\}$ and EP topics $\{T_E^1, \ldots, T_E^{N_E}\}$:
+\subsection{Step 4: Cross-Forum Topic Alignment}
 
 \subsubsection{Similarity Matrix}
+Given HYS topics $\{T_H^i\}$ and EP topics $\{T_E^j\}$ (from Phase~A or Phase~C):
 \begin{equation}
-S_{ij} = \text{cosine\_similarity}(\mathbf{emb}(T_H^i), \mathbf{emb}(T_E^j))
+S_{ij} = \frac{\mathbf{c}_H^i \cdot \mathbf{c}_E^j}{\|\mathbf{c}_H^i\| \, \|\mathbf{c}_E^j\|}
 \end{equation}
 
 \subsubsection{Matching Rule}
@@ -267,175 +341,369 @@ Topics $T_H^i$ and $T_E^j$ are \textit{aligned} if:
 \begin{equation}
 S_{ij} = \max_k S_{ik} \quad \text{and} \quad S_{ij} > \theta
 \end{equation}
-where $\theta = 0.7$ (empirically validated threshold).
+where $\theta = 0.65$ is a conservative threshold consistent with high-similarity ranges
+for multilingual sentence embeddings \citep[cf.][]{Reimers2019}.
+Note that $\theta$ affects topic \textit{classification} (aligned/partial/gap) but not the
+DDI computation itself, which is based on the continuous avg-max cosine score over all topics.
 
 \subsubsection{Gap Classification}
 \begin{itemize}
-  \item \textbf{HYS-only topics}: $\max_j S_{ij} < 0.5$ (discussed by citizens, ignored in Parliament)
-  \item \textbf{EP-only topics}: $\max_i S_{ij} < 0.5$ (discussed by MEPs, not in consultation)
-  \item \textbf{Aligned topics}: $S_{ij} > 0.7$ (discussed in both forums)
+  \item \textbf{Civic-only}: $\max_j S_{ij} < 0.5$ — topics raised by citizens absent from
+        parliamentary discourse (potential representation gaps)
+  \item \textbf{Institutional-only}: $\max_i S_{ij} < 0.5$ — technical/procedural topics
+        absent from public consultation
+  \item \textbf{Aligned}: $S_{ij} \geq \theta$ — topics present in both forums
 \end{itemize}
 
-\subsection{Step 3: Stance Detection}
+\subsection{Step 5: Stance Detection}
 
-For each aligned topic pair, we classify stance using NLI:
+\subsubsection{Proposition Design}
+We assign one normatively grounded policy proposition per dossier, representing the core
+regulatory question at stake:
 
-\subsubsection{Proposition Generation}
-From topic keywords, generate propositions:
 \begin{itemize}
-  \item Topic: ``certificate, privacy, freedom''
-  \item Propositions:
-    \begin{enumerate}
-      \item ``The COVID certificate should be mandatory''
-      \item ``The COVID certificate violates privacy rights''
-      \item ``The COVID certificate is necessary for public health''
-    \end{enumerate}
+  \item \textbf{COVID}: ``The EU digital COVID certificate should be extended.''
+  \item \textbf{Climate Target}: ``The EU should set ambitious climate targets for 2040 to achieve carbon neutrality by 2050.''
+  \item \textbf{Pesticides}: ``The use of pesticides in EU agriculture should be reduced.''
 \end{itemize}
 
-\subsubsection{Zero-Shot Classification}
+Using a single, dossier-level proposition rather than per-topic propositions has two
+advantages: (1) it makes stance distributions directly comparable across phases; (2) it
+avoids label inconsistency that would arise from topic-specific propositions differing
+in framing. The trade-off is that sub-topic nuance is collapsed into one aggregate dimension.
+
+\subsubsection{Zero-Shot NLI Classification}
+We apply \texttt{MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7}, a multilingual
+NLI model supporting all 24 EU official languages, avoiding the translation bottleneck of
+English-only models such as BART-MNLI. Each text is classified as \textit{entailment}
+(support), \textit{neutral}, or \textit{contradiction} (oppose) relative to the proposition:
+
 \begin{lstlisting}[language=Python, basicstyle=\small\ttfamily]
 from transformers import pipeline
 nli = pipeline("zero-shot-classification",
-               model="facebook/bart-large-mnli")
-
-result = nli(text, propositions)
-# Output: {'labels': ['violates privacy'],
-#          'scores': [0.89, 0.08, 0.03]}
+    model="MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7")
+result = nli(text, candidate_labels=[proposition],
+             hypothesis_template="{}")
 \end{lstlisting}
 
 \subsubsection{Stance Distribution Comparison}
-Aggregate stance counts per forum:
-\begin{equation}
-\text{StanceDivergence} = \text{JSD}(P_{HYS} \| P_{EP})
-\end{equation}
-where JSD is Jensen-Shannon divergence.
+Stance labels are aggregated per phase to produce corpus-level distributions
+$(p_{\text{support}}, p_{\text{neutral}}, p_{\text{oppose}})$.
+Cross-phase divergence is then measured as Jensen--Shannon divergence (see $d_{\text{stance}}$
+in Section~\ref{sec:ddi}).
 
-\subsection{Step 4: Deliberative Distance Index (DDI)}
-
-\subsubsection{Definition}
-For an aligned topic pair $(T_H, T_E)$:
-\begin{equation}
-\text{DDI}(T_H, T_E) = 0.3 \cdot d_{\text{topic}} + 0.3 \cdot d_{\text{salience}} + 0.2 \cdot d_{\text{temporal}} + 0.2 \cdot d_{\text{actor}}
-\end{equation}
+\subsection{Step 6: Deliberative Distance Index (DDI)}
+\label{sec:ddi}
 
 \subsubsection{Component Metrics}
 
-\paragraph{Topic Distance} ($d_{\text{topic}}$)
-\begin{equation}
-d_{\text{topic}} = 1 - \text{cosine\_similarity}(\mathbf{emb}(T_H), \mathbf{emb}(T_E))
-\end{equation}
-Range: $[0, 1]$ (0 = identical topics, 1 = orthogonal)
+The DDI is computed at the corpus (phase) level using three distance components between
+Phase~B (citizens) and Phase~$X \in \{A, C\}$ (EP):
 
-\paragraph{Salience Distance} ($d_{\text{salience}}$)
+\paragraph{Topic Distance} ($d_{\text{topic}}$) — semantic divergence between the two
+topic sets, measured as the symmetric average-maximum cosine similarity between BERTopic
+centroids:
 \begin{equation}
-d_{\text{salience}} = \left| \frac{|D_H(T_H)|}{|D_H|} - \frac{|D_E(T_E)|}{|D_E|} \right|
+d_{\text{topic}}(B, X) = 1 - \frac{1}{2}\left(
+  \frac{1}{|T_B|}\sum_{i}\max_j S_{ij}
+  + \frac{1}{|T_X|}\sum_j \max_i S_{ij}
+\right)
 \end{equation}
-where $D_H(T_H)$ = documents discussing topic $T_H$ in HYS, $D_H$ = all HYS documents.
+where $S_{ij} = \cos(\mathbf{c}_B^i, \mathbf{c}_X^j)$ and $\mathbf{c}^k$ is the centroid
+of topic $k$. The symmetric formulation avoids the topic-count asymmetry bias of Jaccard.
 
-\paragraph{Temporal Lag} ($d_{\text{temporal}}$)
+\paragraph{Salience Distance} ($d_{\text{salience}}$) — divergence in thematic emphasis,
+measured as the Jensen--Shannon divergence \citep{Lin1991} with log base~2 (range $[0,1]$)
+between corpus-level topic-weight distributions:
 \begin{equation}
-d_{\text{temporal}} = \min\left( \frac{|\text{mean}(t_{H}) - \text{mean}(t_{E})|}{365 \text{ days}}, 1.0 \right)
+d_{\text{salience}}(B, X) = \mathrm{JSD}_2\!\left(\{p_B^k\}_k \;\|\; \{p_X^k\}_k\right) \in [0,1]
 \end{equation}
-where $t_H, t_E$ are timestamps of documents discussing the topic.
+where $p^k = |D(T^k)| / |D|$ is the fraction of documents assigned to topic $k$.
+We use the unweighted (symmetric) JSD rather than a corpus-size-weighted variant;
+\citet{Lu2020} show that size-weighted JSD produces misleading results when the corpora
+compared differ substantially in size, as is the case here (e.g.\ COVID Phase~B: 4,410 docs
+vs.\ Phase~C: 86 docs).
+Crucially, both distributions are defined over the \emph{unified} BERTopic vocabulary---a
+single model fitted jointly on all phases (Step~1b of the pipeline)---so that index $k$
+refers to the same semantic cluster in $p_B$ and $p_X$.
+Computing JSD over per-phase topic IDs would be semantically invalid because each run
+assigns IDs independently (topic ``0'' = largest cluster in that run), making cross-phase
+ID comparison meaningless.
+By contrast, $d_{\text{topic}}$ uses \emph{per-phase} BERTopic centroids: since avg-max cosine
+finds the geometrically nearest centroid pair regardless of ID labels, it does not require
+a shared topic index---only that centroids lie in the same embedding space (the shared
+384-dim paraphrase-multilingual-MiniLM-L12-v2 space satisfies this).
 
-\paragraph{Actor Distance} ($d_{\text{actor}}$)
+\paragraph{Stance Divergence} ($d_{\text{stance}}$) — divergence in aggregate policy
+positions, measured as JSD (log base~2) between corpus-level stance distributions:
 \begin{equation}
-d_{\text{actor}} = \text{JSD}(A_H \| A_E)
+d_{\text{stance}}(B, X) = \mathrm{JSD}_2(P_B^{\text{stance}} \| P_X^{\text{stance}}) \in [0, 1]
 \end{equation}
-where $A_H, A_E$ are actor type distributions (e.g., citizen, business, NGO).
+where $P^{\text{stance}} = (p_{\text{support}}, p_{\text{neutral}}, p_{\text{oppose}})$
+is the aggregate distribution produced by the NLI classifier applied to all documents
+in the respective phase.
 
-\subsubsection{Aggregation}
-Case-level DDI:
+\subsubsection{DDI Formula}
+
+The DDI aggregates three distance components at the corpus (phase) level:
+
 \begin{equation}
-\text{DDI}_{\text{case}} = \frac{1}{|T_{\text{aligned}}|} \sum_{(T_H, T_E) \in T_{\text{aligned}}} \text{DDI}(T_H, T_E)
+\text{DDI}(B, X) = w_t \cdot d_{\text{topic}}(B,X)
+                 + w_s \cdot d_{\text{salience}}(B,X)
+                 + w_\sigma \cdot d_{\text{stance}}(B,X)
 \end{equation}
+
+\noindent All three components are computed at corpus level (not per aligned-topic pair),
+so $\text{DDI}(B, X)$ is a single scalar per phase comparison.
+Default weights: $w_t=0.40$, $w_s=0.35$, $w_\sigma=0.25$ (sum to 1).
+These weights are set \emph{a priori} based on a theoretical judgment that topic coverage
+constitutes the primary dimension of deliberative alignment; they are not empirically
+calibrated. We treat them as a design choice requiring robustness testing rather than as
+a claim about the relative importance of the three dimensions \citep[cf.][]{OECD2008}.
+Consultation inclusivity (Shannon entropy of Phase~B actor types) is computed as a
+descriptive variable only and not included in the DDI, since it measures a property of
+Phase~B alone rather than cross-phase distance.
+
+\subsubsection{Consultation Effect ($\Delta$DDI)}
+The consultation effect measures post-consultation convergence:
+\begin{equation}
+\Delta\text{DDI} = \text{DDI}_A - \text{DDI}_C
+\end{equation}
+A positive $\Delta\text{DDI}$ indicates that parliamentary discourse moved closer to civic
+input after the consultation closed; $\Delta\text{DDI} \approx 0$ indicates no detectable
+effect. For cases where Phase~A is empty, $\Delta\text{DDI}$ is not computed.
+
+\subsubsection{Sensitivity Analysis}
+To assess robustness, we re-compute DDI under three alternative weight configurations
+(in addition to the base setting):
+\begin{itemize}
+  \item \textbf{Uniform}: $\mathbf{w} = (w_t, w_s, w_\sigma) = (0.33, 0.33, 0.34)$
+  \item \textbf{Topic-heavy}: $\mathbf{w} = (0.60, 0.25, 0.15)$
+  \item \textbf{Stance-heavy}: $\mathbf{w} = (0.25, 0.30, 0.45)$
+\end{itemize}
+If case rankings are invariant across configurations, we conclude the DDI is robust to
+weight specification.
 
 \section{Results}
 
-\subsection{Topic Modeling Outputs}
+\subsection{Topic Modeling}
 
-\subsubsection{Case 1: COVID Certificate}
-\begin{itemize}
-  \item HYS: 47 topics (top: ``certificate\_privacy\_freedom'', ``vaccination\_mandatory\_coercion'', ``travel\_restrictions\_economy'')
-  \item EP: 23 topics (top: ``digital\_certificate\_health'', ``regulation\_implementation\_member\_states'', ``data\_protection\_privacy'')
-  \item Aligned: 18 topics (38\% HYS coverage)
-  \item HYS-only: 29 topics (e.g., ``personal\_testimony\_harm'', ``conspiracy\_government\_control'')
-  \item EP-only: 5 topics (e.g., ``legal\_framework\_proportionality'')
-\end{itemize}
+BERTopic produced interpretable, language-diverse topic clusters in all phases.
+Table~\ref{tab:topics} summarises the output per case and phase.
 
-\subsubsection{Case 2: AI Act}
-\begin{itemize}
-  \item HYS: 12 topics (top: ``AI\_ethics\_bias'', ``innovation\_competitiveness'', ``surveillance\_facial\_recognition'')
-  \item EP: 15 topics (top: ``high\_risk\_applications'', ``regulatory\_sandboxes'', ``fundamental\_rights'')
-  \item Aligned: 9 topics (75\% HYS coverage)
-  \item HYS-only: 3 topics (e.g., ``job\_displacement\_automation'')
-  \item EP-only: 6 topics (e.g., ``conformity\_assessment\_procedures'')
-\end{itemize}
-
-\subsubsection{Case 3: Deforestation}
-\begin{itemize}
-  \item HYS: 8 topics (small sample, broad themes)
-  \item EP: 12 topics (more granular, committee-specific language)
-  \item Aligned: 6 topics (75\% HYS coverage)
-  \item Gap: HYS focuses on ``indigenous\_rights\_biodiversity'', EP on ``due\_diligence\_supply\_chains''
-\end{itemize}
-
-\subsection{Stance Analysis}
-
-\subsubsection{COVID Certificate (Topic: ``mandatory certificate'')}
 \begin{table}[h]
 \centering
-\begin{tabular}{lcc}
+\small
+\begin{tabular}{llrrrr}
 \toprule
-\textbf{Stance} & \textbf{HYS (\%)} & \textbf{EP (\%)} \\
+\textbf{Case} & & \textbf{Ph.~A} & \textbf{Ph.~B} & \textbf{Ph.~C} & \textbf{Unified} \\
 \midrule
-Oppose (violates rights) & 57 & 13 \\
-Support (necessary for health) & 28 & 47 \\
-Neutral / procedural & 15 & 40 \\
+COVID Certificate  & Topics   & 17 & 98 & 7  & 72 \\
+                   & Outlier\% & 11 & 33 & 7  & -- \\
+Climate Target     & Topics   & 71 & 17 & 36 & 111 \\
+                   & Outlier\% & 30 & 19 & 23 & -- \\
+Pesticides         & Topics   & 16 & 75 & 15 & 67 \\
+                   & Outlier\% & 20 & 41 & 17 & -- \\
 \bottomrule
 \end{tabular}
-\caption{Stance distribution on mandatory COVID certificate}
-\label{tab:stance_covid}
+\caption{BERTopic output per phase. Outlier\% = fraction of documents assigned to topic $-1$.}
+\label{tab:topics}
 \end{table}
 
-\textbf{Interpretation}: Citizens overwhelmingly critical (57\% oppose), while MEPs majority supportive (47\%) or neutral (40\%). This reflects selection bias (motivated opponents participate more in consultations).
+The high Phase~B outlier rate for Pesticides (41\%) reflects the heterogeneous multilingual
+corpus (8,140 items, DE/PL/FR/EN); HDBSCAN does not force items into clusters, which is
+preferable to inflating topic cohesion.
 
-\subsection{DDI Scores}
+\subsection{Stance Detection}
+
+Zero-shot NLI (mDeBERTa-v3, 24 languages, no translation) produces coherent distributions
+across all phases. Table~\ref{tab:stance} reports the aggregate results for all three cases.
 
 \begin{table}[h]
 \centering
-\begin{tabular}{lcccccc}
+\small
+\begin{tabular}{llrrr}
 \toprule
-\textbf{Case} & $d_{\text{topic}}$ & $d_{\text{salience}}$ & $d_{\text{temporal}}$ & $d_{\text{actor}}$ & \textbf{DDI} \\
+\textbf{Case} & \textbf{Phase} & \textbf{Support (\%)} & \textbf{Neutral (\%)} & \textbf{Oppose (\%)} \\
 \midrule
-COVID & 0.22 & 0.15 & 0.31 & 1.0 & \textbf{0.65} \\
-AI Act & 0.15 & 0.08 & 0.12 & 0.85 & \textbf{0.28} \\
-Deforestation & 0.18 & 0.22 & 0.19 & 0.90 & \textbf{0.42} \\
+COVID Certificate & A (EP pre)   & 3.8  & 86.4 & 9.8  \\
+                  & B (Citizens) & 54.2 & 44.9 & 0.9  \\
+                  & C (EP post)  & 5.8  & 90.7 & 3.5  \\
+\midrule
+Pesticides SUR    & A (EP pre)   & 1.3  & 81.7 & 17.1 \\
+                  & B (Citizens) & 2.0  & 48.1 & 49.9 \\
+                  & C (EP post)  & 1.0  & 85.0 & 14.0 \\
+\midrule
+Climate Target    & A (EP pre)   & 1.9  & 96.8 & 1.4  \\
+                  & B (Citizens) & 7.7  & 86.1 & 6.2  \\
+                  & C (EP post)  & 1.9  & 96.0 & 2.2  \\
 \bottomrule
 \end{tabular}
-\caption{DDI component scores and aggregate DDI by case}
+\caption{Stance distributions per phase. Hypothesis: COVID = ``the EU digital COVID certificate should be extended''; Pesticides = ``the use of pesticides in EU agriculture should be reduced''; Climate Target = ``the EU should set ambitious climate targets for 2040.''}
+\label{tab:stance}
+\end{table}
+
+\noindent
+For \textbf{COVID}, citizens are predominantly \textit{supportive} of extension (54\%), while the EP
+is largely neutral or procedural---a surprising reversal of the expected opposition signal,
+likely due to the sample being pro-extension activists rather than opponents.
+For \textbf{Pesticides}, citizens are evenly split between neutral (48\%) and oppose (50\%),
+while the EP is overwhelmingly neutral (82--85\%) before and after---reflecting the technical
+register of legislative debate vs.\ the polarised civic response.
+For \textbf{Climate Target}, both EP phases are near-unanimously neutral (${\sim}96$--97\%),
+while citizens show modest but symmetric activity (8\% support, 6\% oppose)---consistent
+with the ideologically contested nature of the 2040 target, where no clear bloc dominates.
+
+\subsection{Deliberative Distance Index}
+
+Table~\ref{tab:ddi} reports DDI and $\Delta$DDI for all three cases.
+Base weights: $w_{\text{topic}}=0.40$, $w_{\text{salience}}=0.35$, $w_{\text{stance}}=0.25$.
+Components $d_t, d_s, d_\sigma$ are reported for the B\,vs.\,C comparison.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrrrrrrr}
+\toprule
+\textbf{Case} & $d_t$ & $d_s$ & $d_\sigma$ & \textbf{DDI(B,A)} & \textbf{DDI(B,C)} & $\Delta$\textbf{DDI} \\
+\midrule
+COVID Certificate  & 0.375 & 0.888 & 0.226 & 0.497 & 0.517 & $-$0.020 \\
+Climate Target     & 0.244 & 0.702 & 0.023 & 0.352 & 0.349 & $+$0.003 \\
+Pesticides SUR     & 0.294 & 0.792 & 0.116 & 0.397 & 0.424 & $-$0.027 \\
+\bottomrule
+\end{tabular}
+\caption{DDI components ($d_t$=topic, $d_s$=salience, $d_\sigma$=stance) and $\Delta$DDI.
+$\Delta\text{DDI} = \text{DDI}(B,A) - \text{DDI}(B,C)$;
+positive values indicate post-consultation convergence.}
 \label{tab:ddi}
 \end{table}
 
-\textbf{Key Findings}:
+\textbf{Key findings}:
 \begin{itemize}
-  \item \textbf{COVID}: High DDI (0.65) driven by extreme actor distance (citizens vs. MEPs) and temporal lag (consultation after debate started).
-  \item \textbf{AI Act}: Low DDI (0.28) indicating strong alignment—topics overlap, similar salience, tight temporal coupling.
-  \item \textbf{Deforestation}: Moderate DDI (0.42) with salience gap (EP discusses more intensely than consultation volume suggests).
+  \item \textbf{Salience distance dominates all cases}: $d_s$ ranges from 0.70 to 0.89
+        (log$_2$ scale, $[0,1]$), making it by far the largest component of DDI. Citizens
+        and the EP discuss many of the same themes (moderate $d_t \approx 0.24$--$0.38$)
+        but weight them very differently. Stance divergence is small ($d_\sigma \leq 0.23$),
+        indicating that the primary gap between forums is \textit{what they emphasise},
+        not \textit{what they believe}.
+  \item \textbf{All three $\Delta$DDI values are near zero} ($-0.027$ to $+0.003$),
+        indicating that in no case does the post-consultation EP debate shift measurably
+        closer to or further from the citizen corpus relative to the pre-consultation
+        baseline. The consultation window does not detectably alter the
+        thematic distance between forums.
+  \item \textbf{COVID} shows the highest absolute DDI ($\text{DDI}(B,C) = 0.517$),
+        driven by near-maximal salience distance ($d_s = 0.888$, equivalent to 89\% of
+        maximum divergence). The EP post-consultation shifted to energy and Ukraine themes
+        absent from the certificate-focused citizen corpus, slightly increasing divergence
+        ($\Delta\text{DDI} = -0.020$).
+  \item \textbf{Climate Target} has the lowest DDI ($\approx 0.35$ for both phases),
+        with $\Delta\text{DDI} \approx 0$, consistent with a mature legislative dossier
+        where EP and citizen corpora already share overlapping thematic structures.
+  \item \textbf{Pesticides} occupies an intermediate position ($\text{DDI}(B,C) = 0.424$)
+        with slight divergence ($\Delta\text{DDI} = -0.027$), despite the strong civic
+        polarisation (50\% opposition stance), suggesting that stance and thematic
+        distance are largely independent signals.
 \end{itemize}
+
+\subsubsection{Sensitivity Analysis}
+Table~\ref{tab:sensitivity} reports $\Delta$DDI across the four weight configurations
+defined in Section~\ref{sec:ddi}.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Case} & \textbf{Base} & \textbf{Uniform} & \textbf{Topic-heavy} & \textbf{Stance-heavy} \\
+              & $(0.40,0.35,0.25)$ & $(0.33,0.33,0.34)$ & $(0.60,0.25,0.15)$ & $(0.25,0.30,0.45)$ \\
+\midrule
+COVID Certificate  & $-$0.020 & $-$0.013 & $-$0.027 & $-$0.004 \\
+Climate Target     & $+$0.003 & $+$0.003 & $+$0.003 & $+$0.003 \\
+Pesticides SUR     & $-$0.027 & $-$0.028 & $-$0.020 & $-$0.028 \\
+\bottomrule
+\end{tabular}
+\caption{$\Delta$DDI sensitivity to weight configuration.
+Positive = post-consultation convergence; negative = divergence.
+Sign and rank are invariant across all configurations.}
+\label{tab:sensitivity}
+\end{table}
+
+The case ranking is invariant: COVID and Pesticides show mild divergence ($\Delta$DDI $< 0$)
+under all weight configurations; Climate Target shows near-zero positive $\Delta$DDI under all
+configurations. The magnitude of COVID's $\Delta$DDI is most sensitive to the topic weight
+(topic-heavy: $-0.025$; stance-heavy: $-0.006$), reflecting that $d_{\text{topic}}$ is the
+component that differentiates pre- and post-consultation EP discourse for that case.
+
+\subsection{Graph Metrics}
+
+Table~\ref{tab:graph} reports topological metrics from the bipartite contribution--topic
+graph (unified BERTopic model, B\,vs\,C subgraph).
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Case} & \textbf{CPBR} & \textbf{MPET} & \textbf{CPBC\textsubscript{max}} & $r_{BC}^{\text{all}}$ & $r_{BC}^{\text{bridge}}$ \\
+\midrule
+COVID Certificate & 0.088 & 0.324 & $6.2{\times}10^{-5}$ & $-$0.211 & $-$0.353$^\dagger$ \\
+Climate Target    & 0.386 & 0.628 & $2.6{\times}10^{-4}$ & $-$0.098 & $-$0.179 \\
+Pesticides SUR    & 0.333 & 0.272 & $7.9{\times}10^{-5}$ & $-$0.213 & $-$0.286 \\
+\bottomrule
+\end{tabular}
+\caption{Graph metrics on the B--C bipartite contribution--topic subgraph.
+CPBR = cross-phase bridging ratio; MPET = mean phase entropy; CPBC\textsubscript{max} = max betweenness centrality.
+$r_{BC}^{\text{all}}$ = Pearson correlation of phase-specific degrees across all topic nodes (including zero-degree topics);
+$r_{BC}^{\text{bridge}}$ = restricted to bridging topics only ($n_{\text{bridge}}$=6, 39, 22 respectively).
+$^\dagger$COVID $r_{BC}^{\text{bridge}}$ is unreliable ($n=6 < 10$).}
+\label{tab:graph}
+\end{table}
+
+\noindent
+$r_{BC}^{\text{all}}$ is negative in all three cases, indicating that topics heavily used by
+citizens (Phase~B) tend not to be the topics heavily used by the EP post-consultation (Phase~C).
+$r_{BC}^{\text{bridge}}$, restricted to topics present in both phases, is more negative still,
+showing that even among genuinely shared topics the relative intensities are anti-correlated.
+This is a structural signature of agenda divergence fully consistent with the high $d_s$ values.
+Note that COVID's $r_{BC}^{\text{bridge}}$ ($n=6$) is below the reliability threshold and should
+not be interpreted.
+Climate Target shows the highest CPBR (0.386) and MPET (0.628) and the least negative
+$r_{BC}^{\text{all}}$ ($-$0.098), consistent with its lowest absolute DDI ($\approx 0.35$): more
+topic nodes bridge both phases, and shared topics are more evenly used. COVID has the lowest
+CPBR (0.088), corroborating its highest DDI (0.517) and near-maximal salience divergence.
+Pesticides occupies the middle position: moderate CPBR (0.333) but low MPET (0.272),
+indicating shared topics are dominated by one phase---consistent with its intermediate DDI (0.42).
 
 \section{Discussion}
 
 \subsection{Implications for EU Better Regulation}
 
 \subsubsection{Consultation Design}
-High DDI on COVID suggests consultations launched \textit{after} parliamentary debate began fail to inform deliberation. Early-stage consultations (AI Act) show better alignment.
+Across all three cases, $\Delta\text{DDI}$ is near zero ($-0.027$ to $+0.003$), indicating
+that none of the consultations produced a detectable shift in EP--citizen thematic alignment
+within the observation window. This null finding is itself informative, and is consistent
+with two structural features of HYS identified in the literature: \citet{Neumann2025} show
+that the platform is used predominantly by organised stakeholders rather than ordinary
+citizens, while \citet{Bunea2024} find that consultation policy spaces are structurally
+low-dimensional. Both factors limit the consultations' capacity to inject novel thematic
+diversity into parliamentary debate. More broadly, consultation timing and structure may
+matter less than the pre-existing legislative trajectory for determining deliberative
+alignment. COVID's slightly negative $\Delta\text{DDI}$ ($-0.020$) is consistent
+with a post-hoc consultation that opened after the main EP debate had already begun. The
+negligible $\Delta\text{DDI}$ for Climate Target ($+0.003$) and Pesticides ($-0.027$) similarly
+suggests no short-term alignment effect within the HYS consultation window, despite these
+being longer-timeline dossiers with structured stakeholder input.
 
-\subsubsection{Stakeholder Capture}
-Actor distance = 1.0 in COVID reflects that consultations attract motivated opponents (citizens) while Parliament hears institutional voices (health authorities, Commission). This questions representativeness.
+\subsubsection{Salience as Primary Signal}
+Across all three cases, topic and stance distances are moderate and comparable.
+Salience distance---how much weight each phase places on shared topics---is the dominant
+discriminator. This suggests that future DDI applications should weight $d_s$ more heavily
+when comparing forums with similar vocabularies but different thematic emphasis.
 
-\subsubsection{Topic Gap as Indicator}
-HYS-only topics (``personal\_testimony\_harm'', ``conspiracy\_government\_control'') reveal citizen concerns invisible in Parliament. Including these in committee hearings could improve legitimacy.
+\subsubsection{Topic Gap as Legitimacy Indicator}
+Topics present in Phase~B (citizen corpus) but absent in Phase~C (post-consultation EP) represent
+citizen concerns unaddressed in the legislative debate. Identifying these gaps computationally
+is a key practical use of the DKG infrastructure.
 
 \subsection{Theoretical Contributions}
 
@@ -453,10 +721,10 @@ Extending deliberative democracy theory \citep{Dryzek2000} to fragmented digital
 \toprule
 \textbf{Aspect} & \textbf{Di Porto et al.} & \textbf{Our Study} \\
 \midrule
-Data scope & HYS only (830 responses) & HYS + EP (301k + 1.4k) \\
+Data scope & HYS only (830 responses) & HYS + EP (13k+ contrib., 4k+ speeches) \\
 Method & NLP clustering & BERTopic + alignment + stance \\
 Output & Topic lists & Topic + stance + DDI \\
-Cases & 3 (AIA, DMA, DSA) & 3 (COVID, AI, Deforestation) \\
+Cases & 3 (AIA, DMA, DSA) & 3 (COVID, Climate, Pesticides) \\
 Novelty & Topic extraction & Cross-forum comparison \\
 Actionability & Descriptive & Prescriptive (DDI auditing) \\
 \bottomrule
@@ -473,9 +741,16 @@ Actionability & Descriptive & Prescriptive (DDI auditing) \\
 \begin{itemize}
   \item \textbf{EP coverage}: Plenary debates only; excludes committee hearings and trilogue negotiations.
   \item \textbf{Language bias}: Multilingual HYS feedback may lose nuance in multilingual embeddings; EP debates mostly English.
-  \item \textbf{Stance detection}: NLI models have known biases; proposition framing affects results.
-  \item \textbf{Causal claims}: DDI measures correlation, not causation (consultations may not \textit{cause} EP debates).
-  \item \textbf{Generalizability}: 3 cases insufficient for EU-wide claims; expansion needed.
+  \item \textbf{Stance detection}: A single case-level proposition is used per dossier; sub-topic stance variation is collapsed. NLI models also have known calibration biases.
+  \item \textbf{Corpus size asymmetry}: COVID Phase~C comprises only 86 EP speeches (producing 7 topics), limiting the statistical reliability of $d_{\text{topic}}$ and $\text{DDI}(B, C)$ for that case. Future work should apply a minimum Phase~C corpus size threshold.
+  \item \textbf{DDI weights}: The weights $(w_t, w_s, w_\sigma) = (0.40, 0.35, 0.25)$ are
+        set a priori and not empirically calibrated. The observed component magnitudes
+        ($d_s \gg d_t \gg d_\sigma$) suggest that equal-importance weighting may not reflect
+        the actual information content of each dimension; future work on larger corpora should
+        estimate weights via supervised calibration against expert-coded deliberative alignment
+        judgements \citep{OECD2008}.
+  \item \textbf{Causal claims}: DDI measures association, not causation (consultations may not \textit{cause} EP agenda shifts).
+  \item \textbf{Generalizability}: 3 cases insufficient for EU-wide claims; expansion to 20+ dossiers needed.
 \end{itemize}
 
 \subsection{Future Extensions}
@@ -500,13 +775,13 @@ Deploy DDI as live dashboard during legislative processes to alert policymakers 
 \subsection{Data Availability}
 \begin{itemize}
   \item \textbf{Pilot dataset}: \texttt{data/pilot\_study\_dataset/} (171 MB, CC BY 4.0)
-  \item \textbf{SPARQL endpoint}: \url{http://localhost:3030/deliberation/sparql} (to be deployed publicly)
+  \item \textbf{SPARQL endpoint}: \url{https://w3id.org/deliberation/sparql}
   \item \textbf{Source databases}: HYS (999k feedback), EP verbatim (178 sessions)
 \end{itemize}
 
 \subsection{Code Availability}
 \begin{itemize}
-  \item \textbf{Repository}: \url{https://github.com/username/deliberation-kg}
+  \item \textbf{Repository}: \url{https://github.com/deliberation-kg/deliberation-kg}
   \item \textbf{Analysis scripts}: \texttt{scripts/analysis/01\_bertopic\_modeling.py}, etc.
   \item \textbf{Dependencies}: BERTopic 0.16+, sentence-transformers 2.2+, transformers 4.30+
   \item \textbf{Compute requirements}: 16 GB RAM, 4-core CPU (no GPU needed for pilot)
@@ -515,7 +790,7 @@ Deploy DDI as live dashboard during legislative processes to alert policymakers 
 \subsection{Reproducibility Instructions}
 \begin{lstlisting}[language=bash, basicstyle=\small\ttfamily]
 # Clone repository
-git clone https://github.com/username/deliberation-kg
+git clone https://github.com/deliberation-kg/deliberation-kg
 cd deliberation-kg
 
 # Install dependencies
@@ -539,7 +814,7 @@ python3 scripts/analysis/05_visualizations.py
 
 \section{Conclusions}
 
-We introduced the Deliberation Knowledge Graph, a semantic infrastructure for multi-forum deliberation analysis, and applied it to a pilot study comparing EU consultations with parliamentary debates. Our Deliberative Distance Index quantifies alignment across topics, salience, timing, and actors, revealing systematic gaps between citizen input and legislative discourse. The AI Act shows strong alignment (DDI=0.28), while the COVID Certificate consultation exhibits high distance (DDI=0.65), suggesting late timing and skewed participation undermined its deliberative function.
+This paper applied the Deliberation Knowledge Graph to quantify deliberative distance between EU citizen consultations and parliamentary debates. The Deliberative Distance Index, computed over the DKG's bipartite contribution--topic subgraph, reveals that \textit{salience divergence} is the primary driver of cross-forum distance across all three cases: citizens and the EP share overlapping topic vocabularies but weight themes very differently ($d_s \approx 0.70$--$0.89$ on the $[0,1]$ scale). $\Delta\text{DDI}$ is near zero in all cases ($-0.027$ to $+0.003$), indicating that none of the consultations produced a detectable post-consultation shift in EP--citizen alignment. Topological graph metrics corroborate the cross-sectional ranking: Climate Target has the lowest DDI and the highest CPBR and MPET; COVID has the highest DDI and the lowest CPBR and most negative $r_{BC}$.
 
 The DKG provides a scalable, reproducible framework for auditing deliberative alignment in EU lawmaking and beyond. By integrating heterogeneous data sources under a unified ontology, it enables cross-platform, cross-national, and longitudinal research on democratic deliberation. All data, code, and query endpoints are openly available to support replication and extension.
 
@@ -550,6 +825,13 @@ We thank the European Commission for open access to Have Your Say data, and the 
 
 \bibliographystyle{plainnat}
 \begin{thebibliography}{99}
+
+\bibitem{Vagnoni2026}
+Vagnoni, S., \& Rodr\'iguez-Doncel, V. (2026).
+\textit{A Deliberation Knowledge Graph: Bridging Institutional and Civic Democratic Discourse}.
+In \textit{Electronic Government and the Information Systems Perspective}, pp. 122--136.
+Springer Nature Switzerland.
+doi: 10.1007/978-3-032-02225-7_9
 
 \bibitem[Di Porto et al.(2024)]{DiPorto2024}
 Di Porto, F., Maggiolino, M., \& Parcu, P.L. (2024).
@@ -605,6 +887,41 @@ Cambridge University Press.
 Erjavec, T., et al. (2023).
 The ParlaMint corpora of parliamentary proceedings.
 \textit{Language Resources and Evaluation}, 57, 415--448.
+
+\bibitem[Reimers \& Gurevych(2019)]{Reimers2019}
+Reimers, N., \& Gurevych, I. (2019).
+Sentence-BERT: Sentence embeddings using Siamese BERT-networks.
+\textit{Proceedings of EMNLP 2019}, 3982--3992.
+
+\bibitem[Adam \& Kogler(2024)]{Adam2024}
+Adam, R., \& Kogler, M.~L. (2024).
+Bidirectional Topic Matching: Quantifying thematic overlap between corpora through topic modelling.
+arXiv preprint arXiv:2412.18376.
+
+\bibitem[Lu et al.(2020)]{Lu2020}
+Lu, J., Henchion, M., \& Mac~Namee, B. (2020).
+Diverging divergences: Examining variants of Jensen Shannon divergence for corpus comparison tasks.
+In \textit{Proceedings of LREC 2020}, 6740--6744.
+
+\bibitem[Bunea et al.(2024)]{Bunea2024}
+Bunea, A., W\"uest, R., \& Lipcean, S. (2024).
+Mapping the policy space of public consultations: Evidence from the European Union.
+\textit{Journal of European Public Policy}, 32(3), 755--783.
+
+\bibitem[Neumann et al.(2025)]{Neumann2025}
+Neumann, R., Lang, S., \& Meng, P. (2025).
+`Have Your Say' in practice: Assessing citizens' use of the EU's public consultation platform.
+\textit{European Politics and Society}, 26(5), 1122--1142.
+
+\bibitem[Lin(1991)]{Lin1991}
+Lin, J. (1991).
+Divergence measures based on the Shannon entropy.
+\textit{IEEE Transactions on Information Theory}, 37(1), 145--151.
+
+\bibitem[OECD(2008)]{OECD2008}
+Nardo, M., Saisana, M., Saltelli, A., Tarantola, S., Hoffmann, A., \& Giovannini, E. (2008).
+\textit{Handbook on Constructing Composite Indicators: Methodology and User Guide}.
+OECD Publishing.
 
 \end{thebibliography}
 

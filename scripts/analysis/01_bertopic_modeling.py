@@ -11,6 +11,27 @@ import pickle
 import numpy as np
 from pathlib import Path
 from collections import defaultdict
+from sklearn.feature_extraction.text import CountVectorizer
+
+
+def _build_eu_stopwords() -> list:
+    """Load multilingual stop words from NLTK for all major EU languages."""
+    import nltk
+    nltk.download("stopwords", quiet=True)
+    from nltk.corpus import stopwords
+    langs = ["english", "german", "french", "italian", "spanish", "dutch",
+             "portuguese", "swedish", "danish", "finnish", "norwegian",
+             "romanian", "hungarian", "greek", "slovene"]
+    words = set()
+    for lang in langs:
+        try:
+            words.update(stopwords.words(lang))
+        except OSError:
+            pass
+    return list(words)
+
+
+_EU_STOPWORDS = _build_eu_stopwords()
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
@@ -19,12 +40,12 @@ OUT_DIR  = Path("/home/svagnoni/deliberation-knowledge-graph/data/topic_models_v
 
 EMBEDDING_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
 
-CASES = ["case_1_covid", "case_2_dsa", "case_3_pesticides"]
+CASES = ["case_1_covid", "case_2_climate_target", "case_3_pesticides"]
 
 # min_topic_size per case (smaller for sparse HYS)
 MIN_TOPIC_SIZE = {
     "case_1_covid":      10,
-    "case_2_dsa":         5,   # only 245 HYS items
+    "case_2_climate_target":        8,    # ~580 HYS texts — small, use lower threshold
     "case_3_pesticides": 15,
 }
 
@@ -67,26 +88,42 @@ def load_phase_texts(case_dir: Path) -> dict:
     return phases
 
 
+def adaptive_min_topic_size(n_texts: int, configured: int) -> int:
+    """Scale down min_topic_size for small phases to avoid too few topics."""
+    if n_texts < 80:   return 3
+    if n_texts < 150:  return 4
+    if n_texts < 300:  return max(5, configured // 3)
+    if n_texts < 600:  return max(8, configured // 2)
+    return configured
+
+
 def run_bertopic(texts: list, min_topic_size: int, embedding_model):
     """Fit BERTopic on a list of texts. Returns (model, topics, probs, embeddings)."""
     from bertopic import BERTopic
     from umap import UMAP
     from hdbscan import HDBSCAN
 
-    if len(texts) < min_topic_size * 2:
-        print(f"    [SKIP] only {len(texts)} texts — below threshold")
+    n = len(texts)
+    min_ts = adaptive_min_topic_size(n, min_topic_size)
+    if n < min_ts * 2:
+        print(f"    [SKIP] only {n} texts — below threshold")
         return None, None, None, None
 
+    vectorizer = CountVectorizer(
+        stop_words=list(set(_EU_STOPWORDS)),
+        min_df=2,
+        ngram_range=(1, 2),
+    )
     umap_model = UMAP(
-        n_neighbors=min(15, len(texts) - 1),
+        n_neighbors=min(15, n - 1),
         n_components=5,
         min_dist=0.0,
         metric="cosine",
         random_state=42,
     )
     hdbscan_model = HDBSCAN(
-        min_cluster_size=min_topic_size,
-        min_samples=max(1, min_topic_size // 2),
+        min_cluster_size=min_ts,
+        min_samples=max(1, min_ts // 2),
         metric="euclidean",
         cluster_selection_method="eom",
         prediction_data=True,
@@ -95,12 +132,14 @@ def run_bertopic(texts: list, min_topic_size: int, embedding_model):
         embedding_model=embedding_model,
         umap_model=umap_model,
         hdbscan_model=hdbscan_model,
+        vectorizer_model=vectorizer,
         top_n_words=10,
         verbose=True,
     )
 
     embeddings = embedding_model.encode(texts, show_progress_bar=True, batch_size=64)
     topics, probs = topic_model.fit_transform(texts, embeddings=embeddings)
+    print(f"    min_topic_size used: {min_ts} (configured: {min_topic_size}, n={n})")
 
     return topic_model, topics, probs, embeddings
 
@@ -198,9 +237,11 @@ def process_case(case_id: str):
 
 
 if __name__ == "__main__":
+    import sys
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    target_cases = sys.argv[1:] if len(sys.argv) > 1 else CASES
     overall = {}
-    for case_id in CASES:
+    for case_id in target_cases:
         overall[case_id] = process_case(case_id)
 
     print("\n" + "="*60)

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Deliberation Knowledge Graph</title>
+  <link rel="icon" type="image/png" href="img/dkg.png">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
@@ -240,18 +241,33 @@
     /* Dataset card platform logo */
     .dataset-card {
       position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .logo-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 110px;
+      padding: 1.2rem 1rem;
+      margin: -1.5rem -1.5rem 1.25rem -1.5rem;
+      background: #f8fafc;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      border-radius: 12px 12px 0 0;
+      overflow: hidden;
     }
     .platform-logo {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      width: 36px;
-      height: 36px;
+      display: block;
+      max-height: 80px;
+      max-width: 200px;
+      width: auto;
+      height: auto;
       object-fit: contain;
-      border-radius: 6px;
-      background: #fff;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.12);
-      padding: 3px;
+      position: static;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      padding: 0;
     }
 
     /* Licensing collapsible section */
@@ -559,7 +575,10 @@
 <!-- EU Parliament Debates Feature Section -->
 <div class="eu-parliament-section">
   <div class="container">
-    <h3><a href="https://data.europarl.europa.eu" target="_blank"><img src="img/ep-logo.svg" style="height:28px;vertical-align:middle;margin-right:0.5rem;" alt="European Parliament logo"></a>Featured Dataset: European Parliament Debates</h3>
+    <h3>
+      <a href="https://data.europarl.europa.eu" target="_blank">
+        <img src="img/european-parliament.png" style="height:64px;vertical-align:middle;margin-right:0.75rem;" alt="European Parliament logo">
+      </a>Featured Dataset: European Parliament Debates</h3>
     <div class="eu-parliament-container">
       <div class="eu-parliament-content">
         <p>The European Parliament Debates dataset contains structured representations of plenary session debates, converted from verbatim HTML reports into both JSON and RDF formats aligned with the Deliberation Ontology.</p>
@@ -573,9 +592,9 @@
         </div>
         
         <div class="btn-group">
-          <a href="data/EU_parliament_debates/ep_debates/debate_sample_2025-03-10.json" class="btn">View Sample JSON</a>
-          <a href="data/EU_parliament_debates/ep_debates/debate_sample_2025-03-10.rdf" class="btn btn-secondary">View Sample RDF</a>
-          <a href="data/EU_parliament_debates/README.md" class="btn btn-secondary">Documentation</a>
+          <a href="data/EU_parliament_debates/ep_debates/debate_2025-03-10.json" class="btn" target="_blank">View Sample JSON</a>
+          <a href="data/EU_parliament_debates/ep_debates/debate_2025-03-10.rdf" class="btn btn-secondary" target="_blank">View Sample RDF</a>
+          <a href="data/EU_parliament_debates/README.md" class="btn btn-secondary" target="_blank">Documentation</a>
         </div>
         
         <div class="api-info">
@@ -599,7 +618,9 @@
       
       <div class="dataset-grid">
         <div class="dataset-card" data-category="participatory">
-          <a href="https://decide.madrid.es" target="_blank"><img src="img/consul-logo.svg" class="platform-logo" alt="Decide Madrid logo" onerror="this.style.display='none'"></a>
+          <div class="logo-header">
+            <a href="https://decide.madrid.es" target="_blank"><img src="img/decide-madrid.png" class="platform-logo" alt="Decide Madrid logo"></a>
+          </div>
           <h3>Decide Madrid</h3>
           <p>Citizen proposals and comments from Madrid's participatory democracy platform (<a href="https://consulproject.org" target="_blank">Consul</a>), enabling citizens to propose, debate, and vote on city initiatives.</p>
           <div class="source">
@@ -607,12 +628,15 @@
             <a href="https://github.com/argrecsys/decide-madrid-2019-annotations/tree/main/data" target="_blank">Source Repository</a>
           </div>
           <div class="btn-group">
-            <a href="data/decide_Madrid/sample/sample.json" class="btn">View Sample</a>
-            <a href="data/decide_Madrid/readme.txt" class="btn btn-secondary">Documentation</a>
+            <a href="data/decide_Madrid/sample/sample.json" class="btn" target="_blank">View Sample</a>
+            <a href="data/decide_Madrid/readme.txt" class="btn btn-secondary" target="_blank">Documentation</a>
           </div>
         </div>
         
         <div class="dataset-card" data-category="deliberation">
+          <div class="logo-header">
+            <a href="https://paperswithcode.com/dataset/delidata" target="_blank"><img src="img/delidata.webp" class="platform-logo" alt="DeliData logo"></a>
+          </div>
           <h3>DeliData</h3>
           <p>A dataset for deliberation in multi-party problem solving, containing structured conversations aimed at reaching consensus on complex issues.</p>
           <div class="source">
@@ -622,13 +646,15 @@
             <a href="https://paperswithcode.com/dataset/delidata" target="_blank">Source Repository</a>
           </div>
           <div class="btn-group">
-            <a href="data/delidata/sample/sample.json" class="btn">View Sample</a>
-            <a href="data/delidata/readme.txt" class="btn btn-secondary">Documentation</a>
+            <a href="data/delidata/sample/sample.json" class="btn" target="_blank">View Sample</a>
+            <a href="data/delidata/readme.txt" class="btn btn-secondary" target="_blank">Documentation</a>
           </div>
         </div>
         
         <div class="dataset-card" data-category="consultation">
-          <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say" target="_blank"><img src="img/ec-logo.svg" class="platform-logo" alt="European Commission logo"></a>
+          <div class="logo-header">
+            <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say" target="_blank"><img src="img/hys.jpg" class="platform-logo" alt="EU Have Your Say logo"></a>
+          </div>
           <h3>EU Have Your Say</h3>
           <p>Feedback and initiatives from the <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en" target="_blank">European Commission</a>'s public consultation platform, where citizens and stakeholders can provide input on EU policies.</p>
           <div class="source">
@@ -636,13 +662,15 @@
             <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en" target="_blank">Source Website</a>
           </div>
           <div class="btn-group">
-            <a href="data/EU_have_your_say/sample/sample.csv" class="btn">View Sample</a>
-            <a href="data/EU_have_your_say/readme.txt" class="btn btn-secondary">Documentation</a>
+            <a href="data/EU_have_your_say/sample/sample.csv" class="btn" target="_blank">View Sample</a>
+            <a href="data/EU_have_your_say/readme.txt" class="btn btn-secondary" target="_blank">Documentation</a>
           </div>
         </div>
         
         <div class="dataset-card" data-category="experiment">
-          <a href="https://github.com/google-deepmind/habermas_machine" target="_blank"><img src="img/deepmind-logo.svg" class="platform-logo" alt="Google DeepMind logo"></a>
+          <div class="logo-header">
+            <a href="https://github.com/google-deepmind/habermas_machine" target="_blank"><img src="img/deepmind-color.png" class="platform-logo" alt="Google DeepMind logo"></a>
+          </div>
           <h3>Habermas Machine</h3>
           <p>Data from a deliberative democracy experiment by <a href="https://deepmind.google" target="_blank">Google DeepMind</a>, inspired by Habermas's theories of communicative rationality. AI-mediated opinion aggregation across diverse groups.</p>
           <div class="source">
@@ -650,13 +678,15 @@
             <a href="https://github.com/google-deepmind/habermas_machine" target="_blank">Source Repository</a>
           </div>
           <div class="btn-group">
-            <a href="data/habermas_machine/sample/sample.json" class="btn">View Sample</a>
-            <a href="data/habermas_machine/readme.txt" class="btn btn-secondary">Documentation</a>
+            <a href="data/habermas_machine/sample/sample.json" class="btn" target="_blank">View Sample</a>
+            <a href="data/habermas_machine/readme.txt" class="btn btn-secondary" target="_blank">Documentation</a>
           </div>
         </div>
         
         <div class="dataset-card" data-category="participatory">
-          <a href="https://decidim.barcelona" target="_blank"><img src="img/decidim-logo.svg" class="platform-logo" alt="Decidim logo"></a>
+          <div class="logo-header">
+            <a href="https://decidim.barcelona" target="_blank"><img src="img/decidim.png" class="platform-logo" alt="Decidim logo"></a>
+          </div>
           <h3>Decidim Barcelona</h3>
           <p>Data from Barcelona's implementation of the <a href="https://decidim.org" target="_blank">Decidim</a> participatory democracy platform, showcasing citizen engagement in urban planning and policy development.</p>
           <div class="source">
@@ -664,13 +694,15 @@
             <a href="https://www.decidim.barcelona/open-data/download?locale=es" target="_blank">Source Website</a>
           </div>
           <div class="btn-group">
-            <a href="data/nightly_decidim/sample/sample.json" class="btn">View Sample</a>
-            <a href="data/nightly_decidim/readme.txt" class="btn btn-secondary">Documentation</a>
+            <a href="data/decidim_barcelona/sample/sample.json" class="btn" target="_blank">View Sample</a>
+            <a href="data/decidim_barcelona/readme.txt" class="btn btn-secondary" target="_blank">Documentation</a>
           </div>
         </div>
 
         <div class="dataset-card" data-category="participatory">
-          <a href="https://pol.is" target="_blank"><img src="img/polis-logo.svg" class="platform-logo" alt="Pol.is logo"></a>
+          <div class="logo-header">
+            <a href="https://pol.is" target="_blank"><img src="img/polis-logo.png" class="platform-logo" alt="Pol.is logo"></a>
+          </div>
           <h3>Pol.is</h3>
           <p>Real-time opinion data from <a href="https://pol.is" target="_blank">Pol.is</a> large-scale deliberations, capturing participant positions on policy statements through a machine-learning opinion matrix. Used in national consultations (e.g. vTaiwan, EU AI Act Citizens' Panel).</p>
           <div class="source">
@@ -678,12 +710,15 @@
             <a href="https://github.com/compdemocracy/polis" target="_blank">Open Source Platform</a>
           </div>
           <div class="btn-group">
-            <a href="https://pol.is/home" class="btn" target="_blank">Platform</a>
+            <a href="data/polis_public/sample/sample.json" class="btn" target="_blank">View Sample</a>
+            <a href="https://pol.is/home" class="btn btn-secondary" target="_blank">Platform</a>
           </div>
         </div>
         
         <div class="dataset-card" data-category="legal">
-          <a href="https://www.supremecourt.gov" target="_blank"><img src="img/scotus-logo.svg" class="platform-logo" alt="US Supreme Court logo"></a>
+          <div class="logo-header">
+            <a href="https://www.supremecourt.gov" target="_blank"><img src="img/us-sup-court.png" class="platform-logo" alt="US Supreme Court logo"></a>
+          </div>
           <h3>US Supreme Court Arguments</h3>
           <p>Transcripts of oral arguments before the <a href="https://www.supremecourt.gov" target="_blank">United States Supreme Court</a> (2017–2021), providing insights into legal deliberation at the highest judicial level.</p>
           <div class="source">
@@ -691,8 +726,8 @@
             <a href="https://www.kaggle.com/datasets/jameslabadorf/us-supreme-court-arguments-20172021" target="_blank">Source Dataset</a>
           </div>
           <div class="btn-group">
-            <a href="data/US_supreme_court_arguments/sample/sample.json" class="btn">View Sample</a>
-            <a href="data/US_supreme_court_arguments/readme.txt" class="btn btn-secondary">Documentation</a>
+            <a href="data/US_supreme_court_arguments/sample/sample.json" class="btn" target="_blank">View Sample</a>
+            <a href="data/US_supreme_court_arguments/readme.txt" class="btn btn-secondary" target="_blank">Documentation</a>
           </div>
         </div>
       </div>

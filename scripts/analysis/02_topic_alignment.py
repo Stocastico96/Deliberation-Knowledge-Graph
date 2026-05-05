@@ -16,7 +16,7 @@ from itertools import product
 TOPIC_DIR = Path("/home/svagnoni/deliberation-knowledge-graph/data/topic_models_v2")
 OUT_DIR   = Path("/home/svagnoni/deliberation-knowledge-graph/data/alignment_v2")
 
-CASES = ["case_1_covid", "case_2_dsa", "case_3_pesticides"]
+CASES = ["case_1_covid", "case_2_climate_target", "case_3_pesticides"]
 
 ALIGNED_THRESHOLD = 0.65
 PARTIAL_THRESHOLD = 0.40
@@ -98,23 +98,22 @@ def classify_alignment(sim_matrix: dict) -> dict:
     return result
 
 
-def jaccard_topic_overlap(topics_b: dict, topics_c: dict, threshold: float = ALIGNED_THRESHOLD) -> float:
-    """
-    Topic Jaccard Index: fraction of B and C topics that are mutually aligned.
-    J = |{b in B : best_sim(b,C) >= θ}| / |B ∪ C_unmatched|
-    Simplified: |aligned pairs| / (|B| + |C| - |aligned pairs|)
-    """
-    nb = len([k for k in topics_b if k != "_outlier_count"])
-    nc = len([k for k in topics_c if k != "_outlier_count"])
-    if nb == 0 or nc == 0:
+def avg_max_cosine(centroids_p: dict, centroids_q: dict) -> float:
+    """Mean over p in P of: max cosine similarity to any q in Q."""
+    if not centroids_p or not centroids_q:
         return 0.0
-    # count B topics that align with at least one C topic above threshold
-    aligned = 0
-    for bid, bvec in topics_b.items():
-        if bid == "_outlier_count": continue
-        # (centroids computed separately; this function only uses counts)
-    # will be computed properly in process_case using centroids
-    return 0.0   # placeholder, overridden below
+    q_vecs = list(centroids_q.values())
+    sims = [max(cosine_similarity(pvec, qvec) for qvec in q_vecs)
+            for pvec in centroids_p.values()]
+    return float(np.mean(sims))
+
+
+def avg_max_cosine_sym(centroids_b: dict, centroids_x: dict) -> float:
+    """Symmetric avg-max cosine: scale-invariant d_topic input.
+    Not biased by topic count asymmetry unlike Jaccard."""
+    s_bx = avg_max_cosine(centroids_b, centroids_x)
+    s_xb = avg_max_cosine(centroids_x, centroids_b)
+    return (s_bx + s_xb) / 2
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
@@ -142,36 +141,46 @@ def process_case(case_id: str):
 
     # B ↔ A alignment (if A exists)
     if "B" in phase_data and "A" in phase_data:
-        sim_ba = build_similarity_matrix(phase_data["B"]["centroids"], phase_data["A"]["centroids"])
+        cb = phase_data["B"]["centroids"]
+        ca = phase_data["A"]["centroids"]
+        sim_ba = build_similarity_matrix(cb, ca)
         align_ba = classify_alignment(sim_ba)
+        sim_ab = build_similarity_matrix(ca, cb)
+        align_ab = classify_alignment(sim_ab)
+        nb, na = len(cb), len(ca)
+        n_aligned_b = sum(1 for v in align_ba.values() if v["label"] == "aligned")
+        n_aligned_a = sum(1 for v in align_ab.values() if v["label"] == "aligned")
+        n_intersection = min(n_aligned_b, n_aligned_a)
+        n_union = nb + na - n_intersection
+        jaccard_ba = round(n_intersection / n_union, 4) if n_union > 0 else 0.0
+        amc_ba = round(avg_max_cosine_sym(cb, ca), 4)
         results["B_vs_A"] = {
             "alignment": align_ba,
             "summary": {
-                "aligned": sum(1 for v in align_ba.values() if v["label"] == "aligned"),
+                "aligned": n_aligned_b,
                 "partial":  sum(1 for v in align_ba.values() if v["label"] == "partial"),
                 "gap":      sum(1 for v in align_ba.values() if v["label"] == "gap"),
             },
+            "jaccard_index":    jaccard_ba,
+            "avg_max_cosine":   amc_ba,
         }
-        print(f"  B vs A: {results['B_vs_A']['summary']}")
+        print(f"  B vs A: {results['B_vs_A']['summary']}, Jaccard={jaccard_ba}, AvgMaxCos={amc_ba}")
 
     # B ↔ C alignment
     if "B" in phase_data and "C" in phase_data:
-        sim_bc = build_similarity_matrix(phase_data["B"]["centroids"], phase_data["C"]["centroids"])
+        cb = phase_data["B"]["centroids"]
+        cc = phase_data["C"]["centroids"]
+        sim_bc = build_similarity_matrix(cb, cc)
         align_bc = classify_alignment(sim_bc)
-
-        # Topic Jaccard Index
-        nb = len(phase_data["B"]["centroids"])
-        nc = len(phase_data["C"]["centroids"])
-        n_aligned_b = sum(1 for v in align_bc.values() if v["label"] == "aligned")
-        # From C side too
-        sim_cb = build_similarity_matrix(phase_data["C"]["centroids"], phase_data["B"]["centroids"])
+        sim_cb = build_similarity_matrix(cc, cb)
         align_cb = classify_alignment(sim_cb)
+        nb, nc = len(cb), len(cc)
+        n_aligned_b = sum(1 for v in align_bc.values() if v["label"] == "aligned")
         n_aligned_c = sum(1 for v in align_cb.values() if v["label"] == "aligned")
-        # Jaccard: |intersection| / |union|
-        # approximate: min(aligned_b, aligned_c) / (nb + nc - min(aligned_b, aligned_c))
         n_intersection = min(n_aligned_b, n_aligned_c)
         n_union = nb + nc - n_intersection
         jaccard = round(n_intersection / n_union, 4) if n_union > 0 else 0.0
+        amc_bc = round(avg_max_cosine_sym(cb, cc), 4)
 
         results["B_vs_C"] = {
             "alignment": align_bc,
@@ -180,9 +189,10 @@ def process_case(case_id: str):
                 "partial":  sum(1 for v in align_bc.values() if v["label"] == "partial"),
                 "gap":      sum(1 for v in align_bc.values() if v["label"] == "gap"),
             },
-            "jaccard_index": jaccard,
+            "jaccard_index":   jaccard,
+            "avg_max_cosine":  amc_bc,
         }
-        print(f"  B vs C: {results['B_vs_C']['summary']}, Jaccard={jaccard}")
+        print(f"  B vs C: {results['B_vs_C']['summary']}, Jaccard={jaccard}, AvgMaxCos={amc_bc}")
 
     # A ↔ C alignment (change over time, EP side)
     if "A" in phase_data and "C" in phase_data:
@@ -206,6 +216,8 @@ def process_case(case_id: str):
 
 
 if __name__ == "__main__":
+    import sys
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    for case_id in CASES:
+    target_cases = sys.argv[1:] if len(sys.argv) > 1 else CASES
+    for case_id in target_cases:
         process_case(case_id)

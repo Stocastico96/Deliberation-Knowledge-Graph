@@ -59,3 +59,15 @@ nohup.out
 # Temporary files
 /tmp/
 *.tmp
+
+# Backup files
+*.backup
+*.backup_*
+*.old
+*.bak
+
+# Raw research assets (processed versions go in img/)
+research/assets/
+
+# Citizen interface backend KG (regenerated)
+citizen_interface/backend/knowledge_graph/

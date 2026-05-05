@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Step 0: Export pilot study cases from HYS DB + EP verbatim JSON.
-Replaces old cases (AI Act, Deforestation) with DSA and Forest Strategy.
+Cases: COVID Certificate, Digital Euro, Pesticides SUR.
 Implements temporal stratification (Phase A / B / C).
 """
 
@@ -31,19 +31,18 @@ CASES = {
                         "digital green certificate"],
         "hys_sample_size": 5000,   # down-sample for BERTopic (296k total)
     },
-    "case_2_dsa": {
-        "name": "Digital Services Act",
-        # Ares(2020)3387364 — pub_ids 13125+13971 have text; 13127 is form-only
-        "hys_publication_ids": [13125, 13971],
-        "hys_refs": ["Ares(2020)3387364"],
-        "eurlex_procedure": "2020/0361(COD)",
-        "consultation_open":  "2020-06-02",
-        "consultation_close": "2020-09-08",
-        # Note: consultation pre-dates EP data (Jul 2021+) → Phase A = N/A
-        "ep_phase_a_available": False,
-        "ep_keywords": ["digital services act", "digital services regulation",
-                        "dsa", "online platform", "very large online platform",
-                        "content moderation"],
+    "case_2_climate_target": {
+        "name": "EU 2040 Climate Target",
+        # pub=16866 — Ares(2023)2344532, Apr-Jun 2023 open consultation on 2040 target
+        # n=579, text_rate=97%, EN:37% SK:22% DE:18% HR:5% FI:5% — well-balanced, organic
+        "hys_publication_ids": [16866],
+        "hys_refs": ["Ares(2023)2344532"],
+        "eurlex_procedure": "2023/0082(COD)",
+        "consultation_open":  "2023-04-01",
+        "consultation_close": "2023-06-30",
+        "ep_keywords": ["climate target", "2040 climate", "green deal", "emissions reduction",
+                        "net zero", "climate law", "carbon neutrality", "climate ambition",
+                        "greenhouse gas", "european climate"],
         "hys_sample_size": None,
     },
     "case_3_pesticides": {

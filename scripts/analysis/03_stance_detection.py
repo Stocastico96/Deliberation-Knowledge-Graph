@@ -18,17 +18,17 @@ from collections import Counter, defaultdict
 TOPIC_DIR = Path("/home/svagnoni/deliberation-knowledge-graph/data/topic_models_v2")
 OUT_DIR   = Path("/home/svagnoni/deliberation-knowledge-graph/data/stance_v2")
 
-CASES = ["case_1_covid", "case_2_dsa", "case_3_pesticides"]
+CASES = ["case_1_covid", "case_2_climate_target", "case_3_pesticides"]
 
 NLI_MODEL = "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7"
-BATCH_SIZE = 32
-MAX_TEXT_LEN = 512   # tokens (NLI model limit)
+BATCH_SIZE = 8
+MAX_TEXT_LEN = 256   # tokens (NLI model limit)
 
 # Proposition templates per case (populated from top BERTopic keywords)
 # These are filled at runtime from topic keywords
 CASE_PROPOSITIONS = {
     "case_1_covid":      "The EU digital COVID certificate should be extended.",
-    "case_2_dsa":        "Online platforms should be regulated more strictly.",
+    "case_2_climate_target":        "The EU should set ambitious climate targets for 2040 to achieve carbon neutrality by 2050.",
     "case_3_pesticides": "The use of pesticides in EU agriculture should be reduced.",
 }
 
