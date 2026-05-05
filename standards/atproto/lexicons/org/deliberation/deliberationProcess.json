@@ -1,0 +1,88 @@
+{
+  "defs": {
+    "main": {
+      "description": "The overall deliberative activity, including its stages, timeline, and outcomes.",
+      "key": "tid",
+      "record": {
+        "properties": {
+          "endDate": {
+            "description": "The end date and time of a deliberation process or stage.",
+            "format": "datetime",
+            "type": "string"
+          },
+          "hasArgument": {
+            "description": "Relates a deliberation process to arguments made within it.",
+            "items": {
+              "ref": "org.deliberation.argument",
+              "type": "ref"
+            },
+            "type": "array"
+          },
+          "hasContribution": {
+            "description": "Relates a deliberation process to contributions made within it.",
+            "items": {
+              "ref": "org.deliberation.contribution",
+              "type": "ref"
+            },
+            "type": "array"
+          },
+          "hasParticipant": {
+            "description": "Relates a deliberation process to its participants.",
+            "items": {
+              "ref": "org.deliberation.participant",
+              "type": "ref"
+            },
+            "type": "array"
+          },
+          "hasStage": {
+            "description": "Relates a deliberation process to its stages.",
+            "items": {
+              "ref": "org.deliberation.stage",
+              "type": "ref"
+            },
+            "type": "array"
+          },
+          "hasTopic": {
+            "description": "Relates a deliberation process to its topic.",
+            "items": {
+              "ref": "org.deliberation.topic",
+              "type": "ref"
+            },
+            "type": "array"
+          },
+          "identifier": {
+            "description": "A unique identifier for an entity.",
+            "maxLength": 200,
+            "type": "string"
+          },
+          "name": {
+            "description": "The name of an entity.",
+            "maxLength": 300,
+            "minLength": 1,
+            "type": "string"
+          },
+          "startDate": {
+            "description": "The start date and time of a deliberation process or stage.",
+            "format": "datetime",
+            "type": "string"
+          },
+          "takesPlaceIn": {
+            "description": "Relates a deliberation process to the forum where it takes place.",
+            "items": {
+              "ref": "org.deliberation.forum",
+              "type": "ref"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "type": "object"
+      },
+      "type": "record"
+    }
+  },
+  "id": "org.deliberation.deliberationProcess",
+  "lexicon": 1
+}

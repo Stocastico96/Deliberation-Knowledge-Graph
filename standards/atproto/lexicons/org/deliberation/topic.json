@@ -1,0 +1,30 @@
+{
+  "defs": {
+    "main": {
+      "description": "The subject matter of a deliberation.",
+      "key": "tid",
+      "record": {
+        "properties": {
+          "identifier": {
+            "description": "A unique identifier for an entity.",
+            "maxLength": 200,
+            "type": "string"
+          },
+          "name": {
+            "description": "The name of an entity.",
+            "maxLength": 300,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "type": "object"
+      },
+      "type": "record"
+    }
+  },
+  "id": "org.deliberation.topic",
+  "lexicon": 1
+}

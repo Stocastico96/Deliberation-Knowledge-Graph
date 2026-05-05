@@ -1,0 +1,792 @@
+{
+  "org.deliberation.argument": {
+    "defs": {
+      "main": {
+        "description": "A structured form of contribution with premises and conclusions.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "attacks": {
+              "description": "Indicates that an argument attacks another argument or position.",
+              "items": {
+                "refs": [
+                  "org.deliberation.argument",
+                  "org.deliberation.position"
+                ],
+                "type": "union"
+              },
+              "type": "array"
+            },
+            "containsFallacy": {
+              "description": "Indicates that an argument contains a specific type of logical fallacy.",
+              "items": {
+                "ref": "org.deliberation.fallacyType",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "hasConclusion": {
+              "description": "Relates an argument to its conclusion.",
+              "items": {
+                "ref": "org.deliberation.conclusion",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "hasEvidence": {
+              "description": "Relates an argument or premise to supporting evidence.",
+              "items": {
+                "ref": "org.deliberation.evidence",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "hasPremise": {
+              "description": "Relates an argument to its premises.",
+              "items": {
+                "ref": "org.deliberation.premise",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "madeBy": {
+              "description": "Relates a contribution to the participant who made it.",
+              "items": {
+                "ref": "org.deliberation.participant",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            },
+            "references": {
+              "description": "Relates a contribution or argument to information resources it references.",
+              "items": {
+                "ref": "org.deliberation.informationResource",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "responseTo": {
+              "description": "Relates a contribution to another contribution it responds to.",
+              "items": {
+                "ref": "org.deliberation.contribution",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "supports": {
+              "description": "Indicates that an argument supports another argument or position.",
+              "items": {
+                "refs": [
+                  "org.deliberation.argument",
+                  "org.deliberation.position"
+                ],
+                "type": "union"
+              },
+              "type": "array"
+            },
+            "text": {
+              "description": "The textual content of a contribution, argument, position, premise, or conclusion.",
+              "maxLength": 10000,
+              "minLength": 1,
+              "type": "string"
+            },
+            "timestamp": {
+              "description": "The date and time when a contribution was made.",
+              "format": "datetime",
+              "type": "string"
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.argument",
+    "lexicon": 1
+  },
+  "org.deliberation.argumentStructure": {
+    "defs": {
+      "main": {
+        "description": "The formal structure of an argument, including premises and conclusions.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.argumentStructure",
+    "lexicon": 1
+  },
+  "org.deliberation.conclusion": {
+    "defs": {
+      "main": {
+        "description": "The claim that an argument aims to establish.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            },
+            "text": {
+              "description": "The textual content of a contribution, argument, position, premise, or conclusion.",
+              "maxLength": 10000,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.conclusion",
+    "lexicon": 1
+  },
+  "org.deliberation.consensus": {
+    "defs": {
+      "main": {
+        "description": "Agreement reached through deliberation.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.consensus",
+    "lexicon": 1
+  },
+  "org.deliberation.contribution": {
+    "defs": {
+      "main": {
+        "description": "Any input provided by a participant in a deliberation.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "madeBy": {
+              "description": "Relates a contribution to the participant who made it.",
+              "items": {
+                "ref": "org.deliberation.participant",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            },
+            "references": {
+              "description": "Relates a contribution or argument to information resources it references.",
+              "items": {
+                "ref": "org.deliberation.informationResource",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "responseTo": {
+              "description": "Relates a contribution to another contribution it responds to.",
+              "items": {
+                "ref": "org.deliberation.contribution",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "text": {
+              "description": "The textual content of a contribution, argument, position, premise, or conclusion.",
+              "maxLength": 10000,
+              "minLength": 1,
+              "type": "string"
+            },
+            "timestamp": {
+              "description": "The date and time when a contribution was made.",
+              "format": "datetime",
+              "type": "string"
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.contribution",
+    "lexicon": 1
+  },
+  "org.deliberation.crossPlatformIdentifier": {
+    "defs": {
+      "main": {
+        "description": "Mechanisms to link entities across different deliberation platforms.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            },
+            "platformIdentifier": {
+              "description": "An identifier specific to a particular platform.",
+              "maxLength": 200,
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.crossPlatformIdentifier",
+    "lexicon": 1
+  },
+  "org.deliberation.deliberationProcess": {
+    "defs": {
+      "main": {
+        "description": "The overall deliberative activity, including its stages, timeline, and outcomes.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "endDate": {
+              "description": "The end date and time of a deliberation process or stage.",
+              "format": "datetime",
+              "type": "string"
+            },
+            "hasArgument": {
+              "description": "Relates a deliberation process to arguments made within it.",
+              "items": {
+                "ref": "org.deliberation.argument",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "hasContribution": {
+              "description": "Relates a deliberation process to contributions made within it.",
+              "items": {
+                "ref": "org.deliberation.contribution",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "hasParticipant": {
+              "description": "Relates a deliberation process to its participants.",
+              "items": {
+                "ref": "org.deliberation.participant",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "hasStage": {
+              "description": "Relates a deliberation process to its stages.",
+              "items": {
+                "ref": "org.deliberation.stage",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "hasTopic": {
+              "description": "Relates a deliberation process to its topic.",
+              "items": {
+                "ref": "org.deliberation.topic",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "minLength": 1,
+              "type": "string"
+            },
+            "startDate": {
+              "description": "The start date and time of a deliberation process or stage.",
+              "format": "datetime",
+              "type": "string"
+            },
+            "takesPlaceIn": {
+              "description": "Relates a deliberation process to the forum where it takes place.",
+              "items": {
+                "ref": "org.deliberation.forum",
+                "type": "ref"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.deliberationProcess",
+    "lexicon": 1
+  },
+  "org.deliberation.evidence": {
+    "defs": {
+      "main": {
+        "description": "Supporting information for claims made in arguments.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.evidence",
+    "lexicon": 1
+  },
+  "org.deliberation.fallacyType": {
+    "defs": {
+      "main": {
+        "description": "Classification of logical fallacies that can occur in arguments.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.fallacyType",
+    "lexicon": 1
+  },
+  "org.deliberation.forum": {
+    "defs": {
+      "main": {
+        "description": "A physical or virtual space where deliberations take place (e.g., digital platform, parliament chamber, court, public square).",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.forum",
+    "lexicon": 1
+  },
+  "org.deliberation.informationResource": {
+    "defs": {
+      "main": {
+        "description": "External sources of information referenced in deliberations.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            },
+            "url": {
+              "description": "The URL of an information resource.",
+              "format": "uri",
+              "maxLength": 2048,
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.informationResource",
+    "lexicon": 1
+  },
+  "org.deliberation.legalSource": {
+    "defs": {
+      "main": {
+        "description": "Legal documents, frameworks, or interpretations relevant to deliberations.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            },
+            "url": {
+              "description": "The URL of an information resource.",
+              "format": "uri",
+              "maxLength": 2048,
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.legalSource",
+    "lexicon": 1
+  },
+  "org.deliberation.organization": {
+    "defs": {
+      "main": {
+        "description": "Formal entities represented in or responsible for deliberations.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.organization",
+    "lexicon": 1
+  },
+  "org.deliberation.participant": {
+    "defs": {
+      "main": {
+        "description": "Individuals or entities taking part in a deliberation process.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "country": {
+              "description": "The country of origin of a participant (ISO 3166-1 alpha-3 code).",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "hasRole": {
+              "description": "Relates a participant to their role in a deliberation.",
+              "items": {
+                "ref": "org.deliberation.role",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "isAffiliatedWith": {
+              "description": "Relates a participant to organizations they are affiliated with.",
+              "items": {
+                "ref": "org.deliberation.organization",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "minLength": 1,
+              "type": "string"
+            },
+            "participantType": {
+              "description": "The type or status of participant (e.g., EU_CITIZEN, NON_EU_CITIZEN, COMPANY, NGO, PUBLIC_AUTHORITY, ACADEMIC_RESEARCH_INSTITUTION).",
+              "maxLength": 200,
+              "type": "string"
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.participant",
+    "lexicon": 1
+  },
+  "org.deliberation.position": {
+    "defs": {
+      "main": {
+        "description": "A stance or viewpoint on an issue under deliberation.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            },
+            "text": {
+              "description": "The textual content of a contribution, argument, position, premise, or conclusion.",
+              "maxLength": 10000,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.position",
+    "lexicon": 1
+  },
+  "org.deliberation.premise": {
+    "defs": {
+      "main": {
+        "description": "A statement that provides support for a conclusion in an argument.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "hasEvidence": {
+              "description": "Relates an argument or premise to supporting evidence.",
+              "items": {
+                "ref": "org.deliberation.evidence",
+                "type": "ref"
+              },
+              "type": "array"
+            },
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            },
+            "text": {
+              "description": "The textual content of a contribution, argument, position, premise, or conclusion.",
+              "maxLength": 10000,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.premise",
+    "lexicon": 1
+  },
+  "org.deliberation.role": {
+    "defs": {
+      "main": {
+        "description": "The function or position a participant holds in a deliberation.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.role",
+    "lexicon": 1
+  },
+  "org.deliberation.stage": {
+    "defs": {
+      "main": {
+        "description": "A distinct phase in a deliberation process with specific activities and goals.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "endDate": {
+              "description": "The end date and time of a deliberation process or stage.",
+              "format": "datetime",
+              "type": "string"
+            },
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "minLength": 1,
+              "type": "string"
+            },
+            "startDate": {
+              "description": "The start date and time of a deliberation process or stage.",
+              "format": "datetime",
+              "type": "string"
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.stage",
+    "lexicon": 1
+  },
+  "org.deliberation.topic": {
+    "defs": {
+      "main": {
+        "description": "The subject matter of a deliberation.",
+        "key": "tid",
+        "record": {
+          "properties": {
+            "identifier": {
+              "description": "A unique identifier for an entity.",
+              "maxLength": 200,
+              "type": "string"
+            },
+            "name": {
+              "description": "The name of an entity.",
+              "maxLength": 300,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "type": "object"
+        },
+        "type": "record"
+      }
+    },
+    "id": "org.deliberation.topic",
+    "lexicon": 1
+  }
+}
