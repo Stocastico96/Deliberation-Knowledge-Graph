@@ -6,8 +6,16 @@ Welcome to the documentation for the Deliberation Knowledge Graph project. This 
 
 - [Project Structure](project_structure.md) - Overview of the project components and how they work together
 - [Data Models Overview](data_models_overview.md) - Overview of the data models used in the project
-- [SPARQL Examples](../SPARQL_examples.md) - Collection of SPARQL query examples for exploring the knowledge graph
-- [Fallacy Analysis](../fallacy_analysis_README.md) - Documentation for the fallacy analysis component
+- [SPARQL Examples](guides/SPARQL_examples.md) - Collection of SPARQL query examples for exploring the knowledge graph
+- [Fallacy Analysis](guides/fallacy_analysis_README.md) - Documentation for the fallacy analysis component
+- [Integration Guide](guides/README_INTEGRAZIONE.md) - Notes on integrating data into the DEL ontology
+
+## Interoperability Standards
+
+- [Standards Index](../standards/README.md) - ATProto Lexicons, ActivityPub JSON-LD context, and DEL interoperability notes
+- [DEL ATProto Lexicons](../standards/atproto/README.md) - Machine-readable Lexicons under `org.deliberation.*`
+- [DEL ActivityPub / JSON-LD Profile](../standards/activitypub/README.md) - JSON-LD context and examples
+- [DEL-DDS Interoperability Roadmap](../standards/docs/dds-interoperability-roadmap.md) - Roadmap for DDS-compatible interoperability
 
 ## Dataset Documentation
 
@@ -38,3 +46,17 @@ Each dataset has its own documentation:
 - [Create Unified Knowledge Graph](../create_unified_kg.py) - Script to unify all datasets
 - [Setup SPARQL Endpoint](../setup_sparql_endpoint.sh) - Script to set up the SPARQL endpoint
 - [Run EP Fallacy Analysis](../run_ep_fallacy_analysis.py) - Script to run fallacy analysis on EU Parliament debates
+
+## Deployment and Operations
+
+- [Deployment Guide](deployment/DEPLOYMENT_GUIDE.md)
+- [Linked Data Deployment Guide](deployment/DEPLOYMENT_GUIDE_LINKEDDATA.md)
+- [Manual Apache Configuration](deployment/MANUAL_APACHE_CONFIG.md)
+- [Manual Nginx Instructions](deployment/MANUAL_NGINX_INSTRUCTIONS.md)
+- [Subdomain Configuration Guide](deployment/SUBDOMAIN_CONFIGURATION_GUIDE.md)
+
+## Reports and Research Material
+
+- [Status Reports](reports/status/)
+- [Legacy Runtime Logs](reports/logs/legacy/)
+- [Research and ORSD Material](research/)
