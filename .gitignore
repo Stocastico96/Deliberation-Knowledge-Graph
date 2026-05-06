@@ -1,6 +1,6 @@
 # Large data files
 data/
-analysis/
+/analysis/
 !scripts/analysis/*.py
 data/habermas_machine/data/*.parquet
 data/delidata/data/raw/**/*.tsv
