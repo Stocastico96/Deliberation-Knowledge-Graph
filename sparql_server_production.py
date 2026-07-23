@@ -279,6 +279,49 @@ def api_export(format):
         logger.error(f"Errore nell'export: {str(e)}")
         return jsonify({'error': f'Errore nell\'export: {str(e)}'}), 500
 
+_similarity_model = None
+_similarity_lock = threading.Lock()
+
+def _get_similarity_model():
+    """Lazy-load del modello di sentence embeddings (condiviso col semantic search)"""
+    global _similarity_model
+    with _similarity_lock:
+        if _similarity_model is None:
+            from sentence_transformers import SentenceTransformer
+            logger.info("Loading sentence embeddings model for /api/similarity...")
+            _similarity_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+        return _similarity_model
+
+@app.route('/api/similarity', methods=['POST'])
+@app.route('/dkg/api/similarity', methods=['POST'])
+def similarity():
+    """Similarita' coseno tra due liste di stringhe (per il mapper Map-your-data).
+
+    Body: {"queries": [...], "candidates": [...]} -> {"matrix": [[...]]}
+    matrix[i][j] = similarita' tra queries[i] e candidates[j], in [0,1].
+    """
+    try:
+        payload = request.get_json(force=True)
+        queries = payload.get('queries', [])
+        candidates = payload.get('candidates', [])
+        if not queries or not candidates:
+            return jsonify({'error': 'queries e candidates sono richiesti'}), 400
+        if len(queries) > 300 or len(candidates) > 300:
+            return jsonify({'error': 'massimo 300 elementi per lista'}), 400
+        queries = [str(q)[:300] for q in queries]
+        candidates = [str(c)[:300] for c in candidates]
+
+        model = _get_similarity_model()
+        from sentence_transformers import util as st_util
+        q_emb = model.encode(queries, convert_to_tensor=True, normalize_embeddings=True)
+        c_emb = model.encode(candidates, convert_to_tensor=True, normalize_embeddings=True)
+        sims = st_util.cos_sim(q_emb, c_emb)
+        matrix = [[round(max(0.0, float(v)), 4) for v in row] for row in sims]
+        return jsonify({'matrix': matrix})
+    except Exception as e:
+        logger.error(f"Errore in /api/similarity: {str(e)}")
+        return jsonify({'error': str(e)}), 500
+
 @app.route('/knowledge_graph/deliberation_kg.jsonld')
 @app.route('/dkg/knowledge_graph/deliberation_kg.jsonld')
 def knowledge_graph_jsonld():
@@ -678,6 +721,19 @@ def ingest_fallacy():
             if 'score' in fallacy:
                 knowledge_graph.add((fallacy_uri, DEL.hasConfidence,
                                    Literal(fallacy['score'], datatype=XSD.float)))
+
+            # Store operational taxonomy metadata when supplied by DelibAI
+            if fallacy.get('taxonomy_id'):
+                knowledge_graph.add((fallacy_uri, DEL.taxonomyId,
+                                   Literal(fallacy['taxonomy_id'])))
+
+            if fallacy.get('macro_category'):
+                knowledge_graph.add((fallacy_uri, DEL.macroCategory,
+                                   Literal(fallacy['macro_category'])))
+
+            if fallacy.get('fine_label'):
+                knowledge_graph.add((fallacy_uri, DEL.fineLabel,
+                                   Literal(fallacy['fine_label'])))
 
             # Add rationale
             if 'rationale' in fallacy:

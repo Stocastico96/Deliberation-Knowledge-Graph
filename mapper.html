@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Your Data Model to DEL — Deliberation Knowledge Graph</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --text: #1f2328;
+      --muted: #57606a; --accent: #0b5394; --good: #1a7f37; --mid: #9a6700; --low: #cf222e;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    header { background: var(--accent); color: #fff; padding: 0.9rem 1.5rem;
+      display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    header a { color: #fff; text-decoration: none; font-weight: 600; }
+    header a:hover { text-decoration: underline; }
+    main { max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; }
+    h1 { font-size: 1.35rem; margin: 0.2rem 0 0.4rem; }
+    .lead { color: var(--muted); font-size: 0.95rem; max-width: 60rem; }
+    #dropzone { margin: 1.2rem 0; border: 2px dashed var(--border); border-radius: 10px;
+      background: var(--panel); padding: 2.5rem 1rem; text-align: center; color: var(--muted);
+      cursor: pointer; transition: border-color .15s, background .15s; }
+    #dropzone.drag { border-color: var(--accent); background: #eef4fb; }
+    #dropzone i { font-size: 2rem; color: var(--accent); }
+    .hint { font-size: 0.8rem; }
+    .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06); margin-bottom: 1.2rem; overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th, td { border-bottom: 1px solid var(--border); padding: 0.5rem 0.8rem; text-align: left; vertical-align: middle; }
+    th { background: #eef2f6; }
+    td.example { color: var(--muted); font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 0.78rem; max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    select { padding: 0.3rem 0.4rem; border: 1px solid var(--border); border-radius: 6px;
+      font-size: 0.83rem; max-width: 240px; background: #fff; }
+    .conf { display: inline-block; min-width: 52px; text-align: center; padding: 0.15rem 0.5rem;
+      border-radius: 999px; font-size: 0.75rem; font-weight: 700; color: #fff; }
+    .conf.h { background: var(--good); } .conf.m { background: var(--mid); } .conf.l { background: var(--low); }
+    .src { color: var(--muted); font-size: 0.75rem; }
+    .toolbar { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 1rem 0; align-items: center; }
+    .btn { background: var(--accent); border: none; color: #fff; padding: 0.55rem 1rem;
+      border-radius: 6px; font-size: 0.88rem; cursor: pointer; text-decoration: none; display: inline-block; }
+    .btn.secondary { background: #fff; color: var(--accent); border: 1px solid var(--accent); }
+    .btn:disabled { opacity: 0.5; cursor: default; }
+    #status { color: var(--muted); font-size: 0.83rem; }
+    #preview { display: none; }
+    #preview pre { margin: 0; padding: 1rem 1.2rem; font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 0.8rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
+    footer { text-align: center; color: var(--muted); font-size: 0.82rem; padding: 1.6rem; }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><i class="fas fa-arrow-left"></i> Deliberation Knowledge Graph</a>
+    <span style="opacity:.85">/ Map Your Data Model</span>
+  </header>
+  <main>
+    <h1><i class="fas fa-diagram-project"></i> Map your deliberation data model to DEL</h1>
+    <p class="lead">Drop a sample of your data (CSV, JSON, or XML) — everything is parsed in your
+      browser. Field names and example values are matched against the
+      <a href="https://w3id.org/deliberation" target="_blank">Deliberation Ontology (DEL)</a> using a
+      platform alias dictionary, lexical similarity, and semantic embeddings. Review the suggestions,
+      correct them, and export the mapping as <a href="https://mapping-commons.github.io/sssom/" target="_blank">SSSOM</a>
+      or as an executable <a href="https://rml.io/yarrrml/" target="_blank">YARRRML</a> skeleton.
+      Your file never leaves the browser; only field names are sent to the embeddings service.</p>
+
+    <div id="dropzone">
+      <i class="fas fa-file-arrow-up"></i>
+      <p><strong>Drop your file here</strong> or click to choose<br>
+      <span class="hint">CSV, JSON, XML/RDF — a small sample (a few records) is enough</span></p>
+      <input type="file" id="fileinput" accept=".csv,.json,.xml,.rdf" hidden>
+    </div>
+
+    <div class="toolbar" id="actions" style="display:none">
+      <button class="btn" id="exportSssom"><i class="fas fa-download"></i> Export SSSOM (TSV)</button>
+      <button class="btn" id="exportYarrrml"><i class="fas fa-download"></i> Export YARRRML</button>
+      <button class="btn secondary" id="showTurtle"><i class="fas fa-eye"></i> Preview Turtle</button>
+      <span id="status"></span>
+    </div>
+
+    <div class="panel" id="tablePanel" style="display:none">
+      <table>
+        <thead><tr><th>Your field</th><th>Example value</th><th>DEL term</th><th>Confidence</th><th>Match</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+
+    <div class="panel" id="preview"><pre id="previewText"></pre></div>
+  </main>
+  <footer>
+    Questions, corrections, or a platform to add to the alias dictionary?
+    Write to <a href="mailto:simone.vagnoni3@unibo.it">simone.vagnoni3@unibo.it</a> ·
+    Mappings are suggestions, not authoritative statements — please review before publishing.
+  </footer>
+
+<script>
+// ---------------------------------------------------------------- DEL catalog
+const DEL_NS = 'https://w3id.org/deliberation/ontology#';
+const CATALOG = [
+  // classes
+  {id:'DeliberationProcess', kind:'class', label:'Deliberation Process', gloss:'a deliberative process, consultation, debate or conversation', aliases:['process','consultation','initiative','debate','conversation','discussion','project','dialogue']},
+  {id:'Stage', kind:'class', label:'Stage', gloss:'a phase of a deliberation process', aliases:['phase','step','round','stage']},
+  {id:'Topic', kind:'class', label:'Topic', gloss:'subject matter of a deliberation', aliases:['topic','category','theme','tag','subject','issue']},
+  {id:'Consensus', kind:'class', label:'Consensus', gloss:'agreement reached through deliberation', aliases:['consensus','agreement','outcome','decision','resolution']},
+  {id:'Forum', kind:'class', label:'Forum', gloss:'physical or virtual space where deliberation happens', aliases:['forum','venue','chamber','room','space']},
+  {id:'Participant', kind:'class', label:'Participant', gloss:'person or entity taking part in deliberation', aliases:['participant','person','user','citizen','respondent','member','voter','account']},
+  {id:'ArtificialAgent', kind:'class', label:'Artificial Agent', gloss:'AI system, bot or algorithm taking part in deliberation', aliases:['bot','ai','agent','algorithm','model','assistant']},
+  {id:'Facilitator', kind:'class', label:'Facilitator', gloss:'role of hosting, guiding or moderating a deliberation', aliases:['facilitator','moderator','host','organizer','admin']},
+  {id:'Organization', kind:'class', label:'Organization', gloss:'formal entity in or responsible for deliberation', aliases:['organization','org','company','ngo','institution','association']},
+  {id:'Contribution', kind:'class', label:'Contribution', gloss:'a comment, statement, proposal or speech made in a deliberation', aliases:['contribution','comment','statement','post','proposal','speech','intervention','feedback','submission','message']},
+  {id:'Reaction', kind:'class', label:'Reaction', gloss:'a vote, rating or endorsement reacting to a contribution', aliases:['reaction','vote','rating','like','endorsement']},
+  {id:'Argument', kind:'class', label:'Argument', gloss:'structured contribution with premises and conclusion', aliases:['argument','claim','reasoning','justification']},
+  {id:'Position', kind:'class', label:'Position', gloss:'a stance or viewpoint on an issue', aliases:['position','stance','opinion','viewpoint']},
+  {id:'Premise', kind:'class', label:'Premise', gloss:'statement supporting a conclusion', aliases:['premise','ground','reason']},
+  {id:'Conclusion', kind:'class', label:'Conclusion', gloss:'conclusion of an argument', aliases:['conclusion']},
+  {id:'Evidence', kind:'class', label:'Evidence', gloss:'evidence supporting an argument', aliases:['evidence','proof','source','citation']},
+  {id:'FallacyType', kind:'class', label:'Fallacy Type', gloss:'type of logical fallacy detected', aliases:['fallacy']},
+  {id:'InformationResource', kind:'class', label:'Information Resource', gloss:'external document or resource referenced', aliases:['document','resource','attachment','reference']},
+  {id:'LegalSource', kind:'class', label:'Legal Source', gloss:'legal document referenced in deliberation', aliases:['law','regulation','statute','directive','legal']},
+  {id:'CrossPlatformIdentifier', kind:'class', label:'Cross-Platform Identifier', gloss:'identifier linking entities across platforms', aliases:['crossplatform','federated id']},
+  {id:'Role', kind:'class', label:'Role', gloss:'function a participant holds in deliberation', aliases:['role','function']},
+  // object properties
+  {id:'madeBy', kind:'objectProperty', label:'made by', gloss:'participant who made the contribution', aliases:['author','user','user_id','username','speaker','created_by','by','participant_id','author-id','madeby','creator']},
+  {id:'responseTo', kind:'objectProperty', label:'response to', gloss:'contribution this one replies to', aliases:['reply_to','parent_id','in_reply_to','parent','thread','replyto','responseto','inresponseto']},
+  {id:'isPartOf', kind:'objectProperty', label:'is part of', gloss:'process the contribution belongs to', aliases:['process_id','consultation_id','debate_id','conversation_id','project_id','ispartof']},
+  {id:'hasTopic', kind:'objectProperty', label:'has topic', gloss:'topic of the process', aliases:['topic_id','category_id','hastopic']},
+  {id:'hasStage', kind:'objectProperty', label:'has stage', gloss:'stage of the process', aliases:['phase_id','hasstage']},
+  {id:'hasRole', kind:'objectProperty', label:'has role', gloss:'role of the participant', aliases:['role','hasrole']},
+  {id:'isAffiliatedWith', kind:'objectProperty', label:'is affiliated with', gloss:'organization the participant belongs to', aliases:['organization','affiliation','org','employer','isaffiliatedwith']},
+  {id:'takesPlaceIn', kind:'objectProperty', label:'takes place in', gloss:'forum where the process happens', aliases:['venue','location','place','platform','takesplacein']},
+  {id:'supports', kind:'objectProperty', label:'supports', gloss:'argument supports another argument or position', aliases:['supports','pro','in_favor']},
+  {id:'attacks', kind:'objectProperty', label:'attacks', gloss:'argument attacks another argument or position', aliases:['attacks','con','against','refutes','rebuts']},
+  {id:'hasEvidence', kind:'objectProperty', label:'has evidence', gloss:'evidence backing the argument', aliases:['evidence','hasevidence']},
+  {id:'references', kind:'objectProperty', label:'references', gloss:'information resource referenced', aliases:['references','cites','link_to']},
+  {id:'containsFallacy', kind:'objectProperty', label:'contains fallacy', gloss:'fallacy detected in the contribution', aliases:['fallacy','containsfallacy']},
+  // datatype properties
+  {id:'text', kind:'datatypeProperty', label:'text', gloss:'textual content of a contribution', aliases:['text','body','content','comment','comment-body','message','answer','response_text','description','remarks','feedback_text']},
+  {id:'timestamp', kind:'datatypeProperty', label:'timestamp', gloss:'when the contribution was made', aliases:['created_at','createdat','date','datetime','submitted','published_at','time','timestamp','submitted_at']},
+  {id:'startDate', kind:'datatypeProperty', label:'start date', gloss:'start of the process or stage', aliases:['start_date','starts_at','begin','opened_at','startdate']},
+  {id:'endDate', kind:'datatypeProperty', label:'end date', gloss:'end of the process or stage', aliases:['end_date','ends_at','deadline','closed_at','enddate']},
+  {id:'name', kind:'datatypeProperty', label:'name', gloss:'name or title of an entity', aliases:['title','name','label','heading','headline']},
+  {id:'identifier', kind:'datatypeProperty', label:'identifier', gloss:'unique identifier of an entity', aliases:['id','uid','uuid','ref','key','comment-id','identifier']},
+  {id:'platformIdentifier', kind:'datatypeProperty', label:'platform identifier', gloss:'identifier on a specific platform', aliases:['external_id','platform_id','source_id','platformidentifier']},
+  {id:'url', kind:'datatypeProperty', label:'url', gloss:'URL of a resource', aliases:['url','link','permalink','source_url','href','uri']},
+  {id:'country', kind:'datatypeProperty', label:'country', gloss:'country of the participant', aliases:['country','nation','country_code','nationality']},
+  {id:'participantType', kind:'datatypeProperty', label:'participant type', gloss:'type of participant: citizen, company, NGO, public authority', aliases:['user_type','participant_type','stakeholder_type','usertype','participanttype','actor_type']},
+  {id:'reactionType', kind:'datatypeProperty', label:'reaction type', gloss:'kind of reaction: agree, disagree, score, quadratic vote', aliases:['vote_type','reaction_type','vote','reactiontype']},
+  {id:'reactionValue', kind:'datatypeProperty', label:'reaction value', gloss:'numeric strength of a reaction or vote', aliases:['score','rating','value','amount','weight','reactionvalue']},
+  {id:'agreeCount', kind:'datatypeProperty', label:'agree count', gloss:'number of agreeing votes on a contribution', aliases:['agrees','votes_up','cached_votes_up','likes','upvotes','endorsements','supports_count','agree_count','agreecount','yes']},
+  {id:'disagreeCount', kind:'datatypeProperty', label:'disagree count', gloss:'number of disagreeing votes on a contribution', aliases:['disagrees','votes_down','cached_votes_down','dislikes','downvotes','disagree_count','disagreecount','no']},
+];
+
+// ---------------------------------------------------------------- helpers
+const $ = id => document.getElementById(id);
+const norm = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const tokens = s => norm(s.replace(/([a-z])([A-Z])/g, '$1 $2')).split(' ').filter(Boolean);
+
+function trigrams(s) {
+  const t = '  ' + s + '  ', out = new Set();
+  for (let i = 0; i < t.length - 2; i++) out.add(t.slice(i, i + 3));
+  return out;
+}
+function dice(a, b) {
+  const A = trigrams(a), B = trigrams(b);
+  let inter = 0; for (const g of A) if (B.has(g)) inter++;
+  return (2 * inter) / (A.size + B.size);
+}
+function lexScore(field, term) {
+  const f = norm(tokens(field).join(' '));
+  let best = 0;
+  const targets = [term.label, term.id, ...term.aliases];
+  for (const t of targets) {
+    const n = norm(t);
+    if (!n) continue;
+    if (f === n) return 1.0;
+    const ftoks = new Set(f.split(' ')), ntoks = n.split(' ');
+    if (ntoks.every(x => ftoks.has(x)) && ntoks.length) best = Math.max(best, 0.9);
+    best = Math.max(best, dice(f, n) * 0.85);
+  }
+  return best;
+}
+
+// ---------------------------------------------------------------- parsing
+function parseCSVLine(line) {
+  const out = []; let cur = '', inQ = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (inQ) { if (c === '"' && line[i+1] === '"') { cur += '"'; i++; } else if (c === '"') inQ = false; else cur += c; }
+    else if (c === '"') inQ = true;
+    else if (c === ',') { out.push(cur); cur = ''; }
+    else cur += c;
+  }
+  out.push(cur); return out;
+}
+function extractFields(name, text) {
+  const ext = name.split('.').pop().toLowerCase();
+  if (ext === 'csv') {
+    const lines = text.replace(/\r/g, '').split('\n').filter(l => l.trim());
+    const head = parseCSVLine(lines[0]);
+    const ex = lines[1] ? parseCSVLine(lines[1]) : [];
+    return head.map((h, i) => ({ field: h, example: ex[i] || '' }));
+  }
+  if (ext === 'json') {
+    const data = JSON.parse(text);
+    let rec = data;
+    if (Array.isArray(rec)) rec = rec[0] || {};
+    else { // find the largest array of objects, else use root
+      let bestArr = null;
+      (function scan(o, depth) {
+        if (depth > 3 || !o || typeof o !== 'object') return;
+        for (const v of Object.values(o)) {
+          if (Array.isArray(v) && v.length && typeof v[0] === 'object')
+            { if (!bestArr || v.length > bestArr.length) bestArr = v; }
+          else if (v && typeof v === 'object') scan(v, depth + 1);
+        }
+      })(rec, 0);
+      if (bestArr) rec = bestArr[0];
+    }
+    const out = [];
+    (function walk(o, prefix, depth) {
+      if (depth > 4 || !o || typeof o !== 'object') return;
+      for (const [k, v] of Object.entries(o)) {
+        const path = prefix ? prefix + '.' + k : k;
+        if (v && typeof v === 'object' && !Array.isArray(v)) walk(v, path, depth + 1);
+        else if (Array.isArray(v) && v.length && typeof v[0] === 'object') walk(v[0], path + '[]', depth + 1);
+        else out.push({ field: path, example: Array.isArray(v) ? JSON.stringify(v).slice(0, 80) : String(v ?? '').slice(0, 80) });
+      }
+    })(rec, '', 0);
+    return out;
+  }
+  // xml / rdf: collect element and attribute names with sample text
+  const doc = new DOMParser().parseFromString(text, 'application/xml');
+  if (doc.querySelector('parsererror')) throw new Error('XML parse error');
+  const seen = new Map();
+  (function walk(el, depth) {
+    if (depth > 6) return;
+    for (const child of el.children) {
+      const key = child.tagName;
+      if (!seen.has(key)) {
+        const txt = (child.children.length === 0 ? child.textContent : '').trim().slice(0, 80);
+        seen.set(key, txt);
+      }
+      for (const a of child.attributes) if (!seen.has(key + '@' + a.name)) seen.set(key + '@' + a.name, a.value.slice(0, 80));
+      walk(child, depth + 1);
+    }
+  })(doc.documentElement ? { children: [doc.documentElement] } : doc, 0);
+  return [...seen.entries()].map(([field, example]) => ({ field, example }));
+}
+
+// ---------------------------------------------------------------- matching
+let state = { fields: [], choices: [], sourceName: '' };
+
+async function suggest(fields) {
+  const scored = fields.map(f => {
+    let best = { term: null, score: 0, src: '' };
+    for (const term of CATALOG) {
+      const s = lexScore(f.field, term);
+      if (s > best.score) best = { term, score: s, src: s >= 0.9 ? 'alias' : 'lexical' };
+    }
+    return best;
+  });
+  // embeddings pass (graceful fallback if the endpoint is unavailable)
+  try {
+    $('status').textContent = 'Computing semantic embeddings…';
+    const queries = fields.map(f => f.field.replace(/[._\[\]]/g, ' ') + (f.example ? ' (e.g. ' + f.example.slice(0, 40) + ')' : ''));
+    const candidates = CATALOG.map(t => t.label + ' — ' + t.gloss);
+    const r = await fetch('/api/similarity', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ queries, candidates })
+    });
+    if (r.ok) {
+      const { matrix } = await r.json();
+      matrix.forEach((row, i) => {
+        let bi = 0; row.forEach((v, j) => { if (v > row[bi]) bi = j; });
+        const emb = row[bi] * 0.92; // slight discount vs exact alias hits
+        if (emb > scored[i].score) scored[i] = { term: CATALOG[bi], score: emb, src: 'embeddings' };
+      });
+      $('status').textContent = 'Suggestions: alias dictionary + lexical + embeddings.';
+    } else { $('status').textContent = 'Embeddings service unavailable — lexical matching only.'; }
+  } catch (e) { $('status').textContent = 'Embeddings service unavailable — lexical matching only.'; }
+  return scored;
+}
+
+function confClass(s) { return s >= 0.75 ? 'h' : s >= 0.45 ? 'm' : 'l'; }
+
+function render() {
+  const tbody = $('rows'); tbody.innerHTML = '';
+  state.fields.forEach((f, i) => {
+    const ch = state.choices[i];
+    const tr = document.createElement('tr');
+    const opts = ['<option value="">— unmapped —</option>'];
+    for (const kind of ['class', 'objectProperty', 'datatypeProperty']) {
+      opts.push('<optgroup label="' + kind + '">');
+      for (const t of CATALOG.filter(t => t.kind === kind))
+        opts.push('<option value="' + t.id + '"' + (ch.term && ch.term.id === t.id ? ' selected' : '') + '>del:' + t.id + '</option>');
+      opts.push('</optgroup>');
+    }
+    tr.innerHTML =
+      '<td><code>' + f.field.replace(/</g, '&lt;') + '</code></td>' +
+      '<td class="example" title="' + String(f.example).replace(/"/g, '&quot;') + '">' + String(f.example).replace(/</g, '&lt;') + '</td>' +
+      '<td><select data-i="' + i + '">' + opts.join('') + '</select></td>' +
+      '<td><span class="conf ' + confClass(ch.score) + '">' + Math.round(ch.score * 100) + '%</span></td>' +
+      '<td class="src">' + (ch.src || '') + '</td>';
+    tbody.appendChild(tr);
+  });
+  tbody.querySelectorAll('select').forEach(sel => sel.addEventListener('change', e => {
+    const i = +e.target.dataset.i;
+    const t = CATALOG.find(t => t.id === e.target.value) || null;
+    state.choices[i] = { term: t, score: t ? 1 : 0, src: t ? 'manual' : '' };
+    render();
+  }));
+  $('tablePanel').style.display = ''; $('actions').style.display = '';
+}
+
+// ---------------------------------------------------------------- exports
+function download(name, text, type) {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name; a.click();
+}
+function justification(src) {
+  return { alias: 'semapv:LexicalMatching', lexical: 'semapv:LexicalSimilarityThresholdMatching',
+           embeddings: 'semapv:SemanticSimilarityThresholdMatching', manual: 'semapv:ManualMappingCuration' }[src] || 'semapv:UnspecifiedMatching';
+}
+$('exportSssom').onclick = () => {
+  const rows = ['# curie_map:', '#   del: ' + DEL_NS, '#   semapv: https://w3id.org/semapv/vocab/',
+    '# mapping_set_id: https://w3id.org/deliberation/mappings/' + (state.sourceName || 'custom'),
+    'subject_label\tpredicate_id\tobject_id\tobject_label\tmapping_justification\tconfidence'];
+  state.fields.forEach((f, i) => {
+    const ch = state.choices[i]; if (!ch.term) return;
+    const pred = ch.score >= 0.9 ? 'skos:closeMatch' : 'skos:relatedMatch';
+    rows.push([f.field, pred, 'del:' + ch.term.id, ch.term.label, justification(ch.src), ch.score.toFixed(2)].join('\t'));
+  });
+  download('mapping-' + (state.sourceName || 'data') + '.sssom.tsv', rows.join('\n'), 'text/tab-separated-values');
+};
+$('exportYarrrml').onclick = () => {
+  const props = state.fields.map((f, i) => ({ f, ch: state.choices[i] }))
+    .filter(x => x.ch.term && x.ch.term.kind !== 'class');
+  const id = props.find(x => x.ch.term.id === 'identifier');
+  const y = ['prefixes:', '  del: ' + DEL_NS, '', 'mappings:', '  contribution:',
+    '    sources:', "      - ['" + (state.sourceName || 'data.csv') + "~csv']",
+    '    s: https://example.org/contribution/$(' + (id ? id.f.field : props[0] ? props[0].f.field : 'id') + ')',
+    '    po:', '      - [a, del:Contribution]'];
+  for (const { f, ch } of props) y.push('      - [del:' + ch.term.id + ', $(' + f.field + ')]');
+  y.push('', '# Skeleton generated by the DEL mapper — adjust subjects, classes and datatypes before running.');
+  download('mapping-' + (state.sourceName || 'data') + '.yarrrml.yml', y.join('\n'), 'text/yaml');
+};
+$('showTurtle').onclick = () => {
+  const lines = ['@prefix del: <' + DEL_NS + '> .', '@prefix ex: <https://example.org/> .', '', 'ex:contribution_1 a del:Contribution ;'];
+  const props = state.fields.map((f, i) => ({ f, ch: state.choices[i] }))
+    .filter(x => x.ch.term && x.ch.term.kind === 'datatypeProperty');
+  props.forEach(({ f, ch }, i) => {
+    const v = String(f.example || '…').replace(/"/g, '\\"');
+    lines.push('    del:' + ch.term.id + ' "' + v + '"' + (i < props.length - 1 ? ' ;' : ' .'));
+  });
+  if (!props.length) lines.push('    del:text "…" .');
+  $('previewText').textContent = lines.join('\n');
+  $('preview').style.display = '';
+};
+
+// ---------------------------------------------------------------- wiring
+const dz = $('dropzone');
+dz.onclick = () => $('fileinput').click();
+dz.ondragover = e => { e.preventDefault(); dz.classList.add('drag'); };
+dz.ondragleave = () => dz.classList.remove('drag');
+dz.ondrop = e => { e.preventDefault(); dz.classList.remove('drag'); if (e.dataTransfer.files[0]) load(e.dataTransfer.files[0]); };
+$('fileinput').onchange = e => { if (e.target.files[0]) load(e.target.files[0]); };
+
+async function load(file) {
+  try {
+    const text = await file.text();
+    const fields = extractFields(file.name, text);
+    if (!fields.length) throw new Error('No fields detected');
+    state.sourceName = file.name.replace(/\.[^.]+$/, '');
+    state.fields = fields;
+    $('status').textContent = fields.length + ' fields detected — matching…';
+    state.choices = await suggest(fields);
+    render();
+  } catch (err) {
+    alert('Could not parse ' + file.name + ': ' + err.message);
+  }
+}
+</script>
+</body>
+</html>
