@@ -70,6 +70,8 @@ The project uses a core deliberation ontology that integrates concepts from seve
 - **LKIF Ontology** - For legal knowledge
 - **IBIS Model** - For issue-based information systems
 
+DEL is also aligned (via `ontologies/mappings.owl`) with the [Metagov Deliberation Interoperability Project](https://github.com/metagov/ontology) data model, and its relationship to the [W3C Decentralized Deliberation Stack (DDS) Community Group](https://www.w3.org/community/dds/) specification is under discussion in [dds-wg/dds#20](https://github.com/dds-wg/dds/issues/20).
+
 ## SPARQL Queries
 
 The repository includes several example SPARQL queries for exploring the knowledge graph. These can be found in the [SPARQL Examples](SPARQL_examples.md) document, which includes:

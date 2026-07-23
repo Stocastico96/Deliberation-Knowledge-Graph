@@ -133,4 +133,51 @@
         <skos:relatedMatch rdf:resource="http://www.estrellaproject.org/lkif-core/expression.owl#Qualified_Expression"/>
         <lkifMapping>When normative, related to qualified expressions in LKIF</lkifMapping>
     </rdf:Description>
+
+    <!-- Metagov Deliberation Interoperability Project (DIP) Mappings -->
+    <!-- https://github.com/metagov/ontology — pre-release data model with RDF, JSON Schema
+         and AT Protocol lexicon (org.deliberation.*) exports. Its RDF export currently emits
+         schema.org types and a provisional http://deliberation.org/ontology# namespace;
+         these mappings target the URIs emitted by that export and should be revisited
+         once DIP publishes stable identifiers. Relevant to the W3C Decentralized
+         Deliberation Stack (DDS) Community Group, https://www.w3.org/community/dds/. -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/deliberation/mappings#metagovMapping">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Participant">
+        <skos:relatedMatch rdf:resource="https://schema.org/Person"/>
+        <metagovMapping>DIP Person (org.deliberation.person) is exported as schema:Person; del:Participant is broader, covering organizational and non-human agents. DIP additionally attributes content to a Generator (Participant, Host, or Algorithm), a pattern DEL currently expresses only for human participants via del:madeBy.</metagovMapping>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Contribution">
+        <skos:closeMatch rdf:resource="http://deliberation.org/ontology#Statement"/>
+        <metagovMapping>DIP Statement (org.deliberation.statement) closely matches del:Contribution. DIP StatementRole values map onto DEL specializations: Evidence to del:Evidence, Refutation to del:attacks relations, Proposal and Decision to del:Position and del:Consensus contexts.</metagovMapping>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#DeliberationProcess">
+        <skos:relatedMatch rdf:resource="https://schema.org/Project"/>
+        <metagovMapping>DIP Project (org.deliberation.project) is the container of one deliberative process, exported as schema:Project; DIP Phase corresponds to del:Stage but has no RDF export yet.</metagovMapping>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Forum">
+        <skos:relatedMatch rdf:resource="https://schema.org/Place"/>
+        <metagovMapping>DIP Location (org.deliberation.location) is exported as schema:Place; del:Forum covers both physical and virtual deliberation spaces.</metagovMapping>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#madeBy">
+        <skos:closeMatch rdf:resource="http://deliberation.org/ontology#madeBy"/>
+        <metagovMapping>DIP madeBy ranges over Generator (participant, host, or algorithm), wider than del:madeBy which ranges over del:Participant.</metagovMapping>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#responseTo">
+        <skos:closeMatch rdf:resource="http://deliberation.org/ontology#inResponseTo"/>
+        <metagovMapping>Direct conceptual equivalent for threading of contributions.</metagovMapping>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#text">
+        <skos:closeMatch rdf:resource="http://deliberation.org/ontology#content"/>
+        <metagovMapping>Direct conceptual equivalent for the textual content of a contribution.</metagovMapping>
+    </rdf:Description>
 </rdf:RDF>

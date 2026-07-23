@@ -209,6 +209,18 @@ The Deliberation Knowledge Graph ontology is mapped to several standard ontologi
 - `del:supports` ↔ `aif:supports`
 - `del:attacks` ↔ `aif:attacks`
 
+### Metagov Deliberation Interoperability Project (DIP) Mappings
+
+The [Metagov Deliberation Interoperability Project](https://github.com/metagov/ontology) defines a platform-neutral data model (with RDF, JSON Schema and AT Protocol `org.deliberation.*` lexicon exports) for civic deliberation platforms such as Polis, HeyForm and Talk to the City. DEL aligns to the URIs its RDF export currently emits (DIP is pre-release; mappings will be revisited once it publishes stable identifiers):
+
+- `del:Contribution` ↔ DIP `Statement` (`org.deliberation.statement`)
+- `del:Participant` ↔ DIP `Person` (`org.deliberation.person`, exported as `schema:Person`)
+- `del:DeliberationProcess` ↔ DIP `Project` (`org.deliberation.project`)
+- `del:Forum` ↔ DIP `Location` (`org.deliberation.location`)
+- `del:responseTo` ↔ DIP `inResponseTo`; `del:text` ↔ DIP `content`; `del:madeBy` ↔ DIP `madeBy`
+
+Complementary coverage: DIP models reactions and voting (simple, score, quadratic), moderation, algorithmic grouping, and attribution of content to a `Generator` (participant, host, or algorithm); DEL models argument structure (premises, conclusions, support/attack, fallacies) and legal sources. See also the [W3C Decentralized Deliberation Stack (DDS) Community Group](https://www.w3.org/community/dds/), where the relationship between DEL and the DDS specification is under discussion ([dds-wg/dds#20](https://github.com/dds-wg/dds/issues/20)).
+
 ## Data Conversion Process
 
 The data conversion process for each dataset follows these steps:
