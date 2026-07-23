@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Viewer — Deliberation Knowledge Graph</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --text: #1f2328;
+      --muted: #57606a; --accent: #0b5394; --key: #0550ae; --str: #0a3069;
+      --num: #8250df; --bool: #cf222e; --tag: #116329; --attr: #0550ae;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    header { background: var(--accent); color: #fff; padding: 0.9rem 1.5rem;
+      display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    header a { color: #fff; text-decoration: none; font-weight: 600; }
+    header a:hover { text-decoration: underline; }
+    header .file-name { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.9rem; opacity: 0.9; word-break: break-all; }
+    .toolbar { margin-left: auto; display: flex; gap: 0.5rem; }
+    .toolbar a, .toolbar button { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.4);
+      color: #fff; padding: 0.35rem 0.8rem; border-radius: 6px; font-size: 0.85rem; cursor: pointer; }
+    .toolbar a:hover, .toolbar button:hover { background: rgba(255,255,255,0.28); text-decoration: none; }
+    main { max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; }
+    .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+      overflow: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+    .meta { color: var(--muted); font-size: 0.85rem; margin: 0.6rem 0.2rem; }
+    pre { margin: 0; padding: 1.2rem 1.4rem; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.85rem; line-height: 1.55; tab-size: 2; white-space: pre; }
+    table.csv { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    table.csv th, table.csv td { border: 1px solid var(--border); padding: 0.45rem 0.7rem;
+      text-align: left; vertical-align: top; }
+    table.csv th { background: #eef2f6; position: sticky; top: 0; }
+    table.csv tr:nth-child(even) td { background: #fafbfc; }
+    .j-key { color: var(--key); } .j-str { color: var(--str); } .j-num { color: var(--num); }
+    .j-bool, .j-null { color: var(--bool); font-weight: 600; }
+    .x-tag { color: var(--tag); } .x-attr { color: var(--attr); } .x-val { color: var(--str); }
+    .x-com { color: var(--muted); font-style: italic; }
+    .error { padding: 2rem; color: #cf222e; }
+    footer { text-align: center; color: var(--muted); font-size: 0.8rem; padding: 1.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html#datasets"><i class="fas fa-arrow-left"></i> Deliberation Knowledge Graph</a>
+    <span class="file-name" id="fname"></span>
+    <span class="toolbar">
+      <a id="download" href="#" download><i class="fas fa-download"></i> Download</a>
+      <a id="raw" href="#" target="_blank"><i class="fas fa-file-lines"></i> Raw</a>
+    </span>
+  </header>
+  <main>
+    <div class="meta" id="meta"></div>
+    <div class="panel" id="panel"><pre>Loading…</pre></div>
+  </main>
+  <footer>Sample data are excerpts of the source datasets, provided for format inspection. See each dataset card for licensing.</footer>
+  <script>
+  (function () {
+    const params = new URLSearchParams(location.search);
+    const file = params.get('file') || '';
+    const panel = document.getElementById('panel');
+    // only files inside the repo's data/ directory can be displayed
+    if (!/^data\/[\w./ -]+\.(json|csv|rdf|xml|ttl|txt|md)$/.test(file) || file.includes('..')) {
+      panel.innerHTML = '<div class="error">Invalid or missing file parameter.</div>';
+      return;
+    }
+    document.getElementById('fname').textContent = file;
+    document.getElementById('download').href = file;
+    document.getElementById('raw').href = file;
+
+    const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+    function highlightJSON(text) {
+      const json = JSON.stringify(JSON.parse(text), null, 2);
+      return esc(json).replace(
+        /("(?:\\.|[^"\\])*")(\s*:)?|\b(true|false)\b|\bnull\b|-?\b\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b/g,
+        (m, str, colon, bool) => {
+          if (str) return colon ? '<span class="j-key">' + str + '</span>' + colon
+                                : '<span class="j-str">' + str + '</span>';
+          if (bool) return '<span class="j-bool">' + bool + '</span>';
+          if (m === 'null') return '<span class="j-null">null</span>';
+          return '<span class="j-num">' + m + '</span>';
+        });
+    }
+
+    function highlightXML(text) {
+      return esc(text)
+        .replace(/(&lt;!--[\s\S]*?--&gt;)/g, '<span class="x-com">$1</span>')
+        .replace(/(&lt;\/?)([\w:.-]+)/g, '$1<span class="x-tag">$2</span>')
+        .replace(/([\w:.-]+)=("[^"]*")/g, '<span class="x-attr">$1</span>=<span class="x-val">$2</span>');
+    }
+
+    function parseCSVLine(line) {
+      const out = []; let cur = '', inQ = false;
+      for (let i = 0; i < line.length; i++) {
+        const c = line[i];
+        if (inQ) {
+          if (c === '"' && line[i + 1] === '"') { cur += '"'; i++; }
+          else if (c === '"') inQ = false;
+          else cur += c;
+        } else if (c === '"') inQ = true;
+        else if (c === ',') { out.push(cur); cur = ''; }
+        else cur += c;
+      }
+      out.push(cur);
+      return out;
+    }
+
+    function renderCSV(text) {
+      const lines = text.replace(/\r/g, '').split('\n').filter(l => l.trim().length);
+      const head = parseCSVLine(lines[0]);
+      let html = '<table class="csv"><thead><tr>' +
+        head.map(h => '<th>' + esc(h) + '</th>').join('') + '</tr></thead><tbody>';
+      for (const line of lines.slice(1)) {
+        html += '<tr>' + parseCSVLine(line).map(c => '<td>' + esc(c) + '</td>').join('') + '</tr>';
+      }
+      return html + '</tbody></table>';
+    }
+
+    fetch(file).then(r => {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.text();
+    }).then(text => {
+      const kb = (new Blob([text]).size / 1024).toFixed(1);
+      const ext = file.split('.').pop().toLowerCase();
+      document.getElementById('meta').textContent =
+        ext.toUpperCase() + ' · ' + kb + ' KB';
+      const tooBig = text.length > 800000;
+      try {
+        if (tooBig) panel.innerHTML = '<pre>' + esc(text) + '</pre>';
+        else if (ext === 'json') panel.innerHTML = '<pre>' + highlightJSON(text) + '</pre>';
+        else if (ext === 'csv') panel.innerHTML = renderCSV(text);
+        else if (ext === 'rdf' || ext === 'xml' || ext === 'ttl') panel.innerHTML = '<pre>' + highlightXML(text) + '</pre>';
+        else panel.innerHTML = '<pre>' + esc(text) + '</pre>';
+      } catch (e) {
+        panel.innerHTML = '<pre>' + esc(text) + '</pre>';
+      }
+    }).catch(e => {
+      panel.innerHTML = '<div class="error">Could not load ' + esc(file) + ' — ' + esc(e.message) + '</div>';
+    });
+  })();
+  </script>
+</body>
+</html>

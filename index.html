@@ -592,8 +592,8 @@
         </div>
         
         <div class="btn-group">
-          <a href="data/EU_parliament_debates/ep_debates/debate_2025-03-10.json" class="btn" target="_blank">View Sample JSON</a>
-          <a href="data/EU_parliament_debates/ep_debates/debate_2025-03-10.rdf" class="btn btn-secondary" target="_blank">View Sample RDF</a>
+          <a href="sample-viewer.html?file=data/EU_parliament_debates/ep_debates/debate_2025-03-10.json" class="btn" target="_blank">View Sample JSON</a>
+          <a href="sample-viewer.html?file=data/EU_parliament_debates/ep_debates/debate_2025-03-10.rdf" class="btn btn-secondary" target="_blank">View Sample RDF</a>
           <a href="data/EU_parliament_debates/README.md" class="btn btn-secondary" target="_blank">Documentation</a>
         </div>
         
@@ -628,7 +628,7 @@
             <a href="https://github.com/argrecsys/decide-madrid-2019-annotations/tree/main/data" target="_blank">Source Repository</a>
           </div>
           <div class="btn-group">
-            <a href="data/decide_Madrid/sample/sample.json" class="btn" target="_blank">View Sample</a>
+            <a href="sample-viewer.html?file=data/decide_Madrid/sample/sample.json" class="btn" target="_blank">View Sample</a>
             <a href="data/decide_Madrid/readme.txt" class="btn btn-secondary" target="_blank">Documentation</a>
           </div>
         </div>
@@ -646,7 +646,7 @@
             <a href="https://paperswithcode.com/dataset/delidata" target="_blank">Source Repository</a>
           </div>
           <div class="btn-group">
-            <a href="data/delidata/sample/sample.json" class="btn" target="_blank">View Sample</a>
+            <a href="sample-viewer.html?file=data/delidata/sample/sample.json" class="btn" target="_blank">View Sample</a>
             <a href="data/delidata/readme.txt" class="btn btn-secondary" target="_blank">Documentation</a>
           </div>
         </div>
@@ -662,7 +662,7 @@
             <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en" target="_blank">Source Website</a>
           </div>
           <div class="btn-group">
-            <a href="data/EU_have_your_say/sample/sample.csv" class="btn" target="_blank">View Sample</a>
+            <a href="sample-viewer.html?file=data/EU_have_your_say/sample/sample.csv" class="btn" target="_blank">View Sample</a>
             <a href="data/EU_have_your_say/readme.txt" class="btn btn-secondary" target="_blank">Documentation</a>
           </div>
         </div>
@@ -678,7 +678,7 @@
             <a href="https://github.com/google-deepmind/habermas_machine" target="_blank">Source Repository</a>
           </div>
           <div class="btn-group">
-            <a href="data/habermas_machine/sample/sample.json" class="btn" target="_blank">View Sample</a>
+            <a href="sample-viewer.html?file=data/habermas_machine/sample/sample.json" class="btn" target="_blank">View Sample</a>
             <a href="data/habermas_machine/readme.txt" class="btn btn-secondary" target="_blank">Documentation</a>
           </div>
         </div>
@@ -694,7 +694,7 @@
             <a href="https://www.decidim.barcelona/open-data/download?locale=es" target="_blank">Source Website</a>
           </div>
           <div class="btn-group">
-            <a href="data/decidim_barcelona/sample/sample.json" class="btn" target="_blank">View Sample</a>
+            <a href="sample-viewer.html?file=data/decidim_barcelona/sample/sample.json" class="btn" target="_blank">View Sample</a>
             <a href="data/decidim_barcelona/readme.txt" class="btn btn-secondary" target="_blank">Documentation</a>
           </div>
         </div>
@@ -727,7 +727,7 @@
             <a href="https://github.com/compdemocracy/polis" target="_blank">Open Source Platform</a>
           </div>
           <div class="btn-group">
-            <a href="data/polis_public/sample/sample.json" class="btn" target="_blank">View Sample</a>
+            <a href="sample-viewer.html?file=data/polis_public/sample/sample.json" class="btn" target="_blank">View Sample</a>
             <a href="https://pol.is/home" class="btn btn-secondary" target="_blank">Platform</a>
           </div>
         </div>
@@ -743,7 +743,7 @@
             <a href="https://www.kaggle.com/datasets/jameslabadorf/us-supreme-court-arguments-20172021" target="_blank">Source Dataset</a>
           </div>
           <div class="btn-group">
-            <a href="data/US_supreme_court_arguments/sample/sample.json" class="btn" target="_blank">View Sample</a>
+            <a href="sample-viewer.html?file=data/US_supreme_court_arguments/sample/sample.json" class="btn" target="_blank">View Sample</a>
             <a href="data/US_supreme_court_arguments/readme.txt" class="btn btn-secondary" target="_blank">Documentation</a>
           </div>
         </div>
@@ -880,7 +880,7 @@
         
         <div class="ontology-mappings-info">
           <h3>Ontology Mappings</h3>
-          <p>The mappings.owl file contains explicit mappings between the Deliberation Ontology and other standard ontologies like FOAF, Dublin Core, SIOC, AIF, and LKIF. These mappings enable interoperability and integration with existing semantic web resources.</p>
+          <p>The mappings.owl file contains explicit mappings between the Deliberation Ontology and other standard ontologies like FOAF, Dublin Core, SIOC, AIF, and LKIF, as well as alignments to <a href="https://www.w3.org/ns/prov" target="_blank">PROV-O</a> and to the <a href="https://github.com/metagov/ontology" target="_blank">Metagov Deliberation Interoperability Project (DIP)</a> data model (Polis, HeyForm, Talk to the City adaptors; RDF, JSON Schema and AT Protocol exports). These mappings enable interoperability and integration with existing semantic web resources.</p>
           <p>Key mapping relationships include:</p>
           <ul>
             <li><strong>skos:exactMatch</strong> - Concepts that are exactly equivalent</li>
@@ -1059,6 +1059,23 @@
             <td>
               <a href="https://www.oasis-open.org/committees/legalruleml/" target="_blank">LegalRuleML (OASIS)</a><br>
               <a href="https://docs.oasis-open.org/legalruleml/" target="_blank">Documentation</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Metagov DIP</td>
+            <td>rdf | json-schema | atproto</td>
+            <td>Metagov</td>
+            <td>
+              The Deliberation Interoperability Project: a platform-neutral data model for civic deliberation
+              platforms (Polis, HeyForm, Talk to the City) covering statements, reactions and voting, moderation,
+              and algorithmic attribution, with RDF, JSON Schema and AT Protocol lexicon exports. DEL publishes
+              SKOS alignments to its exported terms in mappings.owl.
+            </td>
+            <td>en</td>
+            <td>all</td>
+            <td>
+              <a href="https://github.com/metagov/ontology" target="_blank">GitHub Repository</a><br>
+              <a href="https://metagov.org/" target="_blank">Metagov</a>
             </td>
           </tr>
           <!-- End additional new ontologies -->
