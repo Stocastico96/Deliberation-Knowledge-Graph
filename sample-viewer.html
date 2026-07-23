@@ -4,59 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sample Viewer — Deliberation Knowledge Graph</title>
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    :root {
-      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --text: #1f2328;
-      --muted: #57606a; --accent: #0b5394; --key: #0550ae; --str: #0a3069;
-      --num: #8250df; --bool: #cf222e; --tag: #116329; --attr: #0550ae;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-    header { background: var(--accent); color: #fff; padding: 0.9rem 1.5rem;
-      display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    header a { color: #fff; text-decoration: none; font-weight: 600; }
-    header a:hover { text-decoration: underline; }
-    header .file-name { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      font-size: 0.9rem; opacity: 0.9; word-break: break-all; }
-    .toolbar { margin-left: auto; display: flex; gap: 0.5rem; }
-    .toolbar a, .toolbar button { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.4);
-      color: #fff; padding: 0.35rem 0.8rem; border-radius: 6px; font-size: 0.85rem; cursor: pointer; }
-    .toolbar a:hover, .toolbar button:hover { background: rgba(255,255,255,0.28); text-decoration: none; }
-    main { max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; }
-    .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
-      overflow: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
-    .meta { color: var(--muted); font-size: 0.85rem; margin: 0.6rem 0.2rem; }
-    pre { margin: 0; padding: 1.2rem 1.4rem; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      font-size: 0.85rem; line-height: 1.55; tab-size: 2; white-space: pre; }
-    table.csv { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
-    table.csv th, table.csv td { border: 1px solid var(--border); padding: 0.45rem 0.7rem;
+    .viewer-bar { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .file-name { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.9rem; color: var(--text-light); word-break: break-all; }
+    .viewer-bar .btn { font-size: 0.85rem; padding: 0.4rem 0.9rem; }
+    .panel { background: #fff; border: 1px solid #e2e8f0; border-radius: var(--border-radius);
+      overflow: auto; box-shadow: var(--box-shadow); }
+    .meta { color: var(--text-light); font-size: 0.85rem; margin: 0.4rem 0.2rem 0.8rem; }
+    .panel pre { margin: 0; padding: 1.2rem 1.4rem; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.85rem; line-height: 1.55; tab-size: 2; white-space: pre; color: var(--text-color); }
+    table.csv { border-collapse: collapse; width: 100%; font-size: 0.86rem; }
+    table.csv th, table.csv td { border: 1px solid #e2e8f0; padding: 0.45rem 0.7rem;
       text-align: left; vertical-align: top; }
-    table.csv th { background: #eef2f6; position: sticky; top: 0; }
-    table.csv tr:nth-child(even) td { background: #fafbfc; }
-    .j-key { color: var(--key); } .j-str { color: var(--str); } .j-num { color: var(--num); }
-    .j-bool, .j-null { color: var(--bool); font-weight: 600; }
-    .x-tag { color: var(--tag); } .x-attr { color: var(--attr); } .x-val { color: var(--str); }
-    .x-com { color: var(--muted); font-style: italic; }
-    .error { padding: 2rem; color: #cf222e; }
-    footer { text-align: center; color: var(--muted); font-size: 0.8rem; padding: 1.5rem; }
+    table.csv th { background: #eef2ff; position: sticky; top: 0; color: var(--secondary-color); font-family: var(--font-heading); }
+    table.csv tr:nth-child(even) td { background: #f8fafc; }
+    .j-key { color: var(--primary-dark); } .j-str { color: #0f766e; } .j-num { color: #9333ea; }
+    .j-bool, .j-null { color: var(--error-color); font-weight: 600; }
+    .x-tag { color: var(--primary-dark); } .x-attr { color: #9333ea; } .x-val { color: #0f766e; }
+    .x-com { color: var(--text-light); font-style: italic; }
+    .error { padding: 2rem; color: var(--error-color); }
   </style>
 </head>
 <body>
   <header>
-    <a href="index.html#datasets"><i class="fas fa-arrow-left"></i> Deliberation Knowledge Graph</a>
-    <span class="file-name" id="fname"></span>
-    <span class="toolbar">
-      <a id="download" href="#" download><i class="fas fa-download"></i> Download</a>
-      <a id="raw" href="#" target="_blank"><i class="fas fa-file-lines"></i> Raw</a>
-    </span>
+    <div class="container">
+      <h1>Dataset Sample Viewer</h1>
+      <p class="subtitle">Inspect the format of the datasets integrated in the Deliberation Knowledge Graph</p>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="index.html#datasets"><i class="fas fa-database"></i> Datasets</a></li>
+          <li><a href="mapper.html"><i class="fas fa-diagram-project"></i> Map Your Data</a></li>
+          <li><a href="sparql.html"><i class="fas fa-search"></i> SPARQL Endpoint</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
+  <section class="section">
+  <main class="container">
+    <div class="viewer-bar">
+      <span class="file-name" id="fname"></span>
+      <a class="btn" id="download" href="#" download><i class="fas fa-download"></i> Download</a>
+      <a class="btn btn-secondary" id="raw" href="#" target="_blank"><i class="fas fa-file-lines"></i> Raw</a>
+    </div>
     <div class="meta" id="meta"></div>
     <div class="panel" id="panel"><pre>Loading…</pre></div>
   </main>
-  <footer>Sample data are excerpts of the source datasets, provided for format inspection. See each dataset card for licensing.</footer>
+  </section>
+  <footer>
+    <div class="container">
+      <p>Sample data are excerpts of the source datasets, provided for format inspection. See each dataset card for licensing.</p>
+    </div>
+  </footer>
   <script>
   (function () {
     const params = new URLSearchParams(location.search);

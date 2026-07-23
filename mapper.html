@@ -4,61 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Map Your Data Model to DEL — Deliberation Knowledge Graph</title>
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    :root {
-      --bg: #f6f8fa; --panel: #ffffff; --border: #d0d7de; --text: #1f2328;
-      --muted: #57606a; --accent: #0b5394; --good: #1a7f37; --mid: #9a6700; --low: #cf222e;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-    header { background: var(--accent); color: #fff; padding: 0.9rem 1.5rem;
-      display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    header a { color: #fff; text-decoration: none; font-weight: 600; }
-    header a:hover { text-decoration: underline; }
-    main { max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; }
-    h1 { font-size: 1.35rem; margin: 0.2rem 0 0.4rem; }
-    .lead { color: var(--muted); font-size: 0.95rem; max-width: 60rem; }
-    #dropzone { margin: 1.2rem 0; border: 2px dashed var(--border); border-radius: 10px;
-      background: var(--panel); padding: 2.5rem 1rem; text-align: center; color: var(--muted);
-      cursor: pointer; transition: border-color .15s, background .15s; }
-    #dropzone.drag { border-color: var(--accent); background: #eef4fb; }
-    #dropzone i { font-size: 2rem; color: var(--accent); }
-    .hint { font-size: 0.8rem; }
-    .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.06); margin-bottom: 1.2rem; overflow-x: auto; }
-    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
-    th, td { border-bottom: 1px solid var(--border); padding: 0.5rem 0.8rem; text-align: left; vertical-align: middle; }
-    th { background: #eef2f6; }
-    td.example { color: var(--muted); font-family: ui-monospace, Menlo, Consolas, monospace;
-      font-size: 0.78rem; max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    select { padding: 0.3rem 0.4rem; border: 1px solid var(--border); border-radius: 6px;
-      font-size: 0.83rem; max-width: 240px; background: #fff; }
-    .conf { display: inline-block; min-width: 52px; text-align: center; padding: 0.15rem 0.5rem;
-      border-radius: 999px; font-size: 0.75rem; font-weight: 700; color: #fff; }
-    .conf.h { background: var(--good); } .conf.m { background: var(--mid); } .conf.l { background: var(--low); }
-    .src { color: var(--muted); font-size: 0.75rem; }
-    .toolbar { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 1rem 0; align-items: center; }
-    .btn { background: var(--accent); border: none; color: #fff; padding: 0.55rem 1rem;
-      border-radius: 6px; font-size: 0.88rem; cursor: pointer; text-decoration: none; display: inline-block; }
-    .btn.secondary { background: #fff; color: var(--accent); border: 1px solid var(--accent); }
-    .btn:disabled { opacity: 0.5; cursor: default; }
-    #status { color: var(--muted); font-size: 0.83rem; }
+    #dropzone { margin: 1.5rem 0; border: 2px dashed var(--primary-light); border-radius: var(--border-radius);
+      background: #fff; padding: 2.8rem 1rem; text-align: center; color: var(--text-light);
+      cursor: pointer; transition: var(--transition); }
+    #dropzone.drag, #dropzone:hover { border-color: var(--primary-dark); background: #eef2ff; }
+    #dropzone i { font-size: 2.2rem; color: var(--primary-color); }
+    .hint { font-size: 0.85rem; }
+    .panel { background: #fff; border: 1px solid #e2e8f0; border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow); margin-bottom: 1.4rem; overflow-x: auto; }
+    .panel table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+    .panel th, .panel td { border-bottom: 1px solid #e2e8f0; padding: 0.55rem 0.9rem; text-align: left; vertical-align: middle; }
+    .panel th { background: #eef2ff; color: var(--secondary-color); font-family: var(--font-heading); }
+    td.example { color: var(--text-light); font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 0.8rem; max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .panel select { padding: 0.35rem 0.5rem; border: 1px solid #cbd5e1; border-radius: var(--border-radius);
+      font-size: 0.85rem; max-width: 240px; background: #fff; font-family: var(--font-body); color: var(--text-color); }
+    .conf { display: inline-block; min-width: 52px; text-align: center; padding: 0.15rem 0.55rem;
+      border-radius: 999px; font-size: 0.76rem; font-weight: 700; color: #fff; }
+    .conf.h { background: var(--success-color); } .conf.m { background: var(--warning-color); } .conf.l { background: var(--error-color); }
+    .src { color: var(--text-light); font-size: 0.78rem; }
+    .toolbar { display: flex; gap: 0.7rem; flex-wrap: wrap; margin: 1.2rem 0; align-items: center; }
+    .toolbar .btn { border: none; cursor: pointer; }
+    #status { color: var(--text-light); font-size: 0.86rem; }
     #preview { display: none; }
-    #preview pre { margin: 0; padding: 1rem 1.2rem; font-family: ui-monospace, Menlo, Consolas, monospace;
-      font-size: 0.8rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
-    footer { text-align: center; color: var(--muted); font-size: 0.82rem; padding: 1.6rem; }
-    footer a { color: var(--accent); }
+    #preview pre { margin: 0; padding: 1.1rem 1.3rem; font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 0.82rem; line-height: 1.55; white-space: pre-wrap; word-break: break-word; }
+    .lead { color: var(--text-light); max-width: 62rem; }
   </style>
 </head>
 <body>
   <header>
-    <a href="index.html"><i class="fas fa-arrow-left"></i> Deliberation Knowledge Graph</a>
-    <span style="opacity:.85">/ Map Your Data Model</span>
+    <div class="container">
+      <h1>Map Your Data Model to DEL</h1>
+      <p class="subtitle">Get a suggested mapping from your platform's data model to the Deliberation Ontology</p>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="index.html#datasets"><i class="fas fa-database"></i> Datasets</a></li>
+          <li><a href="index.html#ontologies"><i class="fas fa-project-diagram"></i> Ontologies</a></li>
+          <li><a href="sparql.html"><i class="fas fa-search"></i> SPARQL Endpoint</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    <h1><i class="fas fa-diagram-project"></i> Map your deliberation data model to DEL</h1>
+  <section class="section">
+  <main class="container">
     <p class="lead">Drop a sample of your data (CSV, JSON, or XML) — everything is parsed in your
       browser. Field names and example values are matched against the
       <a href="https://w3id.org/deliberation" target="_blank">Deliberation Ontology (DEL)</a> using a
@@ -77,7 +70,7 @@
     <div class="toolbar" id="actions" style="display:none">
       <button class="btn" id="exportSssom"><i class="fas fa-download"></i> Export SSSOM (TSV)</button>
       <button class="btn" id="exportYarrrml"><i class="fas fa-download"></i> Export YARRRML</button>
-      <button class="btn secondary" id="showTurtle"><i class="fas fa-eye"></i> Preview Turtle</button>
+      <button class="btn btn-secondary" id="showTurtle"><i class="fas fa-eye"></i> Preview Turtle</button>
       <span id="status"></span>
     </div>
 
@@ -90,10 +83,13 @@
 
     <div class="panel" id="preview"><pre id="previewText"></pre></div>
   </main>
+  </section>
   <footer>
-    Questions, corrections, or a platform to add to the alias dictionary?
-    Write to <a href="mailto:simone.vagnoni3@unibo.it">simone.vagnoni3@unibo.it</a> ·
-    Mappings are suggestions, not authoritative statements — please review before publishing.
+    <div class="container">
+      <p>Questions, corrections, or a platform to add to the alias dictionary?
+      <a href="mailto:simone.vagnoni3@unibo.it"><i class="fas fa-envelope"></i> simone.vagnoni3@unibo.it</a></p>
+      <p>Mappings are suggestions, not authoritative statements — please review before publishing.</p>
+    </div>
   </footer>
 
 <script>
