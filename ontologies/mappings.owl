@@ -14,6 +14,7 @@
      xmlns:sioca="http://rdfs.org/sioc/argue#"
      xmlns:aif="http://www.arg.dundee.ac.uk/aif#"
      xmlns:lkif="http://www.estrellaproject.org/lkif-core/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:del="https://w3id.org/deliberation/ontology#">
 
     <owl:Ontology rdf:about="https://w3id.org/deliberation/mappings">
@@ -179,5 +180,25 @@
     <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#text">
         <skos:closeMatch rdf:resource="http://deliberation.org/ontology#content"/>
         <metagovMapping>Direct conceptual equivalent for the textual content of a contribution.</metagovMapping>
+    </rdf:Description>
+
+    <!-- PROV-O Mappings -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/deliberation/mappings#provMapping">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#ArtificialAgent">
+        <skos:closeMatch rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+        <provMapping>Closely aligned with prov:SoftwareAgent; del:ArtificialAgent is additionally a del:Participant in a deliberation process.</provMapping>
+        <metagovMapping>Corresponds to the Algorithm variant of the DIP Generator attribution (an AlgorithmDescriptor identifies the kind and configuration of the algorithm); DIP has no RDF class for it yet.</metagovMapping>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Facilitator">
+        <metagovMapping>Corresponds to the Host variant of the DIP Generator attribution; DIP models the host only as an identifier, without a dedicated class.</metagovMapping>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://w3id.org/deliberation/ontology#Reaction">
+        <metagovMapping>Corresponds to DIP Reaction with ReactionType SimpleVote, Score, or QuadraticVote (org.deliberation lexicons pending on the DIP side); del:reactionType and del:reactionValue carry the type and strength.</metagovMapping>
     </rdf:Description>
 </rdf:RDF>

@@ -16,12 +16,12 @@
     <owl:Ontology rdf:about="https://w3id.org/deliberation/ontology">
         <rdfs:label xml:lang="en">Deliberation Ontology</rdfs:label>
         <rdfs:comment xml:lang="en">A comprehensive model for representing deliberative processes across different platforms and contexts.</rdfs:comment>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <owl:versionInfo>1.1.0</owl:versionInfo>
         <dct:title xml:lang="en">Deliberation Ontology</dct:title>
         <dct:description xml:lang="en">An ontology for representing and analyzing deliberative processes, arguments, and discourse.</dct:description>
         <dct:creator>Simone Vagnoni</dct:creator>
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-03</dct:created>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-23</dct:modified>
         <vann:preferredNamespacePrefix>deliberation</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/deliberation/ontology#</vann:preferredNamespaceUri>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
@@ -153,6 +153,27 @@
     <owl:Class rdf:about="https://w3id.org/deliberation/ontology#Forum">
         <rdfs:comment>A physical or virtual space where deliberations take place (e.g., digital platform, parliament chamber, court, public square).</rdfs:comment>
         <rdfs:label>Forum</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/deliberation/ontology#ArtificialAgent -->
+    <owl:Class rdf:about="https://w3id.org/deliberation/ontology#ArtificialAgent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <rdfs:comment>A non-human participant in a deliberation process, such as an AI system, bot, or algorithm (e.g., a moderation system, a clustering model, or a language model producing summaries). Contributions and classifications produced automatically should be attributed to an ArtificialAgent so that machine-generated content remains distinguishable from human input.</rdfs:comment>
+        <rdfs:label>Artificial Agent</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/deliberation/ontology#Facilitator -->
+    <owl:Class rdf:about="https://w3id.org/deliberation/ontology#Facilitator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/deliberation/ontology#Role"/>
+        <rdfs:comment>The role of hosting, guiding, or moderating a deliberation process. A facilitating entity (an individual, an organization acting as a participant, or an ArtificialAgent) is modeled as a Participant with hasRole pointing to a Facilitator role.</rdfs:comment>
+        <rdfs:label>Facilitator</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/deliberation/ontology#Reaction -->
+    <owl:Class rdf:about="https://w3id.org/deliberation/ontology#Reaction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <rdfs:comment>A lightweight evaluative contribution made in response to another contribution, such as a vote, rating, or endorsement. The target is expressed with responseTo; the kind and strength of the reaction with reactionType and reactionValue.</rdfs:comment>
+        <rdfs:label>Reaction</rdfs:label>
     </owl:Class>
 
     <!--
@@ -303,6 +324,24 @@
         <rdfs:comment>Relates a contribution to another contribution it responds to.</rdfs:comment>
         <rdfs:label>response to</rdfs:label>
     </owl:ObjectProperty>
+
+    <!-- https://w3id.org/deliberation/ontology#author -->
+    <owl:ObjectProperty rdf:about="https://w3id.org/deliberation/ontology#author">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/deliberation/ontology#madeBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#Participant"/>
+        <rdfs:comment>Alias of madeBy, retained for compatibility with data already published in the Deliberation Knowledge Graph. New data should prefer madeBy.</rdfs:comment>
+        <rdfs:label>author</rdfs:label>
+    </owl:ObjectProperty>
+
+    <!-- https://w3id.org/deliberation/ontology#isPartOf -->
+    <owl:ObjectProperty rdf:about="https://w3id.org/deliberation/ontology#isPartOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/deliberation/ontology#hasContribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <rdfs:range rdf:resource="https://w3id.org/deliberation/ontology#DeliberationProcess"/>
+        <rdfs:comment>Relates a contribution to the deliberation process it belongs to. Inverse of hasContribution.</rdfs:comment>
+        <rdfs:label>is part of</rdfs:label>
+    </owl:ObjectProperty>
     
     <!-- https://w3id.org/deliberation/ontology#supports -->
     <owl:ObjectProperty rdf:about="https://w3id.org/deliberation/ontology#supports">
@@ -436,5 +475,37 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The type or status of participant (e.g., EU_CITIZEN, NON_EU_CITIZEN, COMPANY, NGO, PUBLIC_AUTHORITY, ACADEMIC_RESEARCH_INSTITUTION).</rdfs:comment>
         <rdfs:label>participant type</rdfs:label>
+    </owl:DatatypeProperty>
+
+    <!-- https://w3id.org/deliberation/ontology#reactionType -->
+    <owl:DatatypeProperty rdf:about="https://w3id.org/deliberation/ontology#reactionType">
+        <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Reaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The kind of reaction (e.g., AGREE, DISAGREE, NEUTRAL, SCORE, QUADRATIC_VOTE).</rdfs:comment>
+        <rdfs:label>reaction type</rdfs:label>
+    </owl:DatatypeProperty>
+
+    <!-- https://w3id.org/deliberation/ontology#reactionValue -->
+    <owl:DatatypeProperty rdf:about="https://w3id.org/deliberation/ontology#reactionValue">
+        <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Reaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>The numeric strength of a reaction, where applicable (e.g., a score, or the level of a quadratic vote).</rdfs:comment>
+        <rdfs:label>reaction value</rdfs:label>
+    </owl:DatatypeProperty>
+
+    <!-- https://w3id.org/deliberation/ontology#agreeCount -->
+    <owl:DatatypeProperty rdf:about="https://w3id.org/deliberation/ontology#agreeCount">
+        <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The aggregate number of agreeing reactions to a contribution, as published by the source platform. Use Reaction instances when individual-level reactions are available.</rdfs:comment>
+        <rdfs:label>agree count</rdfs:label>
+    </owl:DatatypeProperty>
+
+    <!-- https://w3id.org/deliberation/ontology#disagreeCount -->
+    <owl:DatatypeProperty rdf:about="https://w3id.org/deliberation/ontology#disagreeCount">
+        <rdfs:domain rdf:resource="https://w3id.org/deliberation/ontology#Contribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The aggregate number of disagreeing reactions to a contribution, as published by the source platform. Use Reaction instances when individual-level reactions are available.</rdfs:comment>
+        <rdfs:label>disagree count</rdfs:label>
     </owl:DatatypeProperty>
 </rdf:RDF>
