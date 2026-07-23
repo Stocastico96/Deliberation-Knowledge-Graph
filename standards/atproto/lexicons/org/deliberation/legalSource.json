@@ -1,0 +1,32 @@
+{
+  "defs": {
+    "main": {
+      "description": "Legal documents, frameworks, or interpretations relevant to deliberations.",
+      "key": "tid",
+      "record": {
+        "properties": {
+          "identifier": {
+            "description": "A unique identifier for an entity.",
+            "maxLength": 200,
+            "type": "string"
+          },
+          "name": {
+            "description": "The name of an entity.",
+            "maxLength": 300,
+            "type": "string"
+          },
+          "url": {
+            "description": "The URL of an information resource.",
+            "format": "uri",
+            "maxLength": 2048,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "record"
+    }
+  },
+  "id": "org.deliberation.legalSource",
+  "lexicon": 1
+}

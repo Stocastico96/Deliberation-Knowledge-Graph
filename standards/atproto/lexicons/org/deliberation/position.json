@@ -1,0 +1,35 @@
+{
+  "defs": {
+    "main": {
+      "description": "A stance or viewpoint on an issue under deliberation.",
+      "key": "tid",
+      "record": {
+        "properties": {
+          "identifier": {
+            "description": "A unique identifier for an entity.",
+            "maxLength": 200,
+            "type": "string"
+          },
+          "name": {
+            "description": "The name of an entity.",
+            "maxLength": 300,
+            "type": "string"
+          },
+          "text": {
+            "description": "The textual content of a contribution, argument, position, premise, or conclusion.",
+            "maxLength": 10000,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ],
+        "type": "object"
+      },
+      "type": "record"
+    }
+  },
+  "id": "org.deliberation.position",
+  "lexicon": 1
+}

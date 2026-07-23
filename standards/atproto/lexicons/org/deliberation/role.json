@@ -1,0 +1,26 @@
+{
+  "defs": {
+    "main": {
+      "description": "The function or position a participant holds in a deliberation.",
+      "key": "tid",
+      "record": {
+        "properties": {
+          "identifier": {
+            "description": "A unique identifier for an entity.",
+            "maxLength": 200,
+            "type": "string"
+          },
+          "name": {
+            "description": "The name of an entity.",
+            "maxLength": 300,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "record"
+    }
+  },
+  "id": "org.deliberation.role",
+  "lexicon": 1
+}

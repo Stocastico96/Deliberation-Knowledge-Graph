@@ -1,0 +1,64 @@
+{
+  "defs": {
+    "main": {
+      "description": "Any input provided by a participant in a deliberation.",
+      "key": "tid",
+      "record": {
+        "properties": {
+          "identifier": {
+            "description": "A unique identifier for an entity.",
+            "maxLength": 200,
+            "type": "string"
+          },
+          "madeBy": {
+            "description": "Relates a contribution to the participant who made it.",
+            "items": {
+              "ref": "org.deliberation.participant",
+              "type": "ref"
+            },
+            "type": "array"
+          },
+          "name": {
+            "description": "The name of an entity.",
+            "maxLength": 300,
+            "type": "string"
+          },
+          "references": {
+            "description": "Relates a contribution or argument to information resources it references.",
+            "items": {
+              "ref": "org.deliberation.informationResource",
+              "type": "ref"
+            },
+            "type": "array"
+          },
+          "responseTo": {
+            "description": "Relates a contribution to another contribution it responds to.",
+            "items": {
+              "ref": "org.deliberation.contribution",
+              "type": "ref"
+            },
+            "type": "array"
+          },
+          "text": {
+            "description": "The textual content of a contribution, argument, position, premise, or conclusion.",
+            "maxLength": 10000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "timestamp": {
+            "description": "The date and time when a contribution was made.",
+            "format": "datetime",
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ],
+        "type": "object"
+      },
+      "type": "record"
+    }
+  },
+  "id": "org.deliberation.contribution",
+  "lexicon": 1
+}

@@ -1,0 +1,31 @@
+{
+  "defs": {
+    "main": {
+      "description": "Mechanisms to link entities across different deliberation platforms.",
+      "key": "tid",
+      "record": {
+        "properties": {
+          "identifier": {
+            "description": "A unique identifier for an entity.",
+            "maxLength": 200,
+            "type": "string"
+          },
+          "name": {
+            "description": "The name of an entity.",
+            "maxLength": 300,
+            "type": "string"
+          },
+          "platformIdentifier": {
+            "description": "An identifier specific to a particular platform.",
+            "maxLength": 200,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "record"
+    }
+  },
+  "id": "org.deliberation.crossPlatformIdentifier",
+  "lexicon": 1
+}

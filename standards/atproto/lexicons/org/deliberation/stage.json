@@ -1,0 +1,40 @@
+{
+  "defs": {
+    "main": {
+      "description": "A distinct phase in a deliberation process with specific activities and goals.",
+      "key": "tid",
+      "record": {
+        "properties": {
+          "endDate": {
+            "description": "The end date and time of a deliberation process or stage.",
+            "format": "datetime",
+            "type": "string"
+          },
+          "identifier": {
+            "description": "A unique identifier for an entity.",
+            "maxLength": 200,
+            "type": "string"
+          },
+          "name": {
+            "description": "The name of an entity.",
+            "maxLength": 300,
+            "minLength": 1,
+            "type": "string"
+          },
+          "startDate": {
+            "description": "The start date and time of a deliberation process or stage.",
+            "format": "datetime",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "type": "object"
+      },
+      "type": "record"
+    }
+  },
+  "id": "org.deliberation.stage",
+  "lexicon": 1
+}

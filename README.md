@@ -14,8 +14,9 @@ The project documentation is organized as follows:
 
 - [Documentation Index](documentation/index.md) - Main documentation index with links to all documentation files
 - [Project Structure](documentation/project_structure.md) - Detailed overview of the project components and how they work together
-- [SPARQL Examples](SPARQL_examples.md) - Collection of SPARQL query examples for exploring the knowledge graph
-- [Fallacy Analysis](fallacy_analysis_README.md) - Documentation for the fallacy analysis component
+- [SPARQL Examples](documentation/guides/SPARQL_examples.md) - Collection of SPARQL query examples for exploring the knowledge graph
+- [Fallacy Analysis](documentation/guides/fallacy_analysis_README.md) - Documentation for the fallacy analysis component
+- [Interoperability Standards](standards/README.md) - ATProto Lexicons, ActivityPub JSON-LD context, and DEL mapping notes
 
 ## Repository Structure
 
@@ -30,13 +31,15 @@ Deliberation-Knowledge-Graph/
 │   ├── EU_parliament_debates/    # EU Parliament debates dataset
 │   ├── habermas_machine/         # Habermas Machine dataset
 │   └── US_supreme_court_arguments/ # US Supreme Court arguments dataset
-├── documentation/                # Project documentation
+├── documentation/                # Project documentation, deployment notes, reports, and research material
 ├── js/                           # JavaScript files
 ├── knowledge_graph/              # Generated knowledge graph files
-│   └── rdf/                      # RDF files for each dataset
 ├── ontologies/                   # Ontology files and documentation
 │   ├── deliberation.owl          # Main deliberation ontology
 │   └── mappings.owl              # Ontology mappings
+├── standards/                    # DEL interoperability artifacts
+│   ├── atproto/                  # AT Protocol Lexicons
+│   └── activitypub/              # ActivityPub / JSON-LD context and examples
 ├── visualizations/               # Knowledge graph visualizations
 ├── create_knowledge_graph.py     # Script to create the knowledge graph
 ├── create_unified_kg.py          # Script to unify all datasets
@@ -74,7 +77,7 @@ DEL is also aligned (via `ontologies/mappings.owl`) with the [Metagov Deliberati
 
 ## SPARQL Queries
 
-The repository includes several example SPARQL queries for exploring the knowledge graph. These can be found in the [SPARQL Examples](SPARQL_examples.md) document, which includes:
+The repository includes several example SPARQL queries for exploring the knowledge graph. These can be found in the [SPARQL Examples](documentation/guides/SPARQL_examples.md) document, which includes:
 
 - Basic queries for listing deliberation processes, contributions, and topics
 - Advanced queries for exploring relationships between participants, topics, and contributions
@@ -101,7 +104,7 @@ WHERE {
 LIMIT 10
 ```
 
-For more examples, see the [SPARQL Examples](SPARQL_examples.md) document.
+For more examples, see the [SPARQL Examples](documentation/guides/SPARQL_examples.md) document.
 
 ## Fallacy Analysis
 

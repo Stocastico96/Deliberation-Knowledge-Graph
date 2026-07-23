@@ -4,6 +4,9 @@ data/delidata/data/raw/**/*.tsv
 data/delidata/data/combined/*
 data/EU_have_your_say/eu_haveyoursay_specific.db
 data/EU_have_your_say/csv_export/*.csv
+*.db
+*.sqlite
+*.sqlite3
 
 # Knowledge graph data files (can be regenerated)
 *.ttl
@@ -12,6 +15,20 @@ data/EU_have_your_say/csv_export/*.csv
 *.n3
 !ontology_deliberation.ttl
 !ontologies/*.owl
+!standards/**/*.jsonld
+!standards/**/*.json
+
+# Local outputs, backups, and runtime artifacts
+*.log
+*.backup
+*.backup*
+*.old
+*.pkl
+output/
+logs/
+production.log
+deployment.log
+dkg_server.log
 
 # Large embeddings and model files
 *.pkl
@@ -33,6 +50,7 @@ data/collective_intelligence_project/
 __pycache__/
 *.pyc
 *.pyo
+.pytest_cache/
 
 # System files
 .DS_Store
@@ -56,3 +74,8 @@ nohup.out
 # Temporary files
 /tmp/
 *.tmp
+# Local environments and editor/tool state
+venv/
+.venv/
+citizen_interface/venv/
+.claude/settings.local.json

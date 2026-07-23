@@ -1,0 +1,56 @@
+{
+  "defs": {
+    "main": {
+      "description": "Individuals or entities taking part in a deliberation process.",
+      "key": "tid",
+      "record": {
+        "properties": {
+          "country": {
+            "description": "The country of origin of a participant (ISO 3166-1 alpha-3 code).",
+            "maxLength": 200,
+            "type": "string"
+          },
+          "hasRole": {
+            "description": "Relates a participant to their role in a deliberation.",
+            "items": {
+              "ref": "org.deliberation.role",
+              "type": "ref"
+            },
+            "type": "array"
+          },
+          "identifier": {
+            "description": "A unique identifier for an entity.",
+            "maxLength": 200,
+            "type": "string"
+          },
+          "isAffiliatedWith": {
+            "description": "Relates a participant to organizations they are affiliated with.",
+            "items": {
+              "ref": "org.deliberation.organization",
+              "type": "ref"
+            },
+            "type": "array"
+          },
+          "name": {
+            "description": "The name of an entity.",
+            "maxLength": 300,
+            "minLength": 1,
+            "type": "string"
+          },
+          "participantType": {
+            "description": "The type or status of participant (e.g., EU_CITIZEN, NON_EU_CITIZEN, COMPANY, NGO, PUBLIC_AUTHORITY, ACADEMIC_RESEARCH_INSTITUTION).",
+            "maxLength": 200,
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "type": "object"
+      },
+      "type": "record"
+    }
+  },
+  "id": "org.deliberation.participant",
+  "lexicon": 1
+}
