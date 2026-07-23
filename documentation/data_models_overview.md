@@ -72,6 +72,25 @@ Represents a type of logical fallacy that may be detected in a contribution.
 - `del:name` - Name of the fallacy type
 - `del:confidence` - Confidence score of the fallacy detection
 
+### ArtificialAgent *(since 1.1.0)*
+
+Subclass of `del:Participant` for non-human participants: AI systems, bots, and algorithms (moderation systems, clustering models, LLM summarizers). Attributing machine-generated contributions and classifications to an `ArtificialAgent` keeps them distinguishable from human input. Aligned with `prov:SoftwareAgent`.
+
+### Facilitator *(since 1.1.0)*
+
+Subclass of `del:Role` for the role of hosting, guiding, or moderating a deliberation. A facilitating entity (individual, organization, or artificial agent) is modeled as a `Participant` with `del:hasRole` pointing to a `Facilitator` role.
+
+### Reaction *(since 1.1.0)*
+
+Subclass of `del:Contribution` for lightweight evaluative contributions: votes, ratings, endorsements.
+
+**Properties:**
+- `del:responseTo` - The contribution being reacted to
+- `del:reactionType` - Kind of reaction (AGREE, DISAGREE, NEUTRAL, SCORE, QUADRATIC_VOTE)
+- `del:reactionValue` - Numeric strength, where applicable
+
+Aggregate counts published by source platforms are captured on the target contribution with `del:agreeCount` / `del:disagreeCount`.
+
 ## Class Relationships
 
 The following diagram illustrates the relationships between the core classes:
@@ -219,7 +238,7 @@ The [Metagov Deliberation Interoperability Project](https://github.com/metagov/o
 - `del:Forum` ↔ DIP `Location` (`org.deliberation.location`)
 - `del:responseTo` ↔ DIP `inResponseTo`; `del:text` ↔ DIP `content`; `del:madeBy` ↔ DIP `madeBy`
 
-Complementary coverage: DIP models reactions and voting (simple, score, quadratic), moderation, algorithmic grouping, and attribution of content to a `Generator` (participant, host, or algorithm); DEL models argument structure (premises, conclusions, support/attack, fallacies) and legal sources. See also the [W3C Decentralized Deliberation Stack (DDS) Community Group](https://www.w3.org/community/dds/), where the relationship between DEL and the DDS specification is under discussion ([dds-wg/dds#20](https://github.com/dds-wg/dds/issues/20)).
+Complementary coverage: DIP models moderation and algorithmic grouping; DEL models argument structure (premises, conclusions, support/attack, fallacies) and legal sources. Since DEL 1.1.0, both models cover reactions/voting and machine attribution: `del:Reaction` (with `reactionType`/`reactionValue`, plus aggregate `agreeCount`/`disagreeCount`) corresponds to DIP `Reaction`, `del:ArtificialAgent` to DIP's `Generator::Algorithm` attribution, and `del:Facilitator` to DIP's `Generator::Host`. See also the [W3C Decentralized Deliberation Stack (DDS) Community Group](https://www.w3.org/community/dds/), where the relationship between DEL and the DDS specification is under discussion ([dds-wg/dds#20](https://github.com/dds-wg/dds/issues/20)).
 
 ## Data Conversion Process
 
