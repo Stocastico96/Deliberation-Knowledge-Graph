@@ -1,0 +1,300 @@
+<https://w3id.org/deliberation/ontology#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Role> .
+<https://w3id.org/deliberation/ontology#Contribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Any input provided by a participant in a deliberation." .
+<https://w3id.org/deliberation/ontology#agreeCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/deliberation/ontology#containsFallacy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#FallacyType> .
+<https://w3id.org/deliberation/ontology#CrossPlatformIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Mechanisms to link entities across different deliberation platforms." .
+<https://w3id.org/deliberation/ontology#endDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/deliberation/ontology#DeliberationProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "The overall deliberative activity, including its stages, timeline, and outcomes." .
+_:N2bc2b4f138504711859583bfca380c1d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/deliberation/ontology#takesPlaceIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#agreeCount> <http://www.w3.org/2000/01/rdf-schema#label> "agree count" .
+<https://w3id.org/deliberation/ontology#hasConclusion> <http://www.w3.org/2000/01/rdf-schema#label> "has conclusion" .
+<https://w3id.org/deliberation/ontology#author> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Participant> .
+<https://w3id.org/deliberation/ontology#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/deliberation/ontology#InformationResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#hasPremise> <http://www.w3.org/2000/01/rdf-schema#label> "has premise" .
+<https://w3id.org/deliberation/ontology#Facilitator> <http://www.w3.org/2000/01/rdf-schema#label> "Facilitator" .
+_:N99633105935a460295e470d5dcf751a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#isAffiliatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "is affiliated with" .
+_:Ne90b9fb94e934491b3da7fbf4b40f8a9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Stage> .
+<https://w3id.org/deliberation/ontology#startDate> <http://www.w3.org/2000/01/rdf-schema#domain> _:N6f129c9a8b0449f58c28905d07e1598d .
+<https://w3id.org/deliberation/ontology#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#reactionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#agreeCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The aggregate number of agreeing reactions to a contribution, as published by the source platform. Use Reaction instances when individual-level reactions are available." .
+<https://w3id.org/deliberation/ontology#supports> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#hasConclusion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Conclusion> .
+<https://w3id.org/deliberation/ontology#Facilitator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/deliberation/ontology#Role> .
+<https://w3id.org/deliberation/ontology#agreeCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#platformIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/deliberation/ontology#identifier> .
+<https://w3id.org/deliberation/ontology#hasConclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N674105f60e57444c8344c432c478e233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+<https://w3id.org/deliberation/ontology#supports> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an argument supports another argument or position." .
+_:Ne0b8a7375fca4d749300459c0e3f76f5 <http://www.w3.org/2002/07/owl#unionOf> _:N0798c92ef601420292f1ce19569cea36 .
+<https://w3id.org/deliberation/ontology#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#label> "takes place in" .
+<https://w3id.org/deliberation/ontology#isAffiliatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Participant> .
+<https://w3id.org/deliberation/ontology#ArgumentStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "The formal structure of an argument, including premises and conclusions." .
+<https://w3id.org/deliberation/ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "deliberation" .
+<https://w3id.org/deliberation/ontology#LegalSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/deliberation/ontology#InformationResource> .
+<https://w3id.org/deliberation/ontology#reactionValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier for an entity." .
+<https://w3id.org/deliberation/ontology#ArgumentStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Argument Structure" .
+<https://w3id.org/deliberation/ontology#country> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Participant> .
+<https://w3id.org/deliberation/ontology#Premise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Premise> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/deliberation/ontology#ArgumentStructure> .
+<https://w3id.org/deliberation/ontology#Conclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Conclusion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/deliberation/ontology#ArgumentStructure> .
+<https://w3id.org/deliberation/ontology#identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/deliberation/ontology#Premise> <http://www.w3.org/2000/01/rdf-schema#comment> "A statement that provides support for a conclusion in an argument." .
+<https://w3id.org/deliberation/ontology#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of" .
+<https://w3id.org/deliberation/ontology#endDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The end date and time of a deliberation process or stage." .
+<https://w3id.org/deliberation/ontology#url> <http://www.w3.org/2000/01/rdf-schema#label> "url" .
+<https://w3id.org/deliberation/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/deliberation/ontology#supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#hasStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a deliberation process to its stages." .
+<https://w3id.org/deliberation/ontology#hasTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#country> <http://www.w3.org/2000/01/rdf-schema#comment> "The country of origin of a participant (ISO 3166-1 alpha-3 code)." .
+<https://w3id.org/deliberation/ontology#author> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/deliberation/ontology#madeBy> .
+<https://w3id.org/deliberation/ontology#ArtificialAgent> <http://www.w3.org/2000/01/rdf-schema#label> "Artificial Agent" .
+<https://w3id.org/deliberation/ontology#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+<https://w3id.org/deliberation/ontology#hasTopic> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Topic> .
+_:N4e266ec4e2e542f3b20404de6f24a77a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#DeliberationProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+_:N9ae0aa7159cf46818a5a01b44f5b93a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Stage> .
+<https://w3id.org/deliberation/ontology#attacks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nd42ab5e694784c6993f2447bd8ad70ed <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Position> .
+<https://w3id.org/deliberation/ontology#reactionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Reaction> .
+<https://w3id.org/deliberation/ontology#Forum> <http://www.w3.org/2000/01/rdf-schema#label> "Forum" .
+<https://w3id.org/deliberation/ontology#endDate> <http://www.w3.org/2000/01/rdf-schema#label> "end date" .
+<https://w3id.org/deliberation/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "1.1.0" .
+<https://w3id.org/deliberation/ontology#responseTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N90cba208692e4f0089ef4ccf92c3f50f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#containsFallacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#reactionValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The numeric strength of a reaction, where applicable (e.g., a score, or the level of a quadratic vote)." .
+<https://w3id.org/deliberation/ontology#references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#platformIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier specific to a particular platform." .
+<https://w3id.org/deliberation/ontology#hasContribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a deliberation process to contributions made within it." .
+<https://w3id.org/deliberation/ontology#isAffiliatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Organization> .
+<https://w3id.org/deliberation/ontology#reactionValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Reaction> .
+_:N92cd7da7c8e444b38008b27e7d136b7e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#madeBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Participant> .
+<https://w3id.org/deliberation/ontology#responseTo> <http://www.w3.org/2000/01/rdf-schema#label> "response to" .
+<https://w3id.org/deliberation/ontology#attacks> <http://www.w3.org/2000/01/rdf-schema#range> _:N59cc15b1774848cab8c9ee2db9085ec8 .
+_:Nc8c27cb10e1f4c7a9405828ae61795ec <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#references> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#InformationResource> .
+_:N4e266ec4e2e542f3b20404de6f24a77a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc81dd142d6f944c0b7e218b0cb18b8a5 .
+<https://w3id.org/deliberation/ontology#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
+<https://w3id.org/deliberation/ontology#reactionValue> <http://www.w3.org/2000/01/rdf-schema#label> "reaction value" .
+_:N6f129c9a8b0449f58c28905d07e1598d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/created> "2025-03-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/deliberation/ontology#hasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a participant to their role in a deliberation." .
+<https://w3id.org/deliberation/ontology#hasArgument> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+_:Ne90b9fb94e934491b3da7fbf4b40f8a9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/deliberation/ontology#reactionType> <http://www.w3.org/2000/01/rdf-schema#label> "reaction type" .
+<https://w3id.org/deliberation/ontology#hasArgument> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Argument> .
+_:N2c1b5e3900624c36a5c6219533955460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a deliberation process to its participants." .
+<https://w3id.org/deliberation/ontology#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#hasArgument> <http://www.w3.org/2000/01/rdf-schema#label> "has argument" .
+<https://w3id.org/deliberation/ontology#ArgumentStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Reaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#author> <http://www.w3.org/2000/01/rdf-schema#label> "author" .
+<https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/modified> "2026-07-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/deliberation/ontology#Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence" .
+<https://w3id.org/deliberation/ontology#disagreeCount> <http://www.w3.org/2000/01/rdf-schema#label> "disagree count" .
+<https://w3id.org/deliberation/ontology#hasPremise> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an argument to its premises." .
+<https://w3id.org/deliberation/ontology#hasEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an argument or premise to supporting evidence." .
+<https://w3id.org/deliberation/ontology#references> <http://www.w3.org/2000/01/rdf-schema#label> "references" .
+<https://w3id.org/deliberation/ontology#url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/deliberation/ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "A comprehensive model for representing deliberative processes across different platforms and contexts."@en .
+_:N59cc15b1774848cab8c9ee2db9085ec8 <http://www.w3.org/2002/07/owl#unionOf> _:N92cd7da7c8e444b38008b27e7d136b7e .
+<https://w3id.org/deliberation/ontology#supports> <http://www.w3.org/2000/01/rdf-schema#range> _:N2c1b5e3900624c36a5c6219533955460 .
+<https://w3id.org/deliberation/ontology#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "The function or position a participant holds in a deliberation." .
+<https://w3id.org/deliberation/ontology#references> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a contribution or argument to information resources it references." .
+<https://w3id.org/deliberation/ontology#Evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Supporting information for claims made in arguments." .
+<https://w3id.org/deliberation/ontology#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+<https://w3id.org/deliberation/ontology#hasContribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#hasStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#author> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#Argument> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured form of contribution with premises and conclusions." .
+<https://w3id.org/deliberation/ontology#Topic> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject matter of a deliberation." .
+<https://w3id.org/deliberation/ontology#disagreeCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The aggregate number of disagreeing reactions to a contribution, as published by the source platform. Use Reaction instances when individual-level reactions are available." .
+<https://w3id.org/deliberation/ontology#FallacyType> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of logical fallacies that can occur in arguments." .
+<https://w3id.org/deliberation/ontology#hasContribution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+<https://w3id.org/deliberation/ontology#hasStage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+_:N9ae0aa7159cf46818a5a01b44f5b93a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N674105f60e57444c8344c432c478e233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9ae0aa7159cf46818a5a01b44f5b93a6 .
+<https://w3id.org/deliberation/ontology#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "has participant" .
+_:N5548cd756a5545e1bef3bc5f761fba08 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#disagreeCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#CrossPlatformIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/deliberation/mappings> .
+<https://w3id.org/deliberation/ontology#platformIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+_:N90f8319a8b49470e9f0847d5cdd3ee92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/deliberation/ontology#hasTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a deliberation process to its topic." .
+<https://w3id.org/deliberation/ontology#reactionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/deliberation/ontology#participantType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#Consensus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#supports> <http://www.w3.org/2000/01/rdf-schema#label> "supports" .
+<https://w3id.org/deliberation/ontology#responseTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#startDate> <http://www.w3.org/2000/01/rdf-schema#label> "start date" .
+<https://w3id.org/deliberation/ontology#participantType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Participant> .
+<https://w3id.org/deliberation/ontology#country> <http://www.w3.org/2000/01/rdf-schema#label> "country" .
+<https://w3id.org/deliberation/ontology#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role" .
+<https://w3id.org/deliberation/ontology#participantType> <http://www.w3.org/2000/01/rdf-schema#label> "participant type" .
+<https://w3id.org/deliberation/ontology#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Participant> .
+<https://w3id.org/deliberation/ontology#hasConclusion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an argument to its conclusion." .
+<https://w3id.org/deliberation/ontology#Position> <http://www.w3.org/2000/01/rdf-schema#comment> "A stance or viewpoint on an issue under deliberation." .
+<https://w3id.org/deliberation/ontology#hasContribution> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Contribution> .
+_:N0798c92ef601420292f1ce19569cea36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#timestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "The date and time when a contribution was made." .
+<https://w3id.org/deliberation/ontology#Conclusion> <http://www.w3.org/2000/01/rdf-schema#label> "Conclusion" .
+<https://w3id.org/deliberation/ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Deliberation Ontology"@en .
+<https://w3id.org/deliberation/ontology#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a contribution to the deliberation process it belongs to. Inverse of hasContribution." .
+<https://w3id.org/deliberation/ontology#hasTopic> <http://www.w3.org/2000/01/rdf-schema#label> "has topic" .
+_:N7a68db48fbf545f78cbc73c630ff0fff <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Premise> .
+_:N59cc15b1774848cab8c9ee2db9085ec8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+_:Nc6fa85a5b20848c68d7abc1ce27649b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#FallacyType> <http://www.w3.org/2000/01/rdf-schema#label> "Fallacy Type" .
+<https://w3id.org/deliberation/ontology#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a deliberation process to the forum where it takes place." .
+<https://w3id.org/deliberation/ontology#text> <http://www.w3.org/2000/01/rdf-schema#label> "text" .
+<https://w3id.org/deliberation/ontology#url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#Argument> <http://www.w3.org/2000/01/rdf-schema#label> "Argument" .
+_:Nc81dd142d6f944c0b7e218b0cb18b8a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N90cba208692e4f0089ef4ccf92c3f50f <http://www.w3.org/2002/07/owl#unionOf> _:Nc8c27cb10e1f4c7a9405828ae61795ec .
+_:Nfc5c5fe58f1e42739bb9d1c1cb3a83c4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Position> .
+<https://w3id.org/deliberation/ontology#url> <http://www.w3.org/2000/01/rdf-schema#comment> "The URL of an information resource." .
+<https://w3id.org/deliberation/ontology#disagreeCount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#Conclusion> <http://www.w3.org/2000/01/rdf-schema#comment> "The claim that an argument aims to establish." .
+<https://w3id.org/deliberation/ontology#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+_:Ne0b8a7375fca4d749300459c0e3f76f5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#LegalSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal documents, frameworks, or interpretations relevant to deliberations." .
+<https://w3id.org/deliberation/ontology#hasEvidence> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Evidence> .
+<https://w3id.org/deliberation/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> _:Ne0b8a7375fca4d749300459c0e3f76f5 .
+<https://w3id.org/deliberation/ontology#hasArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#madeBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Contribution> .
+_:N05fe8a9421c344549a77cffec1ac0957 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+<https://w3id.org/deliberation/ontology#disagreeCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+_:N05fe8a9421c344549a77cffec1ac0957 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne90b9fb94e934491b3da7fbf4b40f8a9 .
+_:N7a68db48fbf545f78cbc73c630ff0fff <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N90f8319a8b49470e9f0847d5cdd3ee92 .
+<https://w3id.org/deliberation/ontology#Position> <http://www.w3.org/2000/01/rdf-schema#label> "Position" .
+<https://w3id.org/deliberation/ontology#hasEvidence> <http://www.w3.org/2000/01/rdf-schema#domain> _:N90cba208692e4f0089ef4ccf92c3f50f .
+<https://w3id.org/deliberation/ontology#text> <http://www.w3.org/2000/01/rdf-schema#domain> _:N4be54a0ea8104b8ba057dcc5822ad909 .
+<https://w3id.org/deliberation/ontology#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#reactionType> <http://www.w3.org/2000/01/rdf-schema#comment> "The kind of reaction (e.g., AGREE, DISAGREE, NEUTRAL, SCORE, QUADRATIC_VOTE)." .
+<https://w3id.org/deliberation/ontology#InformationResource> <http://www.w3.org/2000/01/rdf-schema#comment> "External sources of information referenced in deliberations." .
+_:N2bc2b4f138504711859583bfca380c1d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Premise> .
+<https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/title> "Deliberation Ontology"@en .
+<https://w3id.org/deliberation/ontology#startDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The start date and time of a deliberation process or stage." .
+<https://w3id.org/deliberation/ontology#Contribution> <http://www.w3.org/2000/01/rdf-schema#label> "Contribution" .
+<https://w3id.org/deliberation/ontology#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#endDate> <http://www.w3.org/2000/01/rdf-schema#domain> _:N99633105935a460295e470d5dcf751a8 .
+<https://w3id.org/deliberation/ontology#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/creator> "Simone Vagnoni" .
+<https://w3id.org/deliberation/ontology#text> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/deliberation/ontology#Facilitator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#hasConclusion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Argument> .
+_:N0798c92ef601420292f1ce19569cea36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc6fa85a5b20848c68d7abc1ce27649b0 .
+<https://w3id.org/deliberation/ontology#isAffiliatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#platformIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#platformIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "platform identifier" .
+<https://w3id.org/deliberation/ontology#participantType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/deliberation/ontology#agreeCount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Formal entities represented in or responsible for deliberations." .
+<https://w3id.org/deliberation/ontology#hasStage> <http://www.w3.org/2000/01/rdf-schema#label> "has stage" .
+<https://w3id.org/deliberation/ontology#responseTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Contribution> .
+_:N90f8319a8b49470e9f0847d5cdd3ee92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Conclusion> .
+_:N6fce74eb4fc44eb48a47dbe50556a040 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/deliberation/ontology#" .
+<https://w3id.org/deliberation/ontology#InformationResource> <http://www.w3.org/2000/01/rdf-schema#label> "Information Resource" .
+<https://w3id.org/deliberation/ontology#ArtificialAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#responseTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a contribution to another contribution it responds to." .
+<https://w3id.org/deliberation/ontology#reactionValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/deliberation/ontology#Reaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#DeliberationProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Deliberation Process" .
+<https://w3id.org/deliberation/ontology#hasStage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Stage> .
+<https://w3id.org/deliberation/ontology#hasArgument> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a deliberation process to arguments made within it." .
+<https://w3id.org/deliberation/ontology#timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:N2c1b5e3900624c36a5c6219533955460 <http://www.w3.org/2002/07/owl#unionOf> _:N4e266ec4e2e542f3b20404de6f24a77a .
+<https://w3id.org/deliberation/ontology> <http://purl.org/dc/terms/description> "An ontology for representing and analyzing deliberative processes, arguments, and discourse."@en .
+<https://w3id.org/deliberation/ontology#timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#isPartOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/deliberation/ontology#hasContribution> .
+<https://w3id.org/deliberation/ontology#Consensus> <http://www.w3.org/2000/01/rdf-schema#label> "Consensus" .
+_:Nc8c27cb10e1f4c7a9405828ae61795ec <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N2bc2b4f138504711859583bfca380c1d .
+<https://w3id.org/deliberation/ontology#madeBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a contribution to the participant who made it." .
+_:Nc6fa85a5b20848c68d7abc1ce27649b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/deliberation/ontology#Reaction> <http://www.w3.org/2000/01/rdf-schema#comment> "A lightweight evaluative contribution made in response to another contribution, such as a vote, rating, or endorsement. The target is expressed with responseTo; the kind and strength of the reaction with reactionType and reactionValue." .
+_:N4be54a0ea8104b8ba057dcc5822ad909 <http://www.w3.org/2002/07/owl#unionOf> _:N6fce74eb4fc44eb48a47dbe50556a040 .
+<https://w3id.org/deliberation/ontology#LegalSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#CrossPlatformIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "Cross Platform Identifier" .
+<https://w3id.org/deliberation/ontology#attacks> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an argument attacks another argument or position." .
+<https://w3id.org/deliberation/ontology#hasEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nc81dd142d6f944c0b7e218b0cb18b8a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/deliberation/ontology#Position> .
+<https://w3id.org/deliberation/ontology#Facilitator> <http://www.w3.org/2000/01/rdf-schema#comment> "The role of hosting, guiding, or moderating a deliberation process. A facilitating entity (an individual, an organization acting as a participant, or an ArtificialAgent) is modeled as a Participant with hasRole pointing to a Facilitator role." .
+<https://w3id.org/deliberation/ontology#madeBy> <http://www.w3.org/2000/01/rdf-schema#label> "made by" .
+<https://w3id.org/deliberation/ontology#platformIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#CrossPlatformIdentifier> .
+<https://w3id.org/deliberation/ontology#hasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Participant> .
+<https://w3id.org/deliberation/ontology#Topic> <http://www.w3.org/2000/01/rdf-schema#label> "Topic" .
+<https://w3id.org/deliberation/ontology#attacks> <http://www.w3.org/2000/01/rdf-schema#label> "attacks" .
+<https://w3id.org/deliberation/ontology#containsFallacy> <http://www.w3.org/2000/01/rdf-schema#label> "contains fallacy" .
+<https://w3id.org/deliberation/ontology#participantType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type or status of participant (e.g., EU_CITIZEN, NON_EU_CITIZEN, COMPANY, NGO, PUBLIC_AUTHORITY, ACADEMIC_RESEARCH_INSTITUTION)." .
+<https://w3id.org/deliberation/ontology#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+<https://w3id.org/deliberation/ontology#ArtificialAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/deliberation/ontology#Participant> .
+<https://w3id.org/deliberation/ontology#Forum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#startDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/deliberation/ontology#hasTopic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#DeliberationProcess> .
+_:N6f129c9a8b0449f58c28905d07e1598d <http://www.w3.org/2002/07/owl#unionOf> _:N05fe8a9421c344549a77cffec1ac0957 .
+<https://w3id.org/deliberation/ontology#Premise> <http://www.w3.org/2000/01/rdf-schema#label> "Premise" .
+<https://w3id.org/deliberation/ontology#LegalSource> <http://www.w3.org/2000/01/rdf-schema#label> "Legal Source" .
+<https://w3id.org/deliberation/ontology#country> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+_:Nd42ab5e694784c6993f2447bd8ad70ed <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/deliberation/ontology#Forum> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical or virtual space where deliberations take place (e.g., digital platform, parliament chamber, court, public square)." .
+<https://w3id.org/deliberation/ontology#hasPremise> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#ArtificialAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-human participant in a deliberation process, such as an AI system, bot, or algorithm (e.g., a moderation system, a clustering model, or a language model producing summaries). Contributions and classifications produced automatically should be attributed to an ArtificialAgent so that machine-generated content remains distinguishable from human input." .
+<https://w3id.org/deliberation/ontology#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#timestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/deliberation/ontology#attacks> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Argument> .
+<https://w3id.org/deliberation/ontology#Consensus> <http://www.w3.org/2000/01/rdf-schema#comment> "Agreement reached through deliberation." .
+<https://w3id.org/deliberation/ontology#author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/deliberation/ontology#Contribution> .
+<https://w3id.org/deliberation/ontology#hasEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "has evidence" .
+<https://w3id.org/deliberation/ontology#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#FallacyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Stage> <http://www.w3.org/2000/01/rdf-schema#comment> "A distinct phase in a deliberation process with specific activities and goals." .
+<https://w3id.org/deliberation/ontology#Stage> <http://www.w3.org/2000/01/rdf-schema#label> "Stage" .
+_:N92cd7da7c8e444b38008b27e7d136b7e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd42ab5e694784c6993f2447bd8ad70ed .
+<https://w3id.org/deliberation/ontology#Stage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#Contribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#containsFallacy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#Argument> .
+_:Nfc5c5fe58f1e42739bb9d1c1cb3a83c4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N7a68db48fbf545f78cbc73c630ff0fff .
+<https://w3id.org/deliberation/ontology#author> <http://www.w3.org/2000/01/rdf-schema#comment> "Alias of madeBy, retained for compatibility with data already published in the Deliberation Knowledge Graph. New data should prefer madeBy." .
+<https://w3id.org/deliberation/ontology#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Forum> .
+<https://w3id.org/deliberation/ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#label> "Participant" .
+<https://w3id.org/deliberation/ontology#hasContribution> <http://www.w3.org/2000/01/rdf-schema#label> "has contribution" .
+<https://w3id.org/deliberation/ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#comment> "Individuals or entities taking part in a deliberation process." .
+_:N99633105935a460295e470d5dcf751a8 <http://www.w3.org/2002/07/owl#unionOf> _:N674105f60e57444c8344c432c478e233 .
+<https://w3id.org/deliberation/ontology#Reaction> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction" .
+<https://w3id.org/deliberation/ontology#text> <http://www.w3.org/2000/01/rdf-schema#comment> "The textual content of a contribution, argument, position, premise, or conclusion." .
+<https://w3id.org/deliberation/ontology#Position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#timestamp> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp" .
+<https://w3id.org/deliberation/ontology#hasPremise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#Argument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/deliberation/ontology#name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of an entity." .
+<https://w3id.org/deliberation/ontology#text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:N4be54a0ea8104b8ba057dcc5822ad909 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N5548cd756a5545e1bef3bc5f761fba08 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nfc5c5fe58f1e42739bb9d1c1cb3a83c4 .
+_:N6fce74eb4fc44eb48a47dbe50556a040 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N5548cd756a5545e1bef3bc5f761fba08 .
+<https://w3id.org/deliberation/ontology#madeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/deliberation/ontology#url> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/deliberation/ontology#InformationResource> .
+<https://w3id.org/deliberation/ontology#hasPremise> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/deliberation/ontology#Premise> .
+<https://w3id.org/deliberation/ontology#isAffiliatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a participant to organizations they are affiliated with." .
+<https://w3id.org/deliberation/ontology#country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/deliberation/ontology#containsFallacy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an argument contains a specific type of logical fallacy." .
+<https://w3id.org/deliberation/ontology#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "has role" .
