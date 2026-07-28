@@ -1,0 +1,16 @@
+# curie_map:
+#   del: https://w3id.org/deliberation/ontology#
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+# mapping_set_id: https://w3id.org/deliberation/mappings/dip
+# mapping_set_description: "Alignments between the Deliberation Ontology (DEL) and the Metagov Deliberation Interoperability Project (DIP) exported RDF terms. DIP URIs are provisional (pre-release)."
+# license: https://creativecommons.org/licenses/by/4.0/
+# mapping_date: 2026-07-28
+subject_id	predicate_id	object_id	mapping_justification	comment
+del:Contribution	skos:closeMatch	http://deliberation.org/ontology#Statement	semapv:ManualMappingCuration	DIP Statement (org.deliberation.statement) closely matches del:Contribution. DIP StatementRole values map onto DEL specializations: Evidence to del:Evidence, Refutation to del:attacks relations, Proposal and Decision to del:Position and del:Consensus contexts.
+del:DeliberationProcess	skos:relatedMatch	https://schema.org/Project	semapv:ManualMappingCuration	DIP Project (org.deliberation.project) is the container of one deliberative process, exported as schema:Project; DIP Phase corresponds to del:Stage but has no RDF export yet.
+del:Forum	skos:relatedMatch	https://schema.org/Place	semapv:ManualMappingCuration	DIP Location (org.deliberation.location) is exported as schema:Place; del:Forum covers both physical and virtual deliberation spaces.
+del:Participant	skos:relatedMatch	https://schema.org/Person	semapv:ManualMappingCuration	DIP Person (org.deliberation.person) is exported as schema:Person; del:Participant is broader, covering organizational and non-human agents. DIP additionally attributes content to a Generator (Participant, Host, or Algorithm), a pattern DEL currently expresses only for human participants via del:madeBy.
+del:madeBy	skos:closeMatch	http://deliberation.org/ontology#madeBy	semapv:ManualMappingCuration	DIP madeBy ranges over Generator (participant, host, or algorithm), wider than del:madeBy which ranges over del:Participant.
+del:responseTo	skos:closeMatch	http://deliberation.org/ontology#inResponseTo	semapv:ManualMappingCuration	Direct conceptual equivalent for threading of contributions.
+del:text	skos:closeMatch	http://deliberation.org/ontology#content	semapv:ManualMappingCuration	Direct conceptual equivalent for the textual content of a contribution.
