@@ -7,17 +7,26 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    :root {
+      --primary-color: #4a9d3c;
+      --primary-light: #6abe5c;
+      --primary-dark: #3a7d2c;
+      --secondary-color: #0f172a;
+      --accent-color: #ffd700;
+      --link-color: #4a9d3c;
+      --link-hover-color: #3a7d2c;
+    }
     #dropzone { margin: 1.5rem 0; border: 2px dashed var(--primary-light); border-radius: var(--border-radius);
       background: #fff; padding: 2.8rem 1rem; text-align: center; color: var(--text-light);
       cursor: pointer; transition: var(--transition); }
-    #dropzone.drag, #dropzone:hover { border-color: var(--primary-dark); background: #eef2ff; }
+    #dropzone.drag, #dropzone:hover { border-color: var(--primary-dark); background: #eef7ec; }
     #dropzone i { font-size: 2.2rem; color: var(--primary-color); }
     .hint { font-size: 0.85rem; }
     .panel { background: #fff; border: 1px solid #e2e8f0; border-radius: var(--border-radius);
       box-shadow: var(--box-shadow); margin-bottom: 1.4rem; overflow-x: auto; }
     .panel table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
     .panel th, .panel td { border-bottom: 1px solid #e2e8f0; padding: 0.55rem 0.9rem; text-align: left; vertical-align: middle; }
-    .panel th { background: #eef2ff; color: var(--secondary-color); font-family: var(--font-heading); }
+    .panel th { background: #eef7ec; color: var(--secondary-color); font-family: var(--font-heading); }
     td.example { color: var(--text-light); font-family: ui-monospace, Menlo, Consolas, monospace;
       font-size: 0.8rem; max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .panel select { padding: 0.35rem 0.5rem; border: 1px solid #cbd5e1; border-radius: var(--border-radius);
