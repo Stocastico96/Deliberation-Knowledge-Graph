@@ -1,0 +1,9 @@
+{
+  "_comment": "Copy to config/integration/delibai.local.json (git-ignored) and set a private pseudonym_salt. The salt must stay constant across imports so that participant pseudonyms remain stable; it must never be committed or published.",
+  "pseudonym_salt": "REPLACE-WITH-A-LONG-RANDOM-SECRET",
+  "input_dir": "/home/svagnoni/delibai_analysis/dkg_export",
+  "pilot_window_start": "2026-05-07T00:00:00+00:00",
+  "pilot_window_end": "2026-05-31T23:59:59+00:00",
+  "yp_repo": "/home/svagnoni/your-priorities-app",
+  "landing_page": "https://platform.svagnoni.linkeddata.es/delibai-pilot"
+}

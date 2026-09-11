@@ -475,11 +475,15 @@ def get_platforms():
         # Mappa nomi da del:platform a ID standard
         platform_name_to_id = {
             'your priorities': 'yourpriorities',
-            'your fallacious priorities': 'yourpriorities'
+            'your fallacious priorities': 'yourpriorities',
+            'delibai': 'delibai',
+            'crowdlaw (portale del cittadino)': 'crowdlaw'
         }
 
         # Mappa nomi leggibili (definita PRIMA del loop)
         platform_names = {
+            'delibai': 'DelibAI',
+            'crowdlaw': 'CrowdLaw (Portale del Cittadino)',
             'habermas': 'Habermas Machine',
             'decidemadrid': 'Decide Madrid',
             'ep_debate': 'European Parliament Debates',
@@ -524,7 +528,11 @@ def get_platforms():
         for row in results_fallback:
             uri = str(row.contribution)
             # Estrai la piattaforma dall'URI
-            if 'yourpriorities' in uri.lower() or '/point-' in uri.lower():
+            if '/delibai_' in uri.lower():
+                platform_counts['delibai'] = platform_counts.get('delibai', 0) + 1
+            elif '/crowdlaw_' in uri.lower():
+                platform_counts['crowdlaw'] = platform_counts.get('crowdlaw', 0) + 1
+            elif 'yourpriorities' in uri.lower() or '/point-' in uri.lower():
                 platform_counts['yourpriorities'] = platform_counts.get('yourpriorities', 0) + 1
             elif 'habermas' in uri.lower() or 'hm_' in uri.lower():
                 platform_counts['habermas'] = platform_counts.get('habermas', 0) + 1

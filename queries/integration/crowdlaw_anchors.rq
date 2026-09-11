@@ -1,0 +1,8 @@
+# CrowdLaw: author anchor vs system-resolved anchor for each comment, with the exact document version
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+SELECT ?comment ?method ?provisionLabel ?expression ?score ?agrees WHERE {
+  ?comment a del:Contribution ; del:platform "CrowdLaw (Portale del Cittadino)" ; del:hasAnchor ?anchor .
+  ?anchor del:anchorMethod ?method ; del:anchorProvision ?prov ; del:anchorExpression ?expr .
+  ?prov del:name ?provisionLabel . ?expr del:frbrExpressionUri ?expression .
+  OPTIONAL { ?anchor del:confidence ?score } OPTIONAL { ?anchor del:anchorsAgree ?agrees }
+} ORDER BY ?comment ?method LIMIT 40

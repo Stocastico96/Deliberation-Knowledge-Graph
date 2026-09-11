@@ -1,0 +1,124 @@
+{
+  "source": "crowdlaw",
+  "import_version": "crowdlaw-import-1.0.0",
+  "mapping_version": "crowdlaw-del-mapping-1.0.0",
+  "started_at": "2026-09-11T15:00:30+00:00",
+  "finished_at": "2026-09-11T15:00:30+00:00",
+  "tables": {
+    "documents": {
+      "read": 16,
+      "imported": 3,
+      "excluded": 13,
+      "failed": 0
+    },
+    "articles": {
+      "read": 39,
+      "imported": 39,
+      "excluded": 0,
+      "failed": 0
+    },
+    "article_aspects": {
+      "read": 24,
+      "imported": 17,
+      "excluded": 7,
+      "failed": 0
+    },
+    "segment_aspects": {
+      "read": 47,
+      "imported": 37,
+      "excluded": 10,
+      "failed": 0
+    },
+    "clusters": {
+      "read": 18,
+      "imported": 18,
+      "excluded": 0,
+      "failed": 0
+    },
+    "ground_truth": {
+      "read": 146,
+      "imported": 146,
+      "excluded": 0,
+      "failed": 0
+    },
+    "comments": {
+      "read": 194,
+      "imported": 146,
+      "excluded": 48,
+      "failed": 0
+    },
+    "anchors_user": {
+      "read": 0,
+      "imported": 146,
+      "excluded": 0,
+      "failed": 0
+    },
+    "anchors_system": {
+      "read": 0,
+      "imported": 146,
+      "excluded": 0,
+      "failed": 0
+    },
+    "stance_annotations": {
+      "read": 0,
+      "imported": 146,
+      "excluded": 0,
+      "failed": 0
+    },
+    "proposal_fields_parsed_from_content": {
+      "read": 0,
+      "imported": 32,
+      "excluded": 0,
+      "failed": 0
+    }
+  },
+  "exclusions": {
+    "documents": {
+      "developer test document or duplicate upload (not an evaluation corpus)": 13
+    },
+    "article_aspects": {
+      "empty aspect list or unknown article": 7
+    },
+    "segment_aspects": {
+      "empty aspect list or unknown article": 10
+    },
+    "comments": {
+      "belongs to an excluded document (developer test data)": 48
+    }
+  },
+  "warnings": [],
+  "notes": {
+    "proposal_columns_present_in_db": false,
+    "eval_metrics_doc7": 33,
+    "eval_metrics_doc15": 53,
+    "eval_metrics_doc16": 57,
+    "included_documents": [
+      7,
+      15,
+      16
+    ],
+    "output": "/home/svagnoni/deliberation-knowledge-graph/knowledge_graph/sources/crowdlaw_kg.ttl"
+  },
+  "triples": 11993,
+  "entities_by_type": {
+    "dcat:Dataset": 1,
+    "del:AspectAnnotation": 54,
+    "del:AutomatedAnnotation": 131,
+    "del:Contribution": 146,
+    "del:DeliberationProcess": 3,
+    "del:Facilitator": 1,
+    "del:Forum": 1,
+    "del:HumanAnnotation": 146,
+    "del:ImportActivity": 1,
+    "del:InformationResource": 143,
+    "del:LegalExpression": 3,
+    "del:LegalProvision": 177,
+    "del:LegalResourceAnchor": 292,
+    "del:LegalSource": 45,
+    "del:LegalWork": 3,
+    "del:Participant": 104,
+    "del:StanceAnnotation": 223,
+    "del:Topic": 18,
+    "prov:Activity": 1
+  }
+}

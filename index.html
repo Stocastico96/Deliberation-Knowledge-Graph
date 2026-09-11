@@ -464,9 +464,229 @@
       background-color: rgba(74, 157, 60, 0.08);
       text-decoration: none;
     }
+
+    /* ===== Mobile & responsive refinements ===== */
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 1rem;
+    }
+
+    body {
+      overflow-x: clip;
+    }
+
+    /* Wide content scrolls inside its own container, never the page */
+    .mermaid {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      max-width: 100%;
+    }
+
+    .license-details-body {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .license-table {
+      min-width: 640px;
+    }
+
+    .ontologies-table {
+      min-width: 900px;
+    }
+
+    p code, li code {
+      overflow-wrap: anywhere;
+    }
+
+    /* Collapsible nav: styles apply only to the nav carrying .nav-collapsible,
+       so other pages sharing styles.css keep their normal nav */
+    .nav-toggle {
+      display: none;
+    }
+
+    /* Back-to-top button */
+    #back-to-top {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 100;
+      width: 46px;
+      height: 46px;
+      border: none;
+      border-radius: 50%;
+      background: var(--primary-color);
+      color: #fff;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.3);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: opacity 0.25s, transform 0.25s, visibility 0.25s;
+    }
+
+    #back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        width: 100%;
+        padding: 0.85rem 1rem;
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: var(--border-radius);
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      nav.nav-collapsible {
+        display: block;
+        width: 100%;
+      }
+
+      nav.nav-collapsible ul {
+        display: none;
+      }
+
+      nav.nav-collapsible.open ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+      }
+
+      nav.nav-collapsible ul li {
+        margin: 0;
+      }
+
+      nav.nav-collapsible ul li a {
+        padding: 0.85rem 1rem; /* comfortable ≥44px touch target */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      nav.nav-collapsible ul li:last-child a {
+        border-bottom: none;
+      }
+
+      /* Hero: smaller type, stacked full-width buttons */
+      .hero-section {
+        min-height: 100svh;
+        padding: 2.5rem 0;
+      }
+
+      .hero-content {
+        padding: 1.5rem 1.25rem;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-content p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.6rem;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+        padding: 0.85rem 1rem;
+        font-size: 1rem;
+      }
+
+      .eu-parliament-section {
+        padding: 1.5rem 0;
+      }
+
+      .api-info pre {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .publication-card {
+        padding: 1.25rem;
+        gap: 1rem;
+      }
+
+      .publication-card .pub-links a {
+        width: 100%;
+        justify-content: center;
+        padding: 0.7rem 1rem;
+      }
+
+      .logo-bar .logo-container {
+        gap: 1rem;
+        padding: 0.75rem 0;
+      }
+
+      .logo-bar .logo-item {
+        padding: 0.5rem 1.1rem;
+      }
+
+      .logo-bar img {
+        max-height: 44px;
+      }
+
+      .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+
+      .btn-group .btn {
+        width: 100%;
+      }
+
+      .mappings-download .btn {
+        width: 100%;
+      }
+    }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // Mobile nav toggle
+      var nav = document.getElementById('site-nav');
+      var toggle = nav && nav.querySelector('.nav-toggle');
+      if (toggle) {
+        toggle.addEventListener('click', function() {
+          var open = nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        nav.querySelectorAll('ul a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            nav.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      // Back-to-top button
+      var backToTop = document.getElementById('back-to-top');
+      if (backToTop) {
+        window.addEventListener('scroll', function() {
+          backToTop.classList.toggle('visible', window.scrollY > 600);
+        }, { passive: true });
+        backToTop.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
       // Initialize Mermaid
       mermaid.initialize({
         startOnLoad: true,
@@ -514,8 +734,11 @@
     <div class="container">
       <h1>Deliberation Knowledge Graph</h1>
       <p class="subtitle">Connecting Deliberative Process Datasets and Ontologies for Enhanced Analysis and Understanding</p>
-      <nav>
-        <ul>
+      <nav class="nav-collapsible" id="site-nav">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-list" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i> Menu
+        </button>
+        <ul id="site-nav-list">
           <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
           <li><a href="#datasets"><i class="fas fa-database"></i> Datasets</a></li>
           <li><a href="#licensing"><i class="fas fa-balance-scale"></i> Licenses &amp; Download</a></li>
@@ -547,6 +770,23 @@
           <div class="pub-links">
             <a href="https://link.springer.com/chapter/10.1007/978-3-032-02225-7_9" target="_blank" class="btn-springer">
               <i class="fas fa-external-link-alt"></i> Read on Springer
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="publication-card">
+        <div class="pub-icon"><i class="fas fa-trophy"></i></div>
+        <div class="pub-body">
+          <div class="pub-label">Award &bull; G7 GovAI Grand Challenge</div>
+          <div class="pub-title">Top Solution for Italy &mdash; G7 GovAI Grand Challenge (Impact Canada)</div>
+          <div class="pub-meta">Selected as Italy's top solution in the international G7 GovAI Grand Challenge, recognizing exceptional solutions that innovatively address barriers to AI adoption in the public sector.</div>
+          <div class="pub-links">
+            <a href="https://impact.canada.ca/en/challenges/g7-govAI#recipients" target="_blank" class="btn-springer">
+              <i class="fas fa-external-link-alt"></i> Challenge Recipients
+            </a>
+            <a href="https://www.youtube.com/watch?v=euk72RTer2I" target="_blank" class="btn-springer">
+              <i class="fab fa-youtube"></i> Presentation Video
             </a>
           </div>
         </div>
@@ -749,10 +989,44 @@
           </div>
         </div>
 
-        <a href="mapper.html" class="dataset-card" data-category="all" style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; border:2px dashed #0b5394; background:transparent; text-decoration:none; color:#0b5394; min-height:220px;">
-          <i class="fas fa-plus-circle" style="font-size:2.4rem; margin-bottom:0.8rem;"></i>
-          <h3 style="color:#0b5394; margin:0 0 0.5rem;">Map your deliberation data model</h3>
-          <p style="color:#57606a; margin:0; padding:0 1rem;">Drop a sample of your platform's data and get a suggested mapping to the Deliberation Ontology — export it as SSSOM or YARRRML.</p>
+        <div class="dataset-card" data-category="experiment">
+          <div class="logo-header">
+            <a href="https://platform.svagnoni.linkeddata.es/delibai-pilot" target="_blank"><img src="img/delibai-logo.png" class="platform-logo" alt="DelibAI logo (official mascot)"></a>
+          </div>
+          <h3>DelibAI</h3>
+          <p>Research prototype for <em>contestable</em> AI feedback in civic deliberation, implemented as a pilot mode of a research fork of <a href="https://github.com/CitizensFoundation/your-priorities-app" target="_blank">Your Priorities</a>. Before submitting, participants may receive advice, a rewrite suggestion and possible fallacy flags (personal attack, straw man, undue generalisation, false cause, false dilemma); the system never edits their text and every suggestion can be ignored, rejected or corrected.</p>
+          <p>Integrated: the <strong>May 2026 pilot</strong> — 4 topics, 34 pseudonymised participants, 195 comments and replies plus 20 seed comments, 99 AI feedback records with model provenance, 275 peer evaluations and 277 recorded responses to AI labels. Questionnaires, behavioural logs and credentials are not published.</p>
+          <div class="source">
+            <i class="fas fa-flask"></i>
+            <a href="https://gitlab.com/CIRSFID/eParticipation-Platform" target="_blank">Research fork (CIRSFID)</a>
+          </div>
+          <div class="btn-group">
+            <a href="https://citizen.svagnoni.linkeddata.es/?process=https%3A%2F%2Fsvagnoni.linkeddata.es%2Fresource%2Fdelibai_pilot_2026" class="btn" target="_blank">Browse in the Citizen Interface</a>
+            <a href="data/delibai/README.md" class="btn btn-secondary" target="_blank">Documentation</a>
+          </div>
+        </div>
+
+        <div class="dataset-card" data-category="legal">
+          <div class="logo-header">
+            <a href="https://gitlab.com/CIRSFID/cititen-portal" target="_blank"><img src="img/crowdlaw-logo.svg" class="platform-logo" alt="CrowdLaw / Portale del Cittadino brand mark (fallback rendering of the platform's CSS mark)"></a>
+          </div>
+          <h3>CrowdLaw (Portale del Cittadino)</h3>
+          <p>Public-consultation prototype for bills encoded in <a href="https://www.akomantoso.org/" target="_blank">Akoma Ntoso</a>: citizens anchor comments to specific passages of a specific version of the text, propose changes with a separate rationale, and analysts get traceable stance, clusters and semantic-distance views. Follows the <em>crowdlaw</em> paradigm of technology-supported lawmaking.</p>
+          <p>Integrated: the <strong>evaluation corpora</strong> of the ICEDEG 2026 paper — 3 Italian parliamentary bills (39 articles), 146 synthetic comments with author-chosen and system-resolved anchors, ground-truth and NLI stance labels, clusters and key aspects. Synthetic evaluation data, not a real consultation.</p>
+          <div class="source">
+            <i class="fas fa-gavel"></i>
+            <a href="https://gitlab.com/CIRSFID/genai4lex/-/tree/main/LegalResources/Camera-Bill" target="_blank">Bills: CIRSFID GenAI4Lex Camera-Bill (AKN)</a>
+          </div>
+          <div class="btn-group">
+            <a href="https://citizen.svagnoni.linkeddata.es/?process=https%3A%2F%2Fsvagnoni.linkeddata.es%2Fresource%2Fcrowdlaw_consultation_doc7" class="btn" target="_blank">Browse in the Citizen Interface</a>
+            <a href="data/crowdlaw/README.md" class="btn btn-secondary" target="_blank">Documentation</a>
+          </div>
+        </div>
+
+        <a href="mapper.html" class="dataset-card" data-category="all" style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; border:2px dashed var(--primary-color); background:transparent; text-decoration:none; color:var(--primary-dark); min-height:220px;">
+          <i class="fas fa-plus-circle" style="font-size:2.4rem; margin-bottom:0.8rem; color:var(--primary-color);"></i>
+          <h3 style="color:var(--primary-dark); margin:0 0 0.5rem;">Map your deliberation data model</h3>
+          <p style="color:var(--text-light); margin:0; padding:0 1rem;">Drop a sample of your platform's data and get a suggested mapping to the Deliberation Ontology — export it as SSSOM or YARRRML.</p>
         </a>
       </div>
     </div>
@@ -840,6 +1114,20 @@
                 <td>Pol.is / vTaiwan per consultation</td>
                 <td><a href="https://github.com/compdemocracy/polis" target="_blank">GitHub</a></td>
               </tr>
+              <tr>
+                <td><strong>DelibAI pilot (May 2026)</strong></td>
+                <td>CIRSFID, University of Bologna (data controller)</td>
+                <td><span class="license-badge license-our">CC BY 4.0</span> (pseudonymised, published subset)</td>
+                <td>Vagnoni, DelibAI pilot 2026</td>
+                <td><a href="data/delibai/README.md" target="_blank">Documentation</a></td>
+              </tr>
+              <tr>
+                <td><strong>CrowdLaw / Citizen Portal evaluation corpora</strong></td>
+                <td>CIRSFID (comments); Camera dei deputati via GenAI4Lex (bills)</td>
+                <td><span class="license-badge license-cc-by">CC BY 4.0</span> (comments); bills under source terms</td>
+                <td>Vagnoni et al., ICEDEG 2026; GenAI4Lex</td>
+                <td><a href="https://gitlab.com/CIRSFID/cititen-portal" target="_blank">GitLab</a></td>
+              </tr>
               <tr style="border-top:2px solid #6d28d9;">
                 <td><strong>Deliberation Knowledge Graph (this work)</strong></td>
                 <td>Vagnoni &amp; Rodriguez-Doncel (2025)</td>
@@ -887,7 +1175,7 @@
         
         <div class="ontology-mappings-info">
           <h3>Ontology Mappings</h3>
-          <p>The mappings.owl file contains explicit mappings between the Deliberation Ontology and other standard ontologies like FOAF, Dublin Core, SIOC, AIF, and LKIF, as well as alignments to <a href="https://www.w3.org/ns/prov" target="_blank">PROV-O</a> and to the <a href="https://github.com/metagov/ontology" target="_blank">Metagov Deliberation Interoperability Project (DIP)</a> data model (Polis, HeyForm, Talk to the City adaptors; RDF, JSON Schema and AT Protocol exports). These mappings enable interoperability and integration with existing semantic web resources.</p>
+          <p>The <a href="ontologies/deliberation-annotations.ttl" target="_blank">deliberation-annotations.ttl</a> module (DEL 1.2 draft) adds annotations (human/automated, AI feedback, fallacy and stance labels, peer evaluations and recorded responses), versioned legal anchoring (FRBR work/expression/provision) and typed process links (explicit / human / inferred) used by the DelibAI and CrowdLaw integration. The mappings.owl file contains explicit mappings between the Deliberation Ontology and other standard ontologies like FOAF, Dublin Core, SIOC, AIF, and LKIF, as well as alignments to <a href="https://www.w3.org/ns/prov" target="_blank">PROV-O</a> and to the <a href="https://github.com/metagov/ontology" target="_blank">Metagov Deliberation Interoperability Project (DIP)</a> data model (Polis, HeyForm, Talk to the City adaptors; RDF, JSON Schema and AT Protocol exports). These mappings enable interoperability and integration with existing semantic web resources.</p>
           <p>Key mapping relationships include:</p>
           <ul>
             <li><strong>skos:exactMatch</strong> - Concepts that are exactly equivalent</li>
@@ -902,6 +1190,7 @@
       <hr>
 
       <h2>Relevant Ontologies</h2>
+      <div class="table-responsive">
       <table class="ontologies-table">
         <thead>
           <tr>
@@ -926,7 +1215,7 @@
             <td>en</td>
             <td>all</td>
             <td>
-              <a hrefDELIB (="http://www.example.org/delib.owl" target="_blank">OWL)</a><br>
+              <a href="http://www.example.org/delib.owl" target="_blank">DELIB (OWL)</a><br>
               <a href="https://mural.maynoothuniversity.ie/id/eprint/15833/1/AO_a%20semantic%20deliberation.pdf" target="_blank">Documentation</a>
             </td>
           </tr>
@@ -1088,6 +1377,7 @@
           <!-- End additional new ontologies -->
         </tbody>
       </table>
+      </div>
 
       <hr>
 
@@ -1160,7 +1450,28 @@
               <td>RDF/XML</td>
               <td>Converts Decidim Barcelona proposals, meetings, and comments to RDF format</td>
             </tr>
-          </tbody>
+                      <tr>
+              <td>DelibAI pilot</td>
+              <td><code>scripts/integration/import_delibai.py</code></td>
+              <td>PostgreSQL export (JSON) + pilot config</td>
+              <td>Turtle</td>
+              <td>Maps the pilot tables (participants, tasks, AI feedback, peer flags, action log) to DEL with pseudonymisation, provenance and the annotations module</td>
+            </tr>
+            <tr>
+              <td>CrowdLaw / Citizen Portal</td>
+              <td><code>scripts/integration/import_crowdlaw.py</code></td>
+              <td>SQLite + Akoma Ntoso XML</td>
+              <td>Turtle</td>
+              <td>Maps bills (FRBR work/expression/provisions), comments, user and system anchors, stance, clusters and aspects to DEL</td>
+            </tr>
+            <tr>
+              <td>Cross-process links</td>
+              <td><code>scripts/integration/infer_cross_links.py</code></td>
+              <td>Source graphs + embeddings index</td>
+              <td>Turtle</td>
+              <td>Inferred thematic links (scored, labelled as inferred) between new processes, existing processes and EuroVoc candidates</td>
+            </tr>
+</tbody>
         </table>
       </div>
       
@@ -1416,6 +1727,8 @@ graph TD
       </p>
     </div>
   </footer>
+
+  <button id="back-to-top" type="button" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
 
   <script src="js/main.js"></script>
   <script>

@@ -71,3 +71,6 @@ research/assets/
 
 # Citizen interface backend KG (regenerated)
 citizen_interface/backend/knowledge_graph/
+
+# Integration importer secrets (pseudonym salts)
+config/integration/*.local.json

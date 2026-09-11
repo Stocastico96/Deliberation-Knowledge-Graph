@@ -1,0 +1,12 @@
+{
+  "_comment": "CrowdLaw / Citizen Portal import configuration. db_path points to the prototype's SQLite database (read-only). Only the listed documents (evaluation corpora of the ICEDEG 2026 paper) are imported; all other rows in the database are developer test data and are excluded with a count.",
+  "db_path": "/home/svagnoni/portale-cittadino-mvp/backend/data/app.db",
+  "portal_repo": "/home/svagnoni/portale-cittadino-mvp",
+  "snapshot_date": "2026-02-25T16:38:08+00:00",
+  "landing_page": "https://gitlab.com/CIRSFID/cititen-portal",
+  "documents": [
+    {"doc_id": 7, "short_label": "Regolamentazione legale della cannabis (A.C. 18PDL0001140)", "ground_truth": "backend/scripts/ground_truth_doc7.json", "eval_results": "backend/scripts/eval_results_doc7.json", "source_url": "https://gitlab.com/CIRSFID/genai4lex/-/tree/main/LegalResources/Camera-Bill"},
+    {"doc_id": 15, "short_label": "Limiti agli emolumenti dei top manager (A.C. 18PDL0001060)", "ground_truth": "backend/scripts/ground_truth_doc15.json", "eval_results": "backend/scripts/eval_results_doc15.json", "source_url": "https://gitlab.com/CIRSFID/genai4lex/-/tree/main/LegalResources/Camera-Bill"},
+    {"doc_id": 16, "short_label": "Conflitto di interessi dei titolari di cariche di governo (A.C. 18PDL0014950)", "ground_truth": "backend/scripts/ground_truth_doc16.json", "eval_results": "backend/scripts/eval_results_doc16.json", "source_url": "https://gitlab.com/CIRSFID/genai4lex/-/tree/main/LegalResources/Camera-Bill"}
+  ]
+}

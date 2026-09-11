@@ -1,0 +1,8 @@
+# CrowdLaw: recorded change proposals, the provision they target, and the (independent) stance label
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+SELECT ?comment ?operation ?provisionLabel ?proposed ?motivation ?stance WHERE {
+  ?comment del:proposesChangeTo ?prov ; del:proposedOperation ?operation .
+  ?prov del:name ?provisionLabel .
+  OPTIONAL { ?comment del:proposedText ?proposed } OPTIONAL { ?comment del:motivation ?motivation }
+  OPTIONAL { ?comment del:hasAnnotation ?s . ?s a del:StanceAnnotation ; del:stanceLabel ?stance }
+} LIMIT 40

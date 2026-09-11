@@ -1,0 +1,6 @@
+# CrowdLaw: stance labels by annotation method (seed ground truth vs NLI model vs LLM fallback)
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+SELECT ?method ?stance (COUNT(?a) AS ?n) WHERE {
+  ?a a del:StanceAnnotation ; del:annotationMethod ?method ; del:stanceLabel ?stance ; del:annotates ?c .
+  ?c del:platform "CrowdLaw (Portale del Cittadino)" .
+} GROUP BY ?method ?stance ORDER BY ?method ?stance

@@ -1,0 +1,7 @@
+# DelibAI: seed comments (process design) versus participant contributions per topic
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+SELECT ?topicLabel ?source (COUNT(?c) AS ?n) WHERE {
+  ?c del:isPartOf <https://svagnoni.linkeddata.es/resource/delibai_pilot_2026> ;
+     del:hasTopic ?topic ; del:contributionSource ?source .
+  ?topic del:name ?topicLabel .
+} GROUP BY ?topicLabel ?source ORDER BY ?topicLabel ?source

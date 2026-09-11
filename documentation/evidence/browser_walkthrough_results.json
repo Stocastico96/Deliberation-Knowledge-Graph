@@ -1,0 +1,127 @@
+[
+  {
+    "step": "home: platform catalogue",
+    "ok": true,
+    "info": "Decidim Barcelona | Decide Madrid | CIP Global Dialogues | European Parliament | Pol.is | EU Have Your Say | US Supreme Court | Habermas Machine | DelibAI | CrowdLaw (Portale del Cittadino) | Your Priorities"
+  },
+  {
+    "step": "home: platform logos load with alt text",
+    "ok": true,
+    "info": "[{\"src\":\"/images/delibai-logo.png\",\"alt\":\"DelibAI logo (official mascot)\",\"ok\":true},{\"src\":\"/images/crowdlaw-logo.svg\",\"alt\":\"CrowdLaw / Portale del Cittadino brand mark (rendered from the platform's CSS mark; no official raster logo exists)\",\"ok\":true}]"
+  },
+  {
+    "step": "search (process mode): DelibAI in results",
+    "ok": true,
+    "info": "DelibAI Pilot (May 2026)"
+  },
+  {
+    "step": "search (items): no AI feedback by default",
+    "ok": true,
+    "info": "Contribution | DelibAI | en | 2026-05-15 | Housing | AI feedback active"
+  },
+  {
+    "step": "search (items): AI rewrites shown only when requested and labelled",
+    "ok": true,
+    "info": "AI rewrite suggestion | deepseek/deepseek-v4-flash | AI rewrite suggestion | deepseek/deepseek-v4-flash"
+  },
+  {
+    "step": "search (items): Italian legal provisions filter",
+    "ok": true,
+    "info": "Legal provision | CrowdLaw (Portale del Cittadino) | it | 2026-01-21"
+  },
+  {
+    "step": "result -> inspect contribution",
+    "ok": true,
+    "info": "Contribution: polis_american_assembly_bowling_green_comment_474"
+  },
+  {
+    "step": "contribution -> process page",
+    "ok": true,
+    "info": "Improving Bowling Green / Warren County"
+  },
+  {
+    "step": "DelibAI process page: computed statistics",
+    "ok": true,
+    "info": "215Contributions | 24Contributing participants | 89First-level comments | 106Replies | 99AI feedback records | 7AI fallacy flags | 275Peer evaluations | 277Responses to AI labels"
+  },
+  {
+    "step": "DelibAI process page: official logo",
+    "ok": true
+  },
+  {
+    "step": "DelibAI process page: contributions count",
+    "ok": true,
+    "info": "(215)"
+  },
+  {
+    "step": "DelibAI: condition filter",
+    "ok": true,
+    "info": "(99)"
+  },
+  {
+    "step": "DelibAI: server-side pagination",
+    "ok": true,
+    "info": "page 2"
+  },
+  {
+    "step": "DelibAI: topic filter chips",
+    "ok": true,
+    "info": "5 chips, count (99) -> (41)"
+  },
+  {
+    "step": "inspect DelibAI contribution: AI feedback, model and human responses visible",
+    "ok": true,
+    "info": ""
+  },
+  {
+    "step": "inspect: technical RDF view toggle",
+    "ok": true
+  },
+  {
+    "step": "modal closes with Escape",
+    "ok": true
+  },
+  {
+    "step": "CrowdLaw process page: legislative text with FRBR expression",
+    "ok": true,
+    "info": " Norme per la regolamentazione legale della produzione, consumo e commercio della cannabis e suoi derivati it expression"
+  },
+  {
+    "step": "CrowdLaw process page: synthetic-data notice",
+    "ok": true
+  },
+  {
+    "step": "inspect CrowdLaw comment: anchors (author vs system), version, stance",
+    "ok": true,
+    "info": ""
+  },
+  {
+    "step": "anchor -> provision navigation",
+    "ok": true,
+    "info": "Anchor to legal text: crowdlaw_comment_48_anchor_system"
+  },
+  {
+    "step": "process page: links section labels inferred links",
+    "ok": true,
+    "info": "inferred links present"
+  },
+  {
+    "step": "mobile layout: no horizontal overflow",
+    "ok": true,
+    "info": "scrollWidth 390"
+  },
+  {
+    "step": "keyboard: Enter on focused contribution opens inspection",
+    "ok": true
+  },
+  {
+    "step": "missing resource: explicit error state",
+    "ok": true,
+    "info": "This resource does not exist in the knowledge graph (it may have been removed or"
+  },
+  {
+    "step": "no unexpected JS/network errors",
+    "ok": true,
+    "info": ""
+  }
+]

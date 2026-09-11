@@ -1,0 +1,452 @@
+@prefix : <https://w3id.org/deliberation/ontology#> .
+@prefix del: <https://w3id.org/deliberation/ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# DEL Annotations module (DEL 1.2 candidate)
+#
+# Minimal, backward-compatible extension of the Deliberation Ontology
+# introduced for the integration of DelibAI (AI feedback on civic
+# comments) and CrowdLaw / Citizen Portal (comments anchored to
+# Akoma Ntoso legislative passages) into the Deliberation Knowledge
+# Graph. All terms live in the core namespace so that existing data
+# and queries keep working; every property is optional.
+#################################################################
+
+<https://w3id.org/deliberation/annotations> a owl:Ontology ;
+    rdfs:label "Deliberation Ontology - Annotations, AI feedback and legal anchoring module"@en ;
+    dcterms:created "2026-09-11"^^xsd:date ;
+    dcterms:creator "Simone Vagnoni" ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:description "Extension module of the Deliberation Ontology that models (a) human and automated annotations on contributions, including AI feedback, fallacy and stance labels and participants' recorded responses to them; (b) versioned anchors between contributions and legal provisions (FRBR work/expression/provision) distinguishing the provision cited, the provision an opinion is about and the provision a change is proposed for; (c) typed links between processes and resources that keep explicit, human-annotated and inferred links distinguishable; (d) import provenance."@en ;
+    vann:preferredNamespacePrefix "deliberation" ;
+    vann:preferredNamespaceUri "https://w3id.org/deliberation/ontology#" ;
+    owl:imports <https://w3id.org/deliberation/ontology> ;
+    owl:versionInfo "1.2.0-draft" .
+
+#################################################################
+# Annotations
+#################################################################
+
+:Annotation a owl:Class ;
+    rdfs:label "Annotation"@en ;
+    rdfs:comment "A statement about a contribution, a legal resource or another annotation, produced by a human or by an automated method. Annotations are kept separate from the annotated content so that participant text, AI feedback, research annotations and peer evaluations remain distinguishable. Every annotation should carry annotationMethod and, where applicable, model, confidence and prov:wasAttributedTo."@en .
+
+:AutomatedAnnotation a owl:Class ;
+    rdfs:label "Automated Annotation"@en ;
+    rdfs:subClassOf :Annotation ;
+    rdfs:comment "An annotation produced by an algorithm or model (an ArtificialAgent)."@en .
+
+:HumanAnnotation a owl:Class ;
+    rdfs:label "Human Annotation"@en ;
+    rdfs:subClassOf :Annotation ;
+    rdfs:comment "An annotation produced by a person: a researcher, a facilitator or another participant."@en .
+
+:FallacyAnnotation a owl:Class ;
+    rdfs:label "Fallacy Annotation"@en ;
+    rdfs:subClassOf :Annotation ;
+    rdfs:comment "An annotation that flags a possible argumentation fallacy in a contribution. The category is given by identifiesFallacy; whether the annotation is automated or human is stated by its additional type (AutomatedAnnotation or HumanAnnotation) and its provenance."@en .
+
+:StanceAnnotation a owl:Class ;
+    rdfs:label "Stance Annotation"@en ;
+    rdfs:subClassOf :Annotation ;
+    rdfs:comment "An annotation stating the stance of a contribution towards a target (a proposition, a legal provision or a selected passage). The label is stanceLabel; the target, when it is a provision, is given by annotationTarget."@en .
+
+:AspectAnnotation a owl:Class ;
+    rdfs:label "Aspect Annotation"@en ;
+    rdfs:subClassOf :Annotation ;
+    rdfs:comment "Key aspects or concepts extracted from a legal provision or passage (e.g. TF-IDF or LLM-merged key phrases)."@en .
+
+:AIFeedback a owl:Class ;
+    rdfs:label "AI Feedback"@en ;
+    rdfs:subClassOf :AutomatedAnnotation ;
+    rdfs:comment "Feedback returned by an AI system on a participant's text before submission: advice, an optional rewrite suggestion and zero or more FallacyAnnotation instances. The feedback never replaces the participant's text; the text that was reviewed is kept in reviewedText."@en .
+
+:ModelRun a owl:Class ;
+    rdfs:label "Model Run"@en ;
+    rdfs:comment "A single invocation of a model that contributed to an AIFeedback (e.g. one of several models raced or monitored in parallel)."@en .
+
+:PeerEvaluation a owl:Class ;
+    rdfs:label "Peer Evaluation"@en ;
+    rdfs:subClassOf :HumanAnnotation ;
+    rdfs:comment "An evaluation of a contribution made by another participant of the same process (e.g. a peer flag stating whether the comment has an argumentation problem and of which kind)."@en .
+
+:AnnotationResponse a owl:Class ;
+    rdfs:label "Annotation Response"@en ;
+    rdfs:subClassOf :HumanAnnotation ;
+    rdfs:comment "A recorded action of a person on an existing annotation (typically AI feedback): accepted, ignored, rejected, confirmed, corrected, cleared. Only explicitly logged actions should be recorded; the absence of a response must not be read as acceptance or rejection."@en .
+
+:annotates a owl:ObjectProperty ;
+    rdfs:label "annotates"@en ;
+    rdfs:domain :Annotation ;
+    rdfs:comment "The contribution, legal resource or annotation this annotation is about."@en .
+
+:hasAnnotation a owl:ObjectProperty ;
+    rdfs:label "has annotation"@en ;
+    owl:inverseOf :annotates ;
+    rdfs:range :Annotation .
+
+:annotationTarget a owl:ObjectProperty ;
+    rdfs:label "annotation target"@en ;
+    rdfs:domain :Annotation ;
+    rdfs:comment "The object a stance or evaluation refers to (e.g. the legal provision or passage a stance was computed against), as opposed to the contribution being annotated."@en .
+
+:identifiesFallacy a owl:ObjectProperty ;
+    rdfs:label "identifies fallacy"@en ;
+    rdfs:domain :FallacyAnnotation ;
+    rdfs:range :FallacyType .
+
+:respondsToAnnotation a owl:ObjectProperty ;
+    rdfs:label "responds to annotation"@en ;
+    rdfs:domain :AnnotationResponse ;
+    rdfs:range :Annotation .
+
+:hasModelRun a owl:ObjectProperty ;
+    rdfs:label "has model run"@en ;
+    rdfs:domain :AIFeedback ;
+    rdfs:range :ModelRun .
+
+:annotationMethod a owl:DatatypeProperty ;
+    rdfs:label "annotation method"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identifier of the method that produced an annotation, anchor or link (e.g. 'nli_cross_encoder', 'sbert_cosine', 'seed_ground_truth', 'user_selection', 'llm_openrouter')."@en .
+
+:annotationMethodVersion a owl:DatatypeProperty ;
+    rdfs:label "annotation method version"@en ;
+    rdfs:range xsd:string .
+
+:model a owl:DatatypeProperty ;
+    rdfs:label "model"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identifier of the model used (e.g. 'anthropic/claude-sonnet-4.6', 'paraphrase-multilingual-MiniLM-L12-v2')."@en .
+
+:provider a owl:DatatypeProperty ;
+    rdfs:label "provider"@en ;
+    rdfs:range xsd:string .
+
+:confidence a owl:DatatypeProperty ;
+    rdfs:label "confidence"@en ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Confidence or score reported by the producing method, in the method's own scale. Not a measure of correctness."@en .
+
+:rationale a owl:DatatypeProperty ;
+    rdfs:label "rationale"@en ;
+    rdfs:range xsd:string .
+
+:annotationLabel a owl:DatatypeProperty ;
+    rdfs:label "annotation label"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The label assigned by the annotation, in the vocabulary of the producing method (e.g. a fallacy taxonomy id, a stance label, a key phrase)."@en .
+
+:stanceLabel a owl:DatatypeProperty ;
+    rdfs:label "stance label"@en ;
+    rdfs:range xsd:string .
+
+:taxonomyVersion a owl:DatatypeProperty ;
+    rdfs:label "taxonomy version"@en ;
+    rdfs:range xsd:string .
+
+:macroCategory a owl:DatatypeProperty ;
+    rdfs:label "macro category"@en ;
+    rdfs:range xsd:string .
+
+:fineLabel a owl:DatatypeProperty ;
+    rdfs:label "fine label"@en ;
+    rdfs:range xsd:string .
+
+:userQuestion a owl:DatatypeProperty ;
+    rdfs:label "user question"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The question shown to participants to explain a fallacy category."@en .
+
+:example a owl:DatatypeProperty ;
+    rdfs:label "example"@en ;
+    rdfs:range xsd:string .
+
+:advice a owl:DatatypeProperty ;
+    rdfs:label "advice"@en ;
+    rdfs:domain :AIFeedback ;
+    rdfs:range xsd:string .
+
+:rewriteSuggestion a owl:DatatypeProperty ;
+    rdfs:label "rewrite suggestion"@en ;
+    rdfs:domain :AIFeedback ;
+    rdfs:range xsd:string .
+
+:reviewedText a owl:DatatypeProperty ;
+    rdfs:label "reviewed text"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The exact participant text that was submitted for review; may differ from the final text of the contribution."@en .
+
+:presentedAt a owl:DatatypeProperty ;
+    rdfs:label "presented at"@en ;
+    rdfs:range xsd:dateTime ;
+    rdfs:comment "When the feedback was shown to the participant."@en .
+
+:responseStrategy a owl:DatatypeProperty ;
+    rdfs:label "response strategy"@en ;
+    rdfs:range xsd:string .
+
+:primaryModel a owl:DatatypeProperty ;
+    rdfs:label "primary model"@en ;
+    rdfs:range xsd:string .
+
+:pendingModel a owl:DatatypeProperty ;
+    rdfs:label "pending model"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "A monitored model that had not returned when the feedback was delivered."@en .
+
+:modelRole a owl:DatatypeProperty ;
+    rdfs:label "model role"@en ;
+    rdfs:range xsd:string .
+
+:runSucceeded a owl:DatatypeProperty ;
+    rdfs:label "run succeeded"@en ;
+    rdfs:range xsd:boolean .
+
+:latencyMs a owl:DatatypeProperty ;
+    rdfs:label "latency (ms)"@en ;
+    rdfs:range xsd:integer .
+
+:promptTokens a owl:DatatypeProperty ;
+    rdfs:label "prompt tokens"@en ;
+    rdfs:range xsd:integer .
+
+:completionTokens a owl:DatatypeProperty ;
+    rdfs:label "completion tokens"@en ;
+    rdfs:range xsd:integer .
+
+:inferenceCost a owl:DatatypeProperty ;
+    rdfs:label "inference cost"@en ;
+    rdfs:range xsd:decimal .
+
+:actionType a owl:DatatypeProperty ;
+    rdfs:label "action type"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The recorded action: shown, accepted, ignored, rejected, confirmed, corrected, submitted, endorsed, cleared."@en .
+
+:correctedTo a owl:DatatypeProperty ;
+    rdfs:label "corrected to"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The label a person substituted for the annotated label."@en .
+
+:actionReason a owl:DatatypeProperty ;
+    rdfs:label "action reason"@en ;
+    rdfs:range xsd:string .
+
+:hasProblem a owl:DatatypeProperty ;
+    rdfs:label "has problem"@en ;
+    rdfs:domain :PeerEvaluation ;
+    rdfs:range xsd:boolean .
+
+#################################################################
+# Contribution details recorded by the source platforms
+#################################################################
+
+:draftText a owl:DatatypeProperty ;
+    rdfs:label "draft text"@en ;
+    rdfs:domain :Contribution ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The participant's text before any review step; text is the text finally submitted."@en .
+
+:contributionKind a owl:DatatypeProperty ;
+    rdfs:label "contribution kind"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Platform-specific kind of contribution (e.g. main, reply_agree, reply_disagree, seed)."@en .
+
+:contributionSource a owl:DatatypeProperty ;
+    rdfs:label "contribution source"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Whether the contribution was written by a participant or provided by the process design (e.g. 'participant', 'seed')."@en .
+
+:replyRelation a owl:DatatypeProperty ;
+    rdfs:label "reply relation"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Declared relation of a reply to its parent (e.g. agree, disagree)."@en .
+
+:experimentalCondition a owl:DatatypeProperty ;
+    rdfs:label "experimental condition"@en ;
+    rdfs:range xsd:string .
+
+:wordCount a owl:DatatypeProperty ;
+    rdfs:label "word count"@en ;
+    rdfs:range xsd:integer .
+
+:reviewDurationMs a owl:DatatypeProperty ;
+    rdfs:label "review duration (ms)"@en ;
+    rdfs:range xsd:integer .
+
+:controlDelayMs a owl:DatatypeProperty ;
+    rdfs:label "control delay (ms)"@en ;
+    rdfs:range xsd:integer .
+
+:conditionAssignment a owl:DatatypeProperty ;
+    rdfs:label "condition assignment"@en ;
+    rdfs:domain :Participant ;
+    rdfs:range xsd:string ;
+    rdfs:comment "A 'topic:condition' pair assigned to a participant in a within-subject design."@en .
+
+:pcaX a owl:DatatypeProperty ; rdfs:label "PCA x"@en ; rdfs:range xsd:decimal .
+:pcaY a owl:DatatypeProperty ; rdfs:label "PCA y"@en ; rdfs:range xsd:decimal .
+:clusterKey a owl:DatatypeProperty ; rdfs:label "cluster key"@en ; rdfs:range xsd:integer .
+:clusterSize a owl:DatatypeProperty ; rdfs:label "cluster size"@en ; rdfs:range xsd:integer .
+
+#################################################################
+# Legal resources and anchoring
+#################################################################
+
+:LegalWork a owl:Class ;
+    rdfs:label "Legal Work"@en ;
+    rdfs:subClassOf :LegalSource ;
+    rdfs:comment "A legal document at FRBR work level (e.g. a bill), independent of language version."@en .
+
+:LegalExpression a owl:Class ;
+    rdfs:label "Legal Expression"@en ;
+    rdfs:subClassOf :LegalSource ;
+    rdfs:comment "A specific version/language expression of a LegalWork (FRBR expression). Anchors always point to an expression, never to the work, so that a correspondence is not silently transferred to later versions."@en .
+
+:LegalProvision a owl:Class ;
+    rdfs:label "Legal Provision"@en ;
+    rdfs:subClassOf :LegalSource ;
+    rdfs:comment "A structural unit (article, paragraph, segment) of a LegalExpression, identified by its Akoma Ntoso eId."@en .
+
+:LegalResourceAnchor a owl:Class ;
+    rdfs:label "Legal Resource Anchor"@en ;
+    rdfs:comment "The correspondence between a contribution and a provision or passage of a specific legal expression. anchorMethod states whether the anchor was chosen by the user or resolved by the system; confidence keeps the system's score."@en .
+
+:expressionOf a owl:ObjectProperty ;
+    rdfs:label "expression of"@en ;
+    rdfs:domain :LegalExpression ;
+    rdfs:range :LegalWork .
+
+:partOfExpression a owl:ObjectProperty ;
+    rdfs:label "part of expression"@en ;
+    rdfs:domain :LegalProvision ;
+    rdfs:range :LegalExpression .
+
+:hasAnchor a owl:ObjectProperty ;
+    rdfs:label "has anchor"@en ;
+    rdfs:domain :Contribution ;
+    rdfs:range :LegalResourceAnchor .
+
+:anchorProvision a owl:ObjectProperty ;
+    rdfs:label "anchor provision"@en ;
+    rdfs:domain :LegalResourceAnchor ;
+    rdfs:range :LegalProvision .
+
+:anchorExpression a owl:ObjectProperty ;
+    rdfs:label "anchor expression"@en ;
+    rdfs:domain :LegalResourceAnchor ;
+    rdfs:range :LegalExpression .
+
+:aboutProvision a owl:ObjectProperty ;
+    rdfs:label "about provision"@en ;
+    rdfs:domain :Contribution ;
+    rdfs:range :LegalProvision ;
+    rdfs:comment "The provision an opinion is expressed about. Distinct from references (a source cited) and from proposesChangeTo (a provision the contribution asks to change). The three may coexist."@en .
+
+:proposesChangeTo a owl:ObjectProperty ;
+    rdfs:label "proposes change to"@en ;
+    rdfs:domain :Contribution ;
+    rdfs:range :LegalProvision ;
+    rdfs:comment "The provision targeted by a proposed modification, addition or removal. Use proposedOperation for the kind of change. A negative stance alone does not imply a removal request."@en .
+
+:proposedOperation a owl:DatatypeProperty ;
+    rdfs:label "proposed operation"@en ;
+    rdfs:domain :Contribution ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The change operation as recorded by the source platform (e.g. modify, add, remove) - only when explicitly recorded."@en .
+
+:proposedText a owl:DatatypeProperty ;
+    rdfs:label "proposed text"@en ;
+    rdfs:domain :Contribution ;
+    rdfs:range xsd:string .
+
+:motivation a owl:DatatypeProperty ;
+    rdfs:label "motivation"@en ;
+    rdfs:domain :Contribution ;
+    rdfs:range xsd:string .
+
+:anchorText a owl:DatatypeProperty ;
+    rdfs:label "anchor text"@en ;
+    rdfs:domain :LegalResourceAnchor ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The passage selected within the provision, when the anchor is narrower than the whole provision."@en .
+
+:anchorKind a owl:DatatypeProperty ;
+    rdfs:label "anchor kind"@en ;
+    rdfs:domain :LegalResourceAnchor ;
+    rdfs:range xsd:string ;
+    rdfs:comment "'article' (whole provision) or 'range' (a selected passage)."@en .
+
+:anchorMethod a owl:DatatypeProperty ;
+    rdfs:label "anchor method"@en ;
+    rdfs:domain :LegalResourceAnchor ;
+    rdfs:range xsd:string ;
+    rdfs:comment "'user_selection', 'user_declared' or 'system_prediction'."@en .
+
+:anchorsAgree a owl:DatatypeProperty ;
+    rdfs:label "anchors agree"@en ;
+    rdfs:domain :LegalResourceAnchor ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Whether a system-resolved anchor coincides with the provision chosen or declared by the user."@en .
+
+:eId a owl:DatatypeProperty ; rdfs:label "eId"@en ; rdfs:range xsd:string .
+:articleNumber a owl:DatatypeProperty ; rdfs:label "article number"@en ; rdfs:range xsd:string .
+:heading a owl:DatatypeProperty ; rdfs:label "heading"@en ; rdfs:range xsd:string .
+:frbrWorkUri a owl:DatatypeProperty ; rdfs:label "FRBR work URI"@en ; rdfs:range xsd:string .
+:frbrExpressionUri a owl:DatatypeProperty ; rdfs:label "FRBR expression URI"@en ; rdfs:range xsd:string .
+:frbrManifestationUri a owl:DatatypeProperty ; rdfs:label "FRBR manifestation URI"@en ; rdfs:range xsd:string .
+:sourceFilename a owl:DatatypeProperty ; rdfs:label "source filename"@en ; rdfs:range xsd:string .
+:segmentIndex a owl:DatatypeProperty ; rdfs:label "segment index"@en ; rdfs:range xsd:integer .
+
+#################################################################
+# Links between processes and resources
+#################################################################
+
+:ProcessLink a owl:Class ;
+    rdfs:label "Process Link"@en ;
+    rdfs:comment "A typed, reified link between two resources of the knowledge graph (processes, topics, contributions, legal resources, vocabulary concepts). linkType states whether the link is explicit (documented in the source data), human (annotated by a person) or inferred (produced by an automatic method). An inferred link with a similarity score is a thematic association, never evidence of influence or derivation."@en .
+
+:linkSource a owl:ObjectProperty ; rdfs:label "link source"@en ; rdfs:domain :ProcessLink .
+:linkTarget a owl:ObjectProperty ; rdfs:label "link target"@en ; rdfs:domain :ProcessLink .
+
+:linkType a owl:DatatypeProperty ;
+    rdfs:label "link type"@en ;
+    rdfs:domain :ProcessLink ;
+    rdfs:range xsd:string ;
+    rdfs:comment "'explicit', 'human' or 'inferred'."@en .
+
+:linkRelation a owl:DatatypeProperty ;
+    rdfs:label "link relation"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Nature of the link, e.g. 'thematic_similarity', 'same_legal_document', 'eurovoc_concept'."@en .
+
+:similarity a owl:DatatypeProperty ; rdfs:label "similarity"@en ; rdfs:range xsd:decimal .
+:rank a owl:DatatypeProperty ; rdfs:label "rank"@en ; rdfs:range xsd:integer .
+
+#################################################################
+# Import provenance
+#################################################################
+
+:ImportActivity a owl:Class ;
+    rdfs:label "Import Activity"@en ;
+    rdfs:subClassOf prov:Activity ;
+    rdfs:comment "One execution of an importer that produced a source graph for the Deliberation Knowledge Graph."@en .
+
+:datasetStatus a owl:DatatypeProperty ;
+    rdfs:label "dataset status"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Nature of the data: 'pilot-historical' (data collected in a real pilot), 'synthetic-evaluation' (seeded data used to evaluate a prototype), 'derived-annotation' (produced by a later analysis), 'demo'."@en .
+
+:importVersion a owl:DatatypeProperty ; rdfs:label "import version"@en ; rdfs:range xsd:string .
+:mappingVersion a owl:DatatypeProperty ; rdfs:label "mapping version"@en ; rdfs:range xsd:string .
+:sourceTable a owl:DatatypeProperty ; rdfs:label "source table"@en ; rdfs:range xsd:string .
+:sourceRecordId a owl:DatatypeProperty ; rdfs:label "source record id"@en ; rdfs:range xsd:string .
+:sourceSnapshotDate a owl:DatatypeProperty ; rdfs:label "source snapshot date"@en ; rdfs:range xsd:dateTime .

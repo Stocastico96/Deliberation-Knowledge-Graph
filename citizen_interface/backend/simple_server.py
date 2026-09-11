@@ -19,11 +19,14 @@ logger = logging.getLogger(__name__)
 
 # Try to import semantic search
 try:
-    from semantic_api import init_semantic_search, search_semantic
+    from semantic_api import init_semantic_search, search_semantic, search_semantic_items, search_facets
     SEMANTIC_SEARCH_AVAILABLE = True
 except ImportError:
     logger.warning("Semantic search not available")
     SEMANTIC_SEARCH_AVAILABLE = False
+
+# Inspection API for annotated sources (DelibAI, CrowdLaw) + paginated contributions
+import integration_api
 
 # Namespaces
 DEL = Namespace("https://w3id.org/deliberation/ontology#")
@@ -34,10 +37,12 @@ FOAF = Namespace("http://xmlns.com/foaf/0.1/")
 
 app = Flask(__name__)
 CORS(app)
+app.register_blueprint(integration_api.bp)
 
 # Global knowledge graph
 kg = None
 processes_cache = []
+process_contributions_index = {}  # {process_uri: [contrib_uri, ...]}
 
 
 def load_knowledge_graph(kg_path):
@@ -52,9 +57,28 @@ def load_knowledge_graph(kg_path):
 
     kg.parse(kg_path, format="turtle")
     logger.info(f"Loaded {len(kg)} triples")
+    integration_api.init(kg)
+
+    # Build process→contributions index by direct triple scan (avoids slow SPARQL on large processes)
+    _build_process_contributions_index()
 
     # Extract processes
     extract_processes()
+
+
+def _build_process_contributions_index():
+    """Build process→contributions index by scanning triples (O(N), no SPARQL)."""
+    global process_contributions_index
+    process_contributions_index = {}
+    has_contribution = DEL.hasContribution
+    for s, _p, o in kg.triples((None, has_contribution, None)):
+        p_uri = str(s)
+        c_uri = str(o)
+        if p_uri not in process_contributions_index:
+            process_contributions_index[p_uri] = []
+        process_contributions_index[p_uri].append(c_uri)
+    total = sum(len(v) for v in process_contributions_index.values())
+    logger.info(f"Built contributions index: {len(process_contributions_index)} processes, {total} contributions")
 
 
 def extract_processes():
@@ -68,10 +92,12 @@ def extract_processes():
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX dcterms: <http://purl.org/dc/terms/>
 
-    SELECT DISTINCT ?process ?title ?description ?date ?forumName
+    SELECT DISTINCT ?process ?title ?description ?date ?forumName ?language ?status
            (COUNT(DISTINCT ?contribution) as ?contributions)
     WHERE {
         ?process a del:DeliberationProcess .
+        OPTIONAL { ?process dcterms:language ?language }
+        OPTIONAL { ?process del:datasetStatus ?status }
 
         OPTIONAL { ?process del:name ?title }
         OPTIONAL { ?process del:title ?title }
@@ -89,7 +115,7 @@ def extract_processes():
         }
         OPTIONAL { ?process del:hasContribution ?contribution }
     }
-    GROUP BY ?process ?title ?description ?date ?forumName
+    GROUP BY ?process ?title ?description ?date ?forumName ?language ?status
     """
 
     processes_cache = []
@@ -144,7 +170,9 @@ def extract_processes():
             'platform': platform,
             'contributions_count': contributions_count,
             'fallacies_count': 0,  # Will count on-demand
-            'participants_count': 0  # Will count on-demand
+            'participants_count': 0,  # Will count on-demand
+            'language': str(row.language) if row.language else None,
+            'dataset_status': str(row.status) if row.status else None,
         }
         processes_cache.append(process)
 
@@ -269,12 +297,22 @@ def stats():
         total_fallacies += p.get('fallacies_count', 0)
         platforms.add(p.get('platform', 'Unknown'))
 
+    facets = search_facets() if SEMANTIC_SEARCH_AVAILABLE else {}
     return jsonify({
         'total_processes': len(processes_cache),
         'total_contributions': total_contributions,
         'total_fallacies': total_fallacies,
-        'platforms': sorted(list(platforms))
+        'platforms': sorted(list(platforms)),
+        'search_facets': facets,
     })
+
+
+@app.route('/api/search/facets')
+def search_facets_endpoint():
+    """Distinct filter values available in the semantic index"""
+    if not SEMANTIC_SEARCH_AVAILABLE:
+        return jsonify({'error': 'Semantic search not available'}), 503
+    return jsonify(search_facets())
 
 
 @app.route('/api/topics')
@@ -354,21 +392,65 @@ def semantic_search_endpoint():
     if not SEMANTIC_SEARCH_AVAILABLE:
         return jsonify({'error': 'Semantic search not available'}), 503
 
-    data = request.get_json()
-    query = data.get('query', '')
-    top_k = data.get('top_k', 10)
+    data = request.get_json() or {}
+    query = (data.get('query') or '').strip()
+    try:
+        top_k = max(1, min(200, int(data.get('top_k', 10))))
+    except (TypeError, ValueError):
+        top_k = 10
     platform_filter = data.get('platform', None)
     sort_by = data.get('sort_by', 'relevance')  # relevance, contributions, date
     min_contributions = data.get('min_contributions', None)
+    mode = data.get('mode', 'process')  # 'process' (one result per process) or 'items' (individual documents)
+
+    # Metadata filters (applied where the index carries the field)
+    def _list(v):
+        if v is None or v == '' or v == []:
+            return None
+        return [x for x in (v if isinstance(v, list) else [v]) if x]
+    filters = {
+        'content_types': _list(data.get('content_types')),
+        'languages': _list(data.get('languages')),
+        'date_from': data.get('date_from') or None,
+        'date_to': data.get('date_to') or None,
+        'topic': data.get('topic') or None,
+        'document': data.get('document') or None,
+        'process': data.get('process') or None,
+        'include_ai_feedback': bool(data.get('include_ai_feedback')),
+    }
+    if filters['content_types'] and any(t in ('ai_feedback', 'ai_rewrite') for t in filters['content_types']):
+        filters['include_ai_feedback'] = True
+    active_filters = {k: v for k, v in filters.items() if v}
 
     if not query:
         return jsonify({'error': 'No query provided'}), 400
 
+    if mode == 'items':
+        try:
+            items = search_semantic_items(query, top_k, filters)
+            for r in items:
+                r['snippet'] = r['text'][:300] + ('...' if len(r['text']) > 300 else '')
+                r['detail_url'] = f"/?show_resource={r['uri']}"
+                if r.get('process'):
+                    r['process_url'] = f"/?process={r['process']}"
+            return jsonify({
+                'results': items,
+                'query': query,
+                'total_results': len(items),
+                'search_type': 'semantic',
+                'mode': 'items',
+                'filters': {'platform': platform_filter, **active_filters},
+                'note': 'Similarity scores rank documents by textual closeness to the query; they are not evidence of agreement, influence or derivation.'
+            })
+        except Exception as e:
+            logger.error(f"Semantic item search error: {e}", exc_info=True)
+            return jsonify({'error': str(e)}), 500
+
     try:
         # Get semantic search results (contributions)
         # Fetch more results to allow for filtering and sorting
-        fetch_k = top_k * 3 if min_contributions or sort_by != 'relevance' else top_k
-        semantic_results = search_semantic(query, fetch_k, platform_filter)
+        fetch_k = top_k * 3 if min_contributions or sort_by != 'relevance' or active_filters else top_k
+        semantic_results = search_semantic(query, fetch_k, platform_filter, filters)
 
         # Map contributions to processes
         process_scores = {}
@@ -387,6 +469,13 @@ def semantic_search_endpoint():
                         }
 
                     process_scores[process_uri]['matching_contributions'].append({
+                        'uri': result.get('uri'),
+                        'type': result.get('type', 'contribution'),
+                        'language': result.get('language'),
+                        'date': result.get('date'),
+                        'topic': result.get('topic'),
+                        'document': result.get('document'),
+                        'is_ai_generated': result.get('is_ai_generated', False),
                         'text': result['text'][:200] + '...' if len(result['text']) > 200 else result['text'],
                         'score': result['similarity_score']
                     })
@@ -416,10 +505,12 @@ def semantic_search_endpoint():
             'query': query,
             'total_results': len(results),
             'search_type': 'semantic',
+            'mode': 'process',
             'sort_by': sort_by,
             'filters': {
                 'platform': platform_filter,
-                'min_contributions': min_contributions
+                'min_contributions': min_contributions,
+                **active_filters
             }
         })
 
@@ -451,70 +542,51 @@ def _get_process_details(uri):
             # Get detailed info from KG
             process = p.copy()
 
-            # Get contributions
-            contributions_query = f"""
-            PREFIX del: <https://w3id.org/deliberation/ontology#>
-            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-            PREFIX dcterms: <http://purl.org/dc/terms/>
-            SELECT DISTINCT ?contribution
-                   (SAMPLE(?text1) as ?text)
-                   (SAMPLE(?participant1) as ?participant)
-                   (SAMPLE(?participantName1) as ?participantName)
-                   (SAMPLE(?responseTo1) as ?responseTo)
-                   (SAMPLE(?timestamp1) as ?timestamp)
-            WHERE {{
-                <{uri}> del:hasContribution ?contribution .
-                OPTIONAL {{ ?contribution del:text ?text1 }}
-                OPTIONAL {{ ?contribution rdfs:comment ?text1 }}
-                OPTIONAL {{ ?contribution del:content ?text1 }}
-                OPTIONAL {{ ?contribution del:madeBy ?participant1 }}
-                OPTIONAL {{ ?contribution del:author ?participant1 }}
-                OPTIONAL {{ ?participant1 foaf:name ?participantName1 }}
-                OPTIONAL {{ ?participant1 del:name ?participantName1 }}
-                OPTIONAL {{ ?contribution del:responseTo ?responseTo1 }}
-                OPTIONAL {{ ?contribution del:timestamp ?timestamp1 }}
-                OPTIONAL {{ ?contribution dcterms:created ?timestamp1 }}
-            }}
-            GROUP BY ?contribution
-            """
+            # Get contributions — direct rdflib triple lookup, bypassing SPARQL engine (fast for large processes)
+            CONTRIB_LIMIT = 100
+            all_contrib_uris = process_contributions_index.get(uri, [])
+            sample_uris = all_contrib_uris[:CONTRIB_LIMIT]
+
+            _text_preds = [DEL.text, RDFS.comment, DEL.content]
+            _author_preds = [DEL.madeBy, DEL.author]
+            _name_preds = [FOAF.name, DEL.name]
 
             contributions = []
-            seen_contributions = {}  # Track unique contributions
-
-            for row in kg.query(contributions_query):
-                contrib_uri = str(row.contribution)
-
-                # Skip if we've already processed this contribution
-                if contrib_uri in seen_contributions:
+            for c_uri_str in sample_uris:
+                c_ref = URIRef(c_uri_str)
+                # Get text
+                text = ""
+                for pred in _text_preds:
+                    vals = list(kg.objects(c_ref, pred))
+                    if vals:
+                        text = str(vals[0])
+                        break
+                if not text.strip():
                     continue
-
-                author_name = str(row.participantName) if row.participantName else (str(row.participant) if row.participant else "Unknown")
-                text = str(row.text) if row.text else ""
-
-                # Skip empty texts
-                if not text or text.strip() == "":
-                    continue
-
-                contribution_obj = {
-                    'uri': contrib_uri,
-                    'text': text,
-                    'author': author_name
-                }
-
-                # Add responseTo if it exists
-                if row.responseTo:
-                    contribution_obj['responseTo'] = str(row.responseTo)
-
-                # Add timestamp if it exists
-                if row.timestamp:
-                    contribution_obj['timestamp'] = str(row.timestamp)
-
+                # Get author name
+                author = "Unknown"
+                for a_pred in _author_preds:
+                    parts = list(kg.objects(c_ref, a_pred))
+                    if parts:
+                        part_ref = parts[0]
+                        for n_pred in _name_preds:
+                            names = list(kg.objects(part_ref, n_pred))
+                            if names:
+                                author = str(names[0])
+                                break
+                        break
+                contribution_obj = {'uri': c_uri_str, 'text': text, 'author': author}
+                # Optional: responseTo
+                resp = list(kg.objects(c_ref, DEL.responseTo))
+                if resp:
+                    contribution_obj['responseTo'] = str(resp[0])
                 contributions.append(contribution_obj)
-                seen_contributions[contrib_uri] = True
 
             process['contributions'] = contributions
-            process['contributions_count'] = len(contributions)
+            total_count = p.get('contributions_count', len(all_contrib_uris))
+            process['contributions_count'] = total_count
+            process['contributions_sample_size'] = len(contributions)
+            process['contributions_capped'] = len(all_contrib_uris) > CONTRIB_LIMIT
 
             # Get fallacies
             fallacies_query = f"""

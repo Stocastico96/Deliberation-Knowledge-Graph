@@ -1,0 +1,7 @@
+# Inferred links between the new processes/topics and the rest of the graph (never evidence of influence)
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?link ?type ?relation ?similarity ?label WHERE {
+  ?link a del:ProcessLink ; del:linkType ?type ; del:linkRelation ?relation ; rdfs:label ?label .
+  OPTIONAL { ?link del:similarity ?similarity }
+} ORDER BY DESC(?similarity)

@@ -1,0 +1,9 @@
+# Datasets, their status and the import activity that produced them
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT ?dataset ?title ?status ?importVersion ?snapshot ?activity WHERE {
+  ?dataset a dcat:Dataset ; dct:title ?title ; del:datasetStatus ?status ; del:importVersion ?importVersion ; prov:wasGeneratedBy ?activity .
+  OPTIONAL { ?dataset del:sourceSnapshotDate ?snapshot }
+}

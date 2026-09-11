@@ -1,0 +1,8 @@
+# DelibAI: contributions written with AI feedback active, with advice and model
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT ?contribution ?text ?model ?advice WHERE {
+  <https://svagnoni.linkeddata.es/resource/delibai_pilot_2026> del:hasContribution ?contribution .
+  ?contribution del:experimentalCondition "delibai_on" ; del:text ?text ; del:hasAnnotation ?fb .
+  ?fb a del:AIFeedback ; del:model ?model ; del:advice ?advice .
+} LIMIT 20

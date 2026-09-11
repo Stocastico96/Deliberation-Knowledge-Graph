@@ -1,0 +1,6 @@
+# DelibAI: how participants responded to displayed fallacy labels (confirmed / corrected / rejected)
+PREFIX del: <https://w3id.org/deliberation/ontology#>
+SELECT ?action (COUNT(?r) AS ?n) WHERE {
+  ?r a del:AnnotationResponse ; del:respondsToAnnotation ?label ; del:actionType ?action .
+  ?label a del:FallacyAnnotation .
+} GROUP BY ?action ORDER BY DESC(?n)

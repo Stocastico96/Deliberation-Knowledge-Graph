@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Citizen Interface - Deliberation Knowledge Graph</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/citizen.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -193,7 +194,7 @@
         <div class="hero-bg"></div>
         <div class="hero-content">
             <h1><i class="fas fa-users"></i> Citizen Interface</h1>
-            <p>Explore deliberation processes, detect fallacies, and engage with democratic participation</p>
+            <p>Explore deliberation processes across platforms, inspect contributions, AI feedback and legal anchors, and engage with democratic participation</p>
         </div>
     </section>
 
@@ -249,7 +250,7 @@
                     <div class="hiw-item-icon hiw-ig"><i class="fas fa-project-diagram"></i></div>
                     <div class="hiw-item-text">
                         <strong>Knowledge Graph</strong>
-                        <p>Unified RDF dataset: Decide Madrid, Decidim Barcelona, EU Have Your Say, European Parliament debates, aligned to the Deliberation Ontology.</p>
+                        <p>Unified RDF dataset: Decide Madrid, Decidim Barcelona, EU Have Your Say, European Parliament debates, Pol.is, CIP Global Dialogues, DelibAI and CrowdLaw, aligned to the Deliberation Ontology.</p>
                     </div>
                 </div>
                 <div class="hiw-item">
@@ -332,11 +333,61 @@
                             <option value="50">50</option>
                         </select>
                     </label>
+                    <label>
+                        Show:
+                        <select id="searchMode">
+                            <option value="process" selected>Processes (best match each)</option>
+                            <option value="items">Individual contributions and documents</option>
+                        </select>
+                    </label>
+                    <button type="button" class="filters-toggle" id="filtersToggle" aria-expanded="false" aria-controls="advancedFilters">
+                        <i class="fas fa-sliders-h" aria-hidden="true"></i> More filters
+                    </button>
+                </div>
+                <div id="advancedFilters" class="advanced-filters" role="group" aria-label="Additional search filters">
+                    <label>Content type
+                        <select id="contentTypeFilter">
+                            <option value="">Any (participant content and legal texts)</option>
+                            <option value="contribution">Contributions</option>
+                            <option value="seed_contribution">Seed comments (process design)</option>
+                            <option value="legal_provision">Legal provisions (articles)</option>
+                            <option value="topic">Topics / questions</option>
+                            <option value="process">Process descriptions</option>
+                            <option value="ai_feedback">AI feedback (advice)</option>
+                            <option value="ai_rewrite">AI rewrite suggestions</option>
+                        </select>
+                    </label>
+                    <label>Language
+                        <select id="languageFilter"><option value="">Any</option></select>
+                    </label>
+                    <label>Legal document
+                        <select id="documentFilter"><option value="">Any</option></select>
+                    </label>
+                    <label>Topic contains
+                        <input type="text" id="topicFilter" placeholder="e.g. housing" autocomplete="off">
+                    </label>
+                    <label>From date
+                        <input type="date" id="dateFrom">
+                    </label>
+                    <label>To date
+                        <input type="date" id="dateTo">
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" id="includeAiFeedback"> Include AI-generated feedback in results
+                    </label>
+                    <p class="filters-help">Language, date, topic and document filters only return documents that record that field. All DelibAI and CrowdLaw documents do; most documents of older sources have no language or date in the index and are left out while such a filter is active. AI feedback is never mixed into ordinary results unless requested, and is always labelled.</p>
                 </div>
             </div>
 
             <!-- Statistics -->
             <div id="stats" class="stats-grid"></div>
+
+            <!-- Platform catalogue -->
+            <div id="platformCatalogue" aria-live="polite">
+                <h2 style="margin-top:2.5rem;font-size:1.3rem;color:var(--secondary-color);"><i class="fas fa-layer-group" aria-hidden="true"></i> Platforms and processes in the graph</h2>
+                <p style="color:var(--text-light);font-size:0.9rem;">Each card is a source platform. Select one to browse its processes or to restrict the search.</p>
+                <div id="platformGrid" class="platform-grid"><div class="loading"><div class="spinner"></div></div></div>
+            </div>
         </div>
     </section>
 
@@ -349,9 +400,9 @@
     </section>
 
     <!-- Resource Details Modal -->
-    <div id="resourceModal" class="modal" style="display: none;">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closeResourceModal()">&times;</span>
+    <div id="resourceModal" class="modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content" tabindex="-1">
+            <button type="button" class="modal-close" onclick="closeResourceModal()" aria-label="Close">&times;</button>
             <h2 id="modalTitle">Resource Details</h2>
             <div id="modalBody"></div>
         </div>

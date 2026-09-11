@@ -1,0 +1,120 @@
+{
+  "source": "delibai",
+  "import_version": "delibai-import-1.0.0",
+  "mapping_version": "delibai-del-mapping-1.0.0",
+  "started_at": "2026-09-11T15:00:29+00:00",
+  "finished_at": "2026-09-11T15:00:30+00:00",
+  "tables": {
+    "pilot_survey_responses": {
+      "read": 41,
+      "imported": 0,
+      "excluded": 41,
+      "failed": 0
+    },
+    "seed_comments": {
+      "read": 20,
+      "imported": 20,
+      "excluded": 0,
+      "failed": 0
+    },
+    "pilot_participants": {
+      "read": 36,
+      "imported": 34,
+      "excluded": 2,
+      "failed": 0
+    },
+    "pilot_task_responses": {
+      "read": 195,
+      "imported": 195,
+      "excluded": 0,
+      "failed": 0
+    },
+    "ai_feedback": {
+      "read": 99,
+      "imported": 99,
+      "excluded": 0,
+      "failed": 0
+    },
+    "ai_fallacy_flags": {
+      "read": 7,
+      "imported": 7,
+      "excluded": 0,
+      "failed": 0
+    },
+    "pilot_peer_flags": {
+      "read": 454,
+      "imported": 453,
+      "excluded": 1,
+      "failed": 0
+    },
+    "pilot_events": {
+      "read": 2024,
+      "imported": 203,
+      "excluded": 1821,
+      "failed": 0
+    }
+  },
+  "exclusions": {
+    "pilot_survey_responses": {
+      "questionnaires are reserved - never exported to the graph": 41
+    },
+    "pilot_participants": {
+      "created outside the pilot window (post-pilot session)": 2
+    },
+    "pilot_peer_flags": {
+      "created outside the pilot window": 1
+    },
+    "pilot_events": {
+      "session log - not published": 50,
+      "behavioural log (thread views) - not published": 550,
+      "consent/disclosure log - kept private (counted)": 36,
+      "survey - reserved": 40,
+      "experimental timing detail - captured as controlDelayMs on the contribution": 97,
+      "redundant with the task record": 195,
+      "redundant with the flag record": 417,
+      "redundant with the flag record (aiAgreement=ai_confirmed)": 109,
+      "redundant with delibai_analysis.modelComparison": 121,
+      "redundant with the flag record (action=cleared)": 36,
+      "redundant with the flag record (aiAgreement=ai_corrected)": 118,
+      "'Suggestion Shown' without a submitted contribution (text edited or abandoned)": 20,
+      "redundant with the flag record (aiAgreement=ai_rejected)": 11,
+      "created outside the pilot window": 21
+    }
+  },
+  "warnings": [
+    "event 233 (DelibAI Suggestion Ignored): no matching contribution; attached to topic",
+    "event 527 (DelibAI Suggestion Ignored): no matching contribution; attached to topic",
+    "event 1152 (DelibAI Suggestion Ignored): no matching contribution; attached to topic"
+  ],
+  "notes": {
+    "participants_metadata_column": "excluded: contains password hashes and salts",
+    "feedback_presentedAt_from_shown_events": 101,
+    "pilot_window": [
+      "2026-05-07T00:00:00+00:00",
+      "2026-05-31T23:59:59+00:00"
+    ],
+    "seeds": 20,
+    "output": "/home/svagnoni/deliberation-knowledge-graph/knowledge_graph/sources/delibai_pilot_kg.ttl"
+  },
+  "triples": 16522,
+  "entities_by_type": {
+    "dcat:Dataset": 1,
+    "del:AIFeedback": 99,
+    "del:AnnotationResponse": 280,
+    "del:ArtificialAgent": 3,
+    "del:AutomatedAnnotation": 106,
+    "del:Contribution": 215,
+    "del:DeliberationProcess": 1,
+    "del:Facilitator": 1,
+    "del:FallacyAnnotation": 83,
+    "del:FallacyType": 6,
+    "del:Forum": 1,
+    "del:HumanAnnotation": 571,
+    "del:ImportActivity": 1,
+    "del:ModelRun": 99,
+    "del:Participant": 35,
+    "del:PeerEvaluation": 275,
+    "del:Topic": 4,
+    "prov:Activity": 1
+  }
+}
