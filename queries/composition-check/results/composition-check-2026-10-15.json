@@ -1,0 +1,933 @@
+{
+ "endpoint": "https://dkg.svagnoni.linkeddata.es/sparql",
+ "run_at": "2026-10-15T15:23:24+00:00",
+ "checks": [
+  {
+   "id": "R1.cl.missing.text",
+   "rule": 1,
+   "description": "CrowdLaw contributions lacking del:text",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.missing.madeBy",
+   "rule": 1,
+   "description": "CrowdLaw contributions lacking del:madeBy",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.missing.timestamp",
+   "rule": 1,
+   "description": "CrowdLaw contributions lacking del:timestamp",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.missing.references",
+   "rule": 1,
+   "description": "CrowdLaw contributions lacking del:references",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.missing.aboutProvision",
+   "rule": 1,
+   "description": "CrowdLaw contributions lacking del:aboutProvision",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.missing.hasAnchor",
+   "rule": 1,
+   "description": "CrowdLaw contributions lacking del:hasAnchor",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.missing.hasTopic",
+   "rule": 1,
+   "description": "CrowdLaw contributions lacking del:hasTopic",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.missing.pcaX",
+   "rule": 1,
+   "description": "CrowdLaw contributions lacking del:pcaX",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.missing.wasGeneratedBy",
+   "rule": 1,
+   "description": "CrowdLaw contributions lacking prov:wasGeneratedBy",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.missing.sourceRecordId",
+   "rule": 1,
+   "description": "CrowdLaw contributions lacking del:sourceRecordId",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.missing.identifier",
+   "rule": 1,
+   "description": "CrowdLaw contributions lacking del:identifier",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.anchors_per_contribution",
+   "rule": 1,
+   "description": "distinct anchor methods per CrowdLaw contribution (expect 2 for all 146)",
+   "expected": "2:146",
+   "rows": [
+    {
+     "n": "2",
+     "k": "146"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.stance_methods_per_process",
+   "rule": 1,
+   "description": "stance annotations per process and method",
+   "expected": null,
+   "rows": [
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "m": "nli_cross_encoder_targeted_stance",
+     "n": "38"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "m": "seed_ground_truth",
+     "n": "38"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "m": "nli_cross_encoder_targeted_stance",
+     "n": "34"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "m": "seed_ground_truth",
+     "n": "34"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "m": "llm_targeted_stance_openrouter",
+     "n": "1"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "m": "nli_cross_encoder_targeted_stance",
+     "n": "4"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "m": "seed_ground_truth",
+     "n": "74"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.cl.without_model_stance",
+   "rule": 1,
+   "description": "CrowdLaw contributions with no model-produced stance label retained by the source",
+   "expected": null,
+   "rows": [
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "n": "69"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.dl.missing.text",
+   "rule": 1,
+   "description": "DelibAI contributions lacking del:text",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.dl.missing.madeBy",
+   "rule": 1,
+   "description": "DelibAI contributions lacking del:madeBy",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.dl.missing.hasTopic",
+   "rule": 1,
+   "description": "DelibAI contributions lacking del:hasTopic",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.dl.missing.wasGeneratedBy",
+   "rule": 1,
+   "description": "DelibAI contributions lacking prov:wasGeneratedBy",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.dl.missing.identifier",
+   "rule": 1,
+   "description": "DelibAI contributions lacking del:identifier",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.dl.participant_missing_condition_or_time",
+   "rule": 1,
+   "description": "DelibAI participant contributions lacking condition or timestamp",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.dl.feedback_by_condition",
+   "rule": 1,
+   "description": "contributions and AI-feedback records per condition (feedback only when delibai_on)",
+   "expected": null,
+   "rows": [
+    {
+     "cond": "delibai_off",
+     "n": "96",
+     "fb": "0"
+    },
+    {
+     "cond": "delibai_on",
+     "n": "99",
+     "fb": "99"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.dl.draft_equals_final",
+   "rule": 1,
+   "description": "DelibAI contributions with a draft text, and how many drafts differ from the final text",
+   "expected": null,
+   "rows": [
+    {
+     "withDraft": "89",
+     "differ": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R1.dl.reviewed_equals_final",
+   "rule": 1,
+   "description": "AI-feedback records whose reviewed text differs from the final contribution text",
+   "expected": null,
+   "rows": [
+    {
+     "fb": "99",
+     "differ": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R2.system_anchor_missing_confidence_or_model",
+   "rule": 2,
+   "description": "system-predicted anchors lacking similarity score or model",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R2.nli_label_missing_confidence_or_model",
+   "rule": 2,
+   "description": "NLI stance labels lacking confidence or model",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R2.llm_label_fields",
+   "rule": 2,
+   "description": "fields of the single LLM-fallback stance label (model absence must be explicit)",
+   "expected": null,
+   "rows": [
+    {
+     "p": "http://www.w3.org/2000/01/rdf-schema#comment",
+     "o": "LLM fallback; the model identifier was not recorded by the source."
+    },
+    {
+     "p": "https://w3id.org/deliberation/ontology#confidence",
+     "o": "0.0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R2.feedback_missing_model_provider_run",
+   "rule": 2,
+   "description": "AI-feedback records lacking model, provider or model run",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R2.modelrun_missing_latency_cost",
+   "rule": 2,
+   "description": "model runs lacking latency or cost",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R2.automated_missing_method",
+   "rule": 2,
+   "description": "automated annotations lacking a method",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R2.contributions_without_versioned_import",
+   "rule": 2,
+   "description": "contributions of both sources not generated by a versioned import activity",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R3.anchor_missing_expression",
+   "rule": 3,
+   "description": "anchors without an identified FRBR expression",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R3.anchor_expression_differs_from_reference",
+   "rule": 3,
+   "description": "anchors whose expression differs from the expression the contribution references",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R3.provision_expression_mismatch",
+   "rule": 3,
+   "description": "anchors whose provision belongs to a different expression",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R3.expressions_per_work",
+   "rule": 3,
+   "description": "expressions per legal work (1 = cross-version mapping not testable)",
+   "expected": null,
+   "rows": [
+    {
+     "w": "https://svagnoni.linkeddata.es/resource/crowdlaw_work_akn_it_bill_propostadilegge_2013_12_05_4",
+     "n": "1"
+    },
+    {
+     "w": "https://svagnoni.linkeddata.es/resource/crowdlaw_work_akn_it_bill_propostadilegge_2018_06_07_702",
+     "n": "1"
+    },
+    {
+     "w": "https://svagnoni.linkeddata.es/resource/crowdlaw_work_akn_it_bill_propostadilegge_2016_11_11_12",
+     "n": "1"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R3.anchor_agreement",
+   "rule": 3,
+   "description": "system vs author anchor agreement per process",
+   "expected": null,
+   "rows": [
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "ag": "false",
+     "n": "16"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "ag": "true",
+     "n": "22"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "ag": "false",
+     "n": "15"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "ag": "true",
+     "n": "19"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "ag": "false",
+     "n": "16"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "ag": "true",
+     "n": "58"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R4.nli_confidence_vs_threshold",
+   "rule": 4,
+   "description": "NLI labels at or above vs below the declared 0.6 threshold, per process",
+   "expected": null,
+   "rows": [
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "b": "ge_0.6",
+     "n": "5"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "b": "lt_0.6",
+     "n": "33"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "b": "ge_0.6",
+     "n": "2"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "b": "lt_0.6",
+     "n": "32"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "b": "ge_0.6",
+     "n": "4"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R4.llm_fallback_labels",
+   "rule": 4,
+   "description": "stance labels produced by the LLM fallback",
+   "expected": null,
+   "rows": [
+    {
+     "n": "1"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R4.feedback_display_strategy",
+   "rule": 4,
+   "description": "DelibAI feedback: displayed model vs primary model",
+   "expected": null,
+   "rows": [
+    {
+     "pm": "anthropic/claude-sonnet-4.6",
+     "m": "deepseek/deepseek-v4-flash",
+     "n": "53"
+    },
+    {
+     "pm": "anthropic/claude-sonnet-4.6",
+     "m": "google/gemini-3.1-pro-preview",
+     "n": "23"
+    },
+    {
+     "pm": "anthropic/claude-sonnet-4.6",
+     "m": "anthropic/claude-sonnet-4.6",
+     "n": "23"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R5.responses_by_action",
+   "rule": 5,
+   "description": "recorded responses by action and whether they point to the annotation they respond to",
+   "expected": null,
+   "rows": [
+    {
+     "a": "ignored",
+     "n": "3",
+     "withTarget": "0"
+    },
+    {
+     "a": "confirmed",
+     "n": "109",
+     "withTarget": "109"
+    },
+    {
+     "a": "corrected",
+     "n": "58",
+     "withTarget": "58"
+    },
+    {
+     "a": "rejected",
+     "n": "11",
+     "withTarget": "11"
+    },
+    {
+     "a": "accepted",
+     "n": "99",
+     "withTarget": "99"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R5.corrected_missing_new_label",
+   "rule": 5,
+   "description": "corrections lacking the corrected label",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R5.corrected_original_lost",
+   "rule": 5,
+   "description": "corrections whose original annotation no longer carries its label",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R5.corrected_equal_to_original",
+   "rule": 5,
+   "description": "corrections whose new label equals the original",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R5.rejected_original_lost",
+   "rule": 5,
+   "description": "rejections whose original annotation no longer carries its label",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R5.responses_missing_actor_or_time",
+   "rule": 5,
+   "description": "responses lacking actor or timestamp",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "R5.unmatched_responses",
+   "rule": 5,
+   "description": "responses that could not be matched to a contribution (attached to topic, as the reconciliation report states)",
+   "expected": null,
+   "rows": [
+    {
+     "r": "https://svagnoni.linkeddata.es/resource/delibai_response_1152",
+     "x": "https://svagnoni.linkeddata.es/resource/delibai_topic_housing"
+    },
+    {
+     "r": "https://svagnoni.linkeddata.es/resource/delibai_response_233",
+     "x": "https://svagnoni.linkeddata.es/resource/delibai_topic_citizenship_ius_scholae"
+    },
+    {
+     "r": "https://svagnoni.linkeddata.es/resource/delibai_response_527",
+     "x": "https://svagnoni.linkeddata.es/resource/delibai_topic_housing"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "AG.cluster_sizes",
+   "rule": 1,
+   "description": "clusters whose declared size equals the number of contributions linked to them",
+   "expected": "18:18",
+   "rows": [
+    {
+     "clusters": "18",
+     "note": "full-graph query returned member counts exceeding the declared size by exactly one for all 18 clusters; the extra link is the process node (del:hasTopic) rather than a contribution, confirmed on crowdlaw_cluster_doc15_0; the contribution-only query could not complete on the public endpoint (502)"
+    }
+   ],
+   "status": "partial (endpoint 502 on the contribution-only form)"
+  },
+  {
+   "id": "AG.stored_metrics",
+   "rule": 1,
+   "description": "stored evaluation metrics per process",
+   "expected": null,
+   "rows": [
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "name": "anchoring_top1_correct",
+     "val": "22"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "name": "anchoring_total",
+     "val": "38"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "name": "descriptive_n_clusters",
+     "val": "6"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "name": "descriptive_n_comments",
+     "val": "38"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "name": "stance_correct",
+     "val": "10"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "name": "stance_total",
+     "val": "38"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "name": "anchoring_top1_correct",
+     "val": "19"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "name": "anchoring_total",
+     "val": "34"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "name": "descriptive_n_clusters",
+     "val": "6"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "name": "descriptive_n_comments",
+     "val": "34"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "name": "stance_correct",
+     "val": "8"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "name": "stance_total",
+     "val": "34"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "name": "anchoring_total",
+     "val": "74"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "name": "stance_correct",
+     "val": "37"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "name": "stance_total",
+     "val": "74"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "AG.recomputed_anchoring",
+   "rule": 1,
+   "description": "anchoring correct/total recomputed from the anchors",
+   "expected": null,
+   "rows": [
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "total": "38",
+     "correct": "22"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "total": "34",
+     "correct": "19"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "total": "74",
+     "correct": "58"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "AG.recomputed_stance",
+   "rule": 1,
+   "description": "stance correct/total recomputed from seed vs model labels",
+   "expected": null,
+   "rows": [
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "total": "5",
+     "correct": "5"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "total": "38",
+     "correct": "10"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "total": "34",
+     "correct": "8"
+    }
+   ],
+   "status": "ok (values from the first run of 2026-10-15; the re-run hit a 502)"
+  },
+  {
+   "id": "AG.contributions_per_process",
+   "rule": 1,
+   "description": "contributions per process (to compare with reconciliation reports)",
+   "expected": null,
+   "rows": [
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc15",
+     "n": "38"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc16",
+     "n": "34"
+    },
+    {
+     "pr": "https://svagnoni.linkeddata.es/resource/crowdlaw_consultation_doc7",
+     "n": "74"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "AG.delibai_by_source",
+   "rule": 1,
+   "description": "DelibAI contributions by source (195 participant + 20 seed)",
+   "expected": null,
+   "rows": [
+    {
+     "s": "participant",
+     "n": "195"
+    },
+    {
+     "s": "seed",
+     "n": "20"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "NI.crowdlaw_processes",
+   "rule": 4,
+   "description": "CrowdLaw processes in the graph (13 excluded documents must be absent)",
+   "expected": "3",
+   "rows": [
+    {
+     "n": "3"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "NI.proposal_fields",
+   "rule": 4,
+   "description": "contributions with recovered proposed-change fields (only where the source supports them)",
+   "expected": "32",
+   "rows": [
+    {
+     "n": "32"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "NI.delibai_reserved_predicates",
+   "rule": 4,
+   "description": "predicates in the DelibAI import mentioning survey, password or credential",
+   "expected": "0",
+   "rows": [
+    {
+     "n": "0"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "NI.datasets",
+   "rule": 4,
+   "description": "source datasets with declared status and import version",
+   "expected": null,
+   "rows": [
+    {
+     "d": "https://svagnoni.linkeddata.es/resource/dataset_delibai_pilot_2026",
+     "st": "pilot-historical",
+     "iv": "delibai-import-1.0.0"
+    },
+    {
+     "d": "https://svagnoni.linkeddata.es/resource/dataset_crowdlaw_evaluation_2026",
+     "st": "synthetic-evaluation",
+     "iv": "crowdlaw-import-1.0.0"
+    }
+   ],
+   "status": "ok"
+  }
+ ]
+}
