@@ -1,5 +1,5 @@
 {
- "run_at": "2026-10-18T17:27:00+00:00",
+ "run_at": "2026-10-18T18:13:40+00:00",
  "rdflib": "7.6.0",
  "checks": [
   {
@@ -56,8 +56,8 @@
    "id": "R3.anchor_missing_method_or_status",
    "rule": 3,
    "case": "A",
-   "description": "anchors without a method or without their own status (confirmed, contested, not applicable)",
-   "query": "SELECT ?a WHERE { ?a a del:LegalResourceAnchor FILTER NOT EXISTS { ?a del:anchorMethod ?m ; px:anchorStatus ?s FILTER(?s IN ('confirmed', 'contested', 'not_applicable')) } }",
+   "description": "anchors without a method or without their own status (pending review, confirmed, contested, not applicable)",
+   "query": "SELECT ?a WHERE { ?a a del:LegalResourceAnchor FILTER NOT EXISTS { ?a del:anchorMethod ?m ; px:anchorStatus ?s FILTER(?s IN ('pending_review', 'confirmed', 'contested', 'not_applicable')) } }",
    "expected": [
     0,
     1
@@ -78,8 +78,8 @@
    "id": "R3.anchor_missing_method_or_status",
    "rule": 3,
    "case": "B",
-   "description": "anchors without a method or without their own status (confirmed, contested, not applicable)",
-   "query": "SELECT ?a WHERE { ?a a del:LegalResourceAnchor FILTER NOT EXISTS { ?a del:anchorMethod ?m ; px:anchorStatus ?s FILTER(?s IN ('confirmed', 'contested', 'not_applicable')) } }",
+   "description": "anchors without a method or without their own status (pending review, confirmed, contested, not applicable)",
+   "query": "SELECT ?a WHERE { ?a a del:LegalResourceAnchor FILTER NOT EXISTS { ?a del:anchorMethod ?m ; px:anchorStatus ?s FILTER(?s IN ('pending_review', 'confirmed', 'contested', 'not_applicable')) } }",
    "expected": [
     0,
     2

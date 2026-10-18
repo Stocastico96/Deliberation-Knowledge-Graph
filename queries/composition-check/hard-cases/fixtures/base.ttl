@@ -11,7 +11,7 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 # ---- proposed terms (not in DEL)
-px:anchorStatus      rdfs:comment "Status of one anchor: 'confirmed', 'contested' or 'not_applicable' (rule 3)." .
+px:anchorStatus      rdfs:comment "Status of one anchor: 'pending_review', 'confirmed', 'contested' or 'not_applicable' (rule 3)." .
 px:RoutingDecision   rdfs:comment "Human decision on the routing of a contribution with no anchor (rule 3, Requirement 3)." .
 px:hasRoutingDecision rdfs:comment "Links a contribution to its routing decision." .
 px:routingCategory   rdfs:comment "'no_provision', 'uncertain_prediction' or 'out_of_scope' (rule 3)." .

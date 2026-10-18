@@ -12,4 +12,4 @@ ex:cB1 a del:Contribution ; del:text "Article 1 defines the beneficiaries too na
     del:hasAnchor ex:aB1a , ex:aB1b .
 ex:aB1a a del:LegalResourceAnchor ; del:anchorMethod "user_selection" ; del:anchorProvision ex:art1 ; del:anchorExpression ex:billExpr ; px:anchorStatus "confirmed" .
 ex:aB1b a del:LegalResourceAnchor ; del:anchorMethod "system_prediction" ; del:anchorProvision ex:art2 ; del:anchorExpression ex:billExpr ;
-    del:confidence 0.74 ; del:model "synthetic-sbert" ; px:anchorStatus "contested" .
+    del:confidence 0.74 ; del:model "synthetic-sbert" ; px:anchorStatus "pending_review" .

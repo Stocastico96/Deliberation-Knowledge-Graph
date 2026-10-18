@@ -25,7 +25,7 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 """
 ROUTING = "'no_provision', 'uncertain_prediction', 'out_of_scope'"
-ANCHOR_STATUS = "'confirmed', 'contested', 'not_applicable'"
+ANCHOR_STATUS = "'pending_review', 'confirmed', 'contested', 'not_applicable'"
 
 # (id, rule, case, description, query); each query returns one row per offending record.
 CHECKS = [
@@ -39,7 +39,7 @@ CHECKS = [
      f"FILTER NOT EXISTS {{ ?c px:hasRoutingDecision ?d . ?d px:routingCategory ?k ; prov:wasAttributedTo ?p . "
      f"?p a prov:Person FILTER(?k IN ({ROUTING})) }} }}"),
     ('R3.anchor_missing_method_or_status', 3, 'A,B',
-     'anchors without a method or without their own status (confirmed, contested, not applicable)',
+     'anchors without a method or without their own status (pending review, confirmed, contested, not applicable)',
      f"SELECT ?a WHERE {{ ?a a del:LegalResourceAnchor FILTER NOT EXISTS {{ ?a del:anchorMethod ?m ; "
      f"px:anchorStatus ?s FILTER(?s IN ({ANCHOR_STATUS})) }} }}"),
     ('R3.target_without_matching_anchor', 3, 'B,C',
