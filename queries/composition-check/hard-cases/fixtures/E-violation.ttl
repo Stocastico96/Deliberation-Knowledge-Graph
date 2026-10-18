@@ -1,0 +1,27 @@
+# Case E, violating. vE1 (article 6): correction that does not name the aggregate it affects; the aggregate is not recomputed. vE2 (article 7): the correction names the aggregate, which is not recomputed. vE3 (article 8): the aggregate is recomputed, but the correction overwrote the original label.
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+ex:proc del:hasContribution ex:vE1c , ex:vE2c , ex:vE3c .
+ex:vE1c a del:Contribution ; del:aboutProvision ex:art6 ; del:hasAnnotation ex:vE1l .
+ex:vE1l a del:StanceAnnotation , del:AutomatedAnnotation ; del:annotates ex:vE1c ; del:stanceLabel "pro" ; del:confidence 0.52 ; del:model "synthetic-nli" ; del:annotationMethod "nli" .
+ex:vE1agg a px:Aggregate ; px:aggregateScope ex:art6 ; px:countsLabel "contra" ; px:aggregateValue 0 ; prov:wasDerivedFrom ex:vE1l .
+ex:vE1r a del:AnnotationResponse ; del:actionType "corrected" ; del:respondsToAnnotation ex:vE1l ; del:correctedTo "contra" ;
+    prov:wasAttributedTo ex:reviewer1 ; del:timestamp "2026-03-03T11:00:00Z"^^xsd:dateTime .
+
+ex:vE2c a del:Contribution ; del:aboutProvision ex:art7 ; del:hasAnnotation ex:vE2l .
+ex:vE2l a del:StanceAnnotation , del:AutomatedAnnotation ; del:annotates ex:vE2c ; del:stanceLabel "pro" ; del:confidence 0.52 ; del:model "synthetic-nli" ; del:annotationMethod "nli" .
+ex:vE2agg a px:Aggregate ; px:aggregateScope ex:art7 ; px:countsLabel "contra" ; px:aggregateValue 0 ; prov:wasDerivedFrom ex:vE2l .
+ex:vE2r a del:AnnotationResponse ; del:actionType "corrected" ; del:respondsToAnnotation ex:vE2l ; del:correctedTo "contra" ;
+    prov:wasAttributedTo ex:reviewer1 ; del:timestamp "2026-03-03T11:00:00Z"^^xsd:dateTime ; px:affectsAggregate ex:vE2agg .
+
+ex:vE3c a del:Contribution ; del:aboutProvision ex:art8 ; del:hasAnnotation ex:vE3l .
+ex:vE3l a del:StanceAnnotation , del:AutomatedAnnotation ; del:annotates ex:vE3c ; del:confidence 0.52 ; del:model "synthetic-nli" ; del:annotationMethod "nli" .
+ex:vE3agg1 a px:Aggregate ; px:aggregateScope ex:art8 ; px:countsLabel "contra" ; px:aggregateValue 0 ; prov:wasDerivedFrom ex:vE3l .
+ex:vE3r a del:AnnotationResponse ; del:actionType "corrected" ; del:respondsToAnnotation ex:vE3l ; del:correctedTo "contra" ;
+    prov:wasAttributedTo ex:reviewer1 ; del:timestamp "2026-03-03T11:00:00Z"^^xsd:dateTime ; px:affectsAggregate ex:vE3agg1 .
+ex:vE3agg2 a px:Aggregate ; px:aggregateScope ex:art8 ; px:countsLabel "contra" ; px:aggregateValue 1 ;
+    prov:wasRevisionOf ex:vE3agg1 ; prov:wasDerivedFrom ex:vE3l , ex:vE3r .

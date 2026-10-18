@@ -1,0 +1,16 @@
+# Case F, violating. vF1: no status. vF2: examined, with no reason and no procedural reference. vF3: unanswered with no date. vF4: excluded with no reason. vF5: covered only by a group that is described, not enumerated.
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+ex:proc del:hasContribution ex:vF1 , ex:vF2 , ex:vF3 , ex:vF4 , ex:vF5 .
+ex:vF1 a del:Contribution . ex:vF2 a del:Contribution . ex:vF3 a del:Contribution .
+ex:vF4 a del:Contribution . ex:vF5 a del:Contribution .
+ex:vsF2 a px:ContributionStatus ; px:statusOf ex:vF2 ; px:status "examined" ; prov:wasAttributedTo ex:committee ; px:outcome "Rejected." ; px:asOf "2026-09-20"^^xsd:date .
+ex:vsF3 a px:ContributionStatus ; px:statusOf ex:vF3 ; px:status "unanswered" .
+ex:vsF4 a px:ContributionStatus ; px:statusOf ex:vF4 ; px:status "excluded" ; prov:wasAttributedTo ex:committee ; px:asOf "2026-09-20"^^xsd:date .
+ex:vgF5 a px:ContributionGroup ; rdfs:comment "All comments on article 2." .
+ex:vsF5 a px:ContributionStatus ; px:statusOf ex:vgF5 ; px:status "examined" ; prov:wasAttributedTo ex:committee ;
+    px:outcome "Rejected." ; px:reason "Outside the financial envelope." ; px:asOf "2026-09-20"^^xsd:date ; px:proceduralReference "Committee report no. 12 (synthetic)" .

@@ -1,0 +1,12 @@
+# Case C, conforming: the comment cites article 32 of the Constitution and proposes a change to article 3 of the bill; the anchor is on the bill.
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+ex:proc del:hasContribution ex:cC1 .
+ex:cC1 a del:Contribution ; del:text "Under article 32 of the Constitution, article 3 should guarantee free access." ;
+    del:references ex:constExpr ; del:aboutProvision ex:art3 ; del:proposesChangeTo ex:art3 ; del:hasAnchor ex:aC1 .
+ex:aC1 a del:LegalResourceAnchor ; del:anchorMethod "user_selection" ; del:anchorProvision ex:art3 ; del:anchorExpression ex:billExpr ; px:anchorStatus "confirmed" .

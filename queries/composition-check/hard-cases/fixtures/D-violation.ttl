@@ -1,0 +1,14 @@
+# Case D, violating. vsD declares three contributions but is derived from two: the minority comment vD3 is silently left out. vD4 is excluded with no reason.
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+ex:proc del:hasContribution ex:vD1 , ex:vD2 , ex:vD3 , ex:vD4 .
+ex:vD1 a del:Contribution ; del:aboutProvision ex:art4 .
+ex:vD2 a del:Contribution ; del:aboutProvision ex:art4 .
+ex:vD3 a del:Contribution ; del:aboutProvision ex:art4 ; del:text "Article 4 excludes people without a fixed address from the service." .
+ex:vD4 a del:Contribution ; del:aboutProvision ex:art4 .
+ex:vsD a px:Aggregate ; px:aggregateScope ex:art4 ; px:declaredCount 3 ; prov:wasDerivedFrom ex:vD1 , ex:vD2 .
+ex:vxD4 a px:Exclusion ; px:excludes ex:vD4 ; px:fromAggregate ex:vsD ; prov:wasAttributedTo ex:reviewer1 .

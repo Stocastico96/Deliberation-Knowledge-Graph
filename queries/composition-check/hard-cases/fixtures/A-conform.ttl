@@ -1,0 +1,19 @@
+# Case A, conforming: three contributions with no anchor, each routed by human review into one of the three categories of rule 3.
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+ex:proc del:hasContribution ex:cA1 , ex:cA2 , ex:cA3 .
+ex:cA1 a del:Contribution ; del:text "The consultation should also cover rent caps, which the bill does not address." ;
+    px:hasRoutingDecision ex:rA1 .
+ex:rA1 a px:RoutingDecision ; px:routingCategory "no_provision" ; prov:wasAttributedTo ex:reviewer1 ; del:timestamp "2026-03-02T10:00:00Z"^^xsd:dateTime .
+ex:cA2 a del:Contribution ; del:text "The time limits are too short." ;
+    px:hasRoutingDecision ex:rA2 .
+ex:rA2 a px:RoutingDecision ; px:routingCategory "uncertain_prediction" ; prov:wasAttributedTo ex:reviewer1 ; del:timestamp "2026-03-02T10:05:00Z"^^xsd:dateTime ;
+    rdfs:comment "Several articles set time limits; the reviewer could not attribute the comment to one of them." .
+ex:cA3 a del:Contribution ; del:text "The municipality should repair the road outside the school." ;
+    px:hasRoutingDecision ex:rA3 .
+ex:rA3 a px:RoutingDecision ; px:routingCategory "out_of_scope" ; prov:wasAttributedTo ex:reviewer1 ; del:timestamp "2026-03-02T10:09:00Z"^^xsd:dateTime .

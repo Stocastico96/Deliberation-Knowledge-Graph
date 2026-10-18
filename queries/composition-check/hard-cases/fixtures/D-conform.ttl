@@ -1,0 +1,14 @@
+# Case D, conforming: three comments on article 4, one of them in a minority (contra); a summary derived from all three; a duplicate excluded with a recorded reason. The check is structural: whether the summary text keeps the minority reason is the audit of Section 6.2(d), not a query.
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+ex:proc del:hasContribution ex:cD1 , ex:cD2 , ex:cD3 , ex:cD4 .
+ex:cD1 a del:Contribution ; del:aboutProvision ex:art4 ; del:text "Article 4 is clear and should pass." .
+ex:cD2 a del:Contribution ; del:aboutProvision ex:art4 ; del:text "I support article 4." .
+ex:cD3 a del:Contribution ; del:aboutProvision ex:art4 ; del:text "Article 4 excludes people without a fixed address from the service." .
+ex:cD4 a del:Contribution ; del:aboutProvision ex:art4 ; del:text "Article 4 is clear and should pass." .
+ex:sD a px:Aggregate ; px:aggregateScope ex:art4 ; px:declaredCount 3 ; prov:wasDerivedFrom ex:cD1 , ex:cD2 , ex:cD3 .
+ex:xD4 a px:Exclusion ; px:excludes ex:cD4 ; px:fromAggregate ex:sD ; px:reason "Verbatim duplicate of cD1 by the same participant." ; prov:wasAttributedTo ex:reviewer1 .

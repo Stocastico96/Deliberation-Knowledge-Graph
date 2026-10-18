@@ -74,8 +74,10 @@ CHECKS = [
     # ---- Rule 3: versioned legal anchoring
     ('R3.anchor_missing_expression', 3, 'anchors without an identified FRBR expression', '0',
      "SELECT (COUNT(*) AS ?n) WHERE { ?a a del:LegalResourceAnchor FILTER NOT EXISTS { ?a del:anchorExpression ?e . ?e a del:LegalExpression ; del:frbrExpressionUri ?u } }"),
-    ('R3.anchor_expression_differs_from_reference', 3, 'anchors whose expression differs from the expression the contribution references', '0',
-     f"SELECT (COUNT(*) AS ?n) WHERE {{ {CL} ?c del:hasAnchor ?a ; del:references ?e1 . ?a del:anchorExpression ?e2 FILTER(?e1 != ?e2) }}"),
+    # Replaces R3.anchor_expression_differs_from_reference (15 October 2026), which compared the anchor with the
+    # cited document: a cited source need not be the target (Section 4.5; see hard-cases/, case C).
+    ('R3.target_without_matching_anchor', 3, 'provisions a contribution is about or proposes to change with no anchor naming them in their own expression', '0',
+     f"SELECT (COUNT(*) AS ?n) WHERE {{ {CL} ?c del:aboutProvision|del:proposesChangeTo ?p . ?p del:partOfExpression ?e FILTER NOT EXISTS {{ ?c del:hasAnchor ?a . ?a del:anchorProvision ?p ; del:anchorExpression ?e }} }}"),
     ('R3.provision_expression_mismatch', 3, 'anchors whose provision belongs to a different expression', '0',
      "SELECT (COUNT(*) AS ?n) WHERE { ?a a del:LegalResourceAnchor ; del:anchorProvision ?pv ; del:anchorExpression ?e . ?pv del:partOfExpression ?e2 FILTER(?e != ?e2) }"),
     ('R3.expressions_per_work', 3, 'expressions per legal work (1 = cross-version mapping not testable)', None,

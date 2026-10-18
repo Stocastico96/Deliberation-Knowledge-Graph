@@ -1,0 +1,13 @@
+# Case C, violating. vC1: the cited source is taken as the target; the only anchor is on the Constitution, the bill article the comment is about has none.
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+ex:proc del:hasContribution ex:vC1 .
+ex:vC1 a del:Contribution ; del:text "Under article 32 of the Constitution, article 3 should guarantee free access." ;
+    del:references ex:constExpr ; del:aboutProvision ex:art3 ; del:hasAnchor ex:vC1a .
+ex:vC1a a del:LegalResourceAnchor ; del:anchorMethod "system_prediction" ; del:anchorProvision ex:constArt32 ; del:anchorExpression ex:constExpr ;
+    del:confidence 0.66 ; del:model "synthetic-sbert" ; px:anchorStatus "confirmed" .

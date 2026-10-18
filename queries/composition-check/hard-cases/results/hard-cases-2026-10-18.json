@@ -1,0 +1,465 @@
+{
+ "run_at": "2026-10-18T17:27:00+00:00",
+ "rdflib": "7.6.0",
+ "checks": [
+  {
+   "id": "R1.contribution_outside_process",
+   "rule": 1,
+   "case": "A",
+   "description": "contributions that no process record contains",
+   "query": "SELECT ?c WHERE { ?c a del:Contribution FILTER NOT EXISTS { ?pr del:hasContribution ?c } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vA3"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R3.unanchored_without_human_routing",
+   "rule": 3,
+   "case": "A",
+   "description": "contributions with no anchor and no routing decision by a person into one of the three categories",
+   "query": "SELECT ?c WHERE { ?c a del:Contribution FILTER NOT EXISTS { ?c del:hasAnchor ?a } FILTER NOT EXISTS { ?c px:hasRoutingDecision ?d . ?d px:routingCategory ?k ; prov:wasAttributedTo ?p . ?p a prov:Person FILTER(?k IN ('no_provision', 'uncertain_prediction', 'out_of_scope')) } }",
+   "expected": [
+    0,
+    3
+   ],
+   "observed": [
+    0,
+    3
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vA1"
+    ],
+    [
+     "vA3"
+    ],
+    [
+     "vA4"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R3.anchor_missing_method_or_status",
+   "rule": 3,
+   "case": "A",
+   "description": "anchors without a method or without their own status (confirmed, contested, not applicable)",
+   "query": "SELECT ?a WHERE { ?a a del:LegalResourceAnchor FILTER NOT EXISTS { ?a del:anchorMethod ?m ; px:anchorStatus ?s FILTER(?s IN ('confirmed', 'contested', 'not_applicable')) } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vA2a"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R3.anchor_missing_method_or_status",
+   "rule": 3,
+   "case": "B",
+   "description": "anchors without a method or without their own status (confirmed, contested, not applicable)",
+   "query": "SELECT ?a WHERE { ?a a del:LegalResourceAnchor FILTER NOT EXISTS { ?a del:anchorMethod ?m ; px:anchorStatus ?s FILTER(?s IN ('confirmed', 'contested', 'not_applicable')) } }",
+   "expected": [
+    0,
+    2
+   ],
+   "observed": [
+    0,
+    2
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vB2a"
+    ],
+    [
+     "vB2b"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R3.target_without_matching_anchor",
+   "rule": 3,
+   "case": "B",
+   "description": "provisions a contribution is about or proposes to change that have no anchor naming them in their own expression",
+   "query": "SELECT ?c ?p WHERE { ?c a del:Contribution ; del:aboutProvision|del:proposesChangeTo ?p . ?p del:partOfExpression ?e FILTER NOT EXISTS { ?c del:hasAnchor ?a . ?a del:anchorProvision ?p ; del:anchorExpression ?e } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vB1",
+     "art2"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R3.target_without_matching_anchor",
+   "rule": 3,
+   "case": "C",
+   "description": "provisions a contribution is about or proposes to change that have no anchor naming them in their own expression",
+   "query": "SELECT ?c ?p WHERE { ?c a del:Contribution ; del:aboutProvision|del:proposesChangeTo ?p . ?p del:partOfExpression ?e FILTER NOT EXISTS { ?c del:hasAnchor ?a . ?a del:anchorProvision ?p ; del:anchorExpression ?e } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vC1",
+     "art3"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R3.legacy_anchor_expression_differs_from_reference",
+   "rule": 3,
+   "case": "C",
+   "description": "live query of 15 October 2026: anchors whose expression differs from the expression the contribution references",
+   "query": "SELECT ?c ?a WHERE { ?pr del:hasContribution ?c . ?c del:hasAnchor ?a ; del:references ?e1 . ?a del:anchorExpression ?e2 FILTER(?e1 != ?e2) }",
+   "expected": [
+    1,
+    0
+   ],
+   "observed": [
+    1,
+    0
+   ],
+   "conform_rows": [
+    [
+     "cC1",
+     "aC1"
+    ]
+   ],
+   "violation_rows": [],
+   "match": true
+  },
+  {
+   "id": "AG.declared_count_mismatch",
+   "rule": 1,
+   "case": "D",
+   "description": "aggregates whose declared number of contributions differs from the contributions they are derived from",
+   "query": "SELECT ?g ?n ?k WHERE { { SELECT ?g ?n (COUNT(DISTINCT ?c) AS ?k) WHERE { ?g a px:Aggregate ; px:declaredCount ?n OPTIONAL { ?g prov:wasDerivedFrom ?c . ?c a del:Contribution } } GROUP BY ?g ?n } FILTER(?k != ?n) }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vsD",
+     "3",
+     "2"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "AG.in_scope_not_covered",
+   "rule": 1,
+   "case": "D",
+   "description": "contributions on the provision an aggregate covers that are neither in the aggregate nor recorded as excluded",
+   "query": "SELECT ?g ?c WHERE { ?g a px:Aggregate ; px:aggregateScope ?p ; px:declaredCount ?n . ?c a del:Contribution ; del:aboutProvision ?p FILTER NOT EXISTS { ?g prov:wasDerivedFrom ?c } FILTER NOT EXISTS { ?x a px:Exclusion ; px:excludes ?c ; px:fromAggregate ?g } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vsD",
+     "vD3"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "AG.exclusion_without_reason",
+   "rule": 1,
+   "case": "D",
+   "description": "exclusions from an aggregate without a recorded reason",
+   "query": "SELECT ?x WHERE { ?x a px:Exclusion FILTER NOT EXISTS { ?x px:reason ?r } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vxD4"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R5.correction_missing_affected_aggregate",
+   "rule": 5,
+   "case": "E",
+   "description": "corrections of a label that an aggregate is derived from, which do not name that aggregate",
+   "query": "SELECT ?r ?g WHERE { ?r a del:AnnotationResponse ; del:actionType 'corrected' ; del:respondsToAnnotation ?l . ?g a px:Aggregate ; prov:wasDerivedFrom ?l FILTER NOT EXISTS { ?r px:affectsAggregate ?g } FILTER NOT EXISTS { ?g prov:wasDerivedFrom ?r } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vE1r",
+     "vE1agg"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R5.affected_aggregate_not_recomputed",
+   "rule": 5,
+   "case": "E",
+   "description": "aggregates named by a correction for which no revision derived from that correction exists",
+   "query": "SELECT ?r ?g WHERE { ?r a del:AnnotationResponse ; px:affectsAggregate ?g FILTER NOT EXISTS { ?g2 prov:wasRevisionOf ?g ; prov:wasDerivedFrom ?r } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vE2r",
+     "vE2agg"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R5.current_aggregate_inconsistent",
+   "rule": 5,
+   "case": "E",
+   "description": "current aggregates (not revised) whose value differs from a recount of their labels after corrections",
+   "query": "SELECT ?g ?v ?recount WHERE { ?g a px:Aggregate ; px:aggregateValue ?v FILTER NOT EXISTS { ?g2 prov:wasRevisionOf ?g } { SELECT ?g (SUM(IF(?eff = ?lab, 1, 0)) AS ?recount) WHERE { ?g px:countsLabel ?lab ; prov:wasDerivedFrom ?l . ?l a del:StanceAnnotation OPTIONAL { ?l del:stanceLabel ?orig } OPTIONAL { ?r a del:AnnotationResponse ; del:actionType 'corrected' ; del:respondsToAnnotation ?l ; del:correctedTo ?ct } BIND(COALESCE(?ct, ?orig) AS ?eff) } GROUP BY ?g } FILTER(?recount != ?v) }",
+   "expected": [
+    0,
+    2
+   ],
+   "observed": [
+    0,
+    2
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vE1agg",
+     "0",
+     "1"
+    ],
+    [
+     "vE2agg",
+     "0",
+     "1"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R5.corrected_original_lost",
+   "rule": 5,
+   "case": "E",
+   "description": "corrections whose original annotation no longer carries its label (stance, fallacy or generic label)",
+   "query": "SELECT ?r ?l WHERE { ?r a del:AnnotationResponse ; del:actionType 'corrected' ; del:respondsToAnnotation ?l FILTER NOT EXISTS { ?l del:stanceLabel|del:annotationLabel|del:identifiesFallacy ?x } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vE3r",
+     "vE3l"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R6.contribution_without_status",
+   "rule": 6,
+   "case": "F",
+   "description": "contributions with no recorded status, individually or as an enumerated member of a group",
+   "query": "SELECT ?c WHERE { ?pr del:hasContribution ?c FILTER NOT EXISTS { ?s a px:ContributionStatus { ?s px:statusOf ?c } UNION { ?s px:statusOf ?grp . ?grp px:hasMember ?c } } }",
+   "expected": [
+    0,
+    2
+   ],
+   "observed": [
+    0,
+    2
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vF1"
+    ],
+    [
+     "vF5"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R6.group_without_members",
+   "rule": 6,
+   "case": "F",
+   "description": "statuses recorded for a group that does not name its members",
+   "query": "SELECT ?s ?grp WHERE { ?s a px:ContributionStatus ; px:statusOf ?grp . ?grp a px:ContributionGroup FILTER NOT EXISTS { ?grp px:hasMember ?m } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vsF5",
+     "vgF5"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R6.examined_missing_fields",
+   "rule": 6,
+   "case": "F",
+   "description": "examined statuses lacking who responds, outcome, reasons, date or procedural reference",
+   "query": "SELECT ?s WHERE { ?s a px:ContributionStatus ; px:status 'examined' FILTER NOT EXISTS { ?s prov:wasAttributedTo ?w ; px:outcome ?o ; px:reason ?r ; px:asOf ?d ; px:proceduralReference ?pr } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vsF2"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R6.excluded_without_reason",
+   "rule": 6,
+   "case": "F",
+   "description": "exclusions without a recorded reason",
+   "query": "SELECT ?s WHERE { ?s a px:ContributionStatus ; px:status 'excluded' FILTER NOT EXISTS { ?s px:reason ?r } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vsF4"
+    ]
+   ],
+   "match": true
+  },
+  {
+   "id": "R6.unanswered_without_date",
+   "rule": 6,
+   "case": "F",
+   "description": "absences of response recorded without a date",
+   "query": "SELECT ?s WHERE { ?s a px:ContributionStatus ; px:status 'unanswered' FILTER NOT EXISTS { ?s px:asOf ?d } }",
+   "expected": [
+    0,
+    1
+   ],
+   "observed": [
+    0,
+    1
+   ],
+   "conform_rows": [],
+   "violation_rows": [
+    [
+     "vsF3"
+    ]
+   ],
+   "match": true
+  }
+ ],
+ "deadline_report": {
+  "conform": [
+   [
+    "cF5",
+    "2026-10-15",
+    "2026-09-30",
+    "true"
+   ]
+  ],
+  "violation": []
+ },
+ "mismatches": 0
+}

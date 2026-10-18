@@ -1,0 +1,15 @@
+# Case B, conforming: one comment about articles 1 and 2 proposing a change to article 2; one anchor per target, each with its own status.
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+ex:proc del:hasContribution ex:cB1 .
+ex:cB1 a del:Contribution ; del:text "Article 1 defines the beneficiaries too narrowly, and article 2 should then extend the deadline." ;
+    del:aboutProvision ex:art1 , ex:art2 ; del:proposesChangeTo ex:art2 ;
+    del:hasAnchor ex:aB1a , ex:aB1b .
+ex:aB1a a del:LegalResourceAnchor ; del:anchorMethod "user_selection" ; del:anchorProvision ex:art1 ; del:anchorExpression ex:billExpr ; px:anchorStatus "confirmed" .
+ex:aB1b a del:LegalResourceAnchor ; del:anchorMethod "system_prediction" ; del:anchorProvision ex:art2 ; del:anchorExpression ex:billExpr ;
+    del:confidence 0.74 ; del:model "synthetic-sbert" ; px:anchorStatus "contested" .

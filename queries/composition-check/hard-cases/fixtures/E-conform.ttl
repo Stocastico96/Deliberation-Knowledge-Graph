@@ -1,0 +1,20 @@
+# Case E, conforming: three automated stance labels on article 5; an aggregate counts the 'contra' labels (0); a reviewer corrects one label to 'contra', the correction names the aggregate it affects, the aggregate is recomputed as a revision (1), and the original label and the earlier aggregate are kept.
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+ex:proc del:hasContribution ex:cE1 , ex:cE2 , ex:cE3 .
+ex:cE1 a del:Contribution ; del:aboutProvision ex:art5 ; del:hasAnnotation ex:lE1 .
+ex:cE2 a del:Contribution ; del:aboutProvision ex:art5 ; del:hasAnnotation ex:lE2 .
+ex:cE3 a del:Contribution ; del:aboutProvision ex:art5 ; del:hasAnnotation ex:lE3 .
+ex:lE1 a del:StanceAnnotation , del:AutomatedAnnotation ; del:annotates ex:cE1 ; del:stanceLabel "pro" ; del:confidence 0.91 ; del:model "synthetic-nli" ; del:annotationMethod "nli" .
+ex:lE2 a del:StanceAnnotation , del:AutomatedAnnotation ; del:annotates ex:cE2 ; del:stanceLabel "pro" ; del:confidence 0.88 ; del:model "synthetic-nli" ; del:annotationMethod "nli" .
+ex:lE3 a del:StanceAnnotation , del:AutomatedAnnotation ; del:annotates ex:cE3 ; del:stanceLabel "pro" ; del:confidence 0.52 ; del:model "synthetic-nli" ; del:annotationMethod "nli" .
+ex:aggE1 a px:Aggregate ; px:aggregateScope ex:art5 ; px:countsLabel "contra" ; px:aggregateValue 0 ;
+    prov:wasDerivedFrom ex:lE1 , ex:lE2 , ex:lE3 ; prov:generatedAtTime "2026-03-01T09:00:00Z"^^xsd:dateTime .
+ex:rE3 a del:AnnotationResponse ; del:actionType "corrected" ; del:respondsToAnnotation ex:lE3 ; del:correctedTo "contra" ;
+    prov:wasAttributedTo ex:reviewer1 ; del:timestamp "2026-03-03T11:00:00Z"^^xsd:dateTime ; px:affectsAggregate ex:aggE1 .
+ex:aggE2 a px:Aggregate ; px:aggregateScope ex:art5 ; px:countsLabel "contra" ; px:aggregateValue 1 ;
+    prov:wasRevisionOf ex:aggE1 ; prov:wasDerivedFrom ex:lE1 , ex:lE2 , ex:lE3 , ex:rE3 ; prov:generatedAtTime "2026-03-03T11:05:00Z"^^xsd:dateTime .

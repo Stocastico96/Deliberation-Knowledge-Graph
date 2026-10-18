@@ -1,0 +1,14 @@
+# Case B, violating. vB1: about articles 1 and 2 but anchored to article 1 only. vB2: two anchors, one status stated on the contribution instead of on each anchor.
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+ex:proc del:hasContribution ex:vB1 , ex:vB2 .
+ex:vB1 a del:Contribution ; del:aboutProvision ex:art1 , ex:art2 ; del:hasAnchor ex:vB1a .
+ex:vB1a a del:LegalResourceAnchor ; del:anchorMethod "user_selection" ; del:anchorProvision ex:art1 ; del:anchorExpression ex:billExpr ; px:anchorStatus "confirmed" .
+ex:vB2 a del:Contribution ; del:aboutProvision ex:art1 , ex:art2 ; del:hasAnchor ex:vB2a , ex:vB2b ; px:anchorStatus "confirmed" .
+ex:vB2a a del:LegalResourceAnchor ; del:anchorMethod "user_selection" ; del:anchorProvision ex:art1 ; del:anchorExpression ex:billExpr .
+ex:vB2b a del:LegalResourceAnchor ; del:anchorMethod "user_selection" ; del:anchorProvision ex:art2 ; del:anchorExpression ex:billExpr .

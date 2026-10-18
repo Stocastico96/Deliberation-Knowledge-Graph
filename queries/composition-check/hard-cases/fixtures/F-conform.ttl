@@ -1,0 +1,18 @@
+# Case F, conforming: six contributions, each with a recorded status, two of them as members of an explicitly identified group. The process declared a response deadline (30 September 2026, base.ttl).
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+ex:proc del:hasContribution ex:cF1 , ex:cF2 , ex:cF3 , ex:cF4 , ex:cF5 , ex:cF6 .
+ex:cF1 a del:Contribution . ex:cF2 a del:Contribution . ex:cF3 a del:Contribution .
+ex:cF4 a del:Contribution . ex:cF5 a del:Contribution . ex:cF6 a del:Contribution .
+ex:gF12 a px:ContributionGroup ; px:hasMember ex:cF1 , ex:cF2 .
+ex:sF12 a px:ContributionStatus ; px:statusOf ex:gF12 ; px:status "examined" ; prov:wasAttributedTo ex:committee ;
+    px:outcome "Partly accepted: the deadline in article 2 is extended." ; px:reason "The two comments document delays in the current procedure." ;
+    px:asOf "2026-09-20"^^xsd:date ; px:proceduralReference "Committee report no. 12 (synthetic)" .
+ex:sF3 a px:ContributionStatus ; px:statusOf ex:cF3 ; px:status "excluded" ; px:reason "Duplicate of cF1." ; prov:wasAttributedTo ex:committee ; px:asOf "2026-09-20"^^xsd:date .
+ex:sF4 a px:ContributionStatus ; px:statusOf ex:cF4 ; px:status "deferred" ; prov:wasAttributedTo ex:committee ; px:asOf "2026-09-20"^^xsd:date .
+ex:sF5 a px:ContributionStatus ; px:statusOf ex:cF5 ; px:status "unanswered" ; px:asOf "2026-10-15"^^xsd:date .
+ex:sF6 a px:ContributionStatus ; px:statusOf ex:cF6 ; px:status "pending" ; px:asOf "2026-09-01"^^xsd:date .

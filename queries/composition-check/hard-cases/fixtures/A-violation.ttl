@@ -1,0 +1,16 @@
+# Case A, violating. vA1: no anchor and no routing record. vA2: forced onto an article by a predicted anchor with no status (the CrowdLaw behaviour, 2.7.3). vA3: removed from the process record. vA4: routed by a classifier, not by human review.
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+ex:proc del:hasContribution ex:vA1 , ex:vA2 , ex:vA4 .
+ex:vA1 a del:Contribution ; del:text "The consultation should also cover rent caps." .
+ex:vA2 a del:Contribution ; del:text "The consultation should also cover rent caps." ; del:hasAnchor ex:vA2a .
+ex:vA2a a del:LegalResourceAnchor ; del:anchorMethod "system_prediction" ; del:anchorProvision ex:art1 ; del:anchorExpression ex:billExpr ;
+    del:confidence 0.21 ; del:model "synthetic-sbert" .
+ex:vA3 a del:Contribution ; del:text "The municipality should repair the road outside the school." .
+ex:vA4 a del:Contribution ; del:text "The time limits are too short." ; px:hasRoutingDecision ex:vA4r .
+ex:vA4r a px:RoutingDecision ; px:routingCategory "out_of_scope" ; prov:wasAttributedTo ex:stanceModel ; del:annotationMethod "scope_classifier" .

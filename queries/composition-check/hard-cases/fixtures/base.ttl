@@ -1,0 +1,59 @@
+# Synthetic fixtures for the hard cases of Table 2.3. Not imported into any live graph.
+# All names, texts and dates are invented for the demonstration.
+# del:  terms of the Deliberation Ontology (core 1.1.1, annotations module 1.2.0-draft).
+# px:   terms proposed for the demonstration; they are NOT part of DEL and are listed below.
+# prov: W3C PROV-O.
+@prefix del:  <https://w3id.org/deliberation/ontology#> .
+@prefix px:   <urn:del:proposed#> .
+@prefix ex:   <urn:del:hard-cases:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# ---- proposed terms (not in DEL)
+px:anchorStatus      rdfs:comment "Status of one anchor: 'confirmed', 'contested' or 'not_applicable' (rule 3)." .
+px:RoutingDecision   rdfs:comment "Human decision on the routing of a contribution with no anchor (rule 3, Requirement 3)." .
+px:hasRoutingDecision rdfs:comment "Links a contribution to its routing decision." .
+px:routingCategory   rdfs:comment "'no_provision', 'uncertain_prediction' or 'out_of_scope' (rule 3)." .
+px:Aggregate         rdfs:comment "A computed aggregate (here: a count of stance labels or a summary); prov:wasDerivedFrom names its inputs." .
+px:aggregateScope    rdfs:comment "The provision whose contributions the aggregate is meant to cover." .
+px:declaredCount     rdfs:comment "Number of contributions the aggregate declares it covers." .
+px:countsLabel       rdfs:comment "The stance label an aggregate counts." .
+px:aggregateValue    rdfs:comment "The stored value of an aggregate." .
+px:affectsAggregate  rdfs:comment "Aggregate that a correction affects (rule 5)." .
+px:Exclusion         rdfs:comment "Recorded exclusion of a contribution from an aggregate, with a reason." .
+px:excludes          rdfs:comment "Contribution an exclusion applies to." .
+px:fromAggregate     rdfs:comment "Aggregate the contribution is excluded from." .
+px:ContributionStatus rdfs:comment "Recorded institutional status of a contribution or an explicitly identified group (rule 6)." .
+px:statusOf          rdfs:comment "Contribution or group the status applies to." .
+px:ContributionGroup rdfs:comment "Explicitly identified group of contributions." .
+px:hasMember         rdfs:comment "Member of a contribution group, by identifier." .
+px:status            rdfs:comment "'pending', 'examined', 'excluded', 'deferred' or 'unanswered' (rule 6)." .
+px:asOf              rdfs:comment "Date on which the status is recorded." .
+px:outcome           rdfs:comment "Outcome of the institution's examination." .
+px:reason            rdfs:comment "Recorded reason (for an examination or an exclusion)." .
+px:proceduralReference rdfs:comment "Procedural reference of the response (e.g. a committee report)." .
+px:responseDeadline  rdfs:comment "Response deadline declared when the process opened." .
+
+# ---- process, bill and a cited external source
+ex:proc a del:DeliberationProcess ; del:name "Synthetic consultation on a demonstration bill" ;
+    px:responseDeadline "2026-09-30"^^xsd:date .
+ex:billWork a del:LegalWork .
+ex:billExpr a del:LegalExpression ; del:expressionOf ex:billWork ;
+    del:frbrExpressionUri "/akn/it/bill/demo/2026-01-15/1/ita@" .
+ex:constWork a del:LegalWork .
+ex:constExpr a del:LegalExpression ; del:expressionOf ex:constWork ;
+    del:frbrExpressionUri "/akn/it/act/costituzione/1947-12-27/ita@" .
+ex:art1 a del:LegalProvision ; del:eId "art_1" ; del:partOfExpression ex:billExpr .
+ex:art2 a del:LegalProvision ; del:eId "art_2" ; del:partOfExpression ex:billExpr .
+ex:art3 a del:LegalProvision ; del:eId "art_3" ; del:partOfExpression ex:billExpr .
+ex:art4 a del:LegalProvision ; del:eId "art_4" ; del:partOfExpression ex:billExpr .
+ex:art5 a del:LegalProvision ; del:eId "art_5" ; del:partOfExpression ex:billExpr .
+ex:art6 a del:LegalProvision ; del:eId "art_6" ; del:partOfExpression ex:billExpr .
+ex:art7 a del:LegalProvision ; del:eId "art_7" ; del:partOfExpression ex:billExpr .
+ex:art8 a del:LegalProvision ; del:eId "art_8" ; del:partOfExpression ex:billExpr .
+ex:constArt32 a del:LegalProvision ; del:eId "art_32" ; del:partOfExpression ex:constExpr .
+
+ex:reviewer1 a prov:Person ; rdfs:label "Reviewer (synthetic)" .
+ex:committee a prov:Organization ; rdfs:label "Responsible committee (synthetic)" .
+ex:stanceModel a prov:SoftwareAgent ; rdfs:label "Stance classifier (synthetic)" .
