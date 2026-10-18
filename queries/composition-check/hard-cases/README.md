@@ -11,8 +11,10 @@ for the purpose.
 - `fixtures/<case>-conform.ttl`: records that follow the rules.
 - `fixtures/<case>-violation.ttl`: records with defects planted on purpose; the header of each
   file lists them.
-- `check_hard_cases.py`: 19 SPARQL checks, each run on the conforming and the violating
-  records of its case and compared with counts fixed in `EXPECTED` before the run.
+- `check_hard_cases.py`: 17 SPARQL queries (16 rule checks and the earlier rule-3 query kept
+  as a counterexample). Each is run on the conforming and the violating records of the cases
+  it concerns, 19 comparisons in all (18 for the rule checks), against counts fixed in
+  `EXPECTED` before the run.
 - `results/`: the output of each run.
 
 | Case | Table 2.3 case | Rules |
