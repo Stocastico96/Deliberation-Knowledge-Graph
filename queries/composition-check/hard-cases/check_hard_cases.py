@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check the composition rules of Section 2.7.2 on the hard cases of Table 2.3,
+"""Check the composition rules of Section 2.7.2 on the hard cases of Table 2.4,
 using declared synthetic fixtures (fixtures/*.ttl), not live data.
 
 Each case has a conforming fixture and a violating one. Every check is run on both,

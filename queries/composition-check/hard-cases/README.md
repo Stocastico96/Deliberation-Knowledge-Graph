@@ -1,6 +1,6 @@
 # Composition rules on the hard cases (synthetic records)
 
-The public graph contains none of the hard cases of Table 2.3 of the thesis: every
+The public graph contains none of the hard cases of Table 2.4 of the thesis: every
 CrowdLaw comment has an anchor, no contribution has an institutional status, and no
 aggregate has been recomputed after a correction. This folder checks whether the
 composition rules of Section 2.7.2 can be tested on such cases, using records written
@@ -17,7 +17,7 @@ for the purpose.
   `EXPECTED` before the run.
 - `results/`: the output of each run.
 
-| Case | Table 2.3 case | Rules |
+| Case | Table 2.4 case | Rules |
 |---|---|---|
 | A | a proposal that concerns no article | 1, 3 |
 | B | a comment that concerns several provisions | 3 |

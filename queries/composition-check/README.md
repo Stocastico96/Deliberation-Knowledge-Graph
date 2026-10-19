@@ -14,7 +14,7 @@ python3 verify_composition_rules.py results/out.json
 ```
 
 `results/composition-check-2026-10-18.json` is the run reported in the thesis
-(Section 6.5.2, Table 6.2). It differs from the run of 15 October 2026
+(Section 6.5.2, Table 6.3). It differs from the run of 15 October 2026
 (`results/composition-check-2026-10-15.json`) in two checks:
 
 - `R3.anchor_expression_differs_from_reference` is replaced by
@@ -31,4 +31,4 @@ the stance labels of the NLI configuration and not the hybrid run; rule 6 has no
 records, because no institution has responded through the framework.
 
 `hard-cases/` checks the rules on synthetic records for the difficult cases of the
-thesis (Table 2.3); see its README.
+thesis (Table 2.4); see its README.
