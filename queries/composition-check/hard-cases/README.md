@@ -28,7 +28,7 @@ for the purpose.
 
 Terms with the `px:` prefix (`urn:del:proposed#`) are proposed for this test and are not
 part of DEL: anchor status, routing decisions, aggregates and exclusions, institutional
-status and contribution groups. Everything else uses DEL 1.1.1 / annotations 1.2.0-draft
+status and contribution groups. Everything else uses DEL 1.1.0 / annotations 1.2.0-draft
 and PROV-O.
 
 What the result shows: each rule can be stated as a query that separates the planted

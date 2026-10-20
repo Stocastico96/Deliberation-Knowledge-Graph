@@ -1,6 +1,6 @@
-# Synthetic fixtures for the hard cases of Table 2.3. Not imported into any live graph.
+# Synthetic fixtures for the hard cases of Table 2.4. Not imported into any live graph.
 # All names, texts and dates are invented for the demonstration.
-# del:  terms of the Deliberation Ontology (core 1.1.1, annotations module 1.2.0-draft).
+# del:  terms of the Deliberation Ontology (core 1.1.0, annotations module 1.2.0-draft).
 # px:   terms proposed for the demonstration; they are NOT part of DEL and are listed below.
 # prov: W3C PROV-O.
 @prefix del:  <https://w3id.org/deliberation/ontology#> .
